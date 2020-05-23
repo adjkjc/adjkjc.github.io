@@ -1,0 +1,9 @@
+<p>Hier kan je de templates aanmaken die kunnen worden gebruikt voor het verzenden van emails naar een lijst. Een template is 
+een HTML pagina met ergens de <i>PlaceHolder</i> <b>[CONTENT]</b>. Dit zal de plaats zijn waat
+de tekst van de email zal worden ingevoegd. </P>
+<p>Bijkomens bij [CONTENT], kan je [FOOTER] en [SIGNATURE] toevoegen om de footer informatie en de signature van het bericht in te voegen, deze zijn optioneel.</p>
+<p>Afbeeldingen in je template zullen worden ingesloten in de emails. Als je afbeeldingen toevoegd aan de inhoud van je berichten (als je ze verzend), dan moeten deze worden ingesloten via een volledige URL, deze zullen niet worden ingesloten bij de email.</p>
+<p><b>Gebruiker Tracking</b></p>
+<p>Om Gebruiker tracking te gebruiken, kan je [USERID] toevoegen aan je template, wat zal worden vervangen met een identifier voor een gebruiker. Dit zal enkel werken als je de mail als HTML zend. Je zult een URL moeten opzetten die deze ID ontvangt en verwerkt. Als alternatief kan je de ingebouwde Gebruiker tracking van <?php echo NAME?> gebruiken. Om dit te doen voeg je [USERTRACK] toe aan je template en een onzichtbare link zal worden toegevoegd aan de mail om het aantal views van de email bij te houden.</p>
+<p><b>Afbeeldingen</b></p>
+<p>Elke referentie naar een afbeelding die niet begint met "http://" kan (en zou) moeten worden geupload om bij de mail toe te voegen. Het is aangeraden om maar enkele afbeeldingen te gebruiken en om ze zeer klein te maken. Als je je template upload, dan zul je de mogelijkheid hebben om je afbeeldingen toe te voegen. Referenties naar afbeeldingn die ingesloten moeten worden zouden van dezelfde map moeten zijn, bv &lt;img&nbsp;src=&quot;afbeelding.jpg&quot;&nbsp;......&nbsp;&gt; en niet &lt;img&nbsp;src=&quot;/een/map/ergens/afbeelding.jpg&quot;&nbsp;..........&nbsp;&gt;</p>

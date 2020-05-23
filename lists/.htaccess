@@ -1,0 +1,38 @@
+
+DirectoryIndex index.php
+
+<FilesMatch "\.(php|inc)$">
+	# Apache < 2.3
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Deny from all
+		Satisfy All
+	</IfModule>
+	# Apache ≥ 2.3
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+</FilesMatch>
+<FilesMatch "(index.php|dl.php|ut.php|lt.php|download.php|connector.php)$">
+	# Apache < 2.3
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Allow from all
+		Satisfy All
+	</IfModule>
+	# Apache ≥ 2.3
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
+
+# if you want more than this for attachments, you can increase these values
+# but you really, really should consider uploading them somewhere
+# and only sending a link in your mails
+# bigger than this really doesn't make sense in emails
+
+## these lines are now commented out, to avoid 500 errors, https://mantis.phplist.com/view.php?id=9937
+## but you should consider adding them
+
+#php_value upload_max_filesize 3M
+#php_value post_max_size 4M

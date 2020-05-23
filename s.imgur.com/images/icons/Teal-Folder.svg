@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="76px" viewBox="0 0 104 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>teal - folder</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Favorites-Folders" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="teal---folder" fill="#43D0BD">
+            <path d="M0,5.99531974 C0,2.68419608 2.68294093,0 5.99469344,0 L35.6951919,0 L43.879223,8.68750861 L98.0017447,8.68750861 C101.31449,8.68750861 104,11.3677763 104,14.690632 L104,69.9968766 C104,73.3123101 101.311488,76 97.9970362,76 L6.0029638,76 C2.68761844,76 0,73.3174432 0,70.0046803 L0,5.99531974 Z" id="folder"></path>
+        </g>
+    </g>
+</svg>

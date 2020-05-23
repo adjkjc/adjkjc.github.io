@@ -1,0 +1,698 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Lightweight Directory Access Protocol - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XrqmrgpAIH4AAns07owAAAAM","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Lightweight_Directory_Access_Protocol","wgTitle":"Lightweight Directory Access Protocol","wgCurRevisionId":953910850,"wgRevisionId":953910850,"wgArticleId":18508,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Wikipedia articles with BNF identifiers","Wikipedia articles with GND identifiers","Wikipedia articles with LCCN identifiers","Pages using RFC magic links","Application layer protocols","Directory services","Internet protocols",
+"Internet Standards","Open Group standards"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Lightweight_Directory_Access_Protocol","wgRelevantArticleId":18508,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q188816","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user"
+:"ready","user.options":"loading","ext.cite.styles":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.31"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="Lightweight_Directory_Access_Protocol.html"/>
+<link rel="dns-prefetch" href="https://login.wikimedia.org/"/>
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Lightweight_Directory_Access_Protocol rootpage-Lightweight_Directory_Access_Protocol skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Lightweight Directory Access Protocol</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="Lightweight_Directory_Access_Protocol.html#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="Lightweight_Directory_Access_Protocol.html#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Computer network protocol</div>
+<table class="vertical-navbox nowraplinks hlist" style="float:right;clear:right;width:22.0em;margin:0 0 1.0em 1.0em;background:#f9f9f9;border:1px solid #aaa;padding:0.2em;border-spacing:0.4em 0;text-align:center;line-height:1.4em;font-size:88%"><tbody><tr><th style="padding:0.2em 0.4em 0.2em;font-size:145%;line-height:1.2em"><a href="https://en.wikipedia.org/wiki/Internet_protocol_suite" title="Internet protocol suite">Internet protocol suite</a></th></tr><tr><th style="padding:0.1em">
+<a href="https://en.wikipedia.org/wiki/Application_layer" title="Application layer">Application layer</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol" title="Border Gateway Protocol">BGP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol" title="Dynamic Host Configuration Protocol">DHCP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Domain_Name_System" title="Domain Name System">DNS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_Transfer_Protocol" title="File Transfer Protocol">FTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol" title="Hypertext Transfer Protocol">HTTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HTTPS" title="HTTPS">HTTPS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol" title="Internet Message Access Protocol">IMAP</a></li>
+<li><a class="mw-selflink selflink">LDAP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Media_Gateway_Control_Protocol" title="Media Gateway Control Protocol">MGCP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MQTT" title="MQTT">MQTT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol" title="Network News Transfer Protocol">NNTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Network_Time_Protocol" title="Network Time Protocol">NTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Post_Office_Protocol" title="Post Office Protocol">POP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open_Network_Computing_Remote_Procedure_Call" title="Open Network Computing Remote Procedure Call">ONC/RPC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Real-time_Transport_Protocol" title="Real-time Transport Protocol">RTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol" title="Real Time Streaming Protocol">RTSP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Routing_Information_Protocol" title="Routing Information Protocol">RIP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Session_Initiation_Protocol" title="Session Initiation Protocol">SIP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol" title="Simple Mail Transfer Protocol">SMTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol" title="Simple Network Management Protocol">SNMP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Secure_Shell" title="Secure Shell">SSH</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Telnet" title="Telnet">Telnet</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS/SSL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XMPP" title="XMPP">XMPP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Application_layer_protocols" title="Category:Application layer protocols"><i>more...</i></a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="https://en.wikipedia.org/wiki/Transport_layer" title="Transport layer">Transport layer</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Datagram_Congestion_Control_Protocol" title="Datagram Congestion Control Protocol">DCCP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Stream_Control_Transmission_Protocol" title="Stream Control Transmission Protocol">SCTP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Resource_Reservation_Protocol" title="Resource Reservation Protocol">RSVP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Transport_layer_protocols" title="Category:Transport layer protocols"><i>more...</i></a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="https://en.wikipedia.org/wiki/Internet_layer" title="Internet layer">Internet layer</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Internet_Protocol" title="Internet Protocol">IP</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/IPv4" title="IPv4">IPv4</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IPv6" title="IPv6">IPv6</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol" title="Internet Control Message Protocol">ICMP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Control_Message_Protocol_for_IPv6" title="Internet Control Message Protocol for IPv6">ICMPv6</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Explicit_Congestion_Notification" title="Explicit Congestion Notification">ECN</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Internet_Group_Management_Protocol" title="Internet Group Management Protocol">IGMP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IPsec" title="IPsec">IPsec</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Internet_layer_protocols" title="Category:Internet layer protocols"><i>more...</i></a></li></ul></td>
+</tr><tr><th style="padding:0.1em">
+<a href="https://en.wikipedia.org/wiki/Link_layer" title="Link layer">Link layer</a></th></tr><tr><td style="padding:0 0.1em 0.4em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Address_Resolution_Protocol" title="Address Resolution Protocol">ARP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Neighbor_Discovery_Protocol" title="Neighbor Discovery Protocol">NDP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Open_Shortest_Path_First" title="Open Shortest Path First">OSPF</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tunneling_protocol" title="Tunneling protocol">Tunnels</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Layer_2_Tunneling_Protocol" title="Layer 2 Tunneling Protocol">L2TP</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Point-to-Point_Protocol" title="Point-to-Point Protocol">PPP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Medium_access_control" title="Medium access control">MAC</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Ethernet" title="Ethernet">Ethernet</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wi-Fi" title="Wi-Fi">Wi-Fi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Digital_subscriber_line" title="Digital subscriber line">DSL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Integrated_Services_Digital_Network" title="Integrated Services Digital Network">ISDN</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fiber_Distributed_Data_Interface" title="Fiber Distributed Data Interface">FDDI</a></li></ul></li></ul>
+<ul><li><a href="https://en.wikipedia.org/wiki/Category:Link_protocols" title="Category:Link protocols"><i>more...</i></a></li></ul></td>
+</tr><tr><td style="text-align:right;font-size:115%"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:IPstack" title="Template:IPstack"><abbr title="View this template">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:IPstack" title="Template talk:IPstack"><abbr title="Discuss this template">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:IPstack&amp;action=edit"><abbr title="Edit this template">e</abbr></a></li></ul></div></td></tr></tbody></table>
+<p>The <b>Lightweight Directory Access Protocol</b>  (<b>LDAP</b> <span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt"><a href="../../bit.ly/2gUZfdV.html" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="/ɛ/: &#39;e&#39; in &#39;dress&#39;">ɛ</span><span title="&#39;l&#39; in &#39;lie&#39;">l</span><span title="&#39;d&#39; in &#39;dye&#39;">d</span><span title="/æ/: &#39;a&#39; in &#39;bad&#39;">æ</span><span title="&#39;p&#39; in &#39;pie&#39;">p</span></span>/</a></span></span>) is an open, vendor-neutral, industry standard <a href="https://en.wikipedia.org/wiki/Application_protocol" class="mw-redirect" title="Application protocol">application protocol</a> for accessing and maintaining distributed <a href="Directory_service.html" title="Directory service">directory information services</a> over an <a href="https://en.wikipedia.org/wiki/Internet_Protocol" title="Internet Protocol">Internet Protocol</a> (IP) network.<sup id="cite_ref-1" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-1">&#91;1&#93;</a></sup>  <a href="Directory_service.html" title="Directory service">Directory services</a> play an important role in developing <a href="https://en.wikipedia.org/wiki/Intranet" title="Intranet">intranet</a> and Internet applications by allowing the sharing of information about users, systems, networks, services, and applications throughout the network.<sup id="cite_ref-2" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-2">&#91;2&#93;</a></sup>  As examples, directory services may provide any organized set of records, often with a hierarchical structure, such as a corporate <a href="https://en.wikipedia.org/wiki/Email" title="Email">email</a> directory.  Similarly, a <a href="https://en.wikipedia.org/wiki/Telephone_directory" title="Telephone directory">telephone directory</a> is a list of subscribers with an address and a phone number.
+</p><p>LDAP is specified in a series of <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">Internet Engineering Task Force</a> (IETF) Standard Track publications called <a href="https://en.wikipedia.org/wiki/Request_for_Comments" title="Request for Comments">Request for Comments</a> (RFCs), using the description language <a href="https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One" title="Abstract Syntax Notation One">ASN.1</a>. The latest specification is Version 3, published as <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4511">RFC 4511</a><sup id="cite_ref-gracion_3-0" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-gracion-3">&#91;3&#93;</a></sup> (a road map to the technical specifications is provided by <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4510">RFC4510</a>).
+</p><p>A common use of LDAP is to provide a central place to store usernames and passwords. This allows many different applications and services to connect to the LDAP server to validate users.<sup id="cite_ref-4" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-4">&#91;4&#93;</a></sup>
+</p><p>LDAP is based on a simpler subset of the standards contained within the <a href="https://en.wikipedia.org/wiki/X.500" title="X.500">X.500</a> standard.  Because of this relationship, LDAP is sometimes called X.500-lite.<sup id="cite_ref-5" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Lightweight_Directory_Access_Protocol.html#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Lightweight_Directory_Access_Protocol.html#Protocol_overview"><span class="tocnumber">2</span> <span class="toctext">Protocol overview</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Lightweight_Directory_Access_Protocol.html#Directory_structure"><span class="tocnumber">3</span> <span class="toctext">Directory structure</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Lightweight_Directory_Access_Protocol.html#Operations"><span class="tocnumber">4</span> <span class="toctext">Operations</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="Lightweight_Directory_Access_Protocol.html#Add"><span class="tocnumber">4.1</span> <span class="toctext">Add</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="Lightweight_Directory_Access_Protocol.html#Bind_(authenticate)"><span class="tocnumber">4.2</span> <span class="toctext">Bind (authenticate)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="Lightweight_Directory_Access_Protocol.html#Delete"><span class="tocnumber">4.3</span> <span class="toctext">Delete</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="Lightweight_Directory_Access_Protocol.html#Search_and_Compare"><span class="tocnumber">4.4</span> <span class="toctext">Search and Compare</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="Lightweight_Directory_Access_Protocol.html#Modify"><span class="tocnumber">4.5</span> <span class="toctext">Modify</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="Lightweight_Directory_Access_Protocol.html#Modify_DN"><span class="tocnumber">4.6</span> <span class="toctext">Modify DN</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="Lightweight_Directory_Access_Protocol.html#Extended_operations"><span class="tocnumber">4.7</span> <span class="toctext">Extended operations</span></a>
+<ul>
+<li class="toclevel-3 tocsection-12"><a href="Lightweight_Directory_Access_Protocol.html#StartTLS"><span class="tocnumber">4.7.1</span> <span class="toctext">StartTLS</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2 tocsection-13"><a href="Lightweight_Directory_Access_Protocol.html#Abandon"><span class="tocnumber">4.8</span> <span class="toctext">Abandon</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="Lightweight_Directory_Access_Protocol.html#Unbind"><span class="tocnumber">4.9</span> <span class="toctext">Unbind</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-15"><a href="Lightweight_Directory_Access_Protocol.html#URI_scheme"><span class="tocnumber">5</span> <span class="toctext">URI scheme</span></a></li>
+<li class="toclevel-1 tocsection-16"><a href="Lightweight_Directory_Access_Protocol.html#Schema"><span class="tocnumber">6</span> <span class="toctext">Schema</span></a></li>
+<li class="toclevel-1 tocsection-17"><a href="Lightweight_Directory_Access_Protocol.html#Variations"><span class="tocnumber">7</span> <span class="toctext">Variations</span></a></li>
+<li class="toclevel-1 tocsection-18"><a href="Lightweight_Directory_Access_Protocol.html#Other_data_models"><span class="tocnumber">8</span> <span class="toctext">Other data models</span></a></li>
+<li class="toclevel-1 tocsection-19"><a href="Lightweight_Directory_Access_Protocol.html#Usage"><span class="tocnumber">9</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-20"><a href="Lightweight_Directory_Access_Protocol.html#See_also"><span class="tocnumber">10</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-21"><a href="Lightweight_Directory_Access_Protocol.html#References"><span class="tocnumber">11</span> <span class="toctext">References</span></a>
+<ul>
+<li class="toclevel-2 tocsection-22"><a href="Lightweight_Directory_Access_Protocol.html#Notes"><span class="tocnumber">11.1</span> <span class="toctext">Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-23"><a href="Lightweight_Directory_Access_Protocol.html#Further_reading"><span class="tocnumber">12</span> <span class="toctext">Further reading</span></a></li>
+<li class="toclevel-1 tocsection-24"><a href="Lightweight_Directory_Access_Protocol.html#External_links"><span class="tocnumber">13</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Telecommunication companies' understanding of directory requirements were well developed after some 70 years of producing and managing telephone directories. These companies introduced the concept of directory services to <a href="https://en.wikipedia.org/wiki/Information_technology" title="Information technology">information technology</a> and <a href="https://en.wikipedia.org/wiki/Computer_networking" class="mw-redirect" title="Computer networking">computer networking</a>, their input culminating in the comprehensive <a href="https://en.wikipedia.org/wiki/X.500" title="X.500">X.500</a> specification,<sup id="cite_ref-6" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-6">&#91;6&#93;</a></sup> a suite of protocols produced by the <a href="https://en.wikipedia.org/wiki/ITU" class="mw-redirect" title="ITU">International Telecommunication Union</a> (ITU) in the 1980s.
+</p><p>X.500 directory services were traditionally accessed via the X.500 <a href="https://en.wikipedia.org/wiki/Directory_Access_Protocol" title="Directory Access Protocol">Directory Access Protocol</a> (DAP), which required the <a href="https://en.wikipedia.org/wiki/Open_Systems_Interconnection" class="mw-redirect" title="Open Systems Interconnection">Open Systems Interconnection</a> (OSI) <a href="https://en.wikipedia.org/wiki/OSI_protocols" title="OSI protocols">protocol stack</a>. LDAP was originally intended to be a lightweight alternative protocol for accessing X.500 directory services through the simpler (and now widespread) <a href="https://en.wikipedia.org/wiki/TCP/IP" class="mw-redirect" title="TCP/IP">TCP/IP</a> protocol stack.  This model of directory access was borrowed from the <a href="https://en.wikipedia.org/wiki/DIXIE" title="DIXIE">DIXIE</a> and <a href="https://en.wikipedia.org/wiki/Directory_Assistance_Service" title="Directory Assistance Service">Directory Assistance Service</a> protocols.
+</p><p>The protocol was originally created<sup id="cite_ref-7" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-7">&#91;7&#93;</a></sup> by <a href="https://en.wikipedia.org/wiki/Tim_Howes" title="Tim Howes">Tim Howes</a> of the <a href="https://en.wikipedia.org/wiki/University_of_Michigan" title="University of Michigan">University of Michigan</a>, <a href="https://en.wikipedia.org/wiki/Steve_Kille" title="Steve Kille">Steve Kille</a> of Isode Limited, <a href="https://en.wikipedia.org/wiki/Colin_Robbins_(software_engineer)" title="Colin Robbins (software engineer)">Colin Robbins</a> of <a href="https://en.wikipedia.org/wiki/Nexor" title="Nexor">Nexor</a> and <a href="https://en.wikipedia.org/wiki/Wengyik_Yeong" title="Wengyik Yeong">Wengyik Yeong</a> of <a href="https://en.wikipedia.org/wiki/PSINet" title="PSINet">Performance Systems International</a>, circa 1993, as a successor<sup id="cite_ref-8" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-8">&#91;8&#93;</a></sup> to <a href="https://en.wikipedia.org/wiki/DIXIE" title="DIXIE">DIXIE</a> and <a href="https://en.wikipedia.org/wiki/Directory_Assistance_Service" title="Directory Assistance Service">DAS</a>. Mark Wahl of Critical Angle Inc., <a href="https://en.wikipedia.org/wiki/Tim_Howes" title="Tim Howes">Tim Howes</a>, and <a href="https://en.wikipedia.org/wiki/Steve_Kille" title="Steve Kille">Steve Kille</a> started work in 1996 on a new version of LDAP, LDAPv3, under the aegis of the <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">Internet Engineering Task Force</a> (IETF).  LDAPv3, first published in 1997, superseded LDAPv2 and added support for extensibility, integrated the <a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">Simple Authentication and Security Layer</a>, and better aligned the protocol to the 1993 edition of X.500. Further development of the LDAPv3 specifications themselves and of numerous extensions adding features to LDAPv3 has come through the <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>.
+</p><p>In the early engineering stages of LDAP, it was known as <i>Lightweight Directory Browsing Protocol</i>, or <i>LDBP</i>.  It was renamed with the expansion of the scope of the protocol beyond directory browsing and searching, to include directory update functions. It was given its <i>Lightweight</i> name because it was not as network intensive as its DAP predecessor and thus was more easily implemented over the Internet due to its relatively modest bandwidth usage.
+</p><p>LDAP has influenced subsequent Internet protocols, including later versions of X.500, <a href="https://en.wikipedia.org/wiki/XML_Enabled_Directory" title="XML Enabled Directory">XML Enabled Directory</a> (XED), <a href="https://en.wikipedia.org/wiki/Directory_Service_Markup_Language" class="mw-redirect" title="Directory Service Markup Language">Directory Service Markup Language</a> (DSML), <a href="https://en.wikipedia.org/wiki/Service_Provisioning_Markup_Language" title="Service Provisioning Markup Language">Service Provisioning Markup Language</a> (SPML), and the <a href="https://en.wikipedia.org/wiki/Service_Location_Protocol" title="Service Location Protocol">Service Location Protocol</a> (SLP). It is also used as the basis for <a href="Microsoft.html" title="Microsoft">Microsoft</a>'s <a href="https://en.wikipedia.org/wiki/Active_Directory" title="Active Directory">Active Directory</a>.
+</p>
+<h2><span class="mw-headline" id="Protocol_overview">Protocol overview</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=2" title="Edit section: Protocol overview">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A client starts an LDAP session by connecting to an LDAP server, called a <a href="https://en.wikipedia.org/wiki/Directory_System_Agent" title="Directory System Agent">Directory System Agent</a> (DSA), by default on <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol" title="Transmission Control Protocol">TCP</a> and <a href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" title="User Datagram Protocol">UDP</a> <a href="https://en.wikipedia.org/wiki/Port_(computer_networking)" title="Port (computer networking)">port</a> 389, or on port 636 for LDAPS (LDAP over SSL, see below).<sup id="cite_ref-9" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-9">&#91;9&#93;</a></sup> The client then sends an operation request to the server, and a server sends responses in return. With some exceptions, the client does not need to wait for a response before sending the next request, and the server may send the responses in any order. All information is transmitted using <a href="https://en.wikipedia.org/wiki/Basic_Encoding_Rules" class="mw-redirect" title="Basic Encoding Rules">Basic Encoding Rules</a> (BER).
+</p><p>The client may request the following operations:
+</p>
+<ul><li>StartTLS – use the LDAPv3 <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">Transport Layer Security</a> (TLS) extension for a secure connection</li>
+<li>Bind – <a href="https://en.wikipedia.org/wiki/Authentication" title="Authentication">authenticate</a> and specify LDAP protocol version</li>
+<li>Search – search for and/or retrieve directory entries</li>
+<li>Compare – test if a named entry contains a given attribute value</li>
+<li>Add a new entry</li>
+<li>Delete an entry</li>
+<li>Modify an entry</li>
+<li>Modify Distinguished Name (DN) – move or rename an entry</li>
+<li>Abandon – abort a previous request</li>
+<li>Extended Operation – generic operation used to define other operations</li>
+<li>Unbind – close the connection (not the inverse of Bind)</li></ul>
+<p>In addition the server may send "Unsolicited Notifications" that are not responses to any request, e.g. before the connection is timed out.
+</p><p>A common alternative method of securing LDAP communication is using an <a href="https://en.wikipedia.org/wiki/Secure_Socket_Layer" class="mw-redirect" title="Secure Socket Layer">SSL</a> <a href="https://en.wikipedia.org/wiki/Tunneling_protocol" title="Tunneling protocol">tunnel</a>. The default port for LDAP over SSL is 636. The use of LDAP over SSL was common in LDAP Version 2 (LDAPv2) but it was never standardized in any formal specification. This usage has been deprecated along with LDAPv2, which was officially retired in 2003.<sup id="cite_ref-10" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-10">&#91;10&#93;</a></sup> Global Catalog is available by default on ports 3268, and 3269 for LDAPS.<sup id="cite_ref-11" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-11">&#91;11&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Directory_structure">Directory structure</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=3" title="Edit section: Directory structure">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The protocol provides an interface with directories that follow the 1993 edition of the <a href="https://en.wikipedia.org/wiki/X.500" title="X.500">X.500</a> model:
+</p>
+<ul><li>An entry consists of a set of attributes.</li>
+<li>An attribute has a name (an <i>attribute type</i> or <i>attribute description</i>) and one or more values. The attributes are defined in a <i>schema</i> (see below).</li>
+<li>Each entry has a unique identifier: its <i>Distinguished Name</i> (DN). This consists of its <i>Relative Distinguished Name</i> (RDN), constructed from some attribute(s) in the entry, followed by the parent entry's DN. Think of the DN as the <a href="https://en.wikipedia.org/wiki/Full_path" class="mw-redirect" title="Full path">full file path</a> and the RDN as its relative filename in its parent folder (e.g. if <code>/foo/bar/myfile.txt</code> were the DN, then <code>myfile.txt</code> would be the RDN).</li></ul>
+<p>A DN may change over the lifetime of the entry, for instance, when entries are moved within a tree. To reliably and unambiguously identify entries, a <a href="https://en.wikipedia.org/wiki/Universally_Unique_Identifier" class="mw-redirect" title="Universally Unique Identifier">UUID</a> might be provided in the set of the entry's <i>operational attributes</i>.
+</p><p>An entry can look like this when represented in <a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format" title="LDAP Data Interchange Format">LDAP Data Interchange Format</a> (LDIF) (LDAP itself is a <a href="https://en.wikipedia.org/wiki/Binary_protocol" title="Binary protocol">binary protocol</a>):
+</p>
+<pre> dn: cn=John Doe,dc=example,dc=com
+ cn: John Doe
+ givenName: John
+ sn: Doe
+ telephoneNumber: +1 888 555 6789
+ telephoneNumber: +1 888 555 1232
+ mail: john@example.com
+ manager: cn=Barbara Doe,dc=example,dc=com
+ objectClass: inetOrgPerson
+ objectClass: organizationalPerson
+ objectClass: person
+ objectClass: top
+</pre>
+<p>"<code>dn</code>" is the distinguished name of the entry; it is neither an attribute nor a part of the entry. "<code>cn=John Doe</code>" is the entry's RDN (Relative Distinguished Name), and "<code>dc=example,dc=com</code>" is the DN of the parent entry, where "<code>dc</code>" denotes '<a href="https://en.wikipedia.org/wiki/Domain_Name_System" title="Domain Name System">Domain Component</a>'. The other lines show the attributes in the entry. Attribute names are typically mnemonic strings, like "<code>cn</code>" for common name, "<code>dc</code>" for domain component, "<code>mail</code>" for e-mail address, and "<code>sn</code>" for surname.
+</p><p>A server holds a subtree starting from a specific entry, e.g. "<code>dc=example,dc=com</code>" and its children. Servers may also hold references to other servers, so an attempt to access "<code>ou=department,dc=example,dc=com</code>" could return a <i>referral</i> or <i>continuation reference</i> to a server that holds that part of the directory tree. The client can then contact the other server. Some servers also support <i>chaining</i>, which means the server contacts the other server and returns the results to the client.
+</p><p>LDAP rarely defines any ordering: The server may return the values of an attribute, the attributes in an entry, and the entries found by a search operation in any order. This follows from the formal definitions - an entry is defined as a <a href="https://en.wikipedia.org/wiki/Set_(computer_science)" class="mw-redirect" title="Set (computer science)">set</a> of attributes, and an attribute is a set of values, and sets need not be ordered.
+</p>
+<h2><span class="mw-headline" id="Operations">Operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=4" title="Edit section: Operations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Add">Add</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=5" title="Edit section: Add">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The ADD operation inserts a new entry into the directory-server database.<sup id="cite_ref-12" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-12">&#91;12&#93;</a></sup> If the distinguished name in the add request already exists in the directory, then the server will not add a duplicate entry but will set the result code in the add result to decimal 68, "entryAlreadyExists".<sup id="cite_ref-13" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-13">&#91;13&#93;</a></sup>
+</p>
+<ul><li>LDAP-compliant servers will never dereference the distinguished name transmitted in the add request when attempting to locate the entry, that is, distinguished names are never de-aliased.</li>
+<li>LDAP-compliant servers will ensure that the distinguished name and all attributes conform to naming standards.</li>
+<li>The entry to be added must not exist, and the immediate superior must exist.</li></ul>
+<pre>dn: uid=user,ou=people,dc=example,dc=com
+changetype: add
+objectClass:top
+objectClass:person
+uid: user
+sn: last-name
+cn: common-name
+userPassword: password
+</pre>
+<p>In the above example, <code>uid=user,ou=people,dc=example,dc=com</code> must not exist, and <code>ou=people,dc=example,dc=com</code> must exist.
+</p>
+<h3><span id="Bind_.28authenticate.29"></span><span class="mw-headline" id="Bind_(authenticate)">Bind (authenticate)</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=6" title="Edit section: Bind (authenticate)">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When an LDAP session is created, that is, when an LDAP client connects to the server, the <b>authentication state</b> of the session
+is set to anonymous. The BIND operation establishes the authentication state for a session.
+</p><p>Simple BIND and SASL PLAIN can send the user's DN and password in <a href="https://en.wikipedia.org/wiki/Plaintext" title="Plaintext">plaintext</a>, so the connections utilizing either Simple or SASL PLAIN
+should be encrypted using <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">Transport Layer Security</a> (TLS). The server typically checks the password against the <code>userPassword</code>
+attribute in the named entry.  Anonymous BIND (with empty DN and password) resets the connection to anonymous state.
+</p><p><a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">SASL</a> (Simple Authentication and Security Layer) BIND provides authentication services through a
+wide range of mechanisms, e.g. <a href="https://en.wikipedia.org/wiki/Kerberos_(protocol)" title="Kerberos (protocol)">Kerberos</a> or the <a href="https://en.wikipedia.org/wiki/Client_certificate" title="Client certificate">client certificate</a> sent with
+TLS.<sup id="cite_ref-14" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-14">&#91;14&#93;</a></sup>
+</p><p>BIND also sets the LDAP protocol version by sending a version number in the form of an integer. If the client requests a version that the server does not support,
+the server must set the result code in the BIND response to the code for a protocol error. Normally clients should use LDAPv3, which is the
+default in the protocol but not always in LDAP libraries.
+</p><p>BIND had to be the first operation in a session in LDAPv2, but is not required as of LDAPv3. In LDAPv3, each
+successful BIND request changes the authentication state of the session and each unsuccessful BIND request resets the authentication state
+of the session.
+</p>
+<h3><span class="mw-headline" id="Delete">Delete</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=7" title="Edit section: Delete">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>To delete an entry, an LDAP client transmits a properly formed delete request to the server.<sup id="cite_ref-15" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-15">&#91;15&#93;</a></sup>
+</p>
+<ul><li>A delete request must contain the distinguished name of the entry to be deleted</li>
+<li>Request controls may also be attached to the delete request</li>
+<li>Servers do not dereference aliases when processing a delete request</li>
+<li>Only leaf entries (entries with no subordinates) may be deleted by a delete request. Some servers support an operational attribute <code>hasSubordinates</code> whose value indicates whether an entry has any subordinate entries, and some servers support an operational attribute <code>numSubordinates</code><sup id="cite_ref-16" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-16">&#91;16&#93;</a></sup> indicating the number of entries subordinate to the entry containing the <code>numSubordinates</code> attribute.</li>
+<li>Some servers support the subtree delete request control permitting deletion of the DN and all objects subordinate to the DN, subject to access controls. Delete requests are subject to access controls, that is, whether a connection with a given authentication state will be permitted to delete a given entry is governed by server-specific access control mechanisms.</li></ul>
+<h3><span class="mw-headline" id="Search_and_Compare">Search and Compare</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=8" title="Edit section: Search and Compare">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Search operation is used to both search for and read entries.  Its parameters are:
+</p>
+<dl><dt>baseObject&#160;</dt>
+<dd>The name of the base object entry (or possibly the root) relative to which the search is to be performed.</dd>
+<dt>scope&#160;</dt>
+<dd>What elements below the baseObject to search. This can be <code>BaseObject</code> (search just the named entry, typically used to read one entry), <code>singleLevel</code> (entries immediately below the base DN), or <code>wholeSubtree</code> (the entire subtree starting at the base DN).</dd>
+<dt>filter&#160;</dt>
+<dd>Criteria to use in selecting elements within scope. For example, the filter <code>(&amp;(objectClass=person)(|(givenName=John)(mail=john*)))</code> will select "persons" (elements of objectClass <code>person</code>) where the matching rules for <code>givenName</code> and <code>mail</code> determine whether the values for those attributes match the filter assertion. Note that a common misconception is that LDAP data is case-sensitive, whereas in fact matching rules and ordering rules determine matching, comparisons, and relative value relationships. If the example filters were required to match the case of the attribute value, an <i>extensible match filter</i> must be used, for example, <code>(&amp;(objectClass=person)(|(givenName:caseExactMatch:=John)(mail:caseExactSubstringsMatch:=john*)))</code></dd>
+<dt>derefAliases&#160;</dt>
+<dd>Whether and how to follow alias entries (entries that refer to other entries),</dd>
+<dt>attributes&#160;</dt>
+<dd>Which attributes to return in result entries.</dd>
+<dt>sizeLimit, timeLimit&#160;</dt>
+<dd>Maximum number of entries to return, and maximum time to allow search to run. These values, however, cannot override any restrictions the server places on size limit and time limit.</dd>
+<dt>typesOnly&#160;</dt>
+<dd>Return attribute types only, not attribute values.</dd></dl>
+<p>The server returns the matching entries and potentially continuation references. These may be returned in any order.  The final result will include the result code.
+</p><p>The Compare operation takes a DN, an attribute name and an attribute value, and checks if the named entry contains that attribute with that value.
+</p>
+<h3><span class="mw-headline" id="Modify">Modify</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=9" title="Edit section: Modify">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The MODIFY operation is used by LDAP clients to request that the LDAP server make changes to existing entries.<sup id="cite_ref-17" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-17">&#91;17&#93;</a></sup> Attempts to modify entries that do not exist will fail. MODIFY requests are subject  to access controls as implemented by the server.
+</p><p>The MODIFY operation requires that the distinguished name (DN) of the entry be specified, and a sequence of changes. Each change in the sequence must be one of:
+</p>
+<ul><li>add (add a new value, which must not already exist in the attribute)</li>
+<li>delete (delete an existing value)</li>
+<li>replace (replace an existing value with a new value)</li></ul>
+<p><a href="https://en.wikipedia.org/wiki/LDAP_Data_Interchange_Format" title="LDAP Data Interchange Format">LDIF</a> example of adding a value to an attribute:
+</p>
+<pre>dn: dc=example,dc=com
+changetype: modify
+add: cn
+cn: the-new-cn-value-to-be-added
+-
+</pre>
+<p>To replace the value of an existing attribute, Use the <tt>replace</tt> keyword. If the attribute is multi-valued, the client must specify the value of the attribute to update.
+</p><p>To delete an attribute from an entry, use the keyword <tt>delete</tt> and the changetype designator <tt>modify</tt>. If the attribute is multi-valued, the client must specify the value of the attribute to delete.
+</p><p>There is also a Modify-Increment extension<sup id="cite_ref-18" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-18">&#91;18&#93;</a></sup> which allows an incrementable attribute value to be incremented by a specified amount. The following example using LDIF increments <tt>employeeNumber</tt> by <tt>5</tt>:
+</p>
+<pre>dn: uid=user.0,ou=people,dc=example,dc=com
+changetype: modify
+increment: employeeNumber
+employeeNumber: 5
+-
+</pre>
+<p>When LDAP servers are in a replicated topology, LDAP clients should consider using the post-read control to verify updates instead of a search after an update.<sup id="cite_ref-19" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-19">&#91;19&#93;</a></sup> The post-read control is designed so that applications need not issue a search request after an update – it is bad form to retrieve an entry for the sole purpose of checking that an update worked because of the replication <a href="https://en.wikipedia.org/wiki/Eventual_consistency" title="Eventual consistency">eventual consistency</a> model. An LDAP client should not assume that it connects to the same directory server for each request because architects may have placed load-balancers or LDAP proxies or both between LDAP clients and servers.
+</p>
+<h3><span class="mw-headline" id="Modify_DN">Modify DN</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=10" title="Edit section: Modify DN">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Modify DN (move/rename entry) takes the new RDN (Relative Distinguished Name), optionally the new parent's DN, and a flag that indicates whether to delete the value(s) in the entry that match the old RDN.  The server may support renaming of entire directory subtrees.
+</p><p>An update operation is atomic: Other operations will see either the new entry or the old one.  On the other hand, LDAP does not define transactions of multiple operations: If you read an entry and then modify it, another client may have updated the entry in the meantime.  Servers may implement extensions<sup id="cite_ref-20" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-20">&#91;20&#93;</a></sup> that support this, though.
+</p>
+<h3><span class="mw-headline" id="Extended_operations">Extended operations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=11" title="Edit section: Extended operations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Extended Operation is a generic LDAP operation that can define new operations that were not part of the original protocol specification. StartTLS is one of the most significant extensions.  Other examples include Cancel and Password Modify.
+</p>
+<h4><span class="mw-headline" id="StartTLS">StartTLS</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=12" title="Edit section: StartTLS">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<p>The StartTLS operation establishes <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">Transport Layer Security</a> (the descendant of <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">SSL</a>) on the connection.  It can provide data confidentiality (to protect data from being observed by third parties) and/or data integrity protection (which protects the data from tampering).  During TLS negotiation the server sends its <a href="https://en.wikipedia.org/wiki/X.509" title="X.509">X.509</a> certificate to prove its identity.  The client may also send a certificate to prove its identity.  After doing so, the client may then use <a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">SASL</a>/EXTERNAL.  By using the SASL/EXTERNAL, the client requests the server derive its identity from credentials provided at a lower level (such as TLS).  Though technically the server may use any identity information established at any lower level, typically the server will use the identity information established by TLS.
+</p><p>Servers also often support the non-standard "LDAPS" ("Secure LDAP", commonly known as "LDAP over SSL") protocol on a separate port, by default 636.  LDAPS differs from LDAP in two ways:
+1) upon connect, the client and server establish TLS before any LDAP messages are transferred (without a StartTLS operation) and
+2) the LDAPS connection must be closed upon TLS closure.
+</p><p>Some "LDAPS" client libraries only encrypt communication; they do not check the host name against the name in the supplied certificate.<sup id="cite_ref-21" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-21">&#91;21&#93;</a></sup>
+</p>
+<h3><span class="mw-headline" id="Abandon">Abandon</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=13" title="Edit section: Abandon">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Abandon operation requests that the server abort an operation named by a message ID.  The server need not honor the request.  Neither Abandon nor a successfully abandoned operation send a response.  A similar Cancel extended operation does send responses, but not all implementations support this.
+</p>
+<h3><span class="mw-headline" id="Unbind">Unbind</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=14" title="Edit section: Unbind">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The Unbind operation abandons any outstanding operations and closes the connection.  It has no response.  The name is of historical origin, and is <i>not</i> the opposite of the Bind operation.<sup id="cite_ref-22" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-22">&#91;22&#93;</a></sup>
+</p><p>Clients can abort a session by simply closing the connection, but they should use Unbind.<sup id="cite_ref-23" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-23">&#91;23&#93;</a></sup> Unbind allows the server to gracefully close the connection and free resources that it would otherwise keep for some time until discovering the client had abandoned the connection. It also instructs the server to cancel operations that can be canceled, and to not send responses for operations that cannot be canceled.<sup id="cite_ref-24" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="URI_scheme">URI scheme</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=15" title="Edit section: URI scheme">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An LDAP <a href="https://en.wikipedia.org/wiki/Uniform_resource_identifier" class="mw-redirect" title="Uniform resource identifier">uniform resource identifier (URI)</a> scheme exists, which clients support in varying degrees, and servers return in referrals and continuation references (see <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4516">RFC 4516</a>):
+</p>
+<pre>ldap://host:port/DN?attributes?scope?filter?extensions
+</pre>
+<p>Most of the components described below are optional.
+</p>
+<ul><li><i>host</i> is the <a href="https://en.wikipedia.org/wiki/Fully_qualified_domain_name" title="Fully qualified domain name">FQDN</a> or IP address of the LDAP server to search.</li>
+<li><i>port</i> is the <a href="https://en.wikipedia.org/wiki/Network_port" class="mw-redirect" title="Network port">network port</a> (default port 389) of the LDAP server.</li>
+<li><i>DN</i> is the distinguished name to use as the search base.</li>
+<li><i>attributes</i> is a comma-separated list of attributes to retrieve.</li>
+<li><i>scope</i> specifies the search scope and can be "base" (the default), "one" or "sub".</li>
+<li><i>filter</i> is a search filter. For example, <code>(objectClass=*)</code> as defined in <a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4515">RFC 4515</a>.</li>
+<li><i>extensions</i> are extensions to the LDAP URL format.</li></ul>
+<p>For example, "<code>ldap://ldap.example.com/cn=John%20Doe,dc=example,dc=com</code>" refers to all user attributes in John Doe's entry in <code>ldap.example.com</code>, while "<code>ldap:///dc=example,dc=com??sub?(givenName=John)</code>" searches for the entry in the default server (note the triple slash, omitting the host, and the double question mark, omitting the attributes).  As in other URLs, special characters must be <a href="https://en.wikipedia.org/wiki/Percent-encoding" title="Percent-encoding">percent-encoded</a>.
+</p><p>There is a similar non-standard <code>ldaps</code> URI scheme for LDAP over SSL. This should not be confused with LDAP with TLS, which is achieved using the StartTLS operation using the standard <code>ldap</code> scheme.
+</p>
+<h2><span class="mw-headline" id="Schema">Schema</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=16" title="Edit section: Schema">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The contents of the entries in a subtree are governed by a <a href="https://en.wikipedia.org/wiki/Logical_schema" title="Logical schema">directory schema</a>, a set of definitions and constraints concerning the structure of the directory information tree (DIT).
+</p><p>The schema of a Directory Server defines a set of rules that govern the kinds of information that the server can hold. It has a number of elements, including:
+</p>
+<ul><li>Attribute Syntaxes—Provide information about the kind of information that can be stored in an attribute.</li>
+<li>Matching Rules—Provide information about how to make comparisons against attribute values.</li>
+<li>Matching Rule Uses—Indicate which attribute types may be used in conjunction with a particular matching rule.</li>
+<li>Attribute Types—Define an <a href="https://en.wikipedia.org/wiki/Object_identifier" title="Object identifier">object identifier</a> (OID) and a set of names that may refer to a given attribute, and associates that attribute with a syntax and set of matching rules.</li>
+<li>Object Classes—Define named collections of attributes and classify them into sets of required and optional attributes.</li>
+<li>Name Forms—Define rules for the set of attributes that should be included in the RDN for an entry.</li>
+<li>Content Rules—Define additional constraints about the object classes and attributes that may be used in conjunction with an entry.</li>
+<li>Structure Rule—Define rules that govern the kinds of subordinate entries that a given entry may have.</li></ul>
+<p>Attributes are the elements responsible for storing information in a directory, and the schema defines the rules for which attributes may be used in an entry, the kinds of values that those attributes may have, and how clients may interact with those values.
+</p><p>Clients may learn about the schema elements that the server supports by retrieving an appropriate subschema subentry.
+</p><p>The schema defines <i>object classes</i>.  Each entry must have an objectClass attribute, containing named classes defined in the schema.  The schema definition of the classes of an entry defines what kind of object the entry may represent - e.g. a person, organization or domain.  The object class definitions also define the list of attributes that must contain values and the list of attributes which may contain values.
+</p><p>For example, an entry representing a person might belong to the classes "top" and "person". Membership in the "person" class would require the entry to contain the "sn" and "cn" attributes, and allow the entry also to contain "userPassword", "telephoneNumber", and other attributes. Since entries may have multiple ObjectClasses values, each entry has a complex of optional and mandatory attribute sets formed from the union of the object classes it represents. ObjectClasses can be inherited, and a single entry can have multiple ObjectClasses values that define the available and required attributes of the entry itself. A parallel to the schema of an objectClass is a <a href="https://en.wikipedia.org/wiki/Class_(computer_science)" class="mw-redirect" title="Class (computer science)">class</a> definition and an <a href="https://en.wikipedia.org/wiki/Instantiation_(computer_science)" class="mw-redirect" title="Instantiation (computer science)">instance</a> in <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" title="Object-oriented programming">Object-oriented programming</a>, representing LDAP objectClass and LDAP entry, respectively.
+</p><p>Directory servers may publish the directory schema controlling an entry at a base DN given by the entry's subschemaSubentry operational attribute.  (An <i>operational attribute</i> describes operation of the directory rather than user information and is only returned from a search when it is explicitly requested.)
+</p><p>Server administrators can add additional schema entries in addition to the provided schema elements.  A schema for representing individual people within organizations is termed a <a href="https://en.wikipedia.org/wiki/White_pages_schema" title="White pages schema">white pages schema</a>.
+</p>
+<h2><span class="mw-headline" id="Variations">Variations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=17" title="Edit section: Variations">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A lot of the server operation is left to the implementor or administrator to decide.  Accordingly, servers may be set up to support a wide variety of scenarios.
+</p><p>For example, data storage in the server is not specified - the server may use flat files, databases, or just be a gateway to some other server.  Access control is not standardized, though there has been work on it and there are commonly used models.  Users' passwords may be stored in their entries or elsewhere.  The server may refuse to perform operations when it wishes, and impose various limits.
+</p><p>Most parts of LDAP are extensible. Examples: One can define new operations.  <i>Controls</i> may modify requests and responses, e.g. to request sorted search results.  New search scopes and Bind methods can be defined.  Attributes can have <i>options</i> that may modify their semantics.
+</p>
+<h2><span class="mw-headline" id="Other_data_models">Other data models</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=18" title="Edit section: Other data models">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>As LDAP has gained momentum, vendors have provided it as an access protocol to other services.  The implementation then recasts the data to mimic the LDAP/X.500 model, but how closely this model is followed varies.  For example, there is software to access <a href="https://en.wikipedia.org/wiki/SQL" title="SQL">SQL</a> databases through LDAP, even though LDAP does not readily lend itself to this.<sup id="cite_ref-25" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-25">&#91;25&#93;</a></sup> X.500 servers may support LDAP as well.
+</p><p>Similarly, data previously held in other types of data stores are sometimes moved to LDAP directories.  For example, Unix user and group information can be stored in LDAP and accessed via <a href="https://en.wikipedia.org/wiki/Pluggable_Authentication_Modules" class="mw-redirect" title="Pluggable Authentication Modules">PAM</a> and <a href="https://en.wikipedia.org/wiki/Name_Service_Switch" title="Name Service Switch">NSS</a> modules.  LDAP is often used by other services for authentication and/or authorization (what actions a given already-authenticated user can do on what service). For example in Active Directory Kerberos is used in the authentication step, while LDAP is used in the authorization step.
+</p><p>An example of such data model is the GLUE Schema,<sup id="cite_ref-26" class="reference"><a href="Lightweight_Directory_Access_Protocol.html#cite_note-26">&#91;26&#93;</a></sup> which is used in a distributed information system based on LDAP that enable users, applications and services to discover which services exist in a Grid infrastructure and further information about their structure and state.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=19" title="Edit section: Usage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>An LDAP server may return referrals to other servers for requests that it cannot fulfill itself. This requires a naming structure for LDAP entries so one can find a server holding a given distinguished name (DN), a concept defined in the X.500 Directory and also used in LDAP. Another way of locating LDAP servers for an organization is a DNS <a href="https://en.wikipedia.org/wiki/SRV_record" title="SRV record">server record</a> (SRV).
+</p><p>An organization with the domain example.org may use the top level LDAP DN <code>dc=example,dc=org</code> (where <i>dc</i> means domain component).  If the LDAP server is also named ldap.example.org, the organization's top level LDAP URL becomes <code>ldap://ldap.example.org/dc=example,dc=org</code>.
+</p><p>Primarily two common styles of naming are used in both X.500 [2008] and LDAPv3. These are documented in the ITU specifications and IETF RFCs. The original form takes the top level object as the country object, such as <code>c=US</code>, <code>c=FR</code>. The domain component model uses the model described above. An example of country based naming could be <code>l=Locality, ou=Some Organizational Unit, o=Some Organization, c=FR</code>, or in the US: <code>cn=Common Name, l=Locality, ou=Some Organizational Unit, o=Some Organization, st=CA, c=US</code>.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=20" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="https://en.wikipedia.org/wiki/Ambiguous_name_resolution" title="Ambiguous name resolution">Ambiguous name resolution</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CCSO_Nameserver" title="CCSO Nameserver">CCSO Nameserver</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Federated_Naming_Service" title="Federated Naming Service">Federated Naming Service</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hesiod_(name_service)" title="Hesiod (name service)">Hesiod (name service)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hierarchical_database_model" title="Hierarchical database model">Hierarchical database model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Key_server_(cryptographic)" title="Key server (cryptographic)">Key server (cryptographic)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LDAP_Application_Program_Interface" title="LDAP Application Program Interface">LDAP Application Program Interface</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_LDAP_software" title="List of LDAP software">List of LDAP software</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">Simple Authentication and Security Layer</a> (SASL)</li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=21" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://tools.ietf.org/rfc/rfc4511.txt">"Network Working Group RFC 4511"</a>. IETF.org. 2006-06-01<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Network+Working+Group+&#82;FC+4511&amp;rft.pub=IETF.org&amp;rft.date=2006-06-01&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Frfc%2Frfc4511.txt&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-2">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://docs.oracle.com/cd/A87860_01/doc/ois.817/a83729/adois09.htm">"Directory Services LDAP"</a>. Oracle.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Directory+Services+LDAP&amp;rft.pub=Oracle.com&amp;rft_id=https%3A%2F%2Fdocs.oracle.com%2Fcd%2FA87860_01%2Fdoc%2Fois.817%2Fa83729%2Fadois09.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-gracion-3"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-gracion_3-0">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.gracion.com/server/whatldap.html">What is LDAP?</a>. Gracion.com. Retrieved on 2013-07-17.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-4">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.openldap.org/doc/admin24/intro.html">"Introduction to OpenLDAP Directory Services"</a>. <i>OpenLDAP</i><span class="reference-accessdate">. Retrieved <span class="nowrap">1 February</span> 2016</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenLDAP&amp;rft.atitle=Introduction+to+OpenLDAP+Directory+Services&amp;rft_id=http%3A%2F%2Fwww.openldap.org%2Fdoc%2Fadmin24%2Fintro.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.webopedia.com/TERM/L/LDAP.html">"LDAP - Lightweight Directory Access Protocol"</a>. Webopedia.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-04-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=LDAP+-+Lightweight+Directory+Access+Protocol&amp;rft.pub=Webopedia.com&amp;rft_id=http%3A%2F%2Fwww.webopedia.com%2FTERM%2FL%2FLDAP.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-6">^</a></b></span> <span class="reference-text">The <a href="https://en.wikipedia.org/wiki/X.500" title="X.500">X.500</a> series - ITU-T Rec. X.500 to X.521</span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFHowes" class="citation web">Howes, Tim. <a rel="nofollow" class="external text" href="http://www.openldap.org/pub/umich/ldap.pdf">"The Lightweight Directory Access Protocol: X.500 Lite"</a> <span class="cs1-format">(PDF)</span><span class="reference-accessdate">. Retrieved <span class="nowrap">26 December</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+Lightweight+Directory+Access+Protocol%3A+X.500+Lite&amp;rft.aulast=Howes&amp;rft.aufirst=Tim&amp;rft_id=http%3A%2F%2Fwww.openldap.org%2Fpub%2Fumich%2Fldap.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://cybermatters.info/2013/04/09/prehistory-of-ldap/">"Pre-History of LDAP"</a>. <i>Cyber Matters</i>. 2013-04-09<span class="reference-accessdate">. Retrieved <span class="nowrap">5 October</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Cyber+Matters&amp;rft.atitle=Pre-History+of+LDAP&amp;rft.date=2013-04-09&amp;rft_id=http%3A%2F%2Fcybermatters.info%2F2013%2F04%2F09%2Fprehistory-of-ldap%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-9">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?&amp;page=7">"Service Name and Transport Protocol Port Number Registry"</a>. <a href="https://en.wikipedia.org/wiki/Internet_Assigned_Numbers_Authority" title="Internet Assigned Numbers Authority">IANA</a><span class="reference-accessdate">. Retrieved <span class="nowrap">7 May</span> 2014</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Service+Name+and+Transport+Protocol+Port+Number+Registry&amp;rft.pub=IANA&amp;rft_id=http%3A%2F%2Fwww.iana.org%2Fassignments%2Fservice-names-port-numbers%2Fservice-names-port-numbers.xhtml%3F%26page%3D7&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc3494">RFC3494</a></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://technet.microsoft.com/en-us/library/cc978012.aspx">"Global Catalog and LDAP Searches"</a>. 2014-08-05<span class="reference-accessdate">. Retrieved <span class="nowrap">2014-08-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Global+Catalog+and+LDAP+Searches&amp;rft.date=2014-08-05&amp;rft_id=https%3A%2F%2Ftechnet.microsoft.com%2Fen-us%2Flibrary%2Fcc978012.aspx&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-4.7">Add section of RFC4511</a></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#appendix-A">LDAP result codes</a></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-14">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.iana.org/assignments/sasl-mechanisms/sasl-mechanisms.xml">SASL Mechanisms at IANA</a></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-15">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-4.8">RFC4511: delete request</a></span>
+</li>
+<li id="cite_note-16"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-16">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-boreham-numsubordinates-01">Boreham Draft (numSubordinates)</a></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-4.6">Modify Section of RFC4511</a></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-18">^</a></b></span> <span class="reference-text"><cite id="CITEREFZeilenga" class="citation">Zeilenga, K. <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4525"><i>LDAP Modify-Increment Extension</i></a>. <a href="https://en.wikipedia.org/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.17487%2FRFC4525">10.17487/RFC4525</a></span>. <a href="https://en.wikipedia.org/wiki/RFC_(identifier)" class="mw-redirect" title="RFC (identifier)">RFC</a> <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4525">4525</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LDAP+Modify-Increment+Extension&amp;rft_id=info%3Adoi%2F10.17487%2F&#82;FC4525&amp;rft.aulast=Zeilenga&amp;rft.aufirst=K.&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc4525&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-19">^</a></b></span> <span class="reference-text"><cite id="CITEREFZeilenga" class="citation">Zeilenga, K. <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4527"><i>Lightweight Directory Access Protocol (LDAP) Read Entry Controls</i></a>. <a href="https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force" title="Internet Engineering Task Force">IETF</a>. <a href="https://en.wikipedia.org/wiki/Doi_(identifier)" class="mw-redirect" title="Doi (identifier)">doi</a>:<span class="cs1-lock-free" title="Freely accessible"><a rel="nofollow" class="external text" href="https://doi.org/10.17487%2FRFC4527">10.17487/RFC4527</a></span>. <a href="https://en.wikipedia.org/wiki/RFC_(identifier)" class="mw-redirect" title="RFC (identifier)">RFC</a> <a rel="nofollow" class="external text" href="https://tools.ietf.org/html/rfc4527">4527</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Lightweight+Directory+Access+Protocol+%28LDAP%29+Read+Entry+Controls&amp;rft.pub=IETF&amp;rft_id=info%3Adoi%2F10.17487%2F&#82;FC4527&amp;rft.aulast=Zeilenga&amp;rft.aufirst=K.&amp;rft_id=https%3A%2F%2Ftools.ietf.org%2Fhtml%2Frfc4527&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-20">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/draft-zeilenga-ldap-txn-15">INTERNET-DRAFT LDAP Transactions draft-zeilenga-ldap-txn-15.txt</a></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-21">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://shibboleth.net/community/advisories/secadv_20120227.txt">Shibboleth Security alert 20120227</a></span>
+</li>
+<li id="cite_note-22"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-22">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-4.3">Tools.ietf.org</a></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-23">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-5.3">Tools.ietf.org</a></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-24">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://tools.ietf.org/html/rfc4511#section-3.1">Tools.ietf.org</a></span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-25">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.openldap.org/doc/admin24/backends.html#SQL">Openldap.org</a></span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="Lightweight_Directory_Access_Protocol.html#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://www.ogf.org/documents/GFD.218.pdf">Open Grid Forum&#160;: Project Home</a></span>
+</li>
+</ol></div>
+<h3><span class="mw-headline" id="Notes">Notes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=22" title="Edit section: Notes">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<ul><li><a href="https://en.wikipedia.org/wiki/Abstract_syntax_notation_one" class="mw-redirect" title="Abstract syntax notation one">ITU-T Rec. X.680</a>, "Abstract Syntax Notation One (ASN.1) - Specification of Basic Notation", 1994</li>
+<li><a href="https://en.wikipedia.org/wiki/Basic_encoding_rules" class="mw-redirect" title="Basic encoding rules">Basic encoding rules</a> (BER) - ITU-T Rec. X.690, "Specification of ASN.1 encoding rules: Basic, Canonical, and Distinguished Encoding Rules", 1994</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc3641">RFC 3641</a> - <a href="https://en.wikipedia.org/wiki/Generic_String_Encoding_Rules" class="mw-redirect" title="Generic String Encoding Rules">Generic String Encoding Rules</a> (GSER) for ASN.1 Types</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4346">RFC 4346</a> - The <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" title="Transport Layer Security">TLS</a> Protocol Version 1.1</li>
+<li><a class="external mw-magiclink-rfc" rel="nofollow" href="https://tools.ietf.org/html/rfc4422">RFC 4422</a> - Simple Authentication and Security Layer (<a href="https://en.wikipedia.org/wiki/Simple_Authentication_and_Security_Layer" title="Simple Authentication and Security Layer">SASL</a>)</li>
+<li>SASL mechanisms registered at IANA</li>
+<li><span class="citation foldoc"><small>This article is based on material taken from  the <i><a href="https://en.wikipedia.org/wiki/Free_On-line_Dictionary_of_Computing" title="Free On-line Dictionary of Computing">Free On-line Dictionary of Computing</a></i> &#32;prior to 1 November 2008 and incorporated under the "relicensing" terms of the <a href="https://en.wikipedia.org/wiki/GNU_Free_Documentation_License" title="GNU Free Documentation License">GFDL</a>, version 1.3 or later.</small></span></li></ul>
+<h2><span class="mw-headline" id="Further_reading">Further reading</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=23" title="Edit section: Further reading">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFArkills2003" class="citation book">Arkills, B (2003). <a rel="nofollow" class="external text" href="http://www.informit.com/store/ldap-directories-explained-an-introduction-and-analysis-9780201787924"><i>LDAP Directories Explained: An Introduction and Analysis</i></a>. <a href="https://en.wikipedia.org/wiki/Addison-Wesley_Professional" class="mw-redirect" title="Addison-Wesley Professional">Addison-Wesley Professional</a>. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-0-201-78792-4" title="Special:BookSources/978-0-201-78792-4"><bdi>978-0-201-78792-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LDAP+Directories+Explained%3A+An+Introduction+and+Analysis&amp;rft.pub=Addison-Wesley+Professional&amp;rft.date=2003&amp;rft.isbn=978-0-201-78792-4&amp;rft.aulast=Arkills&amp;rft.aufirst=B&amp;rft_id=http%3A%2F%2Fwww.informit.com%2Fstore%2Fldap-directories-explained-an-introduction-and-analysis-9780201787924&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFCarter2003" class="citation book">Carter, G (2003). <span class="cs1-lock-registration" title="Free registration required"><a rel="nofollow" class="external text" href="https://archive.org/details/ldapsystemadmini00cart"><i>LDAP System Administration</i></a></span>. <a href="https://en.wikipedia.org/wiki/O%27Reilly_Media" title="O&#39;Reilly Media">O'Reilly Media</a>. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-56592-491-8" title="Special:BookSources/978-1-56592-491-8"><bdi>978-1-56592-491-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LDAP+System+Administration&amp;rft.pub=O%27Reilly+Media&amp;rft.date=2003&amp;rft.isbn=978-1-56592-491-8&amp;rft.aulast=Carter&amp;rft.aufirst=G&amp;rft_id=https%3A%2F%2Farchive.org%2Fdetails%2Fldapsystemadmini00cart&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFDonley2002" class="citation book">Donley, C (2002). <i>LDAP Programming, Management, and Integration</i>. <a href="https://en.wikipedia.org/wiki/Manning_Publications" title="Manning Publications">Manning Publications</a>. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-930110-40-3" title="Special:BookSources/978-1-930110-40-3"><bdi>978-1-930110-40-3</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=LDAP+Programming%2C+Management%2C+and+Integration&amp;rft.pub=Manning+Publications&amp;rft.date=2002&amp;rft.isbn=978-1-930110-40-3&amp;rft.aulast=Donley&amp;rft.aufirst=C&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFHowesSmithGood2003" class="citation book">Howes, T; Smith, M; Good, G (2003). <a rel="nofollow" class="external text" href="http://www.informit.com/store/understanding-and-deploying-ldap-directory-services-9780672323164"><i>Understanding and Deploying LDAP Directory Services</i></a>. <a href="https://en.wikipedia.org/wiki/Addison-Wesley_Professional" class="mw-redirect" title="Addison-Wesley Professional">Addison-Wesley Professional</a>. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-0-672-32316-4" title="Special:BookSources/978-0-672-32316-4"><bdi>978-0-672-32316-4</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Understanding+and+Deploying+LDAP+Directory+Services&amp;rft.pub=Addison-Wesley+Professional&amp;rft.date=2003&amp;rft.isbn=978-0-672-32316-4&amp;rft.aulast=Howes&amp;rft.aufirst=T&amp;rft.au=Smith%2C+M&amp;rft.au=Good%2C+G&amp;rft_id=http%3A%2F%2Fwww.informit.com%2Fstore%2Funderstanding-and-deploying-ldap-directory-services-9780672323164&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFRhoton1999" class="citation book">Rhoton, J (1999). <i>Programmer's Guide to Internet Mail: SMTP, POP, IMAP, and LDAP</i>. Elsevier. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-55558-212-8" title="Special:BookSources/978-1-55558-212-8"><bdi>978-1-55558-212-8</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Programmer%27s+Guide+to+Internet+Mail%3A+SMTP%2C+POP%2C+IMAP%2C+and+LDAP&amp;rft.pub=Elsevier&amp;rft.date=1999&amp;rft.isbn=978-1-55558-212-8&amp;rft.aulast=Rhoton&amp;rft.aufirst=J&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFVoglmaier2003" class="citation book">Voglmaier, R (2003). <i>The ABCs of LDAP: How to Install, Run, and Administer LDAP Services</i>. Auerbach Publications. <a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-0-8493-1346-2" title="Special:BookSources/978-0-8493-1346-2"><bdi>978-0-8493-1346-2</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+ABCs+of+LDAP%3A+How+to+Install%2C+Run%2C+and+Administer+LDAP+Services&amp;rft.pub=Auerbach+Publications&amp;rft.date=2003&amp;rft.isbn=978-0-8493-1346-2&amp;rft.aulast=Voglmaier&amp;rft.aufirst=R&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li></ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit&amp;section=24" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li>List of public LDAP Servers (2013): <cite class="citation web"><a rel="nofollow" class="external text" href="https://ldapwiki.com/wiki/Public%20LDAP%20Servers">"Ldapwiki: Public LDAP Servers"</a>. <i>ldapwiki.com</i>. 2013<span class="reference-accessdate">. Retrieved <span class="nowrap">2020-01-18</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ldapwiki.com&amp;rft.atitle=Ldapwiki%3A+Public+LDAP+Servers&amp;rft.date=2013&amp;rft_id=https%3A%2F%2Fldapwiki.com%2Fwiki%2FPublic%2520LDAP%2520Servers&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALightweight+Directory+Access+Protocol" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Standards_by_The_Open_Group" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Open_Group_standards" title="Template:Open Group standards"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Open_Group_standards" title="Template talk:Open Group standards"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Open_Group_standards&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Standards_by_The_Open_Group" style="font-size:114%;margin:0 4em">Standards by <a href="https://en.wikipedia.org/wiki/The_Open_Group" title="The Open Group">The Open Group</a></div></th></tr><tr><td colspan="2" class="navbox-list navbox-odd hlist" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Application_Response_Measurement" title="Application Response Measurement">ARM</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Common_Desktop_Environment" title="Common Desktop Environment">CDE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Call_Level_Interface" title="Call Level Interface">CLI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Common_Manageability_Programming_Interface" title="Common Manageability Programming Interface">CMPI</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_Computing_Environment" title="Distributed Computing Environment">DCE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/DRDA" title="DRDA">DRDA</a></li>
+<li><a class="mw-selflink selflink">LDAP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Motif_(widget_toolkit)" class="mw-redirect" title="Motif (widget toolkit)">Motif</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Single_UNIX_Specification" title="Single UNIX Specification">SUS</a> (<a href="https://en.wikipedia.org/wiki/POSIX" title="POSIX">POSIX</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/X_Window_System" title="X Window System">X11</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="Query_languages" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Query_languages" title="Template:Query languages"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Query_languages" title="Template talk:Query languages"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Query_languages&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Query_languages" style="font-size:114%;margin:0 4em"><a href="https://en.wikipedia.org/wiki/Query_language" title="Query language">Query languages</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">In current use</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/.QL" title=".QL">.QL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Alpha_(programming_language)" title="Alpha (programming language)">ALPHA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Contextual_Query_Language" title="Contextual Query Language">CQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cypher_Query_Language" class="mw-redirect" title="Cypher Query Language">Cypher</a></li>
+<li><a href="https://en.wikipedia.org/wiki/D_(data_language_specification)" title="D (data language specification)">D</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_Mining_Extensions" title="Data Mining Extensions">DMX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Datalog" title="Datalog">Datalog</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GraphQL" title="GraphQL">GraphQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gremlin_(programming_language)" class="mw-redirect" title="Gremlin (programming language)">Gremlin</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ISBL" title="ISBL">ISBL</a></li>
+<li><a class="mw-selflink selflink">LDAP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query" title="Language Integrated Query">LINQ</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Molecular_Query_Language" title="Molecular Query Language">MQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/MultiDimensional_eXpressions" title="MultiDimensional eXpressions">MDX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Object_Query_Language" title="Object Query Language">OQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Object_Constraint_Language" title="Object Constraint Language">OCL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/QUEL_query_languages" title="QUEL query languages">QUEL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smiles_arbitrary_target_specification" class="mw-redirect" title="Smiles arbitrary target specification">SMARTS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SPARQL" title="SPARQL">SPARQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SQL" title="SQL">SQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XQuery" title="XQuery">XQuery</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XPath" title="XPath">XPath</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yahoo!_query_language" class="mw-redirect" title="Yahoo! query language">YQL</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Proprietary</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Yahoo!_query_language" class="mw-redirect" title="Yahoo! query language">YQL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Language_Integrated_Query" title="Language Integrated Query">LINQ</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Superseded</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/CODASYL" title="CODASYL">CODASYL</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox authority-control" aria-labelledby="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q188816&amp;#124;Edit_this_at_Wikidata" style="padding:3px"><table class="nowraplinks hlist navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th id="Authority_control_frameless_&amp;#124;text-top_&amp;#124;10px_&amp;#124;alt=Edit_this_at_Wikidata_&amp;#124;link=https&amp;#58;//www.wikidata.org/wiki/Q188816&amp;#124;Edit_this_at_Wikidata" scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Help:Authority_control" title="Help:Authority control">Authority control</a> <a href="https://www.wikidata.org/wiki/Q188816" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><span class="nowrap"><a href="https://en.wikipedia.org/wiki/BNF_(identifier)" class="mw-redirect" title="BNF (identifier)">BNF</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://catalogue.bnf.fr/ark:/12148/cb13612263r">cb13612263r</a> <a rel="nofollow" class="external text" href="https://data.bnf.fr/ark:/12148/cb13612263r">(data)</a></span></span></li>
+<li><span class="nowrap"><a href="https://en.wikipedia.org/wiki/GND_(identifier)" class="mw-redirect" title="GND (identifier)">GND</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://d-nb.info/gnd/4537748-0">4537748-0</a></span></span></li>
+<li><span class="nowrap"><a href="https://en.wikipedia.org/wiki/LCCN_(identifier)" class="mw-redirect" title="LCCN (identifier)">LCCN</a>: <span class="uid"><a rel="nofollow" class="external text" href="https://id.loc.gov/authorities/subjects/sh2001008354">sh2001008354</a></span></span></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1389
+Cached time: 20200512133556
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.368 seconds
+Real time usage: 0.504 seconds
+Preprocessor visited node count: 1734/1000000
+Post‐expand include size: 53459/2097152 bytes
+Template argument size: 834/2097152 bytes
+Highest expansion depth: 16/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 63705/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.192/10.000 seconds
+Lua memory usage: 5.61 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  415.610      1 -total
+ 42.38%  176.156      1 Template:Reflist
+ 28.56%  118.701      9 Template:Cite_web
+ 13.19%   54.827      1 Template:Short_description
+ 12.82%   53.274      1 Template:Authority_control
+ 10.39%   43.186      1 Template:IPAc-en
+  9.39%   39.045      2 Template:Cite_IETF
+  8.92%   37.067      1 Template:Pagetype
+  7.50%   31.191      6 Template:Cite_book
+  4.29%   17.820      1 Template:IPstack
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:18508-0!canonical and timestamp 20200512133555 and revision id 953910850
+ -->
+</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;oldid=953910850">https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;oldid=953910850</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Application_layer_protocols" title="Category:Application layer protocols">Application layer protocols</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Directory_services" title="Category:Directory services">Directory services</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Internet_protocols" title="Category:Internet protocols">Internet protocols</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Internet_Standards" title="Category:Internet Standards">Internet Standards</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Open_Group_standards" title="Category:Open Group standards">Open Group standards</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_BNF_identifiers" title="Category:Wikipedia articles with BNF identifiers">Wikipedia articles with BNF identifiers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_GND_identifiers" title="Category:Wikipedia articles with GND identifiers">Wikipedia articles with GND identifiers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Wikipedia_articles_with_LCCN_identifiers" title="Category:Wikipedia articles with LCCN identifiers">Wikipedia articles with LCCN identifiers</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Pages_using_RFC_magic_links" title="Category:Pages using RFC magic links">Pages using RFC magic links</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Lightweight+Directory+Access+Protocol" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Lightweight+Directory+Access+Protocol" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="Lightweight_Directory_Access_Protocol.html" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="https://en.wikipedia.org/wiki/Talk:Lightweight_Directory_Access_Protocol" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="Lightweight_Directory_Access_Protocol.html">Read</a></li><li id="ca-edit" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="Main_Page.html"></a>
+	</div>
+	<div class="portal portal-first" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="../../donate.wikimedia.org/wiki/Special%253AFundraiserRedirector@utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en.html" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="https://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Lightweight_Directory_Access_Protocol" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Lightweight_Directory_Access_Protocol" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;oldid=953910850" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q188816" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Lightweight_Directory_Access_Protocol&amp;id=953910850&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-download-as-rl"><a href="https://en.wikipedia.org/w/index.php?title=Special:ElectronPdf&amp;page=Lightweight+Directory+Access+Protocol&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%A8%D8%B1%D9%88%D8%AA%D9%88%D9%83%D9%88%D9%84_%D8%A7%D9%84%D9%86%D9%81%D8%A7%D8%B0_%D8%A5%D9%84%D9%89_%D8%A7%D9%84%D8%AF%D9%84%D9%8A%D9%84_%D8%A7%D9%84%D8%A8%D8%B3%D9%8A%D8%B7" title="بروتوكول النفاذ إلى الدليل البسيط – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/LDAP" title="LDAP – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-bs"><a href="https://bs.wikipedia.org/wiki/LDAP" title="LDAP – Bosnian" lang="bs" hreflang="bs" class="interlanguage-link-target">Bosanski</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/LDAP" title="LDAP – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cv"><a href="https://cv.wikipedia.org/wiki/LDAP" title="LDAP – Chuvash" lang="cv" hreflang="cv" class="interlanguage-link-target">Чӑвашла</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/LDAP" title="LDAP – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/LDAP" title="LDAP – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/LDAP" title="LDAP – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Protocolo_ligero_de_acceso_a_directorios" title="Protocolo ligero de acceso a directorios – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/LDAP" title="LDAP – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D8%A7%D9%84%E2%80%8C%D8%AF%D9%BE" title="ال‌دپ – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/LDAP" title="LDAP – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/LDAP" title="LDAP – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hr"><a href="https://hr.wikipedia.org/wiki/LDAP" title="LDAP – Croatian" lang="hr" hreflang="hr" class="interlanguage-link-target">Hrvatski</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-lv"><a href="https://lv.wikipedia.org/wiki/LDAP" title="LDAP – Latvian" lang="lv" hreflang="lv" class="interlanguage-link-target">Latviešu</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ms"><a href="https://ms.wikipedia.org/wiki/LDAP" title="LDAP – Malay" lang="ms" hreflang="ms" class="interlanguage-link-target">Bahasa Melayu</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-oc"><a href="https://oc.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Occitan" lang="oc" hreflang="oc" class="interlanguage-link-target">Occitan</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/LDAP" title="LDAP – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/LDAP" title="LDAP – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/LDAP" title="LDAP – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sco"><a href="https://sco.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Scots" lang="sco" hreflang="sco" class="interlanguage-link-target">Scots</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Protokol_%C4%BEahk%C3%A9ho_pr%C3%ADstupu_k_adres%C3%A1ru" title="Protokol ľahkého prístupu k adresáru – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/LDAP" title="LDAP – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/LDAP" title="LDAP – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-fi"><a href="https://fi.wikipedia.org/wiki/LDAP" title="LDAP – Finnish" lang="fi" hreflang="fi" class="interlanguage-link-target">Suomi</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%B2%E0%AF%88%E0%AE%9F%E0%AF%8D%E0%AE%B5%E0%AF%86%E0%AE%AF%E0%AE%BF%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%81_%E0%AE%9F%E0%AF%88%E0%AE%B0%E0%AE%95%E0%AF%8D%E0%AE%9F%E0%AE%B0%E0%AE%BF_%E0%AE%86%E0%AE%95%E0%AF%8D%E0%AE%9A%E0%AE%B8%E0%AF%8D_%E0%AE%AA%E0%AF%81%E0%AE%B0%E0%AF%8B%E0%AE%9F%E0%AF%8D%E0%AE%9F%E0%AF%8B%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%BE%E0%AE%B2%E0%AF%8D" title="லைட்வெயிட்டு டைரக்டரி ஆக்சஸ் புரோட்டோக்கால் – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-th"><a href="https://th.wikipedia.org/wiki/%E0%B9%81%E0%B8%AD%E0%B8%A5%E0%B9%81%E0%B8%94%E0%B8%9B" title="แอลแดป – Thai" lang="th" hreflang="th" class="interlanguage-link-target">ไทย</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/LDAP" title="LDAP – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/LDAP" title="LDAP – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol" title="Lightweight Directory Access Protocol – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-yi"><a href="https://yi.wikipedia.org/wiki/LDAP" title="LDAP – Yiddish" lang="yi" hreflang="yi" class="interlanguage-link-target">ייִדיש</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E8%BD%BB%E5%9E%8B%E7%9B%AE%E5%BD%95%E8%AE%BF%E9%97%AE%E5%8D%8F%E8%AE%AE" title="轻型目录访问协议 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q188816#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 29 April 2020, at 18:05<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="../../wikimediafoundation.org/wiki/Terms_of_Use.html">Terms of Use</a> and <a href="../../wikimediafoundation.org/wiki/Privacy_policy.html">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="../../wikimediafoundation.org/wiki/Privacy_policy.html" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="../../www.mediawiki.org/wiki/Special%253AMyLanguage/How_to_contribute.html">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="../../wikimediafoundation.org/wiki/Cookie_statement.html">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="https://en.m.wikipedia.org/w/index.php?title=Lightweight_Directory_Access_Protocol&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="../../www.wikimediafoundation.org/index.html"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="https://en.wikipedia.org/static/images/wikimedia-button-1.5x.png 1.5x, https://en.wikipedia.org/static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://en.wikipedia.org/static/images/poweredby_mediawiki_132x47.png 1.5x, https://en.wikipedia.org/static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.368","walltime":"0.504","ppvisitednodes":{"value":1734,"limit":1000000},"postexpandincludesize":{"value":53459,"limit":2097152},"templateargumentsize":{"value":834,"limit":2097152},"expansiondepth":{"value":16,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":63705,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  415.610      1 -total"," 42.38%  176.156      1 Template:Reflist"," 28.56%  118.701      9 Template:Cite_web"," 13.19%   54.827      1 Template:Short_description"," 12.82%   53.274      1 Template:Authority_control"," 10.39%   43.186      1 Template:IPAc-en","  9.39%   39.045      2 Template:Cite_IETF","  8.92%   37.067      1 Template:Pagetype","  7.50%   31.191      6 Template:Cite_book","  4.29%   17.820      1 Template:IPstack"]},"scribunto":{"limitreport-timeusage":{"value":"0.192","limit":"10.000"},"limitreport-memusage":{"value":5882091,"limit":52428800}},"cachereport":{"origin":"mw1389","timestamp":"20200512133556","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Lightweight Directory Access Protocol","url":"https:\/\/en.wikipedia.org\/wiki\/Lightweight_Directory_Access_Protocol","sameAs":"http:\/\/www.wikidata.org\/entity\/Q188816","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q188816","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2001-12-05T15:20:10Z","dateModified":"2020-04-29T18:05:56Z","headline":"computer network protocol"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":107,"wgHostname":"mw1409"});});</script></body></html>

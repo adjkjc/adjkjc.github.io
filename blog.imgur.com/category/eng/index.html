@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta property="fb:pages" content="67691197470" />
+<meta charset="UTF-8">
+<title>Engineering | The Imgur Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://blog.imgur.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="The Imgur Blog &raquo; Feed" href="https://blog.imgur.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Imgur Blog &raquo; Comments Feed" href="https://blog.imgur.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="The Imgur Blog &raquo; Engineering Category Feed" href="https://blog.imgur.com/category/eng/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/blog.imgur.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.23"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='yarppWidgetCss-css'  href='https://blog.imgur.com/wp-content/plugins/yet-another-related-posts-plugin/style/widget.css?ver=4.3.23' type='text/css' media='all' />
+<link rel='stylesheet' id='zilla-shortcodes-css'  href='https://blog.imgur.com/wp-content/plugins/zilla-shortcodes/assets/css/shortcodes.css?ver=4.3.23' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='https://blog.imgur.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.3' type='text/css' media='all' />
+<link rel='stylesheet' id='sb_instagram_styles-css'  href='https://blog.imgur.com/wp-content/plugins/instagram-feed/css/sb-instagram.css?ver=1.3.8' type='text/css' media='all' />
+<link rel='stylesheet' id='sb_instagram_icons-css'  href='//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?1&#038;ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='https://blog.imgur.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimp-for-wp-checkbox-css'  href='https://blog.imgur.com/wp-content/plugins/mailchimp-for-wp/assets/css/checkbox.min.css?ver=2.3.16' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-font-awesome-css'  href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-style-css'  href='https://blog.imgur.com/wp-content/themes/mh_cicero/style.css?ver=1.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mh-google-fonts-css'  href='//fonts.googleapis.com/css?family=Prata|Open+Sans:300,400,400italic,600,700' type='text/css' media='all' />
+<link rel='stylesheet' id='mailchimp-for-wp-form-css'  href='https://blog.imgur.com/wp-content/plugins/mailchimp-for-wp/assets/css/form.min.css?ver=2.3.16' type='text/css' media='all' />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v5.5.2 - Universal enabled - https://www.monsterinsights.com/ -->
+<script type="text/javascript">
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+	__gaTracker('create', 'UA-6671908-12', 'auto');
+	__gaTracker('set', 'forceSSL', true);
+	__gaTracker('send','pageview');
+
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/ui/accordion.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-content/plugins/zilla-shortcodes/assets/js/zilla-shortcodes-lib.js?ver=4.3.23'></script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-content/themes/mh_cicero/js/scripts.js?ver=4.3.23'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://blog.imgur.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://blog.imgur.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.3.23" />
+			<meta property="fb:pages" content="67691197470" />
+				<style type="text/css">
+    	    		.header-wrap, .entry-social a, .entry-social .more-link:hover, #searchform div, #searchform #s, .page-numbers, a .pagelink, #infinite-handle span, #infinite-footer .container, footer { background: #191245; }
+    	    				.main-nav ul li:hover, .main-nav ul .current-menu-item, .main-nav ul li:hover > ul, .slicknav_menu, .entry-social a:hover, .entry-social .more-link, .page-numbers:hover, .current, .pagelink, a:hover .pagelink, input[type="submit"], table th, #infinite-handle span:hover, .flexslider .flex-prev:hover, .flexslider .flex-next:hover { background: #1bb76e; }
+			a:hover, .entry-content a, .entry-icon .fa-inverse, .commentlist a:hover, .comment-author, .comment-author a, .social-nav .fa-mh-social:hover { color: #1bb76e; }
+			.featured-caption, blockquote, .commentlist .bypostauthor .avatar { border-color: #1bb76e; }
+    	    	.logo {width:300px;margin-top:-5px;}
+.entry-avatar {display:none;}
+.entry-icon {display:none;}
+.featured-caption {border-left:0px;width:315px;}
+li.entry-social-google {display:none}
+li.entry-social-linkedin {display:none}
+.copyright {display:none}
+#mc4wp-form-1 p label {display:none}
+#mc4wp-form-1 p input {text-align:center;width:100%}
+.twitter_widget_footer_link {display:none}
+.rtw_twitter_username p {display:none}
+.rtw_twitter_username h3:before {content:'@'}
+.rtw_twitter_username h3 {font-size:19px;}
+#searchform #s {background:#f1f1f1;color:#666;}
+#searchform div {background:#f1f1f1;}
+li.entry-social-facebook {display:none}
+li.entry-social-twitter {display:none}
+.sb-widget {padding-bottom:15px !important}
+#mc4wp-form-1 p input {text-transform:uppercase}	</style>
+    <link rel="shortcut icon" href="http://blog.imgur.com/wp-content/uploads/2018/02/favicon-196x196.png">
+<!--[if lt IE 9]>
+<script src="https://blog.imgur.com/wp-content/themes/mh_cicero/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #191245; background-image: url('https://blog.imgur.com/wp-content/uploads/2018/02/meowlong1.jpg'); background-repeat: no-repeat; background-position: top center; background-attachment: fixed; }
+</style>
+<link rel="icon" href="https://blog.imgur.com/wp-content/uploads/2017/12/profile-400x400.png" sizes="32x32" />
+<link rel="icon" href="https://blog.imgur.com/wp-content/uploads/2017/12/profile-400x400.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://blog.imgur.com/wp-content/uploads/2017/12/profile-400x400.png">
+<meta name="msapplication-TileImage" content="https://blog.imgur.com/wp-content/uploads/2017/12/profile-400x400.png">
+</head>
+<body class="archive category category-eng category-16 custom-background mh-right-sb">
+<div class="mh-container">
+<header class="header-wrap clearfix">
+	<div class="logo" role="banner">
+<a href="https://blog.imgur.com/" title="The Imgur Blog" rel="home">
+<img src="https://blog.imgur.com/wp-content/uploads/2018/02/ok.png" height="90" width="600" alt="The Imgur Blog" />
+</a>
+</div>
+	<nav class="main-nav clearfix">
+		<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-12008" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-12008"><a href="https://imgur.com">Imgur.com</a></li>
+<li id="menu-item-12402" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-12402"><a href="https://blog.imgur.com/category/eng/">Engineering</a></li>
+<li id="menu-item-7537" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7537"><a href="http://store.imgur.com">Store</a></li>
+<li id="menu-item-7533" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7533"><a href="http://imgur.com/help">Support</a></li>
+</ul></div>	</nav>
+</header><div class="mh-content-section clearfix">
+		<div id="main-content" class="mh-content">
+		<h1 class="page-title content-margin content-background">Engineering</h1>
+		       				<article id="post-12658" class="loop-container clearfix post-12658 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-features category-news category-updates">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/mainslie/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/" title="The Time Has Come! Share Videos up to 60 Seconds Long on Imgur" rel="bookmark">The Time Has Come! Share Videos up to 60 Seconds Long on Imgur</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>July 31, 2019</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/features/" rel="category tag">Features</a>, <a href="https://blog.imgur.com/category/news/" rel="category tag">News</a>, <a href="https://blog.imgur.com/category/updates/" rel="category tag">Updates</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/mainslie/">Mike Ainslie</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/"><img width="610" height="210" src="https://blog.imgur.com/wp-content/uploads/2019/07/graphic.png" class="attachment-large-thumb wp-post-image" alt="graphic" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>If 60 seconds is long enough for Nicolas Cage to steal a car, what will you do with 60 seconds? 60 second video upload &#8212; with audio! &#8212; is now&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/&t=The Time Has Come! Share Videos up to 60 Seconds Long on Imgur" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=The Time Has Come! Share Videos up to 60 Seconds Long on Imgur:&url=https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2019/07/31/the-time-has-come-share-videos-up-to-60-seconds-long-on-imgur/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-12291" class="loop-container clearfix post-12291 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-tech-tuesday tag-featured tag-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/" title="5 Tips on Succeeding as a Woman in Technology" rel="bookmark">5 Tips on Succeeding as a Woman in Technology</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>April 24, 2018</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/"><img width="504" height="343" src="https://blog.imgur.com/wp-content/uploads/2018/04/1_ilajsXRNRBnJvV3_W7lwpQ.jpeg" class="attachment-large-thumb wp-post-image" alt="1_ilajsXRNRBnJvV3_W7lwpQ" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>This post first appeared on Medium, by Amber Morey-Wu. Women have increased their numbers in many professions previously dominated by men, including law, business, medicine, and other STEM fields in&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/&t=5 Tips on Succeeding as a Woman in Technology" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=5 Tips on Succeeding as a Woman in Technology:&url=https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2018/04/24/5-tips-on-succeeding-as-a-woman-in-technology/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-12106" class="loop-container clearfix post-12106 post type-post status-publish format-standard has-post-thumbnail hentry category-eng tag-developer tag-engineering tag-featured tag-imgur tag-tech-tuesdays">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/" title="Guiding Principles for Imgur Engineers" rel="bookmark">Guiding Principles for Imgur Engineers</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>February 13, 2018</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/"><img width="517" height="343" src="https://blog.imgur.com/wp-content/uploads/2018/02/ZqW0963.jpg" class="attachment-large-thumb wp-post-image" alt="ZqW0963" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>This blog first appeared on Medium on February 12, 2018, written by Muts Inayama, VP Engineering at Imgur. Back in April 2017, our CEO/CTO Alan Schaaf, our Engineering Leadership team,&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/&t=Guiding Principles for Imgur Engineers" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Guiding Principles for Imgur Engineers:&url=https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2018/02/13/guiding-principles-for-imgur-engineers/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-9959" class="loop-container clearfix post-9959 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-tech-tuesday tag-coding tag-developer tag-engineering tag-work-at-imgur">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/" title="What It’s Like to Work on Imgur’s Platform Team" rel="bookmark">What It’s Like to Work on Imgur’s Platform Team</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>August 23, 2016</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/"><img width="457" height="343" src="https://blog.imgur.com/wp-content/uploads/2016/08/7bmAC65g.jpg" class="attachment-large-thumb wp-post-image" alt="7bmAC65g" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>Written by Dan P., full stack developer at Imgur Recently I was asked to give some insight to potential Imgur employees into what my role is and what sort of&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/&t=What It’s Like to Work on Imgur’s Platform Team" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=What It’s Like to Work on Imgur’s Platform Team:&url=https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2016/08/23/what-its-like-to-work-on-imgurs-platform-team/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-9739" class="loop-container clearfix post-9739 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-tech-tuesday tag-android tag-hiring tag-work-at-imgur">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2016/07/26/working-imgur-android-app/" title="Working on the Imgur Android App" rel="bookmark">Working on the Imgur Android App</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>July 26, 2016</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2016/07/26/working-imgur-android-app/"><img width="610" height="343" src="https://blog.imgur.com/wp-content/uploads/2016/07/uww2sPd.gif" class="attachment-large-thumb wp-post-image" alt="uww2sPd" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>Whether it&#8217;s through a quick laugh or a moment of true human connection, Imgur lifts millions of people&#8217;s spirits every single day. Increasingly, more of those moments are happening on&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2016/07/26/working-imgur-android-app/&t=Working on the Imgur Android App" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Working on the Imgur Android App:&url=https://blog.imgur.com/2016/07/26/working-imgur-android-app/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2016/07/26/working-imgur-android-app/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2016/07/26/working-imgur-android-app/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2016/07/26/working-imgur-android-app/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-7684" class="loop-container clearfix post-7684 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/" title="Tech Tuesday: Architecting the New Imgur Mobile Web" rel="bookmark">Tech Tuesday: Architecting the New Imgur Mobile Web</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>November 3, 2015</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/"><img width="457" height="343" src="https://blog.imgur.com/wp-content/uploads/2015/11/h8.png" class="attachment-large-thumb wp-post-image" alt="h8" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>Making mobile web apps is hard. Browser performance, tooling, and APIs are still a long way from catching up with native mobile apps. Imgur has long had a mobile website,&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/&t=Tech Tuesday: Architecting the New Imgur Mobile Web" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Tech Tuesday: Architecting the New Imgur Mobile Web:&url=https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2015/11/03/tech-tuesday-architecting-the-new-imgur-mobile-web/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-7284" class="loop-container clearfix post-7284 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-tech-tuesday tag-engineering tag-imgur tag-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/" title="Tech Tuesday: Imgur Notifications: From MySQL to HBase" rel="bookmark">Tech Tuesday: Imgur Notifications: From MySQL to HBase</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>September 15, 2015</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/"><img width="379" height="216" src="https://blog.imgur.com/wp-content/uploads/2015/09/bill.png" class="attachment-large-thumb wp-post-image" alt="bill" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>Imgur is a heavy user of MySQL. It has been a part of our stack since our beginning. However, with our scale it has become increasingly difficult to throw more&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/&t=Tech Tuesday: Imgur Notifications: From MySQL to HBase" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Tech Tuesday: Imgur Notifications: From MySQL to HBase:&url=https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2015/09/15/tech-tuesday-imgur-notifications-from-mysql-to-hbase/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-7288" class="loop-container clearfix post-7288 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-news category-tech-tuesday tag-engineering tag-imgur tag-jobs tag-news tag-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/" title="Tech Tuesday: Engineering at Imgur" rel="bookmark">Tech Tuesday: Engineering at Imgur</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>September 15, 2015</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/news/" rel="category tag">News</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/"><img width="519" height="343" src="https://blog.imgur.com/wp-content/uploads/2015/09/fhdsg.png" class="attachment-large-thumb wp-post-image" alt="fhdsg" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>Imgur started in 2009 as an image host, and over the years we have become the goto image host for many sites across the internet. We did this so well&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/&t=Tech Tuesday: Engineering at Imgur" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Tech Tuesday: Engineering at Imgur:&url=https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2015/09/15/tech-tuesday-engineering-at-imgur/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-7266" class="loop-container clearfix post-7266 post type-post status-publish format-standard has-post-thumbnail hentry category-eng category-news category-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/" title="A Great Day for Wallpaper Enthusiasts" rel="bookmark">A Great Day for Wallpaper Enthusiasts</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>September 14, 2015</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/news/" rel="category tag">News</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+			<div class="entry-thumbnail">
+			<a href="https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/"><img width="610" height="181" src="https://blog.imgur.com/wp-content/uploads/2015/09/kfjg.png" class="attachment-large-thumb wp-post-image" alt="kfjg" /></a>
+			<div class="entry-icon">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-picture-o fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+		</div>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>If you thought that Imgur looked a bit different today, you&#8217;re right! We launched some exciting new updates to our gallery, including a sprucing up in our general design as&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/&t=A Great Day for Wallpaper Enthusiasts" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=A Great Day for Wallpaper Enthusiasts:&url=https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2015/09/14/a-great-day-for-wallpaper-enthusiasts-2/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>					<article id="post-5231" class="loop-container clearfix post-5231 post type-post status-publish format-standard hentry category-eng category-tech-tuesday">
+	<header class="entry-header">
+		<div class="clearfix">
+			<div class="entry-avatar">
+				<a href="https://blog.imgur.com/author/sarah/"></a>
+			</div>
+			<h3 class="entry-title"><a href="https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/" title="Tech Tuesday: The Basics of Converting GIF Delays to Video Frames" rel="bookmark">Tech Tuesday: The Basics of Converting GIF Delays to Video Frames</a></h3>
+		</div>
+		<p class="entry-meta">
+<i class="fa fa-clock-o"></i><span class="updated"><time>February 17, 2015</time></span>
+<i class="fa fa-folder-open-o"></i><span class="entry-category"><a href="https://blog.imgur.com/category/eng/" rel="category tag">Engineering</a>, <a href="https://blog.imgur.com/category/tech-tuesday/" rel="category tag">Tech Tuesday</a></span>
+</p><div class="author vcard" style="display:none"><a class="url fn" href="https://blog.imgur.com/author/sarah/">Sarah</a></div>
+	</header>
+		<div class="entry-content content-margin clearfix">
+		<div class="entry-excerpt"><p>If you want to convert GIFs to video or display a GIF frame by frame (thanks iOS!), you’ll run into a fundamental problem: GIFs don’t have a constant frame rate,&#8230;</p>
+</div>
+	</div>
+		<ul class="entry-social clearfix">
+		    		<li class="entry-social-facebook">
+    			<a href="https://www.facebook.com/sharer/sharer.php?u=https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/&t=Tech Tuesday: The Basics of Converting GIF Delays to Video Frames" target="_blank">
+				<i class="fa fa-facebook"></i></a>
+			</li>
+			<li class="entry-social-twitter">
+				<a href="https://twitter.com/intent/tweet?text=Tech Tuesday: The Basics of Converting GIF Delays to Video Frames:&url=https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/" target="_blank">
+				<i class="fa fa-twitter"></i></a>
+			</li>
+			<li class="entry-social-google">
+				<a href="https://plus.google.com/share?https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/" target="_blank">
+				<i class="fa fa-google-plus"></i></a>
+			</li>
+			<li class="entry-social-linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/" target="_blank">
+				<i class="fa fa-linkedin"></i></a>
+			</li>
+							<li class="entry-social-more">
+				<a href="https://blog.imgur.com/2015/02/17/tech-tuesday-the-basics-of-converting-gif-delays-to-video-frames/" class="more-link">Read More				<i class="fa fa-arrow-circle-o-right"></i></a>
+			</li>
+			</ul>
+</article>				<div class="pagination loop-pagination clearfix"><span class='page-numbers current'>1</span>
+<a class='page-numbers' href='https://blog.imgur.com/category/eng/page/2/'>2</a>
+<a class="next page-numbers" href="https://blog.imgur.com/category/eng/page/2/">&raquo;</a></div>			</div>
+	<aside id="main-sidebar" class="mh-sidebar">
+	<div class="sb-widget"><div class="widget-content"><form role="search" method="get" id="searchform" class="searchform" action="https://blog.imgur.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></div></div><div class="sb-widget"><div class="widget-content"><h4 class="widget-title">Categories</h4>		<ul>
+	<li class="cat-item cat-item-12"><a href="https://blog.imgur.com/category/news/community/" >Community</a> (219)
+</li>
+	<li class="cat-item cat-item-7"><a href="https://blog.imgur.com/category/contests/" >Contests</a> (17)
+</li>
+	<li class="cat-item cat-item-16 current-cat"><a href="https://blog.imgur.com/category/eng/" >Engineering</a> (16)
+</li>
+	<li class="cat-item cat-item-4"><a href="https://blog.imgur.com/category/images/" >Featured Images</a> (303)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://blog.imgur.com/category/features/" >Features</a> (70)
+</li>
+	<li class="cat-item cat-item-17"><a href="https://blog.imgur.com/category/imgurian-store/" >Imgurian Store</a> (9)
+</li>
+	<li class="cat-item cat-item-71"><a href="https://blog.imgur.com/category/in-case-you-missed-it/" >In Case You Missed It</a> (67)
+</li>
+	<li class="cat-item cat-item-313"><a href="https://blog.imgur.com/category/insideimgur/" title="Life inside Imgur HQ">Inside Imgur</a> (4)
+</li>
+	<li class="cat-item cat-item-5"><a href="https://blog.imgur.com/category/news/" >News</a> (137)
+</li>
+	<li class="cat-item cat-item-9"><a href="https://blog.imgur.com/category/tech-tuesday/" >Tech Tuesday</a> (32)
+</li>
+	<li class="cat-item cat-item-3"><a href="https://blog.imgur.com/category/updates/" >Updates</a> (80)
+</li>
+		</ul>
+</div></div><div class="sb-widget"><div class="widget-content"><h4 class="widget-title">Follow Us on Facebook</h4><div class="fb-page" data-href="https://www.facebook.com/imgur/" data-width="280" data-height="730" data-hide-cover="1" data-show-facepile="0" data-show-posts="1"></div>
+</div></div><div class="sb-widget"><div class="widget-content"><h4 class="widget-title">Tags</h4><div class="tagcloud"><a href='https://blog.imgur.com/tag/2016/' class='tag-link-178' title='4 topics' style='font-size: 8.9459459459459pt;'>2016</a>
+<a href='https://blog.imgur.com/tag/2017/' class='tag-link-275' title='33 topics' style='font-size: 16.797297297297pt;'>2017</a>
+<a href='https://blog.imgur.com/tag/2018/' class='tag-link-388' title='7 topics' style='font-size: 10.837837837838pt;'>2018</a>
+<a href='https://blog.imgur.com/tag/adam-savage/' class='tag-link-259' title='3 topics' style='font-size: 8pt;'>Adam Savage</a>
+<a href='https://blog.imgur.com/tag/ads/' class='tag-link-117' title='4 topics' style='font-size: 8.9459459459459pt;'>ads</a>
+<a href='https://blog.imgur.com/tag/android/' class='tag-link-86' title='3 topics' style='font-size: 8pt;'>android</a>
+<a href='https://blog.imgur.com/tag/app/' class='tag-link-90' title='9 topics' style='font-size: 11.783783783784pt;'>app</a>
+<a href='https://blog.imgur.com/tag/april/' class='tag-link-331' title='5 topics' style='font-size: 9.7027027027027pt;'>April</a>
+<a href='https://blog.imgur.com/tag/art/' class='tag-link-66' title='5 topics' style='font-size: 9.7027027027027pt;'>Art</a>
+<a href='https://blog.imgur.com/tag/august/' class='tag-link-376' title='5 topics' style='font-size: 9.7027027027027pt;'>August</a>
+<a href='https://blog.imgur.com/tag/best/' class='tag-link-233' title='4 topics' style='font-size: 8.9459459459459pt;'>best</a>
+<a href='https://blog.imgur.com/tag/best-of/' class='tag-link-142' title='5 topics' style='font-size: 9.7027027027027pt;'>best of</a>
+<a href='https://blog.imgur.com/tag/bill-nye/' class='tag-link-81' title='3 topics' style='font-size: 8pt;'>bill nye</a>
+<a href='https://blog.imgur.com/tag/blog/' class='tag-link-141' title='3 topics' style='font-size: 8pt;'>Blog</a>
+<a href='https://blog.imgur.com/tag/community/' class='tag-link-69' title='73 topics' style='font-size: 20.013513513514pt;'>community</a>
+<a href='https://blog.imgur.com/tag/design/' class='tag-link-102' title='4 topics' style='font-size: 8.9459459459459pt;'>design</a>
+<a href='https://blog.imgur.com/tag/dog/' class='tag-link-128' title='4 topics' style='font-size: 8.9459459459459pt;'>dog</a>
+<a href='https://blog.imgur.com/tag/dogs/' class='tag-link-88' title='4 topics' style='font-size: 8.9459459459459pt;'>dogs</a>
+<a href='https://blog.imgur.com/tag/engineering/' class='tag-link-54' title='5 topics' style='font-size: 9.7027027027027pt;'>Engineering</a>
+<a href='https://blog.imgur.com/tag/favorite/' class='tag-link-225' title='5 topics' style='font-size: 9.7027027027027pt;'>favorite</a>
+<a href='https://blog.imgur.com/tag/favorite-posts/' class='tag-link-274' title='4 topics' style='font-size: 8.9459459459459pt;'>favorite posts</a>
+<a href='https://blog.imgur.com/tag/february/' class='tag-link-285' title='3 topics' style='font-size: 8pt;'>february</a>
+<a href='https://blog.imgur.com/tag/funny/' class='tag-link-169' title='3 topics' style='font-size: 8pt;'>funny</a>
+<a href='https://blog.imgur.com/tag/gif/' class='tag-link-77' title='6 topics' style='font-size: 10.364864864865pt;'>GIF</a>
+<a href='https://blog.imgur.com/tag/gifs/' class='tag-link-62' title='8 topics' style='font-size: 11.310810810811pt;'>Gifs</a>
+<a href='https://blog.imgur.com/tag/icymi/' class='tag-link-148' title='39 topics' style='font-size: 17.459459459459pt;'>icymi</a>
+<a href='https://blog.imgur.com/tag/imgur/' class='tag-link-19' title='118 topics' style='font-size: 22pt;'>imgur</a>
+<a href='https://blog.imgur.com/tag/imgurian/' class='tag-link-53' title='7 topics' style='font-size: 10.837837837838pt;'>Imgurian</a>
+<a href='https://blog.imgur.com/tag/imgurians/' class='tag-link-74' title='9 topics' style='font-size: 11.783783783784pt;'>Imgurians</a>
+<a href='https://blog.imgur.com/tag/internet/' class='tag-link-153' title='3 topics' style='font-size: 8pt;'>internet</a>
+<a href='https://blog.imgur.com/tag/january/' class='tag-link-273' title='5 topics' style='font-size: 9.7027027027027pt;'>january</a>
+<a href='https://blog.imgur.com/tag/july/' class='tag-link-371' title='5 topics' style='font-size: 9.7027027027027pt;'>July</a>
+<a href='https://blog.imgur.com/tag/june/' class='tag-link-350' title='7 topics' style='font-size: 10.837837837838pt;'>june</a>
+<a href='https://blog.imgur.com/tag/may/' class='tag-link-345' title='6 topics' style='font-size: 10.364864864865pt;'>may</a>
+<a href='https://blog.imgur.com/tag/meme/' class='tag-link-22' title='10 topics' style='font-size: 12.162162162162pt;'>meme</a>
+<a href='https://blog.imgur.com/tag/memes/' class='tag-link-82' title='8 topics' style='font-size: 11.310810810811pt;'>memes</a>
+<a href='https://blog.imgur.com/tag/oc/' class='tag-link-197' title='3 topics' style='font-size: 8pt;'>OC</a>
+<a href='https://blog.imgur.com/tag/phil/' class='tag-link-254' title='3 topics' style='font-size: 8pt;'>Phil</a>
+<a href='https://blog.imgur.com/tag/posts/' class='tag-link-282' title='5 topics' style='font-size: 9.7027027027027pt;'>posts</a>
+<a href='https://blog.imgur.com/tag/privacy/' class='tag-link-382' title='3 topics' style='font-size: 8pt;'>privacy</a>
+<a href='https://blog.imgur.com/tag/secret-santa/' class='tag-link-241' title='6 topics' style='font-size: 10.364864864865pt;'>secret santa</a>
+<a href='https://blog.imgur.com/tag/september/' class='tag-link-227' title='5 topics' style='font-size: 9.7027027027027pt;'>september</a>
+<a href='https://blog.imgur.com/tag/spotlight/' class='tag-link-208' title='4 topics' style='font-size: 8.9459459459459pt;'>spotlight</a>
+<a href='https://blog.imgur.com/tag/tech-tuesday/' class='tag-link-57' title='4 topics' style='font-size: 8.9459459459459pt;'>Tech Tuesday</a></div>
+</div></div></aside></div>
+<footer id="mh-footer" class="footer clearfix">
+		<div class="copyright-wrap">
+		<p class="copyright">Copyright &copy; 2020 | MH Cicero by <a href="http://www.mhthemes.com/" title="Premium WordPress Themes" rel="nofollow">MH Themes</a></p>
+	</div>
+</footer>
+</div>
+			<div id="fb-root"></div>
+			<script>
+				(function(d, s, id){
+					var js, fjs = d.getElementsByTagName(s)[0];
+					if (d.getElementById(id)) return;
+					js = d.createElement(s); js.id = id;
+					js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+					fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script> <script type='text/javascript' src='https://blog.imgur.com/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"https:\/\/blog.imgur.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ...","cached":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sb_instagram_js_options = {"sb_instagram_at":"1442850362.1654d0c.d87f4d38fcff412b9a206c5f32ccf10d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://blog.imgur.com/wp-content/plugins/instagram-feed/js/sb-instagram.js?ver=1.3.8'></script>
+</body>
+</html>
+<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Object Caching 2115/2249 objects using disk
+Page Caching using disk: enhanced (SSL caching disabled)
+
+ Served from: *.imgur.com @ 2020-05-22 15:31:11 by W3 Total Cache -->

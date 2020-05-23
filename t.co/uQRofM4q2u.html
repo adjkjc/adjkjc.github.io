@@ -1,0 +1,259 @@
+<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Does the news reflect what we die from? - Our World in Data</title><meta name="description" content="There is a large disconnect between what gets covered in the media and the day-to-day reality for most. How do causes of death in the US match with media coverage and what people search for online?"/><link rel="canonical" href="https://ourworldindata.org/does-the-news-reflect-what-we-die-from"/><link rel="alternate" type="application/atom+xml" href="https://ourworldindata.org/atom.xml"/><link rel="apple-touch-icon" sizes="180x180" href="https://ourworldindata.org/apple-touch-icon.png"/><meta property="fb:app_id" content="1149943818390250"/><meta property="og:url" content="https://ourworldindata.org/does-the-news-reflect-what-we-die-from"/><meta property="og:title" content="Does the news reflect what we die from?"/><meta property="og:description" content="There is a large disconnect between what gets covered in the media and the day-to-day reality for most. How do causes of death in the US match with media coverage and what people search for online?"/><meta property="og:image" content="https://ourworldindata.org/app/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-768x590.png"/><meta property="og:site_name" content="Our World in Data"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:site" content="@OurWorldInData"/><meta name="twitter:creator" content="@OurWorldInData"/><meta name="twitter:title" content="Does the news reflect what we die from?"/><meta name="twitter:description" content="There is a large disconnect between what gets covered in the media and the day-to-day reality for most. How do causes of death in the US match with media coverage and what people search for online?"/><meta name="twitter:image" content="https://ourworldindata.org/app/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-768x590.png"/><link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i|Playfair+Display:400,700&amp;display=swap" rel="stylesheet"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/commons.css"/><link rel="stylesheet" href="https://ourworldindata.org/assets/css/owid.css"/><script type="text/javascript">
+  (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+  ;r.type="text/javascript";r.async=true
+  ;r.src="https://cdn.amplitude.com/libs/amplitude-4.4.0-min.gz.js"
+  ;r.onload=function(){if(e.amplitude.runQueuedFunctions){
+  e.amplitude.runQueuedFunctions()}else{
+  console.log("[Amplitude] Error: could not load SDK")}}
+  ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+  ;function s(e,t){e.prototype[t]=function(){
+  this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+  var o=function(){this._q=[];return this}
+  ;var a=["add","append","clearAll","prepend","set","setOnce","unset"]
+  ;for(var u=0;u<a.length;u++){s(o,a[u])}n.Identify=o;var c=function(){this._q=[]
+  ;return this}
+  ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+  ;for(var p=0;p<l.length;p++){s(c,l[p])}n.Revenue=c
+  ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+  ;function v(e){function t(t){e[t]=function(){
+  e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+  for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+  e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+  ;if(!n._iq.hasOwnProperty(e)){n._iq[e]={_q:[]};v(n._iq[e])}return n._iq[e]}
+  ;e.amplitude=n})(window,document);
+
+  amplitude.getInstance().init("0e57d4b93c5d7c33195d5dd89d563665");
+</script><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N2D4V8S');</script>
+<!-- End Google Tag Manager --></head><body class=""><header class="site-header"><div class="wrapper site-navigation-bar"><div class="site-logo"><a href="https://ourworldindata.org/">Our World<br/> in Data</a></div><nav class="site-navigation"><div class="topics-button-wrapper"><a href="https://ourworldindata.org/#entries" class="topics-button"><div class="label">Articles <br/><strong>by topic</strong></div><div class="icon"><svg width="12" height="6"><path d="M0,0 L12,0 L6,6 Z" fill="currentColor"></path></svg></div></a></div><div><div class="site-primary-navigation"><form class="HeaderSearch" action="https://ourworldindata.org/search" method="GET"><input type="search" name="q" placeholder="Search..."/><div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div></form><ul class="site-primary-links"><li><a href="https://ourworldindata.org/blog" data-track-note="header-navigation">Latest</a></li><li><a href="https://ourworldindata.org/about" data-track-note="header-navigation">About</a></li><li><a href="https://ourworldindata.org/donate" data-track-note="header-navigation">Donate</a></li></ul></div><div class="site-secondary-navigation"><ul class="site-secondary-links"><li><a href="https://ourworldindata.org/charts" data-track-note="header-navigation">All charts</a></li><li><a href="https://sdg-tracker.org" data-track-note="header-navigation">Sustainable Development Goals Tracker</a></li></ul></div></div></nav><div class="header-logos-wrapper"><a href="https://www.oxfordmartin.ox.ac.uk/global-development" class="oxford-logo"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo"/></a><a href="https://global-change-data-lab.org/" class="gcdl-logo"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo"/></a></div><div class="mobile-site-navigation"><button data-track-note="mobile-search-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></button><button data-track-note="mobile-newsletter-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-open-text" class="svg-inline--fa fa-envelope-open-text fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z"></path></svg></button><button data-track-note="mobile-hamburger-button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg></button></div></div></header><div class="alert-banner"><div class="content"><div class="text"><strong>Coronavirus pandemic</strong>: daily updated research and data.</div><a href="https://ourworldindata.org/coronavirus">Read more</a></div></div><main><article class="page no-sidebar thin-banner"><div class="offset-header"><header class="article-header"><h1 class="entry-title"><span>Does the news reflect what we die from?</span></h1><div class="authors-byline"><a href="https://ourworldindata.org/team">by Hannah Ritchie</a></div><time>May 29, 2019</time><div class="blog-info">Our World in Data presents the empirical evidence on global development in entries dedicated to specific topics.<br>This blog post draws on data and research discussed in our entry on <strong><a href="https://ourworldindata.org/causes-of-death" target="_blank" rel="noopener noreferrer">Causes of Death</a></strong>.</div><div class="tools"><a href="uQRofM4q2u.html#licence"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="creative-commons" class="svg-inline--fa fa-creative-commons fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M245.83 214.87l-33.22 17.28c-9.43-19.58-25.24-19.93-27.46-19.93-22.13 0-33.22 14.61-33.22 43.84 0 23.57 9.21 43.84 33.22 43.84 14.47 0 24.65-7.09 30.57-21.26l30.55 15.5c-6.17 11.51-25.69 38.98-65.1 38.98-22.6 0-73.96-10.32-73.96-77.05 0-58.69 43-77.06 72.63-77.06 30.72-.01 52.7 11.95 65.99 35.86zm143.05 0l-32.78 17.28c-9.5-19.77-25.72-19.93-27.9-19.93-22.14 0-33.22 14.61-33.22 43.84 0 23.55 9.23 43.84 33.22 43.84 14.45 0 24.65-7.09 30.54-21.26l31 15.5c-2.1 3.75-21.39 38.98-65.09 38.98-22.69 0-73.96-9.87-73.96-77.05 0-58.67 42.97-77.06 72.63-77.06 30.71-.01 52.58 11.95 65.56 35.86zM247.56 8.05C104.74 8.05 0 123.11 0 256.05c0 138.49 113.6 248 247.56 248 129.93 0 248.44-100.87 248.44-248 0-137.87-106.62-248-248.44-248zm.87 450.81c-112.54 0-203.7-93.04-203.7-202.81 0-105.42 85.43-203.27 203.72-203.27 112.53 0 202.82 89.46 202.82 203.26-.01 121.69-99.68 202.82-202.84 202.82z"></path></svg>Reuse our work <strong>freely</strong></a></div></header></div><div class="content-wrapper"><div class="offset-content"><div class="content-and-footnotes"><div class="article-content">
+
+
+
+<section><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>One of the primary motivations for our work at Our World in Data is to provide a fact-based overview of the world we live in &#x2014; a perspective that includes the persistent and long-term changes that run as a backdrop to our daily lives. We aim to provide the complement to the fast-paced reporting we see in the news. The media provides a near-instantaneous snapshot of single events; events that are, in most cases, negative. The persistent, large-scale trends of <a href="https://ourworldindata.org/a-history-of-global-living-conditions-in-5-charts">progress</a> never make the headlines.</p><p>But is there evidence that such a disconnect exists between what we see in the news and what is reality for most of us?</p><p>One study attempted to look at this from the perspective of what we die from: is what we actually die from reflected in the media coverage these topics receive?<a id="ref-1" class="ref" href="uQRofM4q2u.html#note-1"><sup>1</sup></a></p><p> To answer this, Shen and his team compared four key sources of data:</p><ul><li>the causes of deaths in the USA (statistics published by the <a href="https://wonder.cdc.gov/" target="_blank" rel="noopener noreferrer">CDC&#x2019;s WONDER public health database</a>)</li><li>Google search trends for causes of deaths (sourced from <a href="https://trends.google.com/trends/?geo=US" target="_blank" rel="noopener noreferrer">Google Trends</a>)</li><li>mentions of&#xA0;causes of deaths in the <em>New York Times</em> (sourced from the <a href="https://developer.nytimes.com/" target="_blank" rel="noopener noreferrer">NYT article database</a>)</li><li>mentions of causes of deaths in <em>The Guardian</em> newspaper (sourced from <a href="http://open-platform.theguardian.com/" target="_blank" rel="noopener noreferrer">The Guardian article database</a>)</li></ul><p>For each source the authors calculated the relative share of deaths, share of Google searches, and share of media coverage. They restricted the considered causes to the top 10 causes of death in the US and additionally included terrorism, homicide, and drug overdoses.&#xA0;This allows for us to compare the relative representation across different sources.<a id="ref-2" class="ref" href="uQRofM4q2u.html#note-2"><sup>2</sup></a></p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="what-we-die-from-what-we-google-what-we-read-in-the-news"><a class="deep-link" href="uQRofM4q2u.html#what-we-die-from-what-we-google-what-we-read-in-the-news"></a>What we die from; what we Google; what we read in the news</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>So, what do the results look like? In the chart below I present the comparison.</p><p>The first column represents each cause&#x2019;s share of US deaths; the second the share of Google searches each receives; third, the relative article mentions in the <em>New York Times;</em>&#xA0;and finally article mentions in&#xA0;<em>The Guardian</em>.</p><p>The coverage in both newspapers here is strikingly similar. And the discrepancy between what we die actually from and what we get informed of in the media is what stands out:</p><ul><li>around one-third of the considered causes of deaths resulted from heart disease, yet this cause of death receives only 2-3 percent of Google searches and media coverage;</li><li>just under one-third of the deaths came from cancer; we actually google cancer a lot (37 percent of searches) and <a href="https://ourworldindata.org/cancer">it is a popular entry</a> here on our site; but it receives only 13-14 percent of media coverage;</li><li>we searched for road incidents more frequently than their share of deaths, however, they receive much less attention in the news;</li><li>when it comes to deaths from strokes, Google searches and media coverage are surprisingly balanced;</li><li>the largest discrepancies concern violent forms of death: suicide, <a href="https://ourworldindata.org/homicides">homicide</a> and <a href="https://ourworldindata.org/terrorism">terrorism</a>. All three receive much more relative attention in Google searches and media coverage than their relative share of deaths. When it comes to the media coverage on causes of death, violent deaths account for more than two-thirds of coverage in the <em>New York Times</em> and <em>The Guardian</em> but account for less than 3 percent of the total deaths in the US.</li></ul><p>What&#x2019;s interesting is that Americans search on Google is a much closer reflection of what kills us than what is presented in the media. One way to think about it is that media outlets may produce content that they think readers are most interested in, but this is not necessarily reflected in our preferences when we look for information ourselves.</p><p>[<em>Clicking on the visualization will open it in higher resolution;&#xA0;The chart shows the summary for the year 2016, but interactive charts for all available years is available at the end of this blog.<a id="ref-3" class="ref" href="uQRofM4q2u.html#note-3"><sup>3</sup></a></em>]</p></div><div class="wp-block-column"><div class="wp-block-image"><figure class="aligncenter"><img src="https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-716x550.png" alt="Causes of death in usa vs. media coverage" class="wp-image-23625" srcset="https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-716x550.png 716w, https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-150x115.png 150w, https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-400x307.png 400w, https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage-768x590.png 768w" sizes="(max-width: 716px) 100vw, 716px" data-high-res-src="https://ourworldindata.org/uploads/2019/05/Causes-of-death-in-USA-vs.-media-coverage.png" loading="lazy"></figure></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-over-or-underrepresented-are-deaths-in-the-media"><a class="deep-link" href="uQRofM4q2u.html#how-over-or-underrepresented-are-deaths-in-the-media"></a>How over- or underrepresented are deaths in the media?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>As we can see clearly from the chart above, there is a disconnect between what we die from, and how much coverage these causes get in the media. Another way to summarize this discrepancy is to calculate how over- or underrepresented each cause is in the media. To do this, we simply calculate the ratio between the share of deaths and share of media coverage for each cause.</p><p>In this chart, we see how over- or underrepresented each cause is in newspaper coverage.<a id="ref-4" class="ref" href="uQRofM4q2u.html#note-4"><sup>4</sup></a> Causes shown in red are overrepresented in the media; those in blue are underrepresented. Numbers denote the factor by which they are misrepresented.</p><p>The major standout here &#x2013; I had to break the scale on the y-axis since it&#x2019;s several orders of magnitude higher than everything else &#x2013; is terrorism: it is overrepresented in the&#xA0;news by almost a factor of 4000.</p><p>Homicides are also very overrepresented in the news, by a factor of 31. The most underrepresented in the media are kidney disease (11-fold), heart disease (10-fold), and, perhaps surprisingly, drug overdoses (7-fold). Stroke and diabetes are the two causes most accurately represented.</p><p>[<em>Clicking on the visualization will open it in higher resolution</em>].</p></div><div class="wp-block-column"><div class="wp-block-image"><figure class="aligncenter"><img src="https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media-711x550.png" alt="Over and underrepresentation of deaths in media" class="wp-image-23627" srcset="https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media-711x550.png 711w, https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media-150x116.png 150w, https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media-400x309.png 400w, https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media-768x594.png 768w" sizes="(max-width: 711px) 100vw, 711px" data-high-res-src="https://ourworldindata.org/uploads/2019/05/Over-and-underrepresentation-of-deaths-in-media.png" loading="lazy"></figure></div></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="should-media-exposure-reflect-what-we-die-from"><a class="deep-link" href="uQRofM4q2u.html#should-media-exposure-reflect-what-we-die-from"></a><em>Should</em> media exposure reflect what we die from?</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>From the comparisons above, it&#x2019;s clear that the news doesn&#x2019;t reflect what we die from. But there is another important question:&#xA0;<em>should</em> these be representative?</p><p>There are several reasons we would, or should, expect that what we read online, and what is covered in the media wouldn&#x2019;t correspond with what we actually die from.</p><p>The first is that we would expect there to be some preventative aspect to information we access. There&#x2019;s a strong argument that things we search for and gain information on encourages us to take action which&#xA0;prevents a further death. There are several examples where I can imagine this to be true. People who are concerned about cancer may search online for guidance on symptoms and be convinced to see their doctor. Some people with suicidal thoughts may seek help and support online which later results in an averted death from suicide. We&#x2019;d therefore expect that both intended or unintended exposure to information on particular topics could prevent deaths from a given cause. Some imbalance in the relative proportions therefore makes sense. But clearly there is some bias in our concerns: most people die from heart disease (hence it should be something that concerns us) yet only a small minority seek [possibly preventative] information online.</p><p>Second, this study focused on what people in the USA die from, not what people across the world die from. Is media coverage more representative of global deaths? Not really. In another blog post, &#x2018;<a href="https://ourworldindata.org/what-does-the-world-die-from" target="_blank" rel="noopener noreferrer">What does the world die from?</a>&#x2018;, I looked in detail at the ranking of causes of death globally and by country. The relative ranking of deaths in the USA is reflective of the global average: most people die from heart disease and cancers, and terrorism ranks last or second last (alongside <a href="https://ourworldindata.org/natural-disasters">natural disasters</a>). Terrorism accounted for 0.06 percent of global deaths in 2016. Whilst we&#x2019;d expect non-US events to feature in&#xA0;the<em> New York Times,&#xA0;</em>global news shouldn&#x2019;t substantially affect representative coverage of causes.</p><p>The third relates to the very nature of news: it focuses on events and stories. Whilst I am often critical of the messages and narratives portrayed in the media, I have some sympathy for what they choose to cover. Reporting has become increasingly fast-paced. As news consumers, our expectations have quickly shifted from daily, to hourly, down to minute-by-minute updates of what&#x2019;s happening in the world. Combine this with our attraction to stories and narratives. It&#x2019;s not surprising that the media focuses on reports of single (inadvertently negative) events: a murder case or a terrorist attack. The most underrepresented cause of death in the media was kidney disease. But with an audience that expects a minute-by-minute feed of coverage, how much can possibly be said about kidney disease? Without conquering our compulsion for the latest unusual story, we cannot expect this representation to be perfectly balanced.</p></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><h4 id="how-to-combat-our-bias-for-single-events"><a class="deep-link" href="uQRofM4q2u.html#how-to-combat-our-bias-for-single-events"></a>How to combat our bias for single events</h4></div><div class="wp-block-column"></div></div><div class="wp-block-columns is-style-sticky-right"><div class="wp-block-column"><p>Media and its consumers are stuck in a reinforcing cycle. The news reports on breaking events, which are often based around a compelling story. Consumers want to know what&#x2019;s going on in the world&#xA0;<strong>&#x2014; </strong>we are quickly immersed by the latest headline. We come to expect news updates with increasing frequency, and media channels have clear incentives to deliver. This locks us into a cycle of expectation and coverage with a strong bias for outlier events. Most of us are left with a skewed perception of the world; we think the world is much worse than it is.<a id="ref-5" class="ref" href="uQRofM4q2u.html#note-5"><sup>5</sup></a></p><p>The responsibility in breaking this cycle lies with both media producers and consumers. Will we ever stop reporting and reading the latest news? Unlikely. But we can all be more conscious of how we let this news shape our understanding of the world.</p><p>And journalists can do much better in providing context of the broader trends: if reporting on a homicide, for example, include context of <a href="https://ourworldindata.org/homicides">how homicide rates are changing</a> over time.<a id="ref-6" class="ref" href="uQRofM4q2u.html#note-6"><sup>6</sup></a></p><p>As media consumers we can be much more aware of the fact that relying on the 24/7 news coverage alone is wholly insufficient for understanding the state of the world. This requires us to check our (often unconscious) bias for single narratives and seek out sources that provide a fact-based perspective on the world.</p><p>This antidote to the news is what we try to provide at Our World in Data. It should be accessible for everyone, which is why our work is completely open-access. Whether you are a media producer or consumer, feel free to take and use anything you find here.</p></div><div class="wp-block-column"></div></div><div class="block-wrapper" data-reactroot><div data-variation="full-width" class="wp-block-owid-additional-information"><h3 id="additional-information"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"/></svg>Additional information</h3><div style="height:0;overflow:hidden" aria-hidden="true" class="rah-static rah-static--height-zero"><div style="transition:opacity 250ms ease 0ms;-webkit-transition:opacity 250ms ease 0ms;opacity:0"><div class="content">
+
+<div class="wp-block-columns is-style-sticky-right">
+<div class="wp-block-column">
+<p><strong><em>Shares of deaths, media coverage and Google searches over time</em></strong><br><em>The interactive charts present the full annual data series published by Shen et al. (2018), and summarised above, on the relative share of deaths in the US, Google searches and New York Times (NYT) and The Guardian media coverage across the 13 cause of death categories. For share of deaths, NYT and The Guardian coverage, data extends from 1999 to 2016. Due to data availability Google Trends data only runs from the year 2004 to 2016.</em></p>
+</div>
+
+
+
+<div class="wp-block-column">
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/relative-share-of-deaths-in-usa" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/relative-share-of-deaths-in-usa" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/relative-share-of-deaths-in-usa_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Relative share of deaths in usa v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/relative-share-of-google-searches-for-causes-of-death" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/relative-share-of-google-searches-for-causes-of-death" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/relative-share-of-google-searches-for-causes-of-death_v3_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Relative share of google searches for causes of death v3 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/death-coverage-in-nyt" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/death-coverage-in-nyt" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/death-coverage-in-nyt_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Death coverage in nyt v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+
+
+
+
+                <figure data-grapher-src="https://ourworldindata.org/grapher/share-guardian-media-coverage" class="grapherPreview">
+                    <a href="https://ourworldindata.org/grapher/share-guardian-media-coverage" target="_blank">
+                        <div><img src="https://ourworldindata.org/exports/share-guardian-media-coverage_v2_850x600.svg" width="850" height="600" loading="lazy" data-no-lightbox alt="Share guardian media coverage v2 850x600"></div>
+                        <div class="interactionNotice">
+                            <span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="hand-pointer" class="svg-inline--fa fa-hand-pointer fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 617">
+    <path fill="currentColor" d="M448,344.59v96a40.36,40.36,0,0,1-1.06,9.16l-32,136A40,40,0,0,1,376,616.59H168a40,40,0,0,1-32.35-16.47l-128-176a40,40,0,0,1,64.7-47.06L104,420.58v-276a40,40,0,0,1,80,0v200h8v-40a40,40,0,1,1,80,0v40h8v-24a40,40,0,1,1,80,0v24h8a40,40,0,1,1,80,0Zm-256,80h-8v96h8Zm88,0h-8v96h8Zm88,0h-8v96h8Z" transform="translate(0 -0.41)"/>
+    <path fill="currentColor" opacity="0.6" d="M239.76,234.78A27.5,27.5,0,0,1,217,192a87.76,87.76,0,1,0-145.9,0A27.5,27.5,0,1,1,25.37,222.6,142.17,142.17,0,0,1,1.24,143.17C1.24,64.45,65.28.41,144,.41s142.76,64,142.76,142.76a142.17,142.17,0,0,1-24.13,79.43A27.47,27.47,0,0,1,239.76,234.78Z" transform="translate(0 -0.41)"/>
+</svg></span>
+                            <span class="label">Click to open interactive version</span>
+                        </div>
+                    </a>
+                </figure>
+</div>
+</div>
+
+</div></div></div></div></div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</div><footer class="article-footer"><div class="wp-block-columns"><div class="wp-block-column"><h3 id="references">References</h3><ol class="references"><li id="note-1"><p>Shen et al. (2018).&nbsp;Death: Reality vs Reported. Available at:&nbsp;<a href="https://owenshen24.github.io/charting-death/">https://owenshen24.github.io/charting-death/</a>.</p></li><li id="note-2"><p>All values are normalized to 100% so they represent their <em>relative</em> share of the top causes, rather than absolute counts (e.g. ‘deaths’ represents each cause&#8217;s share of deaths within the 13 categories shown rather than its share of total deaths; the 13 categories here account for approximately 88% of total US deaths).</p></li><li id="note-3"><p>The authors calculated this data annually from 1999 to 2016 (due to data availability, from 2004 onwards for Google Trends).</p></li><li id="note-4"><p>Note here that these ratios are calculated based on the average of annual trends over the period 1999 to 2016 rather than the year 2016 alone.</p></li><li id="note-5"><p>There are many results which show we have a negative bias of global progress.&nbsp;<em><a href="https://www.gapminder.org/factfulness-book/">Factfulness</a>, </em>published by the Roslings, is packed with public survey results of Gapminder&#8217;s&nbsp;<a rel="noreferrer noopener" href="https://www.gapminder.org/ignorance/" target="_blank">Ignorance Test</a>. The test shows that the vast majority of people get the most basic questions on global development wrong (nearly always thinking the world is in a worst state than it is).</p></li><li id="note-6"><p>In many countries they <a rel="noreferrer noopener" href="https://ourworldindata.org/homicides#homicide-rates" target="_blank">have been falling</a>.</p></li></ol><h3 id="licence">Reuse our work freely</h3><p>You can use all of what you find here for your own research or writing. We <a href="https://ourworldindata.org/how-to-use-our-world-in-data#how-is-our-work-copyrighted">license all charts under <em>Creative Commons BY</em>.</a></p><p>All of <a href="https://ourworldindata.org/how-to-use-our-world-in-data#how-to-embed-interactive-charts-in-your-article">our charts can be embedded</a> in any site.</p></div><div class="wp-block-column"></div></div></footer></div></div></div></article></main><div id="wpadminbar" style="display:none"><div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="Toolbar"><ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="https://owid.cloud/wp/wp-admin">Wordpress</a></li> <li id="wp-admin-bar-edit"><a class="ab-item" href="https://owid.cloud/wp/wp-admin/post.php?post=21502&amp;action=edit">Edit Page</a></li></ul></div></div><section class="donate-footer"><div class="wrapper"><div class="owid-row flex-align-center"><div class="owid-col owid-col--lg-3 owid-padding-bottom--sm-3"><p>Our World in Data is free and accessible for everyone.</p><p>Help us do this work by making a donation.</p></div><div class="owid-col owid-col--lg-1"><a href="https://ourworldindata.org/donate" class="owid-button donate-button" data-track-note="donate-footer"><span class="label">Donate now</span><span class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span></a></div></div></div></section><footer class="site-footer"><div class="wrapper"><div class="owid-row"><div class="owid-col owid-col--lg-1"><ul><li><a href="https://ourworldindata.org/about" data-track-note="footer-navigation">About</a></li><li><a href="https://ourworldindata.org/about#contact" data-track-note="footer-navigation">Contact</a></li><li><a href="https://ourworldindata.org/feedback" data-track-note="footer-navigation">Feedback</a></li><li><a href="https://ourworldindata.org/jobs" data-track-note="footer-navigation">Jobs</a></li><li><a href="https://ourworldindata.org/supporters" data-track-note="footer-navigation">Supporters</a></li><li><a href="https://ourworldindata.org/about/how-to-use-our-world-in-data" data-track-note="footer-navigation">How to use</a></li><li><a href="https://ourworldindata.org/donate" data-track-note="footer-navigation">Donate</a></li><li><a href="https://ourworldindata.org/privacy-policy" data-track-note="footer-navigation">Privacy policy</a></li></ul></div><div class="owid-col owid-col--lg-1"><ul><li><a href="https://ourworldindata.org/blog" data-track-note="footer-navigation">Latest publications</a></li><li><a href="https://ourworldindata.org/charts" data-track-note="footer-navigation">All charts</a></li></ul><ul><li><a href="https://twitter.com/OurWorldInData" data-track-note="footer-navigation">Twitter</a></li><li><a href="https://www.facebook.com/OurWorldinData" data-track-note="footer-navigation">Facebook</a></li><li><a href="https://github.com/owid" data-track-note="footer-navigation">GitHub</a></li><li><a href="https://ourworldindata.org/feed" data-track-note="footer-navigation">RSS Feed</a></li></ul></div><div class="owid-col owid-col--lg-1"><div class="logos"><a href="https://www.oxfordmartin.ox.ac.uk/research/programmes/global-development" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/oms-logo.svg" alt="Oxford Martin School logo" loading="lazy"/></a><a href="https://ourworldindata.org/owid-at-ycombinator" class="partner-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/yc-logo.png" alt="Y Combinator logo" loading="lazy"/></a></div></div><div class="owid-col flex-2"><div class="legal"><p>License: All of Our World in Data is completely open access and all work is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY license</a>. You have the permission to use, distribute, and reproduce in any medium, provided the source and authors are credited.</p><p>Please consult our full <a href="https://ourworldindata.org/about#legal">legal disclaimer</a>.</p><p><a href="https://global-change-data-lab.org/" class="partner-logo gcdl-logo" data-track-note="footer-navigation"><img src="https://ourworldindata.org/gcdl-logo-narrow.png" alt="Global Change Data Lab logo" loading="lazy"/></a>Our World In Data is a project of the <a href="https://global-change-data-lab.org/">Global Change Data Lab</a>, a registered charity in England and Wales (Charity Number 1186433).</p></div></div></div></div><div class="site-tools"></div><script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,fetch"></script><script src="https://ourworldindata.org/assets/js/commons.js"></script><script src="https://ourworldindata.org/assets/js/owid.js"></script><script>
+                runHeaderMenus();
+                runBlocks();
+                runLightbox();
+                runSiteTools();
+                runCookieNotice();
+                runCovid();
+                runPageTooltips();
+                if (!document.querySelector(".ChartPage")) {
+                    Grapher.embedAll();
+                    runGlobalEntityControl(Grapher.globalEntitySelection);
+                }
+            </script></footer><script>
+                        runTableOfContents({"headings":[],"pageTitle":"Does the news reflect what we die from?","hideSubheadings":true})
+                        runRelatedCharts(undefined)
+                        </script><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N2D4V8S"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --></body></html>

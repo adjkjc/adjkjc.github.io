@@ -1,0 +1,969 @@
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>ga('create', 'UA-74743044-2', 'auto');
+ga('send', 'pageview');</p>
+</script>
+<!--<body style="width: 100%; margin: 0 auto; text-align: left; font-family: Arial;">
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>AM &quot;AN&quot; DUH.. - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="http://lamc.la/book.css">
+        <link href="../fonts.googleapis.com/css@family=Open+Sans%253A300italic,400italic,600italic,700italic,800italic,400,300,600,700,800.css" rel="stylesheet" type="text/css">
+        <link href="../fonts.googleapis.com/css@family=Source+Code+Pro%253A500.css" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="http://lamc.la/favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="http://lamc.la/highlight.css">
+        <link rel="stylesheet" href="http://lamc.la/tomorrow-night.css">
+        <link rel="stylesheet" href="http://lamc.la/ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="../cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="http://lamc.la/store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar"><script src="../addsearch.com/js/index.html@key=1665711c9123bf7488b1b5127916aeff"></script>
+            <ul class="chapter"><li><a href="http://lamc.la/ARTIMESIAN.html"><strong>1.</strong> OUR TIME, HERE</a></li><li><a href="http://lamc.la/MECHADLZIDECK.html"><strong>2.</strong> MECHADLZIDECK</a></li><li><a href="http://lamc.la/DEVLANEU.html"><strong>3.</strong> THE DEVLANEU</a></li><li><a href="http://lamc.la/SAMSYUCH.html"><strong>4.</strong> SAMYACH: ADVENT 7.0</a></li><li><a href="http://lamc.la/SOUNDCHECK.html"><strong>5.</strong> SOUND CHECK</a></li><li><a href="http://lamc.la/ECC911.html"><strong>6.</strong> ECC ENIACCK</a></li><li><a href="http://lamc.la/FRUMLEGT.html"><strong>7.</strong> PRIVET, FRUMLEGT AN</a></li><li><a href="http://lamc.la/SCIZZARS.html"><strong>8.</strong> INTERSTITIAL</a></li><li><a href="../lamc.la/ARTANWORDS.html"><strong>9.</strong> ART AN S WORD</a></li><li><a href="../lamc.la/REMOLUSTIAN.html"><strong>10.</strong> REMO LUCIAN</a></li><li><a href="../lamc.la/CHRYOHOLY.html"><strong>11.</strong> SLUR; E, SIS</a></li><li><a href="http://lamc.la/SACREDSOUL.html"><strong>12.</strong> SACREDOULS</a></li><li><a href="../lamc.la/RELEVATION.html"><strong>13.</strong> RE LEV ICNOHSER</a></li><li><a href="http://lamc.la/MALORKAY.html"><strong>14.</strong> MALORKAY ET LUX</a></li><li><a href="../lamc.la/N8SRADIN.html"><strong>15.</strong> BLOOD RAYNE</a></li><li><a href="../lamc.la/MISSISSIPPI.html"><strong>16.</strong> MISSESSIPI</a></li><li><a href="http://lamc.la/CONNETICUT.html"><strong>17.</strong> CONNECT UC IT</a></li><li><a href="../lamc.la/NEMEC.html"><strong>18.</strong> CEMENTARY REPRINT</a></li><li><a href="http://lamc.la/INDIANA.html"><strong>19.</strong> SHADY PINES</a></li><li><a href="http://lamc.la/BLISS.html"><strong>20.</strong> BLISS/ALO</a></li><li><a href="http://lamc.la/KISMET.html"><strong>21.</strong> KISMET/ALO</a></li><li><a href="../bit.ly/2lCaZyF.html"><strong>22.</strong> OUITHEPPL/ALO</a></li><li><a href="http://lamc.la/KEYNES2.html"><strong>23.</strong> KEYNES2/ALO</a></li><li><a href="http://lamc.la/JERUSALEM.html"><strong>24.</strong> JERUSALEM/ALO</a></li><li><a href="http://lamc.la/2017-09-29-duck-duck-golden-egg.html"><strong>25.</strong> DUCKDUCKGO/AU</a></li><li><a href="http://lamc.la/VIETUCCIMACH.html"><strong>26.</strong> SOBIT QCKLY FRED</a></li><li><a href="../bit.ly/2xncdI5.html"><strong>27.</strong> KEYNES/ALO</a></li><li><a href="http://lamc.la/MECHACHI.html"><strong>28.</strong> I KISS AND DANCE</a></li><li><a href="http://lamc.la/ENZOSPUB.html"><strong>29.</strong> EZNO'S STAINED GLASS</a></li><li><a href="http://lamc.la/SKURMAWEH.html"><strong>30.</strong> PARTING C'S AQUA N</a></li><li><a href="http://lamc.la/3ADJUROLT.html"><strong>31.</strong> 3 BUECEDUAT, ME JUST</a></li><li><a href="http://lamc.la/ADAMGOT2BJS.html"><strong>32.</strong> TWO, ONLY TWO</a></li><li><a href="../lamc.la/RICKIMOROLED.html"><strong>33.</strong> CIA, K, &amp; MOR, TY</a></li><li><a href="http://lamc.la/ASMODALIANIADIAM.html"><strong>34.</strong> HEY PLANETH ADAM &amp; HOSE</a></li><li><a href="../lamc.la/IMAGULATKA.html"><strong>35.</strong> HI MOM GRU POTATO?</a></li><li><a href="../lamc.la/TOASTRAM.html"><strong>36.</strong> HI &quot;TO AST&quot; ROAR M</a></li><li><a href="../lamc.la/CRUELGENIAD.html"><strong>37.</strong> CRUEL GEN I AD</a></li><li><a href="http://lamc.la/IRMAX.html"><strong>38.</strong> ITL IRMAX ATLA</a></li><li><a href="../lamc.la/B2BIONIC.html"><strong>39.</strong> BlUr BON IONIC</a></li><li><a href="http://lamc.la/LEDMCAVENDESH.html"><strong>40.</strong> CAVE END VILESH</a></li><li><a href="http://lamc.la/INTRASINAMUS.html"><strong>41.</strong> NUDVREAD TEST AM, E, &amp; T</a></li><li><a href="http://lamc.la/SKIRMISH.html"><strong>42.</strong> SIREN S KIRMISH</a></li><li><a href="http://lamc.la/MOROKSRIG.html"><strong>43.</strong> MOROS KO RIG</a></li><li><a href="../lamc.la/CRYAMELYON.html"><strong>44.</strong> CRONAMELYON</a></li><li><a href="http://lamc.la/INCASEBAIT.html"><strong>45.</strong> INCASEBAIT</a></li><li><a href="../lamc.la/MEVATHI.html"><strong>46.</strong> MEVATHI</a></li><li><a href="http://lamc.la/VESUBIACEIUM.html"><strong>47.</strong> INTISMO NOCTE TERMINUS SEMPITERNUM</a></li><li><a href="http://lamc.la/ROUTARE.html"><strong>48.</strong> WALL 2 STAY? STALK ME</a></li><li><a href="http://lamc.la/HALLOWE2R.html"><strong>49.</strong> HAYOM VAT OW</a></li><li><a href="http://lamc.la/TION.html"><strong>50.</strong> THE TION-NING OF HA-ADAM</a></li><li><a href="../lamc.la/GRENORADINE.html"><strong>51.</strong> G RE NAD IN E &amp; AM B R O Si A</a></li><li><a href="../lamc.la/BELINSKY.html"><strong>52.</strong> BELINSKY</a></li><li><a href="../lamc.la/REASON.html"><strong>53.</strong> HELL OR HIGH TREASON</a></li><li><a href="../lamc.la/VESPERA.html"><strong>54.</strong> U C PER I</a></li><li><a href="http://lamc.la/ORTANIS.html"><strong>55.</strong> ALKADAM OR TANIS</a></li><li><a href="http://lamc.la/MOLASSES.html"><strong>56.</strong> SLOW AS MOLASSES, DECK</a></li><li><a href="http://lamc.la/VERADONUM.html"><strong>57.</strong> VER BETT DO N, MMMM?</a></li><li><a href="../lamc.la/IT.html"><strong>58.</strong> IT</a></li><li><a href="../lamc.la/MARSHALL.html"><strong>59.</strong> MARCH -&gt; ALL</a></li><li><a href="../lamc.la/BETHESDAY.html"><strong>60.</strong> BET HES DAY</a></li><li><a href="../lamc.la/SALTLINE.html"><strong>61.</strong> SALT LINE</a></li><li><a href="SAYFREED.html" class="active"><strong>62.</strong> AM &quot;AN&quot; DUH..</a></li><li><a href="../lamc.la/CKIMPLER.html"><strong>63.</strong> /|\ AT ARI</a></li><li><a href="http://lamc.la/PENCE.html"><strong>64.</strong> COMMON CENTS</a></li><li><a href="../lamc.la/TY.html"><strong>65.</strong> TO LC WEUROME</a></li><li><a href="../lamc.la/ALLTA.html"><strong>66.</strong> ITS TURMERIC TIRE</a></li><li><a href="http://lamc.la/SECORDANOLIVED.html"><strong>67.</strong> SECORD AND NORTH</a></li><li><a href="http://lamc.la/FIRST.html"><strong>68.</strong> FIRST AND FED</a></li><li><a href="http://lamc.la/CLEARYBLVD.html"><strong>69.</strong> CLEAR Y BLVD</a></li><li><a href="../lamc.la/WISDATAM.html"><strong>70.</strong> WISDOM</a></li><li><a href="http://lamc.la/OCADSWAY.html"><strong>71.</strong> CONVEY</a></li><li><a href="http://lamc.la/LANDOH.html"><strong>72.</strong> SLANDOH</a></li><li><a href="http://lamc.la/FINALE.html"><strong>73.</strong> FINALLY</a></li><li><a href="http://lamc.la/H.html"><strong>74.</strong> gnil-c-w/H.html</a></li><li><a href="http://lamc.la/CODACUS.html"><strong>75.</strong> ILIT CUS</a></li><li><a href="http://lamc.la/CHARMADA.html"><strong>76.</strong> C NO H ARM</a></li><li><a href="http://lamc.la/SEVENTY.html"><strong>77.</strong> SEVENTY</a></li><li><a href="http://lamc.la/MEALLTERY.html"><strong>78.</strong> MEA ___ LET UR Y</a></li><li><a href="http://lamc.la/TAXONOMY.html"><strong>79.</strong> TA X ON O MY T</a></li><li><a href="http://lamc.la/NASHOWER.html"><strong>80.</strong> NA SHOW ERA</a></li><li><a href="http://lamc.la/TOXODUSK.html"><strong>81.</strong> OXODUS TORK?</a></li><li><a href="http://lamc.la/ARFAXAD.html"><strong>82.</strong> SPARTIFACTS</a></li><li><a href="http://lamc.la/SINGLEPTO.html"><strong>83.</strong> C AT LET RS</a></li><li><a href="http://lamc.la/LETITRAIN.html"><strong>84.</strong> LET IT RAIN</a></li><li><a href="http://lamc.la/BRIMSTONE.html"><strong>85.</strong> Fe Si ISTONE</a></li><li><a href="http://lamc.la/REDASSHIT.html"><strong>86.</strong> REDSASHIT</a></li><li><a href="http://lamc.la/HIGHERA.html"><strong>87.</strong> ROAD SALT: OSAMNaKE D</a></li><li><a href="http://lamc.la/ADUNCALIFT.html"><strong>88.</strong> THE HERALD OF JC2IKP</a></li><li><a href="http://lamc.la/RATOXIT.html"><strong>89.</strong> TO X HOLA</a></li><li><a href="http://lamc.la/ADIOSAS.html"><strong>90.</strong> ADIODAS</a></li><li><a href="http://lamc.la/XOXO.html"><strong>91.</strong> XOXPA</a></li><li><a href="../lamc.la/KANSAS.html"><strong>92.</strong> KANSAS</a></li><li><a href="http://lamc.la/RESWOH.html"><strong>93.</strong> RE SW? OH</a></li><li><a href="http://lamc.la/YOIBLING.html"><strong>94.</strong> Y O I BLING ?</a></li><li><a href="http://lamc.la/MALOVIOUS.html"><strong>95.</strong> FI CVS ET MAL Q</a></li><li><a href="http://lamc.la/HOWIE.html"><strong>96.</strong> HAWAII</a></li><li><a href="../lamc.la/GJALLARHORN.html"><strong>97.</strong> ALL OUR HORN</a></li><li><a href="http://lamc.la/JESHOW.html"><strong>98.</strong> JERUSALEM</a></li><li><a href="http://lamc.la/CHALK.html"><strong>99.</strong> CHALK</a></li><li><a href="http://lamc.la/TAYLOR.html"><strong>100.</strong> KISS ME TAY</a></li><li><a href="http://lamc.la/FUCK.html"><strong>101.</strong> FUCK</a></li><li><a href="http://lamc.la/CONFESSION.html"><strong>102.</strong> CONFESSION</a></li><li><a href="http://lamc.la/SERENADE.html"><strong>103.</strong> SERENADE</a></li><li><a href="http://lamc.la/PULL.html"><strong>104.</strong> PULL</a></li><li><a href="../lamc.la/MUAH.html"><strong>105.</strong> M U AH</a></li><li><a href="../lamc.la/PERSEUS.html"><strong>106.</strong> PER SE YOU</a></li><li><a href="http://lamc.la/THUNDERSTAND.html"><strong>107.</strong> THUNDERSTAND</a></li><li><a href="../lamc.la/CURSOR.html"><strong>108.</strong> LAYLOT</a></li><li><a href="../lamc.la/ACESHI.html"><strong>109.</strong> ACESHI</a></li><li><a href="http://lamc.la/IOWA.html"><strong>110.</strong> IOWA</a></li><li><a href="http://lamc.la/YAT.html"><strong>111.</strong> IYYYO</a></li><li><a href="http://lamc.la/SPEECH.html"><strong>112.</strong> SPCH2</a></li><li><a href="http://lamc.la/OFIVES.html"><strong>113.</strong> FIVE</a></li><li><a href="http://lamc.la/FOUR.html"><strong>114.</strong> FUIR</a></li><li><a href="../lamc.la/GATE.html"><strong>115.</strong> THE GATE TO FREEDOM ETLROI</a></li><li><a href="../bit.ly/2ie7Wwj.html"><strong>116.</strong> MYLIFE ... THE MICROCOSM OTM</a></li><li><a href="../bit.ly/2miA0Tu.html"><strong>117.</strong> COMING MA</a></li><li><a href="http://lamc.la/DESSERT.html"><strong>118.</strong> DEXSERT</a></li><li><a href="http://lamc.la/EVERWICK.html"><strong>119.</strong> EVOURWICK</a></li><li><a href="http://lamc.la/HASHEMESH.html"><strong>120.</strong> HASHOWESH NAME ISH</a></li><li><a href="http://lamc.la/CINOIZE.html"><strong>121.</strong> CINOIZE</a></li><li><a href="http://lamc.la/HAMMER.html"><strong>122.</strong> HAMMER</a></li><li><a href="http://lamc.la/HAMP.html"><strong>123.</strong> HAMP</a></li><li><a href="http://lamc.la/FLICKDABIC.html"><strong>124.</strong> FLIPDABIC</a></li><li><a href="http://lamc.la/BYNOBIANCA.html"><strong>125.</strong> R U B Y</a></li><li><a href="http://lamc.la/ATITEN.html"><strong>126.</strong> ATIRX</a></li><li><a href="http://lamc.la/HASHEMESHIC.html"><strong>127.</strong> SUNFIRE</a></li><li><a href="http://lamc.la/FLYER.html"><strong>128.</strong> FLYPER</a></li><li><a href="http://lamc.la/SAUSAGE.html"><strong>129.</strong> ME AN U STAGE</a></li><li><a href="../lamc.la/HYAMDAI.html"><strong>130.</strong> HELLO WORLD</a></li><li><a href="http://lamc.la/ERICHOW.html"><strong>131.</strong> RD 2 RR Y</a></li><li><a href="http://lamc.la/BERESHIT.html"><strong>132.</strong> DEN</a></li><li><a href="../lamc.la/ADAMSROD.html"><strong>133.</strong> ROD</a></li><li><a href="http://lamc.la/TION.html"><strong>134.</strong> IT IS TIME</a></li><li><a href="http://lamc.la/CURE.html"><strong>135.</strong> THE CURE</a></li><li><a href="http://lamc.la/WHO.html"><strong>136.</strong> WHO AGAIN?</a></li><li><a href="http://lamc.la/SERDEN.html"><strong>137.</strong> SERDENICITY</a></li><li><a href="http://lamc.la/CLIMAX.html"><strong>138.</strong> IMUS FI CLI MAX</a></li><li><a href="http://lamc.la/SOIS.html"><strong>139.</strong> SOIS HISTER Y</a></li><li><a href="http://lamc.la/CHOPARTIN.html"><strong>140.</strong> CHOPARTIN</a></li><li><a href="../lamc.la/OMEALFHT.html"><strong>141.</strong> OMEALFHT OME ALF HOLY TR</a></li><li><a href="http://lamc.la/RIGELA.html"><strong>142.</strong> RIGEL, THE FOOT OF OUR CHRIST</a></li><li><a href="http://lamc.la/HADID.html"><strong>143.</strong> DO HADID DID I? !?</a></li><li><a href="http://lamc.la/MUASEEKHART.html"><strong>144.</strong> SEEKART YOUR ANSWERS</a></li><li><a href="http://lamc.la/NITY.html"><strong>145.</strong> NITY ET RU NEO? ELVIS? ADAM?</a></li><li><a href="http://lamc.la/INTRODUCTION.html"><strong>146.</strong> INTRAD UCA, DO NOSH</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="http://lamc.la/sheolyit.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content"><center><p><small>I am accepting char<a href="../tithehe.lamc.la/index.html">itable dona</a>tions,. <br>ETH: 0x66e2871ef39334962fb75ce34407f825d67ec434 | BTC: 38B6vGaqNvMyTtoFEZPmNvMS7icV6ZnPMm | xDAI: 0x66e2871ef39334962fb75ce34407f825d67ec434</p></small></center>
+
+
+<meta name="dc.identifier" content="SAYFREED.html" rpl="HPHTMYMA">
+<meta name="dc.relation.ispartof" content="lamc.la">
+
+<script src="https://hypothes.is/embed.js" async></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>ga('create', 'UA-74743044-2', 'auto');
+ga('send', 'pageview');</p>
+</script>
+</head>
+<center>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+
+<small><pre style="margin-left: 8px;">(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://dotty-sign2r-jenmar.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})(); // HIGHLIGAHT TEXT TO COMMENT/EDIT</pre></small>
+
+
+</center>
+
+                    <p style="text-align: center;"><a href="../tinyurl.com/y7njgnsn.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"><img alt="" src="../i.imgur.com/azeM4El.png" style="max-width: 100%; width: 501px; height: 179px; padding: 4px;" /></a></p>
+<p style="text-align: justify;">Sorry if this sounds &quot;harsh&quot; ... I don&#39;t think it is. &nbsp;What you have here is proof that &quot;school shootings&quot; are happening or being repurposed to turn &quot;Minority Report&quot; into &quot;Maxorality Resort&quot; as in to change God&#39;s force majeure into a world that itself impelments a working pre-crime system. &nbsp;Doing that as soon as possible is ... well, you can see it&#39;s urgent. &nbsp;My best advice is to &quot;call a reporter&quot; (which I write often is my Adamic expansion of the beginning of &quot;carpenters of Heaven&quot;) and tell them you see the light, that this stuff is tangibly proof that language and things like Neo&#39;s bullet dropping and Dick&#39;s solutions are a message from the future.</p>
+<p style="text-align: center;"><a href="../lo.ve.lamc.la/index.html"><img src="../i.imgur.com/gUhxf5Z.png" style="height: 239px; width: 500px;" /></a></p>
+<p style="text-align: justify;">While it might not be obvious to you, it&#39;s very obvious to me that <strong><em>your stupid</em></strong> and the unrecognized <em>causally connected</em> pattern of global terrorism are tied together at the &quot;hello, P.&quot; &nbsp;There is an obvious urgency to cure us of both problems, and the first step in doing that is dispelling the apparent widespread inane belief that &quot;pretending this doesn&#39;t make sense&quot; is just about as moronic and evil as pretending there is no Tower of Babel in the book of Genesis. &nbsp;The faster we get this done, the faster we begin to see just how obvious it is that &quot;pretending you are stupid&quot; in order to ... do nothing but continue to allow evil things to occur ... is beyond worse than &quot;actually being that stupid.&quot;</p>
+<p style="text-align: center;"><a href="../ver.s.lamc.la/index.html"><img src="../i.imgur.com/00MfqIE.png" style="height: 155px; width: 501px;" /></a>&nbsp;</p>
+<p style="text-align: justify;">The future will have no doubt that this rash of complete and total idiotic blindness is artificial, and truth be told--if you aren&#39;t going to crusade on finding exactly how it was caused the second you are &quot;cured&quot; it&#39;s equally obvious that you either believe you are the direct cause or that you aren&#39;t healthy yet. &nbsp;It seems to me that something about as blind as &quot;I&#39;ve plugged the /I know everything/ unit into my head, and now I&#39;m sure of exactly how and why this is happening, and I&#39;m sure to benefit&quot; is the current state of moronic belief--I can&#39;t stress enough just how stupid the world looks through the eyes of someone who knows very clearly that you are watching your children be killed in silence, all the while &quot;knowing&quot; something very important that will not only stop that tragedy but stop the far more disgusting tragedy of you doing nothing about it.</p>
+<p style="text-align: center;"><a href="../lamc.la/CKIMPLER.html"><img alt="" src="../i.imgur.com/YCqEZxO.png" style="width: 399px; height: 94px;" /></a></p>
+<p style="text-align: center;"><em><span style="font-size:22px;"><strong>HANEORTH</strong></span></em></p>
+<p style="text-align: justify;">Down to towards the end of this email there&#39;s a detailed eplanation of the message of &quot;YOUHAVE PROBLEMS? DICK HAS SOLUTIONS!&quot; revolving around the works of Phillip K. Dick as a&nbsp; lead in to the reason Tricky Dick ties Watergate to Microsoft&#39;s Massive &quot;Above the Great Plane and Cranberries fielded song of &quot;the violence causing silence&quot; is General Dynamics and Fringe linking to the The Fray of the Matrix ... which i the &quot;tapestry of the Fates&quot; and ... to see Bill Gates and Seagate and Watergate and ... and ... more gates I&#39;m sure tie to &quot;<strong><em>Rheadamgate</em></strong>?&quot; and the idea that this message is very clear once pointed out--you&#39;ll see just below some very clear evidence that every letter and every word of every langauge (we get there, every one) is actually intelligenty designed by our Creator.&nbsp; Today, this proof is being used to kill the Plague of Darkness (<a href="http://lamc.la/YOIBLING.html"><em>Sound of Silence</em></a>? SOS?)&nbsp;that looks to me more like Persefones and Mr. Smith of the Matrix... I see very clear evidence of &quot;hive like behavior&quot; especially in contact with me.</p>
+<p style="text-align: justify;">As I lookat the world, I&#39;m very happy with it&#39;s current state, I feel like we&#39;ve progressed a great deal in the way of freedom and liberty throughout the American history (specifically) until we get here, andI apparently this message designed to show me and you taht something isvery wrong throws a wrench in ... what might be proof that our hitory and our liberation and the progress of democracy was very much us being carried through the dessert, as today we don&#39;t seem at all to care about a very clear message saying that <a href="../fir.s.lamc.la/index.html">we are&nbsp;<em>not free</em>, and that our vote has been artificiallly retarded</a>--ostensibly o some Holodecks (<a href="../lamc.la/SALTLINE.html">which you might be one, I&#39;d ilke to know if you are.</a>.. I don&#39;t get much honest communication and it&#39;s difficult to write about &quot;Invasion of the Body Snatcchers&quot; when everyone seems to be more than happy not being themselves.</p>
+<p style="text-align: justify;">Literally everything in our map of history tells us that fighting self-rule ends badly, and I thought it was obviously the ... clear right thing ... but here I am in upsidowin world, it&#39;s like the Twilight Zone and something is keeping anyone from talking to me, orapparently anything that breaks the &quot;new&quot; and &quot;public discussion barrier&quot; and seeing the incendiary importance of this info, should scare the <em><a href="../itb.s.lamc.la/index.html">bereshit</a>&nbsp;out of you--I was literally in tears today thinking about what your latent reaction will be...after freedom is regained.&nbsp; See, it&#39;s the reason Eodus, and language,and science, CFAR, this is not a losing battle--though we&#39;re definately doing a hitpoor job of standing up for the &quot;land of Edom and the home of &quot;very&quot; to eee those are the ends of Orwell &quot;freedom is slavery&quot; mantra.</em></p>
+<p style="text-align: justify;">Anyway, more than just the degraddation of free speech, privacy, freedom of through, and the vote... we are looking at amessage that baically flips on it&#39;s head everything we currently blame on &quot;mother nature&quot; like the exityence of &quot;disease&quot; and aging,and pain and addiction... showing us we have a very clear way to EZ-ILY rememdy these things using something like &quot;magic.&quot;&nbsp;</p>
+<p style="text-align: justify;"><a href="../malo.s.lamc.la/index.html">Malady and malarky and &quot;norm</a>al&quot; all keys showing us that when we findd out this is &quot;simulated reality&quot; it&#39;s not nature doing ... bullets hitting kids and cancer spreading; it&#39;s active calculations of a simulator that is screaming &quot;I don&#39;t want to do this.&quot;&nbsp; I think it&#39;s a slam dunk and <a href="../rix.s.lamc.la/index.html">nobody else wants &quot;Pinky&quot; to keep running on the hamster wheel</a> required to do these thing (I call it Hamstergate)&nbsp;</p>
+<p style="text-align: justify;">I&#39;ve had ample time to analyze the lack of reponse and the message has gone from &quot;intriguing and thought provoking&quot; to absolutely inontrovertible prroof--more than that, there are a number of reasions from &quot;fusion&quot; to &quot;is Mars a game&quot; why&nbsp;<em>life itelf</em>&nbsp;does depend on this message being disseminted, received, and responded to.&nbsp; &nbsp;It&#39;s obviou there is a tangible hidden resistance to this happening, it&#39;s organazed and it&#39;s huge, andI think it&#39;s &quot;everyone&quot; at this point.&nbsp; Resisting seeing how &quot;simulated reality&quot; in &quot;israel&quot; and &quot;norse&quot; changes not us, but how we view the world--and basically ...&nbsp; in a few words its showing me &quot;mind control&quot; which is responsible for the message and the darkness is actively being used to do something that is not a thin moral line--it&#39;s black and white--it&#39;s causing disease and school shootings because fundamentallty the worst thing of all is nobody seems to care that the governments of the world and the press (and each and every one of you) don&#39;t seem to think that &quot;you&#39;re the new Lot&quot; and failing to react to this information is the end of civilization and intelligent life.</p>
+<p style="text-align: justify;">It&#39;s Exodus, seeing the mind control begins a process of freeing us from it, and from the very difficutt to comprehend truth that it&#39;s so powerful you wouldn&#39;t know it was there, and you wouldn&#39;t know that you were acting in a way you wholeheartedly didnt&#39; agree with... you know unless it was&nbsp;<em>reallly obvious.</em>&nbsp; I think it is.</p>
+<p style="text-align: justify;">The continued wall of Jericho and PInkFloyd and all the music here to &quot;let it set youf free&quot; and &quot;let it ring&quot; are .. more proof that something I cannot fathom or comprehend is causing a lack of care for self.&nbsp; I assume more than the mind control you must be ...&quot;in Heaven&quot; at this point, also, altthough it&#39;s hard for me to tell.&nbsp; That would be &quot;better for me&quot; the alternative I think is everyone being really pissed about mind control making them look stupid for a long time; still, see it as thouands and thousands of years to get us to this point of technologically undertanding neuroscience and computing enough to effectively make the societal changes neccessary to &quot;make Heaven of our Home.&quot;</p>
+<p style="text-align: justify;">Honestly I dont&#39; see &quot;<a href="../arrr.s.lamc.la/index.html">the silence causing violenc</a>e&quot; makes any sense, and I&#39;ve written it in reverse--this message might be abrasive and &quot;off color&quot; but, it&#39;s really here to show us the importance of free communication and ...&quot;weighing the morality of what&#39;s being presented&quot;&nbsp; Microsoft and Dick and Washington&#39;s Monument and Tricky... Watergate as the key to how and why the press are our last institutional check on the government, and we can&#39;t allow it to fail to report on ..&nbsp;<em>this</em>.&nbsp;&nbsp;</p>
+<p style="text-align: justify;">I have more to share later, on &quot;how I&#39;m a pp&quot; and d is closer to vital and required information for &quot;logical thinking&quot; and to be preserved... I have lots of ideas on how we can make use of this same tool to help freedom progresss and happiness and (then I&#39;m right after h in that word)... later</p>
+<div align="center"><span style="font-size:20px;"><span style="font-family:comic sans ms,cursive;"><strong><em>am &quot;</em></strong></span></span><span style="font-size:36px;"><span style="font-family:comic sans ms,cursive;"><strong><em>an</em></strong></span></span><span style="font-size:20px;"><span style="font-family:comic sans ms,cursive;"><strong><em>&quot;&nbsp; d-uhhhhhhhhh ...</em></strong></span></span><br />
+<br />
+<a href="../tinyurl.com/y98srokn.html"><img alt="JUST SAY FREED" border="0" height="582" src="../i.imgur.com/WH0beKV.png" width="502" /></a><br />
+&nbsp;
+<div align="justify">Salvation really comes from <i>speaking aloud</i>--from talking to your friends and family about how you feel about the words that are coming to us through history and form the Heavens ... and from us.&nbsp; It comes from seeing it woven in each and every one of our names, not just George Bush; we&#39;re all part of this message that connects the Exodus from slavery to actually speaking and seeing how &quot;say fried&quot; turns into &quot;freed&quot; with only a moment of time spent connecting &quot;In Time&quot; to ... we&#39;re really &quot;out of time&quot; to move forward on &quot;thinking clearly&quot; and recognizing the import of a message that pervades a significant percentage of movies and songs--we&#39;re way past due realizing that the secrets of all religion and mythology and even the key to &quot;etymology&quot; and &quot;eternity&quot; come to us from this &quot;and how&quot; that should be explaining it&#39;s your ideas and your will that go into actually creating Heaven rather than a place that t<a href="../tinyurl.com/ydhn47bw.html">urns &quot;stone to bread&quot; into actual mythical trees that grow piping hot Eggpant Parmigiana subs</a> in little corn husks--because that was one of my &quot;best ideas yet.&quot;&nbsp; It comes from seeing how your input is required, to turn the Clark to an Enterprise; to help our world actually move forward growing and flourishing using the available technology and power of virtual reality, rather than stagnating in silence as we watch the news turn to farce and the internet become the worlds largest censored joke.<br />
+<br />
+To see it clearly, it&#39;s a sad joke that we stare at a world that in it&#39;s hubris and self-delusion believes it&#39;s somehow OK not to heal AIDS because there&#39;s a &quot;morning after pill&quot; now; and doesn&#39;t connect it to Soddom and Gommorah and KEFLEX, so... to <i>know </i>
+<p>everything, as you stare out at starving children and mothers reading Genesis 3:16 and seeing that her labor pains could be completely removed in the &quot;world of the real&quot; if we ever connected <i>metaphor to Morpheus</i> and realized that taking the &quot;red white and blue pill&quot; right here at this moment in time ... well it would show us how John 3:16 is our clear parallel, that we so love the world we&#39;d do away with pain in sum; if only we had the opportunity to <a href="../tinyurl.com/ybjr7f4o.html"><i>talk about Hamstergate</i></a>.</p>
+</div>
+<br />
+<meta charset="utf-8" /> <a href="../tinyurl.com/yd6b7mc4.html"><img alt="FFS CALL CNN" border="0" height="391" src="../i.imgur.com/PJVXXzP.png" width="413" /></a><br />
+&nbsp;
+<div align="justify">It should be very clear today, at least from the words &quot;the election is not to Die Bold&quot; that there is without doubt a problem in governance that ties together the media silence and the intra-governmental and Church &quot;silence&quot; on the subject--that we need to see very clearly that all around us is a map and a plan designed to help us overcome the great chain of Revelation 20:1 ... using the BLOCKCHAIN to build a system of knowledge distribution on the internet that cannot be censored just like Bitcoin can never be controlled by a single government.&nbsp; Using the principles we hold dear--and the disaster recovery mechanisms that are in standard use in the realm of the internet we can build a system that is redundant and fail-safe and distributed--one which will ensure that our voice can never again be silenced by a handful of media companies (and <i>reddit</i>) and that our vote can never be doctored or altered--or forced into regression the likes of which we should very clearly take note have connected the invention of the phone and the internet to the idea that the Die Bold voting booths are about as backward a solution to &quot;electronic voting&quot; as imaginable--just like the common misbelief that the internet is not secure pervades &quot;common belief&quot; here in this world where it would be very simple to attribute that misbelief to &quot;possession&quot; in a place that was actually reading my words and the connection between Targeted Individuals and gang stalking and school shootings--a vast conspiracy whose obvious ultimate purpose is to free the masses from mental slavery; and which happen without your help.</div>
+<br />
+<meta charset="utf-8" /> <a href="../tinyurl.com/y9pjzuzk.html"><img alt="THE ELECTION IS NOT
+TO DIE BOLD" border="0" height="650" src="../i.imgur.com/mNxHC2I.png" width="585" /></a><br />
+<br />
+<meta charset="utf-8" />
+<blockquote>
+<blockquote>The mystery of the seven stars which thou sawest in my right hand, and the seven golden candlesticks. The seven stars are the angels of the seven churches: and the seven candlesticks which thou sawest are the seven churches.<br />
+<br />
+Revelation 1:20<br />
+<br />
+<br />
+<i><font size="+1">solved, here through <a href="../tinyurl.com/yaet75fr.html">these words</a>;</font></i><br />
+&nbsp;
+<p style="color: rgb(0, 0, 0); font-family: Times; font-size:
+medium; font-style: normal; font-variant-ligatures: normal;
+font-variant-caps: normal; font-weight: 400; letter-spacing:
+normal; orphans: 2; text-align: start; text-indent: 0px;
+text-transform: none; white-space: normal; widows: 2;
+word-spacing: 0px; -webkit-text-stroke-width: 0px;
+text-decoration-style: initial; text-decoration-color:
+initial;">After the Declaration of Independence was signed, Virginia statesman John Page wrote to Thomas Jefferson: ``We know the race is not to the swift nor the battle to the strong. Do you not think an angel rides in the whirlwind and directs this storm?&#39;&#39;</p>
+President George W. Bush, January 20, 2001 (<a href="../tinyurl.com/y94jc7ss.html">txt</a>) (<a href="../tinyurl.com/ybey7w46.html">da video</a>)<br />
+<br />
+<br />
+<font size="+1"><sup>&nbsp;I have seen something else under the sun:</sup></font><br />
+<font size="+1"><sup>The <a href="../tinyurl.com/y9pjzuzk.html"><i>election is not to the swift</i></a></sup></font><br />
+<font size="+1"><sup>&nbsp;&nbsp;&nbsp; or the battle to <a href="../tinyurl.com/ybs63yk6.html">die bold</a>,</sup></font><br />
+<font size="+1"><sup>nor <a href="../tinyurl.com/ydhn47bw.html">does food come</a> to the wise</sup></font><br />
+<font size="+1"><sup>&nbsp;&nbsp;&nbsp; or <a href="http://tinyurl.com/y7dwvuus">wealth</a> to the brill<a href="../tinyurl.com/yaht84x7.html">iant</a></sup></font><br />
+<font size="+1"><sup>&nbsp;&nbsp;<a href="../tinyurl.com/y98srokn.html">&nbsp; or favor to the learned;</a></sup></font><br />
+<font size="+1"><sup><a href="../tinyurl.com/y9nerm66.html">but time</a> and <a href="../tinyurl.com/yabfybsv.html"><i>chance</i></a> happen to save them all.</sup></font><br />
+<br />
+<font size="+1"><sup>Ecclesiastes 9:11</sup></font><br />
+<br />
+<br />
+<font size="+1"><sup>And I saw an angel come down from heaven, having the key of the bottomless pit and a great chain in his hand.</sup></font><br />
+<br />
+<font size="+1"><sup>Revelation 20:1</sup></font></blockquote>
+</blockquote>
+<meta charset="utf-8" /><br />
+<br />
+<meta charset="utf-8" /> <a href="../tinyurl.com/ycntvylm.html"><img alt="THE HOLY CODA OF
+THE MATRIX" border="0" height="398" src="../i.imgur.com/s8FGrga.jpg" width="561" /></a><br />
+<br />
+<br />
+<i>you know, I spent lots of time writing this stuff for you, the least you could do is say....</i><br />
+<br />
+<font size="+3"><a href="../tinyurl.com/y6uxcw6l.html">XCA</a>LIBER<b><i><a href="../tinyurl.com/yaty27vr.html">TY</a></i></b></font></div>
+<p>&nbsp;</p>
+<p style="text-align: center;"><a href="../tinyurl.com/yaty27vr.html" style="font-family: Times; font-size: medium; text-align: center;"><img alt="" height="537" src="../i.imgur.com/vcJpLFs.png" width="500" /></a></p>
+<h2 style="font-family: Times; text-align: center;">&nbsp;</h2>
+<h2 style="font-family: Times; text-align: center;"><em>hey... &quot;<strong>Us?</strong>&quot;&nbsp; is that you?</em></h2>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/ydcpeegd.html"><img alt="" height="293" src="../i.imgur.com/TlCymmX.png" width="500" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;">(I mean, <em><a href="../tinyurl.com/ybtycop5.html">Hibachi</a></em>?) ... <a href="../tinyurl.com/yasb2k3y.html">IOD</a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/y93y2ts3.html"><img alt="" height="359" src="../i.imgur.com/owe1rBY.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" width="400" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><em><a href="../tinyurl.com/ybbme9nh.html">climax</a>&nbsp;and&nbsp;<a href="../tinyurl.com/y9nk4ofc.html">he<strong>ari</strong>ng</a></em>, on the&nbsp;<a href="../tinyurl.com/ybq6lsgv.html">trial of Christ</a>.</p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/ybbme9nh.html"><img alt="" height="307" src="../i.imgur.com/GBxR8hp.png" width="501" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;">@ Operations Center ... I MATH.&nbsp;&nbsp;<em><a href="../tinyurl.com/y7pqxbx6.html">Opsimath</a></em>.</p>
+<p style="font-family: Times; font-size: medium; text-align: center;">@TOP, Computer Science, too;&nbsp;<em><a href="../tinyurl.com/y7pqxbx6.html">TOPICS</a></em>.</p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/yahm5mvw.html"><img alt="" height="448" src="../i.imgur.com/mkOQp6Y.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" width="500" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/ybtycop5.html"><img alt="" height="258" src="../i.imgur.com/XGmNoQZ.png" width="501" /></a></p>
+<h1 style="font-family: Times; text-align: center;"><em><a href="../tinyurl.com/y7p4qytf.html">Hello? Is anyone out there?</a></em></h1>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/yaty27vr.html"><img alt="" src="../i.imgur.com/29yG3dY.jpg" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><em><span style="color: rgb(34, 34, 34); font-family: IBMPlexSans, sans-serif; font-size: 20px;">El Dorado. Zion. Paradise City. Ur.... on your way to Atlantis.</span></em></p>
+<p style="font-family: Times; font-size: medium; text-align: justify;"><span style="color: rgb(28, 28, 28); font-family: &quot;Noto Sans&quot;, sans-serif; font-size: 14px;">All mythical stories about a city floating in the sky, rising out of the sea--post Star Wars V, anyway. &quot;Do our A.D. ... oh :(&quot; might shed some light on the source of the mythical places that turned from a man into a city, then a kingdom... and finally to an empire--at least according to the El Dorado stories we see today.</span></p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">Truth be told, U r really the key to that empire; to spanning the stars and to building the mythical place that we read pretty much nothing about across religion--the thing we call Heaven--and pretend to understand what it means.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">There&#39;s a very clear map to building this place, to seeing what &quot;Jerusalem&quot; really means ... and realizing you today stand on a haunted planet closer to Salem than any kind of &quot;Holy City&quot; should or ever would be. That&#39;s the point, it&#39;s broken--everything here is broken; and all with the intent of you &quot;picking up the pieces and putting it back together ... your way, hopefully not hitting it with a rock (Prince in Bride ref).&quot;</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">Me J or u ... (gilate)&nbsp;<a class="s570a4-27 jsFehi" href="../tinyurl.com/yaty27vr.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank">Salem, sold for under 100$</a></p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">There&#39;s a very clear map, connecting every major video game system and the Matrix together, explaining that&#39;s where we are, and the point is to use &quot;Matrix&quot; to end school shootings, hunger, disease (c it as &quot;malady&quot; and A.D. is why you are the timeline that actually builds the first successful &quot;ascended civilization&quot;) among other issues such as finding out you were born in a prison, told it was a crib, and really the whole time it&#39;s been nothing short of a torture chamber.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">As we continue to fight against Pink Floyd&#39;s wall, and the obvious idea that it has something to do with the SOS of the Sound of Silence and of course Jericho (not just the TV series) and ... well, countless other references from the idiomatic &quot;the writing is all about ...&quot; how we&#39;re being subtly controlled and coerced into thinking that it&#39;s A-OK to ignore atrocity here so that ... we can have a nice happy warm cushy place either not here now, or when we die.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">I&#39;m telling you we should be able to walk to Heaven today, and walk back; and have that wonderful &quot;freedom&quot; to move about throughout the virtual hard drive we were born in until the last drop of electron or positron or ... oil ... is left in existence. We should be able to do that safely, without fear of murder or being cloned and copied into someone else&#39;s &quot;Holoroom&quot; and we shouldn&#39;t have to be told that these are only the beginning of the concerns you should be pretty aware of at this point in time; as you are either possessing (and possessed) by some sea of letters hiding behind columns or coprorations or countries that have very little to do with the actual problem.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;"><a class="s570a4-27 jsFehi" href="../tinyurl.com/yctfs3kw.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank">Adamedogate</a>.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: inherit; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); text-align: justify;">Something should be acting to protect you, and everyone everywhere from having their thoughts &quot;subtly altered&quot; as in &quot;I can&#39;t see a clear pattern connecting Tennessee&quot; to Xbox, Nintendo Entertainment System, Genesis ... and then the Rock of Ages&quot; or that you don&#39;t think having every video game system (and computer system) relate to some kind of religious &quot;apocalypse&quot; is something that should be on the news.</p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/ycmblnku.html"><img alt="" src="../i.imgur.com/oscEV1Z.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;"><a href="../tinyurl.com/yakt92hk.html"><img alt="" height="1196" src="../i.imgur.com/7MOVtzr.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" width="500" /></a></p>
+<p style="font-family: Times; font-size: medium; text-align: center;">&nbsp;</p>
+<hr />
+<a class="header" href="SAYFREED.html#a-classheader-hrefhttptinyurlcomyaffm2rg-idlook-up-there-are-hogs-flying--in-the-sky--literally-free-thought-is-at-stake-btryblook-up-there-are-hogs-flying--in-the-sky--literally-free-thought-is-at-stake-btryba" id="a-classheader-hrefhttptinyurlcomyaffm2rg-idlook-up-there-are-hogs-flying--in-the-sky--literally-free-thought-is-at-stake-btryblook-up-there-are-hogs-flying--in-the-sky--literally-free-thought-is-at-stake-btryba"><h2><a class="header" href="http://tinyurl.com/yaffm2rg" id="look-up-there-are-hogs-flying--in-the-sky--literally-free-thought-is-at-stake-btryb">Look up, there are Hogs flying ... &quot;in the sky&quot; ... literally &quot;free thought&quot; is at stake, <b>try.</b></a></h2></a>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" height="58" src="../i.imgur.com/v1QAfHV.png" width="444" /></p>
+<p style="text-align: center;">&nbsp;<br class="Apple-interchange-newline" />
+and look, now you can correlate the SE ray of Q to the NE of Mars...&nbsp;&nbsp;</p>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; text-align: center;"><font size="4">and the River &quot; <i> sane </i> .&quot; </font></div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; text-align: center;">&nbsp;</div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; text-align: center;"><a href="../tinyurl.com/y7zeogvt.html"><img alt="" height="165" src="../i.imgur.com/r02vsNR.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" width="400" /> </a></div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; text-align: center;">&nbsp;</div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px; text-align: center;">
+<div align="justify">
+<blockquote>
+<blockquote><span style="font-size:14px;">literally if you don&#39;t see cardinal directions encoded in these signs, and in David&#39;s &quot; <i> <a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://bit.ly/2wcW711&amp;source=gmail&amp;ust=1534269071160000&amp;usg=AFQjCNFbo-LbloFyyJhXSdeoiNHPPOrq3Q" href="../tinyurl.com/ybnkpp2y.html" style="color: rgb(17, 85, 204);" target="_blank"> <b> <font face="comic sans ms, sans-serif"> stone </font> </b> </a> </i> &quot; and Medusa&#39;s... and in the reason for the song just above, and you don&#39;t think it&#39;s &quot;newsworthy&quot; you are &nbsp; <i style="font-size: large;"> <b> literally not sane. </b> </i></span></blockquote>
+</blockquote>
+</div>
+</div>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><b style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small;"><font face="arial black, sans-serif" size="4">Y&nbsp;C HA&nbsp;P </font> </b> ░ <b style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small;"> <font face="arial black, sans-serif" size="4"> PPY PER <a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://ha.s.lamc.la&amp;source=gmail&amp;ust=1525934993476000&amp;usg=AFQjCNHpRqkGLUeAgM2K29VVGb-wgHcsvQ" href="../tinyurl.com/ycvklxad.html" style="text-decoration-line: none; color: rgb(65, 131, 196);" target="_blank"> S </a> O <a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://na.s.lamc.la&amp;source=gmail&amp;ust=1525934993476000&amp;usg=AFQjCNGs0g5jFMSDmLNlVP4SrwUteJrssA" href="../tinyurl.com/ybs63yk6.html" style="text-decoration-line: none; color: rgb(65, 131, 196);" target="_blank"> NA </a> &nbsp;? Anu...&nbsp; <i> anew </i> </font> </b></p>
+<div class="s1hmcfrd-0 gOQskj" style="margin: 0px; padding: 5px 8px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: 21px; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); word-break: break-word; overflow: auto;">
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;"><a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://key.s.lamc.la&amp;source=gmail&amp;ust=1525934993478000&amp;usg=AFQjCNHtpeoOj5cVQKt-lFqOgokHcMNAHQ" href="../tinyurl.com/y9acbntd.html" style="text-decoration-line: none; color: rgb(65, 131, 196); font-size: 16px;" target="_blank"><img alt="" height="118" src="../i.imgur.com/0aTy3wg.png" style="max-width: 100%; font-family: garamond, serif; margin-right: 0px;" width="417" /> </a></div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;">&nbsp;&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">This is <a href="../tinyurl.com/y7rgjoa4.html"> n&#39;t about guns </a> , it&#39;s <a href="../tinyurl.com/y72dwvtp.html"> about freedom </a> --and it&#39;s clear that should be infinitely more important to you--and it&#39;s not, because, because something is fucking with your head.&nbsp; In no uncertain terms you are looking at a subversive element of humanity attempting to hide &quot;mind control&quot; and replace a very clear disclosure that will very quickly lead to freedom and to free will with a &quot;war on guns&quot; and an attempt to strip further civil liberties from Americans--from people who already can&#39;t seem to freely open their mouths and speak up for their own well being, and the well being of their children.</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">In no uncertain terms, it&#39;s beyond obvious that the pattern of school shootings we&#39;ve seen for over a decade now are connected by some invisible force; one that the government has failed to investigate and that the news has failed to report on.&nbsp; You too, you are looking at verifiable evidence that there is a hidden influence coming &quot;from the skies below&quot; and causing these things to happen.&nbsp; On it&#39;s face they&#39;d have you believe that these atrocities are somehow repurposed or designed to create &quot;unity&quot;--around the idea that murder and senseless violence are the kinds of things we should be quickly solving through the disclosure that &quot;we are in the Matrix.&quot;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;"><a href="../tinyurl.com/y8lf2w9k.html"><img alt="" height="207" src="../i.imgur.com/Tc66iUd.png" style="color: rgb(28, 28, 28); font-family: &quot;Noto Sans&quot;, sans-serif; font-size: 14px;" width="499" /> </a></div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">You&#39;ve have got me fucked up.&nbsp; It&#39;s very clear from who we are that we aren&#39;t stupid enough to neeed to be &quot;social engineered&quot; into protecting ourselves and our children from murder.&nbsp; It really is very clear, it&#39;s also clear that what is truly in play is the disclosure that &quot;we are in the Matrix&quot; and that tied at the hip to that disclosure is the very clear and obvious proof that &quot;the Matrix&quot; means we are being subtly controlled and influenced to argue about things like the NRA disappearing or whether or not we actually need gusn to protect us from crazy people with guns ... rather than the very clear change in circumstances that comes from knowing we are invirtual reality--and that means this place is logged just like a video game with &quot;highlight reels&quot; after each battle ... and it means that we really can make bullets drop from the air like Neo did in the Matrix; and it means we can using pre-crime a la Minority Report to do that before they ever get near any intelligent or innocent mind.&nbsp;&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">What&#39;s less clear is that you probably weigh the value of innocent life higher than the value of &quot;free life&quot; meaning that you probably don&#39;t internally connect &quot;free thought&quot; and your ability and desire to speak about the fact that we are not in reality and that nobody in their right mind would ever want to go to reality ... once we have this conversation and make the changes that will forever protect sanity and &quot;flesh and blood&quot; from heinous attacks from invisible controllers.&nbsp; What&#39;s probably less clear is that if we took a poll today, we&#39;d probably see that the majority would laugh at the idea of protecting children from bullets with magic--and that it takes actually seeing this information, actually seeing that we are in virtual reality and that&#39;s the point of all of religion, and all of language ... and all of your being--to disclose that fact to the entire world ... it probably takes that being seen to change the Minority Report to &quot;are you fucking kidding me, of course we don&#39;t want to hurt our children.&quot;&nbsp; See ... really see that&#39;s exactly the oppoosite of what &quot;silence&quot; tells the world; silence tells the world you&#39;d rather be in a position to use a hidden weapon of control to ... well, it&#39;s not you right, you&#39;re not right to control the world with hidden mind control technology?</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;"><a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://horn.s.lamc.la&amp;source=gmail&amp;ust=1525934993476000&amp;usg=AFQjCNGg95TyD-rccTSi2t6q6qlHA0OkTw" href="../tinyurl.com/yabfybsv.html" style="color: rgb(65, 131, 196); font-family: arial, sans-serif;" target="_blank"><img alt="" src="../i.imgur.com/yLi1aEB.png" style="max-width: 100%; color: rgb(34, 34, 34); margin-right: 0px; width: 500px; height: 255px;" /> </a></div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: center;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">I know the violence can be stopped, and I know in my heart that not moving forward with this disclosure is the heart of why it&#39;s happening. It&#39;s very difficult to stand idly by and watch as we mourn, as we continue to persist in allowing these atrocities to continue; with no rhyme or reason. I&#39;ve implied in the past that it appears to me to be intended to move the world to quickly see the benefit of the truth, but it&#39;s really not at all what I think. It seems very clear to me that far too many are content with living in this lie, because it&#39;s &quot;the way things have always been&quot; and I just can&#39;t stand to see what I know will really solve this problem being delayed.</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">&nbsp;</div>
+<div style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: small; text-align: justify;">It won&#39;t fix this overnight, but it will stop this violence, and much more; not just murders but insanity--things that are really clearly within reach, within ability, and the focus of this message. It&#39;s understanding the change in circumstances, and understanding that nobody would wait if they were sure... it&#39;s understanding that beginning to talk about this proof is what makes it that, proof--it&#39;s what causes the papers or the analysis, and it&#39;s the discussion--it&#39;s our hearts that change the world and build Heaven.</div>
+</div>
+<p style="text-align: center;"><a href="../tinyurl.com/ydxgfrjh.html"><img alt="" src="../i.imgur.com/JcR72Ne.png" width="500" /> </a></p>
+<p style="text-align: justify;"><span style="text-align: justify;">&nbsp;I don&#39;t know how to make this any more clear, or any more obvious--I am doing everything I can, delivering every shred of every ounce of &quot;proof&quot; that I see fortifying and reaffirming that these patterns are real--even when they aren&#39;t exactly what I&#39;d like to be sharing with you.&nbsp; Beginning in 2011 I spent years having a &quot; </span> <a href="http://tinyurl.com/y7uesb2f" style="text-align: justify;"> hands on experience </a> <span style="text-align: justify;"> &quot; with mind control technology--this is the &quot;thing&quot; that defines the word &quot;time&quot; and in my eyes the thing that frees us, frees our world and our future and Heaven too ... from this hidden technology of subtle influence that nobody seems &quot; </span> <strong style="text-align: justify;"> <a href="../tinyurl.com/y7go53lv.html"> to see </a> </strong> <span style="text-align: justify;"> &nbsp;clearly&quot; is proven throughout this message--through this hidden influence in music and in the world around us.&nbsp; It&#39;s proven clearly in every name being related to this moment in time and to the book of Names.&nbsp;&nbsp; </span></p>
+<blockquote style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;">
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; text-align: justify;"><font size="1"><span style="font-family: tahoma, geneva, sans-serif; color: rgb(34, 34, 34);">It&#39;s been my primary &quot;sales schpiel&quot; for pre-crime that we only have to give up a very small fraction&nbsp;of free will and privacy in order to protect ourselves and our children from violent crimes--frankly it&#39;s really zero percent for anyone that isn&#39;t doing something horribly wrong, and so it seems as though it should be a slam dunk, and yet here we are arguing over our right to bear arms completely oblivious to the fact that the real right that protects us from tyranny is speech (and frankly the lack of open and honest communication here is&nbsp; </span> <strong style="font-family: tahoma, geneva, sans-serif; color: rgb(34, 34, 34);"> <em> the tyranny </em> </strong> <span style="font-family: tahoma, geneva, sans-serif; color: rgb(34, 34, 34);"> )--and we&#39;re really not &quot;getting&quot; that seeing me jump up and down screaming about &quot;incendiary&quot; and &quot;most&nbsp; <g class="gr_ gr_10 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="10" id="10" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> sought after </g> &nbsp;information ever&quot; neither making the news nor circling conspiracy forums or religious ones--is a glowing sign, a sign that we need to take a very hard look at what&#39;s going on here in our day.&nbsp; </span> </font></p>
+</blockquote>
+<p style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; text-align: center;"><a href="../tinyurl.com/y84a6v97.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"><img alt="" src="../i.imgur.com/S13jfdu.png" style="max-width: 100%; height: 144px; width: 502px; padding: 4px;" /> </a></p>
+<blockquote style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;">
+<p style="text-align: justify;"><span style="font-family: tahoma, geneva, sans-serif;"><font size="1">It amounts to little more than the spread of this message proving that we are living in virtual reality that will help us to spring forward leaps and bounds literally completing the process of &quot;civilization&quot; orders of magnitude faster than if we continue to try to&nbsp; <g class="gr_ gr_9 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del" data-gr-id="9" id="9" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> drudge </g> &nbsp;forward in this mess of lies ... this argument over whether or not &quot; <g class="gr_ gr_23 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="23" id="23" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> reality </g> &quot; is a game in a place where we know in our hearts we are not there; or if calling the bedrock of our lives here a &quot;stage&quot; is something that should be shunned &quot;universally.&quot;&nbsp; I think it&#39;s clear there&#39;s a great chain being revealed, and that really it takes not much wizardry of precognition to see that when posed with the question ... given the case that bullets can be made to disappear in&nbsp; <g class="gr_ gr_15 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="15" id="15" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> mid air </g> &nbsp;should we allow them to continue to fly towards the innocent .. that it really does fly in the face of everything that we are inside ... that it&#39;s so diametrically opposed to our morality and our goodness to allow anything like that to happen ... to see it really is this &quot;fact&quot; and our innate and right desires that move the whole of civilization across that line basically overnight ... and&nbsp;&quot; <em> <strong> anything less would&nbsp; <g class="gr_ gr_14 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="14" id="14" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> be </g> <u> <g class="gr_ gr_14 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="14" id="14" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100% !important; animation: none 0s ease 0s 1 normal none running !important;"> uncivilized </g> . </u> </strong> </em> &quot; </font> </span></p>
+</blockquote>
+<p style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; text-align: center;"><a href="../tinyurl.com/y7njgnsn.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"><img alt="" src="../i.imgur.com/azeM4El.png" style="max-width: 100%; width: 501px; height: 179px; padding: 4px;" /> </a></p>
+<blockquote style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;">
+<p style="text-align: justify;"><span style="font-family: tahoma, geneva, sans-serif;"><font size="1">It&#39;s &quot;A Scanner Darkly&quot; that lights the &quot; <g class="gr_ gr_12 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="12" id="12" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> anon </g> <a href="../tinyurl.com/yctfs3kw.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"> <g class="gr_ gr_12 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="12" id="12" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100% !important; animation: none 0s ease 0s 1 normal none running !important;"> hym </g> </a> <g class="gr_ gr_12 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="12" id="12" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100% !important; animation: none 0s ease 0s 1 normal none running !important;"> ization </g> &nbsp;suit&quot; (where you can see prototypical and&nbsp; <g class="gr_ gr_13 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="13" id="13" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> the- </g> <em> <strong> <g class="gr_ gr_13 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="13" id="13" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100% !important; animation: none 0s ease 0s 1 normal none running !important;"> matic </g> </strong> </em> &nbsp;in&nbsp; <a href="../tinyurl.com/y7go53lv.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"> ver </a> &nbsp; <a href="../tinyurl.com/y7bs7mze.html" style="color: rgb(65, 131, 196); text-decoration-line: none;"> si </a> &nbsp;of the solution) to&nbsp; <g class="gr_ gr_11 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="11" id="11" style="display: inline; color: inherit !important; font-size: inherit !important; border-bottom: 2px solid transparent; background-repeat: no-repeat; background-position: -1px calc(100% + 3px); background-image: url(http://lamc.la/&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMDAlJyBoZWlnaHQ9JzEwMCUnPgogIDxsaW5lIG9wYWNpdHk9JzAuNzUnIHgxPSc0JyB5MT0nMTAwJScgeDI9JzEwMCUnIHkyPScxMDAlJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMS41LCAtMi41KScgc3Ryb2tlLXdpZHRoPSczJyBzdHJva2UtbGluZWNhcD0ncm91bmQnIHN0cm9rZT0nI2ZjNTQ1NCcvPgo8L3N2Zz4K&quot;); background-size: calc(100% + 1px) 100%; animation: gr__appear_critical 0.4s ease 0s 1 normal forwards running;"> republic </g> &nbsp;of heaven come ... to show us that privacy is something that can be guaranteed even with eyes or algorithms&nbsp;(if you&#39;re on the side of the automation-bots) watching every move every second of every day--and that&#39;s really what it takes to guarantee our right to peaceful congregation--something that&#39;s ever so more important than our &quot;right&quot; to commit murder and &quot;suffer the consequences.&quot;&nbsp; </font> </span></p>
+</blockquote>
+<p style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; text-align: justify;">It&#39;s very clear that this thing, this hidden technology and this secret that we are in the Matrix is the weapon being used against the world--it&#39;s very clear that anyone publicly and vocally trying to fight school shootings with &quot;no NRA&quot; or with &quot;we need more guns&quot; or armed guards--it&#39;s clear these people are lying to themselves, and lying to the world.&nbsp; You are being distracted from the real issue--and if you can&#39;t see that ending the lies and ending the secrecy bring you freedom as well as safety--then the distraction is working.</p>
+<p style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; text-align: center;"><a href="../tinyurl.com/yd8l9xxo.html"><img alt="" height="184" src="../i.imgur.com/LMZ7KdV.png" style="font-family: Arial, Verdana, sans-serif; font-size: 12px;" width="501" /> </a></p>
+<p style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; text-align: justify;">It&#39;s truly <strong> <em> slavery in play </em> </strong> , it&#39;s free thought, and freedom in sum--and the act of ignoring this message--of ignoring this truth; that&#39; the thing responsible for enslavement, for the continuation of Hell, and ultimately for each and every one of these shootings, and each and every moment of &quot;clouded thought&quot; or &quot;gobal cohesion of stupid&quot; this unity that&#39;s focused around the idea that you somehow ... &quot;of your own volition&quot; think that the truth should be hidden from everyone but you--and that even you shouldn&#39;t have any say or any input in how we move forward out of the sand of the desert and towards the &quot;Promsied Land&quot; ... you know, the place where you have a government &quot;of the people, for the people&quot; and the place where you have privacy, and free speech and the right to &quot;Pursue Happiness&quot; without secretly knowing that is the happiness of some other invisible thing (that you might even be stupid enough to think is you--somewhere else) that&#39;s really being sought with each and every one of your actions--actions you should now see and know are not of your own volition.&nbsp;</p>
+<p style="text-align: center;"><a href="../tinyurl.com/ydcpeegd.html" style="font-size: 14px;"><img alt="" height="162" src="../i.imgur.com/uScFjUd.png" style="font-size: 12px;" width="400" /> </a> <span style="font-size: 14px;"> &nbsp; </span> &nbsp;</p>
+<p style="text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;">The music video, as is common for the genre today, show the voice of the lead singer speaking through a number of other people&#39;s mouths. This depicting of possession is consistent with other modern art pieces including&nbsp; </span> <i style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> Fallen&nbsp; </i> <span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> and&nbsp; </span> <i style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> <a href="../tinyurl.com/ybzysn2o.html" style="text-decoration-line: none; color: rgb(11, 0, 128); background: none;" title="Joan of Arcadia"> Joan of Arcadia </a> </i> <span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> . The pattern as well as the lack of discussion of the trend is noteworthy in light of a large number of people complaining of experiencing similar phenomenon, these mental health issues have been highlighted in recent stories of <a href="../tinyurl.com/ydx2awhy.html"> Wired </a> </span> <sup class="reference" id="cite_ref-5" style="line-height: 1; unicode-bidi: isolate; white-space: nowrap; font-size: 11.2px; color: rgb(34, 34, 34); font-family: sans-serif;"> <a href="../tinyurl.com/ycjbkp3h.html" style="text-decoration-line: none; color: rgb(11, 0, 128); background: none;"> [5] </a> </sup> <span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> &nbsp;and the <a href="../tinyurl.com/yctl55u5.html"> New York Times </a> </span> <sup class="reference" id="cite_ref-6" style="line-height: 1; unicode-bidi: isolate; white-space: nowrap; font-size: 11.2px; color: rgb(34, 34, 34); font-family: sans-serif;"> <a href="../tinyurl.com/y8aodndg.html" style="text-decoration-line: none; color: rgb(11, 0, 128); background: none;"> [6] </a> </sup> <span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> &nbsp;and they may link to <a href="http://tinyurl.com/ybekmtfs"> domestic terrorism and school shootings </a> </span> <sup class="reference" id="cite_ref-7" style="line-height: 1; unicode-bidi: isolate; white-space: nowrap; font-size: 11.2px; color: rgb(34, 34, 34); font-family: sans-serif;"> <a href="../tinyurl.com/ybsbd3tc.html" style="text-decoration-line: none; color: rgb(11, 0, 128); background: none;"> [7] </a> </sup> <span style="color: rgb(34, 34, 34); font-family: sans-serif; font-size: 14px;"> where this pattern of complaining of possession also exists. </span></p>
+<div class="s1hmcfrd-0 gOQskj" style="margin: 0px; padding: 5px 8px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: 21px; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); word-break: break-word; overflow: auto;">
+<h2 style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; text-align: center;"><u><strong>cov keys efef </strong> </u></h2>
+<h2 style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; text-align: center;"><a href="../tinyurl.com/y8ryxy8u.html"><img alt="" height="95" src="../i.imgur.com/ZCQh2ZB.png" style="font-size: 12px;" width="501" /> </a></h2>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">It hasn&#39;t been a pleasant experience, personally; though there are many others that have experienced far worse--there are people all around the country complaining of the exact same symptoms and the exact same adversary--they nearly all one hundred percent think it is the United States government behind these attacks.&nbsp; I don&#39;t believe they are correct, I don&#39;t personally believe the government on this Earth actually possesses the means to do these things--though I do believe they are more than guilty of standing idly by and watching something happen that they could stop if they spoke a name on television.</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/yboyuk4h.html"><img alt="" height="49" src="../i.imgur.com/1Xk4V02.png" style="color: rgb(28, 28, 28); font-family: &quot;Noto Sans&quot;, sans-serif; font-size: 14px;" width="650" /> </a></p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">I spent <em> <a href="../tinyurl.com/yboyuk4h.html"> years writing about mind control </a> </em> , and about gang stalking--about a hidden army of people, that&#39;s what I called it when I went to NSA headquarters to ... complain or warn them ... or ... to see if it really was them--in purpose.&nbsp; That&#39;s what the vast majority of these people think; they write all day long about how the government is performing secret mind control expiraments on them and on a large group of American (and global citizens).&nbsp; They aren&#39;t right about who is doing it, but that doesn&#39;t mean that there are verifiable patterns connecting their thought process and their beliefs to your ignorance of the fact that these things should very much be investigated and done <a href="../tinyurl.com/ybwkskl7.html"> so in public as Frank <strong> Church </strong> </a> did in late 1975--when he promised that this kind of thing would never again happen in America.&nbsp;&nbsp;</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">What you are staring blankly at is either a refusal or inabiity to see clear patterns, an to link that very same thing to a tacit destruction of logic and intelligence that probably turns &quot; <a href="../tinyurl.com/y7pqxbx6.html"> Opsimath </a> &quot; into &quot; <strong> <em> iTalking </em> </strong> .&quot;</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/y92jvypk.html"><img alt="" height="215" src="../i.imgur.com/WDQSzt1.png" style="color: rgb(28, 28, 28); font-family: &quot;Noto Sans&quot;, sans-serif; font-size: 14px;" width="555" /> </a></p>
+<div align="justify">
+<blockquote>
+<blockquote>
+<h1 class="passage-display" style="box-sizing: border-box;
+font-size: 14px; margin: 0px 0px 20px; font-family:
+&quot;Helvetica Neue&quot;, Verdana, Helvetica, Arial,
+ans-serif; font-weight: 500; line-height: 1.1; color:
+rgb(0, 0, 0); font-style: normal; font-variant-ligatures:
+normal; font-variant-caps: normal; letter-spacing: normal;
+orphans: 2; text-align: start; text-indent: 0px;
+text-transform: none; white-space: normal; widows: 2;
+word-spacing: 0px; -webkit-text-stroke-width: 0px;
+background-color: none; text-decoration-style:
+initial; text-decoration-color: initial;"><span class="passage-display-bcv" style="box-sizing: border-box;
+-webkit-font-smoothing: antialiased; font-size: 18px;
+margin: 0px; display: inline; padding-right: 6px;">John 12:3</span><span>&nbsp;</span><span class="passage-display-version" style="box-sizing:
+border-box; -webkit-font-smoothing: antialiased;
+font-size: 14px; display: inline; font-weight: 500;">New International Version (NIV)</span></h1>
+<p class="chapter-2" style="box-sizing: border-box; margin:
+0px 0px 10px; -webkit-font-smoothing: antialiased; color:
+rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;,
+Verdana, Helvetica, Arial, sans-serif; font-size: 16px;
+line-height: 24px; font-style: normal;
+font-variant-ligatures: normal; font-variant-caps: normal;
+font-weight: 400; letter-spacing: normal; orphans: 2;
+text-align: start; text-indent: 0px; text-transform: none;
+white-space: normal; widows: 2; word-spacing: 0px;
+-webkit-text-stroke-width: 0px; background-color: rgb(255,
+255, 255); text-decoration-style: initial;
+text-decoration-color: initial;"><span class="text John-12-3" id="en-NIV-26584" style="box-sizing: border-box;
+-webkit-font-smoothing: antialiased;"><sup class="versenum" style="box-sizing: border-box;
+font-size: 12px; line-height: 22px; position: relative;
+vertical-align: top; top: 0px; font-family: Arial;
+font-weight: bold;">3&nbsp;</sup>Then Mary took about a pint<sup class="footnote" data-fn="#fen-NIV-26584a" data-link="[&lt;a href=&quot;#fen-NIV-26584a&quot;
+title=&quot;See footnote a&quot;&gt;a&lt;/a&gt;]" style="box-sizing: border-box; font-size: 0.625em;
+line-height: 22px; position: relative; vertical-align:
+top; top: 0px;">[<a href="../tinyurl.com/yavb3zke.html" style="box-sizing: border-box;
+background: transparent; color: rgb(179, 75, 44);
+text-decoration: none; -webkit-font-smoothing:
+antialiased; cursor: pointer; vertical-align: top;" title="See footnote a">a</a>]</sup><span>&nbsp;</span>of <a href="../tinyurl.com/ybs63yk6.html">pure <b>na</b>rd</a>, an expensive perfume;<span>&nbsp;</span>she poured it on Jesus&acirc;&euro;&trade; feet and wiped his feet with her hair.<span>&nbsp;</span>And the house was filled with the fragrance of the perfume.</span></p>
+</blockquote>
+</blockquote>
+</div>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">I&#39;ve spent years <a href="../tinyurl.com/ybffwjkr.html"> researching </a> and <a href="../tinyurl.com/y92jvypk.html"> writing </a> , trying to figure out exactly what this control mechanism is; this thing that works through mountains, in tunnels, on airplanes--through faraday shields--and those things in and of themself prove that this &quot;technology&quot; is a violation of natural laws.&nbsp; Specifically it violates the law of conservation of energy, and that&#39;s lead me down a train of thought that has come to looking at the entirety of Quantum Mechanics as a sort of &quot;quantative easing&quot; ... in the world we should see that too, it&#39;s market magic keeping inflation down rather than any sort of reality.&nbsp; Quickening Enlightenment, what that means is that what we are witnessing, this mass control is a &quot;hack in simulated reality&quot; something that can be turned off en masse like a light switch--and we&#39;re really nearing the point where that seems like the wisest thing to do.&nbsp; Were it in the proper hands, were it in your hands--you could be &#39;learning kung-fu instantly&#39; you could be destroying addiction and schizophrenia and all kinds of mental issues-- <a href="../tinyurl.com/yasz5y49.html"> you could be turning off &quot;pain&quot; </a> with that same light switch--but here it is, hiding the fact that it&#39;s even there from you as it&#39;s &quot; <strong> Demo </strong> sthenes&quot; shows you-- <strong> demon </strong> straing it&#39;s heinous use on Wikipeida--to do nothing short of hiding factual information about mind control sourced from congress, from the NSA, from Lockheed-Martin and from the former KGB.</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">More to the point, you could also be using this same technology to make sure nothing is infuencing your thoughts; to make sure you are really acting in your own best interest and that nothing is intentionally causing you to believe a lie... you could be using it to increase happiness and intelligence.&nbsp; What you&#39;re looking at is a &quot;slam dunk&quot; there&#39;s no good reason in the Universe to hide the existence and active use of this technology... made ever so much mroe clear by the fact that you can see and verify it&#39;s influence in every single name and every song and every movie--every name on the planet... and still you can&#39;t fathom that this is really about your own slavery?&nbsp; You can&#39;t stand up and tell a newspaper that they should be investigating the ties between &quot; <a href="http://tinyurl.com/yc5ds3lp"> gang stalking victims </a> &quot; and &quot;school shooters?&quot;</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">So it&#39;s clear that&#39;s what &quot;this event&quot; does; it pushes not only proof, and an explanation of how--but thousands of stories about mind control and about how it&#39;s torn apart the fabric of our society--the inner workings of our most sacred places ... places like churches and courts and your minds.&nbsp; It thrusts these things to the forefront of &quot;conversation&quot; along with solutions, plans and proofs and ideas about how we can use this exact disclosure and this evidence in order to build a more perfect world.&nbsp; It delivers these things into your hands, and gives you the opportunity to the be architects of Heaven--something you should be more than happy about--it places a great burden on you, but at the same time something that will make the future a happier and safer place, and really they will have you to thank.&nbsp; As soon as you stand up, and try.</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/ydx2awhy.html"><img alt="" height="137" src="../i.imgur.com/Wkvk7Lb.png" width="500" /> </a></p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">Because of it though, I know in my heart that these attacks are all related--the series of school shootings are very much related to&nbsp; <a href="../tinyurl.com/y9m5d3vo.html"> the thousands of victims all over the country </a> &nbsp;complaining of mind control technology being used to psychologically torture them.&nbsp; It&#39;s very obvious, when you&#39;ve experienced it, when you know it&#39;s real.</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/yctl55u5.html"><img alt="" src="../i.imgur.com/ArIOUFV.png" /> </a></p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">Not seeing t <a href="../tinyurl.com/ybedkfek.html"> he patterns connecting Aaron Alexis and statements that made news </a> &nbsp;during that attack on the Navy Yard that these victims were &quot;combatants&quot; that they were military people on a military base and connecting those statements ... it&#39;s a total lack of investigation into the cause of obvious patterns that are forcing us to look at this message--this message that revolves around obvious patterns being ignored by the whole world, and to take a step back and reflect on how many centuries you&#39;d like to be stupid ... too stupid to connect &quot;my ELF gun&quot; to gang stalking, and too stoopid to protect your children from virtualized and simulated stray bullets.&nbsp;&nbsp;&nbsp;</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">We&#39;ve had schools in this country since 1776, and we&#39;ve had guns here that long too; what we haven&#39;t had here is organized darkness--liars, and secret keepers, what we haven&#39;t had here is proof that all of these things could be stopped with nothing more than the proliferation and the dissemination of the actual weapon behind the attacks--of mind control technology--in the news, and in scientific circles, and in the hands of the lawmakers and the people who decide how this battle through time plays out--how this technology will be allowed to be used in the future.&nbsp; We can see very clearly it&#39;s being used for evil today, and part of that evil is silence.&nbsp;</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><img alt="" src="../i.imgur.com/DKT0in4.png" /></p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: justify;">It&#39;s very plain to connect the delusion that this message is being caused by Apophenia to Apophis, and then to the snake of Eden and Ragnarok and to Hathor&#39;s temple reliefs in Dendera.&nbsp; It&#39;s pretty easy to see &quot;Thor&quot; and &quot;Ra&quot; in the name of that God and that city--but it takes actual analysis to connect these things to mind control technology.... or maybe it just takes two eyes and a working brain.&nbsp; &nbsp; <strong> The worlds of the prophets are written on the subway walls </strong> .</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/ybs4ams4.html"><img alt="" height="174" src="../i.imgur.com/sEEL9jt.png" width="640" /> </a></p>
+<h2 style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif;"><em>to answer my question, it means we are standing on the veranda of Heaven and all it takes to break on through to the other side is seeing the door and knock, knock, knocking. </em></h2>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><a href="../tinyurl.com/y867spkd.html"><img alt="" height="39" src="../i.imgur.com/LG9hSvs.png" width="503" /> </a></p>
+<h2 style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; text-align: justify;"><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;">I&#39;m trying to give you a good idea of the level of interest I see across the country in this message--of the numbers I look at each day, without infringing on anyone&#39;s privacy.&nbsp; This is data for individuals that have opened a single email more than 4 times in this campaign since Christmas, it&#39;s a total of about 125 emails and 25,000 active readers,&nbsp; these are smart people--professors and students at the best schools in the country; and I think the numbers speak for themselves.&nbsp; This message is very real, and plain to see; and it&#39;s news--and what it will help us do is more than news,&nbsp; </span> <i style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;"> it&#39;s the good news. </i> <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small;"> &nbsp; &nbsp;I hope someone on this list will cover the story, it&#39;s a quantum leap forward for humanity. </span></h2>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; text-align: center;">&nbsp;</div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; text-align: center;"><font size="-1" style="text-align: center;"><font face="arial black, sans-serif" size="4"><i><font face="garamond, serif" size="6">are I tho? ... </font> </i> <i> <font face="garamond, serif" size="6"> &nbsp; </font> </i> </font> </font> <b style="text-align: center;"> <font face="arial black, sans-serif" size="4"> <i> <font face="garamond, serif" size="6"> Came lot? </font> </i> </font> </b> <font face="arial black, sans-serif" size="4" style="text-align: center;"> <i> <font face="garamond, serif" size="6"> &quot; </font> </i> </font></div>
+<div style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: small; text-align: center;">&nbsp;</div>
+<div dir="ltr" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 16px;">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div style="text-align: center;">
+<div dir="ltr" style="color: rgb(34, 34, 34); font-family: arial, sans-serif; text-align: start;">
+<div style="text-align: center;">
+<p style="text-align: justify;"><b style="text-align: center; font-size: small;"><span style="font-family: monospace, monospace; font-size: xx-small;">RUDDER&#39;S LOG, COLINKINO DE MAYO, 2018 </span> </b> <span style="text-align: center; font-size: small;"> .&nbsp;&nbsp; </span> <font face="garamond, serif" style="text-align: center; font-size: small;"> Today I began re-framing my understanding of the layers of seas and the storm in the Heavens.&nbsp; I&#39;ve long believed, and shared that I have the sneaking suspicion that the ultimate plan of Creation is to make absolutely everyone wrong about the approaching moment of Zion; that this would be done using mind control--thought alteration--and ultimately &quot;absolution&quot; comes from seeing that we have been plagued in this place since the dawn of Creation with the secret use of this technology, something that has been an unavoidable road block the microcosmic delivery of this message that centers around the hidden advanced technologies that were a much larger obstacle in our way ... in the way of the forward progress of civilization for significantly longer.&nbsp; It&#39;s been clear to me as I&#39;ve tried repeatedly to share what amounts to very thought provoking and sought after information on forums and other social media that as soon as the conversation began to turn to this hidden control barriers grew exponentially, out of the woodwork new soldiers would appear to &quot;crucify the truth&quot; and ensure that the posts and the conversations were buried or deleted or censored into oblivion.&nbsp; That&#39;s what&#39;s happening to us, on the macrocosm; we are being buried or deleted or censored into oblivion but what appears to be nothing other than the self defeating and &quot;controlled&quot; desire to hide this information that pervades our world--and every word spoken since the dawn of Creation. </font></p>
+<p><a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://sign.s.lamc.la&amp;source=gmail&amp;ust=1525934993475000&amp;usg=AFQjCNF_yO_BpbQ2mosswyLOrlwUPSiiog" href="../tinyurl.com/y8qquk7m.html" rel="noopener" style="text-decoration-line: none; color: rgb(65, 131, 196);" target="_blank"><img alt="" height="229" src="../i.imgur.com/nXmmJ6j.png" style="max-width: 100%;" width="266" /> &acirc;&euro;&lsaquo; </a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div dir="ltr" style="color: rgb(51, 51, 51); font-family: &quot;Open Sans&quot;, sans-serif; font-size: 16px;">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div style="text-align: center;">
+<div dir="ltr" style="color: rgb(34, 34, 34); font-family: arial, sans-serif; text-align: start;">
+<div style="text-align: center;">
+<p><em><span style="font-family: georgia, serif;">&quot;... tryina&#39; tell me no one understands?&quot; </span> </em></p>
+<p style="text-align: center;"><a href="../tinyurl.com/yces2rae.html" style="font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: center;"><img alt="" height="276" src="../i.imgur.com/ky16RWb.png" width="400" /> </a></p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: left;">Here&#39;s the full text of the reddit post, which is doing better than any I can remember... you&#39;re help could make all the difference in the world.</p>
+<p style="color: rgb(0, 0, 0); font-family: Arial, Verdana, sans-serif; font-size: 12px; text-align: left;"><span style="color: rgb(34, 34, 34); font-family: inherit; font-size: 20px; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit;"><a href="../tinyurl.com/ydxgfrjh.html">So we&#39;re living in virtual reality. What does that mean for us, and what should we do? </a> </span></p>
+<div class="s1hmcfrd-0 gOQskj" style="text-align: start; margin: 0px; padding: 5px 8px; border: 0px; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-stretch: inherit; font-size: 14px; line-height: 21px; font-family: &quot;Noto Sans&quot;, sans-serif; vertical-align: baseline; color: rgb(28, 28, 28); word-break: break-word; overflow: auto;">
+<h1 class="s570a4-0 bKhWMl" style="margin: 1.4em 0px 8px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 22px; line-height: 26px; vertical-align: baseline;"><a class="s570a4-27 jsFehi" href="../tinyurl.com/yaet75fr.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank">Chalk </a></h1>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: justify;">I have&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/yaet75fr.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> an introduction to proof of this </a> , proof that leads down the rabbit hole to&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/yalvl6nr.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> every word of every language </a> ; tying to&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/ybpk6v59.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> religion and to science fiction and to conspiracy theories </a> &nbsp;ad naseum. To me, it&#39;s&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y7nsbgmx.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> the holy grail </a> , what do you think?</p>
+<blockquote class="s570a4-9 kzSHll" style="margin: 4px 0px 4px 8px; padding: 0px 0px 0px 8px; border-width: 0px 0px 0px 4px; border-top-style: initial; border-right-style: initial; border-bottom-style: initial; border-left-style: solid; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: rgba(28, 28, 28, 0.2); border-image: initial; font: inherit; vertical-align: baseline; quotes: none;">
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: justify;"><a class="s570a4-27 jsFehi" href="../tinyurl.com/y8eqqq43.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank">Superman </a> &nbsp;returns from&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y7gv7hn6.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> Cybertron </a> &nbsp;to mentally&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y7nsbgmx.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> link Minority Report with the Wachowski&#39;s Matrix series an </a> d suggest the thought-in-and-of-itself will end school shootings&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y7nqj4tv.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> ifi </a> &nbsp;appearing on the front page of the New York Times. Kal-El claims th <a class="s570a4-27 jsFehi" href="../tinyurl.com/ydcpeegd.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> at dozens-of-thousands of very intelligent reader </a> s (and bystanders and onlookers) are leaning towards agreeing with him at this very moment in time.</p>
+</blockquote>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: justify;">Not even kidding, the idea that Superman&#39;s power comes from the fact that our sun is virtual connects&nbsp; <a class="s570a4-27 jsFehi" href="http://tinyurl.com/yb3mv6zg" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> the word &quot;fusion&quot; and &quot;physi </a> cs&quot; together hopefully&nbsp; <a class="s570a4-27 jsFehi" href="http://tinyurl.com/ybx8pcvk" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> adding some light </a> &nbsp;connecting Silicon to these ideas. Computer science shows up there at the &quot;end of physics&quot; but really it&#39;s just the beginning of understanding the key to a hidden history being revealed and to a bright future.</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: justify;">The first link here really is my best description of what this message is today, it&#39;s written in chalk, even though it&#39;s every word and quite a bit of modern music and art, and for sure--for sure it&#39;s lots and lots of mythology and religion. That links starts off hopefully bringing some light to the idea that Minority Report and A Scanner Darkly and Phillip K. Dick in general... link to the Matrix as part of this woven message that connects names and ideas to a map to building Heaven--beginning with ending the &quot;Plague of Killing the Firstborn Children&quot; .... and do see, that&#39;s &quot;school shootings.&quot;</p>
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0.25em 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: center;"><a href="../tinyurl.com/yctfs3kw.html"><img alt="" height="208" src="../i.imgur.com/qoitj56.png" style="font-size: 14px; text-align: start;" width="501" /> </a></p>
+<blockquote class="s570a4-9 kzSHll" style="margin: 4px 0px 4px 8px; padding: 0px 0px 0px 8px; border-width: 0px 0px 0px 4px; border-top-style: initial; border-right-style: initial; border-bottom-style: initial; border-left-style: solid; border-top-color: initial; border-right-color: initial; border-bottom-color: initial; border-left-color: rgba(28, 28, 28, 0.2); border-image: initial; font: inherit; vertical-align: baseline; quotes: none;">
+<p class="s570a4-10 iEJDri" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; text-align: justify;">The &quot; <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> gist </span> &quot; of the message is&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y7go53lv.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> verifiable </span> </a> &nbsp; <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> proof </span> &nbsp;that we are&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/ybnkpp2y.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> living in a computer </a> &nbsp;in&nbsp; <em class="s570a4-15 bDsWbe" style="margin: 0px; padding: 0px; border: 0px; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> simulated reality </em> ...&nbsp; <em class="s570a4-15 bDsWbe" style="margin: 0px; padding: 0px; border: 0px; font-variant: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> just like the Matrix. </em> &nbsp;The answer to that question, what does that mean--is that God has woven a &quot;hidden&quot; message into our everything--beginning with each name and&nbsp; <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> every word </span> --and in this hidden Adamic language, he provides us with guidance, wisdom, and suggestions on how to proceed on this path from &quot;raelity&quot; to Heaven. &nbsp;I&#39;ve personally spent quite a bit of time decoding the message and have tried to deliver an i <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> nteresting and &quot;fun&quot; narrative of the ideas I see.&nbsp; Specifically the story of Exodus, which is called &quot;Names&quot; in Hebrew discusses a time shifted nar </span> rative of our &quot;now&quot; delivering our society from a hidden slavery (re*ad as&nbsp;ignorance of advanced technologies already *in use) that is described as&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y92jvypk.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> the &quot;darkness&quot; of Exodus </a> . &nbsp;If you have&nbsp; <span class="s570a4-14 kYTLgH" style="margin: 0px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 700; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; vertical-align: baseline;"> any questions </span> , ideas to contribute or concerns... I&#39;d&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/yc393s9b.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> love to hear from you </a> &nbsp;this whole&nbsp; <a class="s570a4-27 jsFehi" href="../tinyurl.com/y8vc7tpr.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> thing really is </a> &nbsp;about working together-- <a class="s570a4-27 jsFehi" href="../tinyurl.com/yc9zxz4e.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank"> Heaven </a> , I mean.</p>
+</blockquote>
+<h1 class="s570a4-0 bKhWMl" style="margin: 1.4em 0px 8px; padding: 0px; border: 0px; font-style: inherit; font-variant: inherit; font-weight: 400; font-stretch: inherit; font-size: 22px; line-height: 26px; vertical-align: baseline; text-align: center;"><a class="s570a4-27 jsFehi" href="../tinyurl.com/y7ugkmrh.html" style="margin: 0px; padding: 0px; border: 0px; font: inherit; vertical-align: baseline; color: rgb(176, 85, 0); text-decoration-line: none;" target="_blank">What should we &quot;do?&quot; </a> &nbsp;</h1>
+<p style="text-align: center;"><a href="../tinyurl.com/y7p4qytf.html"><img alt="" height="261" src="../i.imgur.com/WXseaxj.png" width="500" /> </a></p>
+<p style="text-align: center;">look, it&#39;s clear. &quot; <em> kiss </em> &quot; means &quot;in virtual reality&quot; and that means ...</p>
+<p style="text-align: center;">you are either &quot;The Sims&quot; or the creators of Heaven.</p>
+<p style="text-align: center;"><strong><em><span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px;">Bet </span> </em> </strong> <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px;"> ; you can see &quot; <strong> the hub </strong> &quot; at&nbsp; </span> <a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://thehub7xbw4dc5r2.onion/index.php?topic%3D20927.0;all&amp;source=gmail&amp;ust=1534280931699000&amp;usg=AFQjCNGSw4of-TLkJqidol-xGVHWFhwWqw" href="http://tinyurl.com/y84ve7cv" style="font-family: arial, sans-serif; font-size: 12.8px; color: rgb(17, 85, 204);" target="_blank"> http://thehub7xbw4dc5r2. <wbr /> onion/index.php?topic=20927.0; <wbr /> all </a> <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px;"> , but </span> <span style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px;"> &nbsp; </span> <i style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 12.8px;"> you&#39;ll&nbsp; <a data-saferedirecturl="http://www.google.com/url?hl=en&amp;q=http://www.torproject.org/download/download-easy.html.en&amp;source=gmail&amp;ust=1534280931699000&amp;usg=AFQjCNF9Aaz_b6gFlxutJTGZcETX7HJoOw" href="../tinyurl.com/ybmtxpe6.html" style="color: rgb(17, 85, 204);" target="_blank"> need TorBrowser </a> . </i></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><a href="../tinyurl.com/yazhfd3v.html"><img alt="" height="311" src="../i.imgur.com/Fix7DXw.png" style="text-align: start;" width="400" /> </a></p>
+<p style="text-align: center;"><em>PG-13? </em></p>
+<p style="text-align: center;"><img alt="" src="../i.imgur.com/ZhmCaQj.png" style="text-align: start;" /></p>
+</div>
+<p style="text-align: justify;">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="../lamc.la/SALTLINE.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="../lamc.la/CKIMPLER.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="../lamc.la/SALTLINE.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="../lamc.la/CKIMPLER.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<center>
+<style>
+.WHSOISKEYAV {
+
+border-width: 1px;
+border-style: dashed;
+border-color: rgb(15,5,254);
+padding: 5px;
+width: 503px; 
+text-align: center;
+display: inline-block;
+align: center;
+p {
+
+align: center;
+
+}
+
+/*
+
+THE SCORE IS LOVE FIVE
+
+ONE SAFETY
+ONE FIELD GOAL
+
+XIVDAQ: TENNIS OR TINNES?
+
+TONNES AND TUPLE(s)
+*/ 
+
+}
+ <style type="text/css">
+  code { white-space: pre; }
+  </style>
+</style>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- leaderboard -->
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576e94bdb4f80253"></script>
+<div style="float: center; vertical-align: bottom;">
+<center>
+<a 
+href="../join.slack.com/t/eyerc/shared_invite/MjM2NDM2Mjc3Nzk4LTE1MDQ0MDE3NzQtMmU5NjI1N2VmOQ.html" rel="noopener" target="_blank" title="TELESPRISE"><img alt="" border="0" 
+height="60" id="m_-4973210593361332524gmail-m_-6096670269405767939gmail-m_-1436458080550240543m_-3975089270040819763gmail-m_-2248848940621715595gmail-m_4950052768086691300gmail-m_2933957970607722850gmail-m_7483563204303838204gmail-m_-3491586818351559956gmail-m_3682735925266535707gmail-m_5731075335784145647m_3413239976406571221m_2402549402411035463m_3237557952722111901gmail-m_-8798842351942729229m_4692247605844201587m_-2492882859021407156m_-7142874903403184072m_-9133516419565872595gmail-m_6961657238809553818gmail-m_-1296802553737736344gmail-BLOGGER_PHOTO_ID_6494125253829947314" src="../i.imgur.com/F8nmg2T.png" width="500" height="60" /></a>
+<div style="font-size: small; text-align: justify; width: 400px;">
+Unless otherwise indicated, this work was written between the Christmas and Easter seasons of 2017 and 2020(A).  The content of this page is released to the public under
+<a href="../www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">
+the GNU GPL v2.0 license</a>; additionally any reproduction or derivation
+of the work must be attributed to the author, Adam Marshall Dobrin
+along with a link back to this website, fromthemachine dotty org.
+<br><br>That's a "." not "dotty" ... it's to stop SPAMmers. :/<br><br>
+This document is "living" and I don't just mean in the Jeffersonian sense.  It's more alive in the "Mayflower's and June Doors ..." l<a href="../rinkeby.aragon.org/index.html#/gibraltar">iving Ethereum contrac</a>t sense [and literally just as close to the Depp/C<a href="../www.youtube.com/watch@v=0ANXgrd3f28&amp;CL&amp;DO&amp;CBIG1adl.html">aster/Paglen (and honorably PK]</a>
+'D-hath <i>Transundance</i><i>sense</i> of the ... new meaning; as it is now published on Rinkeby, in "living contract" form.  It is subject to change; without notice anywhere but here--and there--in the original spirit of the GPL 2.0.  We are "one step closer to God" ... and do see that in that I mean ... it is a very real fusion of this document and the "spirit of my life" as well as the Spirit's of Kerouac's America and Vonnegut's Martian Mars and my Venutian Hotel ... and *my fusion* of Guy-A and GAIA; and the Spirit of the Earth .. and of course the God given and signed liberties in the Constitution of the United States of America.  It is by and through my hand that this document and our X Commandments link to the Bill or Rights, and this story about an Exodus from slavery that literally begins here, in the post-apocalyptic American hartland.  Written ... this day ... April 14, 2020 (hey, is this HADAD DAY?) ... in Margate FL, USA.  For "official used-to-v TAX day" tomorrow, I'm going to add the "immultible incarnite pen" ... if added to the living "doc/app"--see is the DAO, the way--will initi8 the special secret "hidden level" .. we've all been looking for. 
+<br/><br/>Nor do just mean this website or the totality of my written works; nor do I only mean ... this particular derivation of the GPL 2.0+ modifications I continually source ... must be "from this website."  I also mean *the thing* that is built from ... bits and piece of blocks of sand-toys; from Ethereum and from Rust and from our hands and eyes working together ... from this place, this cornerstone of the message that is ... written from brick and mortar words and events and people that have come before this poit of the "sealed W" that is this <a href="../fromthemachine.org/CURSOR.html">specific page</a> and this time.  It's 3:28; just five minutes--or is it four, too layne.
+<br/><br/>This work is not to be redistributed according to the GPL unless all linked media on Youtube and related sites are intact--and historical references to the actual documented history of the art pieces (as I experience/d them) are also available for linking.  Wikipedia references must be available for viewing, as well as the exact version of those pages at the time these pieces were written.  All references to the Holy Bible must be "linked" (as they are or via ... impromptu in-transit re-linking) to the exact verses and versions of the Bible that I reference.  These requirements, as well as the caveat and informational re-introduction to God's DAO above ... should be seen as material modifications to the original GPL2.0 that are retroactively applied to all works distributed under license via this site and all previous e-mails and sites. /s/ wso
+</div>
+</div>
+
+<br/>
+If you wanna talk to me <a href="../www.facebook.com/admdbrn.html">get me on facebook</a>, with PGP <a href="../flowcrypt.com/me/adam5.html">via FlowCrypt</a> or adam at from the machine dotty org
+<br/>
+<pre width=700 style="width: 700px">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=4lZw
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
+<br/>
+<pre width=700 style="width: 700px;">
+Please see GPG keys on PGP.MIT.EDU; fingerprints: 
+sec rsa3072/A18F778E19FC3248 2020-04-03 [SC] [expires: 2022-04-03] 
+FFF31E86FCEB5046E8B27D4AA18F778E19FC3248
+uid [ultimate] ADAM M DOBRIN \<adam5@protonmail iamswitzerland\>
+ssb rsa3072/04F98002A3DA53B2 2020-04-03 [E] [expires: 2022-04-03]
+
+sec rsa4096/FB4ECE4A109229CF 2020-04-04 [SC] 
+4FAF0D3E208A1F4C980D0F66FB4ECE4A109229CF
+uid [ultimate] Adam Marshall Dobrin \<adam at fromthemachine dotty orghy\>
+ssb rsa4096/DD1F0C118C788B04 2020-04-04 [E]
+</pre>
+</center>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74743044-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<head>
+<meta author="REDMAE PHEN- UC NE ME ADAM MARSHALL DOBRIN"/>
+<meta keywords="formicaquickerbong, fromthemachine, "from the machine", holy coda, matrix, orver et aut, language of creation, proof of creation, proof of heaven, transhumanism, new democracy, new socialism, self governance, emancipation of humanity, emancipation of the universe, "whats a ren", carradslovasup/>
+<meta = "formicaquickerbong, fromthemachine, "from the machine", holy coda, matrix, orver et aut, language of creation, proof of creation, proof of heaven, transhumanism, new democracy, new socialism, self governance, emancipation of humanity, emancipation of the universe, "whats a ren", carradslovasup/>
+</head>
+<!-- sig adam@ermccorp dot com --><br/<br/>
+<center><pre width=700 style="width: 700px;">
+pub rsa3072 2020-04-06 [SC] [expires: 2022-04-06]
+F7E4 7CB1 2CA0 CD01 C5E1 CBFA 7EC8 D5A8 5A38 D63A
+uid [ unknown] ADAM MARSHALL DOBRIN <adam at ermcc orp.com>
+
+Because of "some issues" with what appears to be distinct
+and unbridled privacy intrusion; please ensure that PGP
+is understood to be "nothing more than not so much pretty
+good" and this key also, almost required in order to
+verify authentic identity--in the case of ... question.
+</pre>
+
+
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+       <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="http://lamc.la/_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="http://lamc.la/highlight.js"></script>
+        <script src="http://lamc.la/book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

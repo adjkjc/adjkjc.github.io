@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The New York Times</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="sourceApp" content="nyt-lire" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <meta name="et2Host" content="https://a.et.nytimes.com/" />
+
+    <style>
+        @font-face {
+            font-family: nyt-franklin;
+            src: url(http://typeface.nyt.com/fonts/nyt-franklin-300-normal.woff)
+            format('woff');
+            font-style: normal;
+            font-weight: 300;
+        }
+
+        @font-face {
+            font-family: nyt-franklin;
+            src: url(http://typeface.nyt.com/fonts/nyt-franklin-500-normal.woff)
+            format('woff');
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            font-size: 16px;
+            font-family: 'nyt-franklin', arial, helvetica, sans-serif;
+            -moz-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body.embedded {
+            height: auto;
+            overflow: hidden;
+        }
+
+        .full-page {
+            display: flex;
+            flex-flow: column nowrap;
+            flex: 0 0 auto;
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+<script>
+if ('5F35800FA2155BC5833193CFCB9E4D') {
+    !function (a, b, c, d, e, f) {
+        a.ddjskey = e;
+        a.ddoptions = f || null;
+        var m = b.createElement(c), n = b.getElementsByTagName(c)[0];
+        m.async = 1, m.src = d, n.parentNode.insertBefore(m, n);
+    }(window, document, "script", "https://dd.nytimes.com/tags.js", '5F35800FA2155BC5833193CFCB9E4D', {
+       ajaxListenerPath: "nytimes.com/svc/lire_ui/",
+       endpoint: "https://dd.nytimes.com/js/",
+    });
+}
+</script>
+<div id="myAccountAuth" class="full-page" data-auth-options="{&quot;abraConfig&quot;:[[&quot;AUTH_AppleSSOButtons&quot;,[[1431655766,&quot;0_control&quot;,1],[1431655765,&quot;1_belowfull&quot;,1],[1431655765,&quot;2_belowemailfirst&quot;,1]]]],&quot;eventTrackerUrl&quot;:&quot;//et.nytimes.com/&quot;,&quot;authToken&quot;:&quot;H4sIAAAAAAAAA0WP22rDMAyG38XQuzY+JW6cu0IZ7GIMtgcIiq0kps4B211Xur77vNzsRki/pF+fHsQ4Z0lD+qv37QoDkj0x3uGcNtkPxmfFurh6uJOmBx9xT/B7dQEjaXilmWCaH/WerF/bSieV1UIhMi2EPELHlBbIasnBIK9EtgsIFsPr3/RW2WxmUnsNLitjSmtD6e12K+Z7chPGwiwTFYwryhTlnI4IPo10gHk4xAT+4nKSIAyY0B7cbF0muWbSYkyT38mXNuzkudxOxXWZI7bpvmK+ZZbl4v5eTuFCmkfu9xgChozi/1EgeYhFLDxMJgd6Op/ePj/ez5s9eT5/OmO1glIfsTaqA6y6yrLaAtPGWmWEVH1fCawra4HLEmvRl1bXpjNSVLXufwHOASjyhgEAAA&#x3D;&#x3D;&quot;,&quot;captchaSiteKey&quot;:&quot;6Ld2YVIUAAAAAC7yEp9y1m_Cu2PkbZY_lx9pv99F&quot;,&quot;mnlConsentRequired&quot;:true,&quot;preferredView&quot;:&quot;login&quot;,&quot;clientId&quot;:&quot;lgcl&quot;,&quot;displayVariation&quot;:false,&quot;displayType&quot;:&quot;full-page&quot;,&quot;hostName&quot;:&quot;https://myaccount.nytimes.com&quot;,&quot;userName&quot;:&quot;&quot;,&quot;topLevelError&quot;:&quot;&quot;,&quot;currentYear&quot;:&quot;2020&quot;,&quot;campaignId&quot;:&quot;&quot;,&quot;environment&quot;:&quot;production&quot;,&quot;jkiddHost&quot;:&quot;a.nytimes.com&quot;}"></div>
+<script src="http://myaccount.nytimes.com/lire_ui/js/common/abra/index.js"></script>
+<script type="text/javascript" src="http://myaccount.nytimes.com/lire_ui/js/unified-lire.bundle.js?v=12027a2"></script>
+</body>
+</html>

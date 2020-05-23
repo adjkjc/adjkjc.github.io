@@ -1,0 +1,1812 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genesis 25:17 NIV | Biblica</title>
+<link rel="pingback" href="https://www.biblica.com/xmlrpc.php"><meta http-equiv="X-UA-Compatible" content="IE=Edge" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"b5016f21eb",applicationID:"73598881"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="og:type" content="website" />
+<meta name="og:title" content="Genesis 25:17 NIV" />
+<meta name="og:url" content="https://www.biblica.com/bible/?osis=niv:gen.25.17" />
+<meta name="og:site_name" content="Biblica" />
+<meta name="og:image" content="https://downloads.biblica.com/social-media/images/online_bible_social_share.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Genesis 25:17 NIV" />
+<meta name="twitter:description" content="Ishmael lived a hundred and thirty-seven years. He breathed his last and died, and he was gathered to his people." />
+<meta name="twitter:site" content="@BiblicaMinistry" />
+<meta name="twitter:image" content="https://downloads.biblica.com/social-media/images/online_bible_social_share.jpg" />
+
+<meta name="robots" content="index, follow" />
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.biblica.com/#website","url":"https://www.biblica.com/","name":"Biblica","description":"The International Bible Society","potentialAction":[{"@type":"SearchAction","target":"https://www.biblica.com/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://www.biblica.com/bible/#webpage","url":"https://www.biblica.com/bible/","name":"Online Bible | Biblica - The International Bible Society","isPartOf":{"@id":"https://www.biblica.com/#website"},"datePublished":"2016-09-02T19:26:20+00:00","dateModified":"2017-06-28T17:54:31+00:00","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.biblica.com/bible/"]}]}]}</script>
+
+<link rel='dns-prefetch' href='https://a.opmnstr.com/' />
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="Biblica &raquo; Feed" href="https://www.biblica.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Biblica &raquo; Comments Feed" href="https://www.biblica.com/comments/feed/" />
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.biblica.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='dashicons-css' href='https://www.biblica.com/wp-includes/css/dashicons.min.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-academicons-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/academicons.min.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-socicon-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/socicon.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-5-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-5.min.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-genericons-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/genericons.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.biblica.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-block-style-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/block/dist/blocks.style.build.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='avatar-manager-css' href='https://www.biblica.com/wp-content/plugins/avatar-manager/assets/css/avatar-manager.min.css?ver=1.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-google-fonts-css' href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-font-awesome-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/fonts/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='x-stack-css' href='https://www.biblica.com/wp-content/themes/x/framework/css/dist/site/stacks/ethos.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-bootstrap-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/bootstrap/css/bootstrap.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css' href='https://www.biblica.com/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.13-9993131' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css' href='https://www.biblica.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-mediaelement-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/css/biblica-mediaelementplayer.css' type='text/css' media='all' />
+<link rel='stylesheet' id='x-child-css' href='https://www.biblica.com/wp-content/themes/x-child/style.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-global-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/css/global.css' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-print-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/css/online-bible-print.css' type='text/css' media='print' />
+<link rel='stylesheet' id='biblica-jbox-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/vendor/jbox/jBox.all.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='biblica-widget-css' href='https://www.biblica.com/wp-content/plugins/biblica-online-bible/css/bible-widget.css' type='text/css' media='all' />
+<link rel='stylesheet' id='mashsb-styles-css' href='https://www.biblica.com/wp-content/plugins/mashsharer/assets/css/mashsb.min.css?ver=3.7.5' type='text/css' media='all' />
+<style id='mashsb-styles-inline-css' type='text/css'>
+.mashsb-count {color:#cccccc;}[class^="mashicon-"] .text, [class*=" mashicon-"] .text{
+    text-indent: -9999px !important;
+    line-height: 0px;
+    display: block;
+    } 
+    [class^="mashicon-"] .text:after, [class*=" mashicon-"] .text:after {
+        content: "" !important;
+        text-indent: 0;
+        font-size:13px;
+        display: block !important;
+    }
+    [class^="mashicon-"], [class*=" mashicon-"] {
+        width:25%;
+        text-align: center !important;
+    }
+    [class^="mashicon-"] .icon:before, [class*=" mashicon-"] .icon:before {
+        float:none;
+        margin-right: 0;
+    }
+    .mashsb-buttons a{
+       margin-right: 3px;
+       margin-bottom:3px;
+       min-width: 0;
+       width: 41px;
+    }
+    .onoffswitch, 
+    .onoffswitch-inner:before, 
+    .onoffswitch-inner:after 
+    .onoffswitch2,
+    .onoffswitch2-inner:before, 
+    .onoffswitch2-inner:after  {
+        margin-right: 0px;
+        width: 41px;
+        line-height: 41px;
+    }
+</style>
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://www.biblica.com/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.2.2' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<link rel='stylesheet' id='tmls-testimonials-css' href='https://www.biblica.com/wp-content/plugins/tmls_testimonials/css/testimonials.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='weblator-charts-plugin-styles-css' href='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/css/public.css?ver=1.7.4' type='text/css' media='all' />
+<link rel='stylesheet' id='mashnet-styles-css' href='https://www.biblica.com/wp-content/plugins/mashshare-networks/assets/css/mashnet.min.css?ver=2.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-cranium-migration-css' href='https://www.biblica.com/wp-content/themes/x/framework/legacy/cranium/css/dist/site/ethos.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-gravity-forms-css' href='https://www.biblica.com/wp-content/themes/x/framework/css/dist/site/gravity_forms/ethos.css?ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='x-google-fonts-css' href='https://fonts.googleapis.com/css?family=Lato%3A400%2C400italic%2C700%2C700italic&amp;subset=latin%2Clatin-ext&amp;ver=5.2.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wpzoom-social-icons-font-awesome-3-css' href='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/css/font-awesome-3.min.css?ver=1587332398' type='text/css' media='all' />
+<link rel='stylesheet' id='latest-posts-style-css' href='https://www.biblica.com/wp-content/plugins/latest-posts/assets/css/style.css?ver=5.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css' href='https://www.biblica.com/wp-content/plugins/easy-fancybox/css/jquery.fancybox.min.css?ver=1.3.24' type='text/css' media='screen' />
+<style id='fancybox-inline-css' type='text/css'>
+#fancybox-content{border-color:#000;}#fancybox-title,#fancybox-title-float-main{color:#fff}
+</style>
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='fancybox-ie-css'  href='https://www.biblica.com/wp-content/plugins/easy-fancybox/css/jquery.fancybox-ie.min.css?ver=1.3.24' type='text/css' media='screen' />
+<style id='fancybox-ie-inline-css' type='text/css'>
+/* IE6 */
+.fancybox-ie6 #fancybox-close{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_close.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-left-ico{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_nav_left.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-right-ico{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_nav_right.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-over{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_title_over.png",sizingMethod="scale");zoom:1}
+.fancybox-ie6 #fancybox-title-float-left{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_title_left.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-float-main{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_title_main.png",sizingMethod="scale")}
+.fancybox-ie6 #fancybox-title-float-right{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_title_right.png",sizingMethod="scale")}
+#fancybox-loading.fancybox-ie6 div{background:transparent;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_loading.png",sizingMethod="scale")}
+/* IE6, IE7, IE8 */
+.fancybox-ie #fancybox-title-over{background-image:url(https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_title_over.png)}
+.fancybox-ie #fancybox-bg-n{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_n.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-ne{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_ne.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-e{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_e.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-se{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_se.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-s{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_s.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-sw{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_sw.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-w{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_w.png",sizingMethod="scale")}
+.fancybox-ie #fancybox-bg-nw{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="https://www.biblica.com/wp-content/plugins/easy-fancybox/images/fancy_shadow_nw.png",sizingMethod="scale")}
+</style>
+<![endif]-->
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/avatar-manager/assets/js/avatar-manager.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.2.2'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/excanvas.js?ver=1.7.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/chartjs_new.js?ver=1.7.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/legend.js?ver=1.7.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/events.min.js?ver=1.7.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/mutate.min.js?ver=1.7.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajaxurl = "https:\/\/www.biblica.com\/wp-admin\/admin-ajax.php";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/js/public.js?ver=1.7.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/themes/x/framework/js/dist/site/x-head.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-head.js?ver=3.0.4'></script>
+<script type='text/javascript' data-cfasync="false" id="omapi-script" async="async" src='https://a.opmnstr.com/app/js/api.min.js'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/hoverIntent.min.js?ver=1.8.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/themes/x/framework/legacy/cranium/js/dist/site/x-head.min.js?ver=5.2.5'></script>
+<link rel='https://api.w.org/' href='https://www.biblica.com/wp-json/' />
+<link rel='shortlink' href='https://bibli.ca/2vaS1cb' />
+<link rel="alternate" type="application/json+oembed" href="https://www.biblica.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.biblica.com%2Fbible%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.biblica.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.biblica.com%2Fbible%2F&#038;format=xml" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="fb:pages" content="80061786115" />
+<style type="text/css">.tptn_posts_daily ul, .tptn_posts ul {
+	margin:0 !important;
+	padding:0 !important;
+	display: table;
+	table-layout: fixed;
+	clear: both;
+        margin-bottom: 30px;
+}
+
+.tptn_posts_daily ul li, .tptn_posts ul li {
+        text-align: left;
+	list-style:none;
+	background: none;
+	padding:0 !important;
+        float: left;
+}
+
+@media (min-width: 980px) {
+.tptn_posts_daily ul li, .tptn_posts ul li {
+        max-width: 300px;
+}
+.tptn_posts_daily ul li:nth-last-child(1), .tptn_posts ul li:nth-last-child(1){
+display: none;
+}
+}
+
+@media (min-width: 751px) and (max-width: 979px) {
+.tptn_posts_daily ul li, .tptn_posts ul li {
+        max-width: 32%;
+}
+.tptn_posts_daily ul li:nth-child(1), .tptn_posts ul li:nth-child(1){
+margin-left: 0%;
+margin-right: 1.3%;
+}
+.tptn_posts_daily ul li:nth-child(2), .tptn_posts ul li:nth-child(2){
+margin-left: 0%;
+margin-right: 1.3%;
+}
+.tptn_posts_daily ul li:nth-child(3), .tptn_posts ul li:nth-child(3){
+margin-left: 0px;
+margin-right: 0%;
+}
+.tptn_posts_daily ul li:nth-child(3):after, .tptn_posts ul li:nth-child(3):after { 
+     content:" "; white-space:pre; 
+}
+.tptn_posts_daily ul li:nth-child(4), .tptn_posts ul li:nth-child(4){
+margin-left: 0%;
+margin-right: 1.3%;
+float: left;
+}
+.tptn_posts_daily ul li:nth-child(5), .tptn_posts ul li:nth-child(5){
+margin-left: 0%;
+margin-right: 1.3%;
+}
+.tptn_posts_daily ul li:nth-child(6), .tptn_posts ul li:nth-child(6){
+margin-left: 0px;
+margin-right: 0%;
+}
+}
+
+@media (max-width: 750px) {
+.tptn_posts_daily ul li, .tptn_posts ul li {
+width: 48%;
+}
+.tptn_posts_daily ul li:nth-child(1), .tptn_posts ul li:nth-child(1){
+margin-left: 0%;
+margin-right: 1.3%;
+}
+.tptn_posts_daily ul li:nth-child(2), .tptn_posts ul li:nth-child(2){
+margin-left: 0%;
+margin-right: 0%;
+}
+.tptn_posts_daily ul li:nth-child(2):after, .tptn_posts ul li:nth-child(2):after { 
+     content:" "; white-space:pre; 
+}
+.tptn_posts_daily ul li:nth-child(3), .tptn_posts ul li:nth-child(3){
+margin-left: 0%;
+margin-right: 1.3%;
+float: left;
+}
+.tptn_posts_daily ul li:nth-child(4), .tptn_posts ul li:nth-child(4){
+margin-left: 0%;
+margin-right: 0%;
+}
+}
+
+@media (max-width: 750px) {
+.tptn_posts_daily ul li:nth-last-child(1), .tptn_posts ul li:nth-last-child(1){
+display: none;
+}
+.tptn_posts_daily ul li:nth-last-child(2), .tptn_posts ul li:nth-last-child(2){
+display: none;
+}
+}
+
+.tptn_posts_daily ul:after, .tptn_posts ul:after, .tptn_posts_daily ul li:after, .tptn_posts ul li:after {
+	content:'';
+	display:table;
+}
+
+.tptn_posts_daily .tptn_title, .tptn_posts .tptn_title {
+        color: #000000;
+        text-align: left;
+	font-weight:bold;
+	display:block;
+        margin-top: -20px;
+	padding-bottom:5px;
+	text-decoration:none !important;
+	line-height: 1.2em !important;
+        font-size: 16px;
+        font-family: Arial;
+}
+
+.tptn_posts_daily .tptn_link .tptn_title a:hover, .tptn_posts .tptn_link .tptn_title a:hover {
+        color: #00a2ff !important;
+}
+
+.tptn_posts_daily .tptn_title a:hover, .tptn_posts .tptn_title a:hover{
+        color: #00a2ff !important;
+}
+
+img.tptn_thumb {
+	display:block;
+	float:left;
+	clear:left;
+	vertical-align: bottom;
+	width: 100%;
+}
+
+img.tptn_thumb:after {
+	content: ' ';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.tptn_excerpt {
+	display: block;
+}</style><link rel="stylesheet" href="https://www.biblica.com/wp-content/plugins/chart-plugin/public/assets/css/notie.css"><link rel="canonical" href="https://www.biblica.com/bible/?osis=niv:gen.25.17" />
+<meta name="description" content="Ishmael lived a hundred and thirty-seven years. He breathed his last and died, and he was gathered to his people." />
+<meta name="generator" content="Powered by Slider Revolution 6.2.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1167480306621215', {
+em: 'insert_email_variable,'
+});
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1167480306621215&ev=PageView&noscript=1"
+/></noscript>
+
+
+
+<script type='text/javascript'>
+  window._tfa = window._tfa || [];
+  window._tfa.push({notify: 'event', name: 'page_view', id: 1069039});
+  !function (t, f, a, x) {
+         if (!document.getElementById(x)) {
+            t.async = 1;t.src = a;t.id=x;f.parentNode.insertBefore(t, f);
+         }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/unip/1069039/tfa.js',
+  'tb_tfa_script');
+</script>
+<noscript>
+  <img src='https://trc.taboola.com/1069039/log/3/unip?en=page_view'
+      width='0' height='0' style='display:none'/>
+</noscript>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '694878427330011',
+      xfbml      : true,
+      version    : 'v3.1'
+    });
+  
+    FB.AppEvents.logPageView();
+  
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<meta property="fb:pages" content="80061786115" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.biblica.com/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.biblica.com/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.biblica.com/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.biblica.com/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.biblica.com/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.biblica.com/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.biblica.com/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.biblica.com/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.biblica.com/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.biblica.com/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.biblica.com/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://www.biblica.com/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.biblica.com/favicon-16x16.png">
+<link rel="manifest" href="https://www.biblica.com/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link href='https://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<style>
+@media (min-width: 980px){
+  .donate { background-color: #ff6600 !important; color: #ffffff !important;}
+}
+@media (max-width: 979px){
+  .donate { background-color: transparent !important; color: #ffffff !important;}
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1248241-2', 'auto');
+  ga('send', 'pageview');
+  
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-813880203"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-813880203');
+  gtag('config', 'AW-860158857');
+</script>
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-813880203/dTYZCPnB-34Qi6eLhAM',
+      'value': 1.0,
+      'currency': 'USD',
+      'transaction_id': '',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
+<script type="application/ld+json">
+{ "@context" : "http://schema.org",
+  "@type" : "Organization",
+  "name" : "Biblica - The International Bible Society",
+  "url" : "https://www.biblica.com",
+  "sameAs" : [ "https://www.facebook.com/Biblica",
+    "https://www.twitter.com/BiblicaMinistry",
+    "https://vimeo.com/biblica",
+    "https://www.youtube.com/channel/UC0957hN25fKhj3sQ-39nKjQ",
+    "https://www.instagram.com/BiblicaMinistry",
+    "https://www.linkedin.com/company/biblica" ] 
+}
+</script>
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T5D7JFV');</script>
+<script type="text/javascript">function setREVStartSize(e){			
+			try {								
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw===0 || isNaN(pw) ? window.innerWidth : pw;
+				e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);		
+				if(e.layout==="fullscreen" || e.l==="fullscreen") 						
+					newh = Math.max(e.mh,window.innerHeight);				
+				else{					
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];					
+					e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+										
+					var nl = new Array(e.rl.length),
+						ix = 0,						
+						sl;					
+					e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;					
+					for (var i in e.rl) nl[i] = e.rl[i]<window.innerWidth ? 0 : e.rl[i];
+					sl = nl[0];									
+					for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}															
+					var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);					
+
+					newh =  (e.type==="carousel" && e.justify==="true" ? e.gh[ix] : (e.gh[ix] * m)) + (e.tabh + e.thumbh);
+				}			
+				
+				if(window.rs_init_css===undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));					
+				document.getElementById(e.c).height = newh;
+				window.rs_init_css.innerHTML += "#"+e.c+"_wrapper { height: "+newh+"px }";				
+			} catch(e){
+				console.log("Failure at Presize of Slider:" + e)
+			}					   
+		  };</script>
+<style type="text/css" id="wp-custom-css">
+			/*
+You can add your own CSS here.
+
+Click the help icon above to learn more.
+*/		</style>
+<style id="x-generated-css" type="text/css">a,h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover,.x-breadcrumb-wrap a:hover,.x-comment-author a:hover,.x-comment-time:hover,.p-meta > span > a:hover,.format-link .link a:hover,.x-main .widget ul li a:hover,.x-main .widget ol li a:hover,.x-main .widget_tag_cloud .tagcloud a:hover,.x-sidebar .widget ul li a:hover,.x-sidebar .widget ol li a:hover,.x-sidebar .widget_tag_cloud .tagcloud a:hover,.x-portfolio .entry-extra .x-ul-tags li a:hover{color:#044f7a;}a:hover{color:#00a2ff;}a.x-img-thumbnail:hover{border-color:#044f7a;}.x-main{width:74%;}.x-sidebar{width:26%;}.x-post-slider-archive-active .x-container.main:before{top:0;}.x-content-sidebar-active .x-container.main:before{right:26%;}.x-sidebar-content-active .x-container.main:before{left:26%;}.x-full-width-active .x-container.main:before{left:-5000em;}.h-landmark,.x-main .h-widget,.x-main .h-widget a.rsswidget,.x-main .h-widget a.rsswidget:hover,.x-main .widget.widget_pages .current_page_item a,.x-main .widget.widget_nav_menu .current-menu-item a,.x-main .widget.widget_pages .current_page_item a:hover,.x-main .widget.widget_nav_menu .current-menu-item a:hover,.x-sidebar .h-widget,.x-sidebar .h-widget a.rsswidget,.x-sidebar .h-widget a.rsswidget:hover,.x-sidebar .widget.widget_pages .current_page_item a,.x-sidebar .widget.widget_nav_menu .current-menu-item a,.x-sidebar .widget.widget_pages .current_page_item a:hover,.x-sidebar .widget.widget_nav_menu .current-menu-item a:hover{color:#333333;}.x-main .widget,.x-main .widget a,.x-main .widget ul li a,.x-main .widget ol li a,.x-main .widget_tag_cloud .tagcloud a,.x-main .widget_product_tag_cloud .tagcloud a,.x-main .widget a:hover,.x-main .widget ul li a:hover,.x-main .widget ol li a:hover,.x-main .widget_tag_cloud .tagcloud a:hover,.x-main .widget_product_tag_cloud .tagcloud a:hover,.x-main .widget_shopping_cart .buttons .button,.x-main .widget_price_filter .price_slider_amount .button,.x-sidebar .widget,.x-sidebar .widget a,.x-sidebar .widget ul li a,.x-sidebar .widget ol li a,.x-sidebar .widget_tag_cloud .tagcloud a,.x-sidebar .widget_product_tag_cloud .tagcloud a,.x-sidebar .widget a:hover,.x-sidebar .widget ul li a:hover,.x-sidebar .widget ol li a:hover,.x-sidebar .widget_tag_cloud .tagcloud a:hover,.x-sidebar .widget_product_tag_cloud .tagcloud a:hover,.x-sidebar .widget_shopping_cart .buttons .button,.x-sidebar .widget_price_filter .price_slider_amount .button{color:#333333;}.x-main .h-widget,.x-main .widget.widget_pages .current_page_item,.x-main .widget.widget_nav_menu .current-menu-item,.x-sidebar .h-widget,.x-sidebar .widget.widget_pages .current_page_item,.x-sidebar .widget.widget_nav_menu .current-menu-item{border-color:#333333;}.x-post-slider{height:425px;}.archive .x-post-slider{height:425px;}.x-post-slider .x-post-slider-entry{padding-bottom:425px;}.archive .x-post-slider .x-post-slider-entry{padding-bottom:425px;}.format-link .link a,.x-portfolio .entry-extra .x-ul-tags li a{color:#333333;}.p-meta > span > a,.x-nav-articles a,.entry-top-navigation .entry-parent,.option-set .x-index-filters,.option-set .x-portfolio-filters,.option-set .x-index-filters-menu >li >a:hover,.option-set .x-index-filters-menu >li >a.selected,.option-set .x-portfolio-filters-menu > li > a:hover,.option-set .x-portfolio-filters-menu > li > a.selected{color:#272727;}.x-nav-articles a,.entry-top-navigation .entry-parent,.option-set .x-index-filters,.option-set .x-portfolio-filters,.option-set .x-index-filters i,.option-set .x-portfolio-filters i{border-color:#272727;}.x-nav-articles a:hover,.entry-top-navigation .entry-parent:hover,.option-set .x-index-filters:hover i,.option-set .x-portfolio-filters:hover i{background-color:#272727;}@media (max-width:979px){.x-content-sidebar-active .x-container.main:before,.x-sidebar-content-active .x-container.main:before{left:-5000em;}body .x-main .widget,body .x-main .widget a,body .x-main .widget a:hover,body .x-main .widget ul li a,body .x-main .widget ol li a,body .x-main .widget ul li a:hover,body .x-main .widget ol li a:hover,body .x-sidebar .widget,body .x-sidebar .widget a,body .x-sidebar .widget a:hover,body .x-sidebar .widget ul li a,body .x-sidebar .widget ol li a,body .x-sidebar .widget ul li a:hover,body .x-sidebar .widget ol li a:hover{color:#333333;}body .x-main .h-widget,body .x-main .widget.widget_pages .current_page_item a,body .x-main .widget.widget_nav_menu .current-menu-item a,body .x-main .widget.widget_pages .current_page_item a:hover,body .x-main .widget.widget_nav_menu .current-menu-item a:hover,body .x-sidebar .h-widget,body .x-sidebar .widget.widget_pages .current_page_item a,body .x-sidebar .widget.widget_nav_menu .current-menu-item a,body .x-sidebar .widget.widget_pages .current_page_item a:hover,body .x-sidebar .widget.widget_nav_menu .current-menu-item a:hover{color:#272727;}body .x-main .h-widget,body .x-main .widget.widget_pages .current_page_item,body .x-main .widget.widget_nav_menu .current-menu-item,body .x-sidebar .h-widget,body .x-sidebar .widget.widget_pages .current_page_item,body .x-sidebar .widget.widget_nav_menu .current-menu-item{border-color:#272727;}}@media (max-width:767px){.x-post-slider,.archive .x-post-slider{height:auto !important;}.x-post-slider .x-post-slider-entry,.archive .x-post-slider .x-post-slider-entry{padding-bottom:65% !important;}}html{font-size:14px;}@media (min-width:480px){html{font-size:14px;}}@media (min-width:767px){html{font-size:14px;}}@media (min-width:979px){html{font-size:14px;}}@media (min-width:1200px){html{font-size:14px;}}body{font-style:normal;font-weight:400;color:#333333;background-color:hsl(0,0%,96%);}.w-b{font-weight:400 !important;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:"Lato",sans-serif;font-style:normal;font-weight:700;text-transform:uppercase;}h1,.h1{letter-spacing:0.139em;}h2,.h2{letter-spacing:0.139em;}h3,.h3{letter-spacing:0.139em;}h4,.h4{letter-spacing:0.139em;}h5,.h5{letter-spacing:0.139em;}h6,.h6{letter-spacing:0.139em;}.w-h{font-weight:700 !important;}.x-container.width{width:100%;}.x-container.max{max-width:1280px;}.x-main.full{float:none;display:block;width:auto;}@media (max-width:979px){.x-main.full,.x-main.left,.x-main.right,.x-sidebar.left,.x-sidebar.right{float:none;display:block;width:auto !important;}}.entry-header,.entry-content{font-size:1rem;}body,input,button,select,textarea{font-family:"Lato",sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a,.h1 a,.h2 a,.h3 a,.h4 a,.h5 a,.h6 a,blockquote{color:#272727;}.cfc-h-tx{color:#272727 !important;}.cfc-h-bd{border-color:#272727 !important;}.cfc-h-bg{background-color:#272727 !important;}.cfc-b-tx{color:#333333 !important;}.cfc-b-bd{border-color:#333333 !important;}.cfc-b-bg{background-color:#333333 !important;}.x-btn,.button,[type="submit"]{color:#ffffff;border-color:#333333;background-color:#333333;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);border-radius:100em;padding:0.579em 1.105em 0.842em;font-size:19px;}.x-btn:hover,.button:hover,[type="submit"]:hover{color:#ffffff;border-color:#00a2ff;background-color:#00a2ff;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.5);}.x-btn.x-btn-real,.x-btn.x-btn-real:hover{margin-bottom:0.25em;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);}.x-btn.x-btn-real{box-shadow:0 0.25em 0 0 #333333,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-real:hover{box-shadow:0 0.25em 0 0 #00a2ff,0 4px 9px rgba(0,0,0,0.75);}.x-btn.x-btn-flat,.x-btn.x-btn-flat:hover{margin-bottom:0;text-shadow:0 0.075em 0.075em rgba(0,0,0,0.65);box-shadow:none;}.x-btn.x-btn-transparent,.x-btn.x-btn-transparent:hover{margin-bottom:0;border-width:3px;text-shadow:none;text-transform:uppercase;background-color:transparent;box-shadow:none;}body .gform_wrapper .gfield_required,body .gform_wrapper span.ginput_total{color:#044f7a;}body .gform_wrapper h2.gsection_title,body .gform_wrapper h3.gform_title{font-weight:700;}body .gform_wrapper h2.gsection_title{letter-spacing:0.139em !important;}body .gform_wrapper h3.gform_title{letter-spacing:0.139em !important;}body .gform_wrapper .top_label .gfield_label,body .gform_wrapper .left_label .gfield_label,body .gform_wrapper .right_label .gfield_label{font-weight:400;}.x-topbar,.x-colophon.bottom{background-color:#044f7a;}.x-logobar,.x-navbar,.x-navbar .sub-menu,.x-colophon.top{background-color:#044f7a;}.x-navbar .desktop .x-nav > li > a,.x-navbar .desktop .sub-menu a,.x-navbar .mobile .x-nav li > a,.x-breadcrumb-wrap a,.x-breadcrumbs .delimiter{color:rgb(153,153,153);}.x-topbar .p-info a:hover,.x-social-global a:hover,.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a,.x-navbar .desktop .sub-menu a:hover,.x-navbar .desktop .sub-menu .x-active > a,.x-navbar .desktop .sub-menu .current-menu-item > a,.x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a,.x-navbar .mobile .x-nav li > a:hover,.x-navbar .mobile .x-nav .x-active > a,.x-navbar .mobile .x-nav .current-menu-item > a,.x-widgetbar .widget a:hover,.x-colophon .widget a:hover,.x-colophon.bottom .x-colophon-content a:hover,.x-colophon.bottom .x-nav a:hover{color:rgb(39,39,39);}.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a{box-shadow:0 2px 0 0 #044f7a;}.x-navbar .desktop .x-nav > li > a{height:100px;padding-top:44px;}.x-navbar-fixed-top-active .x-navbar-wrap{margin-bottom:2px;}.x-navbar .desktop .x-nav > li ul{top:102px;}@media (max-width:979px){.x-navbar-fixed-top-active .x-navbar-wrap{margin-bottom:0;}}body.x-navbar-fixed-top-active .x-navbar-wrap{height:100px;}.x-navbar-inner{min-height:100px;}.x-brand{margin-top:20px;font-family:"Lato",sans-serif;font-size:42px;font-style:normal;font-weight:700;letter-spacing:-0.035em;color:#272727;}.x-brand:hover,.x-brand:focus{color:#272727;}.x-brand img{width:212.5px;}.x-navbar .x-nav-wrap .x-nav > li > a{font-family:"Lato",sans-serif;font-style:normal;font-weight:700;letter-spacing:0em;}.x-navbar .desktop .x-nav > li > a{font-size:17.4px;}.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce){padding-left:35.5px;padding-right:35.5px;}.x-navbar .desktop .x-nav > li > a > span{margin-right:-0em;}.x-btn-navbar{margin-top:25px;}.x-btn-navbar,.x-btn-navbar.collapsed{font-size:25px;}@media (max-width:979px){body.x-navbar-fixed-top-active .x-navbar-wrap{height:auto;}.x-widgetbar{left:0;right:0;}}.x-topbar,.x-colophon.bottom{background-color:#044f7a;}.x-logobar,.x-navbar,.x-navbar .sub-menu,.x-colophon.top{background-color:#044f7a;}.x-navbar .desktop .x-nav > li > a,.x-navbar .desktop .sub-menu a,.x-navbar .mobile .x-nav li > a,.x-breadcrumb-wrap a,.x-breadcrumbs .delimiter{color:rgb(153,153,153);}.x-topbar .p-info a:hover,.x-social-global a:hover,.x-navbar .desktop .x-nav > li > a:hover,.x-navbar .desktop .x-nav > .x-active > a,.x-navbar .desktop .x-nav > .current-menu-item > a,.x-navbar .desktop .sub-menu a:hover,.x-navbar .desktop .sub-menu .x-active > a,.x-navbar .desktop .sub-menu .current-menu-item > a,.x-navbar .desktop .x-nav .x-megamenu > .sub-menu > li > a,.x-navbar .mobile .x-nav li > a:hover,.x-navbar .mobile .x-nav .x-active > a,.x-navbar .mobile .x-nav .current-menu-item > a,.x-widgetbar .widget a:hover,.x-colophon .widget a:hover,.x-colophon.bottom .x-colophon-content a:hover,.x-colophon.bottom .x-nav a:hover{color:rgb(39,39,39);}.e1405-1.x-section,.e1405-2.x-section,.e1405-3.x-section {margin:0em;padding:45px 0px 45px 0px;background-color:transparent;z-index:1;}/* navbar height */
+
+body.x-navbar-fixed-top-active .x-navbar-wrap {
+    height: 103px !important;
+}
+
+.x-navbar-inner {
+    max-height: 104px;
+}
+
+/* navbar text color */
+
+.x-navbar .desktop .x-nav > li > a, .x-navbar .desktop .sub-menu a, .x-navbar .mobile .x-nav li > a, .x-breadcrumb-wrap a, .x-breadcrumbs .delimiter {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Remove Ethos Menu Borders */
+.x-logobar {
+    border-bottom: none !important;
+}
+
+body .x-navbar {
+   border:0 !important;
+   box-shadow:none !important;
+}
+
+.x-navbar .desktop .x-nav>li>a {
+    border-right: none !important;
+}
+
+.x-navbar {
+    border-bottom: none !important;
+}
+
+.desktop .x-nav>li>a{border-right:none !important;}
+.desktop .x-nav>li>a{border-left:none !important;}
+
+.x-navbar .desktop .x-nav>li>a {
+    border-right: none !important;
+}
+
+.x-navbar .desktop .x-nav > li > a {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+.x-navbar .desktop .x-nav>li:first-child>a {
+    border-left: none !important;
+}
+
+.x-navbar .desktop .x-nav > li:last-child > a {
+    border-right: none !important;
+}
+
+/* Change Ethos Sub-Menu Color */
+@media (min-width: 980px) {
+.x-navbar .sub-menu {
+    background-color: #3aa4ff !important;
+}
+
+.sub-menu li a:link {
+    color: #fff;
+}
+
+.x-navbar .sub-menu a:hover {
+    background-color: #2b7bc1;
+}
+}
+
+/* Remove Active Item Menu Shadow */
+.x-navbar .desktop .x-nav > li > a:hover, 
+.x-navbar .desktop .x-nav > .x-active > a, 
+.x-navbar .desktop .x-nav > .current-menu-item > a {
+    -moz-box-shadow:   none;
+    -webkit-box-shadow: none;
+    box-shadow:         none;
+}
+
+/* Remove Dropdown Arrows in Menu */
+.x-navbar .desktop .x-nav li>a>span:after {
+    content: "" !important;
+    margin-left: 0em !important;
+}</style><style id="cornerstone-custom-page-css">.featured-page-title{}@media (min-width:1200px){.iconImage{max-width:300px;border-radius:10px;}.iconHeading{max-width:300px;text-align:center;}.iconSubtext{max-width:300px;}}@media (max-width:1199px){.iconImage{max-width:200px;border-radius:10px;}.iconHeading{max-width:150px;text-align:center;}.iconSubtext{max-width:200px;}.iconButton{margin-bottom:10px;}}</style></head>
+<body class="page-template page-template-template-online-bible page-template-template-online-bible-php page page-id-1405 x-ethos x-full-width-layout-active x-content-sidebar-active x-page-title-disabled x-navbar-fixed-top-active x-v5_2_5 x-child-theme-active cornerstone-v3_0_4">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T5D7JFV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="x-root" class="x-root">
+<div id="top" class="site">
+<header class="masthead masthead-inline" role="banner">
+<div class="x-navbar-wrap">
+<div class="x-navbar">
+<div class="x-navbar-inner">
+<div class="x-container max width">
+<h1 class="visually-hidden">Biblica</h1>
+<a href="https://www.biblica.com/" class="x-brand img" title="The International Bible Society">
+<img src="https://www.biblica.com/wp-content/uploads/header_logo_white.svg" alt="The International Bible Society"></a>
+<a href="https://secure.biblica.com/np/clients/biblica/donation.jsp" style="outline: none;"><span class="mobile-donate">Give Now</span></a>
+<a href="https://www.biblica.com/bible/?#" class="x-btn-navbar collapsed" data-toggle="collapse" data-target=".x-nav-wrap.mobile">
+<i class="x-icon-bars" data-x-icon="&#xf0c9;"></i>
+<span class="visually-hidden">Navigation</span>
+</a>
+<nav class="x-nav-wrap desktop" role="navigation">
+<ul id="menu-top-navigation" class="x-nav"><li id="menu-item-1411" class="navbar menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1405 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1411"><a href="https://www.biblica.com/bible/" aria-current="page"><span>Bible</span></a>
+<ul class="sub-menu">
+<li id="menu-item-609" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-609"><a href="https://www.biblica.com/niv-bible/"><span>About the NIV Bible</span></a>
+<ul class="sub-menu">
+<li id="menu-item-751" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-751"><a href="https://www.biblica.com/niv-bible/niv-bible-story/"><span>NIV Story</span></a></li>
+<li id="menu-item-761" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-philosophy/"><span>NIV Bible Translation Philosophy</span></a></li>
+<li id="menu-item-756" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-process/"><span>NIV Bible Translation Process</span></a></li>
+<li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://www.biblica.com/niv-bible/niv-bible-translators/"><span>NIV Bible Translators</span></a></li>
+<li id="menu-item-744" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-744"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-accuracy/"><span>The NIV’s Commitment to Accuracy</span></a></li>
+<li id="menu-item-742" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-742"><a href="https://www.biblica.com/niv-bible/niv-bible-endorsements/"><span>NIV Bible Endorsements</span></a></li>
+</ul>
+</li>
+<li id="menu-item-4270" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1405 current_page_item menu-item-4270"><a href="https://www.biblica.com/bible/" aria-current="page"><span>Read the Bible Online</span></a></li>
+<li id="menu-item-2328" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2328"><a href="https://www.biblica.com/resources/reading-plans/"><span>Reading Plans</span></a></li>
+<li id="menu-item-877" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://www.biblica.com/resources/bible-faqs/"><span>Frequently Asked Questions</span></a></li>
+<li id="menu-item-518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-518"><a href="https://www.biblica.com/resources/"><span>Resources</span></a>
+<ul class="sub-menu">
+<li id="menu-item-2327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2327"><a href="https://www.biblica.com/resources/bible-store/"><span>Bible Store</span></a></li>
+<li id="menu-item-2865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2865"><a href="https://www.biblica.com/resources/scholar-notes/niv-study-bible/"><span>NIV Study Bible</span></a></li>
+<li id="menu-item-2299" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299"><a href="https://www.biblica.com/resources/verse-of-the-day/"><span>Daily Manna</span></a></li>
+<li id="menu-item-2295" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2295"><a href="https://www.biblica.com/resources/verse-of-the-day/"><span>Verse of the Day</span></a></li>
+<li id="menu-item-2301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2301"><a href="https://www.biblica.com/resources/reading-plans/"><span>Bible in a Year</span></a></li>
+<li id="menu-item-2300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2300"><a href="https://www.biblica.com/resources/the-books-of-the-bible/"><span>The Books of the Bible</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-887" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-887"><a href="https://www.biblica.com/our-ministry/"><span>Our Ministry</span></a>
+<ul class="sub-menu">
+<li id="menu-item-963" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-963"><a href="https://www.biblica.com/our-ministry/#BibleTranslation"><span>Bible Translation</span></a>
+<ul class="sub-menu">
+<li id="menu-item-779" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="https://www.biblica.com/niv-bible/translating-gods-word/"><span>Translating God&#8217;s Word</span></a></li>
+</ul>
+</li>
+<li id="menu-item-964" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-964"><a href="https://www.biblica.com/our-ministry/#BibleAccess"><span>Bible Access</span></a></li>
+<li id="menu-item-965" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-965"><a href="https://www.biblica.com/our-ministry/#BibleEngagement"><span>Bible Engagement</span></a></li>
+<li id="menu-item-1272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1272"><a href="https://www.biblica.com/our-ministry/partnerships/"><span>Partnerships</span></a></li>
+<li id="menu-item-6652" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6652"><a href="https://www.biblica.com/videos/"><span>Biblica Ministry Videos</span></a></li>
+<li id="menu-item-6660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6660"><a href="https://www.biblica.com/our-ministry/youversion-statistics/"><span>Digital Bible Engagement Stats</span></a></li>
+</ul>
+</li>
+<li id="menu-item-561" class="navbar menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-561"><a href="https://www.biblica.com/pulse/"><span>Biblica Pulse</span></a>
+<ul class="sub-menu">
+<li id="menu-item-8292" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8292 tax-item tax-item-18"><a href="https://www.biblica.com/articles/category/find-answers/"><span>Find Answers</span></a></li>
+<li id="menu-item-8291" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8291 tax-item tax-item-19"><a href="https://www.biblica.com/articles/category/send-bibles/"><span>Send Bibles</span></a></li>
+<li id="menu-item-8293" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8293 tax-item tax-item-20"><a href="https://www.biblica.com/articles/category/discover-truth/"><span>Discover Truth</span></a></li>
+</ul>
+</li>
+<li id="menu-item-560" class="navbar menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-560"><a href="https://www.biblica.com/about/"><span>About</span></a>
+<ul class="sub-menu">
+<li id="menu-item-582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582"><a href="https://www.biblica.com/about/history/"><span>Our History</span></a></li>
+<li id="menu-item-509" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-509"><a href="https://www.biblica.com/about/statement-of-faith/"><span>Statement of Faith and Core Values</span></a>
+<ul class="sub-menu">
+<li id="menu-item-8431" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8431"><a href="https://www.biblica.com/about/donor-bill-of-rights/"><span>A Donor Bill of Rights</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240"><a href="https://www.biblica.com/about/leadership/"><span>Leadership</span></a></li>
+<li id="menu-item-999" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-999"><a href="https://www.biblica.com/about/corporate-statements/"><span>Annual and Financial Reports</span></a></li>
+<li id="menu-item-7102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7102"><a href="https://www.biblica.com/about/employment-opportunities/"><span>Employment Opportunities</span></a></li>
+<li id="menu-item-4487" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4487"><a href="https://www.biblica.com/donate/ways-to-give/"><span>Ways to Give</span></a></li>
+<li id="menu-item-1009" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1009"><a href="https://www.biblica.com/about/contact/"><span>Contact Biblica</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2707" class="donate menu-item menu-item-type-custom menu-item-object-custom menu-item-2707"><a href="https://secure.biblica.com/np/clients/biblica/donation.jsp"><span>Give Now</span></a></li>
+<li class="menu-item x-menu-item x-menu-item-search"><a href="index.html@osis=niv%253AGenesis.25%253A17–25%253A17.html#" class="x-btn-navbar-search"><span><i class="x-icon-search" data-x-icon="&#xf002;" aria-hidden="true"></i><span class="x-hidden-desktop"> Search</span></span></a></li></ul></nav>
+<div class="x-nav-wrap mobile collapse">
+<ul id="menu-top-navigation-1" class="x-nav"><li class="navbar menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1405 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1411"><a href="https://www.biblica.com/bible/" aria-current="page"><span>Bible</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-609"><a href="https://www.biblica.com/niv-bible/"><span>About the NIV Bible</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-751"><a href="https://www.biblica.com/niv-bible/niv-bible-story/"><span>NIV Story</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-761"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-philosophy/"><span>NIV Bible Translation Philosophy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-756"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-process/"><span>NIV Bible Translation Process</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-743"><a href="https://www.biblica.com/niv-bible/niv-bible-translators/"><span>NIV Bible Translators</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-744"><a href="https://www.biblica.com/niv-bible/niv-bible-translation-accuracy/"><span>The NIV’s Commitment to Accuracy</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-742"><a href="https://www.biblica.com/niv-bible/niv-bible-endorsements/"><span>NIV Bible Endorsements</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1405 current_page_item menu-item-4270"><a href="https://www.biblica.com/bible/" aria-current="page"><span>Read the Bible Online</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2328"><a href="https://www.biblica.com/resources/reading-plans/"><span>Reading Plans</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-877"><a href="https://www.biblica.com/resources/bible-faqs/"><span>Frequently Asked Questions</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-518"><a href="https://www.biblica.com/resources/"><span>Resources</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2327"><a href="https://www.biblica.com/resources/bible-store/"><span>Bible Store</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2865"><a href="https://www.biblica.com/resources/scholar-notes/niv-study-bible/"><span>NIV Study Bible</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2299"><a href="https://www.biblica.com/resources/verse-of-the-day/"><span>Daily Manna</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2295"><a href="https://www.biblica.com/resources/verse-of-the-day/"><span>Verse of the Day</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2301"><a href="https://www.biblica.com/resources/reading-plans/"><span>Bible in a Year</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2300"><a href="https://www.biblica.com/resources/the-books-of-the-bible/"><span>The Books of the Bible</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-887"><a href="https://www.biblica.com/our-ministry/"><span>Our Ministry</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-963"><a href="https://www.biblica.com/our-ministry/#BibleTranslation"><span>Bible Translation</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-779"><a href="https://www.biblica.com/niv-bible/translating-gods-word/"><span>Translating God&#8217;s Word</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-964"><a href="https://www.biblica.com/our-ministry/#BibleAccess"><span>Bible Access</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-965"><a href="https://www.biblica.com/our-ministry/#BibleEngagement"><span>Bible Engagement</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1272"><a href="https://www.biblica.com/our-ministry/partnerships/"><span>Partnerships</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6652"><a href="https://www.biblica.com/videos/"><span>Biblica Ministry Videos</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6660"><a href="https://www.biblica.com/our-ministry/youversion-statistics/"><span>Digital Bible Engagement Stats</span></a></li>
+</ul>
+</li>
+<li class="navbar menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-561"><a href="https://www.biblica.com/pulse/"><span>Biblica Pulse</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8292 tax-item tax-item-18"><a href="https://www.biblica.com/articles/category/find-answers/"><span>Find Answers</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8291 tax-item tax-item-19"><a href="https://www.biblica.com/articles/category/send-bibles/"><span>Send Bibles</span></a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8293 tax-item tax-item-20"><a href="https://www.biblica.com/articles/category/discover-truth/"><span>Discover Truth</span></a></li>
+</ul>
+</li>
+<li class="navbar menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-560"><a href="https://www.biblica.com/about/"><span>About</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-582"><a href="https://www.biblica.com/about/history/"><span>Our History</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-509"><a href="https://www.biblica.com/about/statement-of-faith/"><span>Statement of Faith and Core Values</span></a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8431"><a href="https://www.biblica.com/about/donor-bill-of-rights/"><span>A Donor Bill of Rights</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2240"><a href="https://www.biblica.com/about/leadership/"><span>Leadership</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-999"><a href="https://www.biblica.com/about/corporate-statements/"><span>Annual and Financial Reports</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7102"><a href="https://www.biblica.com/about/employment-opportunities/"><span>Employment Opportunities</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4487"><a href="https://www.biblica.com/donate/ways-to-give/"><span>Ways to Give</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1009"><a href="https://www.biblica.com/about/contact/"><span>Contact Biblica</span></a></li>
+</ul>
+</li>
+<li class="donate menu-item menu-item-type-custom menu-item-object-custom menu-item-2707"><a href="https://secure.biblica.com/np/clients/biblica/donation.jsp"><span>Give Now</span></a></li>
+<li class="menu-item x-menu-item x-menu-item-search"><a href="index.html@osis=niv%253AGenesis.25%253A17–25%253A17.html#" class="x-btn-navbar-search"><span><i class="x-icon-search" data-x-icon="&#xf002;" aria-hidden="true"></i><span class="x-hidden-desktop"> Search</span></span></a></li></ul></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div id="debugInfo" class="debug-info" style="display: none;">ip: 10.120.7.53</div>
+<div class="x-container max width main">
+<div class="offset cf">
+<div class="x-main left" role="main" style="min-height: 500px;">
+<div id="online-bible" class="online-bible clearfix">
+<div class="header">
+<h1>Genesis 25:17 NIV</h1>
+<div class="fb-like" data-href="https://www.facebook.com/Biblica" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+<aside class="mashsb-container mashsb-main "><div class="mashsb-box"><div class="mashsb-buttons"><a class="mashicon-facebook mash-medium mash-center mashsb-noshadow" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.biblica.com%2Fbible%2F" target="_top" rel="nofollow"><span class="icon"></span><span class="text">Facebook</span></a><a class="mashicon-twitter mash-medium mash-center mashsb-noshadow" href="https://twitter.com/intent/tweet?text=Online%20Bible&url=https://bibli.ca/2vaS1cb&via=BiblicaMinistry" target="_top" rel="nofollow"><span class="icon"></span><span class="text">Twitter</span></a><a class="mashicon-google mash-medium mash-center mashsb-noshadow" href="https://plus.google.com/share?text=Online+Bible&amp;url=https%3A%2F%2Fwww.biblica.com%2Fbible%2F" target="_top" rel="nofollow"><span class="icon"></span><span class="text">Google</span></a><a class="mashicon-linkedin mash-medium mash-center mashsb-noshadow" href="https://www.linkedin.com/shareArticle?trk=Online+Bible&amp;url=https%3A%2F%2Fwww.biblica.com%2Fbible%2F" target="_top" rel="nofollow"><span class="icon"></span><span class="text">Linkedin</span></a><a class="mashicon-pinterest mash-medium mash-center mashsb-noshadow" href="index.html@osis=niv%253AGenesis.25%253A17–25%253A17.html#" data-mashsb-url="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwww.biblica.com%2Fbible%2F&amp;media=&amp;description=" target="_blank" rel="nofollow"><span class="icon"></span><span class="text">Pinterest</span></a><a class="mashicon-mail mash-medium mash-center mashsb-noshadow" href="https://www.biblica.com/cdn-cgi/l/email-protection#39064a4c5b535c5a4d041c0b091f585449025b565d40041c0b09514d4d494a1c0a781c0b7f1c0b7f4e4e4e175b505b55505a58175a56541c0b7f5b505b555c1c0b7f" target="_top" rel="nofollow"><span class="icon"></span><span class="text">Mail</span></a><div class="onoffswitch2 mash-medium mashsb-noshadow" style="display:none;"></div></div></div>
+<div style="clear:both;"></div><div class="mashsb-toggle-container"></div></aside>
+
+<div class="bible-nav clearfix">
+<div class="books paging">
+<a class="last" href="https://www.biblica.com/bible/niv/exodus/1/">
+<span class="fa fa-angle-double-right" aria-label="Next book: Exodus" role="img"></span>
+</a>
+<a class="next" href="https://www.biblica.com/bible/niv/genesis/2/">
+<span class="fa fa-angle-right" aria-label="Next chapter: Genesis 2" role="img"></span>
+</a>
+<a class="first" href="https://www.biblica.com/bible/niv/revelation/1/">
+<span class="fa fa-angle-double-left" aria-label="Previous book: Revelation" role="img"></span>
+</a>
+<a class="prev" href="https://www.biblica.com/bible/niv/revelation/22/">
+<span class="fa fa-angle-left" aria-label="Previous chapter: Revelation 22" role="img"></span>
+</a>
+<div class="btn-group large">
+<strong class="sr-only"></strong>
+<a class="btn dropdown-toggle" data-toggle="dropdown">Genesis</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.biblica.com/bible/niv/genesis/1/">Genesis</a></li>
+<li><a href="https://www.biblica.com/bible/niv/exodus/1/">Exodus</a></li>
+<li><a href="https://www.biblica.com/bible/niv/leviticus/1/">Leviticus</a></li>
+<li><a href="https://www.biblica.com/bible/niv/numbers/1/">Numbers</a></li>
+<li><a href="https://www.biblica.com/bible/niv/deuteronomy/1/">Deuteronomy</a></li>
+<li><a href="https://www.biblica.com/bible/niv/joshua/1/">Joshua</a></li>
+<li><a href="https://www.biblica.com/bible/niv/judges/1/">Judges</a></li>
+<li><a href="https://www.biblica.com/bible/niv/ruth/1/">Ruth</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-samuel/1/">1 Samuel</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-samuel/1/">2 Samuel</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-kings/1/">1 Kings</a></li>
+ <li><a href="https://www.biblica.com/bible/niv/2-kings/1/">2 Kings</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-chronicles/1/">1 Chronicles</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-chronicles/1/">2 Chronicles</a></li>
+<li><a href="https://www.biblica.com/bible/niv/ezra/1/">Ezra</a></li>
+<li><a href="https://www.biblica.com/bible/niv/nehemiah/1/">Nehemiah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/esther/1/">Esther</a></li>
+<li><a href="https://www.biblica.com/bible/niv/job/1/">Job</a></li>
+<li><a href="https://www.biblica.com/bible/niv/psalm/1/">Psalm</a></li>
+<li><a href="https://www.biblica.com/bible/niv/proverbs/1/">Proverbs</a></li>
+<li><a href="https://www.biblica.com/bible/niv/ecclesiastes/1/">Ecclesiastes</a></li>
+<li><a href="https://www.biblica.com/bible/niv/song-of-songs/1/">Song of Songs</a></li>
+<li><a href="https://www.biblica.com/bible/niv/isaiah/1/">Isaiah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/jeremiah/1/">Jeremiah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/lamentations/1/">Lamentations</a></li>
+<li><a href="https://www.biblica.com/bible/niv/ezekiel/1/">Ezekiel</a></li>
+<li><a href="https://www.biblica.com/bible/niv/daniel/1/">Daniel</a></li>
+<li><a href="https://www.biblica.com/bible/niv/hosea/1/">Hosea</a></li>
+<li><a href="https://www.biblica.com/bible/niv/joel/1/">Joel</a></li>
+<li><a href="https://www.biblica.com/bible/niv/amos/1/">Amos</a></li>
+<li><a href="https://www.biblica.com/bible/niv/obadiah/1/">Obadiah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/jonah/1/">Jonah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/micah/1/">Micah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/nahum/1/">Nahum</a></li>
+<li><a href="https://www.biblica.com/bible/niv/habakkuk/1/">Habakkuk</a></li>
+<li><a href="https://www.biblica.com/bible/niv/zephaniah/1/">Zephaniah</a></li>
+<li><a href="https://www.biblica.com/bible/niv/haggai/1/">Haggai</a></li>
+<li><a href="https://www.biblica.com/bible/niv/zechariah/1/">Zechariah</a></li>
+ <li><a href="https://www.biblica.com/bible/niv/malachi/1/">Malachi</a></li>
+<li><a href="https://www.biblica.com/bible/niv/matthew/1/">Matthew</a></li>
+<li><a href="https://www.biblica.com/bible/niv/mark/1/">Mark</a></li>
+<li><a href="https://www.biblica.com/bible/niv/luke/1/">Luke</a></li>
+<li><a href="https://www.biblica.com/bible/niv/john/1/">John</a></li>
+<li><a href="https://www.biblica.com/bible/niv/acts/1/">Acts</a></li>
+<li><a href="https://www.biblica.com/bible/niv/romans/1/">Romans</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-corinthians/1/">1 Corinthians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-corinthians/1/">2 Corinthians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/galatians/1/">Galatians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/ephesians/1/">Ephesians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/philippians/1/">Philippians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/colossians/1/">Colossians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-thessalonians/1/">1 Thessalonians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-thessalonians/1/">2 Thessalonians</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-timothy/1/">1 Timothy</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-timothy/1/">2 Timothy</a></li>
+<li><a href="https://www.biblica.com/bible/niv/titus/1/">Titus</a></li>
+<li><a href="https://www.biblica.com/bible/niv/philemon/1/">Philemon</a></li>
+<li><a href="https://www.biblica.com/bible/niv/hebrews/1/">Hebrews</a></li>
+<li><a href="https://www.biblica.com/bible/niv/james/1/">James</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-peter/1/">1 Peter</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-peter/1/">2 Peter</a></li>
+<li><a href="https://www.biblica.com/bible/niv/1-john/1/">1 John</a></li>
+<li><a href="https://www.biblica.com/bible/niv/2-john/1/">2 John</a></li>
+<li><a href="https://www.biblica.com/bible/niv/3-john/1/">3 John</a></li>
+<li><a href="https://www.biblica.com/bible/niv/jude/1/">Jude</a></li>
+<li><a href="https://www.biblica.com/bible/niv/revelation/1/">Revelation</a></li>
+</ul>
+</div>
+<div class="btn-group small">
+<strong class="sr-only">Select chapter</strong>
+<a class="btn dropdown-toggle" data-toggle="dropdown">1</a>
+<ul class="dropdown-menu" role="menu">
+<li><a href="https://www.biblica.com/bible/niv/genesis/1/">1</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/2/">2</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/3/">3</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/4/">4</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/5/">5</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/6/">6</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/7/">7</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/8/">8</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/9/">9</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/10/">10</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/11/">11</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/12/">12</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/13/">13</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/14/">14</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/15/">15</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/16/">16</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/17/">17</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/18/">18</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/19/">19</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/20/">20</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/21/">21</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/22/">22</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/23/">23</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/24/">24</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/25/">25</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/26/">26</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/27/">27</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/28/">28</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/29/">29</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/30/">30</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/31/">31</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/32/">32</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/33/">33</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/34/">34</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/35/">35</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/36/">36</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/37/">37</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/38/">38</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/39/">39</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/40/">40</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/41/">41</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/42/">42</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/43/">43</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/44/">44</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/45/">45</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/46/">46</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/47/">47</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/48/">48</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/49/">49</a> </li>
+<li><a href="https://www.biblica.com/bible/niv/genesis/50/">50</a> </li>
+</ul>
+</div>
+</div>
+<form method="get" action="https://www.biblica.com/bible-search/" role="form">
+<div class="quick-search">
+<div class="search">
+<label class="sr-only" for="bible-keywords"></label>
+<input type="search" class="form-control autocomplete" data-acurl="/views/pages/readthebiblepages/autocomplete.ashx" name="q" id="bible-keywords" placeholder="Search the NIV Bible" />
+<input name="translation" type="hidden" value="NIV" />
+<button class="search-submit"><img src="https://www.biblica.com/wp-content/plugins/biblica-online-bible/images/btn-search.png" alt="Search" /></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="bible-reader">
+<div class="row">
+<link rel="stylesheet" href="https://www.biblica.com/wp-content/plugins/biblica-online-bible/css/bible-api.css">
+<div class="single-verse">
+<blockquote class="verse">
+<p><cite>Genesis 25:17</cite></p>
+<div class="bible-api">
+<div class="bg">
+<html><body><p class="top-05"> <span class="verse" id="verse-676">Ishmael lived a hundred and thirty-seven years. He breathed his last and died, and he was gathered to his people.</span> </p><script data-cfasync="false" src="https://www.biblica.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
+</div>
+</div>
+<div class="listen" id="listen-1">
+<audio style="width:100%;" controls="controls">
+<source src="https://stream.biblegateway.com/bibles/32/niv-mclean/Gen.25.ae00e4d04a9481b68c62e404db7cb2da.mp3" type="audio/mpeg" />
+<source src="https://stream.biblegateway.com/bibles/32/niv-mclean/Gen.25.ae00e4d04a9481b68c62e404db7cb2da.ogg" type="audio/ogg" />
+</audio>
+</div>
+<p class="action">
+<a class="btn btn-default" href="https://www.biblica.com/bible/niv/genesis/25/">Read More of Genesis 25</a>
+<a class="btn btn-default toggle-link" href="index.html@osis=niv%253AGenesis.25%253A17–25%253A17.html#listen-1" title="Listen to this text"><span class="fa fa-lg fa-volume-up" aria-label="Listen to this text" role="img"></span></a>
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<aside class="x-sidebar right" role="complementary">
+<div id="text-13" class="widget-odd widget-first widget-1 widget widget_text"><h4 class="h-widget">$50,000 match: 2x the Bibles for the Muslim world</h4> <div class="textwidget"><p><a href="https://secure.biblica.com/np/clients/biblica/donation.jsp?campaign=36799" rel="noopener"><img class="size-full wp-image-8719 aligncenter" src="https://www.biblica.com/wp-content/uploads/0320-sidebar-giving.jpg" alt="$50,000 match: 2x the Bibles for the Muslim world. $7 now sends 2 Bibles." width="300" height="250" /></a></p>
+<div style="text-align: center; padding-top: 0px;"><a class="x-btn buttonCaps x-btn-global" style="color: white; text-decoration: none;" title="$50,000 match: 2x the Bibles for the Muslim world. $7 now sends 2 Bibles." href="https://secure.biblica.com/np/clients/biblica/donation.jsp?campaign=36799">Give now</a></div>
+</div>
+</div><div id="text-8" class="widget-even widget-2 widget widget_text"><h4 class="h-widget">Read God&#8217;s Word</h4> <div class="textwidget"><div id="bible-widget">
+<div class="m m-biblereader">
+<div class="m-c">
+<form class='bible-widget' method="get" action="https://www.biblica.com/bible/" data-base-url="https://www.biblica.com/bible/" role="form">
+<input type="hidden" name="action" value="bible_widget_refresh">
+<div class="auto-refresh" data-refresh-url="/wp-admin/admin-ajax.php">
+<div class="row">
+<div class="select form-group col-xs-10">
+<label class="sr-only" for="translation">Choose Bible version</label>
+<select class="form-control refresh-trigger" name="translation" id="widget-read-translation">
+<option value="apsd-ceb">
+Cebuano | Ang Pulong Sa Dios (APSD-CEB)
+</option>
+<option value="snc">
+Čeština | Slovo na cestu (SNC)
+</option>
+<option value="bph">
+Dansk | Bibelen på hverdagsdansk (BPH)
+</option>
+<option value="hof">
+Deutsch | Hoffnung für Alle (HOF)
+</option>
+<option value="amp">
+English | Amplified Bible (AMP)
+</option>
+<option value="kjv">
+English | King James Version (KJV)
+</option>
+<option value="nasb">
+English | New American Standard Bible (NASB)
+</option>
+<option value="nirv">
+English | New International Reader&#039;s Version (NIRV)
+</option>
+<option selected value="niv">
+English | New International Version (NIV)
+</option>
+<option value="msg">
+English | The Message (MSG)
+</option>
+<option value="nivuk">
+English | New International Version - UK (NIVUK)
+</option>
+<option value="nlt">
+English | New Living Translation (NLT)
+</option>
+<option value="cst">
+Español | Nueva Versión Internacional (Castilian) (CST)
+</option>
+<option value="nvi">
+Español | Nueva Versión Internacional (NVI)
+</option>
+<option value="bds">
+Français | La Bible du Semeur (BDS)
+</option>
+<option value="cro">
+Hrvatski | Knijga O Kristu (CRO)
+</option>
+<option value="hlgn">
+Ilonggo | Ang Pulong Sang Dios (HLGN)
+</option>
+<option value="bdg">
+Italiano | La Bibbia della Gioia (BDG)
+</option>
+<option value="snt">
+Kiswahili | Neno: Bibilia Takatifu (SNT)
+</option>
+<option value="htb">
+Nederlands | Het Boek (HTB)
+</option>
+<option value="lb">
+Norsk | En Levende Bok (LB)
+</option>
+<option value="sz-pl">
+Polski | Słowo Życia (SZ-PL)
+</option>
+<option value="ol">
+Português | O Livro (OL)
+</option>
+<option value="nvi-pt">
+Português | Nova Versão Internacional (NVI-PT)
+</option>
+<option value="mtds">
+Quichua | Mushuj Testamento Diospaj Shimi (MTDS)
+</option>
+<option value="ntlr">
+Română | Nouă Traducere În Limba Română (NTLR)
+</option>
+<option value="npk">
+Slovenčina | Nádej pre kazdého (NPK)
+</option>
+<option value="svl">
+Svenska | Swedish New Living Bible (Nya Levande Bibeln) (SVL)
+</option>
+<option value="na-twi">
+Twi | Nkwa Asem (NA-TWI)
+</option>
+<option value="nrt">
+Русский | New Russian Translation (NRT)
+</option>
+<option value="cars">
+Русский | Священное Писание (Восточный Перевод) (CARS)
+</option>
+<option value="carsa">
+Русский | Священное Писание (Восточный перевод), версия с «Аллахом» (CARSA)
+</option>
+<option value="carst">
+Русский | Священное Писание (Восточный перевод), версия для Таджикистана (CARST)
+</option>
+<option value="hhh">
+עברית | Habrit Hakhadasha/Haderekh (HHH)
+</option>
+<option value="nav">
+العربية | Ketab El Hayat (NAV)
+</option>
+<option value="tncv">
+ภาษาไทย | Thai New Contemporary Bible (TNCV)
+</option>
+<option value="klb">
+한국어 | Korean Living Bible (KLB)
+</option>
+<option value="jlb">
+日本語 | Japanese Living Bible (JLB)
+</option>
+<option value="ccb">
+汉语 | Chinese Contemporary Bible (Simplified) (CCB)
+</option>
+<option value="ccbt">
+汉语 | Chinese Contemporary Bible (Traditional) (CCBT)
+</option>
+<option value="cuvs">
+汉语 | Chinese Union Version (Simplified) (CUVS)
+</option>
+</select>
+</div>
+</div>
+<div class="row">
+<div class="select form-group col-xs-7">
+<label class="sr-only" for="book">Book</label>
+<select class="form-control refresh-trigger" name="book" id="book">
+<option selected value="genesis">
+Genesis
+</option>
+<option value="exodus">
+Exodus
+</option>
+<option value="leviticus">
+Leviticus
+</option>
+<option value="numbers">
+Numbers
+</option>
+<option value="deuteronomy">
+Deuteronomy
+</option>
+<option value="joshua">
+Joshua
+ </option>
+<option value="judges">
+Judges
+</option>
+<option value="ruth">
+Ruth
+</option>
+<option value="1-samuel">
+1 Samuel
+</option>
+<option value="2-samuel">
+2 Samuel
+</option>
+<option value="1-kings">
+1 Kings
+</option>
+<option value="2-kings">
+2 Kings
+</option>
+<option value="1-chronicles">
+1 Chronicles
+</option>
+<option value="2-chronicles">
+2 Chronicles
+</option>
+<option value="ezra">
+Ezra
+</option>
+<option value="nehemiah">
+Nehemiah
+</option>
+<option value="esther">
+Esther
+</option>
+<option value="job">
+Job
+</option>
+<option value="psalm">
+Psalm
+</option>
+<option value="proverbs">
+Proverbs
+</option>
+<option value="ecclesiastes">
+Ecclesiastes
+</option>
+<option value="song-of-songs">
+Song of Songs
+</option>
+<option value="isaiah">
+Isaiah
+</option>
+<option value="jeremiah">
+Jeremiah
+</option>
+<option value="lamentations">
+Lamentations
+</option>
+<option value="ezekiel">
+Ezekiel
+</option>
+<option value="daniel">
+Daniel
+</option>
+ <option value="hosea">
+Hosea
+</option>
+<option value="joel">
+Joel
+</option>
+<option value="amos">
+Amos
+</option>
+<option value="obadiah">
+Obadiah
+</option>
+<option value="jonah">
+Jonah
+</option>
+<option value="micah">
+Micah
+</option>
+<option value="nahum">
+Nahum
+</option>
+<option value="habakkuk">
+Habakkuk
+</option>
+<option value="zephaniah">
+Zephaniah
+</option>
+<option value="haggai">
+Haggai
+</option>
+<option value="zechariah">
+Zechariah
+</option>
+<option value="malachi">
+Malachi
+</option>
+<option value="matthew">
+Matthew
+</option>
+<option value="mark">
+Mark
+</option>
+<option value="luke">
+Luke
+</option>
+<option value="john">
+John
+</option>
+<option value="acts">
+Acts
+</option>
+<option value="romans">
+Romans
+</option>
+<option value="1-corinthians">
+1 Corinthians
+</option>
+<option value="2-corinthians">
+2 Corinthians
+</option>
+<option value="galatians">
+Galatians
+</option>
+<option value="ephesians">
+Ephesians
+</option>
+<option value="philippians">
+Philippians
+</option>
+<option value="colossians">
+Colossians
+</option>
+<option value="1-thessalonians">
+1 Thessalonians
+</option>
+<option value="2-thessalonians">
+2 Thessalonians
+</option>
+<option value="1-timothy">
+1 Timothy
+</option>
+<option value="2-timothy">
+2 Timothy
+</option>
+<option value="titus">
+Titus
+</option>
+<option value="philemon">
+Philemon
+</option>
+<option value="hebrews">
+Hebrews
+</option>
+<option value="james">
+James
+</option>
+<option value="1-peter">
+1 Peter
+</option>
+<option value="2-peter">
+2 Peter
+</option>
+<option value="1-john">
+1 John
+</option>
+<option value="2-john">
+2 John
+</option>
+<option value="3-john">
+3 John
+</option>
+<option value="jude">
+Jude
+</option>
+<option value="revelation">
+Revelation
+</option>
+</select>
+</div>
+<div class="select form-group col-xs-3">
+<label class="sr-only" for="chapter">Chapter</label>
+<select class="form-control" name="chapter" id="chapter">
+<option selected value="1">
+1
+</option>
+<option value="2">
+2
+ </option>
+<option value="3">
+3
+</option>
+<option value="4">
+4
+</option>
+<option value="5">
+5
+</option>
+<option value="6">
+6
+</option>
+<option value="7">
+7
+</option>
+<option value="8">
+8
+</option>
+<option value="9">
+9
+</option>
+<option value="10">
+10
+</option>
+<option value="11">
+11
+</option>
+<option value="12">
+12
+</option>
+<option value="13">
+13
+</option>
+<option value="14">
+14
+</option>
+<option value="15">
+15
+</option>
+<option value="16">
+16
+</option>
+<option value="17">
+17
+</option>
+<option value="18">
+18
+</option>
+<option value="19">
+19
+</option>
+<option value="20">
+20
+</option>
+<option value="21">
+21
+</option>
+<option value="22">
+22
+</option>
+<option value="23">
+23
+</option>
+<option value="24">
+24
+</option>
+<option value="25">
+25
+</option>
+<option value="26">
+26
+</option>
+<option value="27">
+27
+</option>
+<option value="28">
+28
+</option>
+<option value="29">
+29
+</option>
+<option value="30">
+30
+</option>
+<option value="31">
+31
+</option>
+<option value="32">
+32
+</option>
+<option value="33">
+33
+</option>
+<option value="34">
+34
+</option>
+<option value="35">
+35
+</option>
+<option value="36">
+36
+</option>
+<option value="37">
+37
+</option>
+<option value="38">
+38
+</option>
+<option value="39">
+39
+</option>
+<option value="40">
+40
+</option>
+<option value="41">
+41
+</option>
+<option value="42">
+42
+</option>
+<option value="43">
+43
+</option>
+<option value="44">
+44
+</option>
+<option value="45">
+45
+</option>
+<option value="46">
+46
+</option>
+<option value="47">
+47
+ </option>
+<option value="48">
+48
+</option>
+<option value="49">
+49
+</option>
+<option value="50">
+50
+</option>
+</select>
+</div>
+<div class="submit form-group col-xs-2">
+<button type="submit" class="btn btn-default"><span class="fa fa-chevron-right"></span></button>
+</div>
+</div>
+</div>
+</form>
+<form method="get" action="https://www.biblica.com/bible-search/" role="form">
+<div class="row">
+<div class="search form-group col-xs-10">
+<label class="sr-only" for="widget-search-keywords">Search</label>
+<span class="ui-helper-hidden-accessible" aria-live="polite" role="status"></span>
+<input autocomplete="off" class="form-control " name="q" id="widget-search-keywords" placeholder="Search the NIV Bible" type="search">
+<input id="widget-search-translation" name="translation" type="hidden" value="NIV" />
+</div>
+<div class="submit form-group col-xs-2">
+<button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div><div id="widget_tptn_pop-2" class="widget-odd widget-3 widget tptn_posts_list_widget"><h4 class="h-widget">Popular Stories</h4><div class="tptn_posts_daily  tptn_posts_widget tptn_posts_widget2"><ul><li><a href="https://www.biblica.com/articles/7-things-you-didnt-know-about-the-apostle-paul/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/20181019_apostle_paul.jpg" class="tptn_thumb tptn_featured" alt="7 Things You Didn&#039;t Know About the Apostle Paul" title="7 Things You Didn&#039;t Know About the Apostle Paul" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/7-things-you-didnt-know-about-the-apostle-paul/" class="tptn_link"><span class="tptn_title">7 Things You Didn&#8217;t Know About the Apostle Paul</span></a></span></li><li><a href="https://www.biblica.com/articles/10-bible-verses-to-inspire-godly-courage-when-fear-attacks/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/20181030_bible_verses_against_fear.jpg" class="tptn_thumb tptn_featured" alt="10 Bible Verses to Inspire Godly Courage When Fear Attacks" title="10 Bible Verses to Inspire Godly Courage When Fear Attacks" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/10-bible-verses-to-inspire-godly-courage-when-fear-attacks/" class="tptn_link"><span class="tptn_title">10 Bible Verses to Inspire Godly Courage When Fear Attacks</span></a></span></li><li><a href="https://www.biblica.com/articles/7-things-you-didnt-learn-about-samson-in-sunday-school/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/20180216_samson-600x314.jpg" class="tptn_thumb tptn_featured" alt="7 Things You Didn’t Learn About Samson in Sunday School" title="7 Things You Didn’t Learn About Samson in Sunday School" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/7-things-you-didnt-learn-about-samson-in-sunday-school/" class="tptn_link"><span class="tptn_title">7 Things You Didn’t Learn About Samson in Sunday School</span></a></span></li><li><a href="https://www.biblica.com/articles/7-incredible-things-you-might-not-know-about-noahs-ark/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/20190321_noahs_ark.jpg" class="tptn_thumb tptn_featured" alt="7 Incredible Things You Might Not Know About Noah&#039;s Ark" title="7 Incredible Things You Might Not Know About Noah&#039;s Ark" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/7-incredible-things-you-might-not-know-about-noahs-ark/" class="tptn_link"><span class="tptn_title">7 Incredible Things You Might Not Know About Noah&#8217;s Ark</span></a></span></li><li><a href="https://www.biblica.com/articles/7-interesting-things-you-may-not-have-considered-about-the-garden-of-eden/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/garden_of_eden.jpg" class="tptn_thumb tptn_featured" alt="7 Interesting Things You May Not Have Considered About the Garden of Eden" title="7 Interesting Things You May Not Have Considered About the Garden of Eden" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/7-interesting-things-you-may-not-have-considered-about-the-garden-of-eden/" class="tptn_link"><span class="tptn_title">7 Interesting Things You May Not Have Considered About the Garden of Eden</span></a></span></li><li><a href="https://www.biblica.com/articles/7-fascinating-facts-that-will-change-how-you-read-the-book-of-daniel/" class="tptn_link"><img src="https://www.biblica.com/wp-content/uploads/20181001_daniel-600x314.jpg" class="tptn_thumb tptn_featured" alt="7 Fascinating Facts That Will Change How You Read the Book of Daniel" title="7 Fascinating Facts That Will Change How You Read the Book of Daniel" /></a><span class="tptn_after_thumb"><a href="https://www.biblica.com/articles/7-fascinating-facts-that-will-change-how-you-read-the-book-of-daniel/" class="tptn_link"><span class="tptn_title">7 Fascinating Facts That Will Change How You Read the Book of Daniel</span></a></span></li></ul><div class="tptn_clear"></div></div></div><div id="zoom-social-icons-widget-5" class="widget-even widget-4 widget-center widget zoom-social-icons-widget"><h4 class="h-widget">Connect With Us</h4>
+<ul class="zoom-social-icons-list zoom-social-icons-list--with-canvas zoom-social-icons-list--round zoom-social-icons-list--no-labels">
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://facebook.com/biblica" target="_blank">
+<span class="screen-reader-text">facebook</span>
+<span class="zoom-social_icons-list-span socicon socicon-facebook" data-hover-rule="background-color" data-hover-color="#3b5998" style="background-color : #3b5998; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="https://twitter.com/biblicaministry" target="_blank">
+<span class="screen-reader-text">twitter</span>
+<span class="zoom-social_icons-list-span socicon socicon-twitter" data-hover-rule="background-color" data-hover-color="#55acee" style="background-color : #55acee; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="http://instagram.com/biblicaministry" target="_blank">
+
+<span class="screen-reader-text">instagram</span>
+<span class="zoom-social_icons-list-span socicon socicon-instagram" data-hover-rule="background-color" data-hover-color="#e1306c" style="background-color : #e1306c; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="http://www.youtube.com/user/BiblicaMinistry?sub_confirmation=1" target="_blank">
+<span class="screen-reader-text">youtube</span>
+<span class="zoom-social_icons-list-span socicon socicon-youtube" data-hover-rule="background-color" data-hover-color="#e02a20" style="background-color : #e02a20; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="http://www.vimeo.com/biblica" target="_blank">
+<span class="screen-reader-text">vimeo</span>
+<span class="zoom-social_icons-list-span socicon socicon-vimeo" data-hover-rule="background-color" data-hover-color="#51b5e7" style="background-color : #51b5e7; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+<li class="zoom-social_icons-list__item">
+<a class="zoom-social_icons-list__link" href="http://www.linkedin.com/company/biblica" target="_blank">
+<span class="screen-reader-text">linkedin</span>
+<span class="zoom-social_icons-list-span socicon socicon-linkedin" data-hover-rule="background-color" data-hover-color="#3371b7" style="background-color : #3371b7; font-size: 18px; padding:5px"></span>
+</a>
+</li>
+</ul>
+</div><div id="text-4" class="widget-odd widget-last widget-5 widget-center widget widget_text"> <div class="textwidget"><div class="fb-xl">
+<div class="fb-page" data-href="https://www.facebook.com/Biblica" data-tabs="timeline" data-width="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Biblica" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Biblica">Biblica - The International Bible Society</a></blockquote></div>
+</div>
+<div class="fb-lg">
+<div class="fb-page" data-href="https://www.facebook.com/Biblica" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Biblica" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Biblica">Biblica - The International Bible Society</a></blockquote></div>
+</div>
+<div class="fb-md">
+<div class="fb-page" data-href="https://www.facebook.com/Biblica" data-width="250" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Biblica" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Biblica">Biblica - The International Bible Society</a></blockquote></div>
+</div>
+<div class="fb-sm">
+<div class="fb-page" data-href="https://www.facebook.com/Biblica" data-width="200" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Biblica" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Biblica">Biblica - The International Bible Society</a></blockquote></div>
+</div></div>
+</div> </aside>
+</div>
+</div>
+<footer class="x-colophon top" role="contentinfo">
+<div class="x-container max width">
+<div class="x-column x-md x-1-4"><div id="nav_menu-2" class="widget-odd widget-first widget-1 widget widget_nav_menu"><a href="https://www.biblica.com/bible/"><h4 class="h-widget">Bible</h4></a><div class="menu-footer-the-bible-container"><ul id="menu-footer-the-bible" class="menu"><li id="menu-item-1944" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1944"><a href="https://www.biblica.com/niv-bible/">About the NIV Bible Translation</a></li>
+<li id="menu-item-1946" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"><a href="https://www.biblica.com/resources/reading-plans/">Reading Plans</a></li>
+<li id="menu-item-1948" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1948"><a href="https://www.biblica.com/resources/bible-faqs/">Frequently Asked Questions</a></li>
+<li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1949"><a href="https://www.biblica.com/resources/">Bible Resources</a></li>
+</ul></div></div><div id="nav_menu-4" class="widget-even widget-last widget-2 widget widget_nav_menu"><a href="https://www.biblica.com/our-ministry/"><h4 class="h-widget">Our Ministry</h4></a><div class="menu-footer-our-ministry-container"><ul id="menu-footer-our-ministry" class="menu"><li id="menu-item-187" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-187"><a href="https://www.biblica.com/our-ministry/#BibleTranslation">Bible Translation</a></li>
+<li id="menu-item-188" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-188"><a href="https://www.biblica.com/our-ministry/#BibleAccess">Bible Access</a></li>
+<li id="menu-item-189" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-189"><a href="https://www.biblica.com/our-ministry/#BibleEngagement">Bible Engagement</a></li>
+<li id="menu-item-1950" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1950"><a href="https://www.biblica.com/our-ministry/partnerships/">Partnerships</a></li>
+</ul></div></div></div><div class="x-column x-md x-1-4"><div id="nav_menu-3" class="widget-odd widget-first widget-1 widget widget_nav_menu"><a href="https://www.biblica.com/pulse/"><h4 class="h-widget">Biblica Pulse</h4></a><div class="menu-footer-biblica-pulse-container"><ul id="menu-footer-biblica-pulse" class="menu"><li id="menu-item-2341" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2341 tax-item tax-item-11"><a href="https://www.biblica.com/articles/category/newsletter-articles/">Newsletter Articles</a></li>
+</ul></div></div><div id="nav_menu-5" class="widget-even widget-last widget-2 widget widget_nav_menu"><a href="https://www.biblica.com/about/"><h4 class="h-widget">About Biblica</h4></a><div class="menu-footer-about-biblica-container"><ul id="menu-footer-about-biblica" class="menu"><li id="menu-item-1951" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1951"><a href="https://www.biblica.com/about/history/">Our History</a></li>
+<li id="menu-item-1952" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1952"><a href="https://www.biblica.com/about/statement-of-faith/">Statement of Faith and Core Values</a></li>
+<li id="menu-item-2765" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2765"><a href="https://www.biblica.com/about/leadership/">Leadership</a></li>
+<li id="menu-item-1954" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1954"><a href="https://www.biblica.com/about/corporate-statements/">Annual &#038; Financial Reports</a></li>
+<li id="menu-item-1955" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1955"><a href="https://www.biblica.com/about/employment-opportunities/">Employment Opportunities</a></li>
+<li id="menu-item-7518" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7518"><a href="https://www.biblica.com/brand/">Biblica Brand Assets</a></li>
+<li id="menu-item-1953" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1953"><a href="https://www.biblica.com/about/contact/">Contact Biblica</a></li>
+</ul></div></div></div><div class="x-column x-md x-1-4"><div id="nav_menu-6" class="widget-odd widget-last widget-first widget-1 widget widget_nav_menu"><a href="https://secure.biblica.com/np/clients/biblica/donation.jsp"><h4 class="h-widget">Donate</h4></a><div class="menu-footer-donate-container"><ul id="menu-footer-donate" class="menu"><li id="menu-item-2708" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2708"><a href="https://secure.biblica.com/np/clients/biblica/donation.jsp">Donate Now</a></li>
+<li id="menu-item-4493" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4493"><a href="https://www.biblica.com/donate/ways-to-give/">Ways to Give</a></li>
+<li id="menu-item-7799" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7799"><a href="https://www.biblica.com/?page_id=7271">Planned Giving</a></li>
+<li id="menu-item-8432" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8432"><a href="https://www.biblica.com/about/donor-bill-of-rights/">A Donor Bill of Rights</a></li>
+</ul></div></div></div><div class="x-column x-md x-1-4 last"><div id="custom_html-2" class="widget_text widget-odd widget-last widget-first widget-1 widget widget_custom_html"><h4 class="h-widget">Follow Us</h4><div class="textwidget custom-html-widget"><style>
+#social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 180px;
+}
+
+@media screen and (max-width: 979px) {
+#social-container {
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 980px) {
+#social-container {
+    margin-left: -2px;
+}
+}
+
+.social-item {
+    padding: 2px;
+}
+
+.social {
+    width: 25px !important;
+    height: 25px !important;
+    max-width: 25px !important;
+    max-height: 25px !important;
+}
+</style>
+<div id="social-container">
+<div class="social-item"><a href="http://www.facebook.com/biblica" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/facebook.png" /></a></div>
+<div class="social-item"><a href="http://twitter.com/biblicaministry" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/twitter.png" /></a></div>
+<div class="social-item"><a href="http://instagram.com/biblicaministry" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/instagram.png" /></a></div>
+<div class="social-item"><a href="http://www.youtube.com/user/BiblicaMinistry?sub_confirmation=1" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/youtube.png" /></a></div>
+<div class="social-item"><a href="http://bibl.me/2E2paX4" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/vimeo.png" /></a></div>
+<div class="social-item"><a href="http://www.linkedin.com/company/biblica" target="_blank" rel="noopener noreferrer"><img class="social" src="https://www.biblica.com/wp-content/uploads/linkedin.png" /></a></div>
+</div>
+<div class="footerLogo"></div></div></div></div>
+</div>
+</footer>
+<footer class="x-colophon bottom" role="contentinfo">
+<div class="x-container max width">
+<div class="x-colophon-content">
+<div class="footerLogos"><a href="http://www.ecfa.org/" target="blank" alt="ECFA Accredited"><img src="https://www.biblica.com/wp-content/uploads/logo_ecfa.png" height="50" width="50" alt="ECFA Accredited" /></a> <a href="https://www.opm.gov/combined-federal-campaign/" target="blank" alt="Combined Federal Campaign"><img src="https://www.biblica.com/wp-content/uploads/logo_cfc.png" height="50" width="81" alt="Combined Federal Campaign" style="margin-left: 10px;" /></a> <a href="http://analytics.excellenceingiving.com/overview/2017-01-27/biblica" target="blank" alt="Excellence in Giving Transparency"><img src="https://www.biblica.com/wp-content/uploads/logo_excellence_in_giving.png" height="60" width="56" alt="Excellence in Giving Transparency" style="margin-left: 12px;" /></a> <a href="https://www.charitynavigator.org/index.cfm?bay=search.summary&orgid=3881" target="blank" alt="Charity Navigator Rating"><img src="https://www.biblica.com/wp-content/uploads/logo_charity_navigator.png" height="60" width="51" alt="Charity Navigator Rating" style="margin-left: 10px;" /></a></div>
+<br />
+© 2011-2020 Biblica. All Rights Reserved Worldwide. 1820 Jet Stream Drive, CO Springs, 80921 • 719.488.9200<br /><a href="https://www.biblica.com/terms-of-use/">Terms of Use</a> | <a href="https://www.biblica.com/privacy-policy/">Privacy Policy</a> </div>
+</div>
+</footer>
+<div class="x-searchform-overlay">
+<div class="x-searchform-overlay-inner">
+<div class="x-container max width">
+<form method="get" id="searchform" class="form-search center-text" action="https://www.biblica.com/">
+<label for="s" class="cfc-h-tx tt-upper">Type and Press &ldquo;enter&rdquo; to Search</label>
+<input type="text" id="s" class="search-query cfc-h-tx center-text tt-upper" name="s">
+</form>
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<script data-cfasync="false">
+  document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+      var logout_link = document.querySelectorAll('a[href*="wp-login.php?action=logout"]');
+      if (logout_link) {
+        for(var i=0; i < logout_link.length; i++) {
+          logout_link[i].addEventListener( "click", function() {
+            Intercom('shutdown');
+          });
+        }
+      }
+    }
+  };
+</script>
+<script data-cfasync="false">
+  window.intercomSettings = {"app_id":"bfxpyqej"};
+</script>
+<script data-cfasync="false">(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/bfxpyqej';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script><script type="text/javascript" src="https://a.omappapi.com/app/js/api.min.js" data-campaign="uutrfaim0zuzgtsrbflf" data-user="22570"></script><script type="text/javascript" src="https://a.omappapi.com/app/js/api.min.js" data-campaign="kogulcih7eikwc9vcpag" data-user="22570"></script> <script type="text/javascript">var uutrfaim0zuzgtsrbflf_shortcode = true;var kogulcih7eikwc9vcpag_shortcode = true;</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-gravityforms-postup/js/biblica.gravityforms.js?ver=0.1.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/bootstrap/js/bootstrap.min.js?ver=3.3.7'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/netr/netr.custom.select.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/pages/biblica.onlinebible.js?ver=0.1.0'></script>
+<script type='text/javascript'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.13-9993131'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=5.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/vendor/jbox/jBox.all.min.js?ver=1.0.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/netr/netr.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/netr/netr.responsive.js?ver=1.0.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-online-bible/js/startup.js?ver=0.1.0'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/biblica-utilities/js/optinmonster-lightbox-fix.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mashsb = {"shares":"822","round_shares":"1","animate_shares":"0","dynamic_buttons":"0","share_url":"https:\/\/www.biblica.com\/bible\/","title":"Online+Bible","image":null,"desc":"","hashtag":"BiblicaMinistry","subscribe":"content","subscribe_url":"","activestatus":"1","singular":"1","twitter_popup":"1","refresh":"0","nonce":"efee3065d8","postid":"1405","servertime":"1590092350","ajaxurl":"https:\/\/www.biblica.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/mashsharer/assets/js/mashsb.min.js?ver=3.7.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/tmls_testimonials/js/helper-plugins/jquery.touchSwipe.min.js'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/tmls_testimonials/js/jquery.carouFredSel-6.2.1.js'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/tmls_testimonials/js/testimonials.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajax_tptn_tracker = {"ajax_url":"https:\/\/www.biblica.com\/wp-admin\/admin-ajax.php","top_ten_id":"1405","top_ten_blog_id":"1","activate_counter":"11","top_ten_debug":"0","tptn_rnd":"272245364"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/top-10/includes/js/top-10-tracker.min.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"biblica"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.17'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mashnet = {"body":"","subject":"","pinterest_select":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/mashshare-networks/assets/js/mashnet.min.js?ver=2.4.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/themes/x/framework/js/dist/site/x-body.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/comment-reply.min.js?ver=5.4.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/cornerstone/assets/dist/js/site/cs-body.js?ver=3.0.4'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1587332398'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/easy-fancybox/js/jquery.fancybox.min.js?ver=1.3.24'></script>
+<script type='text/javascript'>
+var fb_timeout, fb_opts={'overlayShow':true,'hideOnOverlayClick':true,'overlayOpacity':1,'overlayColor':000,'showCloseButton':true,'margin':20,'centerOnScroll':true,'enableEscapeButton':true,'autoScale':true };
+if(typeof easy_fancybox_handler==='undefined'){
+var easy_fancybox_handler=function(){
+jQuery('.nofancybox,a.wp-block-file__button,a.pin-it-button,a[href*="pinterest.com/pin/create"],a[href*="facebook.com/share"],a[href*="twitter.com/share"]').addClass('nolightbox');
+/* IMG */
+var fb_IMG_select='a[href*=".jpg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpg"]:not(.nolightbox),a[href*=".jpeg"]:not(.nolightbox,li.nolightbox>a),area[href*=".jpeg"]:not(.nolightbox),a[href*=".png"]:not(.nolightbox,li.nolightbox>a),area[href*=".png"]:not(.nolightbox)';
+jQuery(fb_IMG_select).addClass('fancybox image');
+var fb_IMG_sections=jQuery('div.gallery');
+fb_IMG_sections.each(function(){jQuery(this).find(fb_IMG_select).attr('rel','gallery-'+fb_IMG_sections.index(this));});
+jQuery('a.fancybox,area.fancybox,li.fancybox a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'transitionIn':'elastic','easingIn':'easeOutBack','transitionOut':'elastic','easingOut':'easeInBack','opacity':false,'hideOnContentClick':false,'titleShow':false,'titlePosition':'over','titleFromAlt':true,'showNavArrows':true,'enableKeyboardNav':true,'cyclic':false,'onClosed':function() { jQuery('#fancybox-wrap').hover(function() {}, function() {}); },'onCleanup':function() { window.clearTimeout(fb_timeout); }}))});
+/* YouTube */
+jQuery('a[href*="youtu.be/"],area[href*="youtu.be/"],a[href*="youtube.com/"],area[href*="youtube.com/"]').filter(function(){return this.href.match(/\/(?:youtu\.be|watch\?|embed\/)/);}).not('.nolightbox,li.nolightbox>a').addClass('fancybox-youtube');
+jQuery('a.fancybox-youtube,area.fancybox-youtube,li.fancybox-youtube a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'type':'iframe','width':640,'height':360,'keepRatio':1,'titleShow':false,'titlePosition':'float','titleFromAlt':true,'onStart':function(a,i,o){var splitOn=a[i].href.indexOf("?");var urlParms=(splitOn>-1)?a[i].href.substring(splitOn):"";o.allowfullscreen=(urlParms.indexOf("fs=0")>-1)?false:true;o.href=a[i].href.replace(/https?:\/\/(?:www\.)?youtu(?:\.be\/([^\?]+)\??|be\.com\/watch\?(.*(?=v=))v=([^&]+))(.*)/gi,"https://www.youtube.com/embed/$1$3?$2$4&autoplay=1");}}))});
+/* Vimeo */
+jQuery('a[href*="vimeo.com/"],area[href*="vimeo.com/"]').filter(function(){return this.href.match(/\/(?:[0-9]+|video\/)/);}).not('.nolightbox,li.nolightbox>a').addClass('fancybox-vimeo');
+jQuery('a.fancybox-vimeo,area.fancybox-vimeo,li.fancybox-vimeo a').each(function(){jQuery(this).fancybox(jQuery.extend({},fb_opts,{'type':'iframe','width':900,'height':507,'keepRatio':1,'titleShow':false,'titlePosition':'float','titleFromAlt':true,'onStart':function(a,i,o){var splitOn=a[i].href.indexOf("?");var urlParms=(splitOn>-1)?a[i].href.substring(splitOn):"";o.allowfullscreen=(urlParms.indexOf("fullscreen=0")>-1)?false:true;o.href=a[i].href.replace(/https?:\/\/(?:www\.)?vimeo\.com\/([0-9]+)\??(.*)/gi,"https://player.vimeo.com/video/$1?$2&autoplay=1");}}))});};
+jQuery('a.fancybox-close').on('click',function(e){e.preventDefault();jQuery.fancybox.close()});
+};
+jQuery(easy_fancybox_handler);jQuery(document).on('post-load',easy_fancybox_handler);
+</script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/easy-fancybox/js/jquery.easing.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/easy-fancybox/js/jquery.mousewheel.min.js?ver=3.1.13'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/themes/x/framework/legacy/cranium/js/dist/site/x-body.min.js?ver=5.2.5'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-includes/js/wp-embed.min.js?ver=5.4.1'></script>
+<script type='text/javascript' src='https://www.biblica.com/wp-content/plugins/optinmonster/assets/js/helper.js?ver=1.9.6'></script>
+<script id="cornerstone-custom-content-js" type="text/javascript">//n// No need to add script tagsn// here; simply get startedn// by writing JavaScript!n// Remember to save yourn// changes to see them :)n//nn</script>
+<script id="x-customizer-js">
+      /*
+     * Replace all SVG images with inline SVG
+     */
+        jQuery('img.svg').each(function(){
+            var $img = jQuery(this);
+            var imgID = $img.attr('id');
+            var imgClass = $img.attr('class');
+            var imgURL = $img.attr('src');
+
+            jQuery.get(imgURL, function(data) {
+                // Get the SVG tag, ignore the rest
+                var $svg = jQuery(data).find('svg');
+
+                // Add replaced image's ID to the new SVG
+                if(typeof imgID !== 'undefined') {
+                    $svg = $svg.attr('id', imgID);
+                }
+                // Add replaced image's classes to the new SVG
+                if(typeof imgClass !== 'undefined') {
+                    $svg = $svg.attr('class', imgClass+' replaced-svg');
+                }
+
+                // Remove any invalid XML tags as per http://validator.w3.org
+                $svg = $svg.removeAttr('xmlns:a');
+
+                // Replace image with new SVG
+                $img.replaceWith($svg);
+
+            }, 'xml');
+
+        });
+
+
+/**
+ * Adds support for the special browser events 'scrollstart' and 'scrollstop'.
+ */
+
+(function(){
+
+    var special = jQuery.event.special,
+        uid1 = 'D' + (+new Date()),
+        uid2 = 'D' + (+new Date() + 1);
+
+    special.scrollstart = {
+        setup: function() {
+
+            var timer,
+                handler =  function(evt) {
+
+                    var _self = this,
+                        _args = arguments;
+
+                    if (timer) {
+                        clearTimeout(timer);
+                    } else {
+                        evt.type = 'scrollstart';
+                        jQuery.event.handle.apply(_self, _args);
+                    }
+
+                    timer = setTimeout( function(){
+                        timer = null;
+                    }, special.scrollstop.latency);
+
+                };
+
+            jQuery(this).bind('scroll', handler).data(uid1, handler);
+
+        },
+        teardown: function(){
+            jQuery(this).unbind( 'scroll', jQuery(this).data(uid1) );
+        }
+    };
+
+    special.scrollstop = {
+        latency: 300,
+        setup: function() {
+
+            var timer,
+                handler = function(evt) {
+
+                    var _self = this,
+                        _args = arguments;
+
+                    if (timer) {
+                        clearTimeout(timer);
+                    }
+
+                    timer = setTimeout( function(){
+
+                        timer = null;
+                        evt.type = 'scrollstop';
+                        jQuery.event.handle.apply(_self, _args);
+
+                    }, special.scrollstop.latency);
+
+                };
+
+            jQuery(this).bind('scroll', handler).data(uid2, handler);
+
+        },
+        teardown: function() {
+            jQuery(this).unbind( 'scroll', jQuery(this).data(uid2) );
+        }
+    };
+
+})();    </script>
+<script type="text/javascript">var omapi_localized = { ajax: 'https://www.biblica.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '70a1ccbafa', slugs: {"uutrfaim0zuzgtsrbflf":{"slug":"uutrfaim0zuzgtsrbflf","mailpoet":false},"kogulcih7eikwc9vcpag":{"slug":"kogulcih7eikwc9vcpag","mailpoet":false}} };</script>
+<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":1405,"object_key":"page","object_type":"post","term_ids":[]};</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"b5016f21eb","applicationID":"73598881","transactionName":"ZlZbZkEEWkVYVUVeWl8ceFFHDFtYFkJUWkVdUk1XHgpaWlBYVBpXWFFVVw==","queueTime":0,"applicationTime":630,"atts":"ShFYEAkeSUs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

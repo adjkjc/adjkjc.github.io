@@ -1,0 +1,1021 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+	<meta name="description" content="The latest entertainment news, TV discussion, and film coverage from UPROXX." /><meta name="keywords" content="entertainment" />
+<title>Entertainment &#8211; UPROXX</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"25953cffb4",applicationID:"252960113"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Googlebot-News" content="noindex,nofollow">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@UPROXX">
+	<meta name="twitter:creator" content="@UPROXX">
+	<meta name="twitter:widgets:csp" content="on">
+	<meta name="google-site-verification" content="370ZQZwYhpp3OFLpudIZ11ONRN8X1ZhGglPMAFJ6GKw">
+		<!-- Google Analytics -->
+		<script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', "UA-4046454-1", 'auto');
+		</script>
+		<!-- End Google Analytics -->
+		<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="UPROXX &raquo; Feed" href="https://uproxx.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="UPROXX &raquo; Entertainment Category Feed" href="https://uproxx.com/category/entertainment/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/uproxx.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0' href='https://uproxx.com/_static/??-eJyVj1kOwjAMRC9EaqBC0A/EWdLEQGg2xU6X25OyCQkJwZfH8pvRGIYojFc2ayRQRKANMbQ2qE5Y0yaZJiCeLFbO+KoACygOFTyjZ+AzuuLLMYVxBEmETNCj1yHBUXo1tWF8ib8TaDARn+N39/zFvfJ33AWdbVml7jGxoXIrzFuI1CJ7wx8xLoto88l4ggtylKq74Q894we3X212TbPe1sv6CqMphkc=' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<script type='text/javascript' src='https://uproxx.com/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZdVrKOPT4FubmZ6UWJJql5uZh5QsX2uraGphYWhhZmZiUEWACXIILU='></script>
+<link rel='https://api.w.org/' href='https://uproxx.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://uproxx.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://uproxx.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.1" />
+		<style>
+		.getty.aligncenter {
+			text-align: center;
+		}
+		.getty.alignleft {
+			float: none;
+			margin-right: 0;
+		}
+		.getty.alignleft > div {
+			float: left;
+			margin-right: 5px;
+		}
+		.getty.alignright {
+			float: none;
+			margin-left: 0;
+		}
+		.getty.alignright > div {
+			float: right;
+			margin-left: 5px;
+		}
+		</style>
+		
+<link rel='dns-prefetch' href='https://v0.wordpress.com/'/>
+<style type='text/css'>img#wpstats{display:none}</style><script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+
+<script data-cfasync="false" type="text/javascript">
+    var freestar = freestar || {};
+    freestar.hitTime = Date.now();
+    freestar.queue = freestar.queue || [];
+    freestar.config = freestar.config || {};
+    freestar.debug = window.location.search.indexOf('fsdebug') === -1 ? false : true;
+
+    freestar.config.enabled_slots = [];
+
+    !function (a, b) {
+        var c = b.getElementsByTagName("script")[0], d = b.createElement("script"), e = "https://a.pub.network/uproxx-com";
+        e += freestar.debug ? "/qa/pubfig.min.js" : "/pubfig.min.js", d.async = !0, d.src = e, c.parentNode.insertBefore(d, c)
+    }(window, document);
+</script><link rel="shortcut icon" type="image/png" href="https://uproxx.com/wp-content/themes/uproxx/assets/images/favicon.png" />			<style type="text/css">
+				/* If html does not have either class, do not show lazy loaded images. */
+				html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
+					display: none;
+				}
+			</style>
+			<script>
+				document.documentElement.classList.add(
+					'jetpack-lazy-images-js-enabled'
+				);
+			</script>
+		
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Entertainment &#8211; UPROXX" />
+<meta property="og:url" content="https://uproxx.com/category/entertainment/" />
+<meta property="og:description" content="The latest entertainment news, TV discussion, and film coverage from UPROXX." />
+<meta property="og:site_name" content="UPROXX" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="en_GB" />
+<meta property="fb:admins" content="680207693,2208604" />
+<meta property="fb:app_id" content="117400151618132" />
+<meta property="fb:pages" content="116548701336" />
+<meta property="article:publisher" content="https://www.facebook.com/UPROXX" />
+
+<!-- End Jetpack Open Graph Tags -->
+		<style type="text/css" id="wp-custom-css">
+			p.youtube-embed {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom:56.25%
+}
+p.youtube-embed > iframe {
+	position:absolute;
+	left:0;
+	top:0;
+  width: 100%;
+  height: 100%;
+}
+
+.postname-the-oscar-chase .page-header-title {
+	display: none;
+}		</style>
+		</head>
+
+<body class="archive category category-entertainment category-432167557 wp-embed-responsive infinite-scroll hfeed sticky-header">
+<div id="page" class="site">
+
+	<div id="top-ad" class="top-ad">
+	
+<div class="upx-ad-placeholder leaderboard" data-ad-unit="leaderboard"
+	data-ad-screens="tablet,desktop"></div>
+</div>
+
+	<header id="masthead" class="site-header">
+
+		
+		<div class="site-branding">
+			<div class="site-logo">
+			<a href="https://uproxx.com/" class="logo-link" rel="home">
+			<img src="https://uproxx.com/wp-content/themes/uproxx/assets/images/logo.svg?v=1.0.9" alt="UPROXX" />
+		</a>
+		</div>
+			
+<button class="hamburger hamburger--slider menu-toggle" aria-label="Toggle Menu" aria-controls="site-navigation" aria-expanded="false">
+	<span class="hamburger-box"><span class="hamburger-inner"></span></span>
+</button>
+<div id="site-navigation" class="site-navigation">
+			<nav class="main-navigation" aria-label="Main Menu">
+			<ul id="menu-main-navigation" class="main-menu"><li id="menu-item-402107317" class="menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/music/" aria-haspopup="true" aria-expanded="false">Music</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-2">
+	<li id="menu-item-402107318" class="menu-item menu-item-has-children menu-section section-sections depth-1">
+	<ul class="sub-menu nav-item-children menu-level-2 children-count-5">
+		<li id="menu-item-402107319" class="menu-item depth-2"><a href="https://uproxx.com/music/">UPROXX Music<span class="menu-item-description">All Things Hip-Hop Music and Culture</span></a></li>
+		<li id="menu-item-402107320" class="menu-item depth-2"><a href="https://uproxx.com/indie/">UPROXX Indie Mixtape<span class="menu-item-description">Indie Music on UPROXX</span></a></li>
+		<li id="menu-item-402107321" class="menu-item depth-2"><a href="https://uproxx.com/pop/">UPROXX Pop Flash<span class="menu-item-description">Pop Music on UPROXX</span></a></li>
+		<li id="menu-item-402107322" class="menu-item depth-2"><a href="https://uproxx.com/topic/backstage/">Backstage<span class="menu-item-description">The Story Behind The Artist</span></a></li>
+		<li id="menu-item-402107323" class="menu-item depth-2"><a href="https://uproxx.com/topic/the-rx/">The RX<span class="menu-item-description">The Music You Need, Right Now</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-402107324" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/pop/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/pop/kehlani-it-was-good-until-it-wasnt-review/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Kehlani Loves With A Heart Just Like Ours On ‘It Was Good Until It Wasn’t’" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/k-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/pop/kehlani-it-was-good-until-it-wasnt-review/">Kehlani Loves With A Heart Just Like Ours On ‘It Was Good Until It Wasn’t’</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/indie/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/indie/jason-isbell-interview-reunions-reviews-every-album/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Jason Isbell Reviews Every Jason Isbell Album, Including The New &#8216;Reunions&#8217;" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/jasoni-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/indie/jason-isbell-interview-reunions-reviews-every-album/">Jason Isbell Reviews Every Jason Isbell Album, Including The New &#8216;Reunions&#8217;</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/music/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/music/say-so-savage-remix-billboard-charts/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="The &#8216;Say So&#8217; And &#8216;Savage&#8217; Remixes Are A Dual Power Move For Black Women In Music" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/dojabey-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/music/say-so-savage-remix-billboard-charts/">The &#8216;Say So&#8217; And &#8216;Savage&#8217; Remixes Are A Dual Power Move For Black Women In Music</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-402107325" class="menu-item current-menu-item current-menu-ancestor menu-item-has-children depth-0"><a href="review-mad-men-the-flood-he-had-a-dream.html" aria-current="page" aria-haspopup="true" aria-expanded="false">Film/TV</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-2">
+	<li id="menu-item-402107326" class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children menu-section section-sections depth-1">
+	<ul class="sub-menu nav-item-children menu-level-2 children-count-4">
+		<li id="menu-item-402107327" class="menu-item current-menu-item depth-2"><a href="review-mad-men-the-flood-he-had-a-dream.html" aria-current="page">All Film/TV</a></li>
+		<li id="menu-item-402107328" class="menu-item depth-2"><a href="https://uproxx.com/tv/">UPROXX TV<span class="menu-item-description">Driving The Conversations Of Now</span></a></li>
+		<li id="menu-item-402107329" class="menu-item depth-2"><a href="https://uproxx.com/movies/">UPROXX Movies<span class="menu-item-description">Everything New And Important In Film</span></a></li>
+		<li id="menu-item-402107330" class="menu-item depth-2"><a href="https://uproxx.com/topic/what-to-watch/">What To Watch<span class="menu-item-description">Know What’s Good In Streaming</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-402107331" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/movies/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/jack-barth-interview-yesterday-writer-richard-curtis/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="How One &#8216;Yesterday&#8217; Screenwriter&#8217;s Dream Became Something Of A Nightmare" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/movies/jack-barth-interview-yesterday-writer-richard-curtis/">How One &#8216;Yesterday&#8217; Screenwriter&#8217;s Dream Became Something Of A Nightmare</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/movies/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/will-forte-interview-macgruber-10th-anniversary/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Will Forte Looks Back At &#8216;MacGruber&#8217; 10 Years Later" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/mac-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/movies/will-forte-interview-macgruber-10th-anniversary/">Will Forte Looks Back At &#8216;MacGruber&#8217; 10 Years Later</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/movies/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/road-house-31-anniversary-retrospective/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="A Tribute To &#8216;Road House,&#8217; The Greatest And Only Cultural Product This Writer&#8217;s Home Town Ever Produced" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/movies/road-house-31-anniversary-retrospective/">A Tribute To &#8216;Road House,&#8217; The Greatest And Only Cultural Product This Writer&#8217;s Home Town Ever Produced</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-402107332" class="menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/culture/" aria-haspopup="true" aria-expanded="false">Culture</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-1">
+	<li id="menu-item-402107333" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/life/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/life/tom-colicchio-interview-top-chef-covid-coronavirus/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Tom Colicchio On Saving Restaurants In The COVID Era And How We Can Fix Our Broken Food System" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/life/tom-colicchio-interview-top-chef-covid-coronavirus/">Tom Colicchio On Saving Restaurants In The COVID Era And How We Can Fix Our Broken Food System</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/culture/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/culture/california-beach-reopen-phase-two/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="&#8216;Active Recreation&#8217; Designations And Phased Reopenings May Offer A Model For Post-Lockdown America" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/beach-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/culture/california-beach-reopen-phase-two/">&#8216;Active Recreation&#8217; Designations And Phased Reopenings May Offer A Model For Post-Lockdown America</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/culture/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/culture/how-coronavirus-is-effecting-sex-workers/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Three Sex Workers Explain How COVID-19 Is Affecting Their Industry" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/04/cam-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/culture/how-coronavirus-is-effecting-sex-workers/">Three Sex Workers Explain How COVID-19 Is Affecting Their Industry</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/culture/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/culture/airline-bailout-coronavirus/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="The Pending Coronavirus Bailout Should Force Airlines To Care About Their Customers Again" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/03/airline-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/culture/airline-bailout-coronavirus/">The Pending Coronavirus Bailout Should Force Airlines To Care About Their Customers Again</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-402107334" class="menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/life/" aria-haspopup="true" aria-expanded="false">Life/Style</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-2">
+	<li id="menu-item-402107335" class="menu-item menu-item-has-children menu-section section-sections depth-1">
+	<ul class="sub-menu nav-item-children menu-level-2 children-count-2">
+		<li id="menu-item-402107336" class="menu-item depth-2"><a href="https://uproxx.com/life/">UPROXX Life<span class="menu-item-description">Travel, Food, And Drinks On UPROXX</span></a></li>
+		<li id="menu-item-402107337" class="menu-item depth-2"><a href="https://uproxx.com/style/">UPROXX Style<span class="menu-item-description">Style on UPROXX</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-402107338" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/life/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/life/best-bottles-of-booze-to-get-delivered-right-now/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="The Best Whiskies, Rums, And Brandies That We&#8217;ve Tasted In Quarantine" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/bottles-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/life/best-bottles-of-booze-to-get-delivered-right-now/">The Best Whiskies, Rums, And Brandies That We&#8217;ve Tasted In Quarantine</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/culture/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/culture/coltrane-curtis-future-post-coronavirus/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Style Icon Coltrane Curtis Shares His Vision For Life After Quarantine" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/coltrane-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/culture/coltrane-curtis-future-post-coronavirus/">Style Icon Coltrane Curtis Shares His Vision For Life After Quarantine</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/life/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/life/tom-colicchio-interview-top-chef-covid-coronavirus/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Tom Colicchio On Saving Restaurants In The COVID Era And How We Can Fix Our Broken Food System" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/tomc-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/life/tom-colicchio-interview-top-chef-covid-coronavirus/">Tom Colicchio On Saving Restaurants In The COVID Era And How We Can Fix Our Broken Food System</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/life/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/life/best-sex-podcasts-right-now/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="The Best Sex Podcasts Right Now For Your Auditory Pleasure" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/woman-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/life/best-sex-podcasts-right-now/">The Best Sex Podcasts Right Now For Your Auditory Pleasure</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-402107339" class="menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/sports/" aria-haspopup="true" aria-expanded="false">Sports</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-2">
+	<li id="menu-item-402107341" class="menu-item menu-item-has-children menu-section section-sections depth-1">
+	<ul class="sub-menu nav-item-children menu-level-2 children-count-4">
+		<li id="menu-item-402107342" class="menu-item depth-2"><a href="https://uproxx.com/sports/">All Sports</a></li>
+		<li id="menu-item-402107343" class="menu-item depth-2"><a href="https://uproxx.com/dimemag/">Dime On UPROXX<span class="menu-item-description">NBA on UPROXX</span></a></li>
+		<li id="menu-item-402107344" class="menu-item depth-2"><a href="https://uproxx.com/prowrestling/">With Spandex<span class="menu-item-description">Pro Wrestling on UPROXX</span></a></li>
+		<li id="menu-item-402107345" class="menu-item depth-2"><a href="https://uproxx.com/mma/">Brawler<span class="menu-item-description">MMA on UPROXX</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-402107346" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/tv/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/tv/marina-zenovich-interview-espn-lance-armstrong-documentary/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Why ‘Lance’ Will Be Your New ESPN Sports Documentary Fix This Sunday" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/lance-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/tv/marina-zenovich-interview-espn-lance-armstrong-documentary/">Why ‘Lance’ Will Be Your New ESPN Sports Documentary Fix This Sunday</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/dimemag/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/dimemag/ahmad-rashad-michael-jordan-nba-inside-stuff-last-dance-interview/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Ahmad Rashad On Watching &#8216;The Last Dance&#8217; With Jordan, &#8216;Inside Stuff&#8217; And His Role In MJ&#8217;s Pregame Ritual" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/ar-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/dimemag/ahmad-rashad-michael-jordan-nba-inside-stuff-last-dance-interview/">Ahmad Rashad On Watching &#8216;The Last Dance&#8217; With Jordan, &#8216;Inside Stuff&#8217; And His Role In MJ&#8217;s Pregame Ritual</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/sports/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/sports/carlos-vela-interview-lafc-mls-the-last-dance/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="LAFC Star Carlos Vela Talks Healthy Eating, Being On Hiatus, And &#8216;The Last Dance&#8217;" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=650,365 650w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/CV3.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/sports/carlos-vela-interview-lafc-mls-the-last-dance/">LAFC Star Carlos Vela Talks Healthy Eating, Being On Hiatus, And &#8216;The Last Dance&#8217;</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+<li id="menu-item-402107347" class="menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/shows/" aria-haspopup="true" aria-expanded="false">Video/Podcasts</a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-1">
+	<li id="menu-item-402107348" class="menu-item menu-section section-featured section-with-zone depth-1"><div class="nav-item-zone">
+	
+		<div class="grid-item">
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/hidden/john-salley-talib-kweli-peoples-party-full-interview/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Talib Kweli And John Salley Talk Playing Jordan, Rap Dreams, Bad Boy Records" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg 1280w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=768,433 768w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=1024,577 1024w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/yt_full_thumb_john_salley.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/hidden/john-salley-talib-kweli-peoples-party-full-interview/">Talib Kweli And John Salley Talk Playing Jordan, Rap Dreams, Bad Boy Records</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/music/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/music/horse-head-numb-uproxx-sessions-live-performance/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Horse Head Gives A Forlorn Live Performance Of &#8216;Numb&#8217; For &#8216;UPROXX Sessions&#8217;" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/UPROXX-Sessions-Horse-Head.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/music/horse-head-numb-uproxx-sessions-live-performance/">Horse Head Gives A Forlorn Live Performance Of &#8216;Numb&#8217; For &#8216;UPROXX Sessions&#8217;</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/hidden/88-keys-talib-kweli-peoples-party-full-interview/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Talib Kweli &#038; 88-Keys Talk Beats, ATCQ, Young Kanye West, Ralph Lauren" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg 1280w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=768,433 768w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=1024,577 1024w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/YT_thumb_full-1.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/hidden/88-keys-talib-kweli-peoples-party-full-interview/">Talib Kweli &#038; 88-Keys Talk Beats, ATCQ, Young Kanye West, Ralph Lauren</a></div>
+			</div>
+		</div>
+
+	
+		<div class="grid-item">
+							<a class="primary-category-label" href="https://uproxx.com/category/music/"></a>
+						
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/music/yella-beezy-no-cap-uproxx-sessions/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Yella Beezy Bangs Out A Gruff Performance Of &#8216;No Cap&#8217; For &#8216;UPROXX Sessions&#8217;" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/yella-beezy-no-cap-uproxx-sessions.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+				<div class="post-entry">
+				<div class="entry-title"><a href="https://uproxx.com/music/yella-beezy-no-cap-uproxx-sessions/">Yella Beezy Bangs Out A Gruff Performance Of &#8216;No Cap&#8217; For &#8216;UPROXX Sessions&#8217;</a></div>
+			</div>
+		</div>
+
+	</div>
+</li>
+</ul>
+</li>
+</ul><div class="main-menu-more"><button class="submenu-expand main-menu-more-toggle is-empty" tabindex="-1" aria-label="More" aria-haspopup="true" aria-expanded="false">&hellip;</button><ul class="sub-menu hidden-links"></ul></div>		</nav><!-- .main-navigation -->
+				<nav class="social-navigation" aria-label="Social Menu">
+			<ul id="menu-social-navigation" class="social-menu"><li id="menu-item-402107351" class="menu-follow menu-item menu-item-has-children social-network depth-0"><a href="review-mad-men-the-flood-he-had-a-dream.html#socials" aria-haspopup="true" aria-expanded="false"><span>Follow</span></a>
+<div class="sub-menu sub-menu-socials"><ul class="social-buttons children-count-6">
+	<li id="menu-item-402146047" class="youtube-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/uproxxvideo"><span><i class="icon-youtube-play"></i>YouTube</span></a></li>
+	<li id="menu-item-402146049" class="instagram-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/uproxx/"><span><i class="icon-instagram-bold"></i>Instagram</span></a></li>
+	<li id="menu-item-402146050" class="twitter-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/UPROXX"><span><i class="icon-twitter"></i>Twitter</span></a></li>
+	<li id="menu-item-402146051" class="facebook-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/UPROXX"><span><i class="icon-facebook-small"></i>Facebook</span></a></li>
+	<li id="menu-item-402146052" class="flipboard-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://flipboard.com/@Uproxx"><span><i class="icon-flipboard"></i>Flipboard</span></a></li>
+	<li id="menu-item-402146053" class="mail-button menu-item depth-1"><a target="_blank" rel="noopener noreferrer" href="https://eepurl.com/cECBYD"><span><i class="icon-mail"></i>Email</span></a></li>
+</ul></div>
+</li>
+<li id="menu-item-402107352" class="upx-icon menu-account menu-item menu-item-has-children depth-0"><a href="review-mad-men-the-flood-he-had-a-dream.html#account" aria-haspopup="true" aria-expanded="false"><span>Account</span><svg class="svg-icon" width="22" height="22" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-1">
+	<li class="menu-item logged-in"><a href="https://profile.uproxx.com/account/settings">My Profile</a></li>
+	<li class="menu-item logged-in"><a href="review-mad-men-the-flood-he-had-a-dream.html#" class="upx-sign-out">Sign Out</a></li>
+	<li class="menu-item logged-out"><a href="review-mad-men-the-flood-he-had-a-dream.html#" class="upx-sign-up">Sign Up</a></li>
+	<li class="menu-item logged-out"><a href="review-mad-men-the-flood-he-had-a-dream.html#" class="upx-sign-in">Sign In</a>
+	</li>
+</ul>
+</li>
+<li id="menu-item-402107354" class="upx-icon menu-info menu-item menu-item-has-children depth-0"><a href="https://uproxx.com/about/" aria-haspopup="true" aria-expanded="false"><span>Info</span><svg class="svg-icon" width="22" height="22" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></a>
+<ul class="sub-menu nav-item-children menu-level-1 children-count-3">
+	<li id="menu-item-402107355" class="menu-item depth-1"><a href="https://uproxx.com/about/"><span>About</span></a></li>
+	<li id="menu-item-402107357" class="menu-item depth-1"><a href="https://uproxx.com/privacy/"><span>Privacy</span></a></li>
+	<li id="menu-item-402107358" class="menu-item depth-1"><a href="https://uproxx.com/terms-of-use/"><span>Terms</span></a></li>
+</ul>
+</li>
+<li class="menu-search"><form role="search" method="get" class="search-form" action="https://uproxx.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" required/>
+	</label>
+	<button type="submit" class="search-submit" aria-label="Search"><svg class="svg-icon" width="22" height="22" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><span>Search</span></button>
+</form>
+</li>
+</ul>		</nav><!-- .social-navigation -->
+	</div><!-- #site-navigation -->
+		</div><!-- .site-branding-container -->
+
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="section-primary">
+
+		
+<div class="featured-ad sticked upx-ad-placeholder leaderboard" data-ad-unit="leaderboard"
+	data-ad-screens="mobile"></div>
+
+						<div id="featured" class="site-featured">
+					<div class="top-featured-article">
+						<div class="slider-item post-402419398 layout-0 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/will-forte-interview-macgruber-10th-anniversary/" aria-hidden="true" tabindex="-1">
+			<picture>
+				<img width="1600" height="400" src="https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?w=1600&amp;h=400&amp;crop=1" class="attachment-carousel-image size-carousel-image skip-lazy" alt="Will Forte Looks Back At &#8216;MacGruber&#8217; 10 Years Later" srcset="https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?resize=1600,400 1600w, https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?resize=1200,300 1200w, https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?resize=1024,256 1024w, https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?resize=720,180 720w, https://uproxx.com/wp-content/uploads/2020/05/mac-tfeat-uproxx.jpg?resize=640,160 640w" sizes="(min-width: 1600px) 1600px, 100vw" />			</picture>
+		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/will-forte-interview-macgruber-10th-anniversary/">Will Forte Looks Back At &#039;MacGruber&#039; Ten Years Later</a></h2>
+							<h3 class="entry-headline"><a href="https://uproxx.com/movies/will-forte-interview-macgruber-10th-anniversary/">The &#039;SNL&#039; alum holds nothing back when reflecting on the one-time box office and critical failure that became a cult favorite.</a></h3>
+					</div>
+	</div>
+</div>
+					</div>
+				</div>
+				
+		<header class="page-header has-top-featured-article">
+			<div class="page-header-inner">
+				
+							</div>
+		</header><!-- .page-header -->
+
+		<div id="main" class="site-main">
+
+							<div class="category-icon heading centered"><a href="review-mad-men-the-flood-he-had-a-dream.html"><img src="https://uproxx.com/wp-content/themes/uproxx/assets/images/section-icons/uproxx-entertainment.png?v=1.0.9" alt="Entertainment" /></a></div>
+				
+							<div class="curated-block grid-area">
+											<div class="category-curated curated-zones grid-area">
+															<div class="heading in-zone1">On Your Screens</div>
+								
+<div class="grid-item post-402417654 in-zone1">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/tv/terry-crews-interview-celebrity-substitute-john-henry-brooklyn-nine-nine/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Terry Crews On Art, Tackling Tough Subjects With Humor, And Being A Wild Man For The Camera" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/terry_grid_uproxx-1.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+					<h2 class="entry-title"><a href="https://uproxx.com/tv/terry-crews-interview-celebrity-substitute-john-henry-brooklyn-nine-nine/">Terry Crews On Art, Tackling Tough Subjects With Humor, And Being A Wild Man For The Camera</a></h2>
+							<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-20T10:21:31-04:00" data-timeago="3 days ago">May 20, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/kimberly-ricci/" title="Posts by Kimberly Ricci" class="author url fn" rel="author">Kimberly Ricci</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item post-402410425 in-zone1">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/tv/tom-lennon-interview-reno-911-quibi-the-state/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="Tom Lennon Shares Some Cool Stories About &#8216;Reno 911&#8217; And Classic Sketches From &#8216;The State&#8217;" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/reno911-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+					<h2 class="entry-title"><a href="https://uproxx.com/tv/tom-lennon-interview-reno-911-quibi-the-state/">Tom Lennon Shares Some Cool Stories About &#8216;Reno 911&#8217; And Classic Sketches From &#8216;The State&#8217;</a></h2>
+							<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-14T11:56:33-04:00" data-timeago="1 week ago">May 14, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/jason-tabrys/" title="Posts by Jason Tabrys" class="author url fn" rel="author">Jason Tabrys</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+																<div class="heading in-zone2">In Theaters</div>
+								
+<div class="grid-item post-402373206 in-zone2">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/road-house-31-anniversary-retrospective/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="A Tribute To &#8216;Road House,&#8217; The Greatest And Only Cultural Product This Writer&#8217;s Home Town Ever Produced" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/roadh-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+					<h2 class="entry-title"><a href="https://uproxx.com/movies/road-house-31-anniversary-retrospective/">A Tribute To &#8216;Road House,&#8217; The Greatest And Only Cultural Product This Writer&#8217;s Home Town Ever Produced</a></h2>
+							<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-21T10:11:41-04:00" data-timeago="2 days ago">May 21, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/vince/" title="Posts by Vince Mancini" class="author url fn" rel="author">Vince Mancini</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item post-402373209 in-zone2">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/jack-barth-interview-yesterday-writer-richard-curtis/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-grid-thumbnail size-grid-thumbnail wp-post-image jetpack-lazy-image" alt="How One &#8216;Yesterday&#8217; Screenwriter&#8217;s Dream Became Something Of A Nightmare" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg 710w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (max-width: 1024px) 328px, (max-width: 1200px) 387px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/04/yesterday-grid-uproxx.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+					<h2 class="entry-title"><a href="https://uproxx.com/movies/jack-barth-interview-yesterday-writer-richard-curtis/">How One &#8216;Yesterday&#8217; Screenwriter&#8217;s Dream Became Something Of A Nightmare</a></h2>
+							<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-21T11:37:44-04:00" data-timeago="2 days ago">May 21, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/vince/" title="Posts by Vince Mancini" class="author url fn" rel="author">Vince Mancini</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+														</div><!-- .category-content -->
+
+						<div class="the-latest">
+															<div class="heading">The Latest</div>
+								
+<div class="grid-item-small post-402420550">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/tv/weekend-preview-the-lovebirds-homecoming-rocketman/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-small-thumbnail size-small-thumbnail wp-post-image jetpack-lazy-image" alt="Weekend Preview: &#8216;The Lovebirds&#8217; Land, &#8216;Homecoming&#8217; Returns, And &#8216;Rocketman&#8217; Comes To Hulu" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg 710w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (min-width: 981px) 196px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/04/the-lovebirds-feat.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+		<h2 class="entry-title"><a href="https://uproxx.com/tv/weekend-preview-the-lovebirds-homecoming-rocketman/">Weekend Preview: &#8216;The Lovebirds&#8217; Land, &#8216;Homecoming&#8217; Returns, And &#8216;Rocketman&#8217; Comes To Hulu</a></h2>
+					<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-22T16:30:00-04:00" data-timeago="9 hours ago">May 22, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/kimberly-ricci/" title="Posts by Kimberly Ricci" class="author url fn" rel="author">Kimberly Ricci</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item-small post-402422665">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/christopher-nolan-macgruber-fan-tv-show-email/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-small-thumbnail size-small-thumbnail wp-post-image jetpack-lazy-image" alt="Christopher Nolan Is A Huge &#8216;MacGruber&#8217; Fan Who Can&#8217;t Wait For The TV Show, So No Pressure" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (min-width: 981px) 196px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/macgruber-feat.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+		<h2 class="entry-title"><a href="https://uproxx.com/movies/christopher-nolan-macgruber-fan-tv-show-email/">Christopher Nolan Is A Huge &#8216;MacGruber&#8217; Fan Who Can&#8217;t Wait For The TV Show, So No Pressure</a></h2>
+					<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-22T16:25:02-04:00" data-timeago="9 hours ago">May 22, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/m-j-redmond/" title="Posts by Mike Redmond" class="author url fn" rel="author">Mike Redmond</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item-small post-402422516">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/ben-affleck-snyder-cut-kevin-smith/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-small-thumbnail size-small-thumbnail wp-post-image jetpack-lazy-image" alt="Ben Affleck Had A More Enthusiastic Response To The Snyder Cut News For Kevin Smith" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg 710w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (min-width: 981px) 196px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/02/ben-affleck-justice-league-feat.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+		<h2 class="entry-title"><a href="https://uproxx.com/movies/ben-affleck-snyder-cut-kevin-smith/">Ben Affleck Had A More Enthusiastic Response To The Snyder Cut News For Kevin Smith</a></h2>
+					<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-22T14:11:12-04:00" data-timeago="12 hours ago">May 22, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/m-j-redmond/" title="Posts by Mike Redmond" class="author url fn" rel="author">Mike Redmond</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item-small post-402422352">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/movies/suicide-squad-release-the-ayer-cut-att-tweet/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-small-thumbnail size-small-thumbnail wp-post-image jetpack-lazy-image" alt="AT&#038;T Gave Fans Hope That An &#8216;Ayer Cut&#8217; Of &#8216;Suicide Squad&#8217; Could Happen" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg 710w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (min-width: 981px) 196px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/suicide-squad-ayer-cut-feat.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+		<h2 class="entry-title"><a href="https://uproxx.com/movies/suicide-squad-release-the-ayer-cut-att-tweet/">AT&#038;T Gave Fans Hope That An &#8216;Ayer Cut&#8217; Of &#8216;Suicide Squad&#8217; Could Happen</a></h2>
+					<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-22T13:30:00-04:00" data-timeago="12 hours ago">May 22, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/m-j-redmond/" title="Posts by Mike Redmond" class="author url fn" rel="author">Mike Redmond</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+
+<div class="grid-item-small post-402422434">
+	
+		<figure class="post-thumbnail">
+			<a class="post-thumbnail-inner" href="https://uproxx.com/tv/tuca-and-bertie-season-2-adult-swim-netflix/" aria-hidden="true" tabindex="-1">
+				<img width="328" height="185" src="https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?w=328&amp;h=185&amp;crop=1" class="attachment-small-thumbnail size-small-thumbnail wp-post-image jetpack-lazy-image" alt="Adult Swim Revived &#8216;Tuca And Bertie&#8217; After It Was Cancelled By Netflix" data-lazy-srcset="https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg 1920w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=300,169 300w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=650,366 650w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=768,432 768w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=1024,576 1024w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=1536,864 1536w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=150,85 150w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=328,185 328w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=387,218 387w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=460,259 460w, https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?resize=196,110 196w" data-lazy-sizes="(max-width: 640px) 150px, (max-width: 980px) calc(50vw - 40px), (min-width: 981px) 196px, 460px" data-lazy-src="https://uproxx.com/wp-content/uploads/2019/10/TucaBertie_Season1_Episode2_00_03_44_03.jpg?w=328&amp;h=185&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />			</a>
+		</figure>
+
+		<div class="post-entry">
+		<h2 class="entry-title"><a href="https://uproxx.com/tv/tuca-and-bertie-season-2-adult-swim-netflix/">Adult Swim Revived &#8216;Tuca And Bertie&#8217; After It Was Cancelled By Netflix</a></h2>
+					<div class="entry-meta">
+				<span class="entry-date"><time class="published" datetime="2020-05-22T13:03:53-04:00" data-timeago="13 hours ago">May 22, 2020</time></span><span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/ryan-nagelhout/" title="Posts by Ryan Nagelhout" class="author url fn" rel="author">Ryan Nagelhout</a></span></span>			</div><!-- .entry-meta -->
+			</div>
+</div>
+						</div><!-- .category-latest -->
+						
+					
+<div class="upx-ad-placeholder footer_landing" data-ad-unit="footer_landing"
+	></div>
+						<div class="featured-carousel">
+															<div class="heading centered">Featured</div>
+														<div class="swiper-container">
+								<div class="upx-slider swiper-wrapper">
+									<div class="slider-item swiper-slide post-402416387 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/kumail-nanjiani-interview-the-lovebirds-beastmaster-krull/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/kumail-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Kumail Nanjiani Finally Breaks His Silence About ‘The Beastmaster’ And ‘Krull‘" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/kumail-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/kumail-nanjiani-interview-the-lovebirds-beastmaster-krull/">Kumail Nanjiani Finally Breaks His Silence About ‘The Beastmaster’ And ‘Krull‘</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/mike-ryan/" title="Posts by Mike Ryan" class="author url fn" rel="author">Mike Ryan</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402403394 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/walk-hard-dewey-cox/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/walkhard-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="The Time Has Come To Talk About &#8216;Walk Hard: The Dewey Cox Story&#8217;" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/walkhard-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/walk-hard-dewey-cox/">The Time Has Come To Talk About &#039;Walk Hard: The Dewey Cox Story&#039;</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/brian-grubb/" title="Posts by Brian Grubb" class="author url fn" rel="author">Brian Grubb</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402407770 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/best-happy-madison-movies-ranked-adam-sandler/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/adams-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="The Best Happy Madison (Adam Sandler&#8217;s Production Company) Movies, Ranked" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/adams-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/best-happy-madison-movies-ranked-adam-sandler/">The Best Happy Madison Movies, Ranked</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/josh-kurp/" title="Posts by Josh Kurp" class="author url fn" rel="author">Josh Kurp</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402411262 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/tv/daveed-diggs-interview-snowpiercer-tnt-hamilton/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/snowp-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Daveed Diggs On Why ‘Snowpiercer’ Hits Differently Right Now, And Why That&#8217;s The Reason You Should Watch" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/snowp-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/tv/daveed-diggs-interview-snowpiercer-tnt-hamilton/">Daveed Diggs Knows &#039;Snowpiercer&#039; Hits Differently Right Now</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/jessica-toomer/" title="Posts by Jessica Toomer" class="author url fn" rel="author">Jessica Toomer</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402411135 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/scoob-review/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/scoob2-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="‘Scoob!’ Is Fun For Longtime Scooby-Doo Fans, And For Noobs" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/scoob2-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/scoob-review/">‘Scoob!’ Is Fun For Longtime Scooby-Doo Fans, And For Noobs</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/mike-ryan/" title="Posts by Mike Ryan" class="author url fn" rel="author">Mike Ryan</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402412480 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/life/top-chef-power-rankings-week-9-season-17/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/tc-tfeat-uproxx-1.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Top Chef Power Rankings, Week 9: The Gathering Of The Karens" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/tc-tfeat-uproxx-1.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/life/top-chef-power-rankings-week-9-season-17/">Top Chef Power Rankings, Week 9: The Gathering Of The Karens</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/vince/" title="Posts by Vince Mancini" class="author url fn" rel="author">Vince Mancini</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402409480 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/capone-review-tom-hardy-josh-trank/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/cap-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Tom Hardy Shows Why You Never Go Fully Syphilitic In &#8216;Capone&#8217;" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/cap-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/capone-review-tom-hardy-josh-trank/">Tom Hardy Shows Why You Never Go Fully Syphilitic In &#039;Capone&#039;</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/vince/" title="Posts by Vince Mancini" class="author url fn" rel="author">Vince Mancini</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402399665 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/tv/jerry-seinfeld-23-hours-to-kill-review-netflix/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/jerry-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="‘Jerry Seinfeld: 23 Hours To Kill’ Is Pleasant Enough, Yet Maybe Suffers From Bad Timing" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/jerry-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/tv/jerry-seinfeld-23-hours-to-kill-review-netflix/">‘Jerry Seinfeld: 23 Hours To Kill’ Is Pleasant Enough, Yet Maybe Suffers From Bad Timing</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/mike-ryan/" title="Posts by Mike Ryan" class="author url fn" rel="author">Mike Ryan</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402405867 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/josh-trank-interview-capone-fantastic-four-boba-fett/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/capone-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Josh Trank On ‘Capone,’ His Boba Fett Movie, And Why Everyone Has Their ‘Fantastic Four’" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/capone-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/josh-trank-interview-capone-fantastic-four-boba-fett/">Inside The Making Of Josh Trank&#039;s &#039;Capone&#039;</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/mike-ryan/" title="Posts by Mike Ryan" class="author url fn" rel="author">Mike Ryan</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402396162 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/movies/extraction-review-netflix/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/extraction-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Don&#8217;t Sleep On Netflix&#8217;s &#8216;Extraction,&#8217; An Absolute Smorgasbord Of Pure Ass-Kicking" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/extraction-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/movies/extraction-review-netflix/">Don&#039;t Sleep On &#039;Extraction,&#039; An Absolute Smorgasbord Of Pure Ass-Kicking</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/vince/" title="Posts by Vince Mancini" class="author url fn" rel="author">Vince Mancini</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402400054 caption-short">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/tv/jerry-seinfeld-interview/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/05/Jerrys-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="Jerry Seinfeld Will Always Find The Joke In Everything" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/05/Jerrys-tfeat-uproxx.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/tv/jerry-seinfeld-interview/">Jerry Seinfeld On The Power Of A Great Joke And Competing Against Himself</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/jason-tabrys/" title="Posts by Jason Tabrys" class="author url fn" rel="author">Jason Tabrys</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+<div class="slider-item swiper-slide post-402384906 caption-long">
+	<figure class="post-thumbnail">
+		<a class="post-thumbnail-inner" href="https://uproxx.com/tv/pally-schwartz-late-late-show-oral-history/" aria-hidden="true" tabindex="-1">
+			<img width="1200" height="495" src="https://uproxx.com/wp-content/uploads/2020/04/whatis-tfeat-uproxx-1.jpg?w=1200&amp;h=495&amp;crop=1" class="attachment-carousel-slide size-carousel-slide jetpack-lazy-image" alt="&#8216;What Is This Show?&#8217; &#8212; An Oral History Of The Adam Pally And Ben Schwartz &#8216;Late Late Show&#8217; Takeover" data-lazy-src="https://uproxx.com/wp-content/uploads/2020/04/whatis-tfeat-uproxx-1.jpg?w=1200&amp;h=495&amp;crop=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />		</a>
+	</figure>
+	<div class="post-content">
+		<div class="post-entry">
+			<h2 class="entry-title"><a href="https://uproxx.com/tv/pally-schwartz-late-late-show-oral-history/">An Oral History Of The Adam Pally And Ben Schwartz &#039;Late Late Show&#039; Takeover</a></h2>
+							<div class="entry-meta">
+					<span class="byline"><span class="prefix">by: </span><span class="author vcard"><a href="https://uproxx.com/author/jason-tabrys/" title="Posts by Jason Tabrys" class="author url fn" rel="author">Jason Tabrys</a></span></span>				</div><!-- .entry-meta -->
+					</div>
+	</div>
+</div>
+								</div><!-- .upx-slider -->
+								<div class="upx-slider-nav">
+									<div class="slider-button-prev"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12c0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12-12 5.373-12 12zm7.58 0l5.988-5.995 1.414 1.416-4.574 4.579 4.574 4.59-1.414 1.416-5.988-6.006z"/></svg></div>
+									<div class="swiper-pagination"></div>
+									<div class="slider-button-next"><svg class="svg-icon" width="16" height="16" aria-hidden="true" role="img" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.568 18.005l-1.414-1.415 4.574-4.59-4.574-4.579 1.414-1.416 5.988 5.995-5.988 6.005z"/></svg></div>
+								</div>
+							</div>
+						</div><!-- .featured-carousel -->
+										</div>
+				
+							<div id="neverending" class="neverending-block grid-area">
+									</div><!-- #neverending -->
+					</div><!-- #main -->
+	</section><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	
+<footer id="site-footer" class="site-footer">
+	<div class="site-info">
+					</div><!-- .site-info -->
+</footer><!-- #colophon -->
+
+</div><!-- #page -->
+
+
+<div class="upx-ad-placeholder sw_interstitial" data-ad-unit="sw_interstitial"
+	></div>
+		<!-- AuDIGENT Tagging Code -->
+		<script>
+            (function(w,d,t,u){
+                var a=d.createElement(t);a.async=1;a.src=u+"?url="+encodeURIComponent(w.location.href)+"&ref="+encodeURIComponent(d.referrer);
+                var s=d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(a,s);
+            })(window, document, 'script', 'https://a.ad.gt/api/v1/u/matches/24')
+		</script>
+		<!-- End AuDIGENT Tagging Code -->
+				<!-- Begin comScore Tag -->
+		<script type="text/javascript" src="https://sb.scorecardresearch.com/beacon.js" async></script>
+		<script type="text/javascript">
+            var COMSCORE_ACCOUNT_ID = 8430760;
+		</script>
+		<noscript>
+			<img src="https://sb.scorecardresearch.com/p?c1=2&c2=8430760&c3=&c4=&c5=&c6=&c15=&cj=1" />
+		</noscript>
+		<!-- End comScore Tag -->
+				<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "WebSite",
+				"name": "UPROXX",
+				"url": "https://uproxx.com/",
+				"image": "https://d1m3gti2l93r7l.cloudfront.net/uproxx/logo-large-b.png",
+				"potentialAction": {
+					"@type": "SearchAction",
+					"target": "https://uproxx.com/?s={search_term_string}",
+					"query-input": "required name=search_term_string"
+				},
+				"sameAs": [
+					"https://www.facebook.com/UPROXX",
+					"https://www.twitter.com/UPROXX",
+					"https://plus.google.com/+uproxx",
+					"https://instagram.com/uproxx/",
+					"https://en.wikipedia.org/wiki/Uproxx"
+				]
+			}
+		</script>
+				<!-- Quantcast Tag -->
+		<script type="text/javascript">
+            var _qacct = "p-73t-O7FWprUTo";
+            var _qevents = _qevents || [];
+            (function () {
+                var elem = document.createElement('script');
+                elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+                elem.async = true;
+                elem.type = "text/javascript";
+                var scpt = document.getElementsByTagName('script')[0];
+                scpt.parentNode.insertBefore(elem, scpt);
+            })();
+		</script>
+		<noscript>
+			<div style="display:none;"><img src="https://pixel.quantserve.com/pixel/p-73t-O7FWprUTo.gif" border="0" height="1" width="1" alt="Quantcast" /></div>
+		</noscript>
+		<!-- End Quantcast tag -->
+		<script>
+var upxAdSettings = {"adUnits":{"adhesion":{"slotName":"adhesion","sizes":{"mobile":[[300,50],[320,50]]},"type":"standard"},"bottom_rec":{"slotName":"bottom_rec","sizes":{"desktop":[[300,250],[300,600],"fluid"],"tablet":[[300,250],"fluid"]},"type":"standard"},"footer_article":{"slotName":"footer","sizes":{"desktop":[[300,250],[640,250],[640,400],[1,1],[2,2],"fluid"],"tablet":[[300,250],[640,250],[640,400],[1,1],[2,2],"fluid"],"mobile":[[320,50],[320,100],[300,250],[375,400],[2,2],[1,1],"fluid"]},"type":"standard"},"footer_landing":{"slotName":"footer","sizes":{"desktop":[[728,90],[970,250],[728,1],[970,66],[970,90],[970,500],[970,550],[970,520],"fluid"],"tablet":[[320,50],[320,100],[300,250],[375,400],[2,2],[1,1],"fluid"],"mobile":[[320,50],[320,100],[300,250],[375,400],[2,2],[1,1],"fluid"]},"type":"standard"},"leaderboard":{"slotName":"leaderboard","sizes":{"desktop":[[970,1],[970,250],[970,66],[970,90],[970,500],[970,550],[1600,520],[728,90],[1,1],"fluid"],"tablet":[[320,1],[320,50],[320,100]],"mobile":[[320,1],[320,50],[320,100]]},"type":"standard"},"native":{"slotName":"native","sizes":{"desktop":[[1,1]],"mobile":[[1,1]],"tablet":[[1,1]]},"type":"native"},"sw_interstitial":{"slotName":"sw_interstitial","sizes":{"desktop":[[1,1]],"mobile":[[1,1]],"tablet":[[1,1]]},"type":"interstitial"},"top_rec":{"slotName":"top_rec","sizes":{"desktop":[[300,250],[300,600],[300,1050]],"tablet":[[300,250],[300,600]]},"type":"standard"},"video":{"slotName":"video","sizes":{"desktop":["fluid"],"mobile":["fluid"],"tablet":["fluid"]},"type":"standard"}},"pageContext":{"adsPath":"\/29011727\/uproxx\/entertainment\/landing","targeting":{"category":"entertainment","tag":"entertainment"}}};
+</script>
+<script type='text/javascript' src='https://uproxx.com/_static/??-eJytkUkOwjAMRS9ESSuEVBaIs7iJS10yVLbDdHoCGwQbQHTpP7yFvzlNFUXrs0Mxo5gcHbLYxLgMFJejLMxbogN76FJ88W2KilGNDhhKKk+czmcDIqiPjqeuqEpevm0E+EQPyWVfTnBHZCUpXsk8CZPPe4piekYUBf6P1nOpGQ/XS+UTuDlg4KocSWdCCfKRLP62CPsqTw4UZ/kOuAGF0n23Xdg263azauq2rscbE8DpZw=='></script>
+<script src='https://seg.ad.gt/api/v1/segments.js?ver=1.1.2'></script>
+<script>
+var upxFeedScrollSettings = {"feed":{"html":null,"nextApiUrl":"https:\/\/uproxx.com\/wp-json\/upx-iscroll\/feed-archive\/category\/432167557\/2","type":"category","url":"https:\/\/uproxx.com\/category\/entertainment\/1","adContext":{"adsPath":"\/29011727\/uproxx\/topic\/landing","targeting":[]}},"nonce":"3b66f46a5c"};
+</script>
+<script>
+var upxSsoSettings = {"cookiePrefix":"uproxxsso_","origin":"https:\/\/profile.uproxx.com","accountUrl":"https:\/\/profile.uproxx.com\/account\/settings","signinIframeUrl":"https:\/\/profile.uproxx.com\/signin\/?popup=1&skin=upx-new","signinMobileUrl":"https:\/\/profile.uproxx.com\/signin\/mobile\/","signupIframeUrl":"https:\/\/profile.uproxx.com\/signup\/?popup=1&skin=upx-new","signupMobileUrl":"https:\/\/profile.uproxx.com\/register\/mobile\/","signoutUrl":"https:\/\/profile.uproxx.com\/signin?logout=1"};
+</script>
+<script>
+var upxSocial = {"fbAppId":"117400151618132"};
+</script>
+<script type='text/javascript' src='https://uproxx.com/_static/??-eJytlNtOwzAMhl+ILIA4XiAeBbmxm3nkUOJkW3l6MmCsCG0EtqvWdv5Pju1YrwZlYsgUss5z8iS6DCmu19pHLK6agEtKmaXG6hkQoSx6IXpwxXKo8YJsa2i2kDO9l7bTOe6qNzmVE5hnSod12yw49Bw4kxKTonMT3hwCOko1kU42yKw+PScD90R4KuhGt3F9cXeONrQnC6q2okygAZZsIXMM/2cMiWPiPL77m3q5pIAx6R6CGbu4/vqZeW7MQyROMijSWoPvumq1yd4HjoOtx5C2ABujdaQggBszGzkCBeAVsjuCYKIXExMdgXgpELIBycri0FjPw6C/DIOseKDt5/dBmDTRMdY30dj/aBimr0rmkEh1JecYfjB8UdtdtaA81KvqJw5Gd4Udagevo2IPlj62085sn+N9K7JPVaZ7VxhVlxhtY2MP86SO6fOoAE8ImxPg7vXV6riCHwWpJvmO8LMaj/7h4vru7vbq8vz+ZvEGH2NkHA=='></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202021.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.5',blog:'147704309',post:'0',tz:'-4',srv:'uproxx.com'} ]);
+	_stq.push([ 'clickTrackerInit', '147704309', '0' ]);
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"25953cffb4","applicationID":"252960113","transactionName":"MlNSMEBYWUpWVUFcVwsZcQdGUFhXGFVUQV0CWUId","queueTime":0,"applicationTime":478,"atts":"HhRFRghCShUVVxcPQxhL","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

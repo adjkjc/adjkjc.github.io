@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- META -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=9" /> <!-- Pour Calames -->
+<meta name="description" content="L’application IdRef permet d’interroger les autorités des bases Calames, Sudoc, STAR, STEP et Thèses.fr, d'enrichir et/ou de corriger des notices autorités existantes, de créer, sur authentification, de nouvelles entités." />
+
+<title>
+	Tecumseh (1768-1813)</title>
+
+<link rel="shortcut icon" href="https://www.idref.fr/img/icon.png" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/style.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/header.footer.menu.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/autocomplete.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/recherche.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/general.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/update.notice.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/perenne.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/form.css" title="style" media="screen"/>
+<link rel="stylesheet" type="text/css" href="https://www.idref.fr/css/lib/jquery.toast.min.css" title="style" media="screen"/>
+
+
+<!-- JS -->
+<script src="https://outils.abes.fr/cookie-banner/bandeau.js" type="text/javascript" id="cookie-banner-script" data-cookie-banner-url="https://www.idref.fr/donnees_personnelles.jsp"></script>
+
+<script src="https://code.jquery.com/jquery-3.0.0.min.js" type="text/javascript"></script>
+<script>$.noConflict();</script>
+<script src="https://www.idref.fr/js/lib-jquery/jquery.cookie.js" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/lib-jquery/jquery.base64.js" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/lib-jquery/jquery.toast.min.js" type="text/javascript"></script>
+
+<script src="https://www.idref.fr/Parametres" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/piwik.js" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/connexion.js" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/messages.js" type="text/javascript"></script>
+
+<script src="https://www.idref.fr/js/app-perenne/references.js?v=1" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/app-perenne/merged.js" type="text/javascript"></script>
+<script src="https://www.idref.fr/js/app-perenne/init.js" type="text/javascript"></script></head>
+	
+	<body bgcolor="gainsboro" merged="">
+		<header>
+	<div id="tete">
+		<a href="https://www.idref.fr/autorites.jsp" id="logo">
+			<img alt="autorites" src="https://www.idref.fr/img/logo.png" />
+		</a>
+		<a target="_blank" href="https://data.idref.fr" id="tsIdRef" title="Triple Store">
+			<img src="https://www.idref.fr/img/tsIdRef.png" alt="data.idref.fr" />
+			<span style="display:block;">data.idref.fr</span>
+		</a>
+		<a target="_blank" href="http://documentation.abes.fr/aideidref/accueil/fr/index.html" id="assistance" title="Documentation">
+			<img src="https://www.idref.fr/img/aide.png" alt="Documentation" />
+			<span style="display:block;">Documentation</span>
+		</a>
+		<table id="tableLogin" class="table_login">
+			<tr>
+				<td><input id="login" value="" name="login" placeholder="Identifiant" type="text" /></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td><input id="password" type="password" value="" name="password" placeholder="Mot de passe" type="password" /></td>
+				<td width="40px">
+					<button class="button"  title="se connecter" type="button" onClick="loginUser()">
+						<i class="fa fa-sign-in"></i>
+					</button>
+				</td>
+			</tr>
+		</table>
+
+		 <table id="tableLogout" class="display-none">
+			<tr>
+				<td>
+					<p>
+						Bonjour <b id="spanBLogin"></b>,
+					</p>
+					<ul>
+						<li>Bienvenue sur IdRef, Identifiants et référentiels pour l'Enseignement supérieur et la Recherche.</li>
+					</ul>
+				</td>
+				<td>
+					<a href="08578902X.html#" class="button" title="se déconnecter" onclick="logoutUser()"><i class="fa fa-sign-out"></i></a>
+				</td>
+			</tr>
+		</table> 
+	</div>
+</header>
+<div id="conteneur">
+        	<div id="MenuHeader">
+		  		<ul>
+					<li class="maxi-1" id="maxi-1-perenne">Tecumseh (1768-1813)</li>
+		  		</ul>
+			</div>
+            <div id="modexsl" class="colonne-1">
+				<div class="perenne">
+<div id="Notice" name="notice" style="">
+<div class="actions">
+<div class="action">
+<a href="https://www.idref.fr/08578902X.xml" target="_blank">
+<div>
+<img src="https://www.idref.fr/img/exporter-xml.png"></div>
+<div>Exporter en XML</div>
+</a>
+</div>
+<div class="action">
+<a href="https://www.idref.fr/08578902X.rdf" target="_blank">
+<div>
+<img src="https://www.idref.fr/img/exporter-rdf.png"></div>
+<div>Exporter en RDF</div>
+</a>
+</div>
+<div class="action">
+<a href="https://www.idref.fr/amelioration.jsp?ppn=08578902X&amp;titre=Tecumseh (1768-1813)" target="_blank">
+<div>
+<img src="https://www.idref.fr/img/ameliorer.png"></div>
+<div>Am&eacute;liorer la notice</div>
+</a>
+</div>
+<div class="action">
+<a href="https://www.idref.fr/assistance.jsp?ppn=08578902X&amp;titre=Tecumseh (1768-1813)" target="_blank">
+<div>
+<img src="https://www.idref.fr/img/signaler.png"></div>
+<div>Signaler une erreur</div>
+</a>
+</div>
+</div>
+<div style="margin-top:0px" id="modexsl">
+<div id="editzone">
+<div class="detail_ppn">
+<span class="detail_value">
+                Identifiant IdRef&nbsp;:&nbsp;<span class="ppn">08578902X</span></span>
+</div>
+<div class="detail_recordType">
+<span>Notice de type</span><span id="noticeType" class="DataCoded">
+                        Personne
+                    </span>
+</div>
+<div class="detail_bloc_formesRetenue">
+<div class="detail_titre">
+<p>Point d'acc&egrave;s autoris&eacute;</p>
+</div>
+<div class="detail_vedette">
+<span class="detail_value"><b>Tecumseh (1768-1813)</b></span>
+</div>
+<div class="detail_nomOrdre">
+<span class="detail_value"></span>
+</div>
+</div>
+<div class="detail_bloc_formesRejetees">
+<div class="detail_titre">
+<p>Variantes de point d'acc&egrave;s</p>
+</div>
+<div class="detail_variantes">
+<span class="detail_value"><b>Tecumthe</b></span>
+<div class="detail_nameType">[Nom de personne]</div>
+</div>
+<div class="detail_variantes">
+<span class="detail_value"><b>Tikamthe</b></span>
+<div class="detail_nameType">[Nom de personne]</div>
+</div>
+<div class="detail_variantes">
+<span class="detail_value"><b>Crounching Panth</b></span>
+<div class="detail_nameType">[Nom de personne]</div>
+</div>
+<div class="detail_variantes">
+<span class="detail_value"><b>Flying Panther</b></span>
+<div class="detail_nameType">[Nom de personne]</div>
+</div>
+<div class="detail_variantes">
+<span class="detail_value"><b>Shooting Star</b></span>
+<div class="detail_nameType">[Nom de personne]</div>
+</div>
+</div>
+<div class="detail_bloc_informations">
+<div class="detail_titre">
+<p>Information</p>
+</div>
+<div class="detail_info">
+<span> (par souci de protection des donn&eacute;es &agrave; <a href="https://www.idref.fr/donnees_personnelles.jsp">caract&egrave;re personnel</a>, le jour et le mois de naissance ne sont pas affich&eacute;s)</span>
+</div>
+<div class="detail_langue">
+<b>Langue d'expression&nbsp;:&nbsp;</b><span id="Langues" class="DataCoded">Inconnue</span>
+</div>
+<div class="detail_nationalite">
+<b>Pays&nbsp;:&nbsp;</b><span id="PaysISO3166" class="DataCoded">pays inconnu</span>
+</div>
+<div class="detail_naissance">
+<b>Date de naissance&nbsp;:&nbsp;</b><span class="detail_value">1768</span>
+</div>
+<div class="detail_mort">
+<b>Date de mort&nbsp;:&nbsp;</b><span class="detail_value">05&nbsp;-&nbsp;
+                            10&nbsp;-&nbsp;
+                            1813</span>
+</div>
+</div>
+<div class="detail_bloc_informations">
+<div class="detail_titre">
+<p>Notes</p>
+</div>
+<span class="detail_label">Note publique d'information&nbsp;:&nbsp;</span>
+<div class="detail_chaqueNoteBio">
+<span class="detail_value">Chef indien shawnee. Avec son fr&egrave;re Tenskwatawa, il essaya d'unir les Indiens des Etats-Unis et du Canada contre les Blancs, son fr&egrave;re ayant &eacute;t&eacute; battu  par Harrison &agrave; Tippecanoe (1811), Tecumseh s'allia aux Britanniques lors de la guerre de 1812 et mourut &agrave; la bataille de la Thames River</span>
+</div>
+<br>
+<span class="detail_label">Note publique d'information&nbsp;:&nbsp;</span>
+<div class="detail_chaqueNoteBio">
+<span class="detail_value">Lieu de naissance Piqua (Oregon). Lieu de d&eacute;c&egrave;s Ontario</span>
+</div>
+<br>
+</div>
+<div class="detail_bloc_sources">
+<div class="detail_titre">
+<p>Source</p>
+</div>
+<div class="detail_sourceProfit">
+<span class="detail_value">LC Authorities - http://authorities.loc.gov (2003-01-07)</span>
+</div>
+<hr style="border-top: 1px solid #ccc; margin-top : 10px; margin-bottom : 10px;" align="left" size="1px" width="30%">
+<div class="detail_sourceProfit">
+<span class="detail_value">Petit Robert des noms propres, 1995</span>
+</div>
+<hr style="border-top: 1px solid #ccc; margin-top : 10px; margin-bottom : 10px;" align="left" size="1px" width="30%">
+<div class="detail_sourceProfit">
+<span class="detail_value">Tecumseh / Michael Solka, 1997</span>
+</div>
+</div>
+<div class="detail_bloc_identifiants">
+<div class="detail_titre">
+<p>Autres identifiants</p>
+</div>
+<div class="detail_idEnCours">
+<span class="detail_label">Identifiant BNF&nbsp;:&nbsp;</span><span class="detail_value">FRBNF144453003</span>
+</div>
+<div class="detail_idEnCours">
+<span class="detail_label">Identifiant VIAF&nbsp;:&nbsp;</span><span class="detail_value"><a target="_blank" href="http://viaf.org/viaf/72189618">http://viaf.org/viaf/72189618</a></span>
+</div>
+<div class="detail_idEnCours">
+<span class="detail_label">Identifiant ARK&nbsp;:&nbsp;</span><span class="detail_value"><a target="_blank" href="../catalogue.bnf.fr/ark%253A/12148/cb144453008.html">http://catalogue.bnf.fr/ark:/12148/cb144453008</a></span>
+</div>
+<div class="detail_idEnCours">
+<span class="detail_label">Identifiant ISNI&nbsp;:&nbsp;</span><span class="detail_value"><a target="_blank" href=" http://isni.org/isni/0000000073754736">0000000073754736</a></span>
+</div>
+</div>
+<div class="detail_bloc_rameauUse">
+<div class="detail_titre">
+<p>Utilisation dans Rameau</p>
+</div>
+<div class="detail_headingUse">
+<span class="detail_value">Le point d'acc&egrave;s peut &ecirc;tre employ&eacute; dans un point d'acc&egrave;s sujet</span>
+</div>
+<div class="detail_subdivisionUse">
+<span class="detail_value">Le point d'acc&egrave;s ne peut s'employer qu'en &eacute;l&eacute;ment initial</span>
+</div>
+</div>
+<div class="detail_bloc_recordMetadata">
+<div class="detail_titre">
+<p>Informations sur la notice</p>
+</div>
+<div class="detail_ppn2">
+<span class="detail_label">Identifiant de la notice&nbsp;:&nbsp;</span><span class="detail_value">08578902X</span>
+</div>
+<div class="detail_recordLast">
+<span class="detail_label">Derni&egrave;re modification&nbsp;:&nbsp;</span><span class="detail_value">20-04-2020 &agrave; 10 h 13</span>
+</div>
+</div>
+</div>
+<div class="detail_bloc_biblio">
+<div class="detail_titre">
+<a name="haut"></a>
+<p id="ref-liees-p">
+<span id="perenne-references-total">...</span> R&eacute;f&eacute;rences li&eacute;es&nbsp;:&nbsp;<span id="perenne-references-count">...</span>
+</p>
+</div>
+<div class="text-center" id="perenne-references-loader">
+<h1>
+<i class="fa fa-spinner fa-pulse fa-fw"></i>
+</h1>
+</div>
+<div id="perenne-references-roles"></div>
+<div id="perenne-references-docs"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+        </div>
+		<div id="LogDiv">
+	<textarea id="log" rows="5" cols="70"></textarea>
+</div>
+<footer>
+	<div id="pied" class="pied">
+		<div id="footer">
+			<div>
+				<a href="https://www.idref.fr/a_propos.jsp">A propos</a>
+				<a href="https://www.idref.fr/partenaires.jsp">Partenaires</a>
+				<a href="https://www.idref.fr/donnees_personnelles.jsp">Données Personnelles</a>
+				<a href="https://www.idref.fr/mentions_legales.jsp">Mentions Légales</a>
+				<a href="https://www.idref.fr/cgu.jsp">Conditions Générales d'Utilisation (CGU)</a>
+				<a href="https://stp.abes.fr/node/3?origine=idref">Assistance</a>
+			</div>
+			<div>
+	               <a title="Agence bibliographique de l'enseignement supérieur" href="http://www.abes.fr" target="_blank">
+	                   <img alt="ABES" src="https://www.idref.fr/img/logo-abes.png"/>
+	               </a>
+	           </div>
+		</div>
+	</div>
+</footer></body>
+</html>

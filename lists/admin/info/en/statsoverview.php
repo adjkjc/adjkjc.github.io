@@ -1,0 +1,1 @@
+When a subscriber that has already received a campaign is removed, the campaign statistics are updated: clicks and opens generated from that subscriber are removed and the number of sent messages is updated to reflect the change.

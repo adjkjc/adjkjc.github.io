@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+	<meta charset="utf-8">
+  <title>ISAAC - JewishEncyclopedia.com</title>
+  <meta name="description" content="Complete contents the 1906 Jewish Encyclopedia.">
+  <link rel="shortcut icon" href="http://www.jewishencyclopedia.com/images/favicon.ico">
+  <link href="http://www.jewishencyclopedia.com/stylesheets/style.css?1436992185" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://www.jewishencyclopedia.com/stylesheets/jquery-ui.css?1436992185" media="screen" rel="stylesheet" type="text/css" />
+  <script src="http://www.jewishencyclopedia.com/javascripts/jquery.min.js?1436992185" type="text/javascript"></script>
+<script src="http://www.jewishencyclopedia.com/javascripts/jquery-ui.min.js?1436992185" type="text/javascript"></script>
+<script src="http://www.jewishencyclopedia.com/javascripts/rails.js?1436992185" type="text/javascript"></script>
+<script src="http://www.jewishencyclopedia.com/javascripts/modernizr-1.6.min.js?1436992185" type="text/javascript"></script>
+<script src="http://www.jewishencyclopedia.com/javascripts/clear-form.js?1436992185" type="text/javascript"></script>
+	  <script src="http://s3.amazonaws.com/getsatisfaction.com/javascripts/feedback-v2.js"></script>
+  <script src="http://connect.facebook.net/en_US/all.js"></script>
+  <script src="../platform.twitter.com/widgets.js"></script>
+  <script>
+	  $(document).ready(function() {
+	    $(".notselectedletter").live('mouseenter', function() { $(".selectedletter").removeClass('active') })
+	    $(".notselectedletter").live('mouseleave', function() { $(".selectedletter").addClass('active') })
+	    $(".letterlink").click(function() {
+	      $('.selectedletter').addClass('notselectedletter')
+	      $('.selectedletter').removeClass('selectedletter')
+	      $(this).parent().addClass('selectedletter').addClass('active')
+	      $(this).parent().removeClass('notselectedletter')
+	    })
+	    <!--//FB-->
+	    FB.init({appId: '139764959431521', status: true, cookie: true, xfbml: true})
+  	    $("#searchtips").click(function() { $("#tippopup").slideDown() })
+        $("#closeicon").click(function() { $("#tippopup").slideUp() })
+    	    })
+    <!--//GA-->
+    var _gaq = _gaq||[];
+    _gaq.push(['_setAccount', 'UA-8103723-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = 'http://www.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+    <!--//GetSatisfaction-->
+    var feedback_widget_options = {}
+    feedback_widget_options.display = "overlay"
+    feedback_widget_options.company = "jewishencyclopedia"
+    feedback_widget_options.placement = "right"
+    feedback_widget_options.color = "#9D5D00"
+    feedback_widget_options.style = "question"
+    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options)
+
+      </script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="+7sdIEbu5VqmOr9g4TZ+x55kO3OE0SUc8w+zRT2JVQ0=" name="csrf-token" />
+</head>
+<body>
+	<div id="custom-doc" class="yui3-g">
+		<header id="hd" class="yui3-u-1">
+      <div class="yui3-g" style="margin-bottom:1em">
+				<div class="yui3-u-1-3">
+			    <h1 class="logo"><a href="http://www.jewishencyclopedia.com/">JewishEncyclopedia.com</a></h1>
+			    <span style="font-size:93%; font-style:italic">The unedited full-text of the 1906 Jewish Encyclopedia</span>
+			  </div>
+			  <div class="yui3-u-1-3">
+			    <div style="text-align:center"> 
+  			    <script type="text/javascript">
+            <!--
+            google_ad_client = "ca-pub-6774707093597642";
+            google_ad_width = 234;
+            google_ad_height = 60;
+            google_ad_format = "234x60_as";
+            google_ad_type = "text";
+            google_ad_channel = "4766105823+7280878113+4688643430";
+            google_color_border = "f9f9f9";
+            google_color_bg = "f9f9f9";
+            google_color_link = "003366";
+            google_color_url = "3d3d3d";
+            google_color_text = "3d3d3d";
+            google_ui_features = "rc:6";
+            //-->
+            </script>
+            <script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+          </div>
+			  </div>
+				<div class="yui3-u-1-3">
+      			<form accept-charset="UTF-8" action="http://www.jewishencyclopedia.com/search" class="form-search-small" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    					<fieldset>
+    						<div class="area">
+    							<span class="field">
+    								<input type="text" value="" id="search" name="keywords" />
+    							</span>
+    							<div class="row">
+    								<div id="tippopup">
+    								  <div id="closeicon" class="blueicon" style="position:relative; float:right"></div>
+              			  <table>
+  <tr>
+    <td>- Phrase search:</td>
+    <td style="padding-left:1em"><code>"names of god"</code></td>
+  </tr>
+  <tr>
+    <td>- Exclude terms:</td>
+    <td style="padding-left:1em"><code>"names of god" -zerah</code></td>
+  </tr>
+  <tr>
+    <td>- Volume/Page:</td>
+    <td style="padding-left:1em"><code>v9 p419</code></td>
+  </tr>
+  <tr>
+    <td>- Diacritics optional:</td>
+    <td style="padding-left:1em"><code>Ḥanukkah or hanukkah</code></td>
+  </tr>
+  <tr>
+    <td>- Search by Author:</td>
+    <td style="padding-left:1em"><code>altruism author:Hirsch</code></td>
+  </tr>
+</table>
+
+    								</div>
+    								<span id="searchtips">search tips &amp; recommendations</span>
+    							</div>
+    						</div>
+        				<input class="btn-search" name="commit" type="submit" value="search" />
+    					</fieldset>
+</form>			  </div>
+			</div>
+      <div class="yui3-g">
+			  <nav class="yui3-u-1">
+					<ul id="nav">
+					    <li class=&#x27;selectedletter active&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">A</a>
+						    <ul>
+						        <li>
+						          <a title="AACH - Abdima (Abdimi) of Sepphoris" href="http://www.jewishencyclopedia.com/directory/A/1">
+						            AACH - ABDI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="Abdimi Mallaá¸¥a - ABRAHAM OF BOHEMIA" href="http://www.jewishencyclopedia.com/directory/A/205">
+						            ABDI - ABRA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ABRAHAM IBN BOLAT - ABRAHAM BEN YOM-á¹¬OB OF TUDELA" href="http://www.jewishencyclopedia.com/directory/A/408">
+						            ABRA - ABRA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ABRAHAM áºARFATI - ADLER, DAVID BARUCH" href="http://www.jewishencyclopedia.com/directory/A/611">
+						            ABRA - ADLE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ADLER, ELKAN NATHAN - AIN MUSA" href="http://www.jewishencyclopedia.com/directory/A/814">
+						            ADLE - AINM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="AIRE - ALGAZI, YOM-á¹¬OB BEN ISRAEL JACOB" href="http://www.jewishencyclopedia.com/directory/A/1017">
+						            AIRE - ALGA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ALGEBRA, SCIENCE OF - AMORITES" href="http://www.jewishencyclopedia.com/directory/A/1220">
+						            ALGE - AMOR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="AMOS - ANTUNES" href="http://www.jewishencyclopedia.com/directory/A/1423">
+						            AMOS - ANTU
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ANTWERP - ARTAXERXES II" href="http://www.jewishencyclopedia.com/directory/A/1626">
+						            ANTW - ARTA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ARTAXERXES III. - ASSER, CAREL" href="http://www.jewishencyclopedia.com/directory/A/1829">
+						            ARTA - ASSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ASSER, CAREL - &#x27;AZZUT PANIM" href="http://www.jewishencyclopedia.com/directory/A/2032">
+						            ASSE - AZZU
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">B</a>
+						    <ul>
+						        <li>
+						          <a title="BA&#x27;AL - BAKHMUT" href="http://www.jewishencyclopedia.com/directory/B/2235">
+						            BAAL - BAKH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BAKI, SIMSON - BARNACLE-GOOSE" href="http://www.jewishencyclopedia.com/directory/B/2385">
+						            BAKI - BARN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BARNATO, BARNETT ISAACS - BE ABIDAN" href="http://www.jewishencyclopedia.com/directory/B/2535">
+						            BARN - BEAB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BE RAB - BELMONTE" href="http://www.jewishencyclopedia.com/directory/B/2685">
+						            BERA - BELM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BELMONTE, B. E. COLAÃO - BENJAMIN, SAMUEL" href="http://www.jewishencyclopedia.com/directory/B/2835">
+						            BELM - BENJ
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BENJAMIN B. SAMUEL OF COUTANCES - BERNSTAMM, LEOPOLD BERNARD" href="http://www.jewishencyclopedia.com/directory/B/2984">
+						            BENJ - BERN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BERNSTEIN, AARON (DAVID) - BIEDERMANN, MICHAEL LAZAR" href="http://www.jewishencyclopedia.com/directory/B/3133">
+						            BERN - BIED
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BIEGELEISEN, HENRY - BLUMENFELDT, SIMON" href="http://www.jewishencyclopedia.com/directory/B/3282">
+						            BIEG - BLUM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BLUMENSTOCK VON HALBAN, LEO - BORNSTEIN, PAUL" href="http://www.jewishencyclopedia.com/directory/B/3431">
+						            BLUM - BORN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BORODAVKA - BRODA, BENJAMIN B. AARON" href="http://www.jewishencyclopedia.com/directory/B/3580">
+						            BORO - BROD
+						          </a>
+						        </li>
+						        <li>
+						          <a title="BRODSKI - BYZANTINE EXPIRE" href="http://www.jewishencyclopedia.com/directory/B/3729">
+						            BROD - BYZA
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">C</a>
+						    <ul>
+						        <li>
+						          <a title="CABALA - CANSINO, JACOB" href="http://www.jewishencyclopedia.com/directory/C/3878">
+						            CABA - CANS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CANSTATT, KARL FRIEDRICH - CARPI, ZACHARIAH" href="http://www.jewishencyclopedia.com/directory/C/3975">
+						            CANS - CARP
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CARPZOV, JOHANN BENEDICT II. - CEMETERY" href="http://www.jewishencyclopedia.com/directory/C/4072">
+						            CARP - CEME
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CENSER - CHASTITY, PROOF OF" href="http://www.jewishencyclopedia.com/directory/C/4169">
+						            CENS - CHAS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CHÃTEAU-THIERRY - CHRIST" href="http://www.jewishencyclopedia.com/directory/C/4265">
+						            CHAT - CHRI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CHRISTIAN - COHEN, ABNER" href="http://www.jewishencyclopedia.com/directory/C/4361">
+						            CHRI - COHE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="COHEN, ABRAHAM - COLON" href="http://www.jewishencyclopedia.com/directory/C/4457">
+						            COHE - COLO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="COLON, JOSEPH B. SOLOMON - CORDOVA" href="http://www.jewishencyclopedia.com/directory/C/4553">
+						            COLO - CORD
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CORDOVA, ISAAC HEZEKIAH B. JACOB - CRÃMIEUX, GASTON" href="http://www.jewishencyclopedia.com/directory/C/4649">
+						            CORD - CREM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="CRÃMIEUX, HANANEEL - CZYNSKI, JAN (JEAN)" href="http://www.jewishencyclopedia.com/directory/C/4745">
+						            CREM - CZYN
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">D</a>
+						    <ul>
+						        <li>
+						          <a title="DABBASHETH - DANON, JOSEPH BEN JACOB BEN MOSES IBN" href="http://www.jewishencyclopedia.com/directory/D/4841">
+						            DABB - DANO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DANON, MEÃR BENJAMIN MENAHEM - DAVID, ERNEST" href="http://www.jewishencyclopedia.com/directory/D/4891">
+						            DANO - DAVI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DAVID, FERDINAND - DAVIDSOHN, LEON" href="http://www.jewishencyclopedia.com/directory/D/4941">
+						            DAVI - DAVI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DAVIDSOHN, ROBERT - DEDE AGATCH" href="http://www.jewishencyclopedia.com/directory/D/4991">
+						            DAVI - DEDE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DEDICATION - DENMARK" href="http://www.jewishencyclopedia.com/directory/D/5041">
+						            DEDI - DENM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DENVER - DEUTSCH, EMANUEL OSCAR MENAHEM" href="http://www.jewishencyclopedia.com/directory/D/5091">
+						            DENV - DEUT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DEUTSCH, GOTTHARD - DIESSENHOFEN" href="http://www.jewishencyclopedia.com/directory/D/5141">
+						            DEUT - DIES
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DIETARY LAWS - DLUGOSZ, JEAN" href="http://www.jewishencyclopedia.com/directory/D/5191">
+						            DIET - DLUG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DLUGOSZ - DOSA BEN SAADIA" href="http://www.jewishencyclopedia.com/directory/D/5241">
+						            DLUG - DOSA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DOSA B. á¹¬EBET - DUALISM" href="http://www.jewishencyclopedia.com/directory/D/5291">
+						            DOSA - DUAL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="DUARTE, LUIS - DYVIN" href="http://www.jewishencyclopedia.com/directory/D/5341">
+						            DUAR - DYVI
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">E</a>
+						    <ul>
+						        <li>
+						          <a title="EAGLE - EFES" href="http://www.jewishencyclopedia.com/directory/E/5390">
+						            EAGL - EFES
+						          </a>
+						        </li>
+						        <li>
+						          <a title="EFODI - EJECTMENT" href="http://www.jewishencyclopedia.com/directory/E/5444">
+						            EFOD - EJEC
+						          </a>
+						        </li>
+						        <li>
+						          <a title="EKAH (LAMENTATIONS) RABBATI - ELEAZAR B. NATHAN" href="http://www.jewishencyclopedia.com/directory/E/5498">
+						            EKAH - ELEA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ELEAZAR BEN PEDAT - ELIEZER B. á¸¤ISMA" href="http://www.jewishencyclopedia.com/directory/E/5551">
+						            ELEA - ELIE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ELIEZER (LIEZER) BEN HYRCANUS - ELIJAH BEN JOSEPH" href="http://www.jewishencyclopedia.com/directory/E/5604">
+						            ELIE - ELIJ
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ELIJAH B. JOSEPH (YOSKE) - ELTEKEH" href="http://www.jewishencyclopedia.com/directory/E/5657">
+						            ELIJ - ELTE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ELVIRA - ENGEL, JOSEPH" href="http://www.jewishencyclopedia.com/directory/E/5710">
+						            ELVI - ENGE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ENGELBERT, HERMANN - EPICURUS AND EPICUREANISM" href="http://www.jewishencyclopedia.com/directory/E/5763">
+						            ENGE - EPIC
+						          </a>
+						        </li>
+						        <li>
+						          <a title="EPIGRAMS - ESTELLA" href="http://www.jewishencyclopedia.com/directory/E/5816">
+						            EPIG - ESTE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ESTELLE, FRANCE - EVIL-MERODACH" href="http://www.jewishencyclopedia.com/directory/E/5869">
+						            ESTE - EVIL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="EVIL SPIRITS - EZRAHITE" href="http://www.jewishencyclopedia.com/directory/E/5922">
+						            EVIL - EZRA
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">F</a>
+						    <ul>
+						        <li>
+						          <a title="FABLE - FARá¸¤I (PARá¸¤I), ESTORI" href="http://www.jewishencyclopedia.com/directory/F/5975">
+						            FABL - FARH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FARá¸¤I, á¸¤AYYIM MU&#x27;ALLIM - FELBERMAN, LOUIS" href="http://www.jewishencyclopedia.com/directory/F/6018">
+						            FARH - FELB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FELD, JULIUS - FEUER, NATHANIEL" href="http://www.jewishencyclopedia.com/directory/F/6061">
+						            FELD - FEUE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FEUST, KARL - FISCHELS, MEÃR" href="http://www.jewishencyclopedia.com/directory/F/6104">
+						            FEUS - FISC
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FISCHER, BERNARD - FLEXNER, SIMON" href="http://www.jewishencyclopedia.com/directory/F/6147">
+						            FISC - FLEX
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FLISFEDER, D. I. - FORGERY" href="http://www.jewishencyclopedia.com/directory/F/6190">
+						            FLIS - FORG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FORGIVENESS - FRANCOLM, ISAAC ASHER" href="http://www.jewishencyclopedia.com/directory/F/6233">
+						            FORG - FRAN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FRANGI, á¸¤AYYIM - FRANKL, LOTHAR AMADEUS, RITTER VON HOCHWART" href="http://www.jewishencyclopedia.com/directory/F/6276">
+						            FRAN - FRAN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FRANKL, LUDWIG AUGUST, RITTER VON HOCHWART - FRIDAY" href="http://www.jewishencyclopedia.com/directory/F/6318">
+						            FRAN - FRID
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FRIEDBERG, ABRAHAM SHALOM (&quot;HAR SHALOM&quot;) - FROHBERG, REGINA" href="http://www.jewishencyclopedia.com/directory/F/6360">
+						            FRIE - FROH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="FROHMAN, CHARLES - FÃRTH, MEYER B. ELHANAN" href="http://www.jewishencyclopedia.com/directory/F/6402">
+						            FROH - FURT
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">G</a>
+						    <ul>
+						        <li>
+						          <a title="GABBAI - GAMALIEL III." href="http://www.jewishencyclopedia.com/directory/G/6444">
+						            GABB - GAMA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GAMALIEL IV. - GEDALIAH CORDOVERO" href="http://www.jewishencyclopedia.com/directory/G/6497">
+						            GAMA - GEDA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GEDALIAH, JUDAH, DON - GERMANUS, MOSES" href="http://www.jewishencyclopedia.com/directory/G/6550">
+						            GEDA - GERM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GERMANY - GHIRON" href="http://www.jewishencyclopedia.com/directory/G/6603">
+						            GERM - GHIR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GHIRONDI - GLOGAU, JEHIEL MICHAEL BEN UZZIEL" href="http://www.jewishencyclopedia.com/directory/G/6656">
+						            GHIR - GLOG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GLOGAUER, ABIGDOR BEN SIMá¸¤AH HA-LEVI - GOLDSCHMIDT, LOTHAR" href="http://www.jewishencyclopedia.com/directory/G/6709">
+						            GLOG - GOLD
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GOLDSCHMIDT, MEÃR AARON - GORDON, LEON (JUDAH LÃB BEN ASHER)" href="http://www.jewishencyclopedia.com/directory/G/6761">
+						            GOLD - GORD
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GORDON, MICHEL - GRAZIANI, AUGUSTO" href="http://www.jewishencyclopedia.com/directory/G/6813">
+						            GORD - GRAZ
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GRAZIANO, ABRAHAM JOSEPH SOLOMON BEN MORDECAI - GUARDIA, LA, THE HOLY CHILD OF" href="http://www.jewishencyclopedia.com/directory/G/6865">
+						            GRAZ - GUAR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="GUARDIAN AND WARD - GYMNASIUM" href="http://www.jewishencyclopedia.com/directory/G/6917">
+						            GUAR - GYMN
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">H</a>
+						    <ul>
+						        <li>
+						          <a title="HAARBLEICHER, MOSES M. - HAINDORF, ALEXANDER" href="http://www.jewishencyclopedia.com/directory/H/6969">
+						            HAAR - HAIN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HAIR - HAMNUNA II." href="http://www.jewishencyclopedia.com/directory/H/7061">
+						            HAIR - HAMN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HAMNUNA OF BABYLONIA - HARARI, JUDAH (ARYEH)" href="http://www.jewishencyclopedia.com/directory/H/7153">
+						            HAMN - HARA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HARARITE - HAUSEN, MOSES BEN ASHER ANSHEL" href="http://www.jewishencyclopedia.com/directory/H/7245">
+						            HARA - HAUS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HAUSER, CARL FRANKL - á¸¤AZZAN, ABRAHAM BEN JUDAH" href="http://www.jewishencyclopedia.com/directory/H/7337">
+						            HAUS - HAZZ
+						          </a>
+						        </li>
+						        <li>
+						          <a title="á¸¤AZZAN, ELEAZAR HA- - HEKSCHER, EPHRAIM BEN SAMUEL SANVEL" href="http://www.jewishencyclopedia.com/directory/H/7429">
+						            HAZZ - HEKS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HELA - HERRMANN, LEO" href="http://www.jewishencyclopedia.com/directory/H/7520">
+						            HELA - HERR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HERSCHEL, SIR WILLIAM - HILLEL BEN ELIAKIM" href="http://www.jewishencyclopedia.com/directory/H/7611">
+						            HERS - HILL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HILLEL OF ERFURT - HÃCHHEIMER (HÃÄHHEIM, HOCHHEIMER, HECHIM)" href="http://www.jewishencyclopedia.com/directory/H/7702">
+						            HILL - HOCH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HOCHMEISTER - HOROWITZ, SHABBETHAI SHEFTEL" href="http://www.jewishencyclopedia.com/directory/H/7793">
+						            HOCH - HORO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="HORSCHETZKY, MORITZ - HYSSOP" href="http://www.jewishencyclopedia.com/directory/H/7884">
+						            HORS - HYSS
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">I</a>
+						    <ul>
+						        <li>
+						          <a title="I - IBN MIGAS, MEÃR" href="http://www.jewishencyclopedia.com/directory/I/7975">
+						            I - IBNM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="IBN MUHAJAR, AHUB BEN MEÃR HANASI IBN &lt;ForeignChars&gt;V06p538003.jpg&lt;/ForeignChars&gt; - IBN YAá¸¤YA, JOSEPH BEN DAVID" href="http://www.jewishencyclopedia.com/directory/I/8008">
+						            IBNM - IBNY
+						          </a>
+						        </li>
+						        <li>
+						          <a title="IBN YA&#x27;ISH, BARUCH BEN ISAAC - ILLESCOS, JACOB DI" href="http://www.jewishencyclopedia.com/directory/I/8041">
+						            IBNY - ILLE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ILLIBERIS - INDIANAPOLIS" href="http://www.jewishencyclopedia.com/directory/I/8074">
+						            ILLI - INDI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="INDICTMENT - INTERMEDIATE DAYS" href="http://www.jewishencyclopedia.com/directory/I/8107">
+						            INDI - INTE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="INTESTACY - ISAAC IBN á¸¤ALFON, ABU IBRAHIM" href="http://www.jewishencyclopedia.com/directory/I/8139">
+						            INTE - ISAA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISAAC BEN á¸¤AYYIM BEN ABRAHAM HA-KOHEN - ISAAC BEN MORDECAI GERSHON" href="http://www.jewishencyclopedia.com/directory/I/8171">
+						            ISAA - ISAA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISAAC BEN MORDECAI HA-LEVI - ISABELLA I" href="http://www.jewishencyclopedia.com/directory/I/8203">
+						            ISAA - ISAB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISAIAH - ISPAHAN" href="http://www.jewishencyclopedia.com/directory/I/8235">
+						            ISAI - ISPA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISRAEL - ISRAELI, ISRAEL" href="http://www.jewishencyclopedia.com/directory/I/8267">
+						            ISRA - ISRA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISRAELIK - ISRAELS, ABRAHAM HARTOG" href="http://www.jewishencyclopedia.com/directory/I/8299">
+						            ISRA - ISRA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ISRAEL&#x27;S HEROLD - IZRAELITA MAGYAR NÃPTANITÃ" href="http://www.jewishencyclopedia.com/directory/I/8331">
+						            ISRA - IZRA
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">J</a>
+						    <ul>
+						        <li>
+						          <a title="JAARBOOKEN VOR DE ISRAELITEN - JACOB OF KEFAR SEKANYA (SIMAÃ)" href="http://www.jewishencyclopedia.com/directory/J/8363">
+						            JAAR - JACO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JACOB B. KORSHAI - JAFFE (JOFFE)" href="http://www.jewishencyclopedia.com/directory/J/8431">
+						            JACO - JAFF
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JAGEL, ABRAHAM BEN HANANIAH DEI GALICCHI - JEHOSHAPHAT" href="http://www.jewishencyclopedia.com/directory/J/8499">
+						            JAGE - JEHO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JEHOSHAPHAT, VALLEY OF - JEWISH COMMENT" href="http://www.jewishencyclopedia.com/directory/J/8567">
+						            JEHO - JEWI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JEWISH CRITERION, THE - JOD" href="http://www.jewishencyclopedia.com/directory/J/8635">
+						            JEWI - JOD
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JOEL - JONATHAN BEN ELEAZAR" href="http://www.jewishencyclopedia.com/directory/J/8702">
+						            JOEL - JONA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JONATHAN BEN HORá¸²INAS (ARCHINAS) - JOSEPH BEN GORION" href="http://www.jewishencyclopedia.com/directory/J/8769">
+						            JONA - JOSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JOSEPH IBN á¸¤ASAN - JOSEPHS, MICHAEL" href="http://www.jewishencyclopedia.com/directory/J/8836">
+						            JOSE - JOSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JOSEPHS, WALTER - JUDAH B. AMMI" href="http://www.jewishencyclopedia.com/directory/J/8903">
+						            JOSE - JUDA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JUDAH ARYEH LÃB BEN JOSHUA HÃSCHEL - JUDE, DER" href="http://www.jewishencyclopedia.com/directory/J/8970">
+						            JUDA - JUDE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="JUDE, DER (New York) - JUWEL, MOSES MORDECAI" href="http://www.jewishencyclopedia.com/directory/J/9037">
+						            JUDE - JUWE
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">K</a>
+						    <ul>
+						        <li>
+						          <a title="KAB - KALIFA, MOSES BEN MALKA" href="http://www.jewishencyclopedia.com/directory/K/9104">
+						            KAB - KALI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KALILAH WA-DIMNAH - á¸²ANAH ABIGDOR" href="http://www.jewishencyclopedia.com/directory/K/9147">
+						            KALI - KANA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KANITZ, AUGUST - KAá¹¢ABI (&lt;ForeignChars&gt;V07p451001.jpg&lt;/ForeignChars&gt;), JOSEPH BEN NISSIM" href="http://www.jewishencyclopedia.com/directory/K/9189">
+						            KANI - KASA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KASHER - KEMPNER, GABRIEL" href="http://www.jewishencyclopedia.com/directory/K/9231">
+						            KASH - KEMP
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KEMPNER, MAX - KIEV" href="http://www.jewishencyclopedia.com/directory/K/9273">
+						            KEMP - KIEV
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KIHAYA - KITE" href="http://www.jewishencyclopedia.com/directory/K/9315">
+						            KIHA - KITE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KITTSEER, MICHAEL - KNOT" href="http://www.jewishencyclopedia.com/directory/K/9357">
+						            KITT - KNOT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KNOXVILLE - KOKEBE YIáºá¸¤Aá¸²" href="http://www.jewishencyclopedia.com/directory/K/9399">
+						            KNOX - KOKE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KOL BO - KOSMINSKY, MARKS" href="http://www.jewishencyclopedia.com/directory/K/9441">
+						            KOLB - KOSM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KOSSARSKI, JULIUS - KROCHMAL, NACHMAN KOHEN" href="http://www.jewishencyclopedia.com/directory/K/9483">
+						            KOSS - KROC
+						          </a>
+						        </li>
+						        <li>
+						          <a title="KRON, JUDAH BEN ELEAZAR - KUTTOWER, ABRAHAM GERSHON BEN EPHRAIM" href="http://www.jewishencyclopedia.com/directory/K/9525">
+						            KRON - KUTT
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">L</a>
+						    <ul>
+						        <li>
+						          <a title="LA PEYRERE, ISAAC - LANDSHUTH, LESER" href="http://www.jewishencyclopedia.com/directory/L/9567">
+						            LAPE - LAND
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LANDSOFER (LANDSCHREIBER), JONAH BEN ELIJAH - LAZARUS, JOSEPHINE" href="http://www.jewishencyclopedia.com/directory/L/9627">
+						            LAND - LAZA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LAZARUS, JULIUS - LEMOS, HENRIETTE DE" href="http://www.jewishencyclopedia.com/directory/L/9687">
+						            LAZA - LEMO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LEMUEL - LEVI BEN ABRAHAM BEN á¸¤AYYIM" href="http://www.jewishencyclopedia.com/directory/L/9747">
+						            LEMU - LEVI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LEVI, BENEDIKT - LEVITAN, ISAAC (ISAAC ILYICH)" href="http://www.jewishencyclopedia.com/directory/L/9807">
+						            LEVI - LEVI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LEVITES (Temple Servants) - LEWINSTEIN, JOSEPH" href="http://www.jewishencyclopedia.com/directory/L/9866">
+						            LEVI - LEWI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LEWIS, DAVID - LILIENBLUM, MOSES LÃB" href="http://www.jewishencyclopedia.com/directory/L/9925">
+						            LEWI - LILI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LILIENTHAL, MAX - LIVER" href="http://www.jewishencyclopedia.com/directory/L/9984">
+						            LILI - LIVE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LIVERPOOL - LONDON, SOLOMON B. MOSES RAPHAEL" href="http://www.jewishencyclopedia.com/directory/L/10043">
+						            LIVE - LOND
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LONG BRANCH - LÃWY, ADOLF" href="http://www.jewishencyclopedia.com/directory/L/10102">
+						            LONG - LOWY
+						          </a>
+						        </li>
+						        <li>
+						          <a title="LÃWY, ALBERT - LYSIMACHUS" href="http://www.jewishencyclopedia.com/directory/L/10161">
+						            LOWY - LYSI
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">M</a>
+						    <ul>
+						        <li>
+						          <a title="MAACAH - MALACHI B. JACOB HA-KOHEN" href="http://www.jewishencyclopedia.com/directory/M/10220">
+						            MAAC - MALA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MALAGA - MARKS, SAMUEL" href="http://www.jewishencyclopedia.com/directory/M/10324">
+						            MALA - MARK
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MARKUS, LUDWIG - MEASURES" href="http://www.jewishencyclopedia.com/directory/M/10428">
+						            MARK - MEAS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MEAT-TAX - MENAHEM MENDEL BEN BARUCH BENDET" href="http://www.jewishencyclopedia.com/directory/M/10532">
+						            MEAT - MENA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MENAHEM OF MERSEBURG - METER IN THE BIBLE" href="http://www.jewishencyclopedia.com/directory/M/10636">
+						            MENA - METE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="METHODOLOGY - MILLET" href="http://www.jewishencyclopedia.com/directory/M/10739">
+						            METH - MILL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MILMAN, HENRY HART - MONDAY AND THURSDAY PRAYER" href="http://www.jewishencyclopedia.com/directory/M/10842">
+						            MILM - MOND
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MONEY - MOSER" href="http://www.jewishencyclopedia.com/directory/M/10945">
+						            MONE - MOSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MOSER, MOSES - MOSES OF SMOLENSK" href="http://www.jewishencyclopedia.com/directory/M/11048">
+						            MOSE - MOSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="MOSES SOFER - MYSTICISM" href="http://www.jewishencyclopedia.com/directory/M/11151">
+						            MOSE - MYST
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">N</a>
+						    <ul>
+						        <li>
+						          <a title="NAAMAH - NAHUM" href="http://www.jewishencyclopedia.com/directory/N/11254">
+						            NAAM - NAHU
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NAHUM ELIEZER BEN JACOB - NASI, DAVID" href="http://www.jewishencyclopedia.com/directory/N/11293">
+						            NAHU - NASI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NASI GRACIA MENDESIA - NATHAN NATA OF SHKLOV" href="http://www.jewishencyclopedia.com/directory/N/11332">
+						            NASI - NATH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NATHAN BEN SAMUEL - NEBUZAR-ADAN" href="http://www.jewishencyclopedia.com/directory/N/11371">
+						            NATH - NEBU
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NECHO - NESEK" href="http://www.jewishencyclopedia.com/directory/N/11410">
+						            NECH - NESE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NESVIZH - NEUZEIT, DIE" href="http://www.jewishencyclopedia.com/directory/N/11448">
+						            NESV - NEUZ
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NEVAKHOVICH, LÃB - NICHOLAS III., IV., V" href="http://www.jewishencyclopedia.com/directory/N/11486">
+						            NEVA - NICH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NICHOLAS OF DAMASCUS (NICOLAUS DAMASCENUS) - NISSIM BEN MOSES OF MARSEILLES" href="http://www.jewishencyclopedia.com/directory/N/11524">
+						            NICH - NISS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NISSIM B. REUBEN GERONDI - NOSE-RING" href="http://www.jewishencyclopedia.com/directory/N/11562">
+						            NISS - NOSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="NOSSIG, ALFRED - NYONS" href="http://www.jewishencyclopedia.com/directory/N/11600">
+						            NOSS - NYON
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">O</a>
+						    <ul>
+						        <li>
+						          <a title="OAK AND TEREBINTH - OHOLIAB" href="http://www.jewishencyclopedia.com/directory/O/11638">
+						            OAKA - OHOL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="OHOLIBAMAH - OPFERPFENNIG, GOLDENER" href="http://www.jewishencyclopedia.com/directory/O/11678">
+						            OHOL - OPFE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="OPHEL - OREGON" href="http://www.jewishencyclopedia.com/directory/O/11718">
+						            OPHE - OREG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="OREN - OSTROG" href="http://www.jewishencyclopedia.com/directory/O/11758">
+						            OREN - OSTR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="OSTROGORSKI, MOISEI YAKOVLEVICH - &#x27;OZER BEN MEÃR" href="http://www.jewishencyclopedia.com/directory/O/11797">
+						            OSTR - OZER
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">P</a>
+						    <ul>
+						        <li>
+						          <a title="PABLO ALVARO - PAPPENHEIM" href="http://www.jewishencyclopedia.com/directory/P/11836">
+						            PABL - PAPP
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PAPPENHEIM, ISRAEL HIRSCH - PATTO, SAMSON GOMEZ" href="http://www.jewishencyclopedia.com/directory/P/11893">
+						            PAPP - PATT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PAUL DE BURGOS - PENITENTIAL DAYS" href="http://www.jewishencyclopedia.com/directory/P/11950">
+						            PAUL - PENI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PENNSYLVANIA - PESIá¸²TA (DE-RAB KAHANA; RABBATI; ZUá¹¬ARTI)" href="http://www.jewishencyclopedia.com/directory/P/12007">
+						            PENN - PESI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PESSELES, JOSEPH (ELIAS) - PHINEHAS" href="http://www.jewishencyclopedia.com/directory/P/12063">
+						            PESS - PHIN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PHINEHAS BEN CLUSOTH - PINSKER, DOB BÃR B. NATHAN" href="http://www.jewishencyclopedia.com/directory/P/12119">
+						            PHIN - PINS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PINSKER, LEV (LEV SEMIONOVICH) - POLA" href="http://www.jewishencyclopedia.com/directory/P/12175">
+						            PINS - POLA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="POLACCO, VITTORIO - PORGES, NATHAN" href="http://www.jewishencyclopedia.com/directory/P/12231">
+						            POLA - PORG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PORGES VON PORTHEIM - PREGNANCY" href="http://www.jewishencyclopedia.com/directory/P/12287">
+						            PORG - PREG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PREMEDITATION - PROVENCE" href="http://www.jewishencyclopedia.com/directory/P/12343">
+						            PREM - PROV
+						          </a>
+						        </li>
+						        <li>
+						          <a title="PROVERBS - PYKE, LIONEL EDWARD" href="http://www.jewishencyclopedia.com/directory/P/12399">
+						            PROV - PYKE
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">Q</a>
+						    <ul>
+						        <li>
+						          <a title="QUADRATUS, UMMIDIUS CAIUS - QUORUM" href="http://www.jewishencyclopedia.com/directory/Q/12455">
+						            QUAD - QUOR
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">R</a>
+						    <ul>
+						        <li>
+						          <a title="RAAB - RABINOVICH (RABBINOWITZ), OSIP AARONOVICH" href="http://www.jewishencyclopedia.com/directory/R/12465">
+						            RAAB - RABI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RABINOVITZ, JOSHUA BEN ELIJAH - RAMESES" href="http://www.jewishencyclopedia.com/directory/R/12510">
+						            RABI - RAME
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RAMI B. EZEKIEL - RAUSUK, SAMSON" href="http://www.jewishencyclopedia.com/directory/R/12554">
+						            RAMI - RAUS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RAVEN - REGGIO" href="http://www.jewishencyclopedia.com/directory/R/12598">
+						            RAVE - REGG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="REGGIO, ABRAHAM (VITA) BEN AZRIEL - REPTILES" href="http://www.jewishencyclopedia.com/directory/R/12642">
+						            REGG - REPT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RESCISSION - RIBA" href="http://www.jewishencyclopedia.com/directory/R/12686">
+						            RESC - RIBA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RIBASH - RITTANGEL, JOHANN STEPHANUS" href="http://www.jewishencyclopedia.com/directory/R/12730">
+						            RIBA - RITT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="RITTER, IMMANUEL HEINRICH - ROMI, DANIEL B. JEHIEL" href="http://www.jewishencyclopedia.com/directory/R/12774">
+						            RITT - ROMI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ROMI, JOSEPH - ROSENTHAL, DAVID" href="http://www.jewishencyclopedia.com/directory/R/12818">
+						            ROMI - ROSE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ROSENTHAL, DAVID AUGUSTUS - ROTH, WILHELM" href="http://www.jewishencyclopedia.com/directory/R/12862">
+						            ROSE - ROTH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ROTHENBURG - RYSSEL, CARL VICTOR" href="http://www.jewishencyclopedia.com/directory/R/12906">
+						            ROTH - RYSS
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">S</a>
+						    <ul>
+						        <li>
+						          <a title="SAADIA - SAMBARI (CATTAWI?), JOSEPH BEN ISAAC" href="http://www.jewishencyclopedia.com/directory/S/12950">
+						            SAAD - SAMB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SAMBATION, SANBATION, SABBATION (SAMBAá¹¬YON) - SANDALS" href="http://www.jewishencyclopedia.com/directory/S/13062">
+						            SAMB - SAND
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SANDEK (SYNDIKUS) - SCHMELKES, GOTTFRIED S." href="http://www.jewishencyclopedia.com/directory/S/13174">
+						            SAND - SCHM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SCHMID, ANTON VON - SELA" href="http://www.jewishencyclopedia.com/directory/S/13286">
+						            SCHM - SELA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SELAH - SHATZKES, MOSES AARON" href="http://www.jewishencyclopedia.com/directory/S/13398">
+						            SELA - SHAT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SHAVING - SHUSHAN" href="http://www.jewishencyclopedia.com/directory/S/13510">
+						            SHAV - SHUS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SHUSHAN (SUSA) PURIM - SIMá¸¤AH B. SAMUEL OF SPEYER" href="http://www.jewishencyclopedia.com/directory/S/13622">
+						            SHUS - SIMH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SIMá¸¤AH B. SAMUEL OF VITRY - SOLOMON, TESTAMENT OF" href="http://www.jewishencyclopedia.com/directory/S/13734">
+						            SIMH - SOLO
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SOLOMON B. AARON TROKI - SPIEGEL, FREDERICK S." href="http://www.jewishencyclopedia.com/directory/S/13846">
+						            SOLO - SPIE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="SPIELMANN, SIR ISIDORE - STRASBURG" href="http://www.jewishencyclopedia.com/directory/S/13958">
+						            SPIE - STRA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="STRASHUN, MATHIAS - SZOLD, HENRIETTA" href="http://www.jewishencyclopedia.com/directory/S/14070">
+						            STRA - SZOL
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">T</a>
+						    <ul>
+						        <li>
+						          <a title="á¹¬A&#x27;AMIM - TALMUDIC LAW" href="http://www.jewishencyclopedia.com/directory/T/14182">
+						            TAAM - TALM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TALMUD TORAH - TARRAGONA" href="http://www.jewishencyclopedia.com/directory/T/14217">
+						            TALM - TARR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TARRASCH, SIEGBERT - TEá¸¤INA, ABBA" href="http://www.jewishencyclopedia.com/directory/T/14252">
+						            TARR - TEHI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TEá¸¤INNAH - TENNESSEE" href="http://www.jewishencyclopedia.com/directory/T/14286">
+						            TEHI - TENN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TENT - THEBEN, KOPPEL (JACOB BEN ABRAHAM MANDL)" href="http://www.jewishencyclopedia.com/directory/T/14320">
+						            TENT - THEB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="THEBES - TIBERIAS, LAKE" href="http://www.jewishencyclopedia.com/directory/T/14354">
+						            THEB - TIBE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TIBERIUS JULIUS ALEXANDER - TOBIAS, EMIL" href="http://www.jewishencyclopedia.com/directory/T/14388">
+						            TIBE - TOBI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TOBIT, BOOK OF - TORTOSA" href="http://www.jewishencyclopedia.com/directory/T/14422">
+						            TOBI - TORT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TORTSCHINER, LÃB B. ABRAHAM - TREBINO (TREMINO) DE SOBREMONTE, TOMAS" href="http://www.jewishencyclopedia.com/directory/T/14456">
+						            TORT - TREB
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TREBITSCH, ABRAHAM BEN REUBEN á¸¤AYYAá¹¬ - TRIWOSCH, JOSEPH ELIJAH" href="http://www.jewishencyclopedia.com/directory/T/14490">
+						            TREB - TRIW
+						          </a>
+						        </li>
+						        <li>
+						          <a title="TROKI - TYROL" href="http://www.jewishencyclopedia.com/directory/T/14524">
+						            TROK - TYRO
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">U</a>
+						    <ul>
+						        <li>
+						          <a title="U-BA LE-áºIYYON - UNGARISCHE ISRAELIT, DER" href="http://www.jewishencyclopedia.com/directory/U/14558">
+						            UBAL - UNGA
+						          </a>
+						        </li>
+						        <li>
+						          <a title="UNGER, EPHRAIM SOLOMON - URI" href="http://www.jewishencyclopedia.com/directory/U/14580">
+						            UNGE - URI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="URI BEN DAVID BEN MOSES - UZZIEL" href="http://www.jewishencyclopedia.com/directory/U/14602">
+						            URIB - UZZI
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">V</a>
+						    <ul>
+						        <li>
+						          <a title="VAEZ - VAN STRAALEN, SAMUEL" href="http://www.jewishencyclopedia.com/directory/V/14624">
+						            VAEZ - VANS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="VANCOUVER - VELLUM" href="http://www.jewishencyclopedia.com/directory/V/14644">
+						            VANC - VELL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="VENDOR AND PURCHASER - VERSICLE THEMES" href="http://www.jewishencyclopedia.com/directory/V/14664">
+						            VEND - VERS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="VERVEER, ELCHANAN - VINE" href="http://www.jewishencyclopedia.com/directory/V/14684">
+						            VERV - VINE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="VINEGAR - VIZHAINY (VIZHUNY, VIZAN, VIZANY)" href="http://www.jewishencyclopedia.com/directory/V/14703">
+						            VINE - VIZH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="VOCALIZATION - VULTURE" href="http://www.jewishencyclopedia.com/directory/V/14722">
+						            VOCA - VULT
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">W</a>
+						    <ul>
+						        <li>
+						          <a title="WA&#x27;AD ARBA&#x27; ARAáºOT - WALLER STEIN, ABRAHAM BEN ASHER" href="http://www.jewishencyclopedia.com/directory/W/14741">
+						            WAAD - WALL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WALLICH - WATER-DRAWING, FEAST OF" href="http://www.jewishencyclopedia.com/directory/W/14768">
+						            WALL - WATE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WATER-RIGHTS - WEIGHTS AND MEASURES" href="http://www.jewishencyclopedia.com/directory/W/14795">
+						            WATE - WEIG
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WEIL, ADOLF - WEISS, MARKUS NISSA" href="http://www.jewishencyclopedia.com/directory/W/14822">
+						            WEIL - WEIS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WEISS, MAX - WESSELY, WOLFGANG" href="http://www.jewishencyclopedia.com/directory/W/14849">
+						            WEIS - WESS
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WEST - WIENER, LEOPOLD" href="http://www.jewishencyclopedia.com/directory/W/14876">
+						            WEST - WIEN
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WIENER, MEÃ¯R - WILLIAM OF AUVERGNE" href="http://www.jewishencyclopedia.com/directory/W/14903">
+						            WIEN - WILL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WILLIAM OF NORWICH - WISE, STEPHEN SAMUEL" href="http://www.jewishencyclopedia.com/directory/W/14930">
+						            WILL - WISE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WISMAR - WOLFENBÃTTEL" href="http://www.jewishencyclopedia.com/directory/W/14957">
+						            WISM - WOLF
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WOLFENSTEIN, MARTHA - WOOLF, EDWARD" href="http://www.jewishencyclopedia.com/directory/W/14984">
+						            WOLF - WOOL
+						          </a>
+						        </li>
+						        <li>
+						          <a title="WOOLF, SIDNEY - WYSBER, LUDWIG" href="http://www.jewishencyclopedia.com/directory/W/15011">
+						            WOOL - WYSB
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">X</a>
+						    <ul>
+						        <li>
+						          <a title="XABILLO - XYSTUS" href="http://www.jewishencyclopedia.com/directory/X/15038">
+						            XABI - XYST
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">Y</a>
+						    <ul>
+						        <li>
+						          <a title="YA&#x27;ABEáº - YARá¸¤I, ABRAHAM" href="http://www.jewishencyclopedia.com/directory/Y/15045">
+						            YAAB - YARH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="YARMOUTH - YEVREISKAYA BIBLIOTEKA" href="http://www.jewishencyclopedia.com/directory/Y/15064">
+						            YARM - YEVR
+						          </a>
+						        </li>
+						        <li>
+						          <a title="YEáºER HA-RA&#x27; - YIáºá¸¤Aá¸² BAR JUDAH" href="http://www.jewishencyclopedia.com/directory/Y/15083">
+						            YEZE - YIZH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="YIáºá¸¤Aá¸² OF MAGDALA - YOM KIPPUR á¸²Aá¹¬AN" href="http://www.jewishencyclopedia.com/directory/Y/15101">
+						            YIZH - YOMK
+						          </a>
+						        </li>
+						        <li>
+						          <a title="YOM-á¹¬OB BEN ABRAHAM ISHBILI - YUSUF IBN TESHUFIN" href="http://www.jewishencyclopedia.com/directory/Y/15119">
+						            YOMT - YUSU
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					    <li class=&#x27;notselectedletter&#x27;>
+						    <a href="view.jsp@artid=174&amp;letter=I.html#" class="letterlink">Z</a>
+						    <ul>
+						        <li>
+						          <a title="ZABARA, JOSEPH - ZALINSKI, MOSES G." href="http://www.jewishencyclopedia.com/directory/Z/15137">
+						            ZABA - ZALI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZALMUNNA - áºARFATI, áºAREFATI" href="http://www.jewishencyclopedia.com/directory/Z/15155">
+						            ZALM - ZARF
+						          </a>
+						        </li>
+						        <li>
+						          <a title="áºARFATI - áºEBI ASHKENAZI" href="http://www.jewishencyclopedia.com/directory/Z/15173">
+						            ZARF - ZEBI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="áºEBI HIRSCH BEN á¸¤AYYIM - áºEDEá¸², JOSEPH KOHEN-" href="http://www.jewishencyclopedia.com/directory/Z/15191">
+						            ZEBI - ZEDE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZEDEKIAH - ZEITLIN, WILLIAM" href="http://www.jewishencyclopedia.com/directory/Z/15209">
+						            ZEDE - ZEIT
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZEITSCHRIFT FÃR DIE GESCHICHTE DER JUDEN IN DEUTSCHLAND - ZEPHANIAH BEN MORDECAI TROKI" href="http://www.jewishencyclopedia.com/directory/Z/15227">
+						            ZEIT - ZEPH
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZERAHIAH BEN ISAAC HA-LEVI GERONDI - ZIMMERN, HELEN" href="http://www.jewishencyclopedia.com/directory/Z/15244">
+						            ZERA - ZIMM
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZIMRAT HA-AREáº - ZODIAC" href="http://www.jewishencyclopedia.com/directory/Z/15261">
+						            ZIMR - ZODI
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZOHAR - ZUKERTORT, JOHANNES HERMANN" href="http://www.jewishencyclopedia.com/directory/Z/15278">
+						            ZOHA - ZUKE
+						          </a>
+						        </li>
+						        <li>
+						          <a title="ZUKUNFT, DIE - ZWEIFEL, PAUL" href="http://www.jewishencyclopedia.com/directory/Z/15295">
+						            ZUKU - ZWEI
+						          </a>
+						        </li>
+						    </ul>
+						  </li>
+					</ul>
+				</nav>
+  		</div>
+		</header>
+    <div id="bd" class="yui3-u-1">
+        <div class="yui3-g">
+            <div class="yui3-u-17-24">
+              <p id="notice"></p>
+<article class="yui3-g">
+  <div class="yui3-u-13-24">
+    <h1>ISAAC.</h1>
+    
+  </div>
+  <div class="yui3-u-11-24">
+  	<div style="float:right">
+  		<iframe border="0" scrolling="no" width="78" height="17" allowtransparency="true" frameborder="0" style="margin-bottom: -3px; z-index: 1338; border: 0px; background-color: transparent; overflow: hidden;" src="http://www.instapaper.com/e2?url=http%3A%2F%2Fwww.jewishencyclopedia.com%2Farticles%2F8148-isaac&amp;title=ISAAC"></iframe>
+  	</div>
+  	<div style="float:right">
+  		<fb:like href="" send="true" layout="button_count" width="120" show_faces="false" font=""></fb:like>
+  	</div>
+  	<div style="float:right; margin-right:9px">
+  	  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="JewEncyclopedia">Tweet</a>
+  	</div>
+  </div>
+  <div class="yui3-u-1" style="margin-top:.5em">
+    	<h2>By:
+    	<a href="http://www.jewishencyclopedia.com/contribs/209">Isidore  Singer</a>, <a href="http://www.jewishencyclopedia.com/contribs/538">Isaac  Broydé</a>
+    	</h2>
+  </div>
+  <div class="yui3-u-1" style="margin-top:1em">
+    	<div class="tableofcontents">
+    		<div class="tableofcontentstitle">Table of Contents</div>
+    		<ul>
+    			<li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor1">&#8212;Biblical Data:</a></li><li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor2">Birth of Jacob and Esau.</a></li><li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor3">Persecuted by Philistines.</a></li><li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor4">&#8212;In Rabbinical Literature:</a></li><li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor5">The Sacrifice of Isaac.</a></li><li class="subheadinglevel2"><a href="view.jsp@artid=174&amp;letter=I.html#anchor6">The &#39;A&#7731;edah in Jewish Liturgy.</a></li>
+    		</ul>
+    	</div>
+    <a class="subheadinglevel2" name="anchor1">—Biblical Data:</a>
+ <p>Second patriarch; son of Abraham and Sarah. He was the child of a miracle, for at the time of his birth his mother, hitherto childless, was ninety years old, and his father a hundred. By the command of God the child was named "Isaac" (<img src="http://d3sva65x0i5hnc.cloudfront.net/V06p616002.jpg">; in poetical language <img src="http://d3sva65x0i5hnc.cloudfront.net/V06p616003.jpg"> = "laughter"), because Abraham had, covertly, laughed in incredulity when, a year previously, he had received the promise of God that a son would be born to him by Sarah (Gen. xvii. 17); so also did Sarah as, standing at the door of the tent, she heard the promise reiterated by the angel (Gen. xviii. 12). Isaac was circumcised when he was eight days old, and at his weaning the parents manifested their joy by giving a great feast. As a solicitous mother Sarah urged Abraham to send away Ishmael, his son by the servant-maid Hagar, whom she had seen mocking Isaac. At first Abraham hesitated, but at the command of God he complied with the wish of his wife; Isaac was thus declared the sole heir of his father.</p><a class="subheadinglevel2" name="anchor2">Birth of Jacob and Esau.</a>
+<p>A critical event in Isaac's life occurred when God's command came that he should be offered as a sacrifice on a mountain in the land of Moriah (Gen. xxii. 2). Isaac showed himself in this trial to be worthy of his father. Without murmuring he suffered himself to be bound and laid upon the altar. But Abraham was prevented by God from consummating the sacrifice, and a ram that happened to be near was offered instead. At the age of thirty-six Isaac lost his mother. Abraham then charged Eliezer, his steward, with the mission of selecting a wife for Isaac from among his (Abraham's) own people. After a series of providential coincidences, Eliezer returned with Rebekah, whom Isaac, then forty, married (Gen. xxv. 20). For twenty years they were childless; at last Isaac's prayers were heard, and Rebekah gave birth to the twins Esau and Jacob. As the children grew the gentle and good-natured Isaac came to prefer the boisterous and adventurous Esau, who gratified his father withthe choicest spoils of the chase, while the quiet and less adventurous Jacob was an object of special regard to Rebekah: a division of feeling which became later a source of jealousy and hatred between the two brothers.</p><p>A famine compelled Isaac to leave his abode "by the well of Lahai-roi." On this occasion he had his first vision. God appeared to him in a dream and warned him not to go down to Egypt, but to remain within the boundaries of Palestine, promising him great prosperity and numerous descendants. Isaac therefore settled among the Philistines at Gerar, where, fearing lest Rebekah's beauty should tempt the Philistines to kill him, he had recourse to a stratagem that had been used in similar circumstances by his father; he pretended that she was his sister. The Philistine king, however, was not long in finding out the truth, and, after rebuking Isaac for his deceit, adopted stringent measures for the protection of husband and wife.</p><a class="subheadinglevel2" name="anchor3">Persecuted by Philistines.</a>
+<p>In his new home Isaac devoted himself to husbandry, and succeeded so well that he incurred the envy of the Philistines. They commenced a petty persecution against him, stopping up the wells which his father had dug, and which Isaac's servants had reopened. The peace-loving Isaac submitted patiently to these persecutions until Abimelech enjoined him to remove from Gerar. Isaac then pitched his tent in the valley of Gerar, shortly afterward settling at Beer-sheba, where God appeared to him for the second time and blessed him. An altar was built by Isaac on the spot where he had had the vision, and his servants dug a well. While living there Isaac received a visit from Abimelech, king of the Philistines, and Phichol, the chief captain of his army, who came to court his alliance.</p><p>Isaac's old age was not a happy one. He was assailed by infirmities, and became totally blind. To this was added the enmity between his two sons. With prevision of his death, Isaac recommended his son Esau to bring him some venison and receive his blessing. At the instigation of Rebekah, Jacob, profiting by the blindness of his father, presented himself in Esau's stead, and received the blessing intended for the latter. This infuriated Esau to such an extent that Jacob had to seek safety in flight. Isaac died at Hebron, at the age of 180, shortly after the return of Jacob and his family from Mesopotamia, and was buried by his two sons in the cave of Machpelah, beside Abraham and Sarah.</p><a class="subheadinglevel2" name="anchor4">—In Rabbinical Literature:</a>
+ <p>According to the Rabbis, Isaac was born in the month of Nisan, at noon, when the spring sun was shining in all its glory (Rosh ha-Shanah 10b; Gen. R. liii.). At that hour the sick were restored to health, the blind recovered their sight, and the deaf their hearing; the brightness of the sun and of the moon was intensified (Tan., Gen. 37); a spirit of justice began to prevail in the world: hence the name <img src="http://d3sva65x0i5hnc.cloudfront.net/V06p617001.jpg">, a compound of <img src="http://d3sva65x0i5hnc.cloudfront.net/V06p617002.jpg"> and <img src="http://d3sva65x0i5hnc.cloudfront.net/V06p617003.jpg">(= "Law was issued"). In the numerical value of each letter of the name there is an allusion: thus, the י (10) alludes to the Decalogue; the צ(= 90), and the ק(= 100), to the respective ages of Sarah and Abraham at the birth of Isaac; the ח(= 8) refers to the day of circumcision (Gen. R. liii.). Notwithstanding, there were slanderers who maintained that Abraham and Sarah had picked up a foundling, or, according to another haggadah, had taken a son of Hagar and pretended that he was their son. To silence these slanderers Abraham prepared a great feast on the occasion of the weaning of Isaac, whereat, by a miracle, Sarah was enabled to nurse all the sucklings that had been brought by the women invited to the feast. As there was no longer any doubt as to Sarah's maternity, the slanderers questioned Abraham's paternity. Then God imprinted on the face of Isaac the features of Abraham, and the likeness between father and son became so great that one was often mistaken for the other (B. M. 87a; Yalḳ., Gen. 93). According to some Ishmael committed the crime of attracting Isaac to the fields and there casting at him arrows and balls under the pretext of play (<img src="http://d3sva65x0i5hnc.cloudfront.net/V06p617004.jpg">), but in reality to get rid of him (Gen. R. liii.): for this reason Sarah insisted on Ishmael and his mother being dismissed.</p><a class="subheadinglevel2" name="anchor5">The Sacrifice of Isaac.</a>
+<p>A fertile subject in the Haggadah is the attempted sacrifice of Isaac, known as the "'aḳedah." According to Jose ben Zimra, the idea of tempting Abraham was suggested by Satan, who said: "Lord of the Universe! Here is a man whom thou hast blessed with a son at the age of one hundred years, and yet, amidst all his feasts, he did not offer thee a single dove or young pigeon for a sacrifice" (Sanh. 87b; Gen. R. lv.). In Jose ben Zimra's opinion, the 'aḳedah took place immediately after Isaac's weaning. This, however, is not the general opinion. According to the Rabbis, the 'aḳedah not only coincided with, but was the cause of, the death of Sarah, who was informed of Abraham's intention while he and Isaac were on the way to Mount Moriah. Therefore Isaac must then have been thirty-seven years old (Seder 'Olam Rabbah, ed. Ratner, p. 6; Pirḳe R. El. xxxi.; Tanna debe Eliyahu R. xxvii.). Not only did he consent to the sacrifice, but he himself suggested it in the course of a discussion that arose between him and Ishmael concerning their respective merits. Ishmael asserted his superiority to Isaac on account of his having suffered himself to be circumcised at an age when he could have objected to it, while Isaac underwent the operation on the eighth day after his birth "Thou pridest thyself," replied Isaac, "on having given to God three drops of thy blood. I am now thirty-seven years old, and would gladly give my life if God wished it" (Sanh. 89b; Gen. R. lvi. 8).</p><p>While he was on the way to Mount Moriah Isaac was addressed by Satan in the following terms: "Unfortunate son of an unfortunate mother! How many days did thy mother pass in fasting and praying for thy birth! and now thy father, who has lost his mind, is going to kill thee." Isaac then endeavored to awaken the pity of his father (Gen. R. lv.). According to another haggadah Isaac rebuked Satan and told him that he was not willing to oppose the wish of his Creator and the command of his father (Tan., Gen. xlvi.). While Abraham was building the altar Isaac hid himself, fearing lest Satan should throw stones at him and render himunfit for a sacrifice. The same fear caused him to ask to be bound on the altar; "for," said he, "I am young and may tremble at the sight of the knife" (Gen. R. lvi. 8).</p><a class="subheadinglevel2" name="anchor6">The 'Aḳedah in Jewish Liturgy.</a>
+<p>The 'aḳedah is especially prominent in the Jewish liturgy. The remembrance of the incident by God is believed to be a sure guaranty of His forgiveness of the sins of Israel; hence the numerous 'aḳedah prayers, a specimen of which is found in the Mishnah. See <sc>Ἁḳedah</sc>. Isaac is presented in rabbinical literature as being the prototype of martyrs (Esth. R. i.). The great tractability of his character is shown by his conduct in the affair of the wells, which he abandoned without complaining of the injustice done him (Sanh. 111a). More than other patriarchs he pleads for Israel. When Abraham and Jacob, says the Talmud, were told that their children had sinned, they answered, "Let them be blotted out for the sanctification of Thy name"; but when God said to Isaac, "Thy children have sinned." Isaac answered, "Why are they my children more than Thine? When they answered, 'We will do [all that God shall command] and we will listen,' Thou calledst them 'My first-born'; yet now they are mine and not Thine! Moreover, how long can they have sinned? The duration of man's life is seventy years. In the first twenty years he is not punished [being irresponsible]; half of the remaining fifty is passed in sleeping. Half of the remainder is spent in praying, eating, etc. There remain only twelve and a half years. If thou art willing to bear the whole, it is for the better; if not, let half be borne by me and the other half by Thee. But if Thou insist upon my bearing the whole, I have already sacrificed myself for Thee" (Shab. 89b).</p><p>To Isaac is attributed the institution of the "Minḥah" prayer (Ber. 26b). Like Abraham, he observed all the commandments, and made proselytes. He was one of the three over whom the Angel of Death had no power; one of the seven whose buried bodies were not devoured by worms; one of the three upon whom the "yeẓer ha-ra'" (the seducer) had no influence (B. B. 17b). He caused the Shekinah to descend from the sixth to the fifth heaven (Gen. R. xix.).</p><ArticleAuthor GoTo="C060163:P060xiv"><Name><LastName><sc>S.</sc></LastName></Name></ArticleAuthor> <ArticleAuthor GoTo="C120061"><Name><FirstName>I.</FirstName> <LastName><sc>Br.</sc></LastName></Name></ArticleAuthor>
+  </div>
+</article>
+<div style="margin-top:2em">
+  <fb:comments href="http://www.jewishencyclopedia.com/articles/8148-isaac" num_posts="5" width="680"></fb:comments>
+</div>
+
+            </div>
+            <div class="yui3-u-7-24">
+              <div style="padding-left:26px">
+                <div style="width:250px; margin-bottom:1em">
+                    <script type="text/javascript">
+                    <!--
+                    google_ad_client = "ca-pub-6774707093597642";
+                    google_ad_width = 250;
+                    google_ad_height = 250;
+                    google_ad_format = "250x250_as";
+                    google_ad_type = "text_image";
+                    google_ad_channel = "4766105823+7280878113+4688643430";
+                    google_color_border = "ffffff";
+                    google_color_bg = "ffffff";
+                    google_color_link = "003366";
+                    google_color_url = "3d3d3d";
+                    google_color_text = "3d3d3d";
+                    google_ui_features = "rc:6";
+                    //-->
+                    </script>
+                    <script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+                </div>
+                <div class="yui3-g">
+                    <div class="yui3-u-1">
+	  Images of pages
+	</div>
+  	<div class="yui3-u-1-3" style="text-align:center">
+  		<a href="http://d2b4hhdj1xs9hu.cloudfront.net/HJ6J616S.jpg"><img alt="Hj6j616s" src="http://drtgfht421y7f.cloudfront.net/HJ6J616S.jpg" /><br>V:6 P:616</a>
+		</div>
+  	<div class="yui3-u-1-3" style="text-align:center">
+  		<a href="http://d2b4hhdj1xs9hu.cloudfront.net/HK6K617R.jpg"><img alt="Hk6k617r" src="http://drtgfht421y7f.cloudfront.net/HK6K617R.jpg" /><br>V:6 P:617</a>
+		</div>
+  	<div class="yui3-u-1-3" style="text-align:center">
+  		<a href="http://d2b4hhdj1xs9hu.cloudfront.net/HL6L618Q.jpg"><img alt="Hl6l618q" src="http://drtgfht421y7f.cloudfront.net/HL6L618Q.jpg" /><br>V:6 P:618</a>
+		</div>
+	<div class="yui3-u-1" style="margin-top:1em">
+    <fb:recommendations site="" width="250" height="250" header="true" font="" border_color=""></fb:recommendations>
+  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+		<footer id="ft" class="yui3-u-1">
+		  <div class="yui3-g">
+  			<div id="footer-nav" class="yui3-u-2-5">
+  			  <div class="title">About Jewish Encyclopedia</div>
+  				<ul>
+  				  <li><a href="http://blog.jewishencyclopedia.com/">Blog</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/literary_directorate_listing">Literary Directorate Listing</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/preface">Preface</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/synopsis_of_jewish_encyclopedia">Synopsis of Jewish Encyclopedia</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/systems_of_transliteration_citation_of_proper_names">Systems of Transliteration Citation of Proper Names</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/abbreviations_listings">Abbreviations Listings</a></li>
+  					<li><a href="http://www.jewishencyclopedia.com/list_of_patrons">List of Patrons</a></li>
+  				</ul>
+        </div>
+		    <div id="kopelmanlogo" class="yui3-u-1-5">
+  				<a href="http://www.kopelman.org"><img alt="Funded by The Kopelman Foundation" src="http://www.jewishencyclopedia.com/images/logo-add.gif?1436992185" /></a>
+  			</div>
+		    <div id="copyright" class="yui3-u-2-5">
+  				<em>&copy;2002-2011, JewishEncyclopedia.com. All rights reserved</em><br>
+  				<a href="http://www.jewishencyclopedia.com/privacy">Privacy</a> | <a href="http://www.jewishencyclopedia.com/terms_of_use">Terms of Use</a> | <a href="http://www.jewishencyclopedia.com/contact">Contact</a>
+  			</div>
+  		</div>
+		</footer>
+	</div>
+  <div id="fb-root"></div>
+</body>
+</html>

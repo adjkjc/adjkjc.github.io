@@ -1,0 +1,604 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Semaphore (programming) - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"769a1f6a-ae44-439d-a1f5-cead78e2b681","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Semaphore_(programming)","wgTitle":"Semaphore (programming)","wgCurRevisionId":956220606,"wgRevisionId":956220606,"wgArticleId":164557,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Harv and Sfn no-target errors","Articles with short description","All articles with unsourced statements","Articles with unsourced statements from May 2019","CS1: long volume value","Concurrency control","Edsger W. Dijkstra"],"wgPageContentLanguage":"en","wgPageContentModel":
+"wikitext","wgRelevantPageName":"Semaphore_(programming)","wgRelevantArticleId":164557,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q221682","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","jquery.makeCollapsible.styles":"ready",
+"mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="http://en.wikipedia.org/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="http://en.wikipedia.org/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="http://en.wikipedia.org/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.31"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit"/>
+<link rel="apple-touch-icon" href="http://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="http://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="http://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="../w/api.php@action=rsd"/>
+<link rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="http://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Semaphore_(programming)"/>
+<link rel="dns-prefetch" href="../../login.wikimedia.org/index.html"/>
+<link rel="dns-prefetch" href="../../meta.wikimedia.org/index.html" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Semaphore_programming rootpage-Semaphore_programming skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">Semaphore (programming)</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="Semaphore_(programming).html#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="Semaphore_(programming).html#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Variable used in a concurrent system</div>
+<p>In <a href="Computer_science.html" title="Computer science">computer science</a>, a <b>semaphore</b> is a <a href="http://en.wikipedia.org/wiki/Variable_(programming)" class="mw-redirect" title="Variable (programming)">variable</a> or <a href="http://en.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">abstract data type</a> used to control access to a common resource by multiple <a href="http://en.wikipedia.org/wiki/Process_(computing)" title="Process (computing)">processes</a> in a <a href="http://en.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">concurrent</a> system such as a <a href="http://en.wikipedia.org/wiki/Computer_multitasking" title="Computer multitasking">multitasking</a> operating system. A semaphore is simply a variable. This variable is used to solve <a href="http://en.wikipedia.org/wiki/Critical_section" title="Critical section">critical section</a> problems and to achieve process synchronization in the multi processing environment. A trivial semaphore is a plain variable that is changed (for example, incremented or decremented, or toggled) depending on programmer-defined conditions.
+</p><p>A useful way to think of a semaphore as used in the real-world system is as a record of how many units of a particular resource are available, coupled with operations to adjust that record <i>safely</i> (i.e., to avoid <a href="http://en.wikipedia.org/wiki/Race_condition" title="Race condition">race conditions</a>) as units are acquired or become free, and, if necessary, wait until a unit of the resource becomes available. 
+</p><p>Semaphores are a useful tool in the prevention of race conditions; however, their use is by no means a guarantee that a program is free from these problems. Semaphores which allow an arbitrary resource count are called <b>counting semaphores</b>, while semaphores which are restricted to the values 0 and 1 (or locked/unlocked, unavailable/available) are called <b>binary semaphores</b> and are used to implement <a href="http://en.wikipedia.org/wiki/Lock_(computer_science)" title="Lock (computer science)">locks</a>.
+</p><p>The semaphore concept was invented by <a href="http://en.wikipedia.org/wiki/Dutch_people" title="Dutch people">Dutch</a> <a href="http://en.wikipedia.org/wiki/Computer_scientist" title="Computer scientist">computer scientist</a> <a href="http://en.wikipedia.org/wiki/Edsger_Dijkstra" class="mw-redirect" title="Edsger Dijkstra">Edsger Dijkstra</a> in 1962 or 1963,<sup id="cite_ref-ReferenceA_1-0" class="reference"><a href="Semaphore_(programming).html#cite_note-ReferenceA-1">&#91;1&#93;</a></sup> when Dijkstra and his team were developing an <a href="http://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating system</a> for the  <a href="http://en.wikipedia.org/wiki/Electrologica_X8" title="Electrologica X8">Electrologica X8</a>. That system eventually became known as <a href="http://en.wikipedia.org/wiki/THE_multiprogramming_system" title="THE multiprogramming system">THE multiprogramming system</a>.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Semaphore_(programming).html#Library_analogy"><span class="tocnumber">1</span> <span class="toctext">Library analogy</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="Semaphore_(programming).html#Important_observations"><span class="tocnumber">1.1</span> <span class="toctext">Important observations</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-3"><a href="Semaphore_(programming).html#Semantics_and_implementation"><span class="tocnumber">2</span> <span class="toctext">Semantics and implementation</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Semaphore_(programming).html#Examples"><span class="tocnumber">3</span> <span class="toctext">Examples</span></a>
+<ul>
+<li class="toclevel-2 tocsection-5"><a href="Semaphore_(programming).html#Trivial_example"><span class="tocnumber">3.1</span> <span class="toctext">Trivial example</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="Semaphore_(programming).html#Login_queue"><span class="tocnumber">3.2</span> <span class="toctext">Login queue</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="Semaphore_(programming).html#Producer–consumer_problem"><span class="tocnumber">3.3</span> <span class="toctext">Producer–consumer problem</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="Semaphore_(programming).html#Operation_names"><span class="tocnumber">4</span> <span class="toctext">Operation names</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="Semaphore_(programming).html#Semaphores_vs._mutexes"><span class="tocnumber">5</span> <span class="toctext">Semaphores vs. mutexes</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="Semaphore_(programming).html#See_also"><span class="tocnumber">6</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="Semaphore_(programming).html#References"><span class="tocnumber">7</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-12"><a href="Semaphore_(programming).html#External_links"><span class="tocnumber">8</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Library_analogy">Library analogy</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=1" title="Edit section: Library analogy">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Suppose a library has 10 identical study rooms, to be used by one student at a time. Students must request a room from the front desk if they wish to use a study room. If no rooms are free, students wait at the desk until someone relinquishes a room. When a student has finished using a room, the student must return to the desk and indicate that one room has become free.
+</p><p>In the simplest implementation, the clerk at the front desk knows only the number of free rooms available, which they only know correctly if all of the students actually use their room while they've signed up for them and return them when they're done. When a student requests a room, the clerk decreases this number. When a student releases a room, the clerk increases this number. The room can be used for as long as desired, and so it is not possible to book rooms ahead of time.
+</p><p>In this scenario the front desk count-holder represents a counting semaphore, the rooms are the resource, and the students represent processes/threads. The value of the semaphore in this scenario is initially 10, with all rooms empty. When a student requests a room, they are granted access, and the value of the semaphore is changed to 9. After the next student comes, it drops to 8, then 7 and so on. If someone requests a room and the current value of the semaphore is 0,<sup id="cite_ref-2" class="reference"><a href="Semaphore_(programming).html#cite_note-2">&#91;2&#93;</a></sup> they are forced to wait until a room is freed (when the count is increased from 0). If one of the rooms was released, but there are several students waiting, then any method can be used to select the one who will occupy the room (like <a href="http://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)" title="FIFO (computing and electronics)">FIFO</a> or flipping a coin). And of course, a student needs to inform the clerk about releasing their room only after really leaving it, otherwise, there can be an awkward situation when such student is in the process of leaving the room (they are packing their textbooks, etc.) and another student enters the room before they leave it.
+</p>
+<h3><span class="mw-headline" id="Important_observations">Important observations</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=2" title="Edit section: Important observations">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>When used to control access to a <a href="http://en.wikipedia.org/wiki/Pool_(computer_science)" title="Pool (computer science)">pool</a> of resources, a semaphore tracks only <i>how many</i> resources are free; it does not keep track of <i>which</i> of the resources are free. Some other mechanism (possibly involving more semaphores) may be required to select a particular free resource.
+</p><p>The paradigm is especially powerful because the semaphore count may serve as a useful trigger for a number of different actions. The librarian above may turn the lights off in the study hall when there are no students remaining, or may place a sign that says the rooms are very busy when most of the rooms are occupied.
+</p><p>The success of the protocol requires applications to follow it correctly. Fairness and safety are likely to be compromised (which practically means a program may behave slowly, act erratically, <a href="http://en.wikipedia.org/wiki/Hang_(computing)" title="Hang (computing)">hang</a> or <a href="http://en.wikipedia.org/wiki/Crash_(computing)" title="Crash (computing)">crash</a>) if even a single process acts incorrectly. This includes:
+</p>
+<ul><li>requesting a resource and forgetting to release it;</li>
+<li>releasing a resource that was never requested;</li>
+<li>holding a resource for a long time without needing it;</li>
+<li>using a resource without requesting it first (or after releasing it).</li></ul>
+<p>Even if all processes follow these rules, <i>multi-resource <a href="http://en.wikipedia.org/wiki/Deadlock" title="Deadlock">deadlock</a></i> may still occur when there are different resources managed by different semaphores and when processes need to use more than one resource at a time, as illustrated by the <a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem" title="Dining philosophers problem">dining philosophers problem</a>.
+</p>
+<h2><span class="mw-headline" id="Semantics_and_implementation">Semantics and implementation</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=3" title="Edit section: Semantics and implementation">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Counting semaphores are equipped with two operations, historically denoted as P and V (see <a href="Semaphore_(programming).html#Operation_names">§&#160;Operation names</a> for alternative names). Operation V increments the semaphore <i>S</i>, and operation P decrements it.
+</p><p>The value of the semaphore <i>S</i> is the number of units of the resource that are currently available. The P operation <a href="http://en.wikipedia.org/wiki/Busy_waiting" title="Busy waiting">wastes time</a> or <a href="http://en.wikipedia.org/wiki/Sleep_(system_call)" title="Sleep (system call)">sleeps</a> until a resource protected by the semaphore becomes available, at which time the resource is immediately claimed. The V operation is the inverse: it makes a resource available again after the process has finished using it.
+One important property of semaphore <i>S</i> is that its value cannot be changed except by using the V and P operations.
+</p><p>A simple way to understand <style data-mw-deduplicate="TemplateStyles:r886049734">.mw-parser-output .monospaced{font-family:monospace,monospace}</style><span class="monospaced">wait</span> (P) and <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">signal</span> (V) operations is:
+</p>
+<ul><li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">wait</span>: Decrements the value of semaphore variable by 1. If the new value of the semaphore variable is negative, the process executing <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">wait</span> is blocked (i.e., added to the semaphore's queue). Otherwise, the process continues execution, having used a unit of the resource.</li>
+<li><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r886049734"/><span class="monospaced">signal</span>: Increments the value of semaphore variable by 1. After the increment, if the pre-increment value was negative (meaning there are processes waiting for a resource), it transfers a blocked process from the semaphore's waiting queue to the ready queue.</li></ul>
+<p>Many operating systems provide efficient semaphore primitives that unblock a waiting process when the semaphore is incremented. This means that processes do not waste time checking the semaphore value unnecessarily.
+</p><p>The counting semaphore concept can be extended with the ability to claim or return more than one "unit" from the semaphore, a technique implemented in <a href="http://en.wikipedia.org/wiki/Unix" title="Unix">Unix</a>. The modified V and P operations are as follows, using square brackets to indicate <a href="http://en.wikipedia.org/wiki/Atomic_operation" class="mw-redirect" title="Atomic operation">atomic operations</a>, i.e., operations which appear indivisible from the perspective of other processes:
+</p>
+<pre><b>function</b> V(semaphore S, integer I):
+    [S ← S + I]
+
+<b>function</b> P(semaphore S, integer I):
+    <b>repeat:</b>
+        [<b>if</b> S ≥ I:
+        S ← S − I
+        <b>break</b>]
+</pre>
+<p>However, the remainder of this section refers to semaphores with unary V and P operations, unless otherwise specified.
+</p><p>To avoid <a href="http://en.wikipedia.org/wiki/Resource_starvation" class="mw-redirect" title="Resource starvation">starvation</a>, a semaphore has an associated <a href="http://en.wikipedia.org/wiki/Queue_(data_structure)" class="mw-redirect" title="Queue (data structure)">queue</a> of processes (usually with <a href="http://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)" title="FIFO (computing and electronics)">FIFO</a> semantics). If a process performs a P operation on a semaphore that has the value zero, the process is added to the semaphore's queue and its execution is suspended. When another process increments the semaphore by performing a V operation, and there are processes on the queue, one of them is removed from the queue and resumes execution. When processes have different priorities the queue may be ordered by priority, so that the highest priority process is taken from the queue first.
+</p><p>If the implementation does not ensure atomicity of the increment, decrement and comparison operations, then there is a risk of increments or decrements being forgotten, or of the semaphore value becoming negative. Atomicity may be achieved by using a machine instruction that is able to <a href="http://en.wikipedia.org/wiki/Read-modify-write" class="mw-redirect" title="Read-modify-write">read, modify and write</a> the semaphore in a single operation. In the absence of such a hardware instruction, an atomic operation may be synthesized through the use of a <a href="http://en.wikipedia.org/wiki/Mutual_exclusion#Software_solutions" title="Mutual exclusion">software mutual exclusion algorithm</a>. On <a href="http://en.wikipedia.org/wiki/Uniprocessor" class="mw-redirect" title="Uniprocessor">uniprocessor</a> systems, atomic operations can be ensured by temporarily suspending <a href="http://en.wikipedia.org/wiki/Preemption_(computing)" title="Preemption (computing)">preemption</a> or disabling hardware <a href="http://en.wikipedia.org/wiki/Interrupt" title="Interrupt">interrupts</a>. This approach does not work on multiprocessor systems where it is possible for two programs sharing a semaphore to run on different processors at the same time. To solve this problem in a multiprocessor system a locking variable can be used to control access to the semaphore. The locking variable is manipulated using a <a href="http://en.wikipedia.org/wiki/Test-and-set" title="Test-and-set">test-and-set-lock</a> command.
+</p>
+<h2><span class="mw-headline" id="Examples">Examples</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=4" title="Edit section: Examples">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h3><span class="mw-headline" id="Trivial_example">Trivial example</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=5" title="Edit section: Trivial example">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Consider a variable <i>A</i> and a boolean variable <i>S</i>. <i>A</i> is only accessed when <i>S</i> is marked true. Thus, <i>S</i> is a semaphore for <i>A</i>.
+</p><p>One can imagine a stoplight signal (<i>S</i>) just before a train station (<i>A</i>). In this case, if the signal is green, then one can enter the train station. If it is yellow or red (or any other color), the train station cannot be accessed.
+</p>
+<h3><span class="mw-headline" id="Login_queue">Login queue</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=6" title="Edit section: Login queue">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>Consider a system that can only support ten users (S=10). Whenever a user logs in, P is called, decrementing the semaphore <i>S</i> by 1. Whenever a user logs out, V is called, incrementing <i>S</i> by 1 representing a login slot that has become available. When <i>S</i> is 0, any users wishing to log in must wait until <span class="nowrap"><i>S</i> &gt; 0</span> and the login request is enqueued onto a FIFO queue; <a href="http://en.wikipedia.org/wiki/Mutual_exclusion" title="Mutual exclusion">mutual exclusion</a> is used to ensure that requests are enqueued in order. Whenever <i>S</i> becomes greater than 0 (login slots available), a login request is dequeued, and the user owning the request is allowed to log in.
+</p>
+<h3><span id="Producer.E2.80.93consumer_problem"></span><span class="mw-headline" id="Producer–consumer_problem">Producer–consumer problem</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=7" title="Edit section: Producer–consumer problem">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>In the <a href="http://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem" title="Producer–consumer problem">producer–consumer problem</a>, one process (the producer) generates data items and another process (the consumer) receives and uses them. They communicate using a queue of maximum size <i>N</i> and are subject to the following conditions:
+</p>
+<ul><li>the consumer must wait for the producer to produce something if the queue is empty;</li>
+<li>the producer must wait for the consumer to consume something if the queue is full.</li></ul>
+<p>The semaphore solution to the producer–consumer problem tracks the state of the queue with two semaphores: <code>emptyCount</code>, the number of empty places in the queue, and <code>fullCount</code>, the number of elements in the queue. To maintain integrity, <code>emptyCount</code> may be lower (but never higher) than the actual number of empty places in the queue, and <code>fullCount</code> may be lower (but never higher) than the actual number of items in the queue. Empty places and items represent two kinds of resources, empty boxes and full boxes, and the semaphores <code>emptyCount</code> and <code>fullCount</code> maintain control over these resources.
+</p><p>The binary semaphore <code>useQueue</code> ensures that the integrity of the state of the queue itself is not compromised, for example by two producers attempting to add items to an empty queue simultaneously, thereby corrupting its internal state. Alternatively a <a href="http://en.wikipedia.org/wiki/Mutex" class="mw-redirect" title="Mutex">mutex</a> could be used in place of the binary semaphore.
+</p><p>The <code>emptyCount</code> is initially <i>N</i>, <code>fullCount</code> is initially 0, and <code>useQueue</code> is initially 1.
+</p><p>The producer does the following repeatedly:
+</p>
+<pre><b>produce:</b>
+    P(emptyCount)
+    P(useQueue)
+    putItemIntoQueue(item)
+    V(useQueue)
+    V(fullCount)
+</pre>
+<p>The consumer does the following repeatedly
+</p>
+<pre><b>consume:</b>
+    P(fullCount)
+    P(useQueue)
+    item ← getItemFromQueue()
+    V(useQueue)
+    V(emptyCount)
+</pre>
+<p>Below is a substantive example:
+</p>
+<ol><li>A single consumer enters its critical section. Since <code>fullCount</code> is 0, the consumer blocks.</li>
+<li>Several producers enter the producer critical section. No more than <i>N</i> producers may enter their critical section due to <code>emptyCount</code> constraining their entry.</li>
+<li>The producers, one at a time, gain access to the queue through <code>useQueue</code> and deposit items in the queue.</li>
+<li>Once the first producer exits its critical section, <code>fullCount</code> is incremented, allowing one consumer to enter its critical section.</li></ol>
+<p>Note that <code>emptyCount</code> may be much lower than the actual number of empty places in the queue, for example in the case where many producers have decremented it but are waiting their turn on <code>useQueue</code> before filling empty places. Note that <code>emptyCount + fullCount ≤ <i>N</i> </code> always holds, with equality if and only if no producers or consumers are executing their critical sections.
+</p>
+<h2><span class="mw-headline" id="Operation_names">Operation names</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=8" title="Edit section: Operation names">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The canonical names V and P come from the initials of <a href="http://en.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a> words. V is generally explained as <i>verhogen</i> ("increase"). Several explanations have been offered for P, including <i>proberen</i> ("to test" or "to try"),<sup id="cite_ref-3" class="reference"><a href="Semaphore_(programming).html#cite_note-3">&#91;3&#93;</a></sup> <i>passeren</i> ("pass"), and <i>pakken</i> ("grab"). Dijkstra's earliest paper on the subject<sup id="cite_ref-ReferenceA_1-1" class="reference"><a href="Semaphore_(programming).html#cite_note-ReferenceA-1">&#91;1&#93;</a></sup> gives <i>passering</i> ("passing") as the meaning for <i>P</i>, and <i>vrijgave</i> ("release") as the meaning for V. It also mentions that the terminology is taken from that used in railroad signals. Dijkstra subsequently wrote that he intended <i>P</i> to stand for the <a href="http://en.wikipedia.org/wiki/Portmanteau" title="Portmanteau">portmanteau</a> <i>prolaag</i>,<sup id="cite_ref-4" class="reference"><a href="Semaphore_(programming).html#cite_note-4">&#91;4&#93;</a></sup> short for <i>probeer te verlagen</i>, literally "try to reduce", or to parallel the terms used in the other case, "try to decrease".<sup id="cite_ref-5" class="reference"><a href="Semaphore_(programming).html#cite_note-5">&#91;5&#93;</a></sup><sup id="cite_ref-try-and_6-0" class="reference"><a href="Semaphore_(programming).html#cite_note-try-and-6">&#91;6&#93;</a></sup><sup id="cite_ref-7" class="reference"><a href="Semaphore_(programming).html#cite_note-7">&#91;7&#93;</a></sup>
+</p><p>In <a href="http://en.wikipedia.org/wiki/ALGOL_68" title="ALGOL 68">ALGOL 68</a>, the <a href="http://en.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a>,<sup id="cite_ref-8" class="reference"><a href="Semaphore_(programming).html#cite_note-8">&#91;8&#93;</a></sup> and in some English textbooks, the <i>V</i> and <i>P</i> operations are called, respectively, <i>up</i> and <i>down</i>. In software engineering practice, they are often called <i>signal</i> and <i>wait</i>,<sup id="cite_ref-plan9_9-0" class="reference"><a href="Semaphore_(programming).html#cite_note-plan9-9">&#91;9&#93;</a></sup> <i>release</i> and <i>acquire</i><sup id="cite_ref-plan9_9-1" class="reference"><a href="Semaphore_(programming).html#cite_note-plan9-9">&#91;9&#93;</a></sup> (which the standard <a href="http://en.wikipedia.org/wiki/Java_(programming_language)" title="Java (programming language)">Java</a> library<sup id="cite_ref-10" class="reference"><a href="Semaphore_(programming).html#cite_note-10">&#91;10&#93;</a></sup> uses), or <i>post</i> and <i>pend</i>. Some texts<sup id="cite_ref-11" class="reference"><a href="Semaphore_(programming).html#cite_note-11">&#91;11&#93;</a></sup><sup id="cite_ref-12" class="reference"><a href="Semaphore_(programming).html#cite_note-12">&#91;12&#93;</a></sup> call them <i>vacate</i> and <i>procure</i> to match the original Dutch initials.
+</p>
+<h2><span class="mw-headline" id="Semaphores_vs._mutexes">Semaphores vs. mutexes</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=9" title="Edit section: Semaphores vs. mutexes">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>A <a href="http://en.wikipedia.org/wiki/Mutex" class="mw-redirect" title="Mutex">mutex</a> is a <a href="http://en.wikipedia.org/wiki/Mutual_exclusion#Types_of_mutual_exclusion_devices" title="Mutual exclusion">locking mechanism</a> that sometimes uses the same basic implementation as the binary semaphore. The differences between them are in how they are used. While a binary semaphore may be colloquially referred to as a mutex, a true mutex has a more specific use-case and definition, in that only the <a href="http://en.wikipedia.org/wiki/Task_(computing)" title="Task (computing)">task</a> that locked the mutex is supposed to unlock it. This constraint aims to handle some potential problems of using semaphores:
+</p>
+<ol><li><a href="http://en.wikipedia.org/wiki/Priority_inversion" title="Priority inversion">Priority inversion</a>: If the mutex knows who locked it and is supposed to unlock it, it is possible to promote the priority of that task whenever a higher-priority task starts waiting on the mutex.</li>
+<li>Premature task termination: Mutexes may also provide deletion safety, where the task holding the mutex cannot be accidentally deleted.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="http://en.wikipedia.org/wiki/Wikipedia:Citation_needed" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (May 2019)">citation needed</span></a></i>&#93;</sup></li>
+<li>Termination deadlock: If a mutex-holding task terminates for any reason, the <a href="http://en.wikipedia.org/wiki/Real-time_operating_system" title="Real-time operating system">OS</a> can release the mutex and signal waiting tasks of this condition.</li>
+<li>Recursion deadlock: a task is allowed to lock a <a href="http://en.wikipedia.org/wiki/Reentrant_mutex" title="Reentrant mutex">reentrant mutex</a> multiple times as it unlocks it an equal number of times.</li>
+<li>Accidental release: An error is raised on the release of the mutex if the releasing task is not its owner.</li></ol>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=10" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="http://en.wikipedia.org/wiki/Cigarette_smokers_problem" title="Cigarette smokers problem">Cigarette smokers problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem" title="Dining philosophers problem">Dining philosophers problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Readers-writers_problem" class="mw-redirect" title="Readers-writers problem">Readers-writers problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sleeping_barber_problem" title="Sleeping barber problem">Sleeping barber problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Monitor_(synchronization)" title="Monitor (synchronization)">Monitor</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Spurious_wakeup" title="Spurious wakeup">Spurious wakeup</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=11" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-ReferenceA-1"><span class="mw-cite-backlink">^ <a href="Semaphore_(programming).html#cite_ref-ReferenceA_1-0"><sup><i><b>a</b></i></sup></a> <a href="Semaphore_(programming).html#cite_ref-ReferenceA_1-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFDijkstra" class="citation book"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, Edsger W.</a> <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/ewd00xx/EWD35.PDF"><i>Over de sequentialiteit van procesbeschrijvingen (EWD-35)</i></a> <span class="cs1-format">(PDF)</span>. E.W. Dijkstra Archive. Center for American History, <a href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Over+de+sequentialiteit+van+procesbeschrijvingen+%28EWD-35%29&amp;rft.series=E.W.+Dijkstra+Archive&amp;rft.pub=Center+for+American+History%2C+University+of+Texas+at+Austin&amp;rft.aulast=Dijkstra&amp;rft.aufirst=Edsger+W.&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2FEWD%2Fewd00xx%2FEWD35.PDF&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("http://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("http://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("http://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("http://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("http://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("http://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("../../upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("http://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style> (<a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD00xx/EWD35.html">transcription</a>) (undated, 1962 or 1963)</span>
+</li>
+<li id="cite_note-2"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-2">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://greenteapress.com/semaphores/"><i>The Little Book of Semaphores</i></a> Allen B. Downey</span>
+</li>
+<li id="cite_note-3"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-3">^</a></b></span> <span class="reference-text"><a href="Semaphore_(programming).html#CITEREFSilberschatzGalvinGagne2008">Silberschatz, Galvin &amp; Gagne 2008</a>, p.&#160;234<span class="error harv-error" style="display: none; font-size:100%"> harvnb error: no target: CITEREFSilberschatzGalvinGagne2008 (<a href="http://en.wikipedia.org/wiki/Category:Harv_and_Sfn_template_errors" title="Category:Harv and Sfn template errors">help</a>)</span></span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFDijkstra" class="citation book"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, Edsger W.</a> <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/ewd00xx/EWD74.PDF"><i>EWD-74</i></a> <span class="cs1-format">(PDF)</span>. E.W. Dijkstra Archive. Center for American History, <a href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=EWD-74&amp;rft.series=E.W.+Dijkstra+Archive&amp;rft.pub=Center+for+American+History%2C+University+of+Texas+at+Austin&amp;rft.aulast=Dijkstra&amp;rft.aufirst=Edsger+W.&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2FEWD%2Fewd00xx%2FEWD74.PDF&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/> (<a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD00xx/EWD74.html">transcription</a>)</span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-5">^</a></b></span> <span class="reference-text"><cite id="CITEREFDijkstra" class="citation book"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, Edsger W.</a> <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/ewd00xx/EWD51.PDF"><i>MULTIPROGAMMERING EN DE X8 (EWD-51)</i></a> <span class="cs1-format">(PDF)</span>. E.W. Dijkstra Archive. Center for American History, <a href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=MULTIPROGAMMERING+EN+DE+X8+%28EWD-51%29&amp;rft.series=E.W.+Dijkstra+Archive&amp;rft.pub=Center+for+American+History%2C+University+of+Texas+at+Austin&amp;rft.aulast=Dijkstra&amp;rft.aufirst=Edsger+W.&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2FEWD%2Fewd00xx%2FEWD51.PDF&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/> (<a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD00xx/EWD51.html">transcription</a>) (in <a href="http://en.wikipedia.org/wiki/Dutch_language" title="Dutch language">Dutch</a>)</span>
+</li>
+<li id="cite_note-try-and-6"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-try-and_6-0">^</a></b></span> <span class="reference-text">Dijkstra's own translation reads "try-<i>and</i>-decrease", although that phrase might be confusing for those unaware of the <a rel="nofollow" class="external text" href="http://www.wsu.edu/~brians/errors/try.html">colloquial "try-and..."</a></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="https://lkml.org/lkml/2005/12/19/34">(PATCH 1/19) MUTEX: Introduce simple mutex implementation</a> Linux Kernel Mailing List, 19 December 2005</span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.linuxgrill.com/anonymous/fire/netfilter/kernel-hacking-HOWTO-5.html#ss5.3">Linux Kernel hacking HOWTO</a> LinuxGrill.com</span>
+</li>
+<li id="cite_note-plan9-9"><span class="mw-cite-backlink">^ <a href="Semaphore_(programming).html#cite_ref-plan9_9-0"><sup><i><b>a</b></i></sup></a> <a href="Semaphore_(programming).html#cite_ref-plan9_9-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFMullenderCox2008" class="citation conference">Mullender, Sape; Cox, Russ (2008). <a rel="nofollow" class="external text" href="http://doc.cat-v.org/plan_9/IWP9/2008/iwp9_proceedings08.pdf#page=62"><i>Semaphores in Plan 9</i></a> <span class="cs1-format">(PDF)</span>. 3rd International Workshop on <a href="http://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs" title="Plan 9 from Bell Labs">Plan 9</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.btitle=Semaphores+in+Plan+9&amp;rft.date=2008&amp;rft.aulast=Mullender&amp;rft.aufirst=Sape&amp;rft.au=Cox%2C+Russ&amp;rft_id=http%3A%2F%2Fdoc.cat-v.org%2Fplan_9%2FIWP9%2F2008%2Fiwp9_proceedings08.pdf%23page%3D62&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-10">^</a></b></span> <span class="reference-text"><code><a rel="nofollow" class="external text" href="https://docs.oracle.com/javase/10/docs/api/java/util/concurrent/Semaphore.html">java.util.concurrent.Semaphore</a></code></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-11">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://amigadev.elowar.com/read/ADCD_2.1/Includes_and_Autodocs_2._guide/node036A.html">"exec.library/Procure"</a>. <i>amigadev.elowar.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=amigadev.elowar.com&amp;rft.atitle=exec.library%2FProcure&amp;rft_id=http%3A%2F%2Famigadev.elowar.com%2Fread%2FADCD_2.1%2FIncludes_and_Autodocs_2._guide%2Fnode036A.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="Semaphore_(programming).html#cite_ref-12">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://amigadev.elowar.com/read/ADCD_2.1/Includes_and_Autodocs_2._guide/node0389.html">"exec.library/Vacate"</a>. <i>amigadev.elowar.com</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2016-09-19</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=amigadev.elowar.com&amp;rft.atitle=exec.library%2FVacate&amp;rft_id=http%3A%2F%2Famigadev.elowar.com%2Fread%2FADCD_2.1%2FIncludes_and_Autodocs_2._guide%2Fnode0389.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit&amp;section=12" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><cite id="CITEREFDijkstra" class="citation book"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Dijkstra, Edsger W.</a> <a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/ewd01xx/EWD123.PDF"><i>Cooperating sequential processes (EWD-123)</i></a> <span class="cs1-format">(PDF)</span>. E.W. Dijkstra Archive. Center for American History, <a href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Cooperating+sequential+processes+%28EWD-123%29&amp;rft.series=E.W.+Dijkstra+Archive&amp;rft.pub=Center+for+American+History%2C+University+of+Texas+at+Austin&amp;rft.aulast=Dijkstra&amp;rft.aufirst=Edsger+W.&amp;rft_id=http%3A%2F%2Fwww.cs.utexas.edu%2Fusers%2FEWD%2Fewd01xx%2FEWD123.PDF&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/> (<a rel="nofollow" class="external text" href="http://www.cs.utexas.edu/users/EWD/transcriptions/EWD01xx/EWD123.html">transcription</a>) (September 1965)</li>
+<li><cite class="citation journal"><a rel="nofollow" class="external text" href="http://www.opengroup.org/onlinepubs/009695399/basedefs/semaphore.h.html">"semaphore.h - semaphores (REALTIME)"</a>. <i>Programming interface</i>. Base Specifications. Open Group. IEEE Std 1003.1 (Issue 6). 2004.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Programming+interface&amp;rft.atitle=semaphore.h+-+semaphores+%28REALTIME%29&amp;rft.volume=IEEE+Std+1003.1&amp;rft.issue=Issue+6&amp;rft.date=2004&amp;rft_id=http%3A%2F%2Fwww.opengroup.org%2Fonlinepubs%2F009695399%2Fbasedefs%2Fsemaphore.h.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFDowney2016" class="citation web">Downey, Allen B. (2016) [2005]. <a rel="nofollow" class="external text" href="http://greenteapress.com/semaphores/">"The Little Book of Semaphores"</a> (2nd ed.). Green Tea Press.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=The+Little+Book+of+Semaphores&amp;rft.edition=2nd&amp;rft.pub=Green+Tea+Press&amp;rft.date=2016&amp;rft.aulast=Downey&amp;rft.aufirst=Allen+B.&amp;rft_id=http%3A%2F%2Fgreenteapress.com%2Fsemaphores%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFLeppäjärvi2008" class="citation web">Leppäjärvi, Jouni (May 11, 2008). <a rel="nofollow" class="external text" href="http://www.enseignement.polytechnique.fr/informatique/INF431/X09-2010-2011/AmphiTHC/SynchronizationPrimitives.pdf">"A pragmatic, historically oriented survey on the universality of synchronization primitives"</a> <span class="cs1-format">(pdf)</span>. University of Oulu, Finland.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+pragmatic%2C+historically+oriented+survey+on+the+universality+of+synchronization+primitives&amp;rft.place=University+of+Oulu%2C+Finland&amp;rft.date=2008-05-11&amp;rft.aulast=Lepp%C3%A4j%C3%A4rvi&amp;rft.aufirst=Jouni&amp;rft_id=http%3A%2F%2Fwww.enseignement.polytechnique.fr%2Finformatique%2FINF431%2FX09-2010-2011%2FAmphiTHC%2FSynchronizationPrimitives.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li>
+<li><cite id="CITEREFZelenskiParlante" class="citation journal">Zelenski, Julie; Parlante, Nick. <a rel="nofollow" class="external text" href="https://see.stanford.edu/materials/icsppcs107/23-Concurrency-Examples.pdf">"Thread and Semaphore Examples"</a> <span class="cs1-format">(pdf)</span>. <i>Handout</i>. CS107 Programming Paradigms. Stanford Engineering Everwhere (SEE). Spring 2008 (23).</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Handout&amp;rft.atitle=Thread+and+Semaphore+Examples&amp;rft.volume=Spring+2008&amp;rft.issue=23&amp;rft.aulast=Zelenski&amp;rft.aufirst=Julie&amp;rft.au=Parlante%2C+Nick&amp;rft_id=https%3A%2F%2Fsee.stanford.edu%2Fmaterials%2Ficsppcs107%2F23-Concurrency-Examples.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASemaphore+%28programming%29" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Data_types" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:Data_types" title="Template:Data types"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="http://en.wikipedia.org/wiki/Template_talk:Data_types" title="Template talk:Data types"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Data_types&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Data_types" style="font-size:114%;margin:0 4em"><a href="http://en.wikipedia.org/wiki/Data_type" title="Data type">Data types</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Units_of_information" title="Units of information">Uninterpreted</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Bit" title="Bit">Bit</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Byte" title="Byte">Byte</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ternary_numeral_system" title="Ternary numeral system">Trit</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ternary_numeral_system#Tryte" title="Ternary numeral system">Tryte</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Word_(computer_architecture)" title="Word (computer architecture)">Word</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bit_array" title="Bit array">Bit array</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Numeric</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Arbitrary-precision_arithmetic" title="Arbitrary-precision arithmetic">Arbitrary-precision or bignum</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Complex_data_type" title="Complex data type">Complex</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Decimal_data_type" title="Decimal data type">Decimal</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fixed-point_arithmetic" title="Fixed-point arithmetic">Fixed point</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Floating-point_arithmetic" title="Floating-point arithmetic">Floating point</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Double-precision_floating-point_format" title="Double-precision floating-point format">Double precision</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Extended_precision" title="Extended precision">Extended precision</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Long_double" title="Long double">Long double</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Octuple-precision_floating-point_format" title="Octuple-precision floating-point format">Octuple precision</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Quadruple-precision_floating-point_format" title="Quadruple-precision floating-point format">Quadruple precision</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Single-precision_floating-point_format" title="Single-precision floating-point format">Single precision</a></li>
+<li>Reduced precision
+<ul><li><a href="http://en.wikipedia.org/wiki/Minifloat" title="Minifloat">Minifloat</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Half-precision_floating-point_format" title="Half-precision floating-point format">Half precision</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bfloat16_floating-point_format" title="Bfloat16 floating-point format">bfloat16</a></li></ul></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Integer_(computer_science)" title="Integer (computer science)">Integer</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Signedness" title="Signedness">signedness</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Interval_arithmetic#Implementations" title="Interval arithmetic">Interval</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Rational_data_type" title="Rational data type">Rational</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Pointer_(computer_programming)" title="Pointer (computer programming)">Pointer</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Memory_address" title="Memory address">Address</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Physical_address" title="Physical address">physical</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Virtual_address_space" title="Virtual address space">virtual</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Reference_(computer_science)" title="Reference (computer science)">Reference</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Plain_text" title="Plain text">Text</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Character_(computing)" title="Character (computing)">Character</a></li>
+<li><a href="http://en.wikipedia.org/wiki/String_(computer_science)" title="String (computer science)">String</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Null-terminated_string" title="Null-terminated string">null-terminated</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Composite_data_type" title="Composite data type">Composite</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Algebraic_data_type" title="Algebraic data type">Algebraic data type</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Generalized_algebraic_data_type" title="Generalized algebraic data type">generalized</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Array_data_type" title="Array data type">Array</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Associative_array" title="Associative array">Associative array</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Class_(computer_programming)" title="Class (computer programming)">Class</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dependent_type" title="Dependent type">Dependent</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Intuitionistic_type_theory#Equality_type" title="Intuitionistic type theory">Equality</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Inductive_type" title="Inductive type">Inductive</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Intersection_type" title="Intersection type">Intersection</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_(abstract_data_type)" title="List (abstract data type)">List</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Object_(computer_science)" title="Object (computer science)">Object</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Metaobject" title="Metaobject">metaobject</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Option_type" title="Option type">Option type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Product_type" title="Product type">Product</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Record_(computer_science)" title="Record (computer science)">Record or Struct</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Refinement_type" title="Refinement type">Refinement</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Set_(abstract_data_type)" title="Set (abstract data type)">Set</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Union_type" title="Union type">Union</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Tagged_union" title="Tagged union">tagged</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other</th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Boolean_data_type" title="Boolean data type">Boolean</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Bottom_type" title="Bottom type">Bottom type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Container_(abstract_data_type)" title="Container (abstract data type)">Collection</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Enumerated_type" title="Enumerated type">Enumerated type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Exception_handling" title="Exception handling">Exception</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Function_type" title="Function type">Function type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Opaque_data_type" title="Opaque data type">Opaque data type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Recursive_data_type" title="Recursive data type">Recursive data type</a></li>
+<li><a class="mw-selflink selflink">Semaphore</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Stream_(computing)" title="Stream (computing)">Stream</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Top_type" title="Top type">Top type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_class" title="Type class">Type class</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Unit_type" title="Unit type">Unit type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Void_type" title="Void type">Void</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related<br />topics</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Abstract_data_type" title="Abstract data type">Abstract data type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Data_structure" title="Data structure">Data structure</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Generic_programming" title="Generic programming">Generic</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Kind_(type_theory)" title="Kind (type theory)">Kind</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Metaclass" title="Metaclass">metaclass</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Object_type_(object-oriented_programming)" title="Object type (object-oriented programming)">Object type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Parametric_polymorphism" title="Parametric polymorphism">Parametric polymorphism</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Primitive_data_type" title="Primitive data type">Primitive data type</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Protocol_(object-oriented_programming)" title="Protocol (object-oriented programming)">Protocol</a>
+<ul><li><a href="http://en.wikipedia.org/wiki/Interface_(computing)#Software_interfaces_in_object-oriented_languages" title="Interface (computing)">interface</a></li></ul></li>
+<li><a href="http://en.wikipedia.org/wiki/Subtyping" title="Subtyping">Subtyping</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_constructor" title="Type constructor">Type constructor</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_conversion" title="Type conversion">Type conversion</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_system" title="Type system">Type system</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Type_theory" title="Type theory">Type theory</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Variable_(computer_science)" title="Variable (computer science)">Variable</a></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="Edsger_Dijkstra" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="http://en.wikipedia.org/wiki/Template:Edsger_Dijkstra" title="Template:Edsger Dijkstra"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="http://en.wikipedia.org/w/index.php?title=Template_talk:Edsger_Dijkstra&amp;action=edit&amp;redlink=1" class="new" title="Template talk:Edsger Dijkstra (page does not exist)"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Edsger_Dijkstra&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Edsger_Dijkstra" style="font-size:114%;margin:0 4em"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra" title="Edsger W. Dijkstra">Edsger Dijkstra</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Category:Works_by_Edsger_Dijkstra" title="Category:Works by Edsger Dijkstra">Notable<br />works</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><i><a href="http://en.wikipedia.org/w/index.php?title=A_Primer_of_ALGOL_60_Programming&amp;action=edit&amp;redlink=1" class="new" title="A Primer of ALGOL 60 Programming (page does not exist)">A Primer of ALGOL 60 Programming</a></i> (book)</li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Structured_Programming_(book)&amp;action=edit&amp;redlink=1" class="new" title="Structured Programming (book) (page does not exist)">Structured Programming</a></i> (book)</li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=A_Discipline_of_Programming&amp;action=edit&amp;redlink=1" class="new" title="A Discipline of Programming (page does not exist)">A Discipline of Programming</a></i> (book)</li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=A_Method_of_Programming&amp;action=edit&amp;redlink=1" class="new" title="A Method of Programming (page does not exist)">A Method of Programming</a></i> (book)</li>
+<li><i>Predicate Calculus and Program Semantics</i> (book)</li>
+<li><i>Selected Writings on Computing: A Personal Perspective</i> (book)</li>
+<li><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra#Publications" title="Edsger W. Dijkstra">Selected papers</a></li>
+<li><a href="http://en.wikipedia.org/wiki/EWDs" class="mw-redirect" title="EWDs">EWD manuscripts</a></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=A_Note_on_Two_Problems_in_Connexion_with_Graphs&amp;action=edit&amp;redlink=1" class="new" title="A Note on Two Problems in Connexion with Graphs (page does not exist)">A Note on Two Problems in Connexion with Graphs</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Cooperating_Sequential_Process&amp;action=edit&amp;redlink=1" class="new" title="Cooperating Sequential Process (page does not exist)">Cooperating Sequential Processes</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Solution_of_a_Problem_in_Concurrent_Programming_Control&amp;action=edit&amp;redlink=1" class="new" title="Solution of a Problem in Concurrent Programming Control (page does not exist)">Solution of a Problem in Concurrent Programming Control</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=The_Structure_of_the_%27THE%27-Multiprogramming_System&amp;action=edit&amp;redlink=1" class="new" title="The Structure of the &#39;THE&#39;-Multiprogramming System (page does not exist)">The Structure of the 'THE'-Multiprogramming System</a></i></li>
+<li><i><a href="http://en.wikipedia.org/wiki/Go_To_Statement_Considered_Harmful" class="mw-redirect" title="Go To Statement Considered Harmful">Go To Statement Considered Harmful</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Notes_on_Structured_Programming&amp;action=edit&amp;redlink=1" class="new" title="Notes on Structured Programming (page does not exist)">Notes on Structured Programming</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=The_Humble_Programmer&amp;action=edit&amp;redlink=1" class="new" title="The Humble Programmer (page does not exist)">The Humble Programmer</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Programming_Considered_as_a_Human_Activity&amp;action=edit&amp;redlink=1" class="new" title="Programming Considered as a Human Activity (page does not exist)">Programming Considered as a Human Activity</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=How_Do_We_Tell_Truths_That_Might_Hurt%3F&amp;action=edit&amp;redlink=1" class="new" title="How Do We Tell Truths That Might Hurt? (page does not exist)">How Do We Tell Truths That Might Hurt?</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=On_the_Role_of_Scientific_Thought&amp;action=edit&amp;redlink=1" class="new" title="On the Role of Scientific Thought (page does not exist)">On the Role of Scientific Thought</a></i></li>
+<li><i><a href="http://en.wikipedia.org/w/index.php?title=Self-stabilizing_Systems_in_Spite_of_Distributed_Control&amp;action=edit&amp;redlink=1" class="new" title="Self-stabilizing Systems in Spite of Distributed Control (page does not exist)">Self-stabilizing Systems in Spite of Distributed Control</a></i></li>
+<li><i><a href="http://en.wikipedia.org/wiki/On_the_Cruelty_of_Really_Teaching_Computer_Science" title="On the Cruelty of Really Teaching Computer Science">On the Cruelty of Really Teaching Computer Science</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="Computer_science.html#Areas_of_computer_science" title="Computer science">Main research<br />areas</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Theoretical_computer_science" title="Theoretical computer science">Theoretical computing science</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Software_engineering" title="Software engineering">Software engineering</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Systems_science" title="Systems science">Systems science</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Algorithm_design" class="mw-redirect" title="Algorithm design">Algorithm design</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Concurrent_computing" title="Concurrent computing">Concurrent computing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Distributed_computing" title="Distributed computing">Distributed computing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Formal_methods" title="Formal methods">Formal methods</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Programming_methodology" class="mw-redirect" title="Programming methodology">Programming methodology</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Programming_language_research" class="mw-redirect" title="Programming language research">Programming language research</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Software_design" title="Software design">Program design</a> and <a href="http://en.wikipedia.org/wiki/Software_development" title="Software development">development</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Software_architecture" title="Software architecture">Software architecture</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Philosophy_of_computer_science" title="Philosophy of computer science">Philosophy of computer programming and computing science</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra#Scientific_contributions_and_impacts" title="Edsger W. Dijkstra">Scientific<br />contributions</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra#Scientific_contributions_and_impacts" title="Edsger W. Dijkstra">Concepts,<br />methods</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/ALGOL_60" title="ALGOL 60">ALGOL 60</a> <a href="http://en.wikipedia.org/wiki/Programming_language_implementation" title="Programming language implementation">implementation</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Call_stack" title="Call stack">Call stack</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Concurrency_(computer_science)" title="Concurrency (computer science)">Concurrency</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Concurrent_programming" class="mw-redirect" title="Concurrent programming">Concurrent programming</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Cooperating_sequential_processes" class="mw-redirect" title="Cooperating sequential processes">Cooperating sequential processes</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Critical_section" title="Critical section">Critical section</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Deadly_embrace" class="mw-redirect" title="Deadly embrace">Deadly embrace</a> (<a href="http://en.wikipedia.org/wiki/Deadlock" title="Deadlock">deadlock</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Dining_philosophers_problem" title="Dining philosophers problem">Dining philosophers problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dutch_national_flag_problem" title="Dutch national flag problem">Dutch national flag problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Fault-tolerant_system" class="mw-redirect" title="Fault-tolerant system">Fault-tolerant system</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Goto-less_programming" class="mw-redirect" title="Goto-less programming">Goto-less programming</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Guarded_Command_Language" title="Guarded Command Language">Guarded Command Language</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Abstraction_layer" title="Abstraction layer">Layered structure</a> in <a href="http://en.wikipedia.org/wiki/Software_architecture" title="Software architecture">software architecture</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Abstraction_layer" title="Abstraction layer">Levels of abstraction</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Multithreaded_programming" class="mw-redirect" title="Multithreaded programming">Multithreaded programming</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mutual_exclusion" title="Mutual exclusion">Mutual exclusion</a> (<a href="http://en.wikipedia.org/wiki/Mutex" class="mw-redirect" title="Mutex">mutex</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Producer%E2%80%93consumer_problem" title="Producer–consumer problem">Producer–consumer problem</a> (<a href="http://en.wikipedia.org/wiki/Bounded_buffer_problem" class="mw-redirect" title="Bounded buffer problem">bounded buffer problem</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Software_product_line" title="Software product line">Program families</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Predicate_transformer_semantics" title="Predicate transformer semantics">Predicate transformer semantics</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Synchronization_(computer_science)#Thread_or_process_synchronization" title="Synchronization (computer science)">Process synchronization</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self-stabilizing_system" class="mw-redirect" title="Self-stabilizing system">Self-stabilizing distributed system</a></li>
+<li><a class="mw-selflink selflink">Semaphore (programming)</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Separation_of_concerns" title="Separation of concerns">Separation of concerns</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Sleeping_barber_problem" title="Sleeping barber problem">Sleeping barber problem</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Software_crisis" title="Software crisis">Software crisis</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Structured_analysis" title="Structured analysis">Structured analysis</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Structured_programming" title="Structured programming">Structured programming</a></li>
+<li><a href="http://en.wikipedia.org/wiki/THE_multiprogramming_system" title="THE multiprogramming system">THE multiprogramming system</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Unbounded_nondeterminism" title="Unbounded nondeterminism">Unbounded nondeterminism</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Weakest_precondition_calculus" class="mw-redirect" title="Weakest precondition calculus">Weakest precondition calculus</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra#Algorithmic_work" title="Edsger W. Dijkstra">Algorithms</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Banker%27s_algorithm" title="Banker&#39;s algorithm">Banker's algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" title="Dijkstra&#39;s algorithm">Dijkstra's algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/DJP_algorithm" class="mw-redirect" title="DJP algorithm">DJP algorithm</a> (<a href="http://en.wikipedia.org/wiki/Prim%27s_algorithm" title="Prim&#39;s algorithm">Prim's algorithm</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Dijkstra-Scholten_algorithm" class="mw-redirect" title="Dijkstra-Scholten algorithm">Dijkstra-Scholten algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Dekker%27s_algorithm" title="Dekker&#39;s algorithm">Dekker's algorithm</a> (generalization)</li>
+<li><a href="http://en.wikipedia.org/wiki/Smoothsort" title="Smoothsort">Smoothsort</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Shunting-yard_algorithm" title="Shunting-yard algorithm">Shunting-yard algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tracing_garbage_collection#Tri-color_marking" title="Tracing garbage collection">Tri-color marking algorithm</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Concurrent_algorithm" class="mw-redirect" title="Concurrent algorithm">Concurrent algorithms</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Distributed_algorithm" title="Distributed algorithm">Distributed algorithms</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Deadlock_prevention_algorithms" title="Deadlock prevention algorithms">Deadlock prevention algorithms</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Mutual_exclusion" title="Mutual exclusion">Mutual exclusion algorithms</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Self-stabilization" title="Self-stabilization">Self-stabilizing algorithms</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related<br />people</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Shlomi_Dolev" title="Shlomi Dolev">Shlomi Dolev</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Per_Brinch_Hansen" title="Per Brinch Hansen">Per Brinch Hansen</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Tony_Hoare" title="Tony Hoare">Tony Hoare</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Ole-Johan_Dahl" title="Ole-Johan Dahl">Ole-Johan Dahl</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Leslie_Lamport" title="Leslie Lamport">Leslie Lamport</a></li>
+<li><a href="http://en.wikipedia.org/wiki/David_Parnas" title="David Parnas">David Parnas</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Carel_S._Scholten" title="Carel S. Scholten">Carel S. Scholten </a></li>
+<li><a href="http://en.wikipedia.org/wiki/Adriaan_van_Wijngaarden" title="Adriaan van Wijngaarden">Adriaan van Wijngaarden</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Niklaus_Wirth" title="Niklaus Wirth">Niklaus Wirth</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Other<br />topics</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="http://en.wikipedia.org/wiki/Dijkstra_Prize" title="Dijkstra Prize">Dijkstra Prize</a> (<a href="http://en.wikipedia.org/wiki/Edsger_W._Dijkstra_Prize_in_Distributed_Computing" class="mw-redirect" title="Edsger W. Dijkstra Prize in Distributed Computing">Edsger W. Dijkstra Prize in Distributed Computing</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/Centrum_Wiskunde_%26_Informatica" title="Centrum Wiskunde &amp; Informatica">Centrum Wiskunde &amp; Informatica</a></li>
+<li><a href="http://en.wikipedia.org/w/index.php?title=E.W._Dijkstra_Archive&amp;action=edit&amp;redlink=1" class="new" title="E.W. Dijkstra Archive (page does not exist)">E.W. Dijkstra Archive</a> (<a href="http://en.wikipedia.org/wiki/University_of_Texas_at_Austin" title="University of Texas at Austin">University of Texas at Austin</a>)</li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_pioneers_in_computer_science" title="List of pioneers in computer science">List of pioneers in computer science</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_important_publications_in_computer_science" title="List of important publications in computer science">List of important publications in computer science</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_important_publications_in_theoretical_computer_science" title="List of important publications in theoretical computer science">List of important publications in theoretical computer science</a></li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_important_publications_in_concurrent,_parallel,_and_distributed_computing" title="List of important publications in concurrent, parallel, and distributed computing">List of important publications in concurrent, parallel, and distributed computing</a></li>
+<li><a href="http://en.wikipedia.org/w/index.php?title=International_Symposium_on_Stabilization,_Safety,_and_Security_of_Distributed_Systems&amp;action=edit&amp;redlink=1" class="new" title="International Symposium on Stabilization, Safety, and Security of Distributed Systems (page does not exist)">International Symposium on Stabilization, Safety, and Security of Distributed Systems</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow plainlist" colspan="2"><div>
+<ul><li><img alt="Wikiquote page" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/13px-Wikiquote-logo.svg.png" decoding="async" title="Wikiquote page" width="13" height="16" srcset="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/20px-Wikiquote-logo.svg.png 1.5x, http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/27px-Wikiquote-logo.svg.png 2x" data-file-width="300" data-file-height="355" /> <a href="https://en.wikiquote.org/wiki/Special:Search/Edsger_W._Dijkstra" class="extiw" title="wikiquote:Special:Search/Edsger W. Dijkstra"><b>Wikiquote</b></a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1309
+Cached time: 20200523011919
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.392 seconds
+Real time usage: 0.523 seconds
+Preprocessor visited node count: 1395/1000000
+Post‐expand include size: 69700/2097152 bytes
+Template argument size: 1486/2097152 bytes
+Highest expansion depth: 14/40
+Expensive parser function count: 1/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 41209/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.177/10.000 seconds
+Lua memory usage: 5.64 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  418.090      1 -total
+ 47.38%  198.106      1 Template:Reflist
+ 26.66%  111.479      4 Template:Cite_EWD
+ 24.20%  101.182      4 Template:Cite_book
+ 13.39%   55.987      1 Template:Short_description
+ 10.10%   42.241      1 Template:Harvnb
+  9.79%   40.920      1 Template:Pagetype
+  9.74%   40.733      1 Template:Citation_needed
+  7.87%   32.890      1 Template:Fix
+  6.34%   26.502      3 Template:Navbox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:164557-0!canonical and timestamp 20200523011919 and revision id 956220606
+ -->
+</div><noscript><img src="Special%253ACentralAutoLogin/start@type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;oldid=956220606">https://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;oldid=956220606</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="http://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Concurrency_control" title="Category:Concurrency control">Concurrency control</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Edsger_W._Dijkstra" title="Category:Edsger W. Dijkstra">Edsger W. Dijkstra</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="http://en.wikipedia.org/wiki/Category:Harv_and_Sfn_no-target_errors" title="Category:Harv and Sfn no-target errors">Harv and Sfn no-target errors</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="http://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="http://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_May_2019" title="Category:Articles with unsourced statements from May 2019">Articles with unsourced statements from May 2019</a></li><li><a href="http://en.wikipedia.org/wiki/Category:CS1:_long_volume_value" title="Category:CS1: long volume value">CS1: long volume value</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="http://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="http://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="http://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Semaphore+%28programming%29" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="http://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Semaphore+%28programming%29" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="Semaphore_(programming).html" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="http://en.wikipedia.org/wiki/Talk:Semaphore_(programming)" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="Semaphore_(programming).html">Read</a></li><li id="ca-edit" class="collapsible"><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="http://en.wikipedia.org/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="http://en.wikipedia.org/wiki/Main_Page"></a>
+	</div>
+	<div class="portal portal-first" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="http://en.wikipedia.org/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="http://en.wikipedia.org/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="http://en.wikipedia.org/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="http://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="http://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="../../donate.wikimedia.org/wiki/Special%253AFundraiserRedirector@utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en.html" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="../../shop.wikimedia.org/index.html" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="http://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="http://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="http://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="Wikipedia%253AContact_us.html" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="http://en.wikipedia.org/wiki/Special:WhatLinksHere/Semaphore_(programming)" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="http://en.wikipedia.org/wiki/Special:RecentChangesLinked/Semaphore_(programming)" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="http://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="http://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;oldid=956220606" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q221682" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="http://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Semaphore_%28programming%29&amp;id=956220606&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-download-as-rl"><a href="http://en.wikipedia.org/w/index.php?title=Special:ElectronPdf&amp;page=Semaphore+%28programming%29&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="http://en.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%8A%D9%85%D8%A7%D9%81%D9%88%D8%B1_(%D8%AD%D9%88%D8%B3%D8%A8%D8%A9)" title="سيمافور (حوسبة) – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Sem%C3%A0for_(inform%C3%A0tica)" title="Semàfor (informàtica) – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Semafor_(synchronizace)" title="Semafor (synchronizace) – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Semafor_(datalogi)" title="Semafor (datalogi) – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Semaphor_(Informatik)" title="Semaphor (Informatik) – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-et"><a href="https://et.wikipedia.org/wiki/Semafor_(programmeerimine)" title="Semafor (programmeerimine) – Estonian" lang="et" hreflang="et" class="interlanguage-link-target">Eesti</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/%CE%A3%CE%B7%CE%BC%CE%B1%CF%86%CF%8C%CF%81%CE%BF%CF%82_(%CF%85%CF%80%CE%BF%CE%BB%CE%BF%CE%B3%CE%B9%CF%83%CF%84%CE%AD%CF%82)" title="Σημαφόρος (υπολογιστές) – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Sem%C3%A1foro_(inform%C3%A1tica)" title="Semáforo (informática) – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/Semaforo_(programazioa)" title="Semaforo (programazioa) – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/%D9%86%D8%B4%D8%A7%D9%86%E2%80%8C%D8%A8%D8%B1" title="نشان‌بر – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/S%C3%A9maphore_(informatique)" title="Sémaphore (informatique) – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/%EC%84%B8%EB%A7%88%ED%8F%AC%EC%96%B4" title="세마포어 – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-hi"><a href="https://hi.wikipedia.org/wiki/%E0%A4%B8%E0%A5%87%E0%A4%AE%E0%A4%BE%E0%A4%AB%E0%A5%8B%E0%A4%B0_(%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%8B%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%BF%E0%A4%82%E0%A4%97)" title="सेमाफोर (प्रोग्रामिंग) – Hindi" lang="hi" hreflang="hi" class="interlanguage-link-target">हिन्दी</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Semafor_(pemrograman)" title="Semafor (pemrograman) – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Semaforo_(informatica)" title="Semaforo (informatica) – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/%D7%A1%D7%9E%D7%A4%D7%95%D7%A8_(%D7%9E%D7%93%D7%A2%D7%99_%D7%94%D7%9E%D7%97%D7%A9%D7%91)" title="סמפור (מדעי המחשב) – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-kk"><a href="https://kk.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80%D0%BB%D0%B0%D1%80" title="Семафорлар – Kazakh" lang="kk" hreflang="kk" class="interlanguage-link-target">Қазақша</a></li><li class="interlanguage-link interwiki-ky"><a href="https://ky.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80" title="Семафор – Kyrgyz" lang="ky" hreflang="ky" class="interlanguage-link-target">Кыргызча</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/Semaforas_(programavimas)" title="Semaforas (programavimas) – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Szemafor_(programoz%C3%A1s)" title="Szemafor (programozás) – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-mn"><a href="https://mn.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80" title="Семафор – Mongolian" lang="mn" hreflang="mn" class="interlanguage-link-target">Монгол</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Semafoor_(computer)" title="Semafoor (computer) – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/%E3%82%BB%E3%83%9E%E3%83%95%E3%82%A9" title="セマフォ – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Semafor_(informatyka)" title="Semafor (informatyka) – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Sem%C3%A1foro_(computa%C3%A7%C3%A3o)" title="Semáforo (computação) – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)" title="Семафор (программирование) – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sk"><a href="https://sk.wikipedia.org/wiki/Semafor_(programovanie)" title="Semafor (programovanie) – Slovak" lang="sk" hreflang="sk" class="interlanguage-link-target">Slovenčina</a></li><li class="interlanguage-link interwiki-sr"><a href="https://sr.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80_(%D1%80%D0%B0%D1%87%D1%83%D0%BD%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%BE)" title="Семафор (рачунарство) – Serbian" lang="sr" hreflang="sr" class="interlanguage-link-target">Српски / srpski</a></li><li class="interlanguage-link interwiki-sh"><a href="https://sh.wikipedia.org/wiki/Semafor_(ra%C4%8Dunarstvo)" title="Semafor (računarstvo) – Serbo-Croatian" lang="sh" hreflang="sh" class="interlanguage-link-target">Srpskohrvatski / српскохрватски</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Semafor_(programmering)" title="Semafor (programmering) – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-ta"><a href="https://ta.wikipedia.org/wiki/%E0%AE%9A%E0%AF%86%E0%AE%AE%E0%AE%BE%E0%AE%83%E0%AE%AA%E0%AF%8B%E0%AE%B0%E0%AF%8D_(%E0%AE%A8%E0%AE%BF%E0%AE%B0%E0%AE%B2%E0%AE%BE%E0%AE%95%E0%AF%8D%E0%AE%95%E0%AE%AE%E0%AF%8D)" title="செமாஃபோர் (நிரலாக்கம்) – Tamil" lang="ta" hreflang="ta" class="interlanguage-link-target">தமிழ்</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D0%B0%D1%84%D0%BE%D1%80_(%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F)" title="Семафор (програмування) – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/%C4%90%C3%A8n_b%C3%A1o_(l%E1%BA%ADp_tr%C3%ACnh)" title="Đèn báo (lập trình) – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/%E4%BF%A1%E5%8F%B7%E9%87%8F" title="信号量 – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q221682#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 12 May 2020, at 04:43<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="Wikipedia%253AText_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License.html">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="http://foundation.wikimedia.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="http://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="../../www.wikimediafoundation.org/index.html">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="../../wikimediafoundation.org/wiki/Privacy_policy.html" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="http://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="http://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="Wikipedia%253AContact_us.html">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="../../www.mediawiki.org/wiki/Special%253AMyLanguage/How_to_contribute.html">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="../../wikimediafoundation.org/wiki/Cookie_statement.html">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="http://en.m.wikipedia.org/w/index.php?title=Semaphore_(programming)&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="../../www.wikimediafoundation.org/index.html"><img src="http://en.wikipedia.org/static/images/wikimedia-button.png" srcset="http://en.wikipedia.org/static/images/wikimedia-button-1.5x.png 1.5x, http://en.wikipedia.org/static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="http://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="http://en.wikipedia.org/static/images/poweredby_mediawiki_132x47.png 1.5x, http://en.wikipedia.org/static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.392","walltime":"0.523","ppvisitednodes":{"value":1395,"limit":1000000},"postexpandincludesize":{"value":69700,"limit":2097152},"templateargumentsize":{"value":1486,"limit":2097152},"expansiondepth":{"value":14,"limit":40},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":41209,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  418.090      1 -total"," 47.38%  198.106      1 Template:Reflist"," 26.66%  111.479      4 Template:Cite_EWD"," 24.20%  101.182      4 Template:Cite_book"," 13.39%   55.987      1 Template:Short_description"," 10.10%   42.241      1 Template:Harvnb","  9.79%   40.920      1 Template:Pagetype","  9.74%   40.733      1 Template:Citation_needed","  7.87%   32.890      1 Template:Fix","  6.34%   26.502      3 Template:Navbox"]},"scribunto":{"limitreport-timeusage":{"value":"0.177","limit":"10.000"},"limitreport-memusage":{"value":5910176,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n  [\"CITEREFDowney2016\"] = 1,\n  [\"CITEREFLeppäjärvi2008\"] = 1,\n  [\"CITEREFMullenderCox2008\"] = 1,\n  [\"CITEREFZelenskiParlante\"] = 1,\n}\ntemplate_list = table#1 {\n  [\"Citation needed\"] = 1,\n  [\"Cite EWD\"] = 4,\n  [\"Cite conference\"] = 1,\n  [\"Cite journal\"] = 2,\n  [\"Cite web\"] = 4,\n  [\"DEFAULTSORT:Semaphore (Programming)\"] = 1,\n  [\"Data types\"] = 1,\n  [\"Edsger Dijkstra\"] = 1,\n  [\"Harvnb\"] = 1,\n  [\"Javadoc:SE\"] = 1,\n  [\"Mono\"] = 5,\n  [\"Nobreak\"] = 1,\n  [\"R\"] = 1,\n  [\"Reflist\"] = 1,\n  [\"Section link\"] = 1,\n}\narticle_whitelist = table#1 {\n}\n"},"cachereport":{"origin":"mw1309","timestamp":"20200523011919","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Semaphore (programming)","url":"https:\/\/en.wikipedia.org\/wiki\/Semaphore_(programming)","sameAs":"http:\/\/www.wikidata.org\/entity\/Q221682","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q221682","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2003-01-03T14:40:53Z","dateModified":"2020-05-12T04:43:55Z","headline":"variable that is changed (e.g., incremented, decremented, toggled) depending on programmer-defined conditions, used to control access to a common resource by multiple processes in a concurrent system"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":115,"wgHostname":"mw1267"});});</script></body></html>

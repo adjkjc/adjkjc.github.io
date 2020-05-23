@@ -1,0 +1,382 @@
+/**
+ * ZillaShortcodes
+ * Author: ThemeZilla
+ * Author URI: http://www.themezilla.com
+ */
+
+/* Column Styles --- */
+
+.zilla-one-half { width: 48%; }
+.zilla-one-third { width: 30.66%; }
+.zilla-two-third { width: 65.33%; }
+.zilla-one-fourth { width: 22%; }
+.zilla-three-fourth { width: 74%; }
+.zilla-one-fifth { width: 16.8%; }
+.zilla-two-fifth { width: 37.6%; }
+.zilla-three-fifth { width: 58.4%; }
+.zilla-four-fifth { width: 79.2%; }
+.zilla-one-sixth { width: 13.33%; }
+.zilla-five-sixth { width: 82.67%; }
+
+.zilla-one-half,
+.zilla-one-third,
+.zilla-two-third,
+.zilla-three-fourth,
+.zilla-one-fourth,
+.zilla-one-fifth,
+.zilla-two-fifth,
+.zilla-three-fifth,
+.zilla-four-fifth,
+.zilla-one-sixth,
+.zilla-five-sixth {
+	float: left;
+	margin-right: 4%;
+	margin-bottom: 2em;
+	position: relative;
+}
+
+.zilla-column-last {
+	clear: right;
+	margin-right: 0 !important;
+}
+
+@media screen and (max-width: 414px) {
+	.zilla-one-half,
+	.zilla-one-third,
+	.zilla-two-third,
+	.zilla-three-fourth,
+	.zilla-one-fourth,
+	.zilla-one-fifth,
+	.zilla-two-fifth,
+	.zilla-three-fifth,
+	.zilla-four-fifth,
+	.zilla-one-sixth,
+	.zilla-five-sixth {
+		width: 96%;
+	}
+}
+
+/*	Button Styles --- */
+
+a.zilla-button,
+a.zilla-button:visited {
+	background-color: #0c6fb1;
+		background-image: -webkit-linear-gradient(top, #14a7cf, #0c6fb1);
+		background-image:    -moz-linear-gradient(top, #14a7cf, #0c6fb1);
+		background-image: 		  linear-gradient(top, #14a7cf, #0c6fb1);
+	border: 1px solid #0d507a !important;
+	-webkit-border-radius: 16px;
+	border-radius: 16px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.4);
+	color: #ffffff !important;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0 0.1em 1.5em 0 !important;
+	outline: none;
+	padding: 7px 13px !important;
+	text-align: center;
+	text-decoration: none !important;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+	vertical-align: middle;
+}
+
+a.zilla-button.square {
+	-webkit-border-radius: 4px !important;
+	border-radius: 4px !important;
+}
+
+a.zilla-button.medium {
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 16px;
+	padding: 11px 16px !important;
+}
+
+a.zilla-button.large {
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	font-size: 18px;
+	padding: 15px 20px !important;
+}
+
+a.zilla-button:hover { text-decoration: none; }
+
+a.zilla-button:active {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+	position: relative;
+	top: 1px;
+}
+
+a.zilla-button.green {
+	background-color: #7fc33c;
+		background-image: -webkit-linear-gradient(top, #b1d960, #7fc33c);
+		background-image:    -moz-linear-gradient(top, #b1d960, #7fc33c);
+		background-image: 		  linear-gradient(top, #b1d960, #7fc33c);
+	border-color: #69963b !important;
+}
+
+a.zilla-button.green:hover {
+	background-color: #8dd242;
+		background-image: -webkit-linear-gradient(top, #b9e46a, #8dd242);
+		background-image:    -moz-linear-gradient(top, #b9e46a, #8dd242);
+		background-image:         linear-gradient(top, #b9e46a, #8dd242);
+}
+
+a.zilla-button.light-blue {
+	background-color: #2caada;
+		background-image: -webkit-linear-gradient(top, #46cae8, #2caada);
+		background-image:    -moz-linear-gradient(top, #46cae8, #2caada);
+		background-image:         linear-gradient(top, #46cae8, #2caada);
+	border-color: #2681a2 !important;
+}
+
+a.zilla-button.light-blue:hover {
+	background-color: #32bcef;
+		background-image: -webkit-linear-gradient(top, #50d6f5, #32bcef);
+		background-image:    -moz-linear-gradient(top, #50d6f5, #32bcef);
+		background-image:         linear-gradient(top, #50d6f5, #32bcef);
+}
+
+a.zilla-button.blue {
+	background-color: #0c6fb1;
+		background-image: -webkit-linear-gradient(top, #14a7cf, #0c6fb1);
+		background-image:    -moz-linear-gradient(top, #14a7cf, #0c6fb1);
+		background-image:         linear-gradient(top, #14a7cf, #0c6fb1);
+	border-color: #0d507a !important;
+}
+
+a.zilla-button.blue:hover {
+	background-color: #1188d6;
+		background-image: -webkit-linear-gradient(top, #1bb6e6, #1188d6);
+		background-image:    -moz-linear-gradient(top, #1bb6e6, #1188d6);
+		background-image:         linear-gradient(top, #1bb6e6, #1188d6);
+}
+
+a.zilla-button.red {
+	background-color: #e3514a;
+		background-image: -webkit-linear-gradient(top, #ed8376, #e3514a);
+		background-image:    -moz-linear-gradient(top, #ed8376, #e3514a);
+		background-image:         linear-gradient(top, #ed8376, #e3514a);
+	border-color: #ab4b44 !important;
+}
+
+a.zilla-button.red:hover {
+	background-color: #ff5e56;
+		background-image: -webkit-linear-gradient(top, #ff988c, #ff5e56);
+		background-image:    -moz-linear-gradient(top, #ff988c, #ff5e56);
+		background-image:         linear-gradient(top, #ff988c, #ff5e56);
+}
+
+a.zilla-button.orange {
+   background-color: #ffb031;
+		background-image: -webkit-linear-gradient(top, #ffce4f, #ffb031);
+		background-image:    -moz-linear-gradient(top, #ffce4f, #ffb031);
+		background-image:         linear-gradient(top, #ffce4f, #ffb031);
+   border-color: #dc9014 !important;
+}
+
+a.zilla-button.orange:hover {
+   background-color: #ffc531;
+		background-image: -webkit-linear-gradient(top, #ffdb4f, #ffc531);
+		background-image:    -moz-linear-gradient(top, #ffdb4f, #ffc531);
+		background-image:         linear-gradient(top, #ffdb4f, #ffc531);
+}
+
+a.zilla-button.purple {
+   background-color: #d17ac6;
+		background-image: -webkit-linear-gradient(top, #e3acdc, #d17ac6);
+		background-image:    -moz-linear-gradient(top, #e3acdc, #d17ac6);
+		background-image:         linear-gradient(top, #e3acdc, #d17ac6);
+   border-color: #996192 !important;
+}
+
+a.zilla-button.purple:hover {
+   background-color: #eb90e0;
+		background-image: -webkit-linear-gradient(top, #f3baec, #eb90e0);
+		background-image:    -moz-linear-gradient(top, #f3baec, #eb90e0);
+		background-image:         linear-gradient(top, #f3baec, #eb90e0);
+}
+
+a.zilla-button.grey {
+	background-color: #e5e5e5;
+		background-image: -webkit-linear-gradient(top, #efefef, #e5e5e5);
+		background-image:    -moz-linear-gradient(top, #efefef, #e5e5e5);
+		background-image:         linear-gradient(top, #efefef, #e5e5e5);
+	border-color: #acacac !important;
+	color: #555555 !important;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+}
+
+a.zilla-button.grey:hover {
+	background-color: #f6f6f6;
+		background-image: -webkit-linear-gradient(top, #fcfcfc, #f6f6f6);
+		background-image:    -moz-linear-gradient(top, #fcfcfc, #f6f6f6);
+		background-image:         linear-gradient(top, #fcfcfc, #f6f6f6);
+}
+
+a.zilla-button.black {
+	background-color: #444444;
+		background-image: -webkit-linear-gradient(top, #6c6c6c, #444444);
+		background-image:    -moz-linear-gradient(top, #6c6c6c, #444444);
+		background-image:         linear-gradient(top, #6c6c6c, #444444);
+	border-color: #323232 !important;
+}
+
+a.zilla-button.black:hover {
+	background-color: #575757;
+		background-image: -webkit-linear-gradient(top, #8d8d8d, #575757);
+		background-image:    -moz-linear-gradient(top, #8d8d8d, #575757);
+		background-image:         linear-gradient(top, #8d8d8d, #575757);
+}
+
+/* Alert Styles --- */
+
+.zilla-alert {
+	-webkit-border-radius: 4px !important;
+    border-radius: 4px !important;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.6);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0 1px 0 rgba(255,255,255,0.6);
+    line-height: 1.6em;
+    margin: 0 0 1.5em 0;
+    padding: 0.8em;
+}
+
+.zilla-alert.white {
+    background: #fff;
+    border: 1px solid #dfdfdf;
+    color: #373737;
+}
+
+.zilla-alert.red {
+    background: #ffe6e3;
+    border: 1px solid #f2c3bf;
+    color: #bf210e;
+}
+
+.zilla-alert.yellow {
+    background: #fff7d6;
+    border: 1px solid #e9d477;
+    color: #956433;
+}
+
+.zilla-alert.green {
+    background: #edfdd3;
+    border: 1px solid #c4dba0;
+    color: #657e3c;
+}
+
+.zilla-alert.grey {
+    background: #fbfbfb;
+    border: 1px solid #dfdfdf;
+    color: #373737;
+}
+
+/* Tab Styles --- */
+
+.zilla-tabs.ui-tabs .ui-tabs-hide {
+    position: absolute;
+	    left: -10000px;
+}
+
+.zilla-tabs {
+	background: none;
+	margin: 0 0 2em 0;
+}
+
+.zilla-tabs .zilla-nav {
+	background: none;
+	border: 0;
+	float: none;
+	list-style: none !important;
+	margin: 0 !important;
+	padding: 0;
+}
+
+.zilla-tabs .zilla-nav li {
+	float: left;
+	list-style: none !important;
+	margin: 0 2px -1px 0 !important;
+	position: relative;
+	z-index: 10;
+}
+
+.zilla-tabs .zilla-nav li a {
+	background: #FBFBFB;
+	border: 1px solid #dfdfdf !important;
+	border-bottom: none !important;
+	-webkit-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	color: #373737 !important;
+	display: block;
+	height: 26px;
+	margin: 0 !important;
+	overflow: hidden;
+	padding: 5px 10px 0 10px;
+	text-decoration: none;
+}
+
+.zilla-tabs .zilla-nav li a:hover {
+	background: #fff!important;
+	margin: 0!important;
+}
+
+.zilla-tabs .zilla-nav .ui-tabs-selected a,
+.zilla-tabs .zilla-nav .ui-tabs-active a {
+	background: #fff;
+	height: 27px;
+}
+
+.zilla-tabs .zilla-tab {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	padding: 10px;
+}
+
+/* Toggle Styles --- */
+
+.zilla-toggle { margin: 0 0 2em 0; }
+
+.zilla-toggle + .zilla-toggle { margin-top: -1.75em; }
+
+.zilla-toggle .zilla-toggle-title {
+	background: #FBFBFB;
+	border: 1px solid #dfdfdf;
+	cursor: pointer;
+	display: block;
+	outline: none;
+	padding: 10px 10px 10px 30px;
+	position: relative;
+}
+
+.zilla-toggle .zilla-toggle-title:hover { border: 1px solid #c5c5c5; }
+
+.zilla-toggle-inner {
+	background: #fff;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	padding: 10px;
+}
+
+.zilla-toggle span.ui-icon {
+    background: url(../img/toggle-closed.png) no-repeat;
+    height: 12px;
+    margin: -6px 0 0 0;
+    position: absolute;
+	    top: 50%;
+    	left: 10px;
+    width: 12px;
+}
+
+.zilla-toggle .ui-state-active .ui-icon { background: url(../img/toggle-open.png) no-repeat; }
+
+/* Clearfix */
+.zilla-clearfix:before,
+.zilla-clearfix:after { content:""; display:table; }
+.zilla-clearfix:after { clear: both; }
+.zilla-clearfix { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }

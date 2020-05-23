@@ -1,0 +1,36 @@
+| userid  | count | mailid | b    | email                          | last_time           | subject                                 | clicked | totcl |
++---------+-------+--------+------+--------------------------------+---------------------+-----------------------------------------+---------+-------+
+|   80153 |     3 |    358 |    0 | nick.barton@ist.ac.at          | 2020-05-15 18:36:27 | ATTZOM: д добешк, I DENY                |    NULL |  NULL |
+| 4105999 |     1 |    347 |    0 | helene.flourent@univ-ubs.fr    | 2020-05-15 16:10:55 | TELL THEM: "IT IS NOT A G               |    NULL |  NULL |
+| 2980432 |     3 |    340 |    0 | franco.onofri@unige.it         | 2020-05-15 13:35:06 | Revelation 1 amended from               |    NULL |  NULL |
+| 3117099 |     4 |    349 |    0 | aghiad.khadour@ifsttar.fr      | 2020-05-15 11:08:02 | ATTITUDE ADJUSTMENT: NEIT               |    NULL |  NULL |
+| 1606405 |     6 |    334 |    0 | kabinetrtcg@t-com.me           | 2020-05-15 06:34:43 | HAPPY BIRTHDAY COPYLEFT,                |    NULL |  NULL |
+|  501847 |     4 |    357 |    0 | sammakia@colorado.edu          | 2020-05-15 02:50:59 | Re: THE DEVLIN ME ... "IS               |    NULL |     2 |
+|   23791 |    14 |    358 |    0 | boazar@cs.bgu.ac.il            | 2020-05-14 23:09:26 | ATTZOM: д добешк, I DENY                |    NULL |  NULL |
+|  144472 |     3 |    333 |    0 | bweiss@paradigmagency.com      | 2020-05-14 21:46:00 | ARMILOSAN, POSEIDON & ABA               |    NULL |  NULL |
+|  164930 |     2 |    345 |    0 | ss287@buffalo.edu              | 2020-05-14 20:17:00 | ?@825B >@838=0; ... fruml               |    NULL |  NULL |
+|  164930 |     3 |    333 |    0 | ss287@buffalo.edu              | 2020-05-14 19:56:58 | ARMILOSAN, POSEIDON & ABA               |    NULL |  NULL |
+|  832729 |     5 |    358 |    0 | jhgross@umass.edu              | 2020-05-14 19:40:17 | ATTZOM: д добешк, I DENY                |    NULL |  NULL |
+| 1008861 |     3 |    357 |    0 | info@internationalmusicschool. | 2020-05-14 19:38:56 | Re: THE DEVLIN ME ... "IS               |    NULL |     1 |
+|  164930 |     1 |    355 |    0 | ss287@buffalo.edu              | 2020-05-14 19:21:04 | ATLAS' ... BABBLE ON.  FA               |    NULL |  NULL |
+|  164930 |     2 |    358 |    0 | ss287@buffalo.edu              | 2020-05-14 19:11:08 | ATTZOM: д добешк, I DENY                |    NULL |  NULL |
+|  164930 |     1 |    359 |    0 | ss287@buffalo.edu              | 2020-05-14 19:05:04 | AGUA: AKEE, CHESTER COPPE               |    NULL |  NULL |
+|  904088 |     4 |    352 |    0 | marie@adrianfisherdesign.com   | 2020-05-14 17:48:16 | ALBATROSS. SINATRA ... GT               |    NULL |  NULL |
+|  916330 |     5 |    333 |    0 | peter.johnson3@wisc.edu        | 2020-05-14 17:27:00 | ARMILOSAN, POSEIDON & ABA               |    NULL |  NULL |
+| 4116841 |     3 |    346 |    0 | wxin@mpim-bonn.mpg.de          | 2020-05-14 15:22:25 | HELL OR HIGH WATER.  HEIR               |    NULL |  NULL |
+| 2416866 |     2 |    328 |    0 | reis.rodrigo@wustl.edu         | 2020-05-14 14:59:23 | GTAKE AIM THIS HOLY DAY .               |    NULL |  NULL |
+| 2416866 |     1 |    356 |    0 | reis.rodrigo@wustl.edu         | 2020-05-14 14:58:56 | THE DEVLIN ME ... "IS THE               |    NULL |  NULL |
+| 2631832 |     2 |    353 |    0 | ly603202@sina.com              | 2020-05-14 13:42:27 | SOUND CHECK ... "THE SOUN               |    NULL |  NULL |
+| 2475661 |     3 |    356 |    0 | shaoweizeng@zjou.edu.cn        | 2020-05-14 13:00:51 | THE DEVLIN ME ... "IS THE               |    NULL |  NULL |
+|  491100 |     1 |    359 |    0 | avot@eau.ee                    | 2020-05-14 09:36:44 | AGUA: AKEE, CHESTER COPPE               |    NULL |  NULL |
+| 4051702 |     3 |    356 |    0 | chenlx@shanghaitech.edu.cn     | 2020-05-14 08:19:58 | THE DEVLIN ME ... "IS THE               |    NULL |  NULL |
+| 2062776 |     5 |    356 |    0 | M.Skarysz@lboro.ac.uk          | 2020-05-14 07:16:29 | THE DEVLIN ME ... "IS THE               |    NULL |  NULL |
+|  229178 |    32 |    358 |    0 | cosgrovc@oregonstate.edu       | 2020-05-14 07:03:06 | ATTZOM: д добешк, I DENY                |    NULL |  NULL |
+|  246480 |     3 |    356 |    0 | mjb34@uw.edu                   | 2020-05-14 04:14:11 | THE DEVLIN ME ... "IS THE               |    NULL |  NULL |
+| 2499074 |     2 |    341 |    0 | songw@igsnrr.ac.cn             | 2020-05-14 01:10:03 | SHA-1 GG WHY? "CAUGHT ME                |    NULL |  NULL |
+| 2499074 |     5 |    329 |    0 | songw@igsnrr.ac.cn             | 2020-05-14 01:09:45 | Is it raining blood tonig               |    NULL |  NULL |
++---------+-------+--------+------+--------------------------------+---------------------+-----------------------------------------+---------+-------+
+29 rows in set (1 min 40.75 sec)
+
+mysql> select * From h_wd limit  29;
+

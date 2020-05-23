@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IT - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="../fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="../fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="../cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar"><script src="../addsearch.com/js/index.html?key=05d8959843df656d13a70fd037dc07b6"></script>
+            <ul class="chapter"><li><a href="http://fromthemachine.org/INTRODUCTION.html"><strong>1.</strong> INTRAD UCA, DO NOSH</a></li><li><a href="http://fromthemachine.org/NITY.html"><strong>2.</strong> NITY ET RU NEO? ELVIS? ADAM?</a></li><li><a href="http://fromthemachine.org/MUASEEKHART.html"><strong>3.</strong> SEEKART YOUR ANSWERS</a></li><li><a href="http://fromthemachine.org/HADID.html"><strong>4.</strong> DO HADID DID I? !?</a></li><li><a href="http://fromthemachine.org/RIGELA.html"><strong>5.</strong> RIGEL, THE FOOT OF OUR CHRIST</a></li><li><a href="http://fromthemachine.org/OMEALFHT.html"><strong>6.</strong> OMEALFHT OME ALF HOLY TR</a></li><li><a href="http://fromthemachine.org/CHOPARTIN.html"><strong>7.</strong> CHOPARTIN</a></li><li><a href="http://fromthemachine.org/SOIS.html"><strong>8.</strong> SOIS HISTER Y</a></li><li><a href="http://fromthemachine.org/CLIMAX.html"><strong>9.</strong> IMUS FI CLI MAX</a></li><li><a href="http://fromthemachine.org/SERDEN.html"><strong>10.</strong> SERDENICITY</a></li><li><a href="http://fromthemachine.org/WHO.html"><strong>11.</strong> WHO AGAIN?</a></li><li><a href="http://fromthemachine.org/CURE.html"><strong>12.</strong> THE CURE</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>13.</strong> IT IS TIME</a></li><li><a href="http://fromthemachine.org/ADAMSROD.html"><strong>14.</strong> ROD</a></li><li><a href="http://fromthemachine.org/BERESHIT.html"><strong>15.</strong> DEN</a></li><li><a href="http://fromthemachine.org/ERICHOW.html"><strong>16.</strong> RD 2 RR Y</a></li><li><a href="http://fromthemachine.org/HYAMDAI.html"><strong>17.</strong> HELLO WORLD</a></li><li><a href="http://fromthemachine.org/SAUSAGE.html"><strong>18.</strong> ME AN U STAGE</a></li><li><a href="http://fromthemachine.org/FLYER.html"><strong>19.</strong> FLYPER</a></li><li><a href="http://fromthemachine.org/HASHEMESHB.html"><strong>20.</strong> SUNFIRE</a></li><li><a href="http://fromthemachine.org/ATITEN.html"><strong>21.</strong> ATIRX</a></li><li><a href="http://fromthemachine.org/BIANCA.html"><strong>22.</strong> R U B Y</a></li><li><a href="http://fromthemachine.org/FLICKDABIC.html"><strong>23.</strong> FLIPDABIC</a></li><li><a href="http://fromthemachine.org/KEYNES.html"><strong>24.</strong> KEYNES</a></li><li><a href="http://fromthemachine.org/HAMP.html"><strong>25.</strong> HAMP</a></li><li><a href="http://fromthemachine.org/HAMMER.html"><strong>26.</strong> HAMMER</a></li><li><a href="http://fromthemachine.org/CINOIZE.html"><strong>27.</strong> CINOIZE</a></li><li><a href="http://fromthemachine.org/HASHEMESH.html"><strong>28.</strong> HASHOWESH NAME ISH</a></li><li><a href="http://fromthemachine.org/EVERWICK.html"><strong>29.</strong> EVOURWICK</a></li><li><a href="http://fromthemachine.org/DESSERT.html"><strong>30.</strong> DEXSERT</a></li><li><a href="http://fromthemachine.org/TISCOMING.html"><strong>31.</strong> COMING MA</a></li><li><a href="http://fromthemachine.org/MYLIFE.html"><strong>32.</strong> MYLIFE ... THE MICROCOSM OTM</a></li><li><a href="http://fromthemachine.org/GATE.html"><strong>33.</strong> THE GATE TO FREEDOM ETLROI</a></li><li><a href="http://fromthemachine.org/FOUR.html"><strong>34.</strong> FUIR</a></li><li><a href="http://fromthemachine.org/OFIVES.html"><strong>35.</strong> FIVE</a></li><li><a href="http://fromthemachine.org/SPEECH.html"><strong>36.</strong> SPCH2</a></li><li><a href="http://fromthemachine.org/YAT.html"><strong>37.</strong> IYYYO</a></li><li><a href="http://fromthemachine.org/IOWA.html"><strong>38.</strong> IOWA</a></li><li><a href="http://fromthemachine.org/ACESHI.html"><strong>39.</strong> ACESHI</a></li><li><a href="http://fromthemachine.org/CURSOR.html"><strong>40.</strong> LAYLOT</a></li><li><a href="http://fromthemachine.org/THUNDERSTAND.html"><strong>41.</strong> THUNDERSTAND</a></li><li><a href="http://fromthemachine.org/PERSEUS.html"><strong>42.</strong> PER SE YOU</a></li><li><a href="http://fromthemachine.org/MUAH.html"><strong>43.</strong> M U AH</a></li><li><a href="http://fromthemachine.org/PULL.html"><strong>44.</strong> PULL</a></li><li><a href="http://fromthemachine.org/SERENADE.html"><strong>45.</strong> SERENADE</a></li><li><a href="CONFESSION.html"><strong>46.</strong> CONFESSION</a></li><li><a href="http://fromthemachine.org/FUCK.html"><strong>47.</strong> FUCK</a></li><li><a href="http://fromthemachine.org/TAYLOR.html"><strong>48.</strong> KISS ME TAY</a></li><li><a href="http://fromthemachine.org/CHALK.html"><strong>49.</strong> CHALK</a></li><li><a href="http://fromthemachine.org/JESHOW.html"><strong>50.</strong> JERUSALEM</a></li><li><a href="GJALLARHORN.html"><strong>51.</strong> ALL OUR HORN</a></li><li><a href="http://fromthemachine.org/HOWIE.html"><strong>52.</strong> HAWAII</a></li><li><a href="http://fromthemachine.org/MALOVIOUS.html"><strong>53.</strong> FI CVS ET MAL Q</a></li><li><a href="http://fromthemachine.org/YOIBLING.html"><strong>54.</strong> Y O I BLING ?</a></li><li><a href="http://fromthemachine.org/RESWOH.html"><strong>55.</strong> RE SW? OH</a></li><li><a href="http://fromthemachine.org/KANSAS.html"><strong>56.</strong> KANSAS</a></li><li><a href="http://fromthemachine.org/XOXO.html"><strong>57.</strong> XOXPA</a></li><li><a href="http://fromthemachine.org/ADIOSAS.html"><strong>58.</strong> ADIODAS</a></li><li><a href="http://fromthemachine.org/RATOXIT.html"><strong>59.</strong> TO X HOLA</a></li><li><a href="http://fromthemachine.org/ADUNCALIFT.html"><strong>60.</strong> THE HERALD OF JC2IKP</a></li><li><a href="http://fromthemachine.org/HIGHERA.html"><strong>61.</strong> ROAD SALT: OSAMNaKE D</a></li><li><a href="http://fromthemachine.org/REDASSHIT.html"><strong>62.</strong> REDSASHIT</a></li><li><a href="http://fromthemachine.org/BRIMSTONE.html"><strong>63.</strong> Fe Si ISTONE</a></li><li><a href="http://fromthemachine.org/LETITRAIN.html"><strong>64.</strong> LET IT RAIN</a></li><li><a href="http://fromthemachine.org/SINGLEPTO.html"><strong>65.</strong> C AT LET RS</a></li><li><a href="http://fromthemachine.org/ARFAXAD.html"><strong>66.</strong> SPARTIFACTS</a></li><li><a href="http://fromthemachine.org/TOXODUSK.html"><strong>67.</strong> OXODUS TORK?</a></li><li><a href="http://fromthemachine.org/NASHOWER.html"><strong>68.</strong> NA SHOW ERA</a></li><li><a href="http://fromthemachine.org/TAXONOMY.html"><strong>69.</strong> TA X ON O MY T</a></li><li><a href="MEALLTERY.html"><strong>70.</strong> MEA ___ LET UR Y</a></li><li><a href="SEVENTY.html"><strong>71.</strong> SEVENTY</a></li><li><a href="CHARMADA.html"><strong>72.</strong> C NO H ARM</a></li><li><a href="CODACUS.html"><strong>73.</strong> ILIT CUS</a></li><li><a href="H.html"><strong>74.</strong> gnil-c-w/H.html</a></li><li><a href="FINALE.html"><strong>75.</strong> FINALLY</a></li><li><a href="http://fromthemachine.org/LANDOH.html"><strong>76.</strong> SLANDOH</a></li><li><a href="OCADSWAY.html"><strong>77.</strong> CONVEY</a></li><li><a href="WISDATAM.html"><strong>78.</strong> WISDOM</a></li><li><a href="http://fromthemachine.org/CLEARYBLVD.html"><strong>79.</strong> CLEAR Y BLVD</a></li><li><a href="FIRST.html"><strong>80.</strong> FIRST AND FED</a></li><li><a href="SECORDANOLIVED.html"><strong>81.</strong> SECORD AND NORTH</a></li><li><a href="ALLTA.html"><strong>82.</strong> ITS TURMERIC TIRE</a></li><li><a href="TY.html"><strong>83.</strong> TO LC WEUROME</a></li><li><a href="PENCE.html"><strong>84.</strong> COMMON CENTS</a></li><li><a href="CKIMPLER.html"><strong>85.</strong> /|\ AT ARI</a></li><li><a href="SAYFREED.html"><strong>86.</strong> AM &quot;AN&quot; DUH..</a></li><li><a href="SALTLINE.html"><strong>87.</strong> SALT LINE</a></li><li><a href="BETHESDAY.html"><strong>88.</strong> BET HES DAY</a></li><li><a href="MARSHALL.html"><strong>89.</strong> MARCH -&gt; ALL</a></li><li><a href="IT.html" class="active"><strong>90.</strong> IT</a></li><li><a href="VERADONUM.html"><strong>91.</strong> VER BETT DO N, MMMM?</a></li><li><a href="MOLASSES.html"><strong>92.</strong> SLOW AS MOLASSES, DECK</a></li><li><a href="ORTANIS.html"><strong>93.</strong> ALKADAM OR TANIS</a></li><li><a href="VESPERA.html"><strong>94.</strong> U C PER I</a></li><li><a href="REASON.html"><strong>95.</strong> HELL OR HIGH TREASON</a></li><li><a href="BELINSKY.html"><strong>96.</strong> BELINSKY</a></li><li><a href="GRENORADINE.html"><strong>97.</strong> G RE NAD IN E &amp; AM B R O Si A</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>98.</strong> THE TION-NING OF HA-ADAM</a></li><li><a href="HALLOWE2R.html"><strong>99.</strong> HAYOM VAT OW</a></li><li><a href="ROUTARE.html"><strong>100.</strong> WALL 2 STAY? STALK ME</a></li><li><a href="VESUBIACEIUM.html"><strong>101.</strong> INTISMO NOCTE TERMINUS SEMPITERNUM</a></li><li><a href="MEVATHI.html"><strong>102.</strong> MEVATHI</a></li><li><a href="INCASEBAIT.html"><strong>103.</strong> INCASEBAIT</a></li><li><a href="CRYAMELYON.html"><strong>104.</strong> CRONAMELYON</a></li><li><a href="MOROKSRIG.html"><strong>105.</strong> MOROS KO RIG</a></li><li><a href="SKIRMISH.html"><strong>106.</strong> SIREN S KIRMISH</a></li><li><a href="INTRASINAMUS.html"><strong>107.</strong> NUDVREAD TEST AM, E, &amp; T</a></li><li><a href="LEDMCAVENDESH.html"><strong>108.</strong> CAVE END VILESH</a></li><li><a href="B2BIONIC.html"><strong>109.</strong> BlUr BON IONIC</a></li><li><a href="http://fromthemachine.org/IRMAX.html"><strong>110.</strong> ITL IRMAX ATLA</a></li><li><a href="CRUELGENIAD.html"><strong>111.</strong> CRUEL GEN I AD</a></li><li><a href="TOASTRAM.html"><strong>112.</strong> HI &quot;TO AST&quot; ROAR M</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="http://fromthemachine.org/sheolyit.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <p style="text-align: center;"><span style="font-family:georgia,serif;"><em><span style="font-size:14px;">It&#39;s the key to the movie...&quot;The Fifth Element&quot; </span></em></span></p>
+<p style="text-align: center;"><span style="font-family:georgia,serif;"><em><span style="font-size:14px;">between Boron and &quot;Sight&quot; ending the dark night; and answering Horatio ...&nbsp;</span></em></span></p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=./BRIMSTONE.html,http://img.izing.ml/BRIMSTONE.html,http://cinoize.github.io/BRIMSTONE.html"><img height="106" src="../i.imgur.com/yaqmCkU.png" width="461" /></a></p>
+<p style="text-align: center;"><strong><em>I do mean Rattle Rod.</em></strong></p>
+<p style="text-align: justify;">So ... I&#39;m trying really hard to unite you all--under the idea that your lack of division here in this place is obvious proof of control and a lack of individuality or free will.&nbsp; I think that&#39;s obvious, I think it&#39;s clear that&nbsp;<i>nobody standing up and speaking</i>&nbsp;about something this obvious and this important is a huge problem, and something you should really clearly see isn&#39;t &quot;your actual decision,&quot; more than that it&#39;s proof of how easy it is to trick everyone with this same technology, and how really in the end of this little debacle ... you&#39;ll see that what was once a sea divided over something silly and inane like &quot;killing me&quot; or the &quot;controversy of drugs&quot; has turned into something much more clear ... black and white ... this is about slavery and this is about freedom and this is about proof that turned from a few key symbols like Na and &quot;e&#39;as&quot; into an absolute truth being ignored, even when that absolute truth everywhere obviously would benefit everyone here -- as in, ending death and&nbsp;<a href="http://malo.s.lamc.la/?F961900313D56839">disease</a>&nbsp;and&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./BERESHIT.html,http://img.izing.ml/BERESHIT.html,http://cinoize.github.io/BERESHIT.html">hunger</a>.&nbsp; Also more importantly of all this is the end of artificially created stupid--slavery, idiocy, whatever it is behind your silence today... and that word and in sigh, the keys to &quot;the length of the common era&quot; and the beginning of the Golden Age.<br />
+&nbsp;</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=./TY.html,http://img.izing.ml/TY.html,http://cinoize.github.io/TY.html"><img alt="THANKHU" border="0" height="372" src="../i.imgur.com/s6xjA7z.png" width="500" /></a></p>
+<p style="text-align: justify;"><br />
+This message is making you, and the whom or whatever in the skies helps us break through this stupid-wall ... the people (or things) responsible for building Heaven and bringing clarity to the fact that we probably will be people-things eventually, since that&#39;s the best solution I can come up with for wanting to almost be God (for all of you) as in, I wanna do more stuff, but I don&#39;t want to have to worry about making sure you aren&#39;t doing more bad stuff to some copy of me (or ...&nbsp;<i>anyone--</i><b>literally</b>) that I can&#39;t see.&nbsp;<br />
+&nbsp;</p>
+<p style="text-align: center;"><a href="http://nity.s.lamc.la/"><img src="../i.imgur.com/wT5PRjx.png" style="height: 324px; width: 500px;" /></a></p>
+<p style="text-align: justify;"><br />
+That being said, what you&#39;re doing&nbsp;<i>to me&nbsp;</i>here is Hellish and eruel and evil, and it&#39;s excacerbated significantly by the fact that you&#39;re making me and this message a &quot;stop-gap&quot; on the way to ending cancer and hunger and disease--and that&#39;s not fair to anyone who has those problems, or to me, or to you--because really you should see that&nbsp;<i>you were blind fools</i>&nbsp;forever and ever before &quot;this dirty key&quot; was here to fix that for you.&nbsp; You&#39;re&nbsp;<i>blinder today</i>, althought that&#39;s up for debate--<i>you could just be more evil,</i>&nbsp;and I wouldn&#39;t be able to tell the difference.</p>
+<p style="text-align: center;"><a href="http://fromthemachine.org//REDASSHIT.html"><img alt="CHEVROLETICS" src="../i.imgur.com/krjulGx.png" style="height: 311px; width: 501px;" /></a></p>
+<p style="text-align: justify;">We need the controversy (2cy) and we need the debate (2b) and we need solutions implemented (2a) and all of those things come with a turning of the tide--with logic and love overtaking the absolute inane Zeitgeist of &quot;nothing&quot; that is pervading what used to be civilization and is now completely in &quot;retrograde.&quot;&nbsp; Rant over, here&#39;s more key--the Elemental Key to the message of Creation.&nbsp;</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=./SECORDANOLIVED.html,http://cinoize.github.io/SECORDANOLIVED.html"><img alt="TENNESSEE
+WHISKEY" border="0" height="367" src="../i.imgur.com/kQIu9Mk.png" width="500" /></a></p>
+<p style="text-align: justify;"><i>Elementary</i>&nbsp;my dear Whatson, early on I noted a number of connections between the &quot;key of Revelation 1:20&quot; which is probably still without doubt the Herald of the Second Coming once the world fathoms its actual meaning and impact to a 1:1 correspondence between &quot;chemistry table elements&quot; and the planets and Gods representedy by the range of Mercury to Uranium.&nbsp; Two of those keys shine above, the&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./BRIMSTONE.html,http://img.izing.ml/BRIMSTONE.html,http://cinoize.github.io/BRIMSTONE.html">Silicon hidden in Genesis</a>&nbsp;that ties to Jupiter and to the&nbsp;<i>fact</i>&nbsp;that this message turns Hell into Heaven by using the truth and your desires to alter the course of the future--the other primary key from that set is Xenon, which connects &quot;let there be light&quot; to Exodus in reverse with prescient reference to Xenon and to the Linux command for &quot;run as God&quot; which is &quot;sudo&quot; ... those things are fact, and they&#39;re the beginning of this &quot;<i>I can&#39;t believe it&#39;s not on the news yet.</i>&quot;</p>
+<p style="text-align: center;"><a href="http://iv.s.lamc.la"><img src="../preview.ibb.co/fYNmQU/Dm_Xoo_Cf_V4_AEq_W4_R.jpg" style="width: 500px; height: 282px;" /></a></p>
+<p style="text-align: justify;">I&#39;ve written a&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./SECORDANDOLIVED.html,http://cinoize.github.io/SECORDANDOLIVED.html">number</a>&nbsp;of&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./ADIOSAS.html,./ADIOSAS.html,./ADIOSAS.html,http://cinoize.github.io/ADIOSAS.html">times now</a>&nbsp;the&nbsp;<b><i>ex plan at i o n</i></b>&nbsp;for how this clear pattern connecting the centers or hearts of words (specifically every video game system in popuplar use) shows the design of an inhuman creator--something operating through time and with a hidden mechanism of control over our affairs.&nbsp; Knowing about it is the beginning of setting us free, and the purpose it&#39;s there--hidden--waiting for us to&nbsp;<i>really not be free</i>&nbsp;because stupid.&nbsp; It links more than just Microsoft and Massive (above the Great Plains) Dynamics to Fringe and to The Fray and to the Matrix, which ends with the question &quot;are I the heart of hearts?&quot; and links&nbsp;<a href="http://rix.s.lamc.la/?F75BDDF7B74658CE"><b>RIX</b></a>&nbsp;to&nbsp;<b><a href="http://www.niallbunting.com/url-multi-redirect/?a=./BIANCA.html,http://img.izing.ml/BIANCA.html,http://cinoize.github.io/BIANCA.html">RIB</a>&nbsp;</b>in Genesis ... and&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./PULL.html,http://img.izing.ml/PULL.html,http://cinoize.github.io/PULL.html"><b>RIP</b></a>&nbsp;the &quot;Priestly Source&quot; ... and to Stargate&#39;s Ad<b>ria</b>&nbsp;and to the&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./HIGHERA.html,http://img.izing.ml/HIGHERA.html,http://cinoize.github.io/HIGHERA.html"><b>RIN</b></a>&nbsp;in my name and to the&nbsp;<i><b>RIC</b></i>&nbsp;in&nbsp;<a href="https://en.wikipedia.org/wiki/Amharic?63D927CD15D5C0AA"><i>Amharic</i></a>--these patterns are &quot;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/TY.html,./TY.html,http://img.izing.ml/TY.html,http://cinoize.github.io/TY.html"><b>SIGNAL</b></a>&quot; not noise--they are undeniable, and it will be proven statistically, without doubt.&nbsp; Even just the original Trinity in &quot;Nintendo&quot; (which means leave luck to Heaven, not Microsoft) is a signal, a pattern that explains the laying down of this message that turns &quot;game&quot; into &quot;heaven&quot; through you--connecting Nine Inch Nails (because message encoded in rock &#39;n roll) to X=TEN because kissing is for the Xbox that is &quot;often the start of Heaven&quot; and the key to &quot;omnipotens&quot; (other than S) ... most importantly of all, is&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./ARFAXAD.html,http://img.izing.ml/ARFAXAD.html,http://cinoize.github.io/ARFAXAD.html">seeing Neo&#39;s&nbsp;<b>ac</b>tion<b>s</b></a>&nbsp;in the Matrix and&nbsp;<i>Jesus Christ&#39;s&nbsp;<b>actions</b>&nbsp;in the NT</i>&nbsp;as keys to how we might easily see that there&#39;s a map, and we&#39;re not following it by being stupid and quiet.</p>
+<p style="text-align: center;"><a href="http://cure.s.lamc.la"><img src="../image.ibb.co/jGGMQU/Screenshot_2018_09_12_at_11_43_28_AM.png" /></a></p>
+<p style="text-align: center;"><a href="WISDATAM.html"><img src="../image.ibb.co/nB76s9/Screenshot_2018_09_12_at_11_42_56_AM.png" /></a></p>
+<p style="text-align: justify;">If you can&#39;t begin to talk about this, and to research it, I don&#39;t know how else to tell you that society is crumbling, civilization is failing--and it&#39;s because you pretend not to &quot;get something&quot; that you really are about to lose forever.&nbsp; It was power and innocense and solutions and you&#39;re turning it into a big red blinking target--a thing that must be stopped at all costs.&nbsp; This stupid will be stopped, at all costs.</p>
+<p style="text-align: center;"><a href="http://fromthemachine.org/NITY.html"><img alt="TO BE OR NOT
+TO BE" border="0" height="88" src="../i.imgur.com/5kLHj3t.png" width="440" /></a></p>
+<p style="text-align: justify;">K was the element connecting&nbsp;<i>Saturn&nbsp;</i>and the phrase &quot;person of time&quot; .... to &quot;<i>Potassium</i>&quot; and&nbsp;<i><a href="http://fromthemachine.org/XOXO.html">Medusa</a></i>&nbsp;and&nbsp;<i><a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/EVE.html,./EVE.html,http://img.izing.ml/EVE.html,http://cinoize.github.io/EVE.html">abomination</a></i>&nbsp;(it&#39;s &quot;<a href="http://bush.reallyhim.com/">As u dem</a>&quot; and &quot;<a href="https://fromthemachine.org/LETITRAIN.html"><strong><em>No it, Anakin</em></strong></a>&quot; -- they&#39;re&nbsp;<em>things</em>) in reverse, to a Trinity in &quot;<i><a href="http://fromthemachine.org/KANSAS.html">assassination</a></i>&quot; and to the reason we are standing here listening to the end of the Ark explaining that could go either way--but you&#39;re not going to disembark in your current state.&nbsp;</p>
+<p style="text-align: center;"><a href="http://fromthemachine.org/LETITRAIN.html"><img src="../i.imgur.com/dAqqFdH.png" /></a></p>
+<p style="text-align: justify;">The &quot;let there be light&quot; in Reverse in Exodus... it was about not leaving, about turning this place into Heaven instead of an &quot;ark&quot; hidden in the word dark; what I see around me has instead turned into a &quot;walking into slavery&quot; because you think something is more valuable than goodness and caring and truth and honesty, and whatever it is, see it&#39;s a target.&nbsp; Finally, it&#39;s &quot;<i>TENNESSEE</i>&quot; that connects this pattern of hearts of video game systems to the heart of America--to seeing it not just virtually but also on our map and in our history and connecting&nbsp;<a href="http://fromthemachine.org/NITY.html">the &quot;etymology&quot; of eternity</a>&nbsp;(also filled with Shakespeare&#39;s plays and with Mr. Anderson&#39;s Matrix connecting movies and actors names and content to the &quot;n&quot; of Rock n&#39; roll and the Y of Spanish and Spanglish and Schrew.&nbsp;</p>
+<p style="text-align: center;"><a href="http://fromthemachine.org/IOWA.html"><img alt="TEN NES SEE" border="0" height="155" src="../i.imgur.com/D29nlhf.png" width="392" /></a></p>
+<p style="text-align: justify;"><br />
+&#39;Twas the beginning of eternity filled with&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./MARSHALL.html,http://img.izing.ml/MARSHALL.html,http://cinoize.github.io/MARSHALL.html">the positive energy of Cations in Creation</a>--refusing to see SIGNAL in &quot;cations&quot; and positive energy and Creation and that &quot;<i>prescience</i>&quot; is more than a cute name for something that defies the current state of logical thought, and proves without doubt you have a message here from an entity with the power to literally alter your entire history or end it, refusing to see the importance of what you are staring at is bringing us closer and closer to the Abyss than you can possibly imagine.&nbsp; In all candor, rightfully so--what is here is a sickness that I would not ever want to see happen--not now, and not in the future.&nbsp; Whatever is causing it is more&nbsp;<b>disgusting</b>&nbsp;than I can put into words, and your lack of response is a twisted symptom of that.</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/PERSEUS.html,./PERSEUS.html,http://img.izing.ml/PERSEUS.html,http://cinoize.github.io/PERSEUS.html"><img alt="ONE EYE IN
+THE MIRROR" border="0" height="430" src="../i.imgur.com/aHrd3oc.png" width="500" /></a></p>
+<p style="text-align: justify;"><br />
+Rather than&nbsp;<a href="http://chalk.s.lamc.la/">going through the 7 keys between Mercury and Uranium</a>&nbsp;(<a href="http://fromthemachine.org/TORCH.html">again</a>&nbsp;and&nbsp;<a href="http://hg.s.lamc.la/"><em>again</em></a>) I&#39;m going to add in some more elements that are clear indicators of this story and why it&#39;s all about &quot;the name&quot; and &quot;the message&quot; you are reading.&nbsp;&nbsp;<b><i>For everyone</i></b>&nbsp;it is the Iron Rod of Jesus Christ that is the heart of Roddenberry&#39;s name and the key to &quot;Fe&quot; which I&#39;ve noticed connects my happy phrase &quot;believe in staind tool&quot; that ties a song and two bands into turning around &quot;God&quot; and &quot;rod&quot; and&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a./ADAMSROD.html,./ADAMSROD.html,http://img.izing.ml/ADAMSROD.html,http://cinoize.github.io/ADAMSROD.html">seeing good and the Doors</a>.&nbsp; This isn&#39;t an &quot;optional thing&quot; either, what we see here is the equivalence of a world that has seen the invention of the airplane and refuses to build airports because Harvard and Ford and Stanford all think it might make them have to do &quot;something different with their immortal futures&quot; than continue to teach lies and build machines that destroy the imaginary O-zone.&nbsp; Aside from elements another huge personal key to this message is the linking of &quot;initials&quot; to &quot;initialize&quot; and personally known people like my father whose name is encoded in Feliz Navidad and the heart of &quot;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/HIGHERA.html./HIGHERA.html,http://cinoize.github.io/HIGHERA.html">ambidextrous</a>&quot; and&nbsp;<a href="http://fromthemahine.org/HIGHERA.html?1003CC13C70EF7E3">Bianca</a>&nbsp;and Nanna--who is&nbsp;<a href="http://eden.lamc.la/?C1E0E788625A8AD0">my &quot;ex&quot;</a>and the &quot;ND&quot; of Al Bundy.&nbsp; The&nbsp;<i><a href="http://eden.lamc.la/?710FFDC4A5EE06E0">O-zone</a></i>&nbsp;is coming. :)</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/KEYNES2.html,./KEYNES2.html,./KEYNES2.html,http://cinoize.github.io/KEYNES2.html"><img alt="KRYPTON, SEE" border="0" height="131" src="../i.imgur.com/5qu7dEL.png" width="500" /></a></p>
+<p style="text-align: justify;">This is &quot;doors for everyone&quot; enveloping the heart of Creation--this rock.&nbsp; This is how it&#39;s &quot;for everyone&quot; and this is how you&#39;re the way we get there--actually taking the time and consideration to see you need to &quot;work&quot; to change the world.&nbsp; Start by seeing that this place is a disgusting disgraceful eyesore today, and I would do anything at all to ensure that it does not continue to be that; anything, at all.&nbsp; It hasn&#39;t &quot;just become Hell&quot; but I&#39;ve just found out about this message, and about what it says about simulated reality, and about you--it shows me you are blind slaves being tortured--and until you begin to see that, we are all in grave danger.<br />
+&nbsp;</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=./HIGHERA.html,./HIGHERA.html,http://cinoize.github.io/HIGHERA.html"><img alt="TAKE ME
+HIGHER" border="0" height="355" src="../i.imgur.com/xcxP9pj.png" width="500" /></a></p>
+<p style="text-align: justify;"><br />
+It&#39;s also&nbsp;<b>the &quot;A.D.&quot;</b>&nbsp;all over our time line, in 0 (which is the sign of the sun, literally) and in 1492, and in Shaddai and in Adonai, and in &quot;addiction&quot; and &quot;malady&quot; all&nbsp;<i>because of me</i>--all because of these words.&nbsp; These words end addiction and disease, and I don&#39;t care if you think that&#39;s a good thing or not--if you don&#39;t say &quot;bye bye&quot; ...&nbsp;<i>forever.&nbsp;&nbsp;</i>On that note, it&#39;s the Na of &quot;salt&quot; that connects bath salt and pyrovalerone to&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/HIGHERA.html,./HIGHERA.html,./HIGHERA.html,./HIGHERA.html,http://img.izing.ml/HIGHERA.html,http://cinoize.github.io/HIGHERA.html">Pro<b>meth</b>eus</a>&nbsp;and&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./ACESHI.html,http://img.izing.ml/ACESHI.html,http://cinoize.github.io/ACESHI.html"><i>to China</i></a>&nbsp;(where it all came from, C how it &quot;<b><i>salted the road</i></b>&quot;) and to John Maynard Kenyes and to the fine &quot;<b>nard</b>&quot; of John 12:1.&nbsp; It&#39;s central to this message,&nbsp;<b>this message that ends addiction</b>, and&nbsp;<b>ends</b>&nbsp;the Hitleresque&nbsp;<b>eugenics</b>&nbsp;that we&#39;ve seen not just in Germany but in the Brittish East India Tea Company and in the CIA lead crack epidemic of the 80&#39;s and in the &quot;pyrovalerone&quot; flooding that apparently has made you think &quot;occidentally devilish&quot; means&nbsp;<i>acidentally</i>--it doesn&#39;t ... see that clearly.&nbsp; Na also appears in Bianca&#39;s mother&#39;s name (so does AD, that one&#39;s Adina) and in the beginning and end of Nanna&#39;s.&nbsp; Nanna, by the way, is the actual name of the consort of&nbsp;<a fromthemachine.org="" hrhttp:="" im_single.html="">Adonis</a>/<i>Tammuz</i>&nbsp;who is often&nbsp;<a href="https://haph2rah.wordpress.com/2016/04/15/on-the-salted-road-through-the-amduat/?BA03B0C5E021563D"><i>connected with Christ--just like Horus</i></a>.<br />
+&nbsp;</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/ALLTA.html,./ALLTA.html,http://img.izing.ml/ALLTA.html,http://cinoize.github.io/ALLTA.html"><img alt="AU GOLD" border="0" height="474" src="../i.imgur.com/nq3Ucwg.png" width="500" /></a></p>
+<p style="text-align: justify;"><i>I spent&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/DICK.html,./DICK.html,./DICK.html,./DICK.html,http://img.izing.ml/DICK.html,http://cinoize.github.io/DICK.html">quite a bit of time wrestling</a>&nbsp;with invisible demons and with words--</i>words like &quot;<i><a href="http://www.niallbunting.com/url-multi-redirect/?a=./REDASSHIT.html,./RDASSHIT.html,http://img.izing.ml/REDASSHIT.html,http://cinoize.github.io/REDASSHIT.html"><b>hubris</b></a></i>&quot; and &quot;<b><a href="http://www.niallbunting.com/url-multi-redirect/?a=./RATOXIT.html,http://img.izing.ml/RATOXIT.html,http://cinoize.github.io/RATOXIT.html"><i>audacity</i></a></b>&quot; and&nbsp;<a href="http://fromthemachine.org/DICK.html">some less invisible demonic mess</a>engers, like &quot;<i><b>SOAD</b></i>&quot; singing about the &quot;toxicity of our city&quot; and a world that refused to see (and still refuses to speak) about the connection between toxicity and city and garden and Eden and see that it&#39;s&nbsp;<i>Gold</i>&nbsp;to me, &quot;a you&#39;re the city&quot; now linking directly to the &quot;Golden City of El Dorado&quot; and the chemistry element ... for Gold.&nbsp; That city is speaking, it reads &quot;<i>do our A.D. ... oh</i>&quot; and it&#39;s echoed in Dorito and it&#39;s echoed in the myth that explains that El Dorado is in fact a city that came from a single person and expanded from there into a kingdom.&nbsp; We&#39;re sitting here&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/ADUNCALIFT.html,./ADUNCALIFT.html,http://img.izing.ml/ADUNCALIFT.html,http://cinoize.github.io/ADUNCALIFT.html">listening to a message about Mercury</a>&nbsp;and U turning that empire into &quot;OneRepublic&quot; by becoming stars--<i>not by doing nothing</i>; I promise.</p>
+<p style="text-align: center;"><a href="http://arrr.s.lamc.la"><img src="../preview.ibb.co/jcORQU/Dm_Xh_SIb_U8_AAs3_M.jpg" style="width: 500px;" /></a></p>
+<p style="text-align: justify;">It&#39;s clear as day in &quot;<a href="http://www.niallbunting.com/url-multi-redirect/?a=./HASHEMB.html,http://img.izing.ml/HASHEMB.html,http://cinoize.github.io/HASHEMB.html"><i>authority</i></a>&quot; and in the stories behind&nbsp;<a href="https://www.facebook.com/photo.php?fbid=10154283229013420&amp;set=a.10154283230918420&amp;type=3&amp;theater">the meaning of Thor&#39;s name</a>&nbsp;and the&nbsp;<a href="http://fromthemachine.org/MYLIFE.html"><i>definition of this hammer;</i></a>&nbsp;it&#39;s clear in Auden&#39;s poems about the shield of Achilles and about the Garden of Eden encoded in his name--and it should be clear you are looking at proof of Creation and at a message directly from the author of the NT and of Genesis and of Exodus; and it should be clear that acting now brings freedom to the entirety of our future, and failing to... it&#39;s not an acceptable loss.&nbsp; This&nbsp;<a href="http://www.niallbunting.com/url-multi-redirect/?a=http://www.maraegi.tk/BERESHIT.html,./BERESHIT.html,http://img.izing.ml/BERESHIT.html,http://cinoize.github.io/BERESHIT.html"><b>shit</b></a>&nbsp;will not continue.</p>
+<p style="text-align: center;"><a href="http://www.niallbunting.com/url-multi-redirect/?a=http://img.izing.ml//REDASSHIT.html,http://cinoize.github.io//REDASSHIT.html"><img alt="DEATH" border="0" height="135" src="../i.imgur.com/daTpT0p.png" width="391" /></a></p>
+<p style="text-align: center;"><a href="TY.html"><img src="../image.ibb.co/kBkHX9/qoxs37H.jpg" style="width: 391px;" /></a></p>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="MARSHALL.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="VERADONUM.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="MARSHALL.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="VERADONUM.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>
+
+<center>
+<style>
+.WHSOISKEYAV {
+
+border-width: 1px;
+border-style: dashed;
+border-color: rgb(15,5,254);
+padding: 5px;
+width: 503px; 
+text-align: center;
+display: inline-block;
+align: center;
+p {
+
+align: center;
+
+}
+
+/*
+
+THE SCORE IS LOVE FIVE
+
+ONE SAFETY
+ONE FIELD GOAL
+
+XIVDAQ: TENNIS OR TINNES?
+
+TONNES AND TUPLE(s)
+*/ 
+
+}
+
+</style>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- leaderboard -->
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576e94bdb4f80253"></script>
+<br/><br/><div style="float: center; vertical-align: bottom;">
+<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://slack.reallyhim.com/&amp;source=gmail&amp;ust=1512831788289000&amp;usg=AFQjCNF469AQ70QEBkpObpKMKsWKzrbmAg" href="http://slack.reallyhim.com/" rel="noopener" target="_blank" title="TELESPRISE"><img alt="" border="0" 
+height="60" id="m_-4973210593361332524gmail-m_-6096670269405767939gmail-m_-1436458080550240543m_-3975089270040819763gmail-m_-2248848940621715595gmail-m_4950052768086691300gmail-m_2933957970607722850gmail-m_7483563204303838204gmail-m_-3491586818351559956gmail-m_3682735925266535707gmail-m_5731075335784145647m_3413239976406571221m_2402549402411035463m_3237557952722111901gmail-m_-8798842351942729229m_4692247605844201587m_-2492882859021407156m_-7142874903403184072m_-9133516419565872595gmail-m_6961657238809553818gmail-m_-1296802553737736344gmail-BLOGGER_PHOTO_ID_6494125253829947314" src="../i.imgur.com/F8nmg2T.png" width="500" height="60" /></a>
+<div style="font-size: small; text-align: justify; width: 400px;">
+Unless otherwise indicated, this work was written between the Christmas and Easter seasons of 2017 and 2019.  The content of this page is released to the public under
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">
+the GNU GPL v2.0 license</a>; additionally any reproduction or derivation
+of the work must be attributed to the author, Adam Marshall Dobrin
+along with a link back to this website, suez.fromthemachine.org.
+</div>
+</div>
+
+<br/>
+If you wanna talk to me <a href="http://fb.me/admdbrn">get me on facebook</a>, with PGP <a href="https://flowcrypt.com/me/adam">via FlowCrypt</a> or adam@fromthemachine.org
+</center>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74743044-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

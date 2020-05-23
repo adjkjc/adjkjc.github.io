@@ -1,0 +1,1710 @@
+	<!DOCTYPE html>
+
+	<html lang="en-US" class="no-js">
+
+	<head>
+
+		<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"06ce85f426",applicationID:"566468725"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>The official website of the Nobel Prize - NobelPrize.org</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v11.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.nobelprize.org/" />
+<meta property="og:site_name" content="NobelPrize.org" />
+<meta name="twitter:card" content="summary_large_image" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.nobelprize.org/#website","url":"https://www.nobelprize.org/","name":"NobelPrize.org","potentialAction":{"@type":"SearchAction","target":"https://www.nobelprize.org/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.nobelprize.org/#webpage","url":"https://www.nobelprize.org/","inLanguage":"en-US","name":"The official website of the Nobel Prize - NobelPrize.org","isPartOf":{"@id":"https://www.nobelprize.org/#website"},"datePublished":"2020-05-04T12:19:41+00:00","dateModified":"2020-05-20T14:10:20+00:00"}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='index.html' />
+<link rel='stylesheet' id='tribe-common-skeleton-style-css'  href='https://www.nobelprize.org/wp-content/plugins/the-events-calendar/common/src/resources/css/common-skeleton.min.css?ver=4.11.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tribe-tooltip-css'  href='https://www.nobelprize.org/wp-content/plugins/the-events-calendar/common/src/resources/css/tooltip.min.css?ver=4.11.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.nobelprize.org/wp-includes/css/dist/block-library/style.min.css?ver=5.2.6' type='text/css' media='all' />
+<link rel='stylesheet' id='nobel-css'  href='https://www.nobelprize.org/wp-content/themes/nobelprize/dist/css/style.0.2.6.min.css?ver=0.2.6' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var fallback = {"path":"https:\/\/www.nobelprize.org\/wp-content\/themes\/nobelprize\/assets\/js\/frontend\/lib\/respimg\/ls.respimg.min.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/loadjs.js?ver=0.2.6'></script>
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://www.nobelprize.org"><link rel="https://theeventscalendar.com/" href="https://www.nobelprize.org/wp-json/tribe/events/v1/" /><link type="text/plain" rel="author" href="https://www.nobelprize.org/wp-content/themes/nobelprize/humans.txt" />		<script>
+		window.VIDEOJS_NO_BASE_THEME = true;
+		window.VIDEOJS_NO_DYNAMIC_STYLE = true;
+		</script>
+				<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-WDHZ8W5');</script>
+		<!-- End Google Tag Manager -->
+				<!-- Hotjar Tracking Code for https://www.nobelprize.org/ -->
+		<script>
+			(function(h,o,t,j,a,r){
+				h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+				h._hjSettings={hjid:1004842,hjsv:6};
+				a=o.getElementsByTagName('head')[0];
+				r=o.createElement('script');r.async=1;
+				r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+				a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
+		
+		<!-- //start Title specific social meta tags -->
+		<meta name="twitter:title" content="The official website of the Nobel Prize - NobelPrize.org"><!-- Twitter -->
+		<meta itemprop="name" content="The official website of the Nobel Prize - NobelPrize.org" /><!-- Google+ -->
+		<meta property="og:title" content="The official website of the Nobel Prize - NobelPrize.org" /><!-- OG -->
+		<!-- //end Title specific social meta tags -->
+
+		
+		<!-- //start Image specific social meta tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:image" content="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize-496x328.jpg" /><!-- Twitter -->
+		<meta itemprop="image" content="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize-496x328.jpg" /><!-- Google+ -->
+
+					<meta property="og:image" content="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize-496x328.jpg" /><!-- OG -->
+				<!-- //end Image specific social meta tags -->
+
+				<meta property="og:url" content="https://www.nobelprize.org/" /><!-- OG -->
+		<link rel="icon" href="https://www.nobelprize.org/uploads/2018/08/Nobel-favicon-50x50.png" sizes="32x32" />
+<link rel="icon" href="https://www.nobelprize.org/uploads/2018/08/Nobel-favicon-232x232.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.nobelprize.org/uploads/2018/08/Nobel-favicon-188x188.png" />
+<meta name="msapplication-TileImage" content="https://www.nobelprize.org/uploads/2018/08/Nobel-favicon.png" />
+
+	</head>
+
+	<body class="home page-template-default page page-id-159027 tribe-no-js">
+
+				<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDHZ8W5"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+
+		<a class="skip-link screen-reader-text" href="index.html#content">
+			Skip to content		</a>
+
+		<header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+
+			<div class="site-banner" itemscope itemtype="http://schema.org/Organization">
+
+				<div class="mobile-search">
+
+					<a href="index.html#" id="search-mobile-trigger-js">
+						<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="search-mobile-title search-mobile-description">
+	<title id="search-mobile-title">Close the search form</title>
+	<desc id="search-mobile-description">A button that allows you to close the search form if needed</desc>
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-1132.000000, -18.000000)">
+			<g id="mobile-search-icon" transform="translate(1132.000000, 18.000000)">
+				<rect fill="#2A2A2A" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) " x="15" y="12" width="2" height="8"></rect>
+				<circle stroke="#2A2A2A" stroke-width="2" cx="8" cy="8" r="7"></circle>
+			</g>
+		</g>
+	</g>
+</svg>
+					</a>
+
+					<!-- Note: Exists only to close the mobile navigation when JS is disabled -->
+					<noscript>
+						<a id="mobile-close-js" class="toggle-close" href="index.html#">
+							<span>Close Mobile Menu</span>
+						</a>
+					</noscript>
+
+				</div>
+
+				<div class="site-banner-logo" itemscope itemtype="http://schema.org/Organization">
+					<h1 class="site-logo" itemprop="logo">
+						<a itemprop="url" href="index.html" name="top">
+							<svg width="109px" height="86px" viewBox="0 0 109 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="logo-title logo-description">
+							    <title id="logo-title">The Nobel Prize</title>
+							    <desc id="logo-description">The Nobel Prize Logo</desc>
+							    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							        <g transform="translate(-586.000000, -21.000000)" fill="#BB8A35">
+							            <g id="The_Nobel_Prize_logotype" transform="translate(586.000000, 21.000000)">
+							                <path d="M16.6528099,62.0089676 L8.30051408,62.0089676 L8.30051408,85.946038 L11.4498099,85.946038 L11.4498099,74.5243901 L16.6528099,74.5243901 C20.8286549,74.5243901 23.7381197,72.0285732 23.7381197,68.2669817 C23.7381197,64.5053901 20.8286549,62.0089676 16.6528099,62.0089676 Z M16.6528099,71.6524746 L11.4498099,71.6524746 L11.4498099,64.8814887 L16.6528099,64.8814887 C19.0141761,64.8814887 20.5549085,66.0788268 20.5549085,68.2669817 C20.5549085,70.4551366 19.0141761,71.6524746 16.6528099,71.6524746 Z M42.3589366,85.946038 L46.1586831,85.946038 L37.4302887,74.4904746 C41.1270775,74.1482915 43.6253169,71.7548268 43.6253169,68.2669817 C43.6253169,64.5053901 40.7158521,62.0089676 36.540007,62.0089676 L28.1883169,62.0089676 L28.1883169,85.946038 L31.3376127,85.946038 L31.3376127,74.5243901 L33.7674155,74.5243901 L42.3589366,85.946038 Z M31.3376127,64.8814887 L36.540007,64.8814887 C38.9019789,64.8814887 40.4421056,66.0788268 40.4421056,68.2669817 C40.4421056,70.4551366 38.9019789,71.6524746 36.540007,71.6524746 L31.3376127,71.6524746 L31.3376127,64.8814887 Z M50.539838,85.946038 L53.6891338,85.946038 L53.6891338,62.0089676 L50.539838,62.0089676 L50.539838,85.946038 Z M58.6177817,85.946038 L76.930331,85.946038 L76.930331,83.0735169 L62.5883169,83.0735169 L76.5542324,64.3339958 L76.5542324,62.0089676 L59.9532042,62.0089676 L59.9532042,64.8814887 L72.4807394,64.8814887 L58.6177817,83.4496155 L58.6177817,85.946038 Z M85.0082746,83.0735169 L85.0082746,74.5243901 L95.1066127,74.5243901 L95.1066127,71.6524746 L85.0082746,71.6524746 L85.0082746,64.8814887 L95.8594155,64.8814887 L95.8594155,62.0089676 L81.8595845,62.0089676 L81.8595845,85.946038 L96.0302042,85.946038 L96.0302042,83.0735169 L85.0082746,83.0735169 Z" id="Prize"></path>
+							                <path d="M16.4987366,31.0045141 L16.4987366,49.059669 L2.46438451,31.0045141 L6.05633803e-05,31.0045141 L6.05633803e-05,54.9415845 L3.08091972,54.9415845 L3.08091972,36.4073732 L17.3884127,54.9415845 L19.5795958,54.9415845 L19.5795958,31.0045141 L16.4987366,31.0045141 Z M36.5567225,55.4545563 C43.4367225,55.4545563 49.0848634,49.8809085 49.0848634,42.9730493 C49.0848634,36.0651901 43.4367225,30.4915423 36.5567225,30.4915423 C29.6767225,30.4915423 24.0291873,36.0651901 24.0291873,42.9730493 C24.0291873,49.8809085 29.6767225,55.4545563 36.5567225,55.4545563 Z M36.5567225,52.445162 C31.4566803,52.445162 27.2463141,48.2051197 27.2463141,42.9730493 C27.2463141,37.7409789 31.4566803,33.5009366 36.5567225,33.5009366 C41.6573704,33.5009366 45.867131,37.7409789 45.867131,42.9730493 C45.867131,48.2051197 41.6573704,52.445162 36.5567225,52.445162 Z M65.069962,41.8447535 C67.0891451,40.8872465 68.2870887,39.0745845 68.2870887,36.7495563 C68.2870887,33.192669 65.5490183,31.0045141 61.1333423,31.0045141 L53.5344549,31.0045141 L53.5344549,54.9415845 L61.8861451,54.9415845 C66.3363423,54.9415845 69.3826803,52.0351479 69.3826803,47.7951056 C69.3826803,44.9219789 67.7056803,42.8016549 65.069962,41.8447535 Z M61.0649056,33.8085986 C63.3923563,33.8085986 65.1383986,34.8684577 65.1383986,37.0911338 C65.1383986,39.3138099 63.2900042,40.6819366 61.0649056,40.6819366 L56.6837507,40.6819366 L56.6837507,33.8085986 L61.0649056,33.8085986 Z M61.7153563,52.1381056 L56.6837507,52.1381056 L56.6837507,43.4860211 L61.7153563,43.4860211 C64.1457648,43.4860211 66.2333845,45.1272887 66.2333845,47.8290211 C66.2333845,50.5301479 64.1457648,52.1381056 61.7153563,52.1381056 Z M77.4945394,52.0690634 L77.4945394,43.5199366 L87.5922718,43.5199366 L87.5922718,40.6474155 L77.4945394,40.6474155 L77.4945394,33.8770352 L88.3456803,33.8770352 L88.3456803,31.0045141 L74.3458493,31.0045141 L74.3458493,54.9415845 L88.516469,54.9415845 L88.516469,52.0690634 L77.4945394,52.0690634 Z M97.4846944,52.0690634 L97.4846944,31.0045141 L94.3353986,31.0045141 L94.3353986,54.9415845 L108.335835,54.9415845 L108.335835,52.0690634 L97.4846944,52.0690634 Z" id="Nobel"></path>
+							                <path d="M66.8837141,0.000121126761 L66.8837141,23.9371915 L81.0549394,23.9371915 L81.0549394,21.0646704 L70.0330099,21.0646704 L70.0330099,12.5161493 L80.1307423,12.5161493 L80.1307423,9.64302254 L70.0330099,9.64302254 L70.0330099,2.87264225 L80.8841507,2.87264225 L80.8841507,0.000121126761 L66.8837141,0.000121126761 Z M58.2582775,0.000121126761 L58.2582775,9.64302254 L45.0457704,9.64302254 L45.0457704,0.000121126761 L41.8964746,0.000121126761 L41.8964746,23.9371915 L45.0457704,23.9371915 L45.0457704,12.5161493 L58.2582775,12.5161493 L58.2582775,23.9371915 L61.4075732,23.9371915 L61.4075732,0.000121126761 L58.2582775,0.000121126761 Z M21.2219535,0.000121126761 L21.2219535,2.87264225 L27.9311648,2.87264225 L27.9311648,23.9371915 L31.0804606,23.9371915 L31.0804606,2.87264225 L37.7890662,2.87264225 L37.7890662,0.000121126761 L21.2219535,0.000121126761 Z" id="The"></path>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</a>
+					</h1>
+				</div>
+
+				<div class="mobile-nav">
+
+					<a id="mobile-nav-js" href="index.html#main-navigation-js" class="toggle">
+						<span>
+							Toggle Mobile Menu						</span>
+					</a>
+
+				</div>
+
+			</div>
+
+			<nav id="main-navigation-js" class="site-main-navigation container" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement"
+			aria-label="Main menu" aria-expanded="false">
+
+				<ul id="menu-header_top" class="main-menu" role="menu"><li id="menu-item-28259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28259" role="menuitem"><a href="https://www.nobelprize.org/prizes/">Nobel Prizes &amp; Laureates</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-48853" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48853" role="menuitem"><a href="https://www.nobelprize.org/prizes/physics/">Physics Prize</a></li>
+	<li id="menu-item-48854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48854" role="menuitem"><a href="https://www.nobelprize.org/prizes/chemistry/">Chemistry Prize</a></li>
+	<li id="menu-item-48855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48855" role="menuitem"><a href="https://www.nobelprize.org/prizes/medicine/">Medicine Prize</a></li>
+	<li id="menu-item-48856" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48856" role="menuitem"><a href="https://www.nobelprize.org/prizes/literature/">Literature Prize</a></li>
+	<li id="menu-item-48857" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48857" role="menuitem"><a href="https://www.nobelprize.org/prizes/peace/">Peace Prize</a></li>
+	<li id="menu-item-48858" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48858" role="menuitem"><a href="https://www.nobelprize.org/prizes/economics/">Prize in Economic Sciences</a></li>
+	<li id="menu-item-54140" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-54140" role="menuitem"><a href="https://www.nobelprize.org/prizes/facts/nobel-prize-facts/">Quick facts</a></li>
+</ul>
+</li>
+<li id="menu-item-28260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28260" role="menuitem"><a href="https://www.nobelprize.org/nomination/">Nomination</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-43405" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43405" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-physics-laureates/">Physics Prize</a></li>
+	<li id="menu-item-43408" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43408" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-chemistry-laureates/">Chemistry Prize</a></li>
+	<li id="menu-item-43407" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43407" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-medicine-laureates/">Medicine Prize</a></li>
+	<li id="menu-item-43409" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43409" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-literature-laureates/">Literature Prize</a></li>
+	<li id="menu-item-43406" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43406" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-peace-prize-laureates/">Peace Prize</a></li>
+	<li id="menu-item-43410" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43410" role="menuitem"><a href="https://www.nobelprize.org/nomination/nomination-and-selection-of-laureates-in-economic-sciences/">Prize in Economic Sciences</a></li>
+	<li id="menu-item-49690" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-49690" role="menuitem"><a href="https://www.nobelprize.org/nomination/archive/">Nomination Archive</a></li>
+</ul>
+</li>
+<li id="menu-item-28261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28261" role="menuitem"><a href="https://www.nobelprize.org/alfred-nobel/">Alfred Nobel</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-43411" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43411" role="menuitem"><a href="https://www.nobelprize.org/alfred-nobel/biographical-information/">Alfred Nobel&rsquo;s life</a></li>
+	<li id="menu-item-43412" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-43412" role="menuitem"><a href="https://www.nobelprize.org/alfred-nobel/alfred-nobels-will/">Alfred Nobel&rsquo;s will</a></li>
+</ul>
+</li>
+<li id="menu-item-28262" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28262" role="menuitem"><a href="https://www.nobelprize.org/news-and-insights/">News &amp; insights</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-61852" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61852" role="menuitem"><a href="https://www.nobelprize.org/press-room/">Press</a></li>
+	<li id="menu-item-61851" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-61851" role="menuitem"><a href="https://www.nobelprize.org/in-depth/">In-depth</a></li>
+</ul>
+</li>
+<li id="menu-item-28263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28263" role="menuitem"><a href="https://www.nobelprize.org/events/">Events</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-43676" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-43676" role="menuitem"><a href="https://www.nobelprize.org/public-events/">Public events</a>
+	<ul class="sub-menu" role="menu" aria-hidden="true">
+		<li id="menu-item-50085" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50085" role="menuitem"><a href="https://www.nobelprize.org/nobel-week-dialogue/">Nobel Week Dialogue</a></li>
+		<li id="menu-item-50086" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50086" role="menuitem"><a href="https://www.nobelprize.org/nobel-prize-dialogue/">Nobel Prize Dialogue</a></li>
+		<li id="menu-item-50087" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50087" role="menuitem"><a href="https://www.nobelprize.org/events/nobel-prize-summit/washington-2020/">Nobel Prize Summit</a></li>
+		<li id="menu-item-50088" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50088" role="menuitem"><a href="https://www.nobelprize.org/nobel-prize-inspiration-initiative/">Nobel Prize Inspiration Initiative</a></li>
+	</ul>
+</li>
+	<li id="menu-item-43675" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-43675" role="menuitem"><a href="https://www.nobelprize.org/nobel-prize-award-ceremonies/">Nobel Prize award ceremonies</a></li>
+</ul>
+</li>
+<li id="menu-item-28264" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-28264" role="menuitem"><a href="https://www.nobelprize.org/education-network/">Education network</a>
+<ul class="sub-menu" role="menu" aria-hidden="true">
+	<li id="menu-item-39722" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39722" role="menuitem"><a href="https://www.nobelprize.org/education-network-nobel-prize-lessons/">Nobel Prize Lessons</a></li>
+	<li id="menu-item-39718" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-39718" role="menuitem"><a href="https://www.nobelprize.org/education-network-nobel-prize-teacher-summit/">Nobel Prize Teacher Summit</a></li>
+</ul>
+</li>
+		<li role="menuitem" class="searchform">
+			<a href="javascript:void(0);" id="search-trigger-js">
+				
+<svg width="20px" height="20px" viewbox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="desktop-search-title desktop-search-description">
+	<title id="desktop-search-title">Close the search form</title>
+	<desc id="desktop-search-description">A button that allows you to close the search form if needed</desc>
+	<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-1132.000000, -18.000000)">
+			<g transform="translate(1132.000000, 18.000000)">
+				<rect fill="#2A2A2A" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) " x="15" y="12" width="2" height="8"></rect>
+				<circle stroke="#2A2A2A" stroke-width="2" cx="8" cy="8" r="7"></circle>
+			</g>
+		</g>
+	</g>
+</svg>
+			</a>
+		</li>
+		</ul>
+
+			</nav>
+
+				<div class="header-search-form" aria-hidden="true">
+					<div class="container">
+						
+<form class="searchform -header" method="GET"
+	action="https://www.nobelprize.org/search/"
+	>
+
+	<label for="search-form-input-header" class="screen-reader-text">
+		Header Search	</label>
+
+	<input type="text" class="input" name="s" id="search-form-input-header" placeholder="Enter your search here"
+	value=""
+	>
+
+	<button type="submit">
+		<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="submit-search-title-header submit-search-description-header">
+			<title id="submit-search-title-header">Submit a search term</title>
+			<desc id="submit-search-description-header">Allows users to submit a search term</desc>
+			<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+				<g transform="translate(-1132.000000, -18.000000)">
+					<g transform="translate(1132.000000, 18.000000)">
+						<rect fill="#2A2A2A" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) "
+						x="15" y="12" width="2" height="8"></rect>
+						<circle stroke="#2A2A2A" stroke-width="2" cx="8" cy="8" r="7"></circle>
+					</g>
+				</g>
+			</g>
+		</svg>
+	</button>
+
+	</form>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+
+			
+
+		<main id="content" role="main" class="nobel-content">
+
+
+		
+	<section class="page-hero -centered ">
+		<picture  ><source data-srcset="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="New will" /><noscript><img src="https://www.nobelprize.org/uploads/2018/09/New-will-fullsize.jpg" alt="New will" /></noscript></picture>		
+	</section>
+
+<section class="oembed ">
+
+		<header class="section-header border-top">
+		<h3>Nobel Prize in Physics 1978</h3>
+	</header>
+
+	<div class="embed-container">
+					<div class="embed-container__wrapper">
+		
+							<div id="fb-root"></div><script async="1" defer="1" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v7.0"></script><div class="fb-post" data-href="https://www.facebook.com/nobelprize/posts/10157391469189103:0" data-width="750"><blockquote cite="https://www.facebook.com/nobelprize/posts/10157391469189103:0" class="fb-xfbml-parse-ignore"><p>How the Big Bang was mistaken for pigeon droppings.On 20 May 1964, the first measurements clearly showing the presence...</p>Posted by <a href="https://www.facebook.com/nobelprize/">Nobel Prize</a> on&nbsp;<a href="https://www.facebook.com/nobelprize/posts/10157391469189103:0">Wednesday, May 20, 2020</a></blockquote></div>			
+					</div>
+			</div>
+
+</section>
+<section class="article-grid var-half-width-a">
+
+		<header class="section-header border-top">
+		<h3>Watch the new documentary series</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-a">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/peace-prize-documentary-films/">
+								Five documentaries inspired by the Nobel Peace Prize							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>A team of female Yazidi deminers in Iraq attempting to clear their land of mines left behind by ISIS.  A team of scientists on an extraordinary mission in Mozambique to help better our understanding of climate change. A man building prosthetic legs to help victims of war walk again in South Sudan ... All are inspired by Nobel Peace Prize laureates.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/peace-prize-documentary-films/"><picture  ><source data-srcset="https://www.nobelprize.org/images/104080-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/104080-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/104080-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Into the fire - image" /><noscript><img src="https://www.nobelprize.org/images/104080-landscape-x-large.jpg" alt="Into the fire - image" /></noscript></picture></a>				</figure>
+			
+		</article>
+	</section>
+
+
+<section class="html-module">
+
+		<header class="section-header border-top">
+		<h3>Listen to Nobel Prize laureates</h3>
+	</header>
+
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe src="https://www.youtube.com/embed/RqhW_0H7kw8" frameborder='0' allowfullscreen width="100%"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+                        <iframe width="100%" height="285" src="https://www.youtube.com/embed/RqhW_0H7kw8" frameborder="0" allowfullscreen>
+                        </iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title"> 
+                                        <h2 class="headline h2" itemprop="headline">
+    Esther Duflo: "People live in very different circumstances "
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+
+In 2019 Esther Duflo was awarded the Prize in Economic Sciences for her work fighting poverty. She was the second woman and youngest person to do so. In this interview she talks about how to increase the number of female economists, how economics and sustainability correlate and how India became her second home.
+
+
+
+                        </p>
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+		
+	</div>
+
+</section>
+
+<section class="html-module">
+
+	
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe src="https://www.youtube.com/embed/n-WKofYuJGM" frameborder='0' allowfullscreen width="100%"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+                        <iframe width="100%" height="285" src="https://www.youtube.com/embed/n-WKofYuJGM" frameborder="0" allowfullscreen>
+                        </iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title"> 
+                                        <h2 class="headline h2" itemprop="headline">
+Olga Tokarczuk: "The characters are coming from outside to my story"
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+
+Olga Tokarczuk was awarded the 2018 Nobel Prize in Literature "for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life." In this interview she talks about her childhood, the road 
+to becoming a Nobel Prize-awarded author, her love of fairytales and the process of writing.
+
+
+
+
+                        </p>
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+		
+	</div>
+
+</section>
+
+<section class="html-module">
+
+		<header class="section-header border-top">
+		<h3>Laureates share their thoughts</h3>
+	</header>
+
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe src="https://www.youtube.com/embed/ckZfxzVT4bY" frameborder='0' allowfullscreen width="100%"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+                        <iframe width="100%" height="285" src="https://www.youtube.com/embed/ckZfxzVT4bY" frameborder="0" allowfullscreen>
+                        </iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title"> 
+                                        <h2 class="headline h2" itemprop="headline">
+     2019 Physics Laureates: Why I got into science
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+
+“I used to break apart stuff just to understand how it works”<br><br>
+James Peebles, Michel Mayor and Didier Queloz were awarded last year’s Nobel Prize in Physics for contributions to our understanding of the evolution of the universe and Earth’s place in the cosmos. Here they tell why they got into science.
+
+
+
+
+                        </p>
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+		
+	</div>
+
+</section>
+
+<section class="html-module">
+
+		<header class="section-header border-top">
+		<h3>Nobel Prize Conversations</h3>
+	</header>
+
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe width="100%" height="80" src="https://embed.acast.com/nobelprizeconversations" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+            <iframe width="100%" height="188" src="https://embed.acast.com/nobelprizeconversations/nobelprizeconversations-oliverhart" scrolling="no" frameborder="0" style="border:none;overflow:hidden;"></iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title">
+                                        <h2 class="headline h2" itemprop="headline">
+"You have to develop another way of thinking"
+                
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+In this conversation Oliver Hart explores the importance of words and language for a researcher, how being good at economics is about learning to THINK like an economist and how his parents influenced him to think that anyone who’s not left-wing is an idiot.
+
+<br><br>
+ 
+In 2016, <a href="https://www.nobelprize.org/prizes/economic-sciences/2016/hart/facts/">Oliver Hart </a> was awarded the Prize in Economic Sciences for his contribution to contract theory. 
+<br><br>
+<a href="https://www.nobelprize.org/nobel-prize-conversations/">More conversations</a>
+                        </p>
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+
+		
+	</div>
+
+</section>
+
+<section class="links">
+
+		<header class="section-header border-top">
+		<h3>Recently published</h3>
+	</header>
+
+	<ul class="linkset">
+					<li itemprop="name" class="border-top">
+				<p><a href="https://www.nobelprize.org/press/#/publication/5ea2c92279cc0b0004718b4f/552bd85dccc8e20c00e7f979?&amp;sh=false">The Nobel Foundation’s 2019 asset management and earnings</a></p>
+				</a>
+			</li>
+					<li itemprop="name" class="border-top">
+				<p><a href="https://www.nobelprize.org/uploads/2019/04/annual-review-2019.pdf" target="_blank" rel="noopener">The Nobel Foundation annual review 2019</a></p>
+				</a>
+			</li>
+					<li itemprop="name" class="border-top">
+				<p><a href="https://www.nobelprize.org/uploads/2019/04/annual-report-2019.pdf" target="_blank" rel="noopener">The Nobel Foundation annual report 2019</a></p>
+				</a>
+			</li>
+					<li itemprop="name" class="border-top">
+				<p><a href="https://www.nobelprize.org/prizes/about/prize-announcement-dates">Dates for the Nobel Prize announcements 2020</a></p>
+				</a>
+			</li>
+			</ul>
+</section>
+
+
+<section class="html-module">
+
+		<header class="section-header border-top">
+		<h3>50 years of Earth Day</h3>
+	</header>
+
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe src="https://www.youtube.com/embed/OnJ2EvoXrNY" frameborder='0' allowfullscreen width="100%"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+                        <iframe width="100%" height="285" src="https://youtu.be/OnJ2EvoXrNY" frameborder="0" allowfullscreen>
+                        </iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title">
+                                        <h3 class="headline h2" itemprop="headline">
+                                Sustainable courage
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+Greta Thunberg and Johan Rockström met for a digital conversation about courage, solidarity and opportunities in times of crisis, streamed from the Nobel Prize Museum in Stockholm on Earth Day, 22 April.<br><br>
+Greta Thunberg is a Swedish climate and environmental activist. Johan Rockström is professor of Earth Sciences and Director of the Potsdam Institute for Climate Impact Research in Germany.
+
+
+                        </p>
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+
+		
+	</div>
+
+</section>
+<section class="article-grid var-half-width-a">
+
+		<header class="section-header border-top">
+		<h3>Nobel Prize Concert 2020</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-a">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/nobel-prize-concert-2020/">
+								Pianist Igor Levit soloist at the Nobel Prize Concert							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The world-renowned pianist Igor Levit will be performing at this year's Nobel Prize Concert on 8 December. At his side, he will have conductor Stéphane Denève leading the Royal Stockholm Philharmonic Orchestra.</p>
+<p>Date for ticket release will be published later.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/nobel-prize-concert-2020/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2020/04/igor-levit-by-robbie-lawrence-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2020/04/igor-levit-by-robbie-lawrence.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2020/04/igor-levit-by-robbie-lawrence.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Igor Levit" /><noscript><img src="https://www.nobelprize.org/uploads/2020/04/igor-levit-by-robbie-lawrence-1000x676.jpg" alt="Igor Levit" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">Igor Levit</p> <p class="figcaption__attribution">Photo: Robbie Lawrence</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+
+<section class="html-module">
+
+	
+	<div class="html-module-container" style="overflow: inherit">
+
+		
+			<!--- Start 1+1 container -->
+<section class="article-grid var-half-width-b">
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper" style="min-width: 320px">
+
+<style>.my-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.my-embed-container iframe, .my-embed-container object, .my-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+<div class='my-embed-container'><iframe src="https://www.youtube.com/embed/7iFq6KMppSw" frameborder='0' allowfullscreen width="100%"></iframe></div>
+
+<!--
+                <div id="live-youtube-area" style="max-width:512px; max-height: 285px;">
+                        <iframe width="100%" height="285" src="https://youtu.be/7iFq6KMppSw" frameborder="0" allowfullscreen>
+                        </iframe>
+                </div>
+-->
+                </div>
+        </article>
+        <article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+                <div class="content-wrapper">
+
+                        <header class="content">
+                                <!-- <div class="subtitle">News</div> -->
+                                <div class="title">
+                                        <h2 class="headline h2" itemprop="headline">
+Women who changed science: Barbara McClintock 
+                                        </h2>
+                                </div>
+                        </header>
+
+                        <div class="text" style="margin-bottom: 0px;">
+                        <p>
+Throughout her career, Barbara McClintock studied the cytogenetics of maize, making discoveries so far beyond the understanding of the time that other scientists essentially ignored her work for more than a decade. But she persisted, trusting herself and the evidence under her microscope.
+
+<p><a href="https://www.nobelprize.org/womenwhochangedscience/stories/barbara-mcclintock" target="_blank">Discover her story </a></p>
+<p>&nbsp;</p>
+
+                        </div>
+
+                </div>
+        </article>
+</section>
+<!--- End 1+1 container -->
+
+		
+	</div>
+
+</section>
+<section class="article-grid var-half-width-a">
+
+		<header class="section-header border-top">
+		<h3>Read more</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-a">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/drosophila/">
+								With a little help from our (insect) friends							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>When Medicine Laureate Michael Young spoke to students at an event in China, he expanded his acknowledgements to include his oldest colleague, Drosophila.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/drosophila/"><picture  ><source data-srcset="https://www.nobelprize.org/images/4950-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/4950-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/4950-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Fruit fly Drosophila" /><noscript><img src="https://www.nobelprize.org/images/4950-landscape-x-large.jpg" alt="Fruit fly Drosophila" /></noscript></picture></a>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-half-width-a">
+
+		<header class="section-header border-top">
+		<h3>Coming up</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-a">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/about/prize-announcement-dates">
+								2020 Nobel Prize announcements							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>This year’s Nobel Prize announcements will take place 5-12 October.</p>
+<p><a href="https://www.nobelprize.org/prizes/about/prize-announcement-dates">See the full schedule</a></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/about/prize-announcement-dates"><picture  ><source data-srcset="https://www.nobelprize.org/images/63283-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/63283-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/63283-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="AM NobelCalling 0117" /><noscript><img src="https://www.nobelprize.org/images/63283-landscape-x-large.jpg" alt="AM NobelCalling 0117" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">© Nobel Media AB. Photo: A. Mahmoud</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-one-fourth-a">
+
+		<header class="section-header border-top">
+		<h3>Nobel Prize nominations</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/nomination/peace/">
+								2020 Nobel Peace Prize nominations							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The Norwegian Nobel Committee received 318 candidates for the 2020 Nobel Peace Prize. 107 of these are organizations.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/nomination/peace/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2018/06/02_01_oslo-1.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/02_01_oslo-1.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/02_01_oslo-1.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="2002 Nobel Peace Prize Ceremony" /><noscript><img src="https://www.nobelprize.org/uploads/2018/06/02_01_oslo-1.jpg" alt="2002 Nobel Peace Prize Ceremony" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/questions-and-answers-on-the-nobel-peace-prize/">
+								Six questions and answers on the Nobel Peace Prize							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Olav Njølstad, Director of the Norwegian Nobel Institute, answers questions about the Nobel Peace Prize.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/questions-and-answers-on-the-nobel-peace-prize/"><picture  ><source data-srcset="https://www.nobelprize.org/images/murad-mukwege-peace-prize-award-201856632-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/murad-mukwege-peace-prize-award-201856632-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/murad-mukwege-peace-prize-award-201856632-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Murad and Mukwege at award ceremony 2018" /><noscript><img src="https://www.nobelprize.org/images/murad-mukwege-peace-prize-award-201856632-landscape-x-large.jpg" alt="Murad and Mukwege at award ceremony 2018" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/nomination/">
+								Who can nominate for a Nobel Prize?							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>No person can nominate herself/himself for a Nobel Prize. But who can? And how are these persons chosen?</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/nomination/"><picture  ><source data-srcset="https://www.nobelprize.org/images/addams-nomination-ossietzky-3452-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/addams-nomination-ossietzky-3452-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/addams-nomination-ossietzky-3452-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Jane Addams nomination for Carl von Ossietzky" /><noscript><img src="https://www.nobelprize.org/images/addams-nomination-ossietzky-3452-landscape-x-large.jpg" alt="Jane Addams nomination for Carl von Ossietzky" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/the-nobel-prize-organisation/prize-awarding-institutions/">
+								Who selects the Nobel Laureates?							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>In his last will and testament, Alfred Nobel specifically designated the institutions responsible for the prizes he wished to be established.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/the-nobel-prize-organisation/prize-awarding-institutions/"><picture  ><source data-srcset="https://www.nobelprize.org/images/53557-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/53557-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/53557-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="KVA byggnad fasad sommar" /><noscript><img src="https://www.nobelprize.org/images/53557-landscape-x-large.jpg" alt="KVA byggnad fasad sommar" /></noscript></picture></a>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-one-third">
+
+		<header class="section-header border-top">
+		<h3>Nobel Prizes 2019</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/physics/2019/press-release/">
+								New perspectives on our place in the universe							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/physics/2019/summary/">Nobel Prize in Physics 2019</a> was awarded with one half to <a href="https://www.nobelprize.org/prizes/physics/2019/peebles/facts/">James Peebles</a> <em>“for theoretical discoveries in physical cosmology” </em>and the other half jointly to <a href="https://www.nobelprize.org/prizes/physics/2019/mayor/facts/">Michel Mayor</a> and <a href="https://www.nobelprize.org/prizes/physics/2019/queloz/facts/">Didier Queloz</a> <em>“for the discovery of an exoplanet orbiting a solar-type star.”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/physics/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/np-lesson-physics-museet-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/np-lesson-physics-museet.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/np-lesson-physics-museet.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Nobel Prize in Physics 2019" /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/np-lesson-physics-museet-1024x676.jpg" alt="The Nobel Prize in Physics 2019" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">© Johan Jarnestad/The Royal Swedish Academy of Sciences</p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/chemistry/2019/press-release/">
+								They developed the world’s most powerful battery							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/chemistry/2019/summary/">Nobel Prize in Chemistry 2019</a> was awarded jointly to <a href="https://www.nobelprize.org/prizes/chemistry/2019/goodenough/facts/">John B. Goodenough</a>, <a href="https://www.nobelprize.org/prizes/chemistry/2019/whittingham/facts/">M. Stanley Whittingham</a> and <a href="https://www.nobelprize.org/prizes/chemistry/2019/yoshino/facts/">Akira Yoshino</a> <em>“for the development of lithium-ion batteries.”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/chemistry/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/fig_ke_19_webbUTANcopy-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/fig_ke_19_webbUTANcopy-1520x1008.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/fig_ke_19_webbUTANcopy-2000x1352.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/fig_ke_19_webbUTANcopy-1024x676.jpg" alt="" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">© Johan Jarnestad/The Royal Swedish Academy of Sciences </p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/medicine/2019/press-release/">
+								Sensing oxygen levels							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/medicine/2019/summary/">Nobel Prize in Physiology or Medicine 2019</a> was awarded jointly to <a href="https://www.nobelprize.org/prizes/medicine/2019/kaelin/facts/">William G. Kaelin Jr</a>, <a href="https://www.nobelprize.org/prizes/medicine/2019/ratcliffe/facts/">Sir Peter J. Ratcliffe</a> and <a href="https://www.nobelprize.org/prizes/medicine/2019/semenza/facts/">Gregg L. Semenza</a> “for their discoveries of how cells sense and adapt to oxygen availability.”</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/medicine/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/09/3-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/09/3-1520x1008.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/09/3.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Nobel Prize in Physiology or Medicine 2019" /><noscript><img src="https://www.nobelprize.org/uploads/2019/09/3-1024x676.jpg" alt="The Nobel Prize in Physiology or Medicine 2019" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">© The Nobel Committee for Physiology or Medicine. Ill. Mattias Karlén</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-one-fourth-a">
+
+	
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/literature/2018/press-release/">
+								The Nobel Prize in Literature 2018							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/literature/2018/summary/">Nobel Prize in Literature for 2018</a> is awarded to the Polish author <a href="https://www.nobelprize.org/prizes/literature/2018/tokarczuk/facts/">Olga Tokarczuk</a> <em>“for a narrative imagination that with encyclopedic passion represents the crossing of boundaries as a form of life.”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/literature/2018/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/olga-3_2-5d9f23db89642-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/olga-3_2-5d9f23db89642-1520x1008.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/olga-3_2-5d9f23db89642-2048x1352.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Olga Tokarczuk" /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/olga-3_2-5d9f23db89642-1024x676.jpg" alt="Olga Tokarczuk" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">Ill. Niklas Elmehed. © Nobel Media.</p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/literature/2019/press-release/">
+								The Nobel Prize in Literature 2019							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/literature/2019/summary/">Nobel Prize in Literature 2019</a> was awarded to <a href="https://www.nobelprize.org/prizes/literature/2019/handke/facts/">Peter Handke</a> <em>“for an influential work that with linguistic ingenuity has explored the periphery and the specificity of human experience</em>.<em>”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/literature/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/handke-3_2-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/handke-3_2-1520x1008.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/handke-3_2-2048x1352.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Peter Handke" /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/handke-3_2-1024x676.jpg" alt="Peter Handke" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">Ill. Niklas Elmehed. © Nobel Media.</p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/peace/2019/press-release/">
+								Promoting peace and reconciliation							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/peace/2019/summary/">Nobel Peace Prize 2019</a> was awarded to <a href="https://www.nobelprize.org/prizes/peace/2019/abiy/facts/">Abiy Ahmed Ali</a> <em>“for his efforts to achieve peace and international cooperation, and in particular for his decisive initiative to resolve the border conflict with neighbouring Eritrea.”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/peace/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/Abiy-cropped-983x656.png" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/Abiy-cropped.png" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/Abiy-cropped.png" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Abiy Ahmed Ali." /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/Abiy-cropped-983x676.png" alt="Abiy Ahmed Ali." /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">Abiy Ahmed Ali. </p> <p class="figcaption__attribution">Photo: Aron Simeneh, via Wikimedia Commons.</p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/economic-sciences/2019/press-release/">
+								Research to help the world’s poor							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The <a href="https://www.nobelprize.org/prizes/economic-sciences/2019/summary/">Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel 2019</a> was awarded jointly to <a href="https://www.nobelprize.org/prizes/economic-sciences/2019/banerjee/facts/">Abhijit Banerjee</a>, <a href="https://www.nobelprize.org/prizes/economic-sciences/2019/duflo/facts/">Esther Duflo</a> and <a href="https://www.nobelprize.org/prizes/economic-sciences/2019/kremer/facts/">Michael Kremer</a> <em>“for their experimental approach to alleviating global poverty.”</em></p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/economic-sciences/2019/press-release/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2019/10/economics-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/economics.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2019/10/economics.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /><noscript><img src="https://www.nobelprize.org/uploads/2019/10/economics-1024x676.jpg" alt="" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__attribution">© Johan Jarnestad/The Royal Swedish Academy of Sciences</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-one-third">
+
+		<header class="section-header border-top">
+		<h3>Alfred Nobel - Established the Nobel Prize</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/alfred-nobel/full-text-of-alfred-nobels-will-2/">
+								Alfred Nobel&#039;s last will							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>On 27 November 1895, Alfred Nobel signed his last will in Paris, France. The Swedish dynamite millionaire, who thought that his invention would end all wars, had now realised that it was a very deadly product. Wanting to make amends, he did what no man of such wealth had done before ...</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/alfred-nobel/full-text-of-alfred-nobels-will-2/"><picture  ><source data-srcset="https://www.nobelprize.org/images/52980-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/52980-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/52980-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Alfred Nobel Will" /><noscript><img src="https://www.nobelprize.org/images/52980-landscape-x-large.jpg" alt="Alfred Nobel Will" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/themes/the-very-first-nobel-prizes/">
+								The very first Nobel Prizes							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>On 10 December 1901 the first Nobel Prizes were awarded, in physics, chemistry, physiology or medicine, literature and peace. Read more about the first prizes.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/themes/the-very-first-nobel-prizes/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2018/06/frangsmyr11.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/frangsmyr11.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/frangsmyr11.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The first Nobel Prize Award Ceremony was held in 1901 at the Royal Academy of Music, Stockholm." /><noscript><img src="https://www.nobelprize.org/uploads/2018/06/frangsmyr11.jpg" alt="The first Nobel Prize Award Ceremony was held in 1901 at the Royal Academy of Music, Stockholm." /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-third">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/alfred-nobel/alfred-nobel-his-life-and-work/">
+								Alfred Nobel - scientist and inventor							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Chemist, engineer and industrialist Alfred Nobel left 31 million SEK (today about 265 million dollar) to fund the Nobel Prizes. Read more about his life and work.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/alfred-nobel/alfred-nobel-his-life-and-work/"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2018/06/pf-alfred-bust-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/pf-alfred-bust.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2018/06/pf-alfred-bust.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" /><noscript><img src="https://www.nobelprize.org/uploads/2018/06/pf-alfred-bust-1024x676.jpg" alt="" /></noscript></picture></a>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-half-width-a">
+
+		<header class="section-header border-top">
+		<h3>A new house for culture and science</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-a">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/press/#/publication/5e3d3ebb10e5580004d4ce1a/552bd85dccc8e20c00e7f979?&#038;sh=false">
+								Nobel Center to be built at Slussen, Stockholm							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>The new center will be built at Slussen, with sweeping views of Stockholm harbour and the central city. For the past few years, Slussen has been undergoing a major renovation and reconfiguration. With its broad public activities, the Nobel Center will be an important piece of the puzzle in developing Slussen into a lively meeting place.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/press/#/publication/5e3d3ebb10e5580004d4ce1a/552bd85dccc8e20c00e7f979?&#038;sh=false"><picture  ><source data-srcset="https://www.nobelprize.org/uploads/2020/02/nobel-center-slussen-992x656.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/uploads/2020/02/nobel-center-slussen.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/uploads/2020/02/nobel-center-slussen.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Slussen aerial" /><noscript><img src="https://www.nobelprize.org/uploads/2020/02/nobel-center-slussen.jpg" alt="Slussen aerial" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">Slussen aerial</p> <p class="figcaption__attribution">Image: Dbox/Foster and partner.</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+<section class="search-form" itemscope itemtype="http://schema.org/WebSite">
+		<!-- @TODO @Darshan - there are a few search forms on this site, lets chat when you get into BEE, as far as I know this should perform the same searches as the header -->
+		<header class="heading">
+			<h3>
+				<p style="text-align: center">What are you looking for? Search the website.</p>
+<p style="text-align: center">
+			</h3>
+		</header>
+
+		<form  class="form" name="" method="GET" action="https://www.nobelprize.org/search/" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+
+			<meta itemprop="target" content="https://www.nobelprize.org/search/" />
+
+			<label for="nobel-search-js" class="screen-reader-text">
+				Search Nobel			</label>
+
+			<div class="inputwrapper">
+				<input id="nobel-search-js" itemprop="query-input" class="searchinput" type="search" name="s" placeholder="Search">
+				<button class="searchsubmit" type="submit">
+
+					<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="searchform-title searchform-desc">
+
+						<title id="searchform-title">Search</title>
+						<desc id="searchform-desc">Search Nobel Button</desc>
+
+						<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g transform="translate(-942.000000, -159.000000)">
+								<g transform="translate(942.000000, 159.000000)">
+									<rect fill="#0182C9" transform="translate(16.000000, 16.000000) rotate(-45.000000) translate(-16.000000, -16.000000) " x="15" y="12" width="2" height="8"></rect>
+									<circle stroke="#0182C9" stroke-width="2" cx="8" cy="8" r="7"></circle>
+								</g>
+							</g>
+						</g>
+					</svg>
+
+				</button>
+			</div>
+
+		</form>
+
+</section>
+<section class="social">
+
+		<header class="section-header border-top">
+		<h3>Connect with us</h3>
+	</header>
+
+			<a class="socialblock" href="https://facebook.com/nobelprize">
+			<span class="socialtitle">Facebook</span>
+			<span class="socialstats">
+				<svg width="32px" height="33px" viewBox="0 0 32 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="twitter-social-icon-title twitter-social-icon-desc">
+    <title id="facebook-social-icon-title">Facebook Icon</title>
+    <desc id="facebook-social-icon-desc">Like The Nobel Prize on Facebook</desc>
+    <defs>
+        <polygon id="path-1" points="1.19850187e-05 0.0125842697 31.987176 0.0125842697 31.987176 32 1.19850187e-05 32"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/facebook" transform="translate(0.000000, -48.000000)">
+            <g id="Group-10" transform="translate(0.000000, 48.000000)">
+                <g id="Page-1">
+                    <g id="Group-3" transform="translate(0.000000, 0.107266)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M30.2217948,32 C31.1966562,32 31.987188,31.2094682 31.987188,30.2346067 L31.987188,1.77809738 C31.987188,0.802876404 31.1966562,0.0125842697 30.2217948,0.0125842697 L1.76540524,0.0125842697 C0.79018427,0.0125842697 1.19850187e-05,0.802876404 1.19850187e-05,1.77809738 L1.19850187e-05,30.2346067 C1.19850187e-05,31.2094682 0.79018427,32 1.76540524,32 L30.2217948,32 Z" id="Fill-1" fill="#3E5293" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M22.0705798,32.1072659 L22.0705798,19.7201498 L26.2285423,19.7201498 L26.8510442,14.8925843 L22.0705798,14.8925843 L22.0705798,11.810397 C22.0705798,10.4127041 22.4586547,9.46025468 24.4630292,9.46025468 L27.0194337,9.45905618 L27.0194337,5.14133333 C26.5771865,5.08260674 25.0597633,4.95113109 23.29437,4.95113109 C19.6086172,4.95113109 17.0854112,7.20083895 17.0854112,11.3324345 L17.0854112,14.8925843 L12.9169019,14.8925843 L12.9169019,19.7201498 L17.0854112,19.7201498 L17.0854112,32.1072659 L22.0705798,32.1072659 Z" id="Fill-4" fill="#FEFEFE"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>				<span>4,325,000+ likes</span>
+			</span>
+		</a>
+	
+			<a class="socialblock" href="https://twitter.com/nobelprize">
+			<span class="socialtitle">Twitter</span>
+			<span class="socialstats">
+				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="twitter-social-icon-title twitter-social-icon-desc">
+	<title id="twitter-social-icon-title">Twitter Icon</title>
+    <desc id="twitter-social-icon-desc">Follow The Nobel Prize on Twitter</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/twitter" transform="translate(0.000000, -48.000000)">
+            <g id="Group-7" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy-3" fill="#1DA1F2" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <path d="M12.28988,24.127112 C19.83732,24.127112 23.96468,17.874232 23.96468,12.452232 C23.96468,12.274552 23.96108,12.097672 23.953,11.921752 C24.75412,11.342632 25.45052,10.619992 25.99996,9.797192 C25.26476,10.123752 24.47348,10.343912 23.64356,10.443192 C24.49068,9.935272 25.14116,9.131432 25.44788,8.173352 C24.65484,8.643352 23.77708,8.985272 22.84244,9.169272 C22.09364,8.371752 21.02724,7.872872 19.84724,7.872872 C17.581,7.872872 15.74332,9.710552 15.74332,11.975912 C15.74332,12.297992 15.7794,12.611032 15.8498,12.911512 C12.43964,12.740072 9.41556,11.107192 7.39204,8.624392 C7.03932,9.230632 6.83628,9.935272 6.83628,10.686792 C6.83628,12.110392 7.56076,13.367112 8.66228,14.102312 C7.98924,14.081592 7.35684,13.896632 6.8038,13.588952 C6.80292,13.606072 6.80292,13.623272 6.80292,13.641272 C6.80292,15.628792 8.21748,17.287832 10.09492,17.664072 C9.75028,17.757832 9.38764,17.808472 9.01324,17.808472 C8.74884,17.808472 8.49172,17.782232 8.24188,17.734392 C8.7642,19.364632 10.27892,20.550952 12.07516,20.584392 C10.67044,21.685032 8.90132,22.340872 6.97884,22.340872 C6.64772,22.340872 6.32116,22.321912 5.99996,22.283992 C7.81604,23.447832 9.9722,24.127112 12.28988,24.127112" id="Fill-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>				<span>550,000+ followers</span>
+			</span>
+		</a>
+	
+			<a class="socialblock" href="https://instagram.com/nobelprize_org/">
+			<span class="socialtitle">Instagram</span>
+			<span class="socialstats">
+				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-labelledby="instagram-social-icon-title instagram-social-icon-desc">
+    <title id="instagram-social-icon-title">Instagram Icon</title>
+    <desc id="instagram-social-icon-desc">Follow The Nobel Prize on Instagram</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/instagram" transform="translate(0.000000, -48.000000)">
+            <g id="Group-8" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy" fill="#E6007E" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <g id="Group" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <g id="Group-3">
+                        <path d="M10.9965298,0.00694047619 C8.01002976,0.00694047619 7.6355496,0.0195992063 6.46269643,0.0731150794 C5.2922004,0.1265 4.49286706,0.31240873 3.7933631,0.584222222 C3.07024405,0.865246032 2.45699405,1.24125397 1.84566468,1.85258333 C1.23433532,2.46395635 0.858327381,3.07720635 0.577303571,3.8003254 C0.305446429,4.49978571 0.119581349,5.2991627 0.0661527778,6.46961508 C0.0126369048,7.6425119 -2.18253968e-05,8.01699206 -2.18253968e-05,11.0034921 C-2.18253968e-05,13.9899484 0.0126369048,14.3644286 0.0661527778,15.5373254 C0.119581349,16.7077778 0.305446429,17.5071548 0.577303571,18.2066151 C0.858327381,18.9297341 1.23433532,19.5429841 1.84566468,20.1543571 C2.45699405,20.7656865 3.07024405,21.1416944 3.7933631,21.4227183 C4.49286706,21.6945317 5.2922004,21.8804405 6.46269643,21.9338254 C7.6355496,21.9873413 8.01002976,22 10.9965298,22 C13.9830298,22 14.3575099,21.9873413 15.5303631,21.9338254 C16.7008591,21.8804405 17.5001925,21.6945317 18.1996964,21.4227183 C18.9228155,21.1416944 19.5360655,20.7656865 20.1473948,20.1543571 C20.7587242,19.5429841 21.1347321,18.9297341 21.415756,18.2066151 C21.6876131,17.5071548 21.8734782,16.7077778 21.9269067,15.5373254 C21.9804226,14.3644286 21.9930813,13.9899484 21.9930813,11.0034921 C21.9930813,8.01699206 21.9804226,7.6425119 21.9269067,6.46961508 C21.8734782,5.2991627 21.6876131,4.49978571 21.415756,3.8003254 C21.1347321,3.07720635 20.7587242,2.46395635 20.1473948,1.85258333 C19.5360655,1.24125397 18.9228155,0.865246032 18.1996964,0.584222222 C17.5001925,0.31240873 16.7008591,0.1265 15.5303631,0.0731150794 C14.3575099,0.0195992063 13.9830298,0.00694047619 10.9965298,0.00694047619 M10.9965298,1.98829365 C13.932744,1.98829365 14.2805099,1.9995119 15.4400496,2.05241667 C16.5122004,2.10130556 17.094502,2.28044841 17.4819901,2.43104365 C17.9952361,2.63052778 18.3615536,2.86881746 18.746379,3.25364286 C19.1311607,3.6384246 19.369494,4.00474206 19.5689782,4.51803175 C19.7195298,4.90551984 19.8986726,5.48777778 19.9476052,6.55992857 C20.0005099,7.71946825 20.0116845,8.06727778 20.0116845,11.0034921 C20.0116845,13.9396627 20.0005099,14.2874722 19.9476052,15.4470119 C19.8986726,16.5191627 19.7195298,17.1014206 19.5689782,17.4889087 C19.369494,18.0021984 19.1311607,18.3685159 18.746379,18.7532976 C18.3615536,19.138123 17.9952361,19.3764127 17.4819901,19.5758968 C17.094502,19.7264921 16.5122004,19.9056349 15.4400496,19.9545238 C14.2806845,20.0074286 13.9329187,20.0186468 10.9965298,20.0186468 C8.06014087,20.0186468 7.712375,20.0074286 6.55300992,19.9545238 C5.48085913,19.9056349 4.89855754,19.7264921 4.51106944,19.5758968 C3.99782341,19.3764127 3.63150595,19.138123 3.24668056,18.7532976 C2.86189881,18.3685159 2.62356548,18.0021984 2.42408135,17.4889087 C2.27352976,17.1014206 2.0943869,16.5191627 2.04545437,15.4470119 C1.9925496,14.2874722 1.981375,13.9396627 1.981375,11.0034921 C1.981375,8.06727778 1.9925496,7.71946825 2.04545437,6.55992857 C2.0943869,5.48777778 2.27352976,4.90551984 2.42408135,4.51803175 C2.62356548,4.00474206 2.86189881,3.6384246 3.24668056,3.25364286 C3.63150595,2.86881746 3.99782341,2.63052778 4.51106944,2.43104365 C4.89855754,2.28044841 5.48085913,2.10130556 6.55296627,2.05241667 C7.7125496,1.9995119 8.06031548,1.98829365 10.9965298,1.98829365" id="Fill-1"></path>
+                    </g>
+                    <path d="M11.1468849,14.812373 C9.12249206,14.812373 7.48135317,13.1712778 7.48135317,11.1468849 C7.48135317,9.12244841 9.12249206,7.48135317 11.1468849,7.48135317 C13.1712778,7.48135317 14.812373,9.12244841 14.812373,11.1468849 C14.812373,13.1712778 13.1712778,14.812373 11.1468849,14.812373 M11.1468849,5.5 C8.02821032,5.5 5.5,8.02816667 5.5,11.1468849 C5.5,14.2655595 8.02821032,16.7937262 11.1468849,16.7937262 C14.2655595,16.7937262 16.7937698,14.2655595 16.7937698,11.1468849 C16.7937698,8.02816667 14.2655595,5.5 11.1468849,5.5" id="Fill-4"></path>
+                    <path d="M18.1860905,5.17020516 C18.1860905,5.89899881 17.595277,6.48976865 16.866527,6.48976865 C16.1377333,6.48976865 15.5469198,5.89899881 15.5469198,5.17020516 C15.5469198,4.44141151 16.1377333,3.85064167 16.866527,3.85064167 C17.595277,3.85064167 18.1860905,4.44141151 18.1860905,5.17020516" id="Fill-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>				<span>280,000+ followers</span>
+			</span>
+		</a>
+	
+			<a class="socialblock" href="https://www.youtube.com/user/thenobelprize">
+			<span class="socialtitle">YouTube</span>
+			<span class="socialstats">
+				<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="youtube-social-icon-title youtube-social-icon-desc">
+    <title id="youtube-social-icon-title">Youtube Icon</title>
+    <desc id="youtube-social-icon-desc">Follow The Nobel Prize on Youtube</desc>
+    <defs>
+        <polygon id="path-1" points="3.75e-05 0 22 0 22 15.499975 3.75e-05 15.499975"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/youtube" transform="translate(0.000000, -48.000000)">
+            <g id="Group-9" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy-2" fill="#ED3124" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <g id="Page-1" transform="translate(5.000000, 8.000000)">
+                    <g id="Group-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M21.5402875,2.42035 C21.2872875,1.4676 20.5417875,0.71735 19.5951625,0.462725 C17.8796625,-2.5e-05 11.0000375,-2.5e-05 11.0000375,-2.5e-05 C11.0000375,-2.5e-05 4.1204125,-2.5e-05 2.4047875,0.462725 C1.4581625,0.71735 0.7126625,1.4676 0.4596625,2.42035 C3.75e-05,4.1471 3.75e-05,7.749975 3.75e-05,7.749975 C3.75e-05,7.749975 3.75e-05,11.352725 0.4596625,13.0796 C0.7126625,14.03235 1.4581625,14.7826 2.4047875,15.03735 C4.1204125,15.499975 11.0000375,15.499975 11.0000375,15.499975 C11.0000375,15.499975 17.8796625,15.499975 19.5951625,15.03735 C20.5417875,14.7826 21.2872875,14.03235 21.5402875,13.0796 C22.0000375,11.352725 22.0000375,7.749975 22.0000375,7.749975 C22.0000375,7.749975 22.0000375,4.1471 21.5402875,2.42035" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <polygon id="Fill-4" fill="#ED3124" points="8.75 11.0211125 8.75 4.4788625 14.5 7.7501125"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>				<span>138,000+ subscribers</span>
+			</span>
+		</a>
+	</section>
+<section class="newsletter-signup">
+
+	<div class="wrapper">
+
+		<div class="blurb">
+			<h3>Sign up to our newsletter</h3>
+
+			<p><p>Join thousands of global subscribers enjoying the free monthly Nobel Prize highlights, trivia and up-to-date information.</p>
+</p>
+		</div>
+
+		<form action="https://app.rule.io/widget/subscriber" method="POST">
+
+			<label
+				for="newsletteremail"
+				class="screen-reader-text">
+				Your e-mail address			</label>
+
+			<input
+				name="rule_email"
+				id="newsletteremail"
+				placeholder="Your e-mail address"
+				required
+				type="email">
+
+							<input
+					type="hidden"
+					name="tags[]"
+					value="25327">
+			
+							<input
+					type="hidden"
+					name="token"
+					value="0b7e81c2-36b72d5-bb09466-94f58a6-a5535bb-c51">
+			
+							<input
+					type="hidden"
+					name="language"
+					value="en">
+			
+						<label for="email_field" class="newsletter-email-field">
+				Check this box if you are a robot.			</label>
+			<input
+				type="checkbox"
+				id="email_field"
+				name="email_field"
+				value="1"
+				tabindex="-1"
+				autocomplete="off"
+				class="newsletter-email-field"
+			>
+
+			<input
+				class="btn"
+				type="submit"
+				value="Subscribe"
+				disabled
+				>
+
+			<label class="newsletterconfirm" for="newsletterconfirm">
+				<input id ="newsletterconfirm" required type="checkbox">
+				<p>I consent to my email address being used in accordance with the <a href="https://www.nobelprize.org/privacy-policy/">privacy policy</a>.</p>
+			</label>
+
+		</form>
+
+	</div>
+
+</section>
+<section class="article-grid var-half-width-b">
+
+		<header class="section-header border-top">
+		<h3>Nobel destinations</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+
+			<div class="content-wrapper">
+				<header class="content">
+											<div class="subtitle">Stockholm, Sweden</div>
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/about/nobel-museum/">
+								Nobel Prize Museum							</a>
+						</h2>
+					</div>
+				</header>
+
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/about/nobel-museum/"><picture  ><source data-srcset="https://www.nobelprize.org/images/6990-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/6990-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/6990-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="The Nobel Prize: Ideas Changing the World (3)" /><noscript><img src="https://www.nobelprize.org/images/6990-landscape-x-large.jpg" alt="The Nobel Prize: Ideas Changing the World (3)" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">The museum showcases the discoveries and creativity of the Nobel Laureates.</p> <p class="figcaption__attribution">Photo: Åke Eson Lindman</p></figcaption>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -halfwidth-b">
+
+			<div class="content-wrapper">
+				<header class="content">
+											<div class="subtitle">Oslo, Norway</div>
+					
+					<div class="title">
+						<h2 class="headline h1" itemprop="headline">
+							<a href="https://www.nobelprize.org/about/nobel-peace-center/">
+								Nobel Peace Center							</a>
+						</h2>
+					</div>
+				</header>
+
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/about/nobel-peace-center/"><picture  ><source data-srcset="https://www.nobelprize.org/images/51213-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/51213-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/51213-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="NPC Nye Nobels Hage 10" /><noscript><img src="https://www.nobelprize.org/images/51213-landscape-x-large.jpg" alt="NPC Nye Nobels Hage 10" /></noscript></picture></a><figcaption class="figcaption"><p class="figcaption__caption">The story of each Peace Laureate is told at the museum.</p> <p class="figcaption__attribution">Photo: Johannes Granseth / Nobel Peace Center</p></figcaption>				</figure>
+			
+		</article>
+	</section>
+
+<section class="article-grid var-one-fourth-a">
+
+		<header class="section-header border-top">
+		<h3>In memoriam</h3>
+	</header>
+
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/physics/1977/anderson/facts/">
+								Philip W. Anderson 1923-2020							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Theoretical physicists Philip W. Anderson has passed away aged 96. He was awarded the Nobel Prize in Physics for fundamental theoretical investigations of the electronic structure of magnetic and disordered systems.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/physics/1977/anderson/facts/"><picture  ><source data-srcset="https://www.nobelprize.org/images/anderson-13296-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/anderson-13296-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/anderson-13296-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Philip W. Anderson" /><noscript><img src="https://www.nobelprize.org/images/anderson-13296-landscape-x-large.jpg" alt="Philip W. Anderson" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/peace/1976/williams/facts/">
+								Peace activist Betty Williams dies							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Betty Williams died on 17 March, age 76. She shared the 1976 Nobel Peace Prize with Mairead Corrigan for founding a peace organisation to bring an end to the bitter conflict between Catholics and Protestants in Northern Ireland.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/peace/1976/williams/facts/"><picture  ><source data-srcset="https://www.nobelprize.org/images/williams-13285-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/williams-13285-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/williams-13285-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Betty Williams" /><noscript><img src="https://www.nobelprize.org/images/williams-13285-landscape-x-large.jpg" alt="Betty Williams" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/medicine/1986/cohen/facts/">
+								Stanley Cohen dies at 97							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Medicine Laureate Stanley Cohen passed away on 5 February.  He shared the 1986 Medicine Prize for "discoveries of growth factors", discoveries which are of fundamental importance for our understanding of the mechanisms which regulate cell and organ growth.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/medicine/1986/cohen/facts/"><picture  ><source data-srcset="https://www.nobelprize.org/images/cohen-13381-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/cohen-13381-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/cohen-13381-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Stanley Cohen" /><noscript><img src="https://www.nobelprize.org/images/cohen-13381-landscape-x-large.jpg" alt="Stanley Cohen" /></noscript></picture></a>				</figure>
+			
+		</article>
+			<article itemscope itemtype="http://schema.org/BlogPosting" class="article -one-fourth">
+
+			<div class="content-wrapper">
+				<header class="content">
+					
+					<div class="title">
+						<h2 class="headline h3" itemprop="headline">
+							<a href="https://www.nobelprize.org/prizes/chemistry/1993/mullis/facts/">
+								Kary B. Mullis 1944-2019							</a>
+						</h2>
+					</div>
+				</header>
+
+									<div class="text">
+						<p>Kary B. Mullis was awarded the 1993 Chemistry Prize for his invention of the polymerase chain reaction (PCR) method. PCR has been of major importance in both medical research and forensic science.</p>
+					</div>
+				
+							</div>
+
+							<figure class="featuredimage">
+					<a href="https://www.nobelprize.org/prizes/chemistry/1993/mullis/facts/"><picture  ><source data-srcset="https://www.nobelprize.org/images/mullis-13444-landscape-medium-2x.jpg" media="(min-width: 220px)" /><source data-srcset="https://www.nobelprize.org/images/mullis-13444-landscape-large-2x.jpg" media="(min-width: 900px)" /><source data-srcset="https://www.nobelprize.org/images/mullis-13444-landscape-x-large-2x.jpg" media="(min-width: 1400px)" /><img class="lazyload" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Kary B. Mullis" /><noscript><img src="https://www.nobelprize.org/images/mullis-13444-landscape-x-large.jpg" alt="Kary B. Mullis" /></noscript></picture></a>				</figure>
+			
+		</article>
+	</section>
+
+
+
+
+	</main>
+	<footer class="site-footer" role="contentinfo">
+
+		<div class="container">
+
+			<section class="footer-information">
+
+				<h4 class="heading">
+					<a href="https://www.nobelprize.org/the-nobel-prize-organisation/">About the Nobel Prize organisation</a>				</h4>
+
+				<div class="footer-sections border-top">
+							<div class="footer-section">
+							<h5>
+					<a href="https://www.nobelprize.org/the-nobel-prize-organisation/the-nobel-foundation/">The Nobel Foundation</a>				</h5>
+			
+			<p>Tasked with a mission to manage Alfred Nobel's fortune and has ultimate responsibility for fulfilling the intentions of Nobel's will.</p>
+		</div>
+				<div class="footer-section">
+							<h5>
+					<a href="https://www.nobelprize.org/the-nobel-prize-organisation/prize-awarding-institutions/">The prize-awarding institutions</a>				</h5>
+			
+			<p>For more than a century, these academic institutions have worked independently to select Nobel Laureates in each prize category.</p>
+		</div>
+				<div class="footer-section">
+							<h5>
+					<a href="https://www.nobelprize.org/the-nobel-prize-organisation/outreach-activities/">Nobel Prize outreach activities</a>				</h5>
+			
+			<p>Several outreach organisations and activities have been developed to inspire generations and disseminate knowledge about the Nobel Prize.</p>
+		</div>
+						</div>
+
+			</section>
+
+			<section class="footer-nav border-top">
+
+				<nav class="footer-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<ul id="menu-footer_col_1" class="footer-column-items" role="menu"><li id="menu-item-28266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28266" role="menuitem"><a href="https://www.nobelprize.org/press-room/">Press</a></li>
+<li id="menu-item-42845" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42845" role="menuitem"><a href="https://www.nobelprize.org/contact">Contact</a></li>
+<li id="menu-item-28265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28265" role="menuitem"><a href="https://www.nobelprize.org/frequently-asked-questions/">FAQ</a></li>
+</ul>
+				</nav>
+
+				<nav class="footer-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<ul id="menu-footer_col_2" class="footer-column-items" role="menu"><li id="menu-item-28268" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28268" role="menuitem"><a href="https://www.nobelprize.org/about/privacy-policy/">Privacy policy</a></li>
+<li id="menu-item-28269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28269" role="menuitem"><a href="https://www.nobelprize.org/about/technical-support/">Technical support</a></li>
+<li id="menu-item-42844" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42844" role="menuitem"><a href="https://www.nobelprize.org/about/terms-of-use/">Terms of use</a></li>
+</ul>
+				</nav>
+
+				<nav class="footer-menu" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<ul id="menu-footer_col_3" class="footer-column-items" role="menu"><li id="menu-item-28272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28272" role="menuitem"><a href="https://www.nobelprize.org/about/developer-zone/">For developers</a></li>
+<li id="menu-item-42843" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-42843" role="menuitem"><a href="https://www.nobelprize.org/mediaplayer/">Media player</a></li>
+</ul>
+				</nav>
+
+				<nav class="footer-menu footer-social" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+					<h6>
+						Join us					</h6>
+
+					<ul id="menu-footer_social" class="socialmenu"><li id="menu-item-28273" class="facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-28273" role="menuitem"><a href="https://www.facebook.com/nobelprize/">			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 32 32" version="1.1">
+	<g id="facebook" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<g transform="translate(-16.000000, -707.000000)" fill="#4266B2">
+			<path d="M46.2339056,707 L17.7660944,707 C16.790606,707 16,707.790603 16,708.766088 L16,737.233792 C16,738.209157 16.790606,739 17.7660944,739 L33.0922688,739 L33.0922688,726.607891 L28.921984,726.607891 L28.921984,721.778426 L33.0922688,721.778426 L33.0922688,718.216876 C33.0922688,714.083775 35.6165969,711.833182 39.3036936,711.833182 C41.0699079,711.833182 42.5878139,711.964589 43.0301168,712.023339 L43.0301168,716.34276 L40.4729368,716.343959 C38.4677662,716.343959 38.0794173,717.296783 38.0794173,718.695026 L38.0794173,721.778426 L42.8617803,721.778426 L42.2391511,726.607891 L38.0794173,726.607891 L38.0794173,739 L46.2339056,739 C47.2092741,739 48,738.209157 48,737.233792 L48,708.766088 C48,707.790603 47.2092741,707 46.2339056,707" id="Fill-1"></path>
+		</g>
+	</g>
+</svg>
+			<span class="screen-reader-text">Facebook</span>
+			</a></li>
+<li id="menu-item-28274" class="twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-28274" role="menuitem"><a href="https://twitter.com/NobelPrize">			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" aria-labelledby="twitter-social-icon-title twitter-social-icon-desc">
+	<title id="twitter-social-icon-title">Twitter Icon</title>
+    <desc id="twitter-social-icon-desc">Follow The Nobel Prize on Twitter</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/twitter" transform="translate(0.000000, -48.000000)">
+            <g id="Group-7" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy-3" fill="#1DA1F2" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <path d="M12.28988,24.127112 C19.83732,24.127112 23.96468,17.874232 23.96468,12.452232 C23.96468,12.274552 23.96108,12.097672 23.953,11.921752 C24.75412,11.342632 25.45052,10.619992 25.99996,9.797192 C25.26476,10.123752 24.47348,10.343912 23.64356,10.443192 C24.49068,9.935272 25.14116,9.131432 25.44788,8.173352 C24.65484,8.643352 23.77708,8.985272 22.84244,9.169272 C22.09364,8.371752 21.02724,7.872872 19.84724,7.872872 C17.581,7.872872 15.74332,9.710552 15.74332,11.975912 C15.74332,12.297992 15.7794,12.611032 15.8498,12.911512 C12.43964,12.740072 9.41556,11.107192 7.39204,8.624392 C7.03932,9.230632 6.83628,9.935272 6.83628,10.686792 C6.83628,12.110392 7.56076,13.367112 8.66228,14.102312 C7.98924,14.081592 7.35684,13.896632 6.8038,13.588952 C6.80292,13.606072 6.80292,13.623272 6.80292,13.641272 C6.80292,15.628792 8.21748,17.287832 10.09492,17.664072 C9.75028,17.757832 9.38764,17.808472 9.01324,17.808472 C8.74884,17.808472 8.49172,17.782232 8.24188,17.734392 C8.7642,19.364632 10.27892,20.550952 12.07516,20.584392 C10.67044,21.685032 8.90132,22.340872 6.97884,22.340872 C6.64772,22.340872 6.32116,22.321912 5.99996,22.283992 C7.81604,23.447832 9.9722,24.127112 12.28988,24.127112" id="Fill-2" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>			<span class="screen-reader-text">Twitter</span>
+			</a></li>
+<li id="menu-item-43144" class="instagram menu-item menu-item-type-custom menu-item-object-custom menu-item-43144" role="menuitem"><a href="https://www.instagram.com/nobelprize_org/?hl=en">			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" aria-labelledby="instagram-social-icon-title instagram-social-icon-desc">
+    <title id="instagram-social-icon-title">Instagram Icon</title>
+    <desc id="instagram-social-icon-desc">Follow The Nobel Prize on Instagram</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/instagram" transform="translate(0.000000, -48.000000)">
+            <g id="Group-8" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy" fill="#E6007E" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <g id="Group" transform="translate(5.000000, 5.000000)" fill="#FFFFFF">
+                    <g id="Group-3">
+                        <path d="M10.9965298,0.00694047619 C8.01002976,0.00694047619 7.6355496,0.0195992063 6.46269643,0.0731150794 C5.2922004,0.1265 4.49286706,0.31240873 3.7933631,0.584222222 C3.07024405,0.865246032 2.45699405,1.24125397 1.84566468,1.85258333 C1.23433532,2.46395635 0.858327381,3.07720635 0.577303571,3.8003254 C0.305446429,4.49978571 0.119581349,5.2991627 0.0661527778,6.46961508 C0.0126369048,7.6425119 -2.18253968e-05,8.01699206 -2.18253968e-05,11.0034921 C-2.18253968e-05,13.9899484 0.0126369048,14.3644286 0.0661527778,15.5373254 C0.119581349,16.7077778 0.305446429,17.5071548 0.577303571,18.2066151 C0.858327381,18.9297341 1.23433532,19.5429841 1.84566468,20.1543571 C2.45699405,20.7656865 3.07024405,21.1416944 3.7933631,21.4227183 C4.49286706,21.6945317 5.2922004,21.8804405 6.46269643,21.9338254 C7.6355496,21.9873413 8.01002976,22 10.9965298,22 C13.9830298,22 14.3575099,21.9873413 15.5303631,21.9338254 C16.7008591,21.8804405 17.5001925,21.6945317 18.1996964,21.4227183 C18.9228155,21.1416944 19.5360655,20.7656865 20.1473948,20.1543571 C20.7587242,19.5429841 21.1347321,18.9297341 21.415756,18.2066151 C21.6876131,17.5071548 21.8734782,16.7077778 21.9269067,15.5373254 C21.9804226,14.3644286 21.9930813,13.9899484 21.9930813,11.0034921 C21.9930813,8.01699206 21.9804226,7.6425119 21.9269067,6.46961508 C21.8734782,5.2991627 21.6876131,4.49978571 21.415756,3.8003254 C21.1347321,3.07720635 20.7587242,2.46395635 20.1473948,1.85258333 C19.5360655,1.24125397 18.9228155,0.865246032 18.1996964,0.584222222 C17.5001925,0.31240873 16.7008591,0.1265 15.5303631,0.0731150794 C14.3575099,0.0195992063 13.9830298,0.00694047619 10.9965298,0.00694047619 M10.9965298,1.98829365 C13.932744,1.98829365 14.2805099,1.9995119 15.4400496,2.05241667 C16.5122004,2.10130556 17.094502,2.28044841 17.4819901,2.43104365 C17.9952361,2.63052778 18.3615536,2.86881746 18.746379,3.25364286 C19.1311607,3.6384246 19.369494,4.00474206 19.5689782,4.51803175 C19.7195298,4.90551984 19.8986726,5.48777778 19.9476052,6.55992857 C20.0005099,7.71946825 20.0116845,8.06727778 20.0116845,11.0034921 C20.0116845,13.9396627 20.0005099,14.2874722 19.9476052,15.4470119 C19.8986726,16.5191627 19.7195298,17.1014206 19.5689782,17.4889087 C19.369494,18.0021984 19.1311607,18.3685159 18.746379,18.7532976 C18.3615536,19.138123 17.9952361,19.3764127 17.4819901,19.5758968 C17.094502,19.7264921 16.5122004,19.9056349 15.4400496,19.9545238 C14.2806845,20.0074286 13.9329187,20.0186468 10.9965298,20.0186468 C8.06014087,20.0186468 7.712375,20.0074286 6.55300992,19.9545238 C5.48085913,19.9056349 4.89855754,19.7264921 4.51106944,19.5758968 C3.99782341,19.3764127 3.63150595,19.138123 3.24668056,18.7532976 C2.86189881,18.3685159 2.62356548,18.0021984 2.42408135,17.4889087 C2.27352976,17.1014206 2.0943869,16.5191627 2.04545437,15.4470119 C1.9925496,14.2874722 1.981375,13.9396627 1.981375,11.0034921 C1.981375,8.06727778 1.9925496,7.71946825 2.04545437,6.55992857 C2.0943869,5.48777778 2.27352976,4.90551984 2.42408135,4.51803175 C2.62356548,4.00474206 2.86189881,3.6384246 3.24668056,3.25364286 C3.63150595,2.86881746 3.99782341,2.63052778 4.51106944,2.43104365 C4.89855754,2.28044841 5.48085913,2.10130556 6.55296627,2.05241667 C7.7125496,1.9995119 8.06031548,1.98829365 10.9965298,1.98829365" id="Fill-1"></path>
+                    </g>
+                    <path d="M11.1468849,14.812373 C9.12249206,14.812373 7.48135317,13.1712778 7.48135317,11.1468849 C7.48135317,9.12244841 9.12249206,7.48135317 11.1468849,7.48135317 C13.1712778,7.48135317 14.812373,9.12244841 14.812373,11.1468849 C14.812373,13.1712778 13.1712778,14.812373 11.1468849,14.812373 M11.1468849,5.5 C8.02821032,5.5 5.5,8.02816667 5.5,11.1468849 C5.5,14.2655595 8.02821032,16.7937262 11.1468849,16.7937262 C14.2655595,16.7937262 16.7937698,14.2655595 16.7937698,11.1468849 C16.7937698,8.02816667 14.2655595,5.5 11.1468849,5.5" id="Fill-4"></path>
+                    <path d="M18.1860905,5.17020516 C18.1860905,5.89899881 17.595277,6.48976865 16.866527,6.48976865 C16.1377333,6.48976865 15.5469198,5.89899881 15.5469198,5.17020516 C15.5469198,4.44141151 16.1377333,3.85064167 16.866527,3.85064167 C17.595277,3.85064167 18.1860905,4.44141151 18.1860905,5.17020516" id="Fill-6"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>			<span class="screen-reader-text">Instagram</span>
+			</a></li>
+<li id="menu-item-43145" class="youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-43145" role="menuitem"><a href="https://www.youtube.com/thenobelprize">			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1" role="img" aria-labelledby="youtube-social-icon-title youtube-social-icon-desc">
+    <title id="youtube-social-icon-title">Youtube Icon</title>
+    <desc id="youtube-social-icon-desc">Follow The Nobel Prize on Youtube</desc>
+    <defs>
+        <polygon id="path-1" points="3.75e-05 0 22 0 22 15.499975 3.75e-05 15.499975"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1280/join-us-on-social-media/youtube" transform="translate(0.000000, -48.000000)">
+            <g id="Group-9" transform="translate(0.000000, 48.000000)">
+                <rect id="Rectangle-8-Copy-2" fill="#ED3124" x="0" y="0" width="32" height="32" rx="2"></rect>
+                <g id="Page-1" transform="translate(5.000000, 8.000000)">
+                    <g id="Group-3">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M21.5402875,2.42035 C21.2872875,1.4676 20.5417875,0.71735 19.5951625,0.462725 C17.8796625,-2.5e-05 11.0000375,-2.5e-05 11.0000375,-2.5e-05 C11.0000375,-2.5e-05 4.1204125,-2.5e-05 2.4047875,0.462725 C1.4581625,0.71735 0.7126625,1.4676 0.4596625,2.42035 C3.75e-05,4.1471 3.75e-05,7.749975 3.75e-05,7.749975 C3.75e-05,7.749975 3.75e-05,11.352725 0.4596625,13.0796 C0.7126625,14.03235 1.4581625,14.7826 2.4047875,15.03735 C4.1204125,15.499975 11.0000375,15.499975 11.0000375,15.499975 C11.0000375,15.499975 17.8796625,15.499975 19.5951625,15.03735 C20.5417875,14.7826 21.2872875,14.03235 21.5402875,13.0796 C22.0000375,11.352725 22.0000375,7.749975 22.0000375,7.749975 C22.0000375,7.749975 22.0000375,4.1471 21.5402875,2.42035" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                    <polygon id="Fill-4" fill="#ED3124" points="8.75 11.0211125 8.75 4.4788625 14.5 7.7501125"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>			<span class="screen-reader-text">Youtube</span>
+			</a></li>
+</ul>
+				</nav>
+
+			</section>
+
+			<section class="colophon border-top">
+				<div class="footer-logo" itemscope itemtype="http://schema.org/Organization">
+					<h1 class="site-logo" itemprop="logo">
+						<a itemprop="url" href="index.html">
+							The Nobel Prize						</a>
+					</h1>
+				</div>
+				<div class="copyright">
+					Copyright &copy; Nobel Media AB 2020				</div>
+			</section>
+
+		</div>
+
+	</footer>
+
+			<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"dayNamesShort":["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],"dayNamesMin":["S","M","T","W","T","F","S"],"monthNames":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesShort":["January","February","March","April","May","June","July","August","September","October","November","December"],"monthNamesMin":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/clamp/clamp.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/plugins/nobelprize/assets/js/admin/lib/flickity/flickity.pkgd.js?ver=0.2.0-082864afe20d7d97d5fa86fba485de6105f0535a'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var nobelJsText = {"more":"More","close":"Close"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/dist/js/frontend.0.2.6.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/bgset/ls.bgset.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/lazysizes/lazysizes.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/objectfit/ls.object-fit.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-content/themes/nobelprize/assets/js/frontend/lib/amp/amp/amp.min.js?ver=0.2.6'></script>
+<script type='text/javascript' src='https://www.nobelprize.org/wp-includes/js/wp-embed.min.js?ver=5.2.6'></script>
+
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"06ce85f426","applicationID":"566468725","transactionName":"ZFxWYRFYVkIFUxANWF0WdVYXUFdfS0AFA1I=","queueTime":0,"applicationTime":372,"atts":"SBtVF1lCRUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

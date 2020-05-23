@@ -1,0 +1,3 @@
+B&#7841;n c&oacute; th&#7875; xu&#7845;t h&#7897;i vi&ecirc;n theo ng&agrave;y.<br/>
+N&#7871;u b&#7841;n b&#7845;m v&agrave;o n&uacute;t "Xu&#7845;t", m&#7897;t c&#7917;a s&#7893; Popup s&#7869; hi&#7879;n ra &#273;&#7875; b&#7841;n t&#7843;i file v&#7873;. File t&#7843;i v&#7873; s&#7869; c&oacute; &#273;&#7883;nh d&#7841;ng Text v&#7899;i c&aacute;c tr&#432;&#7901;ng ph&acirc;n c&aacute;ch b&#7903;i d&#7845;u TAB.<br/> 
+B&#7841;n c&oacute; th&#7875; d&ugrave;ng h&#7847;u h&#7871;t c&aacute;c &#7913;ng d&#7909;ng b&#7843;ng t&iacute;nh (nh&#432; l&agrave; Excel) &#273;&#7875; m&#7903; file n&agrave;y.

@@ -1,0 +1,1 @@
+<br />Verwijder zal deze persoon enkel van deze lijst verwijderen

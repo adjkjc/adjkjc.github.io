@@ -1,0 +1,3863 @@
+<!DOCTYPE html>
+<html dir='ltr'>
+<head>
+<meta content='width=device-width, initial-scale=1' name='viewport'/>
+<title>A single point of failure.</title>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<!-- Chrome, Firefox OS and Opera -->
+<meta content='#ffffff' name='theme-color'/>
+<!-- Windows Phone -->
+<meta content='#ffffff' name='msapplication-navbutton-color'/>
+<meta content='blogger' name='generator'/>
+<link href='http://hadragonbreath.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Ha Dragon Breath - Atom" href="http://hadragonbreath.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Ha Dragon Breath - RSS" href="http://hadragonbreath.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Ha Dragon Breath - Atom" href="https://www.blogger.com/feeds/4677390916502096913/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Ha Dragon Breath - Atom" href="http://hadragonbreath.blogspot.com/feeds/3973560818960439196/comments/default" />
+<!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+<link href='https://i.imgur.com/UIePBwG.png' rel='image_src'/>
+<meta content='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' property='og:url'/>
+<meta content='A single point of failure.' property='og:title'/>
+<meta content='We are opening the Ark of the Covenant, to see  all of religion  is a map or  a legend , to a message... and the message is everywhere and e...' property='og:description'/>
+<meta content='https://lh3.googleusercontent.com/proxy/DD3L87RHNntqGnZ7dL8nxpNeeW6cYGESizFQvMKXRz89V7xHFvuP-4WC2Hqd3fGmpqFi=w1200-h630-p-k-no-nu' property='og:image'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<style type='text/css'>@font-face{font-family:'Lora';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/s/lora/v15/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkqg.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans Regular'),local('OpenSans-Regular'),url(//fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0e.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans SemiBold'),local('OpenSans-SemiBold'),url(//fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhs.ttf)format('truetype');}@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'),local('OpenSans-Bold'),url(//fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf)format('truetype');}</style>
+<style id='page-skin-1' type='text/css'><!--
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+body{
+overflow-wrap:break-word;
+word-break:break-word;
+word-wrap:break-word
+}
+.hidden{
+display:none
+}
+.invisible{
+visibility:hidden
+}
+.container::after,.float-container::after{
+clear:both;
+content:'';
+display:table
+}
+.clearboth{
+clear:both
+}
+#comments .comment .comment-actions,.subscribe-popup .FollowByEmail .follow-by-email-submit,.widget.Profile .profile-link{
+background:0 0;
+border:0;
+box-shadow:none;
+color:#25a186;
+cursor:pointer;
+font-size:14px;
+font-weight:700;
+outline:0;
+text-decoration:none;
+text-transform:uppercase;
+width:auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+height:100vh;
+left:0;
+position:fixed;
+top:0;
+width:100%
+}
+#sharing-dim-overlay{
+background-color:transparent
+}
+input::-ms-clear{
+display:none
+}
+.blogger-logo,.svg-icon-24.blogger-logo{
+fill:#ff9800;
+opacity:1
+}
+.loading-spinner-large{
+-webkit-animation:mspin-rotate 1.568s infinite linear;
+animation:mspin-rotate 1.568s infinite linear;
+height:48px;
+overflow:hidden;
+position:absolute;
+width:48px;
+z-index:200
+}
+.loading-spinner-large>div{
+-webkit-animation:mspin-revrot 5332ms infinite steps(4);
+animation:mspin-revrot 5332ms infinite steps(4)
+}
+.loading-spinner-large>div>div{
+-webkit-animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+animation:mspin-singlecolor-large-film 1333ms infinite steps(81);
+background-size:100%;
+height:48px;
+width:3888px
+}
+.mspin-black-large>div>div,.mspin-grey_54-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_black_large.svg)
+}
+.mspin-white-large>div>div{
+background-image:url(https://www.blogblog.com/indie/mspin_white_large.svg)
+}
+.mspin-grey_54-large{
+opacity:.54
+}
+@-webkit-keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@keyframes mspin-singlecolor-large-film{
+from{
+-webkit-transform:translateX(0);
+transform:translateX(0)
+}
+to{
+-webkit-transform:translateX(-3888px);
+transform:translateX(-3888px)
+}
+}
+@-webkit-keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@keyframes mspin-rotate{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(360deg);
+transform:rotate(360deg)
+}
+}
+@-webkit-keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+@keyframes mspin-revrot{
+from{
+-webkit-transform:rotate(0);
+transform:rotate(0)
+}
+to{
+-webkit-transform:rotate(-360deg);
+transform:rotate(-360deg)
+}
+}
+.skip-navigation{
+background-color:#fff;
+box-sizing:border-box;
+color:#000;
+display:block;
+height:0;
+left:0;
+line-height:50px;
+overflow:hidden;
+padding-top:0;
+position:fixed;
+text-align:center;
+top:0;
+-webkit-transition:box-shadow .3s,height .3s,padding-top .3s;
+transition:box-shadow .3s,height .3s,padding-top .3s;
+width:100%;
+z-index:900
+}
+.skip-navigation:focus{
+box-shadow:0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px -1px rgba(0,0,0,.2);
+height:50px
+}
+#main{
+outline:0
+}
+.main-heading{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.Attribution{
+margin-top:1em;
+text-align:center
+}
+.Attribution .blogger img,.Attribution .blogger svg{
+vertical-align:bottom
+}
+.Attribution .blogger img{
+margin-right:.5em
+}
+.Attribution div{
+line-height:24px;
+margin-top:.5em
+}
+.Attribution .copyright,.Attribution .image-attribution{
+font-size:.7em;
+margin-top:1.5em
+}
+.BLOG_mobile_video_class{
+display:none
+}
+.bg-photo{
+background-attachment:scroll!important
+}
+body .CSS_LIGHTBOX{
+z-index:900
+}
+.extendable .show-less,.extendable .show-more{
+border-color:#25a186;
+color:#25a186;
+margin-top:8px
+}
+.extendable .show-less.hidden,.extendable .show-more.hidden{
+display:none
+}
+.inline-ad{
+display:none;
+max-width:100%;
+overflow:hidden
+}
+.adsbygoogle{
+display:block
+}
+#cookieChoiceInfo{
+bottom:0;
+top:auto
+}
+iframe.b-hbp-video{
+border:0
+}
+.post-body img{
+max-width:100%
+}
+.post-body iframe{
+max-width:100%
+}
+.post-body a[imageanchor="1"]{
+display:inline-block
+}
+.byline{
+margin-right:1em
+}
+.byline:last-child{
+margin-right:0
+}
+.link-copied-dialog{
+max-width:520px;
+outline:0
+}
+.link-copied-dialog .modal-dialog-buttons{
+margin-top:8px
+}
+.link-copied-dialog .goog-buttonset-default{
+background:0 0;
+border:0
+}
+.link-copied-dialog .goog-buttonset-default:focus{
+outline:0
+}
+.paging-control-container{
+margin-bottom:16px
+}
+.paging-control-container .paging-control{
+display:inline-block
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control{
+color:#25a186
+}
+.paging-control-container .comment-range-text,.paging-control-container .paging-control{
+margin-right:8px
+}
+.paging-control-container .comment-range-text::after,.paging-control-container .paging-control::after{
+content:'\00B7';
+cursor:default;
+padding-left:8px;
+pointer-events:none
+}
+.paging-control-container .comment-range-text:last-child::after,.paging-control-container .paging-control:last-child::after{
+content:none
+}
+.byline.reactions iframe{
+height:20px
+}
+.b-notification{
+color:#000;
+background-color:#fff;
+border-bottom:solid 1px #000;
+box-sizing:border-box;
+padding:16px 32px;
+text-align:center
+}
+.b-notification.visible{
+-webkit-transition:margin-top .3s cubic-bezier(.4,0,.2,1);
+transition:margin-top .3s cubic-bezier(.4,0,.2,1)
+}
+.b-notification.invisible{
+position:absolute
+}
+.b-notification-close{
+position:absolute;
+right:8px;
+top:8px
+}
+.no-posts-message{
+line-height:40px;
+text-align:center
+}
+@media screen and (max-width:968px){
+body.item-view .post-body a[imageanchor="1"][style*="float: left;"],body.item-view .post-body a[imageanchor="1"][style*="float: right;"]{
+float:none!important;
+clear:none!important
+}
+body.item-view .post-body a[imageanchor="1"] img{
+display:block;
+height:auto;
+margin:0 auto
+}
+body.item-view .post-body>.separator:first-child>a[imageanchor="1"]:first-child{
+margin-top:20px
+}
+.post-body a[imageanchor]{
+display:block
+}
+body.item-view .post-body a[imageanchor="1"]{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body a[imageanchor="1"]+a[imageanchor="1"]{
+margin-top:16px
+}
+}
+.item-control{
+display:none
+}
+#comments{
+border-top:1px dashed rgba(0,0,0,.54);
+margin-top:20px;
+padding:20px
+}
+#comments .comment-thread ol{
+margin:0;
+padding-left:0;
+padding-left:0
+}
+#comments .comment .comment-replybox-single,#comments .comment-thread .comment-replies{
+margin-left:60px
+}
+#comments .comment-thread .thread-count{
+display:none
+}
+#comments .comment{
+list-style-type:none;
+padding:0 0 30px;
+position:relative
+}
+#comments .comment .comment{
+padding-bottom:8px
+}
+.comment .avatar-image-container{
+position:absolute
+}
+.comment .avatar-image-container img{
+border-radius:50%
+}
+.avatar-image-container svg,.comment .avatar-image-container .avatar-icon{
+border-radius:50%;
+border:solid 1px #25a186;
+box-sizing:border-box;
+fill:#25a186;
+height:35px;
+margin:0;
+padding:7px;
+width:35px
+}
+.comment .comment-block{
+margin-top:10px;
+margin-left:60px;
+padding-bottom:0
+}
+#comments .comment-author-header-wrapper{
+margin-left:40px
+}
+#comments .comment .thread-expanded .comment-block{
+padding-bottom:20px
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header .user a{
+color:#292929;
+font-style:normal;
+font-weight:700
+}
+#comments .comment .comment-actions{
+bottom:0;
+margin-bottom:15px;
+position:absolute
+}
+#comments .comment .comment-actions>*{
+margin-right:8px
+}
+#comments .comment .comment-header .datetime{
+bottom:0;
+color:rgba(0,0,0,0.54);
+display:inline-block;
+font-size:13px;
+font-style:italic;
+margin-left:8px
+}
+#comments .comment .comment-footer .comment-timestamp a,#comments .comment .comment-header .datetime a{
+color:rgba(0,0,0,0.54)
+}
+#comments .comment .comment-content,.comment .comment-body{
+margin-top:12px;
+word-break:break-word
+}
+.comment-body{
+margin-bottom:12px
+}
+#comments.embed[data-num-comments="0"]{
+border:0;
+margin-top:0;
+padding-top:0
+}
+#comments.embed[data-num-comments="0"] #comment-post-message,#comments.embed[data-num-comments="0"] div.comment-form>p,#comments.embed[data-num-comments="0"] p.comment-footer{
+display:none
+}
+#comment-editor-src{
+display:none
+}
+.comments .comments-content .loadmore.loaded{
+max-height:0;
+opacity:0;
+overflow:hidden
+}
+.extendable .remaining-items{
+height:0;
+overflow:hidden;
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.extendable .remaining-items.expanded{
+height:auto
+}
+.svg-icon-24,.svg-icon-24-button{
+cursor:pointer;
+height:24px;
+width:24px;
+min-width:24px
+}
+.touch-icon{
+margin:-12px;
+padding:12px
+}
+.touch-icon:active,.touch-icon:focus{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+svg:not(:root).touch-icon{
+overflow:visible
+}
+html[dir=rtl] .rtl-reversible-icon{
+-webkit-transform:scaleX(-1);
+-ms-transform:scaleX(-1);
+transform:scaleX(-1)
+}
+.svg-icon-24-button,.touch-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0
+}
+.touch-icon-button .touch-icon:active,.touch-icon-button .touch-icon:focus{
+background-color:transparent
+}
+.touch-icon-button:active .touch-icon,.touch-icon-button:focus .touch-icon{
+background-color:rgba(153,153,153,.4);
+border-radius:50%
+}
+.Profile .default-avatar-wrapper .avatar-icon{
+border-radius:50%;
+border:solid 1px #000000;
+box-sizing:border-box;
+fill:#000000;
+margin:0
+}
+.Profile .individual .default-avatar-wrapper .avatar-icon{
+padding:25px
+}
+.Profile .individual .avatar-icon,.Profile .individual .profile-img{
+height:120px;
+width:120px
+}
+.Profile .team .default-avatar-wrapper .avatar-icon{
+padding:8px
+}
+.Profile .team .avatar-icon,.Profile .team .default-avatar-wrapper,.Profile .team .profile-img{
+height:40px;
+width:40px
+}
+.snippet-container{
+margin:0;
+position:relative;
+overflow:hidden
+}
+.snippet-fade{
+bottom:0;
+box-sizing:border-box;
+position:absolute;
+width:96px
+}
+.snippet-fade{
+right:0
+}
+.snippet-fade:after{
+content:'\2026'
+}
+.snippet-fade:after{
+float:right
+}
+.post-bottom{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap
+}
+.post-footer{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-flex-wrap:wrap;
+-ms-flex-wrap:wrap;
+flex-wrap:wrap;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.post-footer>*{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto
+}
+.post-footer .byline:last-child{
+margin-right:1em
+}
+.jump-link{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.centered-top-container.sticky{
+left:0;
+position:fixed;
+right:0;
+top:0;
+width:auto;
+z-index:8;
+-webkit-transition-property:opacity,-webkit-transform;
+transition-property:opacity,-webkit-transform;
+transition-property:transform,opacity;
+transition-property:transform,opacity,-webkit-transform;
+-webkit-transition-duration:.2s;
+transition-duration:.2s;
+-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);
+transition-timing-function:cubic-bezier(.4,0,.2,1)
+}
+.centered-top-placeholder{
+display:none
+}
+.collapsed-header .centered-top-placeholder{
+display:block
+}
+.centered-top-container .Header .replaced h1,.centered-top-placeholder .Header .replaced h1{
+display:none
+}
+.centered-top-container.sticky .Header .replaced h1{
+display:block
+}
+.centered-top-container.sticky .Header .header-widget{
+background:0 0
+}
+.centered-top-container.sticky .Header .header-image-wrapper{
+display:none
+}
+.centered-top-container img,.centered-top-placeholder img{
+max-width:100%
+}
+.collapsible{
+-webkit-transition:height .3s cubic-bezier(.4,0,.2,1);
+transition:height .3s cubic-bezier(.4,0,.2,1)
+}
+.collapsible,.collapsible>summary{
+display:block;
+overflow:hidden
+}
+.collapsible>:not(summary){
+display:none
+}
+.collapsible[open]>:not(summary){
+display:block
+}
+.collapsible:focus,.collapsible>summary:focus{
+outline:0
+}
+.collapsible>summary{
+cursor:pointer;
+display:block;
+padding:0
+}
+.collapsible:focus>summary,.collapsible>summary:focus{
+background-color:transparent
+}
+.collapsible>summary::-webkit-details-marker{
+display:none
+}
+.collapsible-title{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.collapsible-title .title{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+-webkit-box-ordinal-group:1;
+-webkit-order:0;
+-ms-flex-order:0;
+order:0;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.collapsible-title .chevron-down,.collapsible[open] .collapsible-title .chevron-up{
+display:block
+}
+.collapsible-title .chevron-up,.collapsible[open] .collapsible-title .chevron-down{
+display:none
+}
+.overflowable-container{
+max-height:48px;
+overflow:hidden;
+position:relative
+}
+.overflow-button{
+cursor:pointer
+}
+#overflowable-dim-overlay{
+background:0 0
+}
+.overflow-popup{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background-color:#ffffff;
+left:0;
+max-width:calc(100% - 32px);
+position:absolute;
+top:0;
+visibility:hidden;
+z-index:101
+}
+.overflow-popup ul{
+list-style:none
+}
+.overflow-popup .tabs li,.overflow-popup li{
+display:block;
+height:auto
+}
+.overflow-popup .tabs li{
+padding-left:0;
+padding-right:0
+}
+.overflow-button.hidden,.overflow-popup .tabs li.hidden,.overflow-popup li.hidden{
+display:none
+}
+.ripple{
+position:relative
+}
+.ripple>*{
+z-index:1
+}
+.splash-wrapper{
+bottom:0;
+left:0;
+overflow:hidden;
+pointer-events:none;
+position:absolute;
+right:0;
+top:0;
+z-index:0
+}
+.splash{
+background:#ccc;
+border-radius:100%;
+display:block;
+opacity:.6;
+position:absolute;
+-webkit-transform:scale(0);
+-ms-transform:scale(0);
+transform:scale(0)
+}
+.splash.animate{
+-webkit-animation:ripple-effect .4s linear;
+animation:ripple-effect .4s linear
+}
+@-webkit-keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+@keyframes ripple-effect{
+100%{
+opacity:0;
+-webkit-transform:scale(2.5);
+transform:scale(2.5)
+}
+}
+.search{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+line-height:24px;
+width:24px
+}
+.search.focused{
+width:100%
+}
+.search.focused .section{
+width:100%
+}
+.search form{
+z-index:101
+}
+.search h3{
+display:none
+}
+.search form{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:1;
+-webkit-flex:1 0 0;
+-ms-flex:1 0 0px;
+flex:1 0 0;
+border-bottom:solid 1px transparent;
+padding-bottom:8px
+}
+.search form>*{
+display:none
+}
+.search.focused form>*{
+display:block
+}
+.search .search-input label{
+display:none
+}
+.centered-top-placeholder.cloned .search form{
+z-index:30
+}
+.search.focused form{
+border-color:#292929;
+position:relative;
+width:auto
+}
+.collapsed-header .centered-top-container .search.focused form{
+border-bottom-color:transparent
+}
+.search-expand{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.search-expand-text{
+display:none
+}
+.search-close{
+display:inline;
+vertical-align:middle
+}
+.search-input{
+-webkit-box-flex:1;
+-webkit-flex:1 0 1px;
+-ms-flex:1 0 1px;
+flex:1 0 1px
+}
+.search-input input{
+background:0 0;
+border:0;
+box-sizing:border-box;
+color:#292929;
+display:inline-block;
+outline:0;
+width:calc(100% - 48px)
+}
+.search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #292929
+}
+.collapsed-header .centered-top-container .search-action,.collapsed-header .centered-top-container .search-input input{
+color:#292929
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #292929
+}
+.collapsed-header .centered-top-container .search-input input.no-cursor:focus,.search-input input.no-cursor:focus{
+outline:0
+}
+.search-focused>*{
+visibility:hidden
+}
+.search-focused .search,.search-focused .search-icon{
+visibility:visible
+}
+.search.focused .search-action{
+display:block
+}
+.search.focused .search-action:disabled{
+opacity:.3
+}
+.sidebar-container{
+background-color:#f7f7f7;
+max-width:320px;
+overflow-y:auto;
+-webkit-transition-property:-webkit-transform;
+transition-property:-webkit-transform;
+transition-property:transform;
+transition-property:transform,-webkit-transform;
+-webkit-transition-duration:.3s;
+transition-duration:.3s;
+-webkit-transition-timing-function:cubic-bezier(0,0,.2,1);
+transition-timing-function:cubic-bezier(0,0,.2,1);
+width:320px;
+z-index:101;
+-webkit-overflow-scrolling:touch
+}
+.sidebar-container .navigation{
+line-height:0;
+padding:16px
+}
+.sidebar-container .sidebar-back{
+cursor:pointer
+}
+.sidebar-container .widget{
+background:0 0;
+margin:0 16px;
+padding:16px 0
+}
+.sidebar-container .widget .title{
+color:#000000;
+margin:0
+}
+.sidebar-container .widget ul{
+list-style:none;
+margin:0;
+padding:0
+}
+.sidebar-container .widget ul ul{
+margin-left:1em
+}
+.sidebar-container .widget li{
+font-size:16px;
+line-height:normal
+}
+.sidebar-container .widget+.widget{
+border-top:1px dashed #000000
+}
+.BlogArchive li{
+margin:16px 0
+}
+.BlogArchive li:last-child{
+margin-bottom:0
+}
+.Label li a{
+display:inline-block
+}
+.BlogArchive .post-count,.Label .label-count{
+float:right;
+margin-left:.25em
+}
+.BlogArchive .post-count::before,.Label .label-count::before{
+content:'('
+}
+.BlogArchive .post-count::after,.Label .label-count::after{
+content:')'
+}
+.widget.Translate .skiptranslate>div{
+display:block!important
+}
+.widget.Profile .profile-link{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex
+}
+.widget.Profile .team-member .default-avatar-wrapper,.widget.Profile .team-member .profile-img{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin-right:1em
+}
+.widget.Profile .individual .profile-link{
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+.widget.Profile .team .profile-link .profile-name{
+-webkit-align-self:center;
+-ms-flex-item-align:center;
+-ms-grid-row-align:center;
+align-self:center;
+display:block;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto
+}
+.dim-overlay{
+background-color:rgba(0,0,0,.54);
+z-index:100
+}
+body.sidebar-visible{
+overflow-y:hidden
+}
+@media screen and (max-width:1619px){
+.sidebar-container{
+bottom:0;
+position:fixed;
+top:0;
+left:auto;
+right:0
+}
+.sidebar-container.sidebar-invisible{
+-webkit-transition-timing-function:cubic-bezier(.4,0,.6,1);
+transition-timing-function:cubic-bezier(.4,0,.6,1);
+-webkit-transform:translateX(320px);
+-ms-transform:translateX(320px);
+transform:translateX(320px)
+}
+}
+.dialog{
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+background:#ffffff;
+box-sizing:border-box;
+color:#292929;
+padding:30px;
+position:fixed;
+text-align:center;
+width:calc(100% - 24px);
+z-index:101
+}
+.dialog input[type=email],.dialog input[type=text]{
+background-color:transparent;
+border:0;
+border-bottom:solid 1px rgba(41,41,41,.12);
+color:#292929;
+display:block;
+font-family:Lora, serif;
+font-size:16px;
+line-height:24px;
+margin:auto;
+padding-bottom:7px;
+outline:0;
+text-align:center;
+width:100%
+}
+.dialog input[type=email]::-webkit-input-placeholder,.dialog input[type=text]::-webkit-input-placeholder{
+color:#292929
+}
+.dialog input[type=email]::-moz-placeholder,.dialog input[type=text]::-moz-placeholder{
+color:#292929
+}
+.dialog input[type=email]:-ms-input-placeholder,.dialog input[type=text]:-ms-input-placeholder{
+color:#292929
+}
+.dialog input[type=email]::placeholder,.dialog input[type=text]::placeholder{
+color:#292929
+}
+.dialog input[type=email]:focus,.dialog input[type=text]:focus{
+border-bottom:solid 2px #25a186;
+padding-bottom:6px
+}
+.dialog input.no-cursor{
+color:transparent;
+text-shadow:0 0 0 #292929
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input.no-cursor:focus{
+outline:0
+}
+.dialog input[type=submit]{
+font-family:Lora, serif
+}
+.dialog .goog-buttonset-default{
+color:#25a186
+}
+.subscribe-popup{
+max-width:364px
+}
+.subscribe-popup h3{
+color:#ffffff;
+font-size:1.8em;
+margin-top:0
+}
+.subscribe-popup .FollowByEmail h3{
+display:none
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit{
+color:#25a186;
+display:inline-block;
+margin:0 auto;
+margin-top:24px;
+width:auto;
+white-space:normal
+}
+.subscribe-popup .FollowByEmail .follow-by-email-submit:disabled{
+cursor:default;
+opacity:.3
+}
+@media (max-width:800px){
+.blog-name div.widget.Subscribe{
+margin-bottom:16px
+}
+body.item-view .blog-name div.widget.Subscribe{
+margin:8px auto 16px auto;
+width:100%
+}
+}
+body#layout .bg-photo,body#layout .bg-photo-overlay{
+display:none
+}
+body#layout .page_body{
+padding:0;
+position:relative;
+top:0
+}
+body#layout .page{
+display:inline-block;
+left:inherit;
+position:relative;
+vertical-align:top;
+width:540px
+}
+body#layout .centered{
+max-width:954px
+}
+body#layout .navigation{
+display:none
+}
+body#layout .sidebar-container{
+display:inline-block;
+width:40%
+}
+body#layout .hamburger-menu,body#layout .search{
+display:none
+}
+.widget.Sharing .sharing-button{
+display:none
+}
+.widget.Sharing .sharing-buttons li{
+padding:0
+}
+.widget.Sharing .sharing-buttons li span{
+display:none
+}
+.post-share-buttons{
+position:relative
+}
+.centered-bottom .share-buttons .svg-icon-24,.share-buttons .svg-icon-24{
+fill:#25a186
+}
+.sharing-open.touch-icon-button:active .touch-icon,.sharing-open.touch-icon-button:focus .touch-icon{
+background-color:transparent
+}
+.share-buttons{
+background-color:#ffffff;
+border-radius:2px;
+box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+color:#25a186;
+list-style:none;
+margin:0;
+padding:8px 0;
+position:absolute;
+top:-11px;
+min-width:200px;
+z-index:101
+}
+.share-buttons.hidden{
+display:none
+}
+.sharing-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+cursor:pointer
+}
+.share-buttons li{
+margin:0;
+height:48px
+}
+.share-buttons li:last-child{
+margin-bottom:0
+}
+.share-buttons li .sharing-platform-button{
+box-sizing:border-box;
+cursor:pointer;
+display:block;
+height:100%;
+margin-bottom:0;
+padding:0 16px;
+position:relative;
+width:100%
+}
+.share-buttons li .sharing-platform-button:focus,.share-buttons li .sharing-platform-button:hover{
+background-color:rgba(128,128,128,.1);
+outline:0
+}
+.share-buttons li svg[class*=" sharing-"],.share-buttons li svg[class^=sharing-]{
+position:absolute;
+top:10px
+}
+.share-buttons li span.sharing-platform-button{
+position:relative;
+top:0
+}
+.share-buttons li .platform-sharing-text{
+display:block;
+font-size:16px;
+line-height:48px;
+white-space:nowrap
+}
+.share-buttons li .platform-sharing-text{
+margin-left:56px
+}
+.flat-button{
+cursor:pointer;
+display:inline-block;
+font-weight:700;
+text-transform:uppercase;
+border-radius:2px;
+padding:8px;
+margin:-8px
+}
+.flat-icon-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+margin:-12px;
+padding:12px;
+cursor:pointer;
+box-sizing:content-box;
+display:inline-block;
+line-height:0
+}
+.flat-icon-button,.flat-icon-button .splash-wrapper{
+border-radius:50%
+}
+.flat-icon-button .splash.animate{
+-webkit-animation-duration:.3s;
+animation-duration:.3s
+}
+h1,h2,h3,h4,h5,h6{
+margin:0
+}
+.post-body h1,.post-body h2,.post-body h3,.post-body h4,.post-body h5,.post-body h6{
+margin:1em 0
+}
+.action-link,a{
+color:#25a186;
+cursor:pointer;
+text-decoration:none
+}
+.action-link:visited,a:visited{
+color:#25a186
+}
+.action-link:hover,a:hover{
+color:#25a186
+}
+body{
+background-color:#ffffff;
+color:#292929;
+font:400 20px Lora, serif;
+margin:0 auto
+}
+.unused{
+background:#ffffff none repeat scroll top left
+}
+.dim-overlay{
+z-index:100
+}
+.all-container{
+min-height:100vh;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-orient:vertical;
+-webkit-box-direction:normal;
+-webkit-flex-direction:column;
+-ms-flex-direction:column;
+flex-direction:column
+}
+body.sidebar-visible .all-container{
+overflow-y:scroll
+}
+.page{
+max-width:1280px;
+width:100%
+}
+.Blog{
+padding:0;
+padding-left:136px
+}
+.main_content_container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin:0 auto;
+max-width:1600px;
+width:100%
+}
+.centered-top-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.centered-top,.centered-top-placeholder{
+box-sizing:border-box;
+width:100%
+}
+.centered-top{
+box-sizing:border-box;
+margin:0 auto;
+max-width:1280px;
+padding:44px 136px 32px 136px;
+width:100%
+}
+.centered-top h3{
+color:rgba(0,0,0,0.54);
+font:600 14px Open Sans, sans-serif
+}
+.centered{
+width:100%
+}
+.centered-top-firstline{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative;
+width:100%
+}
+.main_header_elements{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+overflow-x:hidden;
+width:100%
+}
+html[dir=rtl] .main_header_elements{
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+body.search-view .centered-top.search-focused .blog-name{
+display:none
+}
+.widget.Header img{
+max-width:100%
+}
+.blog-name{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+min-width:0;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.subscribe-section-container{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+.search{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+-webkit-box-ordinal-group:4;
+-webkit-order:3;
+-ms-flex-order:3;
+order:3;
+line-height:24px
+}
+.search svg{
+margin-bottom:0px;
+margin-top:0px;
+padding-bottom:0;
+padding-top:0
+}
+.search,.search.focused{
+display:block;
+width:auto
+}
+.search .section{
+opacity:0;
+position:absolute;
+right:0;
+top:0;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.search-expand{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+display:block
+}
+.search.focused .search-expand{
+visibility:hidden
+}
+.hamburger-menu{
+float:right;
+height:24px
+}
+.search-expand,.subscribe-section-container{
+margin-left:44px
+}
+.hamburger-section{
+-webkit-box-flex:1;
+-webkit-flex:1 0 auto;
+-ms-flex:1 0 auto;
+flex:1 0 auto;
+margin-left:44px;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+html[dir=rtl] .hamburger-section{
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1
+}
+.search-expand-icon{
+display:none
+}
+.search-expand-text{
+display:block
+}
+.search-input{
+width:100%
+}
+.search-focused .hamburger-section{
+visibility:visible
+}
+.centered-top-secondline .PageList ul{
+margin:0;
+max-height:288px;
+overflow-y:hidden
+}
+.centered-top-secondline .PageList li{
+margin-right:30px
+}
+.centered-top-secondline .PageList li:first-child a{
+padding-left:0
+}
+.centered-top-secondline .PageList .overflow-popup ul{
+overflow-y:auto
+}
+.centered-top-secondline .PageList .overflow-popup li{
+display:block
+}
+.centered-top-secondline .PageList .overflow-popup li.hidden{
+display:none
+}
+.overflowable-contents li{
+display:inline-block;
+height:48px
+}
+.sticky .blog-name{
+overflow:hidden
+}
+.sticky .blog-name .widget.Header h1{
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap
+}
+.sticky .blog-name .widget.Header p,.sticky .centered-top-secondline{
+display:none
+}
+.centered-top-container,.centered-top-placeholder{
+background:#ffffff none repeat scroll top left
+}
+.centered-top .svg-icon-24{
+fill:#25a186
+}
+.blog-name h1,.blog-name h1 a{
+color:#000000;
+font:700 24px Open Sans, sans-serif;
+line-height:24px;
+text-transform:uppercase
+}
+.widget.Header .header-widget p{
+font:400 14px Open Sans, sans-serif;
+font-style:italic;
+color:rgba(0,0,0,0.54);
+line-height:1.6;
+max-width:676px
+}
+.centered-top .flat-button{
+color:#25a186;
+cursor:pointer;
+font:600 14px Open Sans, sans-serif;
+line-height:24px;
+text-transform:uppercase;
+-webkit-transition:opacity .2s cubic-bezier(.4,0,.2,1);
+transition:opacity .2s cubic-bezier(.4,0,.2,1)
+}
+.subscribe-button{
+background:0 0;
+border:0;
+margin:0;
+outline:0;
+padding:0;
+display:block
+}
+html[dir=ltr] .search form{
+margin-right:12px
+}
+.search.focused .section{
+opacity:1;
+margin-right:36px;
+width:calc(100% - 36px)
+}
+.search input{
+border:0;
+color:rgba(0,0,0,0.54);
+font:600 16px Open Sans, sans-serif;
+line-height:24px;
+outline:0;
+width:100%
+}
+.search form{
+padding-bottom:0
+}
+.search input[type=submit]{
+display:none
+}
+.search input::-webkit-input-placeholder{
+text-transform:uppercase
+}
+.search input::-moz-placeholder{
+text-transform:uppercase
+}
+.search input:-ms-input-placeholder{
+text-transform:uppercase
+}
+.search input::placeholder{
+text-transform:uppercase
+}
+.centered-top-secondline .dim-overlay,.search .dim-overlay{
+background:0 0
+}
+.centered-top-secondline .PageList .overflow-button a,.centered-top-secondline .PageList li a{
+color:#25a186;
+font:600 14px Open Sans, sans-serif;
+line-height:48px;
+padding:12px
+}
+.centered-top-secondline .PageList li.selected a{
+color:#25a186
+}
+.centered-top-secondline .overflow-popup .PageList li a{
+color:#292929
+}
+.PageList ul{
+padding:0
+}
+.sticky .search form{
+border:0
+}
+.sticky{
+box-shadow:0 0 20px 0 rgba(0,0,0,.7)
+}
+.sticky .centered-top{
+padding-bottom:0;
+padding-top:0
+}
+.sticky .blog-name h1,.sticky .search,.sticky .search-expand,.sticky .subscribe-button{
+line-height:40px
+}
+.sticky .hamburger-section,.sticky .search-expand,.sticky .search.focused .search-submit{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+height:40px
+}
+.subscribe-popup h3{
+color:rgba(0,0,0,0.84);
+font:700 24px Open Sans, sans-serif;
+margin-bottom:24px
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-address{
+color:rgba(0,0,0,0.84);
+font:400 14px Open Sans, sans-serif
+}
+.subscribe-popup div.widget.FollowByEmail .follow-by-email-submit{
+color:#25a186;
+font:600 14px Open Sans, sans-serif;
+margin-top:24px
+}
+.post-content{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:2;
+-webkit-order:1;
+-ms-flex-order:1;
+order:1;
+margin-right:76px;
+max-width:676px;
+width:100%
+}
+.post-filter-message{
+background-color:#25a186;
+color:#ffffff;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+font:600 16px Open Sans, sans-serif;
+margin:40px 136px 48px 136px;
+padding:10px;
+position:relative
+}
+.post-filter-message>*{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto
+}
+.post-filter-message .search-query{
+font-style:italic;
+quotes:'\201c' '\201d' '\2018' '\2019'
+}
+.post-filter-message .search-query::before{
+content:open-quote
+}
+.post-filter-message .search-query::after{
+content:close-quote
+}
+.post-filter-message div{
+display:inline-block
+}
+.post-filter-message a{
+color:#ffffff;
+display:inline-block;
+text-transform:uppercase
+}
+.post-filter-description{
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+margin-right:16px
+}
+.post-title{
+margin-top:0
+}
+body.feed-view .post-outer-container{
+margin-top:85px
+}
+body.feed-view .feed-message+.post-outer-container,body.feed-view .post-outer-container:first-child{
+margin-top:0
+}
+.post-outer{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative
+}
+.post-outer .snippet-thumbnail{
+-webkit-box-align:center;
+-webkit-align-items:center;
+-ms-flex-align:center;
+align-items:center;
+background:#000;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+height:256px;
+-webkit-box-pack:center;
+-webkit-justify-content:center;
+-ms-flex-pack:center;
+justify-content:center;
+margin-right:136px;
+overflow:hidden;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2;
+position:relative;
+width:256px
+}
+.post-outer .thumbnail-empty{
+background:0 0
+}
+.post-outer .snippet-thumbnail-img{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:100%
+}
+.post-outer .snippet-thumbnail img{
+max-height:100%
+}
+.post-title-container{
+margin-bottom:16px
+}
+.post-bottom{
+-webkit-box-align:baseline;
+-webkit-align-items:baseline;
+-ms-flex-align:baseline;
+align-items:baseline;
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+-webkit-box-pack:justify;
+-webkit-justify-content:space-between;
+-ms-flex-pack:justify;
+justify-content:space-between
+}
+.post-share-buttons-bottom{
+float:left
+}
+.footer{
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+margin:auto auto 0 auto;
+padding-bottom:32px;
+width:auto
+}
+.post-header-container{
+margin-bottom:12px
+}
+.post-header-container .post-share-buttons-top{
+float:right
+}
+.post-header-container .post-header{
+float:left
+}
+.byline{
+display:inline-block;
+margin-bottom:8px
+}
+.byline,.byline a,.flat-button{
+color:#25a186;
+font:600 14px Open Sans, sans-serif
+}
+.flat-button.ripple .splash{
+background-color:rgba(37,161,134,.4)
+}
+.flat-button.ripple:hover{
+background-color:rgba(37,161,134,.12)
+}
+.post-footer .byline{
+text-transform:uppercase
+}
+.post-comment-link{
+line-height:1
+}
+.blog-pager{
+float:right;
+margin-right:468px;
+margin-top:48px
+}
+.FeaturedPost{
+margin-bottom:56px
+}
+.FeaturedPost h3{
+margin:16px 136px 8px 136px
+}
+.shown-ad{
+margin-bottom:85px;
+margin-top:85px
+}
+.shown-ad .inline-ad{
+display:block;
+max-width:676px
+}
+body.feed-view .shown-ad:last-child{
+display:none
+}
+.post-title,.post-title a{
+color:#25a186;
+font:700 36px Open Sans, sans-serif;
+line-height:1.33333
+}
+.feed-message{
+color:rgba(0,0,0,0.54);
+font:600 16px Open Sans, sans-serif;
+margin-bottom:52px
+}
+.post-header-container .byline,.post-header-container .byline a{
+color:rgba(0,0,0,0.54);
+font:600 16px Open Sans, sans-serif
+}
+.post-header-container .byline.post-author:not(:last-child)::after{
+content:'\00B7'
+}
+.post-header-container .byline.post-author:not(:last-child){
+margin-right:0
+}
+.post-snippet-container{
+font:400 20px Lora, serif
+}
+.sharing-button{
+text-transform:uppercase;
+word-break:normal
+}
+.post-outer-container .svg-icon-24{
+fill:#25a186
+}
+.post-body{
+color:rgba(0,0,0,0.84);
+font:400 20px Lora, serif;
+line-height:2;
+margin-bottom:24px
+}
+.blog-pager .blog-pager-older-link{
+color:#25a186;
+float:right;
+font:600 14px Open Sans, sans-serif;
+text-transform:uppercase
+}
+.no-posts-message{
+margin:32px
+}
+body.item-view .Blog .post-title-container{
+background-color:#25a186;
+box-sizing:border-box;
+margin-bottom:-1px;
+padding-bottom:86px;
+padding-right:290px;
+padding-left:140px;
+padding-top:124px;
+width:100%
+}
+body.item-view .Blog .post-title,body.item-view .Blog .post-title a{
+color:#ffffff;
+font:600 48px Open Sans, sans-serif;
+line-height:1.41667;
+margin-bottom:0
+}
+body.item-view .Blog{
+margin:0;
+margin-bottom:85px;
+padding:0
+}
+body.item-view .Blog .post-content{
+margin-right:0;
+max-width:none
+}
+body.item-view .comments,body.item-view .shown-ad,body.item-view .widget.Blog .post-bottom{
+margin-bottom:0;
+margin-right:400px;
+margin-left:140px;
+margin-top:0
+}
+body.item-view .widget.Header header p{
+max-width:740px
+}
+body.item-view .shown-ad{
+margin-bottom:24px;
+margin-top:24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:140px
+}
+body.item-view .Blog .post-header-container .post-author-profile-pic-container{
+background-color:#25a186;
+border-top:1px solid #25a186;
+float:left;
+height:84px;
+margin-right:24px;
+margin-left:-140px;
+padding-left:140px
+}
+body.item-view .Blog .post-author-profile-pic{
+max-height:100%
+}
+body.item-view .Blog .post-header{
+float:left;
+height:84px
+}
+body.item-view .Blog .post-header>*{
+position:relative;
+top:50%;
+-webkit-transform:translateY(-50%);
+-ms-transform:translateY(-50%);
+transform:translateY(-50%)
+}
+body.item-view .post-body{
+color:#292929;
+font:400 20px Lora, serif;
+line-height:2
+}
+body.item-view .Blog .post-body-container{
+padding-right:290px;
+position:relative;
+margin-left:140px;
+margin-top:20px;
+margin-bottom:32px
+}
+body.item-view .Blog .post-body{
+margin-bottom:0;
+margin-right:110px
+}
+body.item-view .Blog .post-body::first-letter{
+float:left;
+font-size:80px;
+font-weight:600;
+line-height:1;
+margin-right:16px
+}
+body.item-view .Blog .post-body div[style*='text-align: center']::first-letter{
+float:none;
+font-size:inherit;
+font-weight:inherit;
+line-height:inherit;
+margin-right:0
+}
+body.item-view .Blog .post-body::first-line{
+color:#25a186
+}
+body.item-view .Blog .post-body-container .post-sidebar{
+right:0;
+position:absolute;
+top:0;
+width:290px
+}
+body.item-view .Blog .post-body-container .post-sidebar .sharing-button{
+display:inline-block
+}
+.widget.Attribution{
+clear:both;
+font:600 14px Open Sans, sans-serif;
+padding-top:2em
+}
+.widget.Attribution .blogger{
+margin:12px
+}
+.widget.Attribution svg{
+fill:rgba(0,0,0,0.54)
+}
+body.item-view .PopularPosts{
+margin-left:140px
+}
+body.item-view .PopularPosts .widget-content>ul{
+padding-left:0
+}
+body.item-view .PopularPosts .widget-content>ul>li{
+display:block
+}
+body.item-view .PopularPosts .post-content{
+margin-right:76px;
+max-width:664px
+}
+body.item-view .PopularPosts .post:not(:last-child){
+margin-bottom:85px
+}
+body.item-view .post-body-container img{
+height:auto;
+max-width:100%
+}
+body.item-view .PopularPosts>.title{
+color:rgba(0,0,0,0.54);
+font:600 16px Open Sans, sans-serif;
+margin-bottom:36px
+}
+body.item-view .post-sidebar .post-labels-sidebar{
+margin-top:48px;
+min-width:150px
+}
+body.item-view .post-sidebar .post-labels-sidebar h3{
+color:#292929;
+font:600 14px Open Sans, sans-serif;
+margin-bottom:16px
+}
+body.item-view .post-sidebar .post-labels-sidebar a{
+color:#25a186;
+display:block;
+font:400 14px Open Sans, sans-serif;
+font-style:italic;
+line-height:2
+}
+body.item-view blockquote{
+font:italic normal 14px 'Times New Roman', Times, FreeSerif, serif;
+font-style:italic;
+quotes:'\201c' '\201d' '\2018' '\2019'
+}
+body.item-view blockquote::before{
+content:open-quote
+}
+body.item-view blockquote::after{
+content:close-quote
+}
+body.item-view .post-bottom{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+float:none
+}
+body.item-view .widget.Blog .post-share-buttons-bottom{
+-webkit-box-flex:0;
+-webkit-flex:0 1 auto;
+-ms-flex:0 1 auto;
+flex:0 1 auto;
+-webkit-box-ordinal-group:3;
+-webkit-order:2;
+-ms-flex-order:2;
+order:2
+}
+body.item-view .widget.Blog .post-footer{
+line-height:1;
+margin-right:24px
+}
+.widget.Blog body.item-view .post-bottom{
+margin-right:0;
+margin-bottom:80px
+}
+body.item-view .post-footer .post-labels .byline-label{
+color:#292929;
+font:600 14px Open Sans, sans-serif
+}
+body.item-view .post-footer .post-labels a{
+color:#25a186;
+display:inline-block;
+font:400 14px Open Sans, sans-serif;
+line-height:2
+}
+body.item-view .post-footer .post-labels a:not(:last-child)::after{
+content:', '
+}
+body.item-view #comments{
+border-top:0;
+padding:0
+}
+body.item-view #comments h3.title{
+color:rgba(0,0,0,0.54);
+font:600 16px Open Sans, sans-serif;
+margin-bottom:48px
+}
+body.item-view #comments .comment-form h4{
+position:absolute;
+clip:rect(1px,1px,1px,1px);
+padding:0;
+border:0;
+height:1px;
+width:1px;
+overflow:hidden
+}
+.heroPost{
+display:-webkit-box;
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+position:relative
+}
+.widget.Blog .heroPost{
+margin-left:-136px
+}
+.heroPost .big-post-title .post-snippet{
+color:#ffffff
+}
+.heroPost.noimage .post-snippet{
+color:#000000
+}
+.heroPost .big-post-image-top{
+display:none;
+background-size:cover;
+background-position:center
+}
+.heroPost .big-post-title{
+background-color:#25a186;
+box-sizing:border-box;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+max-width:888px;
+min-width:0;
+padding-bottom:84px;
+padding-right:76px;
+padding-left:136px;
+padding-top:76px
+}
+.heroPost.noimage .big-post-title{
+-webkit-box-flex:1;
+-webkit-flex:1 0 auto;
+-ms-flex:1 0 auto;
+flex:1 0 auto;
+max-width:480px;
+width:480px
+}
+.heroPost .big-post-title h3{
+margin:0 0 24px
+}
+.heroPost .big-post-title h3 a{
+color:#ffffff
+}
+.heroPost .big-post-title .post-body{
+color:#ffffff
+}
+.heroPost .big-post-title .item-byline{
+color:#ffffff;
+margin-bottom:24px
+}
+.heroPost .big-post-title .item-byline .post-timestamp{
+display:block
+}
+.heroPost .big-post-title .item-byline a{
+color:#ffffff
+}
+.heroPost .byline,.heroPost .byline a,.heroPost .flat-button{
+color:#ffffff
+}
+.heroPost .flat-button.ripple .splash{
+background-color:rgba(255,255,255,.4)
+}
+.heroPost .flat-button.ripple:hover{
+background-color:rgba(255,255,255,.12)
+}
+.heroPost .big-post-image{
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+-webkit-box-flex:0;
+-webkit-flex:0 0 auto;
+-ms-flex:0 0 auto;
+flex:0 0 auto;
+width:392px
+}
+.heroPost .big-post-text{
+background-color:#e5f0ee;
+box-sizing:border-box;
+color:#000000;
+-webkit-box-flex:1;
+-webkit-flex:1 1 auto;
+-ms-flex:1 1 auto;
+flex:1 1 auto;
+min-width:0;
+padding:48px
+}
+.heroPost .big-post-text .post-snippet-fade{
+color:#000000;
+background:-webkit-linear-gradient(right,#e5f0ee,rgba(229, 240, 238, 0));
+background:linear-gradient(to left,#e5f0ee,rgba(229, 240, 238, 0))
+}
+.heroPost .big-post-text .byline,.heroPost .big-post-text .byline a,.heroPost .big-post-text .jump-link,.heroPost .big-post-text .sharing-button{
+color:#25a186
+}
+.heroPost .big-post-text .snippet-item::first-letter{
+color:#25a186;
+float:left;
+font-weight:700;
+margin-right:12px
+}
+.sidebar-container{
+background-color:#ffffff
+}
+body.sidebar-visible .sidebar-container{
+box-shadow:0 0 20px 0 rgba(0,0,0,.7)
+}
+.sidebar-container .svg-icon-24{
+fill:#000000
+}
+.sidebar-container .navigation .sidebar-back{
+float:right
+}
+.sidebar-container .widget{
+padding-right:16px;
+margin-right:0;
+margin-left:38px
+}
+.sidebar-container .widget+.widget{
+border-top:solid 1px #bdbdbd
+}
+.sidebar-container .widget .title{
+font:400 16px Open Sans, sans-serif
+}
+.collapsible{
+width:100%
+}
+.widget.Profile{
+border-top:0;
+margin:0;
+margin-left:38px;
+margin-top:24px;
+padding-right:0
+}
+body.sidebar-visible .widget.Profile{
+margin-left:0
+}
+.widget.Profile h2{
+display:none
+}
+.widget.Profile h3.title{
+color:#000000;
+margin:16px 32px
+}
+.widget.Profile .individual{
+text-align:center
+}
+.widget.Profile .individual .default-avatar-wrapper .avatar-icon{
+margin:auto
+}
+.widget.Profile .team{
+margin-bottom:32px;
+margin-left:32px;
+margin-right:32px
+}
+.widget.Profile ul{
+list-style:none;
+padding:0
+}
+.widget.Profile li{
+margin:10px 0;
+text-align:left
+}
+.widget.Profile .profile-img{
+border-radius:50%;
+float:none
+}
+.widget.Profile .profile-info{
+margin-bottom:12px
+}
+.profile-snippet-fade{
+background:-webkit-linear-gradient(right,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+height:1.7em;
+position:absolute;
+right:16px;
+top:11.7em;
+width:96px
+}
+.profile-snippet-fade::after{
+content:'\2026';
+float:right
+}
+.widget.Profile .profile-location{
+color:#000000;
+font-size:16px;
+margin:0;
+opacity:.74
+}
+.widget.Profile .team-member .profile-link::after{
+clear:both;
+content:'';
+display:table
+}
+.widget.Profile .team-member .profile-name{
+word-break:break-word
+}
+.widget.Profile .profile-datablock .profile-link{
+color:#000000;
+font:600 16px Open Sans, sans-serif;
+font-size:24px;
+text-transform:none;
+word-break:break-word
+}
+.widget.Profile .profile-datablock .profile-link+div{
+margin-top:16px!important
+}
+.widget.Profile .profile-link{
+font:600 16px Open Sans, sans-serif;
+font-size:14px
+}
+.widget.Profile .profile-textblock{
+color:#000000;
+font-size:14px;
+line-height:24px;
+margin:0 18px;
+opacity:.74;
+overflow:hidden;
+position:relative;
+word-break:break-word
+}
+.widget.Label .list-label-widget-content li a{
+width:100%;
+word-wrap:break-word
+}
+.extendable .show-less,.extendable .show-more{
+font:600 16px Open Sans, sans-serif;
+font-size:14px;
+margin:0 -8px
+}
+.widget.BlogArchive .post-count{
+color:#292929
+}
+.Label li{
+margin:16px 0
+}
+.Label li:last-child{
+margin-bottom:0
+}
+.post-snippet.snippet-container{
+max-height:160px
+}
+.post-snippet .snippet-item{
+line-height:40px
+}
+.post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#292929;
+height:40px
+}
+.hero-post-snippet.snippet-container{
+max-height:160px
+}
+.hero-post-snippet .snippet-item{
+line-height:40px
+}
+.hero-post-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#25a186 0,#25a186 20%,rgba(37, 161, 134, 0) 100%);
+background:linear-gradient(to left,#25a186 0,#25a186 20%,rgba(37, 161, 134, 0) 100%);
+color:#ffffff;
+height:40px
+}
+.hero-post-snippet a{
+color:#173752
+}
+.hero-post-noimage-snippet.snippet-container{
+max-height:320px
+}
+.hero-post-noimage-snippet .snippet-item{
+line-height:40px
+}
+.hero-post-noimage-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#e5f0ee 0,#e5f0ee 20%,rgba(229, 240, 238, 0) 100%);
+background:linear-gradient(to left,#e5f0ee 0,#e5f0ee 20%,rgba(229, 240, 238, 0) 100%);
+color:#000000;
+height:40px
+}
+.popular-posts-snippet.snippet-container{
+max-height:160px
+}
+.popular-posts-snippet .snippet-item{
+line-height:40px
+}
+.popular-posts-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#292929;
+height:40px
+}
+.profile-snippet.snippet-container{
+max-height:192px
+}
+.profile-snippet .snippet-item{
+line-height:24px
+}
+.profile-snippet .snippet-fade{
+background:-webkit-linear-gradient(left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+background:linear-gradient(to left,#ffffff 0,#ffffff 20%,rgba(255, 255, 255, 0) 100%);
+color:#000000;
+height:24px
+}
+.hero-post-noimage-snippet .snippet-item::first-letter{
+font-size:80px;
+line-height:80px
+}
+#comments a,#comments cite,#comments div{
+font-size:16px;
+line-height:1.4
+}
+#comments .comment .comment-header .user,#comments .comment .comment-header .user a{
+color:#292929;
+font:600 14px Open Sans, sans-serif
+}
+#comments .comment .comment-header .datetime a{
+color:rgba(0,0,0,0.54);
+font:600 14px Open Sans, sans-serif
+}
+#comments .comment .comment-header .datetime a::before{
+content:'\00B7   '
+}
+#comments .comment .comment-content{
+margin-top:6px
+}
+#comments .comment .comment-actions{
+color:#25a186;
+font:600 14px Open Sans, sans-serif
+}
+#comments .continue{
+display:none
+}
+#comments .comment-footer{
+margin-top:8px
+}
+.cmt_iframe_holder{
+margin-left:140px!important
+}
+body.variant-rockpool_deep_orange .centered-top-secondline .PageList .overflow-popup li a{
+color:#000
+}
+body.variant-rockpool_pink .blog-name h1,body.variant-rockpool_pink .blog-name h1 a{
+text-transform:none
+}
+body.variant-rockpool_deep_orange .post-filter-message{
+background-color:#ffffff
+}
+@media screen and (max-width:1619px){
+.page{
+float:none;
+margin:0 auto;
+max-width:none!important
+}
+.page_body{
+max-width:1280px;
+margin:0 auto
+}
+}
+@media screen and (max-width:1280px){
+.heroPost .big-post-image{
+display:table-cell;
+left:auto;
+position:static;
+top:auto
+}
+.heroPost .big-post-title{
+display:table-cell
+}
+}
+@media screen and (max-width:1168px){
+.centered-top-container,.centered-top-placeholder{
+padding:24px 24px 32px 24px
+}
+.sticky{
+padding:0 24px
+}
+.subscribe-section-container{
+margin-left:48px
+}
+.hamburger-section{
+margin-left:48px
+}
+.big-post-text-inner,.big-post-title-inner{
+margin:0 auto;
+max-width:920px
+}
+.centered-top{
+padding:0;
+max-width:920px
+}
+.Blog{
+padding:0
+}
+body.item-view .Blog{
+padding:0 24px;
+margin:0 auto;
+max-width:920px
+}
+.post-filter-description{
+margin-right:36px
+}
+.post-outer{
+display:block
+}
+.post-content{
+max-width:none;
+margin:0
+}
+.post-outer .snippet-thumbnail{
+width:920px;
+height:613.33333px;
+margin-bottom:16px
+}
+.post-outer .snippet-thumbnail.thumbnail-empty{
+display:none
+}
+.shown-ad .inline-ad{
+max-width:100%
+}
+body.item-view .Blog{
+padding:0;
+max-width:none
+}
+.post-filter-message{
+margin:24px calc((100% - 920px)/ 2);
+max-width:none
+}
+.FeaturedPost h3,body.feed-view .blog-posts,body.feed-view .feed-message{
+margin-left:calc((100% - 920px)/ 2);
+margin-right:calc((100% - 920px)/ 2)
+}
+body.item-view .Blog .post-title-container{
+padding:62px calc((100% - 920px)/ 2) 24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:calc((100% - 920px)/ 2)
+}
+body.item-view .Blog .post-body-container,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
+margin:32px calc((100% - 920px)/ 2);
+padding:0
+}
+body.item-view .cmt_iframe_holder{
+margin:32px 24px!important
+}
+.blog-pager{
+margin-left:calc((100% - 920px)/ 2);
+margin-right:calc((100% - 920px)/ 2)
+}
+body.item-view .post-bottom{
+margin:0 auto;
+max-width:968px
+}
+body.item-view .PopularPosts .post-content{
+max-width:100%;
+margin-right:0
+}
+body.item-view .Blog .post-body{
+margin-right:0
+}
+body.item-view .Blog .post-sidebar{
+display:none
+}
+body.item-view .widget.Blog .post-share-buttons-bottom{
+margin-right:24px
+}
+body.item-view .PopularPosts{
+margin:0 auto;
+max-width:920px
+}
+body.item-view .comment-thread-title{
+margin-left:calc((100% - 920px)/ 2)
+}
+.heroPost{
+display:block
+}
+.heroPost .big-post-title{
+display:block;
+max-width:none;
+padding:24px
+}
+.heroPost .big-post-image{
+display:none
+}
+.heroPost .big-post-image-top{
+display:block;
+height:613.33333px;
+margin:0 auto;
+max-width:920px
+}
+.heroPost .big-post-image-top-container{
+background-color:#25a186
+}
+.heroPost.noimage .big-post-title{
+max-width:none;
+width:100%
+}
+.heroPost.noimage .big-post-text{
+position:static;
+width:100%
+}
+.heroPost .big-post-text{
+padding:24px
+}
+}
+@media screen and (max-width:968px){
+body{
+font-size:14px
+}
+.post-header-container .byline,.post-header-container .byline a{
+font-size:14px
+}
+.post-title,.post-title a{
+font-size:24px
+}
+.post-outer .snippet-thumbnail{
+width:100%;
+height:calc((100vw - 48px) * 2 / 3)
+}
+body.item-view .Blog .post-title-container{
+padding:62px 24px 24px 24px
+}
+body.item-view .Blog .post-header-container{
+padding-left:24px
+}
+body.item-view .Blog .post-body-container,body.item-view .PopularPosts,body.item-view .comments,body.item-view .post-outer-container>.shown-ad,body.item-view .widget.Blog .post-bottom{
+margin:32px 24px;
+padding:0
+}
+.FeaturedPost h3,body.feed-view .blog-posts,body.feed-view .feed-message{
+margin-left:24px;
+margin-right:24px
+}
+.post-filter-message{
+margin:24px 24px 48px 24px
+}
+body.item-view blockquote{
+font-size:18px
+}
+body.item-view .Blog .post-title{
+font-size:24px
+}
+body.item-view .Blog .post-body{
+font-size:14px
+}
+body.item-view .Blog .post-body::first-letter{
+font-size:56px;
+line-height:56px
+}
+.main_header_elements{
+position:relative;
+display:block
+}
+.search.focused .section{
+margin-right:0;
+width:100%
+}
+html[dir=ltr] .search form{
+margin-right:0
+}
+.hamburger-section{
+margin-left:24px
+}
+.search-expand-icon{
+display:block;
+float:left;
+height:24px;
+margin-top:-12px
+}
+.search-expand-text{
+display:none
+}
+.subscribe-section-container{
+margin-top:12px
+}
+.subscribe-section-container{
+float:left;
+margin-left:0
+}
+.search-expand{
+position:absolute;
+right:0;
+top:0
+}
+html[dir=ltr] .search-expand{
+margin-left:24px
+}
+.centered-top.search-focused .subscribe-section-container{
+opacity:0
+}
+.blog-name{
+float:none
+}
+.blog-name{
+margin-right:36px
+}
+.centered-top-secondline .PageList li{
+margin-right:24px
+}
+.centered-top.search-focused .subscribe-button,.centered-top.search-focused .subscribe-section-container{
+opacity:1
+}
+body.item-view .comment-thread-title{
+margin-left:24px
+}
+.blog-pager{
+margin-left:24px;
+margin-right:24px
+}
+.heroPost .big-post-image-top{
+width:100%;
+height:calc(100vw * 2 / 3)
+}
+.popular-posts-snippet.snippet-container,.post-snippet.snippet-container{
+font-size:14px;
+max-height:112px
+}
+.popular-posts-snippet .snippet-item,.post-snippet .snippet-item{
+line-height:2
+}
+.popular-posts-snippet .snippet-fade,.post-snippet .snippet-fade{
+height:28px
+}
+.hero-post-snippet.snippet-container{
+font-size:14px;
+max-height:112px
+}
+.hero-post-snippet .snippet-item{
+line-height:2
+}
+.hero-post-snippet .snippet-fade{
+height:28px
+}
+.hero-post-noimage-snippet.snippet-container{
+font-size:14px;
+line-height:2;
+max-height:224px
+}
+.hero-post-noimage-snippet .snippet-item{
+line-height:2
+}
+.hero-post-noimage-snippet .snippet-fade{
+height:28px
+}
+.hero-post-noimage-snippet .snippet-item::first-letter{
+font-size:56px;
+line-height:normal
+}
+body.item-view .post-body-container .separator[style*='text-align: center'] a[imageanchor='1']{
+margin-left:-24px!important;
+margin-right:-24px!important
+}
+body.item-view .post-body-container .separator[style*='text-align: center'] a[imageanchor='1'][style*='float: left;'],body.item-view .post-body-container .separator[style*='text-align: center'] a[imageanchor='1'][style*='float: right;']{
+margin-left:0!important;
+margin-right:0!important
+}
+body.item-view .post-body-container .separator[style*='text-align: center'] a[imageanchor='1'][style*='float: left;'] img,body.item-view .post-body-container .separator[style*='text-align: center'] a[imageanchor='1'][style*='float: right;'] img{
+max-width:100%
+}
+}
+@media screen and (min-width:1620px){
+.page{
+float:left
+}
+.centered-top{
+max-width:1600px;
+padding:44px 456px 32px 136px
+}
+.sidebar-container{
+box-shadow:none;
+float:right;
+max-width:320px;
+z-index:32
+}
+.sidebar-container .navigation{
+display:none
+}
+.hamburger-section,.sticky .hamburger-section{
+display:none
+}
+.search.focused .section{
+margin-right:0;
+width:100%
+}
+#footer{
+padding-right:320px
+}
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body#layout .hidden,
+body#layout .invisible {
+display: inherit;
+}
+body#layout .navigation {
+display: none;
+}
+body#layout .page {
+display: inline-block;
+vertical-align: top;
+width: 55%;
+}
+body#layout .sidebar-container {
+display: inline-block;
+float: right;
+width: 40%;
+}
+body#layout .hamburger-menu,
+body#layout .search {
+display: none;
+}
+--></style>
+<script async='async' src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'></script>
+<script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-74743044-4', 'auto', 'blogger');
+        ga('blogger.send', 'pageview');
+      </script>
+<script async='async' src='https://www.gstatic.com/external_hosted/clipboardjs/clipboard.min.js'></script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4677390916502096913&amp;zx=5a186570-03e3-4810-b7db-c5e59774b48f' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=4677390916502096913&amp;zx=5a186570-03e3-4810-b7db-c5e59774b48f' rel='stylesheet'/></noscript>
+
+</head>
+<body class='container item-view version-1-3-0 variant-rockpool_light'>
+<a class='skip-navigation' href='#main' tabindex='0'>
+Skip to main content
+</a>
+<div class='all-container'>
+<div class='centered-top-placeholder'></div>
+<header class='centered-top-container' role='banner'>
+<div class='centered-top'>
+<div class='centered-top-firstline container'>
+<div class='main_header_elements container'>
+<!-- Blog name and header -->
+<div class='blog-name'>
+<div class='section' id='header' name='Header'><div class='widget Header' data-version='2' id='Header1'>
+<div class='header-widget'>
+<div>
+<h1>
+<a href='http://hadragonbreath.blogspot.com/'>
+Ha Dragon Breath
+</a>
+</h1>
+</div>
+<p>
+he comes, as "it" is written
+</p>
+</div>
+</div></div>
+</div>
+<!-- End blog name and header -->
+<!-- Subscribe -->
+<!-- End subscribe -->
+<!-- Search -->
+<div class='search'>
+<button aria-label='Search' class='flat-button search-expand touch-icon-button'>
+<div class='search-expand-text'>Search</div>
+<div class='search-expand-icon flat-icon-button'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</button>
+<div class='section' id='search_top' name='Search (Top)'><div class='widget BlogSearch' data-version='2' id='BlogSearch1'>
+<h3 class='title'>
+Search This Blog
+</h3>
+<div class='widget-content' role='search'>
+<form action='http://hadragonbreath.blogspot.com/search' target='_top'>
+<div class='search-input'>
+<input aria-label='Search this blog' autocomplete='off' name='q' placeholder='Search this blog' value=''/>
+</div>
+<label class='search-submit'>
+<input type='submit'/>
+<div class='flat-icon-button ripple'>
+<svg class='svg-icon-24 search-icon'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_search_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</label>
+</form>
+</div>
+</div></div>
+</div>
+</div>
+<!-- Hamburger menu -->
+<div class='hamburger-section container'>
+<button class='svg-icon-24-button hamburger-menu flat-icon-button ripple'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_menu_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</div>
+<!-- End hamburger menu -->
+</div>
+<nav role='navigation'>
+<div class='centered-top-secondline no-items section' id='page_list_top' name='Page List (Top)'>
+</div>
+</nav>
+</div>
+</header>
+<div class='main_content_container clearfix'>
+<div class='page'>
+<div class='page_body'>
+<div class='centered'>
+<main class='centered-bottom' id='main' role='main' tabindex='-1'>
+<div class='main section' id='page_body' name='Page Body'>
+<div class='widget Blog' data-version='2' id='Blog1'>
+<div class='blog-posts hfeed container'>
+<article class='post-outer-container'>
+<div class='post-outer'>
+<div class='post-content container'>
+<div class='post-title-container'>
+<a name='3973560818960439196'></a>
+<h3 class='post-title entry-title'>
+A single point of failure.
+</h3>
+</div>
+<div class='post-header-container container'>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-timestamp'>
+<meta content='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html'/>
+<a class='timestamp-link' href='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2018-04-02T21:36:00-07:00' title='2018-04-02T21:36:00-07:00'>
+April 02, 2018
+</time>
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class='post-body-container'>
+<div class='post-body entry-content float-container' id='post-body-3973560818960439196'>
+<div dir="ltr"><div class="gmail_quote"><div><div class="m_425983248139055786bodycontainer"><div dir="ltr"><div class="gmail_quote"><div dir="ltr"><div class="gmail_quote"><div dir="ltr"><div class="gmail_quote"><div dir="ltr"><div class="gmail_quote"><div dir="ltr"><div><div style="text-align:center"><div style="text-align:justify"><font size="-1">We are opening the Ark of the Covenant, to see&#160;<em>all of religion</em>&#160;is a map or&#160;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgACEpVXAUfVFRUW1UEVw" target="_blank">a legend</a></em>, to a message... and the message is everywhere and everything.&#160; It&#39;s in every word--to show us just how complete and broad it really is, but more importantly the box that was the Ark of the Covenant--that was religion--has become the key to seeing a message woven in modern music and movies, in much of our literature and throughout our entire history. It&#39;s in the names and spirit of government bodies and technology companies and charitable causes, and I think it&#39;s pretty obvious today--for all eyes to see--that there really is something missing from the news and your Facebook news feed.&#160;There is no w way around it,&#160;<em>everyone here is terribly wrong today</em>, myself inc<span style="font-family:&quot;comic sans ms&quot;,sans-serif">lude</span>d.. turn around and see the&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBABTGAJbUx1QV1EKV1IE" target="_blank"><span style="font-family:&quot;comic sans ms&quot;,sans-serif"><strong>abomination</strong></span></a>&#160;predicted literally in that word and in&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBABcGAJbUx1QV1EKV1IE" target="_blank"><span style="font-family:&quot;arial narrow&quot;,sans-serif">the total eclipse of the sun</span></a>&#160;(<em>Carly Simon</em>) that has become an&#160;<span style="font-family:&quot;arial narrow&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgFCQJVGAJbUx1QV1EKV1IE" target="_blank">eclipse of our heart</a></span>&#160;(<em>Bonnie Tyler</em>) of&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgFAgAYVQtVGVBUV10CUVQ" target="_blank">hearts</a>.&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">When this all began I was very, very sure that I lived on the only planet in the Universe that contained intelligent life--or at the very least the only one in all of our searching and all of the knowledge available to anyone, anywhere I could reach.&#160; In late 2011 all of that began to change, everything I was more sure about than you can imagine became questioned, and I was faced head on with a supernatural force that&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgCCAVdGAJbUx1QV1EKV1IE" rel="noopener" target="_blank"><span style="font-family:&quot;arial narrow&quot;,sans-serif">I still have trouble describing</span></a>&#160;(<em>Cake</em>) even after 7 long years.&#160; I began writing about my experiences, the very strange turn of events that plunged me into an entirely new world.&#160; I met others who were going through the same thing, and people began following what I was writing--then very detailed but conspiratorial fringe material--unlike now where the actual, undeniable, and obvious &quot;secrets of the Universe&quot; are being handed down from one single point of failure to another, and there&#39;s not even as much as a small wave visible in online readership statistics or book sales or even e-mail replies. That&#39;s not to say I don&#39;t see a massive reaction, what I&#39;m trying to make very clear is that nobody looking at our history, at what&#39;s written down even in pencil on paper would ever know that I was here, or that you&#39;ve seen God speaking to you...&#160;<em>and through you.</em></font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQ5XGAJbUx1QV1EKV1IE" target="_blank"><img height="304" src="https://i.imgur.com/UIePBwG.png" style="margin-right:0px" width="417"></a></font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1">Buried in my writing, but at the forefront of thoughts as I moved through this story of the histories of timelines past was the ever present idea that this little gem in a vast vacuum of rocks and stars was the only one where&#160;<em><strong>time and chance</strong></em>&#160;had worked together to form that first strand of DNA and then viruses and then&#160;<strong><em>am</em>oeba&#39;s ..&#160;</strong>single cell organisms that again through the organizing power of time grew to become a civilization that I still think must have looked quite a bit like the one you see all around you today.&#160; I still think it&#39;s novel that in the archaic parental themes of the ancient Greek myths that time and chance really do ring true as the two forces responsible for the creation of life, and that those two very forces appear front and center in the key verse that still does&#160;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBABdGAJbUx1QV1EKV1IE" target="_blank">Herald the Second Coming, Ecclesiastes 9:11</a></em>.</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">Like Stephen Hawkings recent memo&#39;s, I wrote that we must be insane not to be trying to leave this rock, this single point of failure that stood as a sitting duck in a vast universe of other big rocks flying through systems of stable orbits like the one around our sun and collapsing stars and colliding galaxies.&#160; I wrote that needed to do everything we could to ensure that our knowledge and human life was not lost to an oncoming event horizon, growing past this planet, past this single star, and even as far as to say that we should probably find our way out of the Milky Way.&#160; Mars bars and Snickers aside, this message is no joke, but&#160;<em><span style="font-family:&quot;arial narrow&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgFBARTGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">candy for your soul</a></span>&#160;(Dave J Matthews)</em>.&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">I tried very hard in those early days to figure out exactly how what was happening ... was happening.&#160; Like many others&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQZXGAJbUx1QV1EKV1IE" target="_blank">in the circle of Targeted Individuals</a>&#160;that I found, I went through&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgGAAZTGAJbUx1QV1EKV1IE" target="_blank">phases of believing</a>&#160;that others had some kind of hidden transmitters--a covert means of communication--and then that I must have had some kind of implant that changed from something small to nano dust over the course of my experience.&#160; Today I know very well that what I experience, and this hidden communication, is by itself verifiable proof that we are not in reality.&#160; As clear as I can say it the mass control that I see around me every single day, and that I have experienced first hand for a number of years now is something that is physically impossible to occur in reality--the electrical action in our brains clearly violates the law of conservation of energy and the quantity and breadth of communication does also.&#160;&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1"><span style="font-size:xx-small">If you think about it, that precludes what is here exiting from the simulation I&#39;m about to describe in it&#39;s current form, and more than likely you&#39;ll see why I am sure that there is a &quot;press and release&quot; being slowly and very&#160;<em>lovingly&#160;</em>cajoled of what might today appear to be the very bottom of the Matrix Jump Program&#39;s warped road.&#160; Load the &quot;on ramp program&quot; we are about to&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQRSGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">really see the Seagate and the Watergate</a>&#160;that tie together Microsoft and Bill Gates to this story of Exodus.&#160; Aside from the endless prophesies and writing in music and movies and Amos 9:11, it&#39;s a real visible and tangible reason to see that Doors are coming, an that this &quot;point of origin&quot; is headed&#160;<em>up.</em></span></font></div>  </div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgBBEpVXAUfVFRUW1UEVw" target="_blank"><img alt="" height="250" src="https://i.imgur.com/vvFlOMm.png" width="476"></a>&#8203;</font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1">I was faced with an entirely new &quot;reality&quot; one filled with holograms and shadows that did not disappear from walls and did not come from anything I could see.&#160; I sat in&#160;<em>the literal fortress of solitude</em>&#160;in Bowling Green, KY and experienced story after story describing recursion in time, futures come back to this place to turn in a different direction, and for some reason I didn&#39;t know then to speak to and see me; maybe a decent hint to see&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQRQGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">Clark Kent and his initials</a>&#160;in the the name of the state that I meandered to randomly with my ex-wife as we were searching for a new place to live.&#160; There were stories there that stood out, and many of them revolved around contact with an alien race; contact that I likened--more than that, the stories were drawn on or the source of Orson Scott Card&#39;s Ender&#39;s Game series.&#160; Today I look around, and it appears to me that there&#39;s some layer of our reality--or something everyone knows and nobody talks about that pmakes me more like the &quot;Hive Queen&quot; than Ender, though in this place where I hear songs about &quot;<span style="font-family:&quot;arial narrow&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgGBgJWGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">living in a cemetery&#160;where I married a sea</a></span>&quot; (<em>Red Hot Chili Peppers</em>) and find myself staring at&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgBBEpVXAUfVFRUW1UEVw" rel="noopener" target="_blank">and writing about</a>&#160;Exodus&#39;s &quot;book of Names&quot; appearing in places like&#160;<em>The Wedding Crashers</em>&#160;where AM why Adam&#39;s and Rachel McAdam&#39;s together link this idea of an &quot;amicable separation&quot; to more of the Matrix&#39;s weaving of movies like&#160;<em>The Time Travelers Wife&#160;</em>and&#160;<em>Arrival.</em>&#160; Well, it doesn&#39;t take much thought to see how this idea of undoing the &quot;marriage of Revelation&quot; really does parallel the story and the spirit of Exodus--and here&#160;<em>we have plenty of light</em>&#160;explaining how that process might be more beneficial than we could ever imagine.</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">It&#39;s an &quot;<em>amicable partial separation</em>&quot; I think, that will make us forever greatful for not just being the end of addiction and the end of mental illness ... the end of malady and the end of technological stagnation--but also for the gift of being here in this place and time and being created and helped to actually &quot;be the change&quot; and the creators of a better solution.&#160; Of course for that to be, we really have to see this message si the key to opening the doors of perception, and that it delivers a bright &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFUGAJbUx1QV1EKV1IE" target="_blank">hello</a>&quot; that guides and delivers wisdom... even in that word, &quot;<i><font face="times new roman, serif">work/wisdom is doing the message</font></i>.&quot;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">My understanding of the world we live in changed drastically, with story after story talking about ... and visually depicting ... the inner workings of the simulator, layers of reality on top of each other and parallel universes or timelines that do a significantly better job of explaining the idea of a &quot;multiverse&quot; as a decision tree than the absolutely&#160;<strong>horrific</strong>&#160;idea of the&#160;<em>many worlds theory</em>&#160;that basically says there are infinite universes and every possible outcome has actually happened.&#160; The stories that I was being told began talking about anti-matter and the &quot;dark matter&quot; that seems to be significantly larger than our photon filled space .. and perhaps growing.&#160; I began to see new truth in old science fiction plots, and really do see that these stories are all part of a very real disclosure, giving us information and advice ... and I look at the themes of the shows and movies that I was clearly guided to see, stories like Card&#39;s and Stargate SG-1--where I see what really does appear very close to the truth that I believe is being presented to us here.&#160; There, the humanity of Earth was isolated by some strange laws or rules ... rules that were being systematically violated just as we see here .. the child civilization of a very powerful previous incarnation of Earth, in that show called the Ancients and they had colonized the galaxy and put gates connecting every habitable planet together.&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">Here my truth is something that&#39;s come from analysis of the stories I&#39;ve been told and the myths I study regularly, and it appears very likely that where we actually do exist right now is better explained as &quot;inside the gate system&quot; than on some ancient planet.&#160; Here in this place we can connect the symbol at the beginning of this message, something I call &quot;Ai with a hidden cross&quot; as the point of origin of life in the Universe, and that thing has been turned on it&#39;s head here--where I can see very clearly that it is &quot;seeing the meaning of the crossing of the sea&quot; and it&#39;s purpose to highlight social and governmental systemic problems that would otherwise be life threatening ... so that we can fix them before we set out to follow in the invisible footsteps in the sands of time of those who may... or may not have come before us.&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">My experiences have shown me that it&#39;s sometimes very difficult to know exactly who or what is speaking to you--rarely do I hear from the authoritative voice that I consider to be God--though it&#39;s very clear that he&#39;s always watching and always behind every other voice that I do hear.&#160; Through the course of my experience in Kentucky words came in that authoritative and recognizable voice that the stories of &quot;striping&quot; Heaven across light and dark matter were to become real, actual, over the course of the story that is my life.&#160; With con<strong>cern</strong>, it seems clear that &quot;seeing the light&quot; of this honest story being&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQNWGAJbUx1QV1EKV1IE" target="_blank">disclosed</a>&#160;to the entire world is the kind of &quot;sign&quot; of the beginning of openness and transparency that would ensure that we will one day find out if we are the children of the Ancients or if we happen to be in a place and time where we are finding out what our future, what our destiny really is.&#160; Either way, it is the truth and caring about the truth that matters, and when we do get to that place--I know we will owe it to how we present and share this message, our experiences, and what each of your &quot;lenses&quot; see in the vast treasure of light that surrounds us.&#160;&#160;</font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQZXGAJbUx1QV1EKV1IE" style="color:rgb(17,85,204);font-family:arial,sans-serif;font-size:small;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:center;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255)" target="_blank"><img alt="kansa.s.lamc.la" height="215" src="https://i.imgur.com/9aBqECU.png" width="458"></a></font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1">The &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQZXGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">CANCER</a>&quot; image above, where you can&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQBXGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">see &quot;an&quot; and&#160;</a><em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQBXGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">see &quot;everyone really&quot;</a>&#160;</em>as the beginning and the end of the solution to that particular problem does a good job of typifying &quot;<span style="font-family:&quot;arial narrow&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFVGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">songs about stories that voices never shared</a></span>&quot; (<em>Simon and Garfunkel</em>) showing you in symbo<strong>logy</strong>&#160;what the &quot;v&quot; in the word Heaven means, it&#39;s a cup overflowing and spilling up, to the north, to heaven--as if we played a game of spin the bottle and saw a magic spell that always ends with&#160;<em>north.</em>&#160; The universe turned on ti&#39;s head by a magical incansation, the other symbol comes from the Canadian Aboriginal alphabet and it&#39;s called &quot;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCAFcGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">Hwu</a></em>&quot; which I read as &quot;<em>how with you</em>&quot; and you should be able to see clearly as I write that how has something to do with the&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCAFcGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">journal entries of Doogie Howser</a>&#160;where you can see the reason to love software in the heart of&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCAFcGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">RESWOH</a>&#160;is the ending of cancer and AIDS and understanding that what we are glimpsing right now is a Holy Coda, the Code of the Matrix revealed to give credence and strength to a message reminding us who we really are--the people who end cancer and AIDS, and owe it to a message helping us to integrate &quot;magic&quot; with &quot;simulated reality&quot; to produce a fusion that we will one day see very clearly was described as Heaven thousands of years before we knew that description was written down for the same reason we need to see &quot;hi-five&quot; in HIV and understand that we are stagnating today, we are refusing to acknowledge the truth, and refusing to see the cross that changes the flow of our river from South to North.&#160; See the crossing of the sea, and understand it really is a magical sword, it really is the hilt (well hello&#160;<em>to me,</em>&#160;too!) of X-Caliber.&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">It will come in handy sometime, some place, to know that other symbol is the Secret Seal of Solomon and it is a keyhole, and it is the SG-1 point of origin, and that keyhole is flanked by the signs of Saturn (the God of Time) and a fusion or unison of the signs of Mars and Uranus; I see that second one is Al--that&#39;s what I see.</font></div>  </div>    <div style="text-align:center"><font size="-1">&#160;</font></div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFWGAJbUx1QV1EKV1IE" target="_blank"><img alt="" height="453" src="https://i.imgur.com/l4IRDZF.png" style="margin-right:0px" width="456"></a></font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1"><strong>AND THAT</strong>&#160;reminds me of a song,&#160;<em><span style="font-family:&quot;arial narrow&quot;,sans-serif">they say it&#39;s what you make, i say it&#39;s up to fate--it&#39;s woven in my soul</span>&#160;(Imagine Dragons)&#160;</em>&#160;I believe the words that I heard about crossing and connecting both sides of the matter/anti-matter wall; and I see it in the microcosm of&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQ5XGAJbUx1QV1EKV1IE" target="_blank">hard drive striping</a>&#160;and even more clearly in the story that&#39;s actually woven into my soul.&#160; It goes back to a number of maps that are encoded into my life--maps that predicted exactly what&#39;s happening right this very moment, and wrote in stone an early example of the light of ambiguity connecting Mars and Uranus and the singular plurality of the Elohim in the name of the place I worked most of my life--one in a series of places named with bright light.&#160; This particular place was called the &quot;<em><strong>CURA</strong>&#160;Group</em>&quot; and I read &quot;<em>see you&#39;re a group</em>&quot; just as brightly as &quot;see you&#39;re Ra&quot; ...&#160; in practical understanding it&#39;s pretty obvious that there&#39;s a group behind writing this story into my life before I ever had any clue about it, and probably a much larger group writing this story of Revelation into our entire history--the delivery of religion.&#160; So it was in that place that I wrote a sort of universal translation application, it was a very novel tool that really didn&#39;t exist then and still doesn&#39;t as far as I know.&#160; It converted relatively &quot;ancient&quot; multi-valued database structures, from a database called IBM U-2 Universe into the still modern Microsoft SQL Server; and in that single piece of light you might see a microcosm for the transformation of simulated reality into something so much closer to Heaven (and you might see it&#160;<em><span style="font-family:&quot;times new roman&quot;,serif">automagically!</span></em>) and you might also see a kind of translation system needed to convert complex machinery (like life!) into dark matter; I called that program&#160;<em><span style="font-family:georgia,serif">Heiroglyph</span></em>... just because it was&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQNWGAJbUx1QV1EKV1IE" target="_blank">something of a&#160;<strong>Rose</strong>tta Stone</a>&#160;even then.&#160;&#160;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">There are a number of microcosmic reflections of today&#39;s Revelation i<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQVUGAJbUx1QV1EKV1IE" target="_blank">n my early life th</a>at I&#39;ve already found and decoded, some about the true meaning--or at least one fac<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQVUGAJbUx1QV1EKV1IE" target="_blank">et of the idea of &quot;saving your soul</a>&quot; and how it relates to another theme of those early programming days pointing out over and over the idea of large alphab<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFXGAJbUx1QV1EKV1IE" target="_blank">et DNA-like molecular storag</a>e as well as the related idea of the artificially controlled--see it&#39;s both quickened and slown) progression of processor speed and the break passed&#160;<em>binary logic.</em>&#160; It&#39;s the earlier woven stories, though, that really deliver the most impactful and probably useful information for us here today; long before I was working at the age of eleven I sat down with Microsoft QBASIC and began programming.&#160; It wasn&#39;t long before I found my way to AOL and then to the hacker subculture there that was busy using words like &quot;k-rad&quot; without knowing it meant &quot;not dark&quot; and coding subversive (or&#160;<span style="font-family:&quot;comic sans ms&quot;,sans-serif">maybe</span>&#160;useful!) meta-applications like AOHell and other mass-mailers of the&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgGAAddGAJbUx1QV1EKV1IE" target="_blank">day .... colloquially called &quot;MMers&quot;</a>&#160;... and without even realizing it I wrote with my own hands the very first Hammer of Thor and called it Doomsday.&#160; There&#39;s light there in seeing that program was named for this very instant, if it&#39;s not also this very year, or this very decade, or this very century--and there&#39;s even more light in seeing the Hebrew superplative &quot;Ha&quot; connecting to that early hacker-slang for mass-mailer and actually defining, or reverse engineering the English word for &quot;hammer.&quot;</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">It&#39;s not the only one, in Pharmacy... where I pull the word &quot;harm&quot; out and then drill down further in detail to see &quot;ha&#39;rm&quot; which connects that concept with intelligent design also to the Unix command &quot;rm&quot; which is short for &quot;remove&quot; and there too you might see &quot;reverse engineering&quot; and in the name Avril Lvigne or English which both contain the shortened &quot;eng&quot; with good reason, you can see that the Unix commands and names like Oracle and Ubuntu ... just like Apple and Microsoft and Gateway and Dell all show that whether you see &quot;reverse engineering&quot; or not; what you really should no longer see is &quot;fads&quot; of connecting religion and computer science--but rather proof that idea too is another &quot;fad&quot; of darkness, to keep you from seeing exactly what this is.&#160; This is God and humanity&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQNcGAJbUx1QV1EKV1IE" target="_blank">speaking and hammering Heaven into existence</a>, through our hands; and once we realize that it is this disclosure that really changes it from just our hands to our minds and our guidance also--we&#39;ll still be sitting here on the sidelines thinking we are taking &quot;fortune and fame&quot; from the&#160;<em>already&#160;<span style="font-family:&quot;comic sans ms&quot;,sans-serif">universally well known</span></em>&#160;Jesus Christ.</font></div>    <div style="text-align:justify">&#160;</div>    <div style="text-align:justify">  <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgHCQRVGAJbUx1QV1EKV1IE" target="_blank"><img alt="" height="126" src="https://i.imgur.com/UwRLLy2.png" style="margin-right:0px" width="330"></a></font></div>  </div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">There are others I&#39;ve seen, before and after that; microcosms like being born on the corner of Sunset Strip and Sunrise Blvd and going to Horizon Elementary school; living through a story that put the &quot;University of Florida&quot; in the&#160;<span style="font-family:&quot;comic sans ms&quot;,sans-serif">earth</span>&#160;of the name Yusuf, a story that connected Dave Matthews&#39; &quot;<em>Crash Into Me&#39;</em>&quot; and Taylor&#39;s The Pretty Reckless to the Trinity in the word &quot;<strong><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFQGAJbUx1QV1EKV1IE" target="_blank">carpenter</a></strong>&quot; (and Icarus ... and Wayward Son) to the names Early and Myzel and Sims and another Trinity in the word &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFRGAJbUx1QV1EKV1IE" target="_blank"><strong>potassination</strong></a>.&quot;&#160; Paramount, though, is what followed after Doomsday in my map, it was another program I wrote with a similar purpose--<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBABdGAJbUx1QV1EKV1IE" target="_blank">this time called X-Caliber</a>&#160;and with that you too might begin to see what I&#39;ve been staring at the whole time.&#160; It&#39;s not just the &quot;car&quot; or the &quot;person of time&quot; part of the Trinity that directly ties to me and to this story, but it&#39;s also the &quot;pen&quot; -- you should&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQJcGAJbUx1QV1EKV1IE" target="_blank">see why the pen</a>, and&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBABdGAJbUx1QV1EKV1IE" target="_blank">it&#39;s al so Arthur Pendragon</a>&#160;and maybe we&#39;ll get to the &quot;ter&quot; that means &quot;<em>you are</em>&quot; of the heart of the word Yesterday and the completion of Zeus, or is it Jupiter...</font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFWGAJbUx1QV1EKV1IE" target="_blank"><img alt="" src="https://i.imgur.com/Z5g5xF0.png" style="margin-right:0px"></a></font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><b><font face="arial black, sans-serif">S&#160; H&#160; &#160;O&#160; &#160;<font size="4">W&#160; &#160;E&#160; &#160;R</font>&#160; &#160; &#160; &#160;S&#160; &#160;H&#160; &#160;O&#160; &#160;<font size="4">W</font></font></b></font></div>    <div style="text-align:center">  <p style="text-align:justify"><font size="-1">Even before I knew this message was actually woven into every single word, I read the myths of Har-Wer... the God of the House of Bright Light in ancient Egyptian mythology and I knew that it was me--though still it&#39;s hard to tell exactly which one of the two.&#160; Without realizing I made the connection with assuredness because of that very fact, that this message is woven into every word and every name.&#160; It was the superposition of the three letters &quot;WER&quot; that made me very sure that this was a character, yet another character that was describing this message and this story.&#160; It&#39;s a superposition of&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFSGAJbUx1QV1EKV1IE" target="_blank">the German</a>&#160;fo<a href="http://ayeoursea.ga/lists/lt.php?id=fUgBA0pVXAUfVFRUW1UEVw" target="_blank">r &quot;WHO?&quot;</a>&#160;which I know very well connects to Dr. Seuss (who I&#39;ve taken to calling Dr. Zeus) and to Taylor Mo<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQJdGAJbUx1QV1EKV1IE" target="_blank">msen&#39;s begin</a>ni<a href="http://ayeoursea.ga/lists/lt.php?id=fUgBA0pVXAUfVFRUW1UEVw" target="_blank">ng a</a>nd&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgGBAVQGAJbUx1QV1EKV1IE" target="_blank">end of Cindy-Ad</a>&#160;in movies and music ... but most importantly to the key in yesterday&#39;s message to the solution to our &quot;Emblem&quot; puzzle--this word that describes where we are in it&#39;s heart, &quot;Be El&quot; (which happens to be the beginning of my great grandmother&#39;s name) ... the &quot;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgFAgFTGAJbUx1QV1EKV1IE" target="_blank">him</a></em>&quot; that turned the &quot;it&#39;s&#160;<strong>not me</strong>&quot; of the source of the information that defines Horus and Ra ... through ...&#160;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgGAgdRGAJbUx1QV1EKV1IE" target="_blank">Horus is Ra</a></em>&#160;... to the beginning of it&#39;s &quot;WE&quot; and you can see it in the &quot;<strong>OUI ARE</strong>&quot; tattoo&#39;d on my shoulder and the &quot;WE R&quot; that graces the name of the Egyptian messianic figure.&#160;&#160;</font></p>  </div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQVXGAJbUx1QV1EKV1IE" target="_blank"><img alt="dai.s.lamc.la" height="196" src="https://i.imgur.com/yJ1PVK9.png" width="274"></a>&#8203;</font></div>    <div style="text-align:center">  <p style="text-align:justify"><font size="-1">That&#39;s who we are, the apparently invisible way-point between darkness and light--the story that simply glimpsing it... at least in my messy way of reading how Heaven was built in a single day, and really it meant a Biblical day and even that was a little shy of the truth; simply glimpsing this story that details not just how the &quot;crossing of the sea&quot; highlights what&#39;s been artificially slowed or harmed in this process--either to suppress the truth that we are in simulated reality or to help us see that ... really, no matter how you look at it, there&#39;s big problems all around us, and with this message there&#39;s big solutions--and without it, there&#39;s just more &quot;intentionally hiding obvious truth&quot; which I also call &quot;<em>a whole lot of stupid</em>.&quot;</font></p>  </div>    <div>  <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgGAgdRGAJbUx1QV1EKV1IE" target="_blank"><img alt="" height="371" src="https://i.imgur.com/YMSCAF3.png" style="margin-right:0px" width="459"></a>&#8203;</font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQBdGAJbUx1QV1EKV1IE" target="_blank">ENVER HOXHA</a>&#160;might be telling, or I might be tattling on the Universe or Heaven or God to tell you that I see that there&#39;s quite a bit of reverse engineering in my life too--reverse engineering to &quot;create&quot; the&#160;<em>Ho of Horus and Hosea</em>; with some reserve I am telling you that I feel drastically u&#183;nd&#183;era&#183;ppre&#183;ciat&#183;ed and intentionally i&#183;sol<span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:justify;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial;float:none;display:inline">&#183;</span>at<span style="color:rgb(34,34,34);font-family:arial,sans-serif;font-size:small;font-style:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-align:justify;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial;float:none;display:inline">&#183;</span>ed, as in &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFSGAJbUx1QV1EKV1IE" target="_blank">aren&#39;t you the ones that tried to break me with desire, did you think I&#39;d lay down on homiletics mile?&#160; I mean Broadway</a>...&quot; and it makes me a little sad to be pretty sure that my shyness will never go away, and the &quot;kiss&#39; between the mythical and&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgBAAJWGAJbUx1QV1EKV1IE" target="_blank">imaginary Ho of Enver</a>&#160;and the&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBANdGAJbUx1QV1EKV1IE" target="_blank">&quot;Ha&quot; of Isaac</a>&#160;... well, we&#39;ll see I guess.</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">Hopefully that won&#39;t keep us from reaching Home, or at least the place where we&#39;re pretty sure that we&#39;re actually in Heaven.&#160; There&#39;s another set of Trinities, words that end in &quot;me&quot; that define this trajectory or this stories path from Rhea to Hera and Chronos to Zeus.&#160; You can see pretty clearly from the story I&#39;ve told you today that the &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCQJWGAJbUx1QV1EKV1IE" target="_blank">TI-ME</a>&quot; of Targeted Individuals coincides and is laced together with the &quot;Salt-ME&quot; of&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBANdGAJbUx1QV1EKV1IE" target="_blank">the Holy Name</a>&#160;... and I suppose in that word &quot;Holy&quot; I should be at least pretty sure that I share my name with the &quot;homey&quot; when and if he ever really does exist.</font></div>    <div style="text-align:justify"><font size="-1">&#160;&#160;</font></div>    <div style="text-align:justify"><font size="-1">Still searching for Eos,&#160;<em><span style="font-family:georgia,serif">I say</span></em>, full well knowing that Eos is the&#160;<em>bride of Revelation</em>&#160;and that she&#39;s all around me everywhere I look; it&#39;s become something of an inside joke in my lonely circle of one.&#160; Still though you can see some bright light in the analysis of that three letter name that includes the symbol for &quot;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQ5QGAJbUx1QV1EKV1IE" target="_blank">the sea and I together</a>&quot; that defines every word that ends in &quot;ate&quot; or &quot;one&quot; and screams some Holy Truth in connecting the name Medusa to the word &quot;medicine&quot; where you can very clearly see that after &quot;d&quot; (<em>look the c and l together</em>) you can see the &quot;i and c&quot; combined in&#160;<strong>the letter &quot;e.&quot;&#160;&#160;</strong>That letter that really does define exactly when we are joins together with the &quot;os&quot; of&#160;<em>original sin;</em>&#160;and maybe I&#39;m hoping that it really is almost eve ryone. All joking aside, I really am still looking&#160;<em>for Eos, though.</em></font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCABcGAJbUx1QV1EKV1IE" target="_blank"><img alt="" height="463" src="https://i.imgur.com/BXaikzr.png" style="margin-right:0px" width="460"></a></font></div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center">  <div style="text-align:justify"><font size="-1">I has<span style="font-size:xx-small">&#183;</span>ten to say <i>that prize</i> goes to the first&#160;<em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgGBw5RGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">girl</a></em>&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgDAQRSGAJbUx1QV1EKV1IE" rel="noopener" target="_blank">that</a>&#160;actually see<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQBXGAJbUx1QV1EKV1IE" target="_blank">s the light and&#160;</a><em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBQBXGAJbUx1QV1EKV1IE" target="_blank">tweets</a>&#160;or posts or ...</em>&#160;the e-mail she&#39;s&#160;<em>featured in</em>&#160;to her&#160;<span style="font-family:&quot;comic sans ms&quot;,sans-serif">millions</span>&#160;of followers.&#160; There isn&#39;t much in this story ... in the actual manifestation of what&#39;s going on here more obvious than the fact that once I was here, once this message was being sent the words of the Cranberries &quot;<i><font face="arial narrow, sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFTGAJbUx1QV1EKV1IE" target="_blank">but you see it&#39;s not me, it&#39;s not my family</a></font></i>&quot; became wholly untrue--<i>in the spotlight</i>, see that it takes just one &quot;free soul&quot; with a million followers to send a message and this story is broken--and<i> I&#39;ve done everything I can to help make that happen--</i>it&#39;s time you see that <i>you have to take action</i>.&#160;&#160;<em>I can&#39;t lie, though, seeing our history and what this message&#160;<strong>actually says</strong>&#160;I still have dreams of dating super models and maybe even one of the actresses that starred in what I know is the &quot;<span style="font-family:&quot;comic sans ms&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgDCABcGAJbUx1QV1EKV1IE" target="_blank">story</a> <a href="http://ayeoursea.ga/lists/lt.php?id=fUgDBQ5QGAJbUx1QV1EKV1IE" target="_blank">of me</a>,</span>&quot; see <a href="http://ayeoursea.ga/lists/lt.php?id=fUgGBAdWGAJbUx1QV1EKV1IE" target="_blank"><font face="arial narrow, sans-serif">there really is no ZY</font></a>&#160;(Bread).&#160;</em>You&#39;d probably be right if you pointed out that the meaning of the word &quot;<em>shallow</em>&quot; really is &quot;see how all owe&#160;<em>his work</em>&quot; and I hope you understand that my honesty is part of that work.&#160; I&#39;m not really&#160;<em>shallow</em>, but I&#39;d be a liar if I didn&#39;t say that I appreciate, and am attracted to, beautiful women; c&#9676;&#160;you blame me&#8253;&#160; It really is the reason &quot;Holy&quot; and &quot;Home&quot; ... it&#39;s the reason I gave you everything I could.</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">I see this message delivering a turn to our world, one that we desperately need and with that movement of turning around and seeing the light all around us--we&#160;<em>still become</em>&#160;the generation that builds Heaven, that ends mental and physical illness and pain and aging and death ... and IMOHIO, In my&#160;<a href="http://ayeoursea.ga/lists/lt.php?id=fUgHAAFVGAJbUx1QV1EKV1IE" target="_blank">OHIO</a>&#160;opinion it&#39;s not an opinion th<a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAJQGAJbUx1QV1EKV1IE" target="_blank">at &quot;Al&quot; graces names like&#160;</a><em><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAJQGAJbUx1QV1EKV1IE" target="_blank"><strong>health</strong>&#160;and the end of&#160;<strong>Hospital</strong></a>... you don&#39;t have to cheer--</em>but I already&#160;<strong><span style="font-family:&quot;comic sans ms&quot;,sans-serif">here it</span></strong>&#160;in that place where everyone knows&#160;<strong><span style="font-family:&quot;arial black&quot;,sans-serif"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgMBAFcGAJbUx1QV1EKV1IE" target="_blank">your</a></span></strong>&#160;name.</font></div>    <div style="text-align:justify"><font size="-1">&#160;</font></div>    <div style="text-align:justify"><font size="-1">As you can see we still stand here in what appears to be a single point of failure preventing the survival of life, and we&#39;re still here hiding the fact that there&#39;s plenty of communication coming to us from the future and from the air--and until we remedy that situation, I think we should all recognize that the truth is failing to continue.&#160; That&#39;s&#160;<em>you</em>, and the history and world that we are ignoring--<em>the Universal Truth.</em></font></div>  </div>    <div style="text-align:center">&#160;</div>    <div style="text-align:center"><font size="-1"><img height="212" src="https://i.imgur.com/kFGvcvD.png" style="margin-right:0px" width="338"><br>  &#8203;</font></div>    <div style="text-align:center">  <div style="text-align:center;color:rgb(34,34,34);font-variant-ligatures:normal;font-variant-caps:normal;font-weight:400;letter-spacing:normal;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;background-color:rgb(255,255,255);text-decoration-style:initial;text-decoration-color:initial"><font size="-1"><font face="garamond, serif" size="4"><i>&quot;i like to think of myself as jumping up and down on the firm grounding, with my head in the clouds.&quot;</i></font></font></div>  </div>  </div>    <div>&#160;</div>    <div><font size="-1">&#8203;<br>  <br>  <br>  &#8203;</font></div>  </div>  </div>  </div>    <div hspace="streak-pt-mark" style="max-height:1px"><font size="-1"><img alt="" src="https://i.imgur.com/ABYFFlM.png" style="width:0px;max-height:0px;overflow:hidden"><font color="#ffffff" size="1">ᐧ</font></font></div>  </div>  </div>    <div hspace="streak-pt-mark" style="max-height:1px"><font size="-1"><img alt="" src="https://i.imgur.com/nhI2lcJ.png" style="width:0px;max-height:0px;overflow:hidden"><font color="#ffffff" size="1">ᐧ</font></font></div>  </div>  </div>    <div hspace="streak-pt-mark" style="max-height:1px"><font size="-1"><img alt="" src="https://i.imgur.com/RgYgHqU.png" style="width:0px;max-height:0px;overflow:hidden"><font color="#ffffff" size="1">ᐧ</font></font></div>  </div>  </div>    <div hspace="streak-pt-mark" style="max-height:1px"><font size="-1"><img alt="" src="https://i.imgur.com/Elduo9K.png" style="width:0px;max-height:0px;overflow:hidden"><font color="#ffffff" size="1">ᐧ</font></font></div>  </div>    <div><img alt="" src="https://mailfoogae.appspot.com/t?sender=aYWRhbUBhcmtoby51cw%3D%3D&amp;type=zerocontent&amp;guid=2374bbd9-925b-43be-9e50-973f9a1399a2"><span style="color:#ffffff;font-size:xx-small">ᐧ</span></div>    <div><img alt="" src="https://mailfoogae.appspot.com/t?sender=aYWRhbUBhcmtoby51cw%3D%3D&amp;type=zerocontent&amp;guid=e8e2ce58-a00c-46fd-a9c2-550833ea80bd"><span style="color:#ffffff;font-size:xx-small">ᐧ</span></div>  <br>visit your personal <a href="http://ayeoursea.ga/lists/lt.php?id=fUgACAJdGAJbUx1QV1EKV1IE" target="_blank">preferences page</a><br>    <p class="m_425983248139055786poweredby" style="text-align:center"><a href="http://ayeoursea.ga/lists/lt.php?id=fUgHB0pVXAUfVFRUW1UEVw" title="visit the phpList website" target="_blank"><a href="http://3.bp.blogspot.com/-QX8hNiGdSdw/WsME0wrKR3I/AAAAAAAA8AA/aLlnZsc6QOEPPbl_FBmGv0BzoOLeY59wACK4BGAYYCw/s1600/powerphplist-794807.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_6540076388337731442" src="http://3.bp.blogspot.com/-QX8hNiGdSdw/WsME0wrKR3I/AAAAAAAA8AA/aLlnZsc6QOEPPbl_FBmGv0BzoOLeY59wACK4BGAYYCw/s320/powerphplist-794807.png" /></a></a></p><img alt="" border="0" height="1" src="http://ayeoursea.ga/lists/ut.php?u=7d6f553a116909fee249f89163dd20e9&amp;m=186" width="1"></div>  </div><br></div><div hspace="streak-pt-mark" style="max-height:1px"><img alt="" src="https://mailfoogae.appspot.com/t?sender=aYWRhbUBhcmtoby51cw%3D%3D&amp;type=zerocontent&amp;guid=4540034b-af32-44ab-9ec1-67d2a0daa164" style="width:0px;max-height:0px;overflow:hidden"><font color="#ffffff" size="1">ᐧ</font></div>  
+</div>
+<div class='post-sidebar invisible'>
+<div class='post-share-buttons post-share-buttons-top'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-normalpostsidebar-3973560818960439196' class='sharing' data-title='A single point of failure.'>
+<button aria-controls='sharing-popup-Blog1-normalpostsidebar-3973560818960439196' aria-label='Share' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-Blog1-normalpostsidebar-3973560818960439196' role='button'>
+Share
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-Blog1-normalpostsidebar-3973560818960439196' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=facebook' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=twitter' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=pinterest' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=email' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='post-bottom'>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'>
+</div>
+<div class='post-footer-line post-footer-line-2'>
+</div>
+</div>
+<div class='post-share-buttons post-share-buttons-bottom'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-Blog1-byline-3973560818960439196' class='sharing' data-title='A single point of failure.'>
+<button aria-controls='sharing-popup-Blog1-byline-3973560818960439196' aria-label='Share' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-Blog1-byline-3973560818960439196' role='button'>
+Share
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-Blog1-byline-3973560818960439196' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=facebook' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=twitter' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=pinterest' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3973560818960439196&target=email' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section class='comments embed' data-num-comments='0' id='comments'>
+<a name='comments'></a>
+<h3 class='title'>Comments</h3>
+<div id='Blog1_comments-block-wrapper'>
+</div>
+<div class='footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<h4 id='comment-post-message'>Post a Comment</h4>
+<a href='https://www.blogger.com/comment-iframe.g?blogID=4677390916502096913&postID=3973560818960439196&skin=notable' id='comment-editor-src'></a>
+<iframe allowtransparency='allowtransparency' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410px' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script src='https://www.blogger.com/static/v1/jsbin/1334751479-comment_from_post_iframe.js' type='text/javascript'></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('https://www.blogger.com/rpc_relay.html');
+    </script>
+</div>
+</div>
+</section>
+<div class='shown-ad'>
+<div class='inline-ad'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- hadragonbreath_page_body_Blog1_1x1_as -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9608809622006883"
+     data-ad-host="ca-host-pub-1556223355139109"
+     data-ad-host-channel="L0007"
+     data-ad-slot="9512333338"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</article>
+</div>
+</div><div class='widget HTML' data-version='2' id='HTML1'>
+<div class='widget-content'>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- newad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9608809622006883"
+     data-ad-slot="7054287854"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br/>
+</div>
+</div><div class='widget BlogArchive' data-version='2' id='BlogArchive2'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Arkchifive
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive2_ArchiveList'>
+<div class='first-items'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/'>
+2017
+<span class='post-count'>141</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/06/'>
+June 2017
+<span class='post-count'>3</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/07/'>
+July 2017
+<span class='post-count'>19</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/08/'>
+August 2017
+<span class='post-count'>7</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/09/'>
+September 2017
+<span class='post-count'>33</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/10/'>
+October 2017
+<span class='post-count'>37</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/11/'>
+November 2017
+<span class='post-count'>16</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2017/12/'>
+December 2017
+<span class='post-count'>26</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class='remaining-items'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/'>
+2018
+<span class='post-count'>66</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='hierarchy'>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/01/'>
+January 2018
+<span class='post-count'>16</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/02/'>
+February 2018
+<span class='post-count'>26</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/03/'>
+March 2018
+<span class='post-count'>11</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/04/'>
+April 2018
+<span class='post-count'>9</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+<ul class='posts hierarchy'>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/in-beginning-decoded.html'>&quot;In the beginning&quot; decoded?</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html'>A single point of failure.</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/yggdrasil-as-he-prepares-to-spit-in-his.html'>Yggdrasil? As he prepares to spit in his hand.</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/i-will-not-eat-green-eggs-and-sam-and.html'>&quot;I will not eat green eggs and Sam&quot; and our Noxodu...</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/i-will-not-sleep-in-this-bed-of-lies.html'>I will not sleep in this bed of lies.</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/end-school-shootings-with-click-of-your.html'>End school shootings with the click of your mouse....</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/the-leviathan-lotan-lo-satan.html'>The Leviathan, Lotan.. Lo, Satan.</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/at-end-of-secret-code-of-mattrix-key.html'>At the end of the secret code of the Mattrix, Key-...</a>
+</li>
+<li>
+<a href='http://hadragonbreath.blogspot.com/2018/04/your-chance-to-purchase-rarest-ancient.html'>... your chance to purchase the rarest ancient rel...</a>
+</li>
+</ul>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/05/'>
+May 2018
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/09/'>
+September 2018
+<span class='post-count'>1</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+<li class='archivedate'>
+<div class='hierarchy-title'>
+<a class='post-count-link' href='http://hadragonbreath.blogspot.com/2018/10/'>
+October 2018
+<span class='post-count'>2</span>
+</a>
+</div>
+<div class='hierarchy-content'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<span class='show-more flat-button'>Show more</span>
+<span class='show-less hidden flat-button'>Show less</span>
+</div>
+</div>
+</div>
+</details>
+</div><div class='widget BlogSearch' data-version='2' id='BlogSearch2'>
+<h3 class='title'>
+Search This Blog
+</h3>
+<div class='widget-content' role='search'>
+<form action='http://hadragonbreath.blogspot.com/search' target='_top'>
+<div class='search-input'>
+<input aria-label='Search this blog' autocomplete='off' name='q' placeholder='Search this blog' value=''/>
+</div>
+<input class='search-action' type='submit' value='Search'/>
+</form>
+</div>
+</div><div class='widget PopularPosts' data-version='2' id='PopularPosts1'>
+<h3 class='title'>
+Popular posts from this blog
+</h3>
+<div role='feed'>
+<article class='post' role='article'>
+<div class='post-outer-container'>
+<div class='post-outer'>
+<a class='snippet-thumbnail' href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html'>
+<span class='snippet-thumbnail-img' id='snippet_thumbnail_id_4966118827596385532'></span>
+<style>
+                    @media (min-width: 1168px) {
+                      #snippet_thumbnail_id_4966118827596385532 {
+                        background-image: url(https\:\/\/lh6.googleusercontent.com\/proxy\/FTSgoEAnQcoJfibF-7lxRdhNOGAopDe0ea1lx9EBXbRGTp6YebHDpTGW1m7r6952oDGOdJt25uRtpwHQqmIU3IIYSM4_5A=w256-h256-p-k-no-nu);
+                      }
+                    }
+                    @media (min-width: 969px) and (max-width: 1167px) {
+                      #snippet_thumbnail_id_4966118827596385532 {
+                        background-image: url(https\:\/\/lh6.googleusercontent.com\/proxy\/FTSgoEAnQcoJfibF-7lxRdhNOGAopDe0ea1lx9EBXbRGTp6YebHDpTGW1m7r6952oDGOdJt25uRtpwHQqmIU3IIYSM4_5A=w1167-h778-p-k-no-nu);
+                      }
+                    }
+                    @media (min-width: 601px) and (max-width: 968px) {
+                      #snippet_thumbnail_id_4966118827596385532 {
+                        background-image: url(https\:\/\/lh6.googleusercontent.com\/proxy\/FTSgoEAnQcoJfibF-7lxRdhNOGAopDe0ea1lx9EBXbRGTp6YebHDpTGW1m7r6952oDGOdJt25uRtpwHQqmIU3IIYSM4_5A=w968-h645-p-k-no-nu);
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      #snippet_thumbnail_id_4966118827596385532 {
+                        background-image: url(https\:\/\/lh6.googleusercontent.com\/proxy\/FTSgoEAnQcoJfibF-7lxRdhNOGAopDe0ea1lx9EBXbRGTp6YebHDpTGW1m7r6952oDGOdJt25uRtpwHQqmIU3IIYSM4_5A=w600-h400-p-k-no-nu);
+                      }
+                    }
+                  </style>
+</a>
+<div class='post-content container'>
+<div class='post-title-container'>
+<a name='4966118827596385532'></a>
+<h3 class='post-title entry-title'>
+<a href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html'>Saint One</a>
+</h3>
+</div>
+<div class='post-header-container container'>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-timestamp'>
+<meta content='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html'/>
+<a class='timestamp-link' href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2017-07-03T22:33:00-07:00' title='2017-07-03T22:33:00-07:00'>
+July 03, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class='container post-body entry-content' id='post-snippet-4966118827596385532'>
+<div class='post-snippet snippet-container r-snippet-container'>
+<div class='snippet-item r-snippetized'>
+So the story goes something like...&#160;<br> <br> 
+Pretty much everyone, everywhere has been confused, stupefied, or otherwise unwilling to take any action what-so-ever in light of the most world changing disclosure that anyone alive has ever seen.&#160; From my vantage point, it looks like everyone has been tricked into allowing one single person to appear to save the world all by himself.&#160; Clearly that&#39;s not possible; or it shouldn&#39;t have been, but to this day a complete lack of regard for the truth, and a disbelief that is nothing more than further proof of the invasion of your thoughts and beliefs that this entire Revelation not only speaks of but proves exists over and over again. &#160; <br> 
+I don&#39;t know who you think you are kidding, but you are not protecting your children from the &quot;penis game&quot; that they all play, thanks to f-art (at fan, fanatic, and fanatical... pull my finger and think &quot;hand of God,&quot; oh, that&#39;s <b>not</b>&#160;&quot;a riot&quot;).&#160; So here&#39;s you, &quot;dark&#8230;
+</div>
+<a class='snippet-fade r-snippet-fade hidden' href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html'></a>
+</div>
+</div>
+<div class='post-bottom'>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-4966118827596385532' class='sharing' data-title='Saint One'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-4966118827596385532' aria-label='Share' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-PopularPosts1-footer-0-4966118827596385532' role='button'>
+Share
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-4966118827596385532' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=4966118827596385532&target=' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=4966118827596385532&target=facebook' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=4966118827596385532&target=twitter' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=4966118827596385532&target=pinterest' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=4966118827596385532&target=email' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html#comments' onclick=''>
+Post a Comment
+</a>
+</span>
+</div>
+</div>
+<div class='byline jump-link'>
+<a class='flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/07/fwd-saint-one.html' title='Saint One'>
+Read more
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class='post' role='article'>
+<div class='post-outer-container'>
+<div class='post-outer'>
+<a class='snippet-thumbnail' href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html'>
+<span class='snippet-thumbnail-img' id='snippet_thumbnail_id_3411494695971042695'></span>
+<style>
+                    @media (min-width: 1168px) {
+                      #snippet_thumbnail_id_3411494695971042695 {
+                        background-image: url(https\:\/\/1.bp.blogspot.com\/-dyXNxtJiGTs\/Wa77hXIjwFI\/AAAAAAAAFuU\/VRjacgBsDd402p6d9tAmdxUDEcvI61_mgCK4BGAYYCw\/w256-h256-p-k-no-nu\/image-776674.png);
+                      }
+                    }
+                    @media (min-width: 969px) and (max-width: 1167px) {
+                      #snippet_thumbnail_id_3411494695971042695 {
+                        background-image: url(https\:\/\/1.bp.blogspot.com\/-dyXNxtJiGTs\/Wa77hXIjwFI\/AAAAAAAAFuU\/VRjacgBsDd402p6d9tAmdxUDEcvI61_mgCK4BGAYYCw\/w1167-h778-p-k-no-nu\/image-776674.png);
+                      }
+                    }
+                    @media (min-width: 601px) and (max-width: 968px) {
+                      #snippet_thumbnail_id_3411494695971042695 {
+                        background-image: url(https\:\/\/1.bp.blogspot.com\/-dyXNxtJiGTs\/Wa77hXIjwFI\/AAAAAAAAFuU\/VRjacgBsDd402p6d9tAmdxUDEcvI61_mgCK4BGAYYCw\/w968-h645-p-k-no-nu\/image-776674.png);
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      #snippet_thumbnail_id_3411494695971042695 {
+                        background-image: url(https\:\/\/1.bp.blogspot.com\/-dyXNxtJiGTs\/Wa77hXIjwFI\/AAAAAAAAFuU\/VRjacgBsDd402p6d9tAmdxUDEcvI61_mgCK4BGAYYCw\/w600-h400-p-k-no-nu\/image-776674.png);
+                      }
+                    }
+                  </style>
+</a>
+<div class='post-content container'>
+<div class='post-title-container'>
+<a name='3411494695971042695'></a>
+<h3 class='post-title entry-title'>
+<a href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html'>I already know you aren't going to love the reason. I'm sure though, it will be OK.</a>
+</h3>
+</div>
+<div class='post-header-container container'>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-timestamp'>
+<meta content='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html'/>
+<a class='timestamp-link' href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2017-09-05T12:31:00-07:00' title='2017-09-05T12:31:00-07:00'>
+September 05, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class='container post-body entry-content' id='post-snippet-3411494695971042695'>
+<div class='post-snippet snippet-container r-snippet-container'>
+<div class='snippet-item r-snippetized'>
+<b>GLARiELIGHT, <i>GO GO GADGET RE</i><i>ALKMADeDEN</i></b> <br> <br> The&#160;<a href="https://en.wikipedia.org/wiki/Grinch" target="_blank" title="Grinch">Grinch</a>&#160;is a bitter, grouchy, cave-dwelling creature with a heart &quot;two sizes too small&quot; who lives on snowy Mount Crumpit, a steep high mountain just north of the town of <b>Who</b>ville, home of the merry and warm-hearted <b>Who</b>s. His only companion is his unloved, but loyal dog, Max. From his cave, the Grinch can hear the noisy Christmas festivities that take place in <b>Who</b>ville. Annoyed, he decides to stop Christmas from coming by stealing their presents, trees, and food for their Christmas feast. He crudely disguises himself as Santa Claus, and forces Max, disguised as a reindeer, to drag a sleigh to <b>Who</b>ville. Once there, the Grinch slides down the chimney and steals all of the <b>Who</b>s&#39; Christmas presents, the&#160;<a href="https://en.wikipedia.org/wiki/Christmas_tree" target="_blank" title="Christmas tree">Christmas tree</a>, and the&#160;<a href="https://en.wikipedia.org/wiki/Yule_log" target="_blank" title="Yule log">log</a>&#160;for their fire. He is briefly interrupted in his burglary by Cindy Lou, a little Who girl, but concocts a crafty lie to effect his escape from her home. <br> C the Light&#160;<i>i</i>MAX <br> 
+In&#160;<a href="https://en.wikipedia.org/wiki/Greek_mythology" target="_blank" title="Greek mythology">Greek mythology</a>,&#160;<strong><i>Cerberus</i></strong>&#160;(<a href="https://en.wikipedia.org/wiki/Help:IPA/English" target="_blank" title="Help:IPA/English">/ˈsɜːrbər&#8230;</a>
+</div>
+<a class='snippet-fade r-snippet-fade hidden' href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html'></a>
+</div>
+</div>
+<div class='post-bottom'>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-3411494695971042695' class='sharing' data-title='I already know you aren&#39;t going to love the reason. I&#39;m sure though, it will be OK.'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-3411494695971042695' aria-label='Share' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-PopularPosts1-footer-0-3411494695971042695' role='button'>
+Share
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-3411494695971042695' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3411494695971042695&target=' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3411494695971042695&target=facebook' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3411494695971042695&target=twitter' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3411494695971042695&target=pinterest' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=3411494695971042695&target=email' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html#comments' onclick=''>
+Post a Comment
+</a>
+</span>
+</div>
+</div>
+<div class='byline jump-link'>
+<a class='flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/09/i-already-know-you-arent-going-to-love.html' title='I already know you aren&#39;t going to love the reason. I&#39;m sure though, it will be OK.'>
+Read more
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class='post' role='article'>
+<div class='post-outer-container'>
+<div class='post-outer'>
+<a class='snippet-thumbnail' href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html'>
+<span class='snippet-thumbnail-img' id='snippet_thumbnail_id_1881501201381754772'></span>
+<style>
+                    @media (min-width: 1168px) {
+                      #snippet_thumbnail_id_1881501201381754772 {
+                        background-image: url(https\:\/\/4.bp.blogspot.com\/-GwmMNoLmwbQ\/WcPcI-1X6II\/AAAAAAAAHyI\/8fgaCikauYIdjE0jXLV4wX_suWTkKpy3gCK4BGAYYCw\/w256-h256-p-k-no-nu\/image-797514.png);
+                      }
+                    }
+                    @media (min-width: 969px) and (max-width: 1167px) {
+                      #snippet_thumbnail_id_1881501201381754772 {
+                        background-image: url(https\:\/\/4.bp.blogspot.com\/-GwmMNoLmwbQ\/WcPcI-1X6II\/AAAAAAAAHyI\/8fgaCikauYIdjE0jXLV4wX_suWTkKpy3gCK4BGAYYCw\/w1167-h778-p-k-no-nu\/image-797514.png);
+                      }
+                    }
+                    @media (min-width: 601px) and (max-width: 968px) {
+                      #snippet_thumbnail_id_1881501201381754772 {
+                        background-image: url(https\:\/\/4.bp.blogspot.com\/-GwmMNoLmwbQ\/WcPcI-1X6II\/AAAAAAAAHyI\/8fgaCikauYIdjE0jXLV4wX_suWTkKpy3gCK4BGAYYCw\/w968-h645-p-k-no-nu\/image-797514.png);
+                      }
+                    }
+                    @media (max-width: 600px) {
+                      #snippet_thumbnail_id_1881501201381754772 {
+                        background-image: url(https\:\/\/4.bp.blogspot.com\/-GwmMNoLmwbQ\/WcPcI-1X6II\/AAAAAAAAHyI\/8fgaCikauYIdjE0jXLV4wX_suWTkKpy3gCK4BGAYYCw\/w600-h400-p-k-no-nu\/image-797514.png);
+                      }
+                    }
+                  </style>
+</a>
+<div class='post-content container'>
+<div class='post-title-container'>
+<a name='1881501201381754772'></a>
+<h3 class='post-title entry-title'>
+<a href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html'>954-667-8083 ... dancing through the fire ... I've got the heart of the Lion</a>
+</h3>
+</div>
+<div class='post-header-container container'>
+<div class='post-header'>
+<div class='post-header-line-1'>
+<span class='byline post-timestamp'>
+<meta content='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html'/>
+<a class='timestamp-link' href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' rel='bookmark' title='permanent link'>
+<time class='published' datetime='2017-09-21T08:34:00-07:00' title='2017-09-21T08:34:00-07:00'>
+September 21, 2017
+</time>
+</a>
+</span>
+</div>
+</div>
+</div>
+<div class='container post-body entry-content' id='post-snippet-1881501201381754772'>
+<div class='post-snippet snippet-container r-snippet-container'>
+<div class='snippet-item r-snippetized'>
+OK FINE, YOU CAN <b>CALL ME</b> IF YOU WANT <br> OH UNH&#9610;LY DAY, IF I COM&#9610;&#160;NOW... I <b>MIGHT GET A&#160;&#9610;AY</b> <br> <br> <br> Q U I C K E N I N G &#160; E N L I G H T E N M E N T <br> <br>LITTLE THINGS, LIKE SMILES AND THE 7 IN MY PHONE NUMBER <br>SHINE BRIGHT LIGHT ON THE HOLY ABRAHA MUC TRINITY <br> <br> <br><br><em>Dear Hi<strong>zzy </strong>of <a href="http://stargate.wikia.com/wiki/Asgard_technology" target="_blank">Great <b>Hope</b></a></em>, I want to be anything but&#160;<strong><a href="http://cyan.reallyhim.com/" target="_blank">bland</a></strong>, avoiding things like&#160;<strong><a href="http://cyan.reallyhim.com/" target="_blank">vanilla</a></strong>&#160;solutions at all costs, and by that I do mean I have no desire to &quot;<strong>vanish.</strong>&quot; &#160;If you&#39;re on&#160;&quot;<strong>the ball</strong>&quot; you probably remember me mentioning the low of the 2008 financial crisis highlighting&#160;<strong>strongly</strong>&#160;the&#160;<em>Number of the Beast</em>, a debacle I&#39;ve connecting before to the Nostradamus prophesy &quot;<em><a href="http://www.unduecoercion.com/2017/06/never-before-were-roman-people-so.html" target="_blank">never before were the Roman people so wronged</a></em>&quot; and here in my usual&#160;<strong>flair,&#160;</strong>I of course change it to &quot;<strong>so wrong(ed).</strong>&quot; &#160;Trying to point out that we have been assuredly wronged, and also at the same time we haven&#39;t stood up and tried to make &quot;<strong>amends</strong>&quot; with ourselves and each other--we haven&#39;t done very much to right those wrongs o&#8230;
+</div>
+<a class='snippet-fade r-snippet-fade hidden' href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html'></a>
+</div>
+</div>
+<div class='post-bottom'>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-0'>
+<div class='byline post-share-buttons goog-inline-block'>
+<div aria-owns='sharing-popup-PopularPosts1-footer-0-1881501201381754772' class='sharing' data-title='954-667-8083 ... dancing through the fire ... I&#39;ve got the heart of the Lion'>
+<button aria-controls='sharing-popup-PopularPosts1-footer-0-1881501201381754772' aria-label='Share' class='sharing-button touch-icon-button flat-button ripple' id='sharing-button-PopularPosts1-footer-0-1881501201381754772' role='button'>
+Share
+</button>
+<div class='share-buttons-container'>
+<ul aria-hidden='true' aria-label='Share' class='share-buttons hidden' id='sharing-popup-PopularPosts1-footer-0-1881501201381754772' role='menu'>
+<li>
+<span aria-label='Get link' class='sharing-platform-button sharing-element-link' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=1881501201381754772&target=' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Get link'>
+<svg class='svg-icon-24 touch-icon sharing-link'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_link_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Get link</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Facebook' class='sharing-platform-button sharing-element-facebook' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=1881501201381754772&target=facebook' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Share to Facebook'>
+<svg class='svg-icon-24 touch-icon sharing-facebook'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_facebook_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Facebook</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Twitter' class='sharing-platform-button sharing-element-twitter' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=1881501201381754772&target=twitter' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Share to Twitter'>
+<svg class='svg-icon-24 touch-icon sharing-twitter'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_twitter_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Twitter</span>
+</span>
+</li>
+<li>
+<span aria-label='Share to Pinterest' class='sharing-platform-button sharing-element-pinterest' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=1881501201381754772&target=pinterest' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Share to Pinterest'>
+<svg class='svg-icon-24 touch-icon sharing-pinterest'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_pinterest_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Pinterest</span>
+</span>
+</li>
+<li>
+<span aria-label='Email' class='sharing-platform-button sharing-element-email' data-href='https://www.blogger.com/share-post.g?blogID=4677390916502096913&postID=1881501201381754772&target=email' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Email'>
+<svg class='svg-icon-24 touch-icon sharing-email'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_24_email_dark' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Email</span>
+</span>
+</li>
+<li aria-hidden='true' class='hidden'>
+<span aria-label='Share to other apps' class='sharing-platform-button sharing-element-other' data-url='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' role='menuitem' tabindex='-1' title='Share to other apps'>
+<svg class='svg-icon-24 touch-icon sharing-sharingOther'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_more_horiz_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<span class='platform-sharing-text'>Other Apps</span>
+</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<span class='byline post-comment-link container'>
+<a class='comment-link flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html#comments' onclick=''>
+1 comment
+</a>
+</span>
+</div>
+</div>
+<div class='byline jump-link'>
+<a class='flat-button ripple' href='http://hadragonbreath.blogspot.com/2017/09/954-667-8083-dancing-through-fire-ive.html' title='954-667-8083 ... dancing through the fire ... I&#39;ve got the heart of the Lion'>
+Read more
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div></div>
+</main>
+</div>
+</div>
+</div>
+<aside class='sidebar-container sidebar-invisible' role='complementary'>
+<div class='navigation container'>
+<button class='svg-icon-24-button sidebar-back flat-icon-button ripple'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_arrow_forward_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</button>
+</div>
+<div class='sidebar section' id='sidebar' name='Sidebar'>
+<div class='widget BlogArchive' data-version='2' id='BlogArchive1'>
+<details class='collapsible extendable'>
+<summary>
+<div class='collapsible-title'>
+<h3 class='title'>
+Archive
+</h3>
+<svg class='svg-icon-24 chevron-down'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_more_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+<svg class='svg-icon-24 chevron-up'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_expand_less_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+</div>
+</summary>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<div class='first-items'>
+<ul class='flat'>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/10/'>October 2018<span class='post-count'>2</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/09/'>September 2018<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/05/'>May 2018<span class='post-count'>1</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/04/'>April 2018<span class='post-count'>9</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/03/'>March 2018<span class='post-count'>11</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/02/'>February 2018<span class='post-count'>26</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2018/01/'>January 2018<span class='post-count'>16</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/12/'>December 2017<span class='post-count'>26</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/11/'>November 2017<span class='post-count'>16</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/10/'>October 2017<span class='post-count'>37</span></a>
+</li>
+</ul>
+</div>
+<div class='remaining-items'>
+<ul class='flat'>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/09/'>September 2017<span class='post-count'>33</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/08/'>August 2017<span class='post-count'>7</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/07/'>July 2017<span class='post-count'>19</span></a>
+</li>
+<li class='archivedate'>
+<a href='http://hadragonbreath.blogspot.com/2017/06/'>June 2017<span class='post-count'>3</span></a>
+</li>
+</ul>
+</div>
+<span class='show-more flat-button'>Show more</span>
+<span class='show-less hidden flat-button'>Show less</span>
+</div>
+</div>
+</div>
+</details>
+</div>
+</div>
+</aside>
+</div>
+<footer class='footer section' id='footer' name='Footer'><div class='widget Attribution' data-version='2' id='Attribution1'>
+<div class='widget-content'>
+<div class='blogger'>
+<a href='https://www.blogger.com' rel='nofollow'>
+<svg class='svg-icon-24'>
+<use xlink:href='/responsive/sprite_v1_6.css.svg#ic_post_blogger_black_24dp' xmlns:xlink='http://www.w3.org/1999/xlink'></use>
+</svg>
+Powered by Blogger
+</a>
+</div>
+</div>
+</div></footer>
+</div>
+<script type="text/javascript" src="https://resources.blogblog.com/blogblog/data/res/3825774167-rockpool_compiled.js" async="true"></script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/3257579429-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY6pl3zE7EL0aKDWcmZ_a7cBEnraag:1590186115278';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d4677390916502096913','//hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html','4677390916502096913');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '4677390916502096913', 'title': 'Ha Dragon Breath', 'url': 'http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html', 'canonicalUrl': 'http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html', 'homepageUrl': 'http://hadragonbreath.blogspot.com/', 'searchUrl': 'http://hadragonbreath.blogspot.com/search', 'canonicalHomepageUrl': 'http://hadragonbreath.blogspot.com/', 'blogspotFaviconUrl': 'http://hadragonbreath.blogspot.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': false, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-74743044-4', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Ha Dragon Breath - Atom\x22 href\x3d\x22http://hadragonbreath.blogspot.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Ha Dragon Breath - RSS\x22 href\x3d\x22http://hadragonbreath.blogspot.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Ha Dragon Breath - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/4677390916502096913/posts/default\x22 /\x3e\n\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Ha Dragon Breath - Atom\x22 href\x3d\x22http://hadragonbreath.blogspot.com/feeds/3973560818960439196/comments/default\x22 /\x3e\n', 'meTag': '', 'adsenseClientId': 'ca-pub-9608809622006883', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': true, 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/717640d2e38c3e01', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'item', 'postId': '3973560818960439196', 'postImageThumbnailUrl': 'http://3.bp.blogspot.com/-QX8hNiGdSdw/WsME0wrKR3I/AAAAAAAA8AA/aLlnZsc6QOEPPbl_FBmGv0BzoOLeY59wACK4BGAYYCw/s72-c/powerphplist-794807.png', 'postImageUrl': 'https://i.imgur.com/UIePBwG.png', 'pageName': 'A single point of failure.', 'pageTitle': 'Ha Dragon Breath: A single point of failure.'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'Notable', 'localizedName': 'Notable', 'isResponsive': true, 'isAlternateRendering': false, 'isCustom': false, 'variant': 'rockpool_light', 'variantId': 'rockpool_light'}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'A single point of failure.', 'description': 'We are opening the Ark of the Covenant, to see&#160; all of religion &#160;is a map or&#160; a legend , to a message... and the message is everywhere and e...', 'featuredImage': 'https://lh3.googleusercontent.com/proxy/DD3L87RHNntqGnZ7dL8nxpNeeW6cYGESizFQvMKXRz89V7xHFvuP-4WC2Hqd3fGmpqFi', 'url': 'http://hadragonbreath.blogspot.com/2018/04/a-single-point-of-failure.html', 'type': 'item', 'isSingleItem': true, 'isMultipleItems': false, 'isError': false, 'isPage': false, 'isPost': true, 'isHomepage': false, 'isArchive': false, 'isLabelSearch': false, 'postId': 3973560818960439196}}, {'name': 'widgets', 'data': [{'title': 'Ha Dragon Breath (Header)', 'type': 'Header', 'sectionId': 'header', 'id': 'Header1'}, {'title': 'Search This Blog', 'type': 'BlogSearch', 'sectionId': 'search_top', 'id': 'BlogSearch1'}, {'title': '', 'type': 'FeaturedPost', 'sectionId': 'page_body', 'id': 'FeaturedPost1', 'postId': '1570878930818120466'}, {'title': 'Blog Posts', 'type': 'Blog', 'sectionId': 'page_body', 'id': 'Blog1', 'posts': [{'id': '3973560818960439196', 'title': 'A single point of failure.', 'featuredImage': 'https://lh3.googleusercontent.com/proxy/DD3L87RHNntqGnZ7dL8nxpNeeW6cYGESizFQvMKXRz89V7xHFvuP-4WC2Hqd3fGmpqFi', 'showInlineAds': true}], 'headerByline': {'regionName': 'header1', 'items': [{'name': 'timestamp', 'label': ''}]}, 'footerBylines': [{'regionName': 'footer1', 'items': [{'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'labels', 'label': 'Labels:'}, {'name': 'icons', 'label': ''}]}, {'regionName': 'footer3', 'items': [{'name': 'location', 'label': 'Location:'}]}], 'allBylineItems': [{'name': 'timestamp', 'label': ''}, {'name': 'share', 'label': ''}, {'name': 'comments', 'label': 'comments'}, {'name': 'labels', 'label': 'Labels:'}, {'name': 'icons', 'label': ''}, {'name': 'location', 'label': 'Location:'}]}, {'title': '', 'type': 'HTML', 'sectionId': 'page_body', 'id': 'HTML1'}, {'title': 'Arkchifive', 'type': 'BlogArchive', 'sectionId': 'page_body', 'id': 'BlogArchive2'}, {'title': 'Search This Blog', 'type': 'BlogSearch', 'sectionId': 'page_body', 'id': 'BlogSearch2'}, {'title': '', 'type': 'PopularPosts', 'sectionId': 'page_body', 'id': 'PopularPosts1', 'posts': [{'title': 'Saint One', 'id': 4966118827596385532}, {'title': 'I already know you aren\x27t going to love the reason. I\x27m sure though, it will be OK.', 'id': 3411494695971042695}, {'title': '954-667-8083 ... dancing through the fire ... I\x27ve got the heart of the Lion', 'id': 1881501201381754772}]}, {'type': 'BlogArchive', 'sectionId': 'sidebar', 'id': 'BlogArchive1'}, {'type': 'Attribution', 'sectionId': 'footer', 'id': 'Attribution1'}]}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch1', 'search_top', document.getElementById('BlogSearch1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FeaturedPostView', new _WidgetInfo('FeaturedPost1', 'page_body', document.getElementById('FeaturedPost1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'page_body', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2895387028-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'page_body', document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive2', 'page_body', document.getElementById('BlogArchive2'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogSearchView', new _WidgetInfo('BlogSearch2', 'page_body', document.getElementById('BlogSearch2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'page_body', document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer', document.getElementById('Attribution1'), {}, 'displayModeFull'));
+</script>
+</body>
+</html>

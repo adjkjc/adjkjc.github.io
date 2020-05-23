@@ -1,0 +1,918 @@
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>ga('create', 'UA-74743044-2', 'auto');
+ga('send', 'pageview');</p>
+</script>
+<!--<body style="width: 100%; margin: 0 auto; text-align: left; font-family: Arial;">
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>NA SHOW ERA - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="../fonts.googleapis.com/css@family=Open+Sans%253A300italic,400italic,600italic,700italic,800italic,400,300,600,700,800.css" rel="stylesheet" type="text/css">
+        <link href="../fonts.googleapis.com/css@family=Source+Code+Pro%253A500.css" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="http://atlas.s.lamc.la/favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="http://atlas.s.lamc.la/highlight.css">
+        <link rel="stylesheet" href="http://atlas.s.lamc.la/tomorrow-night.css">
+        <link rel="stylesheet" href="http://atlas.s.lamc.la/ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="../cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar"><script src="../addsearch.com/js/index.html@key=1665711c9123bf7488b1b5127916aeff"></script>
+            <ul class="chapter"><li><a href="ARTIMESIAN.html"><strong>1.</strong> OUR TIME, HERE</a></li><li><a href="MECHADLZIDECK.html"><strong>2.</strong> MECHADLZIDECK</a></li><li><a href="DEVLANEU.html"><strong>3.</strong> THE DEVLANEU</a></li><li><a href="SAMSYUCH.html"><strong>4.</strong> SAMYACH: ADVENT 7.0</a></li><li><a href="SOUNDCHECK.html"><strong>5.</strong> SOUND CHECK</a></li><li><a href="ECC911.html"><strong>6.</strong> ECC ENIACCK</a></li><li><a href="FRUMLEGT.html"><strong>7.</strong> PRIVET, FRUMLEGT AN</a></li><li><a href="SCIZZARS.html"><strong>8.</strong> INTERSTITIAL</a></li><li><a href="ARTANWORDS.html"><strong>9.</strong> ART AN S WORD</a></li><li><a href="REMOLUSTIAN.html"><strong>10.</strong> REMO LUCIAN</a></li><li><a href="CHRYOHOLY.html"><strong>11.</strong> SLUR; E, SIS</a></li><li><a href="SACREDSOUL.html"><strong>12.</strong> SACREDOULS</a></li><li><a href="RELEVATION.html"><strong>13.</strong> RE LEV ICNOHSER</a></li><li><a href="MALORKAY.html"><strong>14.</strong> MALORKAY ET LUX</a></li><li><a href="N8SRADIN.html"><strong>15.</strong> BLOOD RAYNE</a></li><li><a href="MISSISSIPPI.html"><strong>16.</strong> MISSESSIPI</a></li><li><a href="CONNETICUT.html"><strong>17.</strong> CONNECT UC IT</a></li><li><a href="NEMEC.html"><strong>18.</strong> CEMENTARY REPRINT</a></li><li><a href="INDIANA.html"><strong>19.</strong> SHADY PINES</a></li><li><a href="BLISS.html"><strong>20.</strong> BLISS/ALO</a></li><li><a href="KISMET.html"><strong>21.</strong> KISMET/ALO</a></li><li><a href="OUITHEPPL.html"><strong>22.</strong> OUITHEPPL/ALO</a></li><li><a href="KEYNES2.html"><strong>23.</strong> KEYNES2/ALO</a></li><li><a href="JERUSALEM.html"><strong>24.</strong> JERUSALEM/ALO</a></li><li><a href="http://atlas.s.lamc.la/2017-09-29-duck-duck-golden-egg.html"><strong>25.</strong> DUCKDUCKGO/AU</a></li><li><a href="VIETUCCIMACH.html"><strong>26.</strong> SOBIT QCKLY FRED</a></li><li><a href="http://atlas.s.lamc.la/KEYNES.html"><strong>27.</strong> KEYNES/ALO</a></li><li><a href="MECHACHI.html"><strong>28.</strong> I KISS AND DANCE</a></li><li><a href="ENZOSPUB.html"><strong>29.</strong> EZNO'S STAINED GLASS</a></li><li><a href="SKURMAWEH.html"><strong>30.</strong> PARTING C'S AQUA N</a></li><li><a href="3ADJUROLT.html"><strong>31.</strong> 3 BUECEDUAT, ME JUST</a></li><li><a href="ADAMGOT2BJS.html"><strong>32.</strong> TWO, ONLY TWO</a></li><li><a href="RICKIMOROLED.html"><strong>33.</strong> CIA, K, &amp; MOR, TY</a></li><li><a href="ASMODALIANIADIAM.html"><strong>34.</strong> HEY PLANETH ADAM &amp; HOSE</a></li><li><a href="IMAGULATKA.html"><strong>35.</strong> HI MOM GRU POTATO?</a></li><li><a href="http://atlas.s.lamc.la/TOASTRAM.html"><strong>36.</strong> HI &quot;TO AST&quot; ROAR M</a></li><li><a href="http://atlas.s.lamc.la/CRUELGENIAD.html"><strong>37.</strong> CRUEL GEN I AD</a></li><li><a href="IRMAX.html"><strong>38.</strong> ITL IRMAX ATLA</a></li><li><a href="B2BIONIC.html"><strong>39.</strong> BlUr BON IONIC</a></li><li><a href="http://atlas.s.lamc.la/LEDMCAVENDESH.html"><strong>40.</strong> CAVE END VILESH</a></li><li><a href="INTRASINAMUS.html"><strong>41.</strong> NUDVREAD TEST AM, E, &amp; T</a></li><li><a href="SKIRMISH.html"><strong>42.</strong> SIREN S KIRMISH</a></li><li><a href="MOROKSRIG.html"><strong>43.</strong> MOROS KO RIG</a></li><li><a href="CRYAMELYON.html"><strong>44.</strong> CRONAMELYON</a></li><li><a href="INCASEBAIT.html"><strong>45.</strong> INCASEBAIT</a></li><li><a href="http://atlas.s.lamc.la/MEVATHI.html"><strong>46.</strong> MEVATHI</a></li><li><a href="VESUBIACEIUM.html"><strong>47.</strong> INTISMO NOCTE TERMINUS SEMPITERNUM</a></li><li><a href="http://atlas.s.lamc.la/ROUTARE.html"><strong>48.</strong> WALL 2 STAY? STALK ME</a></li><li><a href="http://atlas.s.lamc.la/HALLOWE2R.html"><strong>49.</strong> HAYOM VAT OW</a></li><li><a href="http://atlas.s.lamc.la/TION.html"><strong>50.</strong> THE TION-NING OF HA-ADAM</a></li><li><a href="http://atlas.s.lamc.la/GRENORADINE.html"><strong>51.</strong> G RE NAD IN E &amp; AM B R O Si A</a></li><li><a href="http://atlas.s.lamc.la/BELINSKY.html"><strong>52.</strong> BELINSKY</a></li><li><a href="http://atlas.s.lamc.la/REASON.html"><strong>53.</strong> HELL OR HIGH TREASON</a></li><li><a href="http://atlas.s.lamc.la/VESPERA.html"><strong>54.</strong> U C PER I</a></li><li><a href="http://atlas.s.lamc.la/ORTANIS.html"><strong>55.</strong> ALKADAM OR TANIS</a></li><li><a href="http://atlas.s.lamc.la/MOLASSES.html"><strong>56.</strong> SLOW AS MOLASSES, DECK</a></li><li><a href="http://atlas.s.lamc.la/VERADONUM.html"><strong>57.</strong> VER BETT DO N, MMMM?</a></li><li><a href="http://atlas.s.lamc.la/IT.html"><strong>58.</strong> IT</a></li><li><a href="http://atlas.s.lamc.la/MARSHALL.html"><strong>59.</strong> MARCH -&gt; ALL</a></li><li><a href="http://atlas.s.lamc.la/BETHESDAY.html"><strong>60.</strong> BET HES DAY</a></li><li><a href="http://atlas.s.lamc.la/SALTLINE.html"><strong>61.</strong> SALT LINE</a></li><li><a href="http://atlas.s.lamc.la/SAYFREED.html"><strong>62.</strong> AM &quot;AN&quot; DUH..</a></li><li><a href="http://atlas.s.lamc.la/CKIMPLER.html"><strong>63.</strong> /|\ AT ARI</a></li><li><a href="http://atlas.s.lamc.la/PENCE.html"><strong>64.</strong> COMMON CENTS</a></li><li><a href="http://atlas.s.lamc.la/TY.html"><strong>65.</strong> TO LC WEUROME</a></li><li><a href="http://atlas.s.lamc.la/ALLTA.html"><strong>66.</strong> ITS TURMERIC TIRE</a></li><li><a href="http://atlas.s.lamc.la/SECORDANOLIVED.html"><strong>67.</strong> SECORD AND NORTH</a></li><li><a href="http://atlas.s.lamc.la/FIRST.html"><strong>68.</strong> FIRST AND FED</a></li><li><a href="http://atlas.s.lamc.la/CLEARYBLVD.html"><strong>69.</strong> CLEAR Y BLVD</a></li><li><a href="http://atlas.s.lamc.la/WISDATAM.html"><strong>70.</strong> WISDOM</a></li><li><a href="http://atlas.s.lamc.la/OCADSWAY.html"><strong>71.</strong> CONVEY</a></li><li><a href="http://atlas.s.lamc.la/LANDOH.html"><strong>72.</strong> SLANDOH</a></li><li><a href="http://atlas.s.lamc.la/FINALE.html"><strong>73.</strong> FINALLY</a></li><li><a href="http://atlas.s.lamc.la/H.html"><strong>74.</strong> gnil-c-w/H.html</a></li><li><a href="http://atlas.s.lamc.la/CODACUS.html"><strong>75.</strong> ILIT CUS</a></li><li><a href="http://atlas.s.lamc.la/CHARMADA.html"><strong>76.</strong> C NO H ARM</a></li><li><a href="http://atlas.s.lamc.la/SEVENTY.html"><strong>77.</strong> SEVENTY</a></li><li><a href="http://atlas.s.lamc.la/MEALLTERY.html"><strong>78.</strong> MEA ___ LET UR Y</a></li><li><a href="http://atlas.s.lamc.la/TAXONOMY.html"><strong>79.</strong> TA X ON O MY T</a></li><li><a href="http://atlas.s.lamc.la/NASHOWER.html" class="active"><strong>80.</strong> NA SHOW ERA</a></li><li><a href="http://atlas.s.lamc.la/TOXODUSK.html"><strong>81.</strong> OXODUS TORK?</a></li><li><a href="http://atlas.s.lamc.la/ARFAXAD.html"><strong>82.</strong> SPARTIFACTS</a></li><li><a href="http://atlas.s.lamc.la/SINGLEPTO.html"><strong>83.</strong> C AT LET RS</a></li><li><a href="http://atlas.s.lamc.la/LETITRAIN.html"><strong>84.</strong> LET IT RAIN</a></li><li><a href="http://atlas.s.lamc.la/BRIMSTONE.html"><strong>85.</strong> Fe Si ISTONE</a></li><li><a href="http://atlas.s.lamc.la/REDASSHIT.html"><strong>86.</strong> REDSASHIT</a></li><li><a href="http://atlas.s.lamc.la/HIGHERA.html"><strong>87.</strong> ROAD SALT: OSAMNaKE D</a></li><li><a href="http://atlas.s.lamc.la/ADUNCALIFT.html"><strong>88.</strong> THE HERALD OF JC2IKP</a></li><li><a href="http://atlas.s.lamc.la/RATOXIT.html"><strong>89.</strong> TO X HOLA</a></li><li><a href="http://atlas.s.lamc.la/ADIOSAS.html"><strong>90.</strong> ADIODAS</a></li><li><a href="http://atlas.s.lamc.la/XOXO.html"><strong>91.</strong> XOXPA</a></li><li><a href="http://atlas.s.lamc.la/KANSAS.html"><strong>92.</strong> KANSAS</a></li><li><a href="http://atlas.s.lamc.la/RESWOH.html"><strong>93.</strong> RE SW? OH</a></li><li><a href="http://atlas.s.lamc.la/YOIBLING.html"><strong>94.</strong> Y O I BLING ?</a></li><li><a href="http://atlas.s.lamc.la/MALOVIOUS.html"><strong>95.</strong> FI CVS ET MAL Q</a></li><li><a href="http://atlas.s.lamc.la/HOWIE.html"><strong>96.</strong> HAWAII</a></li><li><a href="http://atlas.s.lamc.la/GJALLARHORN.html"><strong>97.</strong> ALL OUR HORN</a></li><li><a href="http://atlas.s.lamc.la/JESHOW.html"><strong>98.</strong> JERUSALEM</a></li><li><a href="http://atlas.s.lamc.la/CHALK.html"><strong>99.</strong> CHALK</a></li><li><a href="http://atlas.s.lamc.la/TAYLOR.html"><strong>100.</strong> KISS ME TAY</a></li><li><a href="http://atlas.s.lamc.la/FUCK.html"><strong>101.</strong> FUCK</a></li><li><a href="CONFESSION.html"><strong>102.</strong> CONFESSION</a></li><li><a href="SERENADE.html"><strong>103.</strong> SERENADE</a></li><li><a href="PULL.html"><strong>104.</strong> PULL</a></li><li><a href="MUAH.html"><strong>105.</strong> M U AH</a></li><li><a href="http://atlas.s.lamc.la/PERSEUS.html"><strong>106.</strong> PER SE YOU</a></li><li><a href="THUNDERSTAND.html"><strong>107.</strong> THUNDERSTAND</a></li><li><a href="CURSOR.html"><strong>108.</strong> LAYLOT</a></li><li><a href="ACESHI.html"><strong>109.</strong> ACESHI</a></li><li><a href="IOWA.html"><strong>110.</strong> IOWA</a></li><li><a href="http://atlas.s.lamc.la/YAT.html"><strong>111.</strong> IYYYO</a></li><li><a href="http://atlas.s.lamc.la/SPEECH.html"><strong>112.</strong> SPCH2</a></li><li><a href="OFIVES.html"><strong>113.</strong> FIVE</a></li><li><a href="FOUR.html"><strong>114.</strong> FUIR</a></li><li><a href="http://atlas.s.lamc.la/GATE.html"><strong>115.</strong> THE GATE TO FREEDOM ETLROI</a></li><li><a href="MYLIFE.html"><strong>116.</strong> MYLIFE ... THE MICROCOSM OTM</a></li><li><a href="TISCOMING.html"><strong>117.</strong> COMING MA</a></li><li><a href="DESSERT.html"><strong>118.</strong> DEXSERT</a></li><li><a href="http://atlas.s.lamc.la/EVERWICK.html"><strong>119.</strong> EVOURWICK</a></li><li><a href="http://atlas.s.lamc.la/HASHEMESH.html"><strong>120.</strong> HASHOWESH NAME ISH</a></li><li><a href="CINOIZE.html"><strong>121.</strong> CINOIZE</a></li><li><a href="HAMMER.html"><strong>122.</strong> HAMMER</a></li><li><a href="HAMP.html"><strong>123.</strong> HAMP</a></li><li><a href="http://atlas.s.lamc.la/FLICKDABIC.html"><strong>124.</strong> FLIPDABIC</a></li><li><a href="BYNOBIANCA.html"><strong>125.</strong> R U B Y</a></li><li><a href="http://atlas.s.lamc.la/ATITEN.html"><strong>126.</strong> ATIRX</a></li><li><a href="HASHEMESHIC.html"><strong>127.</strong> SUNFIRE</a></li><li><a href="FLYER.html"><strong>128.</strong> FLYPER</a></li><li><a href="SAUSAGE.html"><strong>129.</strong> ME AN U STAGE</a></li><li><a href="http://atlas.s.lamc.la/HYAMDAI.html"><strong>130.</strong> HELLO WORLD</a></li><li><a href="http://atlas.s.lamc.la/ERICHOW.html"><strong>131.</strong> RD 2 RR Y</a></li><li><a href="BERESHIT.html"><strong>132.</strong> DEN</a></li><li><a href="http://atlas.s.lamc.la/ADAMSROD.html"><strong>133.</strong> ROD</a></li><li><a href="http://atlas.s.lamc.la/TION.html"><strong>134.</strong> IT IS TIME</a></li><li><a href="CURE.html"><strong>135.</strong> THE CURE</a></li><li><a href="http://atlas.s.lamc.la/WHO.html"><strong>136.</strong> WHO AGAIN?</a></li><li><a href="SERDEN.html"><strong>137.</strong> SERDENICITY</a></li><li><a href="http://atlas.s.lamc.la/CLIMAX.html"><strong>138.</strong> IMUS FI CLI MAX</a></li><li><a href="http://atlas.s.lamc.la/SOIS.html"><strong>139.</strong> SOIS HISTER Y</a></li><li><a href="http://atlas.s.lamc.la/CHOPARTIN.html"><strong>140.</strong> CHOPARTIN</a></li><li><a href="http://atlas.s.lamc.la/OMEALFHT.html"><strong>141.</strong> OMEALFHT OME ALF HOLY TR</a></li><li><a href="RIGELA.html"><strong>142.</strong> RIGEL, THE FOOT OF OUR CHRIST</a></li><li><a href="HADID.html"><strong>143.</strong> DO HADID DID I? !?</a></li><li><a href="http://atlas.s.lamc.la/MUASEEKHART.html"><strong>144.</strong> SEEKART YOUR ANSWERS</a></li><li><a href="http://atlas.s.lamc.la/NITY.html"><strong>145.</strong> NITY ET RU NEO? ELVIS? ADAM?</a></li><li><a href="INTRODUCTION.html"><strong>146.</strong> INTRAD UCA, DO NOSH</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="sheolyit.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content"><center><p><small>I am accepting char<a href="../tithehe.lamc.la/index.html">itable dona</a>tions,. <br>ETH: 0x66e2871ef39334962fb75ce34407f825d67ec434 | BTC: 38B6vGaqNvMyTtoFEZPmNvMS7icV6ZnPMm | xDAI: 0x66e2871ef39334962fb75ce34407f825d67ec434</p></small></center>
+
+
+<meta name="dc.identifier" content="NASHOWER.html" rpl="HPHTMYMA">
+<meta name="dc.relation.ispartof" content="lamc.la">
+
+<script src="https://hypothes.is/embed.js" async></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<p>ga('create', 'UA-74743044-2', 'auto');
+ga('send', 'pageview');</p>
+</script>
+</head>
+<center>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+
+<small><pre style="margin-left: 8px;">(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://dotty-sign2r-jenmar.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})(); // HIGHLIGAHT TEXT TO COMMENT/EDIT</pre></small>
+
+
+</center>
+
+                    <div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div class="gmail_quote">
+<div dir="ltr">
+<div style="text-align: center;">
+<div class="separator" style="text-align: justify;">
+<div dir="ltr">
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/ARFAXAD.html"><img alt="YOM HASHOAH" src="http://i.imgur.com/8qYBv4p.jpg" style="width: 499px; height: 256px;" /></a></div>
+<div>&nbsp;</div>
+<div>I don't think I've clearly and verbosely explained the sub-statement that I see encoded in words like "Earth" and "disappear" -- but I really do hope that you have surmised for yourselves the relationship between Picasso's ear and the key "th" of Sith that means "to help."&nbsp; I liken it today to the words "<i><a href="../www.youtube.com/watch@v=9Ht5RZpzPqw.html"><span style="font-family: arial narrow, sans-serif;">say it ain't so, I will not go</span></a></i>" (<i>Blink-182</i>) and in no uncertain terms read the key to the <a href="SERDEN.html">SERDENICITY</a> (be certain, we are to be <i>the den</i>) that if the world thinks they are going to pretend to wake up and say "darkness is a (or began with) a PP" then God is telling you that Earth is that ear, <strong>to help</strong>.</div>
+<div style="text-align: center;">
+<div class="separator" style="text-align: justify;">
+<div dir="ltr">
+<br />
+<div style="text-align: center;"><a data-cke-saved-href="./SPEECH.html" href="http://atlas.s.lamc.la/SPEECH.html"><img alt="CLICK IS THE KEY TO DICK" data-cke-saved-src="http://i.imgur.com/BhXbmoC.png" src="http://i.imgur.com/BhXbmoC.png" /></a></div>
+</div>
+</div>
+</div>
+<div>I see this message says that I am "Dr. Y" of the "<i><a href="../www.youtube.com/watch@v=WKreDYVWark.html"><span style="font-family: arial narrow, sans-serif;">dry and ready</span></a></i>" (<i>Elohim</i>) be the reason A.D. is why we (see that this message is encoded in our language, in American history in Greek mythology and in Egyptian myth--if you think I'm the beginning of darkness, go look in the fucking mirror) have a jumpstart or a flux capacitor "quantum leap" towards ending malady using magic rather than pretending simulation of Sodom and Gomorrah is OK as long as we were given Keflex.&nbsp; I don't like that this message is here--I don't like that it's in the word "disappear" ... but more than that I don't like that I see a sea of silence flowing straight down; I see you letting gold slip through your fingers, and with that we're failing to "heal the world" and <a href="http://atlas.s.lamc.la/ADUNCALIFT.html"><strong>I wish I could</strong></a> just ...</div>
+<div>&nbsp;</div>
+<div>
+<div style="text-align: right;"><a href="CURSOR.html">Bark? R oar.</a></div>
+<div><strong>Ark...&nbsp; Dark?&nbsp; Park!&nbsp; Spark.&nbsp;</strong> ... <a href="http://atlas.s.lamc.la/ARFAXAD.html">O' rio .. road ...</a> <b>an</b></div>
+</div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/CHALK.html"><img src="http://i.imgur.com/uzKxxnc.png" /></a></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>As a special "<a href="http://atlas.s.lamc.la/ARFAXAD.html">as i</a> <a href="http://atlas.s.lamc.la/HIGHERA.html">de-n</a>" to the reporters and other interested "media people" I've <a href="http://douci.ml/NASHOWER.html">published per-email total open and click statistics</a> for the messages since Christmas; I've read plenty of stories about wanna-be me's (lol) in newspapers ... apparently the "thing" that makes it news is having lots of followers.&nbsp; I've got this online thing going, maybe you've heard about it--literally today 35 thousand people interested in understanding this message and what it might do for everyone.&nbsp; I know it's not a vampire coven or a cult compound... but it's something different, and I think it's going to spark something special.&nbsp; Literally I see "this" morphing into a ... well, into you becoming the keys to the message--helping others unlock their own hidden treasures.</div>
+<div></div><br />
+<div>
+<pre style="font-size:x-small;" id="hterm:copy-to-clipboard-source">+--------+---------------------------------+--------------+------------+----------------+--------------+
+| mailid | subject                         | count(count) | sum(count) | count(clicked) | sum(clicked) |
++--------+---------------------------------+--------------+------------+----------------+--------------+
+|     79 | ... and they will see his       |         8550 |      11124 |           2518 |         6440 |
+|     80 | Queso er ahh? and... and.       |         4465 |       5754 |            981 |         1826 |
+|     81 | "Words" from the Creator        |        13336 |      18867 |           4342 |         8518 |
+|     82 | DA ... LET IT BE TEQUILA?       |         3032 |       4158 |            802 |         2138 |
+|     83 | http://IStheOME.GA  ... i       |        18808 |      25087 |           7293 |        12098 |
+|     84 | Friends, Romans, Family..       |         3488 |       5875 |            944 |         5132 |
+|     85 | Hocus Focus; OPTOME to ON       |         6704 |       9634 |           1865 |         8483 |
+|     86 | THE DAY THE MATRIX STOOD        |         8091 |      13073 |           1859 |        12763 |
+|     87 | CAN I HAVE YOUR AT TEN T        |         8963 |      12427 |           2446 |        14777 |
+|     88 | THE DAY BEFORE YESTERDAM.       |         7669 |      10463 |           4029 |        10266 |
+|     89 | YOU'RE MAUI ARE HERE TO C       |           56 |         78 |             16 |           37 |
+|     90 | DR. A$THOR Y. R. PENDRIPP       |        21394 |      29394 |           7828 |       289521 |
+|     91 | G                               |         1032 |       1503 |             42 |           89 |
+|     92 | RED: Y on D                     |           24 |         36 |              3 |            7 |
+|     93 | hashemesh: holy name fire       |         3091 |       5174 |            555 |         4983 |
+|     94 | Approaching the Day of th       |         1388 |       2610 |            112 |         4082 |
+|     95 | MACK MY ZELDA!  DIS EARLY       |         8062 |      12202 |           1939 |        10505 |
+|     96 | ISKAREEOUAC'S SEA, USANG        |         5508 |       7779 |            551 |         8121 |
+|     97 | NOW                             |        15092 |      22838 |           3356 |       109828 |
+|     98 | UPS SRI. Per Ezekiel, Kef       |         3718 |       6028 |           1476 |         7979 |
+|     99 | S  p  o  o  n.                  |         4305 |       6785 |           1371 |         6583 |
+|    100 | EX OR CIZE THE NOLIST           |        16818 |      19306 |          10997 |        23054 |
+|    101 | Mazer Rakham's run.             |        13947 |      17306 |           5614 |         9905 |
+|    102 | Any questions?                  |          108 |        158 |              2 |            2 |
+|    103 | ON THE FAM CHAN THIS MORN       |        11369 |      16233 |            956 |        16703 |
+|    104 | BLOBACK                         |         4716 |       6606 |           1143 |         2788 |
+|    105 | In the beginning God said       |        15755 |      21791 |           6343 |        20090 |
+|    106 | AT THE GREAT WALTERNATI-O       |         7500 |       9653 |           2928 |         8699 |
+|    107 | Re: AT THE GREAT WALTERNA       |         4397 |       6281 |            420 |        27313 |
+|    108 | xeROX thAT, HOuston.            |          604 |        850 |             34 |         2454 |
+|    109 | ON BEHLKF OF THE GENERATO       |        10198 |      13461 |           1879 |        16049 |
+|    110 | Rigel, and the gate.            |         3874 |       6448 |            245 |         5497 |
+|    111 | Fwd: walking on water           |         2312 |       3385 |             88 |          799 |
+|    112 | Re: walking on water            |         1744 |       3243 |             80 |         8121 |
+|    113 | Re: fwd: walking on water       |          679 |        801 |            135 |         9009 |
+|    114 | Hello, Eos.  To help you        |         7520 |      11145 |            369 |         3106 |
+|    115 | I ' M&nbsp; &nbsp;C&nbsp;A K&nbsp;L I N G&nbsp; &nbsp;H       |         3118 |       4782 |            193 |         1642 |
+|    116 | Chapter 22: MYLIFE.md           |         4270 |       6202 |            415 |        13277 |
+|    117 | there's a (c) reasen (ati       |        14498 |      18341 |           5547 |        14481 |
+|    118 | "I don't need no proof, I       |         7494 |       9976 |            746 |         6044 |
+|    119 | Does the sign say "mi laz       |        16001 |      21234 |           4975 |        13126 |
+|    120 | GREETINGS SEASONING!!! TA       |        18113 |      23194 |           7429 |        27630 |
+|    121 | #Confuseus say if you are       |         1709 |       2195 |             54 |          635 |
+|    122 | there is a first time for       |          169 |        243 |             10 |           12 |
+|    123 | #Confuseus say "Kansas cr       |         5784 |       8257 |            584 |         4313 |
+|    124 | VIETNAM IS EVERY TOWN, TO       |        10258 |      13896 |           3103 |         4761 |
+|    125 | abra ... see a.d. "a" wit       |         1804 |       2461 |            361 |          933 |
+|    126 | WHO KISS THE Y?                 |         1050 |       1300 |            153 |          765 |
+|    127 | there is no place to go,        |        17020 |      23458 |           4700 |         8019 |
+|    129 | Oh, Canada?  Yes we can,        |        13354 |      18148 |           3762 |         7587 |
+|    130 | Presence, presents... and       |         9247 |      13570 |           2738 |         8448 |
+|    131 | TADAI.                          |        12018 |      18849 |           1713 |        10283 |
+|    132 | AN on "Why do I keep seei       |        16486 |      20081 |           8878 |        13234 |
+|    133 | op&middot;si&middot;math: a person who        |         8148 |      11567 |           1971 |         3717 |
+|    134 | I looked inside your hear       |         7510 |       9817 |           2559 |        10991 |
+|    135 |  AKE ... con... naked? Co       |        17900 |      22069 |          10374 |        63373 |
+|    136 | TENNESSEE | MINNESOTA | N       |         8089 |      10002 |           3710 |         6248 |
+|    137 | The real Dryad Pirate Rob       |        10446 |      14859 |            776 |        14188 |
+|    138 | Not to point out the obvi       |          318 |        555 |             20 |          301 |
+|    139 | B IN KY ... and The Coven       |        12854 |      17215 |           4447 |        13146 |
+|    140 | Get ready for the Frank R       |        18205 |      23186 |           8881 |        13737 |
+|    141 | "Now I am become Osiris,        |         7659 |      11108 |            470 |         3135 |
+|    142 | You have what you need.         |         3628 |       5545 |            644 |        13193 |
+|    143 | I am a blinking, flashing       |        12431 |      19375 |            856 |        13292 |
+|    144 | Reddit? I really need you       |         7769 |      11034 |            495 |         5291 |
+|    145 | Splashing around.               |         9777 |      15234 |            506 |         6180 |
+|    146 | Per se us, you're shield?       |        11441 |      17506 |            828 |        11862 |
+|    147 | I call it a serenade. Dan       |        19782 |      24836 |           8086 |        25624 |
+|    150 | ding... dong... #CLANG!         |        10779 |      16941 |           3750 |         9849 |
+|    152 | Anions craftily pairing w       |         8035 |      12050 |           1416 |         8113 |
+|    153 | Verifiable proof we live        |        12896 |      18471 |           2501 |         8262 |
+|    154 | Monday "art" ... when Jes       |        15351 |      21330 |           2769 |        22236 |
+|    155 | deyanu, deyanu.                 |         2995 |       4799 |            182 |         5016 |
+|    156 | SIM, SIM, SALA BIM.  DISC       |        11176 |      13717 |           5322 |        17251 |
+|    157 | The Apocalypse... now con       |           40 |         77 |              4 |            6 |
+|    158 | We live in the Matrix, th       |         1666 |       2690 |            122 |          194 |
+|    159 | Speak the truth or per is       |         4026 |       5600 |            739 |         1082 |
+|    160 | table row... "owe you bli       |        21036 |      29905 |          12837 |        30461 |
+|    161 | Forgetting November, or K       |          135 |        185 |              4 |           15 |
+|    162 | M, IT.                          |         1393 |       1749 |            373 |         1817 |
+|    163 | Hwang                           |         4314 |       7224 |            181 |         1879 |
+|    164 | Re: Hwang!                      |        11524 |      14310 |           6107 |         7575 |
+|    165 | Disclosing the Link betwe       |         8049 |      10652 |           3033 |         5064 |
+|    166 | The Montecristo Extra&eth;io,       |         9929 |      15648 |           2314 |         4981 |
+|    167 | Sextra&eth;ioanzat.                 |         3744 |       5466 |            971 |         1917 |
+|    168 | To who we are... either t       |         4962 |       7026 |           1603 |         3620 |
+|    169 | C AS "GREETINGS SEASONING       |         3425 |       4963 |           1100 |         2278 |
+|    170 | High Five ... as the end        |        13362 |      16467 |           7422 |        10616 |
+|    171 | It's black and white.           |        10601 |      13023 |           5198 |        50707 |
+|    172 | MIND GAMES: THE TORTURED        |        14535 |      16507 |          10953 |        58878 |
+|    173 | Wessen made kisses bad?         |        11246 |      13592 |           6031 |        14083 |
+|    174 | As the end of Starbucks.        |         6634 |       8735 |           1958 |        35566 |
+|    175 | For he so loved the world       |        24316 |      29843 |          13815 |        25815 |
+|    176 | REMEMBER THE DAY THE JAIL       |        20932 |      25226 |          11287 |        41120 |
+|    177 | ON C O LOG Y.                   |         5129 |       7385 |            211 |         1829 |
+|    178 | Agent Smith intersected w       |        12427 |      16484 |           3508 |         9731 |
+|    179 | ALLOL, The Pharaoh is the       |         6282 |       8450 |            370 |         2728 |
+|    180 | From the Pharaoh to the P       |         1281 |       1990 |             33 |          129 |
+|    181 | In my head, in my head...       |         6852 |       9419 |            250 |         2342 |
+|    182 | STARK TREY: LET THERE BE        |         5857 |       8599 |            298 |         1657 |
+|    183 | Sticks and stones may bre       |         4192 |       7000 |            233 |         1397 |
+|    184 | IWKHUESTR ? Come on, let'       |         5329 |       7604 |            165 |          769 |
+|    185 | "Emblem."                       |        16574 |      19073 |          11035 |        12068 |
+|    186 | A single point of failure       |         7453 |      11207 |            297 |         2171 |
+|    187 | Ha'messiah of "sea to sta       |          103 |        161 |              1 |            1 |
+|    188 | Green Eggs and Sisterdam.       |         4439 |       6803 |            191 |         1112 |
+|    189 | Xerox that Ames, "Pluto S       |         6294 |       8938 |           1905 |         2537 |
+|    190 | the Link between "art" an       |         7753 |      11766 |            373 |         2145 |
+|    192 | Yggdrasil? As he prepares       |         6035 |       8778 |            273 |         1962 |
+|    193 | Re: Yggdrasil? As he prep       |         1311 |       2344 |             41 |          496 |
+|    194 | "I will not eat green egg       |         7118 |      12531 |            246 |         1391 |
+|    195 | That's all, folks.              |         6631 |      10194 |            292 |         1342 |
+|    196 | The 2017 rendition of "th       |         1633 |       2118 |            458 |         2140 |
++--------+---------------------------------+--------------+------------+----------------+--------------+
+113 rows in set (31.33 sec)</pre>
+</div>
+<div>&nbsp;</div>
+<div>I've gone over multiple series of words that appear to characterize the single letter personalities or spirits that this story revolves around introducing; and add here that the "time maps" encoded in these words appear to show "jumps" back ... as in "<span style="font-family: arial narrow, sans-serif;"><a href="http://www.youtube.com/watch?v=uy1x5pnPaCQ"><i>Jeremiah was a bullfrog</i></a></span>" placing S and P in particular in places where their addition at the beginning of words changes their meaning entirely and intelligently related to their "personalities."&nbsp; R as "right" for instance takes the word "ear" and makes it "rear" as in "spa<a href="http://atlas.s.lamc.la/SPEECH.html">ring the rod creat</a>es the dark empire, <em>turn around</em>" ... but here we can see "S" makes Sears and Y answers ... <i>"it's been years now, see the introduction to the 2017 piece distributed nearly 10 months ago now ... told everyone that, even then" </i>this stuff might not be written wonderfully, but the content is insanely interesting (IMOHIO), Holy as in&nbsp;it really is the thing that catalyzes the creation of Heaven (in a "<i><span style="font-family: arial narrow, sans-serif;"><a href="http://www.youtube.com/watch?v=bK463fcJebI">who lit the candle, started the fire, burnt down the fortress of Hell</a></span></i> (Live)" way... and we can see P's "you are so yummy I just want to slick you" addition of "pear" to the apples and oranges of Eden and his theme (<b>isc</b>drome).&nbsp; These patterns hold even outside words I've written, and I'm sure also outside the insanely huge cornucopia of words I've looked at and been astonished by.</div>
+<div style="text-align: right;">&nbsp;</div>
+<div style="text-align: center;"><a href="SIGNAL.html"><img alt="" id="BLOGGER_PHOTO_ID_6543047224289224274" src="http://1.bp.blogspot.com/-UgaCV5Txe6Q/Ws2SyLBdZlI/AAAAAAABH3E/yt0HYQB2WGofjzxLMBWYKtOREoJSYhLsQCK4BGAYYCw/s320/image-795731.png" style="border-width: 0px; border-style: solid; height: 130px; width: 301px;" /></a>&nbsp;<a href="SIGNAL.html"><img alt="" id="BLOGGER_PHOTO_ID_6543047226430646978" src="http://1.bp.blogspot.com/-DOtttg65ugQ/Ws2SyTAA6sI/AAAAAAABH3M/n3O1E8DgHEsX9FCqOpQnPpQ0Ii0I9uuJgCK4BGAYYCw/s320/image-797740.png" style="border-width: 0px; border-style: solid; width: 100px; height: 130px;" /></a></div>
+<div style="text-align: center;"><center>
+<div style="width: 331px;">
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">It reads "<strong>the victory is the Golden Age</strong>" and it is a key word in the key verse of Isaiah 52:14 where my full name appears "crossed" over Saturn, Mars, Zeus, and Jesus Christ.&nbsp; My name is in nearly every single book of the Bible, in this code that was written and left intentionally as another microcosm or metaphor for the blindness in not seeing that this is a "hello" more significant than any <a href="SIGNAL.html">signal</a> <a href="MUAH.html">SETI</a> has received.&nbsp; Look&nbsp;<a href="http://rationalwiki.org/wiki/The_Bible_Code">at Drosnin'</a>s comments about&nbsp;<a href="../users.cecs.anu.edu.au/~bdm/codes/moby.html">the Moby Dick code</a>, and really see with bright light "<b><span style="font-family: 'arial black' , sans-serif;">MOBY DICK.</span></b>"&nbsp; This is a war on blindness, on artificially imparted and absolutely insane blindness--I can't believe there's con tr o ver <strong>s</strong> y.</div>
+<div style="text-align: justify;">&nbsp;</div>
+<div style="text-align: justify;">I mentioned the "uage" hidden in langolier, and it's a good example of how there's much more information encoded and thought about in these words than even I imagine and share.&nbsp; I see the "u" is you, and that u cing this message "unhides and adds" you to the word language, I Si you singing about this... that adds the golden age.&nbsp; Or the silver age, if you start taking apart "age." Si El to see, si l ver, I don't want "e" to be the heart of forever... I'd rather it be many shining tu's.&nbsp; I mean stars; succeeding in ending pain and infirmity and lies and darkness--that will make you all stars.</div>
+<div style="text-align: justify;">&nbsp;</div>
+</div>
+</center></div>
+<div style="text-align: center;"><a href="http://2.bp.blogspot.com/-LIcQHG5QEpo/Ws2Sy_yzlmI/AAAAAAABH3U/U0DsZoqqRIgZ6JV1KOiDDs4qeSadv3HswCK4BGAYYCw/s1600/image-799185.png"><img alt="" id="BLOGGER_PHOTO_ID_6543047238454842978" src="http://2.bp.blogspot.com/-LIcQHG5QEpo/Ws2Sy_yzlmI/AAAAAAABH3U/U0DsZoqqRIgZ6JV1KOiDDs4qeSadv3HswCK4BGAYYCw/s320/image-799185.png" style="border-width: 0px; border-style: solid; width: 500px; height: 61px;" /></a><br /> &nbsp;</div>
+<div>Anyway, the blunt point is that you have "easy to understand and fathom"&nbsp;that there is clear proof of <b>paradox</b> in the languages that prove our timeline has not flowed linearly, and it's <b>paramount</b> to see that the purpose of these artifacts are to help us achieve <b>paradise</b> without me having to make a joke about "as long as there's no word '<b>parasail</b>'&nbsp;<i>we're golden.</i>"&nbsp; &nbsp;Clearly I'm pointing out the series of "<strong>para</strong>" words as in, Pa and Ra are "saying" these words for you--that's what these letters and your names mean to me--it's what your soul is saying to the... the person(s) reading the message at <em>the <a href="http://atlas.s.lamc.la/KANSAS.html">point of time</a> I <a href="http://atlas.s.lamc.la/2017-08-27-new-jerusalem.html">call Zion</a></em>... <i>as in right now</i>.&nbsp; &nbsp;<b>Paradise</b>.&nbsp; &nbsp;</div>
+<div>&nbsp;</div>
+<div>Hmm... maybe the "<strong>pot</strong>" of <a href="http://atlas.s.lamc.la/KANSAS.html">potassination</a> is point in time,&nbsp;<span style="font-family: courier new,courier,monospace;"><em><strong>wh</strong></em></span><a href="http://atlas.s.lamc.la//fwd"><span style="font-family: comic sans ms,cursive;"><em><strong>at do yo</strong></em></span></a><span style="font-family: courier new,courier,monospace;"><em><strong>u think?</strong></em></span></div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><em><span style="font-family: comic sans ms,cursive;"><span style="font-size: 28px;">I'm all ears.</span></span></em></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>It's really clear to me, you see there's a censorship problem, and a mind control problem; that's the beginning of the darkness--seeing it, you're the mornings light when you are trying to help us change it.&nbsp; <i><b><a href="http://www.youtube.com/watch?v=DZhxUHw6XDs">Paradise</a> (</b>Ellie Goulding<b>)</b></i>.&nbsp; I literally have a magical power that helps me to see and understand this message, in the light of day that magical power is co-writing these words.. to help you see; there truly is a message here, everywhere--like reading "<a href="http://atlas.s.lamc.la/ATITEN.html">my tricks</a>" in Matrix.&nbsp; Intersection of stories like Joseph's brothers selling him into slavery (look, I'm telling you I <i>know it's me--and why</i>) and Odin and his brothers wrestling with YMIR; I very clearly know these myths are about the dream of ... well, of our Earth succeeding where others have ... <i>returned to do it again better--see that's the biggest failure of all.&nbsp; "See" <b>Never Again</b>.</i></div>
+<div>&nbsp;</div>
+<div>While we are on the subject of <i>"They Stood Up for Love" </i>you can clearly see there's evidence of a "battle" juxtaposing songs like "light my fire" with "<a href="http://vimeo.com/83728849">let your children play</a>" (The Doors) and "who lit the candle" with "I don't need no proof" ... I'm really not here to tell you what to do or think--I'm trying to show you that I think nobody would disagree with "dissemination of the truth" if they had a clear understanding of what I see and know.&nbsp; Clearly those words may have bitten me in my Picasso--I'm telling you this is more black and white than you think--"it's the truth, and it's the end of blindness" literally the only fathomable "good excuse" for not moving forward... is the stagnatory idea of "we don't want to change the world" and that's ludicrous when you aren't being puppeteer-ed to think this is a game or whatever other insane reason the "chlidren who are all insane' (The Doors) secretly have and can't seem to share with me or anyone else.&nbsp; If you have a reason, <b><span style="font-family: comic sans ms, sans-serif;">I'm all ears.</span></b></div>
+<div>&nbsp;</div>
+I got some feedback "telepathically" (meaning lots of people clicked on the <i>Holy Purpose</i> link in the last email) regarding what it is that I see as "the Holy Purpose" of this entire venture.&nbsp; It's pretty easy to see it in the words "<a href="HADID.html">infirmity</a>" and "<a href="http://atlas.s.lamc.la/ATITEN.html">pain</a>" but just in case I need to explain more; what we are looking at is evidence that these things are not only unnecessary, but that they take actual "work" to create--something that's outright ghoulish.&nbsp; This message in hand, all I am doing is pointing out that your morals and your values and who you really are inside <i>screams loudly</i>&nbsp;that you agree with me--in every visible way, in everything you do--except actually taking that step.&nbsp; This simple change in circumstances makes where we are totally morally incompatible with who we are; and that thing alone demands that we work together to make the world a better place.&nbsp; Farther down the totem pole... we also know in our hearts that the truth is trump, and that no group that thinks it's really right would hide it's actions, it's existence... and it's desires from the entirety of Creation--let alone <i>from itself</i>, which is exactly what I appear to be looking at.&nbsp;
+<div>&nbsp;</div>
+<div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/HIGHERA.html"><img alt="" id="BLOGGER_PHOTO_ID_6543047239843133282" src="http://3.bp.blogspot.com/-t_C5cgUCoc8/Ws2SzE9zN2I/AAAAAAABH3c/v9nLYgCfNJE2uF9DgITC996YVMrJmSCXACK4BGAYYCw/s320/image-700509.png" style="border-width: 0px; border-style: solid;" /></a></div>
+<div>&nbsp;</div>
+<div>I also noticed there's significantly higher click through stats from emails that have "Re:" in them, I'm not sure if that's a feature of the existential risk hiding machine that has become our global "disaster communications system;" but I stare at the server logs as these emails go out, and it's very, very clear that this system is totally broken--I've honed this list down to what I'd consider "very interested readers" (which you probably are then, <i>eh</i>?) and I did everything I could to rejuvenate (meaning changing picture and URL tracking locations) and this message still looked as if I was sending you an ad for "Ro" -- the online pharmacy <i>for the heart of no man</i>. (hey, ome :).&nbsp; Anyway, I'm resending my new introduction just below here, and you can find the 2017 rendition of "<a href="http://atlas.s.lamc.la/CHALK.html">the 7 golden lampstands in the hand of Jesus Christ" which i Revelation 1:20 here</a>.&nbsp;&nbsp;</div>
+<div>&nbsp;</div>
+<div>Ho, lo; I'm trying to share my truth and my understanding with you--I've already spoken about my beliefs about being in a Holodeck; you simply do not know if our history is a story or if there's actually been 6 thousand years of darkness hiding Silicon from the world--knowing full well that's what the point of ... religion is.&nbsp; This is supposedly a day of remembrance, to never forget that Nazi Germany committed heinous atrocities, murders and genocide; but here you are, allowing the same tools of fear and silence, secrecy and lies to do the very same thing to every sick person on the planet.&nbsp; It's hard to see, I'm sure--but hovering over the surface of the deep--there is a dark spirit that is intending to make everyone wrong, literally to guide you to a place where acknowledging that what is going on here is not right, and that you should not be participating in silence--I hope you are at that point.&nbsp; I need you to be at that point.&nbsp; See why returning here "yet again" to re-solve atrocities is... something we should very clearly ensure never happens again.</div>
+<div>&nbsp;</div>
+<div>I can't tell you for sure if this is the first, second moving to third or <a href="http://atlas.s.lamc.la/THREETAG.html">twenty-third</a> time we've iterated back to this very point; but I can tell you I know it <i>is the last.&nbsp; </i>That ambiguity is part of the message and part of the cause of the problem we are experiencing.&nbsp;&nbsp;</div>
+<div>&nbsp;</div>
+<div>The point of the original message today is that the <strong><a href="http://atlas.s.lamc.la/CHALK.html">CHALK</a></strong> piece from <a href="http://atlas.s.lamc.la/GATE.html">June</a> of last year was clear <strong>proof</strong>, it was intelligible and it really was more than enough to break the wall--to make the news--to be sure that "this is it."&nbsp; Today you have so much more, and while it might not be what you wanted me to say, or what you expected me to say--it's opening a door for you to speak and participate and really giving you the greatest gift imaginable--the tools to become the best thing since sliced bread.&nbsp; <span style="font-family: comic sans ms,cursive;"><strong>mmm...</strong></span> <em>b the re ad</em>.</div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/ARFAXAD.html"><img src="http://i.imgur.com/OwqMX0X.png" /></a></div>
+<div>&nbsp;</div>
+<div>I <em>know</em> there's something keeping everyone from "getting" what a big deal this is, how very clear it is that we should be talking about this, and acting on it--how it's our nature to care about all of the things that this one tiny piece of information screams from everything is the key to the door... It's obvious to me, that something is making us <a href="http://atlas.s.lamc.la/ARFAXAD.html">all</a> ambivalient or ...</div>
+<div>&nbsp;</div>
+<div>... we're in an oven, the temperature is rising, there's a big sign I wrote and stuck on the wall pointing to the thermostat and the off switch.&nbsp; I see this Silence is part of a "covenant" and I refuse peace in the face of what I see.&nbsp; I will not be silent, and I don't really understand how anyone else can.</div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/XOXO.html"><img alt="" src="http://i.imgur.com/o039pIQ.png" style="width: 400px; height: 216px;" /></a></div>
+<div style="text-align: center;">&nbsp;</div>
+<div>We see that Mary and Israel (and Rhea and Hera and Rebecks and Leah)&nbsp;and the USA and AH are<strong> all </strong>microcosms, this is how he speaks, how this message is readable; these names tie to gether and add information to the Medusian concept and ... and we think we're not very smart if we don't care.&nbsp; We are lucky to live in a time with bright and broad horizons, lucky to be in a place where "hives" ... where hives are not the solution to having too much time on our hands from automation and virtual reality and other broad leaps in technology.&nbsp; I don't really understand why <a href="http://atlas.s.lamc.la/XOXO.html"><strong>I see a "hive"</strong></a> everywhere I look.&nbsp; I know you don't see it, not like me, listen.. I'm warning you--it's there... and it's&nbsp;why there's a <a href="http://hebrew4christians.com/Grammar/Unit_One/Aleph-Bet/Vav/vav.html">big oversized vav</a> in the center of time.&nbsp; See "hello victorious Earth" and see why I don't agree, while it might appear to be the only "workable solution" to the kobayashi maru here--to the unwinnable game of having to prvent the "wildfire of love and charity" from spreading too rapidly--look, we see we are being made to think that "a message in every word" is too big of a deal for everyone but us to handle.&nbsp;</div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><a href="http://enderverse.wikia.com/wiki/Formics"><img src="http://i.imgur.com/oa8GG6F.png" /></a></div>
+<div>&nbsp;</div>
+<div>We don't have freedom here--I know it looks like we do on the surface, and that's a huge part of the <i>problem with this</i>; pretending to be free, not to see the chain--not to see the control and the hidden influence, and then pretending that we're in the land of the free and the brave--it's just ... lying to ourselves, that's all this is.&nbsp; I see very clearly the lack of freedom, I see the pyramid of Egypt and I see why it's a focal point of the "illuminatus" story; it should have been a hive instead.&nbsp;&nbsp;</div>
+<div>&nbsp;</div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/CINOIZE.html?LOLNOISELOL"><img src="http://i.imgur.com/AupLEy2.png" /></a></div>
+<div>&nbsp;</div>
+<div>Nero fiddled with the words and the songs, and some of the singers; and he looked at Rome below his feet and he said, "<em>don't you want to be proud?</em>"&nbsp; I know you don't see "hive" like I do, but you see the silence... I know that--so see, that's a "hive" asking for help.</div>
+<div>&nbsp;</div>
+<div><hr />
+<p>&nbsp;</p>
+<p style="text-align: center;"><img alt="" src="http://mailfoogae.appspot.com/t?sender=aYWRhbUBhcmtoby51cw%3D%3D&amp;type=zerocontent&amp;guid=6d539793-cb8b-434e-9312-285b3a68745b" style="max-height: 0px; overflow: hidden; width: 0px;" /><a href="2017-09-24-all-madden-mad-max-beyond-thunderdome.html"><img src="../i.imgur.com/0HxqsXw.png" style="height: 220px; width: 400px;" /></a></p>
+</div>
+</div>
+</div>
+<p>I really do hope&nbsp;<em>everyone's not mad</em>--angry or crazy--and we are without doubt 'beyond Thunderdome" the messages booming from <a href="MYLIFE.html">the hammer</a> of <a href="http://atlas.s.lamc.la//fwd">Thor</a>&nbsp;have definately created some waves.&nbsp; &nbsp;This really is all for "<a href="http://atlas.s.lamc.la/ADIOSAS.html">Holy Purpose</a>" a plan designed to ease the impact of a very world changing <a href="http://atlas.s.lamc.la/ERICHOW.html">discl</a>o<a href="http://atlas.s.lamc.la/ADIOSAS.html">sure</a>--to ensure that the world is not negatively impacted by what really is a nearly universally good change in the fundamental basics of what we call "reality."&nbsp; We're being given an opportunity to Si that this disclosure places us not only on the doorstep of Heaven itself, but in a place and time <em>hallowed forever</em>--the beginning of a new and exciting echelon of civilization.&nbsp; That's not to say <strong><em>it's going to be <a href="../en.wikipedia.org/wiki/Suez_Canal.html">su</a></em></strong><a href="../en.wikipedia.org/wiki/Suez_Canal.html"><em>per</em></a><strong><em><a href="../en.wikipedia.org/wiki/Suez_Canal.html"> EZ</a>&nbsp;</em></strong><em>there's quite a bit of work to do... "</em><a href="http://www.youtube.com/watch?v=dDZyJTDZi0w">there's a million things to do, you know that there are</a><em>" (Yusuf Cat Stevens).</em></p>
+<p style="text-align: center;"><img src="../i.imgur.com/k5cF1p9.png" style="height: 87px; width: 300px;" /></p>
+<p>To help understand the (<a href="http://atlas.s.lamc.la/TOXODUSK.html">lack of</a> ... ) "flow" of this Revelation; <a href="http://atlas.s.lamc.la/CHALK.html"><em>this is last years rendition</em></a>&nbsp;of the key to the Revelation of Christ that is now on it's third or fourth iteration.&nbsp; It's been&nbsp;<em>y<strong><a href="SERDEN.html">ears</a>&nbsp;(</strong>maybe a hint showing ancient design of Sears, and more&nbsp;<strong>proof</strong>&nbsp;that <strong>seeing</strong> "<span style="font-family: comic sans ms,cursive;"><a href="http://atlas.s.lamc.la/2017-08-12-proof-of-time-travel-should-be-enough.html">not seeing it</a></span>" is really the core of our Exodus from logical blindness/darkness<strong>)&nbsp;</strong></em>and while it might not scream "<em>walking on water</em>" to you, it's proof that our chemistry elements are part of a design that ties together Ecclesiastes 9:11, Rervelation 20:1 and the name George Bush as well as the 9/11 attack.&nbsp; It screams "proof of Creation" to me, unfortunately it's not been popular with the media, with fringe conspiracy theory circles, or in the realm of religion.&nbsp; Before all of this I spent some time writing for these specific circles, and if the world were "behaving normally" I wouldn't have to tell you that this too--this is the kind of stuff that <em>should be wildly popular</em> in all of those places.&nbsp; Why isn't it, <a href="http://atlas.s.lamc.la/TOXODUSK.html"><em>do you think</em></a>?</p>
+<p style="text-align: center;"><a href="CURSOR.html"><img src="../i.imgur.com/Z1zbUGs.png" /></a>&nbsp;</p>
+<p>Pretending that this wasn't moving and actionable information a year ago (and even <a href="TORCH.html">the ear before that when <em>this one</em></a>&nbsp;flew around the Earth) ...&nbsp;<em>leading to the identification of the "A" of Florida and the AD of NORAD&nbsp;</em>is something like erasing Watergate from our history; it will result in a radically different "you" that <a href="http://atlas.s.lamc.la/TOXODUSK.html">P says puts the "eat" in "repeat"</a>&nbsp;and the ... <a href="http://atlas.s.lamc.la/ERICHOW.html">"u age" in langoliers</a>.&nbsp; The Time Travelers Wife suggests it might turn your son into a daughter; but we haven't talked at all about the concept of "true randomm."&nbsp; The truth is the changes would probably be more akin to the Butterfly Effect, and you should see clearly now that <a href="http://atlas.s.lamc.la/LETITRAIN.html">the rain is en route</a>&nbsp;that we'd probably lose these movies and Back to the Future...&nbsp;<em>for sure.&nbsp;&nbsp;</em></p>
+<p style="text-align: center;"><em><a href="http://atlas.s.lamc.la/ARFAXAD.html"><img alt="" src="../i.imgur.com/xw21QSu.jpg" style="width: 501px; height: 104px;" /></a></em></p>
+<p>What I'm "getting at" is that we need to have a clear and public undersstanding of how and why the "darkness" formed in order to ensure that we won't be vulnerable to it in the future.&nbsp; A large mass of people pretending that "<a href="http://atlas.s.lamc.la/HIGHERA.html">starvation</a>" and "<a href="HADID.html">ending disease</a>" are unimportant things to speak about is&nbsp;<em>not strength...</em>&nbsp;it is <strong>total moral bankruptcy</strong>.&nbsp; The same is true of failing to <a href="http://atlas.s.lamc.la/2017-08-12-proof-of-time-travel-should-be-enough.html">logica</a>&nbsp;<a href="http://atlas.s.lamc.la/TOXODUSK.html">lly</a> conn<a href="2017-06-14-enders-game-prometheus-locke-and.html">ect mind contro</a>l to <a href="http://atlas.s.lamc.la/ARFAXAD.html">school shootings</a>--literally these things are my new definition of&nbsp;<em>spiritual blindness</em>; maintaining the appearance of normalcy is not a "beneficial goal" when <em>no<a href="http://atlas.s.lamc.la/ARFAXAD.html">rmal is Hell</a>.</em></p>
+<p><em>I feel like the <a href="http://atlas.s.lamc.la/WHO.html">musick</a> is telling me that maybe the world is putting "the myth of Jesus Christ" above the actualization of salvation--and that's an idiotic chain; Dave sings "<a href="../www.youtube.com/watch@v=psIuidkkLjI.html">no room for both, just room for me</a>" and <a href="../yitsheyzeus.tumblr.com/index.html#_=_">I've altered it to "we.</a>"&nbsp; &nbsp;Dodlores O ' <a href="http://www.youtube.com/watch?v=QlRJOVcvOWE">rio</a> <a href="http://www.youtube.com/watch?v=Y7VGOnV2QhU">rd</a> <a href="../www.youtube.com/watch@v=eUMwFaXTM3s.html">an</a>&nbsp;booms in the widly popalar "Zombie" that the violence causes <a href="http://douci.ml/ARFAXAD.html">silence--and she's exactly wrong, <strong>truly it's the silence that causes the violence</strong></a>; you cannot ignore this message anymore.</em></p>
+<p style="text-align: center;"><a href="2017-06-14-enders-game-prometheus-locke-and.html"><img src="../i.imgur.com/0ksGGKT.png" style="height: 99px; width: 201px;" /></a></p>
+<p>It's not an understatement to suggest that perhaps increasing visibility and understanding of the&nbsp;"mass ignorance of something obvious and important" is the actual intent of the message.&nbsp; I think we need to get over pretending ... whatever it is that the entire world is "pretending" in unison.&nbsp;&nbsp;&nbsp;<em>I'm still not really sure what it is that&nbsp;<strong>everyone thinks they are hiding</strong></em>&nbsp;but it's pretty clear to me that "everyone acting in unison" in the face of something as sought after as the Holy Grail is nothing short of proof of mass enslavement--and I don't think that's what you're intending to hide.&nbsp; Look at that, all revolving around the story of Exodus--you know--to drive that "freeing you from the slavery of secrecy and hidden technology" point.&nbsp; I think this got decent distribution, and it might even be more clear than what I've recently written on the same set of elements--<em>I'm trying not to repeat myself as much</em>.</p>
+<p style="text-align: center;"><a href="CURSOR.html"><img alt="C WHY I KNO Y " src="../i.imgur.com/RkrAVOA.jpg" style="width: 500px; height: 261px;" /></a></p>
+<p>I need your help to make this news--if you happen to be "the news" it would be really awesome if you texted me (954-667-8083) or sent me an e-mail (<em>adam at arkho dot me</em>)--this is the kind of thing that get's ever more "breaking" as time goes on--probably in multiple senses of the word.&nbsp; It will&nbsp;<em>always be news though,</em>&nbsp;until the end of history.&nbsp; I hope we can avoid that, you know; ending "history."</p>
+<p style="text-align: center;"><a href="http://www.amazon.com/cymk-adam-marshall-dobrin/s?ie=UTF8&amp;page=1&amp;rh=i%3Aaps%2Ck%3Acymk%20adam%20marshall%20dobrin"><img alt="" src="../i.imgur.com/CvnRpzL.png" style="width: 303px; height: 156px;" /></a></p>
+<p><span style="font-size: 9px;">Also this is cheap in black and white.&nbsp; If anyone is curious, 143 (actual statistic) people cicked the "<a href="http://www.gofundme.com/the-sword-of-saint-one"><strong>TITHEHE</strong></a>" link (which is good, right?) in the last e-mail and zero people donated anything.&nbsp; Also, zero books were sold--if you bought a book, or donated money it's likely that I'm in a holodeck full of invisible demons laughing at me--which you should et me know by contacting me.&nbsp; That word, of course, a play on "<a href="CURSOR.html">shehekeyanu</a>" and "<a href="http://www.gofundme.com/the-sword-of-saint-one"><strong>tithe</strong></a>" and it might just be the answer to "<a href="CURE.html"><strong>chastity</strong></a>."&nbsp; It gets funnier as you see more of them, like, it grows on you--at least, it's grown on me.</span></p>
+<p>Just below at the "<a href="http://atlas.s.lamc.la/WHO.html"><em>Wh@ else should we do?</em></a>" link... some suggestions that tie more fiction to a guided path of Salvation beginning with seeing the light of Minority Report, A Scanner Darkly and "do Androids dream of Electric Sheep?" to name a few.&nbsp; I'll have something "original" for this weekend, <span style="font-family: comic sans ms,cursive;"><em>happy <a href="http://atlas.s.lamc.la/2017-08-14-waiting-for-that-green-light.html">hump</a>&nbsp;day</em></span>.</p>
+<p style="text-align: center;"><a href="FOUR.html"><img src="../i.imgur.com/6HHkXG2.png" style="height: 169px; width: 200px;" /></a></p>
+<p style="text-align: center;"><span style="font-size: 22px;"><span style="font-family: georgia,serif;"><em>bring Jericho down.</em></span></span></p>
+<p style="text-align: center;"><a href="http://atlas.s.lamc.la/CHALK.html"><img src="http://i.imgur.com/FLF0yRw.png" style="height: 144px; width: 400px;" /></a></p>
+<p style="text-align: center;"><span style="font-size: 26px;"><a href="http://atlas.s.lamc.la/ADUNCALIFT.html"><img alt="" src="http://i.imgur.com/77HnFK0.jpg" style="width: 400px; height: 442px;" /></a></span></p>
+<p style="text-align: center;"><a href="http://en.wikipedia.org/wiki/Mercury_(mythology)"><em><span style="font-size: 18px;"><strong>h</strong></span></em><span style="font-size: 24px;"><b>&mu;</b></span></a><em><span style="font-size: 18px;"><strong><a href="http://en.wikipedia.org/wiki/Mercury_(mythology)">g</a>s, tho?</strong></span>&nbsp; <a href="http://en.wikipedia.org/wiki/Mercury_(mythology)">Si</a>, I really can talk until the end of time.</em></p>
+<p style="text-align: center;"><a href="http://www.youtube.com/watch?v=7ADgCeYJMN4"><img src="http://i.imgur.com/jKUgmRw.png" style="height: 177px; width: 200px;" /></a></p>
+<p style="text-align: center;"><em><strong><span style="font-size: 36px;"><a href="http://www.youtube.com/watch?v=7ADgCeYJMN4"><span style="font-family: georgia,serif;">SLAM</span></a></span></strong>. (Onyx)</em></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div dir="ltr">
+<div style="text-align: center;"><a href="../www.docdroid.net/sQTUy5f/the-holy-coda-of-the-matrix.pdf.html"><img alt="" border="0" height="240" id="BLOGGER_PHOTO_ID_6544373457026704786" src="http://3.bp.blogspot.com/-0Wj0fb2G6kk/WtJI_E-SZZI/AAAAAAABH7o/zR0V7u9CEYUbuIX8wfGbDYTfvnz79JHnwCK4BGAYYCw/s400/Screenshot%2B2018-04-14%2Bat%2B10.59.12%2BAM-784222.png" width="400" /></a>​</div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;">
+<div style="text-align: justify;"><i><a href="CURE.html" rel="noopener" target="_blank">The tool</a></i>&nbsp;of intersection that this story revolves around does a good job of explaining what it is in the few examples that I have--aside from me--we can look at&nbsp;<a href="CONFESSION.html" rel="noopener" target="_blank">the TV show Chuck</a>&nbsp;and the myths of the &quot;Eyes&quot; of Ra and Horus and see ancient and modern descriptions of what it means to have &quot;aided sight&quot; to see&nbsp;<i>Biblical eyes to see</i>&nbsp;in action, right before our eyes.&nbsp; It topically unifies the stories of rocks and stones that&nbsp;<a href="EVE.html" rel="noopener" target="_blank">connect Medusa</a>&nbsp;and&nbsp;<a href="http://atlas.s.lamc.la/ARFAXAD.html" rel="noopener" target="_blank">David and Goliath</a>&nbsp;and&nbsp;<a href="http://atlas.s.lamc.la/ADUNCALIFT.html" rel="noopener" target="_blank">King Arthur all</a>&nbsp;together to&nbsp;<a href="http://atlas.s.lamc.la/BRIMSTONE.html" rel="noopener" target="_blank">the &quot;brimstone&quot; of Lot</a>--with bright light on the concept that he&#39;s hidden away in &quot;tools and weapons&quot; primary master keys to the links between stories.&nbsp; We can see it&nbsp;<a href="http://atlas.s.lamc.la/PERSEUS.html" rel="noopener" target="_blank">Perseus&#39;s Shield</a>&nbsp;and&nbsp;<a href="SERENADE.html" rel="noopener" target="_blank">Narcissus&#39;s reflection</a>&nbsp;... and in modern day art connecting the words and stories of the swords of He-man (5, in Hebew) and Voltron (5 in Latin) and Lion-O (and &quot;Fivel&quot;) to the numbers 5 and 15.... and with that too the intersection of mice from Mighty and Danger to Mickey and the Egyptian God Min.</div>
+<div style="text-align: justify;">&nbsp;</div>
+</div>
+<div style="text-align: center;"><a href="http://atlas.s.lamc.la/HIGHERA.html"><img alt="" border="0" height="400" id="BLOGGER_PHOTO_ID_6544373460076269378" src="http://1.bp.blogspot.com/-T4b0veJryho/WtJI_QVXD0I/AAAAAAABH7w/idoN0YUVY5oASmzj5AHB0k9-EwknjbJKQCK4BGAYYCw/s400/Screenshot%2B2018-04-14%2Bat%2B11.14.24%2BAM-785732.png" width="400" /></a>​</div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;">
+<div style="text-align: justify;">Not just the &quot;Eye of Ra&quot; I&#39;ve also described myself as the &quot;Hand of God&quot;&nbsp; (and the ...<i><a href="http://atlas.s.lamc.la/SPEECH.html">&nbsp;&quot;SPEECH&quot; of Osiris</a></i>) connecting together the Hebrew word for hand and the Torah pointer, which are &quot;Yod&quot; and &quot;<a href="http://atlas.s.lamc.la/the_letter_why.html"><strong>Yad</strong></a>&quot; .. and what this describes is a sort of living bookmark for where we are along the recorded path of our traversal through the Labyrinth of Icarus...&nbsp; the Living Vine of Jesus... and&nbsp;<i><a href="http://atlas.s.lamc.la/ARFAXAD.html" rel="noopener" target="_blank">Yggdrasil</a></i>&nbsp;.. you get the point, as I read these stories and find new connections, I feel as if it&#39;s a kind of marker of where we are along&nbsp;<i>the path</i>.&nbsp; &nbsp;Today we&#39;re looking at the intersection of snakes again, sea monsters that tie together the stories of <a href="EVE.html">Medusa</a> and <a href="http://atlas.s.lamc.la/2017-08-25-loch-lives-here-so-does-b-of-bon-jovi.html">Stargate</a> with parallel tales of epic battles between characters like Jesus, Atum, Adam, Thor, and Ra against this &quot;monster of the deep.&quot;&nbsp; It&#39;s clear to me that it&#39;s a metaphor for what&nbsp;<a href="http://en.wikipedia.org/wiki/Danny_Casolaro" rel="noopener" target="_blank">Danny Casolaro called the &quot;Octopus&quot; in American History</a>, this sort of hidden influence loosely tying the world together in a feat of trickery amounting to false promises and &quot;collaboration&quot; to the end of hiding the truth in the most nefarious and sinister of ways from the whole (and the individual).&nbsp; It&#39;s <a href="http://atlas.s.lamc.la/XOXO.html">not a collective consciousness</a>, per say, but it might be masquerading as that--it might tell you it&#39;s giving you <a href="http://atlas.s.lamc.la/KEYNES.html">a vote, when it&#39;s really altering how you feel</a> about that vote instead... or it might promise you the world or immortality in exchange for hiding this message... this message that shows us exactly how these things come to us through the light of truth and actual collaboration.&nbsp;&nbsp;</div>
+<div style="text-align: justify;">&nbsp;</div>
+</div>
+<div style="text-align: center;">Today, we are at the intersection of the beast known as <i>the Leviathan</i> and <a href="EVE.html" target="_blank">the &quot;e&quot;</a> of <a href="MEDICINE.html" target="_blank">medicine</a>.</div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;"><a href="http://en.wikipedia.org/wiki/Leviathan"><img alt="" border="0" height="400" id="BLOGGER_PHOTO_ID_6544373472306132418" src="http://3.bp.blogspot.com/-pkaN3K45wfk/WtJI_95L9cI/AAAAAAABH74/e-sGpRrDzQcr_Q9duTVOrujaIEZV_6TgQCK4BGAYYCw/s400/image-786947.png" width="321" /></a></div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;">
+<center>
+<div style="text-align: justify; width: 387px;">
+<div><b>Leviathan</b>&nbsp;(<span class="gmail-m_-5205617966925650898gmail-nowrap"><span class="gmail-m_-5205617966925650898gmail-IPA gmail-m_-5205617966925650898gmail-nopopups gmail-m_-5205617966925650898gmail-noexcerpt"><a href="../en.wikipedia.org/wiki/Help%253AIPA/English.html" rel="noopener" target="_blank" title="Help:IPA/English">/<span title="'l' in 'lie'">l</span><span title="/ɪ/: 'i' in 'kit'">ɪ</span><span title="/ˈ/: primary stress follows">ˈ</span><span title="'v' in 'vie'">v</span><span title="/aɪ/: 'i' in 'tide'">aɪ</span><span title="/./: syllable break">.</span><span title="/ə/: 'a' in 'about'">ə</span><span title="/θ/: 'th' in 'thigh'">&theta;</span><span title="/ən/: 'on' in 'button'">ən</span>/</a></span></span>;&nbsp;<a href="../en.wikipedia.org/wiki/Hebrew_language.html" rel="noopener" target="_blank" title="Hebrew language">Hebr<wbr>ew</wbr></a>:&nbsp;<span dir="rtl" lang="he"><span class="gmail-m_-5205617966925650898gmail-script-hebrew" dir="rtl">לִוְיָתָן</span>‬</span>,&nbsp;<small><a href="../en.wikipedia.org/wiki/Modern_Hebrew.html" rel="noopener" target="_blank" title="Modern Hebrew">Modern</a></small>&nbsp;<i>Livyata<wbr>n</wbr></i>,&nbsp;<small><a href="../en.wikipedia.org/wiki/Tiberian_vocalization.html" rel="noopener" target="_blank" title="Tiberian vocalization">Tiberian</a></small>&nbsp;<i>Liwyāṯān</i>) is a&nbsp;<a href="http://en.wikipedia.org/wiki/Sea_monster" rel="noopener" target="_blank" title="Sea monster">sea monster</a>&nbsp;referenced in the&nbsp;<a href="../en.wikipedia.org/wiki/Hebrew_Bible.html" rel="noopener" target="_blank" title="Hebrew Bible">Hebrew Bible</a>&nbsp;in the&nbsp;<a href="http://en.wikipedia.org/wiki/Book_of_Job" rel="noopener" target="_blank" title="Book of Job">Book of Job</a>,&nbsp;<a href="http://en.wikipedia.org/wiki/Psalms" rel="noopener" target="_blank" title="Psalms">Psalms</a>, the&nbsp;<a href="http://en.wikipedia.org/wiki/Book_of_Isaiah" rel="noopener" target="_blank" title="Book of Isaiah">Book of Isaiah</a>, and the&nbsp;<a href="../en.wikipedia.org/wiki/Book_of_Amos.html" rel="noopener" target="_blank" title="Book of Amos">Book of Amos</a>.</div>
+<div>&nbsp;</div>
+<div>The name&nbsp;<span lang="he" title="Hebrew language text">לִוְיָתָן</span>&nbsp;is a derivation from the root [<a class="gmail-m_-5205617966925650898extiw" href="http://en.wiktionary.org/wiki/%D7%9C%D7%95%D7%94" rel="noopener" target="_blank" title="wikt:לוה">לוה&nbsp;<i>lvh</i></a>]&nbsp;<span class="gmail-m_-5205617966925650898error">error: {{lang}}: text has italic markup (<a href="http://en.wikipedia.org/wiki/Category:Lang_and_lang-xx_template_errors" rel="noopener" target="_blank" title="Category:Lang and lang-xx template errors">help</a>)</span>&nbsp;&quot;to twine; to join&quot;, with an adjectival suffix&nbsp;<span lang="he" title="Hebrew language text">ן-</span>, with a literal meaning of &quot;wreathed, twisted in folds&quot;.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-Gesenius_2-1"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-Gesenius-2" rel="noopener" target="_blank">[2]</a></sup>&nbsp;Both the name and the mythological figure are a direct continuation of the&nbsp;<a href="http://en.wikipedia.org/wiki/Ugaritic" rel="noopener" target="_blank" title="Ugaritic">Ugaritic</a>&nbsp;sea monster&nbsp;<i><a href="http://en.wikipedia.org/wiki/Lotan" rel="noopener" target="_blank" title="Lotan">L&ocirc;tān</a></i>, one of the servants of the&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Sea_god" rel="noopener" target="_blank" title="Sea god">sea god</a><a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Yammu" rel="noopener" target="_blank" title="Yammu">Yammu</a>&nbsp;defeated by&nbsp;<a href="http://en.wikipedia.org/wiki/Hadad" rel="noopener" target="_blank" title="Hadad">Hadad</a>&nbsp;in the&nbsp;<i><a href="http://en.wikipedia.org/wiki/Baal_Cycle" rel="noopener" target="_blank" title="Baal Cycle">Baal Cycle</a></i>.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEUehlinger1999514_3-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEUehlinger1999514-3" rel="noopener" target="_blank">[3]</a></sup><sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEHerrmann1999133_4-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEHerrmann1999133-4" rel="noopener" target="_blank">[4]</a></sup>&nbsp;The Ugaritic account&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Lacuna_(MS)" rel="noopener" target="_blank" title="Lacuna (MS)">has gaps</a>, making it unclear whether some phrases describe him or other monsters at Yammu&#39;s disposal such as&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Tunannu" rel="noopener" target="_blank" title="Tunannu">Tunannu</a>&nbsp;(the Biblical&nbsp;<a href="http://en.wikipedia.org/wiki/Tannin_(monster)" rel="noopener" target="_blank" title="Tannin (monster)">Tannin</a>).<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEHeider1999_5-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEHeider1999-5" rel="noopener" target="_blank">[5]</a></sup>&nbsp;Most scholars agree on describing L&ocirc;tān as &quot;the fugitive serpent&quot; (<i>bṯn brḥ</i>)<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEHerrmann1999133_4-1"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEHerrmann1999133-4" rel="noopener" target="_blank">[4]</a></sup>&nbsp;but he may or may not be &quot;the wriggling serpent&quot; (<i>bṯn ʿqltn</i>) or &quot;the mighty one with seven heads&quot; (<i>&scaron;lyṭ d.&scaron;bʿt ra&scaron;m</i>).<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEUehlinger1999512_6-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEUehlinger1999512-6" rel="noopener" target="_blank">[6]</a></sup>&nbsp;His role seems to have been prefigured by the earlier serpent&nbsp;<b>T&ecirc;mtum</b>&nbsp;whose death at the hands Hadad is depicted in Syrian seals of the 18th&ndash;16th century&nbsp;<span class="gmail-m_-5205617966925650898gmail-smallcaps">bce</span>.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-FOOTNOTEUehlinger1999512_6-1"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-FOOTNOTEUehlinger1999512-6" rel="noopener" target="_blank">[6]</a></sup></div>
+<div><br />
+<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Sea_serpents" rel="noopener" target="_blank" title="Sea serpents">Sea serpents</a>&nbsp;feature prominently in the&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Religions_of_the_Ancient_Near_East" rel="noopener" target="_blank" title="Religions of the Ancient Near East">mythology of the Ancient Near East</a>.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-DDD_7-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-DDD-7" rel="noopener" target="_blank">[7]</a></sup>&nbsp;They are attested by the 3rd millennium&nbsp;<span class="gmail-m_-5205617966925650898gmail-smallcaps">bce</span>&nbsp;in&nbsp;<a href="../en.wikipedia.org/wiki/Sumer.html" rel="noopener" target="_blank" title="Sumer">Sumerian</a>&nbsp;ico<wbr>nography depicting the god&nbsp;<a href="http://en.wikipedia.org/wiki/Ninurta" rel="noopener" target="_blank" title="Ninurta">Ninurta</a>&nbsp;overcoming a&nbsp;<a href="http://en.wikipedia.org/wiki/Seven-headed_serpent" rel="noopener" target="_blank" title="Seven-headed serpent">seven-headed serpent</a>. It was common for&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Religions_of_the_Ancient_Near_East" rel="noopener" target="_blank" title="Religions of the Ancient Near East">Near Eastern religions</a>&nbsp;to include a&nbsp;<i><a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Chaoskampf" rel="noopener" target="_blank" title="Chaoskampf">Chaoskampf</a></i>: a cosmic battle between a&nbsp;<a href="http://en.wikipedia.org/wiki/Sea_monster" rel="noopener" target="_blank" title="Sea monster">sea monster</a>&nbsp;representing the forces of&nbsp;<a href="http://en.wikipedia.org/wiki/Chaos_(cosmogony)" rel="noopener" target="_blank" title="Chaos (cosmogony)">chaos</a>&nbsp;and a&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Creator_god" rel="noopener" target="_blank" title="Creator god">creator god</a>&nbsp;or&nbsp;<a href="http://en.wikipedia.org/wiki/Culture_hero" rel="noopener" target="_blank" title="Culture hero">culture hero</a>&nbsp;who imposes&nbsp;<a href="http://en.wikipedia.org/wiki/Order_(virtue)" rel="noopener" target="_blank" title="Order (virtue)">order</a>&nbsp;by force.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-Gunkel_8-0"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-Gunkel-8" rel="noopener" target="_blank">[8]</a></sup>&nbsp;The&nbsp;<a href="../en.wikipedia.org/wiki/Babylonian_religion.html" rel="noopener" target="_blank" title="Babylonian religion">Babylonian</a>&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Enuma_Elish" rel="noopener" target="_blank" title="Enuma Elish">creat</a></wbr><wbr>ion myth&nbsp;describes&nbsp;<a href="http://en.wikipedia.org/wiki/Marduk" rel="noopener" target="_blank" title="Marduk">Marduk</a>&#39;s defeat of the serpent goddess&nbsp;<a href="http://en.wikipedia.org/wiki/Tiamat" rel="noopener" target="_blank" title="Tiamat">Tiamat</a>, whose body was used to create the&nbsp;<a href="../en.wikipedia.org/wiki/Heaven.html" rel="noopener" target="_blank" title="Heaven">heavens</a>&nbsp;and the&nbsp;<a href="http://en.wikipedia.org/wiki/Earth" rel="noopener" target="_blank" title="Earth">earth</a>.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-9"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-9" rel="noopener" target="_blank">[9]</a></sup></wbr></div>
+<div><br />
+The Leviathan is mentioned six times in the&nbsp;<a href="http://en.wikipedia.org/wiki/Tanakh" rel="noopener" target="_blank" title="Tanakh">Tanakh</a>, in&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt2703.htm#8" rel="nofollow noopener" target="_blank">Job 3:8</a>,&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt2740.htm#15" rel="nofollow noopener" target="_blank">Job 40:15&ndash;41:26</a>,&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt1509.htm#3" rel="nofollow noopener" target="_blank">Amos 9:3</a>,&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt2674.htm#13" rel="nofollow noopener" target="_blank">Psalm 74:13&ndash;23</a>,&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt26a4.htm#26" rel="nofollow noopener" target="_blank">Psalm 104:26</a>&nbsp;and&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt1027.htm#1" rel="nofollow noopener" target="_blank">Isaiah 27:1</a>.</div>
+<div>&nbsp;</div>
+<div><a href="http://atlas.s.lamc.la//fwd"><img src="http://i.imgur.com/ASusb90.png" style="height: 124px; width: 401px;" /></a><br />
+&nbsp;</div>
+<div><a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt2741.htm#1" rel="nofollow noopener" target="_blank">Job 41:1&ndash;34</a>&nbsp;is dedicated to describing him in detail: &quot;Behold, the hope of him is in vain; shall not one be cast down even at the sight of him?&quot;<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-10"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-10" rel="noopener" target="_blank">[10]</a></sup>&nbsp;In&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt2674.htm#1" rel="nofollow noopener" target="_blank">Psalm 74</a>, God is said to &quot;break the heads of Leviathan in pieces&quot; before giving his flesh to the people of the wilderness. In&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt26a4.htm#1" rel="nofollow noopener" target="_blank">Psalm 104</a>, God is praised for having made all things, including Leviathan, and in&nbsp;<a class="gmail-m_-5205617966925650898external gmail-m_-5205617966925650898gmail-text" href="http://www.mechon-mamre.org/p/pt/pt1027.htm#1" rel="nofollow noopener" target="_blank">Isaiah 27:1</a>, he is called the &quot;tortuous serpent&quot; who will be killed at the end of time.<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-DDD_7-1"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-DDD-7" rel="noopener" target="_blank">[7]</a></sup></div>
+<div><br />
+The Leviathan of the Book of Job is a reflection of the older&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Canaanite_religion" rel="noopener" target="_blank" title="Canaanite religion">Canaanite</a>&nbsp;<i><a href="http://en.wikipedia.org/wiki/Lotan" rel="noopener" target="_blank" title="Lotan">Lotan</a></i>, a primeval monster defeated by the god&nbsp;<a href="http://en.wikipedia.org/wiki/Hadad" rel="noopener" target="_blank" title="Hadad">Hadad</a>. Parallels to the role of Mesopotamian&nbsp;<a href="http://en.wikipedia.org/wiki/Tiamat" rel="noopener" target="_blank" title="Tiamat">Tiamat</a>&nbsp;defeated by&nbsp;<a href="http://en.wikipedia.org/wiki/Marduk" rel="noopener" target="_blank" title="Marduk">Marduk</a>&nbsp;have long been drawn in&nbsp;<a href="http://en.wikipedia.org/wiki/Comparative_mythology" rel="noopener" target="_blank" title="Comparative mythology">comparative mythology</a>, as have been wider comparisons to&nbsp;<a href="../en.wikipedia.org/wiki/Dragon.html" rel="noopener" target="_blank" title="Dragon">dragon</a>&nbsp;and&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Cosmic_serpent" rel="noopener" target="_blank" title="Cosmic serpent">world serpent</a>&nbsp;narratives such as&nbsp;<a href="http://en.wikipedia.org/wiki/Indra" rel="noopener" target="_blank" title="Indra">Indra</a>&nbsp;slaying&nbsp;<a class="gmail-m_-5205617966925650898gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Vrtra" rel="noopener" target="_blank" title="Vrtra">Vrtra</a>&nbsp;or&nbsp;<a href="../en.wikipedia.org/wiki/Thor.html" rel="noopener" target="_blank" title="Thor">Thor</a><wbr>&nbsp;slaying&nbsp;<a href="http://en.wikipedia.org/wiki/J%C3%B6rmungandr" rel="noopener" target="_blank" title="Jörmungandr">J&ouml;rmungandr</a>,<sup class="gmail-m_-5205617966925650898gmail-reference" id="gmail-m_-5205617966925650898gmail-cite_ref-1"><a href="http://en.wikipedia.org/wiki/Leviathan#cite_note-1" rel="noopener" target="_blank">[1]</a></sup>&nbsp;but Leviathan already figures in the Hebrew Bible as a metaphor for a powerful enemy, notably&nbsp;<a href="http://en.wikipedia.org/wiki/Babylon" rel="noopener" target="_blank" title="Babylon">Babylon</a>&nbsp;(<a href="http://en.wikipedia.org/wiki/Isaiah" rel="noopener" target="_blank" title="Isaiah">Isaiah</a>&nbsp;27:1)</wbr></div>
+<div>&nbsp;</div>
+<div><b>Lotan</b>&nbsp;(<a class="gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Ugaritic_language" title="Ugaritic language">Ugaritic</a>:&nbsp;transliterated&nbsp;<i>L&ocirc;tān</i>,<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEUehlinger1999514_1-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEUehlinger1999514-1">[1]</a></sup>&nbsp;<i>Litan</i>,<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEBarker2014_2-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEBarker2014-2">[2]</a></sup>&nbsp;or&nbsp;<i>Litānu</i>,<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEHerrmann1999133_3-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEHerrmann1999133-3">[3]</a></sup>&nbsp;meaning &quot;coiled&quot;) is a servant of the&nbsp;<a class="gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Sea_god" title="Sea god">sea god</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Yam_(god)" title="Yam (god)">Yam</a>defeated by the&nbsp;<a class="gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Storm_god" title="Storm god">storm god</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Hadad" title="Hadad">Hadad-Baʿal</a>&nbsp;in the&nbsp;<a href="http://en.wikipedia.org/wiki/Ugaritic" title="Ugaritic">Ugaritic</a>&nbsp;<i><a href="http://en.wikipedia.org/wiki/Baal_Cycle" title="Baal Cycle">Baal Cycle</a></i>.<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEHerrmann1999133_3-1"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEHerrmann1999133-3">[3]</a></sup>&nbsp;possibly with the help or by the hand of his sister&nbsp;<a class="gmail-mw-redirect" href="http://en.wikipedia.org/wiki/%CA%BFAnat" title="ʿAnat">ʿAnat</a>.<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEBaumgarten1981[http://books.google.com.hk/books?id=BM8UAAAAIAAJ&amp;pg=PA208_208]_4-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEBaumgarten1981[http://books.google.com.hk/books?id=BM8UAAAAIAAJ&amp;pg=PA208_208]-4">[4]</a></sup>Lotan seems to have been prefigured by the serpent&nbsp;<i>T&ecirc;mtum</i>&nbsp;represented in Syrian seals of the 18th&ndash;16th century BC,&nbsp;<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEUehlinger1999512_5-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEUehlinger1999512-5">[5]</a></sup>&nbsp;and finds a later reflex in the sea monster&nbsp;<i><a href="http://en.wikipedia.org/wiki/Leviathan" title="Leviathan">Leviathan</a></i>, whose defeat at the hands of&nbsp;<a href="../en.wikipedia.org/wiki/Yahweh.html" title="Yahweh">Yahweh</a>&nbsp;is alluded to in the&nbsp;<a href="../en.wikipedia.org/wiki/Hebrew_Bible.html" title="Hebrew Bible">biblical</a>&nbsp;<a href="http://en.wikipedia.org/wiki/Book_of_Job" title="Book of Job">Book of Job</a>and in&nbsp;<a href="http://en.wikipedia.org/wiki/Book_of_Isaiah" title="Book of Isaiah">Isaiah</a>&nbsp;27:1.<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEUehlinger1999512_5-1"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEUehlinger1999512-5">[5]</a></sup><sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEHerrmann1999133_3-2"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEHerrmann1999133-3">[3]</a></sup>&nbsp;Lambert (2003) went as far as the claim that&nbsp;<a href="http://en.wikipedia.org/wiki/Book_of_Isaiah" title="Book of Isaiah">Isaiah</a>&nbsp;27:1 is a direct quote lifted from the Ugaritic text, correctly rendering Ugaritic&nbsp;<i>bṯn</i>&nbsp;&quot;snake&quot; as Hebrew&nbsp;<i>nḥ&scaron;</i>&nbsp;&quot;snake&quot;.<sup class="gmail-reference" id="gmail-cite_ref-6"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-6">[6]</a></sup><sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEBarker2014[http://books.google.com.hk/books?id=cXRZJlN8BbwC&amp;pg=PA152_152]_7-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEBarker2014[http://books.google.com.hk/books?id=cXRZJlN8BbwC&amp;pg=PA152_152]-7">[7]</a></sup></div>
+<div><br />
+<i>Lotan</i>&nbsp;(<i>ltn</i>) is an adjectival formation meaning &quot;coiled&quot;, here used as a proper name;<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEBaumgarten1981[http://books.google.com.hk/books?id=BM8UAAAAIAAJ&amp;pg=PA208_208]_4-1"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEBaumgarten1981[http://books.google.com.hk/books?id=BM8UAAAAIAAJ&amp;pg=PA208_208]-4">[4]</a></sup>&nbsp;the same creature has a number of possible epitheta, including &quot;the fugitive serpent&quot; (<i>bṯn brḥ</i>) and maybe (with some uncertainty deriving from manuscript lacunae) &quot;the wriggling serpent&quot; (<i>bṯn ʿqltn</i>) and &quot;the mighty one with seven heads&quot; (<i>&scaron;lyṭ d.&scaron;bʿt ra&scaron;m</i>).<sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEUehlinger1999512_5-2"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEUehlinger1999512-5">[5]</a></sup></div>
+<div><br />
+The myth of Hadad defeating Lotan, Yahweh defeating Leviathan, Marduk defeating Tiamat (etc.) in the mythologies of the Ancient Near East are classical examples of the&nbsp;<i><a class="gmail-mw-redirect" href="http://en.wikipedia.org/wiki/Chaoskampf" title="Chaoskampf">Chaoskampf</a></i>&nbsp;mytheme, also reflected in&nbsp;<a href="http://en.wikipedia.org/wiki/Zeus" title="Zeus">Zeus</a>&#39; slaying of&nbsp;<a href="../en.wikipedia.org/wiki/Typhon.html" title="Typhon">Typhon</a>&nbsp;in&nbsp;<a href="../en.wikipedia.org/wiki/Greek_mythology.html" title="Greek mythology">Greek mythology</a><sup class="gmail-reference" id="gmail-cite_ref-FOOTNOTEOgden2013_8-0"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-FOOTNOTEOgden2013-8">[8]</a></sup>&nbsp;and&nbsp;<a href="../en.wikipedia.org/wiki/Thor.html" title="Thor">Thor</a>&#39;s struggle against&nbsp;<a href="http://en.wikipedia.org/wiki/J%C3%B6rmungandr" title="Jörmungandr">J&ouml;rmungandr</a>&nbsp;in the&nbsp;<a href="http://en.wikipedia.org/wiki/Gylfaginning" title="Gylfaginning">Gylfaginning</a>&nbsp;portion of the&nbsp;<a href="http://en.wikipedia.org/wiki/Prose_Edda" title="Prose Edda">Prose Edda</a>.<sup class="gmail-reference" id="gmail-cite_ref-9"><a href="http://en.wikipedia.org/wiki/Lotan#cite_note-9">[9]</a></sup></div>
+<div><br />
+<b>Typhon</b>&nbsp;(<span class="gmail-nowrap"><span class="gmail-IPA gmail-nopopups gmail-noexcerpt"><a href="../en.wikipedia.org/wiki/Help%253AIPA/English.html" title="Help:IPA/English">/<span title="/ˈ/: primary stress follows">ˈ</span><span title="'t' in 'tie'">t</span><span title="/aɪ/: 'i' in 'tide'">aɪ</span><span title="'f' in 'find'">f</span><span title="/ɒ/: 'o' in 'body'">ɒ</span><span title="'n' in 'nigh'">n</span>, -<span title="'f' in 'find'">f</span><span title="/ən/: 'on' in 'button'">ən</span>/</a></span></span>;&nbsp;<a href="../en.wikipedia.org/wiki/Greek_language.html" title="Greek language">Greek</a>:&nbsp;<span lang="el">&Tau;&upsilon;&phi;ῶ&nu;</span>,&nbsp;<i>Tuphōn</i>&nbsp;<span class="gmail-IPA" title="Representation in the International Phonetic Alphabet (IPA)"><a href="../en.wikipedia.org/wiki/Help%253AIPA/Greek.html" title="Help:IPA/Greek">[typʰɔ̂ːn]</a></span>), also&nbsp;<b>Typhoeus</b>&nbsp;(<span class="gmail-nowrap"><span class="gmail-IPA gmail-nopopups gmail-noexcerpt"><a href="../en.wikipedia.org/wiki/Help%253AIPA/English.html" title="Help:IPA/English">/<span title="'t' in 'tie'">t</span><span title="/aɪ/: 'i' in 'tide'">aɪ</span><span title="/ˈ/: primary stress follows">ˈ</span><span title="'f' in 'find'">f</span><span title="/iː/: 'ee' in 'fleece'">iː</span><span title="/ə/: 'a' in 'about'">ə</span><span title="'s' in 'sigh'">s</span>/</a></span></span>;&nbsp;<span lang="el" title="Greek language text">&Tau;&upsilon;&phi;&omega;&epsilon;ύ&sigmaf;</span>,&nbsp;<i>Tuphōeus</i>),&nbsp;<b>Typhaon</b>(<span lang="el" title="Greek language text">&Tau;&upsilon;&phi;ά&omega;&nu;</span>,&nbsp;<i>Tuphaōn</i>) or&nbsp;<b>Typhos</b>&nbsp;(<span lang="el" title="Greek language text">&Tau;&upsilon;&phi;ώ&sigmaf;</span>,&nbsp;<i>Tuphōs</i>), was a monstrous serpentine giant and the most deadly creature in&nbsp;<a href="../en.wikipedia.org/wiki/Greek_mythology.html" title="Greek mythology">Greek mythology</a>. According to&nbsp;<a href="../en.wikipedia.org/wiki/Hesiod.html" title="Hesiod">Hesiod</a>, Typhon was the son of&nbsp;<a class="gmail-mw-redirect" href="../en.wikipedia.org/wiki/Gaia_(mythology).html" title="Gaia (mythology)">Gaia</a>&nbsp;and&nbsp;<a href="http://en.wikipedia.org/wiki/Tartarus" title="Tartarus">Tartarus</a>. However one source has Typhon as the son of&nbsp;<a href="../en.wikipedia.org/wiki/Hera.html" title="Hera">Hera</a>&nbsp;alone, while another makes Typhon the offspring of&nbsp;<a href="http://en.wikipedia.org/wiki/Cronus" title="Cronus">Cronus</a>. Typhon and his mate&nbsp;<a href="../en.wikipedia.org/wiki/Echidna_(mythology).html" title="Echidna (mythology)">Echidna</a>&nbsp;were the progenitors of many famous monsters.</div>
+</div>
+</center>
+</div>
+<div style="text-align: center;">&nbsp;</div>
+<div style="text-align: center;"><img alt="" border="0" height="70" id="BLOGGER_PHOTO_ID_6544373471575771714" src="http://3.bp.blogspot.com/-pTPB3VdnlcU/WtJI_7LDikI/AAAAAAABH8A/QFD7uZG68EY1HTdC9tkc1fW6hx8aIT0lQCK4BGAYYCw/s200/258610762_1049442-787845.gif" width="200" /></div>
+</div>
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="http://atlas.s.lamc.la/TAXONOMY.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="http://atlas.s.lamc.la/TOXODUSK.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="http://atlas.s.lamc.la/TAXONOMY.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="http://atlas.s.lamc.la/TOXODUSK.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<center>
+<style>
+.WHSOISKEYAV {
+
+border-width: 1px;
+border-style: dashed;
+border-color: rgb(15,5,254);
+padding: 5px;
+width: 503px; 
+text-align: center;
+display: inline-block;
+align: center;
+p {
+
+align: center;
+
+}
+
+/*
+
+THE SCORE IS LOVE FIVE
+
+ONE SAFETY
+ONE FIELD GOAL
+
+XIVDAQ: TENNIS OR TINNES?
+
+TONNES AND TUPLE(s)
+*/ 
+
+}
+ <style type="text/css">
+  code { white-space: pre; }
+  </style>
+</style>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- leaderboard -->
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576e94bdb4f80253"></script>
+<div style="float: center; vertical-align: bottom;">
+<center>
+<a 
+href="../join.slack.com/t/eyerc/shared_invite/MjM2NDM2Mjc3Nzk4LTE1MDQ0MDE3NzQtMmU5NjI1N2VmOQ.html" rel="noopener" target="_blank" title="TELESPRISE"><img alt="" border="0" 
+height="60" id="m_-4973210593361332524gmail-m_-6096670269405767939gmail-m_-1436458080550240543m_-3975089270040819763gmail-m_-2248848940621715595gmail-m_4950052768086691300gmail-m_2933957970607722850gmail-m_7483563204303838204gmail-m_-3491586818351559956gmail-m_3682735925266535707gmail-m_5731075335784145647m_3413239976406571221m_2402549402411035463m_3237557952722111901gmail-m_-8798842351942729229m_4692247605844201587m_-2492882859021407156m_-7142874903403184072m_-9133516419565872595gmail-m_6961657238809553818gmail-m_-1296802553737736344gmail-BLOGGER_PHOTO_ID_6494125253829947314" src="../i.imgur.com/F8nmg2T.png" width="500" height="60" /></a>
+<div style="font-size: small; text-align: justify; width: 400px;">
+Unless otherwise indicated, this work was written between the Christmas and Easter seasons of 2017 and 2020(A).  The content of this page is released to the public under
+<a href="../www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">
+the GNU GPL v2.0 license</a>; additionally any reproduction or derivation
+of the work must be attributed to the author, Adam Marshall Dobrin
+along with a link back to this website, fromthemachine dotty org.
+<br><br>That's a "." not "dotty" ... it's to stop SPAMmers. :/<br><br>
+This document is "living" and I don't just mean in the Jeffersonian sense.  It's more alive in the "Mayflower's and June Doors ..." l<a href="../rinkeby.aragon.org/index.html#/gibraltar">iving Ethereum contrac</a>t sense [and literally just as close to the Depp/C<a href="../www.youtube.com/watch@v=0ANXgrd3f28&amp;CL&amp;DO&amp;CBIG1adl.html">aster/Paglen (and honorably PK]</a>
+'D-hath <i>Transundance</i><i>sense</i> of the ... new meaning; as it is now published on Rinkeby, in "living contract" form.  It is subject to change; without notice anywhere but here--and there--in the original spirit of the GPL 2.0.  We are "one step closer to God" ... and do see that in that I mean ... it is a very real fusion of this document and the "spirit of my life" as well as the Spirit's of Kerouac's America and Vonnegut's Martian Mars and my Venutian Hotel ... and *my fusion* of Guy-A and GAIA; and the Spirit of the Earth .. and of course the God given and signed liberties in the Constitution of the United States of America.  It is by and through my hand that this document and our X Commandments link to the Bill or Rights, and this story about an Exodus from slavery that literally begins here, in the post-apocalyptic American hartland.  Written ... this day ... April 14, 2020 (hey, is this HADAD DAY?) ... in Margate FL, USA.  For "official used-to-v TAX day" tomorrow, I'm going to add the "immultible incarnite pen" ... if added to the living "doc/app"--see is the DAO, the way--will initi8 the special secret "hidden level" .. we've all been looking for. 
+<br/><br/>Nor do just mean this website or the totality of my written works; nor do I only mean ... this particular derivation of the GPL 2.0+ modifications I continually source ... must be "from this website."  I also mean *the thing* that is built from ... bits and piece of blocks of sand-toys; from Ethereum and from Rust and from our hands and eyes working together ... from this place, this cornerstone of the message that is ... written from brick and mortar words and events and people that have come before this poit of the "sealed W" that is this <a href="../fromthemachine.org/CURSOR.html">specific page</a> and this time.  It's 3:28; just five minutes--or is it four, too layne.
+<br/><br/>This work is not to be redistributed according to the GPL unless all linked media on Youtube and related sites are intact--and historical references to the actual documented history of the art pieces (as I experience/d them) are also available for linking.  Wikipedia references must be available for viewing, as well as the exact version of those pages at the time these pieces were written.  All references to the Holy Bible must be "linked" (as they are or via ... impromptu in-transit re-linking) to the exact verses and versions of the Bible that I reference.  These requirements, as well as the caveat and informational re-introduction to God's DAO above ... should be seen as material modifications to the original GPL2.0 that are retroactively applied to all works distributed under license via this site and all previous e-mails and sites. /s/ wso
+</div>
+</div>
+
+<br/>
+If you wanna talk to me <a href="../www.facebook.com/admdbrn.html">get me on facebook</a>, with PGP <a href="../flowcrypt.com/me/adam5.html">via FlowCrypt</a> or adam at from the machine dotty org
+<br/>
+<pre width=700 style="width: 700px">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+=4lZw
+-----END PGP PUBLIC KEY BLOCK-----
+</pre>
+<br/>
+<pre width=700 style="width: 700px;">
+Please see GPG keys on PGP.MIT.EDU; fingerprints: 
+sec rsa3072/A18F778E19FC3248 2020-04-03 [SC] [expires: 2022-04-03] 
+FFF31E86FCEB5046E8B27D4AA18F778E19FC3248
+uid [ultimate] ADAM M DOBRIN \<adam5@protonmail iamswitzerland\>
+ssb rsa3072/04F98002A3DA53B2 2020-04-03 [E] [expires: 2022-04-03]
+
+sec rsa4096/FB4ECE4A109229CF 2020-04-04 [SC] 
+4FAF0D3E208A1F4C980D0F66FB4ECE4A109229CF
+uid [ultimate] Adam Marshall Dobrin \<adam at fromthemachine dotty orghy\>
+ssb rsa4096/DD1F0C118C788B04 2020-04-04 [E]
+</pre>
+</center>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74743044-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<head>
+<meta author="REDMAE PHEN- UC NE ME ADAM MARSHALL DOBRIN"/>
+<meta keywords="formicaquickerbong, fromthemachine, "from the machine", holy coda, matrix, orver et aut, language of creation, proof of creation, proof of heaven, transhumanism, new democracy, new socialism, self governance, emancipation of humanity, emancipation of the universe, "whats a ren", carradslovasup/>
+<meta = "formicaquickerbong, fromthemachine, "from the machine", holy coda, matrix, orver et aut, language of creation, proof of creation, proof of heaven, transhumanism, new democracy, new socialism, self governance, emancipation of humanity, emancipation of the universe, "whats a ren", carradslovasup/>
+</head>
+<!-- sig adam@ermccorp dot com --><br/<br/>
+<center><pre width=700 style="width: 700px;">
+pub rsa3072 2020-04-06 [SC] [expires: 2022-04-06]
+F7E4 7CB1 2CA0 CD01 C5E1 CBFA 7EC8 D5A8 5A38 D63A
+uid [ unknown] ADAM MARSHALL DOBRIN <adam at ermcc orp.com>
+
+Because of "some issues" with what appears to be distinct
+and unbridled privacy intrusion; please ensure that PGP
+is understood to be "nothing more than not so much pretty
+good" and this key also, almost required in order to
+verify authentic identity--in the case of ... question.
+</pre>
+
+
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+       <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

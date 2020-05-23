@@ -1,0 +1,3 @@
+
+<p>Vous trouvez ici des fonctions qui concernent la gestion des destinataires. Vous pouvez dresser la liste des destinataires, chercher des destinataires, importer et exporter des destinataires, ou v&eacute;rifier la base de donn&eacute;es des destinataires pour trouver les dossiers non valides. </p>
+<p>Pour afficher les destinataires qui sont sur une liste, choisissez la liste et cliquez sur "voir membres".</p>

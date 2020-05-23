@@ -1,0 +1,877 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script src="https://cdn.cookielaw.org/langswitch/b166fb9e-beed-4dd2-8201-a15d0c055e30.js"
+              type="text/javascript"
+              charset="UTF-8">//</script>
+      <script type="text/javascript">
+                        function OptanonWrapper() { }
+                        </script>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="referrer" content="origin"/>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/raphael.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/webjars/jquery/2.1.1/jquery.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/viaf.js">//</script>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/viaf.css"/>
+      <link href="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/themes/base/jquery-ui.css"
+            rel="stylesheet"
+            type="text/css"/>
+      <script type="text/javascript"
+              src="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/ui/minified/jquery-ui.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.columnizer.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.dataTables.min.js">//</script>
+      <link rel="shortcut icon" href="https://viaf.org/viaf/images/viaf.ico"/>
+      <link rel="search" title="VIAF Search" type="application/opensearchdescription+xml"
+            href="http://viaf.org/allFieldsSearch.xml"/>
+      <link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/"/>
+      <title>217950562</title>
+      <link rel="canonical" href="217950562.html"/>
+      <link rel="alternate" href="https://viaf.org/viaf/217950562/rdf.xml"
+            type="application/rdf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/217950562/marc21.xml"
+            type="application/x-marc21+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/217950562/viaf.xml"
+            type="application/x-viaf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/217950562/justlinks.json"
+            type="application/vnd.oclc.links+json"/>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/jquery.dataTables.min.css"/>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        var mylist=$('#listOfLinks');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+           return $(a).text().trim().toUpperCase().localeCompare($(b).text().trim().toUpperCase());
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+        // canvasSize declared in viaf.js
+      //canvasSize = 90 + (nodes.length * 10);
+      canvas=document.getElementById("svgcanvas");
+      if(canvas) {
+      canvasSize = 140 + (nodes.length * 8);
+      if (nodes.length==1){canvasSize = 70;}
+      var paper = Raphael(document.getElementById("svgcanvas"), canvasSize, canvasSize);
+      drawGraph(paper);
+
+      $('#SelectedTitles h3').click(function(event) {
+        $('#SelectedTitlesContent').slideToggle("slow");
+        $('img#SelectedTitlesContentOpen').toggle();
+        $('img#SelectedTitlesContentClose').toggle();
+      });
+      $('#SelectedCoauthors h3').click(function(event) {
+        $('#SelectedCoauthorsContent').slideToggle("slow");
+        $('img#SelectedCoauthorsContentOpen').toggle();
+        $('img#SelectedCoauthorsContentClose').toggle();
+      });
+      $('#Graph h3').click(function(event) {
+        $('#GraphContent').slideToggle("slow");
+        $('img#GraphContentOpen').toggle();
+        $('img#GraphContentClose').toggle();
+      });
+      $('#Countries h3').click(function(event) {
+        $('#CountriesContent').slideToggle("slow");
+        $('img#CountriesContentOpen').toggle();
+        $('img#CountriesContentClose').toggle();
+      });
+      $('#About h3').click(function(event) {
+        $('#AboutContent').slideToggle("slow");
+        $('img#AboutContentOpen').toggle();
+        $('img#AboutContentClose').toggle();
+      });
+      $('#Timeline h3').click(function(event) {
+        $('#TimelineContent').slideToggle("slow");
+        $('img#TimelineContentOpen').toggle();
+        $('img#TimelineContentClose').toggle();
+      });
+      $('#AltForms h3').click(function(event) {
+        $('#AltFormsContent').slideToggle("slow");
+        $('img#AltFormsContentOpen').toggle();
+        $('img#AltFormsContentClose').toggle();
+      });
+      $('#TitleLinks h3').click(function(event) {
+        $('#TitleLinksContent').slideToggle("slow");
+        $('img#TitleLinksContentOpen').toggle();
+        $('img#TitleLinksContentClose').toggle();
+      });
+      $('#RelatedNames h3').click(function(event) {
+        $('#RelatedNamesContent').slideToggle("slow");
+        $('img#RelatedNamesContentOpen').toggle();
+        $('img#RelatedNamesContentClose').toggle();
+      });
+      $('#Publishers h3').click(function(event) {
+        $('#PublishersContent').slideToggle("slow");
+        $('img#PublishersContentOpen').toggle();
+        $('img#PublishersContentClose').toggle();
+      });
+      $('#RecordViews h3').click(function(event) {
+        $('#RecordViewsContent').slideToggle("slow");
+        $('img#RecordViewsContentOpen').toggle();
+        $('img#RecordViewsContentClose').toggle();
+      });
+      $('#History h3').click(function(event) {
+        $('#HistoryContent').slideToggle("slow");
+        $('img#HistoryContentOpen').toggle();
+        $('img#HistoryContentClose').toggle();
+      });
+
+	$(".exprLabel").click(function() {
+			//alert("clicked");
+			$(this).parent().find("ul").toggle('slow');
+			if ($(this).parent().find("h4").hasClass('listClose')){
+				$(this).parent().find("h4").addClass('listOpen').removeClass('listClose');
+			}
+			else {
+				$(this).parent().find("h4").addClass('listClose').removeClass('listOpen');
+			}
+	});
+      }
+
+      });
+    </script>
+      <script type="text/javascript"><!--
+                            $(document).ready(function() {
+                            if ($('#expressionTable').length) $('#expressionTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+                            if ($('#workTable').length) $('#workTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+
+                            function fixupHeader(XMLHttpRequest){
+                            XMLHttpRequest.setRequestHeader('Content-Type', "text/xml");
+                            }
+                            $( "input#searchTerms" ).autocomplete({
+                            source: function( request, response ){
+                            $.ajax({
+                            url: "//viaf.org/viaf/AutoSuggest",
+                            dataType: "jsonp",
+                            data: {
+                            query: request.term
+                            },
+                            success: function (data){
+                            var mr = [];
+                            var result = data['result']
+                            for (var i=0, len=result.length; i < len; i++){ 
+                            ri = result[i];
+                            var term = ri['term'];
+                            mr.push({label:term, value:term});
+                            }
+                            response(mr);
+                            }
+                            });
+                            },
+                            minLength: 1
+                            });
+
+                            });
+--></script>
+   </head>
+   <body onload="document.getElementById('searchTerms').focus()">
+      <script type="text/javascript">
+                            var viafBase = '/viaf/';
+                            var xslMatchedBirthDeath = 'Matched on birth/death dates';
+                            var xslMatchedAnd = 'and';
+                        </script>
+      <div id="masthead">
+         <div id="mastTitles">
+            <h1>
+               <a class="mast-title" href="https://viaf.org/">VIAF</a>
+            </h1>
+            <h2>Virtual International Authority File</h2>
+         </div>
+      </div>
+      <div id="body">
+         <div id="maincontent">
+            <div id="searchdisplay">
+               <div id="searchdisplay-inner">
+                  <h4 class="searchh4">Search</h4>
+                  <div id="searchInner" class="yui-skin-sam">
+                     <form onsubmit="return doSearch(this);" id="visibleForm" action="https://viaf.org/viaf/217950562/?">
+                        <fieldset id="fieldset-field">
+                           <label>
+                              <span class="langHi0">Select Field:</span>
+                           </label>
+                           <select name="selector0" size="1">
+                              <option value="cql.any">All Fields</option>
+                              <option selected="selected" value="local.names">All Headings</option>
+                              <option value="local.corporateNames">Corporate Names</option>
+                              <option value="local.geographicNames">Geographic Names</option>
+                              <option value="local.personalNames">Personal Names</option>
+                              <option value="local.uniformTitleWorks">Works</option>
+                              <option value="local.uniformTitleExpressions">Expressions</option>
+                              <option value="local.mainHeadingEl">Preferred Headings</option>
+                              <option value="Xlocal.names">Exact Heading</option>
+                              <option value="local.title">Bibliographic Titles</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-index">
+                           <label>Select Index:</label>
+                           <select size="1" name="selector1">
+                              <option selected="selected" value="viaf">All VIAF</option>
+                              <option value="arbabn">Argentina</option>
+                              <option value="nla">Australia</option>
+                              <option value="vlacc">Belgium (Flemish)</option>
+                              <option value="blbnb">Brazil</option>
+                              <option value="caoonl">Canada</option>
+                              <option value="bnc">Catalunya</option>
+                              <option value="bnchl">Chile</option>
+                              <option value="nsk">Croatia</option>
+                              <option value="nkc">Czech</option>
+                              <option value="dbc">Denmark (DBC)</option>
+                              <option value="egaxa">Egypt</option>
+                              <option value="errr">Estonia</option>
+                              <option value="fast">FAST</option>
+                              <option value="bnf">France (BnF)</option>
+                              <option value="sudoc">France (Sudoc)</option>
+                              <option value="dnb">Germany</option>
+                              <option value="jpg">Getty (ULAN)</option>
+                              <option value="grateve">Greece</option>
+                              <option value="bnc bne">Hispánica</option>
+                              <option value="nszl">Hungary</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="n6i">Ireland</option>
+                              <option value="isni">ISNI</option>
+                              <option value="j9u">Israel</option>
+                              <option value="iccu">Italy</option>
+                              <option value="ndl">Japan (NDL)</option>
+                              <option value="nii">Japan (NII)</option>
+                              <option value="krnlk">Korea</option>
+                              <option value="LNB">Latvia</option>
+                              <option value="LNL">Lebanon</option>
+                              <option value="lc">LC (NACO)</option>
+                              <option value="lih">Lithuania</option>
+                              <option value="bnl">Luxembourg</option>
+                              <option value="mrbnr">Morocco</option>
+                              <option value="nta">Netherlands</option>
+                              <option value="bibsys">Norway (BIBSYS)</option>
+                              <option value="w2z">Norway (National Library)</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="perseus">Perseus</option>
+                              <option value="plwabn">Poland (National Library)</option>
+                              <option value="nukat">Poland (NUKAT)</option>
+                              <option value="ptbnp">Portugal</option>
+                              <option value="b2q">Québec</option>
+                              <option value="de663">RISM</option>
+                              <option value="nlr">Russia</option>
+                              <option value="nlb">Singapore</option>
+                              <option value="skmasnl">Slovakia</option>
+                              <option value="simacob">Slovenia</option>
+                              <option value="bne">Spain</option>
+                              <option value="selibr">Sweden</option>
+                              <option value="sz">Swiss (National Library)</option>
+                              <option value="rero">Swiss (RERO)</option>
+                              <option value="srp">Syriac</option>
+                              <option value="cyt">Taiwan</option>
+                              <option value="bav">Vatican</option>
+                              <option value="wkp">Wikipedia</option>
+                              <option value="xa">xA</option>
+                              <option value="xr">xR</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-textenter">
+                           <label>Search Terms:</label>
+                           <div class="ui-widget">
+                              <input size="40" id="searchTerms"/>
+                           </div>
+                        </fieldset>
+                        <fieldset id="fieldset-submit">
+                           <input value="Search" id="btnSearch2" title="Search VIAF" type="submit"/>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div id="content">
+               <div id="Title-Wrap">
+                  <div id="Title">
+                     <h2 id="nameEntry1" class="nameEntry">Ying xiong (Motion picture)<span class="flags">
+                           <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry2" class="nameEntry">Ying xiong film<span class="flags">
+                           <img alt="National Library of France" title="National Library of France"
+                                src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry3" class="nameEntry">Ying xiong<span class="flags">
+                           <img alt="German National Library" title="German National Library"
+                                src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry4" class="nameEntry">גיבור (סרט קולנוע : 2002)<span class="flags">
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry5" class="nameEntry">Hero. (film)<span class="flags">
+                           <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry6" class="nameEntry">The hero (Película cinematográfica)<span class="flags">
+                           <img alt="National Library of Spain" title="National Library of Spain"
+                                src="https://viaf.org/viaf/images/flags/BNE.png"/>
+                        </span>
+                     </h2>
+                     <h1 class="nameID">VIAF ID: 217950562
+     (Work)
+      </h1>
+                     <h1 class="nameID">Permalink: http://viaf.org/viaf/217950562</h1>
+                  </div>
+               </div>
+               <div id="Graph" class="mainSection" style="position:relative;">
+                  <h3>
+                     <img id="GraphContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="GraphContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Preferred Forms</span>
+                  </h3>
+                  <div id="GraphContent" class="content">
+                     <div id="GraphContent-wrap">
+                        <div>
+                           <ul id="mainHeadingElements">
+                              <li id="PreferredForms1" class="PreferredForms">
+                                 <a href="https://www.idref.fr/181429101/id" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </a>130 _ 0 <a href="https://viaf.org/processed/SUDOC%7C181429101" id="SUDOC-181429101"
+                                    onmouseover="selectNode('SUDOC-181429101')"
+                                    onmouseout="unselectNode('SUDOC-181429101')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Hero.</span>‏
+  
+    ‎‡g 
+  <span>film</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms2" class="PreferredForms">
+                                 <a href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&amp;authority_id=XX5744494"
+                                    title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="National Library of Spain" title="National Library of Spain"
+                                         src="https://viaf.org/viaf/images/flags/BNE.png"/>
+                                 </a>130 _ 4 <a href="https://viaf.org/processed/BNE%7CXX5744494" id="BNE-XX5744494"
+                                    onmouseover="selectNode('BNE-XX5744494')"
+                                    onmouseout="unselectNode('BNE-XX5744494')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>The hero (Película cinematográfica)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms3" class="PreferredForms">
+                                 <a href="http://d-nb.info/gnd/7701932-5" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </a>130 _ 0 <a href="https://viaf.org/processed/DNB%7C1002569842" id="DNB-1002569842"
+                                    onmouseover="selectNode('DNB-1002569842')"
+                                    onmouseout="unselectNode('DNB-1002569842')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Ying xiong</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms4" class="PreferredForms">
+                                 <a href="https://id.loc.gov/authorities/names/nr2004000799"
+                                    title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </a>130 _ 0 <a href="https://viaf.org/processed/LC%7Cnr2004000799" id="LC-nr2004000799"
+                                    onmouseover="selectNode('LC-nr2004000799')"
+                                    onmouseout="unselectNode('LC-nr2004000799')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Ying xiong (Motion picture)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms5" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>130 _ 0 <a href="https://viaf.org/processed/J9U%7C987007590962005171" id="J9U-987007590962005171"
+                                    onmouseover="selectNode('J9U-987007590962005171')"
+                                    onmouseout="unselectNode('J9U-987007590962005171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Ying xiong (Motion picture)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms6" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of France" title="National Library of France"
+                                         src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 </div>230 _ _ <a href="https://viaf.org/processed/BNF%7C16576239" id="BNF-16576239"
+                                    onmouseover="selectNode('BNF-16576239')"
+                                    onmouseout="unselectNode('BNF-16576239')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Ying xiong</span>‏
+  
+    ‎‡n 
+  <span>film</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms7" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>130 _ 0 <a href="https://viaf.org/processed/J9U%7C987007590962005171" id="J9U-987007590962005171"
+                                    onmouseover="selectNode('J9U-987007590962005171')"
+                                    onmouseout="unselectNode('J9U-987007590962005171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>גיבור (סרט קולנוע : 2002)</span>‏
+  </a>
+                              </li>
+                           </ul>
+                           <script type="text/javascript">
+      new Node("SUDOC-181429101", "SUDOC", "Sudoc [ABES], France");
+      
+      addLink("SUDOC-181429101", "BNE-XX5744494");
+    addMatch("SUDOC-181429101", "BNE-XX5744494", "", "work title to sibling title", "", "", ""); 
+  
+      addLink("SUDOC-181429101", "BNF-16576239");
+    addMatch("SUDOC-181429101", "BNF-16576239", "", "work title to sibling title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("BNE-XX5744494", "BNE", "National Library of Spain");
+      
+      addLink("BNE-XX5744494", "SUDOC-181429101");
+    addMatch("BNE-XX5744494", "SUDOC-181429101", "", "work title to sibling title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("DNB-1002569842", "DNB", "German National Library");
+      
+      addLink("DNB-1002569842", "BNF-16576239");
+    addMatch("DNB-1002569842", "BNF-16576239", "", "work title to sibling title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("LC-nr2004000799", "LC", "Library of Congress/NACO");
+      
+      addLink("LC-nr2004000799", "J9U-987007590962005171");
+    addMatch("LC-nr2004000799", "J9U-987007590962005171", "", "lccn", "", "", ""); 
+  
+      addLink("LC-nr2004000799", "J9U-987007590962005171");
+    addMatch("LC-nr2004000799", "J9U-987007590962005171", "", "lccn", "", "", ""); 
+  
+      addLink("LC-nr2004000799", "BNF-16576239");
+    addMatch("LC-nr2004000799", "BNF-16576239", "", "work title to sibling title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007590962005171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007590962005171", "LC-nr2004000799");
+    addMatch("J9U-987007590962005171", "LC-nr2004000799", "", "lccn", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("BNF-16576239", "BNF", "National Library of France");
+      
+      addLink("BNF-16576239", "SUDOC-181429101");
+    addMatch("BNF-16576239", "SUDOC-181429101", "", "work title to sibling title", "", "", ""); 
+  
+      addLink("BNF-16576239", "LC-nr2004000799");
+    addMatch("BNF-16576239", "LC-nr2004000799", "", "work title to sibling title", "", "", ""); 
+  
+      addLink("BNF-16576239", "DNB-1002569842");
+    addMatch("BNF-16576239", "DNB-1002569842", "", "work title to sibling title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007590962005171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007590962005171", "LC-nr2004000799");
+    addMatch("J9U-987007590962005171", "LC-nr2004000799", "", "lccn", "", "", ""); 
+  </script>
+                        </div>
+                        <div id="leftfloat">
+                           <div id="svgcanvas"> </div>
+                           <div id="nodeInfo">
+                              <h4> </h4>
+                              <p> </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="clearing"> </div>
+               <div id="AltForms" class="mainSection">
+                  <h3>
+                     <img id="AltFormsContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="AltFormsContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">4xx's: Alternate Name Forms</span> (8)
+      </h3>
+                  <div style="display: none;" id="AltFormsContent" class="content">
+                     <ul>
+                        <li>430 _ 0 
+    ‎‡a 
+  <span>Hero (Motion picture : 2002)</span>‏
+  <span class="flags">
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>430 _ 0 
+    ‎‡a 
+  <span>Hero &lt;Film, 2002&gt;</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>430 _ _ 
+    ‎‡a 
+  <span>Hero</span>‏
+  
+    ‎‡n 
+  <span>film</span>‏
+  
+    ‎‡n 
+  <span>2002</span>‏
+  <span class="flags">
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                        <li>430 _ 0 
+    ‎‡a 
+  <span>Yingxiong</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>400 | _ 
+    ‎‡a 
+  <span>Zhang, Yimou (1951-...).</span>‏
+  
+    ‎‡t 
+  <span>Hero</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>440 _ | 
+    ‎‡a 
+  <span>Zhang</span>‏
+  
+    ‎‡b 
+  <span>Yimou</span>‏
+  
+    ‎‡f 
+  <span>1951-....</span>‏
+  
+    ‎‡t 
+  <span>Hero</span>‏
+  <span class="flags">
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                        <li>440 _ | 
+    ‎‡a 
+  <span>Zhang</span>‏
+  
+    ‎‡b 
+  <span>Yimou</span>‏
+  
+    ‎‡f 
+  <span>1951-....</span>‏
+  
+    ‎‡t 
+  <span>Ying xiong</span>‏
+  <span class="flags">
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                        <li>430 _ 0 
+    ‎‡a 
+  <span>英雄 (电影)</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="RelatedNames" class="mainSection">
+                  <h3>
+                     <img id="RelatedNamesContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="RelatedNamesContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">5xx's: Related Names</span> (3)
+    </h3>
+                  <div id="RelatedNamesContent" class="content" style="display:block;">
+                     <ul>
+                        <li>500 1 _ 
+    ‎‡a 
+  <span>Zhang, Yimou,</span>‏
+  
+    ‎‡d 
+  <span>1951-....</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>500 1 _ 
+    ‎‡a 
+  <span>Zhang, Yimou</span>‏
+  
+    ‎‡d 
+  <span>1950-</span>‏
+  
+    ‎‡e 
+  <span>Regisseur</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>500 _ _ 
+    ‎‡5 
+  <span>xxxxa</span>‏
+  
+    ‎‡a 
+  <span>Zhang</span>‏
+  
+    ‎‡b 
+  <span>Yimou</span>‏
+  
+    ‎‡f 
+  <span>1951-....</span>‏
+  <span class="flags">
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="SelectedTitles" class="mainSection">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="SelectedTitlesContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="SelectedTitlesContentClose"/>Selected Titles</h3>
+                  <div style="display: block;" id="SelectedTitlesContent" class="content">Author: <a href="https://viaf.org/viaf/111742197">Zhang, Yimou,</a>
+                  </div>
+               </div>
+               <div id="Timeline" class="mainSection">
+                  <h3>
+                     <img id="TimelineContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="TimelineContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Publication Statistics</span>
+                  </h3>
+                  <div id="TimelineContent" class="content" style="display:none;">
+                     <script type="text/javascript">
+       function dateMsg(decade, count){
+         var tld = document.getElementById('TimeLineDisplay');
+         if (count) {
+              if (count=='1')
+              tld.innerHTML = count + ' publications in the '+decade+"'s";
+              else tld.innerHTML = count + ' publications in the '+decade+"'s";
+         } else {
+              tld.innerHTML = '';
+         }
+        }
+      </script>
+                     <ul>
+                        <li>
+                           <h4 class="subHead">
+                              <span class="langHi0">Publication History</span>
+                           </h4>
+                           <div id="TimeLineShell">
+                              <div id="TimeLineMarkers">
+                                 <span class="date">2000</span>
+                                 <span class="TimeLineMarkerStart">|</span>
+                                 <img id="line2000" class="marker" style="height:12px;"
+                                      onmouseover="dateMsg('200'+'0', '2');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <span class="TimeLineMarkerEnd">|</span>
+                                 <span class="date">2100</span>
+                              </div>
+                           </div>
+                           <div id="TimeLineDisplayBox">
+                              <span id="TimeLineDisplay"/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="mainSection" id="RecordViews">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="RecordViewsContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="RecordViewsContentClose"/>
+                     <span class="langHi0">Record Views</span>
+                  </h3>
+                  <div style="display:none;" class="content" id="RecordViewsContent">
+                     <ul>
+                        <li>
+                           <a href="https://viaf.org/viaf/217950562/marc21.xml" type="application/x-marc21+xml"
+                              rel="nofollow">
+                              <span class="langHi0">MARC-21 record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/217950562/viaf.xml" type="application/xml" rel="nofollow">
+                              <span class="langHi0">VIAF Cluster in XML</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/217950562/rdf.xml" type="application/rdf+xml" rel="nofollow">
+                              <span class="langHi0">RDF record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/217950562/justlinks.json" type="application/vnd.oclc.links+json"
+                              rel="nofollow">
+                              <span class="langHi0">Just Links in JSON</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="History" class="mainSection">
+                  <h3>
+                     <img id="HistoryContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="HistoryContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">History of VIAF ID</span>:217950562 (6)
+      </h3>
+                  <div id="HistoryContent" class="content" style="display:none;">
+                     <table id="historyTable" cellspacing="0">
+                        <tr>
+                           <th>
+                              <span class="langHi0">Record ID</span>
+                           </th>
+                           <th id="action">
+                              <span class="langHi0">Action</span>
+                           </th>
+                           <th>
+                              <span class="langHi0">Time</span>
+                           </th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/DNB|1002569842">DNB|1002569842</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2011-12-15T08:05:04+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BNF|16576239">BNF|16576239</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2014-08-28T14:36:24+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LC|nr2004000799">LC|nr2004000799</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2017-01-23T19:25:39.553778+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SUDOC|181429101">SUDOC|181429101</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2017-11-06T15:15:15.626064+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BNE|XX5744494">BNE|XX5744494</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2018-05-14T23:34:57.176366+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/J9U|987007590962005171">J9U|987007590962005171</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2020-02-02T17:35:53.727729+00:00</td>
+                        </tr>
+                     </table>
+                     <a class="rss" href="https://viaf.org/viaf/217950562.rss" rel="nofollow">RSS feed for changes</a>
+                  </div>
+               </div>
+            </div>
+            <script type="text/javascript">updateSearchForms();</script>
+            <div class="clearing"/>
+         </div>
+      </div>
+      <div id="footer2-wrap">
+         <div id="footer2">
+            <div id="logo">
+               <img title="OCLC Logo" alt="OCLC Logo" src="https://viaf.org/viaf/images/logo_col_v_white.gif"/>
+            </div>
+            <div id="legal">
+               <div id="copyright">© 2010-2019 OCLC <br/>
+                  <a href="https://policies.oclc.org/en/privacy/privacy-statement.html">Privacy policy</a>
+                  <br/>
+                  <a href="https://policies.oclc.org/en/privacy/cookie-statement.html">Cookie Notice</a>
+               </div>
+               <div id="TandC">
+                  <a href="https://www.oclc.org/">Hosted by OCLC</a>
+               </div>
+               <div id="VoID">
+                  <a href="https://viaf.org/viaf/data">About the dataset</a>
+               </div>
+               <div id="lastUpdate"/>
+            </div>
+            <div id="footer-right">
+               <div class="footer" id="feedback">
+                  <img alt="Send us a comment." title="Send us a comment." src="https://viaf.org/viaf/images/mail.gif"/>
+                  <a href="mailto:bibchange@oclc.org?subject=VIAF feedback">
+                     <span class="langHi0">Send us a comment.</span>
+                  </a>
+               </div>
+               <div class="footer" id="about">
+                  <img alt="About VIAF" title="About VIAF" src="https://viaf.org/viaf/images/info.gif"/>
+                  <a href="https://www.oclc.org/viaf">
+                     <span class="langHi0">About VIAF</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript">//</script>
+      <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-10987553-1");  // viaf
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+   </body>
+</html>

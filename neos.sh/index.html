@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Donu - The native currency for the Donito blockchain-powered donation and crowdfunding platform.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<link rel="icon" href="images/favicon.ico" type="image/favicon.ico"> -->
+    <link rel="icon" type="image/png" href="https://neos.sh/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://neos.sh/images/favicon-16x16.png" sizes="16x16" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/slick.css" />
+    <link rel="stylesheet" href="https://neos.sh/css/modalanimate.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/animate.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/custom.css?v=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="https://neos.sh/css/developer.css" />
+</head>
+
+<body>
+    <header class="heder_wrap">
+        <div class="container">
+            <div class="hdr-inr d-flex">
+                <div class="logo">
+                    <a href="index.html" class="logo_main"><img src="https://neos.sh/images/logo.png" alt=""></a>
+                </div>
+
+                <div class="bar_btn">
+                    <a id="bars" href="javascript:void(0)">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <!--<div class="bar"></div>-->
+                    </a>
+                </div>
+
+
+                <div class="mnu-rt-pnl">
+                    <div class="social-area">
+                        <ul class="clearfix">
+                            <li><a href="https://neos.sh/facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://neos.sh/twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://neos.sh/telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://neos.sh/reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                            <li><a href="https://neos.sh/matrix">[m]</a></li>
+                            <li><a href="https://neos.sh/discord"><i class="fab fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header_menu d-flex">
+                       <div class="menu-inr">
+                          <ul class="clearfix">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About donu</a></li>
+                            <li><a href="index.html#roadmap">Roadmap</a></li>
+                            <li><a href="index.html#news">News</a></li>
+                            <li><a href="index.html#contact">Get Help</a></li>
+                           </ul>
+                           <div class="cls-btn">
+                                 <a class="bar_btn close_btn" href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                            </div>
+                       </div>
+                        
+
+                        <div class="cntrl-area">
+                            <a class="gen-btn-1" href="index.html#dwnld-wallet">Wallets</a>
+                            <a class="gen-btn-2" href="index.html#getting-started">Getting Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner-area" id="home">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="bnr-content text-center">
+                <h1>Welcome to Donu<span>!</span></h1>
+                <p>Donito is an ultra-low-fee crowdfunding platform that lets you accept popular cryptocurrencies from your supporters. Enjoy additional incentives when you accept the native cryptocurrency, DONU.</p>
+
+                <div class="wallet-cntrl">
+                    <a class="gen-btn-2" href="index.html#getting-started">Get started with Donu</a>
+                    <a class="gen-btn-1" href="index.html#dwnld-wallet">Choose Your Wallet</a>
+                </div>
+            </div>
+            
+            <div class="coin-outer">
+                <img src="https://neos.sh/images/coin-bg.png" alt="" />
+            </div>
+        </div>
+        <figure class="kids-img wow fadeInUp">
+            <!--<figure class="kids-img hoverParent keySpacedF wow fadeInUp">-->
+            <!--<img src="images/bnr-img.png" alt="" />-->
+            <!--<img class="pc-img" src="images/bnr-bg2.png" alt="" />-->
+            <div class="pc-img clearfix">
+                <img class="hoverParent keySpacedF" src="https://neos.sh/images/p-1.png" alt="" />
+                <img class="hoverParent2 keySpacedF" src="https://neos.sh/images/p-2.png" alt="" />
+                <img class="hoverParent3 keySpacedF" src="https://neos.sh/images/p-3.png" alt="" />
+            </div>
+            <img class="mob-img"  src="https://neos.sh/images/bnr-img.png" alt="" />
+        </figure>
+        
+        
+    </section>
+    <!-- BANNER -->
+
+
+    <!-- NEWLETTER AREA -->
+    <section class="nws-ltr">
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2>Subscribe to our <span>Newsletter</span></h2>
+                <p>Stay up to date on Donito and Donu activities, news and more.</p>
+            </header>
+            <div class="signup-area">
+	        <form action="https://doni.us20.list-manage.com/subscribe/post?u=b0d2866a8c9cea537862bfc5c&amp;id=0924bfaf6f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" validate>
+                <div class="input-area">
+		    <input type="email" class="form-control" maxlength="256" name="EMAIL" data-name="Email" placeholder="Your E-mail Address" required>
+                    <input type="submit" class="form-btn" name="subscribe" id="mc-embedded-subscribe" value="Subscribe" data-wait="Please wait..." class="formbtn w-button">
+              	</form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEWLETTER AREA -->
+
+
+    <!-- WHAT IS donu -->
+    <section class="about-donu" id="about">
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2>What is <span>Donu?</span></h2>
+                <p>Donito is made up of two components. First, there is a platform that allows you to accept popular cryptocurrencies in your fundraising campaigns. You can also accept and hold the native cryptocurrency, DONU, which offers additional incentives.</p>
+		<p><a href="https://neos.sh/whitepaper" target="_blank">Read our whitepaper</a></p>
+            </header>
+
+            <div class="donu-details">
+                <div class="row detail-row">
+                    <div class="col-sm-6">
+                        <div class="detail-txt">
+                            <h3>We designed a platform with community growth in mind.</h3>
+                            <p>Donito is a non-profit platform designed to support users and DONU token holders. The small fee we charge on transactions goes directly towards buying DONU tokens at market value and optionally burning them.</p>
+                            <p>Plus, when your supporters send you DONU tokens, you’ll pay even lower fees!</p>
+
+                            <div class="sec-btn-area">
+                                <a class="sec-btn" href="index.html#getting-started">Get started now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <figure class="dtls-fgr shdw-pic wow fadeInRight">
+                            <div id="player-wrapper">
+                                <img src="https://neos.sh/images/d-1.png" alt="" />
+                                <div class="ply-btn-area">
+                                    <a class="ply-btn" href="javascript:void(0)"><i class="fas fa-play"></i></a>
+                                </div>
+                            </div>
+                            <div class="d-none" id="promo-video"></div>
+                        </figure>
+                    </div>
+                </div>
+
+                <div class="row detail-row">
+                    <div class="col-sm-6">
+                        <div class="detail-txt">
+                            <h3>Get Donu Network Token</h3>
+                            <p>Participate in the Donu ecosystem by holding DONU tokens, which you can buy or earn!</p>
+
+                            <div class="sec-btn-area">
+                                <a class="sec-btn" href="javascript:void(0)" data-toggle="modal" data-target="#buy-modal">Buy DONU</a>
+                                <a class="sec-btn2" href="https://www.donu.support/portal/kb/articles/staking-with-your-donu-wallet" target="_blank">Earn DONU</a>
+                            </div>
+
+                            <div class="create-profile">
+                                <a href="https://www.doni.to" target="_blank"><span><img src="https://neos.sh/images/sm-icon.png" alt="" /></span>Create your own Donito profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <figure class="dtls-fgr wow fadeInLeft">
+                            <img src="https://neos.sh/images/d-2.png" alt="" />
+                        </figure>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- WHAT IS donu -->
+
+
+    <!-- GETTING STARTED -->
+    <section class="geting-started" id="getting-started">
+        <div class="upr-crve">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 58">
+                <defs></defs>
+                <title>1</title>
+                <path class="cls-1" d="M1440,0S746.09,130.49,0,0H1440Z" />
+            </svg>
+        </div>
+
+        <div class="lower-curve">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 54.66">
+                <defs></defs>
+                <title>3</title>
+                <path class="cls-1" d="M0,1.67s793,123,1440,0V56.33H0V1.67Z" transform="translate(0 -1.67)" />
+            </svg>
+        </div>
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2>Getting started with <span>donu</span></h2>
+            </header>
+
+            <div class="startd-area">
+                <div class="wave">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="902.407" height="104.97" viewBox="0 0 902.407 104.97">
+
+                        <path class="cls-11" d="M356,2901.71s62.955,28.84,93.084,13.94,91.538-33.68,151.692-12.94,137.646,36.05,195.649,20.9,102.945-70.96,203.405-31.85,176.06,58.65,207.72,46.78,50.51-23.9,48.26-56.74-20.8-26.65-3.45-42.8" transform="translate(-355.063 -2838.5)" />
+                    </svg>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3"> 
+                        <div class="st-blk text-center" data-effect="unfolding" id="unfolding">
+                            <span class="count-num wow zoomIn">1</span>
+                            <figure class="scaling-hov wow flipInY"><img src="https://neos.sh/images/i-1.png" alt="" /></figure>
+                            <h4>Create your Donito profile</h4>
+                            <p>Help your supporters get to know you!</p>
+                            <p>(Coming soon!)</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="st-blk text-center">
+                            <span class="count-num wow zoomIn">2</span>
+                            <figure class="scaling-hov wow flipInY"><img src="https://neos.sh/images/i-2.png" alt="" /></figure>
+                            <h4>Get your DONU Wallet</h4>
+                            <p>Keep your DONU in one of our <a href="index.html#dwnld-wallet">several available wallets.</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="st-blk text-center">
+                            <span class="count-num wow zoomIn">3</span>
+                            <figure class="scaling-hov wow flipInY"><img src="https://neos.sh/images/i-3.png" alt="" /></figure>
+                            <h4>Get DONU Network Token</h4>
+                            <p><a href="javascript:void(0)" data-toggle="modal" data-target="#buy-modal">Buy DONU Here</a></p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="st-blk text-center">
+                            <span class="count-num wow zoomIn">4</span>
+                            <figure class="scaling-hov wow flipInY"><img src="https://neos.sh/images/i-4.png" alt="" /></figure>
+                            <h4>Spend DONU</h4>
+			    <p>Support initiatives you care about, or hold onto your tokens and earn more DONU!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- GETTING STARTED -->
+
+ <!-- DOWNLOAD WALLET -->
+
+    <section class="dwnld-wallet" id="dwnld-wallet">
+
+        <div class="container">
+
+            <header class="section-heading text-center">
+
+                <h2>Download Our Wallet </h2>
+
+                <p>Choose the right wallet for you to keep and spend your DONU securely.</p>
+
+            </header>
+
+            <div class="wallet-box d-flex">
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".1s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-1.png" alt="" /></figure>
+                    <h4>WINDOWS</h4>
+		    <span class="zip-code"><span> <a href="https://neos.sh/wallets/win64">64-bit</a></span> <span><a href="https://neos.sh/wallets/win32">32-bit</a></span></span>
+                </div>
+
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".2s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-2.png" alt="" /></figure>
+                    <h4>MAC</h4>
+		    <span class="zip-code"><a href="https://neos.sh/wallets/macos" class=".dwnld-link">dmg</a></span>
+                </div>
+
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".3s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-3.png" alt="" /></figure>
+                    <h4>LINUX</h4>
+		    <span class="zip-code"><a href="https://neos.sh/wallets/linux" class=".dwnld-link" target="_blank">PPA</a></span>
+                </div>
+
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".4s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-4.png" alt="" /></figure>
+                    <h4>MOBILE</h4>
+	  	    <span class="zip-code"><a href="index.html#">Coming Soon</a></span>
+                </div>
+
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-5.png" alt="" /></figure>
+                    <h4>HARDWARE</h4>
+	  	    <span class="zip-code"><a href="index.html#">Coming Soon</a></span>
+                </div>
+
+                <div class="wlet-blk wow fadeInUp" data-wow-duration=".6s" data-wow-delay=".6s">
+                    <figure class="hvr-bob"><img src="https://neos.sh/images/w-6.png" alt="" /></figure>
+                    <h4>SOURCE CODE</h4>
+                   <span class="zip-code"><a href="https://github.com/donito-inc/donu-core" rel="nofollow">Github</a></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="side-ring">
+            <img src="https://neos.sh/images/round-crve.png">
+        </div>
+    </section>
+
+    <!-- DOWNLOAD WALLET -->
+
+
+    <!-- BLOG NEWS -->
+    <section class="blog-area" id="news">
+        <div class="side-ring">
+            <img src="https://neos.sh/images/round-crve.png">
+        </div>
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2><span>donu</span> Blog & News </h2>
+                <p>Here's what we've been up to lately!</p>
+            </header>
+         
+
+            <div class="blg-slider">
+
+                <div class="blg-itm">
+                    <h4><span><img src="https://neos.sh/images/sm-icon.png" alt="" /></span>July 16, 2019</h4>
+                    <h4>Donu launch & contest!</h4>
+                    <p> As the Donu team prepares for the release of our new platform, the cryptocurrency-based crowdfunding site Donito, we're thrilled to announce an exciting new contest aimed at raising awareness about our platform and engaging the community.</p><br> <a href="javascript:void(0)" data-toggle="modal" data-target="#news-1"><span class="zip-code">Read More</span></a>
+                </div>
+
+                <div class="blg-itm">
+                    <h4><span><img src="https://neos.sh/images/sm-icon.png" alt="" /></span>July 18, 2019</h4>
+                    <h4>Exchange listings!</h4>
+		    <p>CryptoBridge lists DONU and BOAExchange upgrades for the swap!  You can now trade DONU at CryptoBridge and BOAExchange against several popular other currencies.</p><a href="javascript:void(0)" data-toggle="modal" data-target="#news-2"><span class="zip-code">Read More</span></a></p>
+                </div>
+
+                <div class="blg-itm">
+                    <h4><span><img src="https://neos.sh/images/sm-icon.png" alt="" /></span>July 21, 2019</h4>
+                    <h4>Mandatory update</h4>
+		    <p>Donu v0.18 is released! Please upgrade before block 47947 as this is a required update. You can find the latest wallets at <a href="https://github.com/donito-inc/donu-core/releases/tag/0.18.0" target="_blank">Github</a> and help on upgrading at <a href="https://www.donu.support" target="_blank">Our support portal</a></p>
+                </div>
+
+                <div class="blg-itm">
+                    <h4><span><img src="https://neos.sh/images/sm-icon.png" alt="" /></span>July 24, 2019</h4>
+                    <h4>Blockfolio support</h4>
+		    <p>Blockfolio has added support for Donu! You can now track your Donu portfolio easily and free with the Blockfolio app! Check out <a href="https://blockfolio.com/" target="_blank">Blockfolio</a> for more information.</p>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <!-- BLOG NEWS -->
+
+
+    <!-- ROADMAP -->
+    <section class="roadmap svgLr" id="roadmap">
+        <div class="upr-crve">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 58">
+                <defs></defs>
+                <title>1</title>
+                <path class="cls-1" d="M1440,0S746.09,130.49,0,0H1440Z" />
+            </svg>
+        </div>
+
+        <div class="lower-curve">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 54.66">
+                <defs></defs>
+                <title>3</title>
+                <path class="cls-1" d="M0,1.67s793,123,1440,0V56.33H0V1.67Z" transform="translate(0 -1.67)" />
+            </svg>
+        </div>
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2><span>donu</span> Roadmap </h2>
+            </header>
+
+            <div class="box-icon text-center">
+                <figure class="wow fadeInDown hvr-bob">
+                    <img src="https://neos.sh/images/md-icon.png" alt="" />
+                </figure>
+            </div>
+
+            <div class="network-box">
+                <div class="nb-row past-post d-flex test">
+                    <div class="nt-box">
+                        <h5>July 2019</h5>
+                        <h4>blockchain/wallets</h4>
+			<p><s>Wallets for all platforms made public for download along with the new blockchain.</s></p>
+			<p>&nbsp;</p>
+			<p>POW mining for stake input maturity continues.</p>
+			<p>&nbsp;</p>
+			<p><s>Credit everyone on the Donu chain with their existing NEOS balances.</s></p>
+			<p>&nbsp;</p>
+                        <p>Planned promotionals begin roll-out.</p>
+			<p>&nbsp;</p>
+                        <h4>Exchanges/markets</h4>
+                        <p> Work with new exchanges on supporting DONU for trading.</p>
+                    </div>
+                </div>
+
+                <div class="nb-row upcoming-post d-flex">
+                    <div class="nt-box">
+                        <h5>August 2019</h5>
+                        <h4>blockchain/wallets/API</h4>
+                        <p>Begin planning for on-chain alias support and public account details.</p>
+			<p>&nbsp;</p>
+			<p>API development and testing for Donito integration.</p>
+			<p>&nbsp;</p>
+                        <p>Additional backup block explorer</p>
+                    </div>
+                </div>
+
+
+                <div class="nb-row upcoming-post d-flex">
+                    <div class="nt-box">
+                        <h5>September 2019</h5>
+                        <h4>wallets</h4>
+                        <p>Development, code assesment and testing begin for Android.  IOS options will also be considered.</p>
+			<p>&nbsp;</p>
+                        <p>Wallet redesign planning and designer search</p>
+			<p>&nbsp;</p>
+                        <p>Ledger wallet support</p>
+                    </div>
+                </div>
+
+                <div class="nb-row upcoming-post d-flex">
+                    <div class="nt-box">
+                        <h5>October 2019</h5>
+                        <h4>wallets/mobile</h4>
+                        <p>Android mobile wallet release.</p>
+			<p>&nbsp;</p>
+                        <p>Additional alternative wallet development begins.  Breadwallet has been requested.</p>
+                    </div>
+                </div>
+
+
+            </div>
+            
+             <div class="svg_border">
+                <span class="drSVG">
+                </span>
+             </div>
+
+        </div>
+    </section>
+    <!-- ROADMAP -->
+
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2><span>donu</span> FAQ</h2>
+            </header>
+
+            <!-- FOR DESKTOP -->
+            <div class="acrdion-outer">
+                <div class="accordion pc" id="accordionExample">
+                    <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        How do I migrate from my Neos wallet to Donu?
+                                    </button>
+                                </h5>
+                            </div>
+
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        What are the blockchain specs?
+                                    </button>
+                                </h5>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    What can Donu network tokens be used for?
+                                    </button>
+                                </h5>
+                            </div>
+
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Where can I view Donu blocks and transactions?
+                                    </button>
+                                </h5>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="clpse">
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>How do I migrate from my Neos wallet to Donu?</h4>
+                                    <p>Migrating from your Neos wallet to Donu can be done as easily as copying your wallet.dat file from your Neos data directory into your new Donu data directory.  We suggest reading <a href="https://www.donu.support/portal/kb/articles/migrating-from-your-old-wallet-to-donu" target="_blank">this knowledgebase article</a> for in-depth instructions.
+</p>
+                                </div>
+                            </div>
+
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>What are the blockchain specs?</h4>
+                                    <p>
+					Block Spacing - 60 seconds<br>
+					Block Finder Reward - 0.4 DONU<br>
+					Masternode Reward - 0.4 DONU<br>
+					Platform Emissions - 0.2 DONU<br>
+					Network Port - 26380<br>
+					RPC Port - 26381<br>
+					Masternode collateral - 5000 DONU<br>
+					Minimum input size for staking - 500 DONU<br>
+					Minimum staking age - 30 Days<br>
+					Maximum staking age - 60 days<br>
+				    </p>
+                                </div>
+                            </div>
+
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <h4>What can Donu network tokens be used for?</h4>
+                                    <p>Donu network tokens (DONU) can be used on or off of the Donito platform to make fast and easy payments and donations.  Owning DONU will additionally provide a substantial discount to those using the platform, and access to features on the platform that may be require DONU.
+</p>
+                                </div>
+                            </div>
+                            
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                <div class="card-body">
+                                        <h4>Where can I view Donu blocks and transactions?</h4>
+					<p>You can visit the <a href="http://chainz.cryptoid.info/donu" title="DONU block explorer at cryptoID" target="_blank">cryptoID Donu block explorer</a>.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="accordion mob" id="accordionExample2">
+                    <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header" id="headingOne1">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne">
+                                        How do I migrate from my Neos wallet to Donu?
+                                    </button>
+                                </h5>
+                            </div>
+                            
+                            <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1" data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    <h4>How do I migrate from my Neos wallet to Donu?</h4>
+                                    <p>Migrating from your Neos wallet to Donu can be done as easily as copying your wallet.dat file from your Neos data directory into your new Donu data directory.  We suggest reading <a href="https://www.donu.support/portal/kb/articles/migrating-from-your-old-wallet-to-donu" target="_blank">this knowledgebase article</a> for in-depth instructions.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo2">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">What are the blockchain specs?
+                                    </button>
+                                </h5>
+                            </div>
+                            
+                            <div id="collapseTwo2" class="collapse" aria-labelledby="headingTwo2" data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    <h4>What are the blockchain specs?</h4>
+                                    <p>
+					Block Spacing - 60 seconds<br>
+					Block Finder Reward - 0.4 DONU<br>
+					Masternode Reward - 0.4 DONU<br>
+					Platform Emissions - 0.2 DONU<br>
+					Network Port - 26380<br>
+					RPC Port - 26381<br>
+					Masternode collateral - 5000 DONU<br>
+					Minimum input size for staking - 500 DONU<br>
+					Minimum staking age - 30 Days<br>
+					Maximum staking age - 60 days<br>
+				    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree3">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3"> What can Donu network tokens be used for?</button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree3" class="collapse" aria-labelledby="headingThree3" data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    <h4>What can Donu network tokens be used for?</h4>
+                                    <p>Donu network tokens (DONU) can be used on or off of the Donito platform to make fast and easy payments and donations.  Owning DONU will additionally provide a substantial discount to those using the platform, and access to features on the platform that may be require DONU.
+</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header" id="headingThree4">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4"> Where can I view Donu blocks and transactions?</button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree4" class="collapse" aria-labelledby="headingThree4" data-parent="#accordionExample2">
+                                <div class="card-body">
+                                    <h4>Where can I view Donu blocks and transactions?</h4>
+					<p>You can visit the <a href="http://chainz.cryptoid.info/donu" title="DONU block explorer at cryptoID" target="_blank">cryptoID Donu block explorer</a>.</p>
+</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                </div>
+	
+                
+                
+                <div class="sec-btn-area text-center">
+                    <a class="sec-btn" href="https://www.donu.support">Visit our support center & knowledgebase</a>
+                </div>
+            </div>
+            <!-- FOR DESKTOP -->
+
+            <!-- FOR MOBILE -->
+            <!-- FOR MOBILE -->
+        </div>
+    </section>
+    <!-- FAQ -->
+
+    <!-- GET IN TOUCH  -->
+    <section class="contact-area" id="contact">
+        <div class="container">
+            <header class="section-heading text-center">
+                <h2>Get in touch with us</h2>
+                <p>Whether you’re looking for more information on donu or having issues with your account, drop us a note and our team will get back to you as soon as possible.</p>
+            </header>
+            
+            <div class="con-info clearfix">
+                <div class="lt-box">
+                    <h4><span><img src="https://neos.sh/images/sm-icon2.png" alt="" /></span>donu Network Token</h4>
+                    <h2>Questions? Concerns? Issues with your account? We’re Here To Help You</h2>
+                    <div class="rch-area d-flex">
+                        <p>Reach us here:</p>
+                        <a href="https://neos.sh/cdn-cgi/l/email-protection#1a73747c755a7e75746f747f6e6d75687134797577"><span><img src="https://neos.sh/images/envelop.png" alt="" /></span> <span class="__cf_email__" data-cfemail="0d64636b624d696263786368797a627f66236e6260">[email&#160;protected]</span></a>
+                    </div>
+                    
+                    <p>Whether you’re looking for more information on donu or having issues with your account, drop us a note and our team will get back to you as soon as possible.</p>
+                    
+                    <div class="create-profile">
+                        <a href="https://www.donu.support" target="_blank"><span><img src="https://neos.sh/images/sm-icon.png" alt=""></span>Visit our support portal & knowledgebase</a>
+                    </div>
+                </div>
+                <div class="rt-box">
+                    <div id="success-wrapper" class="d-none">
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <span id="success-message"></span>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <form action="https://neos.sh/send" id="contact-form" method="POST">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="first_name" id="first_name" placeholder="Your First Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Your Last Name">
+                      </div>
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Email address">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="3" name="message" id="message" placeholder="Message"></textarea>
+                      </div>
+                      <button type="button" class="btn btn-primary sbmt-btn sec-btn2 g-recaptcha" data-sitekey="6LcJNKcUAAAAADir1BNN7oKMMIDf0Wu5WFhEM_p-" data-callback='send_contact_form'>Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GET IN TOUCH  -->
+    
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="upr-crve">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 58">
+                <defs></defs>
+                <title>1</title>
+                <path class="cls-1" d="M1440,0S746.09,130.49,0,0H1440Z" />
+            </svg>
+        </div>
+
+        <div class="ftr-top text-center">
+            <div class="ftr-logo">
+                <a class="wow zoomIn" href="javascript:void(0)"><img src="https://neos.sh/images/logo.png" alt="" /></a>
+                <span>donu</span>
+            </div>
+            
+        </div>
+        <div class="ftr-mdl">
+            <div class="container">
+                <div class="ftr-mdl-inr d-flex">
+                    <div class="ftr-listng">
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>                                  
+                            <li><a href="index.html#about">About donu</a></li>
+                            <li><a href="index.html#roadmap">Roadmap</a></li>
+                            <li><a href="index.html#news">News</a></li>
+                            <li><a href="index.html#contact">Get Help</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ftr-social social-area">
+                        <ul class="clearfix">
+                            <li><a href="https://neos.sh/facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://neos.sh/twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://neos.sh/telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                            <li><a href="https://neos.sh/reddit"><i class="fab fa-reddit-alien"></i></a></li>
+                            <li><a href="https://neos.sh/matrix">[m]</a></li>
+                            <li><a href="https://neos.sh/discord"><i class="fab fa-discord"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ftr-btm">
+            <div class="container">
+                <div class="ftr-btm-inr d-flex">
+                    <p>© Copyright 2019 - <a href="index.html">Donito, Inc.</a></p>
+                    <div class="trms">
+                        <ul>
+                            <li><a href="https://neos.sh/privacy">Privacy Policy</a></li>
+                            <li><a href="https://neos.sh/terms">Terms of Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <!-- Buy Doni Modal here -->
+    <div class="modal cstm-modal fade" id="buy-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h2>Exchanges trading DONU</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="justify-content-center text-center" id="exchange-wrapper">
+                  <div class="row">
+
+                      <div class="col-12 mb-2">
+                          <a href="https://neos.sh/buy-donu/CryptoBridge" target="_blank">
+                              <img src="https://neos.sh/images/cryptobridgeexchange-logo.png" />
+                          </a>
+                      </div>
+                      <div class="col-12 mb-2">
+                          <a href="https://neos.sh/buy-donu/BOAExchange" target="_blank">
+                              <img src="https://neos.sh/images/boaexchange-logo.png" />
+                          </a>
+                      </div>
+
+                      <div class="col-12 mb-2">
+                          <a href="https://neos.sh/buy-donu/Graviex" target="_blank">
+                              <img src="https://neos.sh/images/graviexexchange-logo.png" />
+                          </a>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal cstm-modal fade" id="news-1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h2>July 16, 2019 - Donu launch & new contest!</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="justify-content-left text-left" id="exchange-wrapper">
+                  <div class="row">
+                      <div class="col-12 mb-2 justify-content-center text-center">
+                              <img src="https://neos.sh/images/donu-people.png" />
+                      </div>
+
+                      <div class="col-11 mb-2">
+As the Donu team prepares for the release of our new platform, the cryptocurrency-based crowdfunding site Donito, we're thrilled to announce an exciting new contest aimed at raising awareness about our platform and engaging the community.
+<br><br>
+This contest will take the form of a bounty competition and there are many ways you can enter and increase your number of entries, which will increase your chances of winning.
+<br><br>
+<center>
+<img src="https://neos.sh/images/creatives/contests/donu-launch.png" border=0>
+</center>
+<br><br>
+<a href="https://gleam.io/9eO2o/donu-launch-win-a-ledger-btc-and-donu" target="_blank">Click here for more details and to participate</a>!
+		      </div>
+
+		  </div>
+	      </div>
+   	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="modal cstm-modal fade" id="news-2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+              <h2>July 18, 2019 - CryptoBridge listing/BOAExchange upgrades!</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="justify-content-left text-left" id="exchange-wrapper">
+                  <div class="row">
+                      <div class="col-12 mb-2 justify-content-center text-center">
+                              <img src="https://neos.sh/images/donu-people.png" />
+                      </div>
+
+                      <div class="col-11 mb-2">
+<img src="https://neos.sh/images/cryptobridgeexchange-logo.png" border=0>
+<br><br>
+You can now trade DONU at CryptoBridge in the following markets:<br><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BRIDGE.BTC" target="_blank">DONU/BTC</a><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BRIDGE.ETH" target="_blank">DONU/ETH</a><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BRIDGE.LTC" target="_blank">DONU/LTC</a><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BRIDGE.RVN" target="_blank">DONU/RVN</a><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BTS" target="_blank">DONU/BTS</a><br>
+<a href="https://wallet.crypto-bridge.org/market/BRIDGE.DONU_BRIDGE.USDT" target="_blank">DONU/USDT</a><br>
+<br><br>
+
+<img src="https://neos.sh/images/boaexchange-logo.png" border=0>
+<br><br>
+BOAExchange.com has upgraded to DONU from Neos and you can trade in the following markets:<br><br>
+
+<a href="https://boaexchange.com/market/DONU_BTC" target="_blank">DONU/BTC</a><br>
+<a href="https://boaexchange.com/market/DONU_ETH" target="_blank">DONU/ETH</a>
+<br><br>
+		      </div>
+
+		  </div>
+	      </div>
+   	  </div>
+	</div>
+      </div>
+    </div>
+
+
+    <script data-cfasync="false" src="https://neos.sh/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://neos.sh/js/jquery-3.3.1.min.js"></script>
+    <script src="https://neos.sh/js/all.js"></script>
+    <script src="https://neos.sh/js/bootstrap.min.js"></script>
+    <script src="https://neos.sh/js/slick.min.js"></script>
+    <script src="https://neos.sh/js/modalAnimate.js"></script>
+    <script src="https://neos.sh/js/particles.min.js"></script>
+    <script src="https://neos.sh/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://neos.sh/js/wow.min.js"></script>
+    <script src="https://neos.sh/js/custom.js?v=20"></script>
+    
+
+    
+    <script type="application/javascript">
+    $("#unfolding").modalAnimate();
+
+    $(document).off('click', '.button');
+    $(document).on('click', '.button', function(event) {
+        event.preventDefault();
+        var btnEffect = $(this).data('effect')
+
+        $(this).modalAnimate({
+            modalTarget:'modal-container',
+            effect:$(this).data('effect'),
+            autoEffect:true
+        });
+    });
+    </script>
+
+</body>
+
+</html>

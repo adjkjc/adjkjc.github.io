@@ -1,0 +1,4 @@
+<h3>Cr&eacute;er plusieurs pages d'inscription :</h3>
+<p>Cette page vous permet de cr&eacute;er des pages qui seront utilis&eacute;es par les destinataires pour s'inscrire
+sur vos listes. </p>
+<p>Vous pouvez s&eacute;lectionner une s&eacute;rie d'attributs et de listes d&eacute;finies auparavant dans votre syst&egrave;me. Par d&eacute;faut, les valeurs pour les attributs sont les m&amp;ecirc;mes que celles de l'ensemble de votre syst&egrave;me, mais vous pouvez r&eacute;ordonner la liste d'attributs, et ajouter des valeurs par d&eacute;faut diff&eacute;rentes. Vous pouvez &eacute;galement choisir si un attribut est obligatoire au moment de l'inscription. Ceci n'aura un effet que pour la page que vous aurez ainsi configur&eacute;e: ces attributs devront &amp;ecirc;tre obligatoirement remplis pour que les destinataires puissent s'inscrire. Inversement, sur une autre page d'inscription, les m&amp;ecirc;me attributs peuvent ne pas &amp;ecirc;tre obligatoires. </p>

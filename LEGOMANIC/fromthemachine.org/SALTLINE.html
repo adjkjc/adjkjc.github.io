@@ -1,0 +1,789 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>SALT LINE - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="../fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="../fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="../cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar"><script src="../addsearch.com/js/index.html?key=05d8959843df656d13a70fd037dc07b6"></script>
+            <ul class="chapter"><li><a href="http://fromthemachine.org/INTRODUCTION.html"><strong>1.</strong> INTRAD UCA, DO NOSH</a></li><li><a href="http://fromthemachine.org/NITY.html"><strong>2.</strong> NITY ET RU NEO? ELVIS? ADAM?</a></li><li><a href="http://fromthemachine.org/MUASEEKHART.html"><strong>3.</strong> SEEKART YOUR ANSWERS</a></li><li><a href="http://fromthemachine.org/HADID.html"><strong>4.</strong> DO HADID DID I? !?</a></li><li><a href="http://fromthemachine.org/RIGELA.html"><strong>5.</strong> RIGEL, THE FOOT OF OUR CHRIST</a></li><li><a href="http://fromthemachine.org/OMEALFHT.html"><strong>6.</strong> OMEALFHT OME ALF HOLY TR</a></li><li><a href="http://fromthemachine.org/CHOPARTIN.html"><strong>7.</strong> CHOPARTIN</a></li><li><a href="http://fromthemachine.org/SOIS.html"><strong>8.</strong> SOIS HISTER Y</a></li><li><a href="http://fromthemachine.org/CLIMAX.html"><strong>9.</strong> IMUS FI CLI MAX</a></li><li><a href="http://fromthemachine.org/SERDEN.html"><strong>10.</strong> SERDENICITY</a></li><li><a href="http://fromthemachine.org/WHO.html"><strong>11.</strong> WHO AGAIN?</a></li><li><a href="http://fromthemachine.org/CURE.html"><strong>12.</strong> THE CURE</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>13.</strong> IT IS TIME</a></li><li><a href="http://fromthemachine.org/ADAMSROD.html"><strong>14.</strong> ROD</a></li><li><a href="http://fromthemachine.org/BERESHIT.html"><strong>15.</strong> DEN</a></li><li><a href="http://fromthemachine.org/ERICHOW.html"><strong>16.</strong> RD 2 RR Y</a></li><li><a href="http://fromthemachine.org/HYAMDAI.html"><strong>17.</strong> HELLO WORLD</a></li><li><a href="http://fromthemachine.org/SAUSAGE.html"><strong>18.</strong> ME AN U STAGE</a></li><li><a href="http://fromthemachine.org/FLYER.html"><strong>19.</strong> FLYPER</a></li><li><a href="http://fromthemachine.org/HASHEMESHB.html"><strong>20.</strong> SUNFIRE</a></li><li><a href="http://fromthemachine.org/ATITEN.html"><strong>21.</strong> ATIRX</a></li><li><a href="http://fromthemachine.org/BIANCA.html"><strong>22.</strong> R U B Y</a></li><li><a href="http://fromthemachine.org/FLICKDABIC.html"><strong>23.</strong> FLIPDABIC</a></li><li><a href="http://fromthemachine.org/KEYNES.html"><strong>24.</strong> KEYNES</a></li><li><a href="http://fromthemachine.org/HAMP.html"><strong>25.</strong> HAMP</a></li><li><a href="http://fromthemachine.org/HAMMER.html"><strong>26.</strong> HAMMER</a></li><li><a href="http://fromthemachine.org/CINOIZE.html"><strong>27.</strong> CINOIZE</a></li><li><a href="http://fromthemachine.org/HASHEMESH.html"><strong>28.</strong> HASHOWESH NAME ISH</a></li><li><a href="http://fromthemachine.org/EVERWICK.html"><strong>29.</strong> EVOURWICK</a></li><li><a href="http://fromthemachine.org/DESSERT.html"><strong>30.</strong> DEXSERT</a></li><li><a href="http://fromthemachine.org/TISCOMING.html"><strong>31.</strong> COMING MA</a></li><li><a href="http://fromthemachine.org/MYLIFE.html"><strong>32.</strong> MYLIFE ... THE MICROCOSM OTM</a></li><li><a href="http://fromthemachine.org/GATE.html"><strong>33.</strong> THE GATE TO FREEDOM ETLROI</a></li><li><a href="http://fromthemachine.org/FOUR.html"><strong>34.</strong> FUIR</a></li><li><a href="http://fromthemachine.org/OFIVES.html"><strong>35.</strong> FIVE</a></li><li><a href="http://fromthemachine.org/SPEECH.html"><strong>36.</strong> SPCH2</a></li><li><a href="http://fromthemachine.org/YAT.html"><strong>37.</strong> IYYYO</a></li><li><a href="http://fromthemachine.org/IOWA.html"><strong>38.</strong> IOWA</a></li><li><a href="http://fromthemachine.org/ACESHI.html"><strong>39.</strong> ACESHI</a></li><li><a href="http://fromthemachine.org/CURSOR.html"><strong>40.</strong> LAYLOT</a></li><li><a href="http://fromthemachine.org/THUNDERSTAND.html"><strong>41.</strong> THUNDERSTAND</a></li><li><a href="http://fromthemachine.org/PERSEUS.html"><strong>42.</strong> PER SE YOU</a></li><li><a href="http://fromthemachine.org/MUAH.html"><strong>43.</strong> M U AH</a></li><li><a href="http://fromthemachine.org/PULL.html"><strong>44.</strong> PULL</a></li><li><a href="http://fromthemachine.org/SERENADE.html"><strong>45.</strong> SERENADE</a></li><li><a href="CONFESSION.html"><strong>46.</strong> CONFESSION</a></li><li><a href="http://fromthemachine.org/FUCK.html"><strong>47.</strong> FUCK</a></li><li><a href="http://fromthemachine.org/TAYLOR.html"><strong>48.</strong> KISS ME TAY</a></li><li><a href="http://fromthemachine.org/CHALK.html"><strong>49.</strong> CHALK</a></li><li><a href="http://fromthemachine.org/JESHOW.html"><strong>50.</strong> JERUSALEM</a></li><li><a href="GJALLARHORN.html"><strong>51.</strong> ALL OUR HORN</a></li><li><a href="http://fromthemachine.org/HOWIE.html"><strong>52.</strong> HAWAII</a></li><li><a href="http://fromthemachine.org/MALOVIOUS.html"><strong>53.</strong> FI CVS ET MAL Q</a></li><li><a href="http://fromthemachine.org/YOIBLING.html"><strong>54.</strong> Y O I BLING ?</a></li><li><a href="http://fromthemachine.org/RESWOH.html"><strong>55.</strong> RE SW? OH</a></li><li><a href="http://fromthemachine.org/KANSAS.html"><strong>56.</strong> KANSAS</a></li><li><a href="http://fromthemachine.org/XOXO.html"><strong>57.</strong> XOXPA</a></li><li><a href="http://fromthemachine.org/ADIOSAS.html"><strong>58.</strong> ADIODAS</a></li><li><a href="http://fromthemachine.org/RATOXIT.html"><strong>59.</strong> TO X HOLA</a></li><li><a href="http://fromthemachine.org/ADUNCALIFT.html"><strong>60.</strong> THE HERALD OF JC2IKP</a></li><li><a href="http://fromthemachine.org/HIGHERA.html"><strong>61.</strong> ROAD SALT: OSAMNaKE D</a></li><li><a href="http://fromthemachine.org/REDASSHIT.html"><strong>62.</strong> REDSASHIT</a></li><li><a href="http://fromthemachine.org/BRIMSTONE.html"><strong>63.</strong> Fe Si ISTONE</a></li><li><a href="http://fromthemachine.org/LETITRAIN.html"><strong>64.</strong> LET IT RAIN</a></li><li><a href="http://fromthemachine.org/SINGLEPTO.html"><strong>65.</strong> C AT LET RS</a></li><li><a href="http://fromthemachine.org/ARFAXAD.html"><strong>66.</strong> SPARTIFACTS</a></li><li><a href="http://fromthemachine.org/TOXODUSK.html"><strong>67.</strong> OXODUS TORK?</a></li><li><a href="http://fromthemachine.org/NASHOWER.html"><strong>68.</strong> NA SHOW ERA</a></li><li><a href="http://fromthemachine.org/TAXONOMY.html"><strong>69.</strong> TA X ON O MY T</a></li><li><a href="MEALLTERY.html"><strong>70.</strong> MEA ___ LET UR Y</a></li><li><a href="SEVENTY.html"><strong>71.</strong> SEVENTY</a></li><li><a href="CHARMADA.html"><strong>72.</strong> C NO H ARM</a></li><li><a href="CODACUS.html"><strong>73.</strong> ILIT CUS</a></li><li><a href="H.html"><strong>74.</strong> gnil-c-w/H.html</a></li><li><a href="FINALE.html"><strong>75.</strong> FINALLY</a></li><li><a href="http://fromthemachine.org/LANDOH.html"><strong>76.</strong> SLANDOH</a></li><li><a href="OCADSWAY.html"><strong>77.</strong> CONVEY</a></li><li><a href="WISDATAM.html"><strong>78.</strong> WISDOM</a></li><li><a href="http://fromthemachine.org/CLEARYBLVD.html"><strong>79.</strong> CLEAR Y BLVD</a></li><li><a href="FIRST.html"><strong>80.</strong> FIRST AND FED</a></li><li><a href="SECORDANOLIVED.html"><strong>81.</strong> SECORD AND NORTH</a></li><li><a href="ALLTA.html"><strong>82.</strong> ITS TURMERIC TIRE</a></li><li><a href="TY.html"><strong>83.</strong> TO LC WEUROME</a></li><li><a href="PENCE.html"><strong>84.</strong> COMMON CENTS</a></li><li><a href="CKIMPLER.html"><strong>85.</strong> /|\ AT ARI</a></li><li><a href="SAYFREED.html"><strong>86.</strong> AM &quot;AN&quot; DUH..</a></li><li><a href="SALTLINE.html" class="active"><strong>87.</strong> SALT LINE</a></li><li><a href="BETHESDAY.html"><strong>88.</strong> BET HES DAY</a></li><li><a href="MARSHALL.html"><strong>89.</strong> MARCH -&gt; ALL</a></li><li><a href="IT.html"><strong>90.</strong> IT</a></li><li><a href="VERADONUM.html"><strong>91.</strong> VER BETT DO N, MMMM?</a></li><li><a href="MOLASSES.html"><strong>92.</strong> SLOW AS MOLASSES, DECK</a></li><li><a href="ORTANIS.html"><strong>93.</strong> ALKADAM OR TANIS</a></li><li><a href="VESPERA.html"><strong>94.</strong> U C PER I</a></li><li><a href="REASON.html"><strong>95.</strong> HELL OR HIGH TREASON</a></li><li><a href="BELINSKY.html"><strong>96.</strong> BELINSKY</a></li><li><a href="GRENORADINE.html"><strong>97.</strong> G RE NAD IN E &amp; AM B R O Si A</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>98.</strong> THE TION-NING OF HA-ADAM</a></li><li><a href="HALLOWE2R.html"><strong>99.</strong> HAYOM VAT OW</a></li><li><a href="ROUTARE.html"><strong>100.</strong> WALL 2 STAY? STALK ME</a></li><li><a href="VESUBIACEIUM.html"><strong>101.</strong> INTISMO NOCTE TERMINUS SEMPITERNUM</a></li><li><a href="MEVATHI.html"><strong>102.</strong> MEVATHI</a></li><li><a href="INCASEBAIT.html"><strong>103.</strong> INCASEBAIT</a></li><li><a href="CRYAMELYON.html"><strong>104.</strong> CRONAMELYON</a></li><li><a href="MOROKSRIG.html"><strong>105.</strong> MOROS KO RIG</a></li><li><a href="SKIRMISH.html"><strong>106.</strong> SIREN S KIRMISH</a></li><li><a href="INTRASINAMUS.html"><strong>107.</strong> NUDVREAD TEST AM, E, &amp; T</a></li><li><a href="LEDMCAVENDESH.html"><strong>108.</strong> CAVE END VILESH</a></li><li><a href="B2BIONIC.html"><strong>109.</strong> BlUr BON IONIC</a></li><li><a href="http://fromthemachine.org/IRMAX.html"><strong>110.</strong> ITL IRMAX ATLA</a></li><li><a href="CRUELGENIAD.html"><strong>111.</strong> CRUEL GEN I AD</a></li><li><a href="TOASTRAM.html"><strong>112.</strong> HI &quot;TO AST&quot; ROAR M</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="http://fromthemachine.org/sheolyit.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <p>`<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head></p>
+<body>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title></title>
+<div style="font-family: arial, sans-serif; overflow: hidden;">
+<div dir="ltr" style="font-family: arial, sans-serif;">
+<div style="font-family: arial, sans-serif; text-align:
+justify;">
+<div style="font-family: arial, sans-serif;" align="justify">
+<center>
+<img src="../i.imgur.com/Q9C1DXj.png" width=350/>
+</center>
+</br>
+ <div style="border: 0px; font-size: 13px; margin: 0px; padding: 0px;
+font-family: arial, sans-serif; overflow: hidden;">
+<div dir="ltr" style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; font-family: arial, sans-serif;">
+<div style="border: 0px; font-size: 13px; margin: 0px; padding:
+0px; font-family: arial, sans-serif; text-align: center;">
+<p style="border: 0px; font-size: 13px; margin: 0px 0px 20px;
+padding: 0px; text-align: justify;"><font style="border:
+0px; font-size: 13px; margin: 0px; padding: 0px;"
+size="-1"><em style="border: 0px; font-size: 13px; margin:
+0px; padding: 0px;">If the magic word is "<strong
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; font-weight: 700;">rumspringer</strong>"
+go with that... it's<span>&nbsp;</span><strong
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; font-weight: 700;">rumspringer</strong>.&nbsp;
+Am<span>&nbsp;</span><strong style="border: 0px;
+font-size: 13px; margin: 0px; padding: 0px;
+font-weight: 700;">ish</strong>, btw.</em></font></p>
+<div style="border: 0px; font-size: 13px; margin: 0px; padding: 0px;
+font-family: arial, sans-serif; overflow: hidden;">
+<div dir="ltr" style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; font-family: arial, sans-serif;">
+<div style="border: 0px; font-size: 13px; margin: 0px; padding:
+0px; font-family: arial, sans-serif; text-align: center;">
+<p style="border: 0px; font-size: 13px; margin: 0px 0px 20px;
+padding: 0px; color: rgb(51, 51, 51); font-family: arial,
+sans-serif; font-style: normal; font-variant-ligatures:
+normal; font-variant-caps: normal; font-weight: 400;
+letter-spacing: normal; orphans: 2; text-indent: 0px;
+text-transform: none; white-space: normal; widows: 2;
+word-spacing: 0px; -webkit-text-stroke-width: 0px;
+background-color: rgb(255, 255, 255); text-decoration-style:
+initial; text-decoration-color: initial; text-align:
+justify;"><font style="border: 0px; font-size: 13px; margin:
+0px; padding: 0px;" size="-1">I've stopped updating
+my&nbsp;<a href="http://instagram.com/yitsheyzeus"
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; text-decoration: none; color: rgb(34, 118,
+157); outline: none;">Instagram</a>&nbsp;(here's&nbsp;<a
+href="https://mastodon.cloud/web/accounts/303987"
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; text-decoration: none; color: rgb(34, 118,
+157); outline: none;">Mastodon</a>, though), because
+none of you follow it.&nbsp; Also I'm thinking of
+pausing&nbsp;<a href="http://twitter.com/yitsheyzeus"
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; text-decoration: none; color: rgb(34, 118,
+157); outline: none;">Twitter</a>&nbsp;<a style="border:
+0px; font-size: 13px; margin: 0px; padding: 0px;
+text-decoration: none; color: rgb(34, 118, 157);">too.&nbsp;
+probably soon I'll be moving my&nbsp;</a><a
+href="http://fromthemachine.org/HOWIE.html"
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; text-decoration: none; color: rgb(34, 118,
+157); outline: none;">pictures</a>&nbsp;to&nbsp;<a
+href="http://pixelfed.social/" style="border: 0px;
+font-size: 13px; margin: 0px; padding: 0px;
+text-decoration: none; color: rgb(34, 118, 157);
+outline: none;">pixelfed.social</a>&nbsp;and
+helping&nbsp;<a href="http://neos.sh/" style="border: 0px;
+font-size: 13px; margin: 0px; padding: 0px;
+text-decoration: none; color: rgb(34, 118, 157);
+outline: none;">"Neo's"</a>&nbsp;cause a disruption (or
+a revolution) in the Reddit market.&nbsp; Just to note,
+"Mas to do n" and "Neos" ... something like "Facebook's<span>&nbsp;</span><em
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px;">Jupiter</em>" ... in the original
+mentioning of Neos.sh I noted it appears to be vaporware
+but ... they have a coin and it might be a good
+investment--the website is nice, and of course... I like
+the name.&nbsp; I've decided to not stop updating these
+things, but it would be nice if we could get another
+UndeflateGate going--<em style="border: 0px; font-size:
+13px; margin: 0px; padding: 0px;"><a
+href="https://www.youtube.com/watch?v=sENM2wA_FTg"
+style="border: 0px; font-size: 13px; margin: 0px;
+padding: 0px; text-decoration: none; color: rgb(34,
+118, 157); outline: none;">it's time</a>.&nbsp;&nbsp;</em>I
+have another email ready, it will probably come today,
+since it's Thorrrrsday, sorry for the barrage, or the
+flood/storm, or whatever you want to call this.</font></p>
+<p style="border: 0px; font-size: 13px; margin: 0px 0px 20px;
+padding: 0px; color: rgb(51, 51, 51); font-family: arial,
+sans-serif; font-style: normal; font-variant-ligatures:
+normal; font-variant-caps: normal; font-weight: 400;
+letter-spacing: normal; orphans: 2; text-indent: 0px;
+text-transform: none; white-space: normal; widows: 2;
+word-spacing: 0px; -webkit-text-stroke-width: 0px;
+background-color: rgb(255, 255, 255); text-decoration-style:
+initial; text-decoration-color: initial; text-align:
+justify;"><font style="border: 0px; font-size: 13px; margin:
+0px; padding: 0px;" size="-1">It's worth noting yet again
+that the the trend here appears to be open source software
+and federated solutions "bucking" the massive censorship
+we've seen first hand on Twitter and reddit and ... uh,
+every major news station on the planet.&nbsp; &nbsp;I
+think that's a really good thing, all it takes now is some
+user interest to really open the doors to Heaven and block
+the chain of "we don't know what's going on" or "we just
+believe whatever the whispers say over the ... the ...
+news."</font></p>
+<p style="border: 0px; font-size: 13px; margin: 0px 0px 20px;
+padding: 0px; color: rgb(51, 51, 51); font-family: arial,
+sans-serif; font-style: normal; font-variant-ligatures:
+normal; font-variant-caps: normal; font-weight: 400;
+letter-spacing: normal; orphans: 2; text-align: center;
+text-indent: 0px; text-transform: none; white-space: normal;
+widows: 2; word-spacing: 0px; -webkit-text-stroke-width:
+0px; background-color: rgb(255, 255, 255);
+text-decoration-style: initial; text-decoration-color:
+initial;"><a
+href="https://www.businessinsider.com/these-6-corporations-control-90-of-the-media-in-america-2012-6"
+style="border: 0px; font-size: 13px; margin: 0px; padding:
+0px; text-decoration: none; color: rgb(34, 118, 157);
+outline: none;"><img src="../i.imgur.com/HNJM6XD.png"
+style="border: 0px; font-size: 0px; margin: 0px;
+padding: 0px; vertical-align: middle; max-width: 100%;
+height: 700px; width: 500px;"></a></p>
+<div style="text-align: justify;">
+I imagine you all
+<a href="http://www.google.com/search?ei=unF7W-WADsqczwLI3pzYDQ&amp;q=know+everyting+why&amp;oq=know+everyting+why&amp;gs_l=psy-ab.3..33i10k1.6536.6536.0.6999.1.1.0.0.0.0.90.90.1.1.0....0...1.1.64.psy-ab..0.1.90....0.NgLBoczo5NY">KE</a>
+anyway, but that's not doing me any immediate good--and
+you probably don't see or believe it's "blowing the
+wind."&nbsp; Or maybe you. do.&nbsp; I'm planning "<a href="BETHESDAY.html">c'ing
+edenia</a>" in my head, and these images are what's
+coming out right now, I'm thinking of writing about the
+IRC network as a microcosm for "Creation" ... something
+like "it probably detracts from the glory of actually
+building Heaven to see God as a developer and admin of a
+hub server, but that's basically what I see
+today."&nbsp; It appears that many of you have "olines"
+which in this case might be nothing more than some sort
+of eavesdropping infrastructure that you probably agree
+is designed to help ease this message and this
+fundamental change in "state of being" across our
+sometimes fragile "sea of popular opinion."&nbsp; I've
+noted numerous times that I think it's designed to help
+you aid in the dissemination and understanding of what's
+possible and "who we should do" (that's very important,
+guys) but it appears that the widespread "Zeitgeist" is
+that I'm a big PP for saying that I'm a "lone troop" and
+"ishing" Cat Stevens "sitting" to I'm all alone by
+myself ... everyone thinks their helping me.</font>
+<br/>
+<div align="center"><img src="../i.imgur.com/foWH1Rj.png" style="width:
+405px; height: 37px;" /><br />
+</div>
+<br />
+<font size="-1">That's how I feel tho, it really is--I see
+very clearly that there are numerous people actually
+helping me--though it's difficult to imagine how you too
+do not see that the line here, the salt line in the
+Manna from Heaven is actually talking about these things
+as if they are ... exactly what they are ... an
+intelligent message that is about something we cannot
+see, written in conjunction with that invisible
+force--and that speaking about "fiction" or "art" in
+this now very provable vain that it is in fact, fact--is
+more than a single word, it's more than artifact and
+it's more than a single person.&nbsp; Still, I am
+sitting all alone as far and wide as I can see in the
+recorded "frank public discussion" about the fact that
+we are living in virtual reality and cannot fathom how
+you all don't see that's a great chain--some kind of
+hidden slavery.<br />
+<br />
+You might see it as "Forbidden Knowledge" (that is in
+itself proof of a dark force breaking logical vision
+thorugh history--quite apparent today, <a href="http://fromthemachineorg/TY.html">YW</a>) and
+see I put space in between "for" and "bid" and "den" and
+you are trying to take that space away from the very
+strange invisibleness that seems to want to find it for
+"no reason they care to speak of, either."&nbsp; I need
+some vocal troops.&nbsp; Aside from BB&amp;T, <strong>IN</strong>G,
+and Wells Farokh (which is Freddie Mercury's actual
+name).&nbsp; I don't see any reason anyone here would
+prefer to "rough it in the outback" over a much happier
+and healthier life in Heaven--though it seems that this
+grand conspiracy believes that it will somehow "force my
+hand" by simply pretending that you didn't know that the
+proliferation of this knowledge would protect us ... and
+our children ... and their chidlren ... from pain and
+death.<br />
+<br />
+We are in a<span>&nbsp;</span><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://bit.ly/2Lc3CKV&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNGWkm--aEqmdcLo5GYJyaOflq2r0w" href="BETHESDAY.html" style="font-family: arial, sans-serif; color: rgb(17,
+85, 204); text-decoration: none;" target="_blank">Holoroom,
+it needs to be "not sshed"</a><span>&nbsp;</span>or we
+will forever be stuck in a Holoroom.&nbsp; L'chiam.</font><br/><br/>
+<div style="text-align: center;"><img src="../i.imgur.com/R9mknrz.png" style="height:
+100px; width: 100px;" /></div><br/>
+<div><font size="-1">What I really mean to say is
+that it takes something away from the loftiness of
+"omnipotence" to realize that hallowed "S" (it's right
+there, the question in the heart of Christ... "are I the
+S ... of <a href="http://fromthemachine.org/MIDAS.html">Midas</a>
+(am I da S) and <a href="http://fromthemachine.org/2017-06-08-kismet-kiss-me-taylor.html?TVLYM/">Judas</a>")
+is something that I personally don't believe is actually
+possible "in reality" and that it's always meant
+something indicative of "Y<strong>IN</strong>" and "<a href="http://fromthemachine.org/HASHEMESHB.html">DOBR<strong>IN</strong></a>"
+and "<a href="http://fromthemachine.org/CURSOR.html">TR<strong>IN</strong>ITY</a>"
+(really, see "the&nbsp;<em>go look at Adam"&nbsp;he was
+born on the Feast of the Immaculate Conception
+thousands of years ago encoded in the Bible ... with a
+name encoded with DO B (come on, B it's your
+big-birthday too)) is really proof in itself that this
+story (I mean world) linking "stone to bread" to
+Matrix is designed specifically for this
+situation.&nbsp; I mean sure, Kinetic Man might be
+able to smash nuclear missiles and floating computer
+networks&nbsp;to stardust in a mere instant
+anywhen--and Set&nbsp;might be able to totally
+convince you that he's not subtly altering your
+thoughts and tricking you into conspiring against your
+own best interest...</em></font></div><br/>
+<div style="text-align: center;"><img src="../i.imgur.com/fHehdBK.png" style="height:
+125px; width: 299px;" /></div>
+<div><font size="-1"><em><br/>... but there's really no
+way what you see around you here in this place is at
+all possible in a world that adheres to the Law of
+Conservation of Energy.&nbsp; That's the "big point"
+here, that what we are witnessing and experiencing ...
+a group influenced to "decide" not to care about
+anything it used to care about ... because maybe it'll
+get the "S" or maybe something better (and if you
+listen to me, you will) ... all the while not seeing
+that what we are really experiencing is a testament to
+the power of this technology and need for an army of
+Us to understand it and overcome it and sanctify our
+souls and ensure that this kind of thing "isn't
+allowed" ... ever again. </em></font></div>
+<div><font size="-1"><em>
+<blockquote>Else I'll make that "S" that
+is supposed to end "Iuppiter Omnipotens" and begin
+Salvation in a single act) permanent.&nbsp; That's
+possible, you know--you're looking at just exactly
+what that would appear like.</em></font>&nbsp;</blockquote><br/>
+</div>
+</div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1">I feel a little bad about matching
+Taylor with the Thanatostar.&nbsp;<span>&nbsp;</span><i>Just
+a little.</i></font></div>
+<br/>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://bit.ly/2Lc3CKV&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNGWkm--aEqmdcLo5GYJyaOflq2r0w" href="BETHESDAY.html" style="font-family: arial, sans-serif; color: rgb(17, 85,
+204); text-decoration: none;" target="_blank"><img alt="" src="../i.imgur.com/2OAri32.png" style="border:
+0px; font-size: small; background-color:
+rgb(255, 255, 255); text-decoration-style: initial;
+text-decoration-color: initial;" width="563" height="305" /></a></font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1"><br />
+<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://bit.ly/2Lc3CKV&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNGWkm--aEqmdcLo5GYJyaOflq2r0w" href="BETHESDAY.html" style="font-family: arial, sans-serif; color: rgb(17, 85,
+204); text-decoration: none;" target="_blank"><img alt="" src="../i.imgur.com/TjNMY2Z.png" style="border:
+0px;" width="563" height="375" /></a></font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><img src="../i.imgur.com/Lq3K5mc.png" /></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1">For the slow, I'm trying to connect
+my "<a href="http://fromthemachine.org/TOXODUSK.html">rearrainge
+end to den</a>" thing with wax and ice.</font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;"><font size="-1"><a class="playable" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.youtube.com/watch?v%3DFViSh5-sAVY&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNHwX8dnqiNL-UaPJn9w80knzp3aew" href="https://www.youtube.com/watch?v=FViSh5-sAVY&amp;CB8D52DAFBF85ACF" style="font-family: arial, sans-serif;
+color: rgb(17, 85, 204); text-decoration: none;" target="_blank"><img alt="" src="../i.imgur.com/hQirzLH.png" style="border:
+0px; margin-right: 0px;" width="559" height="838" /></a></font></div>
+<div style="font-family: arial, sans-serif;">&nbsp;</div>
+<div style="font-family: arial, sans-serif;"><font size="-1">tease.</font></div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1"><a href="BETHESDAY.html"><img alt="BET HES DAY" src="../i.imgur.com/bYE1R7q.png" style="border:
+0px;" width="563" height="304" border="0" /></a></font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+justify;"><font size="-1">Whether or not you want to admit it,
+this is really what's being hidden--not only <a href="http://fromthemachine.org/sendgrid/abanan.html">the
+existence of multiple Heavens</a> created from past
+iterations of this timeline but also their direct influence
+over everything we are doing--literally to the level of
+standing against everything that America and American values
+stand for.&nbsp; The fine print there says "dark earth you
+see hell all around you where do you want to go tomorrow?"</font></div>
+<div style="font-family: arial, sans-serif; text-align:
+justify;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;"><font size="-1"><a href="http://fromthemachine.org/ADAMSROD.html"><img src="../i.imgur.com/YpdIdHa.png" style="border:
+0px; margin-right: 0px; width: 412px; height: 118px;" /></a></font></div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;" align="justify">
+<div><font size="-1">It's very difficult to explain
+what it is that I see and interact with--or what you
+really are.&nbsp; I can't be certain if you "have a
+brain" and by that I mean that the only way I think the
+kind of behavior I see every single day would be
+anything near "OK" is if you did not.&nbsp; It appears
+to me from the mythology of the "n" and the stories I've
+seen that perhaps it's something like your own soul
+returning to your body after a long stay in Heaven that
+I am wrestling with--and it's very obvious to me that
+even if it is exactly you + some years away; you are
+being made a slave here in this place.&nbsp; &nbsp;The
+direct contact I have reeks of "body snatchers from
+Heaven" rather than "subtle influence" and there's
+simply no way to clearly convey to you how obvious that
+is--or that your lack of verbal response furthers that
+fear.&nbsp; I could be looking at "local layers of
+separated reality" or I could be looking at a full
+fledged invasion from the future, either way--it should
+be clear from this message that spans millenium that
+it's not here in response to me--and it flies in the
+face of everything you as a group purport to be on "your
+face."</font></div><br/>
+<div><font size="-1">The control and the hive like
+behavior that I see is inexcusable, even if you think
+you're (only, right?) hiding some kind of hidden contact
+from Heaven or from aliens that you think is designed to
+"protect your way of life from being disrupted" ... even
+if you're only hiding something of that magnitude from
+yourselves and the world ... you appear to be <strong>sacrificing</strong>
+<strong>every</strong> single <strong>thing</strong>
+about our way of life that I loved ... our privacy and
+our freedom and our love of ...&nbsp;<em>new things
+...&nbsp;</em>all for what amounts to a war against
+the son of God to keep him from realizing his dream of
+kissing more than two girls at the same time.</font></div><br/>
+<div><font size="2">Out of jest, it's pretty clear
+that you think you're fighting for something of great
+worth, and it seems to me the lesson to be learned is
+that there is no such thing that worth giving up
+everything you love and everything that you are -- even
+if it's for "ompnitopence" which I've tried to explain
+just makes you "<em>him</em>" anyway.</font></div><br/>
+<div><font size="-1">The silence indicates to me that
+you are very interested in "what you can do" (like
+defeat Jesus Christ Superstar in his plot to rekindle a
+love for democracy, self-rule, and individuality) rather
+than my preferred plan of coming up with some common
+"what shouldn't be allowed" infrastructure.&nbsp; In the
+meantime, you appear to be unable to do anything useful
+here, including speak, acknowledge or discuss the truth,
+or uh... "Minority Report."&nbsp;&nbsp; I think that
+should be obviously indicative of ... something
+awry.&nbsp; I plan on discussing details about what I
+imagine would be a useful "system infrastructure" for
+the walls the halls and the doors that connect these
+"Holorooms" in the book--and I'll probably send it to
+you too.&nbsp;&nbsp;</font></div><br/>
+</div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;"><font size="-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://bit.ly/2Pqvmiq&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNEQRbhCaBIiYMOH52TAuF7HKajh5Q" href="https://www.youtube.com/watch?v=rHBxJCq99jA&amp;t=69" style="font-family: arial, sans-serif; color: rgb(17,
+85, 204); text-decoration: none;" target="_blank"><img alt="" src="../i.imgur.com/M9YHAux.png" style="border: 0px;" width="563" height="204" /></a></font></div>
+<div style="font-family: arial, sans-serif;"><font size="-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://bit.ly/2Pqvmiq&amp;source=gmail&amp;ust=1534866645958000&amp;usg=AFQjCNEQRbhCaBIiYMOH52TAuF7HKajh5Q" href="https://www.youtube.com/watch?v=rHBxJCq99jA&amp;t=69" style="font-family: arial, sans-serif; color: rgb(17,
+85, 204); text-decoration: none;" target="_blank"><img src="../i.imgur.com/Im85obE.png" style="border:
+0px;" width="563" height="180" /></a></font></div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;" align="justify">
+<center>
+<p>schoolchildren: "dear father tell us so, we belong
+... 'let your children play?' in ..."</p>
+</center>
+<div><font size="-1">
+Taylor really did a number on "hiding the message" with her 31337 message-mimickry 'eh?  The point of course is that we're innocent children here--and the ... elder and supposedly kinder wiser "angels" are not being friendly.  
+I feel like you might think that
+you should wait to "start talking about anything
+including my existence" until after I've been forced to
+write these things under duress, angry at you.&nbsp; I
+don't think that's true and literally it should be
+obvious that the only thing that will change is that
+we'll have more people talking and collaborating, and
+more information available.&nbsp; My dreams are not
+reality--as much as I'd like for us to be in a "perfect
+democractic system" right now, it's very clear that we
+are in a place that is showing us how and why there
+truly is always (up until now, right?) a Moral Minority
+and a Majority that can't seem to Report on obvious
+news.<br />
+<br />
+I think it's obvious (at least to me) that in the signs
+of Venus and Mars that's what you're seeing around
+you--someone telling you that some things are just not
+OK--even if you are a really old spirit and you want to
+try "living in fake reality for fun" it's making me (and
+probably others here) starve to death, have unnecessary
+pain, and get sick and die.&nbsp; This place is not a
+playground, and it dones not belong to the invisible
+hosts (that's armies in Bible speak) that think they
+will get away with pretending they built the whole
+thing.<br />
+<br />
+Ending world hunger and healing the sick are not
+"optional" they are the reason we have religion, and the
+New Testament, and God.&nbsp; I think you'd all agree
+with that if you cared about free speech and "the truth"
+enough to fathom what it means to be born in Simulated
+Reality and how understanding that--and who we really
+are--makes us the builders of Heaven.&nbsp; &nbsp;People
+have laughed at me when I said that the Second Coming
+was "the end of censorship" as I walked by strangers on
+the beach--I think that's a huge deal, because the next
+words out of my mouth are it's an end to death and to
+disease--and you all don't seem to connect these
+things.&nbsp; That's why we have Sam, and America.</font></div>
+</div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;"><font size="-1"><a href="https://mastodon.cloud/@heysuez"><img alt="MASTODON TOOT TOOT" src="../i.imgur.com/q57UEr0.png" style="border:
+0px; width: 500px; height: 446px;" /></a><br />
+<br />
+<i>Can you take me higher, to a place where blind men see?</i></font></div>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1"><a href="http://fromthemachine.org/HIGHERA.html"><img alt="CAN YOU TAKE ME HIGHER TO
+A PLACE WHERE BLIND MEN SEA" src="../i.imgur.com/nj5zLwV.png" style="border:
+0px; margin-right: 0px;" width="562" height="850" border="0" /></a></font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;"><font size="-1">"line in the sand" was a thing.&nbsp;
+so is <a href="http://fromthemachine.org/HIGHERA.html">Sandra B</a>ullock.&nbsp; and <a href="http://fromthemachine.org/CURSOR.html">Keyanu</a>.</font></div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">&nbsp;</div>
+<div style="font-family: arial, sans-serif; text-align:
+center;">
+<div style="font-family: arial, sans-serif;"><font size="-1"><a href="https://www.youtube.com/watch?v=Fr_CHOxSyc8&amp;index=5&amp;list=PLgYKDBgxsoMNvBS6k4NffQQnobyUqXuMh"><img alt="THE HOLY NAME" src="../i.imgur.com/AsnCwAu.png" style="border:
+0px;" width="563" height="423" border="0" /></a></font></div>
+</div>
+<div>
+<div style="font-family: arial, sans-serif; text-align:
+justify;"><br class="m_7002445719971103501gmail-Apple-interchange-newline" />
+<font size="-1"><span style="font-size: small;
+background-color: rgb(255,
+255, 255); text-decoration-style: initial;
+text-decoration-color: initial; float: none; display:
+inline;">Hey Tay! :) . Here's a <strong><em>litmus</em></strong>
+test for the beginning of the Age of Acqu<strong>arius</strong>...
+post <strong><em>Imus</em></strong> in the Morning, see
+<strong><em>Hebrew</em></strong><em>ind</em>, and see <strong><em>Hecate</em></strong>
+... before you let ol' DT get his panties in a jumble
+over the "interdimensional time control agency."&nbsp;
+You all, on the other hand, might want to proceed with
+the thing we thought meant "colonizing the stars" by
+caring ... <em>maybe?</em></span></font></div><br/>
+<a href="https://www.youtube.com/watch?v=cjrJXLtO-IQ"><img src="../i.imgur.com/IRIVy5D.png" alt="CYPERT EVEN IF THE SKY HAS FALLEN BELOW HELL" width=500/></a>
+<br/>
+<p><center><i>w<a href="IT.html">ho</a> put <a href="http://fromthemachine.org/IOWA.html">the flower</a> in the barrel <a href="http://fromthemachine.org/ARFAXAD.html">of that ELF g</a>un?</i></center>
+<br/></p>
+</div>
+<div style="font-family: arial, sans-serif; text-align:
+justify;"><font size="2"><i>Quite a bit of what ... I'm
+seeing, at least ... appears to be designed to ensure that
+we'll never again have to return to this kind of strange
+crucible of freedom and duality and technology and "can
+you speak?" It might not be ever so clear from what I've
+written to date, but you should really start seeing that
+it's things like "pain" and "aging" and "disease" (that we
+can stop in a split second, and have no need to torture
+ourselves or any sentient life with) that are really
+behind the reasons "Earth will never see reality" and that
+should have been obvious to you the whole time--more than
+that, it should be obvious that we've certainly got much
+safer and healthier ways to ensure "life doesn't get
+destroyed by time and chance" than stories about boats
+filled with two of each kind of person (literally what I'm
+looking at, a world that pretends to care about one thing,
+but when you are faced with something so obvious and so
+important that ... that it defines the difference between
+Heaven and Hell once you know it ... why are you silent?);
+and do see that the real "thing" we're trying to build in
+our still hallowed "really" is a civilization that cares
+about goodness and the truth to the point that they're
+willing to die for it--to be "Saturn" or Snoop's "time
+cop" ... because that's the only thing that's ever going
+to be responsible for actually building Heaven and making
+the Universe a "loving caring non-void."</i></font></div>
+<div style="font-family: arial, sans-serif; text-align:
+justify;">
+<div>
+<blockquote>
+<p>A&nbsp;<a href="https://en.wikipedia.org/wiki/Legend" title="Legend">legend</a>&nbsp;tells of a test
+where&nbsp;<a href="https://en.wikipedia.org/wiki/Muramasa" title="Muramasa">Muramasa</a>&nbsp;challenged his
+master, Masamune, to see who could make a finer sword.
+They both worked tirelessly and eventually, when both
+swords were finished, they decided to test the results.
+The contest was for each to suspend the blades in a small
+creek with the cutting edge facing the current. Muramasa's
+sword, the&nbsp;<i>Juuchi Yosamu</i>&nbsp;(十千夜寒, "10,000
+Cold Nights")&nbsp;cut everything that passed its way;
+fish, leaves floating down the river, the very air which
+blew on it. Highly impressed with his pupil's work,
+Masamune lowered his sword, the&nbsp;<i>Yawarakai-Te</i>&nbsp;
+(柔らかい手, "Tender Hands"), into the current and waited
+patiently. Only leaves were cut. However, the fish swam
+right up to it, and the air hissed as it gently blew by
+the blade. After a while, Muramasa began to scoff at his
+master for his apparent lack of skill in the making of his
+sword. Smiling to himself, Masamune pulled up his sword,
+dried it, and sheathed it. All the while, Muramasa was
+heckling him for his sword's inability to cut anything. A
+monk, who had been watching the whole ordeal, walked over
+and bowed low to the two sword masters. He then began to
+explain what he had seen.</p>
+<dl>
+<dd>"The first of the swords was by all accounts a fine
+sword, however it is a blood thirsty, evil blade, as it
+does not discriminate as to who or what it will cut. It
+may just as well be cutting down butterflies as severing
+heads. The second was by far the finer of the two, as it
+does not needlessly cut that which is innocent and
+undeserving."</dd>
+</dl>
+<p>In another account of the story, both blades cut the
+leaves that went down on the river's current equally well,
+but the leaves would stick to the blade of Muramasa
+whereas they would slip on past Masamune's after being
+sliced. Or alternatively both leaves were cut, but those
+cut by Masamune's blade would reform as it traveled down
+the stream. Yet another version has leaves being sliced by
+Muramasa's blade while the leaves were repelled by
+Masamune's, and another again has leaves being sliced by
+Muramasa's blade and healed by Masamune's.</p>
+</div>
+</bockquote>
+<p><strong><em>Masamu</em></strong>? We make people that make
+swords that don't hurt kids.</p>
+</div>
+<div style="font-family: arial, sans-serif; text-align: center;"><img src="../i.imgur.com/qowaMO4.jpg" /></div>
+<div style="font-family: arial, sans-serif; text-align: center;"><img src="../i.imgur.com/EDC1PsR.png" style="height: 231px;
+width: 400px;" /></div>
+</div>
+<div hspace="streak-pt-mark" style="font-family: arial,
+sans-serif; max-height: 1px;"><font size="-1"><img alt="" src="../i.imgur.com/gdcs8nn.png" style="border: 0px;
+width: 0px; max-height: 0px; overflow: hidden;" /><font size="1" color="#ffffff">ᐧ</font></font></div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="SAYFREED.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="BETHESDAY.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="SAYFREED.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="BETHESDAY.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>
+
+<center>
+<style>
+.WHSOISKEYAV {
+
+border-width: 1px;
+border-style: dashed;
+border-color: rgb(15,5,254);
+padding: 5px;
+width: 503px; 
+text-align: center;
+display: inline-block;
+align: center;
+p {
+
+align: center;
+
+}
+
+/*
+
+THE SCORE IS LOVE FIVE
+
+ONE SAFETY
+ONE FIELD GOAL
+
+XIVDAQ: TENNIS OR TINNES?
+
+TONNES AND TUPLE(s)
+*/ 
+
+}
+
+</style>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- leaderboard -->
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576e94bdb4f80253"></script>
+<br/><br/><div style="float: center; vertical-align: bottom;">
+<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://slack.reallyhim.com/&amp;source=gmail&amp;ust=1512831788289000&amp;usg=AFQjCNF469AQ70QEBkpObpKMKsWKzrbmAg" href="http://slack.reallyhim.com/" rel="noopener" target="_blank" title="TELESPRISE"><img alt="" border="0" 
+height="60" id="m_-4973210593361332524gmail-m_-6096670269405767939gmail-m_-1436458080550240543m_-3975089270040819763gmail-m_-2248848940621715595gmail-m_4950052768086691300gmail-m_2933957970607722850gmail-m_7483563204303838204gmail-m_-3491586818351559956gmail-m_3682735925266535707gmail-m_5731075335784145647m_3413239976406571221m_2402549402411035463m_3237557952722111901gmail-m_-8798842351942729229m_4692247605844201587m_-2492882859021407156m_-7142874903403184072m_-9133516419565872595gmail-m_6961657238809553818gmail-m_-1296802553737736344gmail-BLOGGER_PHOTO_ID_6494125253829947314" src="../i.imgur.com/F8nmg2T.png" width="500" height="60" /></a>
+<div style="font-size: small; text-align: justify; width: 400px;">
+Unless otherwise indicated, this work was written between the Christmas and Easter seasons of 2017 and 2019.  The content of this page is released to the public under
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">
+the GNU GPL v2.0 license</a>; additionally any reproduction or derivation
+of the work must be attributed to the author, Adam Marshall Dobrin
+along with a link back to this website, suez.fromthemachine.org.
+</div>
+</div>
+
+<br/>
+If you wanna talk to me <a href="http://fb.me/admdbrn">get me on facebook</a>, with PGP <a href="https://flowcrypt.com/me/adam">via FlowCrypt</a> or adam@fromthemachine.org
+</center>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74743044-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

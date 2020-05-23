@@ -1,0 +1,1048 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>ReiserFS - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XsXVzwpAIEIAAFeW4BkAAABK","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"ReiserFS","wgTitle":"ReiserFS","wgCurRevisionId":957224278,"wgRevisionId":957224278,"wgArticleId":39183,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: multiple names: authors list","Webarchive template wayback links","All articles with unsourced statements","Articles with unsourced statements from January 2017","Articles with specifically marked weasel-worded phrases from October 2016","All articles with specifically marked weasel-worded phrases",
+"Articles with unsourced statements from August 2014","2001 software","Disk file systems","File systems supported by the Linux kernel"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"ReiserFS","wgRelevantArticleId":39183,"wgIsProbablyEditable":!0,"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q687074","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":
+"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP",
+"ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.31"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="ReiserFS.html"/>
+<link rel="dns-prefetch" href="https://login.wikimedia.org/"/>
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-ReiserFS rootpage-ReiserFS skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">ReiserFS</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="ReiserFS.html#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="ReiserFS.html#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="https://en.wikipedia.org/wiki/ReFS" title="ReFS">ReFS</a>.</div>
+<div role="note" class="hatnote navigation-not-searchable">This article is about ReiserFS version 3. For version 4, see <a href="https://en.wikipedia.org/wiki/Reiser4" title="Reiser4">Reiser4</a>.</div>
+<table class="infobox" style="width:22em"><caption>ReiserFS 3.6</caption><tbody><tr><th scope="row"><a href="https://en.wikipedia.org/wiki/Software_developer" class="mw-redirect" title="Software developer">Developer(s)</a></th><td><a href="https://en.wikipedia.org/wiki/Namesys" title="Namesys">Namesys</a></td></tr><tr><th scope="row">Full name</th><td>ReiserFS</td></tr><tr><th scope="row">Introduced</th><td>2001 with <a href="https://en.wikipedia.org/wiki/Linux" title="Linux">Linux</a> 2.4.1</td></tr><tr><th scope="row"><a href="https://en.wikipedia.org/wiki/Partition_type" title="Partition type">Partition identifier</a></th><td><tt>Apple_UNIX_SVR2</tt> (<a href="https://en.wikipedia.org/wiki/Apple_Partition_Map" title="Apple Partition Map">Apple Partition Map</a>)<br /><tt>0x83</tt> (<a href="https://en.wikipedia.org/wiki/Master_boot_record" title="Master boot record">MBR</a>)<br /><tt><a href="https://en.wikipedia.org/wiki/Microsoft_basic_data_partition" title="Microsoft basic data partition">EBD0A0A2-B9E5-4433-87C0-68B6B72699C7</a></tt> (<a href="https://en.wikipedia.org/wiki/GUID_Partition_Table" title="GUID Partition Table">GPT</a>)</td></tr><tr><th colspan="2" style="text-align:center">Structures</th></tr><tr><th scope="row">Directory contents</th><td><a href="https://en.wikipedia.org/wiki/B%2B_tree" title="B+ tree">B+ tree</a></td></tr><tr><th scope="row">File allocation</th><td><a href="https://en.wikipedia.org/wiki/Bit_array" title="Bit array">Bitmap</a><sup id="cite_ref-1" class="reference"><a href="ReiserFS.html#cite_note-1">&#91;1&#93;</a></sup></td></tr><tr><th colspan="2" style="text-align:center">Limits</th></tr><tr><th scope="row">Max. volume size</th><td>16 <a href="https://en.wikipedia.org/wiki/Tebibyte" title="Tebibyte">TiB</a><sup id="cite_ref-specs_2-0" class="reference"><a href="ReiserFS.html#cite_note-specs-2">&#91;2&#93;</a></sup></td></tr><tr><th scope="row">Max. file size</th><td>1 <a href="https://en.wikipedia.org/wiki/Exbibyte" title="Exbibyte">EiB</a> (8 <a href="https://en.wikipedia.org/wiki/Tebibyte" title="Tebibyte">TiB</a> on 32 bit systems)<sup id="cite_ref-specs_2-1" class="reference"><a href="ReiserFS.html#cite_note-specs-2">&#91;2&#93;</a></sup></td></tr><tr><th scope="row">Max. number of files</th><td>2<sup>32</sup>−3 (~4 billion)<sup id="cite_ref-specs_2-2" class="reference"><a href="ReiserFS.html#cite_note-specs-2">&#91;2&#93;</a></sup></td></tr><tr><th scope="row">Max. filename length</th><td>4032 bytes, limited to 255 by Linux VFS</td></tr><tr><th scope="row">Allowed characters in filenames</th><td>All bytes except <a href="https://en.wikipedia.org/wiki/Null_character" title="Null character">NUL</a> and <code>'/'</code></td></tr><tr><th colspan="2" style="text-align:center">Features</th></tr><tr><th scope="row">Dates recorded</th><td>modification (mtime), metadata change (ctime), access (atime)</td></tr><tr><th scope="row">Date range</th><td>December 14, 1901 – January 18, 2038</td></tr><tr><th scope="row">Date resolution</th><td>1 s</td></tr><tr><th scope="row"><a href="https://en.wikipedia.org/wiki/Fork_(file_system)" title="Fork (file system)">Forks</a></th><td>Extended attributes</td></tr><tr><th scope="row"><a href="https://en.wikipedia.org/wiki/File_system_permissions" title="File system permissions">File system permissions</a></th><td>Unix permissions, <a href="https://en.wikipedia.org/wiki/Access_control_list" class="mw-redirect" title="Access control list">ACLs</a> and arbitrary security attributes</td></tr><tr><th scope="row">Transparent compression</th><td>No</td></tr><tr><th scope="row"><a href="https://en.wikipedia.org/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">Transparent encryption</a></th><td>No</td></tr><tr><th colspan="2" style="text-align:center">Other</th></tr><tr><th scope="row">Supported <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating systems</a></th><td>Linux, <a href="https://en.wikipedia.org/wiki/ReactOS" title="ReactOS">ReactOS</a></td></tr></tbody></table>
+<p><b>ReiserFS</b> is a general-purpose, <a href="https://en.wikipedia.org/wiki/Journaling_file_system" title="Journaling file system">journaled computer file system</a> initially designed and implemented by a team at <a href="https://en.wikipedia.org/wiki/Namesys" title="Namesys">Namesys</a> led by <a href="https://en.wikipedia.org/wiki/Hans_Reiser" title="Hans Reiser">Hans Reiser</a>. ReiserFS is currently supported on <a href="https://en.wikipedia.org/wiki/Linux" title="Linux">Linux</a> (without quota support) licensed as <a href="https://en.wikipedia.org/wiki/GPLv2" class="mw-redirect" title="GPLv2">GPLv2</a>. Introduced in version 2.4.1 of the <a href="https://en.wikipedia.org/wiki/Linux_kernel" title="Linux kernel">Linux kernel</a>, it was the first journaling file system to be included in the standard kernel. ReiserFS was the default file system in <a href="https://en.wikipedia.org/wiki/Novell" title="Novell">Novell</a>'s SUSE Linux Enterprise until Novell decided to move to <a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a> on October 12, 2006 for future releases.<sup id="cite_ref-shankland1_3-0" class="reference"><a href="ReiserFS.html#cite_note-shankland1-3">&#91;3&#93;</a></sup>
+</p><p>Namesys considered ReiserFS version 3.6 which introduced a new on-disk format allowing bigger filesizes, now occasionally referred to as Reiser3, as stable and feature-complete and, with the exception of security updates and critical bug fixes, ceased development on it to concentrate on its successor, <a href="https://en.wikipedia.org/wiki/Reiser4" title="Reiser4">Reiser4</a>. Namesys went out of business in 2008 after Reiser's conviction for murder. The product is now maintained as open source by volunteers.<sup id="cite_ref-4" class="reference"><a href="ReiserFS.html#cite_note-4">&#91;4&#93;</a></sup> The reiserfsprogs 3.6.27 were released on 25 July 2017.<sup id="cite_ref-5" class="reference"><a href="ReiserFS.html#cite_note-5">&#91;5&#93;</a></sup>
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="ReiserFS.html#Features"><span class="tocnumber">1</span> <span class="toctext">Features</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="ReiserFS.html#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="ReiserFS.html#Version_history"><span class="tocnumber">3</span> <span class="toctext">Version history</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="ReiserFS.html#Performance"><span class="tocnumber">4</span> <span class="toctext">Performance</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="ReiserFS.html#Usage"><span class="tocnumber">5</span> <span class="toctext">Usage</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="ReiserFS.html#Criticism"><span class="tocnumber">6</span> <span class="toctext">Criticism</span></a>
+<ul>
+<li class="toclevel-2 tocsection-7"><a href="ReiserFS.html#fsck"><span class="tocnumber">6.1</span> <span class="toctext">fsck</span></a></li>
+<li class="toclevel-2 tocsection-8"><a href="ReiserFS.html#Earlier_issues"><span class="tocnumber">6.2</span> <span class="toctext">Earlier issues</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-9"><a href="ReiserFS.html#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-10"><a href="ReiserFS.html#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-11"><a href="ReiserFS.html#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Features">Features</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=1" title="Edit section: Features">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>At the time of its introduction, ReiserFS offered features that had not been available in existing Linux file systems:
+</p>
+<ul><li><a href="https://en.wikipedia.org/wiki/Metadata" title="Metadata">Metadata</a>-only <a href="https://en.wikipedia.org/wiki/Journaling_file_system" title="Journaling file system">journaling</a> (also block journaling, since Linux 2.6.8), its most-publicized advantage over what was the stock Linux file system at the time, <a href="https://en.wikipedia.org/wiki/Ext2" title="Ext2">ext2</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="Wikipedia%253ACitation_needed.html" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>&#93;</sup></li>
+<li>Online resizing (growth only), with or without an underlying volume manager such as <a href="https://en.wikipedia.org/wiki/Logical_Volume_Manager_(Linux)" title="Logical Volume Manager (Linux)">LVM</a>.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="Wikipedia%253ACitation_needed.html" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>&#93;</sup> Since then, Namesys has also provided tools to resize (both grow and shrink) ReiserFS file systems offline.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="Wikipedia%253ACitation_needed.html" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (January 2017)">citation needed</span></a></i>&#93;</sup></li>
+<li><a href="https://en.wikipedia.org/wiki/Block_suballocation#Tail_packing" title="Block suballocation">Tail packing</a>, a scheme to reduce <a href="https://en.wikipedia.org/wiki/Fragmentation_(computing)#Internal_fragmentation" title="Fragmentation (computing)">internal fragmentation</a>. Tail packing can have a significant performance impact. Reiser4 may have improved this by packing tails where it does not negatively affect performance.<sup id="cite_ref-6" class="reference"><a href="ReiserFS.html#cite_note-6">&#91;6&#93;</a></sup></li></ul>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=2" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ReiserFS stores file metadata ("stat items"), <a href="https://en.wikipedia.org/wiki/Directory_(computing)" title="Directory (computing)">directory</a> entries ("directory items"), <a href="https://en.wikipedia.org/wiki/Inode" title="Inode">inode</a> block lists ("indirect items"), and tails of <a href="https://en.wikipedia.org/wiki/Computer_file" title="Computer file">files</a> ("direct items") in a single, combined <a href="https://en.wikipedia.org/wiki/B%2B_tree" title="B+ tree">B+ tree</a> keyed by a universal object ID. Disk blocks allocated to nodes of the tree are "formatted internal blocks".  Blocks for leaf nodes (in which items are packed end-to-end) are "formatted leaf blocks".  All other blocks are "unformatted blocks" containing file contents.  Directory items with too many entries or indirect items which are too long to fit into a node spill over into the right leaf neighbour. Block allocation is tracked by <a href="https://en.wikipedia.org/wiki/Free_space_bitmap" title="Free space bitmap">free space bitmaps</a> in fixed locations.
+</p><p>By contrast, <a href="https://en.wikipedia.org/wiki/Ext2" title="Ext2">ext2</a> and other Berkeley <a href="https://en.wikipedia.org/wiki/Unix_File_System" title="Unix File System">FFS</a>-like file systems of that time simply used a fixed formula for computing inode locations, hence limiting the number of files they may contain.<sup id="cite_ref-7" class="reference"><a href="ReiserFS.html#cite_note-7">&#91;7&#93;</a></sup> Most such file systems also store directories as simple lists of entries, which makes directory lookups and updates <a href="https://en.wikipedia.org/wiki/Time_complexity#Linear_time" title="Time complexity">linear time</a> operations and degrades performance on very large directories. The single <a href="https://en.wikipedia.org/wiki/B%2B_tree" title="B+ tree">B+ tree</a> design in ReiserFS avoids both of these problems due to better scalability properties.
+</p>
+<h2><span class="mw-headline" id="Version_history">Version history</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=3" title="Edit section: Version history">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Regarding the development of a filesystem, three fields have to be considered separately:
+</p>
+<ul><li>The on-disk format, thus the way data is structured on the media.</li>
+<li>The implementation of the filesystem driver, which enables the operating system to read and write data.</li>
+<li>The maintenance tools for creating, deleting, resizing, defragmenting and checking partitions on the media.</li></ul>
+<p>Therefore this section contains three tables: one for the 3.5.x series of the filesystem driver that was used to read and write the 3.5 on-disk format, another one for the 3.6.x series of the filsystem driver that is used to read and write the 3.6 on-disk format and a third one for the tools contained in the <code>reiserfsprogs</code> package.
+</p><p>Since the on-disk format 3.6 is regarded as feature complete and stable, it is frozen and doesn't get changed anymore. The filesystem driver for Linux, that is part of the official kernel as well as the <code>reiserfsprogs</code> operating in <a href="https://en.wikipedia.org/wiki/User_space" title="User space">user space</a> are still being maintained and getting updates (rarely also new features) even nowadays (as of 2019).
+</p><p>The <code>defrag</code> program was never fully implemented, although there were attempts up to the year 2014. One reason why it never was finished was the rise of solid state disks (SSD) which – contrary to the classic spinning wheel hard disk drives (HDD) – do not need to be defragmented, or more precisely: shouldn't be defragmented at all, as any unnecessary write operations will shorten the life of an SSD.
+</p>
+<table class="wikitable">
+
+<tbody><tr>
+<th>ReiserFS&#160;3.5.x</th>
+<th>Release&#160;date</th>
+<th>Linux&#160;Kernel</th>
+<th>Notes
+</th></tr>
+<tr>
+<td>3.5.9</td>
+<td>mid&#160;1999</td>
+<td>2.2.x</td>
+<td>
+</td></tr>
+<tr>
+<td>3.5.24</td>
+<td>2000-08-05</td>
+<td></td>
+<td>Fixes for get_num_ver, zeroing of truncated bytes-in, unformatted nodes, r5 hash handling (for reiserfsck), null transaction handle in do_balance (for fsck), bad path checking in fsck, bad delimiting keys are now caught, tail locking, and 'du' works properly.<sup id="cite_ref-8" class="reference"><a href="ReiserFS.html#cite_note-8">&#91;8&#93;</a></sup>
+</td></tr>
+<tr>
+<td>3.5.25</td>
+<td>2000-09-07</td>
+<td></td>
+<td>This release includes a fix for files with holes, an ioctl_patch, and improved fsck code. r5_hash is now set as the default.
+</td></tr>
+<tr>
+<td>3.5.26</td>
+<td>2000-09-22</td>
+<td></td>
+<td>A fix for performance degradation of 3.5.25.
+</td></tr>
+<tr>
+<td>3.5.29</td>
+<td>2000-12-23</td>
+<td></td>
+<td>This release is the latest version patched for 2.2.18. Please visit the alternative download URL or homepage to download this version.
+</td></tr>
+<tr>
+<td>3.5.30</td>
+<td>2001-02-22</td>
+<td></td>
+<td>Bug fix in reiserfs ioctl code for lilo and decrement key bug fix.
+</td></tr>
+<tr>
+<td>3.5.31</td>
+<td>2001-03-27</td>
+<td></td>
+<td>Bugfixes, a missed case in hash detection code, a new REISERFS_CHECK mode (you can mount by 3.5.x then by 3.6.x and again by 3.5.x), and a check for the count parameter in reiserfs_file_write. (less)
+</td></tr>
+</tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>ReiserFS&#160;3.6.x</th>
+<th>Linux&#160;Kernel</th>
+<th>Release&#160;date</th>
+<th>Notes
+</th></tr>
+<tr>
+<td>3.6.x</td>
+<td>?</td>
+<td>?</td>
+<td>New on-disk format. "In reiserfs up until version 3.5 the offset and the type fields were both 4 byte values. This meant, that the maximum file size was limited to roughly 2^32 bytes, or 4GB (2^32 bytes plus the data of one more indirect item plus the tail, actually). To increase the maximum file size in the file system, in version 3.6,the offset field was increased to 60 bits, and the type field shrunk to 4 bits. This now allows for a theoretical maximum file size of 2^60 bytes, but since there can be only 2^32 blocks with a maximum of 2^16 bytes per block, the file system itself only supports 2^48 bytes"<sup id="cite_ref-9" class="reference"><a href="ReiserFS.html#cite_note-9">&#91;9&#93;</a></sup>
+</td></tr>
+<tr>
+<td>3.6.12</td>
+<td>2.4.0-test6</td>
+<td>2000-08-12</td>
+<td>A port to linux-2.4.0-test6, a fix for memory corruption with long file names, r5_hash is the default hash (gives the best performance), and improved journal code.
+</td></tr>
+<tr>
+<td>3.6.13</td>
+<td></td>
+<td>2000-08-19</td>
+<td>This version features a fix for another 'du' bug, a new ioctl command: REISERFS_IOC_UNPACK (for LILO support), and gives a way to unpack any reiserfs file with tail. The documentation has also been updated. (less)
+</td></tr>
+<tr>
+<td>3.6.14</td>
+<td>2.4.0-test7</td>
+<td>2000-09-01</td>
+<td>This release has been ported to kernel 2.4.0-test7 and minor documentation fixes have been made.
+</td></tr>
+<tr>
+<td>3.6.15</td>
+<td>2.4.0-test8</td>
+<td>2000-09-15</td>
+<td>Porting of the code to linux-2.4.0-test8, an optimization in get_block to avoid unneeded transactions, a new scheme of block allocating (to speed up work with big files), large rewrites to truncate and writepage to fix deadlocks and race conditions with file tails, and a new benchmarks dir with mongo.sh benchmark in the utils directory.
+</td></tr>
+<tr>
+<td>3.6.16</td>
+<td></td>
+<td>2000-09-18</td>
+<td>This release adds a fix for a bug that was found in 3.6.15 and the new scheme of blocks allocation in 3.6.15 has been reverted (performances were bad).
+</td></tr>
+<tr>
+<td>3.6.17</td>
+<td></td>
+<td>2000-09-21</td>
+<td>This release adds a fix for the "StarOffice + Reiserfs" bug that was found in 3.6.16.
+</td></tr>
+<tr>
+<td>3.6.18</td>
+<td>2.4-test9</td>
+<td>2000-10-13</td>
+<td>A port to 2.4-test9, a fix for the not-more-than 64k subdirectories, and misc. experimental features.
+</td></tr>
+<tr>
+<td>3.6.23</td>
+<td>2.4.0-test12</td>
+<td>2000-12-23</td>
+<td>This release is the latest beta patch for kernel 2.4.0-test12.
+</td></tr>
+<tr>
+<td></td>
+<td>2.4.1</td>
+<td>2001-01-29</td>
+<td>ReiserFS became part of the Linux kernel.<sup id="cite_ref-10" class="reference"><a href="ReiserFS.html#cite_note-10">&#91;10&#93;</a></sup> From here on, any further changes to the filesystem driver are collected at Linus Torvalds' Git repository.<sup id="cite_ref-11" class="reference"><a href="ReiserFS.html#cite_note-11">&#91;11&#93;</a></sup>
+</td></tr>
+<tr>
+<td></td>
+<td>2.4.13</td>
+<td>?</td>
+<td>Jeff Mahoney: reiserfs endian safeness<br />Chris Mason: reiserfs O_SYNC/fsync performance improvements
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.8</td>
+<td>2004-08-14</td>
+<td>Chris Mason (back then an employee of <a href="https://en.wikipedia.org/wiki/SUSE" title="SUSE">SUSE</a>, later the lead developer of <a href="https://en.wikipedia.org/wiki/Btrfs" title="Btrfs">Btrfs</a>) committed block allocator optimizations, btree readahead and data logging support (the data journal)<sup id="cite_ref-12" class="reference"><a href="ReiserFS.html#cite_note-12">&#91;12&#93;</a></sup>
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.9</td>
+<td>2004-10-19</td>
+<td>Chris Mason: Reiserfs v3 barrier support: Add reiserfs support for flush barriers, mount with -o barrier=flush to enable them. Barriers are triggered on fsync and for log commits
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.10</td>
+<td>2004-12-24</td>
+<td>Jeff Mahoney: Add I/O error handling to journal operations
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.12</td>
+<td>2005-06-17</td>
+<td>Paolo 'Blaisorblade' Giarrusso: make resize option auto-get new device size<br />Jeff Mahoney: Add selinux support
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.19</td>
+<td>2006-11-29</td>
+<td>Jeff Mahoney: On-demand bitmap loading - speeds up mounting speed and eliminates minimum window size for bitmap searching - improves the allocator in some corner-cases
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.30</td>
+<td>2009-06-09</td>
+<td>Jeff Mahoney: Use generic xattr handlers; Journaled xattrs; Use generic readdir for operations across all xattrs; Add atomic addition of selinux attributes during inode creation
+</td></tr>
+<tr>
+<td></td>
+<td>2.6.33</td>
+<td>2010-02-24</td>
+<td>Reiserfs de-BKLification: "One of the biggest shortcomings of reiserfs v3 (and one of the reasons why most distros use Ext instead) is that its codebase handles concurrency using a single big lock - the BKL (Big Kernel Lock). This means that its SMP scalability is very poor. This release won't fix that issue, but it replaces the BKL with a reiserfs-specific solution. In this release, there are no more traces of the BKL inside reiserfs. It has been converted into a recursive mutex. This sounds dirty but plugging a traditional lock into reiserfs would involve a deeper rewrite as the reiserfs architecture is based on the ugly big kernel lock rules.<br />Due to the subtle semantics of the locking changes, some workloads may have small performance regressions and other have improvements.
+</td></tr>
+<tr>
+<td></td>
+<td>3.1</td>
+<td>2011-10-24</td>
+<td>Christoph Hellwig: Default to barrier=flush
+</td></tr>
+<tr>
+<td></td>
+<td>4.12</td>
+<td>2017-07-02</td>
+<td>Jan Kara: Pull quota, reiserfs, udf and ext2 updates:
+<pre>"The branch contains changes to quota code so that it does not modify persistent flags in inode-&gt;i_flags (it was the only place in kernel doing that) and handle it inside filesystem's quotaon/off handlers instead.<br />The branch also contains two UDF cleanups, a couple of reiserfs fixes and one fix for ext2 quota locking"
+</pre>
+</td></tr>
+<tr>
+<td></td>
+<td>4.1.50</td>
+<td></td>
+<td>Jan Kara: Don't clear SGID when inheriting ACLs<br />Jeff Mahoney: don't preallocate blocks for extended attributes; fix race in prealloc discard<br />Arnd Bergmann: avoid a -Wmaybe-uninitialized warning
+</td></tr>
+<tr>
+<td></td>
+<td>4.1.52</td>
+<td></td>
+<td>Andrew Morton: fs/reiserfs/journal.c: add missing reiserfs_warning() arg<br />Jan Kara: Make cancel_old_flush() reliable
+</td></tr>
+<tr>
+<td></td>
+<td>4.11.5</td>
+<td></td>
+<td>Jan Kara: Make flush bios explicitly sync
+</td></tr>
+<tr>
+<td></td>
+<td>4.12.4</td>
+<td></td>
+<td>Jan Kara: Don't clear SGID when inheriting ACLs
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.17</td>
+<td></td>
+<td>Jeff Layton: remove unneeded i_version bump
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.36</td>
+<td></td>
+<td>Andrew Morton: fs/reiserfs/journal.c: add missing reiserfs_warning() arg
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.57</td>
+<td></td>
+<td>Eric Biggers: fix buffer overflow with long warning messages
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.67</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.70</td>
+<td></td>
+<td>Arnd Bergmann: change j_timestamp type to time64_t
+</td></tr>
+<tr>
+<td></td>
+<td>4.14.84</td>
+<td></td>
+<td>Jann Horn: propagate errors from fill_with_dentries() properly
+</td></tr>
+<tr>
+<td></td>
+<td>4.16.4</td>
+<td></td>
+<td>Andrew Morton: fs/reiserfs/journal.c: add missing reiserfs_warning() arg
+</td></tr>
+<tr>
+<td></td>
+<td>4.17.19</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)
+</td></tr>
+<tr>
+<td></td>
+<td>4.17.9</td>
+<td></td>
+<td>Eric Biggers: fix buffer overflow with long warning messages
+</td></tr>
+<tr>
+<td></td>
+<td>4.18.5</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)
+</td></tr>
+<tr>
+<td></td>
+<td>4.18.8</td>
+<td></td>
+<td>Arnd Bergmann: change j_timestamp type to time64_t
+</td></tr>
+<tr>
+<td></td>
+<td>4.19</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)<br />Arnd Bergmann: change j_timestamp type to time64_t; remove obsolete print_time function; use monotonic time for j_trans_start_time
+</td></tr>
+<tr>
+<td></td>
+<td>4.19.5</td>
+<td></td>
+<td>Jann Horn: propagate errors from fill_with_dentries() properly
+</td></tr>
+<tr>
+<td></td>
+<td>4.20</td>
+<td></td>
+<td>Masahiro Yamada: remove workaround code for GCC 3.x<br />Jann Horn: propagate errors from fill_with_dentries() properly
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.114</td>
+<td></td>
+<td>Jan Kara: Don't clear SGID when inheriting ACLs<br />Jeff Mahoney: don't preallocate blocks for extended attributes; fix race in prealloc discard
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.118</td>
+<td></td>
+<td>Arnd Bergmann: avoid a -Wmaybe-uninitialized warning
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.123</td>
+<td></td>
+<td>Jan Kara: Make cancel_old_flush() reliable
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.129</td>
+<td></td>
+<td>Andrew Morton: fs/reiserfs/journal.c: add missing resierfs_warning() arg
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.152</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.156</td>
+<td></td>
+<td>Arnd Bergmann: change j_timestamp type to time64_t
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.165</td>
+<td></td>
+<td>Jann Horn: propagate errors from fill_with_dentries() properly
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.23</td>
+<td></td>
+<td>Jeff Mahoney: fix "new_insert_key may be used uninitialized ..."
+</td></tr>
+<tr>
+<td></td>
+<td>4.4.27</td>
+<td></td>
+<td>Al Viro: switch to generic_{get,set,remove}xattr()<br />Mike Galbraith: Unlock superblock before calling reiserfs_quota_on_mount()
+</td></tr>
+<tr>
+<td></td>
+<td>4.7.10</td>
+<td></td>
+<td>Mike Galbraith: Unlock superblock before calling reiserfs_quota_on_mount()
+</td></tr>
+<tr>
+<td></td>
+<td>4.7.6</td>
+<td></td>
+<td>Jeff Mahoney: fix "new_insert_key may be used uninitialized ..."
+</td></tr>
+<tr>
+<td></td>
+<td>4.8.4</td>
+<td></td>
+<td>Mike Galbraith: Unlock superblock before calling reiserfs_quota_on_mount()
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.114</td>
+<td></td>
+<td>Eric Biggers: fix buffer overflow with long warning messages
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.124</td>
+<td></td>
+<td>Jann Horn: fix broken xattr handling (heap corruption, bad retval)
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.127</td>
+<td></td>
+<td>Arnd Bergmann: change j_timestamp type to time64_t
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.141</td>
+<td></td>
+<td>Jann Horn: propagate errors from fill_with_dentries() properly
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.79</td>
+<td>2018-01-31</td>
+<td>Jeff Mahoney: don't preallocate blocks for extended attributes; fix race in prealloc discard
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.80</td>
+<td>2018-02-04</td>
+<td>Jeff Layton: remove unneeded i_version bump
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.84</td>
+<td>2018-02-25</td>
+<td>Arnd Bergmann: avoid a -Wmaybe-uninitialized warning
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.89</td>
+<td>2018-03-22</td>
+<td>Jan Kara: Make cancel_old_flush() reliable
+</td></tr>
+<tr>
+<td></td>
+<td>4.9.96</td>
+<td>2018-04-14</td>
+<td>Andrew Morton: fs/reiserfs/journal.c: add missing resierfs_warning() arg
+</td></tr>
+<tr>
+<td></td>
+<td>5.2</td>
+<td>2019-07-07</td>
+<td>Al Viro: convert to -&gt;free_inode()<br />Bharath Vedartham: add comment to explain endianness issue in xattr_hash; fs/reiserfs/journal.c: Make remove_journal_hash static<br />Jan Kara: A couple of small bugfixes and cleanups for quota, udf, ext2, and reiserfs
+</td></tr>
+</tbody></table>
+<table class="wikitable">
+
+<tbody><tr>
+<th>reiserfsprogs version</th>
+<th>Release&#160;date</th>
+<th>Notes<sup id="cite_ref-13" class="reference"><a href="ReiserFS.html#cite_note-13">&#91;13&#93;</a></sup>
+</th></tr>
+<tr>
+<td>n.a.</td>
+<td>2001-02-05</td>
+<td>mkreiserfs: can make filesystem with 1 data block; 3.6 format is now default
+</td></tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…
+</td></tr>
+<tr>
+<td>3.6.27</td>
+<td>2017-07-24</td>
+<td>build: properly define version in reiserfscore.pc<br /> misc: include &lt;sys/sysmacros.h&gt;<br /> xattrs: handle both hash forms in reiserfs_check_xattr
+</td></tr>
+</tbody></table>
+<h2><span class="mw-headline" id="Performance">Performance</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=4" title="Edit section: Performance">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Compared with <a href="https://en.wikipedia.org/wiki/Ext2" title="Ext2">ext2</a> and <a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a> in version 2.4 of the Linux kernel, when dealing with files under 4 <a href="https://en.wikipedia.org/wiki/KiB" class="mw-redirect" title="KiB">KiB</a> and with tail packing enabled, ReiserFS may<sup id="cite_ref-14" class="reference"><a href="ReiserFS.html#cite_note-14">&#91;14&#93;</a></sup> be faster.  This was said<sup class="noprint Inline-Template" style="white-space:nowrap;">&#91;<i><a href="Wikipedia%253AManual_of_Style/Words_to_watch.html#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch"><span title="The material near this tag may use weasel words or too-vague attribution. (October 2016)">by whom?</span></a></i>&#93;</sup> to be of great benefit in <a href="https://en.wikipedia.org/wiki/Usenet" title="Usenet">Usenet</a> news spools, HTTP caches, mail delivery systems, and other applications where performance with small files is critical.  However, in practice<sup class="noprint Inline-Template" style="margin-left:0.1em; white-space:nowrap;">&#91;<i><a href="Wikipedia%253AManual_of_Style/Words_to_watch.html#Unsupported_attributions" title="Wikipedia:Manual of Style/Words to watch"><span title="The material near this tag may use weasel words or too-vague attribution. (October 2016)">according to whom?</span></a></i>&#93;</sup> news spools use a feature called cycbuf, which holds articles in one large file; fast HTTP caches and several <a href="https://en.wikipedia.org/wiki/Revision_control" class="mw-redirect" title="Revision control">revision control</a> systems use a similar approach, nullifying these performance advantages. For email servers, ReiserFS was problematic due to semantic problems explained below.  Also, ReiserFS had a problem with very fast filesystem aging when compared to other filesystems — in several usage scenarios filesystem performance decreased dramatically with time.<sup class="noprint Inline-Template Template-Fact" style="white-space:nowrap;">&#91;<i><a href="Wikipedia%253ACitation_needed.html" title="Wikipedia:Citation needed"><span title="This claim needs references to reliable sources. (August 2014)">citation needed</span></a></i>&#93;</sup>
+</p><p>Before Linux 2.6.33,<sup id="cite_ref-15" class="reference"><a href="ReiserFS.html#cite_note-15">&#91;15&#93;</a></sup> ReiserFS heavily used the <a href="https://en.wikipedia.org/wiki/Giant_lock" title="Giant lock">big kernel lock</a> (BKL)&#160;— a global kernel-wide lock&#160;— which does not scale very well<sup id="cite_ref-mahoney-proposal_16-0" class="reference"><a href="ReiserFS.html#cite_note-mahoney-proposal-16">&#91;16&#93;</a></sup><sup id="cite_ref-17" class="reference"><a href="ReiserFS.html#cite_note-17">&#91;17&#93;</a></sup> for systems with multiple cores, as the critical code parts are only ever executed by one core at a time.
+</p>
+<h2><span class="mw-headline" id="Usage">Usage</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=5" title="Edit section: Usage">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>ReiserFS was the default file system in SuSE Linux since version 6.4 (released in 2000),<sup id="cite_ref-18" class="reference"><a href="ReiserFS.html#cite_note-18">&#91;18&#93;</a></sup><sup id="cite_ref-19" class="reference"><a href="ReiserFS.html#cite_note-19">&#91;19&#93;</a></sup> until switching to <a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a> in <a href="https://en.wikipedia.org/wiki/SUSE_Linux_Enterprise" title="SUSE Linux Enterprise">SUSE Linux Enterprise</a> 10.2/<a href="https://en.wikipedia.org/wiki/OpenSUSE" title="OpenSUSE">openSUSE</a> 11, announced in 2006.<sup id="cite_ref-20" class="reference"><a href="ReiserFS.html#cite_note-20">&#91;20&#93;</a></sup><sup id="cite_ref-21" class="reference"><a href="ReiserFS.html#cite_note-21">&#91;21&#93;</a></sup>
+</p><p>Jeff Mahoney of SUSE wrote a post on 14 September 2006 proposing to move from ReiserFS to <a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a> for the default installation file system.<sup id="cite_ref-mahoney-proposal_16-1" class="reference"><a href="ReiserFS.html#cite_note-mahoney-proposal-16">&#91;16&#93;</a></sup> Some reasons he mentioned were scalability, "performance problems with <a href="https://en.wikipedia.org/wiki/Extended_file_attributes" title="Extended file attributes">extended attributes</a> and <a href="https://en.wikipedia.org/wiki/Access_control_list" class="mw-redirect" title="Access control list">ACLs</a>", "a small and shrinking development community", and that "<a href="https://en.wikipedia.org/wiki/Reiser4" title="Reiser4">Reiser4</a> is not an incremental update and requires a reformat, which is unreasonable for most people."<sup id="cite_ref-mahoney-proposal_16-2" class="reference"><a href="ReiserFS.html#cite_note-mahoney-proposal-16">&#91;16&#93;</a></sup> On October 4 he wrote a response comment on a blog in order to clear up some issues.<sup id="cite_ref-mahoney-comment29_22-0" class="reference"><a href="ReiserFS.html#cite_note-mahoney-comment29-22">&#91;22&#93;</a></sup> He wrote that his proposal for the switch was unrelated to Hans Reiser being under trial for murder.<sup id="cite_ref-23" class="reference"><a href="ReiserFS.html#cite_note-23">&#91;23&#93;</a></sup> Mahoney wrote he "was concerned that people would make a connection where none existed" and that "the timing is entirely coincidental and the motivation is unrelated."<sup id="cite_ref-mahoney-comment29_22-1" class="reference"><a href="ReiserFS.html#cite_note-mahoney-comment29-22">&#91;22&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Criticism">Criticism</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=6" title="Edit section: Criticism">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Some directory operations (including <tt>unlink</tt>(2)) are not <a href="https://en.wikipedia.org/wiki/Synchronization" title="Synchronization">synchronous</a> on ReiserFS, which can result in data corruption with applications relying heavily on file-based locks (such as <a href="https://en.wikipedia.org/wiki/Message_transfer_agent" title="Message transfer agent">mail transfer agents</a> <a href="https://en.wikipedia.org/wiki/Qmail" title="Qmail">qmail</a><sup id="cite_ref-24" class="reference"><a href="ReiserFS.html#cite_note-24">&#91;24&#93;</a></sup> and <a href="https://en.wikipedia.org/wiki/Postfix_(software)" title="Postfix (software)">Postfix</a><sup id="cite_ref-25" class="reference"><a href="ReiserFS.html#cite_note-25">&#91;25&#93;</a></sup>)  if the machine halts before it has synchronized the disk.<sup id="cite_ref-26" class="reference"><a href="ReiserFS.html#cite_note-26">&#91;26&#93;</a></sup>
+</p><p>There are no programs to specifically <a href="https://en.wikipedia.org/wiki/Defragmentation" title="Defragmentation">defragment</a> a ReiserFS file system, although tools have been written to automatically copy the contents of fragmented files hoping that more contiguous blocks of free space can be found. However, a "repacker" tool was planned for the next Reiser4 file system to deal with file fragmentation.<sup id="cite_ref-27" class="reference"><a href="ReiserFS.html#cite_note-27">&#91;27&#93;</a></sup> With the rise of Solid State Disks this problem became irrelevant as contrary to Hard Disk Drives there is no slow down caused by fragmentation as SSDs don't use any moving parts. It is even recommended to abstain from any kind of defragmentation on SSDs because it will shorten their lifetime.
+</p>
+<h3><span class="mw-headline" id="fsck">fsck</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=7" title="Edit section: fsck">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>The tree rebuild process of ReiserFS's <a href="https://en.wikipedia.org/wiki/Fsck" title="Fsck">fsck</a> has attracted much criticism by the *nix community: If the file system becomes so badly corrupted that its internal tree is unusable, performing a tree rebuild operation may further corrupt existing files or introduce new entries with unexpected contents,<sup id="cite_ref-28" class="reference"><a href="ReiserFS.html#cite_note-28">&#91;28&#93;</a></sup> but this action is not part of normal operation or a normal file system check and has to be explicitly initiated and confirmed by the administrator.
+</p><p>ReiserFS v3 images should not be stored on a ReiserFS v3 <a href="https://en.wikipedia.org/wiki/Disk_partitioning" title="Disk partitioning">partition</a> (e.g., backups or <a href="https://en.wikipedia.org/wiki/Disk_image" title="Disk image">disk images</a> for emulators) without transforming them (e.g., by compressing or encrypting) in order to avoid confusing the rebuild. Reformatting an existing ReiserFS v3 partition can also leave behind data that could confuse the rebuild operation and make files from the old system reappear. This also allows malicious users to intentionally store files that will confuse the rebuilder. As the metadata is always in a consistent state after a file system check, <i>corruption</i> here means that contents of files are merged in unexpected ways with the contained file system's metadata. The ReiserFS successor, Reiser4, fixes this problem.
+</p>
+<h3><span class="mw-headline" id="Earlier_issues">Earlier issues</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=8" title="Edit section: Earlier issues">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<p>ReiserFS in versions of the Linux kernel before 2.4.16 were considered unstable by Namesys and not recommended for production use, especially in conjunction with <a href="https://en.wikipedia.org/wiki/Network_File_System" title="Network File System">NFS</a>.<sup id="cite_ref-29" class="reference"><a href="ReiserFS.html#cite_note-29">&#91;29&#93;</a></sup>
+</p><p>Early implementations of ReiserFS (prior to that in Linux 2.6.2) were also susceptible to out-of-order write hazards. But the current journaling implementation in ReiserFS is now on par with that of <a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a>'s "ordered" journaling level.
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=9" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a href="https://en.wikipedia.org/wiki/Reiser4" title="Reiser4">Reiser4</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_file_systems" title="List of file systems">List of file systems</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_file_systems" title="Comparison of file systems">Comparison of file systems</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=10" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap mw-references-columns"><ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-1">^</a></b></span> <span class="reference-text"><cite class="citation"><a rel="nofollow" class="external text" href="https://web.archive.org/web/20060614084322/http://www.namesys.com/X0reiserfs.html#nodelayout"><i>Reiser FS node layout</i></a>, Namesys, archived from <a rel="nofollow" class="external text" href="http://namesys.com/X0reiserfs.html#nodelayout">the original</a> on 2006-06-14</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Reiser+FS+node+layout&amp;rft.pub=Namesys&amp;rft_id=http%3A%2F%2Fnamesys.com%2FX0reiserfs.html%23nodelayout&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-specs-2"><span class="mw-cite-backlink">^ <a href="ReiserFS.html#cite_ref-specs_2-0"><sup><i><b>a</b></i></sup></a> <a href="ReiserFS.html#cite_ref-specs_2-1"><sup><i><b>b</b></i></sup></a> <a href="ReiserFS.html#cite_ref-specs_2-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite class="citation">"Reiser FS Specifications", <a rel="nofollow" class="external text" href="https://web.archive.org/web/20060705190506/http://www.namesys.com/faq.html#reiserfsspecs"><i>FAQ</i></a>, Namesys, archived from <a rel="nofollow" class="external text" href="http://namesys.com/faq.html#reiserfsspecs">the original</a> on 2006-07-05</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=bookitem&amp;rft.atitle=Reiser+FS+Specifications&amp;rft.btitle=FAQ&amp;rft.pub=Namesys&amp;rft_id=http%3A%2F%2Fnamesys.com%2Ffaq.html%23reiserfsspecs&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-shankland1-3"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-shankland1_3-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFShankland2006" class="citation news">Shankland, Stephen (2006-10-16). <a rel="nofollow" class="external text" href="https://www.cnet.com/news/novell-makes-file-storage-software-shift/">"Novell makes file storage software shift"</a>. <i>Business Tech</i>. cnet.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Business+Tech&amp;rft.atitle=Novell+makes+file+storage+software+shift&amp;rft.date=2006-10-16&amp;rft.aulast=Shankland&amp;rft.aufirst=Stephen&amp;rft_id=http%3A%2F%2Fwww.cnet.com%2Fnews%2Fnovell-makes-file-storage-software-shift%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/>.</span>
+</li>
+<li id="cite_note-4"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-4">^</a></b></span> <span class="reference-text"><cite id="CITEREFShankland2008" class="citation web">Shankland, Stephen (January 16, 2008). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20160327005558/http://www.cnet.com/news/namesys-vanishes-but-reiser-project-lives-on/">"Namesys vanishes, but Reiser project lives on"</a>. <i>CNet</i>. Archived from <a rel="nofollow" class="external text" href="https://www.cnet.com/news/namesys-vanishes-but-reiser-project-lives-on/">the original</a> on March 27, 2016<span class="reference-accessdate">. Retrieved <span class="nowrap">2008-01-26</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=CNet&amp;rft.atitle=Namesys+vanishes%2C+but+Reiser+project+lives+on&amp;rft.date=2008-01-16&amp;rft.aulast=Shankland&amp;rft.aufirst=Stephen&amp;rft_id=http%3A%2F%2Fwww.cnet.com%2Fnews%2Fnamesys-vanishes-but-reiser-project-lives-on%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://fossies.org/linux/reiserfsprogs/ChangeLog">"<span class="cs1-kern-left">"</span>Fossies" - the Fresh Open Source Software Archive"</a>. July 25, 2017<span class="reference-accessdate">. Retrieved <span class="nowrap">2019-07-25</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=%22Fossies%22+-+the+Fresh+Open+Source+Software+Archive&amp;rft.date=2017-07-25&amp;rft_id=https%3A%2F%2Ffossies.org%2Flinux%2Freiserfsprogs%2FChangeLog&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-6"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-6">^</a></b></span> <span class="reference-text"><cite id="CITEREFReiser" class="citation web">Reiser, Hans. <a rel="nofollow" class="external text" href="https://web.archive.org/web/20071024001500/http://www.namesys.com/v4/v4.html#BLOBs">"Reiser4 is released!"</a>. Archived from <a rel="nofollow" class="external text" href="http://www.namesys.com/v4/v4.html#BLOBs">the original</a> on 2007-10-24<span class="reference-accessdate">. Retrieved <span class="nowrap">2006-07-15</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Reiser4+is+released%21&amp;rft.aulast=Reiser&amp;rft.aufirst=Hans&amp;rft_id=http%3A%2F%2Fwww.namesys.com%2Fv4%2Fv4.html%23BLOBs&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-7">^</a></b></span> <span class="reference-text"><cite id="CITEREFMingming_Cao,_Theodore_Y._Ts&#39;o,_Badari_Pulavarty,_Suparna_Bhattacharya2005" class="citation conference">Mingming Cao, <a href="https://en.wikipedia.org/wiki/Theodore_Y._Ts%27o" class="mw-redirect" title="Theodore Y. Ts&#39;o">Theodore Y. Ts'o</a>, Badari Pulavarty, <a href="https://en.wikipedia.org/w/index.php?title=Suparna_Bhattacharya&amp;action=edit&amp;redlink=1" class="new" title="Suparna Bhattacharya (page does not exist)">Suparna Bhattacharya</a> (2005-07-26). <a rel="nofollow" class="external text" href="http://ext2.sourceforge.net/2005-ols/paper-html/node40.html">"State of the Art: Where we are with the Ext3 file system"</a>. <i>2005 Linux Symposium</i>. Ottawa, Canada: IBM Linux Technology Center<span class="reference-accessdate">. Retrieved <span class="nowrap">2007-03-08</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=State+of+the+Art%3A+Where+we+are+with+the+Ext3+file+system&amp;rft.btitle=2005+Linux+Symposium&amp;rft.place=Ottawa%2C+Canada&amp;rft.pub=IBM+Linux+Technology+Center&amp;rft.date=2005-07-26&amp;rft.au=Mingming+Cao%2C+Theodore+Y.+Ts%27o%2C+Badari+Pulavarty%2C+Suparna+Bhattacharya&amp;rft_id=http%3A%2F%2Fext2.sourceforge.net%2F2005-ols%2Fpaper-html%2Fnode40.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><span class="cs1-maint citation-comment">CS1 maint: multiple names: authors list (<a href="https://en.wikipedia.org/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">link</a>)</span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-8">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://freshmeat.sourceforge.net/projects/reiserfs/releases?page=2">http://freshmeat.sourceforge.net/projects/reiserfs/releases?page=2</a></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-9">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://web.archive.org/web/20121019000728/http://homes.cerias.purdue.edu:80/~florian/reiser/reiserfs.php">https://web.archive.org/web/20121019000728/http://homes.cerias.purdue.edu:80/~florian/reiser/reiserfs.php</a></span>
+</li>
+<li id="cite_note-10"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-10">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://www.diskinternals.com/glossary/reiserfs/">https://www.diskinternals.com/glossary/reiserfs/</a></span>
+</li>
+<li id="cite_note-11"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-11">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://github.com/torvalds/linux/tree/master/fs/reiserfs">https://github.com/torvalds/linux/tree/master/fs/reiserfs</a></span>
+</li>
+<li id="cite_note-12"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-12">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://kernelnewbies.org/Linux_2_6_8">https://kernelnewbies.org/Linux_2_6_8</a></span>
+</li>
+<li id="cite_note-13"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-13">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://fossies.org/linux/reiserfsprogs/ChangeLog">https://fossies.org/linux/reiserfsprogs/ChangeLog</a></span>
+</li>
+<li id="cite_note-14"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-14">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://php.net/manual/en/function.session-save-path.php">"PHP Manual"</a>. <i>php.net</i>. The PHP Group<span class="reference-accessdate">. Retrieved <span class="nowrap">5 December</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=php.net&amp;rft.atitle=PHP+Manual&amp;rft_id=http%3A%2F%2Fphp.net%2Fmanual%2Fen%2Ffunction.session-save-path.php&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-15"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-15">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://git.kernel.org/?p=linux/kernel/git/torvalds/linux-2.6.git;a=commit;h=8ebc423238341b52912c7295b045a32477b33f0">"kill-the-BKL"</a>. git.kernel.org.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=kill-the-BKL&amp;rft.pub=git.kernel.org&amp;rft_id=https%3A%2F%2Fgit.kernel.org%2F%3Fp%3Dlinux%2Fkernel%2Fgit%2Ftorvalds%2Flinux-2.6.git%3Ba%3Dcommit%3Bh%3D8ebc423238341b52912c7295b045a32477b33f0&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-mahoney-proposal-16"><span class="mw-cite-backlink">^ <a href="ReiserFS.html#cite_ref-mahoney-proposal_16-0"><sup><i><b>a</b></i></sup></a> <a href="ReiserFS.html#cite_ref-mahoney-proposal_16-1"><sup><i><b>b</b></i></sup></a> <a href="ReiserFS.html#cite_ref-mahoney-proposal_16-2"><sup><i><b>c</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFJeff_Mahoney2006" class="citation web">Jeff Mahoney (2006-09-14). <a rel="nofollow" class="external text" href="http://article.gmane.org/gmane.linux.suse.opensuse.devel/4312">"Proposal: Change in default fs for releases &gt;= 10.2"</a>. gmane.org<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Proposal%3A+Change+in+default+fs+for+releases+%3E%3D+10.2&amp;rft.pub=gmane.org&amp;rft.date=2006-09-14&amp;rft.au=Jeff+Mahoney&amp;rft_id=http%3A%2F%2Farticle.gmane.org%2Fgmane.linux.suse.opensuse.devel%2F4312&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/>.</span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-17">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://thread.gmane.org/gmane.linux.suse.opensuse.devel/4312">discussion thread stored at gmane.org</a></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://en.opensuse.org/Archive:SuSE_Linux_6.4">"Archive:SuSE Linux 6.4"</a>. <i>openSUSE wiki</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-06-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=openSUSE+wiki&amp;rft.atitle=Archive%3ASuSE+Linux+6.4&amp;rft_id=https%3A%2F%2Fen.opensuse.org%2FArchive%3ASuSE_Linux_6.4&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.novell.com/documentation/suse91/suselinux-adminguide/html/apas02.html#sec:filesystems.major.reiser">"SUSE LINUX 9.1 Administration Guide: Major File Systems in Linux"</a>. <i>Novell</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2017-06-28</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Novell&amp;rft.atitle=SUSE+LINUX+9.1+Administration+Guide%3A+Major+File+Systems+in+Linux&amp;rft_id=https%3A%2F%2Fwww.novell.com%2Fdocumentation%2Fsuse91%2Fsuselinux-adminguide%2Fhtml%2Fapas02.html%23sec%3Afilesystems.major.reiser&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-20">^</a></b></span> <span class="reference-text"><cite id="CITEREFShankland2006" class="citation news">Shankland, Stephen (16 October 2006). <a rel="nofollow" class="external text" href="https://www.cnet.com/news/novell-makes-file-storage-software-shift/">"Novell makes file storage software shift"</a>. <i>CNET</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=CNET&amp;rft.atitle=Novell+makes+file+storage+software+shift&amp;rft.date=2006-10-16&amp;rft.aulast=Shankland&amp;rft.aufirst=Stephen&amp;rft_id=https%3A%2F%2Fwww.cnet.com%2Fnews%2Fnovell-makes-file-storage-software-shift%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-21">^</a></b></span> <span class="reference-text"><cite id="CITEREFSharma2006" class="citation web">Sharma, Mayank (12 October 2006). <a rel="nofollow" class="external text" href="https://www.linux.com/news/novell-will-switch-reiserfs-ext3">"Novell will switch from ReiserFS to ext3"</a>. <i>Linux.com</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Linux.com&amp;rft.atitle=Novell+will+switch+from+ReiserFS+to+ext3&amp;rft.date=2006-10-12&amp;rft.aulast=Sharma&amp;rft.aufirst=Mayank&amp;rft_id=https%3A%2F%2Fwww.linux.com%2Fnews%2Fnovell-will-switch-reiserfs-ext3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-mahoney-comment29-22"><span class="mw-cite-backlink">^ <a href="ReiserFS.html#cite_ref-mahoney-comment29_22-0"><sup><i><b>a</b></i></sup></a> <a href="ReiserFS.html#cite_ref-mahoney-comment29_22-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFcomment_by_Jeff_Mahoney2006" class="citation web">comment by Jeff Mahoney (2006-10-04). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20061109162537/http://linux.wordpress.com/2006/09/27/suse-102-ditching-reiserfs-as-it-default-fs/#comment-28534">"SUSE 10.2 Ditching ReiserFS as its' default FS? (comment 29)"</a>. linux.wordpress.com / archive.org. Archived from <a rel="nofollow" class="external text" href="http://linux.wordpress.com/2006/09/27/suse-102-ditching-reiserfs-as-it-default-fs/#comment-28534">the original</a> on 2006-11-09<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=SUSE+10.2+Ditching+ReiserFS+as+its%E2%80%99+default+FS%3F+%28comment+29%29&amp;rft.pub=linux.wordpress.com+%2F+archive.org&amp;rft.date=2006-10-04&amp;rft.au=comment+by+Jeff+Mahoney&amp;rft_id=http%3A%2F%2Flinux.wordpress.com%2F2006%2F09%2F27%2Fsuse-102-ditching-reiserfs-as-it-default-fs%2F%23comment-28534&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-23">^</a></b></span> <span class="reference-text"><cite id="CITEREFCBS_5_/_AP_/_BCN2006" class="citation web">CBS 5 / AP / BCN (2006-09-14). <a rel="nofollow" class="external text" href="https://web.archive.org/web/20061106173127/http://cbs5.com/topstories/local_story_256204954.html">"Oakland Police Search Home Of Missing Woman's Ex"</a>. cbs5.com / archive.org. Archived from <a rel="nofollow" class="external text" href="http://cbs5.com/topstories/local_story_256204954.html">the original</a> on 2006-11-06<span class="reference-accessdate">. Retrieved <span class="nowrap">2009-08-23</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Oakland+Police+Search+Home+Of+Missing+Woman%27s+Ex&amp;rft.pub=cbs5.com+%2F+archive.org&amp;rft.date=2006-09-14&amp;rft.au=CBS+5+%2F+AP+%2F+BCN&amp;rft_id=http%3A%2F%2Fcbs5.com%2Ftopstories%2Flocal_story_256204954.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AReiserFS" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-24">^</a></b></span> <span class="reference-text">Daniel Robbins (2001), <a rel="nofollow" class="external text" href="http://www-128.ibm.com/developerworks/library/l-fs2.html#h21367">"Advanced file system implementor's guide"</a>. Retrieved 5. July 2006</span>
+</li>
+<li id="cite_note-25"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-25">^</a></b></span> <span class="reference-text">Matthias Andree (2001), <a href="https://en.wikipedia.org/wiki/Linux_kernel_mailing_list" title="Linux kernel mailing list">LKML</a> post on <a rel="nofollow" class="external text" href="http://www.ussg.iu.edu/hypermail/linux/kernel/0107.3/0358.html">Postfix synchronity assumptions</a>. Retrieved 15. July 2006</span>
+</li>
+<li id="cite_note-26"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-26">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://archives.neohapsis.com/archives/postfix/2001-05/1749.html">NEOHAPSIS - Peace of Mind Through Integrity and Insight</a></span>
+</li>
+<li id="cite_note-27"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-27">^</a></b></span> <span class="reference-text">Hans Reiser, <a rel="nofollow" class="external text" href="http://www.namesys.com/v4/v4.html#repacker">Reiser4 design, repacker</a> <a rel="nofollow" class="external text" href="https://web.archive.org/web/20071024001500/http://www.namesys.com/v4/v4.html">Archived</a> 2007-10-24 at the <a href="https://en.wikipedia.org/wiki/Wayback_Machine" title="Wayback Machine">Wayback Machine</a>. Retrieved 5. July 2006</span>
+</li>
+<li id="cite_note-28"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-28">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://www.uwsg.iu.edu/hypermail/linux/kernel/0506.3/0219.html">Theodore Ts'o LKML post</a>. Retrieved 5. July 2006</span>
+</li>
+<li id="cite_note-29"><span class="mw-cite-backlink"><b><a href="ReiserFS.html#cite_ref-29">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external text" href="http://namesys.com/download.html">ReiserFS download page</a>, see warning. Retrieved 5. July 2006</span>
+</li>
+</ol></div></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit&amp;section=11" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><a rel="nofollow" class="external text" href="https://github.com/torvalds/linux/tree/master/fs/reiserfs">ReiserFS 3.6 at Linus Torvalds' Git repository</a> – nowadays (2019) the main development resource of ReiserFS 3</li>
+<li><a rel="nofollow" class="external text" href="https://reiser4.wiki.kernel.org">ReiserFS and Reiser4 wiki</a></li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20071024001500/http://www.namesys.com/">Namesys web site</a> (archived version from 2007 October)</li>
+<li><a rel="nofollow" class="external text" href="http://reiser4.wiki.kernel.org/index.php/Reiserfsprogs">Reiserfsprogs</a></li>
+<li>Theodore Ts'o <a rel="nofollow" class="external text" href="https://web.archive.org/web/20050210042704/http://linuxmafia.com/faq/Filesystems/reiserfs.html">critiques</a> the ReiserFS block journaling implementation</li>
+<li><a rel="nofollow" class="external text" href="http://tzukanov.narod.ru/convertfs">convertfs</a>, a utility which performs in-place conversion between any two file systems with sparse file support</li>
+<li>An overview of the ReiserFS <a rel="nofollow" class="external text" href="https://web.archive.org/web/20050509002339/http://p-nand-q.com/download/rfstool/reiserfs_docs.html">on-disk format</a></li>
+<li>Florian Buchholz's <a rel="nofollow" class="external text" href="https://web.archive.org/web/20111228130817/http://homes.cerias.purdue.edu/~florian/reiser/reiserfs.php">The structure of the Reiser file system</a>, a very detailed description of the ReiserFS disk structures (archived version from 2011 November)</li>
+<li><a rel="nofollow" class="external text" href="http://forums.gentoo.org/viewtopic-p-3081971.html">Gentoo Forum Link</a> – Discussion on ReiserFS fragmentation, including a script for measuring fragmentation and defragmenting files.</li>
+<li><a rel="nofollow" class="external text" href="https://web.archive.org/web/20071024001500/http://www.namesys.com/whitepaper.html">Reiser4 Future Vision</a></li>
+<li>Windows utilities to access ReiserFS: <a rel="nofollow" class="external text" href="https://web.archive.org/web/20071114053341/http://p-nand-q.com/e/reiserfs.html">RFSTOOL</a>, <a rel="nofollow" class="external text" href="http://yareg.akucom.de/">YAReG – Yet Another R(eiser)FStool GUI</a>, <a rel="nofollow" class="external text" href="http://www.acc.umu.se/~bosse/">rfsd – ReiserDriver</a>.</li>
+<li>Windows port of ReiserFS in <a rel="nofollow" class="external text" href="https://web.archive.org/web/20120111062641/http://www.crossmeta.org/redmine">CROSSMETA</a></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="File_systems" style="padding:3px"><table class="nowraplinks hlist mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:File_systems" title="Template:File systems"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:File_systems" title="Template talk:File systems"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:File_systems&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="File_systems" style="font-size:114%;margin:0 4em"><a href="https://en.wikipedia.org/wiki/File_system" title="File system">File systems</a></div></th></tr><tr><td class="navbox-abovebelow" colspan="2"><div id="*_Comparison_of_file_systems_**_distributed_*_Unix_filesystem">
+<ul><li><a href="https://en.wikipedia.org/wiki/Comparison_of_file_systems" title="Comparison of file systems">Comparison of file systems</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Comparison_of_distributed_file_systems" title="Comparison of distributed file systems">distributed</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_filesystem" title="Unix filesystem">Unix filesystem</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Disk</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-odd" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Advanced_Disc_Filing_System" title="Advanced Disc Filing System">ADFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AdvFS" title="AdvFS">AdvFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amiga_Fast_File_System" title="Amiga Fast File System">Amiga FFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Amiga_Old_File_System" title="Amiga Old File System">Amiga OFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_File_System" title="Apple File System">APFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AtheOS_File_System" title="AtheOS File System">AthFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Bcachefs" title="Bcachefs">bcachefs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/BeeGFS" title="BeeGFS">BeeGFS</a></li>
+<li>BFS
+<ul><li><a href="https://en.wikipedia.org/wiki/Be_File_System" title="Be File System">Be File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Boot_File_System" title="Boot File System">Boot File System</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Btrfs" title="Btrfs">Btrfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/StorNext_File_System" title="StorNext File System">CVFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CXFS" title="CXFS">CXFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Disc_Filing_System" title="Disc Filing System">DFS</a></li>
+<li>EFS
+<ul><li><a href="https://en.wikipedia.org/wiki/Encrypting_File_System" title="Encrypting File System">Encrypting File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Extent_File_System" title="Extent File System">Extent File System</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Episode_filesystem" title="Episode filesystem">Episode</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Extended_file_system" title="Extended file system">ext</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Ext2" title="Ext2">ext2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ext3" title="Ext3">ext3</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ext3cow" title="Ext3cow">ext3cow</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ext4" title="Ext4">ext4</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_File_System" title="Unix File System">FFS/FFS2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/ExFAT" title="ExFAT">exFAT</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Files-11" title="Files-11">Files-11</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fossil_(file_system)" title="Fossil (file system)">Fossil</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPFS" title="GPFS">GPFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HAMMER_(file_system)" title="HAMMER (file system)">HAMMER</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/HAMMER2" title="HAMMER2">HAMMER2</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Hierarchical_File_System" title="Hierarchical File System">HFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/HFS_Plus" title="HFS Plus">HFS+</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Performance_File_System" title="High Performance File System">HPFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Throughput_File_System" title="High Throughput File System">HTFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JFS_(file_system)" title="JFS (file system)">JFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Log-structured_File_System_(BSD)" title="Log-structured File System (BSD)">LFS</a></li>
+<li>MFS
+<ul><li><a href="https://en.wikipedia.org/wiki/Macintosh_File_System" title="Macintosh File System">Macintosh File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/TiVo_Media_File_System" title="TiVo Media File System">TiVo Media File System</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/MINIX_file_system" title="MINIX file system">MINIX</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NetWare_File_System" title="NetWare File System">NetWare File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Next3" title="Next3">Next3</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NILFS" title="NILFS">NILFS</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/NILFS" title="NILFS">NILFS2</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Novell_Storage_Services" title="Novell Storage Services">NSS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NTFS" title="NTFS">NTFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OneFS_distributed_file_system" title="OneFS distributed file system">OneFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Professional_File_System" title="Professional File System">PFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/QFS" title="QFS">QFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/QNX4FS" title="QNX4FS">QNX4FS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ReFS" title="ReFS">ReFS</a></li>
+<li><a class="mw-selflink selflink">ReiserFS</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Reiser4" title="Reiser4">Reiser4</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Datalight#Reliance_family" title="Datalight">Reliance</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Datalight#Reliance_Nitro" title="Datalight">Reliance Nitro</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Remote_File_Sharing" title="Remote File Sharing">RFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Smart_File_System" title="Smart File System">SFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/StorNext_File_System" title="StorNext File System">SNFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Soup_(Apple)" title="Soup (Apple)">Soup (Apple)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tux3" title="Tux3">Tux3</a></li>
+<li><a href="https://en.wikipedia.org/wiki/UBIFS" title="UBIFS">UBIFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Unix_File_System" title="Unix File System">UFS</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Soft_updates" title="Soft updates">soft updates</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Write_Ahead_Physical_Block_Logging" title="Write Ahead Physical Block Logging">WAPBL</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Veritas_File_System" title="Veritas File System">VxFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Write_Anywhere_File_Layout" title="Write Anywhere File Layout">WAFL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xiafs" title="Xiafs">Xiafs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/XFS" title="XFS">XFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xsan" title="Xsan">Xsan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ZFS_(z/OS_file_system)" title="ZFS (z/OS file system)">zFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenZFS" title="OpenZFS">ZFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Optical_disc" title="Optical disc">Optical disc</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/High_Sierra_Format" title="High Sierra Format">HSF</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ISO_9660" title="ISO 9660">ISO 9660</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ISO_13490" title="ISO 13490">ISO 13490</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Universal_Disk_Format" title="Universal Disk Format">UDF</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Flash_memory" title="Flash memory">Flash memory</a> and <a href="https://en.wikipedia.org/wiki/Solid-state_drive" title="Solid-state drive">SSD</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Apple_File_System" title="Apple File System">APFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_Allocation_Table" title="File Allocation Table">FAT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/ExFAT" title="ExFAT">exFAT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CHFS" title="CHFS">CHFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transaction-Safe_FAT_File_System" title="Transaction-Safe FAT File System">TFAT</a></li>
+<li><a href="https://en.wikipedia.org/wiki/EROFS" title="EROFS">EROFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Flash_file_system" title="Flash file system">FFS2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/F2FS" title="F2FS">F2FS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/High_Performance_File_System" title="High Performance File System">HPFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JFFS" title="JFFS">JFFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JFFS2" title="JFFS2">JFFS2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/JFS_(file_system)" title="JFS (file system)">JFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LogFS" title="LogFS">LogFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NILFS" title="NILFS">NILFS</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/NILFS" title="NILFS">NILFS2</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Non-Volatile_File_System" title="Non-Volatile File System">NVFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/YAFFS" title="YAFFS">YAFFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/UBIFS" title="UBIFS">UBIFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Clustered_file_system#Distributed_file_systems" title="Clustered file system">Distributed</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/CXFS" title="CXFS">CXFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GFS2" title="GFS2">GFS2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_File_System" title="Google File System">Google File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OCFS2" title="OCFS2">OCFS2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OrangeFS" title="OrangeFS">OrangeFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Parallel_Virtual_File_System" title="Parallel Virtual File System">PVFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Quantcast_File_System" title="Quantcast File System">QFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xsan" title="Xsan">Xsan</a></li>
+<li><i><a href="https://en.wikipedia.org/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">more...</a></i></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Network-attached_storage" title="Network-attached storage">NAS</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Andrew_File_System" title="Andrew File System">AFS</a> (<a href="https://en.wikipedia.org/wiki/OpenAFS" title="OpenAFS">OpenAFS</a>)</li>
+<li><a href="https://en.wikipedia.org/wiki/Apple_Filing_Protocol" title="Apple Filing Protocol">AFP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Coda_(file_system)" title="Coda (file system)">Coda</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Distributed_File_System_(Microsoft)" title="Distributed File System (Microsoft)">DFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Google_File_System" title="Google File System">Google File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/GPFS" title="GPFS">GPFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lustre_(file_system)" title="Lustre (file system)">Lustre</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NetWare_Core_Protocol" title="NetWare Core Protocol">NCP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Network_File_System" title="Network File System">NFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Elliptics" title="Elliptics">POHMELFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Apache_Hadoop" title="Apache Hadoop">Hadoop</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Server_Message_Block" title="Server Message Block">SMB (CIFS)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SSHFS" title="SSHFS">SSHFS</a></li>
+<li><i><a href="https://en.wikipedia.org/wiki/List_of_file_systems#Distributed_file_systems" title="List of file systems">more...</a></i></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Specialized</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Aufs" title="Aufs">Aufs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/AXFS" title="AXFS">AXFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Boot_File_System" title="Boot File System">Boot File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/CDfs" title="CDfs">CDfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Compact_Disc_File_System" title="Compact Disc File System">Compact Disc File System</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cramfs" title="Cramfs">cramfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Davfs2" title="Davfs2">Davfs2</a></li>
+<li><a href="https://en.wikipedia.org/wiki/EROFS" title="EROFS">EROFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FTPFS" title="FTPFS">FTPFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace" title="Filesystem in Userspace">FUSE</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lnfs" title="Lnfs">Lnfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Linear_Tape_File_System" title="Linear Tape File System">LTFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/NOVA_(filesystem)" title="NOVA (filesystem)">NOVA</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rational_MultiVersion_File_System" class="mw-redirect" title="Rational MultiVersion File System">MVFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SquashFS" title="SquashFS">SquashFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/FAT_filesystem_and_Linux" title="FAT filesystem and Linux">UMSDOS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OverlayFS" title="OverlayFS">OverlayFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/UnionFS" title="UnionFS">UnionFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WBFS" title="WBFS">WBFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Pseudo and <a href="https://en.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">virtual</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Configfs" title="Configfs">configfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Device_file" title="Device file">devfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Debugfs" title="Debugfs">debugfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kernfs_(BSD)" title="Kernfs (BSD)">kernfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Procfs" title="Procfs">procfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Specfs" title="Specfs">specfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sysfs" title="Sysfs">sysfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tmpfs" title="Tmpfs">tmpfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/WinFS" title="WinFS">WinFS</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">Encrypted</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/ECryptfs" title="ECryptfs">eCryptfs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/EncFS" title="EncFS">EncFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Encrypting_File_System" title="Encrypting File System">EFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rubberhose_(file_system)" title="Rubberhose (file system)">Rubberhose</a></li>
+<li><a href="https://en.wikipedia.org/wiki/SSHFS" title="SSHFS">SSHFS</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Oracle_ZFS" title="Oracle ZFS">ZFS</a></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Types</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Clustered_file_system" title="Clustered file system">Clustered</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Global_file_system" title="Global file system">Global</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Grid_file_system" title="Grid file system">Grid</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Self-certifying_File_System" title="Self-certifying File System">Self-certifying</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Flash_file_system" title="Flash file system">Flash</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Journaling_file_system" title="Journaling file system">Journaling</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Log-structured_file_system" title="Log-structured file system">Log-structured</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Object_storage" title="Object storage">Object</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Record-oriented_filesystem" title="Record-oriented filesystem">Record-oriented</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Semantic_file_system" title="Semantic file system">Semantic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Steganographic_file_system" title="Steganographic file system">Steganographic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Synthetic_file_system" title="Synthetic file system">Synthetic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Versioning_file_system" title="Versioning file system">Versioning</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Features</th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em"></div><table class="nowraplinks navbox-subgroup" style="border-spacing:0"><tbody><tr><td colspan="2" class="navbox-list navbox-even" style="width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Case_preservation" title="Case preservation">Case preservation</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Copy-on-write" title="Copy-on-write">Copy-on-write</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_deduplication" title="Data deduplication">Data deduplication</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Data_scrubbing" title="Data scrubbing">Data scrubbing</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Execute_in_place" title="Execute in place">Execute in place</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Extent_(file_systems)" title="Extent (file systems)">Extent</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_attribute" title="File attribute">File attribute</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Extended_file_attributes" title="Extended file attributes">Extended file attributes</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/File_change_log" title="File change log">File change log</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fork_(file_system)" title="Fork (file system)">Fork</a></li>
+<li>Links
+<ul><li><a href="https://en.wikipedia.org/wiki/Hard_link" title="Hard link">Hard</a></li>
+<li><a href="Symbolic_link.html" title="Symbolic link">Symbolic</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Computer_access_control" title="Computer access control">Access control</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Access_control_list" class="mw-redirect" title="Access control list">Access control list</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Filesystem-level_encryption" title="Filesystem-level encryption">Filesystem-level encryption</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_system_permissions" title="File system permissions">Permissions</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Modes_(Unix)" title="Modes (Unix)">Modes</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sticky_bit" title="Sticky bit">Sticky bit</a></li></ul></li></ul>
+</div></td></tr></tbody></table><div></div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Interface_(computing)" title="Interface (computing)">Interfaces</a></th><td class="navbox-list navbox-even" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/File_manager" title="File manager">File manager</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_system_API" title="File system API">File system API</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Installable_File_System" title="Installable File System">Installable File System</a></li></ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Virtual_file_system" title="Virtual file system">Virtual file system</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/List_of_file_systems" title="List of file systems">Lists</a></th><td class="navbox-list navbox-odd" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/List_of_cryptographic_file_systems" title="List of cryptographic file systems">Cryptographic</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_default_file_systems" title="List of default file systems">Default</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_log-structured_file_systems" title="List of log-structured file systems">Log-structured</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1353
+Cached time: 20200519214724
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.432 seconds
+Real time usage: 0.552 seconds
+Preprocessor visited node count: 2099/1000000
+Post‐expand include size: 86921/2097152 bytes
+Template argument size: 4734/2097152 bytes
+Highest expansion depth: 12/40
+Expensive parser function count: 3/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 68092/5000000 bytes
+Number of Wikibase entities loaded: 0/400
+Lua time usage: 0.201/10.000 seconds
+Lua memory usage: 5.41 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  456.863      1 -total
+ 44.69%  204.176      1 Template:Reflist
+ 20.05%   91.617      2 Template:Citation
+ 16.88%   77.137      5 Template:Fix
+ 16.67%   76.157      4 Template:Citation_needed
+ 10.00%   45.688     11 Template:Cite_web
+  9.90%   45.224     10 Template:Category_handler
+  8.58%   39.197      1 Template:Infobox_Filesystem
+  7.72%   35.255      1 Template:Distinguish
+  6.72%   30.682      1 Template:Infobox
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:39183-0!canonical and timestamp 20200519214724 and revision id 957224278
+ -->
+</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;oldid=957224278">https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;oldid=957224278</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:2001_software" title="Category:2001 software">2001 software</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Disk_file_systems" title="Category:Disk file systems">Disk file systems</a></li><li><a href="https://en.wikipedia.org/wiki/Category:File_systems_supported_by_the_Linux_kernel" title="Category:File systems supported by the Linux kernel">File systems supported by the Linux kernel</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:CS1_maint:_multiple_names:_authors_list" title="Category:CS1 maint: multiple names: authors list">CS1 maint: multiple names: authors list</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Webarchive_template_wayback_links" title="Category:Webarchive template wayback links">Webarchive template wayback links</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_unsourced_statements" title="Category:All articles with unsourced statements">All articles with unsourced statements</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_January_2017" title="Category:Articles with unsourced statements from January 2017">Articles with unsourced statements from January 2017</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_specifically_marked_weasel-worded_phrases_from_October_2016" title="Category:Articles with specifically marked weasel-worded phrases from October 2016">Articles with specifically marked weasel-worded phrases from October 2016</a></li><li><a href="https://en.wikipedia.org/wiki/Category:All_articles_with_specifically_marked_weasel-worded_phrases" title="Category:All articles with specifically marked weasel-worded phrases">All articles with specifically marked weasel-worded phrases</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_unsourced_statements_from_August_2014" title="Category:Articles with unsourced statements from August 2014">Articles with unsourced statements from August 2014</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=ReiserFS" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=ReiserFS" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="ReiserFS.html" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="https://en.wikipedia.org/wiki/Talk:ReiserFS" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="ReiserFS.html">Read</a></li><li id="ca-edit" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="Main_Page.html"></a>
+	</div>
+	<div class="portal portal-first" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="../../donate.wikimedia.org/wiki/Special%253AFundraiserRedirector@utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en.html" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="https://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/ReiserFS" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/ReiserFS" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;oldid=957224278" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q687074" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=ReiserFS&amp;id=957224278&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-download-as-rl"><a href="https://en.wikipedia.org/w/index.php?title=Special:ElectronPdf&amp;page=ReiserFS&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=ReiserFS&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%B1%D9%8A%D8%B3%D9%8A%D8%B1_%D8%A3%D9%81_%D8%A3%D8%B3" title="ريسير أف أس – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bg"><a href="https://bg.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Bulgarian" lang="bg" hreflang="bg" class="interlanguage-link-target">Български</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Reiser_File_System" title="Reiser File System – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-eo"><a href="https://eo.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Esperanto" lang="eo" hreflang="eo" class="interlanguage-link-target">Esperanto</a></li><li class="interlanguage-link interwiki-eu"><a href="https://eu.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Basque" lang="eu" hreflang="eu" class="interlanguage-link-target">Euskara</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/ReiserFS" title="ReiserFS – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-gl"><a href="https://gl.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Galician" lang="gl" hreflang="gl" class="interlanguage-link-target">Galego</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-lt"><a href="https://lt.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Lithuanian" lang="lt" hreflang="lt" class="interlanguage-link-target">Lietuvių</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Reiser_File_System" title="Reiser File System – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-no"><a href="https://no.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Norwegian Bokmål" lang="nb" hreflang="nb" class="interlanguage-link-target">Norsk bokmål</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Reiserfs" title="Reiserfs – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-tr"><a href="https://tr.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Turkish" lang="tr" hreflang="tr" class="interlanguage-link-target">Türkçe</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/ReiserFS" title="ReiserFS – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q687074#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 17 May 2020, at 18:34<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="../../wikimediafoundation.org/wiki/Terms_of_Use.html">Terms of Use</a> and <a href="../../wikimediafoundation.org/wiki/Privacy_policy.html">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="../../wikimediafoundation.org/wiki/Privacy_policy.html" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="../../www.mediawiki.org/wiki/Special%253AMyLanguage/How_to_contribute.html">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="../../wikimediafoundation.org/wiki/Cookie_statement.html">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="https://en.m.wikipedia.org/w/index.php?title=ReiserFS&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="../../www.wikimediafoundation.org/index.html"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="https://en.wikipedia.org/static/images/wikimedia-button-1.5x.png 1.5x, https://en.wikipedia.org/static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://en.wikipedia.org/static/images/poweredby_mediawiki_132x47.png 1.5x, https://en.wikipedia.org/static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.432","walltime":"0.552","ppvisitednodes":{"value":2099,"limit":1000000},"postexpandincludesize":{"value":86921,"limit":2097152},"templateargumentsize":{"value":4734,"limit":2097152},"expansiondepth":{"value":12,"limit":40},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":68092,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%  456.863      1 -total"," 44.69%  204.176      1 Template:Reflist"," 20.05%   91.617      2 Template:Citation"," 16.88%   77.137      5 Template:Fix"," 16.67%   76.157      4 Template:Citation_needed"," 10.00%   45.688     11 Template:Cite_web","  9.90%   45.224     10 Template:Category_handler","  8.58%   39.197      1 Template:Infobox_Filesystem","  7.72%   35.255      1 Template:Distinguish","  6.72%   30.682      1 Template:Infobox"]},"scribunto":{"limitreport-timeusage":{"value":"0.201","limit":"10.000"},"limitreport-memusage":{"value":5674975,"limit":52428800}},"cachereport":{"origin":"mw1353","timestamp":"20200519214724","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"ReiserFS","url":"https:\/\/en.wikipedia.org\/wiki\/ReiserFS","sameAs":"http:\/\/www.wikidata.org\/entity\/Q687074","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q687074","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2002-02-14T20:44:59Z","dateModified":"2020-05-17T18:34:21Z","headline":"file system"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":119,"wgHostname":"mw1329"});});</script></body></html>

@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"93dfdf4ef4",applicationID:"49203471"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<img height="1" width="1" style="display:none" src="https://p.alocdn.com/c/taef3f96/a/etarget/p.gif?label=jewishvcminint" />
+<script>window.__lo_site_id=186325,function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://d10lpsik1i8c69.cloudfront.net/w.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}();</script>
+<script>(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-4269834-1", {"cookieDomain":"auto"});ga('require', 'ecommerce');
+ga('require', 'GTM-WGFTT69');ga("send", "pageview");</script>
+<meta name="title" content="Update on the Building of the Third Temple | Jewish Voice Ministries International" />
+<link rel="canonical" href="https://www.jewishvoice.org/read/article/update-building-third-temple" />
+<meta name="description" content="Those who believe Scripture contains a literal fulfillment of the biblical covenants for the Jewish people and the Land of Israel recognize rebuilding the Temple is part of this..." />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://www.jewishvoice.org/themes/jewishvoice/images/favicon.png" type="image/png" />
+<link rel="shortlink" href="https://www.jewishvoice.org/node/1786" />
+<link rel="revision" href="https://www.jewishvoice.org/read/article/update-building-third-temple" />
+<script src="https://www.jewishvoice.org/sites/default/files/google_tag/google_tag.script.js?qaqxn1"></script>
+
+    <title>Update on the Building of the Third Temple | Jewish Voice Ministries International</title>
+    <link rel="stylesheet" href="https://www.jewishvoice.org/sites/default/files/css/css_PBvrnKY-kIB2UYOfovipHeEsXj5kDYQUtVCWaWYRtp8.css?qaqxn1" media="all" />
+<link rel="stylesheet" href="https://www.jewishvoice.org/sites/default/files/css/css_yEO-MHAp6Xr6M99ZK1U8cgbvQdi9EBXd7UOJD24BZ6Q.css?qaqxn1" media="all" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coming+Soon" media="all" />
+
+      
+<!--[if lte IE 8]>
+<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
+<![endif]-->
+
+        </head>
+<body class="path--node page--publication-article">
+<a href="update-building-third-temple@utm_source=Twitter&amp;utm_medium=Post&amp;utm_campaign=July2017&amp;utm_term=Magazine&amp;utm_content=Temple.html#main-content" class="visually-hidden focusable">
+  Skip to main content
+</a>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W83VK7F" height="0" width="0"></iframe></noscript>
+<style>
+    .block--jewishvoice-branding {
+        display: none;
+    }
+</style>
+
+<div class="mobile-panel">  <nav class="block block--menu block--partnerportal-mobile" role="navigation" aria-labelledby="block-partnerportal-mobile-menu">
+  
+    
+      
+<ul class="menu">
+            <li class="leaf">
+            <a href="https://my.jewishvoice.org/sign-up" class="register">Register</a>
+        </li>
+            <li class="leaf">
+            <a href="https://my.jewishvoice.org/sign-in" class="log-in">Log in</a>
+        </li>
+    </ul>
+
+  </nav>
+<div class="search-api-page-block-form block block--searchapipagesearchblockform" data-drupal-selector="search-api-page-block-form">
+  
+    
+  <div class="block__content">
+          <form action="https://www.jewishvoice.org/read/article/update-building-third-temple?utm_source=PANTHEON_STRIPPED&amp;utm_medium=PANTHEON_STRIPPED&amp;utm_campaign=PANTHEON_STRIPPED&amp;utm_term=PANTHEON_STRIPPED&amp;utm_content=PANTHEON_STRIPPED" method="post" id="search-api-page-block-form" accept-charset="UTF-8">
+  <div class="form-item form-group form-type-search form-item-keys form-no-label">
+      <label for="edit-keys" class="visually-hidden">  Search</label>
+  
+  
+  
+  <input title="Enter the terms you wish to search for." data-drupal-selector="edit-keys" type="search" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-search form-type-search form-control" placeholder="Search..."/>
+
+  
+  
+  </div>
+<input data-drupal-selector="form-7ljmyo2i-re1az8-yirnep5teyoczc-kluxglrxwwoq" type="hidden" name="form_build_id" value="form-7LjmYo2I_re1Az8-yirNep5TeyoCzc_kLuXglRxWwOQ" class="form-type-hidden form-control" />
+
+<input data-drupal-selector="edit-search-api-page-block-form" type="hidden" name="form_id" value="search_api_page_block_form" class="form-type-hidden form-control" />
+
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Search" class="button js-form-submit form-submit form-type-submit btn btn-primary" />
+
+</div>
+
+</form>
+
+      </div>
+</div>
+<nav class="block block--menu block--jewishvoice-main-menu" role="navigation" aria-labelledby="block-jewishvoice-main-menu-menu">
+  
+    
+      
+
+    
+                    <ul class="menu">
+                                <li class="first has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/about/who-we-are" title="About">
+                                        About
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/who-we-are" title="About Jewish Voice">
+                                            <p class="nested-menu-header">
+                                        About Jewish Voice
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/our-leadership" title="Our Leadership">
+                                            <p class="nested-menu-header">
+                                        Our Leadership
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/careers" title="Careers">
+                                            <p class="nested-menu-header">
+                                        Careers
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/contact-us" title="Contact">
+                                            <p class="nested-menu-header">
+                                        Contact
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/ways-to-give" title="Give">
+                                        Give
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/web/donate-now-help-jewish-people?src=WEB&amp;sub_src=give_menu" title="One-Time">
+                                            <p class="nested-menu-header">
+                                        One-Time
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/wspr/shalom-partner?src=WEB&amp;sub_src=shalom_partner_donate" title="Monthly">
+                                            <p class="nested-menu-header">
+                                        Monthly
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/holocaust-survivors?src=WHST&amp;sub_src=give_menu" title="Holocaust Survivors">
+                                            <p class="nested-menu-header">
+                                        Holocaust Survivors
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/non-cash" title="Non-Cash Gifts">
+                                            <p class="nested-menu-header">
+                                        Non-Cash Gifts
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/planned" title="Planned Giving">
+                                            <p class="nested-menu-header">
+                                        Planned Giving
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/rmd" title="Retirement Asset (RMD)">
+                                            <p class="nested-menu-header">
+                                        Retirement Asset (RMD)
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/watch" title="Watch">
+                                        Watch
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch" title="This Week&#039;s Show">
+                                            <p class="nested-menu-header">
+                                        This Week&#039;s Show
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/all" title="All Shows">
+                                            <p class="nested-menu-header">
+                                        All Shows
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/tv-schedule" title="TV Schedule">
+                                            <p class="nested-menu-header">
+                                        TV Schedule
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/this-month" title="Upcoming Shows">
+                                            <p class="nested-menu-header">
+                                        Upcoming Shows
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/interviews/radio" title="Interviews">
+                                            <p class="nested-menu-header">
+                                        Interviews
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/israel-newscast" title="Israel Newscast">
+                                            <p class="nested-menu-header">
+                                        Israel Newscast
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/outreaches" title="Go">
+                                        Go
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/go/medical-outreaches" title="Medical Outreaches">
+                                            <p class="nested-menu-header">
+                                        Medical Outreaches
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/poland" title="Festivals">
+                                            <p class="nested-menu-header">
+                                        Festivals
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/israel-tour" title="Israel Tour">
+                                            <p class="nested-menu-header">
+                                        Israel Tour
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/read" title="Read">
+                                        Read
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/blog" title="Blog">
+                                            <p class="nested-menu-header">
+                                        Blog
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/magazine" title="Magazine">
+                                            <p class="nested-menu-header">
+                                        Magazine
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/newsletter" title="Newsletter">
+                                            <p class="nested-menu-header">
+                                        Newsletter
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/writerscontest" title="Writer&#039;s Contest">
+                                            <p class="nested-menu-header">
+                                        Writer&#039;s Contest
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/learn" title="Learn">
+                                        Learn
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/who-is-yeshua" title="Who Is Yeshua?">
+                                            <p class="nested-menu-header">
+                                        Who Is Yeshua?
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/messianic-judaism" title="Messianic Judaism">
+                                            <p class="nested-menu-header">
+                                        Messianic Judaism
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/theological-questions" title="Theological Questions">
+                                            <p class="nested-menu-header">
+                                        Theological Questions
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/israel-and-origins-middle-east-conflict" title="Why Israel?">
+                                            <p class="nested-menu-header">
+                                        Why Israel?
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/are-we-living-last-days" title="Last Days">
+                                            <p class="nested-menu-header">
+                                        Last Days
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/who-are-lost-tribes-israel" title="Lost Tribes">
+                                            <p class="nested-menu-header">
+                                        Lost Tribes
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/speaker-schedule" title="Speaking Engagements">
+                                            <p class="nested-menu-header">
+                                        Speaking Engagements
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/pray" title="Pray">
+                                        Pray
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/request-praise" title="For You">
+                                            <p class="nested-menu-header">
+                                        For You
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/us" title="For Us">
+                                            <p class="nested-menu-header">
+                                        For Us
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/scriptures" title="The Scriptures">
+                                            <p class="nested-menu-header">
+                                        The Scriptures
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/partner" title="Partner with Us">
+                                            <p class="nested-menu-header">
+                                        Partner with Us
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="last leaf">
+                <a href="https://www.jewishvoice.org/shop" title="Shop">
+                                        Shop
+                                                        </a>
+                            </li>
+                </ul>
+          
+
+
+  </nav>
+<div class="block-content block-content--basic block-content--mobilecontact basic">
+  
+    
+      
+            <div class="basic__body"><nav aria-labelledby="block-jewishvoice-main-menu-menu" class="block block--menu block--jewishvoice-main-menu" role="navigation" style="margin-top:-1rem;"><ul class="menu"><li class="last leaf"><a href="https://www.jewishvoice.org/contact-us" title="Contact Us">Contact</a></li>
+</ul></nav></div>
+      
+  </div>
+
+</div>
+
+<div class="main-wrap">
+    <div class="sticky-header">
+        <div class="header-prefix">
+            <div class="region-header-prefix">
+                  <nav class="block block--menu block--social" role="navigation" aria-labelledby="block-social-menu">
+  
+    
+      
+<ul class="menu">
+            <li class="leaf">
+            <a href="https://www.facebook.com/JewishVoice" class="social-facebook">Facebook</a>
+        </li>
+            <li class="leaf">
+            <a href="http://instagram.com/jewish_voice" class="social-instagram">Instagram</a>
+        </li>
+            <li class="leaf">
+            <a href="http://pinterest.com/jewishvoice/" class="social-pinterest">Pinterest</a>
+        </li>
+            <li class="leaf">
+            <a href="https://twitter.com/jewish_voice" class="social-twitter">Twitter</a>
+        </li>
+            <li class="leaf">
+            <a href="http://www.youtube.com/jewishvoicetoday" class="social-youtube">YouTube</a>
+        </li>
+    </ul>
+
+  </nav>
+<nav class="block block--menu block--partnerportal" role="navigation" aria-labelledby="block-partnerportal-menu">
+  
+    
+      
+<ul class="menu">
+            <li class="leaf">
+            <a href="https://my.jewishvoice.org/sign-up" class="register">Register</a>
+        </li>
+            <li class="leaf">
+            <a href="https://my.jewishvoice.org/sign-in" class="log-in">Log in</a>
+        </li>
+    </ul>
+
+  </nav>
+
+
+                <ul>
+                    <li>
+                        <a class="btn btn-pink-full fa fa-search" style="padding: 0.2rem .75rem; margin: 0 0 0 1rem;" href="https://www.jewishvoice.org/search/site"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <header id="header" class="header" role="header" data-test="hello">
+            <nav class="navbar" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <a href="https://www.jewishvoice.org/" class="navbar-brand" rel="home" title="Home">
+                        <img src="https://www.jewishvoice.org/themes/jewishvoice/images/jv-logo-white.png" alt="JVMI Messianic Jewish Ministries logo" id="logo" data-org-binding='{"jvmuk": {"attr": {"name": "src", "value": "/themes/jewishvoice/images/jvuk-logo-white.png"}}, "jvmca": {"attr": {"name": "src", "value": "/themes/jewishvoice/images/jvca-logo-white.png"}}, "jvmi": {"attr": {"name": "src", "value": "/themes/jewishvoice/images/jv-logo-white.png"}}}'/>
+                    </a>
+                      <nav class="block block--menu block--mainnavigation" role="navigation" aria-labelledby="block-mainnavigation-menu">
+  
+    
+      
+
+    
+                    <ul class="menu">
+                                <li class="first has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/about/who-we-are" title="About">
+                                        About
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/who-we-are" title="About Jewish Voice">
+                                            <p class="nested-menu-header">
+                                        About Jewish Voice
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/our-leadership" title="Our Leadership">
+                                            <p class="nested-menu-header">
+                                        Our Leadership
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/about/careers" title="Careers">
+                                            <p class="nested-menu-header">
+                                        Careers
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/contact-us" title="Contact">
+                                            <p class="nested-menu-header">
+                                        Contact
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/ways-to-give" title="Give">
+                                        Give
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/web/donate-now-help-jewish-people?src=WEB&amp;sub_src=give_menu" title="One-Time">
+                                            <p class="nested-menu-header">
+                                        One-Time
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/wspr/shalom-partner?src=WEB&amp;sub_src=shalom_partner_donate" title="Monthly">
+                                            <p class="nested-menu-header">
+                                        Monthly
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/donate/holocaust-survivors?src=WHST&amp;sub_src=give_menu" title="Holocaust Survivors">
+                                            <p class="nested-menu-header">
+                                        Holocaust Survivors
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/non-cash" title="Non-Cash Gifts">
+                                            <p class="nested-menu-header">
+                                        Non-Cash Gifts
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/planned" title="Planned Giving">
+                                            <p class="nested-menu-header">
+                                        Planned Giving
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/ways-to-give/rmd" title="Retirement Asset (RMD)">
+                                            <p class="nested-menu-header">
+                                        Retirement Asset (RMD)
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/watch" title="Watch">
+                                        Watch
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch" title="This Week&#039;s Show">
+                                            <p class="nested-menu-header">
+                                        This Week&#039;s Show
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/all" title="All Shows">
+                                            <p class="nested-menu-header">
+                                        All Shows
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/tv-schedule" title="TV Schedule">
+                                            <p class="nested-menu-header">
+                                        TV Schedule
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/this-month" title="Upcoming Shows">
+                                            <p class="nested-menu-header">
+                                        Upcoming Shows
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/interviews/radio" title="Interviews">
+                                            <p class="nested-menu-header">
+                                        Interviews
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/watch/israel-newscast" title="Israel Newscast">
+                                            <p class="nested-menu-header">
+                                        Israel Newscast
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/outreaches" title="Go">
+                                        Go
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/go/medical-outreaches" title="Medical Outreaches">
+                                            <p class="nested-menu-header">
+                                        Medical Outreaches
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/poland" title="Festivals">
+                                            <p class="nested-menu-header">
+                                        Festivals
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/israel-tour" title="Israel Tour">
+                                            <p class="nested-menu-header">
+                                        Israel Tour
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/read" title="Read">
+                                        Read
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/blog" title="Blog">
+                                            <p class="nested-menu-header">
+                                        Blog
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/magazine" title="Magazine">
+                                            <p class="nested-menu-header">
+                                        Magazine
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/read/newsletter" title="Newsletter">
+                                            <p class="nested-menu-header">
+                                        Newsletter
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/writerscontest" title="Writer&#039;s Contest">
+                                            <p class="nested-menu-header">
+                                        Writer&#039;s Contest
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/learn" title="Learn">
+                                        Learn
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/who-is-yeshua" title="Who Is Yeshua?">
+                                            <p class="nested-menu-header">
+                                        Who Is Yeshua?
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/messianic-judaism" title="Messianic Judaism">
+                                            <p class="nested-menu-header">
+                                        Messianic Judaism
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/theological-questions" title="Theological Questions">
+                                            <p class="nested-menu-header">
+                                        Theological Questions
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/israel-and-origins-middle-east-conflict" title="Why Israel?">
+                                            <p class="nested-menu-header">
+                                        Why Israel?
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/are-we-living-last-days" title="Last Days">
+                                            <p class="nested-menu-header">
+                                        Last Days
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/who-are-lost-tribes-israel" title="Lost Tribes">
+                                            <p class="nested-menu-header">
+                                        Lost Tribes
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/learn/speaker-schedule" title="Speaking Engagements">
+                                            <p class="nested-menu-header">
+                                        Speaking Engagements
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="has-nested-menu expanded">
+                <a href="https://www.jewishvoice.org/pray" title="Pray">
+                                        Pray
+                                                                <button class="dropdown-toggle"></button>
+                                    </a>
+                                        
+                        <div class="nested-menu-wrap">
+                <ul class="menu">
+                                <li class="first leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/request-praise" title="For You">
+                                            <p class="nested-menu-header">
+                                        For You
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/us" title="For Us">
+                                            <p class="nested-menu-header">
+                                        For Us
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/scriptures" title="The Scriptures">
+                                            <p class="nested-menu-header">
+                                        The Scriptures
+                                            </p>
+                                                        </a>
+                            </li>
+                                <li class="last leaf nested-menu-item">
+                <a href="https://www.jewishvoice.org/pray/partner" title="Partner with Us">
+                                            <p class="nested-menu-header">
+                                        Partner with Us
+                                            </p>
+                                                        </a>
+                            </li>
+                </ul>
+                    </div>
+          
+                            </li>
+                                <li class="last leaf">
+                <a href="https://www.jewishvoice.org/shop" title="Shop">
+                                        Shop
+                                                        </a>
+                            </li>
+                </ul>
+          
+
+
+  </nav>
+<div class="block-content block-content--basic block-content--donationbutton basic">
+  
+    
+      
+            <div class="basic__body"><nav class="block--donations" role="navigation"><ul class="menu"><li class="leaf"><a href="https://www.jewishvoice.org/donate?segment_code=WEBBT">Donate</a></li>
+</ul></nav></div>
+      
+  </div>
+
+
+                </div> <!-- /.navbar-header -->
+            </nav><!-- /.navbar -->
+        </header>
+
+        
+
+    </div>
+
+
+
+                                                                        <main id="main" role="main">
+                <div class="container">
+            <div class="row">
+                                    <div class="col-xs-12">
+                          <div class="block block--jewishvoice-page-title">
+  
+    
+  <div class="block__content">
+          
+  <div class="page-header">
+    <h1 class="page-title"><span>Update on the Building of the Third Temple</span>
+</h1>
+  </div>
+
+
+      </div>
+</div>
+
+
+                    </div>
+                
+                                <section class="content p-b-3 col-lg-8 col-xl-8">
+                    <div id="jvmi-alerts">
+                        
+                    </div>
+                      
+  
+<article data-history-node-id="1786" role="article" about="/read/article/update-building-third-temple" class="node publication-article publication-article--promoted publication-article--full">
+
+  
+    
+
+  
+  <div class="node__content">
+    
+            <div class="publication-article__body"></div>
+      
+      <div class="publication-article__field-sections">
+              <div class="field__item">  <div class="paragraph paragraph--type--image paragraph--view-mode--default">
+          
+            <div class="image__field-image">  <img src="https://www.jewishvoice.org/sites/default/files/styles/max_width_800/public/paragraph/2017-06/temple.jpg?itok=Rsy3K7q7" alt="Update on the Building of the Third Temple" typeof="foaf:Image" />
+
+
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p>Those who believe Scripture contains a literal fulfillment of the biblical covenants for the Jewish people and the Land of Israel recognize rebuilding the Temple is part of this promised future. In Jeremiah’s presentation of the New Covenant for Israel, we read:</p></div>
+      
+      </div>
+</div>
+              <div class="field__item"><blockquote class="blockquote">
+    <p class="mb-0">Behold, days are coming,’ declares the LORD, ‘when I will fulfill the good word which I
+have spoken concerning the house of Israel and the house of Judah. In those days and at that
+time I will cause a righteous Branch of David to spring forth; and He shall execute justice and
+righteousness on the earth. In those days Judah shall be saved, and Jerusalem shall dwell in
+safety; and this is the name by which she shall be called: the LORD is our righteousness.’ For
+thus says the LORD, ‘David shall never lack a man to sit on the throne of the house of Israel;
+and the Levitical priests shall never lack a man before Me to offer burnt offerings, to burn
+grain offerings, and to prepare sacrifices continually.</p>
+            <div><cite title="Source Title">- Jeremiah 33:14–18, NASB</cite></div>
+    </blockquote></div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p>This passage speaks about the Messianic Age when all Israel will be saved and restored to the Land of Israel. At that time, a righteous descendant of David, the Messiah, will sit on the throne in Jerusalem, and the Temple will again stand complete with its Levitical priesthood. If this is to be a future reality, is there any sign of preparation for a third Temple in Israel today?</p>
+
+<p>Since 1987, when the Temple Movement began preparations for the rebuilding of the Third Temple, efforts to see this become a reality in the 21st century have been slowly progressing. While modern Israel and a large percentage of the Jewish people throughout the Diaspora are secular, Orthodox Jews do not believe these people will play a role in the rebuilding of the Temple since it is a spiritual work. It is Orthodox Jews who revived the Sanhedrin, the religious body that supervised the halachic (legal) issues related to the Temple and who intend to see it rebuilt in a proper way.</p>
+
+<p>The importance to Orthodox Jews of rebuilding the Temple lies in its role in the redemption of the world, which they believe can only take place once the Temple is rebuilt. Gershon Salomon is director of the Temple Mount Faithful, an organization that has been trying to prepare Israeli society to accept and promote the rebuilding of the Temple through demonstrations at the Temple site, the construction of a cornerstone for the Third Temple, and the making of various Temple-related utensils. Salomon has said: “[Building the Third Temple] is an act which must be done to complete the redemption of the people of the Bible in the Land of the Bible. I cannot imagine an Israeli State or Israeli life in this country without the Temple Mount in the center of this life.”</p>
+
+<p>However, many religious Jews do not support this idea because they have adopted a Diaspora mentality and a spiritualized way of thinking, which sets aside hope in a literal fulfillment of the biblical prophecies regarding a future Temple. For them, the present political situation on the Temple Mount with Muslims controlling the site is acceptable. Jewish leaders in the Temple Movement believe the Jewish people are not living on the spiritual level God intended because of the absence of the Shekinah (Divine Presence) from the world. Rabbi Chaim Richman, Director of the Temple Institute, which has produced all the ritual vessels necessary for the function of the Temple and works to train priests for this future work, says there is a connection between the need for a new level of spiritual attainment and the rebuilding of the Temple: “The Shekinah is brought about only through the Temple.…In terms of our mission as a people, we cannot in any way reach our spiritual status without the Temple.” For Orthodox Jews committed to reestablishing the Temple, both the present problems of the world and the problems faced by the Jewish people will be solved only by rebuilding.</p></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--ad-space paragraph--view-mode--default">
+          
+            <div class="ad-space__field-ad-space">
+<div class="card">
+    <div class="card-block" style="background-color: rgb(239, 239, 239);">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="hidden-xs-down">
+                    <a href="https://www.jewishvoice.org/wfbpi/pray-for-israel">
+                        
+            <div class="ad-space__field-image">  <img src="https://www.jewishvoice.org/sites/default/files/styles/max_325x325/public/adspace/2017-06/ebook-cover.jpg?itok=xxXRFEzM" alt="" typeof="foaf:Image" />
+
+
+</div>
+      
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                
+            <div class="ad-space__body"><h4>Get the Israel Prayer Guide</h4>
+
+<p>Do you want to know how to pray for Israel in greater detail and depth? Jewish Voice Ministries has put together this Intercessory Prayer Guide for Israel that provides focused, targeted requests to help you pray for the nation of God’s People. We hope this prayer guide can help both Messianic Jews and Christians pray their support for Israel.</p></div>
+      
+
+                <div>
+                    <a href="https://www.jewishvoice.org/wfbpi/pray-for-israel" class="btn btn-blue-full">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p>Are we any closer to the rebuilding of the Temple today? The world is radically opposed to Israel’s claims in Jerusalem, much less their contested ownership of the Temple Mount. On a practical level, Jews are banned by Israeli law from praying at the site, and those who visit are daily accosted by Muslims, such as the Women in Black, who maintain a constant vigil on Jewish presence at the site. In addition, the Islamic authorities officially deny that a Temple ever existed at the site. Nevertheless, recent developments have contributed to the Temple Movement’s goals and the realization of the rebuilding of the Temple in our lifetime.</p>
+
+<p>Answering the charge of denial a Jewish Temple ever existed on the site, archaeologists discovered in decades-old research that the site of the Al-Aqsa mosque, which Muslims believe was built by Abraham, was once a place for Jewish ritual preparation for entering the Temple. The evidence for this came from a report filed by British archaeologist Robert Hamilton who had documented excavations of the mosque’s foundations after it was destroyed in an earthquake in 1927. He discovered beneath the floor of the mosque the remains of a Jewish miqveh (ritual pool used for purification). It dated to the time of the Second Temple when Jews immersed at this site before entering the Temple precincts. These findings, hidden deep in the British Mandatory archives department because they embarrassed Muslim officials, now provide evidence that the ancient Temple stood on the modern Temple Mount and was a place of Jewish presence.</p></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--ad-space paragraph--view-mode--default">
+          
+            <div class="ad-space__field-ad-space">
+<div class="card">
+    <div class="card-block" style="background-color: rgb(239, 239, 239);">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="hidden-xs-down">
+                    <a href="https://www.jewishvoice.org/wfbpi/pray-for-israel">
+                        
+            <div class="ad-space__field-image">  <img src="https://www.jewishvoice.org/sites/default/files/styles/max_325x325/public/adspace/2017-06/ebook-cover.jpg?itok=xxXRFEzM" alt="" typeof="foaf:Image" />
+
+
+</div>
+      
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                
+            <div class="ad-space__body"><h4>Get the Israel Prayer Guide</h4>
+
+<p>Do you want to know how to pray for Israel in greater detail and depth? Jewish Voice Ministries has put together this Intercessory Prayer Guide for Israel that provides focused, targeted requests to help you pray for the nation of God’s People. We hope this prayer guide can help both Messianic Jews and Christians pray their support for Israel.</p></div>
+      
+
+                <div>
+                    <a href="https://www.jewishvoice.org/wfbpi/pray-for-israel" class="btn btn-blue-full">Download Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p>Concerning the preparations for the Temple service, the Sanhedrin has taken steps necessary for reinstating future Temple service. One project of the group has been the planting of the Biblical Temple forest which will serve the agricultural needs of the Third Temple. Rabbi Hillel Weiss, spokesman for the Sanhedrin, explained that the Temple provided a link between the land and the Divine: “When people think about sacrifices, they think about animals and blood, but most were from plants grown around Israel.”</p>
+
+<p>Rabbi Richman, also a member of the Sanhedrin, has been heading a project to restore the sacred Red Heifer to Israel. According to Numbers 19, the ashes of the Red Heifer mixed with water are a necessary element for purifying Jews to enable them to do service in the Temple. During the time of the First and Second Temples, a span of approximately 1,000 years, only nine Red Heifers were used in preparing the waters used to purify Jews. According to Jewish tradition, the tenth one will be used by the Messiah. Richman and other rabbis of the Temple Institute are providing halachic supervision and guidance in partnership with an Israeli cattleman who is an expert in the science of animal husbandry. He is utilizing the technique of implanting the frozen embryos of the Red Angus cattle, which originally come from North America, into Israeli domestic cattle. A red heifer cannot be transported to Israel for use in the Red Heifer ceremony, because the animal cannot have ever worn a yoke and must be born in the Land of Israel. The project is the culmination of years of research at the Temple Institute that fuses ancient religious texts and modern science.</p>
+
+<p>The Sanhedrin and the Temple Movement also hold reenactments of Temple ceremonies for the training of those who are from the priestly class known as Kohanim. This training involves special schooling on the duties of the priests, the use of ritual vessels created for use in the Third Temple, and practice on a newly constructed altar of burnt offering. This altar is unique because it was designed to be disassembled and quickly reassembled in its proper permanent location, because the people of Israel are required to build an altar exclusively on the site of the original altar on Mount Moriah, the Temple Mount. When the time is right, it will be re-assembled on the Mount in the Temple, enabling the sacrificial service to be resumed without delay.</p></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p> </p>
+
+<blockquote>"For Orthodox Jews committed to reestablishing the Temple, both the<br />
+present problems of the world and the problems faced by the Jewish people<br />
+will be solved only by rebuilding."</blockquote></div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--text paragraph--view-mode--default">
+          
+            <div class="text__field-body"><p>Another recent rediscovery of the Temple Institute has been the revival of the science of producing biblical crimson. This dye was used in the garments of the High Priest, the parochet (the massive curtain that separated the Holy of Holies from the Holy Place in the Temple), and was an ingredient used in the mixture combined with ashes of the Red Heifer. Professor Zohar Amar of Bar Ilan University discovered that the eggs of the tola’at shani (crimson worm) found in modern Israel would produce the crimson dye.</p>
+
+<p>While the Temple Movement continues to prepare for the rebuilding of the Temple, most understand that some political action must take place to reverse the present situation of control of the Mount by Muslims, in order to allow for Jewish access. This currently may be in process. Concerning the site, Israel’s Supreme Court has stated in its ruling <em>Opinion on the Issue of the Works on the Temple Mount</em>, “The reality on the Temple Mount…is by no means simple. It is extremely delicate and complicated…This is one of those cases in which a judicial ruling is not the reasonable way to decide the dispute, and a decision of this kind goes beyond the boundaries of the law. It is the political echelon, and not the court…that must give content and meaning to the historical call: ‘The Temple Mount is ours’.” In other words, this must be a political, not legal, action. Those who understand Daniel’s prophecy of the seventieth week (Daniel 9:27) know that it is a future political leader, the Antichrist of Revelation 13, who will one day make a deceptive covenant with the Jewish leaders, leading to the rebuilding of the Third Temple.</p>
+
+<p>How might this happen? One possibility was found in an academic book on the politics of the Temple Mount: “Given the emphasis upon the international community’s interest in the sites, under the concept of heritage of humankind, representatives from the international community need to be included as mediators and guarantors. These would likely come from the United Nations (UNESCO) and drawn from regional powers such as the Arab League, NATO, or interested states such as the U.S., the E.U., and Russia…Any proposed legal regime will require interfaith cooperation composed of religious leaders from the region. It may be supplemented by international religious leaders who may serve as mediators.”<small>1</small> Those who seek to understand biblical prophecy know that the Antichrist will be followed by both political and religious leaders, making this kind of proposal a reality.</p>
+
+<p>It is exciting to see these developments unfold in the Land of Israel regarding the building of a Third Temple as we eagerly watch for the second coming of our Messiah!</p>
+
+<p><small>1. David Guinn, Protecting Jerusalem’s Holy Sites: A Strategy for<br />
+Negotiating a Sacred Peace, Cambridge University Press, 2006,<br />
+p. 180-183</small></p>
+</div>
+      
+      </div>
+</div>
+              <div class="field__item">  <div class="paragraph paragraph--type--ad-space paragraph--view-mode--default">
+          
+            <div class="ad-space__field-ad-space">
+<div class="card">
+    <div class="card-block" style="background-color: rgb(239, 239, 239);">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="hidden-xs-down">
+                    <a href="https://www.jewishvoice.org/donate">
+                        
+            <div class="ad-space__field-image">  <img src="https://www.jewishvoice.org/sites/default/files/styles/max_325x325/public/adspace/2017-06/1873.png?itok=loSFf8Ee" alt="" typeof="foaf:Image" />
+
+
+</div>
+      
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                
+            <div class="ad-space__body"><h4>Get the Prophetic Mysteries Package</h4>
+
+<p>This package includes:</p>
+
+<ul><li>7 Keys to Unlock the Prophetic Mysteries of Israel</li>
+	<li>House Blessing Mezuzah</li>
+	<li>Unlocking the Prophetic Mysteries of Israel two-DVD set</li>
+	<li>Lion of Judah Tapestry</li>
+</ul></div>
+      
+
+                <div>
+                    <a href="https://www.jewishvoice.org/donate" class="btn btn-blue-full">Get Products</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+      
+      </div>
+</div>
+          </div>
+  
+  <div class="publication-article__field-author">
+    <strong class="field__label">Author</strong>
+              <div class="field__item"><a href="https://www.jewishvoice.org/taxonomy/term/1853" hreflang="en">Dr. Randall Price</a></div>
+          </div>
+
+  <div class="publication-article__field-tags">
+    <strong class="field__label">Tags</strong>
+          <div class="field__items">
+              <div class="field__item"><a href="https://www.jewishvoice.org/read/blog/messianic-jewish" hreflang="en">Messianic Jewish</a></div>
+          <div class="field__item"><a href="https://www.jewishvoice.org/read/blog/jewish-0" hreflang="en">Jewish</a></div>
+          <div class="field__item"><a href="https://www.jewishvoice.org/read/blog/jewish-roots" hreflang="en">Jewish Roots</a></div>
+              </div>
+      </div>
+
+  <div class="publication-article__field-categories">
+    <strong class="field__label">Categories</strong>
+          <div class="field__items">
+              <div class="field__item"><a href="https://www.jewishvoice.org/read/blog/messianic-judaism-teachings" hreflang="en">Messianic Judaism Teachings</a></div>
+          <div class="field__item"><a href="https://www.jewishvoice.org/read/blog/current-events" hreflang="en">Current Events</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+<div class="block block--socialsharingblock">
+  
+      <h4 class="block__title">Share this article</h4>
+    
+  <div class="block__content">
+          <div class="social-media-sharing">
+  <ul class="">
+              <li>              
+        <a  target="_blank"  class="facebook-share share"   href="http://www.facebook.com/share.php?u=https://www.jewishvoice.org/read/article/update-building-third-temple&amp;title=Update on the Building of the Third Temple"  alt="Facebook" title ="Facebook" >       
+                          <img src ="https://www.jewishvoice.org/modules/social_media/icons/facebook_share.svg">
+                      </a>
+
+      </li>
+          <li>              
+        <a  target="_blank"  class="facebook-msg share"   onclick="FB.ui({method: &#039;send&#039;,link: &#039;https://www.jewishvoice.org/read/article/update-building-third-temple&#039;})"  alt="Facebook messenger" title ="Facebook messenger" >       
+                          <img src ="https://www.jewishvoice.org/modules/social_media/icons/facebook_msg.svg">
+                      </a>
+
+      </li>
+          <li>              
+        <a  target="_blank"  class="linkedin share"   href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.jewishvoice.org/read/article/update-building-third-temple&amp;title=Update on the Building of the Third Temple&amp;source=https://www.jewishvoice.org/read/article/update-building-third-temple"  alt="Linkedin" title ="Linkedin" >       
+                          <img src ="https://www.jewishvoice.org/modules/social_media/icons/linkedin.svg">
+                      </a>
+
+      </li>
+          <li>              
+        <a  target="_blank"  class="twitter share"   href="https://twitter.com/intent/tweet?url=https://www.jewishvoice.org/read/article/update-building-third-temple&amp;status=Update on the Building of the Third Temple+https://www.jewishvoice.org/read/article/update-building-third-temple"  alt="Twitter" title ="Twitter" >       
+                          <img src ="https://www.jewishvoice.org/modules/social_media/icons/twitter.svg">
+                      </a>
+
+      </li>
+          <li>              
+        <a   class="email share"   href="mailto:?subject=Update on the Building of the Third Temple&amp;body=Check out this site https://www.jewishvoice.org/read/article/update-building-third-temple"  alt="Email" title ="Email" >       
+                          <img src ="https://www.jewishvoice.org/modules/social_media/icons/email.svg">
+                      </a>
+
+      </li>
+      </ul>
+</div>
+
+
+      </div>
+</div>
+
+
+                </section>
+                                                <aside class="region-sidebar-second second col-lg-4 col-xl-4">  <div class="block block--relatedarticles">
+  
+      <h4 class="block__title">Related Articles</h4>
+    
+  <div class="block__content">
+          <ul><li><a href="https://www.jewishvoice.org/read/article/signs-times">Signs of the Times</a></li><li><a href="https://www.jewishvoice.org/read/article/serving-scattered-tribes-israel">Serving the Scattered Tribes of Israel</a></li><li><a href="https://www.jewishvoice.org/read/article/gog-arising">Gog Arising?</a></li><li><a href="https://www.jewishvoice.org/read/article/gods-unfinished-business-pharisees">God's Unfinished Business with the Pharisees</a></li><li><a href="https://www.jewishvoice.org/read/article/hebrew-school-rabbi-jack">Hebrew School with Rabbi Jack</a></li></ul>
+      </div>
+</div>
+
+</aside>
+                            </div>
+        </div>
+    </main>
+    
+        <footer id="footer" role="contentinfo">
+                      <div class="block-content block-content--basic block-content--charityicons basic">
+  
+    
+      
+            <div class="basic__body"><ul class="list-unstyled list-inline" style="margin-bottom:0;"><li class="list-inline-item"><img alt="Charity Navigator" src="https://www.jewishvoice.org/themes/landing_page/images/charity-navigator.gif" style="max-height:50px" /></li>
+	<li class="list-inline-item"><img alt="Evangelical Council for Financial Accountability" src="https://www.jewishvoice.org/themes/landing_page/images/ecfa.png" style="max-height:55px" /></li>
+	<li class="list-inline-item"><img alt="Secure Site" src="https://www.jewishvoice.org/themes/landing_page/images/secure-site.gif" style="max-height:50px" /></li>
+	<li class="list-inline-item"><img la="GuideStar" src="https://www.jewishvoice.org/themes/landing_page/images/guide-star.gif" style="max-height:50px" /></li>
+</ul></div>
+      
+  </div>
+<nav class="block block--menu block--jewishvoice-footer" role="navigation" aria-labelledby="block-jewishvoice-footer-menu">
+  
+    
+      
+<ul class="menu">
+            <li class="leaf">
+            <a href="https://www.jewishvoice.org/contact-us">Contact</a>
+        </li>
+            <li class="leaf">
+            <a href="https://www.jewishvoice.org/financial">Financial</a>
+        </li>
+            <li class="leaf">
+            <a href="https://www.jewishvoice.org/board-members">Governance</a>
+        </li>
+            <li class="leaf">
+            <a href="https://www.jewishvoice.org/press-releases">Press Releases</a>
+        </li>
+            <li class="leaf">
+            <a href="https://www.jewishvoice.org/privacy-policy">Privacy</a>
+        </li>
+    </ul>
+
+  </nav>
+<div class="block-content block-content--basic block-content--emailupdates basic">
+  
+    
+      
+            <div class="basic__body"><div class="p-t-1"><a class="btn btn-white" href="https://www.jewishvoice.org/email-updates">Get Email Updates</a></div>
+</div>
+      
+  </div>
+
+
+            <div class="copyright">&copy; 2020, <span data-org-binding='{"jvmuk": {"text": "Jewish Voice Ministries UK"}, "jvmca": {"text": "Jewish Voice Ministries Canada"}, "jvmi": {"text": "Jewish Voice Ministries International"}}'>Jewish Voice Ministries International</span></div>
+            </footer>
+    </div>
+
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/1786","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en","currentQuery":{"utm_campaign":"PANTHEON_STRIPPED","utm_content":"PANTHEON_STRIPPED","utm_medium":"PANTHEON_STRIPPED","utm_source":"PANTHEON_STRIPPED","utm_term":"PANTHEON_STRIPPED"}},"pluralDelimiter":"\u0003","google_analytics":{"trackOutbound":true,"trackMailto":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip","trackDomainMode":1},"jvmi":{"available_countries":[{"code":"US","name":"United States"},{"code":"CA","name":"Canada"},{"code":"GB","name":"United Kingdom"},{"code":"AL","name":"Albania"},{"code":"AS","name":"American Samoa"},{"code":"AD","name":"Andorra"},{"code":"AO","name":"Angola"},{"code":"AI","name":"Anguilla"},{"code":"AQ","name":"Antarctica"},{"code":"AG","name":"Antigua and Barbuda"},{"code":"AR","name":"Argentina"},{"code":"AM","name":"Armenia"},{"code":"AW","name":"Aruba"},{"code":"AU","name":"Australia"},{"code":"AT","name":"Austria"},{"code":"BS","name":"Bahamas"},{"code":"BD","name":"Bangladesh"},{"code":"BB","name":"Barbados"},{"code":"BY","name":"Belarus"},{"code":"BE","name":"Belgium"},{"code":"BZ","name":"Belize"},{"code":"BJ","name":"Benin"},{"code":"BM","name":"Bermuda"},{"code":"BT","name":"Bhutan"},{"code":"BO","name":"Bolivia"},{"code":"BA","name":"Bosnia and Herzegovina"},{"code":"BW","name":"Botswana"},{"code":"BV","name":"Bouvet Island"},{"code":"BR","name":"Brazil"},{"code":"IO","name":"British Indian Ocean Territory"},{"code":"VG","name":"British Virgin Islands"},{"code":"BN","name":"Brunei"},{"code":"BG","name":"Bulgaria"},{"code":"BF","name":"Burkina Faso"},{"code":"MM","name":"Burma"},{"code":"BI","name":"Burundi"},{"code":"KH","name":"Cambodia"},{"code":"CM","name":"Cameroon"},{"code":"CV","name":"Cape Verde"},{"code":"KY","name":"Cayman Islands"},{"code":"CF","name":"Central African Republic"},{"code":"TD","name":"Chad"},{"code":"CL","name":"Chile"},{"code":"CN","name":"China"},{"code":"CX","name":"Christmas Island"},{"code":"CC","name":"Cocos (Keeling) Islands"},{"code":"CO","name":"Colombia"},{"code":"KM","name":"Comoros"},{"code":"CG","name":"Congo (Brazzaville)"},{"code":"CD","name":"Congo (Kinshasa)"},{"code":"CK","name":"Cook Islands"},{"code":"CR","name":"Costa Rica"},{"code":"CI","name":"C\u00f4te D\u0027Ivoire"},{"code":"HR","name":"Croatia"},{"code":"CW","name":"Curacao"},{"code":"CY","name":"Cyprus"},{"code":"CZ","name":"Czech Republic"},{"code":"DK","name":"Denmark"},{"code":"DJ","name":"Djibouti"},{"code":"DM","name":"Dominica"},{"code":"DO","name":"Dominican Republic"},{"code":"TL","name":"East Timor"},{"code":"EC","name":"Ecuador"},{"code":"SV","name":"El Salvador"},{"code":"GQ","name":"Equatorial Guinea"},{"code":"ER","name":"Eritrea"},{"code":"EE","name":"Estonia"},{"code":"ET","name":"Ethiopia"},{"code":"FK","name":"Falkland Islands (Islas Malvin"},{"code":"FO","name":"Faroe Islands"},{"code":"FJ","name":"Fiji"},{"code":"FI","name":"Finland"},{"code":"FR","name":"France"},{"code":"GF","name":"French Guiana"},{"code":"PF","name":"French Polynesia"},{"code":"TF","name":"French Southern Territories"},{"code":"GA","name":"Gabon"},{"code":"GM","name":"Gambia, The"},{"code":"GE","name":"Georgia"},{"code":"DE","name":"Germany"},{"code":"GH","name":"Ghana"},{"code":"GI","name":"Gibraltar"},{"code":"GR","name":"Greece"},{"code":"GL","name":"Greenland"},{"code":"GD","name":"Grenada"},{"code":"GP","name":"Guadeloupe"},{"code":"GU","name":"Guam"},{"code":"GT","name":"Guatemala"},{"code":"GG","name":"Guernsey"},{"code":"GN","name":"Guinea"},{"code":"GW","name":"Guinea-Bissau"},{"code":"GY","name":"Guyana"},{"code":"HT","name":"Haiti"},{"code":"HM","name":"Heard Island and McDonald Isla"},{"code":"VA","name":"Holy See"},{"code":"HN","name":"Honduras"},{"code":"HK","name":"Hong Kong"},{"code":"HU","name":"Hungary"},{"code":"IS","name":"Iceland"},{"code":"IN","name":"India"},{"code":"ID","name":"Indonesia"},{"code":"IE","name":"Ireland"},{"code":"IM","name":"Isle of Man"},{"code":"IL","name":"Israel"},{"code":"IT","name":"Italy"},{"code":"JM","name":"Jamaica"},{"code":"JP","name":"Japan"},{"code":"JE","name":"Jersey"},{"code":"KE","name":"Kenya"},{"code":"KI","name":"Kiribati"},{"code":"KR","name":"Korea, South"},{"code":"XK","name":"Kosovo"},{"code":"KG","name":"Kyrgyzstan"},{"code":"LA","name":"Laos"},{"code":"LV","name":"Latvia"},{"code":"LB","name":"Lebanon"},{"code":"LS","name":"Lesotho"},{"code":"LR","name":"Liberia"},{"code":"LI","name":"Liechtenstein"},{"code":"LT","name":"Lithuania"},{"code":"LU","name":"Luxembourg"},{"code":"MO","name":"Macau"},{"code":"MK","name":"Macedonia"},{"code":"MG","name":"Madagascar"},{"code":"MW","name":"Malawi"},{"code":"MY","name":"Malaysia"},{"code":"MV","name":"Maldives"},{"code":"ML","name":"Mali"},{"code":"MT","name":"Malta"},{"code":"MH","name":"Marshall Islands"},{"code":"MQ","name":"Martinique"},{"code":"MU","name":"Mauritius"},{"code":"YT","name":"Mayotte"},{"code":"MX","name":"Mexico"},{"code":"FM","name":"Micronesia"},{"code":"MD","name":"Moldova"},{"code":"MC","name":"Monaco"},{"code":"MN","name":"Mongolia"},{"code":"ME","name":"Montenegro"},{"code":"MS","name":"Montserrat"},{"code":"MZ","name":"Mozambique"},{"code":"NA","name":"Namibia"},{"code":"NR","name":"Nauru"},{"code":"NP","name":"Nepal"},{"code":"NL","name":"Netherlands"},{"code":"AN","name":"Netherlands Antilles"},{"code":"NC","name":"New Caledonia"},{"code":"NZ","name":"New Zealand"},{"code":"NI","name":"Nicaragua"},{"code":"NE","name":"Niger"},{"code":"NG","name":"Nigeria"},{"code":"NU","name":"Niue"},{"code":"NF","name":"Norfolk Island"},{"code":"MP","name":"Northern Mariana Islands"},{"code":"NO","name":"Norway"},{"code":"PW","name":"Palau"},{"code":"PA","name":"Panama"},{"code":"PG","name":"Papua New Guinea"},{"code":"PY","name":"Paraguay"},{"code":"PE","name":"Peru"},{"code":"PH","name":"Philippines"},{"code":"PN","name":"Pitcairn Islands"},{"code":"PL","name":"Poland"},{"code":"PT","name":"Portugal"},{"code":"PR","name":"Puerto Rico"},{"code":"RE","name":"Reunion"},{"code":"RO","name":"Romania"},{"code":"RU","name":"Russia"},{"code":"RW","name":"Rwanda"},{"code":"SH","name":"Saint Helena"},{"code":"KN","name":"Saint Kitts and Nevis"},{"code":"LC","name":"Saint Lucia"},{"code":"PM","name":"Saint Pierre and Miquelon"},{"code":"VC","name":"Saint Vincent\/Grenadines"},{"code":"WS","name":"Samoa"},{"code":"SM","name":"San Marino"},{"code":"ST","name":"Sao Tome and Principe"},{"code":"SN","name":"Senegal"},{"code":"RS","name":"Serbia"},{"code":"SC","name":"Seychelles"},{"code":"SL","name":"Sierra Leone"},{"code":"SG","name":"Singapore"},{"code":"SK","name":"Slovakia"},{"code":"SI","name":"Slovenia"},{"code":"SB","name":"Solomon Islands"},{"code":"SO","name":"Somalia"},{"code":"ZA","name":"South Africa"},{"code":"GS","name":"South Georgia and the Islands"},{"code":"ES","name":"Spain"},{"code":"LK","name":"Sri Lanka"},{"code":"PS","name":"State of Palestine"},{"code":"SR","name":"Suriname"},{"code":"SJ","name":"Svalbard"},{"code":"SZ","name":"Swaziland"},{"code":"SE","name":"Sweden"},{"code":"CH","name":"Switzerland"},{"code":"TW","name":"Taiwan"},{"code":"TJ","name":"Tajikistan"},{"code":"TZ","name":"Tanzania"},{"code":"TH","name":"Thailand"},{"code":"TG","name":"Togo"},{"code":"TK","name":"Tokelau"},{"code":"TO","name":"Tonga"},{"code":"TT","name":"Trinidad and Tobago"},{"code":"TM","name":"Turkmenistan"},{"code":"TC","name":"Turks and Caicos Islands"},{"code":"TV","name":"Tuvalu"},{"code":"UG","name":"Uganda"},{"code":"UA","name":"Ukraine"},{"code":"UM","name":"United States Minor Outlying I"},{"code":"UY","name":"Uruguay"},{"code":"UZ","name":"Uzbekistan"},{"code":"VU","name":"Vanuatu"},{"code":"VE","name":"Venezuela"},{"code":"VN","name":"Vietnam"},{"code":"VI","name":"Virgin Islands"},{"code":"WF","name":"Wallis and Futuna"},{"code":"EH","name":"Western Sahara"},{"code":"ZM","name":"Zambia"},{"code":"ZW","name":"Zimbabwe"}],"available_states":{"DE":[{"code":"01","name":"Schleswig-Holstein"},{"code":"02","name":"Hamburg"},{"code":"03","name":"Lower Saxony"},{"code":"04","name":"Bremen"},{"code":"05","name":"Nrth Rhine Westfalia"},{"code":"06","name":"Hesse"},{"code":"07","name":"Rhineland Palatinate"},{"code":"08","name":"Baden-Wurttemberg"},{"code":"09","name":"Bavaria"},{"code":"10","name":"Saarland"},{"code":"11","name":"Berlin"},{"code":"12","name":"Brandenburg"},{"code":"13","name":"Mecklenburg-Vorpomm."},{"code":"14","name":"Saxony"},{"code":"15","name":"Saxony-Anhalt"},{"code":"16","name":"Thuringia"}],"HK":[{"code":"HK","name":"Hong Kong Island"},{"code":"KLN","name":"Kowloon"},{"code":"NT","name":"New Territories"}],"TW":[{"code":"FJN","name":"Fu-chien"},{"code":"KSH","name":"Kao-hsiung"},{"code":"TPE","name":"T\u00b4ai-pei"},{"code":"TWN","name":"Taiwan"}],"PT":[{"code":"10","name":"Minho-Lima"},{"code":"11","name":"C\u00e1vado"},{"code":"12","name":"Ave"},{"code":"13","name":"Grande Porto"},{"code":"14","name":"T\u00e2mega"},{"code":"15","name":"Entre Douro e Vouga"},{"code":"16","name":"Douro"},{"code":"17","name":"Alto Tr\u00e1s-os-Montes"},{"code":"20","name":"Baixo Vouga"},{"code":"21","name":"Baixo Mondego"},{"code":"22","name":"Pinhal Litoral"},{"code":"23","name":"Pinhal Interior N."},{"code":"24","name":"Pinhal Interior Sul"},{"code":"25","name":"D\u00e3o-Lafoes"},{"code":"26","name":"Serra da Estrela"},{"code":"27","name":"Beira Interior Norte"},{"code":"28","name":"Beira Interior Sul"},{"code":"29","name":"Cova da Beira"},{"code":"30","name":"Oeste"},{"code":"31","name":"Grande Lisboa"},{"code":"32","name":"Pen\u00ednsula de Set\u00fabal"},{"code":"33","name":"M\u00e9dio Tejo"},{"code":"34","name":"Lez\u00edria do Tejo"},{"code":"40","name":"Alentejo Litoral"},{"code":"41","name":"Alto Alentejo"},{"code":"42","name":"Alentejo Central"},{"code":"43","name":"Baixo Alentejo"},{"code":"50","name":"Algarve"},{"code":"60","name":"Reg. Aut. dos A\u00e7ores"},{"code":"70","name":"Reg. Aut. da Madeira"}],"HN":[{"code":"AT","name":"Atl\u00e1ntida"},{"code":"CH","name":"Choluteca"},{"code":"CL","name":"Col\u00f3n"},{"code":"CM","name":"Comayagua"},{"code":"CP","name":"Cop\u00e1n"},{"code":"CR","name":"Cort\u00e9s"},{"code":"EP","name":"El Para\u00edso"},{"code":"FM","name":"Francisco Moraz\u00e1n"},{"code":"GD","name":"Gracias a Dios"},{"code":"IB","name":"Islas de la Bah\u00eda"},{"code":"IN","name":"Intibuc\u00e1"},{"code":"LE","name":"Lempira"},{"code":"LP","name":"La Paz"},{"code":"OC","name":"Ocotepeque"},{"code":"OL","name":"Olancho"},{"code":"SB","name":"Santa B\u00e1rbara"},{"code":"VA","name":"Valle"},{"code":"YO","name":"Yoro"}],"DK":[{"code":"001","name":"Copenhagen"},{"code":"002","name":"\u00c5rhus amt"},{"code":"003","name":"Bornholm amt"},{"code":"004","name":"Frederiksborg amt"},{"code":"005","name":"Fyn amt"},{"code":"006","name":"K\u00f8benhavn amt"},{"code":"007","name":"Nordjylland amt"},{"code":"008","name":"Ribe amt"},{"code":"009","name":"Ringk\u00f8bing amt"},{"code":"010","name":"Roskilde amt"},{"code":"011","name":"S\u00f8nderjylland amt"},{"code":"012","name":"Storstr\u00f8m amt"},{"code":"013","name":"Vejle amt"},{"code":"014","name":"Vestsj\u00e6lland amt"},{"code":"015","name":"Viborg amt"},{"code":"016","name":"Gr\u00f8nlands amt"}],"HR":[{"code":"01","name":"Bjelovar-Bilogora"},{"code":"02","name":"Stadt Zagreb"},{"code":"03","name":"Dubrovnik-Neretva"},{"code":"04","name":"Istra"},{"code":"05","name":"Karlovac"},{"code":"06","name":"Koprivnica-Krizevci"},{"code":"07","name":"Lika-Senj"},{"code":"08","name":"Medimurje"},{"code":"09","name":"Osijek-Baranja"},{"code":"10","name":"Pozega-Slavonija"},{"code":"11","name":"Primorje-Gorski Kot."},{"code":"12","name":"Sibenik"},{"code":"13","name":"Sisak-Moslavina"},{"code":"14","name":"Slavonski"},{"code":"15","name":"Brod-Posavina"},{"code":"16","name":"Split-Dalmatia"},{"code":"17","name":"Varazdin"},{"code":"18","name":"Virovitica-Podravina"},{"code":"19","name":"Vukovar-Srijem"},{"code":"20","name":"Zadar-Knin"},{"code":"21","name":"Zagreb"}],"UA":[{"code":"CHG","name":"Chernigivs\u0027ka"},{"code":"CHR","name":"Cherkas\u0027ka"},{"code":"CHV","name":"Chernovits\u0027ka"},{"code":"DNP","name":"Dnipropetrovs\u0027ka"},{"code":"DON","name":"Donets\u0027ka"},{"code":"HAR","name":"Harkivs\u0027ka"},{"code":"HML","name":"Hmel\u0027nits\u0027ka"},{"code":"HRS","name":"Hersons\u0027ka"},{"code":"IVF","name":"Ivano-Frankivs\u0027ka"},{"code":"KIE","name":"Kievs\u0027ka"},{"code":"KIR","name":"Kirovograds\u0027ka"},{"code":"KRM","name":"Respublika Krim"},{"code":"LUG","name":"Lugans\u0027ka"},{"code":"L\u0027V","name":"L\u0027vivsbka"},{"code":"M_K","name":"m.Kiev"},{"code":"M_S","name":"m.Sevastopil\u0027"},{"code":"MIK","name":"Mikolaivs\u0027ka"},{"code":"ODS","name":"Odes\u0027ka"},{"code":"POL","name":"Poltavs\u0027ka"},{"code":"RIV","name":"Rivnens\u0027ka"},{"code":"SUM","name":"Sums\u0027ka"},{"code":"TER","name":"Ternopil\u0027s\u0027ka"},{"code":"VIN","name":"Vinnits\u0027ka"},{"code":"VOL","name":"Volins\u0027ka"},{"code":"ZAK","name":"Zakarpats\u0027ka"},{"code":"ZAP","name":"Zaporiz\u0027ka"},{"code":"ZHI","name":"Zhitomirs\u0027ka"}],"HU":[{"code":"01","name":"Bacs-Kiskun"},{"code":"02","name":"Baranya"},{"code":"03","name":"Bekes"},{"code":"04","name":"Bekescsaba"},{"code":"05","name":"Borsod-Abauj-Zemplen"},{"code":"06","name":"Budapest"},{"code":"07","name":"Csongrad"},{"code":"08","name":"Debrecen"},{"code":"09","name":"Dunaujvaros"},{"code":"10","name":"Eger"},{"code":"11","name":"Fejer"},{"code":"12","name":"Gyor"},{"code":"13","name":"Gyor-Moson-Sopron"},{"code":"14","name":"Hajdu-Bihar"},{"code":"15","name":"Heves"},{"code":"16","name":"Hodmezovasarhely"},{"code":"17","name":"Jasz-Nagykun-Szolnok"},{"code":"18","name":"Kaposvar"},{"code":"19","name":"Kecskemet"},{"code":"20","name":"Komarom-Esztergom"},{"code":"21","name":"Miskolc"},{"code":"22","name":"Nagykanizsa"},{"code":"23","name":"Nograd"},{"code":"24","name":"Nyiregyhaza"},{"code":"25","name":"Pecs"},{"code":"26","name":"Pest"},{"code":"27","name":"Somogy"},{"code":"28","name":"Sopron"},{"code":"29","name":"Szabolcs-Szat.-Bereg"},{"code":"30","name":"Szeged"},{"code":"31","name":"Szekesfehervar"},{"code":"32","name":"Szolnok"},{"code":"33","name":"Szombathely"},{"code":"34","name":"Tatabanya"},{"code":"35","name":"Tolna"},{"code":"36","name":"Vas"},{"code":"37","name":"Veszprem"},{"code":"38","name":"Zala"},{"code":"39","name":"Zalaegerszeg"}],"ID":[{"code":"01","name":"DKI Jakarta Jakarta"},{"code":"02","name":"Jawa Barat West Java"},{"code":"03","name":"Jawa Tengah Central"},{"code":"04","name":"Jawa Timur East Java"},{"code":"05","name":"DI Yogyakarta Yogyak"},{"code":"06","name":"DI Aceh Aceh"},{"code":"07","name":"Sumatera Utara North"},{"code":"08","name":"Sumatera Barat West"},{"code":"09","name":"Riau Riau"},{"code":"10","name":"Jambi Jambi"},{"code":"11","name":"Sumatera Selatan Sou"},{"code":"12","name":"Bengkulu Bengkulu"},{"code":"13","name":"Lampung Lampung"},{"code":"14","name":"Kalimantan Selatan S"},{"code":"15","name":"Kalimantan Barat Wes"},{"code":"16","name":"Kalimantan Tengah Ce"},{"code":"17","name":"Kalimantan Timur Eas"},{"code":"18","name":"Sulawesi Selatan Sou"},{"code":"19","name":"Sulawesi Tenggara So"},{"code":"20","name":"Sulawesi Tengah Cent"},{"code":"21","name":"Sulawesi Utara North"},{"code":"22","name":"Bali Bali"},{"code":"23","name":"Nusa Tenggara Barat"},{"code":"24","name":"Nusa Tenggara Timur"},{"code":"25","name":"Maluku Maluku"},{"code":"26","name":"Irian Jaya Irian Jay"},{"code":"27","name":"Timor Timur East Tim"}],"IE":[{"code":"CK","name":"Cork"},{"code":"CL","name":"Clare"},{"code":"CV","name":"Cavan"},{"code":"CW","name":"Carlow"},{"code":"DB","name":"Dublin"},{"code":"DG","name":"Donegal"},{"code":"GW","name":"Galway"},{"code":"KD","name":"Kildare"},{"code":"KK","name":"Kilkenny"},{"code":"KY","name":"Kerry"},{"code":"LF","name":"Longford"},{"code":"LI","name":"Limerick"},{"code":"LM","name":"Leitrim"},{"code":"LS","name":"Laois"},{"code":"LT","name":"Louth"},{"code":"MH","name":"Monaghan"},{"code":"MT","name":"Meath"},{"code":"MY","name":"Mayo"},{"code":"OF","name":"Offaly"},{"code":"RC","name":"Rosscommon"},{"code":"SG","name":"Sligo"},{"code":"TP","name":"Tipperary"},{"code":"WF","name":"Waterford"},{"code":"WK","name":"Wicklow"},{"code":"WM","name":"Westmeath"},{"code":"WX","name":"Wexford"}],"US":[{"code":"AA","name":"Armed Forces America"},{"code":"AE","name":"Armed Forces Europe"},{"code":"AK","name":"Alaska"},{"code":"AL","name":"Alabama"},{"code":"AP","name":"Armed Forces Pacific"},{"code":"AR","name":"Arkansas"},{"code":"AS","name":"American Samoa"},{"code":"AZ","name":"Arizona"},{"code":"CA","name":"California"},{"code":"CO","name":"Colorado"},{"code":"CT","name":"Connecticut"},{"code":"DC","name":"District of Columbia"},{"code":"DE","name":"Delaware"},{"code":"FL","name":"Florida"},{"code":"GA","name":"Georgia"},{"code":"GU","name":"Guam"},{"code":"HI","name":"Hawaii"},{"code":"IA","name":"Iowa"},{"code":"ID","name":"Idaho"},{"code":"IL","name":"Illinois"},{"code":"IN","name":"Indiana"},{"code":"KS","name":"Kansas"},{"code":"KY","name":"Kentucky"},{"code":"LA","name":"Louisiana"},{"code":"MA","name":"Massachusetts"},{"code":"MD","name":"Maryland"},{"code":"ME","name":"Maine"},{"code":"MI","name":"Michigan"},{"code":"MN","name":"Minnesota"},{"code":"MO","name":"Missouri"},{"code":"MP","name":"Northern Mariana Isl"},{"code":"MS","name":"Mississippi"},{"code":"MT","name":"Montana"},{"code":"NC","name":"North Carolina"},{"code":"ND","name":"North Dakota"},{"code":"NE","name":"Nebraska"},{"code":"NH","name":"New Hampshire"},{"code":"NJ","name":"New Jersey"},{"code":"NM","name":"New Mexico"},{"code":"NP","name":"No Plate"},{"code":"NV","name":"Nevada"},{"code":"NY","name":"New York"},{"code":"OH","name":"Ohio"},{"code":"OK","name":"Oklahoma"},{"code":"OR","name":"Oregon"},{"code":"PA","name":"Pennsylvania"},{"code":"PP","name":"Paper Plate"},{"code":"PR","name":"Puerto Rico"},{"code":"RI","name":"Rhode Island"},{"code":"SC","name":"South Carolina"},{"code":"SD","name":"South Dakota"},{"code":"TN","name":"Tennessee"},{"code":"TX","name":"Texas"},{"code":"UT","name":"Utah"},{"code":"VA","name":"Virginia"},{"code":"VI","name":"Virgin Islands"},{"code":"VT","name":"Vermont"},{"code":"WA","name":"Washington"},{"code":"WI","name":"Wisconsin"},{"code":"WV","name":"West Virginia"},{"code":"WY","name":"Wyoming"}],"IL":[{"code":"01","name":"Central"},{"code":"02","name":"Haifa"},{"code":"03","name":"Jerusalem"},{"code":"04","name":"Northern"},{"code":"05","name":"Southern"},{"code":"06","name":"Tel Aviv"}],"IN":[{"code":"01","name":"Andra Pradesh"},{"code":"02","name":"Arunachal Pradesh"},{"code":"03","name":"Assam"},{"code":"04","name":"Bihar"},{"code":"05","name":"Goa"},{"code":"06","name":"Gujarat"},{"code":"07","name":"Haryana"},{"code":"08","name":"Himachal Pradesh"},{"code":"09","name":"Jammu und Kashmir"},{"code":"10","name":"Karnataka"},{"code":"11","name":"Kerala"},{"code":"12","name":"Madhya Pradesh"},{"code":"13","name":"Maharashtra"},{"code":"14","name":"Manipur"},{"code":"15","name":"Megalaya"},{"code":"16","name":"Mizoram"},{"code":"17","name":"Nagaland"},{"code":"18","name":"Orissa"},{"code":"19","name":"Punjab"},{"code":"20","name":"Rajasthan"},{"code":"21","name":"Sikkim"},{"code":"22","name":"Tamil Nadu"},{"code":"23","name":"Tripura"},{"code":"24","name":"Uttar Pradesh"},{"code":"25","name":"West Bengal"},{"code":"26","name":"Andaman und Nico.In."},{"code":"27","name":"Chandigarh"},{"code":"28","name":"Dadra und Nagar Hav."},{"code":"29","name":"Daman und Diu"},{"code":"30","name":"Delhi"},{"code":"31","name":"Lakshadweep"},{"code":"32","name":"Pondicherry"},{"code":"33","name":"Pondicherry"},{"code":"34","name":""},{"code":"35","name":""}],"ZA":[{"code":"EC","name":"Eastern Cape"},{"code":"FS","name":"Freestate"},{"code":"GP","name":"Gauteng"},{"code":"KZN","name":"Kwazulu\/Natal"},{"code":"MP","name":"Mpumalanga"},{"code":"NC","name":"Northern Cape"},{"code":"NP","name":"Northern Province"},{"code":"NW","name":"North-West"},{"code":"WC","name":"Western Cape"}],"IT":[{"code":"AG","name":"Agriento"},{"code":"AL","name":"Alessandria"},{"code":"AN","name":"Ancona"},{"code":"AO","name":"Aosta"},{"code":"AP","name":"Ascoli Piceno"},{"code":"AQ","name":"L\u0027Aquila"},{"code":"AR","name":"Arezzo"},{"code":"AT","name":"Asti"},{"code":"AV","name":"Avellino"},{"code":"BA","name":"Bari"},{"code":"BG","name":"Bergamo"},{"code":"BI","name":"Biella"},{"code":"BL","name":"Belluno"},{"code":"BN","name":"Benevento"},{"code":"BO","name":"Bologna"},{"code":"BR","name":"Brindisi"},{"code":"BS","name":"Brescia"},{"code":"BZ","name":"Bolzano"},{"code":"CA","name":"Cagliari"},{"code":"CB","name":"Campobasso"},{"code":"CE","name":"Caserta"},{"code":"CH","name":"Chieti"},{"code":"CL","name":"Caltanisetta"},{"code":"CN","name":"Cuneo"},{"code":"CO","name":"Como"},{"code":"CR","name":"Cremona"},{"code":"CS","name":"Cosenza"},{"code":"CT","name":"Catania"},{"code":"CZ","name":"Catanzaro"},{"code":"EN","name":"Enna"},{"code":"FE","name":"Ferrara"},{"code":"FG","name":"Foggia"},{"code":"FI","name":"Florence"},{"code":"FO","name":"Forl\u00ec"},{"code":"FR","name":"Frosinone"},{"code":"GE","name":"Genova"},{"code":"GO","name":"Gorizia"},{"code":"GR","name":"Grosseto"},{"code":"IM","name":"Imperia"},{"code":"IS","name":"Isernia"},{"code":"KR","name":"Crotone"},{"code":"LC","name":"Lecco"},{"code":"LE","name":"Lecce"},{"code":"LI","name":"Livorno"},{"code":"LO","name":"Lodi"},{"code":"LT","name":"Latina"},{"code":"LU","name":"Lucca"},{"code":"MC","name":"Macerata"},{"code":"ME","name":"Messina"},{"code":"MI","name":"Milan"},{"code":"MN","name":"Mantova"},{"code":"MO","name":"Modena"},{"code":"MS","name":"Massa Carrara"},{"code":"MT","name":"Matera"},{"code":"NA","name":"Naples"},{"code":"NO","name":"Novara"},{"code":"NU","name":"Nuoro"},{"code":"OR","name":"Oristano"},{"code":"PA","name":"Palermo"},{"code":"PC","name":"Piacenza"},{"code":"PD","name":"Padova"},{"code":"PE","name":"Pescara"},{"code":"PG","name":"Perugia"},{"code":"PI","name":"Pisa"},{"code":"PN","name":"Pordenone"},{"code":"PO","name":"Prato"},{"code":"PR","name":"Parma"},{"code":"PS","name":"Pesaro"},{"code":"PT","name":"Pistoia"},{"code":"PU","name":"Pesaro-Urbino"},{"code":"PV","name":"Pavia"},{"code":"PZ","name":"Potenza"},{"code":"RA","name":"Ravenna"},{"code":"RC","name":"Reggio Calabria"},{"code":"RE","name":"Reggio Emilia"},{"code":"RG","name":"Ragusa"},{"code":"RI","name":"Rieti"},{"code":"RM","name":"Rome"},{"code":"RN","name":"Rimini"},{"code":"RO","name":"Rovigo"},{"code":"RV","name":"Rovigo"},{"code":"SA","name":"Salerno"},{"code":"SI","name":"Siena"},{"code":"SO","name":"Sondrio"},{"code":"SP","name":"La Spezia"},{"code":"SR","name":"Siracusa"},{"code":"SS","name":"Sassari"},{"code":"SV","name":"Savona"},{"code":"TA","name":"Taranto"},{"code":"TE","name":"Teramo"},{"code":"TN","name":"Trento"},{"code":"TO","name":"Turin"},{"code":"TP","name":"Trapani"},{"code":"TR","name":"Terni"},{"code":"TS","name":"Trieste"},{"code":"TV","name":"Treviso"},{"code":"UD","name":"Udine"},{"code":"VA","name":"Varese"},{"code":"VC","name":"Vercelli"},{"code":"VE","name":"Venice"},{"code":"VI","name":"Vicenza"},{"code":"VR","name":"Verona"},{"code":"VT","name":"Viterbo"},{"code":"VV","name":"Vibo Valentia"}],"MX":[{"code":"AGS","name":"Aguascalientes"},{"code":"AGU","name":"Aguascalientes"},{"code":"BCN","name":"Baja California (N)"},{"code":"BCS","name":"Baja California Sur"},{"code":"CAM","name":"Campeche"},{"code":"CHH","name":"Chihuahua"},{"code":"CHI","name":"Chihuahua"},{"code":"CHP","name":"Chiapas"},{"code":"CHS","name":"Chiapas"},{"code":"CMP","name":"Campeche"},{"code":"COA","name":"Coahuila"},{"code":"COL","name":"Colima"},{"code":"DF","name":"Distrito Federal"},{"code":"DGO","name":"Durango"},{"code":"DIF","name":"Distrito Federal"},{"code":"DUR","name":"Durango"},{"code":"GRO","name":"Guerrero"},{"code":"GTO","name":"Guanajuato"},{"code":"GUA","name":"Guanajuato"},{"code":"HGO","name":"Hidalgo"},{"code":"HID","name":"Hidalgo"},{"code":"JAL","name":"Jalisco"},{"code":"MCH","name":"Michoac\u00e1n"},{"code":"MEX","name":"Estado de M\u00e9xico"},{"code":"MIC","name":"Michoac\u00e1n"},{"code":"MOR","name":"Morelos"},{"code":"NAY","name":"Nayarit"},{"code":"NL","name":"Nuevo L\u00e9on"},{"code":"NLE","name":"Nuevo L\u00e9on"},{"code":"OAX","name":"Oaxaca"},{"code":"PUE","name":"Puebla"},{"code":"QR","name":"Quintana Roo"},{"code":"QRO","name":"Quer\u00e9taro"},{"code":"QUE","name":"Quer\u00e9taro"},{"code":"ROO","name":"Quintana Roo"},{"code":"SIN","name":"Sinaloa"},{"code":"SLP","name":"San Luis Potos\u00ed"},{"code":"SON","name":"Sonora"},{"code":"TAB","name":"Tabasco"},{"code":"TAM","name":"Tamaulipas"},{"code":"TLA","name":"Tlaxcala"},{"code":"TLX","name":"Tlaxcala"},{"code":"TMS","name":"Tamaulipas"},{"code":"VER","name":"Veracruz"},{"code":"YUC","name":"Yucat\u00e1n"},{"code":"ZAC","name":"Zacatecas"}],"MY":[{"code":"JOH","name":"Johor"},{"code":"KED","name":"Kedah"},{"code":"KEL","name":"Kelantan"},{"code":"KUL","name":"Kuala Lumpur"},{"code":"LAB","name":"Labuan"},{"code":"MEL","name":"Melaka"},{"code":"PAH","name":"Pahang"},{"code":"PEL","name":"Perlis"},{"code":"PER","name":"Perak"},{"code":"PIN","name":"Pulau Pinang"},{"code":"SAB","name":"Sabah"},{"code":"SAR","name":"Sarawak"},{"code":"SEL","name":"Selangor"},{"code":"SER","name":"Negeri Sembilan"},{"code":"TRE","name":"Trengganu"}],"ES":[{"code":"01","name":"Alava"},{"code":"02","name":"Albacete"},{"code":"03","name":"Alicante"},{"code":"04","name":"Almeria"},{"code":"05","name":"Avila"},{"code":"06","name":"Badajoz"},{"code":"07","name":"Baleares"},{"code":"08","name":"Barcelona"},{"code":"09","name":"Burgos"},{"code":"10","name":"Caceres"},{"code":"11","name":"Cadiz"},{"code":"12","name":"Castellon"},{"code":"13","name":"Ciudad Real"},{"code":"14","name":"C\u00f3rdoba"},{"code":"15","name":"La Coru\u00f1a"},{"code":"16","name":"Cuenca"},{"code":"17","name":"Gerona"},{"code":"18","name":"Granada"},{"code":"19","name":"Guadalajara"},{"code":"20","name":"Guipuzcoa"},{"code":"21","name":"Huelva"},{"code":"22","name":"Huesca"},{"code":"23","name":"Jaen"},{"code":"24","name":"Leon"},{"code":"25","name":"Lerida"},{"code":"26","name":"La Rioja"},{"code":"27","name":"Lugo"},{"code":"28","name":"Madrid"},{"code":"29","name":"Malaga"},{"code":"30","name":"Murcia"},{"code":"31","name":"Navarra"},{"code":"32","name":"Orense"},{"code":"33","name":"Asturias"},{"code":"34","name":"Palencia"},{"code":"35","name":"Las Palmas"},{"code":"36","name":"Pontevedra"},{"code":"37","name":"Salamanca"},{"code":"38","name":"Sta. Cruz Tenerife"},{"code":"39","name":"Cantabria"},{"code":"40","name":"Segovia"},{"code":"41","name":"Sevilla"},{"code":"42","name":"Soria"},{"code":"43","name":"Tarragona"},{"code":"44","name":"Teruel"},{"code":"45","name":"Toledo"},{"code":"46","name":"Valencia"},{"code":"47","name":"Valladolid"},{"code":"48","name":"Vizcaya"},{"code":"49","name":"Zamora"},{"code":"50","name":"Zaragoza"}],"VE":[{"code":"AMA","name":"Amazon"},{"code":"ANZ","name":"Anzoategui"},{"code":"APU","name":"Apure"},{"code":"ARA","name":"Aragua"},{"code":"BAR","name":"Barinas"},{"code":"BOL","name":"Bolivar"},{"code":"CAR","name":"Carabobo"},{"code":"COJ","name":"Cojedes"},{"code":"DA","name":"Delta Amacuro"},{"code":"DF","name":"Distrito Federal"},{"code":"FAL","name":"Falcon"},{"code":"GUA","name":"Guarico"},{"code":"LAR","name":"Lara"},{"code":"MER","name":"Merida"},{"code":"MIR","name":"Miranda"},{"code":"MON","name":"Monagas"},{"code":"NE","name":"Nueva Esparta"},{"code":"POR","name":"Portuguesa"},{"code":"SUC","name":"Sucre"},{"code":"TAC","name":"Tachira"},{"code":"TRU","name":"Trujillo"},{"code":"VAR","name":"Vargas"},{"code":"YAR","name":"Yaracuy"},{"code":"ZUL","name":"Zulia"}],"AR":[{"code":"00","name":"Capital Federal"},{"code":"01","name":"Buenos Aires"},{"code":"02","name":"Catamarca"},{"code":"03","name":"C\u00f3rdoba"},{"code":"04","name":"Corrientes"},{"code":"05","name":"Entre Rios"},{"code":"06","name":"Jujuy"},{"code":"07","name":"Mendoza"},{"code":"08","name":"La Rioja"},{"code":"09","name":"Salta"},{"code":"10","name":"San Juan"},{"code":"11","name":"San Luis"},{"code":"12","name":"Santa F\u00e9"},{"code":"13","name":"Santiago del Estero"},{"code":"14","name":"Tucum\u00e1n"},{"code":"16","name":"Chaco"},{"code":"17","name":"Chubut"},{"code":"18","name":"Formosa"},{"code":"19","name":"Misiones"},{"code":"20","name":"Neuquen"},{"code":"21","name":"La Pampa"},{"code":"22","name":"Rio Negro"},{"code":"23","name":"Santa Cruz"},{"code":"24","name":"Tierra de Fuego"}],"AT":[{"code":"B","name":"Burgenland"},{"code":"K","name":"Carinthia"},{"code":"N\u00d6","name":"Lower Austria"},{"code":"O\u00d6","name":"Upper Austria"},{"code":"S","name":"Salzburg"},{"code":"ST","name":"Styria"},{"code":"T","name":"Tyrol"},{"code":"V","name":"Vorarlberg"},{"code":"W","name":"Vienna"}],"AU":[{"code":"ACT","name":"Aust Capital Terr"},{"code":"NSW","name":"New South Wales"},{"code":"NT","name":"Northern Territory"},{"code":"QLD","name":"Queensland"},{"code":"SA","name":"South Australia"},{"code":"TAS","name":"Tasmania"},{"code":"VIC","name":"Victoria"},{"code":"WA","name":"Western Australia"}],"RO":[{"code":"01","name":"Alba"},{"code":"02","name":"Arad"},{"code":"03","name":"Arges"},{"code":"04","name":"Bacau"},{"code":"05","name":"Bihor"},{"code":"06","name":"Bistrita-Nasaud"},{"code":"07","name":"Botosani"},{"code":"08","name":"Braila"},{"code":"09","name":"Brasov"},{"code":"10","name":"Bucuresti"},{"code":"11","name":"Buzau"},{"code":"12","name":"Calarasi"},{"code":"13","name":"Caras-Severin"},{"code":"14","name":"Cluj"},{"code":"15","name":"Constanta"},{"code":"16","name":"Covasna"},{"code":"17","name":"Dimbovita"},{"code":"18","name":"Dolj"},{"code":"19","name":"Galati"},{"code":"20","name":"Gorj"},{"code":"21","name":"Giurgiu"},{"code":"22","name":"Harghita"},{"code":"23","name":"Hunedoara"},{"code":"24","name":"Ialomita"},{"code":"25","name":"Iasi"},{"code":"26","name":"Maramures"},{"code":"27","name":"Mehedinti"},{"code":"28","name":"Mures"},{"code":"29","name":"Neamt"},{"code":"30","name":"Olt"},{"code":"31","name":"Prahova"},{"code":"32","name":"Salaj"},{"code":"33","name":"Satu Mare"},{"code":"34","name":"Sibiu"},{"code":"35","name":"Suceava"},{"code":"36","name":"Teleorman"},{"code":"37","name":"Timis"},{"code":"38","name":"Tulcea"},{"code":"39","name":"Vaslui"},{"code":"40","name":"Vilcea"},{"code":"41","name":"Vrancea"}],"NL":[{"code":"01","name":"Drenthe"},{"code":"02","name":"Flevoland"},{"code":"03","name":"Friesland"},{"code":"04","name":"Gelderland"},{"code":"05","name":"Groningen"},{"code":"06","name":"Limburg"},{"code":"07","name":"Noord-Brabant"},{"code":"08","name":"Noord-Holland"},{"code":"09","name":"Overijssel"},{"code":"10","name":"Utrecht"},{"code":"11","name":"Zeeland"},{"code":"12","name":"Zuid-Holland"}],"NO":[{"code":"01","name":"\u00d8stfold Fylke"},{"code":"02","name":"Akershus Fylke"},{"code":"03","name":"Oslo"},{"code":"04","name":"Hedmark Fylke"},{"code":"05","name":"Oppland Fylke"},{"code":"06","name":"Buskerud Fylke"},{"code":"07","name":"Vestfold Fylke"},{"code":"08","name":"Telemark Fylke"},{"code":"09","name":"Aust-Agder Fylke"},{"code":"10","name":"Vest-Agder Fylke"},{"code":"11","name":"Rogaland Fylke"},{"code":"12","name":"Hordaland Fylke"},{"code":"14","name":"Sogn og Fjordane F."},{"code":"15","name":"M\u00f8re og Romsdal F."},{"code":"16","name":"S\u00f8r-Tr\u00f8ndelag Fylke"},{"code":"17","name":"Nord-Tr\u00f8ndelag Fylke"},{"code":"18","name":"Nordland Fylke"},{"code":"19","name":"Troms Fylke"},{"code":"20","name":"Finnmark Fylke"}],"BE":[{"code":"01","name":"Antwerp"},{"code":"02","name":"Brabant (Flemish)"},{"code":"03","name":"Hainaut"},{"code":"04","name":"Liege"},{"code":"05","name":"Limburg"},{"code":"06","name":"Luxembourg"},{"code":"07","name":"Namur"},{"code":"08","name":"Oost-Vlaanderen"},{"code":"09","name":"West-Vlaanderen"},{"code":"10","name":"Brabant (Walloon)"},{"code":"11","name":"Brussels (Capital)"}],"FI":[{"code":"001","name":"Ahvenanmaa"},{"code":"002","name":"Etel\u00e4-Suomi"},{"code":"003","name":"It\u00e4-Suomi"},{"code":"004","name":"Lappi"},{"code":"005","name":"L\u00e4nsi-Suomi"},{"code":"006","name":"Oulu"}],"RU":[{"code":"01","name":"Adigeja Republic"},{"code":"02","name":"Highlands-Altay Rep."},{"code":"03","name":"Republ.of Bashkortos"},{"code":"04","name":"Buryat Republic"},{"code":"05","name":"Dagestan Republic"},{"code":"06","name":"Ingushetija Republic"},{"code":"07","name":"Kabardino-Balkar.Rep"},{"code":"08","name":"Kalmyk Republic"},{"code":"09","name":"Karach.-Cherkessk Re"},{"code":"10","name":"Karelian Republic"},{"code":"11","name":"Komi Republic"},{"code":"12","name":"Marijskaya Republic"},{"code":"13","name":"Mordovian Republic"},{"code":"14","name":"Yakutiya-Saha Rrepub"},{"code":"15","name":"North-Osetiya Republ"},{"code":"16","name":"Tatarstan Republic"},{"code":"17","name":"Tuva Republic"},{"code":"18","name":"The Udmurt Republic"},{"code":"19","name":"Chakassky Republic"},{"code":"20","name":"Chechenskaya Republ."},{"code":"21","name":"Chuvash Republic"},{"code":"22","name":"Altay Territory"},{"code":"23","name":"Krasnodar Territory"},{"code":"24","name":"Krasnoyarsk Territor"},{"code":"25","name":"Primorye Territory"},{"code":"26","name":"Stavropol Territory"},{"code":"27","name":"Khabarovsk Territory"},{"code":"28","name":"The Amur Area"},{"code":"29","name":"The Arkhangelsk Area"},{"code":"30","name":"The Astrakhan Area"},{"code":"31","name":"The Belgorod Area"},{"code":"32","name":"The Bryansk Area"},{"code":"33","name":"The Vladimir Area"},{"code":"34","name":"The Volgograd Area"},{"code":"35","name":"The Vologda Area"},{"code":"36","name":"The Voronezh Area"},{"code":"37","name":"The Ivanovo Area"},{"code":"38","name":"The Irkutsk Area"},{"code":"39","name":"The Kaliningrad Area"},{"code":"40","name":"The Kaluga Area"},{"code":"41","name":"The Kamchatka Area"},{"code":"42","name":"The Kemerovo Area"},{"code":"43","name":"The Kirov Area"},{"code":"44","name":"The Kostroma Area"},{"code":"45","name":"The Kurgan Area"},{"code":"46","name":"The Kursk Area"},{"code":"47","name":"The Leningrad Area"},{"code":"48","name":"The Lipetsk Area"},{"code":"49","name":"The Magadan Area"},{"code":"50","name":"The Moscow Area"},{"code":"51","name":"The Murmansk Area"},{"code":"52","name":"The Nizhniy Novgorod"},{"code":"53","name":"The Novgorod Area"},{"code":"54","name":"The Novosibirsk Area"},{"code":"55","name":"The Omsk Area"},{"code":"56","name":"The Orenburg Area"},{"code":"57","name":"The Oryol Area"},{"code":"58","name":"The Penza Area"},{"code":"59","name":"The Perm Area"},{"code":"60","name":"The Pskov Area"},{"code":"61","name":"The Rostov Area"},{"code":"62","name":"The Ryazan Area"},{"code":"63","name":"The Samara Area"},{"code":"64","name":"The Saratov Area"},{"code":"65","name":"The Sakhalin Area"},{"code":"66","name":"The Sverdlovsk Area"},{"code":"67","name":"The Smolensk Area"},{"code":"68","name":"The Tambov Area"},{"code":"69","name":"The Tver Area"},{"code":"70","name":"The Tomsk Area"},{"code":"71","name":"The Tula Area"},{"code":"72","name":"The Tyumen Area"},{"code":"73","name":"The Ulyanovsk Area"},{"code":"74","name":"The Chelyabinsk Area"},{"code":"75","name":"The Chita Area"},{"code":"76","name":"The Yaroslavl Area"},{"code":"77","name":"c.Moscow"},{"code":"78","name":"c.St-Peterburg"},{"code":"79","name":"The Jewish Auton.are"},{"code":"80","name":"Aginsk Buryat Aut.di"},{"code":"81","name":"Komy Permjats.Aut.di"},{"code":"82","name":"Korjacs Auton.distri"},{"code":"83","name":"Nenekchky Auton.dist"},{"code":"84","name":"The Taymir Auton.dis"},{"code":"85","name":"Ust-Ordinsky Buryat"},{"code":"86","name":"Chanti-Mansyjsky Aut"},{"code":"87","name":"Chukotka Auton. dist"},{"code":"88","name":"Evensky Auton.distri"},{"code":"89","name":"Jamalo-Nenekchky Aut"}],"BG":[{"code":"01","name":"Burgas"},{"code":"02","name":"Grad Sofiya"},{"code":"03","name":"Khaskovo"},{"code":"04","name":"Lovech"},{"code":"05","name":"Montana"},{"code":"06","name":"Plovdiv"},{"code":"07","name":"Ruse"},{"code":"08","name":"Sofiya"},{"code":"09","name":"Varna"}],"JP":[{"code":"01","name":"Hokkaido"},{"code":"02","name":"Aomori"},{"code":"03","name":"Iwate"},{"code":"04","name":"Miyagi"},{"code":"05","name":"Akita"},{"code":"06","name":"Yamagata"},{"code":"07","name":"Fukushima"},{"code":"08","name":"Ibaraki"},{"code":"09","name":"Tochigi"},{"code":"10","name":"Gunma"},{"code":"11","name":"Saitama"},{"code":"12","name":"Chiba"},{"code":"13","name":"Tokyo"},{"code":"14","name":"Kanagawa"},{"code":"15","name":"Niigata"},{"code":"16","name":"Toyama"},{"code":"17","name":"Ishikawa"},{"code":"18","name":"Fukui"},{"code":"19","name":"Yamanashi"},{"code":"20","name":"Nagano"},{"code":"21","name":"Gifu"},{"code":"22","name":"Shizuoka"},{"code":"23","name":"Aichi"},{"code":"24","name":"Mie"},{"code":"25","name":"Shiga"},{"code":"26","name":"Kyoto"},{"code":"27","name":"Osaka"},{"code":"28","name":"Hyogo"},{"code":"29","name":"Nara"},{"code":"30","name":"Wakayama"},{"code":"31","name":"Tottori"},{"code":"32","name":"Shimane"},{"code":"33","name":"Okayama"},{"code":"34","name":"Hiroshima"},{"code":"35","name":"Yamaguchi"},{"code":"36","name":"Tokushima"},{"code":"37","name":"Kagawa"},{"code":"38","name":"Ehime"},{"code":"39","name":"Kochi"},{"code":"40","name":"Fukuoka"},{"code":"41","name":"Saga"},{"code":"42","name":"Nagasaki"},{"code":"43","name":"Kumamoto"},{"code":"44","name":"Oita"},{"code":"45","name":"Miyazaki"},{"code":"46","name":"Kagoshima"},{"code":"47","name":"Okinawa"}],"FR":[{"code":"01","name":"Ain"},{"code":"02","name":"Aisne"},{"code":"03","name":"Allier"},{"code":"04","name":"Alpes (Hte-Provence)"},{"code":"05","name":"Alpes (Hautes)"},{"code":"06","name":"Alpes-Maritimes"},{"code":"07","name":"Ard\u00e8che"},{"code":"08","name":"Ardennes"},{"code":"09","name":"Ari\u00e8ge"},{"code":"10","name":"Aube"},{"code":"11","name":"Aude"},{"code":"12","name":"Aveyron"},{"code":"13","name":"Bouches-du-Rh\u00f4ne"},{"code":"14","name":"Calvados"},{"code":"15","name":"Cantal"},{"code":"16","name":"Charente"},{"code":"17","name":"Charente-Maritime"},{"code":"18","name":"Cher"},{"code":"19","name":"Corr\u00e8ze"},{"code":"21","name":"C\u00f4te-d\u0027Or"},{"code":"22","name":"C\u00f4tes-d\u0027Armor"},{"code":"23","name":"Creuse"},{"code":"24","name":"Dordogne"},{"code":"25","name":"Doubs"},{"code":"26","name":"Dr\u00f4me"},{"code":"27","name":"Eure"},{"code":"28","name":"Eure-et-Loir"},{"code":"29","name":"Finist\u00e8re"},{"code":"2A","name":"Corse-du-Sud"},{"code":"2B","name":"Corse-du-Nord"},{"code":"30","name":"Gard"},{"code":"31","name":"Garonne (Haute)"},{"code":"32","name":"Gers"},{"code":"33","name":"Gironde"},{"code":"34","name":"H\u00e9rault"},{"code":"35","name":"Ille-et-Vilaine"},{"code":"36","name":"Indre"},{"code":"37","name":"Indre-et-Loire"},{"code":"38","name":"Is\u00e8re"},{"code":"39","name":"Jura"},{"code":"40","name":"Landes"},{"code":"41","name":"Loir-et-Cher"},{"code":"42","name":"Loire"},{"code":"43","name":"Loire (Haute)"},{"code":"44","name":"Loire-Atlantique"},{"code":"45","name":"Loiret"},{"code":"46","name":"Lot"},{"code":"47","name":"Lot-et-Garonne"},{"code":"48","name":"Loz\u00e8re"},{"code":"49","name":"Maine-et-Loire"},{"code":"50","name":"Manche"},{"code":"51","name":"Marne"},{"code":"52","name":"Marne (Haute)"},{"code":"53","name":"Mayenne"},{"code":"54","name":"Meurthe-et-Moselle"},{"code":"55","name":"Meuse"},{"code":"56","name":"Morbihan"},{"code":"57","name":"Moselle"},{"code":"58","name":"Ni\u00e8vre"},{"code":"59","name":"Nord"},{"code":"60","name":"Oise"},{"code":"61","name":"Orne"},{"code":"62","name":"Pas-de-Calais"},{"code":"63","name":"Puy-de-D\u00f4me"},{"code":"64","name":"Pyr\u00e9n\u00e9es-Atlantiques"},{"code":"65","name":"Pyr\u00e9n\u00e9es (Hautes)"},{"code":"66","name":"Pyr\u00e9n\u00e9es-Orientales"},{"code":"67","name":"Bas-Rhin"},{"code":"68","name":"Haut-Rhin"},{"code":"69","name":"Rh\u00f4ne"},{"code":"70","name":"Sa\u00f4ne (Haute)"},{"code":"71","name":"Sa\u00f4ne-et-Loire"},{"code":"72","name":"Sarthe"},{"code":"73","name":"Savoie"},{"code":"74","name":"Savoie (Haute)"},{"code":"75","name":"Paris"},{"code":"76","name":"Seine-Maritime"},{"code":"77","name":"Seine-et-Marne"},{"code":"78","name":"Yvelines"},{"code":"79","name":"S\u00e8vres (Deux)"},{"code":"80","name":"Somme"},{"code":"81","name":"Tarn"},{"code":"82","name":"Tarn-et-Garonne"},{"code":"83","name":"Var"},{"code":"84","name":"Vaucluse"},{"code":"85","name":"Vend\u00e9e"},{"code":"86","name":"Vienne"},{"code":"87","name":"Vienne (Haute)"},{"code":"88","name":"Vosges"},{"code":"89","name":"Yonne"},{"code":"90","name":"Territ.-de-Belfort"},{"code":"91","name":"Essonne"},{"code":"92","name":"Hauts-de-Seine"},{"code":"93","name":"Seine-Saint-Denis"},{"code":"94","name":"Val-de-Marne"},{"code":"95","name":"Val-d\u0027Oise"},{"code":"97","name":"D.O.M.-T.O.M."},{"code":"971","name":"Guadeloupe"},{"code":"972","name":"Martinique"},{"code":"973","name":"Guyane"},{"code":"974","name":"R\u00e9union"},{"code":"975","name":"Saint-Pierre-et-Miq."},{"code":"976","name":"Wallis-et-Futuna"},{"code":"99","name":"Hors-France"}],"NZ":[{"code":"AKL","name":"Auckland"},{"code":"BOP","name":"Bay of Plenty"},{"code":"CAN","name":"Canterbury"},{"code":"HAB","name":"Hawke\u00b4s Bay"},{"code":"MAN","name":"Manawatu-Wanganui"},{"code":"NTL","name":"Northland"},{"code":"OTA","name":"Otago"},{"code":"STL","name":"Southland"},{"code":"TAR","name":"Taranaki"},{"code":"WAI","name":"Waikato"},{"code":"WEC","name":"West Coast"},{"code":"WLG","name":"Wellington"}],"BR":[{"code":"AC","name":"Acre"},{"code":"AL","name":"Alagoas"},{"code":"AM","name":"Amazon"},{"code":"AP","name":"Amap\u00e1"},{"code":"BA","name":"Bahia"},{"code":"CE","name":"Cear\u00e1"},{"code":"DF","name":"Bras\u00edlia"},{"code":"ES","name":"Esp\u00edrito Santo"},{"code":"GO","name":"Goi\u00e1s"},{"code":"MA","name":"Maranh\u00e3o"},{"code":"MG","name":"Minas Gerais"},{"code":"MS","name":"Mato Grosso do Sul"},{"code":"MT","name":"Mato Grosso"},{"code":"PA","name":"Par\u00e1"},{"code":"PB","name":"Para\u00edba"},{"code":"PE","name":"Pernambuco"},{"code":"PI","name":"Piau\u00ed"},{"code":"PR","name":"Paran\u00e1"},{"code":"RJ","name":"Rio de Janeiro"},{"code":"RN","name":"Rio Grande do Norte"},{"code":"RO","name":"Rond\u00f4nia"},{"code":"RR","name":"Roraima"},{"code":"RS","name":"Rio Grande do Sul"},{"code":"SC","name":"Santa Catarina"},{"code":"SE","name":"Sergipe"},{"code":"SP","name":"S\u00e3o Paulo"},{"code":"TO","name":"Tocantins"}],"SE":[{"code":"001","name":"Blekinge L\u00e4n"},{"code":"002","name":"Dalarnas L\u00e4n"},{"code":"003","name":"Gotlands L\u00e4n"},{"code":"004","name":"G\u00e4vleborgs L\u00e4n"},{"code":"005","name":"Hallands L\u00e4n"},{"code":"006","name":"J\u00e4mtlands L\u00e4n"},{"code":"007","name":"J\u00f6nk\u00f6pings L\u00e4n"},{"code":"008","name":"Kalmar L\u00e4n"},{"code":"009","name":"Kronobergs L\u00e4n"},{"code":"010","name":"Norrbottens L\u00e4n"},{"code":"011","name":"Sk\u00e5ne L\u00e4n"},{"code":"012","name":"Stockholms L\u00e4n"},{"code":"013","name":"S\u00f6dermanlands L\u00e4n"},{"code":"014","name":"Uppsala L\u00e4n"},{"code":"015","name":"V\u00e4rmlands L\u00e4n"},{"code":"016","name":"V\u00e4sterbottens L\u00e4n"},{"code":"017","name":"V\u00e4sternorrlands L\u00e4n"},{"code":"018","name":"V\u00e4stmanlands L\u00e4n"},{"code":"019","name":"V\u00e4stra G\u00f6talands L\u00e4n"},{"code":"020","name":"\u00d6rebro L\u00e4n"},{"code":"021","name":"\u00d6sterg\u00f6tlands L\u00e4n"}],"SG":[{"code":"SG","name":"Singapore"}],"SI":[{"code":"01","name":"Ajdovscina"},{"code":"02","name":"Brezice"},{"code":"03","name":"Celje"},{"code":"04","name":"Cerknica"},{"code":"05","name":"Crnomelj"},{"code":"06","name":"Dravograd"},{"code":"07","name":"Gornja Radgona"},{"code":"08","name":"Grosuplje"},{"code":"09","name":"Hrastnik Lasko"},{"code":"10","name":"Idrija"},{"code":"11","name":"Ilirska Bistrica"},{"code":"12","name":"Izola"},{"code":"13","name":"Jesenice"},{"code":"14","name":"Kamnik"},{"code":"15","name":"Kocevje"},{"code":"16","name":"Koper"},{"code":"17","name":"Kranj"},{"code":"18","name":"Krsko"},{"code":"19","name":"Lenart"},{"code":"20","name":"Lendava"},{"code":"21","name":"Litija"},{"code":"22","name":"Ljubljana-Bezigrad"},{"code":"23","name":"Ljubljana-Center"},{"code":"24","name":"Ljubljana-Moste-Polj"},{"code":"25","name":"Ljubljana-Siska"},{"code":"26","name":"Ljubljana-Vic-Rudnik"},{"code":"27","name":"Ljutomer"},{"code":"28","name":"Logatec"},{"code":"29","name":"Maribor"},{"code":"30","name":"Metlika"},{"code":"31","name":"Mozirje"},{"code":"32","name":"Murska Sobota"},{"code":"33","name":"Nova Gorica"},{"code":"34","name":"Novo Mesto"},{"code":"35","name":"Ormoz"},{"code":"36","name":"Pesnica"},{"code":"37","name":"Piran"},{"code":"38","name":"Postojna"},{"code":"39","name":"Ptuj"},{"code":"40","name":"Radlje Ob Dravi"},{"code":"41","name":"Radovljica"},{"code":"42","name":"Ravne Na Koroskem"},{"code":"43","name":"Ribnica"},{"code":"44","name":"Ruse"},{"code":"45","name":"Sentjur Pri Celju"},{"code":"46","name":"Sevnica"},{"code":"47","name":"Sezana"},{"code":"48","name":"Skofja Loka"},{"code":"49","name":"Slovenj Gradec"},{"code":"50","name":"Slovenska Bistrica"},{"code":"51","name":"Slovenske Konjice"},{"code":"52","name":"Smarje Pri Jelsah"},{"code":"53","name":"Tolmin"},{"code":"54","name":"Trbovlje"},{"code":"55","name":"Trebnje"},{"code":"56","name":"Trzic"},{"code":"57","name":"Velenje"},{"code":"58","name":"Vrhnika"},{"code":"59","name":"Zagorje Ob Savi"},{"code":"60","name":"Zalec"}],"BZ":[{"code":"BZ","name":"Belize"},{"code":"CY","name":"Cayo"},{"code":"CZ","name":"Corozal"},{"code":"OW","name":"Orange Walk"},{"code":"SC","name":"Stann Creek"},{"code":"TO","name":"Toledo"}],"SK":[{"code":"01","name":"Bratislava"},{"code":"02","name":"Zapadoslovensky"},{"code":"03","name":"Stredoslovensky"},{"code":"04","name":"Vychodoslovensky"}],"GB":[{"code":"AM","name":"Armagh"},{"code":"AR","name":"Ards"},{"code":"AT","name":"Antrim"},{"code":"BA","name":"Ballymena"},{"code":"BB","name":"Blackburn"},{"code":"BE","name":"Bedfordshire"},{"code":"BF","name":"Bracknell Forest"},{"code":"BH","name":"Brighton \u0026 Hove"},{"code":"BK","name":"Berkshire"},{"code":"BL","name":"Belfast"},{"code":"BM","name":"Bournemouth"},{"code":"BN","name":"Banbridge"},{"code":"BO","name":"Borders"},{"code":"BP","name":"Blackpool"},{"code":"BR","name":"Bristol"},{"code":"BS","name":"Bath\u0026NthEstSomerset"},{"code":"BU","name":"Buckinghamshire"},{"code":"BY","name":"Ballymoney"},{"code":"CA","name":"Cambridgeshire"},{"code":"CE","name":"Central"},{"code":"CG","name":"Craigavon"},{"code":"CH","name":"Cheshire"},{"code":"CI","name":"Coleraine"},{"code":"CK","name":"Cookstown"},{"code":"CL","name":"Clwyd"},{"code":"CO","name":"Cornwall"},{"code":"CR","name":"Carrickfergus"},{"code":"CS","name":"Castlereagh"},{"code":"CU","name":"Cumbria"},{"code":"CV","name":"Cleveland"},{"code":"DB","name":"Derbyshire"},{"code":"DF","name":"Dumfries a. Galloway"},{"code":"DG","name":"Dungannon"},{"code":"DL","name":"Darlington"},{"code":"DN","name":"Down"},{"code":"DO","name":"Dorset"},{"code":"DU","name":"Durham"},{"code":"DV","name":"Devon"},{"code":"DY","name":"Dyfed"},{"code":"ER","name":"East Riding"},{"code":"ES","name":"Essex"},{"code":"FI","name":"Fife"},{"code":"FM","name":"Fermanagh"},{"code":"GL","name":"Gloucestershire"},{"code":"GM","name":"Greater Manchester"},{"code":"GR","name":"Grampian"},{"code":"GS","name":"Sth. Gloucestershire"},{"code":"GW","name":"Gwent"},{"code":"GY","name":"Gwynedd"},{"code":"HA","name":"Hampshire"},{"code":"HI","name":"Highland"},{"code":"HL","name":"Halton"},{"code":"HR","name":"Hartlepool"},{"code":"HT","name":"Hertfordshire"},{"code":"HW","name":"Hereford and Worcs."},{"code":"IW","name":"Isle of Wight"},{"code":"KE","name":"Kent"},{"code":"KH","name":"Kingston-upon-Hull"},{"code":"LA","name":"Lancashire"},{"code":"LC","name":"Leicester City"},{"code":"LD","name":"Londonderry"},{"code":"LE","name":"Leicestershire"},{"code":"LI","name":"Lincolnshire"},{"code":"LM","name":"Limavady"},{"code":"LO","name":"Greater London"},{"code":"LR","name":"Larne"},{"code":"LS","name":"Lisburn"},{"code":"LT","name":"Lothian"},{"code":"LU","name":"Luton"},{"code":"MA","name":"Magherafelt"},{"code":"MG","name":"Mid Glamorgan"},{"code":"MI","name":"Middlesbrough"},{"code":"MK","name":"Milton Keynes"},{"code":"MO","name":"Moyle"},{"code":"MY","name":"Merseyside"},{"code":"NA","name":"Newtownabbey"},{"code":"NB","name":"Newbury"},{"code":"NC","name":"Nottingham City"},{"code":"ND","name":"North Down"},{"code":"NE","name":"NthEast Lincolnshire"},{"code":"NH","name":"Northamptonshire"},{"code":"NK","name":"Norfolk"},{"code":"NL","name":"North Lincolnshire"},{"code":"NM","name":"Newry and Mourne"},{"code":"NS","name":"North Somerset"},{"code":"NT","name":"Nottinghamshire"},{"code":"NU","name":"Northumberland"},{"code":"OM","name":"Omagh"},{"code":"OR","name":"Orkney"},{"code":"OX","name":"Oxfordshire"},{"code":"PB","name":"Peterborough"},{"code":"PL","name":"Poole"},{"code":"PM","name":"Portsmouth"},{"code":"PO","name":"Powys"},{"code":"PY","name":"Plymouth"},{"code":"RD","name":"Redcar and Cleveland"},{"code":"RE","name":"Reading"},{"code":"RM","name":"Rochester up. Medway"},{"code":"RU","name":"Rutland"},{"code":"SC","name":"Strathclyde"},{"code":"SD","name":"Southend"},{"code":"SE","name":"East Sussex"},{"code":"SG","name":"South Glamorgan"},{"code":"SH","name":"Shropshire"},{"code":"SK","name":"Suffolk"},{"code":"SL","name":"Shetland"},{"code":"SN","name":"Stockton-on-Tees"},{"code":"SO","name":"Somerset"},{"code":"SP","name":"Southampton"},{"code":"SR","name":"Strabane"},{"code":"ST","name":"Staffordshire"},{"code":"SU","name":"Slough"},{"code":"SW","name":"West Sussex"},{"code":"SY","name":"Surrey"},{"code":"TA","name":"Tayside"},{"code":"TD","name":"Thamesdown"},{"code":"TH","name":"Thurrock"},{"code":"TO","name":"Torbay"},{"code":"TW","name":"Tyne and Wear"},{"code":"WA","name":"Warwickshire"},{"code":"WD","name":"Windsor \u0026 Maidenhead"},{"code":"WG","name":"West Glamorgan"},{"code":"WI","name":"Wiltshire"},{"code":"WL","name":"Western Isles"},{"code":"WM","name":"West Midlands"},{"code":"WO","name":"Wokingham"},{"code":"WR","name":"Wrekin"},{"code":"WT","name":"Warrington"},{"code":"YK","name":"York"},{"code":"YN","name":"North Yorkshire"},{"code":"YS","name":"South Yorkshire"},{"code":"YW","name":"West Yorkshire"}],"CA":[{"code":"AB","name":"Alberta"},{"code":"BC","name":"British Columbia"},{"code":"MB","name":"Manitoba"},{"code":"NB","name":"New Brunswick"},{"code":"NE","name":"ACS Legacy"},{"code":"NF","name":"Newfoundland (old)"},{"code":"NL","name":"Newfoundland \u0026 Labr."},{"code":"NS","name":"Nova Scotia"},{"code":"NT","name":"Northwest Terr."},{"code":"NU","name":"Nunavut"},{"code":"ON","name":"Ontario"},{"code":"PE","name":"Prince Edward Island"},{"code":"PQ","name":"ACS Legacy"},{"code":"QC","name":"Quebec"},{"code":"SK","name":"Saskatchewan"},{"code":"YT","name":"Yukon Territory"}],"CH":[{"code":"AG","name":"Aargau"},{"code":"AI","name":"Inner-Rhoden"},{"code":"AR","name":"Ausser-Rhoden"},{"code":"BE","name":"Bern"},{"code":"BL","name":"Basel Land"},{"code":"BS","name":"Basel Stadt"},{"code":"FR","name":"Fribourg"},{"code":"GE","name":"Geneva"},{"code":"GL","name":"Glarus"},{"code":"GR","name":"Graubuenden"},{"code":"JU","name":"Jura"},{"code":"LU","name":"Lucerne"},{"code":"NE","name":"Neuchatel"},{"code":"NW","name":"Nidwalden"},{"code":"OW","name":"Obwalden"},{"code":"SG","name":"St. Gallen"},{"code":"SH","name":"Schaffhausen"},{"code":"SO","name":"Solothurn"},{"code":"SZ","name":"Schwyz"},{"code":"TG","name":"Thurgau"},{"code":"TI","name":"Ticino"},{"code":"UR","name":"Uri"},{"code":"VD","name":"Vaud"},{"code":"VS","name":"Valais"},{"code":"ZG","name":"Zug"},{"code":"ZH","name":"Zurich"}],"KR":[{"code":"01","name":"Cheju-do"},{"code":"02","name":"Cholla-bukto"},{"code":"03","name":"Cholla-namdo"},{"code":"04","name":"Ch\u00b4ungch\u00b4ong-bukto"},{"code":"05","name":"Ch\u00b4ungch\u00b4ong-namdo"},{"code":"06","name":"Inch\u00b4on-jikhalsi"},{"code":"07","name":"Kangwon-do"},{"code":"08","name":"Kwangju-jikhalsi"},{"code":"09","name":"Kyonggi-do"},{"code":"10","name":"Kyongsang-bukto"},{"code":"11","name":"Kyongsang-namdo"},{"code":"12","name":"Pusan-jikhalsi"},{"code":"13","name":"Soul-t\u00b4ukpyolsi"},{"code":"14","name":"Taegu-jikhalsi"},{"code":"15","name":"Taejon-jikhalsi"}],"CL":[{"code":"01","name":"I - Iquique"},{"code":"02","name":"II - Antofagasta"},{"code":"03","name":"III - Copiapo"},{"code":"04","name":"IV - La Serena"},{"code":"05","name":"V - Valparaiso"},{"code":"06","name":"VI - Rancagua"},{"code":"07","name":"VII - Talca"},{"code":"08","name":"VIII - Concepci\u00f3n"},{"code":"09","name":"IX - Temuco"},{"code":"10","name":"X - Puerto Montt"},{"code":"11","name":"XI - Coyhaique"},{"code":"12","name":"XII - Punta Arenas"},{"code":"13","name":"RM - Santiago"}],"CN":[{"code":"010","name":"Beijing"},{"code":"020","name":"Shanghai"},{"code":"030","name":"Tianjin"},{"code":"040","name":"Nei Mongol"},{"code":"050","name":"Shanxi"},{"code":"060","name":"Hebei"},{"code":"070","name":"Liaoning"},{"code":"080","name":"Jilin"},{"code":"090","name":"Heilongjiang"},{"code":"100","name":"Jiangsu"},{"code":"110","name":"Anhui"},{"code":"120","name":"Shandong"},{"code":"130","name":"Zhejiang"},{"code":"140","name":"Jiangxi"},{"code":"150","name":"Fujian"},{"code":"160","name":"Hunan"},{"code":"170","name":"Hubei"},{"code":"180","name":"Henan"},{"code":"190","name":"Guangdong"},{"code":"200","name":"Hainan"},{"code":"210","name":"Guangxi"},{"code":"220","name":"Guizhou"},{"code":"230","name":"Sichuan"},{"code":"240","name":"Yunnan"},{"code":"250","name":"Shaanxi"},{"code":"260","name":"Gansu"},{"code":"270","name":"Ningxia"},{"code":"280","name":"Qinghai"},{"code":"290","name":"Xinjiang"},{"code":"300","name":"Xizang"},{"code":"310","name":"Taiwan"}],"GR":[{"code":"01","name":"Aitolia kai Akarnan."},{"code":"02","name":"Akhaia"},{"code":"03","name":"Argolis"},{"code":"04","name":"Arkadhia"},{"code":"05","name":"Arta"},{"code":"06","name":"Attiki"},{"code":"07","name":"Dhodhekanisos"},{"code":"08","name":"Dhrama"},{"code":"09","name":"Evritania"},{"code":"10","name":"Evros"},{"code":"11","name":"Evvoia"},{"code":"12","name":"Florina"},{"code":"13","name":"Fokis"},{"code":"14","name":"Fthiotis"},{"code":"15","name":"Grevena"},{"code":"16","name":"Ilia"},{"code":"17","name":"Imathia"},{"code":"18","name":"Ioannina"},{"code":"19","name":"Iraklion"},{"code":"20","name":"Kardhitsa"},{"code":"21","name":"Kastoria"},{"code":"22","name":"Kavala"},{"code":"23","name":"Kefallinia"},{"code":"24","name":"Kerkira"},{"code":"25","name":"Khalkidhiki"},{"code":"26","name":"Khania"},{"code":"27","name":"Khios"},{"code":"28","name":"Kikladhes"},{"code":"29","name":"Kilkis"},{"code":"30","name":"Korinthia"},{"code":"31","name":"Kozani"},{"code":"32","name":"Lakonia"},{"code":"33","name":"Larisa"},{"code":"34","name":"Lasithi"},{"code":"35","name":"Lesvos"},{"code":"36","name":"Levkas"},{"code":"37","name":"Magnisia"},{"code":"38","name":"Messinia"},{"code":"39","name":"Pella"},{"code":"40","name":"Pieria"},{"code":"41","name":"Piraievs"},{"code":"42","name":"Preveza"},{"code":"43","name":"Rethimni"},{"code":"44","name":"Rodhopi"},{"code":"45","name":"Samos"},{"code":"46","name":"Serrai"},{"code":"47","name":"Thesprotia"},{"code":"48","name":"Thessaloniki"},{"code":"49","name":"Trikala"},{"code":"50","name":"Voiotia"},{"code":"51","name":"Xanthi"},{"code":"52","name":"Zakinthos"}],"CO":[{"code":"05","name":"ANTIOQUIA"},{"code":"08","name":"ATLANTICO"},{"code":"11","name":"BOGOTA"},{"code":"13","name":"BOLIVAR"},{"code":"15","name":"BOYACA"},{"code":"17","name":"CALDAS"},{"code":"18","name":"CAQUETA"},{"code":"19","name":"CAUCA"},{"code":"20","name":"CESAR"},{"code":"23","name":"CORDOBA"},{"code":"25","name":"CUNDINAMARCA"},{"code":"27","name":"CHOCO"},{"code":"41","name":"HUILA"},{"code":"44","name":"LA GUAJIRA"},{"code":"47","name":"MAGDALENA"},{"code":"50","name":"META"},{"code":"52","name":"NARI\u00d1O"},{"code":"54","name":"NORTE SANTANDER"},{"code":"63","name":"QUINDIO"},{"code":"66","name":"RISARALDA"},{"code":"68","name":"SANTANDER"},{"code":"70","name":"SUCRE"},{"code":"73","name":"TOLIMA"},{"code":"76","name":"VALLE"},{"code":"81","name":"ARAUCA"},{"code":"85","name":"CASANARE"},{"code":"86","name":"PUTUMAYO"},{"code":"88","name":"SAN ANDRES"},{"code":"91","name":"AMAZONAS"},{"code":"94","name":"GUAINIA"},{"code":"95","name":"GUAVIARE"},{"code":"97","name":"VAUPES"},{"code":"99","name":"VICHADA"}],"KZ":[{"code":"00","name":"Almatynskaia"},{"code":"01","name":"Kostanaiskaia"},{"code":"02","name":"Severo-Kazakhstansk"},{"code":"03","name":"Pavlodarskaia"},{"code":"04","name":"Akmolinskaia"},{"code":"05","name":"Aktubinskaia"},{"code":"06","name":"Atyrauskaia"},{"code":"07","name":"Zapadno-Kazakhst"},{"code":"08","name":"Mangystayskaia"},{"code":"09","name":"Karagandinskaia"},{"code":"10","name":"Vostochno-Kazakhstan"},{"code":"11","name":"Gambilskaia"},{"code":"12","name":"Kyzilordinskaia"}],"TH":[{"code":"01","name":"Amnat Charoen"},{"code":"02","name":"Ang Thong"},{"code":"03","name":"Buriram"},{"code":"04","name":"Chachoengsao"},{"code":"05","name":"Chai Nat"},{"code":"06","name":"Chaiyaphum"},{"code":"07","name":"Chanthaburi"},{"code":"08","name":"Chiang Mai"},{"code":"09","name":"Chiang Rai"},{"code":"10","name":"Chon Buri"},{"code":"11","name":"Chumphon"},{"code":"12","name":"Kalasin"},{"code":"13","name":"Kamphaeng Phet"},{"code":"14","name":"Kanchanaburi"},{"code":"15","name":"Khon Kaen"},{"code":"16","name":"Krabi"},{"code":"17","name":"Krung Thep"},{"code":"18","name":"Mahanakhon"},{"code":"19","name":"Lampang"},{"code":"20","name":"Lamphun"},{"code":"21","name":"Loei"},{"code":"22","name":"Lop Buri"},{"code":"23","name":"Mae Hong Son"},{"code":"24","name":"Maha Sarakham"},{"code":"25","name":"Mukdahan"},{"code":"26","name":"Nakhon Nayok"},{"code":"27","name":"Nakhon Pathom"},{"code":"28","name":"Nakhon Phanom"},{"code":"29","name":"Nakhon Ratchasima"},{"code":"30","name":"Nakhon Sawan"},{"code":"31","name":"Nakhon Si Thammarat"},{"code":"32","name":"Nan"},{"code":"33","name":"Narathiwat"},{"code":"34","name":"Nong Bua Lamphu"},{"code":"35","name":"Nong Khai"},{"code":"36","name":"Nonthaburi"},{"code":"37","name":"Pathum Thani"},{"code":"38","name":"Pattani"},{"code":"39","name":"Phangnga"},{"code":"40","name":"Phatthalung"},{"code":"41","name":"Phayao"},{"code":"42","name":"Phetchabun"},{"code":"43","name":"Phetchaburi"},{"code":"44","name":"Phichit"},{"code":"45","name":"Phitsanulok"},{"code":"46","name":"Phra Nakhon Si Ayut."},{"code":"47","name":"Phrae"},{"code":"48","name":"Phuket"},{"code":"49","name":"Prachin Buri"}],"PE":[{"code":"01","name":"Tumbes"},{"code":"02","name":"Piura"},{"code":"03","name":"Lambayeque"},{"code":"04","name":"La Libertad"},{"code":"05","name":"Ancash"},{"code":"06","name":"Lima y Callao"},{"code":"07","name":"Ica"},{"code":"08","name":"Arequipa"},{"code":"09","name":"Moquegua"},{"code":"10","name":"Tacna"},{"code":"11","name":"Amazon"},{"code":"12","name":"Cajamarca"},{"code":"13","name":"San Mart\u00edn"},{"code":"14","name":"Hu\u00e1nuco"},{"code":"15","name":"Pasco"},{"code":"16","name":"Jun\u00edn"},{"code":"17","name":"Huancavelica"},{"code":"18","name":"Ayacucho"},{"code":"19","name":"Apurimac"},{"code":"20","name":"Cuzco"},{"code":"21","name":"Puno"},{"code":"22","name":"Loreto"},{"code":"23","name":"Ucayali"},{"code":"24","name":"Madre de D\u00edos"}],"CZ":[{"code":"01","name":"Jihocesky"},{"code":"02","name":"Jihomoravsky"},{"code":"03","name":"Praha"},{"code":"04","name":"Severocesky"},{"code":"05","name":"Severomoravsky"},{"code":"06","name":"Stredocesky"},{"code":"07","name":"Vychodocesky"},{"code":"08","name":"Zapadocesky"}],"PH":[{"code":"01","name":"Ilocos"},{"code":"02","name":"Cagayan Valley"},{"code":"03","name":"Central Luzon"},{"code":"04","name":"South Luzon"},{"code":"05","name":"Bicol"},{"code":"06","name":"West Visayas"},{"code":"07","name":"Central Visayas"},{"code":"08","name":"Eastern Visayas"},{"code":"09","name":"Western Mindanao"},{"code":"10","name":"Northern Mindanao"},{"code":"11","name":"Central Mindanao"},{"code":"12","name":"South Mindanao"}],"PL":[{"code":"01","name":"Biala Podlaska"},{"code":"02","name":"Bialystok"},{"code":"03","name":"Bielsko Biala"},{"code":"04","name":"Bydgoszcz"},{"code":"05","name":"Chelm"},{"code":"06","name":"Ciechanow"},{"code":"07","name":"Czestochowa"},{"code":"08","name":"Elblag"},{"code":"09","name":"Gdansk"},{"code":"10","name":"Gorzow"},{"code":"11","name":"Jelenia Gora"},{"code":"12","name":"Kalisz"},{"code":"13","name":"Katowice"},{"code":"14","name":"Kielce"},{"code":"15","name":"Konin"},{"code":"16","name":"Koszalin"},{"code":"17","name":"Krakow"},{"code":"18","name":"Krosno"},{"code":"19","name":"Legnica"},{"code":"20","name":"Leszno"},{"code":"21","name":"Lodz"},{"code":"22","name":"Lomza"},{"code":"23","name":"Lublin"},{"code":"24","name":"Nowy Sacz"},{"code":"25","name":"Olsztyn"},{"code":"26","name":"Opole"},{"code":"27","name":"Ostroleka"},{"code":"28","name":"Pila"},{"code":"29","name":"Piotrkow"},{"code":"30","name":"Plock"},{"code":"31","name":"Poznan"},{"code":"32","name":"Przemysl"},{"code":"33","name":"Radom"},{"code":"34","name":"Rzeszow"},{"code":"35","name":"Siedlce"},{"code":"36","name":"Sieradz"},{"code":"37","name":"Skierniewice"},{"code":"38","name":"Slupsk"},{"code":"39","name":"Suwalki"},{"code":"40","name":"Szczecin"},{"code":"41","name":"Tarnobrzeg"},{"code":"42","name":"Tarnow"},{"code":"43","name":"Torun"},{"code":"44","name":"Walbrzych"},{"code":"45","name":"Warszawa"},{"code":"46","name":"Wloclawek"},{"code":"47","name":"Wroclaw"},{"code":"48","name":"Zamosc"},{"code":"49","name":"Zielona Gora"}],"TR":[{"code":"01","name":"Adana"},{"code":"02","name":"Adiyaman"},{"code":"03","name":"Afyon"},{"code":"04","name":"Agri"},{"code":"05","name":"Amasya"},{"code":"06","name":"Ankara"},{"code":"07","name":"Antalya"},{"code":"08","name":"Artvin"},{"code":"09","name":"Aydin"},{"code":"10","name":"Balikesir"},{"code":"11","name":"Bilecik"},{"code":"12","name":"Bing\u00f6l"},{"code":"13","name":"Bitlis"},{"code":"14","name":"Bolu"},{"code":"15","name":"Burdur"},{"code":"16","name":"Bursa"},{"code":"17","name":"Canakkale"},{"code":"18","name":"Cankiri"},{"code":"19","name":"Corum"},{"code":"20","name":"Denizli"},{"code":"21","name":"Diyarbakir"},{"code":"22","name":"Edirne"},{"code":"23","name":"Elazig"},{"code":"24","name":"Erzincan"},{"code":"25","name":"Erzurum"},{"code":"26","name":"Eskisehir"},{"code":"27","name":"Gaziantep"},{"code":"28","name":"Giresun"},{"code":"29","name":"G\u00fcm\u00fcshane"},{"code":"30","name":"Hakkari"},{"code":"31","name":"Hatay"},{"code":"32","name":"Isparta"},{"code":"33","name":"Icel"},{"code":"34","name":"Istanbul"},{"code":"35","name":"Izmir"},{"code":"36","name":"Kars"},{"code":"37","name":"Kastamonu"},{"code":"38","name":"Kayseri"},{"code":"39","name":"Kirklareli"},{"code":"40","name":"Kirshehir"},{"code":"41","name":"Kocaeli"},{"code":"42","name":"Konya"},{"code":"43","name":"K\u00fctahya"},{"code":"44","name":"Malatya"},{"code":"45","name":"Manisa"},{"code":"46","name":"K.Marash"},{"code":"47","name":"Mardin"},{"code":"48","name":"Mugla"},{"code":"49","name":"Mush"},{"code":"50","name":"Nevshehir"},{"code":"51","name":"Nigde"},{"code":"52","name":"Ordu"},{"code":"53","name":"Rize"},{"code":"54","name":"Sakarya"},{"code":"55","name":"Samsun"},{"code":"56","name":"Siirt"},{"code":"57","name":"Sinop"},{"code":"58","name":"Sivas"},{"code":"59","name":"Tekirdag"},{"code":"60","name":"Tokat"},{"code":"61","name":"Trabzon"},{"code":"62","name":"Tunceli"},{"code":"63","name":"Shanliurfa"},{"code":"64","name":"Ushak"},{"code":"65","name":"Van"},{"code":"66","name":"Yozgat"},{"code":"67","name":"Zonguldak"},{"code":"68","name":"Aksaray"},{"code":"69","name":"Bayburt"},{"code":"70","name":"Karaman"},{"code":"71","name":"Kirikkale"},{"code":"72","name":"Batman"},{"code":"73","name":"Shirnak"},{"code":"74","name":"Bartin"},{"code":"75","name":"Ardahan"},{"code":"76","name":"Igdir"},{"code":"77","name":"Yalova"}]},"organizations":[{"id":"jvmi","name":"Jewish Voice Ministries International","currency_code":"USD","currency_symbol":"$","countries":{"AG":"Antigua and Barbuda","AQ":"Antarctica","AR":"Argentina","AS":"American Samoa","AU":"Australia","AW":"Aruba","AD":"Andorra","AI":"Anguilla","AL":"Albania","AM":"Armenia","AN":"Netherlands Antilles","AO":"Angola","AT":"Austria","BA":"Bosnia and Herzegovina","BD":"Bangladesh","BE":"Belgium","BF":"Burkina Faso","BG":"Bulgaria","BI":"Burundi","BJ":"Benin","BM":"Bermuda","BN":"Brunei","BT":"Bhutan","BV":"Bouvet Island","BW":"Botswana","BY":"Belarus","CD":"Congo (Kinshasa)","CF":"Central African Republic","CG":"Congo (Brazzaville)","CH":"Switzerland","CI":"C\u00f4te D\u0027Ivoire","CK":"Cook Islands","CM":"Cameroon","CN":"China","CV":"Cape Verde","CY":"Cyprus","CZ":"Czech Republic","DE":"Germany","DJ":"Djibouti","DK":"Denmark","EE":"Estonia","EH":"Western Sahara","ER":"Eritrea","ES":"Spain","ET":"Ethiopia","FI":"Finland","FK":"Falkland Islands (Islas Malvin","FM":"Micronesia","FO":"Faroe Islands","FR":"France","GA":"Gabon","GE":"Georgia","GF":"French Guiana","GG":"Guernsey","GH":"Ghana","GI":"Gibraltar","GL":"Greenland","GM":"Gambia, The","GN":"Guinea","GQ":"Equatorial Guinea","GR":"Greece","GS":"South Georgia and the Islands","GW":"Guinea-Bissau","HK":"Hong Kong","HR":"Croatia","HU":"Hungary","ID":"Indonesia","IE":"Ireland","IM":"Isle of Man","IN":"India","IO":"British Indian Ocean Territory","IS":"Iceland","IT":"Italy","JE":"Jersey","JP":"Japan","KE":"Kenya","KG":"Kyrgyzstan","KH":"Cambodia","KI":"Kiribati","KM":"Comoros","KR":"Korea, South","KY":"Cayman Islands","LA":"Laos","LB":"Lebanon","LI":"Liechtenstein","LK":"Sri Lanka","LR":"Liberia","LS":"Lesotho","LT":"Lithuania","LU":"Luxembourg","LV":"Latvia","MC":"Monaco","MD":"Moldova","ME":"Montenegro","MG":"Madagascar","MH":"Marshall Islands","MK":"Macedonia","ML":"Mali","MM":"Burma","MN":"Mongolia","MO":"Macau","MQ":"Martinique","MS":"Montserrat","MT":"Malta","MU":"Mauritius","MV":"Maldives","MW":"Malawi","MY":"Malaysia","MZ":"Mozambique","NA":"Namibia","NC":"New Caledonia","NE":"Niger","NG":"Nigeria","NL":"Netherlands","NO":"Norway","NP":"Nepal","NR":"Nauru","NU":"Niue","NZ":"New Zealand","PF":"French Polynesia","PG":"Papua New Guinea","PH":"Philippines","PL":"Poland","PM":"Saint Pierre and Miquelon","PN":"Pitcairn Islands","PS":"State of Palestine","PT":"Portugal","PW":"Palau","RE":"Reunion","RO":"Romania","RS":"Serbia","RU":"Russia","RW":"Rwanda","SB":"Solomon Islands","SC":"Seychelles","SE":"Sweden","SG":"Singapore","SH":"Saint Helena","SI":"Slovenia","SJ":"Svalbard","SK":"Slovakia","SL":"Sierra Leone","SM":"San Marino","SN":"Senegal","SO":"Somalia","ST":"Sao Tome and Principe","SZ":"Swaziland","TC":"Turks and Caicos Islands","TD":"Chad","TF":"French Southern Territories","TG":"Togo","TH":"Thailand","TJ":"Tajikistan","TK":"Tokelau","TL":"East Timor","TM":"Turkmenistan","TO":"Tonga","TT":"Trinidad and Tobago","TV":"Tuvalu","TW":"Taiwan","TZ":"Tanzania","UA":"Ukraine","UG":"Uganda","UZ":"Uzbekistan","VA":"Holy See","VG":"British Virgin Islands","VN":"Vietnam","VU":"Vanuatu","WF":"Wallis and Futuna","WS":"Samoa","XK":"Kosovo","YT":"Mayotte","ZA":"South Africa","ZM":"Zambia","ZW":"Zimbabwe","BB":"Barbados","BO":"Bolivia","BR":"Brazil","BS":"Bahamas","BZ":"Belize","CC":"Cocos (Keeling) Islands","CL":"Chile","CO":"Colombia","CR":"Costa Rica","CW":"Curacao","CX":"Christmas Island","DM":"Dominica","DO":"Dominican Republic","EC":"Ecuador","FJ":"Fiji","GD":"Grenada","GP":"Guadeloupe","GT":"Guatemala","GU":"Guam","GY":"Guyana","HM":"Heard Island and McDonald Isla","HN":"Honduras","HT":"Haiti","IL":"Israel","JM":"Jamaica","KN":"Saint Kitts and Nevis","LC":"Saint Lucia","MP":"Northern Mariana Islands","MX":"Mexico","NF":"Norfolk Island","NI":"Nicaragua","PA":"Panama","PE":"Peru","PR":"Puerto Rico","PY":"Paraguay","SR":"Suriname","SV":"El Salvador","UM":"United States Minor Outlying I","US":"United States","UY":"Uruguay","VC":"Saint Vincent\/Grenadines","VE":"Venezuela","VI":"Virgin Islands"}},{"id":"jvmca","name":"Jewish Voice Ministries Canada","currency_code":"CAD","currency_symbol":"$","countries":{"CA":"Canada","PS":"State of Palestine"}},{"id":"jvmuk","name":"Jewish Voice Ministries UK","currency_code":"GBP","currency_symbol":"\u00a3","countries":{"GB":"United Kingdom"}},{"id":"mlr","name":"Messianic Leadership Roundtable","currency_code":"USD","currency_symbol":"$","countries":[]},{"id":"test","name":"Test","currency_code":"USD","currency_symbol":"$","countries":[]}]},"jvmi_trending":{"nid":"1786"},"social_media":{"application_id":"Your Application ID"},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"user":{"email":null,"uid":0,"permissionsHash":"c0dced97e97cd14ba740b555e31439f7b153bc63b89a38876d3b6529a2be1354"}}</script>
+<script src="https://www.jewishvoice.org/core/assets/vendor/domready/ready.min.js?v=1.0.8"></script>
+<script src="https://www.jewishvoice.org/core/assets/vendor/jquery/jquery.min.js?v=2.2.4"></script>
+<script src="https://www.jewishvoice.org/core/misc/drupalSettingsLoader.js?v=8.3.6"></script>
+<script src="https://www.jewishvoice.org/core/misc/drupal.js?v=8.3.6"></script>
+<script src="https://www.jewishvoice.org/core/misc/drupal.init.js?v=8.3.6"></script>
+<script src="https://www.jewishvoice.org/modules/google_analytics/js/google_analytics.js?v=8.3.6"></script>
+<script src="https://geoip-js.com/js/apis/geoip2/v2.1/geoip2.js"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/polyfill.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/jvmi.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/bootstrap.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/data-binding.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/audio-tracking.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/partner-portal.js?v=0.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi_responsive_listener/js/responsiveListener.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi/js/vendor/jquery.validate.min.js?v=1.17"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi_survey/js/survey.js?v=0.11"></script>
+<script src="https://www.jewishvoice.org/modules/jvmi_trending/js/trending.js?v=0.2"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/tether.min.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/bootstrap.min.js?v=0.1"></script>
+<script src="https://kit.fontawesome.com/40ea848efb.js"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/slick.min.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/selectnav.min.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/script.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/themes/jewishvoice/js/onThemeLoaded.js?v=0.1"></script>
+<script src="https://www.jewishvoice.org/modules/social_media/js/facebook.js?v=1.0.x"></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"93dfdf4ef4","applicationID":"49203471","transactionName":"NgdUbURVC0QHAk1RXQ9Nd1pCXQpZSSVLTUIADmp6WUYAayAOS1VuJw1EVHRBDFsCBEsVDBMHWF1TRjVbBwJcUF0NBlNLcFsXWicCTVFdDw==","queueTime":0,"applicationTime":571,"atts":"GkBXGwxPGEo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

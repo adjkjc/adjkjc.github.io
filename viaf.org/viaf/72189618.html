@@ -1,0 +1,2532 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script src="https://cdn.cookielaw.org/langswitch/b166fb9e-beed-4dd2-8201-a15d0c055e30.js"
+              type="text/javascript"
+              charset="UTF-8">//</script>
+      <script type="text/javascript">
+                        function OptanonWrapper() { }
+                        </script>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="referrer" content="origin"/>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/raphael.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/webjars/jquery/2.1.1/jquery.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/viaf.js">//</script>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/viaf.css"/>
+      <link href="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/themes/base/jquery-ui.css"
+            rel="stylesheet"
+            type="text/css"/>
+      <script type="text/javascript"
+              src="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/ui/minified/jquery-ui.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.columnizer.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.dataTables.min.js">//</script>
+      <link rel="shortcut icon" href="https://viaf.org/viaf/images/viaf.ico"/>
+      <link rel="search" title="VIAF Search" type="application/opensearchdescription+xml"
+            href="http://viaf.org/allFieldsSearch.xml"/>
+      <link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/"/>
+      <title>72189618</title>
+      <link rel="canonical" href="http://viaf.org/viaf/72189618"/>
+      <link rel="alternate" href="https://viaf.org/viaf/72189618/rdf.xml"
+            type="application/rdf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/72189618/marc21.xml"
+            type="application/x-marc21+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/72189618/viaf.xml"
+            type="application/x-viaf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/72189618/justlinks.json"
+            type="application/vnd.oclc.links+json"/>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/jquery.dataTables.min.css"/>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        var mylist=$('#listOfLinks');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+           return $(a).text().trim().toUpperCase().localeCompare($(b).text().trim().toUpperCase());
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+        // canvasSize declared in viaf.js
+      //canvasSize = 90 + (nodes.length * 10);
+      canvas=document.getElementById("svgcanvas");
+      if(canvas) {
+      canvasSize = 140 + (nodes.length * 8);
+      if (nodes.length==1){canvasSize = 70;}
+      var paper = Raphael(document.getElementById("svgcanvas"), canvasSize, canvasSize);
+      drawGraph(paper);
+
+      $('#SelectedTitles h3').click(function(event) {
+        $('#SelectedTitlesContent').slideToggle("slow");
+        $('img#SelectedTitlesContentOpen').toggle();
+        $('img#SelectedTitlesContentClose').toggle();
+      });
+      $('#SelectedCoauthors h3').click(function(event) {
+        $('#SelectedCoauthorsContent').slideToggle("slow");
+        $('img#SelectedCoauthorsContentOpen').toggle();
+        $('img#SelectedCoauthorsContentClose').toggle();
+      });
+      $('#Graph h3').click(function(event) {
+        $('#GraphContent').slideToggle("slow");
+        $('img#GraphContentOpen').toggle();
+        $('img#GraphContentClose').toggle();
+      });
+      $('#Countries h3').click(function(event) {
+        $('#CountriesContent').slideToggle("slow");
+        $('img#CountriesContentOpen').toggle();
+        $('img#CountriesContentClose').toggle();
+      });
+      $('#About h3').click(function(event) {
+        $('#AboutContent').slideToggle("slow");
+        $('img#AboutContentOpen').toggle();
+        $('img#AboutContentClose').toggle();
+      });
+      $('#Timeline h3').click(function(event) {
+        $('#TimelineContent').slideToggle("slow");
+        $('img#TimelineContentOpen').toggle();
+        $('img#TimelineContentClose').toggle();
+      });
+      $('#AltForms h3').click(function(event) {
+        $('#AltFormsContent').slideToggle("slow");
+        $('img#AltFormsContentOpen').toggle();
+        $('img#AltFormsContentClose').toggle();
+      });
+      $('#TitleLinks h3').click(function(event) {
+        $('#TitleLinksContent').slideToggle("slow");
+        $('img#TitleLinksContentOpen').toggle();
+        $('img#TitleLinksContentClose').toggle();
+      });
+      $('#RelatedNames h3').click(function(event) {
+        $('#RelatedNamesContent').slideToggle("slow");
+        $('img#RelatedNamesContentOpen').toggle();
+        $('img#RelatedNamesContentClose').toggle();
+      });
+      $('#Publishers h3').click(function(event) {
+        $('#PublishersContent').slideToggle("slow");
+        $('img#PublishersContentOpen').toggle();
+        $('img#PublishersContentClose').toggle();
+      });
+      $('#RecordViews h3').click(function(event) {
+        $('#RecordViewsContent').slideToggle("slow");
+        $('img#RecordViewsContentOpen').toggle();
+        $('img#RecordViewsContentClose').toggle();
+      });
+      $('#History h3').click(function(event) {
+        $('#HistoryContent').slideToggle("slow");
+        $('img#HistoryContentOpen').toggle();
+        $('img#HistoryContentClose').toggle();
+      });
+
+	$(".exprLabel").click(function() {
+			//alert("clicked");
+			$(this).parent().find("ul").toggle('slow');
+			if ($(this).parent().find("h4").hasClass('listClose')){
+				$(this).parent().find("h4").addClass('listOpen').removeClass('listClose');
+			}
+			else {
+				$(this).parent().find("h4").addClass('listClose').removeClass('listOpen');
+			}
+	});
+      }
+
+      });
+    </script>
+      <script type="text/javascript"><!--
+                            $(document).ready(function() {
+                            if ($('#expressionTable').length) $('#expressionTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+                            if ($('#workTable').length) $('#workTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+
+                            function fixupHeader(XMLHttpRequest){
+                            XMLHttpRequest.setRequestHeader('Content-Type', "text/xml");
+                            }
+                            $( "input#searchTerms" ).autocomplete({
+                            source: function( request, response ){
+                            $.ajax({
+                            url: "//viaf.org/viaf/AutoSuggest",
+                            dataType: "jsonp",
+                            data: {
+                            query: request.term
+                            },
+                            success: function (data){
+                            var mr = [];
+                            var result = data['result']
+                            for (var i=0, len=result.length; i < len; i++){ 
+                            ri = result[i];
+                            var term = ri['term'];
+                            mr.push({label:term, value:term});
+                            }
+                            response(mr);
+                            }
+                            });
+                            },
+                            minLength: 1
+                            });
+
+                            });
+--></script>
+   </head>
+   <body onload="document.getElementById('searchTerms').focus()">
+      <script type="text/javascript">
+                            var viafBase = '/viaf/';
+                            var xslMatchedBirthDeath = 'Matched on birth/death dates';
+                            var xslMatchedAnd = 'and';
+                        </script>
+      <div id="masthead">
+         <div id="mastTitles">
+            <h1>
+               <a class="mast-title" href="https://viaf.org/">VIAF</a>
+            </h1>
+            <h2>Virtual International Authority File</h2>
+         </div>
+      </div>
+      <div id="body">
+         <div id="maincontent">
+            <div id="searchdisplay">
+               <div id="searchdisplay-inner">
+                  <h4 class="searchh4">Search</h4>
+                  <div id="searchInner" class="yui-skin-sam">
+                     <form onsubmit="return doSearch(this);" id="visibleForm" action="https://viaf.org/viaf/72189618/?">
+                        <fieldset id="fieldset-field">
+                           <label>
+                              <span class="langHi0">Select Field:</span>
+                           </label>
+                           <select name="selector0" size="1">
+                              <option value="cql.any">All Fields</option>
+                              <option selected="selected" value="local.names">All Headings</option>
+                              <option value="local.corporateNames">Corporate Names</option>
+                              <option value="local.geographicNames">Geographic Names</option>
+                              <option value="local.personalNames">Personal Names</option>
+                              <option value="local.uniformTitleWorks">Works</option>
+                              <option value="local.uniformTitleExpressions">Expressions</option>
+                              <option value="local.mainHeadingEl">Preferred Headings</option>
+                              <option value="Xlocal.names">Exact Heading</option>
+                              <option value="local.title">Bibliographic Titles</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-index">
+                           <label>Select Index:</label>
+                           <select size="1" name="selector1">
+                              <option selected="selected" value="viaf">All VIAF</option>
+                              <option value="arbabn">Argentina</option>
+                              <option value="nla">Australia</option>
+                              <option value="vlacc">Belgium (Flemish)</option>
+                              <option value="blbnb">Brazil</option>
+                              <option value="caoonl">Canada</option>
+                              <option value="bnc">Catalunya</option>
+                              <option value="bnchl">Chile</option>
+                              <option value="nsk">Croatia</option>
+                              <option value="nkc">Czech</option>
+                              <option value="dbc">Denmark (DBC)</option>
+                              <option value="egaxa">Egypt</option>
+                              <option value="errr">Estonia</option>
+                              <option value="fast">FAST</option>
+                              <option value="bnf">France (BnF)</option>
+                              <option value="sudoc">France (Sudoc)</option>
+                              <option value="dnb">Germany</option>
+                              <option value="jpg">Getty (ULAN)</option>
+                              <option value="grateve">Greece</option>
+                              <option value="bnc bne">Hispánica</option>
+                              <option value="nszl">Hungary</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="n6i">Ireland</option>
+                              <option value="isni">ISNI</option>
+                              <option value="j9u">Israel</option>
+                              <option value="iccu">Italy</option>
+                              <option value="ndl">Japan (NDL)</option>
+                              <option value="nii">Japan (NII)</option>
+                              <option value="krnlk">Korea</option>
+                              <option value="LNB">Latvia</option>
+                              <option value="LNL">Lebanon</option>
+                              <option value="lc">LC (NACO)</option>
+                              <option value="lih">Lithuania</option>
+                              <option value="bnl">Luxembourg</option>
+                              <option value="mrbnr">Morocco</option>
+                              <option value="nta">Netherlands</option>
+                              <option value="bibsys">Norway (BIBSYS)</option>
+                              <option value="w2z">Norway (National Library)</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="perseus">Perseus</option>
+                              <option value="plwabn">Poland (National Library)</option>
+                              <option value="nukat">Poland (NUKAT)</option>
+                              <option value="ptbnp">Portugal</option>
+                              <option value="b2q">Québec</option>
+                              <option value="de663">RISM</option>
+                              <option value="nlr">Russia</option>
+                              <option value="nlb">Singapore</option>
+                              <option value="skmasnl">Slovakia</option>
+                              <option value="simacob">Slovenia</option>
+                              <option value="bne">Spain</option>
+                              <option value="selibr">Sweden</option>
+                              <option value="sz">Swiss (National Library)</option>
+                              <option value="rero">Swiss (RERO)</option>
+                              <option value="srp">Syriac</option>
+                              <option value="cyt">Taiwan</option>
+                              <option value="bav">Vatican</option>
+                              <option value="wkp">Wikipedia</option>
+                              <option value="xa">xA</option>
+                              <option value="xr">xR</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-textenter">
+                           <label>Search Terms:</label>
+                           <div class="ui-widget">
+                              <input size="40" id="searchTerms"/>
+                           </div>
+                        </fieldset>
+                        <fieldset id="fieldset-submit">
+                           <input value="Search" id="btnSearch2" title="Search VIAF" type="submit"/>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div id="content">
+               <div id="Title-Wrap">
+                  <div id="Title">
+                     <h2 id="nameEntry1" class="nameEntry">Tecumseh, 1768?-1813<span class="flags">
+                           <img alt="German National Library" title="German National Library"
+                                src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           <img alt="National Library and Archives of Québec"
+                                title="National Library and Archives of Québec"
+                                src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                           <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           <img alt="Library and Archives Canada" title="Library and Archives Canada"
+                                src="https://viaf.org/viaf/images/flags/CAOONL.png"/>
+                           <img alt="National Library of the Netherlands"
+                                title="National Library of the Netherlands"
+                                src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                           <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                           <img alt="National Library of the Czech Republic"
+                                title="National Library of the Czech Republic"
+                                src="https://viaf.org/viaf/images/flags/NKC.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry2" class="nameEntry">Tecumseh, Shawnee Chief, 1768-1813<span class="flags">
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                src="https://viaf.org/viaf/images/flags/LC.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry3" class="nameEntry">تيكومسيه سياسي أمريكي<span class="flags">
+                           <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry4" class="nameEntry">Tecumseh, indianhövding, 1768-1813<span class="flags">
+                           <img alt="National Library of Sweden" title="National Library of Sweden"
+                                src="https://viaf.org/viaf/images/flags/SELIBR.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry5" class="nameEntry">Tecumseh shaenee-høvding 1768-1813<span class="flags">
+                           <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                        </span>
+                     </h2>
+                     <h1 class="nameID">VIAF ID: 72189618
+     (Personal)
+      </h1>
+                     <h1 class="nameID">Permalink: http://viaf.org/viaf/72189618</h1>
+                  </div>
+               </div>
+               <div id="Graph" class="mainSection" style="position:relative;">
+                  <h3>
+                     <img id="GraphContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="GraphContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Preferred Forms</span>
+                  </h3>
+                  <div id="GraphContent" class="content">
+                     <div id="GraphContent-wrap">
+                        <div>
+                           <ul id="mainHeadingElements">
+                              <li id="PreferredForms1" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/BIBSYS%7C90804079" id="BIBSYS-90804079"
+                                    onmouseover="selectNode('BIBSYS-90804079')"
+                                    onmouseout="unselectNode('BIBSYS-90804079')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>shaenee-høvding</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms2" class="PreferredForms">
+                                 <a href="http://isni.org/isni/0000000073754736" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/ISNI%7C0000000073754736" id="ISNI-0000000073754736"
+                                    onmouseover="selectNode('ISNI-0000000073754736')"
+                                    onmouseout="unselectNode('ISNI-0000000073754736')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms3" class="PreferredForms">
+                                 <a href="http://d-nb.info/gnd/118756362" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/DNB%7C118756362" id="DNB-118756362"
+                                    onmouseover="selectNode('DNB-118756362')"
+                                    onmouseout="unselectNode('DNB-118756362')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms4" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                         src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                                 </div>200 _ 0 <a href="https://viaf.org/processed/LIH%7CLNB:B2_y_6;=BZ" id="LIH-LNB:B2_y_6;=BZ"
+                                    onmouseover="selectNode('LIH-LNB:B2_y_6;=BZ')"
+                                    onmouseout="unselectNode('LIH-LNB:B2_y_6;=BZ')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡f 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms5" class="PreferredForms">
+                                 <a href="https://id.loc.gov/authorities/names/n80020620" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/LC%7Cn&#32;&#32;80020620" id="LC-n80020620"
+                                    onmouseover="selectNode('LC-n80020620')"
+                                    onmouseout="unselectNode('LC-n80020620')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms6" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/J9U%7C987007279692905171" id="J9U-987007279692905171"
+                                    onmouseover="selectNode('J9U-987007279692905171')"
+                                    onmouseout="unselectNode('J9U-987007279692905171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms7" class="PreferredForms">
+                                 <a href="../../libris.kb.se/auth/330221.html#it" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="National Library of Sweden" title="National Library of Sweden"
+                                         src="https://viaf.org/viaf/images/flags/SELIBR.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/SELIBR%7C330221" id="SELIBR-330221"
+                                    onmouseover="selectNode('SELIBR-330221')"
+                                    onmouseout="unselectNode('SELIBR-330221')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡c 
+  <span>indianhövding,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms8" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of the Czech Republic"
+                                         title="National Library of the Czech Republic"
+                                         src="https://viaf.org/viaf/images/flags/NKC.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/NKC%7Cjn20000701785" id="NKC-jn20000701785"
+                                    onmouseover="selectNode('NKC-jn20000701785')"
+                                    onmouseout="unselectNode('NKC-jn20000701785')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms9" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/NTA%7C099855216" id="NTA-099855216"
+                                    onmouseover="selectNode('NTA-099855216')"
+                                    onmouseout="unselectNode('NTA-099855216')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms10" class="PreferredForms">
+                                 <a href="https://www.idref.fr/08578902X/id" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </a>100 1 _ <a href="https://viaf.org/processed/SUDOC%7C08578902X" id="SUDOC-08578902X"
+                                    onmouseover="selectNode('SUDOC-08578902X')"
+                                    onmouseout="unselectNode('SUDOC-08578902X')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms11" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library and Archives of Québec"
+                                         title="National Library and Archives of Québec"
+                                         src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/B2Q%7C0000489827" id="B2Q-0000489827"
+                                    onmouseover="selectNode('B2Q-0000489827')"
+                                    onmouseout="unselectNode('B2Q-0000489827')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms12" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="Library and Archives Canada" title="Library and Archives Canada"
+                                         src="https://viaf.org/viaf/images/flags/CAOONL.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/CAOONL%7Cncf10033261" id="CAOONL-ncf10033261"
+                                    onmouseover="selectNode('CAOONL-ncf10033261')"
+                                    onmouseout="unselectNode('CAOONL-ncf10033261')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms13" class="PreferredForms">
+                                 <a href="https://www.wikidata.org/entity/Q257808#sitelinks-wikipedia"
+                                    title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/WKP%7CQ257808" id="WKP-Q257808"
+                                    onmouseover="selectNode('WKP-Q257808')"
+                                    onmouseout="unselectNode('WKP-Q257808')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>تيكومسيه</span>‏
+  
+    ‎‡c 
+  <span>سياسي أمريكي</span>‏
+  </a>
+                              </li>
+                           </ul>
+                           <script type="text/javascript">
+      new Node("BIBSYS-90804079", "BIBSYS", "BIBSYS");
+      
+      addLink("BIBSYS-90804079", "J9U-987007279692905171");
+    addMatch("BIBSYS-90804079", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "DNB-118756362");
+    addMatch("BIBSYS-90804079", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "CAOONL-ncf10033261");
+    addMatch("BIBSYS-90804079", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "WKP-Q257808");
+    addMatch("BIBSYS-90804079", "WKP-Q257808", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "ISNI-0000000073754736");
+    addMatch("BIBSYS-90804079", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "ISNI-0000000073754736");
+    addMatch("BIBSYS-90804079", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "ISNI-0000000073754736");
+    addMatch("BIBSYS-90804079", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "ISNI-0000000073754736");
+    addMatch("BIBSYS-90804079", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "ISNI-0000000073754736");
+    addMatch("BIBSYS-90804079", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "B2Q-0000489827");
+    addMatch("BIBSYS-90804079", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "NTA-099855216");
+    addMatch("BIBSYS-90804079", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "SUDOC-08578902X");
+    addMatch("BIBSYS-90804079", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "LC-n80020620");
+    addMatch("BIBSYS-90804079", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "SELIBR-330221");
+    addMatch("BIBSYS-90804079", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("BIBSYS-90804079", "NKC-jn20000701785");
+    addMatch("BIBSYS-90804079", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("ISNI-0000000073754736", "ISNI", "ISNI");
+      
+      addLink("ISNI-0000000073754736", "J9U-987007279692905171");
+    addMatch("ISNI-0000000073754736", "J9U-987007279692905171", "", "forced single date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "BIBSYS-90804079");
+    addMatch("ISNI-0000000073754736", "BIBSYS-90804079", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "B2Q-0000489827");
+    addMatch("ISNI-0000000073754736", "B2Q-0000489827", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "WKP-Q257808");
+    addMatch("ISNI-0000000073754736", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "CAOONL-ncf10033261");
+    addMatch("ISNI-0000000073754736", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "DNB-118756362");
+    addMatch("ISNI-0000000073754736", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "NTA-099855216");
+    addMatch("ISNI-0000000073754736", "NTA-099855216", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "SUDOC-08578902X");
+    addMatch("ISNI-0000000073754736", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "LC-n80020620");
+    addMatch("ISNI-0000000073754736", "LC-n80020620", "", "forced single date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("ISNI-0000000073754736", "LIH-LNB:B2_y_6;=BZ", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "SELIBR-330221");
+    addMatch("ISNI-0000000073754736", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("ISNI-0000000073754736", "NKC-jn20000701785");
+    addMatch("ISNI-0000000073754736", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("DNB-118756362", "DNB", "German National Library");
+      
+      addLink("DNB-118756362", "J9U-987007279692905171");
+    addMatch("DNB-118756362", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "BIBSYS-90804079");
+    addMatch("DNB-118756362", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "B2Q-0000489827");
+    addMatch("DNB-118756362", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "WKP-Q257808");
+    addMatch("DNB-118756362", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("DNB-118756362", "ISNI-0000000073754736");
+    addMatch("DNB-118756362", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "ISNI-0000000073754736");
+    addMatch("DNB-118756362", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "ISNI-0000000073754736");
+    addMatch("DNB-118756362", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "ISNI-0000000073754736");
+    addMatch("DNB-118756362", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "ISNI-0000000073754736");
+    addMatch("DNB-118756362", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "CAOONL-ncf10033261");
+    addMatch("DNB-118756362", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "NTA-099855216");
+    addMatch("DNB-118756362", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "SUDOC-08578902X");
+    addMatch("DNB-118756362", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "LC-n80020620");
+    addMatch("DNB-118756362", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("DNB-118756362", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("DNB-118756362", "SELIBR-330221");
+    addMatch("DNB-118756362", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("DNB-118756362", "NKC-jn20000701785");
+    addMatch("DNB-118756362", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("LIH-LNB:B2_y_6;=BZ", "LIH", "National Library of Lithuania");
+      
+      addLink("LIH-LNB:B2_y_6;=BZ", "DNB-118756362");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "DNB-118756362", "", "exact name", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "CAOONL-ncf10033261");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "CAOONL-ncf10033261", "", "exact name", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "B2Q-0000489827");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "B2Q-0000489827", "", "exact name", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "NTA-099855216");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "NTA-099855216", "", "exact name", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "SUDOC-08578902X");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "SUDOC-08578902X", "", "exact name", "", "", ""); 
+  
+      addLink("LIH-LNB:B2_y_6;=BZ", "NKC-jn20000701785");
+    addMatch("LIH-LNB:B2_y_6;=BZ", "NKC-jn20000701785", "", "exact name", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("LC-n80020620", "LC", "Library of Congress/NACO");
+      
+      addLink("LC-n80020620", "DNB-118756362");
+    addMatch("LC-n80020620", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "J9U-987007279692905171");
+    addMatch("LC-n80020620", "J9U-987007279692905171", "", "forced single date", "", "", ""); 
+  
+      addLink("LC-n80020620", "ISNI-0000000073754736");
+    addMatch("LC-n80020620", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n80020620", "ISNI-0000000073754736");
+    addMatch("LC-n80020620", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n80020620", "ISNI-0000000073754736");
+    addMatch("LC-n80020620", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n80020620", "ISNI-0000000073754736");
+    addMatch("LC-n80020620", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n80020620", "ISNI-0000000073754736");
+    addMatch("LC-n80020620", "ISNI-0000000073754736", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n80020620", "WKP-Q257808");
+    addMatch("LC-n80020620", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("LC-n80020620", "B2Q-0000489827");
+    addMatch("LC-n80020620", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "BIBSYS-90804079");
+    addMatch("LC-n80020620", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "CAOONL-ncf10033261");
+    addMatch("LC-n80020620", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "NTA-099855216");
+    addMatch("LC-n80020620", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "SUDOC-08578902X");
+    addMatch("LC-n80020620", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "SELIBR-330221");
+    addMatch("LC-n80020620", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("LC-n80020620", "NKC-jn20000701785");
+    addMatch("LC-n80020620", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007279692905171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007279692905171", "DNB-118756362");
+    addMatch("J9U-987007279692905171", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "CAOONL-ncf10033261");
+    addMatch("J9U-987007279692905171", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "WKP-Q257808");
+    addMatch("J9U-987007279692905171", "WKP-Q257808", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "ISNI-0000000073754736");
+    addMatch("J9U-987007279692905171", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "ISNI-0000000073754736");
+    addMatch("J9U-987007279692905171", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "ISNI-0000000073754736");
+    addMatch("J9U-987007279692905171", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "ISNI-0000000073754736");
+    addMatch("J9U-987007279692905171", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "ISNI-0000000073754736");
+    addMatch("J9U-987007279692905171", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "B2Q-0000489827");
+    addMatch("J9U-987007279692905171", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "BIBSYS-90804079");
+    addMatch("J9U-987007279692905171", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "NTA-099855216");
+    addMatch("J9U-987007279692905171", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "SUDOC-08578902X");
+    addMatch("J9U-987007279692905171", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "LC-n80020620");
+    addMatch("J9U-987007279692905171", "LC-n80020620", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "SELIBR-330221");
+    addMatch("J9U-987007279692905171", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007279692905171", "NKC-jn20000701785");
+    addMatch("J9U-987007279692905171", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("SELIBR-330221", "SELIBR", "National Library of Sweden");
+      
+      addLink("SELIBR-330221", "J9U-987007279692905171");
+    addMatch("SELIBR-330221", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "DNB-118756362");
+    addMatch("SELIBR-330221", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "CAOONL-ncf10033261");
+    addMatch("SELIBR-330221", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "WKP-Q257808");
+    addMatch("SELIBR-330221", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("SELIBR-330221", "ISNI-0000000073754736");
+    addMatch("SELIBR-330221", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "ISNI-0000000073754736");
+    addMatch("SELIBR-330221", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "ISNI-0000000073754736");
+    addMatch("SELIBR-330221", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "ISNI-0000000073754736");
+    addMatch("SELIBR-330221", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "ISNI-0000000073754736");
+    addMatch("SELIBR-330221", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "B2Q-0000489827");
+    addMatch("SELIBR-330221", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "BIBSYS-90804079");
+    addMatch("SELIBR-330221", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "NTA-099855216");
+    addMatch("SELIBR-330221", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "SUDOC-08578902X");
+    addMatch("SELIBR-330221", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "LC-n80020620");
+    addMatch("SELIBR-330221", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("SELIBR-330221", "NKC-jn20000701785");
+    addMatch("SELIBR-330221", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NKC-jn20000701785", "NKC", "National Library of the Czech Republic");
+      
+      addLink("NKC-jn20000701785", "J9U-987007279692905171");
+    addMatch("NKC-jn20000701785", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "DNB-118756362");
+    addMatch("NKC-jn20000701785", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "B2Q-0000489827");
+    addMatch("NKC-jn20000701785", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "WKP-Q257808");
+    addMatch("NKC-jn20000701785", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "ISNI-0000000073754736");
+    addMatch("NKC-jn20000701785", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "ISNI-0000000073754736");
+    addMatch("NKC-jn20000701785", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "ISNI-0000000073754736");
+    addMatch("NKC-jn20000701785", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "ISNI-0000000073754736");
+    addMatch("NKC-jn20000701785", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "ISNI-0000000073754736");
+    addMatch("NKC-jn20000701785", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "CAOONL-ncf10033261");
+    addMatch("NKC-jn20000701785", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "BIBSYS-90804079");
+    addMatch("NKC-jn20000701785", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "NTA-099855216");
+    addMatch("NKC-jn20000701785", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "SUDOC-08578902X");
+    addMatch("NKC-jn20000701785", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "LC-n80020620");
+    addMatch("NKC-jn20000701785", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("NKC-jn20000701785", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("NKC-jn20000701785", "SELIBR-330221");
+    addMatch("NKC-jn20000701785", "SELIBR-330221", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NTA-099855216", "NTA", "National Library of the Netherlands");
+      
+      addLink("NTA-099855216", "J9U-987007279692905171");
+    addMatch("NTA-099855216", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "DNB-118756362");
+    addMatch("NTA-099855216", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "CAOONL-ncf10033261");
+    addMatch("NTA-099855216", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "WKP-Q257808");
+    addMatch("NTA-099855216", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "ISNI-0000000073754736");
+    addMatch("NTA-099855216", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "ISNI-0000000073754736");
+    addMatch("NTA-099855216", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "ISNI-0000000073754736");
+    addMatch("NTA-099855216", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "ISNI-0000000073754736");
+    addMatch("NTA-099855216", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "ISNI-0000000073754736");
+    addMatch("NTA-099855216", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-099855216", "B2Q-0000489827");
+    addMatch("NTA-099855216", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "BIBSYS-90804079");
+    addMatch("NTA-099855216", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "SUDOC-08578902X");
+    addMatch("NTA-099855216", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "LC-n80020620");
+    addMatch("NTA-099855216", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("NTA-099855216", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("NTA-099855216", "SELIBR-330221");
+    addMatch("NTA-099855216", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("NTA-099855216", "NKC-jn20000701785");
+    addMatch("NTA-099855216", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("SUDOC-08578902X", "SUDOC", "Sudoc [ABES], France");
+      
+      addLink("SUDOC-08578902X", "J9U-987007279692905171");
+    addMatch("SUDOC-08578902X", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "DNB-118756362");
+    addMatch("SUDOC-08578902X", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "B2Q-0000489827");
+    addMatch("SUDOC-08578902X", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "WKP-Q257808");
+    addMatch("SUDOC-08578902X", "WKP-Q257808", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "ISNI-0000000073754736");
+    addMatch("SUDOC-08578902X", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "ISNI-0000000073754736");
+    addMatch("SUDOC-08578902X", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "ISNI-0000000073754736");
+    addMatch("SUDOC-08578902X", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "ISNI-0000000073754736");
+    addMatch("SUDOC-08578902X", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "ISNI-0000000073754736");
+    addMatch("SUDOC-08578902X", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "CAOONL-ncf10033261");
+    addMatch("SUDOC-08578902X", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "BIBSYS-90804079");
+    addMatch("SUDOC-08578902X", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "NTA-099855216");
+    addMatch("SUDOC-08578902X", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "LC-n80020620");
+    addMatch("SUDOC-08578902X", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("SUDOC-08578902X", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "SELIBR-330221");
+    addMatch("SUDOC-08578902X", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-08578902X", "NKC-jn20000701785");
+    addMatch("SUDOC-08578902X", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("B2Q-0000489827", "B2Q", "National Library and Archives of Québec");
+      
+      addLink("B2Q-0000489827", "DNB-118756362");
+    addMatch("B2Q-0000489827", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "J9U-987007279692905171");
+    addMatch("B2Q-0000489827", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "WKP-Q257808");
+    addMatch("B2Q-0000489827", "WKP-Q257808", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "ISNI-0000000073754736");
+    addMatch("B2Q-0000489827", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "ISNI-0000000073754736");
+    addMatch("B2Q-0000489827", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "ISNI-0000000073754736");
+    addMatch("B2Q-0000489827", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "ISNI-0000000073754736");
+    addMatch("B2Q-0000489827", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "ISNI-0000000073754736");
+    addMatch("B2Q-0000489827", "ISNI-0000000073754736", "", "forced single date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "CAOONL-ncf10033261");
+    addMatch("B2Q-0000489827", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "BIBSYS-90804079");
+    addMatch("B2Q-0000489827", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "NTA-099855216");
+    addMatch("B2Q-0000489827", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "SUDOC-08578902X");
+    addMatch("B2Q-0000489827", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "LC-n80020620");
+    addMatch("B2Q-0000489827", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("B2Q-0000489827", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "SELIBR-330221");
+    addMatch("B2Q-0000489827", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("B2Q-0000489827", "NKC-jn20000701785");
+    addMatch("B2Q-0000489827", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("CAOONL-ncf10033261", "CAOONL", "Library and Archives Canada");
+      
+      addLink("CAOONL-ncf10033261", "DNB-118756362");
+    addMatch("CAOONL-ncf10033261", "DNB-118756362", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "J9U-987007279692905171");
+    addMatch("CAOONL-ncf10033261", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "WKP-Q257808");
+    addMatch("CAOONL-ncf10033261", "WKP-Q257808", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "ISNI-0000000073754736");
+    addMatch("CAOONL-ncf10033261", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "ISNI-0000000073754736");
+    addMatch("CAOONL-ncf10033261", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "ISNI-0000000073754736");
+    addMatch("CAOONL-ncf10033261", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "ISNI-0000000073754736");
+    addMatch("CAOONL-ncf10033261", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "ISNI-0000000073754736");
+    addMatch("CAOONL-ncf10033261", "ISNI-0000000073754736", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "B2Q-0000489827");
+    addMatch("CAOONL-ncf10033261", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "BIBSYS-90804079");
+    addMatch("CAOONL-ncf10033261", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "NTA-099855216");
+    addMatch("CAOONL-ncf10033261", "NTA-099855216", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "SUDOC-08578902X");
+    addMatch("CAOONL-ncf10033261", "SUDOC-08578902X", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "LC-n80020620");
+    addMatch("CAOONL-ncf10033261", "LC-n80020620", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "LIH-LNB:B2_y_6;=BZ");
+    addMatch("CAOONL-ncf10033261", "LIH-LNB:B2_y_6;=BZ", "", "exact name", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "SELIBR-330221");
+    addMatch("CAOONL-ncf10033261", "SELIBR-330221", "", "double date", "", "", ""); 
+  
+      addLink("CAOONL-ncf10033261", "NKC-jn20000701785");
+    addMatch("CAOONL-ncf10033261", "NKC-jn20000701785", "", "double date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("WKP-Q257808", "WKP", "Wikidata");
+      
+      addLink("WKP-Q257808", "J9U-987007279692905171");
+    addMatch("WKP-Q257808", "J9U-987007279692905171", "", "double date", "", "", ""); 
+  
+      addLink("WKP-Q257808", "DNB-118756362");
+    addMatch("WKP-Q257808", "DNB-118756362", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "CAOONL-ncf10033261");
+    addMatch("WKP-Q257808", "CAOONL-ncf10033261", "", "double date", "", "", ""); 
+  
+      addLink("WKP-Q257808", "ISNI-0000000073754736");
+    addMatch("WKP-Q257808", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "ISNI-0000000073754736");
+    addMatch("WKP-Q257808", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "ISNI-0000000073754736");
+    addMatch("WKP-Q257808", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "ISNI-0000000073754736");
+    addMatch("WKP-Q257808", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "ISNI-0000000073754736");
+    addMatch("WKP-Q257808", "ISNI-0000000073754736", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "B2Q-0000489827");
+    addMatch("WKP-Q257808", "B2Q-0000489827", "", "double date", "", "", ""); 
+  
+      addLink("WKP-Q257808", "BIBSYS-90804079");
+    addMatch("WKP-Q257808", "BIBSYS-90804079", "", "double date", "", "", ""); 
+  
+      addLink("WKP-Q257808", "NTA-099855216");
+    addMatch("WKP-Q257808", "NTA-099855216", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "SUDOC-08578902X");
+    addMatch("WKP-Q257808", "SUDOC-08578902X", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "LC-n80020620");
+    addMatch("WKP-Q257808", "LC-n80020620", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "SELIBR-330221");
+    addMatch("WKP-Q257808", "SELIBR-330221", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q257808", "NKC-jn20000701785");
+    addMatch("WKP-Q257808", "NKC-jn20000701785", "", "suggested", "", "", ""); 
+  </script>
+                        </div>
+                        <div id="leftfloat">
+                           <div id="svgcanvas"> </div>
+                           <div id="nodeInfo">
+                              <h4> </h4>
+                              <p> </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="clearing"> </div>
+               <div id="AltForms" class="mainSection">
+                  <h3>
+                     <img id="AltFormsContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="AltFormsContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">4xx's: Alternate Name Forms</span> (69)
+      </h3>
+                  <div style="display: none;" id="AltFormsContent" class="content">
+                     <ul>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Crouching Panther,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Crouching Panther</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Crounching Panth</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Crounching Panth</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Crounching Panth</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Flying Panther</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Flying Panther</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Flying Panther</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Flying Tiger,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Flying Tiger</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Shooting Star</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Shooting Star</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Shooting Star,</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library and Archives of Québec"
+                                   title="National Library and Archives of Québec"
+                                   src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Shooting Star,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Shooting Star</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Shooting Star</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Shooting Star</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Teck-kum-thai,</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library and Archives of Québec"
+                                   title="National Library and Archives of Québec"
+                                   src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Teck-kum-thai</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Tecumethe,</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library and Archives of Québec"
+                                   title="National Library and Archives of Québec"
+                                   src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumethe</span>‏
+  
+    ‎‡d 
+  <span>1768?-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="Library and Archives Canada" title="Library and Archives Canada"
+                                   src="https://viaf.org/viaf/images/flags/CAOONL.png"/>
+                              <img alt="National Library of Sweden" title="National Library of Sweden"
+                                   src="https://viaf.org/viaf/images/flags/SELIBR.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>Native American leader of the Shawnee</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>Shawnee</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>chef amérindien</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>politischer und militärischer Führer der nordamerikanischen Indianer vom Volk der Shawnee</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>shawnee-intiaanien johtaja ja Kanadan kansallissankari</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>statista nativo americano</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumseh</span>‏
+  
+    ‎‡c 
+  <span>wódz Indian</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 _ 0 
+    ‎‡a 
+  <span>Tecumtha</span>‏
+  <span class="flags">
+                              <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                   src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumtha,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumtha</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumtha</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 _ 0 
+    ‎‡a 
+  <span>Tecumthe</span>‏
+  <span class="flags">
+                              <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                   src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumthe</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Tecumthe</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumthe,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumthe</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tecumthe</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekamthi,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekamthi</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekumse</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekumseh,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of the Czech Republic"
+                                   title="National Library of the Czech Republic"
+                                   src="https://viaf.org/viaf/images/flags/NKC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekumseh</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tekumzė</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 _ 0 
+    ‎‡a 
+  <span>Tikamthe</span>‏
+  <span class="flags">
+                              <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                   src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthe</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Tikamthe</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthe,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthe</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthe</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthi,</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief,</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthi</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Tikamthi</span>‏
+  
+    ‎‡d 
+  <span>1768-1813</span>‏
+  
+    ‎‡c 
+  <span>Shawnee Chief</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Текумзе</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Текумсе</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Текумсе</span>‏
+  
+    ‎‡c 
+  <span>лидер народа шауни и индейского племенного союза, известного как Конфедерация Текумсе</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Տեկումսեհ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>טקומסה</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>تيكومسيه</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>تکامسه</span>‏
+  
+    ‎‡c 
+  <span>سیاست‌مدار آمریکایی</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>டிக்கம்சா</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ടെക്കുംസേ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>テクムセ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>蒂卡姆西</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>테쿰세</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="SelectedTitles" class="mainSection">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="SelectedTitlesContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="SelectedTitlesContentClose"/>Works</h3>
+                  <div style="display: block;" id="SelectedTitlesContent" class="content">
+                     <table class="dataTable" id="workTable" cellspacing="0">
+                        <thead>
+                           <tr role="row">
+                              <th class="sorting" role="columnheader">Title</th>
+                              <th class="no-sort" role="columnheader">Sources</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Encyclopédie du Canada, 1987</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library and Archives of Québec"
+                                         title="National Library and Archives of Québec"
+                                         src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <a href="https://viaf.org/viaf/612154590098143080635">Speech to Governor Harrison</a>
+                              </td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Tecumseh &amp; Brock, 2012</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library and Archives of Québec"
+                                         title="National Library and Archives of Québec"
+                                         src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Tecumseh's bones. CIP</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library and Archives of Québec"
+                                         title="National Library and Archives of Québec"
+                                         src="https://viaf.org/viaf/images/flags/B2Q.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div id="Timeline" class="mainSection">
+                  <h3>
+                     <img id="TimelineContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="TimelineContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Publication Statistics</span>
+                  </h3>
+                  <div id="TimelineContent" class="content" style="display:none;">
+                     <script type="text/javascript">
+       function dateMsg(decade, count){
+         var tld = document.getElementById('TimeLineDisplay');
+         if (count) {
+              if (count=='1')
+              tld.innerHTML = count + ' publications in the '+decade+"'s";
+              else tld.innerHTML = count + ' publications in the '+decade+"'s";
+         } else {
+              tld.innerHTML = '';
+         }
+        }
+      </script>
+                     <ul>
+                        <li>
+                           <h4 class="subHead">
+                              <span class="langHi0">Publication History</span>
+                           </h4>
+                           <div id="TimeLineShell">
+                              <div id="TimeLineMarkers">
+                                 <span class="date">1900</span>
+                                 <span class="TimeLineMarkerStart">|</span>
+                                 <img id="line1980" class="marker" style="height:14.9px;"
+                                      onmouseover="dateMsg('198'+'0', '3');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line1990" class="marker" style="height:12px;"
+                                      onmouseover="dateMsg('199'+'0', '2');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line2000" class="marker" style="height:12px;"
+                                      onmouseover="dateMsg('200'+'0', '2');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line2010" class="marker" style="height:14.9px;"
+                                      onmouseover="dateMsg('201'+'0', '3');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <span class="TimeLineMarkerEnd">|</span>
+                                 <span class="date">2100</span>
+                              </div>
+                           </div>
+                           <div id="TimeLineDisplayBox">
+                              <span id="TimeLineDisplay"/>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="mainSection" id="About">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="AboutContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="AboutContentClose"/>
+                     <span class="langHi0">About</span>
+                  </h3>
+                  <div style="display: none;" class="content" id="AboutContent">
+                     <div id="personalinfo" class="subsection">
+                        <h2>
+                           <span class="langHi0">Personal Information</span>
+                        </h2>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0"/>Gender: </span>
+                           <span class="langHi0"/>Male</h4>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Nationality or associated country</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>US - United States<span class="flags">
+                                 <img alt="German National Library" title="German National Library"
+                                      src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                      src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                              </span>
+                           </li>
+                           <li>xxu - <span class="flags">
+                                 <img alt="National Library of Sweden" title="National Library of Sweden"
+                                      src="https://viaf.org/viaf/images/flags/SELIBR.png"/>
+                              </span>
+                           </li>
+                           <li>None - <span class="flags">
+                                 <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Language</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>cai - Central American Indian<span class="flags">
+                                 <img alt="National Library of Lithuania" title="National Library of Lithuania"
+                                      src="https://viaf.org/viaf/images/flags/LIH.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div id="externalLinks" class="subsection">
+                        <h2>
+                           <span class="langHi0">External Links</span>
+                        </h2>
+                        <ul id="listOfLinks">
+                           <li>
+                              <a href="../../ar.wikipedia.org/wiki/تيكومسيه.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ar.wikipedia.org/wiki/تيكومسيه</a>
+                           </li>
+                           <li>
+                              <a href="../../az.wikipedia.org/wiki/Tekumse.html">
+                                 <span class="langHi0">Wikipedia</span> - https://az.wikipedia.org/wiki/Tekumse</a>
+                           </li>
+                           <li>
+                              <a href="../../bar.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://bar.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../bg.wikipedia.org/wiki/Текумзе.html">
+                                 <span class="langHi0">Wikipedia</span> - https://bg.wikipedia.org/wiki/Текумзе</a>
+                           </li>
+                           <li>
+                              <a href="../../ca.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ca.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../cs.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://cs.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../cv.wikipedia.org/wiki/Текумсе.html">
+                                 <span class="langHi0">Wikipedia</span> - https://cv.wikipedia.org/wiki/Текумсе</a>
+                           </li>
+                           <li>
+                              <a href="../../cy.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://cy.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../da.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://da.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../de.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://de.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../en.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://en.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../eo.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://eo.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../es.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://es.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../fa.wikipedia.org/wiki/تکامسه.html">
+                                 <span class="langHi0">Wikipedia</span> - https://fa.wikipedia.org/wiki/تکامسه</a>
+                           </li>
+                           <li>
+                              <a href="../../fi.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://fi.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../fr.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://fr.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../gl.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://gl.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../he.wikipedia.org/wiki/טקומסה.html">
+                                 <span class="langHi0">Wikipedia</span> - https://he.wikipedia.org/wiki/טקומסה</a>
+                           </li>
+                           <li>
+                              <a href="../../hy.wikipedia.org/wiki/Թեքումսե.html">
+                                 <span class="langHi0">Wikipedia</span> - https://hy.wikipedia.org/wiki/Թեքումսե</a>
+                           </li>
+                           <li>
+                              <a href="../../id.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://id.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../it.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://it.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../ja.wikipedia.org/wiki/テカムセ.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ja.wikipedia.org/wiki/テカムセ</a>
+                           </li>
+                           <li>
+                              <a href="../../ko.wikipedia.org/wiki/테쿰세.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ko.wikipedia.org/wiki/테쿰세</a>
+                           </li>
+                           <li>
+                              <a href="../../lt.wikipedia.org/wiki/Tekumzė.html">
+                                 <span class="langHi0">Wikipedia</span> - https://lt.wikipedia.org/wiki/Tekumzė</a>
+                           </li>
+                           <li>
+                              <a href="../../ml.wikipedia.org/wiki/ടെക്കുംസേ.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ml.wikipedia.org/wiki/ടെക്കുംസേ</a>
+                           </li>
+                           <li>
+                              <a href="https://ms.wikipedia.org/wiki/Tecumseh">
+                                 <span class="langHi0">Wikipedia</span> - https://ms.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../nl.wikipedia.org/wiki/Tecumseh_(Shawnee).html">
+                                 <span class="langHi0">Wikipedia</span> - https://nl.wikipedia.org/wiki/Tecumseh_(Shawnee)</a>
+                           </li>
+                           <li>
+                              <a href="../../no.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://no.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../pl.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://pl.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../pt.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://pt.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../ru.wikipedia.org/wiki/Текумсе.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ru.wikipedia.org/wiki/Текумсе</a>
+                           </li>
+                           <li>
+                              <a href="../../simple.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://simple.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../sk.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://sk.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../sv.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://sv.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../ta.wikipedia.org/wiki/டிக்கம்சா.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ta.wikipedia.org/wiki/டிக்கம்சா</a>
+                           </li>
+                           <li>
+                              <a href="../../tr.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://tr.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="https://uk.wikipedia.org/wiki/Текумсе">
+                                 <span class="langHi0">Wikipedia</span> - https://uk.wikipedia.org/wiki/Текумсе</a>
+                           </li>
+                           <li>
+                              <a href="../../vi.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://vi.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../war.wikipedia.org/wiki/Tecumseh.html">
+                                 <span class="langHi0">Wikipedia</span> - https://war.wikipedia.org/wiki/Tecumseh</a>
+                           </li>
+                           <li>
+                              <a href="../../zh.wikipedia.org/wiki/特库姆塞.html">
+                                 <span class="langHi0">Wikipedia</span> - https://zh.wikipedia.org/wiki/特库姆塞</a>
+                           </li>
+                           <li>
+                              <a href="https://www.worldcat.org/identities/lccn-n80020620">WorldCat Identities - lccn-n80020620</a>
+                           </li>
+                           <li>
+                              <a href="https://isni.org/isni/0000000073754736">ISNI - 0000 0000 7375 4736</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="mainSection" id="RecordViews">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="RecordViewsContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="RecordViewsContentClose"/>
+                     <span class="langHi0">Record Views</span>
+                  </h3>
+                  <div style="display:none;" class="content" id="RecordViewsContent">
+                     <ul>
+                        <li>
+                           <a href="https://viaf.org/viaf/72189618/marc21.xml" type="application/x-marc21+xml" rel="nofollow">
+                              <span class="langHi0">MARC-21 record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/72189618/viaf.xml" type="application/xml" rel="nofollow">
+                              <span class="langHi0">VIAF Cluster in XML</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/72189618/rdf.xml" type="application/rdf+xml" rel="nofollow">
+                              <span class="langHi0">RDF record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/72189618/justlinks.json" type="application/vnd.oclc.links+json"
+                              rel="nofollow">
+                              <span class="langHi0">Just Links in JSON</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="History" class="mainSection">
+                  <h3>
+                     <img id="HistoryContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="HistoryContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">History of VIAF ID</span>:72189618 (20)
+      </h3>
+                  <div id="HistoryContent" class="content" style="display:none;">
+                     <table id="historyTable" cellspacing="0">
+                        <tr>
+                           <th>
+                              <span class="langHi0">Record ID</span>
+                           </th>
+                           <th id="action">
+                              <span class="langHi0">Action</span>
+                           </th>
+                           <th>
+                              <span class="langHi0">Time</span>
+                           </th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LC|n&#32;&#32;80020620">LC|n  80020620</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2009-03-03T12:03:29+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BIBSYS|x90804079">BIBSYS|x90804079</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2012-11-26T09:56:13+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/DNB|118756362">DNB|118756362</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLIlat|000426641">NLIlat|000426641</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NTA|099855216">NTA|099855216</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SUDOC|08578902X">SUDOC|08578902X</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SELIBR|330221">SELIBR|330221</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NKC|jn20000701785">NKC|jn20000701785</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/ISNI|0000000073754736">ISNI|0000000073754736</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2014-05-14T22:19:01+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/WKP|Tecumseh">WKP|Tecumseh</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2015-04-14T18:56:54+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/WKP|Q257808">WKP|Q257808</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2015-09-20T14:54:45+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/B2Q|0000489827">B2Q|0000489827</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2015-09-20T14:54:45+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BIBSYS|90804079">BIBSYS|90804079</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2017-04-23T05:21:09.789315+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/CAOONL|ncf10033261">CAOONL|ncf10033261</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2018-11-18T17:12:13.535005+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LAC|0040E1302">LAC|0040E1302</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2018-12-02T23:23:07.027585+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LIH|LNB:B2y6;=BZ">LIH|LNB:B2y6;=BZ</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2018-12-03T05:25:01.855007+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LIH|LNB:B2_y_6;=BZ">LIH|LNB:B2_y_6;=BZ</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2018-12-03T09:34:19.243550+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/J9U|987007279692905171">J9U|987007279692905171</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2020-02-02T16:36:46.465358+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BNF|14445300">BNF|14445300</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2020-03-15T05:11:07.853433+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLI|000426641">NLI|000426641</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2020-04-12T10:38:09.738407+00:00</td>
+                        </tr>
+                     </table>
+                     <a class="rss" href="https://viaf.org/viaf/72189618.rss" rel="nofollow">RSS feed for changes</a>
+                  </div>
+               </div>
+            </div>
+            <script type="text/javascript">updateSearchForms();</script>
+            <div class="clearing"/>
+         </div>
+      </div>
+      <div id="footer2-wrap">
+         <div id="footer2">
+            <div id="logo">
+               <img title="OCLC Logo" alt="OCLC Logo" src="https://viaf.org/viaf/images/logo_col_v_white.gif"/>
+            </div>
+            <div id="legal">
+               <div id="copyright">© 2010-2019 OCLC <br/>
+                  <a href="https://policies.oclc.org/en/privacy/privacy-statement.html">Privacy policy</a>
+                  <br/>
+                  <a href="https://policies.oclc.org/en/privacy/cookie-statement.html">Cookie Notice</a>
+               </div>
+               <div id="TandC">
+                  <a href="https://www.oclc.org/">Hosted by OCLC</a>
+               </div>
+               <div id="VoID">
+                  <a href="https://viaf.org/viaf/data">About the dataset</a>
+               </div>
+               <div id="lastUpdate"/>
+            </div>
+            <div id="footer-right">
+               <div class="footer" id="feedback">
+                  <img alt="Send us a comment." title="Send us a comment." src="https://viaf.org/viaf/images/mail.gif"/>
+                  <a href="mailto:bibchange@oclc.org?subject=VIAF feedback">
+                     <span class="langHi0">Send us a comment.</span>
+                  </a>
+               </div>
+               <div class="footer" id="about">
+                  <img alt="About VIAF" title="About VIAF" src="https://viaf.org/viaf/images/info.gif"/>
+                  <a href="https://www.oclc.org/viaf">
+                     <span class="langHi0">About VIAF</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript">//</script>
+      <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-10987553-1");  // viaf
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+   </body>
+</html>

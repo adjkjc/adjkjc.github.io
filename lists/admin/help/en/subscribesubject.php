@@ -1,0 +1,1 @@
+<p>Note: Customise this message to state the additional ways in which you will use your subscriber data. <a target= "_blank" href = "https://www.phplist.org/manual/ch048_gdpr.xhtml"  >Read more&hellip;</a> </p>

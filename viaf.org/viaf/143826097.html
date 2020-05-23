@@ -1,0 +1,1401 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script src="https://cdn.cookielaw.org/langswitch/b166fb9e-beed-4dd2-8201-a15d0c055e30.js"
+              type="text/javascript"
+              charset="UTF-8">//</script>
+      <script type="text/javascript">
+                        function OptanonWrapper() { }
+                        </script>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="referrer" content="origin"/>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/raphael.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/webjars/jquery/2.1.1/jquery.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/viaf.js">//</script>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/viaf.css"/>
+      <link href="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/themes/base/jquery-ui.css"
+            rel="stylesheet"
+            type="text/css"/>
+      <script type="text/javascript"
+              src="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/ui/minified/jquery-ui.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.columnizer.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.dataTables.min.js">//</script>
+      <link rel="shortcut icon" href="https://viaf.org/viaf/images/viaf.ico"/>
+      <link rel="search" title="VIAF Search" type="application/opensearchdescription+xml"
+            href="http://viaf.org/allFieldsSearch.xml"/>
+      <link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/"/>
+      <title>143826097</title>
+      <link rel="canonical" href="http://viaf.org/viaf/143826097"/>
+      <link rel="alternate" href="https://viaf.org/viaf/143826097/rdf.xml"
+            type="application/rdf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/143826097/marc21.xml"
+            type="application/x-marc21+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/143826097/viaf.xml"
+            type="application/x-viaf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/143826097/justlinks.json"
+            type="application/vnd.oclc.links+json"/>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/jquery.dataTables.min.css"/>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        var mylist=$('#listOfLinks');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+           return $(a).text().trim().toUpperCase().localeCompare($(b).text().trim().toUpperCase());
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+        // canvasSize declared in viaf.js
+      //canvasSize = 90 + (nodes.length * 10);
+      canvas=document.getElementById("svgcanvas");
+      if(canvas) {
+      canvasSize = 140 + (nodes.length * 8);
+      if (nodes.length==1){canvasSize = 70;}
+      var paper = Raphael(document.getElementById("svgcanvas"), canvasSize, canvasSize);
+      drawGraph(paper);
+
+      $('#SelectedTitles h3').click(function(event) {
+        $('#SelectedTitlesContent').slideToggle("slow");
+        $('img#SelectedTitlesContentOpen').toggle();
+        $('img#SelectedTitlesContentClose').toggle();
+      });
+      $('#SelectedCoauthors h3').click(function(event) {
+        $('#SelectedCoauthorsContent').slideToggle("slow");
+        $('img#SelectedCoauthorsContentOpen').toggle();
+        $('img#SelectedCoauthorsContentClose').toggle();
+      });
+      $('#Graph h3').click(function(event) {
+        $('#GraphContent').slideToggle("slow");
+        $('img#GraphContentOpen').toggle();
+        $('img#GraphContentClose').toggle();
+      });
+      $('#Countries h3').click(function(event) {
+        $('#CountriesContent').slideToggle("slow");
+        $('img#CountriesContentOpen').toggle();
+        $('img#CountriesContentClose').toggle();
+      });
+      $('#About h3').click(function(event) {
+        $('#AboutContent').slideToggle("slow");
+        $('img#AboutContentOpen').toggle();
+        $('img#AboutContentClose').toggle();
+      });
+      $('#Timeline h3').click(function(event) {
+        $('#TimelineContent').slideToggle("slow");
+        $('img#TimelineContentOpen').toggle();
+        $('img#TimelineContentClose').toggle();
+      });
+      $('#AltForms h3').click(function(event) {
+        $('#AltFormsContent').slideToggle("slow");
+        $('img#AltFormsContentOpen').toggle();
+        $('img#AltFormsContentClose').toggle();
+      });
+      $('#TitleLinks h3').click(function(event) {
+        $('#TitleLinksContent').slideToggle("slow");
+        $('img#TitleLinksContentOpen').toggle();
+        $('img#TitleLinksContentClose').toggle();
+      });
+      $('#RelatedNames h3').click(function(event) {
+        $('#RelatedNamesContent').slideToggle("slow");
+        $('img#RelatedNamesContentOpen').toggle();
+        $('img#RelatedNamesContentClose').toggle();
+      });
+      $('#Publishers h3').click(function(event) {
+        $('#PublishersContent').slideToggle("slow");
+        $('img#PublishersContentOpen').toggle();
+        $('img#PublishersContentClose').toggle();
+      });
+      $('#RecordViews h3').click(function(event) {
+        $('#RecordViewsContent').slideToggle("slow");
+        $('img#RecordViewsContentOpen').toggle();
+        $('img#RecordViewsContentClose').toggle();
+      });
+      $('#History h3').click(function(event) {
+        $('#HistoryContent').slideToggle("slow");
+        $('img#HistoryContentOpen').toggle();
+        $('img#HistoryContentClose').toggle();
+      });
+
+	$(".exprLabel").click(function() {
+			//alert("clicked");
+			$(this).parent().find("ul").toggle('slow');
+			if ($(this).parent().find("h4").hasClass('listClose')){
+				$(this).parent().find("h4").addClass('listOpen').removeClass('listClose');
+			}
+			else {
+				$(this).parent().find("h4").addClass('listClose').removeClass('listOpen');
+			}
+	});
+      }
+
+      });
+    </script>
+      <script type="text/javascript"><!--
+                            $(document).ready(function() {
+                            if ($('#expressionTable').length) $('#expressionTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+                            if ($('#workTable').length) $('#workTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+
+                            function fixupHeader(XMLHttpRequest){
+                            XMLHttpRequest.setRequestHeader('Content-Type', "text/xml");
+                            }
+                            $( "input#searchTerms" ).autocomplete({
+                            source: function( request, response ){
+                            $.ajax({
+                            url: "//viaf.org/viaf/AutoSuggest",
+                            dataType: "jsonp",
+                            data: {
+                            query: request.term
+                            },
+                            success: function (data){
+                            var mr = [];
+                            var result = data['result']
+                            for (var i=0, len=result.length; i < len; i++){ 
+                            ri = result[i];
+                            var term = ri['term'];
+                            mr.push({label:term, value:term});
+                            }
+                            response(mr);
+                            }
+                            });
+                            },
+                            minLength: 1
+                            });
+
+                            });
+--></script>
+   </head>
+   <body onload="document.getElementById('searchTerms').focus()">
+      <script type="text/javascript">
+                            var viafBase = '/viaf/';
+                            var xslMatchedBirthDeath = 'Matched on birth/death dates';
+                            var xslMatchedAnd = 'and';
+                        </script>
+      <div id="masthead">
+         <div id="mastTitles">
+            <h1>
+               <a class="mast-title" href="https://viaf.org/">VIAF</a>
+            </h1>
+            <h2>Virtual International Authority File</h2>
+         </div>
+      </div>
+      <div id="body">
+         <div id="maincontent">
+            <div id="searchdisplay">
+               <div id="searchdisplay-inner">
+                  <h4 class="searchh4">Search</h4>
+                  <div id="searchInner" class="yui-skin-sam">
+                     <form onsubmit="return doSearch(this);" id="visibleForm" action="https://viaf.org/viaf/143826097/?">
+                        <fieldset id="fieldset-field">
+                           <label>
+                              <span class="langHi0">Select Field:</span>
+                           </label>
+                           <select name="selector0" size="1">
+                              <option value="cql.any">All Fields</option>
+                              <option selected="selected" value="local.names">All Headings</option>
+                              <option value="local.corporateNames">Corporate Names</option>
+                              <option value="local.geographicNames">Geographic Names</option>
+                              <option value="local.personalNames">Personal Names</option>
+                              <option value="local.uniformTitleWorks">Works</option>
+                              <option value="local.uniformTitleExpressions">Expressions</option>
+                              <option value="local.mainHeadingEl">Preferred Headings</option>
+                              <option value="Xlocal.names">Exact Heading</option>
+                              <option value="local.title">Bibliographic Titles</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-index">
+                           <label>Select Index:</label>
+                           <select size="1" name="selector1">
+                              <option selected="selected" value="viaf">All VIAF</option>
+                              <option value="arbabn">Argentina</option>
+                              <option value="nla">Australia</option>
+                              <option value="vlacc">Belgium (Flemish)</option>
+                              <option value="blbnb">Brazil</option>
+                              <option value="caoonl">Canada</option>
+                              <option value="bnc">Catalunya</option>
+                              <option value="bnchl">Chile</option>
+                              <option value="nsk">Croatia</option>
+                              <option value="nkc">Czech</option>
+                              <option value="dbc">Denmark (DBC)</option>
+                              <option value="egaxa">Egypt</option>
+                              <option value="errr">Estonia</option>
+                              <option value="fast">FAST</option>
+                              <option value="bnf">France (BnF)</option>
+                              <option value="sudoc">France (Sudoc)</option>
+                              <option value="dnb">Germany</option>
+                              <option value="jpg">Getty (ULAN)</option>
+                              <option value="grateve">Greece</option>
+                              <option value="bnc bne">Hispánica</option>
+                              <option value="nszl">Hungary</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="n6i">Ireland</option>
+                              <option value="isni">ISNI</option>
+                              <option value="j9u">Israel</option>
+                              <option value="iccu">Italy</option>
+                              <option value="ndl">Japan (NDL)</option>
+                              <option value="nii">Japan (NII)</option>
+                              <option value="krnlk">Korea</option>
+                              <option value="LNB">Latvia</option>
+                              <option value="LNL">Lebanon</option>
+                              <option value="lc">LC (NACO)</option>
+                              <option value="lih">Lithuania</option>
+                              <option value="bnl">Luxembourg</option>
+                              <option value="mrbnr">Morocco</option>
+                              <option value="nta">Netherlands</option>
+                              <option value="bibsys">Norway (BIBSYS)</option>
+                              <option value="w2z">Norway (National Library)</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="perseus">Perseus</option>
+                              <option value="plwabn">Poland (National Library)</option>
+                              <option value="nukat">Poland (NUKAT)</option>
+                              <option value="ptbnp">Portugal</option>
+                              <option value="b2q">Québec</option>
+                              <option value="de663">RISM</option>
+                              <option value="nlr">Russia</option>
+                              <option value="nlb">Singapore</option>
+                              <option value="skmasnl">Slovakia</option>
+                              <option value="simacob">Slovenia</option>
+                              <option value="bne">Spain</option>
+                              <option value="selibr">Sweden</option>
+                              <option value="sz">Swiss (National Library)</option>
+                              <option value="rero">Swiss (RERO)</option>
+                              <option value="srp">Syriac</option>
+                              <option value="cyt">Taiwan</option>
+                              <option value="bav">Vatican</option>
+                              <option value="wkp">Wikipedia</option>
+                              <option value="xa">xA</option>
+                              <option value="xr">xR</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-textenter">
+                           <label>Search Terms:</label>
+                           <div class="ui-widget">
+                              <input size="40" id="searchTerms"/>
+                           </div>
+                        </fieldset>
+                        <fieldset id="fieldset-submit">
+                           <input value="Search" id="btnSearch2" title="Search VIAF" type="submit"/>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div id="content">
+               <div id="Title-Wrap">
+                  <div id="Title">
+                     <h2 id="nameEntry1" class="nameEntry">Isaac (Biblical patriarch)<span class="flags">
+                           <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry2" class="nameEntry">اسحق (ابن ابراهيم الخليل)<span class="flags">
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry3" class="nameEntry">יצחק, אבינו<span class="flags">
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry4" class="nameEntry">Isaak Biblische Person<span class="flags">
+                           <img alt="German National Library" title="German National Library"
+                                src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           <img alt="Swiss National Library" title="Swiss National Library"
+                                src="https://viaf.org/viaf/images/flags/SZ.png"/>
+                        </span>
+                     </h2>
+                     <h1 class="nameID">VIAF ID: 143826097
+     (Personal)
+      </h1>
+                     <h1 class="nameID">Permalink: http://viaf.org/viaf/143826097</h1>
+                  </div>
+               </div>
+               <div id="Graph" class="mainSection" style="position:relative;">
+                  <h3>
+                     <img id="GraphContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="GraphContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Preferred Forms</span>
+                  </h3>
+                  <div id="GraphContent" class="content">
+                     <div id="GraphContent-wrap">
+                        <div>
+                           <ul id="mainHeadingElements">
+                              <li id="PreferredForms1" class="PreferredForms">
+                                 <a href="http://isni.org/isni/0000000458758420" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/ISNI%7C0000000458758420" id="ISNI-0000000458758420"
+                                    onmouseover="selectNode('ISNI-0000000458758420')"
+                                    onmouseout="unselectNode('ISNI-0000000458758420')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms2" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/J9U%7C987007311155505171" id="J9U-987007311155505171"
+                                    onmouseover="selectNode('J9U-987007311155505171')"
+                                    onmouseout="unselectNode('J9U-987007311155505171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms3" class="PreferredForms">
+                                 <a href="https://id.loc.gov/authorities/names/n82057089" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/LC%7Cn&#32;&#32;82057089" id="LC-n82057089"
+                                    onmouseover="selectNode('LC-n82057089')"
+                                    onmouseout="unselectNode('LC-n82057089')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms4" class="PreferredForms">
+                                 <a href="http://d-nb.info/gnd/118555898" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Swiss National Library" title="Swiss National Library"
+                                         src="https://viaf.org/viaf/images/flags/SZ.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/SZ%7C118555898" id="SZ-118555898"
+                                    onmouseover="selectNode('SZ-118555898')"
+                                    onmouseout="unselectNode('SZ-118555898')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Isaak</span>‏
+  
+    ‎‡c 
+  <span>Biblische Person</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms5" class="PreferredForms">
+                                 <a href="http://d-nb.info/gnd/118555898" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/DNB%7C118555898" id="DNB-118555898"
+                                    onmouseover="selectNode('DNB-118555898')"
+                                    onmouseout="unselectNode('DNB-118555898')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Isaak</span>‏
+  
+    ‎‡c 
+  <span>Biblische Person</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms6" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/J9U%7C987007311155505171" id="J9U-987007311155505171"
+                                    onmouseover="selectNode('J9U-987007311155505171')"
+                                    onmouseout="unselectNode('J9U-987007311155505171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>יצחק,</span>‏
+  
+    ‎‡c 
+  <span>אבינו</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms7" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>100 0 _ <a href="https://viaf.org/processed/J9U%7C987007311155505171" id="J9U-987007311155505171"
+                                    onmouseover="selectNode('J9U-987007311155505171')"
+                                    onmouseout="unselectNode('J9U-987007311155505171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>اسحق</span>‏
+  
+    ‎‡c 
+  <span>(ابن ابراهيم الخليل)</span>‏
+  </a>
+                              </li>
+                           </ul>
+                           <script type="text/javascript">
+      new Node("ISNI-0000000458758420", "ISNI", "ISNI");
+      
+      addLink("ISNI-0000000458758420", "LC-n82057089");
+    addMatch("ISNI-0000000458758420", "LC-n82057089", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000458758420", "J9U-987007311155505171");
+    addMatch("ISNI-0000000458758420", "J9U-987007311155505171", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000458758420", "J9U-987007311155505171");
+    addMatch("ISNI-0000000458758420", "J9U-987007311155505171", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000458758420", "J9U-987007311155505171");
+    addMatch("ISNI-0000000458758420", "J9U-987007311155505171", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000458758420", "DNB-118555898");
+    addMatch("ISNI-0000000458758420", "DNB-118555898", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000458758420", "SZ-118555898");
+    addMatch("ISNI-0000000458758420", "SZ-118555898", "", "viafid", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007311155505171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "LC-n82057089");
+    addMatch("J9U-987007311155505171", "LC-n82057089", "", "exact title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("LC-n82057089", "LC", "Library of Congress/NACO");
+      
+      addLink("LC-n82057089", "ISNI-0000000458758420");
+    addMatch("LC-n82057089", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n82057089", "ISNI-0000000458758420");
+    addMatch("LC-n82057089", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n82057089", "ISNI-0000000458758420");
+    addMatch("LC-n82057089", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n82057089", "J9U-987007311155505171");
+    addMatch("LC-n82057089", "J9U-987007311155505171", "", "exact title", "", "", ""); 
+  
+      addLink("LC-n82057089", "J9U-987007311155505171");
+    addMatch("LC-n82057089", "J9U-987007311155505171", "", "exact title", "", "", ""); 
+  
+      addLink("LC-n82057089", "J9U-987007311155505171");
+    addMatch("LC-n82057089", "J9U-987007311155505171", "", "exact title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("SZ-118555898", "SZ", "Swiss National Library");
+      
+      addLink("SZ-118555898", "ISNI-0000000458758420");
+    addMatch("SZ-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("SZ-118555898", "ISNI-0000000458758420");
+    addMatch("SZ-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("SZ-118555898", "ISNI-0000000458758420");
+    addMatch("SZ-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("SZ-118555898", "DNB-118555898");
+    addMatch("SZ-118555898", "DNB-118555898", "", "suggested", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("DNB-118555898", "DNB", "German National Library");
+      
+      addLink("DNB-118555898", "ISNI-0000000458758420");
+    addMatch("DNB-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-118555898", "ISNI-0000000458758420");
+    addMatch("DNB-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-118555898", "ISNI-0000000458758420");
+    addMatch("DNB-118555898", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-118555898", "SZ-118555898");
+    addMatch("DNB-118555898", "SZ-118555898", "", "suggested", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007311155505171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "LC-n82057089");
+    addMatch("J9U-987007311155505171", "LC-n82057089", "", "exact title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007311155505171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "ISNI-0000000458758420");
+    addMatch("J9U-987007311155505171", "ISNI-0000000458758420", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007311155505171", "LC-n82057089");
+    addMatch("J9U-987007311155505171", "LC-n82057089", "", "exact title", "", "", ""); 
+  </script>
+                        </div>
+                        <div id="leftfloat">
+                           <div id="svgcanvas"> </div>
+                           <div id="nodeInfo">
+                              <h4> </h4>
+                              <p> </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="clearing"> </div>
+               <div id="AltForms" class="mainSection">
+                  <h3>
+                     <img id="AltFormsContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="AltFormsContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">4xx's: Alternate Name Forms</span> (65)
+      </h3>
+                  <div style="display: none;" id="AltFormsContent" class="content">
+                     <ul>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Iisak</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac (Biblical Patriarch)</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac,</span>‏
+  
+    ‎‡c 
+  <span>the patriarch</span>‏
+  <span class="flags">
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>Biblical character</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>personnage de la Bible et du Coran, fils d'Abraham et de Sarah</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaac</span>‏
+  
+    ‎‡c 
+  <span>the patriarch</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaak</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaak</span>‏
+  
+    ‎‡c 
+  <span>zentrale Figur des jüdischen Glaubens</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isac</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isacco</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isacco</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isak</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Isaka</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ishak</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ishoq</span>‏
+  
+    ‎‡c 
+  <span>Qurʼonda nomi kelgan 25 paygʻambardan biri</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Iskak Darmo Suwiryo</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Its.hak</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Izaag</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Izaokas</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Izaäk</span>‏
+  
+    ‎‡c 
+  <span>aartsvader</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Izsák</span>‏
+  
+    ‎‡c 
+  <span>bibliai személy</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Izák</span>‏
+  
+    ‎‡c 
+  <span>biblický patriarcha</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Nabi Isxaaq C.S</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Patriarken Isak</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Yitshak</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Yitsḥaḳ</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  <span class="flags">
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Yitsḥaḳ</span>‏
+  
+    ‎‡c 
+  <span>(Biblical patriarch)</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Yizhaq,</span>‏
+  
+    ‎‡c 
+  <span>Avinu</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Yizhaq</span>‏
+  
+    ‎‡c 
+  <span>Avinu</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Íosác</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ísakur</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Īzāks</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ισαάκ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ісаак</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Ісак, патрыярх</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Исаак</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Исаак</span>‏
+  
+    ‎‡c 
+  <span>сын Авраама</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Исак</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Исхьакъ</span>‏
+  
+    ‎‡c 
+  <span>исламан пайхамар</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ИсхӀакъ идавс</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Ысқақ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Իսահակ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>יצחק</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>יצחק אבינו</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>יצחק בן אברהם אבינו</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 4 
+    ‎‡a 
+  <span>יצחק.</span>‏
+  <span class="flags">
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>יצחק</span>‏
+  
+    ‎‡c 
+  <span>(אישיות תנכית)</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>יצחק</span>‏
+  
+    ‎‡c 
+  <span>אבינו</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>إسحاق</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ئیسحاق</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>اسحاق عليہ السلام</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>اسحاق</span>‏
+  
+    ‎‡c 
+  <span>(ابن ابراهيم الخليل)</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>اسحق</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ஈசாக்கு</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ఐజాక్</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ഇസ്ഹാഖ് നബി</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>อิสอัค</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ཨི་སཱག</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ისააკი</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>ይስሐቅ</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>イサク</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>以撒</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>以撒</span>‏
+  
+    ‎‡c 
+  <span>希伯來聖經人物、亞伯拉罕之子</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>이사악</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="SelectedTitles" class="mainSection">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="SelectedTitlesContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="SelectedTitlesContentClose"/>Works</h3>
+                  <div style="display: block;" id="SelectedTitlesContent" class="content">
+                     <table class="dataTable" id="workTable" cellspacing="0">
+                        <thead>
+                           <tr role="row">
+                              <th class="sorting" role="columnheader">Title</th>
+                              <th class="no-sort" role="columnheader">Sources</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Schmid, H. Die Gestalt des Isaak</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class="mainSection" id="About">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="AboutContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="AboutContentClose"/>
+                     <span class="langHi0">About</span>
+                  </h3>
+                  <div style="display: none;" class="content" id="AboutContent">
+                     <div id="personalinfo" class="subsection">
+                        <h2>
+                           <span class="langHi0">Personal Information</span>
+                        </h2>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0"/>Gender: </span>
+                           <span class="langHi0"/>Male</h4>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Nationality or associated country</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>JO - Jordan<span class="flags">
+                                 <img alt="German National Library" title="German National Library"
+                                      src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 <img alt="Swiss National Library" title="Swiss National Library"
+                                      src="https://viaf.org/viaf/images/flags/SZ.png"/>
+                              </span>
+                           </li>
+                           <li>IL - Israel<span class="flags">
+                                 <img alt="German National Library" title="German National Library"
+                                      src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 <img alt="Swiss National Library" title="Swiss National Library"
+                                      src="https://viaf.org/viaf/images/flags/SZ.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div id="externalLinks" class="subsection">
+                        <h2>
+                           <span class="langHi0">External Links</span>
+                        </h2>
+                        <ul id="listOfLinks">
+                           <li>
+                              <a href="https://www.worldcat.org/identities/lccn-n82057089">WorldCat Identities - lccn-n82057089</a>
+                           </li>
+                           <li>
+                              <a href="https://isni.org/isni/0000000458758420">ISNI - 0000 0004 5875 8420</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="mainSection" id="RecordViews">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="RecordViewsContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="RecordViewsContentClose"/>
+                     <span class="langHi0">Record Views</span>
+                  </h3>
+                  <div style="display:none;" class="content" id="RecordViewsContent">
+                     <ul>
+                        <li>
+                           <a href="https://viaf.org/viaf/143826097/marc21.xml" type="application/x-marc21+xml"
+                              rel="nofollow">
+                              <span class="langHi0">MARC-21 record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/143826097/viaf.xml" type="application/xml" rel="nofollow">
+                              <span class="langHi0">VIAF Cluster in XML</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/143826097/rdf.xml" type="application/rdf+xml" rel="nofollow">
+                              <span class="langHi0">RDF record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/143826097/justlinks.json" type="application/vnd.oclc.links+json"
+                              rel="nofollow">
+                              <span class="langHi0">Just Links in JSON</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="History" class="mainSection">
+                  <h3>
+                     <img id="HistoryContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="HistoryContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">History of VIAF ID</span>:143826097 (10)
+      </h3>
+                  <div id="HistoryContent" class="content" style="display:none;">
+                     <table id="historyTable" cellspacing="0">
+                        <tr>
+                           <th>
+                              <span class="langHi0">Record ID</span>
+                           </th>
+                           <th id="action">
+                              <span class="langHi0">Action</span>
+                           </th>
+                           <th>
+                              <span class="langHi0">Time</span>
+                           </th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLIheb|000280243">NLIheb|000280243</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2013-01-14T22:09:03+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLIlat|000323366">NLIlat|000323366</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2013-05-13T19:14:22+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/DNB|118555898">DNB|118555898</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2016-02-20T16:56:25.779656+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/WKP|Q671872">WKP|Q671872</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2017-02-26T09:18:38.730763+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/ISNI|0000000458758420">ISNI|0000000458758420</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2017-03-13T17:21:37.009673+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SZ|118555898">SZ|118555898</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-02-17T12:00:10.349526+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SWNL|vtls008449684">SWNL|vtls008449684</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2019-03-10T14:06:10.637636+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LC|n&#32;&#32;82057089">LC|n  82057089</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-06-09T12:13:54.231162+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/J9U|987007311155505171">J9U|987007311155505171</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2020-02-02T15:42:07.875436+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLI|000323366">NLI|000323366</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2020-04-12T10:16:14.301164+00:00</td>
+                        </tr>
+                     </table>
+                     <a class="rss" href="https://viaf.org/viaf/143826097.rss" rel="nofollow">RSS feed for changes</a>
+                  </div>
+               </div>
+            </div>
+            <script type="text/javascript">updateSearchForms();</script>
+            <div class="clearing"/>
+         </div>
+      </div>
+      <div id="footer2-wrap">
+         <div id="footer2">
+            <div id="logo">
+               <img title="OCLC Logo" alt="OCLC Logo" src="https://viaf.org/viaf/images/logo_col_v_white.gif"/>
+            </div>
+            <div id="legal">
+               <div id="copyright">© 2010-2019 OCLC <br/>
+                  <a href="https://policies.oclc.org/en/privacy/privacy-statement.html">Privacy policy</a>
+                  <br/>
+                  <a href="https://policies.oclc.org/en/privacy/cookie-statement.html">Cookie Notice</a>
+               </div>
+               <div id="TandC">
+                  <a href="https://www.oclc.org/">Hosted by OCLC</a>
+               </div>
+               <div id="VoID">
+                  <a href="https://viaf.org/viaf/data">About the dataset</a>
+               </div>
+               <div id="lastUpdate"/>
+            </div>
+            <div id="footer-right">
+               <div class="footer" id="feedback">
+                  <img alt="Send us a comment." title="Send us a comment." src="https://viaf.org/viaf/images/mail.gif"/>
+                  <a href="mailto:bibchange@oclc.org?subject=VIAF feedback">
+                     <span class="langHi0">Send us a comment.</span>
+                  </a>
+               </div>
+               <div class="footer" id="about">
+                  <img alt="About VIAF" title="About VIAF" src="https://viaf.org/viaf/images/info.gif"/>
+                  <a href="https://www.oclc.org/viaf">
+                     <span class="langHi0">About VIAF</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript">//</script>
+      <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-10987553-1");  // viaf
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+   </body>
+</html>

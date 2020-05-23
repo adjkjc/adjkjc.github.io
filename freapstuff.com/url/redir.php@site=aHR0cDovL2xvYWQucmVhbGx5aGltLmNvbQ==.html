@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+<head>
+<script type="text/javascript">
+function createCookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+function eraseCookie(name) {
+	createCookie(name,"",-1);
+}
+</script>
+<title></title>
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="2; url=http://load.reallyhim.com">
+</head>
+<body>
+<form name="form1" id="form1" method="get" action="http://freapstuff.com/url/redir.php">
+<input type="hidden" name="final" value="1"/>
+<input type="hidden" name="site" value="aHR0cDovL2xvYWQucmVhbGx5aGltLmNvbQ=="/>
+</form>
+<script type="text/javascript">
+if(readCookie('firstredir'))
+{
+	eraseCookie('firstredir');
+	var t = setTimeout("document.form1.submit()", 1000);
+}
+else
+{
+	createCookie('firstredir','1');
+ 	document.form1.submit();
+}
+</script>
+
+</body>
+</html>

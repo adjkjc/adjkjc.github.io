@@ -1,0 +1,1200 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+                    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#e8710a">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/app.css">
+    
+    <noscript>
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/blogger/docs/3.0/getting_started"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Blogger API: Getting Started &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Blogger API: Getting Started &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.com/blogger/docs/3.0/getting_started">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/opengraph/orange.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blogger",
+      "item": "https://developers.google.com/blogger"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blogger API: Getting Started",
+      "item": "https://developers.google.com/blogger/docs/3.0/getting_started"
+    }]
+  }
+  </script>
+
+
+
+  
+    
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="orange"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Blogger"    tenant-name="Google Developers"    project-scope="/blogger"    url-scoped="https://developers.google.com/s/results/blogger"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                                                                         
+                        id="devsite-user"></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                  <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/blogger"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="guides"
+   aria-label="Guides, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/blogger/docs/3.0/reference"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="reference"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/blogger/docs/3.0/libraries"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="samples"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples"
+   >
+  Samples
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/blogger"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/reference"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/libraries"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samples">
+      <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/blogger"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Introduction</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v3.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/getting_started"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Getting Started</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/using"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using the API</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/performance"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Performance Tips</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v2.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reference Guide</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading           devsite-nav-deprecated"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v1.0</span><span class="devsite-nav-icon material-icons"
+          data-icon="deprecated"
+          data-title="Deprecated"
+          aria-hidden="true"></span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_js"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>JavaScript</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_php"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>PHP</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_python"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Python</span></a></li></ul></li>
+          </ul>
+                                                    
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner"><style>
+        .toc ul, .toc ol { list-style-type: none; }
+        </style>        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Blogger
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">Blogger API: Getting Started</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      "
+            >
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This document explains how to get started using the Blogger API.</p>
+
+<h2 id="before_starting" data-text="Before you start" tabindex="0">Before you start</h2>
+
+<h3 id="getaccount" data-text="Get a Google Account" tabindex="0">Get a Google Account</h3>
+<p>Make sure that you have a <a
+href="https://www.google.com/accounts/NewAccount">Google Account</a> set up. We
+recommend that you use a separate Google Account for development and testing
+purposes to protect yourself from accidental data loss. If you already have a
+test account, then you're all set; you can visit the <a
+href="http://www.blogger.com/">Blogger</a> user interface to set up, edit, or view your test data.</p>
+
+<h3 id="familiarize" data-text="Get familiar with Blogger" tabindex="0">Get familiar with Blogger</h3>
+<p>If you're unfamiliar with Blogger concepts, read this document and
+experiment with the <a href="http://www.blogger.com/">user interface</a> before
+starting to code. This document assumes that you're familiar with Blogger, with web
+programming concepts, and with web data formats.</p>
+
+<h3 id="auth" data-text="Learn about authorizing requests and identifying your application" tabindex="0">Learn about authorizing requests and identifying your application</h3>
+
+<p>When your application requests private data, the request must be authorized
+by an authenticated user who has access to that data.</p>
+
+<p>When your application requests public data, the request doesn't need to be
+authorized, but does need to be accompanied by an identifier, such as an API
+key.</p>
+
+<p>For information about how to authorize requests and use API keys, see <a
+href="/blogger/docs/3.0/using#auth">Authorizing requests and
+identifying your application</a> in the Using the API document.</p>
+
+<h2 id="background" data-text="Blogger API background" tabindex="0">Blogger API background</h2>
+
+<h3 id="background-concepts" data-text="Blogger concepts" tabindex="0">Blogger concepts</h3>
+<p>Blogger is built on five basic concepts:</p>
+<ul>
+  <li><b>Blogs</b>: The root concept of the API. A blog has posts and
+  pages. This is the container for blog meta-information like blog name and
+  Description.</li>
+  <li><b>Posts</b>: A blog post is the publishable item that the blog author has
+  created. This information is meant to be timely, reflecting what the authors
+  want to publish to the world now. It is understood that as time passes,
+  blog posts content ages and becomes less relevent.</li>
+  <li><b>Comments</b>: A comment is the place where people other than the blog
+  post author react to what the author has written. Everything from bricks to
+  bouquets.</b>
+  <li><b>Pages</b>: A page is a place for static content, such as biographical
+  information, or the ways to contact the user. This is generally timeless
+  information that doesn't change very often.</li>
+  <li><b>Users</b>: A user is someone who interacts with Blogger, be they acting
+  as an Author, an Administrator, or just a Reader. For public blogs, readers may be
+  anonymous, but on private blogs a reader must be identified by Blogger.</li>
+</ul>
+
+<h3 id="background-resources" data-text="Blogger API data model" tabindex="0">Blogger API data model</h3>
+<p>A resource is an individual data entity with a unique identifier. The Blogger
+JSON API operates on five types of resources:</p>
+<ul>
+  <li><strong>Blogs resource</strong>: Represents a blog.</li>
+  <li><strong>Posts resource</strong>: Represents a post; each posts resource is
+  a child of a blogs resource.</li>
+  <li><strong>Comments resource</strong>: Represents a comment on a specific
+  post; each comments resource is a child of a posts resource.</li>
+  <li><strong>Pages resource</strong>: Represents a static page; each pages
+  resource is a child of a blogs resource.</li>
+  <li><strong>Users resource</strong>: Represents a non-anonymous user. This is
+  used to identify the Author of a page, post, or comment.</li>
+</ul>
+<figure>
+  <img src="/blogger/docs/3.0/blogs-posts-comments.png"
+          alt="The blogs resource has two children resource types, pages and posts.
+          A posts resource may have comments resource children."/>
+  <figcaption>Overview of the relationships between resources</figcaption>
+</figure>
+<p>The Blogger API data model is based on groups of resources, called collections:</p>
+<dl>
+  <dt><span class="apicollection">Blogs collection</span></dt>
+  <dd>A <span="apicollection">blogs collection</span> consists of all the blogs
+  a user has access rights to. You can list blogs by user, or retrieve a
+  single blog by ID.</dd>
+
+  <dt><span class="apicollection">Posts collection</span></dt>
+  <dd>A <span class="apicollection">Posts collection</span> consists of all the
+  <span class="apiresource">posts resources</span> within a specific <span
+  class="apiresource">blogs resource</span>.</dd>
+
+  <dt><span class="apicollection">Comments collection</span></dt>
+  <dd>A <span class="apicollection">comments collection</span> consists of all the
+  <span class="apiresource">comments resources</span> within a specific <span
+  class="apiresource">posts resource</span>.</dd>
+
+  <dt><span class="apicollection">Pages collection</span></dt>
+  <dd>A <span class="apicollection">pages collection</span> consists of all the
+  <span class="apiresource">pages resources</span> within a specific <span
+  class="apiresource">blogs resource</span>.</dd>
+
+  <dt><span class="apicollection">Users Collection</span></dt>
+  <dd>A <span class="apicollection">users collection</span> consists of all the
+  <span class="apiresource">users resources</span> on Blogger, and thus cannot
+  be listed. A user can retrieve their own <span class="apiresource">users resource</span>
+  (but nobody else's) by ID, or by using the identifier <code translate="no" dir="ltr">self</code>.</dd>
+</dl>
+
+<h3 id="background-operations" data-text="Blogger API operations" tabindex="0">Blogger API operations</h3>
+<p>You can invoke a number of different methods on collections and resources
+  in the Blogger API, as described in the following table.</p>
+<table>
+  <tr>
+    <th>Operation</th>
+    <th>Description</th>
+    <th>REST HTTP mappings</th>
+  </tr>
+  <tr>
+    <td><span class="apimethod">list</span></td>
+    <td>Lists all resources within a collection. </td>
+    <td><code translate="no" dir="ltr">GET</code> on a collection URI.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">get</span></td>
+    <td>Gets a specific resource.</td>
+    <td><code translate="no" dir="ltr">GET</code> on a resource URI.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">getByUrl</span></td>
+    <td>Gets a resource, looking it up by URL.</td>
+    <td><code translate="no" dir="ltr">GET</code> with the URL passed in as a parameter.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">getByPath</span></td>
+    <td>Gets a resource by looking it up by its path.</td>
+    <td><code translate="no" dir="ltr">GET</code> with the Path passed in as a parameter.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">listByUser</span></td>
+    <td>Lists resources owned by a User.</td>
+    <td><code translate="no" dir="ltr">GET</code> on a user owned collection.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">search</span></td>
+    <td>Search for resources, based on a query parameter.</td>
+    <td><code translate="no" dir="ltr">GET</code> on a Search URL, with the query passed in as a parameter.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">insert</span></td>
+    <td>Create a resource in a collection.</td>
+    <td><code translate="no" dir="ltr">POST</code> on a collection URI.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">delete</span></td>
+    <td>Deletes a resource.</td>
+    <td><code translate="no" dir="ltr">DELETE</code> on a resource URI.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">patch</span></td>
+    <td>Update a resource, using Patch semantics.</td>
+    <td><code translate="no" dir="ltr">PATCH</code> on a resource URI.</td>
+  </tr>
+  <tr>
+    <td><span class="apimethod">update</span></td>
+    <td>Update a resource.</td>
+    <td><code translate="no" dir="ltr">PUT</code> on a resource URI.</td>
+  </tr>
+</table>
+<p>The table below shows which methods are supported by each resource type.  All <span class="apimethod">list</span> and
+<span class="apimethod">get</span> operations on private blogs require <a href="/blogger/docs/3.0/json/using#auth">authentication</a>.</p>
+<table wborder="1">
+  <thead>
+    <th><div align="center">Resource Type</div></th>
+    <th colspan="10"><div align="center">Supported Methods</div></th>
+  </thead>
+  <tr>
+    <td style="text-align: center;"></td>
+    <td style="text-align: center;"><strong><span class="apimethod">list</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">get</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">getByUrl</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">getByPath</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">listByUser</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">search</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">insert</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">delete</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">patch</span></strong></td>
+    <td style="text-align: center;"><strong><span class="apimethod">update</span></strong></td>
+  </tr>
+  <tr>
+    <td><b>Blogs</b></td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+  </tr>
+  <tr>
+    <td><b>Posts</b></td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+  </tr>
+  <tr>
+    <td><b>Comments</b></td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+  </tr>
+  <tr>
+    <td><b>Pages</b></td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+  </tr>
+  <tr>
+    <td><b>Users</b></td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">yes</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+    <td style="text-align: center;">no</td>
+  </tr>
+</table>
+<h2 id="invoking" data-text="Calling styles" tabindex="0">Calling styles</h2>
+<p>There are several ways to invoke the API:</p>
+<ul>
+  <li>Using <a href="#REST">REST</a> directly or from <a href="#JSONP">JavaScript</a> (no server-side code required)</li>
+  <li>Using the <a href="/blogger/docs/3.0/libraries">client libraries</a>.</li>
+</ul>
+
+<h3 id="REST" data-text="REST" tabindex="0">REST</h3>
+
+
+
+
+<p>REST is a style of software architecture that provides a convenient and consistent approach to requesting and modifying data.</p>
+<p>The term REST is short for "<a href="https://en.wikipedia.org/wiki/Representational_state_transfer">Representational State Transfer</a>." In the context of Google APIs, it refers to using HTTP verbs to retrieve and modify representations of data stored by Google.</p>
+<p>In a RESTful system, resources are stored in a data store; a client sends a request that the server perform a particular action (such as creating, retrieving, updating, or deleting a resource), and the server performs the action and sends a response, often in the form of a representation of the specified resource.</p>
+<p>In Google's RESTful APIs, the client specifies an action using an HTTP verb such as <code translate="no" dir="ltr">POST</code>, <code translate="no" dir="ltr">GET</code>, <code translate="no" dir="ltr">PUT</code>, or <code translate="no" dir="ltr">DELETE</code>. It specifies a resource by a globally-unique URI of the following form:</p>
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/<span class="apiparam">apiName</span>/<span class="apiparam">apiVersion</span>/<span class="apiparam">resourcePath</span>?<span class="apiparam">parameters</span>
+</pre>
+<p>Because all API resources have unique HTTP-accessible URIs, REST enables data caching and is optimized to work with the web's distributed infrastructure.</p>
+<p>You may find the <a href="https://tools.ietf.org/html/rfc7231#section-4.3">method definitions</a> in the HTTP 1.1 standards documentation useful; they include specifications for <code translate="no" dir="ltr">GET</code>, <code translate="no" dir="ltr">POST</code>, <code translate="no" dir="ltr">PUT</code>, and <code translate="no" dir="ltr">DELETE</code>.</p>
+
+<h4 id="rest-in-the-blogger-api" data-text="REST in the Blogger API" tabindex="0">REST in the Blogger API</h4>
+<p>The supported Blogger operations map directly to REST HTTP verbs, as
+described in <a href="#background-operations">Blogger API operations</a>.</p>
+<p>The specific format for Blogger API URIs are:</p>
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/users/<span class="apiparam">userId</span>
+https://www.googleapis.com/blogger/v3/users/self
+https://www.googleapis.com/blogger/v3/users/<span class="apiparam">userId</span>/blogs
+https://www.googleapis.com/blogger/v3/users/self/blogs
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>
+https://www.googleapis.com/blogger/v3/blogs/byurl
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/bypath
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/search
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>/comments
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>/comments/<span class="apiparam">commentId</span>
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/pages
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/pages/<span class="apiparam">pageId</span>
+</pre>
+
+<p>The full explanation of URIs used and the results for each supported
+operation in the API is summarized in the <a
+href="/blogger/docs/3.0/reference">Blogger API
+Reference</a> document.</p>
+
+<h5 id="examples" data-text="Examples" tabindex="0">Examples</h5>
+<p>List the blogs that the authenticated user has access rights to:</p>
+<pre translate="no" dir="ltr">
+GET https://www.googleapis.com/blogger/v3/users/self/blogs?key=<var>YOUR-API-KEY</var>
+</pre>
+<p>Get the posts on the <a href="http://code.blogger.com/">code.blogger.com</a>
+  blog, which has blog ID 3213900:</p>
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>3213900</b>?key=<var>YOUR-API-KEY</var></pre>
+
+<h4 id="JSONP" data-text=" REST from JavaScript" tabindex="0"> REST from JavaScript</h4>
+<p>You can invoke the Blogger API from JavaScript, using the
+  <code translate="no" dir="ltr">callback</code> query parameter and by providing a callback function.
+  When the browser loads the script, the callback function is executed and the
+  response is provided to the callback function. This approach allows you to
+  write rich applications that display Blogger data without requiring server
+  side code.</p>
+<p>The following example retrieves a post from the
+  <a href="http://code.blogger.com/">code.blogger.com</a> blog, after you replace
+  <var>YOUR-API-KEY</var> with your API key.</p>
+
+<pre class="prettyprint" translate="no" dir="ltr">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Blogger API Example&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="content"&gt;&lt;/div&gt;
+    &lt;script&gt;
+      function handleResponse(response) {
+        document.getElementById("content").innerHTML += "&lt;h1&gt;" + response.title + "&lt;/h1&gt;" + response.content;
+      }
+    &lt;/script&gt;
+    &lt;script
+    src="https://www.googleapis.com/blogger/v3/blogs/3213900/posts/8398240586497962757?callback=handleResponse&amp;key=<var>YOUR-API-KEY</var>"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+<h2 id="data-format" data-text="Data format" tabindex="0">Data format</h2>
+<h3 id="data-json" data-text="JSON" tabindex="0">JSON</h3>
+<p>
+
+
+
+
+<p><a href="http://en.wikipedia.org/wiki/JSON">JSON</a> (JavaScript Object Notation) is a common, language-independent data format that provides a simple text representation of arbitrary data structures. For more information, see <a href="http://www.json.org/">json.org</a>.</p></p>
+
+  
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2019-06-11.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="http://buzz.blogger.com/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blogger Buzz">
+                Blogger Buzz
+      </a>
+      <div class="devsite-footer-promo-description">The Official Buzz from Blogger at Google</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/docs/3.0/libraries"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Client Libraries
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//productforums.google.com/forum/#!forum/blogger"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Help Forum
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//code.blogger.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 2)"            >
+                      Developer Blog
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/terms"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Terms of Service
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Blogger", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>

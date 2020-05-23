@@ -1,0 +1,20 @@
+User-agent: *
+Disallow: /search
+Disallow: /index.html
+Disallow: /scholar
+Disallow: /citations?
+Allow: /citations?user=
+Disallow: /citations?*cstart=
+Disallow: /citations?user=*%40
+Disallow: /citations?user=*@
+Allow: /citations?view_op=list_classic_articles
+Allow: /citations?view_op=metrics_intro
+Allow: /citations?view_op=new_profile
+Allow: /citations?view_op=sitemap
+Allow: /citations?view_op=top_venues
+
+User-agent: Twitterbot
+Disallow:
+
+User-agent: facebookexternalhit
+Disallow:

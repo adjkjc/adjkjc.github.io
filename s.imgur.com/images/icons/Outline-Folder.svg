@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="79px" viewBox="0 0 106 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>outline - folder</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,5.99927945 C0,2.6859689 2.68294093,0 5.99469344,0 L35.6951919,0 L43.879223,8.7394958 L98.0017447,8.7394958 C101.31449,8.7394958 104,11.4253282 104,14.7487768 L104,70.445513 C104,73.7643472 101.311488,76.454794 97.9970362,76.454794 L6.0029638,76.454794 C2.68761844,76.454794 0,73.7673812 0,70.4555145 L0,5.99927945 Z" id="path-1"></path>
+    </defs>
+    <g id="Favorites-Folders" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="outline---folder">
+            <g id="Group-Copy-6" opacity="0.8" transform="translate(1.000000, 1.000000)">
+                <g id="V8i59If">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" stroke="#747A84" stroke-width="2" stroke-linecap="round" stroke-dasharray="8,8" xlink:href="#path-1"></use>
+                </g>
+            </g>
+            <g id="Group-6" transform="translate(43.000000, 33.000000)" fill="#747A84">
+                <rect id="Rectangle-10" x="9" y="0" width="3" height="21" rx="1.5"></rect>
+                <rect id="Rectangle-10" transform="translate(10.500000, 10.500000) rotate(90.000000) translate(-10.500000, -10.500000) " x="9" y="0" width="3" height="21" rx="1.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

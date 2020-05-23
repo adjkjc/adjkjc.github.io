@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="language" content="en" />
+<style>html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}footer,header,nav,section{display:block}[hidden]{display:none}a{background-color:transparent}a:active,a:hover{outline:0}b,strong{font-weight:700}h1{font-size:2em;margin:.67em 0}img{border:0}button{color:inherit;font:inherit;margin:0}button{overflow:visible}button{text-transform:none}button,html input[type=button]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner{border:0;padding:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857;color:#333;background-color:#fff}button{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:focus,a:hover{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}img{vertical-align:middle}.img-responsive{display:block;max-width:100%;height:auto}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}[role=button]{cursor:pointer}.h1,.h2,.h3,h1,h2,h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}.h1,.h2,.h3,h1,h2,h3{margin-top:20px;margin-bottom:10px}.h1,h1{font-size:36px}.h2,h2{font-size:30px}.h3,h3{font-size:24px}p{margin:0 0 10px}.text-center{text-align:center}ul{margin-top:0;margin-bottom:10px}ul ul{margin-bottom:0}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.container:after,.container:before{display:table;content:" "}.container:after{clear:both}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}.row{margin-right:-15px;margin-left:-15px}.row:after,.row:before{display:table;content:" "}.row:after{clear:both}.col-md-10,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-9,.col-sm-1,.col-sm-12,.col-sm-3,.col-sm-4,.col-sm-9,.col-xs-12,.col-xs-6{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-12,.col-xs-6{float:left}.col-xs-6{width:50%}.col-xs-12{width:100%}@media (min-width:768px){.col-sm-1,.col-sm-12,.col-sm-3,.col-sm-4,.col-sm-9{float:left}.col-sm-1{width:8.33333%}.col-sm-3{width:25%}.col-sm-4{width:33.33333%}.col-sm-9{width:75%}.col-sm-12{width:100%}}@media (min-width:992px){.col-md-10,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-9{float:left}.col-md-2{width:16.66667%}.col-md-3{width:25%}.col-md-4{width:33.33333%}.col-md-9{width:75%}.col-md-10{width:83.33333%}.col-md-12{width:100%}}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-right:4px solid transparent;border-left:4px solid transparent}.dropdown{position:relative}.dropdown-toggle:focus{outline:0}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175)}.dropdown-menu.pull-right{right:0;left:auto}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.42857;color:#333;white-space:nowrap}.dropdown-menu>li>a:focus,.dropdown-menu>li>a:hover{color:#262626;text-decoration:none;background-color:#f5f5f5}.open>.dropdown-menu{display:block}.open>a{outline:0}.pull-right>.dropdown-menu{right:0;left:auto}@media (min-width:768px){.navbar-right .dropdown-menu{right:0;left:auto}}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav:after,.nav:before{display:table;content:" "}.nav:after{clear:both}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:focus,.nav>li>a:hover{text-decoration:none;background-color:#eee}.nav .open>a,.nav .open>a:focus,.nav .open>a:hover{background-color:#eee;border-color:#337ab7}.nav>li>a>img{max-width:none}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}.navbar:after,.navbar:before{display:table;content:" "}.navbar:after{clear:both}@media (min-width:768px){.navbar{border-radius:4px}}.navbar-header:after,.navbar-header:before{display:table;content:" "}.navbar-header:after{clear:both}@media (min-width:768px){.navbar-header{float:left}}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;box-shadow:inset 0 1px 0 rgba(255,255,255,.1);-webkit-overflow-scrolling:touch}.navbar-collapse:after,.navbar-collapse:before{display:table;content:" "}.navbar-collapse:after{clear:both}.navbar-collapse.in{overflow-y:auto}@media (min-width:768px){.navbar-collapse{width:auto;border-top:0;box-shadow:none}.navbar-collapse.collapse{display:block!important;height:auto!important;padding-bottom:0;overflow:visible!important}.navbar-collapse.in{overflow-y:visible}}.container>.navbar-collapse,.container>.navbar-header{margin-right:-15px;margin-left:-15px}@media (min-width:768px){.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}}.navbar-brand{float:left;height:50px;padding:15px 15px;font-size:18px;line-height:20px}.navbar-brand:focus,.navbar-brand:hover{text-decoration:none}.navbar-brand>img{display:block}@media (min-width:768px){.navbar>.container .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-right:15px;margin-top:8px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle:focus{outline:0}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media (min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media (max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;box-shadow:none}.navbar-nav .open .dropdown-menu>li>a{padding:5px 15px 5px 25px}.navbar-nav .open .dropdown-menu>li>a{line-height:20px}.navbar-nav .open .dropdown-menu>li>a:focus,.navbar-nav .open .dropdown-menu>li>a:hover{background-image:none}}@media (min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}@media (min-width:768px){.navbar-right{float:right!important;margin-right:-15px}.navbar-right~.navbar-right{margin-right:0}}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.navbar-default .navbar-brand{color:#777}.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:hover{color:#5e5e5e;background-color:transparent}.navbar-default .navbar-nav>li>a{color:#777}.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{color:#333;background-color:transparent}.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{color:#555;background-color:#e7e7e7}@media (max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#777}.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:#333;background-color:transparent}}.navbar-default .navbar-toggle{border-color:#ddd}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#ddd}.navbar-default .navbar-toggle .icon-bar{background-color:#888}.navbar-default .navbar-collapse{border-color:#e7e7e7}.clearfix:after,.clearfix:before{display:table;content:" "}.clearfix:after{clear:both}.pull-right{float:right!important}.pull-left{float:left!important}.hidden{display:none!important}@-ms-viewport{width:device-width}.visible-xs{display:none!important}@media (max-width:767px){.visible-xs{display:block!important}table.visible-xs{display:table!important}tr.visible-xs{display:table-row!important}td.visible-xs,th.visible-xs{display:table-cell!important}}@media (max-width:767px){.hidden-xs{display:none!important}}@media (min-width:768px) and (max-width:991px){.hidden-sm{display:none!important}}@media (min-width:992px) and (max-width:1199px){.hidden-md{display:none!important}}@media (min-width:1200px){.hidden-lg{display:none!important}}body,html{margin:0;padding:0;width:100%;height:100%}html{scroll-behavior:smooth}body{color:#454545;font-size:14px;font-family:Arial,sans-serif}ul{margin:0;padding:0;list-style:none}a{text-decoration:none;transition:.3s}a:focus,a:hover{outline:0;color:#2a6496;text-decoration:underline}h1{font-size:36px}h2{margin-top:5px;margin-bottom:5px;font-size:24px}h3{font-size:18px}h2 a,h3 a{font-weight:700}h1,h2,h3{font-weight:400;font-family:Arial,sans-serif}.h1,.h2,.h3,h1,h2,h3{margin-top:10px}.clear,.clearfix{clear:both}.clear-20{clear:both;height:20px}.clear-10{clear:both;height:10px}.clear-5{clear:both;height:5px}.col-md-10,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-9,.col-sm-1,.col-sm-12,.col-sm-3,.col-sm-4,.col-sm-9,.col-xs-12,.col-xs-6{padding-right:5px;padding-left:5px}#main{padding-top:10px;padding-bottom:40px}.center{text-align:center}.main-content{margin:0 -3px}.sectionTitle{color:#428bca;font-size:18px;font-weight:700;border-bottom:1px solid #e2e2e2;padding-left:4px;margin-bottom:10px;outline:0;margin-top:5px}@media (max-width:767px){.col-xs-12.hidden-lg.hidden-md.hidden-sm{float:none;text-align:center}}@media (max-width:479px){p{margin-bottom:6px}h3{margin-top:10px;margin-bottom:5px;font-size:15px}#main{padding-top:4px;padding-bottom:65px}.col-xs-12.hidden-lg.hidden-md.hidden-sm{float:none;text-align:center}.sectionTitle{font-size:16px}}.navbar{position:relative;margin-bottom:0;min-height:60px;border:0 solid transparent;border-radius:0}.navbar-nav li a:focus,.navbar-nav li a:hover{outline:0;outline-offset:0;background:0 0;text-decoration:none}.navbar-toggle{margin-top:15px;border:1px solid #fff}.navbar-toggle .icon-bar{background-color:#fff}.navbar-default{border-color:#428bca;background-color:#428bca}.navbar-default .navbar-nav>li>a{color:#fff;text-transform:uppercase;font-family:Arial,sans-serif}.navbar-nav>li>a{padding-top:20px;padding-bottom:20px}.navbar-brand{float:left;padding:8px 15px 0 15px;height:60px}.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a:hover{background-color:#265b90;color:#fff}.navbar-collapse{border:0}@media (max-width:767px){.navbar>.container .navbar-brand{width:250px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px}.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#fff}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#008eec}a.navbar-brand img{margin-top:1px}}@media (max-width:479px){.navbar-nav>li>a{padding-top:10px;padding-bottom:10px}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#008eec}a.navbar-brand img{margin-top:2px}.navbar-toggle{margin-top:5px}.navbar{min-height:40px}.navbar-brand{height:40px}}@media (min-width:992px) and (max-width:1199px){.navbar>.container .navbar-brand{padding:15px;width:230px}.navbar-nav>li{font-size:12px}.navbar-default .navbar-nav>li>a{padding:20px 14px}}@media (min-width:768px) and (max-width:991px){.navbar>.container .navbar-brand{padding:15px;width:250px}.navbar-nav>li{font-size:12px}.navbar-default .navbar-nav>li>a{padding:20px 4px}.nav>li>a{position:relative;display:block;padding:10px 10px}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}.navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:#008eec}}.breadcrumbs{color:#454545}.breadcrumbs a{color:#428bca}.breadcrumbs-box{padding:10px 0 5px 0;border-bottom:1px solid #e2e2e2;background:#f0f0f0}@media (max-width:479px){.breadcrumbs-box{padding:0}}.left-menu{margin-bottom:10px;border:1px solid #e2e2e2;background:#f8f8f8}.left-menu ul li{border-bottom:1px solid #e2e2e2}.left-menu ul li:last-child{border-bottom:0 solid}.left-menu ul li a{display:block;padding:6px 20px;color:#428bca}.left-menu ul li a:hover{background:#369;color:#fff;text-decoration:none}@media (min-width:768px) and (max-width:991px){.left-menu{margin-top:0;margin-bottom:0}}@media (max-width:767px){.left-menu{margin-top:10px}}@media (max-width:479px){.left-menu{margin-top:10px;margin-bottom:0}}.mythInfo{width:100%;background:#f8f8f8;font-size:12px}.mythInfo caption{text-align:center;font-weight:400;padding-top:1px;padding-bottom:4px;border:1px solid #e2e2e2;border-bottom:0}.mythInfo td,.mythInfo th{border:1px solid #e2e2e2;padding:5px 2px;font-weight:400}@media (max-width:767px){.mythInfo{font-size:14px}}.dropdown-menu{z-index:99999;padding:0}.dropdown-menu>li{font-size:15px;padding:2px 0}.dropdown-menu>li>a{display:block;clear:both;padding:10px 0;margin:0 20px;color:#333;white-space:nowrap;font-weight:400;line-height:1.42857143}.dropdown-menu>li:focus,.dropdown-menu>li:hover{background-color:#428bca}.dropdown-menu>li:hover a{color:#fff;text-decoration:none}.dropdown-menu li{transition:background .3s;border-bottom:1px solid #e6e6e6}.dropdown-menu li:last-child{border-bottom:0 solid}.pageContent{display:flex;flex-wrap:wrap;font-size:15px}.pageContent-intro{order:1;flex:1 0;padding-right:10px}.pageContent-ad{height:280px;order:2;text-align:center;width:336px;margin:15px 10px}.pageContent-otherText{order:3;width:100%}.pageContent-adInside{margin:15px 0;height:250px}@media (max-width:727px){.pageContent-adInside{height:280px}}.pageContent h2{font-size:18px}.pageContent h3{font-size:14px}@media (max-width:768px){.pageContent{font-size:17px}.pageContent-ad{order:3;width:100%;margin:15px 0}.pageContent-otherText{order:2}.pageContent h1{font-size:20px}.pageContent h3{font-size:16px}}@media (max-width:479px){.pageContent h2{margin-top:10px;margin-bottom:5px}}@media (max-width:727px){.pageContent-ad{width:auto}}.main-post-title{padding-top:1px;padding-bottom:1px;border-bottom:1px solid #e2e2e2;background:#f8f8f8}.main-post-title h1,.main-post-title h2{margin-top:5px;margin-bottom:3px;padding-left:8px;color:#428bca;font-size:21px}.main-post-content{padding-top:5px;text-align:justify;font-weight:400!important}#homepage .main-post-content{padding-top:0}.post-img{float:left;padding-right:15px;padding-bottom:15px;max-width:150px}.post-img:hover{opacity:.7}.home-text-left{float:left;max-width:800px}.home-ad-right{float:right;margin:15px 0 15px 2px;width:336px;height:250px}.home-ad-bottom{margin:15px 0;height:90px}.chevron-right{margin-right:5px;color:#428bca;font-size:15px;font-weight:700}.main-post-ad{height:90px;margin:15px 0}@media (max-width:727px){.main-post-ad{height:100px}}.parent-post-ad{height:250px;margin:15px 0}@media (max-width:727px){.parent-post-ad{height:280px}}.main-post-bottomAd{margin:15px 0;height:250px}@media (max-width:727px){.main-post-bottomAd{height:280px}}@media (min-width:992px) and (max-width:1199px){.home-text-left{max-width:600px}}@media (min-width:768px) and (max-width:991px){.home-text-left{max-width:380px}}@media (max-width:767px){.main-post-title h1,.main-post-title h2{font-size:18px!important}.page .main-post-title h1{font-size:20px!important}.home-ad-right{display:none}}@media (max-width:479px){.main-post-title h1,.main-post-title h2{margin-top:2px;margin-bottom:2px;font-size:24px}.main-post-title h1{font-size:16px!important}.main-post-content{font-size:14px}.chevron-right{margin-right:4px!important;font-size:14px!important}}.content-tags p{margin-bottom:5px}@media all and (max-width:767px){.content-tags p{margin-bottom:6px;padding:0 4px}}@media (max-width:479px){.content-tags{font-size:16px;line-height:26px}}.content-photos{overflow:hidden}.content-photos .col-md-4{padding:0}.content-photos a h2{position:relative;z-index:99;display:inline-block;margin:0;width:100%;height:30px;background:#428bca;color:#fff;text-align:center;font-size:14px;line-height:32px}.content-photos a h2:before{position:absolute;top:-.5em;left:50%;margin-left:-10px;width:0;height:0;border:10px solid transparent;border-top:0;border-bottom:10px solid #428bca;content:''}.content-photos img{margin:0 auto;height:215px}@media (max-width:479px){.content-photos img{height:160px}}.singlePhoto{position:relative;display:block;margin:0 5px 10px 5px;border:1px solid #428bca}.singlePhoto:hover{border:1px solid #2a6496;opacity:.7}.singlePhoto-image{display:block;width:100%;height:215px;background:no-repeat center center;background-size:contain}.singlePhoto-title{position:relative;z-index:99;background:#428bca;color:#fff;text-align:center}.singlePhoto-title:before{position:absolute;top:-.5em;left:50%;margin-left:-10px;width:0;height:0;border:10px solid transparent;border-top:0;border-bottom:10px solid #428bca;content:''}.singlePhoto-titleText{overflow:hidden;margin:0;padding:0 5px;text-overflow:ellipsis;white-space:nowrap;font-size:14px;line-height:32px}@media (max-width:479px){.singlePhoto-image{height:160px}}.ad{padding:15px 0}@media all and (min-width:481px) and (max-width:767px){.ad{height:100px;max-width:730px;width:100%}}@media all and (max-width:480px){.ad{clear:both;max-width:470px;height:100px;width:100%}}.social-link-tw{background:url(https://www.greekmythology.com/images/ico-twitter.png) 10px center no-repeat;background-size:auto 16px}.social-link-fb{background:url(https://www.greekmythology.com/images/ico-facebook.png) 10px center no-repeat;background-size:auto 16px}.cite{clear:both}.cite-text{width:100%;padding:2px;outline:0;border:1px solid #a9a9a9;word-wrap:break-word;margin:5px 0}.bottomSection{padding-bottom:30px;padding-top:15px}.search-form{color:#000;margin:0 auto 35px auto;width:600px}button.gsc-search-button-v2,button.gsc-search-button-v2:focus,button.gsc-search-button-v2:hover{background-color:#337ab7}@media (max-width:767px){.search-form{margin:0 auto 35px auto;width:95%}button.gsc-search-button-v2{padding:6px 15px}}#footer{position:relative;padding:40px 0;background:#369;color:#fff}#footer a{color:#fff}.footer-aro{position:absolute;top:-25px;left:50%;margin-left:-25px;width:50px;height:50px;text-align:center}.footer-aro a{display:block;padding:15px;width:50px;height:50px;border:2px solid #fff;border-radius:50%;background:#369}.footer-aro a:hover{color:#fff;text-decoration:none}.footer-social ul li{float:left;margin-bottom:20px;margin-left:18px}.footer-social ul li a{color:#fff;font-size:22px}.copyright.pull-left{font-size:12px}@media all and (max-width:767px){.copyright.pull-left{text-align:left!important;font-size:11px!important}}@media (max-width:767px){.copyright.pull-left{float:none!important;text-align:center;font-size:14.8px}.footer-social{display:inline-block;float:none;margin:0 50px;vertical-align:bottom;text-align:center;line-height:50px}}@media (max-width:479px){.footer-social{display:inline-block;vertical-align:bottom;text-align:center;line-height:50px}.footer-social ul li{margin-left:18px}.copyright.pull-left{float:none;text-align:center;font-size:13.8px}}</style>
+<script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js" async="async"></script>
+<script type="text/javascript" src="https://biddr.brealtime.com/37749468-1197.js" async="async"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+googletag.cmd.push(function() {
+    var dfpMapping1 = googletag.sizeMapping().
+        addSize([1200, 0], [[970, 90],[728, 90]]).
+        addSize([728, 0], [[728, 90]]).
+        addSize([320, 0], [[320, 100],[320, 50],[300, 100]]).
+        addSize([0, 0], [[300, 100]]).
+        build();
+    var dfpMapping2 = googletag.sizeMapping().
+        addSize([336, 0], [[336, 280],[300, 250]]).
+        addSize([0, 0], [[300, 250]]).
+        build();
+    var dfpMapping3 = googletag.sizeMapping().
+        addSize([1200, 0], [[970, 90],[728, 90],[970, 250]]).
+        addSize([728, 0], [[728, 90]]).
+        addSize([336, 0], [[336, 280],[300, 250]]).
+        addSize([0, 0], [[300, 250]]).
+        build();
+
+    googletag.defineSlot('/2507246/GRK//greekmythology//article//1', [300, 100], 'div-gpt-ad-1519315622093-0').defineSizeMapping(dfpMapping1).addService(googletag.pubads());
+    googletag.defineSlot('/2507246/GRK//greekmythology//article//2', [300, 250], 'div-gpt-ad-1519315622093-1').defineSizeMapping(dfpMapping2).addService(googletag.pubads());
+    googletag.defineSlot('/2507246/GRK//greekmythology//article//4', [300, 100], 'div-gpt-ad-1519315622093-3').defineSizeMapping(dfpMapping3).addService(googletag.pubads());
+
+    googletag.pubads().enableSingleRequest();
+    googletag.pubads().disableInitialLoad();
+    googletag.enableServices();
+});
+/*]]>*/
+</script>
+<title>Clymene</title>
+<meta name="description" content="Clymene was a Titan goddess in Greek mythology, daughter of the Titans Oceanus and Tethys, thus making her an Oceanid. She was the goddess of renown, ...">
+<meta name="keywords" content="Clymene, Titans Clymene, Klymene, greek mythology, greek god, greek myth, greek goddess, greek god goddess">
+<meta property='og:title' content="Clymene" />
+<meta property="og:description" content="Clymene was a Titan goddess in Greek mythology, daughter of the Titans Oceanus and Tethys, thus making her an Oceanid. She was the goddess of renown, ..." />
+<meta property='og:image' content="https://www.greekmythology.com/images/mythology/clymene_150.jpg" />
+<link rel="canonical" href="clymene.html" />
+<meta property="og:url" content="https://www.greekmythology.com/Titans/Clymene/clymene.html">
+<link rel="amphtml" href="https://www.greekmythology.com/Titans/Clymene/clymene.html.amp">
+<meta name="google-play-app" content="app-id=com.internetprojects.greekmythologypro">
+<link rel="shortcut icon" href="https://www.greekmythology.com/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://www.greekmythology.com/favicon.ico" type="image/x-icon">
+ 
+
+
+<script type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: 'ca-pub-6479063288582225',
+          enable_page_level_ads: true
+        })
+        </script>
+</head>
+<body data-ads="1">
+
+
+<header id="header">
+<a name="top"></a>
+<nav class="navbar navbar-default" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a href="https://www.greekmythology.com/" class="navbar-brand" title="Greek Mythology">
+<img class="img-responsive" src="https://www.greekmythology.com/images/logo.png" width="328" height="45" alt="Greek Mythology">
+</a>
+</div>
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="clymene.html">Olympians <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a title="Aphrodite" href="https://www.greekmythology.com/Olympians/Aphrodite/aphrodite.html">Aphrodite</a></li>
+<li>
+<a title="Apollo" href="https://www.greekmythology.com/Olympians/Apollo/apollo.html">Apollo</a></li>
+<li>
+<a title="Ares" href="https://www.greekmythology.com/Olympians/Aris/aris.html">Ares</a></li>
+<li>
+<a title="Artemis" href="https://www.greekmythology.com/Olympians/Artemis/artemis.html">Artemis</a></li>
+<li>
+<a title="Athena" href="https://www.greekmythology.com/Olympians/Athena/athena.html">Athena</a></li>
+<li>
+<a title="Hades" href="https://www.greekmythology.com/Olympians/Hades/hades.html">Hades</a></li>
+<li>
+<a title="Hephaestus" href="https://www.greekmythology.com/Olympians/Hephaestus/hephaestus.html">Hephaestus</a></li>
+<li>
+<a title="Hera" href="https://www.greekmythology.com/Olympians/Hera/hera.html">Hera</a></li>
+<li>
+<a title="Hermes" href="https://www.greekmythology.com/Olympians/Hermes/hermes.html">Hermes</a></li>
+<li>
+<a title="Hestia" href="https://www.greekmythology.com/Olympians/Hestia/hestia.html">Hestia</a></li>
+<li>
+<a title="Poseidon" href="https://www.greekmythology.com/Olympians/Poseidon/poseidon.html">Poseidon</a></li>
+<li>
+<a title="Zeus" href="https://www.greekmythology.com/Olympians/Zeus/zeus.html">Zeus</a></li>
+<li><a title="All Olympians" href="https://www.greekmythology.com/Olympians/olympians.html">All Olympians</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="clymene.html">Titans <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a title="Asteria" href="https://www.greekmythology.com/Titans/Asteria/asteria.html">Asteria</a></li>
+<li>
+<a title="Astraeus" href="https://www.greekmythology.com/Titans/Astraeus/astraeus.html">Astraeus</a></li>
+<li>
+<a title="Atlas" href="https://www.greekmythology.com/Titans/Atlas/atlas.html">Atlas</a></li>
+<li>
+<a title="Clymene" href="clymene.html">Clymene</a></li>
+<li>
+<a title="Coeus" href="https://www.greekmythology.com/Titans/Coeus/coeus.html">Coeus</a></li>
+<li>
+<a title="Crius" href="https://www.greekmythology.com/Titans/Crius/crius.html">Crius</a></li>
+<li>
+<a title="Cronus" href="https://www.greekmythology.com/Titans/Cronus/cronus.html">Cronus</a></li>
+<li>
+<a title="Dione" href="https://www.greekmythology.com/Titans/Dione/dione.html">Dione</a></li>
+<li>
+ <a title="Eos" href="https://www.greekmythology.com/Titans/Eos/eos.html">Eos</a></li>
+<li>
+<a title="Epimetheus" href="https://www.greekmythology.com/Titans/Epimetheus/epimetheus.html">Epimetheus</a></li>
+<li>
+<a title="Eurybia" href="https://www.greekmythology.com/Titans/Eurybia/eurybia.html">Eurybia</a></li>
+<li>
+<a title="Eurynome" href="https://www.greekmythology.com/Titans/Eurynome/eurynome.html">Eurynome</a></li>
+<li><a title="All Titans" href="https://www.greekmythology.com/Titans/titans.html">All Titans</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="clymene.html">Other Gods <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a title="Aeolus" href="https://www.greekmythology.com/Other_Gods/Aeolus/aeolus.html">Aeolus</a></li>
+<li>
+<a title="Aether" href="https://www.greekmythology.com/Other_Gods/Aether/aether.html">Aether</a></li>
+<li>
+<a title="Amphitrite" href="https://www.greekmythology.com/Other_Gods/Amphitrite/amphitrite.html">Amphitrite</a></li>
+<li>
+<a title="Anemoi" href="https://www.greekmythology.com/Other_Gods/Anemoi/anemoi.html">Anemoi</a></li>
+<li>
+<a title="Apate" href="https://www.greekmythology.com/Other_Gods/Apate/apate.html">Apate</a></li>
+<li>
+<a title="Asclepius" href="https://www.greekmythology.com/Other_Gods/Asclepius/asclepius.html">Asclepius</a></li>
+<li>
+<a title="Aura" href="https://www.greekmythology.com/Other_Gods/Aura/aura.html">Aura</a></li>
+<li>
+<a title="Bia" href="https://www.greekmythology.com/Other_Gods/Bia/bia.html">Bia</a></li>
+<li>
+<a title="Chaos" href="https://www.greekmythology.com/Other_Gods/Chaos/chaos.html">Chaos</a></li>
+<li>
+<a title="Circe" href="https://www.greekmythology.com/Other_Gods/Circe/circe.html">Circe</a></li>
+<li>
+<a title="Deimos" href="https://www.greekmythology.com/Other_Gods/Deimos/deimos.html">Deimos</a></li>
+<li>
+<a title="Demeter" href="https://www.greekmythology.com/Other_Gods/Demeter/demeter.html">Demeter</a></li>
+<li><a title="All Other Gods" href="https://www.greekmythology.com/Other_Gods/other_gods.html">All Other Gods</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="clymene.html">Myths <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a title="Creatures" href="https://www.greekmythology.com/Myths/Creatures/creatures.html">Creatures</a></li>
+<li>
+<a title="Elements" href="https://www.greekmythology.com/Myths/Elements/elements.html">Elements</a></li>
+<li>
+<a title="Figures" href="https://www.greekmythology.com/Myths/Figures/figures.html">Figures</a></li>
+<li>
+<a title="Gigantes" href="https://www.greekmythology.com/Myths/Gigantes/gigantes.html">Gigantes</a></li>
+<li>
+<a title="Greek Heroes" href="https://www.greekmythology.com/Myths/Heroes/heroes.html">Heroes</a></li>
+<li>
+<a title="Monsters" href="https://www.greekmythology.com/Myths/Monsters/monsters.html">Monsters</a></li>
+<li>
+<a title="Mortals" href="https://www.greekmythology.com/Myths/Mortals/mortals.html">Mortals</a></li>
+<li>
+<a title="Movies" href="https://www.greekmythology.com/Myths/Movies/movies.html">Movies</a></li>
+<li>
+<a title="Norse" href="https://www.greekmythology.com/Myths/Norse/norse.html">Norse</a></li>
+<li>
+<a title="Places" href="https://www.greekmythology.com/Myths/Places/places.html">Places</a></li>
+<li>
+<a title="Planets" href="https://www.greekmythology.com/Myths/Planets/planets.html">Planets</a></li>
+<li><a title="All Myths" href="https://www.greekmythology.com/Myths/myths.html">All Myths</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a class="dropdown-toggle" data-toggle="dropdown" href="clymene.html">Plays <span class="caret"></span></a>
+<ul class="dropdown-menu">
+<li>
+<a title="Aeschylus" href="https://www.greekmythology.com/Plays/Aeschylus/aeschylus.html">Aeschylus</a></li>
+<li>
+<a title="Euripides" href="https://www.greekmythology.com/Plays/Euripides/euripides.html">Euripides</a></li>
+<li>
+<a title="Sophocles" href="https://www.greekmythology.com/Plays/Sophocles/sophocles.html">Sophocles</a></li>
+<li><a title="All Plays" href="https://www.greekmythology.com/Plays/plays.html">All Plays</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="breadcrumbs-box hidden-xs">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="breadcrumbs">
+<a href="https://www.greekmythology.com/" title="Greek Mythology">Greek Mythology</a> / <a href="https://www.greekmythology.com/Titans/titans.html">Titans</a> / <span>Clymene</span></div> </div>
+</div>
+</div>
+</div>
+</header>
+<section id="main">
+<div class="container">
+<div class="row">
+<div class="col-md-2 col-sm-12 hidden-sm hidden-xs col-xs-12 pull-right-xs" style="padding-right: 30px">
+<div class="sidebar ">
+<div class="left-menu">
+<div class="portlet" id="yw0">
+<div class="portlet-content">
+<ul class="operations" id="yw1">
+<li><a title="Asteria" href="https://www.greekmythology.com/Titans/Asteria/asteria.html">Asteria</a></li>
+<li><a title="Astraeus, Astraios" href="https://www.greekmythology.com/Titans/Astraeus/astraeus.html">Astraeus</a></li>
+<li><a title="Atlas" href="https://www.greekmythology.com/Titans/Atlas/atlas.html">Atlas</a></li>
+<li><a title="Clymene, Klymene" href="clymene.html">Clymene</a></li>
+<li><a title="Coeus, Koios" href="https://www.greekmythology.com/Titans/Coeus/coeus.html">Coeus</a></li>
+<li><a title="Crius, Kreios, Krios" href="https://www.greekmythology.com/Titans/Crius/crius.html">Crius</a></li>
+<li><a title="Cronus, Kronos, Cronos" href="https://www.greekmythology.com/Titans/Cronus/cronus.html">Cronus</a></li>
+<li><a title="Dione" href="https://www.greekmythology.com/Titans/Dione/dione.html">Dione</a></li>
+<li><a title="Eos" href="https://www.greekmythology.com/Titans/Eos/eos.html">Eos</a></li>
+<li><a title="Epimetheus, Epimitheas" href="https://www.greekmythology.com/Titans/Epimetheus/epimetheus.html">Epimetheus</a></li>
+<li><a title="Eurybia" href="https://www.greekmythology.com/Titans/Eurybia/eurybia.html">Eurybia</a></li>
+<li><a title="Eurynome" href="https://www.greekmythology.com/Titans/Eurynome/eurynome.html">Eurynome</a></li>
+<li><a title="Hyperion" href="https://www.greekmythology.com/Titans/Hyperion/hyperion.html">Hyperion</a></li>
+<li><a title="Iapetus, Japetus, Iapetos" href="https://www.greekmythology.com/Titans/Iapetus/iapetus.html">Iapetus</a></li>
+<li><a title="Lelantos, Lelantus" href="https://www.greekmythology.com/Titans/Lelantos/lelantos.html">Lelantos</a></li>
+<li><a title="Menoetius, Menoitios" href="https://www.greekmythology.com/Titans/Menoetius/menoetius.html">Menoetius</a></li>
+<li><a title="Metis" href="https://www.greekmythology.com/Titans/Metis/metis.html">Metis</a></li>
+<li><a title="Mnemosyne" href="https://www.greekmythology.com/Titans/Mnemosyne_/mnemosyne_.html">Mnemosyne</a></li>
+<li><a title="Oceanus, Oceanos" href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html">Oceanus</a></li>
+<li><a title="Ophion, Ophioneus" href="https://www.greekmythology.com/Titans/Ophion/ophion.html">Ophion</a></li>
+<li><a title="Pallas" href="https://www.greekmythology.com/Titans/Pallas/pallas.html">Pallas</a></li>
+<li><a title="Perses" href="https://www.greekmythology.com/Titans/Perses/perses.html">Perses</a></li>
+<li><a title="Phoebe, Phoibe" href="https://www.greekmythology.com/Titans/Phoebe/phoebe.html">Phoebe</a></li>
+<li><a title="Prometheus, Promitheas" href="https://www.greekmythology.com/Titans/Prometheus/prometheus.html">Prometheus</a></li>
+<li><a title="Rhea, Rea" href="https://www.greekmythology.com/Titans/Rhea/rhea.html">Rhea</a></li>
+<li><a title="Selene" href="https://www.greekmythology.com/Titans/Selene/selene.html">Selene</a></li>
+<li><a title="Styx" href="https://www.greekmythology.com/Titans/Styx/styx.html">Styx</a></li>
+<li><a title="Tethys" href="https://www.greekmythology.com/Titans/Tethys/tethys.html">Tethys</a></li>
+<li><a title="Thea, Euryphaessa, Thia, Theia" href="https://www.greekmythology.com/Titans/Thea/thea.html">Thea</a></li>
+<li><a title="Themis" href="https://www.greekmythology.com/Titans/Themis/themis.html">Themis</a></li>
+</ul></div>
+</div> </div>
+<table class="mythInfo">
+<caption>Clymene at a Glance</caption>
+<tr>
+<th>Affiliation</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/titans.html">Titans</a>
+</td>
+</tr>
+<tr>
+<th>Father</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html">Oceanus</a>
+</td>
+</tr>
+<tr>
+<th>Mother</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/Tethys/tethys.html">Tethys</a>
+</td>
+</tr>
+<tr>
+<th>Gender</th>
+<td>Female</td>
+</tr>
+<tr>
+<th>Other Names</th>
+<td>Klymene</td>
+</tr>
+</table>
+<div class="clear-20"></div>
+<div>
+<a href="https://play.google.com/store/apps/details?id=com.internetprojects.greekmythologypro&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-AC-global-none-all-co-pr-py-PartBadges-Oct1515-1">
+<img alt="Get it on Google Play" class="lazyload" data-src="/images/playstore_135x40.png" width="135" height="40" />
+</a>
+<br><br>
+<a href="https://itunes.apple.com/us/app/greek-mythology-pro/id1158877253?mt=8&at=1000lqFN" target="_blank">
+<img alt="iOS app on AppStore" class="lazyload" data-src="/images/appstore_135x40.svg" />
+</a>
+</div>
+<div class="clear-20"></div>
+<div class="clear-5"></div>
+<div class="ad">
+</div>
+</div>
+</div>
+<div class="col-md-10 col-sm-12 col-xs-12">
+<div class="main-content">
+<div class="main-post page">
+<div class="main-post-title"><a href="clymene.html" title="Clymene">
+<h1>Clymene</h1>
+</a></div>
+<div class="clear-5"></div>
+<div class="main-post-ad">
+<div id='div-gpt-ad-1519315622093-0'>
+<script>
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-ad-1519315622093-0');
+    });
+    </script>
+</div> </div>
+<div class="clear-5"></div>
+<div class="main-post-content content-tags">
+<div class="pageContent">
+<div class="pageContent-intro">
+<div class="post-img hidden-xs" style="padding: 0 8px 5px 0;">
+<img data-src="/images/mythology/clymene_150.jpg" class="img-responsive lazyload" alt="Clymene" />
+</div>
+<p><strong><a href="clymene.html" title="Clymene">Clymene</a></strong> was a Titan goddess in Greek mythology, daughter of the <strong><a href="https://www.greekmythology.com/Titans/titans.html" title="Titans">Titans</a></strong> <strong><a href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html" title="Oceanus">Oceanus</a></strong> and <strong><a href="https://www.greekmythology.com/Titans/Tethys/tethys.html" title="Tethys">Tethys</a></strong>, thus making her an Oceanid. She was the goddess of renown, fame, and infamy. She was married to the Titan <strong><a href="https://www.greekmythology.com/Titans/Iapetus/iapetus.html" title="Iapetus">Iapetus</a></strong>, and they had four sons, <strong><a href="https://www.greekmythology.com/Titans/Atlas/atlas.html" title="Atlas">Atlas</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Epimetheus/epimetheus.html" title="Epimetheus">Epimetheus</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Prometheus/prometheus.html" title="Prometheus">Prometheus</a></strong> and <strong><a href="https://www.greekmythology.com/Titans/Menoetius/menoetius.html" title="Menoetius">Menoetius</a></strong>. She was also a consort of <strong><a href="https://www.greekmythology.com/Other_Gods/Helios/helios.html" title="Helios">Helios</a></strong>, with whom she had a son, Phaeton, and the <strong><a href="https://www.greekmythology.com/Other_Gods/Minor_Gods/Heliades/heliades.html" title="Heliades">Heliades</a></strong>.</p><p>There were many other <strong><a href="https://www.greekmythology.com/Myths/Figures/figures.html" title="Figures">figures</a></strong> with the same name in Greek mythology. One <strong><a href="clymene.html" title="Clymene">Clymene</a></strong> was a servant of the famous <strong><a href="https://www.greekmythology.com/Myths/Mortals/Helen/helen.html" title="Helen of Troy">Helen of Troy</a></strong>, daughter of Hippalces and <strong><a href="https://www.greekmythology.com/Myths/Figures/Aethra/aethra.html" title="Aethra">Aethra</a></strong> and half-sister of <strong><a href="https://www.greekmythology.com/Myths/Heroes/Theseus/theseus.html" title="Theseus">Theseus</a></strong>. Another <strong><a href="clymene.html" title="Clymene">Clymene</a></strong> was the daughter of <strong><a href="https://www.greekmythology.com/Myths/Mortals/Catreus/catreus.html" title="Catreus">Catreus</a></strong>, and along with her sister <strong><a href="https://www.greekmythology.com/Myths/Mortals/Aerope/aerope.html" title="Aerope">Aerope</a></strong>, she was sold away out of her father's fear that he would be killed by his children. This <strong><a href="clymene.html" title="Clymene">Clymene</a></strong> was later married to Nauplius, with whom she had three sons, Palameded, Oeax and Nausimedon.</p><p>See Also: <strong><a href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html" title="Oceanus">Oceanus</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Tethys/tethys.html" title="Tethys">Tethys</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Iapetus/iapetus.html" title="Iapetus">Iapetus</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Atlas/atlas.html" title="Atlas">Atlas</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Epimetheus/epimetheus.html" title="Epimetheus">Epimetheus</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Prometheus/prometheus.html" title="Prometheus">Prometheus</a></strong>, <strong><a href="https://www.greekmythology.com/Titans/Menoetius/menoetius.html" title="Menoetius">Menoetius</a></strong>, <strong><a href="https://www.greekmythology.com/Other_Gods/Helios/helios.html" title="Helios">Helios</a></strong></p> </div>
+<div class="pageContent-ad">
+<div id='div-gpt-ad-1519315622093-1'>
+<script>
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-ad-1519315622093-1');
+    });
+    </script>
+</div> </div>
+<div class="pageContent-otherText">
+</div>
+</div>
+<div class="clearfix content-photos">
+<div class="sectionTitle">See Also:</div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+<a class="singlePhoto singlePhoto--page" href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html" title="Oceanus">
+<div class="singlePhoto-image lazyload" data-src="/images/mythology/oceanus_17.jpg"></div>
+<div class="singlePhoto-title">
+<h2 class="singlePhoto-titleText singlePhoto-titleText--page">
+Oceanus </h2>
+</div>
+</a> </div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+<a class="singlePhoto singlePhoto--page" href="https://www.greekmythology.com/Titans/Tethys/tethys.html" title="Tethys">
+<div class="singlePhoto-image lazyload" data-src="/images/mythology/tethys_18.jpg"></div>
+<div class="singlePhoto-title">
+<h2 class="singlePhoto-titleText singlePhoto-titleText--page">
+Tethys </h2>
+</div>
+</a> </div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+<a class="singlePhoto singlePhoto--page" href="https://www.greekmythology.com/Titans/Iapetus/iapetus.html" title="Iapetus">
+<div class="singlePhoto-image lazyload" data-src="/images/mythology/iapetus_image_22.jpg"></div>
+<div class="singlePhoto-title">
+<h2 class="singlePhoto-titleText singlePhoto-titleText--page">
+Iapetus </h2>
+</div>
+</a> </div>
+<div class="col-md-3 col-sm-3 col-xs-6">
+<a class="singlePhoto singlePhoto--page" href="https://www.greekmythology.com/Titans/Prometheus/prometheus.html" title="Prometheus">
+<div class="singlePhoto-image lazyload" data-src="/images/mythology/prometheus_27.jpg"></div>
+<div class="singlePhoto-title">
+<h2 class="singlePhoto-titleText singlePhoto-titleText--page">
+Prometheus </h2>
+</div>
+</a> </div>
+</div>
+</div>
+<div class="main-post-bottomAd center">
+<div id='div-gpt-ad-1519315622093-3'>
+<script>
+    googletag.cmd.push(function () {
+      googletag.display('div-gpt-ad-1519315622093-3');
+    });
+    </script>
+</div> </div>
+<div class="share-icon-2222 clear">
+
+<div class="social" style="padding: 5px 0;">
+<a href="https://www.twitter.com/share?url=https://www.greekmythology.com/Titans/Clymene/clymene.html" title="Greekmythology - Parent Site twitter shared" class="col-sm-1 pull-right social-link-tw" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;" style="color:#fff; text-align: center; display: inline-block; font-size: 13px;  margin-right: 0px; padding: 7px 10px 5px 10px; background-color: #4cc2ff; text-decoration: none !important; width: 34%;">
+<span class="social-text social-text-tw">Tweet</span>
+</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://www.greekmythology.com/Titans/Clymene/clymene.html" title="Greekmythology - Parent Site facebook shared" class="col-sm-1 pull-right social-link social-link-fb" target="_blank" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600'); return false;" style="color:#fff; text-align: center; display: inline-block; font-size: 13px; margin-right: 0px; padding: 7px 10px 5px 10px; background-color: #325a97; text-decoration: none !important; width: 33%;">
+<span class="social-text social-text-fb">Share</span>
+<span class="social-count social-count-fb" style="display: none;">0</span>
+</a>
+<div class="clearfix"></div>
+</div>
+ </div>
+</div>
+<div class="clear-5"></div>
+<div class="outbrain">
+<script type="text/javascript" data-src="https://widgets.outbrain.com/outbrain.js"></script>
+<div class="OUTBRAIN" data-widget-id="TF_6" data-src="" data-ob-template="LP100"></div></div>
+<div class="cite">
+<div class="sectionTitle">Link/cite this page</div>
+You can freely use the content on this page for non-commercial reasons (homework, lessons, school or college
+projects, free online courses) as long as you cite this page as the source.
+For online citation use the code below:
+<div class="cite-text" onclick="selectText(this)">&lt;a href=&quot;https://www.greekmythology.com/Titans/Clymene/clymene.html&quot;&gt;Clymene: GreekMythology.com&lt;/a&gt; - May 22, 2020</div>
+For offline citation use: <a href="clymene.html">Clymene: GreekMythology.com</a> - May 22, 2020</div>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.greekmythology.com\/","name":"Greek Mythology"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.greekmythology.com\/Titans\/titans.html","name":"Titans"}},{"@type":"ListItem","position":3,"item":{"@id":"https:\/\/www.greekmythology.com\/Titans\/Clymene\/clymene.html","name":"Clymene"}}]}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.greekmythology.com\/Titans\/Clymene\/clymene.html"},"headline":"Clymene - Greek Mythology","keywords":"Clymene, Titans Clymene, Klymene, greek mythology, greek god, greek myth, greek goddess, greek god goddess","url":"https:\/\/www.greekmythology.com\/Titans\/Clymene\/clymene.html","datePublished":"2014-11-23","dateModified":"2018-10-31","author":{"@type":"Organization","name":"GreekMythology.com"},"publisher":{"@type":"Organization","name":"GreekMythology.com","logo":{"@type":"ImageObject","url":"https:\/\/www.greekmythology.com\/images\/greekmythologylogo.gif"}},"image":"https:\/\/www.greekmythology.com\/images\/mythology\/clymene_150.jpg","description":"Clymene was a Titan goddess in Greek mythology, daughter of the Titans Oceanus and Tethys, thus making her an Oceanid. She was the goddess of renown","articleSection":"Titans"}</script>
+<script type="text/javascript">
+function selectText (el) {
+  if (document.selection) {
+    var range = document.body.createTextRange()
+    range.moveToElementText(el)
+    range.select()
+  } else if (window.getSelection) {
+    var range = document.createRange()
+    range.selectNode(el)
+    window.getSelection().removeAllRanges()
+    window.getSelection().addRange(range)
+  }
+}
+</script> </div>
+</div>
+<div class="col-md-2 col-sm-12 hidden-md hidden-lg col-xs-12 pull-right-xs">
+<div class="sidebar ">
+<div class="left-menu">
+<div class="portlet" id="yw2">
+<div class="portlet-content">
+<ul class="operations" id="yw3">
+<li><a title="Asteria" href="https://www.greekmythology.com/Titans/Asteria/asteria.html">Asteria</a></li>
+<li><a title="Astraeus, Astraios" href="https://www.greekmythology.com/Titans/Astraeus/astraeus.html">Astraeus</a></li>
+<li><a title="Atlas" href="https://www.greekmythology.com/Titans/Atlas/atlas.html">Atlas</a></li>
+<li><a title="Clymene, Klymene" href="clymene.html">Clymene</a></li>
+<li><a title="Coeus, Koios" href="https://www.greekmythology.com/Titans/Coeus/coeus.html">Coeus</a></li>
+<li><a title="Crius, Kreios, Krios" href="https://www.greekmythology.com/Titans/Crius/crius.html">Crius</a></li>
+<li><a title="Cronus, Kronos, Cronos" href="https://www.greekmythology.com/Titans/Cronus/cronus.html">Cronus</a></li>
+<li><a title="Dione" href="https://www.greekmythology.com/Titans/Dione/dione.html">Dione</a></li>
+<li><a title="Eos" href="https://www.greekmythology.com/Titans/Eos/eos.html">Eos</a></li>
+<li><a title="Epimetheus, Epimitheas" href="https://www.greekmythology.com/Titans/Epimetheus/epimetheus.html">Epimetheus</a></li>
+<li><a title="Eurybia" href="https://www.greekmythology.com/Titans/Eurybia/eurybia.html">Eurybia</a></li>
+<li><a title="Eurynome" href="https://www.greekmythology.com/Titans/Eurynome/eurynome.html">Eurynome</a></li>
+<li><a title="Hyperion" href="https://www.greekmythology.com/Titans/Hyperion/hyperion.html">Hyperion</a></li>
+<li><a title="Iapetus, Japetus, Iapetos" href="https://www.greekmythology.com/Titans/Iapetus/iapetus.html">Iapetus</a></li>
+<li><a title="Lelantos, Lelantus" href="https://www.greekmythology.com/Titans/Lelantos/lelantos.html">Lelantos</a></li>
+<li><a title="Menoetius, Menoitios" href="https://www.greekmythology.com/Titans/Menoetius/menoetius.html">Menoetius</a></li>
+<li><a title="Metis" href="https://www.greekmythology.com/Titans/Metis/metis.html">Metis</a></li>
+<li><a title="Mnemosyne" href="https://www.greekmythology.com/Titans/Mnemosyne_/mnemosyne_.html">Mnemosyne</a></li>
+<li><a title="Oceanus, Oceanos" href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html">Oceanus</a></li>
+<li><a title="Ophion, Ophioneus" href="https://www.greekmythology.com/Titans/Ophion/ophion.html">Ophion</a></li>
+<li><a title="Pallas" href="https://www.greekmythology.com/Titans/Pallas/pallas.html">Pallas</a></li>
+<li><a title="Perses" href="https://www.greekmythology.com/Titans/Perses/perses.html">Perses</a></li>
+<li><a title="Phoebe, Phoibe" href="https://www.greekmythology.com/Titans/Phoebe/phoebe.html">Phoebe</a></li>
+<li><a title="Prometheus, Promitheas" href="https://www.greekmythology.com/Titans/Prometheus/prometheus.html">Prometheus</a></li>
+<li><a title="Rhea, Rea" href="https://www.greekmythology.com/Titans/Rhea/rhea.html">Rhea</a></li>
+<li><a title="Selene" href="https://www.greekmythology.com/Titans/Selene/selene.html">Selene</a></li>
+<li><a title="Styx" href="https://www.greekmythology.com/Titans/Styx/styx.html">Styx</a></li>
+<li><a title="Tethys" href="https://www.greekmythology.com/Titans/Tethys/tethys.html">Tethys</a></li>
+<li><a title="Thea, Euryphaessa, Thia, Theia" href="https://www.greekmythology.com/Titans/Thea/thea.html">Thea</a></li>
+<li><a title="Themis" href="https://www.greekmythology.com/Titans/Themis/themis.html">Themis</a></li>
+</ul></div>
+</div> </div>
+<table class="mythInfo">
+<caption>Clymene at a Glance</caption>
+<tr>
+<th>Affiliation</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/titans.html">Titans</a>
+</td>
+</tr>
+<tr>
+<th>Father</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/Oceanus/oceanus.html">Oceanus</a>
+</td>
+</tr>
+<tr>
+<th>Mother</th>
+<td>
+<a href="https://www.greekmythology.com/Titans/Tethys/tethys.html">Tethys</a>
+</td>
+</tr>
+<tr>
+<th>Gender</th>
+<td>Female</td>
+</tr>
+<tr>
+<th>Other Names</th>
+<td>Klymene</td>
+</tr>
+</table>
+<div class="clear-5"></div>
+<div class="ad">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="container">
+<div class="bottomSection">
+<div class="search-form" data-show="true"></div> </div>
+</div>
+<footer id="footer">
+<div class="container">
+<div class="row">
+<div class="footer-aro"><a href="clymene.html#top">^</a></div>
+<div class="col-xs-12 hidden-lg hidden-md hidden-sm">
+<div class="footer-social">
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.internetprojects.greekmythologypro" target="_blank"><img width="135" height="40" alt="Android app on Google Play" class="lazyload" data-src="/images/playstore_135x40.png" /></a></li>
+<li><a href="https://itunes.apple.com/us/app/greek-mythology-pro/id1158877253?mt=8&at=1000lqFN" target="_blank"><img style="height: 45px;" alt="iOS app on AppStore" width="152" height="45" class="lazyload" data-src="/images/appstore_135x40.svg" /></a></li>
+</ul>
+<div class="clear-10"></div>
+<ul>
+<li>
+<a href="https://www.facebook.com/greekmythologycom">
+<img src="https://www.greekmythology.com/images/ico-facebook.png" />
+</a>
+</li>
+<li>
+<a href="https://twitter.com/GreekMythologyc">
+<img src="https://www.greekmythology.com/images/ico-twitter.png" />
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-9 col-sm-9 col-xs-12">
+<div class="copyright pull-left">
+<a href="https://www.greekmythology.com/" title="Greek Mythology">GreekMythology.com</a> © Copyright 1997-2020 :: All
+Rights Reserved<br>
+Contact us via email at info@greekmythology.com<br>
+<a style="cursor: pointer" onclick="window.__cmp('displayConsentUi', 2, !0);">GDPR consent</a><br>
+<a href="https://www.greekmythology.com/about/">About GreekMythology.com</a> | <a href="https://www.greekmythology.com/about/#contact">Contact
+GreekMythology.com</a> | <a href="https://www.greekmythology.com/about/#submit">Submit Articles</a> |<a href="https://www.greekmythology.com/about/#disclaimer">Disclaimer</a> | <a href="https://www.greekmythology.com/about/#privacypolicy">Privacy
+Policy</a><br>
+<a href="https://play.google.com/store/apps/details?id=com.internetprojects.greekmythologypro" target="_blank">Greek Mythology Android App</a><br>
+<a href="https://itunes.apple.com/us/app/greek-mythology-pro/id1158877253?mt=8&at=1000lqFN" target="_blank">Greek Mythology iOS iPhone & iPad App</a><br>
+<a href="https://volume.itunes.apple.com/app/greek-mythology-pro/id1158877253?mt=8&at=1000lqFN" target="_blank">Greek Mythology iOS Volume Purchase Program VPP for Education App</a><br>
+Apple, the Apple logo, iPhone and iPad are trademarks of Apple Inc., registered in the U.S. and
+other countries. App Store is a service mark of Apple Inc.<br>
+Android, Google Play and the Google Play logo are trademarks of Google Inc.<br>
+All other content is produced by GreekMythology.com editors & copyrighted by GreekMythology.com.<br>
+</div>
+</div>
+<div class="col-md-3 col-sm-3 hidden-xs text-center">
+<div class="footer-social pull-right">
+<ul>
+<li>
+<a href="https://play.google.com/store/apps/details?id=com.internetprojects.greekmythologypro" target="_blank"><img width="135" height="40" alt="Android app on Google Play" class="lazyload" data-src="/images/playstore_135x40.png" /></a></li>
+<li><a href="https://itunes.apple.com/us/app/greek-mythology-pro/id1158877253?mt=8&at=1000lqFN" target="_blank"><img alt="iOS app on AppStore" class="lazyload" data-src="/images/appstore_135x40.svg" /></a></li>
+</ul>
+<ul>
+<li>
+<a href="https://www.facebook.com/greekmythologycom">
+<img src="https://www.greekmythology.com/images/ico-facebook.png" />
+</a>
+</li>
+<li>
+<a href="https://twitter.com/GreekMythologyc">
+<img src="https://www.greekmythology.com/images/ico-twitter.png" />
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date()
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]
+      a.async = 1
+      a.src = g
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+    </script>
+<script type="text/javascript">
+ga('create', 'UA-15634906-1', 'greekmythology.com', {'useAmpClientId': true})
+ga('send', 'pageview')
+</script>
+<script type="text/javascript" src="https://www.greekmythology.com/build/js/app-all.min.js" defer="defer"></script>
+</body>
+</html>

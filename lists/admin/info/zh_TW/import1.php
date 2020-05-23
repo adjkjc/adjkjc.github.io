@@ -1,0 +1,1 @@
+可以新增 Email 到電子報中，匯入的 Email 必需要含有相同的欄位，如 Email, Name，表示每一資料行都有一個 Email 及 姓名 Name 的欄位

@@ -1,0 +1,1 @@
+Itt vehet fel több adminisztrátort a rendszerébe.

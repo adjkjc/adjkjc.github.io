@@ -1,0 +1,3 @@
+<p>Vous pouvez ajouter autant de pi&egrave;ces-jointes &amp;agrave; votre message que vous le d&eacute;sirez, mais le num&eacute;ro qui apparait ici est d&eacute;fini dans votre configuration. </p>
+<p><b>Note importante:</b> Les pi&egrave;ces-jointes seront inclues dans les messages au format HTML, et elles seront ajout&eacute;es sous forme de lien vers le site web dans des messages au format Texte</p>
+<p>Le champ texte pour la description n'est utilis&eacute; que dans les messages au format texte</p>

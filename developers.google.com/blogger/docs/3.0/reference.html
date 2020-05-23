@@ -1,0 +1,1580 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+                    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#e8710a">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/app.css">
+    
+    <noscript>
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/blogger/docs/3.0/reference"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>API Reference &nbsp;|&nbsp; Blogger &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="API Reference &nbsp;|&nbsp; Blogger &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.com/blogger/docs/3.0/reference">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/opengraph/orange.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blogger",
+      "item": "https://developers.google.com/blogger"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "API Reference",
+      "item": "https://developers.google.com/blogger/docs/3.0/reference"
+    }]
+  }
+  </script>
+
+
+
+  
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="orange"
+        class="docs"
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Blogger"    tenant-name="Google Developers"    project-scope="/blogger"    url-scoped="https://developers.google.com/s/results/blogger"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                                                                         
+                        id="devsite-user"></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                  <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/blogger"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="guides"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  active>
+            <a href="/blogger/docs/3.0/reference"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="reference"
+   aria-label="Reference, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/blogger/docs/3.0/libraries"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="samples"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples"
+   >
+  Samples
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/blogger"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/reference"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/libraries"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samples">
+      <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Blogger API v3.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Blogs</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogs"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogs/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogs/getByUrl"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>getByUrl</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogs/listByUser"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>listByUser</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Comments</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/approve"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>approve</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/delete"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>delete</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/listByBlog"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>listByBlog</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/markAsSpam"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>markAsSpam</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/comments/removeContent"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>removeContent</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Pages</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/delete"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>delete</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/insert"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>insert</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/patch"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>patch</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pages/update"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>update</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Posts</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/search"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>search</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/insert"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>insert</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/delete"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>delete</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/getByPath"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>getByPath</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/patch"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>patch</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/update"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>update</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/publish"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>publish</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/posts/revert"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>revert</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Users</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/users"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/users/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>BlogUserInfos</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogUserInfos"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/blogUserInfos/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>PageViews</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pageViews"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/pageViews/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>PostUserInfos</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/postUserInfos"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/postUserInfos/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/reference/postUserInfos/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li></ul></devsite-expandable-nav></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Blogger API v2.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Blogs</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/blogs"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/blogs/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Comments</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/comments"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/comments/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/comments/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Pages</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/pages"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/pages/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/pages/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Posts</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/posts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/posts/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/posts/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Users</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/users"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/users/get"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>get</span></a></li></ul></devsite-expandable-nav></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Users.blogs</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/users/blogs"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/json/reference/users/blogs/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>list</span></a></li></ul></devsite-expandable-nav></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-deprecated"><a href="/blogger/docs/1.0/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Blogger API v1.0</span><span class="devsite-nav-icon material-icons"
+          data-icon="deprecated"
+          data-title="Deprecated"
+          aria-hidden="true"></span></a></li>
+          </ul>
+                                                    
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Blogger
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/blogger/docs/3.0/reference"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Reference
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">API Reference</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      "
+            >
+
+              
+
+
+
+<section >
+<p>This API reference is organized by resource type. Each resource type has one or more data representations and one or more methods.</p>
+
+  <h2 id="resource-types" data-text="Resource types" tabindex="0">Resource types</h2>
+  <ol class="toc">
+    <li><a href="#Blogs">
+        Blogs
+        </a>
+    </li>
+    <li><a href="#Comments">
+        Comments
+        </a>
+    </li>
+    <li><a href="#Pages">
+        Pages
+        </a>
+    </li>
+    <li><a href="#Posts">
+        Posts
+        </a>
+    </li>
+    <li><a href="#Users">
+        Users
+        </a>
+    </li>
+    <li><a href="#BlogUserInfos">
+        BlogUserInfos
+        </a>
+    </li>
+    <li><a href="#PageViews">
+        PageViews
+        </a>
+    </li>
+    <li><a href="#PostUserInfos">
+        PostUserInfos
+        </a>
+    </li>
+  </ol>
+
+  <section >
+  <h2 id="Blogs" data-text="
+      Blogs
+  " tabindex="0">
+      Blogs
+  </h2>
+  <p>For Blogs Resource details, see the <a href="/blogger/docs/3.0/reference/blogs#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/blogs/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var></code>
+        </td>
+        <td>
+          Retrieves a blog by its ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/blogs/getByUrl">getByUrl</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/byurl</code>
+        </td>
+        <td>
+          Retrieves a blog by URL.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/blogs/listByUser">listByUser</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /users/<var class="apiparam">userId</var>/blogs</code>
+        </td>
+        <td>
+          Retrieves a list of blogs.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="Comments" data-text="
+      Comments
+  " tabindex="0">
+      Comments
+  </h2>
+  <p>For Comments Resource details, see the <a href="/blogger/docs/3.0/reference/comments#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/list">list</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments</code>
+        </td>
+        <td>
+          Retrieves the list of&nbsp;<a href="/blogger/docs/3.0/reference/comments">comments</a>&nbsp;for a&nbsp;<a href="/blogger/docs/3.0/reference/posts">post</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments/<var class="apiparam">commentId</var></code>
+        </td>
+        <td>
+          Retrieves one comment resource by its <undefined class="apiparam">commentId</undefined>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/approve">approve</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments/<var class="apiparam">commentId</var>/approve</code>
+        </td>
+        <td>
+          Marks a comment as not spam.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/delete">delete</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">DELETE&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments/<var class="apiparam">commentId</var></code>
+        </td>
+        <td>
+          Delete a comment by ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/listByBlog">listByBlog</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/comments</code>
+        </td>
+        <td>
+          Retrieves the comments for a blog, across all posts, possibly filtered.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/markAsSpam">markAsSpam</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments/<var class="apiparam">commentId</var>/spam</code>
+        </td>
+        <td>
+          Marks a comment as spam. This will set the status of the comment to <code translate="no" dir="ltr">spam</code>, and hide it in the default comment rendering.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/comments/removeContent">removeContent</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/comments/<var class="apiparam">commentId</var>/removecontent</code>
+        </td>
+        <td>
+          Removes the content of a comment.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="Pages" data-text="
+      Pages
+  " tabindex="0">
+      Pages
+  </h2>
+  <p>For Pages Resource details, see the <a href="/blogger/docs/3.0/reference/pages#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/list">list</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/pages</code>
+        </td>
+        <td>
+          Retrieves the list of&nbsp;<a href="/blogger/docs/3.0/reference/pages">pages</a>&nbsp;for a&nbsp;<a href="/blogger/docs/3.0/reference/blogs#resource">blog</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/pages/<var class="apiparam">pageId</var></code>
+        </td>
+        <td>
+          Retrieves one pages resource by its&nbsp;page ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/delete">delete</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">DELETE&nbsp; /blogs/<var class="apiparam">blogId</var>/pages/<var class="apiparam">pageId</var></code>
+        </td>
+        <td>
+          Delete a page by ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/insert">insert</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/pages</code>
+        </td>
+        <td>
+          Add a page.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/patch">patch</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">PATCH&nbsp; /blogs/<var class="apiparam">blogId</var>/pages/<var class="apiparam">pageId</var></code>
+        </td>
+        <td>
+          Update a page. This method supports patch semantics.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pages/update">update</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">PUT&nbsp; /blogs/<var class="apiparam">blogId</var>/pages/<var class="apiparam">pageId</var></code>
+        </td>
+        <td>
+          Update a page.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="Posts" data-text="
+      Posts
+  " tabindex="0">
+      Posts
+  </h2>
+  <p>For Posts Resource details, see the <a href="/blogger/docs/3.0/reference/posts#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/list">list</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts</code>
+        </td>
+        <td>
+          Retrieves a list of posts.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var></code>
+        </td>
+        <td>
+          Retrieves one post by post ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/search">search</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/search</code>
+        </td>
+        <td>
+          Searches for a post that matches the given query terms.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/insert">insert</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts</code>
+        </td>
+        <td>
+          Adds a post.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/delete">delete</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">DELETE&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var></code>
+        </td>
+        <td>
+          Deletes a post by ID.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/getByPath">getByPath</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/bypath</code>
+        </td>
+        <td>
+          Retrieves a post by path.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/patch">patch</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">PATCH&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var></code>
+        </td>
+        <td>
+          Updates a post. This method supports <a href="/blogger/docs/3.0/performance">patch semantics</a>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/update">update</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">PUT&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var></code>
+        </td>
+        <td>
+          Updates a post.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/publish">publish</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/publish</code>
+        </td>
+        <td>
+          Publish a draft post.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/posts/revert">revert</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">POST&nbsp; /blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var>/revert</code>
+        </td>
+        <td>
+          Revert a published or scheduled post to draft state, which removes the post from the publicly viewable content.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="Users" data-text="
+      Users
+  " tabindex="0">
+      Users
+  </h2>
+  <p>For Users Resource details, see the <a href="/blogger/docs/3.0/reference/users#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/users/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /users/<var class="apiparam">userId</var></code>
+        </td>
+        <td>
+          Retrieves a user by user ID.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="BlogUserInfos" data-text="
+      BlogUserInfos
+  " tabindex="0">
+      BlogUserInfos
+  </h2>
+  <p>For BlogUserInfos Resource details, see the <a href="/blogger/docs/3.0/reference/blogUserInfos#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/blogUserInfos/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /users/<var class="apiparam">userId</var>/blogs/<var class="apiparam">blogId</var></code>
+        </td>
+        <td>
+          Gets one blog and user info pair by <var class="apiparam">blogId</var> and <var class="apiparam">userId</var>.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="PageViews" data-text="
+      PageViews
+  " tabindex="0">
+      PageViews
+  </h2>
+  <p>For PageViews Resource details, see the <a href="/blogger/docs/3.0/reference/pageViews#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/pageViews/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /blogs/<var class="apiparam">blogId</var>/pageviews</code>
+        </td>
+        <td>
+          Retrieve pageview stats for a Blog.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+  <section >
+  <h2 id="PostUserInfos" data-text="
+      PostUserInfos
+  " tabindex="0">
+      PostUserInfos
+  </h2>
+  <p>For PostUserInfos Resource details, see the <a href="/blogger/docs/3.0/reference/postUserInfos#resource">resource representation</a> page.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>HTTP request</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="alt">
+      <td colspan="3">URIs relative to https://www.googleapis.com/blogger/v3, unless otherwise noted</td>
+    </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/postUserInfos/get">get</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /users/<var class="apiparam">userId</var>/blogs/<var class="apiparam">blogId</var>/posts/<var class="apiparam">postId</var></code>
+        </td>
+        <td>
+          Gets one post and user info pair by <var class="apiparam">postId</var> and <var class="apiparam">userId</var>.
+        </td>
+      </tr>
+      <tr>
+        <td>
+
+          <a href="/blogger/docs/3.0/reference/postUserInfos/list">list</a>
+
+        </td>
+        <td>
+          <code translate="no" dir="ltr">GET&nbsp; /users/<var class="apiparam">userId</var>/blogs/<var class="apiparam">blogId</var>/posts</code>
+        </td>
+        <td>
+          Retrieves a list of post and post user info pairs, possibly filtered. The post user info contains per-user information about the post, such as access rights, specific to the user.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+   </section>
+ </section>
+
+  
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2013-10-16.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="http://buzz.blogger.com/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blogger Buzz">
+                Blogger Buzz
+      </a>
+      <div class="devsite-footer-promo-description">The Official Buzz from Blogger at Google</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/docs/3.0/libraries"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Client Libraries
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//productforums.google.com/forum/#!forum/blogger"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Help Forum
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//code.blogger.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 2)"            >
+                      Developer Blog
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/terms"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Terms of Service
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Blogger", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>

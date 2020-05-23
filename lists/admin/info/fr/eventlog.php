@@ -1,0 +1,1 @@
+<p>Cette page dresse la liste de tout ce qui est arriv&eacute; sur <?php echo NAME?> et que vous souhaitez sans doute vouloir regarder de plus pr&egrave;s. Les entr&eacute;es sont affich&eacute;es en ordre chronologique invers&eacute;.</p>

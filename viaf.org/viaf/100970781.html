@@ -1,0 +1,2714 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+   <head>
+      <script src="https://cdn.cookielaw.org/langswitch/b166fb9e-beed-4dd2-8201-a15d0c055e30.js"
+              type="text/javascript"
+              charset="UTF-8">//</script>
+      <script type="text/javascript">
+                        function OptanonWrapper() { }
+                        </script>
+      <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+      <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="referrer" content="origin"/>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/raphael.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/webjars/jquery/2.1.1/jquery.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/viaf.js">//</script>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/viaf.css"/>
+      <link href="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/themes/base/jquery-ui.css"
+            rel="stylesheet"
+            type="text/css"/>
+      <script type="text/javascript"
+              src="https://viaf.org/viaf/webjars/jquery-ui/1.10.4/ui/minified/jquery-ui.min.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.columnizer.js">//</script>
+      <script type="text/javascript" src="https://viaf.org/viaf/scripts/jquery.dataTables.min.js">//</script>
+      <link rel="shortcut icon" href="https://viaf.org/viaf/images/viaf.ico"/>
+      <link rel="search" title="VIAF Search" type="application/opensearchdescription+xml"
+            href="http://viaf.org/allFieldsSearch.xml"/>
+      <link rel="profile" href="http://a9.com/-/spec/opensearch/1.1/"/>
+      <title>268124600</title>
+      <link rel="canonical" href="http://viaf.org/viaf/268124600"/>
+      <link rel="alternate" href="https://viaf.org/viaf/268124600/rdf.xml"
+            type="application/rdf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/268124600/marc21.xml"
+            type="application/x-marc21+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/268124600/viaf.xml"
+            type="application/x-viaf+xml"/>
+      <link rel="alternate" href="https://viaf.org/viaf/268124600/justlinks.json"
+            type="application/vnd.oclc.links+json"/>
+      <link type="text/css" rel="stylesheet" href="https://viaf.org/viaf/css/jquery.dataTables.min.css"/>
+      <script type="text/javascript">
+      $(document).ready(function(){
+        var mylist=$('#listOfLinks');
+        var listitems = mylist.children('li').get();
+        listitems.sort(function(a, b) {
+           return $(a).text().trim().toUpperCase().localeCompare($(b).text().trim().toUpperCase());
+        })
+        $.each(listitems, function(idx, itm) { mylist.append(itm); });
+        // canvasSize declared in viaf.js
+      //canvasSize = 90 + (nodes.length * 10);
+      canvas=document.getElementById("svgcanvas");
+      if(canvas) {
+      canvasSize = 140 + (nodes.length * 8);
+      if (nodes.length==1){canvasSize = 70;}
+      var paper = Raphael(document.getElementById("svgcanvas"), canvasSize, canvasSize);
+      drawGraph(paper);
+
+      $('#SelectedTitles h3').click(function(event) {
+        $('#SelectedTitlesContent').slideToggle("slow");
+        $('img#SelectedTitlesContentOpen').toggle();
+        $('img#SelectedTitlesContentClose').toggle();
+      });
+      $('#SelectedCoauthors h3').click(function(event) {
+        $('#SelectedCoauthorsContent').slideToggle("slow");
+        $('img#SelectedCoauthorsContentOpen').toggle();
+        $('img#SelectedCoauthorsContentClose').toggle();
+      });
+      $('#Graph h3').click(function(event) {
+        $('#GraphContent').slideToggle("slow");
+        $('img#GraphContentOpen').toggle();
+        $('img#GraphContentClose').toggle();
+      });
+      $('#Countries h3').click(function(event) {
+        $('#CountriesContent').slideToggle("slow");
+        $('img#CountriesContentOpen').toggle();
+        $('img#CountriesContentClose').toggle();
+      });
+      $('#About h3').click(function(event) {
+        $('#AboutContent').slideToggle("slow");
+        $('img#AboutContentOpen').toggle();
+        $('img#AboutContentClose').toggle();
+      });
+      $('#Timeline h3').click(function(event) {
+        $('#TimelineContent').slideToggle("slow");
+        $('img#TimelineContentOpen').toggle();
+        $('img#TimelineContentClose').toggle();
+      });
+      $('#AltForms h3').click(function(event) {
+        $('#AltFormsContent').slideToggle("slow");
+        $('img#AltFormsContentOpen').toggle();
+        $('img#AltFormsContentClose').toggle();
+      });
+      $('#TitleLinks h3').click(function(event) {
+        $('#TitleLinksContent').slideToggle("slow");
+        $('img#TitleLinksContentOpen').toggle();
+        $('img#TitleLinksContentClose').toggle();
+      });
+      $('#RelatedNames h3').click(function(event) {
+        $('#RelatedNamesContent').slideToggle("slow");
+        $('img#RelatedNamesContentOpen').toggle();
+        $('img#RelatedNamesContentClose').toggle();
+      });
+      $('#Publishers h3').click(function(event) {
+        $('#PublishersContent').slideToggle("slow");
+        $('img#PublishersContentOpen').toggle();
+        $('img#PublishersContentClose').toggle();
+      });
+      $('#RecordViews h3').click(function(event) {
+        $('#RecordViewsContent').slideToggle("slow");
+        $('img#RecordViewsContentOpen').toggle();
+        $('img#RecordViewsContentClose').toggle();
+      });
+      $('#History h3').click(function(event) {
+        $('#HistoryContent').slideToggle("slow");
+        $('img#HistoryContentOpen').toggle();
+        $('img#HistoryContentClose').toggle();
+      });
+
+	$(".exprLabel").click(function() {
+			//alert("clicked");
+			$(this).parent().find("ul").toggle('slow');
+			if ($(this).parent().find("h4").hasClass('listClose')){
+				$(this).parent().find("h4").addClass('listOpen').removeClass('listClose');
+			}
+			else {
+				$(this).parent().find("h4").addClass('listClose').removeClass('listOpen');
+			}
+	});
+      }
+
+      });
+    </script>
+      <script type="text/javascript"><!--
+                            $(document).ready(function() {
+                            if ($('#expressionTable').length) $('#expressionTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+                            if ($('#workTable').length) $('#workTable').dataTable(
+                            {
+                              "aoColumnDefs": [
+                                { 'bSortable': false, 'aTargets': [ -1 ] }
+                                ]
+                            });
+
+                            function fixupHeader(XMLHttpRequest){
+                            XMLHttpRequest.setRequestHeader('Content-Type', "text/xml");
+                            }
+                            $( "input#searchTerms" ).autocomplete({
+                            source: function( request, response ){
+                            $.ajax({
+                            url: "//viaf.org/viaf/AutoSuggest",
+                            dataType: "jsonp",
+                            data: {
+                            query: request.term
+                            },
+                            success: function (data){
+                            var mr = [];
+                            var result = data['result']
+                            for (var i=0, len=result.length; i < len; i++){ 
+                            ri = result[i];
+                            var term = ri['term'];
+                            mr.push({label:term, value:term});
+                            }
+                            response(mr);
+                            }
+                            });
+                            },
+                            minLength: 1
+                            });
+
+                            });
+--></script>
+   </head>
+   <body onload="document.getElementById('searchTerms').focus()">
+      <script type="text/javascript">
+                            var viafBase = '/viaf/';
+                            var xslMatchedBirthDeath = 'Matched on birth/death dates';
+                            var xslMatchedAnd = 'and';
+                        </script>
+      <div id="masthead">
+         <div id="mastTitles">
+            <h1>
+               <a class="mast-title" href="https://viaf.org/">VIAF</a>
+            </h1>
+            <h2>Virtual International Authority File</h2>
+         </div>
+      </div>
+      <div id="body">
+         <div id="maincontent">
+            <div id="searchdisplay">
+               <div id="searchdisplay-inner">
+                  <h4 class="searchh4">Search</h4>
+                  <div id="searchInner" class="yui-skin-sam">
+                     <form onsubmit="return doSearch(this);" id="visibleForm" action="https://viaf.org/viaf/268124600/?">
+                        <fieldset id="fieldset-field">
+                           <label>
+                              <span class="langHi0">Select Field:</span>
+                           </label>
+                           <select name="selector0" size="1">
+                              <option value="cql.any">All Fields</option>
+                              <option selected="selected" value="local.names">All Headings</option>
+                              <option value="local.corporateNames">Corporate Names</option>
+                              <option value="local.geographicNames">Geographic Names</option>
+                              <option value="local.personalNames">Personal Names</option>
+                              <option value="local.uniformTitleWorks">Works</option>
+                              <option value="local.uniformTitleExpressions">Expressions</option>
+                              <option value="local.mainHeadingEl">Preferred Headings</option>
+                              <option value="Xlocal.names">Exact Heading</option>
+                              <option value="local.title">Bibliographic Titles</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-index">
+                           <label>Select Index:</label>
+                           <select size="1" name="selector1">
+                              <option selected="selected" value="viaf">All VIAF</option>
+                              <option value="arbabn">Argentina</option>
+                              <option value="nla">Australia</option>
+                              <option value="vlacc">Belgium (Flemish)</option>
+                              <option value="blbnb">Brazil</option>
+                              <option value="caoonl">Canada</option>
+                              <option value="bnc">Catalunya</option>
+                              <option value="bnchl">Chile</option>
+                              <option value="nsk">Croatia</option>
+                              <option value="nkc">Czech</option>
+                              <option value="dbc">Denmark (DBC)</option>
+                              <option value="egaxa">Egypt</option>
+                              <option value="errr">Estonia</option>
+                              <option value="fast">FAST</option>
+                              <option value="bnf">France (BnF)</option>
+                              <option value="sudoc">France (Sudoc)</option>
+                              <option value="dnb">Germany</option>
+                              <option value="jpg">Getty (ULAN)</option>
+                              <option value="grateve">Greece</option>
+                              <option value="bnc bne">Hispánica</option>
+                              <option value="nszl">Hungary</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="n6i">Ireland</option>
+                              <option value="isni">ISNI</option>
+                              <option value="j9u">Israel</option>
+                              <option value="iccu">Italy</option>
+                              <option value="ndl">Japan (NDL)</option>
+                              <option value="nii">Japan (NII)</option>
+                              <option value="krnlk">Korea</option>
+                              <option value="LNB">Latvia</option>
+                              <option value="LNL">Lebanon</option>
+                              <option value="lc">LC (NACO)</option>
+                              <option value="lih">Lithuania</option>
+                              <option value="bnl">Luxembourg</option>
+                              <option value="mrbnr">Morocco</option>
+                              <option value="nta">Netherlands</option>
+                              <option value="bibsys">Norway (BIBSYS)</option>
+                              <option value="w2z">Norway (National Library)</option>
+                              <option value="uiy">Iceland</option>
+                              <option value="perseus">Perseus</option>
+                              <option value="plwabn">Poland (National Library)</option>
+                              <option value="nukat">Poland (NUKAT)</option>
+                              <option value="ptbnp">Portugal</option>
+                              <option value="b2q">Québec</option>
+                              <option value="de663">RISM</option>
+                              <option value="nlr">Russia</option>
+                              <option value="nlb">Singapore</option>
+                              <option value="skmasnl">Slovakia</option>
+                              <option value="simacob">Slovenia</option>
+                              <option value="bne">Spain</option>
+                              <option value="selibr">Sweden</option>
+                              <option value="sz">Swiss (National Library)</option>
+                              <option value="rero">Swiss (RERO)</option>
+                              <option value="srp">Syriac</option>
+                              <option value="cyt">Taiwan</option>
+                              <option value="bav">Vatican</option>
+                              <option value="wkp">Wikipedia</option>
+                              <option value="xa">xA</option>
+                              <option value="xr">xR</option>
+                           </select>
+                        </fieldset>
+                        <fieldset id="fieldset-textenter">
+                           <label>Search Terms:</label>
+                           <div class="ui-widget">
+                              <input size="40" id="searchTerms"/>
+                           </div>
+                        </fieldset>
+                        <fieldset id="fieldset-submit">
+                           <input value="Search" id="btnSearch2" title="Search VIAF" type="submit"/>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div id="content">
+               <div id="Title-Wrap">
+                  <div id="coverart">
+                     <a href="https://worldcat.org/search?q=isbn:3540067264">
+                        <img alt="Cover for 3540067264"
+                             src="https://coverart.oclc.org/ImageWebSvc/isbn/+-+9172155908_140.jpg?SearchOrder=+-+FA,OS,GO"/>
+                     </a>
+                  </div>
+                  <div id="Title">
+                     <h2 id="nameEntry1" class="nameEntry">Good, Irving John.<span class="flags">
+                           <img alt="RERO - Library Network of Western Switzerland"
+                                title="RERO - Library Network of Western Switzerland"
+                                src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                           <img alt="National and University Library in Zagreb"
+                                title="National and University Library in Zagreb"
+                                src="https://viaf.org/viaf/images/flags/NSK.png"/>
+                           <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                           <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           <img alt="National Library of Israel" title="National Library of Israel"
+                                src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                           <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                           <img alt="NUKAT Center of Warsaw University Library"
+                                title="NUKAT Center of Warsaw University Library"
+                                src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry2" class="nameEntry">Good, Irving John, 1916-2009<span class="flags">
+                           <img alt="National Library of the Netherlands"
+                                title="National Library of the Netherlands"
+                                src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                           <img alt="German National Library" title="German National Library"
+                                src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           <img alt="National Library of Poland" title="National Library of Poland"
+                                src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry3" class="nameEntry">I. J. Good Statistician, cryptographer<span class="flags">
+                           <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry4" class="nameEntry">Irving John Good<span class="flags">
+                           <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                        </span>
+                     </h2>
+                     <h2 id="nameEntry5" class="nameEntry">Good, Irving John 1916-....<span class="flags">
+                           <img alt="National Library of France" title="National Library of France"
+                                src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                        </span>
+                     </h2>
+                     <h1 class="nameID">VIAF ID: 268124600
+     (Personal)
+      </h1>
+                     <h1 class="nameID">Permalink: http://viaf.org/viaf/268124600</h1>
+                  </div>
+               </div>
+               <div id="Graph" class="mainSection" style="position:relative;">
+                  <h3>
+                     <img id="GraphContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="GraphContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Preferred Forms</span>
+                  </h3>
+                  <div id="GraphContent" class="content">
+                     <div id="GraphContent-wrap">
+                        <div>
+                           <ul id="mainHeadingElements">
+                              <li id="PreferredForms1" class="PreferredForms">
+                                 <a href="../../catalogue.bnf.fr/ark%253A/12148/cb123833930.html"
+                                    title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="National Library of France" title="National Library of France"
+                                         src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 </a>200 _ | <a href="https://viaf.org/processed/BNF%7C12383393" id="BNF-12383393"
+                                    onmouseover="selectNode('BNF-12383393')"
+                                    onmouseout="unselectNode('BNF-12383393')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good</span>‏
+  
+    ‎‡b 
+  <span>Irving John</span>‏
+  
+    ‎‡f 
+  <span>1916-....</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms2" class="PreferredForms">
+                                 <a href="https://id.loc.gov/authorities/names/n81149667" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </a>100 1 _ <a href="https://viaf.org/processed/LC%7Cn&#32;&#32;81149667" id="LC-n81149667"
+                                    onmouseover="selectNode('LC-n81149667')"
+                                    onmouseout="unselectNode('LC-n81149667')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms3" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/RERO%7Cvtls003308080" id="RERO-vtls003308080"
+                                    onmouseover="selectNode('RERO-vtls003308080')"
+                                    onmouseout="unselectNode('RERO-vtls003308080')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms4" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Israel" title="National Library of Israel"
+                                         src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/J9U%7C987007261955405171" id="J9U-987007261955405171"
+                                    onmouseover="selectNode('J9U-987007261955405171')"
+                                    onmouseout="unselectNode('J9U-987007261955405171')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms5" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/BIBSYS%7C90655907" id="BIBSYS-90655907"
+                                    onmouseover="selectNode('BIBSYS-90655907')"
+                                    onmouseout="unselectNode('BIBSYS-90655907')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms6" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National and University Library in Zagreb"
+                                         title="National and University Library in Zagreb"
+                                         src="https://viaf.org/viaf/images/flags/NSK.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/NSK%7C000621642" id="NSK-000621642"
+                                    onmouseover="selectNode('NSK-000621642')"
+                                    onmouseout="unselectNode('NSK-000621642')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms7" class="PreferredForms">
+                                 <a href="http://ci.nii.ac.jp/author/DA04882091" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                                 </a>100 1 _ <a href="https://viaf.org/processed/NII%7CDA04882091" id="NII-DA04882091"
+                                    onmouseover="selectNode('NII-DA04882091')"
+                                    onmouseout="unselectNode('NII-DA04882091')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms8" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of Poland" title="National Library of Poland"
+                                         src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/PLWABN%7C9810640854205606" id="PLWABN-9810640854205606"
+                                    onmouseover="selectNode('PLWABN-9810640854205606')"
+                                    onmouseout="unselectNode('PLWABN-9810640854205606')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  
+    ‎‡d 
+  <span>(1916-2009)</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms9" class="PreferredForms">
+                                 <a href="http://d-nb.info/gnd/139596658" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </a>100 1 _ <a href="https://viaf.org/processed/DNB%7C139596658" id="DNB-139596658"
+                                    onmouseover="selectNode('DNB-139596658')"
+                                    onmouseout="unselectNode('DNB-139596658')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms10" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/NTA%7C07124817X" id="NTA-07124817X"
+                                    onmouseover="selectNode('NTA-07124817X')"
+                                    onmouseout="unselectNode('NTA-07124817X')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John,</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms11" class="PreferredForms">
+                                 <a href="https://www.idref.fr/03289290X/id" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </a>100 1 _ <a href="https://viaf.org/processed/SUDOC%7C03289290X" id="SUDOC-03289290X"
+                                    onmouseover="selectNode('SUDOC-03289290X')"
+                                    onmouseout="unselectNode('SUDOC-03289290X')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John,</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms12" class="PreferredForms">
+                                 <div class="pfFlag">
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                 </div>100 1 _ <a href="https://viaf.org/processed/NUKAT%7Cn&#32;&#32;97066622" id="NUKAT-n97066622"
+                                    onmouseover="selectNode('NUKAT-n97066622')"
+                                    onmouseout="unselectNode('NUKAT-n97066622')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Good, Irving John.</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms13" class="PreferredForms">
+                                 <a href="http://isni.org/isni/0000000109292036" title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/ISNI%7C0000000109292036" id="ISNI-0000000109292036"
+                                    onmouseover="selectNode('ISNI-0000000109292036')"
+                                    onmouseout="unselectNode('ISNI-0000000109292036')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>I. J. Good</span>‏
+  
+    ‎‡c 
+  <span>Statistician, cryptographer</span>‏
+  </a>
+                              </li>
+                              <li id="PreferredForms14" class="PreferredForms">
+                                 <a href="https://www.wikidata.org/entity/Q224372#sitelinks-wikipedia"
+                                    title="Authority/Source Record"
+                                    class="pfFlagA">
+                                    <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                                 </a>100 0 _ <a href="https://viaf.org/processed/WKP%7CQ224372" id="WKP-Q224372"
+                                    onmouseover="selectNode('WKP-Q224372')"
+                                    onmouseout="unselectNode('WKP-Q224372')"
+                                    title="Internal VIAF Processed Record">
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  </a>
+                              </li>
+                           </ul>
+                           <script type="text/javascript">
+      new Node("BNF-12383393", "BNF", "National Library of France");
+      
+      addLink("BNF-12383393", "RERO-vtls003308080");
+    addMatch("BNF-12383393", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("BNF-12383393", "ISNI-0000000109292036");
+    addMatch("BNF-12383393", "ISNI-0000000109292036", "", "partial date and publisher", "", "", ""); 
+  
+      addLink("BNF-12383393", "ISNI-0000000109292036");
+    addMatch("BNF-12383393", "ISNI-0000000109292036", "", "partial date and publisher", "", "", ""); 
+  
+      addLink("BNF-12383393", "ISNI-0000000109292036");
+    addMatch("BNF-12383393", "ISNI-0000000109292036", "", "partial date and publisher", "", "", ""); 
+  
+      addLink("BNF-12383393", "ISNI-0000000109292036");
+    addMatch("BNF-12383393", "ISNI-0000000109292036", "", "partial date and publisher", "", "", ""); 
+  
+      addLink("BNF-12383393", "WKP-Q224372");
+    addMatch("BNF-12383393", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("BNF-12383393", "BIBSYS-90655907");
+    addMatch("BNF-12383393", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("BNF-12383393", "SUDOC-03289290X");
+    addMatch("BNF-12383393", "SUDOC-03289290X", "", "forced single date", "", "", ""); 
+  
+      addLink("BNF-12383393", "LC-n81149667");
+    addMatch("BNF-12383393", "LC-n81149667", "", "forced single date", "", "", ""); 
+  
+      addLink("BNF-12383393", "PLWABN-9810640854205606");
+    addMatch("BNF-12383393", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("BNF-12383393", "NTA-07124817X");
+    addMatch("BNF-12383393", "NTA-07124817X", "", "forced single date", "", "", ""); 
+  
+      addLink("BNF-12383393", "J9U-987007261955405171");
+    addMatch("BNF-12383393", "J9U-987007261955405171", "", "forced single date", "", "", ""); 
+  
+      addLink("BNF-12383393", "NUKAT-n97066622");
+    addMatch("BNF-12383393", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("BNF-12383393", "DNB-139596658");
+    addMatch("BNF-12383393", "DNB-139596658", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("LC-n81149667", "LC", "Library of Congress/NACO");
+      
+      addLink("LC-n81149667", "RERO-vtls003308080");
+    addMatch("LC-n81149667", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("LC-n81149667", "ISNI-0000000109292036");
+    addMatch("LC-n81149667", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n81149667", "ISNI-0000000109292036");
+    addMatch("LC-n81149667", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n81149667", "ISNI-0000000109292036");
+    addMatch("LC-n81149667", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n81149667", "ISNI-0000000109292036");
+    addMatch("LC-n81149667", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("LC-n81149667", "WKP-Q224372");
+    addMatch("LC-n81149667", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("LC-n81149667", "BIBSYS-90655907");
+    addMatch("LC-n81149667", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("LC-n81149667", "NII-DA04882091");
+    addMatch("LC-n81149667", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("LC-n81149667", "SUDOC-03289290X");
+    addMatch("LC-n81149667", "SUDOC-03289290X", "", "double date", "", "", ""); 
+  
+      addLink("LC-n81149667", "NSK-000621642");
+    addMatch("LC-n81149667", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("LC-n81149667", "PLWABN-9810640854205606");
+    addMatch("LC-n81149667", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("LC-n81149667", "NTA-07124817X");
+    addMatch("LC-n81149667", "NTA-07124817X", "", "lccn", "", "", ""); 
+  
+      addLink("LC-n81149667", "J9U-987007261955405171");
+    addMatch("LC-n81149667", "J9U-987007261955405171", "", "double date", "", "", ""); 
+  
+      addLink("LC-n81149667", "NUKAT-n97066622");
+    addMatch("LC-n81149667", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("LC-n81149667", "DNB-139596658");
+    addMatch("LC-n81149667", "DNB-139596658", "", "lccn", "", "", ""); 
+  
+      addLink("LC-n81149667", "BNF-12383393");
+    addMatch("LC-n81149667", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("RERO-vtls003308080", "RERO", "RERO - Library Network of Western Switzerland");
+      
+      addLink("RERO-vtls003308080", "LC-n81149667");
+    addMatch("RERO-vtls003308080", "LC-n81149667", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "NSK-000621642");
+    addMatch("RERO-vtls003308080", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "NII-DA04882091");
+    addMatch("RERO-vtls003308080", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "SUDOC-03289290X");
+    addMatch("RERO-vtls003308080", "SUDOC-03289290X", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "ISNI-0000000109292036");
+    addMatch("RERO-vtls003308080", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "ISNI-0000000109292036");
+    addMatch("RERO-vtls003308080", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "ISNI-0000000109292036");
+    addMatch("RERO-vtls003308080", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "ISNI-0000000109292036");
+    addMatch("RERO-vtls003308080", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "PLWABN-9810640854205606");
+    addMatch("RERO-vtls003308080", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "NTA-07124817X");
+    addMatch("RERO-vtls003308080", "NTA-07124817X", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "J9U-987007261955405171");
+    addMatch("RERO-vtls003308080", "J9U-987007261955405171", "", "exact name", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "NUKAT-n97066622");
+    addMatch("RERO-vtls003308080", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "DNB-139596658");
+    addMatch("RERO-vtls003308080", "DNB-139596658", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "BIBSYS-90655907");
+    addMatch("RERO-vtls003308080", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("RERO-vtls003308080", "BNF-12383393");
+    addMatch("RERO-vtls003308080", "BNF-12383393", "", "standard number", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("J9U-987007261955405171", "J9U", "National Library of Israel");
+      
+      addLink("J9U-987007261955405171", "RERO-vtls003308080");
+    addMatch("J9U-987007261955405171", "RERO-vtls003308080", "", "exact name", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "ISNI-0000000109292036");
+    addMatch("J9U-987007261955405171", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "ISNI-0000000109292036");
+    addMatch("J9U-987007261955405171", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "ISNI-0000000109292036");
+    addMatch("J9U-987007261955405171", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "ISNI-0000000109292036");
+    addMatch("J9U-987007261955405171", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "NUKAT-n97066622");
+    addMatch("J9U-987007261955405171", "NUKAT-n97066622", "", "exact name", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "NII-DA04882091");
+    addMatch("J9U-987007261955405171", "NII-DA04882091", "", "exact name", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "SUDOC-03289290X");
+    addMatch("J9U-987007261955405171", "SUDOC-03289290X", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "LC-n81149667");
+    addMatch("J9U-987007261955405171", "LC-n81149667", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "PLWABN-9810640854205606");
+    addMatch("J9U-987007261955405171", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "NTA-07124817X");
+    addMatch("J9U-987007261955405171", "NTA-07124817X", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "BIBSYS-90655907");
+    addMatch("J9U-987007261955405171", "BIBSYS-90655907", "", "exact name", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "NSK-000621642");
+    addMatch("J9U-987007261955405171", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "DNB-139596658");
+    addMatch("J9U-987007261955405171", "DNB-139596658", "", "double date", "", "", ""); 
+  
+      addLink("J9U-987007261955405171", "BNF-12383393");
+    addMatch("J9U-987007261955405171", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("BIBSYS-90655907", "BIBSYS", "BIBSYS");
+      
+      addLink("BIBSYS-90655907", "LC-n81149667");
+    addMatch("BIBSYS-90655907", "LC-n81149667", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "RERO-vtls003308080");
+    addMatch("BIBSYS-90655907", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "NSK-000621642");
+    addMatch("BIBSYS-90655907", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "NII-DA04882091");
+    addMatch("BIBSYS-90655907", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "SUDOC-03289290X");
+    addMatch("BIBSYS-90655907", "SUDOC-03289290X", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "ISNI-0000000109292036");
+    addMatch("BIBSYS-90655907", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "ISNI-0000000109292036");
+    addMatch("BIBSYS-90655907", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "ISNI-0000000109292036");
+    addMatch("BIBSYS-90655907", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "ISNI-0000000109292036");
+    addMatch("BIBSYS-90655907", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "PLWABN-9810640854205606");
+    addMatch("BIBSYS-90655907", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "NTA-07124817X");
+    addMatch("BIBSYS-90655907", "NTA-07124817X", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "J9U-987007261955405171");
+    addMatch("BIBSYS-90655907", "J9U-987007261955405171", "", "exact name", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "NUKAT-n97066622");
+    addMatch("BIBSYS-90655907", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "DNB-139596658");
+    addMatch("BIBSYS-90655907", "DNB-139596658", "", "standard number", "", "", ""); 
+  
+      addLink("BIBSYS-90655907", "BNF-12383393");
+    addMatch("BIBSYS-90655907", "BNF-12383393", "", "standard number", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NSK-000621642", "NSK", "National and University Library in Zagreb");
+      
+      addLink("NSK-000621642", "RERO-vtls003308080");
+    addMatch("NSK-000621642", "RERO-vtls003308080", "", "exact name", "", "", ""); 
+  
+      addLink("NSK-000621642", "ISNI-0000000109292036");
+    addMatch("NSK-000621642", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NSK-000621642", "ISNI-0000000109292036");
+    addMatch("NSK-000621642", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NSK-000621642", "ISNI-0000000109292036");
+    addMatch("NSK-000621642", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NSK-000621642", "ISNI-0000000109292036");
+    addMatch("NSK-000621642", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NSK-000621642", "NII-DA04882091");
+    addMatch("NSK-000621642", "NII-DA04882091", "", "exact name", "", "", ""); 
+  
+      addLink("NSK-000621642", "LC-n81149667");
+    addMatch("NSK-000621642", "LC-n81149667", "", "exact name", "", "", ""); 
+  
+      addLink("NSK-000621642", "PLWABN-9810640854205606");
+    addMatch("NSK-000621642", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("NSK-000621642", "J9U-987007261955405171");
+    addMatch("NSK-000621642", "J9U-987007261955405171", "", "exact name", "", "", ""); 
+  
+      addLink("NSK-000621642", "BIBSYS-90655907");
+    addMatch("NSK-000621642", "BIBSYS-90655907", "", "exact name", "", "", ""); 
+  
+      addLink("NSK-000621642", "NUKAT-n97066622");
+    addMatch("NSK-000621642", "NUKAT-n97066622", "", "exact name", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NII-DA04882091", "NII", "NII (Japan)");
+      
+      addLink("NII-DA04882091", "RERO-vtls003308080");
+    addMatch("NII-DA04882091", "RERO-vtls003308080", "", "exact title", "", "", ""); 
+  
+      addLink("NII-DA04882091", "ISNI-0000000109292036");
+    addMatch("NII-DA04882091", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NII-DA04882091", "ISNI-0000000109292036");
+    addMatch("NII-DA04882091", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NII-DA04882091", "ISNI-0000000109292036");
+    addMatch("NII-DA04882091", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NII-DA04882091", "ISNI-0000000109292036");
+    addMatch("NII-DA04882091", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NII-DA04882091", "SUDOC-03289290X");
+    addMatch("NII-DA04882091", "SUDOC-03289290X", "", "exact title", "", "", ""); 
+  
+      addLink("NII-DA04882091", "LC-n81149667");
+    addMatch("NII-DA04882091", "LC-n81149667", "", "exact title", "", "", ""); 
+  
+      addLink("NII-DA04882091", "PLWABN-9810640854205606");
+    addMatch("NII-DA04882091", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("NII-DA04882091", "NTA-07124817X");
+    addMatch("NII-DA04882091", "NTA-07124817X", "", "exact title", "", "", ""); 
+  
+      addLink("NII-DA04882091", "J9U-987007261955405171");
+    addMatch("NII-DA04882091", "J9U-987007261955405171", "", "exact name", "", "", ""); 
+  
+      addLink("NII-DA04882091", "BIBSYS-90655907");
+    addMatch("NII-DA04882091", "BIBSYS-90655907", "", "exact title", "", "", ""); 
+  
+      addLink("NII-DA04882091", "NSK-000621642");
+    addMatch("NII-DA04882091", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("NII-DA04882091", "NUKAT-n97066622");
+    addMatch("NII-DA04882091", "NUKAT-n97066622", "", "exact title", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("PLWABN-9810640854205606", "PLWABN", "National Library of Poland");
+      
+      addLink("PLWABN-9810640854205606", "ISNI-0000000109292036");
+    addMatch("PLWABN-9810640854205606", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "ISNI-0000000109292036");
+    addMatch("PLWABN-9810640854205606", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "ISNI-0000000109292036");
+    addMatch("PLWABN-9810640854205606", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "ISNI-0000000109292036");
+    addMatch("PLWABN-9810640854205606", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "NUKAT-n97066622");
+    addMatch("PLWABN-9810640854205606", "NUKAT-n97066622", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "RERO-vtls003308080");
+    addMatch("PLWABN-9810640854205606", "RERO-vtls003308080", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "WKP-Q224372");
+    addMatch("PLWABN-9810640854205606", "WKP-Q224372", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "NII-DA04882091");
+    addMatch("PLWABN-9810640854205606", "NII-DA04882091", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "SUDOC-03289290X");
+    addMatch("PLWABN-9810640854205606", "SUDOC-03289290X", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "LC-n81149667");
+    addMatch("PLWABN-9810640854205606", "LC-n81149667", "", "forced single date", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "NTA-07124817X");
+    addMatch("PLWABN-9810640854205606", "NTA-07124817X", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "J9U-987007261955405171");
+    addMatch("PLWABN-9810640854205606", "J9U-987007261955405171", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "BIBSYS-90655907");
+    addMatch("PLWABN-9810640854205606", "BIBSYS-90655907", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "NSK-000621642");
+    addMatch("PLWABN-9810640854205606", "NSK-000621642", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "DNB-139596658");
+    addMatch("PLWABN-9810640854205606", "DNB-139596658", "", "viafid", "", "", ""); 
+  
+      addLink("PLWABN-9810640854205606", "BNF-12383393");
+    addMatch("PLWABN-9810640854205606", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("DNB-139596658", "DNB", "German National Library");
+      
+      addLink("DNB-139596658", "RERO-vtls003308080");
+    addMatch("DNB-139596658", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("DNB-139596658", "ISNI-0000000109292036");
+    addMatch("DNB-139596658", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-139596658", "ISNI-0000000109292036");
+    addMatch("DNB-139596658", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-139596658", "ISNI-0000000109292036");
+    addMatch("DNB-139596658", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-139596658", "ISNI-0000000109292036");
+    addMatch("DNB-139596658", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("DNB-139596658", "WKP-Q224372");
+    addMatch("DNB-139596658", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("DNB-139596658", "SUDOC-03289290X");
+    addMatch("DNB-139596658", "SUDOC-03289290X", "", "double date", "", "", ""); 
+  
+      addLink("DNB-139596658", "LC-n81149667");
+    addMatch("DNB-139596658", "LC-n81149667", "", "lccn", "", "", ""); 
+  
+      addLink("DNB-139596658", "PLWABN-9810640854205606");
+    addMatch("DNB-139596658", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("DNB-139596658", "NTA-07124817X");
+    addMatch("DNB-139596658", "NTA-07124817X", "", "lccn", "", "", ""); 
+  
+      addLink("DNB-139596658", "J9U-987007261955405171");
+    addMatch("DNB-139596658", "J9U-987007261955405171", "", "double date", "", "", ""); 
+  
+      addLink("DNB-139596658", "NUKAT-n97066622");
+    addMatch("DNB-139596658", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("DNB-139596658", "BIBSYS-90655907");
+    addMatch("DNB-139596658", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("DNB-139596658", "BNF-12383393");
+    addMatch("DNB-139596658", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NTA-07124817X", "NTA", "National Library of the Netherlands");
+      
+      addLink("NTA-07124817X", "RERO-vtls003308080");
+    addMatch("NTA-07124817X", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("NTA-07124817X", "ISNI-0000000109292036");
+    addMatch("NTA-07124817X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-07124817X", "ISNI-0000000109292036");
+    addMatch("NTA-07124817X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-07124817X", "ISNI-0000000109292036");
+    addMatch("NTA-07124817X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-07124817X", "ISNI-0000000109292036");
+    addMatch("NTA-07124817X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-07124817X", "WKP-Q224372");
+    addMatch("NTA-07124817X", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("NTA-07124817X", "BIBSYS-90655907");
+    addMatch("NTA-07124817X", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("NTA-07124817X", "NII-DA04882091");
+    addMatch("NTA-07124817X", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("NTA-07124817X", "SUDOC-03289290X");
+    addMatch("NTA-07124817X", "SUDOC-03289290X", "", "double date", "", "", ""); 
+  
+      addLink("NTA-07124817X", "LC-n81149667");
+    addMatch("NTA-07124817X", "LC-n81149667", "", "lccn", "", "", ""); 
+  
+      addLink("NTA-07124817X", "PLWABN-9810640854205606");
+    addMatch("NTA-07124817X", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("NTA-07124817X", "J9U-987007261955405171");
+    addMatch("NTA-07124817X", "J9U-987007261955405171", "", "double date", "", "", ""); 
+  
+      addLink("NTA-07124817X", "NUKAT-n97066622");
+    addMatch("NTA-07124817X", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("NTA-07124817X", "DNB-139596658");
+    addMatch("NTA-07124817X", "DNB-139596658", "", "lccn", "", "", ""); 
+  
+      addLink("NTA-07124817X", "BNF-12383393");
+    addMatch("NTA-07124817X", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("SUDOC-03289290X", "SUDOC", "Sudoc [ABES], France");
+      
+      addLink("SUDOC-03289290X", "RERO-vtls003308080");
+    addMatch("SUDOC-03289290X", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "ISNI-0000000109292036");
+    addMatch("SUDOC-03289290X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "ISNI-0000000109292036");
+    addMatch("SUDOC-03289290X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "ISNI-0000000109292036");
+    addMatch("SUDOC-03289290X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "ISNI-0000000109292036");
+    addMatch("SUDOC-03289290X", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "BIBSYS-90655907");
+    addMatch("SUDOC-03289290X", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "NII-DA04882091");
+    addMatch("SUDOC-03289290X", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "WKP-Q224372");
+    addMatch("SUDOC-03289290X", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "LC-n81149667");
+    addMatch("SUDOC-03289290X", "LC-n81149667", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "PLWABN-9810640854205606");
+    addMatch("SUDOC-03289290X", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "NTA-07124817X");
+    addMatch("SUDOC-03289290X", "NTA-07124817X", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "J9U-987007261955405171");
+    addMatch("SUDOC-03289290X", "J9U-987007261955405171", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "NUKAT-n97066622");
+    addMatch("SUDOC-03289290X", "NUKAT-n97066622", "", "standard number", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "DNB-139596658");
+    addMatch("SUDOC-03289290X", "DNB-139596658", "", "double date", "", "", ""); 
+  
+      addLink("SUDOC-03289290X", "BNF-12383393");
+    addMatch("SUDOC-03289290X", "BNF-12383393", "", "forced single date", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("NUKAT-n97066622", "NUKAT", "NUKAT Center of Warsaw University Library");
+      
+      addLink("NUKAT-n97066622", "LC-n81149667");
+    addMatch("NUKAT-n97066622", "LC-n81149667", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "RERO-vtls003308080");
+    addMatch("NUKAT-n97066622", "RERO-vtls003308080", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "NSK-000621642");
+    addMatch("NUKAT-n97066622", "NSK-000621642", "", "exact name", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "WKP-Q224372");
+    addMatch("NUKAT-n97066622", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "NII-DA04882091");
+    addMatch("NUKAT-n97066622", "NII-DA04882091", "", "exact title", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "SUDOC-03289290X");
+    addMatch("NUKAT-n97066622", "SUDOC-03289290X", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "ISNI-0000000109292036");
+    addMatch("NUKAT-n97066622", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "ISNI-0000000109292036");
+    addMatch("NUKAT-n97066622", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "ISNI-0000000109292036");
+    addMatch("NUKAT-n97066622", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "ISNI-0000000109292036");
+    addMatch("NUKAT-n97066622", "ISNI-0000000109292036", "", "viafid", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "PLWABN-9810640854205606");
+    addMatch("NUKAT-n97066622", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "NTA-07124817X");
+    addMatch("NUKAT-n97066622", "NTA-07124817X", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "J9U-987007261955405171");
+    addMatch("NUKAT-n97066622", "J9U-987007261955405171", "", "exact name", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "BIBSYS-90655907");
+    addMatch("NUKAT-n97066622", "BIBSYS-90655907", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "DNB-139596658");
+    addMatch("NUKAT-n97066622", "DNB-139596658", "", "standard number", "", "", ""); 
+  
+      addLink("NUKAT-n97066622", "BNF-12383393");
+    addMatch("NUKAT-n97066622", "BNF-12383393", "", "standard number", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("ISNI-0000000109292036", "ISNI", "ISNI");
+      
+      addLink("ISNI-0000000109292036", "RERO-vtls003308080");
+    addMatch("ISNI-0000000109292036", "RERO-vtls003308080", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "NSK-000621642");
+    addMatch("ISNI-0000000109292036", "NSK-000621642", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "WKP-Q224372");
+    addMatch("ISNI-0000000109292036", "WKP-Q224372", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "NII-DA04882091");
+    addMatch("ISNI-0000000109292036", "NII-DA04882091", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "SUDOC-03289290X");
+    addMatch("ISNI-0000000109292036", "SUDOC-03289290X", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "LC-n81149667");
+    addMatch("ISNI-0000000109292036", "LC-n81149667", "", "forced single date", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "PLWABN-9810640854205606");
+    addMatch("ISNI-0000000109292036", "PLWABN-9810640854205606", "", "forced single date", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "NTA-07124817X");
+    addMatch("ISNI-0000000109292036", "NTA-07124817X", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "J9U-987007261955405171");
+    addMatch("ISNI-0000000109292036", "J9U-987007261955405171", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "BIBSYS-90655907");
+    addMatch("ISNI-0000000109292036", "BIBSYS-90655907", "", "suggested", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "DNB-139596658");
+    addMatch("ISNI-0000000109292036", "DNB-139596658", "", "forced single date", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "NUKAT-n97066622");
+    addMatch("ISNI-0000000109292036", "NUKAT-n97066622", "", "viafid", "", "", ""); 
+  
+      addLink("ISNI-0000000109292036", "BNF-12383393");
+    addMatch("ISNI-0000000109292036", "BNF-12383393", "", "partial date and publisher", "", "", ""); 
+  </script>
+                           <script type="text/javascript">
+      new Node("WKP-Q224372", "WKP", "Wikidata");
+      
+      addLink("WKP-Q224372", "ISNI-0000000109292036");
+    addMatch("WKP-Q224372", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "ISNI-0000000109292036");
+    addMatch("WKP-Q224372", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "ISNI-0000000109292036");
+    addMatch("WKP-Q224372", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "ISNI-0000000109292036");
+    addMatch("WKP-Q224372", "ISNI-0000000109292036", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "SUDOC-03289290X");
+    addMatch("WKP-Q224372", "SUDOC-03289290X", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "LC-n81149667");
+    addMatch("WKP-Q224372", "LC-n81149667", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "PLWABN-9810640854205606");
+    addMatch("WKP-Q224372", "PLWABN-9810640854205606", "", "viafid", "", "", ""); 
+  
+      addLink("WKP-Q224372", "NTA-07124817X");
+    addMatch("WKP-Q224372", "NTA-07124817X", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "NUKAT-n97066622");
+    addMatch("WKP-Q224372", "NUKAT-n97066622", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "DNB-139596658");
+    addMatch("WKP-Q224372", "DNB-139596658", "", "suggested", "", "", ""); 
+  
+      addLink("WKP-Q224372", "BNF-12383393");
+    addMatch("WKP-Q224372", "BNF-12383393", "", "suggested", "", "", ""); 
+  </script>
+                        </div>
+                        <div id="leftfloat">
+                           <div id="svgcanvas"> </div>
+                           <div id="nodeInfo">
+                              <h4> </h4>
+                              <p> </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="clearing"> </div>
+               <div id="AltForms" class="mainSection">
+                  <h3>
+                     <img id="AltFormsContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="AltFormsContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">4xx's: Alternate Name Forms</span> (32)
+      </h3>
+                  <div style="display: none;" id="AltFormsContent" class="content">
+                     <ul>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Doog, K Caj</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Doog, K. Caj</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Doog, K. Caj</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, I. J.</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, I. J. (Isadore Jacob)</span>‏
+  <span class="flags">
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, I. J.</span>‏
+  
+    ‎‡q 
+  <span>(Irving John)</span>‏
+  <span class="flags">
+                              <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, I. J.</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, I.J.</span>‏
+  <span class="flags">
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, Irving J.</span>‏
+  <span class="flags">
+                              <img alt="National and University Library in Zagreb"
+                                   title="National and University Library in Zagreb"
+                                   src="https://viaf.org/viaf/images/flags/NSK.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, Irving J.</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, Jack</span>‏
+  <span class="flags">
+                              <img alt="National Library of Israel" title="National Library of Israel"
+                                   src="https://viaf.org/viaf/images/flags/J9U.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, Jack,</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, Jack</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Good, John I.</span>‏
+  
+    ‎‡d 
+  <span>1916-2009</span>‏
+  <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Gudak, Isadore Jacob</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Gudak, Isafore Jacob</span>‏
+  <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>I. J. Good</span>‏
+  
+    ‎‡c 
+  <span>British statistician, cryptographer</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irvin John Good</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving Ioannes Good</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving J. Good</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  
+    ‎‡c 
+  <span>Brits wiskundige</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  
+    ‎‡c 
+  <span>britischer Mathematiker und Kryptologe</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  
+    ‎‡c 
+  <span>estadístic britànic</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  
+    ‎‡c 
+  <span>matematico britannico</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Irving John Good</span>‏
+  
+    ‎‡c 
+  <span>statisticien britannique</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>I·J·古德</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>I・J・グッド</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>І. Дж. Ґуд</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 1 _ 
+    ‎‡a 
+  <span>Гуд, Ирвинг Джон</span>‏
+  <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>Իրվինգ Ջոն Գուդ</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>آى. جيه. جود</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                        <li>400 0 _ 
+    ‎‡a 
+  <span>آي. جيه. غود</span>‏
+  <span class="flags">
+                              <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="RelatedNames" class="mainSection">
+                  <h3>
+                     <img id="RelatedNamesContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="RelatedNamesContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">5xx's: Related Names</span> (4)
+    </h3>
+                  <div id="RelatedNamesContent" class="content" style="display:block;">
+                     <ul>
+                        <li>551 _ _ <a href="https://viaf.org/viaf/123345041">
+    ‎‡a 
+  <span>London</span>‏
+  
+    ‎‡4 
+  <span>ortg</span>‏
+  
+    ‎‡4 
+  <span>http://d-nb.info/standards/elementset/gnd#placeOfBirth</span>‏
+  </a>
+                           <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>551 _ _ <a href="https://viaf.org/viaf/131321127">
+    ‎‡a 
+  <span>Radford, Va.</span>‏
+  
+    ‎‡4 
+  <span>orts</span>‏
+  
+    ‎‡4 
+  <span>http://d-nb.info/standards/elementset/gnd#placeOfDeath</span>‏
+  </a>
+                           <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>510 2 _ <a href="https://viaf.org/viaf/135641695">
+    ‎‡a 
+  <span>Virginia Polytechnic Institute and State University</span>‏
+  
+    ‎‡4 
+  <span>affi</span>‏
+  
+    ‎‡4 
+  <span>http://d-nb.info/standards/elementset/gnd#affiliation</span>‏
+  
+    ‎‡e 
+  <span>Affiliation</span>‏
+  </a>
+                           <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>510 2 _ <a href="https://viaf.org/viaf/140035691">
+    ‎‡a 
+  <span>Virginia Polytechnic Institute</span>‏
+  
+    ‎‡g 
+  <span>Blacksburg, VA</span>‏
+  
+    ‎‡4 
+  <span>affi</span>‏
+  
+    ‎‡4 
+  <span>http://d-nb.info/standards/elementset/gnd#affiliation</span>‏
+  
+    ‎‡e 
+  <span>Affiliation</span>‏
+  </a>
+                           <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="SelectedTitles" class="mainSection">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="SelectedTitlesContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="SelectedTitlesContentClose"/>Works</h3>
+                  <div style="display: block;" id="SelectedTitlesContent" class="content">
+                     <table class="dataTable" id="workTable" cellspacing="0">
+                        <thead>
+                           <tr role="row">
+                              <th class="sorting" role="columnheader">Title</th>
+                              <th class="no-sort" role="columnheader">Sources</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>Breaking teleprinter ciphers at Bletchley Park : general report on Tunny with emphasis on statistical methods (1945)</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Collected works of A. M. Turing</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Donald Michie : on machine intelligence, biology and more</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>The estimation of probabilities; an essay on modern Bayesian methods.</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>The Good book : 30 years of comments, conjectures, and conclusions by I.J. Good</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Good thinking : the foundations of probability and its applications</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                    <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Information, weight of evidence, the singularity between probability measures and signal detection</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                    <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>An interview with I.J. Good</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>On the marking of chess-players</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Phantasie in der Wissenschaft Eine Anthologie unausgegorener Ideen</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Pure mathematics</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                    <img alt="National Library of France" title="National Library of France"
+                                         src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Quand les savants laissent libre cours à leur imagination</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>The scientist speculates: an anthology of partly-baked ideas.</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="NII (Japan)" title="NII (Japan)" src="https://viaf.org/viaf/images/flags/NII.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of Poland" title="National Library of Poland"
+                                         src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>Speculations concerning information retrieval</td>
+                              <td>
+                                 <span class="flags">
+                                    <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                                 </span>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div id="SelectedCoauthors" class="mainSection">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="SelectedCoauthorsContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="SelectedCoauthorsContentClose"/>
+                     <span class="langHi0">Selected Co-authors</span>
+                  </h3>
+                  <div style="display: none;" id="SelectedCoauthorsContent" class="content">
+                     <ol>
+                        <li>Osteyee, David Bridston
+          ‎(14)
+          <span class="flags">
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                           </span>
+                        </li>
+                        <li>Britton, J. L.
+          ‎(11)
+          <span class="flags">
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                        <li>Turing, Alan Mathison
+          ‎(10)
+          <span class="flags">
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                           </span>
+                        </li>
+                        <li>Smith, John Maynard 1920-2004)
+          ‎(7)
+          <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="National Library of Poland" title="National Library of Poland"
+                                   src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                           </span>
+                        </li>
+                        <li>Michie, Donald 1923-2007)
+          ‎(4)
+          <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Timms, G. (Geoffrey), 1903-1982
+          ‎(2)
+          <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Smith, Eric P.
+          ‎(2)
+          <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Reeds, James A.
+          ‎(2)
+          <span class="flags">
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Flechtner, Hans Joachim 1902-1980
+          ‎(2)
+          <span class="flags">
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                           </span>
+                        </li>
+                        <li>Evans, Christopher Riche
+          ‎(2)
+          <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+               <div id="Countries" class="mainSection">
+                  <h3>
+                     <img id="CountriesContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="CountriesContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Countries and Regions of Publication</span> (6)
+                </h3>
+                  <div id="CountriesContent" class="content" style="display:none;">
+                     <div id="mapcontainer">
+                        <div class="mapsNote">
+                           <span class="langHi0">View the list below for more details</span>.
+                  </div>
+                        <div id="mapButtons">
+                           <form action="https://viaf.org/viaf/268124600/?">
+                              <label>
+                                 <span class="langHi0">Map View</span>:</label>
+                              <input id="mapbutton-world" class="mapbutton-on" type="button" value="World"
+                                     onclick="mapSwitch('world');"/>
+                              <input id="mapbutton-euro" class="mapbutton-off" type="button" value="Europe"
+                                     onclick="mapSwitch('euro');"/>
+                              <input id="mapbutton-asia" class="mapbutton-off" type="button" value="Asia"
+                                     onclick="mapSwitch('asia');"/>
+                           </form>
+                        </div>
+                        <div id="maps">
+                           <img id="map-world" alt="World"
+                                src="https://chart.apis.google.com/chart?cht=t&amp;chs=440x220&amp;chd=t:40,30,30,20,10,10&amp;chco=FFFFFF,feca31,ea8e00,d94817,bf2c00,a90606,64000f&amp;chld=USDENLGBFRNC&amp;chtm=world&amp;chf=bg,s,c5e0fb"/>
+                           <img id="map-euro" alt="Europe"
+                                src="https://chart.apis.google.com/chart?cht=t&amp;chs=440x220&amp;chd=t:40,30,30,20,10,10&amp;chco=FFFFFF,feca31,ea8e00,d94817,bf2c00,a90606,64000f&amp;chld=USDENLGBFRNC&amp;chtm=europe&amp;chf=bg,s,c5e0fb"/>
+                           <img id="map-asia" alt="Asia"
+                                src="https://chart.apis.google.com/chart?cht=t&amp;chs=440x220&amp;chd=t:40,30,30,20,10,10&amp;chco=FFFFFF,feca31,ea8e00,d94817,bf2c00,a90606,64000f&amp;chld=USDENLGBFRNC&amp;chtm=asia&amp;chf=bg,s,c5e0fb"/>
+                        </div>
+                        <div id="colorKey">
+                           <span class="colorKeyNote">
+                              <span class="langHi0">Low</span>
+                           </span>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" id="color1" class="colorKey"
+                                alt="Lowest Number of Publications"/>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" alt="spacer" id="color2" class="colorKey"/>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" alt="spacer" id="color3" class="colorKey"/>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" alt="spacer" id="color4" class="colorKey"/>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" alt="spacer" id="color5" class="colorKey"/>
+                           <img src="https://viaf.org/viaf/images/spacer.gif" id="color6" class="colorKey"
+                                alt="Highest Number of Publications"/>
+                           <span class="colorKeyNote">
+                              <span class="langHi0">High</span>
+                           </span>
+                        </div>
+                        <div id="viewLists">
+                           <input type="button" id="viewListLink" class="mapbutton-off" value="View List"
+                                  onclick="showhidelist('viewListLink'); return false;"/>
+                           <input type="button" id="hideListLink" class="mapbutton-on" value="Hide List"
+                                  onclick="showhidelist('hideListLink'); return false;"/>
+                        </div>
+                        <div id="countryList">
+                           <div class="mapsNote">
+                              <span class="langHi0">The flags indicate which authority file had at least some publications from the country or region</span>:</div>
+                           <ul>
+                              <li>US - 
+      United States
+      (14)
+      <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                 </span>
+                              </li>
+                              <li>DE - 
+      Germany
+      (10)
+      <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                    <img alt="German National Library" title="German National Library"
+                                         src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 </span>
+                              </li>
+                              <li>NL - 
+      Netherlands
+      (6)
+      <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="NUKAT Center of Warsaw University Library"
+                                         title="NUKAT Center of Warsaw University Library"
+                                         src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                 </span>
+                              </li>
+                              <li>GB - 
+      United Kingdom
+      (4)
+      <span class="flags">
+                                    <img alt="National Library of the Netherlands"
+                                         title="National Library of the Netherlands"
+                                         src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                    <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                         src="https://viaf.org/viaf/images/flags/LC.png"/>
+                                    <img alt="National Library of Poland" title="National Library of Poland"
+                                         src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                                 </span>
+                              </li>
+                              <li>FR - 
+      France
+      (2)
+      <span class="flags">
+                                    <img alt="RERO - Library Network of Western Switzerland"
+                                         title="RERO - Library Network of Western Switzerland"
+                                         src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                                    <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                         src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                                 </span>
+                              </li>
+                              <li>NC - 
+      
+      (1)
+      <span class="flags">
+                                    <img alt="National Library of France" title="National Library of France"
+                                         src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 </span>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div id="Timeline" class="mainSection">
+                  <h3>
+                     <img id="TimelineContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="TimelineContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Publication Statistics</span>
+                  </h3>
+                  <div id="TimelineContent" class="content" style="display:none;">
+                     <script type="text/javascript">
+       function dateMsg(decade, count){
+         var tld = document.getElementById('TimeLineDisplay');
+         if (count) {
+              if (count=='1')
+              tld.innerHTML = count + ' publications in the '+decade+"'s";
+              else tld.innerHTML = count + ' publications in the '+decade+"'s";
+         } else {
+              tld.innerHTML = '';
+         }
+        }
+      </script>
+                     <ul>
+                        <li>
+                           <h4 class="subHead">
+                              <span class="langHi0">Publication History</span>
+                           </h4>
+                           <div id="TimeLineShell">
+                              <div id="TimeLineMarkers">
+                                 <span class="date">1900</span>
+                                 <span class="TimeLineMarkerStart">|</span>
+                                 <img id="line1950" class="marker" style="height:21.05px;"
+                                      onmouseover="dateMsg('195'+'0', '7');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line1960" class="marker" style="height:29.6px;"
+                                      onmouseover="dateMsg('196'+'0', '23');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line1970" class="marker" style="height:24.3px;"
+                                      onmouseover="dateMsg('197'+'0', '11');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line1980" class="marker" style="height:22px;"
+                                      onmouseover="dateMsg('198'+'0', '8');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line1990" class="marker" style="height:22.85px;"
+                                      onmouseover="dateMsg('199'+'0', '9');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line2000" class="marker" style="height:21.05px;"
+                                      onmouseover="dateMsg('200'+'0', '7');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <img id="line2010" class="marker" style="height:12px;"
+                                      onmouseover="dateMsg('201'+'0', '2');"
+                                      onmouseout="dateMsg('','');"
+                                      src="https://viaf.org/viaf/images/spacer.gif"
+                                      alt="spacer"/>
+                                 <span class="TimeLineMarkerEnd">|</span>
+                                 <span class="date">2100</span>
+                              </div>
+                           </div>
+                           <div id="TimeLineDisplayBox">
+                              <span id="TimeLineDisplay"/>
+                           </div>
+                        </li>
+                        <li>
+                           <h4 class="subHead">
+                              <span class="langHi0">Identifiers</span>
+                           </h4>
+                           <ul class="subList">
+                              <li>13 <span class="langHi0">unique ISBN's</span>
+                              </li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="Publishers" class="mainSection">
+                  <h3>
+                     <img id="PublishersContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="PublishersContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">Selected Publishers</span> (10)
+    </h3>
+                  <div id="PublishersContent" class="content" style="display:none;">
+                     <ol>
+                        <li>Springer-Verlag
+      ‎(13)
+      <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="German National Library" title="German National Library"
+                                   src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>North-Holland
+      ‎(9)
+      <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                              <img alt="National Library of France" title="National Library of France"
+                                   src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                           </span>
+                        </li>
+                        <li>University of Minnesota Press
+      ‎(7)
+      <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>The M.I.T. Press
+      ‎(7)
+      <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Heinemann
+      ‎(7)
+      <span class="flags">
+                              <img alt="National Library of the Netherlands"
+                                   title="National Library of the Netherlands"
+                                   src="https://viaf.org/viaf/images/flags/NTA.png"/>
+                              <img alt="BIBSYS" title="BIBSYS" src="https://viaf.org/viaf/images/flags/BIBSYS.png"/>
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Sudoc [ABES], France" title="Sudoc [ABES], France"
+                                   src="https://viaf.org/viaf/images/flags/SUDOC.png"/>
+                              <img alt="National Library of Poland" title="National Library of Poland"
+                                   src="https://viaf.org/viaf/images/flags/PLWABN.png"/>
+                           </span>
+                        </li>
+                        <li>North-Holland ; Distributors for the U.S. and Canada, Elsevier Science Pub. Co.
+      ‎(3)
+      <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Rice University Press
+      ‎(2)
+      <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                   src="https://viaf.org/viaf/images/flags/LC.png"/>
+                           </span>
+                        </li>
+                        <li>Oxford University Press
+      ‎(2)
+      <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                           </span>
+                        </li>
+                        <li>MIT Press
+      ‎(2)
+      <span class="flags">
+                              <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              <img alt="NUKAT Center of Warsaw University Library"
+                                   title="NUKAT Center of Warsaw University Library"
+                                   src="https://viaf.org/viaf/images/flags/NUKAT.png"/>
+                           </span>
+                        </li>
+                        <li>M.I.T.
+      ‎(1)
+      <span class="flags">
+                              <img alt="RERO - Library Network of Western Switzerland"
+                                   title="RERO - Library Network of Western Switzerland"
+                                   src="https://viaf.org/viaf/images/flags/RERO.png"/>
+                           </span>
+                        </li>
+                     </ol>
+                  </div>
+               </div>
+               <div class="mainSection" id="About">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="AboutContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="AboutContentClose"/>
+                     <span class="langHi0">About</span>
+                  </h3>
+                  <div style="display: none;" class="content" id="AboutContent">
+                     <div id="personalinfo" class="subsection">
+                        <h2>
+                           <span class="langHi0">Personal Information</span>
+                        </h2>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0"/>Gender: </span>
+                           <span class="langHi0"/>Male</h4>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Nationality or associated country</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>US - United States<span class="flags">
+                                 <img alt="National Library of France" title="National Library of France"
+                                      src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 <img alt="German National Library" title="German National Library"
+                                      src="https://viaf.org/viaf/images/flags/DNB.png"/>
+                                 <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                              </span>
+                           </li>
+                           <li>GB - United Kingdom<span class="flags">
+                                 <img alt="ISNI" title="ISNI" src="https://viaf.org/viaf/images/flags/ISNI.png"/>
+                                 <img alt="Wikidata" title="Wikidata" src="https://viaf.org/viaf/images/flags/WKP.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Occupation</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>statistician <span class="flags">
+                                 <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                      src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                        <h4>
+                           <span class="subtitle">
+                              <span class="langHi0">Language</span>: </span>
+                        </h4>
+                        <ul>
+                           <li>eng - English<span class="flags">
+                                 <img alt="National Library of France" title="National Library of France"
+                                      src="https://viaf.org/viaf/images/flags/BNF.png"/>
+                                 <img alt="Library of Congress/NACO" title="Library of Congress/NACO"
+                                      src="https://viaf.org/viaf/images/flags/LC.png"/>
+                              </span>
+                           </li>
+                        </ul>
+                     </div>
+                     <div id="externalLinks" class="subsection">
+                        <h2>
+                           <span class="langHi0">External Links</span>
+                        </h2>
+                        <ul id="listOfLinks">
+                           <li>
+                              <a href="https://ar.wikipedia.org/wiki/آي._جيه._غود">
+                                 <span class="langHi0">Wikipedia</span> - https://ar.wikipedia.org/wiki/آي._جيه._غود</a>
+                           </li>
+                           <li>
+                              <a href="https://arz.wikipedia.org/wiki/آى._جيه._جود">
+                                 <span class="langHi0">Wikipedia</span> - https://arz.wikipedia.org/wiki/آى._جيه._جود</a>
+                           </li>
+                           <li>
+                              <a href="../../de.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://de.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../en.wikipedia.org/wiki/I._J._Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://en.wikipedia.org/wiki/I._J._Good</a>
+                           </li>
+                           <li>
+                              <a href="../../fi.wikipedia.org/wiki/Irvin_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://fi.wikipedia.org/wiki/Irvin_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../fr.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://fr.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../hu.wikipedia.org/wiki/Irving_J._Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://hu.wikipedia.org/wiki/Irving_J._Good</a>
+                           </li>
+                           <li>
+                              <a href="https://hy.wikipedia.org/wiki/Իրվինգ_Ջոն_Գուդ">
+                                 <span class="langHi0">Wikipedia</span> - https://hy.wikipedia.org/wiki/Իրվինգ_Ջոն_Գուդ</a>
+                           </li>
+                           <li>
+                              <a href="../../it.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://it.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../la.wikipedia.org/wiki/Irving_Ioannes_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://la.wikipedia.org/wiki/Irving_Ioannes_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../nds.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://nds.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../nl.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://nl.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../pt.wikipedia.org/wiki/Irving_John_Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://pt.wikipedia.org/wiki/Irving_John_Good</a>
+                           </li>
+                           <li>
+                              <a href="../../ru.wikipedia.org/wiki/Гуд,_Ирвинг_Джон.html">
+                                 <span class="langHi0">Wikipedia</span> - https://ru.wikipedia.org/wiki/Гуд,_Ирвинг_Джон</a>
+                           </li>
+                           <li>
+                              <a href="../../sv.wikipedia.org/wiki/I._J._Good.html">
+                                 <span class="langHi0">Wikipedia</span> - https://sv.wikipedia.org/wiki/I._J._Good</a>
+                           </li>
+                           <li>
+                              <a href="https://www.worldcat.org/identities/lccn-n81149667">WorldCat Identities - lccn-n81149667</a>
+                           </li>
+                           <li>
+                              <a href="https://isni.org/isni/0000000109292036">ISNI - 0000 0001 0929 2036</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="mainSection" id="RecordViews">
+                  <h3>
+                     <img alt="Open Section" src="https://viaf.org/viaf/images/open.gif" class="msgHeader"
+                          id="RecordViewsContentOpen"/>
+                     <img alt="Close Section" src="https://viaf.org/viaf/images/close.gif" class="msgHeader"
+                          id="RecordViewsContentClose"/>
+                     <span class="langHi0">Record Views</span>
+                  </h3>
+                  <div style="display:none;" class="content" id="RecordViewsContent">
+                     <ul>
+                        <li>
+                           <a href="https://viaf.org/viaf/268124600/marc21.xml" type="application/x-marc21+xml"
+                              rel="nofollow">
+                              <span class="langHi0">MARC-21 record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/268124600/viaf.xml" type="application/xml" rel="nofollow">
+                              <span class="langHi0">VIAF Cluster in XML</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/268124600/rdf.xml" type="application/rdf+xml" rel="nofollow">
+                              <span class="langHi0">RDF record</span>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="https://viaf.org/viaf/268124600/justlinks.json" type="application/vnd.oclc.links+json"
+                              rel="nofollow">
+                              <span class="langHi0">Just Links in JSON</span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+               <div id="History" class="mainSection">
+                  <h3>
+                     <img id="HistoryContentOpen" class="msgHeader" src="https://viaf.org/viaf/images/open.gif"
+                          alt="Open Section"/>
+                     <img id="HistoryContentClose" class="msgHeader" src="https://viaf.org/viaf/images/close.gif"
+                          alt="Close Section"/>
+                     <span class="langHi0">History of VIAF ID</span>:268124600 (17)
+      </h3>
+                  <div id="HistoryContent" class="content" style="display:none;">
+                     <table id="historyTable" cellspacing="0">
+                        <tr>
+                           <th>
+                              <span class="langHi0">Record ID</span>
+                           </th>
+                           <th id="action">
+                              <span class="langHi0">Action</span>
+                           </th>
+                           <th>
+                              <span class="langHi0">Time</span>
+                           </th>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/SUDOC|03289290X">SUDOC|03289290X</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2012-11-26T09:56:13+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BNF|12383393">BNF|12383393</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2012-11-26T09:56:13+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/LC|n&#32;&#32;81149667">LC|n  81149667</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2012-12-19T19:11:18+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NTA|07124817X">NTA|07124817X</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2012-12-19T19:11:18+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/DNB|139596658">DNB|139596658</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2012-12-19T19:11:18+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NUKAT|n&#32;&#32;97066622">NUKAT|n  97066622</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2014-10-27T16:17:29+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/ISNI|0000000109292036">ISNI|0000000109292036</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2015-03-11T21:41:54+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/WKP|Q224372">WKP|Q224372</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2015-04-14T18:56:54+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/WKP|I._J._Good">WKP|I._J._Good</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2015-04-14T18:56:54+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/BIBSYS|90655907">BIBSYS|90655907</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2017-04-11T21:00:19.301978+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/RERO|vtls003308080">RERO|vtls003308080</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-02-17T12:18:34.433735+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NII|DA04882091">NII|DA04882091</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-05-29T16:35:10.982367+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NSK|000621642">NSK|000621642</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-05-29T16:35:10.991798+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/PLWABN|9810640854205606">PLWABN|9810640854205606</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2019-06-09T12:30:32.672727+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLP|a31342632">NLP|a31342632</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2019-07-14T17:22:04.990957+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/J9U|987007261955405171">J9U|987007261955405171</a>
+                           </td>
+                           <td class="action">add</td>
+                           <td>2020-02-02T16:26:23.070287+00:00</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <a href="https://viaf.org/viaf/sourceID/NLI|000055081">NLI|000055081</a>
+                           </td>
+                           <td class="action">delete</td>
+                           <td>2020-04-12T09:04:45.672239+00:00</td>
+                        </tr>
+                     </table>
+                     <a class="rss" href="https://viaf.org/viaf/268124600.rss" rel="nofollow">RSS feed for changes</a>
+                  </div>
+               </div>
+            </div>
+            <script type="text/javascript">updateSearchForms();</script>
+            <div class="clearing"/>
+         </div>
+      </div>
+      <div id="footer2-wrap">
+         <div id="footer2">
+            <div id="logo">
+               <img title="OCLC Logo" alt="OCLC Logo" src="https://viaf.org/viaf/images/logo_col_v_white.gif"/>
+            </div>
+            <div id="legal">
+               <div id="copyright">© 2010-2019 OCLC <br/>
+                  <a href="https://policies.oclc.org/en/privacy/privacy-statement.html">Privacy policy</a>
+                  <br/>
+                  <a href="https://policies.oclc.org/en/privacy/cookie-statement.html">Cookie Notice</a>
+               </div>
+               <div id="TandC">
+                  <a href="https://www.oclc.org/">Hosted by OCLC</a>
+               </div>
+               <div id="VoID">
+                  <a href="https://viaf.org/viaf/data">About the dataset</a>
+               </div>
+               <div id="lastUpdate"/>
+            </div>
+            <div id="footer-right">
+               <div class="footer" id="feedback">
+                  <img alt="Send us a comment." title="Send us a comment." src="https://viaf.org/viaf/images/mail.gif"/>
+                  <a href="mailto:bibchange@oclc.org?subject=VIAF feedback">
+                     <span class="langHi0">Send us a comment.</span>
+                  </a>
+               </div>
+               <div class="footer" id="about">
+                  <img alt="About VIAF" title="About VIAF" src="https://viaf.org/viaf/images/info.gif"/>
+                  <a href="https://www.oclc.org/viaf">
+                     <span class="langHi0">About VIAF</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src="https://www.google-analytics.com/ga.js" type="text/javascript">//</script>
+      <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-10987553-1");  // viaf
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+   </body>
+</html>

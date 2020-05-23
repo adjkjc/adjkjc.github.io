@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>oremus Bible Browser : Acts 2:1–31:1</title>
+    <link rel="stylesheet" href="http://bible.oremus.org/bible.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="http://bible.oremus.org/bscreen.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="http://bible.oremus.org/bprint.css" type="text/css" media="print" />
+    <link rel="stylesheet" href="http://bible.oremus.org/obb/obb.css" type="text/css" media="all" />
+    <link rev="made" href="mailto:biblemail&#64;oremus.org" />
+    <script type="text/javascript" src="http://bible.oremus.org/bible.js?10"></script>
+  </head>
+  <body class="dmtog" onLoad="bStart();">
+
+    <script language="JavaScript">
+      var ol_sticky=1;var ol_cap="footnote";
+      ol_fixx=610;var ol_offsety=-25;ol_fgcolor="#FFEEEE";
+      ol_bgcolor="#880000";ol_textcolor="black";ol_textsize="-1";ol_closecolor="#FFEEEE";
+    </script>
+
+    <div id="overDiv" style="position:absolute; visibility:hidden; z-index:1000;"></div>
+    <script language="JavaScript" src="http://bible.oremus.org/overlib_mini.js"><!-- overLIB (c) Erik Bosrup --></script>
+
+    <script type="text/javascript">
+
+       var dark = false;
+       function init_dark()
+       {
+          var cdark = b_get_cookie( 'darkmode' );
+          if ( cdark && cdark == 'true' )
+          {
+             darkToggle();
+          }
+       }
+
+       function b_set_cookie( name, value, expires, path, domain, secure )
+       {
+          // set time, in milliseconds
+          var today = new Date();
+          today.setTime( today.getTime() );
+
+           /*
+              if the expires variable is set, make the correct
+              expires time, the current script below will set
+              it for x number of days, to make it for hours,
+              delete * 24, for minutes, delete * 60 * 24
+           */
+           if ( expires )
+           {
+              expires = expires * 1000 * 60 * 60 * 24;
+           }
+           var expires_date = new Date( today.getTime() + (expires) );
+
+           document.cookie = name + "=" +escape( value ) +
+               ( ( expires ) ? ";expires=" + expires_date.toGMTString() : "" ) +
+               ( ( path ) ? ";path=" + path : "" ) +
+               ( ( domain ) ? ";domain=" + domain : "" ) +
+               ( ( secure ) ? ";secure" : "" );
+       }
+
+
+       function b_get_cookie( check_name )
+       {
+          // first split this cookie up into name/value pairs
+          // note: document.cookie only returns name=value, not the other components
+          var a_all_cookies = document.cookie.split( ';' );
+          var a_temp_cookie = '';
+          var cookie_name = '';
+          var cookie_value = '';
+          var b_cookie_found = false; // set boolean t/f default f
+         
+          for ( i = 0; i < a_all_cookies.length; i++ )
+          {
+             // now split apart each name=value pair
+             a_temp_cookie = a_all_cookies[i].split( '=' );
+           
+             // and trim left/right whitespace while we are at it
+             cookie_name = a_temp_cookie[0].replace(/^\s+|\s+$/g, '');
+           
+             // if the extracted name matches passed check_name
+             if ( cookie_name == check_name )
+             {
+                b_cookie_found = true;
+                // we need to handle case where cookie has no value but exists (no = sign, that is):
+                if ( a_temp_cookie.length > 1 )
+                {
+                   cookie_value = unescape( a_temp_cookie[1].replace(/^\s+|\s+$/g, '') );
+                }
+                // note that in cases where cookie is initialized but no value, null is returned
+                return cookie_value;
+                break;
+             }
+             a_temp_cookie = null;
+             cookie_name = '';
+          }
+          if ( ! b_cookie_found )
+          {
+             return null;
+          }
+       }
+
+       function darkToggle()
+       {
+	   if ( dark )
+	   {
+             dark = false;
+
+             dmStyleClassToggle( 'dmtog', '#FFFFFF', '#880000' );
+             dmStyleClassToggle( 'bibletext', '#FFFFFF', '#010000' );
+             dmStyleClassToggle( 'dmtog2', '', '#880000' );
+             dmStyleClassToggle( 'obb', '', '#DD0000' );
+             dmStyleClassToggle( 'search', '', '#440000' );
+             dmStyleClassToggle( 'credits', '#FFFFFF', '#440000' );
+             dmStyleClassToggle( 'screencredits', '', '#440000' );
+
+             dmStyleTagToggle( 'h2', '', '#880000' );
+             dmStyleTagToggle( 'h3', '', '#880000' );
+             dmStyleTagToggle( 'a', '', '#0000BB' );
+
+             document.getElementById( "dark-checkbox" ).checked = false;
+	   }
+           else
+           {
+             dark = true;
+
+             dmStyleClassToggle( 'dmtog', '#222222', '#CCCCCC' );
+             dmStyleClassToggle( 'bibletext', '#222222', '#CCCCCC' );
+             dmStyleClassToggle( 'dmtog2', '', '#EECCCC' );
+             dmStyleClassToggle( 'obb', '', '#FF9999' );
+             dmStyleClassToggle( 'search', '', '#EECCCC' );
+             dmStyleClassToggle( 'credits', '#222222', '#CCCCCC' );
+             dmStyleClassToggle( 'screencredits', '#222222', '#CCCCCC' );
+
+             dmStyleTagToggle( 'h2', '', '#EECCCC' );
+             dmStyleTagToggle( 'h3', '', '#EECCCC' );
+             dmStyleTagToggle( 'a', '', '#8888BB' );
+
+             document.getElementById( "dark-checkbox" ).checked = true;
+           }
+           b_set_cookie( 'darkmode', dark, '3652', '/', '', '' );
+       }
+
+       function dmStyleClassToggle( className, bgColor, fgColor )
+       {
+             const togs = document.getElementsByClassName( className );
+             for ( let tog of togs )
+             {
+                 if ( bgColor )
+                 {
+                     tog.style.backgroundColor = bgColor;
+                 }
+                 if ( fgColor )
+                 {
+                     tog.style.color = fgColor;
+                 }
+             }
+       }
+
+       function dmStyleTagToggle( tagName, bgColor, fgColor )
+       {
+             const els = document.getElementsByTagName( tagName );
+             for ( let el of els )
+             {
+                 if ( bgColor )
+                 {
+                     el.style.backgroundColor = bgColor;
+                 }
+                 if ( fgColor )
+                 {
+                     el.style.color = fgColor;
+                 }
+             }
+       }
+
+
+       function bStart()
+       {
+           FormLoad();
+           init_dark();     
+       }
+
+    </script>
+
+<p>
+  <label for="dark-checkbox">Dark mode:</label>
+
+    <input type="checkbox" name="dark" id="dark-checkbox" onclick="darkToggle();">
+</p>
+    <script language="JavaScript">
+      function setVis()
+      {
+        changeElementVisibility('sect');
+
+      }
+    </script>
+<h1 align="center" id="h1screen">
+<span class="obb" style="font-size: 65px; color: #D00"> Bible Browser</span>
+</h1>
+<div class="quicklink">
+<form method="post" action="index.html@passage=Acts+2%253A1–31%253A1&amp;version=nrsv.html" enctype="multipart/form-data"><input type="submit" name="make_quicklink" value="make Quicklink" onmouseout="return nd();" onmouseover="return overlib('Create a saved query and get an oBB Quicklink to it', 0, FIXX,-1, CAPTION,'', FGCOLOR,'#FFFCFC', BGCOLOR,'#CC3300', TEXTCOLOR,'#000000', OFFSETX,50, OFFSETY,-25, TEXTSIZE,-1, TIMEOUT,2500);" />
+<input type="hidden" name="passage" value="Acts 2:1–31:1"  />
+<input type="hidden" name="version" value="nrsv"  />
+</form>
+</div>
+<hr class="quicklink" /><div class="visbuttons"><nobr><label><input type="checkbox" name="vnum" value="no" checked="checked" id="vnum" onclick="changeElementVisibility('vnum')" /></label><label for="vnum">Omit&nbsp;verse&nbsp;numbers;</label></nobr>
+<nobr><label><input type="checkbox" name="fnote" value="no" checked="checked" id="fnote" onclick="changeElementVisibility('fnote')" /></label><label for="fnote">Omit&nbsp;footnotes</label></nobr>
+<br />
+<nobr><label><input type="checkbox" name="headings" value="yes" checked="checked" id="headings" onclick="changeElementVisibility('sect')" /></label><label for="headings">Show&nbsp;section&nbsp;headings;</label></nobr>
+<nobr><label><input type="checkbox" name="show_ref" value="no" id="ref" onclick="changeElementVisibility('passageref')" /></label><label for="ref">Omit&nbsp;passage&nbsp;reference</label></nobr>
+<br />
+<nobr><label><input type="checkbox" name="show_adj" value="no" id="adj" onclick="changeElementVisibility('adj')" /></label><label for="adj">Omit&nbsp;adjacent&nbsp;passage&nbsp;references</label></nobr>
+<form onSubmit="removeHidden();return false;"><input type="submit" value="Remove hidden text" /></form><hr />
+</div><!-- class="visbuttons" -->
+<div class="bible dmtog">
+
+<h2 class="passageref">Acts 2:1–31:1</h2>
+
+<div class="bibletext">
+<p>
+
+<p><span class="cc vnumVis">2</span>When the day of Pentecost had come, they were all together in one place.
+<sup class="ww vnumVis">2</sup>And suddenly from heaven there came a sound like the rush of a violent wind, and it filled the entire house where they were sitting.
+<sup class="ww vnumVis">3</sup>Divided tongues, as of fire, appeared among them, and a tongue rested on each of them.
+<sup class="ww vnumVis">4</sup>All of them were filled with the Holy Spirit and began to speak in other languages, as the Spirit gave them ability.
+<p><sup class="ww vnumVis">5</sup>Now there were devout Jews from every nation under heaven living in Jerusalem.
+<sup class="ww vnumVis">6</sup>And at this sound the crowd gathered and was bewildered, because each one heard them speaking in the native language of each.
+<sup class="ww vnumVis">7</sup>Amazed and astonished, they asked, &#147;Are not all these who are speaking Galileans?
+<sup class="ww vnumVis">8</sup>And how is it that we hear, each of us, in our own native language?
+<sup class="ww vnumVis">9</sup>Parthians, Medes, Elamites, and residents of Mesopotamia, Judea and Cappadocia, Pontus and Asia,
+<sup class="ww vnumVis">10</sup>Phrygia and Pamphylia, Egypt and the parts of Libya belonging to Cyrene, and visitors from Rome, both Jews and proselytes,
+<sup class="ww vnumVis">11</sup>Cretans and Arabs&#151;in our own languages we hear them speaking about God&#146;s deeds of power.&#148;
+<sup class="ww vnumVis">12</sup>All were amazed and perplexed, saying to one another, &#147;What does this mean?&#148;
+<sup class="ww vnumVis">13</sup>But others sneered and said, &#147;They are filled with new wine.&#148;
+<p><sup class="ww vnumVis">14</sup>But Peter, standing with the eleven, raised his voice and addressed them, &#147;Men of Judea and all who live in Jerusalem, let this be known to you, and listen to what I say.
+<sup class="ww vnumVis">15</sup>Indeed, these are not drunk, as you suppose, for it is only nine o&#146;clock in the morning.
+<sup class="ww vnumVis">16</sup>No, this is what was spoken through the prophet Joel:
+<sup class="ww vnumVis">17</sup>&#145;In the last days it will be, God declares, that I will pour out my Spirit upon all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream dreams.
+<sup class="ww vnumVis">18</sup>Even upon my slaves, both men and women, in those days I will pour out my Spirit; and they shall prophesy.
+<sup class="ww vnumVis">19</sup>And I will show portents in the heaven above and signs on the earth below, blood, and fire, and smoky mist.
+<sup class="ww vnumVis">20</sup>The sun shall be turned to darkness and the moon to blood, before the coming of the Lord&#146;s great and glorious day.
+<sup class="ww vnumVis">21</sup>Then everyone who calls on the name of the Lord shall be saved.&#146;
+<sup class="ww vnumVis">22</sup>&#147;You that are Israelites, listen to what I have to say: Jesus of Nazareth, a man attested to you by God with deeds of power, wonders, and signs that God did through him among you, as you yourselves know&#151;
+<sup class="ww vnumVis">23</sup>this man, handed over to you according to the definite plan and foreknowledge of God, you crucified and killed by the hands of those outside the law.
+<sup class="ww vnumVis">24</sup>But God raised him up, having freed him from death, because it was impossible for him to be held in its power.
+<sup class="ww vnumVis">25</sup>For David says concerning him, &#145;I saw the Lord always before me, for he is at my right hand so that I will not be shaken;
+<sup class="ww vnumVis">26</sup>therefore my heart was glad, and my tongue rejoiced; moreover my flesh will live in hope.
+<sup class="ww vnumVis">27</sup>For you will not abandon my soul to Hades, or let your Holy One experience corruption.
+<sup class="ww vnumVis">28</sup>You have made known to me the ways of life; you will make me full of gladness with your presence.&#146;
+<sup class="ww vnumVis">29</sup>&#147;Fellow Israelites, I may say to you confidently of our ancestor David that he both died and was buried, and his tomb is with us to this day.
+<sup class="ww vnumVis">30</sup>Since he was a prophet, he knew that God had sworn with an oath to him that he would put one of his descendants on his throne.
+<sup class="ww vnumVis">31</sup>Foreseeing this, David spoke of the resurrection of the Messiah, saying, &#145;He was not abandoned to Hades, nor did his flesh experience corruption.&#146;
+<sup class="ww vnumVis">32</sup>This Jesus God raised up, and of that all of us are witnesses.
+<sup class="ww vnumVis">33</sup>Being therefore exalted at the right hand of God, and having received from the Father the promise of the Holy Spirit, he has poured out this that you both see and hear.
+<sup class="ww vnumVis">34</sup>For David did not ascend into the heavens, but he himself says, &#145;The Lord said to my Lord, &#147;Sit at my right hand,
+<sup class="ww vnumVis">35</sup>until I make your enemies your footstool.&#148;&#146;
+<sup class="ww vnumVis">36</sup>Therefore let the entire house of Israel know with certainty that God has made him both Lord and Messiah, this Jesus whom you crucified.&#148;
+<p><sup class="ww vnumVis">37</sup>Now when they heard this, they were cut to the heart and said to Peter and to the other apostles, &#147;Brothers, what should we do?&#148;
+<sup class="ww vnumVis">38</sup>Peter said to them, &#147;Repent, and be baptized every one of you in the name of Jesus Christ so that your sins may be forgiven; and you will receive the gift of the Holy Spirit.
+<sup class="ww vnumVis">39</sup>For the promise is for you, for your children, and for all who are far away, everyone whom the Lord our God calls to him.&#148;
+<sup class="ww vnumVis">40</sup>And he testified with many other arguments and exhorted them, saying, &#147;Save yourselves from this corrupt generation.&#148;
+<sup class="ww vnumVis">41</sup>So those who welcomed his message were baptized, and that day about three thousand persons were added.
+<p><sup class="ww vnumVis">42</sup>They devoted themselves to the apostles&#146; teaching and fellowship, to the breaking of bread and the prayers.
+<sup class="ww vnumVis">43</sup>Awe came upon everyone, because many wonders and signs were being done by the apostles.
+<sup class="ww vnumVis">44</sup>All who believed were together and had all things in common;
+<sup class="ww vnumVis">45</sup>they would sell their possessions and goods and distribute the proceeds to all, as any had need.
+<sup class="ww vnumVis">46</sup>Day by day, as they spent much time together in the temple, they broke bread at home and ate their food with glad and generous hearts,
+<sup class="ww vnumVis">47</sup>praising God and having the goodwill of all the people. And day by day the Lord added to their number those who were being saved.
+<p><span class="cc vnumVis">3</span>One day Peter and John were going up to the temple at the hour of prayer, at three o&#146;clock in the afternoon.
+<sup class="ww vnumVis">2</sup>And a man lame from birth was being carried in. People would lay him daily at the gate of the temple called the Beautiful Gate so that he could ask for alms from those entering the temple.
+<sup class="ww vnumVis">3</sup>When he saw Peter and John about to go into the temple, he asked them for alms.
+<sup class="ww vnumVis">4</sup>Peter looked intently at him, as did John, and said, &#147;Look at us.&#148;
+<sup class="ww vnumVis">5</sup>And he fixed his attention on them, expecting to receive something from them.
+<sup class="ww vnumVis">6</sup>But Peter said, &#147;I have no silver or gold, but what I have I give you; in the name of Jesus Christ of Nazareth, stand up and walk.&#148;
+<sup class="ww vnumVis">7</sup>And he took him by the right hand and raised him up; and immediately his feet and ankles were made strong.
+<sup class="ww vnumVis">8</sup>Jumping up, he stood and began to walk, and he entered the temple with them, walking and leaping and praising God.
+<sup class="ww vnumVis">9</sup>All the people saw him walking and praising God,
+<sup class="ww vnumVis">10</sup>and they recognized him as the one who used to sit and ask for alms at the Beautiful Gate of the temple; and they were filled with wonder and amazement at what had happened to him.
+<sup class="ww vnumVis">11</sup>While he clung to Peter and John, all the people ran together to them in the portico called Solomon&#146;s Portico, utterly astonished.
+<p><sup class="ww vnumVis">12</sup>When Peter saw it, he addressed the people, &#147;You Israelites, why do you wonder at this, or why do you stare at us, as though by our own power or piety we had made him walk?
+<sup class="ww vnumVis">13</sup>The God of Abraham, the God of Isaac, and the God of Jacob, the God of our ancestors has glorified his servant Jesus, whom you handed over and rejected in the presence of Pilate, though he had decided to release him.
+<sup class="ww vnumVis">14</sup>But you rejected the Holy and Righteous One and asked to have a murderer given to you,
+<sup class="ww vnumVis">15</sup>and you killed the Author of life, whom God raised from the dead. To this we are witnesses.
+<sup class="ww vnumVis">16</sup>And by faith in his name, his name itself has made this man strong, whom you see and know; and the faith that is through Jesus has given him this perfect health in the presence of all of you.
+<sup class="ww vnumVis">17</sup>&#147;And now, friends, I know that you acted in ignorance, as did also your rulers.
+<sup class="ww vnumVis">18</sup>In this way God fulfilled what he had foretold through all the prophets, that his Messiah would suffer.
+<sup class="ww vnumVis">19</sup>Repent therefore, and turn to God so that your sins may be wiped out,
+<sup class="ww vnumVis">20</sup>so that times of refreshing may come from the presence of the Lord, and that he may send the Messiah appointed for you, that is, Jesus,
+<sup class="ww vnumVis">21</sup>who must remain in heaven until the time of universal restoration that God announced long ago through his holy prophets.
+<sup class="ww vnumVis">22</sup>Moses said, &#145;The Lord your God will raise up for you from your own people a prophet like me. You must listen to whatever he tells you.
+<sup class="ww vnumVis">23</sup>And it will be that everyone who does not listen to that prophet will be utterly rooted out of the people.&#146;
+<sup class="ww vnumVis">24</sup>And all the prophets, as many as have spoken, from Samuel and those after him, also predicted these days.
+<sup class="ww vnumVis">25</sup>You are the descendants of the prophets and of the covenant that God gave to your ancestors, saying to Abraham, &#145;And in your descendants all the families of the earth shall be blessed.&#146;
+<sup class="ww vnumVis">26</sup>When God raised up his servant, he sent him first to you, to bless you by turning each of you from your wicked ways.&#148;
+<p><span class="cc vnumVis">4</span>While Peter and John were speaking to the people, the priests, the captain of the temple, and the Sadducees came to them,
+<sup class="ww vnumVis">2</sup>much annoyed because they were teaching the people and proclaiming that in Jesus there is the resurrection of the dead.
+<sup class="ww vnumVis">3</sup>So they arrested them and put them in custody until the next day, for it was already evening.
+<sup class="ww vnumVis">4</sup>But many of those who heard the word believed; and they numbered about five thousand.
+<p><sup class="ww vnumVis">5</sup>The next day their rulers, elders, and scribes assembled in Jerusalem,
+<sup class="ww vnumVis">6</sup>with Annas the high priest, Caiaphas, John, and Alexander, and all who were of the high-priestly family.
+<sup class="ww vnumVis">7</sup>When they had made the prisoners stand in their midst, they inquired, &#147;By what power or by what name did you do this?&#148;
+<sup class="ww vnumVis">8</sup>Then Peter, filled with the Holy Spirit, said to them, &#147;Rulers of the people and elders,
+<sup class="ww vnumVis">9</sup>if we are questioned today because of a good deed done to someone who was sick and are asked how this man has been healed,
+<sup class="ww vnumVis">10</sup>let it be known to all of you, and to all the people of Israel, that this man is standing before you in good health by the name of Jesus Christ of Nazareth, whom you crucified, whom God raised from the dead.
+<sup class="ww vnumVis">11</sup>This Jesus is &#145;the stone that was rejected by you, the builders; it has become the cornerstone.&#146;
+<sup class="ww vnumVis">12</sup>There is salvation in no one else, for there is no other name under heaven given among mortals by which we must be saved.&#148;
+<sup class="ww vnumVis">13</sup>Now when they saw the boldness of Peter and John and realized that they were uneducated and ordinary men, they were amazed and recognized them as companions of Jesus.
+<sup class="ww vnumVis">14</sup>When they saw the man who had been cured standing beside them, they had nothing to say in opposition.
+<p><sup class="ww vnumVis">15</sup>So they ordered them to leave the council while they discussed the matter with one another.
+<sup class="ww vnumVis">16</sup>They said, &#147;What will we do with them? For it is obvious to all who live in Jerusalem that a notable sign has been done through them; we cannot deny it.
+<sup class="ww vnumVis">17</sup>But to keep it from spreading further among the people, let us warn them to speak no more to anyone in this name.&#148;
+<sup class="ww vnumVis">18</sup>So they called them and ordered them not to speak or teach at all in the name of Jesus.
+<sup class="ww vnumVis">19</sup>But Peter and John answered them, &#147;Whether it is right in God&#146;s sight to listen to you rather than to God, you must judge;
+<sup class="ww vnumVis">20</sup>for we cannot keep from speaking about what we have seen and heard.&#148;
+<sup class="ww vnumVis">21</sup>After threatening them again, they let them go, finding no way to punish them because of the people, for all of them praised God for what had happened.
+<sup class="ww vnumVis">22</sup>For the man on whom this sign of healing had been performed was more than forty years old.
+<p><sup class="ww vnumVis">23</sup>After they were released, they went to their friends and reported what the chief priests and the elders had said to them.
+<sup class="ww vnumVis">24</sup>When they heard it, they raised their voices together to God and said, &#147;Sovereign Lord, who made the heaven and the earth, the sea, and everything in them,
+<sup class="ww vnumVis">25</sup>it is you who said by the Holy Spirit through our ancestor David, your servant: &#145;Why did the Gentiles rage, and the peoples imagine vain things?
+<sup class="ww vnumVis">26</sup>The kings of the earth took their stand, and the rulers have gathered together against the Lord and against his Messiah.&#146;
+<sup class="ww vnumVis">27</sup>For in this city, in fact, both Herod and Pontius Pilate, with the Gentiles and the peoples of Israel, gathered together against your holy servant Jesus, whom you anointed,
+<sup class="ww vnumVis">28</sup>to do whatever your hand and your plan had predestined to take place.
+<sup class="ww vnumVis">29</sup>And now, Lord, look at their threats, and grant to your servants to speak your word with all boldness,
+<sup class="ww vnumVis">30</sup>while you stretch out your hand to heal, and signs and wonders are performed through the name of your holy servant Jesus.&#148;
+<sup class="ww vnumVis">31</sup>When they had prayed, the place in which they were gathered together was shaken; and they were all filled with the Holy Spirit and spoke the word of God with boldness.
+<p><sup class="ww vnumVis">32</sup>Now the whole group of those who believed were of one heart and soul, and no one claimed private ownership of any possessions, but everything they owned was held in common.
+<sup class="ww vnumVis">33</sup>With great power the apostles gave their testimony to the resurrection of the Lord Jesus, and great grace was upon them all.
+<sup class="ww vnumVis">34</sup>There was not a needy person among them, for as many as owned lands or houses sold them and brought the proceeds of what was sold.
+<sup class="ww vnumVis">35</sup>They laid it at the apostles&#146; feet, and it was distributed to each as any had need.
+<sup class="ww vnumVis">36</sup>There was a Levite, a native of Cyprus, Joseph, to whom the apostles gave the name Barnabas (which means &#147;son of encouragement&#148;).
+<sup class="ww vnumVis">37</sup>He sold a field that belonged to him, then brought the money, and laid it at the apostles&#146; feet.
+<p><span class="cc vnumVis">5</span>But a man named Ananias, with the consent of his wife Sapphira, sold a piece of property;
+<sup class="ww vnumVis">2</sup>with his wife&#146;s knowledge, he kept back some of the proceeds, and brought only a part and laid it at the apostles&#146; feet.
+<sup class="ww vnumVis">3</sup>&#147;Ananias,&#148; Peter asked, &#147;why has Satan filled your heart to lie to the Holy Spirit and to keep back part of the proceeds of the land?
+<sup class="ww vnumVis">4</sup>While it remained unsold, did it not remain your own? And after it was sold, were not the proceeds at your disposal? How is it that you have contrived this deed in your heart? You did not lie to us but to God!&#148;
+<sup class="ww vnumVis">5</sup>Now when Ananias heard these words, he fell down and died. And great fear seized all who heard of it.
+<sup class="ww vnumVis">6</sup>The young men came and wrapped up his body, then carried him out and buried him.
+<sup class="ww vnumVis">7</sup>After an interval of about three hours his wife came in, not knowing what had happened.
+<sup class="ww vnumVis">8</sup>Peter said to her, &#147;Tell me whether you and your husband sold the land for such and such a price.&#148; And she said, &#147;Yes, that was the price.&#148;
+<sup class="ww vnumVis">9</sup>Then Peter said to her, &#147;How is it that you have agreed together to put the Spirit of the Lord to the test? Look, the feet of those who have buried your husband are at the door, and they will carry you out.&#148;
+<sup class="ww vnumVis">10</sup>Immediately she fell down at his feet and died. When the young men came in they found her dead, so they carried her out and buried her beside her husband.
+<sup class="ww vnumVis">11</sup>And great fear seized the whole church and all who heard of these things.
+<p><sup class="ww vnumVis">12</sup>Now many signs and wonders were done among the people through the apostles. And they were all together in Solomon&#146;s Portico.
+<sup class="ww vnumVis">13</sup>None of the rest dared to join them, but the people held them in high esteem.
+<sup class="ww vnumVis">14</sup>Yet more than ever believers were added to the Lord, great numbers of both men and women,
+<sup class="ww vnumVis">15</sup>so that they even carried out the sick into the streets, and laid them on cots and mats, in order that Peter&#146;s shadow might fall on some of them as he came by.
+<sup class="ww vnumVis">16</sup>A great number of people would also gather from the towns around Jerusalem, bringing the sick and those tormented by unclean spirits, and they were all cured.
+<p><sup class="ww vnumVis">17</sup>Then the high priest took action; he and all who were with him (that is, the sect of the Sadducees), being filled with jealousy,
+<sup class="ww vnumVis">18</sup>arrested the apostles and put them in the public prison.
+<sup class="ww vnumVis">19</sup>But during the night an angel of the Lord opened the prison doors, brought them out, and said,
+<sup class="ww vnumVis">20</sup>&#147;Go, stand in the temple and tell the people the whole message about this life.&#148;
+<sup class="ww vnumVis">21</sup>When they heard this, they entered the temple at daybreak and went on with their teaching. When the high priest and those with him arrived, they called together the council and the whole body of the elders of Israel, and sent to the prison to have them brought.
+<sup class="ww vnumVis">22</sup>But when the temple police went there, they did not find them in the prison; so they returned and reported,
+<sup class="ww vnumVis">23</sup>&#147;We found the prison securely locked and the guards standing at the doors, but when we opened them, we found no one inside.&#148;
+<sup class="ww vnumVis">24</sup>Now when the captain of the temple and the chief priests heard these words, they were perplexed about them, wondering what might be going on.
+<sup class="ww vnumVis">25</sup>Then someone arrived and announced, &#147;Look, the men whom you put in prison are standing in the temple and teaching the people!&#148;
+<p><sup class="ww vnumVis">26</sup>Then the captain went with the temple police and brought them, but without violence, for they were afraid of being stoned by the people.
+<sup class="ww vnumVis">27</sup>When they had brought them, they had them stand before the council. The high priest questioned them,
+<sup class="ww vnumVis">28</sup>saying, &#147;We gave you strict orders not to teach in this name, yet here you have filled Jerusalem with your teaching and you are determined to bring this man&#146;s blood on us.&#148;
+<sup class="ww vnumVis">29</sup>But Peter and the apostles answered, &#147;We must obey God rather than any human authority.
+<sup class="ww vnumVis">30</sup>The God of our ancestors raised up Jesus, whom you had killed by hanging him on a tree.
+<sup class="ww vnumVis">31</sup>God exalted him at his right hand as Leader and Savior that he might give repentance to Israel and forgiveness of sins.
+<sup class="ww vnumVis">32</sup>And we are witnesses to these things, and so is the Holy Spirit whom God has given to those who obey him.&#148;
+<sup class="ww vnumVis">33</sup>When they heard this, they were enraged and wanted to kill them.
+<sup class="ww vnumVis">34</sup>But a Pharisee in the council named Gamaliel, a teacher of the law, respected by all the people, stood up and ordered the men to be put outside for a short time.
+<sup class="ww vnumVis">35</sup>Then he said to them, &#147;Fellow Israelites, consider carefully what you propose to do to these men.
+<sup class="ww vnumVis">36</sup>For some time ago Theudas rose up, claiming to be somebody, and a number of men, about four hundred, joined him; but he was killed, and all who followed him were dispersed and disappeared.
+<sup class="ww vnumVis">37</sup>After him Judas the Galilean rose up at the time of the census and got people to follow him; he also perished, and all who followed him were scattered.
+<sup class="ww vnumVis">38</sup>So in the present case, I tell you, keep away from these men and let them alone; because if this plan or this undertaking is of human origin, it will fail;
+<sup class="ww vnumVis">39</sup>but if it is of God, you will not be able to overthrow them&#151;in that case you may even be found fighting against God!&#148; They were convinced by him,
+<sup class="ww vnumVis">40</sup>and when they had called in the apostles, they had them flogged. Then they ordered them not to speak in the name of Jesus, and let them go.
+<sup class="ww vnumVis">41</sup>As they left the council, they rejoiced that they were considered worthy to suffer dishonor for the sake of the name.
+<sup class="ww vnumVis">42</sup>And every day in the temple and at home they did not cease to teach and proclaim Jesus as the Messiah.
+<p><span class="cc vnumVis">6</span>Now during those days, when the disciples were increasing in number, the Hellenists complained against the Hebrews because their widows were being neglected in the daily distribution of food.
+<sup class="ww vnumVis">2</sup>And the twelve called together the whole community of the disciples and said, &#147;It is not right that we should neglect the word of God in order to wait on tables.
+<sup class="ww vnumVis">3</sup>Therefore, friends, select from among yourselves seven men of good standing, full of the Spirit and of wisdom, whom we may appoint to this task,
+<sup class="ww vnumVis">4</sup>while we, for our part, will devote ourselves to prayer and to serving the word.&#148;
+<sup class="ww vnumVis">5</sup>What they said pleased the whole community, and they chose Stephen, a man full of faith and the Holy Spirit, together with Philip, Prochorus, Nicanor, Timon, Parmenas, and Nicolaus, a proselyte of Antioch.
+<sup class="ww vnumVis">6</sup>They had these men stand before the apostles, who prayed and laid their hands on them.
+<sup class="ww vnumVis">7</sup>The word of God continued to spread; the number of the disciples increased greatly in Jerusalem, and a great many of the priests became obedient to the faith.
+<p><sup class="ww vnumVis">8</sup>Stephen, full of grace and power, did great wonders and signs among the people.
+<sup class="ww vnumVis">9</sup>Then some of those who belonged to the synagogue of the Freedmen (as it was called), Cyrenians, Alexandrians, and others of those from Cilicia and Asia, stood up and argued with Stephen.
+<sup class="ww vnumVis">10</sup>But they could not withstand the wisdom and the Spirit with which he spoke.
+<sup class="ww vnumVis">11</sup>Then they secretly instigated some men to say, &#147;We have heard him speak blasphemous words against Moses and God.&#148;
+<sup class="ww vnumVis">12</sup>They stirred up the people as well as the elders and the scribes; then they suddenly confronted him, seized him, and brought him before the council.
+<sup class="ww vnumVis">13</sup>They set up false witnesses who said, &#147;This man never stops saying things against this holy place and the law;
+<sup class="ww vnumVis">14</sup>for we have heard him say that this Jesus of Nazareth will destroy this place and will change the customs that Moses handed on to us.&#148;
+<sup class="ww vnumVis">15</sup>And all who sat in the council looked intently at him, and they saw that his face was like the face of an angel.
+<p><span class="cc vnumVis">7</span>Then the high priest asked him, &#147;Are these things so?&#148;
+<sup class="ww vnumVis">2</sup>And Stephen replied: &#147;Brothers and fathers, listen to me. The God of glory appeared to our ancestor Abraham when he was in Mesopotamia, before he lived in Haran,
+<sup class="ww vnumVis">3</sup>and said to him, &#145;Leave your country and your relatives and go to the land that I will show you.&#146;
+<sup class="ww vnumVis">4</sup>Then he left the country of the Chaldeans and settled in Haran. After his father died, God had him move from there to this country in which you are now living.
+<sup class="ww vnumVis">5</sup>He did not give him any of it as a heritage, not even a foot&#146;s length, but promised to give it to him as his possession and to his descendants after him, even though he had no child.
+<sup class="ww vnumVis">6</sup>And God spoke in these terms, that his descendants would be resident aliens in a country belonging to others, who would enslave them and mistreat them during four hundred years.
+<sup class="ww vnumVis">7</sup>&#145;But I will judge the nation that they serve,&#146; said God, &#145;and after that they shall come out and worship me in this place.&#146;
+<sup class="ww vnumVis">8</sup>Then he gave him the covenant of circumcision. And so Abraham became the father of Isaac and circumcised him on the eighth day; and Isaac became the father of Jacob, and Jacob of the twelve patriarchs.
+<sup class="ww vnumVis">9</sup>&#147;The patriarchs, jealous of Joseph, sold him into Egypt; but God was with him,
+<sup class="ww vnumVis">10</sup>and rescued him from all his afflictions, and enabled him to win favor and to show wisdom when he stood before Pharaoh, king of Egypt, who appointed him ruler over Egypt and over all his household.
+<sup class="ww vnumVis">11</sup>Now there came a famine throughout Egypt and Canaan, and great suffering, and our ancestors could find no food.
+<sup class="ww vnumVis">12</sup>But when Jacob heard that there was grain in Egypt, he sent our ancestors there on their first visit.
+<sup class="ww vnumVis">13</sup>On the second visit Joseph made himself known to his brothers, and Joseph&#146;s family became known to Pharaoh.
+<sup class="ww vnumVis">14</sup>Then Joseph sent and invited his father Jacob and all his relatives to come to him, seventy-five in all;
+<sup class="ww vnumVis">15</sup>so Jacob went down to Egypt. He himself died there as well as our ancestors,
+<sup class="ww vnumVis">16</sup>and their bodies were brought back to Shechem and laid in the tomb that Abraham had bought for a sum of silver from the sons of Hamor in Shechem.
+<p><sup class="ww vnumVis">17</sup>&#147;But as the time drew near for the fulfillment of the promise that God had made to Abraham, our people in Egypt increased and multiplied
+<sup class="ww vnumVis">18</sup>until another king who had not known Joseph ruled over Egypt.
+<sup class="ww vnumVis">19</sup>He dealt craftily with our race and forced our ancestors to abandon their infants so that they would die.
+<sup class="ww vnumVis">20</sup>At this time Moses was born, and he was beautiful before God. For three months he was brought up in his father&#146;s house;
+<sup class="ww vnumVis">21</sup>and when he was abandoned, Pharaoh&#146;s daughter adopted him and brought him up as her own son.
+<sup class="ww vnumVis">22</sup>So Moses was instructed in all the wisdom of the Egyptians and was powerful in his words and deeds.
+<sup class="ww vnumVis">23</sup>&#147;When he was forty years old, it came into his heart to visit his relatives, the Israelites.
+<sup class="ww vnumVis">24</sup>When he saw one of them being wronged, he defended the oppressed man and avenged him by striking down the Egyptian.
+<sup class="ww vnumVis">25</sup>He supposed that his kinsfolk would understand that God through him was rescuing them, but they did not understand.
+<sup class="ww vnumVis">26</sup>The next day he came to some of them as they were quarreling and tried to reconcile them, saying, &#145;Men, you are brothers; why do you wrong each other?&#146;
+<sup class="ww vnumVis">27</sup>But the man who was wronging his neighbor pushed Moses aside, saying, &#145;Who made you a ruler and a judge over us?
+<sup class="ww vnumVis">28</sup>Do you want to kill me as you killed the Egyptian yesterday?&#146;
+<sup class="ww vnumVis">29</sup>When he heard this, Moses fled and became a resident alien in the land of Midian. There he became the father of two sons.
+<p><sup class="ww vnumVis">30</sup>&#147;Now when forty years had passed, an angel appeared to him in the wilderness of Mount Sinai, in the flame of a burning bush.
+<sup class="ww vnumVis">31</sup>When Moses saw it, he was amazed at the sight; and as he approached to look, there came the voice of the Lord:
+<sup class="ww vnumVis">32</sup>&#145;I am the God of your ancestors, the God of Abraham, Isaac, and Jacob.&#146; Moses began to tremble and did not dare to look.
+<sup class="ww vnumVis">33</sup>Then the Lord said to him, &#145;Take off the sandals from your feet, for the place where you are standing is holy ground.
+<sup class="ww vnumVis">34</sup>I have surely seen the mistreatment of my people who are in Egypt and have heard their groaning, and I have come down to rescue them. Come now, I will send you to Egypt.&#146;
+<sup class="ww vnumVis">35</sup>&#147;It was this Moses whom they rejected when they said, &#145;Who made you a ruler and a judge?&#146; and whom God now sent as both ruler and liberator through the angel who appeared to him in the bush.
+<sup class="ww vnumVis">36</sup>He led them out, having performed wonders and signs in Egypt, at the Red Sea, and in the wilderness for forty years.
+<sup class="ww vnumVis">37</sup>This is the Moses who said to the Israelites, &#145;God will raise up a prophet for you from your own people as he raised me up.&#146;
+<sup class="ww vnumVis">38</sup>He is the one who was in the congregation in the wilderness with the angel who spoke to him at Mount Sinai, and with our ancestors; and he received living oracles to give to us.
+<sup class="ww vnumVis">39</sup>Our ancestors were unwilling to obey him; instead, they pushed him aside, and in their hearts they turned back to Egypt,
+<sup class="ww vnumVis">40</sup>saying to Aaron, &#145;Make gods for us who will lead the way for us; as for this Moses who led us out from the land of Egypt, we do not know what has happened to him.&#146;
+<sup class="ww vnumVis">41</sup>At that time they made a calf, offered a sacrifice to the idol, and reveled in the works of their hands.
+<p><sup class="ww vnumVis">42</sup>But God turned away from them and handed them over to worship the host of heaven, as it is written in the book of the prophets: &#145;Did you offer to me slain victims and sacrifices forty years in the wilderness, O house of Israel?
+<sup class="ww vnumVis">43</sup>No; you took along the tent of Moloch, and the star of your god Rephan, the images that you made to worship; so I will remove you beyond Babylon.&#146;
+<sup class="ww vnumVis">44</sup>&#147;Our ancestors had the tent of testimony in the wilderness, as God directed when he spoke to Moses, ordering him to make it according to the pattern he had seen.
+<sup class="ww vnumVis">45</sup>Our ancestors in turn brought it in with Joshua when they dispossessed the nations that God drove out before our ancestors. And it was there until the time of David,
+<sup class="ww vnumVis">46</sup>who found favor with God and asked that he might find a dwelling place for the house of Jacob.
+<sup class="ww vnumVis">47</sup>But it was Solomon who built a house for him.
+<sup class="ww vnumVis">48</sup>Yet the Most High does not dwell in houses made with human hands; as the prophet says,
+<sup class="ww vnumVis">49</sup>&#145;Heaven is my throne, and the earth is my footstool. What kind of house will you build for me, says the Lord, or what is the place of my rest?
+<sup class="ww vnumVis">50</sup>Did not my hand make all these things?&#146;
+<p><sup class="ww vnumVis">51</sup>&#148;You stiff-necked people, uncircumcised in heart and ears, you are forever opposing the Holy Spirit, just as your ancestors used to do.
+<sup class="ww vnumVis">52</sup>Which of the prophets did your ancestors not persecute? They killed those who foretold the coming of the Righteous One, and now you have become his betrayers and murderers.
+<sup class="ww vnumVis">53</sup>You are the ones that received the law as ordained by angels, and yet you have not kept it.&#148;
+<p><sup class="ww vnumVis">54</sup>When they heard these things, they became enraged and ground their teeth at Stephen.
+<sup class="ww vnumVis">55</sup>But filled with the Holy Spirit, he gazed into heaven and saw the glory of God and Jesus standing at the right hand of God.
+<sup class="ww vnumVis">56</sup>&#147;Look,&#148; he said, &#147;I see the heavens opened and the Son of Man standing at the right hand of God!&#148;
+<sup class="ww vnumVis">57</sup>But they covered their ears, and with a loud shout all rushed together against him.
+<sup class="ww vnumVis">58</sup>Then they dragged him out of the city and began to stone him; and the witnesses laid their coats at the feet of a young man named Saul.
+<sup class="ww vnumVis">59</sup>While they were stoning Stephen, he prayed, &#147;Lord Jesus, receive my spirit.&#148;
+<sup class="ww vnumVis">60</sup>Then he knelt down and cried out in a loud voice, &#147;Lord, do not hold this sin against them.&#148; When he had said this, he died.
+<p><span class="cc vnumVis">8</span>And Saul approved of their killing him. That day a severe persecution began against the church in Jerusalem, and all except the apostles were scattered throughout the countryside of Judea and Samaria.
+<sup class="ww vnumVis">2</sup>Devout men buried Stephen and made loud lamentation over him.
+<sup class="ww vnumVis">3</sup>But Saul was ravaging the church by entering house after house; dragging off both men and women, he committed them to prison.
+<p><sup class="ww vnumVis">4</sup>Now those who were scattered went from place to place, proclaiming the word.
+<sup class="ww vnumVis">5</sup>Philip went down to the city of Samaria and proclaimed the Messiah to them.
+<sup class="ww vnumVis">6</sup>The crowds with one accord listened eagerly to what was said by Philip, hearing and seeing the signs that he did,
+<sup class="ww vnumVis">7</sup>for unclean spirits, crying with loud shrieks, came out of many who were possessed; and many others who were paralyzed or lame were cured.
+<sup class="ww vnumVis">8</sup>So there was great joy in that city.
+<sup class="ww vnumVis">9</sup>Now a certain man named Simon had previously practiced magic in the city and amazed the people of Samaria, saying that he was someone great.
+<sup class="ww vnumVis">10</sup>All of them, from the least to the greatest, listened to him eagerly, saying, &#147;This man is the power of God that is called Great.&#148;
+<sup class="ww vnumVis">11</sup>And they listened eagerly to him because for a long time he had amazed them with his magic.
+<sup class="ww vnumVis">12</sup>But when they believed Philip, who was proclaiming the good news about the kingdom of God and the name of Jesus Christ, they were baptized, both men and women.
+<sup class="ww vnumVis">13</sup>Even Simon himself believed. After being baptized, he stayed constantly with Philip and was amazed when he saw the signs and great miracles that took place.
+<p><sup class="ww vnumVis">14</sup>Now when the apostles at Jerusalem heard that Samaria had accepted the word of God, they sent Peter and John to them.
+<sup class="ww vnumVis">15</sup>The two went down and prayed for them that they might receive the Holy Spirit
+<sup class="ww vnumVis">16</sup>(for as yet the Spirit had not come upon any of them; they had only been baptized in the name of the Lord Jesus).
+<sup class="ww vnumVis">17</sup>Then Peter and John laid their hands on them, and they received the Holy Spirit.
+<sup class="ww vnumVis">18</sup>Now when Simon saw that the Spirit was given through the laying on of the apostles&#146; hands, he offered them money,
+<sup class="ww vnumVis">19</sup>saying, &#147;Give me also this power so that anyone on whom I lay my hands may receive the Holy Spirit.&#148;
+<sup class="ww vnumVis">20</sup>But Peter said to him, &#147;May your silver perish with you, because you thought you could obtain God&#146;s gift with money!
+<sup class="ww vnumVis">21</sup>You have no part or share in this, for your heart is not right before God.
+<sup class="ww vnumVis">22</sup>Repent therefore of this wickedness of yours, and pray to the Lord that, if possible, the intent of your heart may be forgiven you.
+<sup class="ww vnumVis">23</sup>For I see that you are in the gall of bitterness and the chains of wickedness.&#148;
+<sup class="ww vnumVis">24</sup>Simon answered, &#147;Pray for me to the Lord, that nothing of what you have said may happen to me.&#148;
+<sup class="ww vnumVis">25</sup>Now after Peter and John had testified and spoken the word of the Lord, they returned to Jerusalem, proclaiming the good news to many villages of the Samaritans.
+<p><sup class="ww vnumVis">26</sup>Then an angel of the Lord said to Philip, &#147;Get up and go toward the south to the road that goes down from Jerusalem to Gaza.&#148; (This is a wilderness road.)
+<sup class="ww vnumVis">27</sup>So he got up and went. Now there was an Ethiopian eunuch, a court official of the Candace, queen of the Ethiopians, in charge of her entire treasury. He had come to Jerusalem to worship
+<sup class="ww vnumVis">28</sup>and was returning home; seated in his chariot, he was reading the prophet Isaiah.
+<sup class="ww vnumVis">29</sup>Then the Spirit said to Philip, &#147;Go over to this chariot and join it.&#148;
+<sup class="ww vnumVis">30</sup>So Philip ran up to it and heard him reading the prophet Isaiah. He asked, &#147;Do you understand what you are reading?&#148;
+<sup class="ww vnumVis">31</sup>He replied, &#147;How can I, unless someone guides me?&#148; And he invited Philip to get in and sit beside him.
+<sup class="ww vnumVis">32</sup>Now the passage of the scripture that he was reading was this: &#147;Like a sheep he was led to the slaughter, and like a lamb silent before its shearer, so he does not open his mouth.
+<sup class="ww vnumVis">33</sup>In his humiliation justice was denied him. Who can describe his generation? For his life is taken away from the earth.&#148;
+<sup class="ww vnumVis">34</sup>The eunuch asked Philip, &#147;About whom, may I ask you, does the prophet say this, about himself or about someone else?&#148;
+<sup class="ww vnumVis">35</sup>Then Philip began to speak, and starting with this scripture, he proclaimed to him the good news about Jesus.
+<sup class="ww vnumVis">36</sup>As they were going along the road, they came to some water; and the eunuch said, &#147;Look, here is water! What is to prevent me from being baptized?&#148;
+<sup class="ww vnumVis">38</sup>He commanded the chariot to stop, and both of them, Philip and the eunuch, went down into the water, and Philip baptized him.
+<sup class="ww vnumVis">39</sup>When they came up out of the water, the Spirit of the Lord snatched Philip away; the eunuch saw him no more, and went on his way rejoicing.
+<sup class="ww vnumVis">40</sup>But Philip found himself at Azotus, and as he was passing through the region, he proclaimed the good news to all the towns until he came to Caesarea.
+<p><span class="cc vnumVis">9</span>Meanwhile Saul, still breathing threats and murder against the disciples of the Lord, went to the high priest
+<sup class="ww vnumVis">2</sup>and asked him for letters to the synagogues at Damascus, so that if he found any who belonged to the Way, men or women, he might bring them bound to Jerusalem.
+<sup class="ww vnumVis">3</sup>Now as he was going along and approaching Damascus, suddenly a light from heaven flashed around him.
+<sup class="ww vnumVis">4</sup>He fell to the ground and heard a voice saying to him, &#147;Saul, Saul, why do you persecute me?&#148;
+<sup class="ww vnumVis">5</sup>He asked, &#147;Who are you, Lord?&#148; The reply came, &#147;I am Jesus, whom you are persecuting.
+<sup class="ww vnumVis">6</sup>But get up and enter the city, and you will be told what you are to do.&#148;
+<sup class="ww vnumVis">7</sup>The men who were traveling with him stood speechless because they heard the voice but saw no one.
+<sup class="ww vnumVis">8</sup>Saul got up from the ground, and though his eyes were open, he could see nothing; so they led him by the hand and brought him into Damascus.
+<sup class="ww vnumVis">9</sup>For three days he was without sight, and neither ate nor drank.
+<p><sup class="ww vnumVis">10</sup>Now there was a disciple in Damascus named Ananias. The Lord said to him in a vision, &#147;Ananias.&#148; He answered, &#147;Here I am, Lord.&#148;
+<sup class="ww vnumVis">11</sup>The Lord said to him, &#147;Get up and go to the street called Straight, and at the house of Judas look for a man of Tarsus named Saul. At this moment he is praying,
+<sup class="ww vnumVis">12</sup>and he has seen in a vision a man named Ananias come in and lay his hands on him so that he might regain his sight.&#148;
+<sup class="ww vnumVis">13</sup>But Ananias answered, &#147;Lord, I have heard from many about this man, how much evil he has done to your saints in Jerusalem;
+<sup class="ww vnumVis">14</sup>and here he has authority from the chief priests to bind all who invoke your name.&#148;
+<sup class="ww vnumVis">15</sup>But the Lord said to him, &#147;Go, for he is an instrument whom I have chosen to bring my name before Gentiles and kings and before the people of Israel;
+<sup class="ww vnumVis">16</sup>I myself will show him how much he must suffer for the sake of my name.&#148;
+<sup class="ww vnumVis">17</sup>So Ananias went and entered the house. He laid his hands on Saul and said, &#147;Brother Saul, the Lord Jesus, who appeared to you on your way here, has sent me so that you may regain your sight and be filled with the Holy Spirit.&#148;
+<sup class="ww vnumVis">18</sup>And immediately something like scales fell from his eyes, and his sight was restored. Then he got up and was baptized,
+<sup class="ww vnumVis">19</sup>and after taking some food, he regained his strength. For several days he was with the disciples in Damascus,
+<sup class="ww vnumVis">20</sup>and immediately he began to proclaim Jesus in the synagogues, saying, &#147;He is the Son of God.&#148;
+<sup class="ww vnumVis">21</sup>All who heard him were amazed and said, &#147;Is not this the man who made havoc in Jerusalem among those who invoked this name? And has he not come here for the purpose of bringing them bound before the chief priests?&#148;
+<sup class="ww vnumVis">22</sup>Saul became increasingly more powerful and confounded the Jews who lived in Damascus by proving that Jesus was the Messiah.
+<p><sup class="ww vnumVis">23</sup>After some time had passed, the Jews plotted to kill him,
+<sup class="ww vnumVis">24</sup>but their plot became known to Saul. They were watching the gates day and night so that they might kill him;
+<sup class="ww vnumVis">25</sup>but his disciples took him by night and let him down through an opening in the wall, lowering him in a basket.
+<sup class="ww vnumVis">26</sup>When he had come to Jerusalem, he attempted to join the disciples; and they were all afraid of him, for they did not believe that he was a disciple.
+<sup class="ww vnumVis">27</sup>But Barnabas took him, brought him to the apostles, and described for them how on the road he had seen the Lord, who had spoken to him, and how in Damascus he had spoken boldly in the name of Jesus.
+<sup class="ww vnumVis">28</sup>So he went in and out among them in Jerusalem, speaking boldly in the name of the Lord.
+<sup class="ww vnumVis">29</sup>He spoke and argued with the Hellenists; but they were attempting to kill him.
+<sup class="ww vnumVis">30</sup>When the believers learned of it, they brought him down to Caesarea and sent him off to Tarsus.
+<sup class="ww vnumVis">31</sup>Meanwhile the church throughout Judea, Galilee, and Samaria had peace and was built up. Living in the fear of the Lord and in the comfort of the Holy Spirit, it increased in numbers.
+<p><sup class="ww vnumVis">32</sup>Now as Peter went here and there among all the believers, he came down also to the saints living in Lydda.
+<sup class="ww vnumVis">33</sup>There he found a man named Aeneas, who had been bedridden for eight years, for he was paralyzed.
+<sup class="ww vnumVis">34</sup>Peter said to him, &#147;Aeneas, Jesus Christ heals you; get up and make your bed!&#148; And immediately he got up.
+<sup class="ww vnumVis">35</sup>And all the residents of Lydda and Sharon saw him and turned to the Lord.
+<p><sup class="ww vnumVis">36</sup>Now in Joppa there was a disciple whose name was Tabitha, which in Greek is Dorcas. She was devoted to good works and acts of charity.
+<sup class="ww vnumVis">37</sup>At that time she became ill and died. When they had washed her, they laid her in a room upstairs.
+<sup class="ww vnumVis">38</sup>Since Lydda was near Joppa, the disciples, who heard that Peter was there, sent two men to him with the request, &#147;Please come to us without delay.&#148;
+<sup class="ww vnumVis">39</sup>So Peter got up and went with them; and when he arrived, they took him to the room upstairs. All the widows stood beside him, weeping and showing tunics and other clothing that Dorcas had made while she was with them.
+<sup class="ww vnumVis">40</sup>Peter put all of them outside, and then he knelt down and prayed. He turned to the body and said, &#147;Tabitha, get up.&#148; Then she opened her eyes, and seeing Peter, she sat up.
+<sup class="ww vnumVis">41</sup>He gave her his hand and helped her up. Then calling the saints and widows, he showed her to be alive.
+<sup class="ww vnumVis">42</sup>This became known throughout Joppa, and many believed in the Lord.
+<sup class="ww vnumVis">43</sup>Meanwhile he stayed in Joppa for some time with a certain Simon, a tanner.
+<p><span class="cc vnumVis">10</span>In Caesarea there was a man named Cornelius, a centurion of the Italian Cohort, as it was called.
+<sup class="ww vnumVis">2</sup>He was a devout man who feared God with all his household; he gave alms generously to the people and prayed constantly to God.
+<sup class="ww vnumVis">3</sup>One afternoon at about three o&#146;clock he had a vision in which he clearly saw an angel of God coming in and saying to him, &#147;Cornelius.&#148;
+<sup class="ww vnumVis">4</sup>He stared at him in terror and said, &#147;What is it, Lord?&#148; He answered, &#147;Your prayers and your alms have ascended as a memorial before God.
+<sup class="ww vnumVis">5</sup>Now send men to Joppa for a certain Simon who is called Peter;
+<sup class="ww vnumVis">6</sup>he is lodging with Simon, a tanner, whose house is by the seaside.&#148;
+<sup class="ww vnumVis">7</sup>When the angel who spoke to him had left, he called two of his slaves and a devout soldier from the ranks of those who served him,
+<sup class="ww vnumVis">8</sup>and after telling them everything, he sent them to Joppa.
+<p><sup class="ww vnumVis">9</sup>About noon the next day, as they were on their journey and approaching the city, Peter went up on the roof to pray.
+<sup class="ww vnumVis">10</sup>He became hungry and wanted something to eat; and while it was being prepared, he fell into a trance.
+<sup class="ww vnumVis">11</sup>He saw the heaven opened and something like a large sheet coming down, being lowered to the ground by its four corners.
+<sup class="ww vnumVis">12</sup>In it were all kinds of four-footed creatures and reptiles and birds of the air.
+<sup class="ww vnumVis">13</sup>Then he heard a voice saying, &#147;Get up, Peter; kill and eat.&#148;
+<sup class="ww vnumVis">14</sup>But Peter said, &#147;By no means, Lord; for I have never eaten anything that is profane or unclean.&#148;
+<sup class="ww vnumVis">15</sup>The voice said to him again, a second time, &#147;What God has made clean, you must not call profane.&#148;
+<sup class="ww vnumVis">16</sup>This happened three times, and the thing was suddenly taken up to heaven.
+<sup class="ww vnumVis">17</sup>Now while Peter was greatly puzzled about what to make of the vision that he had seen, suddenly the men sent by Cornelius appeared. They were asking for Simon&#146;s house and were standing by the gate.
+<sup class="ww vnumVis">18</sup>They called out to ask whether Simon, who was called Peter, was staying there.
+<p><sup class="ww vnumVis">19</sup>While Peter was still thinking about the vision, the Spirit said to him, &#147;Look, three men are searching for you.
+<sup class="ww vnumVis">20</sup>Now get up, go down, and go with them without hesitation; for I have sent them.&#148;
+<sup class="ww vnumVis">21</sup>So Peter went down to the men and said, &#147;I am the one you are looking for; what is the reason for your coming?&#148;
+<sup class="ww vnumVis">22</sup>They answered, &#147;Cornelius, a centurion, an upright and God-fearing man, who is well spoken of by the whole Jewish nation, was directed by a holy angel to send for you to come to his house and to hear what you have to say.&#148;
+<sup class="ww vnumVis">23</sup>So Peter invited them in and gave them lodging. The next day he got up and went with them, and some of the believers from Joppa accompanied him.
+<sup class="ww vnumVis">24</sup>The following day they came to Caesarea. Cornelius was expecting them and had called together his relatives and close friends.
+<sup class="ww vnumVis">25</sup>On Peter&#146;s arrival Cornelius met him, and falling at his feet, worshiped him.
+<sup class="ww vnumVis">26</sup>But Peter made him get up, saying, &#147;Stand up; I am only a mortal.&#148;
+<sup class="ww vnumVis">27</sup>And as he talked with him, he went in and found that many had assembled;
+<sup class="ww vnumVis">28</sup>and he said to them, &#147;You yourselves know that it is unlawful for a Jew to associate with or to visit a Gentile; but God has shown me that I should not call anyone profane or unclean.
+<sup class="ww vnumVis">29</sup>So when I was sent for, I came without objection. Now may I ask why you sent for me?&#148;
+<sup class="ww vnumVis">30</sup>Cornelius replied, &#147;Four days ago at this very hour, at three o&#146;clock, I was praying in my house when suddenly a man in dazzling clothes stood before me.
+<sup class="ww vnumVis">31</sup>He said, &#145;Cornelius, your prayer has been heard and your alms have been remembered before God.
+<sup class="ww vnumVis">32</sup>Send therefore to Joppa and ask for Simon, who is called Peter; he is staying in the home of Simon, a tanner, by the sea.&#146;
+<sup class="ww vnumVis">33</sup>Therefore I sent for you immediately, and you have been kind enough to come. So now all of us are here in the presence of God to listen to all that the Lord has commanded you to say.&#148;
+<p><sup class="ww vnumVis">34</sup>Then Peter began to speak to them: &#147;I truly understand that God shows no partiality,
+<sup class="ww vnumVis">35</sup>but in every nation anyone who fears him and does what is right is acceptable to him.
+<sup class="ww vnumVis">36</sup>You know the message he sent to the people of Israel, preaching peace by Jesus Christ&#151;he is Lord of all.
+<sup class="ww vnumVis">37</sup>That message spread throughout Judea, beginning in Galilee after the baptism that John announced:
+<sup class="ww vnumVis">38</sup>how God anointed Jesus of Nazareth with the Holy Spirit and with power; how he went about doing good and healing all who were oppressed by the devil, for God was with him.
+<sup class="ww vnumVis">39</sup>We are witnesses to all that he did both in Judea and in Jerusalem. They put him to death by hanging him on a tree;
+<sup class="ww vnumVis">40</sup>but God raised him on the third day and allowed him to appear,
+<sup class="ww vnumVis">41</sup>not to all the people but to us who were chosen by God as witnesses, and who ate and drank with him after he rose from the dead.
+<sup class="ww vnumVis">42</sup>He commanded us to preach to the people and to testify that he is the one ordained by God as judge of the living and the dead.
+<sup class="ww vnumVis">43</sup>All the prophets testify about him that everyone who believes in him receives forgiveness of sins through his name.&#148;
+<p><sup class="ww vnumVis">44</sup>While Peter was still speaking, the Holy Spirit fell upon all who heard the word.
+<sup class="ww vnumVis">45</sup>The circumcised believers who had come with Peter were astounded that the gift of the Holy Spirit had been poured out even on the Gentiles,
+<sup class="ww vnumVis">46</sup>for they heard them speaking in tongues and extolling God. Then Peter said,
+<sup class="ww vnumVis">47</sup>&#147;Can anyone withhold the water for baptizing these people who have received the Holy Spirit just as we have?&#148;
+<sup class="ww vnumVis">48</sup>So he ordered them to be baptized in the name of Jesus Christ. Then they invited him to stay for several days.
+<p><span class="cc vnumVis">11</span>Now the apostles and the believers who were in Judea heard that the Gentiles had also accepted the word of God.
+<sup class="ww vnumVis">2</sup>So when Peter went up to Jerusalem, the circumcised believers criticized him,
+<sup class="ww vnumVis">3</sup>saying, &#147;Why did you go to uncircumcised men and eat with them?&#148;
+<sup class="ww vnumVis">4</sup>Then Peter began to explain it to them, step by step, saying,
+<sup class="ww vnumVis">5</sup>&#147;I was in the city of Joppa praying, and in a trance I saw a vision. There was something like a large sheet coming down from heaven, being lowered by its four corners; and it came close to me.
+<sup class="ww vnumVis">6</sup>As I looked at it closely I saw four-footed animals, beasts of prey, reptiles, and birds of the air.
+<sup class="ww vnumVis">7</sup>I also heard a voice saying to me, &#145;Get up, Peter; kill and eat.&#146;
+<sup class="ww vnumVis">8</sup>But I replied, &#145;By no means, Lord; for nothing profane or unclean has ever entered my mouth.&#146;
+<sup class="ww vnumVis">9</sup>But a second time the voice answered from heaven, &#145;What God has made clean, you must not call profane.&#146;
+<sup class="ww vnumVis">10</sup>This happened three times; then everything was pulled up again to heaven.
+<sup class="ww vnumVis">11</sup>At that very moment three men, sent to me from Caesarea, arrived at the house where we were.
+<sup class="ww vnumVis">12</sup>The Spirit told me to go with them and not to make a distinction between them and us. These six brothers also accompanied me, and we entered the man&#146;s house.
+<sup class="ww vnumVis">13</sup>He told us how he had seen the angel standing in his house and saying, &#145;Send to Joppa and bring Simon, who is called Peter;
+<sup class="ww vnumVis">14</sup>he will give you a message by which you and your entire household will be saved.&#146;
+<sup class="ww vnumVis">15</sup>And as I began to speak, the Holy Spirit fell upon them just as it had upon us at the beginning.
+<sup class="ww vnumVis">16</sup>And I remembered the word of the Lord, how he had said, &#145;John baptized with water, but you will be baptized with the Holy Spirit.&#146;
+<sup class="ww vnumVis">17</sup>If then God gave them the same gift that he gave us when we believed in the Lord Jesus Christ, who was I that I could hinder God?&#148;
+<sup class="ww vnumVis">18</sup>When they heard this, they were silenced. And they praised God, saying, &#147;Then God has given even to the Gentiles the repentance that leads to life.&#148;
+<p><sup class="ww vnumVis">19</sup>Now those who were scattered because of the persecution that took place over Stephen traveled as far as Phoenicia, Cyprus, and Antioch, and they spoke the word to no one except Jews.
+<sup class="ww vnumVis">20</sup>But among them were some men of Cyprus and Cyrene who, on coming to Antioch, spoke to the Hellenists also, proclaiming the Lord Jesus.
+<sup class="ww vnumVis">21</sup>The hand of the Lord was with them, and a great number became believers and turned to the Lord.
+<sup class="ww vnumVis">22</sup>News of this came to the ears of the church in Jerusalem, and they sent Barnabas to Antioch.
+<sup class="ww vnumVis">23</sup>When he came and saw the grace of God, he rejoiced, and he exhorted them all to remain faithful to the Lord with steadfast devotion;
+<sup class="ww vnumVis">24</sup>for he was a good man, full of the Holy Spirit and of faith. And a great many people were brought to the Lord.
+<sup class="ww vnumVis">25</sup>Then Barnabas went to Tarsus to look for Saul,
+<sup class="ww vnumVis">26</sup>and when he had found him, he brought him to Antioch. So it was that for an entire year they met with the church and taught a great many people, and it was in Antioch that the disciples were first called &#147;Christians.&#148;
+<p><sup class="ww vnumVis">27</sup>At that time prophets came down from Jerusalem to Antioch.
+<sup class="ww vnumVis">28</sup>One of them named Agabus stood up and predicted by the Spirit that there would be a severe famine over all the world; and this took place during the reign of Claudius.
+<sup class="ww vnumVis">29</sup>The disciples determined that according to their ability, each would send relief to the believers living in Judea;
+<sup class="ww vnumVis">30</sup>this they did, sending it to the elders by Barnabas and Saul.
+<p><span class="cc vnumVis">12</span>About that time King Herod laid violent hands upon some who belonged to the church.
+<sup class="ww vnumVis">2</sup>He had James, the brother of John, killed with the sword.
+<sup class="ww vnumVis">3</sup>After he saw that it pleased the Jews, he proceeded to arrest Peter also. (This was during the festival of Unleavened Bread.)
+<sup class="ww vnumVis">4</sup>When he had seized him, he put him in prison and handed him over to four squads of soldiers to guard him, intending to bring him out to the people after the Passover.
+<p><sup class="ww vnumVis">5</sup>While Peter was kept in prison, the church prayed fervently to God for him.
+<sup class="ww vnumVis">6</sup>The very night before Herod was going to bring him out, Peter, bound with two chains, was sleeping between two soldiers, while guards in front of the door were keeping watch over the prison.
+<sup class="ww vnumVis">7</sup>Suddenly an angel of the Lord appeared and a light shone in the cell. He tapped Peter on the side and woke him, saying, &#147;Get up quickly.&#148; And the chains fell off his wrists.
+<sup class="ww vnumVis">8</sup>The angel said to him, &#147;Fasten your belt and put on your sandals.&#148; He did so. Then he said to him, &#147;Wrap your cloak around you and follow me.&#148;
+<sup class="ww vnumVis">9</sup>Peter went out and followed him; he did not realize that what was happening with the angel&#146;s help was real; he thought he was seeing a vision.
+<sup class="ww vnumVis">10</sup>After they had passed the first and the second guard, they came before the iron gate leading into the city. It opened for them of its own accord, and they went outside and walked along a lane, when suddenly the angel left him.
+<sup class="ww vnumVis">11</sup>Then Peter came to himself and said, &#147;Now I am sure that the Lord has sent his angel and rescued me from the hands of Herod and from all that the Jewish people were expecting.&#148;
+<sup class="ww vnumVis">12</sup>As soon as he realized this, he went to the house of Mary, the mother of John whose other name was Mark, where many had gathered and were praying.
+<sup class="ww vnumVis">13</sup>When he knocked at the outer gate, a maid named Rhoda came to answer.
+<sup class="ww vnumVis">14</sup>On recognizing Peter&#146;s voice, she was so overjoyed that, instead of opening the gate, she ran in and announced that Peter was standing at the gate.
+<sup class="ww vnumVis">15</sup>They said to her, &#147;You are out of your mind!&#148; But she insisted that it was so. They said, &#147;It is his angel.&#148;
+<sup class="ww vnumVis">16</sup>Meanwhile Peter continued knocking; and when they opened the gate, they saw him and were amazed.
+<sup class="ww vnumVis">17</sup>He motioned to them with his hand to be silent, and described for them how the Lord had brought him out of the prison. And he added, &#147;Tell this to James and to the believers.&#148; Then he left and went to another place.
+<sup class="ww vnumVis">18</sup>When morning came, there was no small commotion among the soldiers over what had become of Peter.
+<sup class="ww vnumVis">19</sup>When Herod had searched for him and could not find him, he examined the guards and ordered them to be put to death. Then he went down from Judea to Caesarea and stayed there.
+<p><sup class="ww vnumVis">20</sup>Now Herod was angry with the people of Tyre and Sidon. So they came to him in a body; and after winning over Blastus, the king&#146;s chamberlain, they asked for a reconciliation, because their country depended on the king&#146;s country for food.
+<sup class="ww vnumVis">21</sup>On an appointed day Herod put on his royal robes, took his seat on the platform, and delivered a public address to them.
+<sup class="ww vnumVis">22</sup>The people kept shouting, &#147;The voice of a god, and not of a mortal!&#148;
+<sup class="ww vnumVis">23</sup>And immediately, because he had not given the glory to God, an angel of the Lord struck him down, and he was eaten by worms and died.
+<sup class="ww vnumVis">24</sup>But the word of God continued to advance and gain adherents.
+<sup class="ww vnumVis">25</sup>Then after completing their mission Barnabas and Saul returned to Jerusalem and brought with them John, whose other name was Mark.
+<p><span class="cc vnumVis">13</span>Now in the church at Antioch there were prophets and teachers: Barnabas, Simeon who was called Niger, Lucius of Cyrene, Manaen a member of the court of Herod the ruler, and Saul.
+<sup class="ww vnumVis">2</sup>While they were worshiping the Lord and fasting, the Holy Spirit said, &#147;Set apart for me Barnabas and Saul for the work to which I have called them.&#148;
+<sup class="ww vnumVis">3</sup>Then after fasting and praying they laid their hands on them and sent them off.
+<p><sup class="ww vnumVis">4</sup>So, being sent out by the Holy Spirit, they went down to Seleucia; and from there they sailed to Cyprus.
+<sup class="ww vnumVis">5</sup>When they arrived at Salamis, they proclaimed the word of God in the synagogues of the Jews. And they had John also to assist them.
+<sup class="ww vnumVis">6</sup>When they had gone through the whole island as far as Paphos, they met a certain magician, a Jewish false prophet, named Bar-Jesus.
+<sup class="ww vnumVis">7</sup>He was with the proconsul, Sergius Paulus, an intelligent man, who summoned Barnabas and Saul and wanted to hear the word of God.
+<sup class="ww vnumVis">8</sup>But the magician Elymas (for that is the translation of his name) opposed them and tried to turn the proconsul away from the faith.
+<sup class="ww vnumVis">9</sup>But Saul, also known as Paul, filled with the Holy Spirit, looked intently at him
+<sup class="ww vnumVis">10</sup>and said, &#147;You son of the devil, you enemy of all righteousness, full of all deceit and villainy, will you not stop making crooked the straight paths of the Lord?
+<sup class="ww vnumVis">11</sup>And now listen&#151;the hand of the Lord is against you, and you will be blind for a while, unable to see the sun.&#148; Immediately mist and darkness came over him, and he went about groping for someone to lead him by the hand.
+<sup class="ww vnumVis">12</sup>When the proconsul saw what had happened, he believed, for he was astonished at the teaching about the Lord.
+<sup class="ww vnumVis">13</sup>Then Paul and his companions set sail from Paphos and came to Perga in Pamphylia. John, however, left them and returned to Jerusalem;
+<p><sup class="ww vnumVis">14</sup>but they went on from Perga and came to Antioch in Pisidia. And on the sabbath day they went into the synagogue and sat down.
+<sup class="ww vnumVis">15</sup>After the reading of the law and the prophets, the officials of the synagogue sent them a message, saying, &#147;Brothers, if you have any word of exhortation for the people, give it.&#148;
+<sup class="ww vnumVis">16</sup>So Paul stood up and with a gesture began to speak: &#147;You Israelites, and others who fear God, listen.
+<sup class="ww vnumVis">17</sup>The God of this people Israel chose our ancestors and made the people great during their stay in the land of Egypt, and with uplifted arm he led them out of it.
+<sup class="ww vnumVis">18</sup>For about forty years he put up with them in the wilderness.
+<sup class="ww vnumVis">19</sup>After he had destroyed seven nations in the land of Canaan, he gave them their land as an inheritance
+<sup class="ww vnumVis">20</sup>for about four hundred fifty years. After that he gave them judges until the time of the prophet Samuel.
+<sup class="ww vnumVis">21</sup>Then they asked for a king; and God gave them Saul son of Kish, a man of the tribe of Benjamin, who reigned for forty years.
+<sup class="ww vnumVis">22</sup>When he had removed him, he made David their king. In his testimony about him he said, &#145;I have found David, son of Jesse, to be a man after my heart, who will carry out all my wishes.&#146;
+<sup class="ww vnumVis">23</sup>Of this man&#146;s posterity God has brought to Israel a Savior, Jesus, as he promised;
+<sup class="ww vnumVis">24</sup>before his coming John had already proclaimed a baptism of repentance to all the people of Israel.
+<sup class="ww vnumVis">25</sup>And as John was finishing his work, he said, &#145;What do you suppose that I am? I am not he. No, but one is coming after me; I am not worthy to untie the thong of the sandals on his feet.&#148;
+<sup class="ww vnumVis">26</sup>&#147;My brothers, you descendants of Abraham&#146;s family, and others who fear God, to us the message of this salvation has been sent.
+<sup class="ww vnumVis">27</sup>Because the residents of Jerusalem and their leaders did not recognize him or understand the words of the prophets that are read every sabbath, they fulfilled those words by condemning him.
+<sup class="ww vnumVis">28</sup>Even though they found no cause for a sentence of death, they asked Pilate to have him killed.
+<sup class="ww vnumVis">29</sup>When they had carried out everything that was written about him, they took him down from the tree and laid him in a tomb.
+<sup class="ww vnumVis">30</sup>But God raised him from the dead;
+<sup class="ww vnumVis">31</sup>and for many days he appeared to those who came up with him from Galilee to Jerusalem, and they are now his witnesses to the people.
+<sup class="ww vnumVis">32</sup>And we bring you the good news that what God promised to our ancestors
+<sup class="ww vnumVis">33</sup>he has fulfilled for us, their children, by raising Jesus; as also it is written in the second psalm, &#145;You are my Son; today I have begotten you.&#146;
+<sup class="ww vnumVis">34</sup>As to his raising him from the dead, no more to return to corruption, he has spoken in this way, &#145;I will give you the holy promises made to David.&#146;
+<sup class="ww vnumVis">35</sup>Therefore he has also said in another psalm, &#145;You will not let your Holy One experience corruption.&#146;
+<sup class="ww vnumVis">36</sup>For David, after he had served the purpose of God in his own generation, died, was laid beside his ancestors, and experienced corruption;
+<sup class="ww vnumVis">37</sup>but he whom God raised up experienced no corruption.
+<sup class="ww vnumVis">38</sup>Let it be known to you therefore, my brothers, that through this man forgiveness of sins is proclaimed to you;
+<sup class="ww vnumVis">39</sup>by this Jesus everyone who believes is set free from all those sins from which you could not be freed by the law of Moses.
+<sup class="ww vnumVis">40</sup>Beware, therefore, that what the prophets said does not happen to you:
+<sup class="ww vnumVis">41</sup>&#145;Look, you scoffers! Be amazed and perish, for in your days I am doing a work, a work that you will never believe, even if someone tells you.&#146;&#148;
+<p><sup class="ww vnumVis">42</sup>As Paul and Barnabas were going out, the people urged them to speak about these things again the next sabbath.
+<sup class="ww vnumVis">43</sup>When the meeting of the synagogue broke up, many Jews and devout converts to Judaism followed Paul and Barnabas, who spoke to them and urged them to continue in the grace of God.
+<sup class="ww vnumVis">44</sup>The next sabbath almost the whole city gathered to hear the word of the Lord.
+<sup class="ww vnumVis">45</sup>But when the Jews saw the crowds, they were filled with jealousy; and blaspheming, they contradicted what was spoken by Paul.
+<sup class="ww vnumVis">46</sup>Then both Paul and Barnabas spoke out boldly, saying, &#147;It was necessary that the word of God should be spoken first to you. Since you reject it and judge yourselves to be unworthy of eternal life, we are now turning to the Gentiles.
+<sup class="ww vnumVis">47</sup>For so the Lord has commanded us, saying, &#145;I have set you to be a light for the Gentiles, so that you may bring salvation to the ends of the earth.&#146;&#148;
+<sup class="ww vnumVis">48</sup>When the Gentiles heard this, they were glad and praised the word of the Lord; and as many as had been destined for eternal life became believers.
+<sup class="ww vnumVis">49</sup>Thus the word of the Lord spread throughout the region.
+<sup class="ww vnumVis">50</sup>But the Jews incited the devout women of high standing and the leading men of the city, and stirred up persecution against Paul and Barnabas, and drove them out of their region.
+<sup class="ww vnumVis">51</sup>So they shook the dust off their feet in protest against them, and went to Iconium.
+<sup class="ww vnumVis">52</sup>And the disciples were filled with joy and with the Holy Spirit.
+<p><span class="cc vnumVis">14</span>The same thing occurred in Iconium, where Paul and Barnabas went into the Jewish synagogue and spoke in such a way that a great number of both Jews and Greeks became believers.
+<sup class="ww vnumVis">2</sup>But the unbelieving Jews stirred up the Gentiles and poisoned their minds against the brothers.
+<sup class="ww vnumVis">3</sup>So they remained for a long time, speaking boldly for the Lord, who testified to the word of his grace by granting signs and wonders to be done through them.
+<sup class="ww vnumVis">4</sup>But the residents of the city were divided; some sided with the Jews, and some with the apostles.
+<sup class="ww vnumVis">5</sup>And when an attempt was made by both Gentiles and Jews, with their rulers, to mistreat them and to stone them,
+<sup class="ww vnumVis">6</sup>the apostles learned of it and fled to Lystra and Derbe, cities of Lycaonia, and to the surrounding country;
+<sup class="ww vnumVis">7</sup>and there they continued proclaiming the good news.
+<p><sup class="ww vnumVis">8</sup>In Lystra there was a man sitting who could not use his feet and had never walked, for he had been crippled from birth.
+<sup class="ww vnumVis">9</sup>He listened to Paul as he was speaking. And Paul, looking at him intently and seeing that he had faith to be healed,
+<sup class="ww vnumVis">10</sup>said in a loud voice, &#147;Stand upright on your feet.&#148; And the man sprang up and began to walk.
+<sup class="ww vnumVis">11</sup>When the crowds saw what Paul had done, they shouted in the Lycaonian language, &#147;The gods have come down to us in human form!&#148;
+<sup class="ww vnumVis">12</sup>Barnabas they called Zeus, and Paul they called Hermes, because he was the chief speaker.
+<sup class="ww vnumVis">13</sup>The priest of Zeus, whose temple was just outside the city, brought oxen and garlands to the gates; he and the crowds wanted to offer sacrifice.
+<sup class="ww vnumVis">14</sup>When the apostles Barnabas and Paul heard of it, they tore their clothes and rushed out into the crowd, shouting,
+<sup class="ww vnumVis">15</sup>&#147;Friends, why are you doing this? We are mortals just like you, and we bring you good news, that you should turn from these worthless things to the living God, who made the heaven and the earth and the sea and all that is in them.
+<sup class="ww vnumVis">16</sup>In past generations he allowed all the nations to follow their own ways;
+<sup class="ww vnumVis">17</sup>yet he has not left himself without a witness in doing good&#151;giving you rains from heaven and fruitful seasons, and filling you with food and your hearts with joy.&#148;
+<sup class="ww vnumVis">18</sup>Even with these words, they scarcely restrained the crowds from offering sacrifice to them.
+<p><sup class="ww vnumVis">19</sup>But Jews came there from Antioch and Iconium and won over the crowds. Then they stoned Paul and dragged him out of the city, supposing that he was dead.
+<sup class="ww vnumVis">20</sup>But when the disciples surrounded him, he got up and went into the city. The next day he went on with Barnabas to Derbe.
+<sup class="ww vnumVis">21</sup>After they had proclaimed the good news to that city and had made many disciples, they returned to Lystra, then on to Iconium and Antioch.
+<sup class="ww vnumVis">22</sup>There they strengthened the souls of the disciples and encouraged them to continue in the faith, saying, &#147;It is through many persecutions that we must enter the kingdom of God.&#148;
+<sup class="ww vnumVis">23</sup>And after they had appointed elders for them in each church, with prayer and fasting they entrusted them to the Lord in whom they had come to believe.
+<sup class="ww vnumVis">24</sup>Then they passed through Pisidia and came to Pamphylia.
+<sup class="ww vnumVis">25</sup>When they had spoken the word in Perga, they went down to Attalia.
+<sup class="ww vnumVis">26</sup>From there they sailed back to Antioch, where they had been commended to the grace of God for the work that they had completed.
+<sup class="ww vnumVis">27</sup>When they arrived, they called the church together and related all that God had done with them, and how he had opened a door of faith for the Gentiles.
+<sup class="ww vnumVis">28</sup>And they stayed there with the disciples for some time.
+<p><span class="cc vnumVis">15</span>Then certain individuals came down from Judea and were teaching the brothers, &#147;Unless you are circumcised according to the custom of Moses, you cannot be saved.&#148;
+<sup class="ww vnumVis">2</sup>And after Paul and Barnabas had no small dissension and debate with them, Paul and Barnabas and some of the others were appointed to go up to Jerusalem to discuss this question with the apostles and the elders.
+<sup class="ww vnumVis">3</sup>So they were sent on their way by the church, and as they passed through both Phoenicia and Samaria, they reported the conversion of the Gentiles, and brought great joy to all the believers.
+<sup class="ww vnumVis">4</sup>When they came to Jerusalem, they were welcomed by the church and the apostles and the elders, and they reported all that God had done with them.
+<sup class="ww vnumVis">5</sup>But some believers who belonged to the sect of the Pharisees stood up and said, &#147;It is necessary for them to be circumcised and ordered to keep the law of Moses.&#148;
+<p><sup class="ww vnumVis">6</sup>The apostles and the elders met together to consider this matter.
+<sup class="ww vnumVis">7</sup>After there had been much debate, Peter stood up and said to them, &#147;My brothers, you know that in the early days God made a choice among you, that I should be the one through whom the Gentiles would hear the message of the good news and become believers.
+<sup class="ww vnumVis">8</sup>And God, who knows the human heart, testified to them by giving them the Holy Spirit, just as he did to us;<p>
+<hr />
+<em>For copyright reasons, a maximum of 500 verses may be displayed.
+A further 483 verses have been omitted.</em></p>
+
+</div><!-- class="bibletext" -->
+
+<div class="adj">
+<table border="0" width="100%"><tr><td valign="top" align="right">&lt;&lt;</td><td valign="top" align="left"><form method="post" action="index.html@passage=Acts+2%253A1–31%253A1&amp;version=nrsv.html" enctype="multipart/form-data"><input type="hidden" name="passage" value="Acts of the Apostles 1" />
+<input type="submit" name="show passage_button" value="Acts of the Apostles 1" />
+<input type="hidden" name="vnum" value="yes"  />
+<input type="hidden" name="fnote" value="yes"  />
+<input type="hidden" name="headings" value="no"  />
+<input type="hidden" name="adj" value=""  />
+<input type="hidden" name="version" value="nrsv" />
+</form>
+</td><td valign="top" align="right"><form method="post" action="index.html@passage=Acts+2%253A1–31%253A1&amp;version=nrsv.html" enctype="multipart/form-data"><input type="hidden" name="passage" value="Romans 1" />
+<input type="submit" name="show passage_button" value="Romans 1" />
+<input type="hidden" name="vnum" value="yes"  />
+<input type="hidden" name="fnote" value="yes"  />
+<input type="hidden" name="headings" value="no"  />
+<input type="hidden" name="adj" value=""  />
+<input type="hidden" name="version" value="nrsv" />
+</form>
+</td><td valign="top" align="left">&gt;&gt;</td></tr></table>
+</div><!-- class="adj" -->
+</div><!-- class="bible" -->
+
+<div class="copyright dmtog">
+<hr />
+<p class="dmtog">
+<cite>New Revised Standard Version Bible</cite>, copyright &copy; 1989 National Council of the Churches of Christ in the United States of America. Used by permission. All rights reserved worldwide. <a href="http://nrsvbibles.org">http://nrsvbibles.org</a>
+</p>
+</div><!-- class="copyright" -->
+
+<div class="quicklink">
+<form method="post" action="index.html@passage=Acts+2%253A1–31%253A1&amp;version=nrsv.html" enctype="multipart/form-data"><input type="submit" name="make_quicklink" value="make Quicklink" onmouseout="return nd();" onmouseover="return overlib('Create a saved query and get an oBB Quicklink to it', 0, FIXX,-1, CAPTION,'', FGCOLOR,'#FFFCFC', BGCOLOR,'#CC3300', TEXTCOLOR,'#000000', OFFSETX,50, OFFSETY,-25, TEXTSIZE,-1, TIMEOUT,2500);" />
+<input type="hidden" name="passage" value="Acts 2:1–31:1"  />
+<input type="hidden" name="version" value="nrsv"  />
+</form>
+</div>
+<hr class="quicklink" />
+<div class="another">
+<p>Enter another bible reference: </p><form method="post" action="index.html@passage=Acts+2%253A1–31%253A1&amp;version=nrsv.html" enctype="multipart/form-data"><input type="text" name="passage" value="" size="22" maxlength="1024" /><input type="submit" name="show passage_button" value="show passage" />
+<input type="hidden" name="vnum" value="yes"  />
+<input type="hidden" name="fnote" value="yes"  />
+<input type="hidden" name="headings" value="no"  />
+<input type="hidden" name="adj" value=""  />
+<input type="hidden" name="version" value="nrsv" />
+</form>
+
+</div> <!-- class="another" -->
+    <div align="left" class="credits dmtog">
+      <hr />
+      <div class="screencredits">
+	<p class="dmtog">
+	  <a href="http://bible.oremus.org/">
+<span class="obb" style="font-size: 68px; color: #D00; line-height: 0.65em;">obb</span><br />
+<span class="obb" style="font-size: 18px; color: #D00">bible browser</span>
+</a><br />
+	    <a href="mailto:biblemail@oremus.org">biblemail@oremus.org</a><br />
+	  v&nbsp;2.5.1<br />
+	  29 April 2019
+	</p>
+      </div>
+      <div class="printcredits">
+	From the oremus Bible Browser https://bible.oremus.org v2.5.1 29 April 2019.
+      </div>
+    </div>
+
+  </body>
+
+</html>

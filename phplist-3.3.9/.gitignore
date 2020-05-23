@@ -1,0 +1,12 @@
+/.svn/
+/plugins
+vendor/
+composer.lock
+/behat.yml
+.php_cs.cache
+/.idea/
+public_html/lists/admin/help/
+public_html/lists/admin/info/
+*.kdev4
+/build
+.DS_Store

@@ -1,0 +1,2 @@
+<p>N&#7871;u b&#7841;n d&ugrave;ng  template, n&#7897;i dung c&#7911;a th&#432; s&#7869; &#273;&#432;&#7907;c ch&egrave;n v&agrave;o h&#7897;p ch&#7913;a[CONTENT] trong template.</p>
+<p>Ngo&agrave;i  [CONTENT], b&#7841;n c&oacute; th&#7875; d&ugrave;ng [FOOTER] v&agrave; [SIGNATURE] &#273;&#7875; ch&egrave;n c&aacute;c th&ocirc;ng tin t&#432;&#417;ng &#7913;ng v&#7873; ph&#7847;n &#273;u&ocirc;i v&agrave; ch&#7919; k&yacute;, nh&#7919;ng h&#7897;p ch&#7913;a n&agrave;y l&agrave; kh&ocirc;ng b&#7855;t bu&#7897;c.</p>

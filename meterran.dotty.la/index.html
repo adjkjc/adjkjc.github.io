@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Welcome to the LA Registry site.</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="If you have landed here then it is because the domain is available.">
+        <meta name="keywords" content="domains, domain names, dotLA, .la,la.nic,Laos,Los Angeles">
+        <meta name="author" content="ParkLogic">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link type="text/css" href="http://meterran.dotty.la/templates/la/css/html.css" rel="stylesheet"></link>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" async></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var preString = "Search for .LA domains";
+
+                $("div#search_form button#search").click(function (e) {
+                    var input_domain = $(this).parents('table').find("input#domain");
+                    if (input_domain.val().length > 0 && input_domain.val() != preString) {
+                        window.location = "http://www.la/cart/search/" + input_domain.val();
+                    } else {
+                        input_domain.focus();
+                    }
+                    e.preventDefault();
+                });
+
+                $("div#search_form input#domain").focus(function () {
+                    if ($(this).val() == preString) {
+                        $(this).removeClass("input-blurred");
+                        $(this).val("");
+                    }
+                });
+
+                $("div#search_form input#domain").blur(function () {
+                    if ($(this).val() == "") {
+                        $(this).addClass("input-blurred");
+                        $(this).val(preString);
+                    }
+                });
+
+                $("div#search_form input#domain").val(preString);
+                $("div#search_form input#domain").focus();
+
+                $("div#search_form input#domain").keypress(function (e) {
+                    if (e.which == 13) {
+                        $("div#search_form button#search").click();
+                    }
+                });
+            });
+        </script>
+            </head>
+    <body style="width:1080px;margin-right:auto;margin-left:auto;margin-top:0px;font-family:Helvetica,Arial,sans-serif;">
+
+                <div style="padding: 0px 0px;height:1250px;">
+            <div></div>
+            <div class='mainbanner-block'><img src='http://meterran.dotty.la/templates/la/images/banners/topbanner2.jpg' alt='Featured Banner'  class='mainbanner-image'></div><div class='menu-block'><ul class='dropdown'><li><a href='index.html' >Home</a><ul></ul></li><li><a href='index.html' >News Blog</a><ul></ul></li><li><a href='index.html' >Domain Sales</a><ul></ul></li><li><a href='index.html' >FAQs</a><ul></ul></li><li><a href='index.html' >.LA Website Builder</a><ul></ul></li><li><a href='index.html' >Contact Us</a><ul></ul></li></ul></div>        <script async>
+            function myConfirm(message) {
+                switch (arguments.length) {
+                    case 0:
+                        message = "WARNING!\nAre you sure you want to do this?";
+                    case 1:
+                        break;
+                }
+                if (confirm(message) == true) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        </script>
+        
+            <div style="width:230px;float:left;padding:15px;background:#F0EEE2;text-align:center;min-height:1300px;">
+                <div class='domainmessage-block'>dotty.la<br>
+
+is available to be registered.
+</div><div class='dotlasearch-block'><div style="margin:30px 0px 30px 0px;"><h3 style="text-align:center;color:#4444AA;margin:10px 0px 5px 0px;"><strong>Search for your<br>.LA domain</strong></h3><div class="search_form_wrap"><div id="search_form"><table cellspacing="0" cellpadding="0"><tr> <td><input type="text" name="domain" id="domain" value="Search for .LA domains." class="domainsearch"/></td> <td><input type="hidden" name="tlds" id="tlds" value="la" /><button id="search" class="btn"></button></td></tr></table></div></div> <div style="text-align:center;color:#4444AA;margin:30px 0px 10px 0px;">Please select one of our partners below to register it.</div></div></div>                <div style='width:100%;text-align:right;border-top: 2px solid #a8dcea;margin:0px 0px 20px 0px;'></div>
+                            </div>
+            <div style="overflow:hidden;padding:0px 10px;margin:0px 0px 0px 230px;background:#FCFCFC;min-height:1300px;">
+                    <div class='search-block'>
+                    <div class='search-inputblock'>
+                <h2 class='search-heading'>How can we help you?</h2>
+                <form method="post" action="http://meterran.dotty.la/widgets/searches/rules.php" >
+                                        <input type="text" name="q" value="Search here"
+                           onblur="if (this.value === '') {
+                                               this.value = 'Search here';
+                                               this.style.color = '#BBB';
+                                           }"
+                           onfocus="if (this.value === 'Search here') {
+                                               this.value = '';
+                                               this.style.color = '#000';
+                                           }"
+                           class='search-inputbox'  aria-label='Search here'/>
+                    <input name="inputboxvar" type="hidden" value="q" />
+                    <input name="ms" type="hidden" value="0" />
+                    <input name="remote" type="hidden" value="1" />
+                    &nbsp; <input name="sub" type="submit"  class='search-button' value='Search' aria-label='Search'/>
+                </form>
+            </div>
+                </div>
+                    <div style="float:left;width:350px;padding:0px 10px;">
+                    <div class='article-block'><div class='article-title'>.LA is the domain for Los Angeles</div><p><img alt=".LA is the domain for Los Angeles" src="http://meterran.dotty.la/templates/la/images/content/dotladomains.jpg" style="float:left; height:193px; margin:0px 10px 10px 0px; width:261px" />.LA is the dedicated domain for the city of Los Angeles, in the &lsquo;Golden state&rsquo; of California. As the second biggest city in America, and the biggest on the west coast, LA is recognised globally as an iconic city. The .LA domain enables you to celebrate your association with LA&rsquo;s world renowned image.</p> <p>.LA is the ideal domain for the 100,000 plus, businesses who call Los Angeles home and the 13 million who live within the greater Los Angeles area. By registering a .LA domain you&rsquo;re not only connecting your business to one of the world&rsquo;s largest urban economies (valued annually at approx. $826 billion) you&rsquo;re also telling your customers that your business operates in one of the most famous and most visited cities in the world.</p> <div class="row"> <div class="col-md-12"> <p><strong>In a city comprising some 325,402 small and medium enterprises (SME), and with annual visitors of over 40 million people, your business needs to stand out from the crowd. Use an instantly recognizable .LA domain name and get found faster than ever by customers and search engines.</strong></p> </div> </div></div>                </div>
+                <div style="float:right;width:350px;padding:0px 10px;">
+                    <div class='article-block'><div class='article-title'>It&#039;s so LA</div><p>.LA is the domain that says &quot;local to LA&quot;; to local customers, visitors to LA, and the rest of the world alike, enabling them to find you faster and easier than ever before.</p></div><div class='article-block'><div class='article-title'>The Best Names For Your Website</div><p>With a search success rate of over 98%, .LA lets you label your website with the name you want. Thousands of search keywords are now available to help you achieve better search engine rankings.</p></div>                </div>
+
+            </div>
+            <div style="width:100%;display:inline-block;background:#083981;">
+                <div style="width:230px;float:left;padding:15px;"></div>
+                <div style="padding:15px;"><div class='footerlegals-block'><div class='footerlegals-keyrelatedblock'></a></div><p><a href="http://meterran.dotty.la/widgets/content/rules.php?conid=165&amp;warid=14&amp;link=https://www.la/policies&amp;tid=13" style="color:#ffffff;" >Policies and Agreements</a>&nbsp;&nbsp;&nbsp;<a href="http://meterran.dotty.la/widgets/content/rules.php?conid=165&amp;warid=14&amp;link=https://www.la/terms&amp;tid=13" style="color:#ffffff;" >Terms of Use</a>&nbsp;&nbsp;&nbsp;<a href="http://meterran.dotty.la/widgets/content/rules.php?conid=165&amp;warid=14&amp;link=https://www.la/privacy&amp;tid=13" style="color:#ffffff;" >Privacy</a></p><div class='footerlegals-keyrelatedblock'></a></div></div></div>
+            </div>
+        </div>
+    </body>
+</html>

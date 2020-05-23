@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="canonical" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/" />
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"03545ba2df",applicationID:"313757940"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-itunes-app" content="app-id=1123078102, app-argument=https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it">
+<link rel="shortcut icon" href="https://nascar.nbcsports.com/wp-content/themes/nbcsports-2015/favicon.ico" />
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://nascar.nbcsports.com/xmlrpc.php">
+
+<title>Chase Elliott on Kyle Busch: &#039;He made a mistake&#039; - NBC Sports</title>
+
+<!-- This site is optimized with the Yoast SEO Premium plugin v12.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="Chase Elliott on Kyle Busch: &quot;I get that mistakes happen and that’s part of life. I get it, but he’s just not a guy that makes many mistakes.&quot;"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Chase Elliott on Kyle Busch: &#039;He made a mistake&#039; - NBC Sports" />
+<meta property="og:description" content="Chase Elliott on Kyle Busch: &quot;I get that mistakes happen and that’s part of life. I get it, but he’s just not a guy that makes many mistakes.&quot;" />
+<meta property="og:url" content="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/" />
+<meta property="og:site_name" content="NASCAR Talk | NBC Sports" />
+<meta property="article:tag" content="Darlington Raceway" />
+<meta property="article:tag" content="nascar" />
+<meta property="article:section" content="NASCAR" />
+<meta property="article:published_time" content="2020-05-22T17:14:24+00:00" />
+<meta property="article:modified_time" content="2020-05-22T17:21:50+00:00" />
+<meta property="og:updated_time" content="2020-05-22T17:21:50+00:00" />
+<meta property="og:image" content="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg" />
+<meta property="og:image:secure_url" content="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Chase Elliott on Kyle Busch: &quot;I get that mistakes happen and that’s part of life. I get it, but he’s just not a guy that makes many mistakes.&quot;" />
+<meta name="twitter:title" content="Chase Elliott on Kyle Busch: &#039;He made a mistake&#039; - NBC Sports" />
+<meta name="twitter:site" content="@NASCARTalkNBC" />
+<meta name="twitter:image" content="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg" />
+<meta name="twitter:creator" content="@NASCARTalkNBC" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://nascar.nbcsports.com/#website","url":"https://nascar.nbcsports.com/","name":"NASCAR Talk | NBC Sports","description":"NASCAR news, video, analysis, more","potentialAction":{"@type":"SearchAction","target":"https://nascar.nbcsports.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/#primaryimage","url":"https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg","width":1024,"height":683},{"@type":"WebPage","@id":"https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/#webpage","url":"https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/","inLanguage":"en-US","name":"Chase Elliott on Kyle Busch: &#039;He made a mistake&#039; - NBC Sports","isPartOf":{"@id":"https://nascar.nbcsports.com/#website"},"primaryImageOfPage":{"@id":"https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/#primaryimage"},"datePublished":"2020-05-22T17:14:24+00:00","dateModified":"2020-05-22T17:21:50+00:00","author":{"@id":"https://nascar.nbcsports.com/#/schema/person/ebacdb83595ee22225804d6a4d764d46"},"description":"Chase Elliott on Kyle Busch: \"I get that mistakes happen and that\u2019s part of life. I get it, but he\u2019s just not a guy that makes many mistakes.\""},{"@type":["Person"],"@id":"https://nascar.nbcsports.com/#/schema/person/ebacdb83595ee22225804d6a4d764d46","name":"Dustin Long","image":{"@type":"ImageObject","@id":"https://nascar.nbcsports.com/#authorlogo","url":"https://secure.gravatar.com/avatar/338a2123f2a1f60d5080d8bd201087d7?s=96&d=identicon&r=g","caption":"Dustin Long"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//www.nbcsports.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="NASCAR Talk | NBC Sports &raquo; Feed" href="https://nascar.nbcsports.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NASCAR Talk | NBC Sports &raquo; Comments Feed" href="https://nascar.nbcsports.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="NASCAR Talk | NBC Sports &raquo; Chase Elliott on Kyle Busch: &#8216;He made a mistake &#8230; I was on the wrong end of it&#8217; Comments Feed" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/feed/" />
+<link rel='stylesheet' id='all-css-0' href='https://nascar.nbcsports.com/_static/??-eJydkEluwzAMRS9UhXXRBN4UPYsGJiFCiYJIx/Dt6yCDW3QTZ6Uv4r/PAcbqohTDYlB5OFBRKCFqlWbq/lcwB0xnSiiwSMdUTpuo+gZzHJXIQ0KFuQCJ1CCwxNNsCs23CdQmxk2m8iDuA9gRM/7u9vHebW/+57zsJxlMb6/LmGjIr7GaPfOLbSXQ6pGVcmXaEybnm1Fk1CcT5oNfTnxwe8S0qBV0E5NRGqdFraCv6zpDr/jnsyJjPHpTX+tDXNjv/NVt+77rd7vP7geumvvb' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify{text-align:justify;}
+</style>
+<link rel='stylesheet' id='nbcsports-wrapper-style-css'  href='https://www.nbcsports.com/sites/nbcsports.com/files/dist/css/nbcsports-wrapper.min.css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://nascar.nbcsports.com/_static/??-eJyNjEEKgzAQRS/UOFjQZiMeRcIkpFOTmdBJEG9vW3DRTenufXjvw1YMCtfAFXIzJbVIrPAItThcIYtvKSjo3T2Dd97vHySOHape4He9ECOoILlkkkTRr9Fl4n9eXsrJb33OUz9Ya8dxuN4OOy9GsA==' type='text/css' media='all' />
+<script type='text/javascript' src='https://nascar.nbcsports.com/_static/??-eJzTLy/QzcxLzilNSS3WzwKiwtLUokoopZdVrKOPT4FubmZ6UWJJql5uZh5QsX2uraGphYWhhZmZiXkWACXWILw='></script>
+<link rel='https://api.w.org/' href='https://nascar.nbcsports.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://nascar.nbcsports.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://nascar.nbcsports.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.4.1" />
+<link rel='shortlink' href='https://wp.me/pbnfMr-DIO' />
+<link rel="alternate" type="application/json+oembed" href="https://nascar.nbcsports.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnascar.nbcsports.com%2F2020%2F05%2F22%2Fchase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://nascar.nbcsports.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnascar.nbcsports.com%2F2020%2F05%2F22%2Fchase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it%2F&#038;format=xml" />
+<style type='text/css'>img#wpstats{display:none}</style><script type="text/javascript">
+	var mpsopts = { 
+			host: 'mps.nbcuni.com',
+			updatecorrelator: 1
+		},
+		mpscall = {
+			site: 'nbcsports-web',
+			type: "wp-article",
+			is_content: 1,
+			cag: {
+			    system: 'wp'
+            },
+			catprefix: 'wordpress',
+			cat: "NASCAR"		},
+		mps=mps||{};
+			mps._ext=mps._ext||{};mps._adsheld=[];mps._queue=mps._queue||{};mps._queue.mpsloaded=mps._queue.mpsloaded||[];mps._queue.mpsinit=mps._queue.mpsinit||[];mps._queue.gptloaded=mps._queue.gptloaded||[];mps._queue.adload=mps._queue.adload||[];mps._queue.adclone=mps._queue.adclone||[];mps._queue.adview=mps._queue.adview||[];mps._queue.refreshads=mps._queue.refreshads||[];mps.__timer=Date.now();mps.__intcode="v2";if(typeof mps.getAd!="function")mps.getAd=function(adunit){if(typeof adunit!="string")return false;var slotid="mps-getad-"+adunit.replace(/\W/g,"");if(!mps._ext||!mps._ext.loaded){mps._queue.gptloaded.push(function(){typeof mps._gptfirst=="function"&&mps._gptfirst(adunit,slotid);mps.insertAd("#"+slotid,adunit)});mps._adsheld.push(adunit)}return'<div id="'+slotid+'" class="mps-wrapper" data-mps-fill-slot="'+adunit+'"></div>'};(function(){head=document.head||document.getElementsByTagName("head")[0],mpsload=document.createElement("script");mpsload.src="//"+mpsopts.host+"/fetch/ext/load-"+mpscall.site+".js?nowrite=2";mpsload.id="mps-load";head.insertBefore(mpsload,head.firstChild)})();
+	window.gptReady = false;
+	mps.gptloadCallback = function() {
+		window.gptReady = true;
+	}
+</script>
+	<script type="text/javascript">
+	! function( e, f, u ) {
+		e.async = 1;
+		e.src = u;
+		f.parentNode.insertBefore( e, f );
+	}
+	( document.createElement('script'), document.getElementsByTagName('script')[0], '//cdn.taboola.com/libtrc/nbcsports-network/loader.js' );
+	</script>
+			<style>
+		.getty.aligncenter {
+			text-align: center;
+		}
+		.getty.alignleft {
+			float: none;
+			margin-right: 0;
+		}
+		.getty.alignleft > div {
+			float: left;
+			margin-right: 5px;
+		}
+		.getty.alignright {
+			float: none;
+			margin-left: 0;
+		}
+		.getty.alignright > div {
+			float: right;
+			margin-left: 5px;
+		}
+		</style>
+						<meta property="article:opinion" content="false"/>
+				<meta property="article:content_tier" content="free">
+				<meta property="fb:pages" content="148133088575385" />
+			<script type="application/ld+json">{
+    "@context": {
+        "@vocab": "https://schema.org",
+        "articleId": {
+            "@id": "Text",
+            "@type": "@id"
+        }
+    },
+    "@type": "NewsArticle",
+    "headline": "Chase Elliott on Kyle Busch: &#8216;He made a mistake &#8230; I was on the wrong end of it&#8217;",
+    "url": "https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/",
+    "alternativeHeadline": "Chase Elliott also said Friday: \"I get that mistakes happen and that\u2019s part of life. I get it, but he\u2019s just not a guy that makes many mistakes.\"",
+    "dateCreated": "May 22, 2020",
+    "datePublished": "May 22, 2020",
+    "dateModified": "May 22, 2020",
+    "articleId": 152694,
+    "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "uid",
+        "value": 152694
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "NBC Sports",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.nbcsports.com/sites/nbcsports.com/files/nbc-sports-aligned-left.png",
+            "width": 600,
+            "height": 60
+        }
+    },
+    "description": "Chase Elliott also said Friday: \"I get that mistakes happen and that\u2019s part of life. I get it, but he\u2019s just not a guy that makes many mistakes.\"",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/"
+    },
+    "thumbnailUrl": "https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?w=200",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?w=200",
+        "width": 200,
+        "height": 133
+    },
+    "author": [
+        {
+            "@type": "Person",
+            "jobTitle": "Author",
+            "name": "Dustin Long"
+        }
+    ]
+}</script><link rel="amphtml" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/amp/">		<style type="text/css" id="wp-custom-css">
+			/* Fix ios13 scrolling issue 
+ * https://nbcsports.atlassian.net/browse/SBOX-2791
+ * */
+body {overflow-x: initial;}		</style>
+		</head>
+<body class="post-template-default single single-post postid-152694 single-format-standard  infinite-scroll design-default article-design-default">
+<div id="page" class="hfeed site">
+	<!-- <a class="skip-link screen-reader-text" href="#content">Skip to content</a> -->
+
+	<header id="nbcsports-fixed-header" class="site-header">
+		<nav id="nbcsports-primary-nav"><div class="nbcsports-primary-nav__wrapper ">  <a href="https://www.nbcsports.com/" id="home-page-link"><svg id="nbcsports-svg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 332.6 52.74">    <defs>        <style>            #nbcsports-svg .white{fill:#fff;}            #nbcsports-svg .purple{fill:#645faa;}            #nbcsports-svg .red{fill:#c9234a;}            #nbcsports-svg .blue{fill:#0089cf;}            #nbcsports-svg .orange{fill:#f37021;}            #nbcsports-svg .green{fill:#0db14b;}            #nbcsports-svg .yellow{fill:#fdb913;}        </style>    </defs>    <title>NBCS-Logo</title>    <g class="cls-2">        <path class="white" d="M33.2,5.13a9.35,9.35,0,0,1,4.07-3.72,8.66,8.66,0,0,1,8.9,1.29A8.46,8.46,0,0,1,49,10.58a14.78,14.78,0,0,0,1.68-.65A8.53,8.53,0,0,1,60,13a8.42,8.42,0,0,1,1.1,7.94,9,9,0,0,1-2.44,3.44l0.12,0.1a8.58,8.58,0,0,1,7.35,5.72A8.37,8.37,0,0,1,64,38.82a9,9,0,0,1-6.85,2.4H9.26A8.68,8.68,0,0,1,.65,36.07,8.37,8.37,0,0,1,2.4,26.95,9,9,0,0,1,7.84,24.4a8.62,8.62,0,0,1-2.78-8.23,8.47,8.47,0,0,1,5.13-6,8.75,8.75,0,0,1,7.19.46l0.08-.08A8.32,8.32,0,0,1,21.27,2a8.55,8.55,0,0,1,9.19.15,9.16,9.16,0,0,1,2.74,3" transform="translate(0 0)"/>        <g class="peacock">            <path class="purple" d="M46.75,6.43c1,2.07.43,4.79-.65,6.65l-8.31,18.7-0.07.08-3-19c-0.24-1.82,1.72-2.59,2.86-3.47A0.77,0.77,0,0,0,37,9.05L34.22,9l-0.08-.09a6.44,6.44,0,0,1,3.43-5.67A6.68,6.68,0,0,1,44.91,4a7.06,7.06,0,0,1,1.84,2.45" transform="translate(0 0)"/>            <path class="red" d="M31.45,5.77A6.78,6.78,0,0,1,32.28,10L28.89,31.75a0,0,0,0,1,0,.07L28,30.07l-8.5-19A6.58,6.58,0,0,1,28.28,3a7,7,0,0,1,3.17,2.72" transform="translate(0 0)"/>            <path class="blue" d="M59,14.91a6.7,6.7,0,0,1-.39,6.7c-0.79,1.28-2.09,1.91-3.18,2.74L37.88,36.42h0L38,35.85l9.33-21a6.73,6.73,0,0,1,6.88-3.37A6.85,6.85,0,0,1,59,14.91" transform="translate(0 0)"/>            <path class="orange" d="M19.08,14.81l9.7,21.62H28.62L9.05,22.95a6.46,6.46,0,0,1-2.12-6.73,6.73,6.73,0,0,1,4-4.39,6.72,6.72,0,0,1,8.19,3" transform="translate(0 0)"/>            <path class="green" d="M64.14,30.18a6.69,6.69,0,0,1-.81,6.63,6.55,6.55,0,0,1-5.4,2.53l-20.86,0L54.54,27.2a6.72,6.72,0,0,1,9.6,3" transform="translate(0 0)"/>            <path class="yellow" d="M2.38,30.18a6.66,6.66,0,0,0,.8,6.63,6.57,6.57,0,0,0,5.41,2.53l20.87,0L12,27.2a6.7,6.7,0,0,0-9.58,3" transform="translate(0 0)"/>        </g>        <path class="white" d="M131.66,39.28H111.54V2h19.64c8.64,0,14,3.79,14,9.64v0.11c0,4.2-2.53,6.55-5.55,8,4.89,1.65,7.9,4.16,7.9,9.16v0.11c0,6.81-6.28,10.21-15.83,10.21M135.9,13c0-2.44-2.18-3.83-6.11-3.83H120.6v7.88h8.58c4.11,0,6.71-1.17,6.71-3.93V13Zm2.35,14.91c0-2.5-2.11-4-6.88-4H120.6v8.2h11.06c4.12,0,6.59-1.27,6.59-4V27.95Z" transform="translate(0 0)"/>        <path class="white" d="M169.43,39.92c-12.45,0-21.71-8.45-21.71-19.16v-0.1c0-10.6,9.08-19.29,22.06-19.29,8,0,12.76,2.35,16.71,5.76l-5.94,6c-3.26-2.61-6.58-4.22-10.81-4.22-7.14,0-12.28,5.22-12.28,11.62v0.1c0,6.38,5,11.72,12.28,11.72,4.83,0,7.8-1.71,11.11-4.39l5.92,5.28c-4.34,4.11-9.19,6.66-17.34,6.66" transform="translate(0 0)"/>        <polygon class="white" points="80.49 29.22 80.49 15.59 100.98 39.28 108.89 39.28 108.89 2.01 99.71 2.01 99.71 24.97 79.88 2.01 71.3 2.01 71.3 31.13 71.3 35.72 71.3 39.28 80.49 39.28 80.49 34.85 80.49 29.22"/>        <path class="yellow" d="M247.56,18.75c-1.69-1.31-4.08-.27-4.08-0.27-4.63,1.46-9.63,5.15-13.57,8.61,1.81-2.08,3.86-4.32,6.2-6.73,0,0,1.67-.86.39-2.12s-2.8-2.45-2.8-2.45a1,1,0,0,0-.91-0.31,0.81,0.81,0,0,0,0,.88,6.11,6.11,0,0,1-.76,1.07l-0.13.15a22.76,22.76,0,0,1-5,2.9c-2.65,1-6,2.12-9.69,3.42a4.35,4.35,0,0,0-.75-0.6c-4.37-2.72-17.4-3-22.41-3.33-5.4-.41-6.62-0.75-6.82-1.65-0.27-1.17,1.44-2.82,3.88-4.59,9.46-6.91,22.52-8.3,26.75-8.24,4.63,0.07,5.93.62,6,1a0.72,0.72,0,0,1-.14.59,12.81,12.81,0,0,1-2.88,2.12A71.41,71.41,0,0,1,212,13.91c-1,.94.94,1.18,0.94,1.18a23.76,23.76,0,0,0,7.71-1.67c5-1.92,6.25-3.65,6.38-4.69a8.91,8.91,0,0,0-.41-3.48c-1.29-5.48-10-5.25-10-5.25A50,50,0,0,0,188,9.45c-5.09,3.73-4.34,6.41-4.34,6.41s-0.08,5.18,3.86,6.43a22.51,22.51,0,0,0,5.33,1.06c5,0.49,8.76.56,14,.92a37.9,37.9,0,0,1,6.64.93A129.52,129.52,0,0,0,201,30.46c-3.34,1.67-8.35,4.48-10.13,6.72-2.15,2.7-.14,4.83-0.4,4.37,0.32,0.59,1.66,3,7.38,2.27a26.51,26.51,0,0,0,8.57-3.06,36.7,36.7,0,0,0,7.9-5.8c3.25-3.12,4.16-5.54,4.17-7.64a5.35,5.35,0,0,0-.37-2c3.91-1.35,7.33-2.38,9.6-3-6.36,7.66-17.11,22.3-12.35,29a7.51,7.51,0,0,0,.74,1s0.83,0.69,1.16.26-0.64-.88-0.64-0.88a2.21,2.21,0,0,1-.32-1.76,19.25,19.25,0,0,1,1.14-4.33l1.32-3v0a0.08,0.08,0,0,1,0,0v0a50.28,50.28,0,0,1,7.79-10.07C235,24.28,242.44,20.85,244,20.36c1.11-.36,1.6-0.26,1.78-0.09,1.06,1-1.6,5.25-1.6,5.25l-0.13.2c-4.81,7-7.62,9-10.13,9.92a3.58,3.58,0,0,1-3.12-.28,2.52,2.52,0,0,1-.89-1.76c0.1-.74-0.23-0.72-0.23-0.72-1.19.41-.54,2.52-0.54,2.52,0.9,4,6.44,5,11.7,1.08,7-5.21,8.35-9.38,9.34-11.92s-0.9-4.49-2.6-5.81m-32.28,8.93c-1.75,3-7.67,6.68-9.65,7.8a43.91,43.91,0,0,1-6.74,3.22c-3.44,1.24-6.5,1.82-6.77,1-0.12-.35-0.34-0.51.76-1.68,1.31-1.38,5.31-3.95,9-5.86a122.42,122.42,0,0,1,13.52-5.83,1.35,1.35,0,0,1-.11,1.37" transform="translate(0 0)"/>        <path class="yellow" d="M327.1,27.91c-2.12,2-8.07,7.34-11.94,9.41a10,10,0,0,0,1.66-3.91c0.34-1.35.92-5,1.53-7.71a17.18,17.18,0,0,1,1-3c0.58-1.3,1.4-1.19,1.58-1.58a0.8,0.8,0,0,0-.27-0.93,8.86,8.86,0,0,0-1-1,4.52,4.52,0,0,0-1.6-1,1.11,1.11,0,0,0-.92.19,5.21,5.21,0,0,0-1.24,1.51C313,23,303.47,33.18,297.66,36.63c0.31-.19-4.72,3.21-3.65-1.22,0.49-2,2.51-6.51,8.18-13.61l2.94-3.29c2.43-.34,4.94-0.73,7.46-1.14,0,0,22.15-2.74,16.16,2,0,0,.37.74,1.3,0,1.92-1.53,2.65-2.86,2.54-3.56-0.38-2.29-3.86-2.82-10-2.34-3.22.26-9.31,1.12-14.76,2l5.37-6a0.94,0.94,0,0,0,0-1.67,15.78,15.78,0,0,0-2.5-1.55s-0.53-.51-1.47.35a118.29,118.29,0,0,0-8.83,10c-5.39.71-11.58,1.16-13.18,1.35a1.09,1.09,0,0,1-1.09-.38s-0.7-.49-0.54.67c0,0,.16,3.1,3.15,2.54,1.7-.33,5.13-0.78,9.44-1.35-0.74.94-1.84,2.36-3,4-5.36,5.85-14.45,15.25-16.48,14a1.34,1.34,0,0,1-.14-1.41c0.46-1.5,2.19-4.2,5.65-8.26,0,0,1.6-1.9,1.53-2.74-0.1-1.28-.81-1.25-0.81-1.25s-4.62-1.37-6.15-2.74c0.65-1,1.82-3.24.32-4.28,0,0-1.95-1.23-3.36,1.68a3,3,0,0,0,.23,3.33c-1,1.1-4,4-6.87,4.81a2.43,2.43,0,0,0-1.25-2s-1.59-.81-2.47.2-0.1,2,.78,2.68a19.52,19.52,0,0,1-2,3.43,18.76,18.76,0,0,1-5.33,5.59c-0.8.54-4,2.4-4.88-.15-0.46-1.41.31-4.13,2.31-7.22,4.1-6.38,9.83-8.48,11.39-7.49a1.36,1.36,0,0,1,.31,1.52s-0.17.44,0.42,0.5a1,1,0,0,0,1-1c0.24-1.35-1-2.89-2.38-4a8.61,8.61,0,0,0-1.46-.84,7.93,7.93,0,0,0-5.77.8,21.07,21.07,0,0,0-8.57,8.58,11.2,11.2,0,0,0-1.62,5.56,7,7,0,0,0,.89,3.55,9.66,9.66,0,0,0,3.38,3.09c3.57,1.85,7.77-1.64,9.4-3.13a23.12,23.12,0,0,0,5.59-7.65c3.78-1,7.51-4.75,8.73-6.08,0.22,0.15.44,0.3,0.7,0.44l2.26,1.2a32.66,32.66,0,0,0-2.73,3.52c-1.45,2.06-5.05,6.87-2.72,10a4.85,4.85,0,0,0,2.08,1.78c3.08,1.22,6.55-1.8,11.94-7.46q1.27-1.35,2.46-2.67a21.49,21.49,0,0,0-.9,2c-1.26,3.28-.53,6.23,2.1,8,1.57,1,3.6.56,5.91-1,4.59-3,11.36-9.83,15.64-14.37-0.15.63-.3,1.3-0.43,2.07-1,5.68-4.47,13-5.83,11.12a3.74,3.74,0,0,0-.79-1.88,1.47,1.47,0,0,0-2-.21c-1,.63-0.5,3,2.51,4.56a5.81,5.81,0,0,0,1.86.6c1.64,0.28,4.94.3,8.85-2.61,3-2.24,6-5,8.19-7a11,11,0,0,1,.45-2.77" transform="translate(0 0)"/>    </g></svg></a><a href="https://www.nbcsports.com/live" class="dynamic-nav-link nav-link">Watch</a><a href="https://www.nbcsports.com/nfl" class="dynamic-nav-link nav-link" data-tid="6">NFL</a><a href="https://www.nbcsports.com/nhl" class="dynamic-nav-link nav-link" data-tid="11">NHL</a><a href="https://www.nbcsports.com/nba" class="dynamic-nav-link nav-link" data-tid="16">NBA</a><a href="https://www.nbcsports.com/mlb" class="dynamic-nav-link nav-link" data-tid="21">MLB</a><a href="https://www.nbcsports.com/soccer" class="dynamic-nav-link nav-link" data-tid="26">Soccer</a><a href="https://www.nbcsports.com/nascar" class="dynamic-nav-link nav-link" data-tid="46">NASCAR</a><a href="https://www.nbcsports.com/motors" class="dynamic-nav-link nav-link" data-tid="41">Motors</a><a href="http://www.golfchannel.com/" class="dynamic-nav-link nav-link">Golf</a><a href="https://www.nbcsports.com/college-basketball" class="dynamic-nav-link nav-link" data-tid="36">NCAA BK</a><a href="https://www.nbcsports.com/olympic-channel" class="dynamic-nav-link nav-link" data-tid="86">Oly</a><a href="https://www.nbcsports.com/figure-skating" class="dynamic-nav-link nav-link">Skating</a><a href="https://www.nbcsports.com/college-football" class="dynamic-nav-link nav-link" data-tid="31">NCAA FB</a><a href="https://www.nbcsports.com/horse-racing" class="dynamic-nav-link nav-link">Horses</a><a href="https://www.nbcsports.com/rugby" class="dynamic-nav-link nav-link" data-tid="101">Rugby</a><a href="https://www.nbcsports.com/national-dog-show" class="dynamic-nav-link nav-link">Dog Show</a><a href="https://www.nbcsports.com/bet" class="dynamic-nav-link nav-link">NBC Sports Bet</a><a href="https://www.nbcsports.com/allamericanbowl" class="dynamic-nav-link nav-link">AA Bowl</a><a href="https://www.nbcsports.com/lacrosse" class="dynamic-nav-link nav-link">PLL</a><a href="https://www.nbcsports.com/tennis" class="dynamic-nav-link nav-link" data-tid="51">Tennis</a><a href="https://www.nbcsports.com/cycling" class="dynamic-nav-link nav-link">Cycling</a><a href="https://www.nbcsports.com/mixed-martial-arts-MMA" class="dynamic-nav-link nav-link" data-tid="76">MMA</a><a href="https://www.nbcsports.com/gold" class="dynamic-nav-link nav-link">NBC Sports Gold</a>  <span id="more-nav-btn" class="no-select no-more-links nav-link" unselectable="on" tabindex="0">MORE</span></div></nav>
+		<nav id="more-nav" class="no-more-links"></nav>
+		<nav id="nbcsports-secondary-nav"><div class="nbcsports-secondary-nav__wrapper">        <a href="https://www.nbcsports.com/video/league/nascar" class="nav-link">Highlights</a>        <a href="https://predictor.nbcsports.com/signup" class="nav-link">NASCAR Pick &#039;Em</a>        <a href="http://scores.nbcsports.com/racing/leaderboard.asp?series=NASCAR" class="nav-link">Results</a>        <a href="http://scores.nbcsports.com/nascar/schedule.asp?series=" class="nav-link">Schedule</a>        <a href="http://scores.nbcsports.com/racing/index.asp?page=standings&amp;series=" class="nav-link">Standings</a>    <div id="nbcsports-search-box">    <form action="https://www.nbcsports.com/search" class="search-form" method="get" autocomplete="off">      <span class="icon"></span>      <label>Search</label>      <input type="search" name="search_api_views_fulltext" id="nbcsports-search" placeholder="Search NBC Sports" tabindex="0"/>    </form>  </div></div></nav>
+	</header><!-- #nbcsports-fixed-header -->
+	<div id="wrapper"><!-- wrapper retrieved May 22, 2020 6:05 pm-->		<div id="outer">
+			<div id="nbcsports-breaking-news-marquee"></div>
+						<div id="nbcsports-leaderboard"></div>
+						<div id="nbcsports-scoreboard"><div class="scoreboard with_ad">  <iframe id="scoreboard-ticker" src="https://scores.nbcsports.com/score_ticker_lt/index.html?sports=NASCAR"></iframe></div><div id="block-mps-scorelogo" class="block block-mps scoreboard-ad"></div></div>
+						<div id="nbcsports-content-wrapper">
+								<aside id="nbcsports-live-extra-widget"><div class="live-extra-widget" data-widget-id="1188966" data-do-dma="false" data-bean-id="0" v-cloak>  <header class="title live-extra-widget__title">    <a href="https://www.nbcsports.com/live" class="link link_type-block live-extra-widget__watch-now"><span class="title-text">Watch now</span></a>    <a href="https://www.nbcsports.com/live" class="link link_type-block live-extra-widget__full-link">View full schedule</a>  </header>  <div class="live-extra-widget__scrollbox">    <div class="live-extra-widget__events" id="lew-touch-events">      <div v-if="events.live.length" class="events-list live-extra-widget__events-list live-extra-widget__events-list_type-live">        <div class="title events-list__title events-list__title_type-live">Live</div>        <ul class="list events-list__list">          <live-extra-widget-event v-for="event in events.live" :event="event" :key="event.id"></live-extra-widget-event>        </ul>      </div>      <div v-if="events.upcoming.length" class="events-list live-extra-widget__events-list live-extra-widget__events-list_type-upcoming">        <div class="title events-list__title events-list__title_type-upcoming">          <span class="title-text">Upcoming Events</span>        </div>        <ul class="list events-list__list">          <live-extra-widget-event v-for="event in events.upcoming" :event="event" :key="event.id"></live-extra-widget-event>        </ul>      </div>      <span v-if="noEvents" class="live-extra-widget__no-events">No Events at this time</span>    </div>  </div></div><script type="x-template" id="live-extra-widget-event">  <li class="list__item live-extra-widget__event-animate" :class="{ 'event-active': active }" :style="{ animationDelay: 50 * event.index + 'ms' }">    <div class="live-extra-widget__event">      <div class="live-extra-widget__event__wrapper">        <span class="live-extra-widget__event-channel">{{ event.network_display_name }}</span>        <span class="live-extra-widget__event-name">{{ event.event_title }}</span>        <span class="live-extra-widget__event-type">{{ event.league }}</span>        <span class="live-extra-widget__event-time"><span class="live-extra-widget__event-time__inner">{{ formattedTime }}</span></span>        <span class="play-btn play-btn_size-small"> </span>        <a :href="event.destination_url" class="link"></a>      </div>    </div>  </li></script></aside>
+								<div id="nbcsports-main">
+					<div id="content" class="site-content">
+
+<header id="article-nav">
+	<div id="article-social-nav">
+		<a href="http://www.nbcsports.com/nascar" class="blog-name"><span class="full-blog-name">NASCAR TALK | NBC SPORTS</span><span class="abbreviated-blog-name">NASCAR</span></a>
+				<a href="#" id="team-dropdown-link">Select Driver<span class="team-dropdown-arrow"></span><span class="team-dropdown-list-arrow"></span></a>
+		<div id="team-dropdown-list" class="styled-scrollbar">
+			<a href="https://nascar.nbcsports.com/team/a-j-allmendinger/" style="text-indent: 0px;">A.J. Allmendinger</a>
+<a href="https://nascar.nbcsports.com/team/alex-bowman/" style="text-indent: 0px;">Alex Bowman</a>
+<a href="https://nascar.nbcsports.com/team/aric-almirola/" style="text-indent: 0px;">Aric Almirola</a>
+<a href="https://nascar.nbcsports.com/team/austin-dillon/" style="text-indent: 0px;">Austin Dillon</a>
+<a href="https://nascar.nbcsports.com/team/brad-keselowski/" style="text-indent: 0px;">Brad Keselowski</a>
+<a href="https://nascar.nbcsports.com/team/brandon-jones/" style="text-indent: 0px;">Brandon Jones</a>
+<a href="https://nascar.nbcsports.com/team/brendan-gaughan/" style="text-indent: 0px;">Brendan Gaughan</a>
+<a href="https://nascar.nbcsports.com/team/bubba-wallace/" style="text-indent: 0px;">Bubba Wallace</a>
+<a href="https://nascar.nbcsports.com/team/carl-edwards/" style="text-indent: 0px;">Carl Edwards</a>
+<a href="https://nascar.nbcsports.com/team/casey-mears/" style="text-indent: 0px;">Casey Mears</a>
+<a href="https://nascar.nbcsports.com/team/chase-elliott/" style="text-indent: 0px;">Chase Elliott</a>
+<a href="https://nascar.nbcsports.com/team/chris-buescher/" style="text-indent: 0px;">Chris Buescher</a>
+<a href="https://nascar.nbcsports.com/team/christopher-bell/" style="text-indent: 0px;">Christopher Bell</a>
+<a href="https://nascar.nbcsports.com/team/clint-bowyer/" style="text-indent: 0px;">Clint Bowyer</a>
+<a href="https://nascar.nbcsports.com/team/cole-custer/" style="text-indent: 0px;">Cole Custer</a>
+<a href="https://nascar.nbcsports.com/team/cole-pearn/" style="text-indent: 0px;">Cole Pearn</a>
+<a href="https://nascar.nbcsports.com/team/cole-whitt/" style="text-indent: 0px;">Cole Whitt</a>
+<a href="https://nascar.nbcsports.com/team/corey-lajoie/" style="text-indent: 0px;">Corey LaJoie</a>
+<a href="https://nascar.nbcsports.com/team/dale-earnhardt-jr/" style="text-indent: 0px;">Dale Earnhardt Jr.</a>
+<a href="https://nascar.nbcsports.com/team/danica-patrick/" style="text-indent: 0px;">Danica Patrick</a>
+<a href="https://nascar.nbcsports.com/team/daniel-hemric/" style="text-indent: 0px;">Daniel Hemric</a>
+<a href="https://nascar.nbcsports.com/team/daniel-suarez/" style="text-indent: 0px;">Daniel Suarez</a>
+<a href="https://nascar.nbcsports.com/team/darrell-wallace-jr/" style="text-indent: 0px;">Darrell Wallace Jr.</a>
+<a href="https://nascar.nbcsports.com/team/david-ragan/" style="text-indent: 0px;">David Ragan</a>
+<a href="https://nascar.nbcsports.com/team/denny-hamlin/" style="text-indent: 0px;">Denny Hamlin</a>
+<a href="https://nascar.nbcsports.com/team/erik-jones/" style="text-indent: 0px;">Erik Jones</a>
+<a href="https://nascar.nbcsports.com/team/garrett-smithley/" style="text-indent: 0px;">Garrett Smithley</a>
+<a href="https://nascar.nbcsports.com/team/greg-biffle/" style="text-indent: 0px;">Greg Biffle</a>
+<a href="https://nascar.nbcsports.com/team/hailie-deegan/" style="text-indent: 0px;">Hailie Deegan</a>
+<a href="https://nascar.nbcsports.com/team/jamie-mcmurray/" style="text-indent: 0px;">Jamie McMurray</a>
+<a href="https://nascar.nbcsports.com/team/jeffrey-earnhardt/" style="text-indent: 0px;">Jeffrey Earnhardt</a>
+<a href="https://nascar.nbcsports.com/team/jimmie-johnson/" style="text-indent: 0px;">Jimmie Johnson</a>
+<a href="https://nascar.nbcsports.com/team/joey-logano/" style="text-indent: 0px;">Joey Logano</a>
+<a href="https://nascar.nbcsports.com/team/john-hunter-nemechek/" style="text-indent: 0px;">John Hunter Nemechek</a>
+<a href="https://nascar.nbcsports.com/team/justin-haley/" style="text-indent: 0px;">Justin Haley</a>
+<a href="https://nascar.nbcsports.com/team/kasey-kahne/" style="text-indent: 0px;">Kasey Kahne</a>
+<a href="https://nascar.nbcsports.com/team/kevin-harvick/" style="text-indent: 0px;">Kevin Harvick</a>
+<a href="https://nascar.nbcsports.com/team/kurt-busch/" style="text-indent: 0px;">Kurt Busch</a>
+<a href="https://nascar.nbcsports.com/team/kyle-busch/" style="text-indent: 0px;">Kyle Busch</a>
+<a href="https://nascar.nbcsports.com/team/kyle-larson/" style="text-indent: 0px;">Kyle Larson</a>
+<a href="https://nascar.nbcsports.com/team/landon-cassill/" style="text-indent: 0px;">Landon Cassill</a>
+<a href="https://nascar.nbcsports.com/team/martin-truex-jr/" style="text-indent: 0px;">Martin Truex Jr.</a>
+<a href="https://nascar.nbcsports.com/team/matt-dibenedetto/" style="text-indent: 0px;">Matt DiBenedetto</a>
+<a href="https://nascar.nbcsports.com/team/matt-kenseth/" style="text-indent: 0px;">Matt Kenseth</a>
+<a href="https://nascar.nbcsports.com/team/matt-tifft/" style="text-indent: 0px;">Matt Tifft</a>
+<a href="https://nascar.nbcsports.com/team/michael-annett/" style="text-indent: 0px;">Michael Annett</a>
+<a href="https://nascar.nbcsports.com/team/michael-mcdowell/" style="text-indent: 0px;">Michael McDowell</a>
+<a href="https://nascar.nbcsports.com/team/parker-kligerman/" style="text-indent: 0px;">Parker Kligerman</a>
+<a href="https://nascar.nbcsports.com/team/paul-menard/" style="text-indent: 0px;">Paul Menard</a>
+<a href="https://nascar.nbcsports.com/team/quin-houff/" style="text-indent: 0px;">Quin Houff</a>
+<a href="https://nascar.nbcsports.com/team/ricky-stenhouse-jr/" style="text-indent: 0px;">Ricky Stenhouse Jr.</a>
+<a href="https://nascar.nbcsports.com/team/ross-chastain/" style="text-indent: 0px;">Ross Chastain</a>
+<a href="https://nascar.nbcsports.com/team/ryan-blaney/" style="text-indent: 0px;">Ryan Blaney</a>
+<a href="https://nascar.nbcsports.com/team/ryan-newman/" style="text-indent: 0px;">Ryan Newman</a>
+<a href="https://nascar.nbcsports.com/team/ryan-preece/" style="text-indent: 0px;">Ryan Preece</a>
+<a href="https://nascar.nbcsports.com/team/timmy-hill/" style="text-indent: 0px;">Timmy Hill</a>
+<a href="https://nascar.nbcsports.com/team/tony-stewart/" style="text-indent: 0px;">Tony Stewart</a>
+<a href="https://nascar.nbcsports.com/team/trevor-bayne/" style="text-indent: 0px;">Trevor Bayne</a>
+<a href="https://nascar.nbcsports.com/team/ty-dillon/" style="text-indent: 0px;">Ty Dillon</a>
+<a href="https://nascar.nbcsports.com/team/tyler-reddick/" style="text-indent: 0px;">Tyler Reddick</a>
+<a href="https://nascar.nbcsports.com/team/william-byron/" style="text-indent: 0px;">William Byron</a>
+		</div><!-- #team-dropdown-list -->
+				<span class="blog-social-buttons">
+			<span class="social-button-text">Subscribe: </span>
+			<span class="blog-social-button-container">
+				<a href="https://www.facebook.com/NASCARonNBC" target="_blank" class="genericon genericon-facebook no-mobile"></a>
+				<a href="https://twitter.com/NASCARTalkNBC" target="_blank" class="genericon genericon-twitter no-mobile"></a>
+				<a href="https://nbcsports.com/newsletters" target="_blank" class="genericon genericon-mail no-mobile"></a>
+				<a href="https://nbcsports.com/sports-mobile" target="_blank" class="genericon genericon-phone no-mobile"></a>
+				<a href="https://nascar.nbcsports.com/feed/" target="_blank" class="genericon genericon-feed"></a>
+			</span>
+		</span>
+	</div><!-- #article-social-nav -->
+</header><!-- #article-nav -->
+
+    <main id="primary" class="content-area" role="main" data-pagination="false">
+		
+	<div class="trending-bar">
+		<div class="trending-bar--content">
+			<span class="trending">Quick links:</span>												<span class="trending-link-container full"><a class="trending-bar-link" href="http://nascar.nbcsports.com/tag/nascar-america/"><span class="text">NASCAR America</span></a></span>
+													<span class="trending-separator">|</span>
+																<span class="trending-link-container full"><a class="trending-bar-link" href="http://nascar.nbcsports.com/category/nbcpodcast/"><span class="text">NASCAR on NBC Podcast</span></a></span>
+													<span class="trending-separator">|</span>
+																<span class="trending-link-container full"><a class="trending-bar-link" href="http://nascar.nbcsports.com/tag/NASCAR"><span class="text">NASCAR </span></a></span>
+													</div>
+	</div>
+
+
+		
+		
+						
+			
+<article id="post-152694" class="content-item article-module post-152694 post type-post status-publish format-standard has-post-thumbnail hentry category-nascar-2 category-top-posts category-uncategorized tag-darlington-raceway tag-nascar nbcsports-team-chase-elliott nbcsports-team-kyle-busch nbcsports-athlete-chase-elliott nbcsports-athlete-kyle-busch" data-ad-tags="{&quot;cat&quot;:[&quot;NASCAR&quot;],&quot;chrome&quot;:&quot;&quot;,&quot;cag[tags]&quot;:[&quot;darlington raceway&quot;,&quot;nascar&quot;],&quot;cag[categories]&quot;:[&quot;nascar 2&quot;,&quot;top posts&quot;,&quot;uncategorized&quot;],&quot;cag[athletes]&quot;:[&quot;chase elliott&quot;,&quot;kyle busch&quot;],&quot;cag[teams]&quot;:[&quot;chase elliott&quot;,&quot;kyle busch&quot;]}" data-omniture="{&quot;pagename&quot;:&quot;\/2020\/05\/22\/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it\/&quot;,&quot;context_data&quot;:{&quot;nbcs.contenthub&quot;:&quot;Sports Talk&quot;,&quot;nbcs.business&quot;:&quot;Sports Talk Sites&quot;,&quot;nbcs.blog&quot;:&quot;NASCAR Talk | NBC Sports&quot;,&quot;nbcs.league&quot;:&quot;NASCAR&quot;,&quot;nbcs.sport&quot;:&quot;Motor Sports&quot;,&quot;nbcs.contenttitle&quot;:&quot;Chase Elliott on Kyle Busch: &#8216;He made a mistake &#8230; I was on the wrong end of it&#8217;&quot;,&quot;nbcs.author&quot;:&quot;Dustin Long&quot;,&quot;nbcs.contenttype&quot;:&quot;Post&quot;,&quot;nbcs.contentid&quot;:152694,&quot;nbcs.publishdate&quot;:&quot;05\/22\/2020|13:14&quot;}}" data-com-score-tracked="true">
+	<header class="entry-header">
+		
+		
+		
+				<div class="index-post-thumbnail video-thumbnail dockable">
+			<div class="featured-embed">
+				<div class="nbcsports-video-wrapper"><iframe src="//vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/vAUMVticlH2a?originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>			</div>
+		</div>
+					<style>
+				article .index-post-thumbnail.video-thumbnail {
+					position: relative;
+					float: none;
+					margin-left: 0;
+				}
+			</style>
+			<script>
+				(function($) {
+					$('.video-thumbnail.dockable:first iframe').on('load', function() {
+						$(window).trigger('registerDockingPlayer');
+					});
+				})(jQuery);
+			</script>
+				
+		<h1 class="entry-title">Chase Elliott on Kyle Busch: &#8216;He made a mistake &#8230; I was on the wrong end of it&#8217;</h1>
+				<div class="entry-meta">
+			<span class="byline"> By <span class="author vcard"><a class="url fn n" href="https://nascar.nbcsports.com/author/dustinlong17/">Dustin Long</a></span></span><span class="posted-on"><a href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/" rel="bookmark" class="post-permalink"><span class="entry-date published">May 22, 2020, 1:14 PM EDT</span></a></span>		</div><!-- .entry-meta -->
+		
+		<a href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/#respond" class="comments-link" >Leave a comment</a>
+		<div class="article-sharing-buttons">
+			<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-152694" class="share-twitter sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-152694" class="share-linkedin sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>					</div>
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="article-sidebar">
+			<div class="article-inline-ad" id="article-inline-ad-152694"></div>
+			<div class="article-sidebar-modules">
+							</div>
+		</div>
+		<p class="p1"><span class="s1"><a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48457/chase-elliott" target="_blank">Chase Elliott</a> said <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48221/kyle-busch" target="_blank">Kyle Busch</a> was “deserving” of <a href="https://nascar.nbcsports.com/2020/05/20/chase-elliott-expresses-displeasure-with-kyle-busch/">the middle finger Elliott gave him after being wrecked, </a>but also stated that he didn’t think Busch crashed him on purpose Wednesday at Darlington Raceway.</span></p>
+<p class="p1"><span class="s1">Elliott said he was upset with Busch&#8217;s move that led to the contact and cost Elliott a chance to win the most recent Cup race. Elliott finished 38th. Busch, who finished second, said he made a mistake after the race and <a href="https://nascar.nbcsports.com/2020/05/21/kyle-busch-chase-elliott-darlington-raceway-incident-nascar-cup-chase-briscoe-xfinity-series/">later apologized to Elliott</a>.</span></p>
+<p class="p1"><span class="s1">“I think that (Busch) was trying to make a spot that wasn’t there,” Elliott said in a Zoom call with media Friday. “Much like I told him, I get that mistakes happen and that’s part of life. I get it, but he’s just not a guy that makes many mistakes. For me to be on the poor end of a rare mistake on his end, at the end of the day, is unfortunate for me and my team.”</span></p>
+<p class="p1"><span class="s1">Elliott said he has no regrets about the gesture he gave Busch after the incident when Busch drove by the accident scene.</span></p>
+<p class="p1"><span class="s1">“I thought it was warranted, and he was deserving,” Elliott said.</span></p>
+<p>He also said: &#8220;I don&#8217;t think (Busch) did it on purpose. I hate that I was on the rare end of a rare mistake on his end. For a guy who doesn&#8217;t make many, hated that it was me that took the blow.&#8221;</p>
+<p><strong>MORE: <a href="https://nascar.nbcsports.com/2020/05/21/chase-elliott-kyle-busch-denny-hamlin-nascar-would-retaliation-send-wrong-message/">Would retaliation by Chase Elliott send wrong message?</a></strong></p>
+<p class="p1"><span class="s1">Even though Busch has owned the mistake, the question remains if and how Elliott might pay back Busch. </span></p>
+<p class="p1"><span class="s1">“Who knows the situations or the circumstances you will be presented down the road,” Elliott said about any retaliation. “At the end of the day, the whole reason Wednesday was as unfortunate as it was is because we were battling for a win. So I guess the bottom line is to try to put ourselves in position to win more and that’s a good problem to have. That’s my goal. </span></p>
+<p class="p1"><span class="s1">“Nobody is perfect. I get that. Everybody makes mistakes. I’m sure I’ll make plenty of mistakes as time goes on. I get it. I<span class="Apple-converted-space">  </span>just hate that I was on the wrong end of a rare one on his end.”</span></p>
+<p class="p1"><span class="s1">Elliott said he appreciated Busch owning the mistake.</span></p>
+<p class="p1"><span class="s1">“Kyle and I have gotten along for many years,” Elliott said. “I feel like I’ve raced him with a lot of respect because I respect him. I think he’s really good and he is. A two-time champion should be respected in my opinion. I think he’s earned that right.</span></p>
+<p class="p1"><span class="s1">“The respect from my end was there prior to the event. To hear that from a champion and a guy who we have raced really hard and clean together over the years, I think, goes further than someone who I don’t care for as much or somebody who I don’t get along with as well, or someone who doesn’t race with that kind of respect or that kind of integrity on track.</span></p>
+<p class="p1"><span class="s1">“What did it tell me about him? I learned he made a mistake and I was on the wrong end of it. He apologized to me. Unfortunately, that doesn’t change the result. At the end of the day, it still costs us a shot at a win. At the end of the day that’s really the bulk of what matters to me and my team because we’re in the business to perform more than anything.”</span></p>
+<p class="p1"><span class="s1">Elliott will have plenty of chances to race Busch in the coming days. They’ll both be in Sunday’s Coca-Cola 600 at Charlotte Motor Speedway and the Wednesday Cup race there. Elliott also is scheduled to compete in Tuesday night’s Gander RV &amp; Outdoors Truck Series race at Charlotte. Busch also is entered.</span></p>
+<div class="nbcsports-video-wrapper"><iframe src="//vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/BNpom_YXAUwb?originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>
+		<div class="article-bottom-ad" id="article-bottom-ad-152694"></div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tags-links">Tags: <a href="https://nascar.nbcsports.com/tag/darlington-raceway/" rel="tag">Darlington Raceway</a>, <a href="https://nascar.nbcsports.com/tag/nascar/" rel="tag">nascar</a>, <a href="https://nascar.nbcsports.com/athlete/chase-elliott/" rel="tag">Chase Elliott</a>, <a href="https://nascar.nbcsports.com/athlete/kyle-busch/" rel="tag">Kyle Busch</a></span>
+				<div class="comments-container">
+			<a href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/#respond" class="comments-collapse" >Leave a comment</a>
+			<div class="comments-loaded"></div>
+		</div>
+		
+			<div class="mobile-tease">
+		<h3>Scroll Down For:</h3>
+		<ul></ul>
+	</div>
+	
+			<div class="taboola-thumbnails-container" id="taboola-infinite-scroll-thumbnails-post-152694"></div>
+	
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+				
+		
+		
+		
+<article id="post-152739" class="content-item article-module post-152739 post type-post status-publish format-standard has-post-thumbnail hentry category-nascar-2 category-uncategorized tag-chad-knaus tag-charlotte-motor-speedway tag-coca-cola-600 tag-darlington-raceway tag-hendrick-motorsports tag-sgt-robert-billings nbcsports-team-william-byron nbcsports-athlete-william-byron" data-ad-tags="{&quot;cat&quot;:[&quot;NASCAR&quot;],&quot;chrome&quot;:&quot;&quot;,&quot;cag[tags]&quot;:[&quot;chad knaus&quot;,&quot;charlotte motor speedway&quot;,&quot;coca cola 600&quot;,&quot;darlington raceway&quot;,&quot;hendrick motorsports&quot;,&quot;sgt robert billings&quot;],&quot;cag[categories]&quot;:[&quot;nascar 2&quot;,&quot;uncategorized&quot;],&quot;cag[athletes]&quot;:[&quot;william byron&quot;],&quot;cag[teams]&quot;:[&quot;william byron&quot;]}" data-omniture="{&quot;pagename&quot;:&quot;\/2020\/05\/22\/william-byron-coca-cola-600-charlotte-motor-speedway\/&quot;,&quot;context_data&quot;:{&quot;nbcs.contenthub&quot;:&quot;Sports Talk&quot;,&quot;nbcs.business&quot;:&quot;Sports Talk Sites&quot;,&quot;nbcs.blog&quot;:&quot;NASCAR Talk | NBC Sports&quot;,&quot;nbcs.league&quot;:&quot;NASCAR&quot;,&quot;nbcs.sport&quot;:&quot;Motor Sports&quot;,&quot;nbcs.contenttitle&quot;:&quot;Will Coca-Cola 600 fortune shine upon William Byron?&quot;,&quot;nbcs.author&quot;:&quot;Jerry Bonkowski&quot;,&quot;nbcs.contenttype&quot;:&quot;Post&quot;,&quot;nbcs.contentid&quot;:152739,&quot;nbcs.publishdate&quot;:&quot;05\/22\/2020|17:44&quot;}}" data-com-score-tracked="false">
+	<div class="article-divider">
+		<div class="article-divider-ad" id="article-divider-ad-152739"></div>
+	</div>
+	<header class="entry-header">
+		
+		<h2 class="entry-title">Will Coca-Cola 600 fortune shine upon William Byron?</h2>
+		
+				<div class="index-post-thumbnail video-thumbnail">
+			<div class="featured-embed">
+				<div class="nbcsports-video-wrapper"><iframe src="https://vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/gRk6XbvTaUXf?autoPlay=false&#038;originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>			</div>
+		</div>
+				
+		
+				<div class="entry-meta">
+			<span class="byline"> By <span class="author vcard"><a class="url fn n" href="https://nascar.nbcsports.com/author/jerrybonkowski2013/">Jerry Bonkowski</a></span></span><span class="posted-on"><a href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/" rel="bookmark" class="post-permalink"><span class="entry-date published">May 22, 2020, 5:44 PM EDT</span></a></span>		</div><!-- .entry-meta -->
+		
+		<a href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/#respond" class="comments-link" >Leave a comment</a>
+		<div class="article-sharing-buttons">
+			<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-152739" class="share-twitter sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-152739" class="share-linkedin sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>					</div>
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="article-sidebar">
+			<div class="article-inline-ad" id="article-inline-ad-152739"></div>
+			<div class="article-sidebar-modules">
+							</div>
+		</div>
+		<p><a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48576/william-byron" target="_blank">William Byron</a> had a terrible experience in his first Coca-Cola 600, crashing a third of the way through and finishing next-to-last in the 2018 race.</p>
+<p>His sophomore effort was significantly better: He started on the pole and finished ninth.</p>
+<p>He’s looking for a similar, if not better, result in Sunday’s 600.</p>
+<p>“It takes a lot of patience, a lot of adjustments, a lot of pit stops, things like that, so you just have to progress your way through the event,&#8221; Byron said.</p>
+<p>Byron said he feels fine from the first two Darlington races this past Sunday and Wednesday, when he drove a combined 487 laps around the 1.366-mile track &#8212; the equivalent of 665 miles, 65 miles longer than the scheduled 600 miles he’ll run Sunday.</p>
+<p>Byron acknowledged that he and crew chief Chad Knaus will have to improve long-run speed, which was a problem at times in the two races at Darlington.</p>
+<p>He finished 35th there last Sunday due to a loose wheel, but rebounded to a 12th-place finish on Wednesday.</p>
+<p>“We had some issues to work through in the Wednesday race that we didn’t really figure out until after the race, so that was kind of is what it is,” Byron said. “But the Sunday race, we had a really good car and obviously had the misfortune there with the loose wheel.</p>
+<p>“(Darlington was) kind of a mixed bag. We weren’t as good on Wednesday, but I think we know why and we just have to work towards getting ready for the 600. We just have to try to carry over what we’ve been doing speed-wise at HMS.</p>
+<p>&#8220;We’ve had some really good cars this year. We just have to put together solid races and have good execution. It sounds kind of boring and simple, but it’s really what it comes down to. Hopefully we’ll get to the end of the race and have the opportunity.”</p>
+<p>In addition to hosting the 600, Charlotte Motor Speedway also will hold another Cup race Wednesday that will be 312 miles.</p>
+<p>“You’re going to have a different feel just because of the ability everybody has, not just the driver’s ability, but the team’s ability to learn from the previous race and get better,” Byron said. “I guarantee you’ll probably have five or six guys that run well in one race that won’t run well in the other, or a new player that’s a dominant factor in each race is probably going to be different.</p>
+<p>“I think you saw that at Darlington. Obviously, some of the players were the same at the front, but there were some different.</p>
+<p>“So, I think that’s going to continue with these doubleheader type races where you have a couple of days to go back, review what happened, what went well, what didn’t go so well and make adjustments to your car or make adjustments as a driver to get better.”</p>
+<p><em><strong><a href="http://www.twitter.com/JerryBonkowski">Follow @JerryBonkowski</a></strong></em></p>
+		<div class="article-bottom-ad" id="article-bottom-ad-152739"></div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tags-links">Tags: <a href="https://nascar.nbcsports.com/tag/chad-knaus/" rel="tag">chad knaus</a>, <a href="https://nascar.nbcsports.com/tag/charlotte-motor-speedway/" rel="tag">charlotte motor speedway</a>, <a href="https://nascar.nbcsports.com/tag/coca-cola-600/" rel="tag">Coca-Cola 600</a>, <a href="https://nascar.nbcsports.com/tag/darlington-raceway/" rel="tag">Darlington Raceway</a>, <a href="https://nascar.nbcsports.com/tag/hendrick-motorsports/" rel="tag">hendrick motorsports</a>, <a href="https://nascar.nbcsports.com/tag/sgt-robert-billings/" rel="tag">Sgt. Robert Billings</a>, <a href="https://nascar.nbcsports.com/athlete/william-byron/" rel="tag">William Byron</a></span>
+				<div class="comments-container">
+			<a href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/#respond" class="comments-collapse" >Leave a comment</a>
+			<div class="comments-loaded"></div>
+		</div>
+		
+		
+			<div class="taboola-thumbnails-container" id="taboola-infinite-scroll-thumbnails-post-152739"></div>
+	
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	
+		
+<article id="post-152742" class="content-item article-module post-152742 post type-post status-publish format-standard has-post-thumbnail hentry category-nascar-2 category-uncategorized tag-austin-cindric tag-brian-wilson tag-chase-briscoe tag-lug-nuts tag-nascar tag-richard-boswell tag-xfinity-series nbcsports-athlete-austin-cindric nbcsports-athlete-chase-briscoe" data-ad-tags="{&quot;cat&quot;:[&quot;NASCAR&quot;],&quot;chrome&quot;:&quot;&quot;,&quot;cag[tags]&quot;:[&quot;austin cindric&quot;,&quot;brian wilson&quot;,&quot;chase briscoe&quot;,&quot;lug nuts&quot;,&quot;nascar&quot;,&quot;richard boswell&quot;,&quot;xfinity series&quot;],&quot;cag[categories]&quot;:[&quot;nascar 2&quot;,&quot;uncategorized&quot;],&quot;cag[athletes]&quot;:[&quot;austin cindric&quot;,&quot;chase briscoe&quot;],&quot;cag[teams]&quot;:[]}" data-omniture="{&quot;pagename&quot;:&quot;\/2020\/05\/22\/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations\/&quot;,&quot;context_data&quot;:{&quot;nbcs.contenthub&quot;:&quot;Sports Talk&quot;,&quot;nbcs.business&quot;:&quot;Sports Talk Sites&quot;,&quot;nbcs.blog&quot;:&quot;NASCAR Talk | NBC Sports&quot;,&quot;nbcs.league&quot;:&quot;NASCAR&quot;,&quot;nbcs.sport&quot;:&quot;Motor Sports&quot;,&quot;nbcs.contenttitle&quot;:&quot;Two Xfinity crew chiefs fined for lug nut violations&quot;,&quot;nbcs.author&quot;:&quot;Daniel McFadin&quot;,&quot;nbcs.contenttype&quot;:&quot;Post&quot;,&quot;nbcs.contentid&quot;:152742,&quot;nbcs.publishdate&quot;:&quot;05\/22\/2020|16:57&quot;}}" data-com-score-tracked="false">
+	<div class="article-divider">
+		<div class="article-divider-ad" id="article-divider-ad-152742"></div>
+	</div>
+	<header class="entry-header">
+		
+		<h2 class="entry-title">Two Xfinity crew chiefs fined for lug nut violations</h2>
+		
+				<div class="index-post-thumbnail video-thumbnail">
+			<div class="featured-embed">
+				<div class="nbcsports-video-wrapper"><iframe src="https://vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/I_aJqJ_K84mg?autoPlay=false&#038;originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>			</div>
+		</div>
+				
+		
+				<div class="entry-meta">
+			<span class="byline"> By <span class="author vcard"><a class="url fn n" href="https://nascar.nbcsports.com/author/danielmcfadin/">Daniel McFadin</a></span></span><span class="posted-on"><a href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/" rel="bookmark" class="post-permalink"><span class="entry-date published">May 22, 2020, 4:57 PM EDT</span></a></span>		</div><!-- .entry-meta -->
+		
+		<a href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/#respond" class="comments-link" >Leave a comment</a>
+		<div class="article-sharing-buttons">
+			<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-152742" class="share-twitter sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-152742" class="share-linkedin sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>					</div>
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="article-sidebar">
+			<div class="article-inline-ad" id="article-inline-ad-152742"></div>
+			<div class="article-sidebar-modules">
+							</div>
+		</div>
+		<p>NASCAR has fined two Xfinity Series crew chiefs for unsecured lug nuts following Thursday&#8217;s race at Darlington.</p>
+<p>Brian Wilson, crew chief on <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48665/austin-cindric" target="_blank">Austin Cindric</a>&#8216;s No. 22 Ford, and Richard Boswell, crew chief on <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48661/chase-briscoe" target="_blank">Chase Briscoe</a>&#8216;s No. 98 Ford, were each fined $5,000 for one unsecured lug nut on their cars.</p>
+<p>Briscoe won Thursday&#8217;s race for his second victory of the year.</p>
+		<div class="article-bottom-ad" id="article-bottom-ad-152742"></div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tags-links">Tags: <a href="https://nascar.nbcsports.com/tag/austin-cindric/" rel="tag">austin cindric</a>, <a href="https://nascar.nbcsports.com/tag/brian-wilson/" rel="tag">Brian Wilson</a>, <a href="https://nascar.nbcsports.com/tag/chase-briscoe/" rel="tag">chase briscoe</a>, <a href="https://nascar.nbcsports.com/tag/lug-nuts/" rel="tag">lug nuts</a>, <a href="https://nascar.nbcsports.com/tag/nascar/" rel="tag">nascar</a>, <a href="https://nascar.nbcsports.com/tag/richard-boswell/" rel="tag">Richard Boswell</a>, <a href="https://nascar.nbcsports.com/tag/xfinity-series/" rel="tag">xfinity series</a>, <a href="https://nascar.nbcsports.com/athlete/austin-cindric/" rel="tag">Austin Cindric</a>, <a href="https://nascar.nbcsports.com/athlete/chase-briscoe/" rel="tag">Chase Briscoe</a></span>
+				<div class="comments-container">
+			<a href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/#respond" class="comments-collapse" >Leave a comment</a>
+			<div class="comments-loaded"></div>
+		</div>
+		
+		
+			<div class="taboola-thumbnails-container" id="taboola-infinite-scroll-thumbnails-post-152742"></div>
+	
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	
+		
+<article id="post-152727" class="content-item article-module post-152727 post type-post status-publish format-standard has-post-thumbnail hentry category-nascar-2 category-uncategorized tag-choose-cone tag-darlington-raceway tag-michigan-international-speedway tag-nascar tag-nascar-cup-series nbcsports-team-austin-dillon nbcsports-team-joey-logano nbcsports-team-martin-truex-jr nbcsports-team-william-byron nbcsports-athlete-austin-dillon nbcsports-athlete-joey-logano-2 nbcsports-athlete-martin-truex-jr nbcsports-athlete-william-byron" data-ad-tags="{&quot;cat&quot;:[&quot;NASCAR&quot;],&quot;chrome&quot;:&quot;&quot;,&quot;cag[tags]&quot;:[&quot;choose cone&quot;,&quot;darlington raceway&quot;,&quot;michigan international speedway&quot;,&quot;nascar&quot;,&quot;nascar cup series&quot;],&quot;cag[categories]&quot;:[&quot;nascar 2&quot;,&quot;uncategorized&quot;],&quot;cag[athletes]&quot;:[&quot;austin dillon&quot;,&quot;joey logano 2&quot;,&quot;martin truex jr&quot;,&quot;william byron&quot;],&quot;cag[teams]&quot;:[&quot;austin dillon&quot;,&quot;joey logano&quot;,&quot;martin truex jr&quot;,&quot;william byron&quot;]}" data-omniture="{&quot;pagename&quot;:&quot;\/2020\/05\/22\/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone\/&quot;,&quot;context_data&quot;:{&quot;nbcs.contenthub&quot;:&quot;Sports Talk&quot;,&quot;nbcs.business&quot;:&quot;Sports Talk Sites&quot;,&quot;nbcs.blog&quot;:&quot;NASCAR Talk | NBC Sports&quot;,&quot;nbcs.league&quot;:&quot;NASCAR&quot;,&quot;nbcs.sport&quot;:&quot;Motor Sports&quot;,&quot;nbcs.contenttitle&quot;:&quot;Cup drivers express desire for choose cone rule for restarts&quot;,&quot;nbcs.author&quot;:&quot;Daniel McFadin&quot;,&quot;nbcs.contenttype&quot;:&quot;Post&quot;,&quot;nbcs.contentid&quot;:152727,&quot;nbcs.publishdate&quot;:&quot;05\/22\/2020|15:57&quot;}}" data-com-score-tracked="false">
+	<div class="article-divider">
+		<div class="article-divider-ad" id="article-divider-ad-152727"></div>
+	</div>
+	<header class="entry-header">
+		
+		<h2 class="entry-title">Cup drivers express desire for choose cone rule for restarts</h2>
+		
+				<div class="index-post-thumbnail video-thumbnail">
+			<div class="featured-embed">
+				<div class="nbcsports-video-wrapper"><iframe src="https://vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/yuMfA4Y3U603?autoPlay=false&#038;originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>			</div>
+		</div>
+				
+		
+				<div class="entry-meta">
+			<span class="byline"> By <span class="author vcard"><a class="url fn n" href="https://nascar.nbcsports.com/author/danielmcfadin/">Daniel McFadin</a></span></span><span class="posted-on"><a href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/" rel="bookmark" class="post-permalink"><span class="entry-date published">May 22, 2020, 3:57 PM EDT</span></a></span>		</div><!-- .entry-meta -->
+		
+		<a href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/#respond" class="comments-link" >Leave a comment</a>
+		<div class="article-sharing-buttons">
+			<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-152727" class="share-twitter sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-152727" class="share-linkedin sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>					</div>
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="article-sidebar">
+			<div class="article-inline-ad" id="article-inline-ad-152727"></div>
+			<div class="article-sidebar-modules">
+							</div>
+		</div>
+		<p>During the course of Wednesday night&#8217;s Cup Series race at Darlington, <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48223/martin-truex-jr" target="_blank">Martin Truex Jr.</a> was &#8220;murdered&#8221; on restarts as his No. 19 Toyota restarted in the inside lane most of the night.</p>
+<p>At Darlington, where the outside lane is typically the strongest, that factored into Truex finishing 10th after running near the front much of the night.</p>
+<p>Truex &#8220;would have loved to have seen&#8221; a choose cone in play to allow him the opportunity to choose to restart on the outside.</p>
+<p>A choose cone, a method used on short tracks around the country, allows drivers to pick the lane they&#8217;ll restart in following a caution. A number of front runners could choose to restart in the preferred lane while a driver whose farther back could wind up choosing to restart on the front row next to the leader, giving them the chance to take advantage of track position.</p>
+<p>&#8220;Probably had a top-three car and finished 10th because of inside restarts every single time,&#8221; Truex said Friday in a Zoom press conference. &#8220;That was frustrating. I would definitely be for (the choose cone). I think it&#8217;s a good option. I think it works well on the short tracks where they do it. I think with this rules package that we have at bigger tracks it would be something that as drivers we would all be interested in.&#8221;</p>
+<p>The leading voice among drivers regarding the choose cone in recent days has been Richard Childress Racing&#8217;s <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48393/austin-dillon" target="_blank">Austin Dillon</a>, who tweeted about implementing <a href="https://twitter.com/austindillon3/status/1031002348120952832">the choose cone as far back as 2018</a>.</p>
+<p>Dillon brought the topic up again on Twitter Thursday morning after he finished 20th at Darlington.</p>
+<blockquote class="twitter-tweet" data-width="500" data-dnt="true">
+<p lang="en" dir="ltr">It’s time for a choose cone. <a href="https://twitter.com/TooToughToTame?ref_src=twsrc%5Etfw">@TooToughToTame</a> is the perfect place to try it. The bottom is at a disadvantage this will create drama and allow us to decide our fate. Paint something on the track before the start finish line. One to go we choose our destiny.</p>
+<p>&mdash; Austin Dillon (@austindillon3) <a href="https://twitter.com/austindillon3/status/1263498243360665600?ref_src=twsrc%5Etfw">May 21, 2020</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Dillon addressed the subject in further detail Friday in a Zoom press conference.</p>
+<p>&#8220;As a sport we&#8217;re always changing,&#8221; Dillon said. &#8220;<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif">We&#8217;ve done a really good job with the mile-and-a-half program and brought it back to life. I think the next thing is trying to make it better for the fans and create more drama than it already has.</span></p>
+<p><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif">&#8220;The choose cone is something that is utilized throughout short tracks in America. Dirt track, asphalt, you name it. You see it on a weekly basis at places that, heck, when I was Legends car racing at 14 with no radios, you could figure out how to make the choose cone work. You just chose and that was your line you had to make. This puts it in the driver&#8217;s hands. It kind of allows us to decide our fate when it comes down to restarts.&#8221;</span></p>
+<p>Dillon also pointed to games played by drivers on pit road, as they brake check in order to leave pit road in a spot that will allow them to restart in the preferred lane.</p>
+<p>&#8220;It takes out pit crew&#8217;s fast stops,&#8221; Dillon said. &#8220;Your pit crew could&#8217;ve gained a couple of spots there, but instead you&#8217;re giving up two spots because you&#8217;d rather start on the outside. That&#8217;s gotta stop. I think it&#8217;s gonna knock someone&#8217;s nose in at the end of pit road before too long, so that will end a guy&#8217;s race. I don&#8217;t feel like it is a hard thing to do.&#8221;</p>
+<p>Dillon said a group of drivers have discussed the choose rule and &#8220;feel like we can accomplish it as a group.&#8221;</p>
+<p>&#8220;We&#8217;ve been able to bring our sport back through a pandemic, I think we can make a choose rule work,&#8221; Dillon added. &#8220;It&#8217;s not that complicated in my eyes.&#8221;</p>
+<p>Dillon recommending trying the procedure out at a track like Michigan, a 2-mile speedway where the high line is strong and drivers would have more time to choose their lane.</p>
+<p>&#8220;You lose three or four spots by the time you get to Turn 1 because of the draft there,&#8221; Dillon said. &#8220;So it would create a long time for them to straighten it out by the time we got around. I think, personally, the drivers can straighten it out themselves. You choose a line, you must stay in that line after that mark. If you swap lanes you&#8217;re automatically black flagged, brought to the back and if you don&#8217;t give up your position before the start, it&#8217;s a lap penalty.&#8221;</p>
+<p>However, Dillon isn&#8217;t in a rush to force NASCAR into making a decision.</p>
+<p>&#8220;I think they&#8217;re definitely open to it from the discussions I&#8217;ve had,&#8221; Dillon said. &#8220;I just feel like there&#8217;s a lot going on right now, so I can&#8217;t push too hard because they have a lot on their plate, but it is something that I wish that they would put kind of on the driver&#8217;s plate to kind of handle a little bit.&#8221;</p>
+<p>Hendrick Motorsports&#8217; <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48576/william-byron" target="_blank">William Byron</a> believes a choose cone &#8220;would definitely be welcome for&#8221; drivers.</p>
+<p>&#8220;Especially with how critical restarts are with this package, just the sheer track position that you can gain or lose in one restart alone is pretty huge and how close the field is,&#8221; Byron said. &#8220;I think the top 10-12 cars are typically, reasonably the same or close pace to each other. I think a choose cone would allow you to have some different options to be able to make a run and let&#8217;s say you lose track position on a pit stop or whatever. You could have the potential to gain that back. I can see something that&#8217;s maybe for the top 20 cars and maybe the last 20 just doubles up like normal so it&#8217;s not a huge confusion coming to a restart.&#8221;</p>
+<p><a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48369/joey-logano" target="_blank">Joey Logano</a> is also a proponent of the choose rule.</p>
+<p>&#8220;It’s not news I don’t think to any driver here, every meeting that I’ve had I’ve always brought up the choose rule.  Let’s do it,&#8221; Logano said Friday in a Zoom press conference. &#8220;I see nothing bad that it can bring. It brings another strategy to the table, it’s definitely something to talk about. You don’t have luck becoming involved. &#8230;</p>
+<p>&#8220;I tell you, if I see a bunch of 12-year-olds do it in the Summer Shootout at Charlotte Motor Speedway, I’m pretty sure all of us could figure it out.”</p>
+<p><a class="twitter-follow-button" href="https://twitter.com/DanielMcFadin">Follow @DanielMcFadin</a></p>
+		<div class="article-bottom-ad" id="article-bottom-ad-152727"></div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tags-links">Tags: <a href="https://nascar.nbcsports.com/tag/choose-cone/" rel="tag">choose cone</a>, <a href="https://nascar.nbcsports.com/tag/darlington-raceway/" rel="tag">Darlington Raceway</a>, <a href="https://nascar.nbcsports.com/tag/michigan-international-speedway/" rel="tag">Michigan International Speedway</a>, <a href="https://nascar.nbcsports.com/tag/nascar/" rel="tag">nascar</a>, <a href="https://nascar.nbcsports.com/tag/nascar-cup-series/" rel="tag">NASCAR Cup Series</a>, <a href="https://nascar.nbcsports.com/athlete/austin-dillon/" rel="tag">Austin Dillon</a>, <a href="https://nascar.nbcsports.com/athlete/joey-logano-2/" rel="tag">Joey Logano</a>, <a href="https://nascar.nbcsports.com/athlete/martin-truex-jr/" rel="tag">Martin Truex Jr.</a>, <a href="https://nascar.nbcsports.com/athlete/william-byron/" rel="tag">William Byron</a></span>
+				<div class="comments-container">
+			<a href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/#respond" class="comments-collapse" >Leave a comment</a>
+			<div class="comments-loaded"></div>
+		</div>
+		
+		
+			<div class="taboola-thumbnails-container" id="taboola-infinite-scroll-thumbnails-post-152727"></div>
+	
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	
+		
+<article id="post-152720" class="content-item article-module post-152720 post type-post status-publish format-standard has-post-thumbnail hentry category-nascar-2 category-uncategorized tag-charlotte-motor-speedway tag-coca-cola-600 tag-team-penske nbcsports-team-joey-logano nbcsports-athlete-joey-logano-2" data-ad-tags="{&quot;cat&quot;:[&quot;NASCAR&quot;],&quot;chrome&quot;:&quot;&quot;,&quot;cag[tags]&quot;:[&quot;charlotte motor speedway&quot;,&quot;coca cola 600&quot;,&quot;team penske&quot;],&quot;cag[categories]&quot;:[&quot;nascar 2&quot;,&quot;uncategorized&quot;],&quot;cag[athletes]&quot;:[&quot;joey logano 2&quot;],&quot;cag[teams]&quot;:[&quot;joey logano&quot;]}" data-omniture="{&quot;pagename&quot;:&quot;\/2020\/05\/22\/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway\/&quot;,&quot;context_data&quot;:{&quot;nbcs.contenthub&quot;:&quot;Sports Talk&quot;,&quot;nbcs.business&quot;:&quot;Sports Talk Sites&quot;,&quot;nbcs.blog&quot;:&quot;NASCAR Talk | NBC Sports&quot;,&quot;nbcs.league&quot;:&quot;NASCAR&quot;,&quot;nbcs.sport&quot;:&quot;Motor Sports&quot;,&quot;nbcs.contenttitle&quot;:&quot;Joey Logano: Don&#8217;t ever shorten length of Coca-Cola 600&quot;,&quot;nbcs.author&quot;:&quot;Jerry Bonkowski&quot;,&quot;nbcs.contenttype&quot;:&quot;Post&quot;,&quot;nbcs.contentid&quot;:152720,&quot;nbcs.publishdate&quot;:&quot;05\/22\/2020|14:35&quot;}}" data-com-score-tracked="false">
+	<div class="article-divider">
+		<div class="article-divider-ad" id="article-divider-ad-152720"></div>
+	</div>
+	<header class="entry-header">
+		
+		<h2 class="entry-title">Joey Logano: Don&#8217;t ever shorten length of Coca-Cola 600</h2>
+		
+				<div class="index-post-thumbnail video-thumbnail">
+			<div class="featured-embed">
+				<div class="nbcsports-video-wrapper"><iframe src="https://vplayer.nbcsports.com/p/BxmELC/nbcsports_embed/select/media/I_aJqJ_K84mg?autoPlay=false&#038;originalReferrer=http%3A%2F%2Ffrom.flipboard.com%2Ftopic%2Fchaseelliott" width="651" height="365" frameborder="0" scrolling="no" allowfullscreen="true" class="nbcsports-video"></iframe></div>			</div>
+		</div>
+				
+		
+				<div class="entry-meta">
+			<span class="byline"> By <span class="author vcard"><a class="url fn n" href="https://nascar.nbcsports.com/author/jerrybonkowski2013/">Jerry Bonkowski</a></span></span><span class="posted-on"><a href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/" rel="bookmark" class="post-permalink"><span class="entry-date published">May 22, 2020, 2:35 PM EDT</span></a></span>		</div><!-- .entry-meta -->
+		
+		<a href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/#respond" class="comments-link" >Leave a comment</a>
+		<div class="article-sharing-buttons">
+			<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-152720" class="share-twitter sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-152720" class="share-linkedin sd-button share-icon no-text" href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div>					</div>
+
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="article-sidebar">
+			<div class="article-inline-ad" id="article-inline-ad-152720"></div>
+			<div class="article-sidebar-modules">
+							</div>
+		</div>
+		<p>It may be the longest and most grueling race on the NASCAR Cup schedule, but <a class="nameLink" href="https://www.rotoworld.com/auto-racing/nascar/player/48369/joey-logano" target="_blank">Joey Logano</a> wouldn’t have Sunday’s Coca-Cola 600 any other way.</p>
+<p>“The Coke 600 is a crown jewel event,” the driver of the No. 22 Team Penske Ford Mustang said Friday during a media video conference. “It’s always been that way for us. It’s such a big deal to try to win that one.</p>
+<p>“I’ve come so close (to winning the 600), finished second there last year, just want to get that one done so bad, but that race track with this 550 (horsepower) rules package is pretty intense on these restarts. There is gonna be three and four-wide racing.”</p>
+<p>While the usual crowd and throngs of military members will not be in attendance due to the COVID-19 pandemic, that doesn’t diminish how important this weekend is, <a href="https://nascar.nbcsports.com/2020/05/19/nascar-coca-cola-600-to-be-halted-briefly-for-moment-of-remembrance/">both for honoring the military – which will be done primarily on a virtual basis</a> – as well as for the impact the race outcome may have on the playoffs.</p>
+<p>“Yes, it’s 600 miles and it’s a long one, but I guarantee those restarts are gonna be super-intense,” Logano said. “Once you get 15-20 laps into a run, it just gets harder and harder to pass.</p>
+<p>“But for the first 15-20 laps it’s gonna be game on, where we’re gonna be very intense out there pushing and shoving.”</p>
+<p>Given the significant attention NASCAR is getting for being the first major professional sport to resume action in the pandemic, Logano was asked if it may be difficult for fans to stay with the lengthy action Sunday, particularly new and potential fans who are starved for sports entertainment.</p>
+<p>“I’ve always enjoyed the Coke 600 because there’s more racing to watch,” he said with a laugh. “There are shorter races to watch if you don’t want to watch a long one, but as far as the 600, you can’t shorten that race, you just can’t.</p>
+<p>“It’s the Coke 600. No one calls it the Coke 300 or 400. It’s the Coca-Cola 600 and you cannot change that. It’s a crown jewel event. We must keep it the same and that’s what we’re doing.”</p>
+<p>There’s also the historic aspect of the 600, which celebrates its 61st edition on Sunday.</p>
+<p>“I was watching the (TV) special during the rain delay this weekend about the 600 and the history behind it and all, and it just got me excited to race in that race this weekend,” said Logano, who has won two of the first six races this season. “I’m glad we’re keeping it the same.</p>
+<p>“I think fans will enjoy it either way. It’s a good race track and it’s gonna be intense out there from lap one. At this point, nobody saves their car and says, ‘Oh, I’ve got to make sure I have brakes on it. It’s 100 percent from lap one. We’re hammer down every lap, so the intensity is there the whole time.”</p>
+<p><em><strong><a href="http://www.twitter.com/JerryBonkowski">Follow @JerryBonkowski</a></strong></em></p>
+		<div class="article-bottom-ad" id="article-bottom-ad-152720"></div>
+			</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="tags-links">Tags: <a href="https://nascar.nbcsports.com/tag/charlotte-motor-speedway/" rel="tag">charlotte motor speedway</a>, <a href="https://nascar.nbcsports.com/tag/coca-cola-600/" rel="tag">Coca-Cola 600</a>, <a href="https://nascar.nbcsports.com/tag/team-penske/" rel="tag">team penske</a>, <a href="https://nascar.nbcsports.com/athlete/joey-logano-2/" rel="tag">Joey Logano</a></span>
+				<div class="comments-container">
+			<a href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/#respond" class="comments-collapse" >Leave a comment</a>
+			<div class="comments-loaded"></div>
+		</div>
+		
+		
+			<div class="taboola-thumbnails-container" id="taboola-infinite-scroll-thumbnails-post-152720"></div>
+	
+			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	
+
+        <article id="loader-container" class="article-module">
+            <div class="loader"></div>
+        </article>
+    </main><!-- #primary -->
+
+	<div id="story-explorer-wrapper">
+		<aside id="story-explorer" class="styled-scrollbar">
+			<div id="story-explorer-headlines">
+				<div class="story-explorer-title">Latest NASCAR TALK | NBC SPORTS</div>
+									<a href="https://nascar.nbcsports.com/2020/05/22/william-byron-coca-cola-600-charlotte-motor-speedway/" class="story-explorer-item" id="headline-152739">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151879278.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Will Coca-Cola 600 fortune shine upon William Byron?</span>
+						<span class="item-timestamp" data-timestamp="1590183845000">May 22, 2020 5:44 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations/" class="story-explorer-item" id="headline-152742">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="NASCAR" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg 1006w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=320,181 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298389-e1590180152873.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Two Xfinity crew chiefs fined for lug nut violations</span>
+						<span class="item-timestamp" data-timestamp="1590181061000">May 22, 2020 4:57 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone/" class="story-explorer-item" id="headline-152727">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="choose cone" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg 1000w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226108307-e1590175540224.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Cup drivers express desire for choose cone rule for restarts</span>
+						<span class="item-timestamp" data-timestamp="1590177457000">May 22, 2020 3:57 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway/" class="story-explorer-item" id="headline-152720">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-963134470.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Joey Logano: Don&#8217;t ever shorten length of Coca-Cola 600</span>
+						<span class="item-timestamp" data-timestamp="1590172537000">May 22, 2020 2:35 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it/" class="story-explorer-item" id="headline-152694">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/03/GettyImages-1201242887.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Chase Elliott on Kyle Busch: &#8216;He made a mistake &#8230; I was on the wrong end of it&#8217;</span>
+						<span class="item-timestamp" data-timestamp="1590167664000">May 22, 2020 1:14 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/kyle-busch-chase-elliott-martin-truex-jr-coca-cola-600-entry-list-nascar/" class="story-explorer-item" id="headline-152689">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Coca-Cola 600" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg 1013w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1147093442-e1590163832384.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Entry list for Coca-Cola 600 at Charlotte Motor Speedway</span>
+						<span class="item-timestamp" data-timestamp="1590164946000">May 22, 2020 12:29 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/22/denny-hamlin-kevin-harvick-martin-truex-kyle-busch-friday-5-whats-next-in-these-changing-times-for-nascar/" class="story-explorer-item" id="headline-152662">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg 888w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226140163-e1590117061802.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Friday 5: What&#8217;s next in these changing times for NASCAR?</span>
+						<span class="item-timestamp" data-timestamp="1590143455000">May 22, 2020 6:30 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/chase-briscoe-kyle-busch-samantha-busch-marissa-briscoe-celebrates-mourns-in-victory/" class="story-explorer-item" id="headline-152655">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg 1024w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226308660-e1590110636448.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Long: Chase Briscoe celebrates, mourns in victory</span>
+						<span class="item-timestamp" data-timestamp="1590112015000">May 21, 2020 9:46 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/kyle-busch-chase-elliott-darlington-raceway-incident-nascar-cup-chase-briscoe-xfinity-series/" class="story-explorer-item" id="headline-152644">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-642752210.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Kyle Busch: &#8216;Chase Elliott and I talked and it went really well&#8217;</span>
+						<span class="item-timestamp" data-timestamp="1590107455000">May 21, 2020 8:30 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/chase-briscoe-kyle-busch-toyota-200-xfinity-results-standings-after-darlington/" class="story-explorer-item" id="headline-152627">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg 967w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226298200-e1590102681176.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Xfinity results, standings after Darlington</span>
+						<span class="item-timestamp" data-timestamp="1590103167000">May 21, 2020 7:19 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/chase-briscoe-kyle-busch-darlington-raceway-xfinity-series/" class="story-explorer-item" id="headline-152611">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226299963.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Chase Briscoe holds off Kyle Busch for thrilling Darlington Xfinity win</span>
+						<span class="item-timestamp" data-timestamp="1590100238000">May 21, 2020 6:30 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/team-penske-brad-keselowski-joey-logano-ryan-blaney-jimmie-johnson-darlington-raceway/" class="story-explorer-item" id="headline-152604">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119317-1.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Second time at Darlington is a charm for Team Penske</span>
+						<span class="item-timestamp" data-timestamp="1590097109000">May 21, 2020 5:38 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/charlotte-motor-speedway-nascar-cup-xfinity-trucks/" class="story-explorer-item" id="headline-152558">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1151903159.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR schedule for Cup, Xfinity, Truck races at Charlotte</span>
+						<span class="item-timestamp" data-timestamp="1590091232000">May 21, 2020 4:00 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/jimmie-johnson-darlington-raceway-charlotte-motor-speedway-denny-hamlin/" class="story-explorer-item" id="headline-152590">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226121909.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Jimmie Johnson buoyed by Darlington rebound</span>
+						<span class="item-timestamp" data-timestamp="1590090119000">May 21, 2020 3:41 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/chase-elliott-kyle-busch-denny-hamlin-nascar-would-retaliation-send-wrong-message/" class="story-explorer-item" id="headline-152574">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg 960w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226109930-e1590084520983.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Would retaliation by Chase Elliott send wrong message?</span>
+						<span class="item-timestamp" data-timestamp="1590086225000">May 21, 2020 2:37 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/darlington-raceway-xfinity-series-rain-lightning-delay/" class="story-explorer-item" id="headline-152568">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225855100.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">UPDATE: Track drying underway, Xfinity race at Darlington set for 4:30 p.m. ET</span>
+						<span class="item-timestamp" data-timestamp="1590077095000">May 21, 2020 12:04 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/dale-jarrett-mike-tirico-lunch-talk-live-nascar/" class="story-explorer-item" id="headline-152430">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Lunch Talk Live" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg 1560w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=320,181 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1024,578 1024w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1536,866 1536w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1506,848 1506w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Dale Jarrett joins Mike Tirico on Lunch Talk Live on NBCSN</span>
+						<span class="item-timestamp" data-timestamp="1590075018000">May 21, 2020 11:30 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/kyle-busch-chase-elliott-steve-letarte-dale-jarrett-jeff-burton-nascar-america-at-home-what-now-between-chase-elliott-kyle-busch/" class="story-explorer-item" id="headline-152552">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg 939w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-875772186-e1590068145481.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR America at Home: &#8216;What now?&#8217; between Chase Elliott, Kyle Busch</span>
+						<span class="item-timestamp" data-timestamp="1590070705000">May 21, 2020 10:18 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/denny-hamlin-kyle-busch-chase-elliott-kevin-harvick-brad-keselowski-erik-jones-nascar-winners-and-losers-from-wednesday-darlington-race/" class="story-explorer-item" id="headline-152538">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg 957w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=195,109 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226133051-e1590036863346.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Winners and losers from Wednesday&#8217;s Darlington race</span>
+						<span class="item-timestamp" data-timestamp="1590058834000">May 21, 2020 7:00 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/xfinity-race-darlington-start-time-lineup-and-more/" class="story-explorer-item" id="headline-152220">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="NASCAR Xfinity race at Darlington" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg 1008w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-841973974-e1589851415642.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Thursday&#8217;s NASCAR Xfinity race at Darlington: Start time, lineup and more</span>
+						<span class="item-timestamp" data-timestamp="1590037496000">May 21, 2020 1:04 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/21/denny-hamlin-kevin-harvick-kyle-busch-chase-elliott-nascar-what-drivers-said-darlington-nascar/" class="story-explorer-item" id="headline-152509">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="NASCAR" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg 972w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226129805-e1590033254796.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">What Drivers Said after Wednesday&#8217;s Cup race at Darlington</span>
+						<span class="item-timestamp" data-timestamp="1590033892000">May 21, 2020 12:04 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/denny-hamlin-kyle-busch-chase-elliott-kevin-harvick-race-results-from-wednesday-night-darlington-cup-race/" class="story-explorer-item" id="headline-152486">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg 880w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226122246-e1590031380317.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Results from Wednesday night Darlington Cup race</span>
+						<span class="item-timestamp" data-timestamp="1590031561000">May 20, 2020 11:26 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/denny-hamlin-chase-elliott-kyle-busch-wins-wednesday-cup-race-darlington/" class="story-explorer-item" id="headline-152461">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Denny Hamlin" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg 1013w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226127731-e1590032521228.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Denny Hamlin wins Wednesday&#8217;s rain-shortened Cup race at Darlington</span>
+						<span class="item-timestamp" data-timestamp="1590029774000">May 20, 2020 10:56 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/chase-elliott-expresses-displeasure-with-kyle-busch/" class="story-explorer-item" id="headline-152469">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg 970w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226119306-e1590028930868.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Chase Elliott gives Kyle Busch one-finger salute after crash</span>
+						<span class="item-timestamp" data-timestamp="1590029329000">May 20, 2020 10:48 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/erik-jones-corey-lajoie-bj-mcleod-gray-gaulding-jj-yeley-nascar-penalizes-two-drivers-for-inspection-failures/" class="story-explorer-item" id="headline-152441">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg 888w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=320,181 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225486725-e1590013467120.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR penalizes three drivers for inspection failures</span>
+						<span class="item-timestamp" data-timestamp="1590013947000">May 20, 2020 6:32 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/ryan-newman-roman-coca-cola-600-nascar/" class="story-explorer-item" id="headline-152435">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Ryan Newman" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg 1158w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=320,181 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=1024,578 1024w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Roman-6-Mustang-3q-front-e1590012215160.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Roman to sponsor Ryan Newman in Coca-Cola 600</span>
+						<span class="item-timestamp" data-timestamp="1590013211000">May 20, 2020 6:20 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/ryan-preece-ty-dillon-wednesdays-nascar-cup-race-darlington-rain-delay/" class="story-explorer-item" id="headline-152425">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg 1013w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1226086574-e1590011138265.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Wednesday&#8217;s Darlington Cup race underway after rain delay</span>
+						<span class="item-timestamp" data-timestamp="1590013066000">May 20, 2020 6:17 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/garrett-smithley-niece-motorsports-charlotte-motor-speedway-gander-rv-outdoor-truck-series/" class="story-explorer-item" id="headline-152417">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1183632119.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Garrett Smithley to make debut for Niece Motorsports</span>
+						<span class="item-timestamp" data-timestamp="1590010377000">May 20, 2020 5:32 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/john-hunter-nemechek-darlington-raceway-erik-jones-tyler-reddick/" class="story-explorer-item" id="headline-152409">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225441870.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">John Hunter Nemechek ready for even better Round 2 at Darlington</span>
+						<span class="item-timestamp" data-timestamp="1590007671000">May 20, 2020 4:47 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/kevin-harvick-alex-bowman-kurt-busch-matt-kenseth-wednesdays-cup-race-at-darlington-start-time-lineup-and-more/" class="story-explorer-item" id="headline-152263">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg 888w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225490334-e1589908316469.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Wednesday&#8217;s Cup race at Darlington: Start time, lineup and more</span>
+						<span class="item-timestamp" data-timestamp="1590005268000">May 20, 2020 4:07 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/nascar-img-arena-new-game-international-sportsbooks-live-stream-races/" class="story-explorer-item" id="headline-152386">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1206967545.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR, IMG Arena to offer virtual betting game to global sportsbooks</span>
+						<span class="item-timestamp" data-timestamp="1590003723000">May 20, 2020 3:42 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/martin-truex-jr-chase-elliott-alex-bowman-erik-jones-james-small-nascar-darlington/" class="story-explorer-item" id="headline-152298">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Martin Truex Jr." srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg 1011w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225491088-e1589920271853.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Martin Truex Jr. looks to build on first top-10 finish of year</span>
+						<span class="item-timestamp" data-timestamp="1589992238000">May 20, 2020 12:30 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/michael-mcdowell-front-row-motorsports-carparts-com-sponsorship/" class="story-explorer-item" id="headline-152373">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/McDowell.jpg.png?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">CarParts.com extends sponsorship of Michael McDowell for 2 more races</span>
+						<span class="item-timestamp" data-timestamp="1589991260000">May 20, 2020 12:14 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/bristol-atlanta-martinsville-miami-no-practice-or-qualifying/" class="story-explorer-item" id="headline-152367">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225489476.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR to continue without practice, qualifying for next several Cup races</span>
+						<span class="item-timestamp" data-timestamp="1589988828000">May 20, 2020 11:33 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/matt-kenseth-jim-harbaugh-taylor-hall-nascar-joins-mike-tirico-on-lunch-talk-live-on-nbcsn/" class="story-explorer-item" id="headline-152327">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Lunch Talk Live" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg 1560w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=320,181 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1024,578 1024w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1536,866 1536w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=1506,848 1506w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/04/Lunch_Talk_Live.png_max-e1586124373387.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Matt Kenseth joins Mike Tirico on Lunch Talk Live on NBCSN</span>
+						<span class="item-timestamp" data-timestamp="1589987736000">May 20, 2020 11:15 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/erik-jones-richard-petty-ned-jarrett-nascar-cup-series-wednesday-night-racing-factoids/" class="story-explorer-item" id="headline-152270">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Darlington" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg 1003w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=320,180 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=195,110 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1171642379-e1589909968251.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Cup Series Wednesday night racing factoids</span>
+						<span class="item-timestamp" data-timestamp="1589979607000">May 20, 2020 9:00 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/20/kevin-harvick-alex-bowman-kurt-busch-chase-elliott-denny-hamlin-erik-jones-martin-truex-jr-tyler-reddick-kyle-busch-ryan-newman-john-hunter-nemechek-nascar-power-rankings/" class="story-explorer-item" id="headline-152299">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg 466w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=320,178 320w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=195,108 195w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225465346-1-e1589920649269.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR Power Rankings: Kevin Harvick climbs to No. 1</span>
+						<span class="item-timestamp" data-timestamp="1589972451000">May 20, 2020 7:00 am</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/19/xfinity-darlington-raceway-toyota-200-rain-postpones/" class="story-explorer-item" id="headline-152314">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="Rain postpones Xfinity race" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225861283.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Rain postpones Xfinity race at Darlington to Thursday</span>
+						<span class="item-timestamp" data-timestamp="1589927778000">May 19, 2020 6:36 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/19/nascar-changes-start-time-for-wednesdays-cup-race/" class="story-explorer-item" id="headline-152290">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/GettyImages-1225443811.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">NASCAR changes start time for Wednesday&#8217;s Cup race</span>
+						<span class="item-timestamp" data-timestamp="1589918870000">May 19, 2020 4:07 pm</span>
+					</a>
+									<a href="https://nascar.nbcsports.com/2020/05/19/richard-childress-dale-earnhardt-barrett-jackson-auction/" class="story-explorer-item" id="headline-152281">
+						<span class="item-thumbnail"><img width="128" height="72" src="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?w=128&amp;h=72&amp;crop=1" class="attachment-story-explorer-thumbnail size-story-explorer-thumbnail wp-post-image" alt="" srcset="https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=610,343 610w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=800,450 800w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=280,158 280w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=123,69 123w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=128,72 128w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=200,113 200w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=300,169 300w, https://nascar.nbcsports.com/wp-content/uploads/sites/9/2020/05/Dale-Earnhardt-car-auctioned-off.jpg?resize=150,85 150w" sizes="(max-width: 128px) 100vw, 128px" /></span>
+						<span class="item-headline">Richard Childress auctions Dale Earnhardt car, $425K goes to charity</span>
+						<span class="item-timestamp" data-timestamp="1589917522000">May 19, 2020 3:45 pm</span>
+					</a>
+							</div><!-- #story-explorer-headlines-->
+			<div id="story-explorer-legal">
+				<a href="http://www.nbcuniversal.com/privacy/" target="_blank">Privacy Policy</a> | <a href="http://www.nbcsports.com/terms-use" target="_blank">Terms of Service</a>
+			</div>
+		</aside><!-- #story-explorer -->
+	</div><!-- #story-explorer-wrapper -->
+
+
+					</div><!-- #content -->
+				</div><!-- #nbcsports-main -->
+			</div><!-- #nbcsports-content-wrapper -->
+			<footer id="nbcsports-footer" class="site-footer"><div id="footer-left">  <div id="footer-logo"></div>  <div id="footer-social-links">    <span id="follow-us">FOLLOW US</span>          <a href="http://facebook.com/NBCSports" class="genericon genericon-facebook" target="_blank">Facebook</a>          <a href="http://twitter.com/nbcsports" class="genericon genericon-twitter">Twitter</a>          <a href="http://instagram.com/NBCsports" class="genericon genericon-instagram">Instagram</a>          <a href="http://www.nbcsports.com/social-media-directory" id="directory">NBC Sports Social Directory</a>      </div>  <div id="copyright">©2020 NBC Universal</div>  <div id="footer-site-links">          <a href="https://www.nbcuniversal.com/privacy/cookies#cookie_management">Ad Choices</a>          <a href="https://together.nbcuni.com/">Advertise</a>          <a href="https://www.nbcuniversal.com/privacy?brandA=NBCSportsGroupOlympics&amp;intake=NBCSportsGroupOlympics">Privacy Policy</a>          <a href="http://www.workinsports.com/nbc-sports-jobs/?ref=1525">Sports Jobs</a>          <a href="https://www.nbcsports.com/content/closed-captioning">Closed Captioning</a>          <a href="http://nbcsportsgrouppressbox.com/">Pressbox</a>          <a href="https://www.awin1.com/cread.php?awinmid=7219&amp;awinaffid=647617&amp;clickref=nbclp&amp;p=%5B%5Bhttps%253A%252F%252Fwww.stubhub.com%252F%5D%5D">Tickets</a>          <a href="https://www.nbcsports.com/our-history">Our History</a>          <a href="https://www.nbcsports.com/terms-use">NBC Sports Terms of Use</a>          <a href="https://www.nbcuniversal.com/privacy/notrtoo?brandA=NBCSportsGroupOlympics&amp;intake=NBCSportsGroupOlympics ">Do Not Sell My Personal Information</a>          <a href="https://www.nbcsports.com/FAQ">NBC Sports Live FAQ</a>          <a href="https://www.nbcsports.com/gold/terms-service">NBC Sports Gold Int&#039;l Terms of Service</a>          <a href="https://www.nbcsports.com/gold/faq">NBC Sports Gold FAQ</a>      </div></div><div id="footer-right">  <div id="footer-newsletter-link">      <span id="newsletter-banner">GET NEWSLETTERS &amp; ALERTS</span><a href="http://www.nbcsports.com/newsletters" id="newsletter-link" target="_blank">SIGN UP</a>   </div></div></footer>
+
+		</div><!-- #outer -->
+	</div><!-- #wrapper -->
+
+</div><!-- #page -->
+
+<script type="text/javascript">
+	typeof mps.writeFooter == 'function' && mps.writeFooter();
+</script>
+	<script type="text/javascript">
+		var s_linkInternalFilters = 'javascript:,nbcsports.com';
+		var s_account = "nbcusportsgroupglobal,nbcusportsgroupnbcsports,nbcusportsnascar";
+		var s_pageName = "\/2020\/05\/22\/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it\/";
+		var s_channel = '';
+		var s_override = {pageName: "\/2020\/05\/22\/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it\/"};
+	</script>
+	<script type="text/javascript" src="//www.nbcsports.com/profiles/nbcs/modules/custom/nbcs_sitecatalyst/js/nbcs_adobe.js"></script>
+	
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/nascar.nbcsports.com\/2020\/05\/22\/chase-elliott-on-kyle-busch-nascar-he-made-a-mistake-i-was-on-the-wrong-end-of-it\/":152694,"https:\/\/nascar.nbcsports.com\/2020\/05\/22\/william-byron-coca-cola-600-charlotte-motor-speedway\/":152739,"https:\/\/nascar.nbcsports.com\/2020\/05\/22\/chase-briscoe-austin-cindric-xfinity-crew-chiefs-fined-lug-nut-violations\/":152742,"https:\/\/nascar.nbcsports.com\/2020\/05\/22\/austin-dillon-martin-truex-jr-joey-logano-william-byron-nascar-cup-choose-cone\/":152727,"https:\/\/nascar.nbcsports.com\/2020\/05\/22\/joey-logano-team-penske-coca-cola-600-charlotte-motor-speedway\/":152720};
+	</script>
+				<script type='text/javascript' src='https://nascar.nbcsports.com/wp-includes/js/jquery/ui/widget.min.js?m=1588186647g'></script>
+<script>
+var nbcsports = {"section":{"section_name":"NASCAR"}};
+</script>
+<script src='https://www.nbcsports.com/sites/nbcsports.com/files/js/nbcsports-wrapper-concat.js'></script>
+<script>
+var nbcsports = {"home":"https:\/\/nascar.nbcsports.com\/wp-content\/themes\/nbcsports-2015","base_path":"https:\/\/nascar.nbcsports.com","ajaxurl":"https:\/\/nascar.nbcsports.com\/wp-admin\/admin-ajax.php","cpage":"","section":"NASCAR","sectionUrl":"http:\/\/www.nbcsports.com\/nascar"};
+</script>
+<script>
+var mobileTease = {"postsShown":"3"};
+</script>
+<script>
+var infiniteScroll = {"home":"https:\/\/nascar.nbcsports.com\/wp-content\/themes\/nbcsports-2015","base_path":"https:\/\/nascar.nbcsports.com","ajaxurl":"https:\/\/nascar.nbcsports.com\/wp-admin\/admin-ajax.php","postsPerPage":"5","maxAjaxLoads":"2","isSingle":"1","isArchive":"","queriedObjectID":"152694","foundPosts":"0"};
+</script>
+<script type='text/javascript' src='https://nascar.nbcsports.com/_static/??-eJyVkEtuwzAMRC9UWnWRBN4UPUEPoQ+d0KFElZLh5vbVJnBSdKGuyCH4BkOaLYOXVDFVUy8YsZjkfMmitcDb63g0y8NkWMqL6SG8xNgW+oEL2oAKQSUH2VI3t3ytqLdhT2i1kmf8tMmeUbt9ypUyMKUrzOLXAjN931lKntfQqP0uUMx8GyJ1Bm0WxrGcYUYMe9cPq1TZRDnsXT9crRNhe6/9YBRHjFDRFnwSf72mSYyuHfWvr1CaKVFFKF6F+bduRh/xfTxO0zidTodp+QEQ2/pl'></script>
+<script>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script src='https://nascar.nbcsports.com/wp-content/mu-plugins/jetpack/_inc/build/sharedaddy/sharing.min.js?ver=8.5'></script>
+<script>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<script type='text/javascript' src='https://stats.wp.com/e-202021.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:8.5',blog:'168081903',post:'152694',tz:'-4',srv:'nascar.nbcsports.com'} ]);
+	_stq.push([ 'clickTrackerInit', '168081903', '152694' ]);
+</script>
+
+<div id="vip-credit-container"><div class="powered-by-wpcom-container">Powered by <a href="https://wpvip.com/?utm_source=vip_powered_wpcom&#038;utm_medium=web&#038;utm_campaign=VIP%20Footer%20Credit&#038;utm_term=nascar.nbcsports.com" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a></div></div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"03545ba2df","applicationID":"313757940","transactionName":"NQNUZEUFXBAHAEAMDAxJd1NDDV0NSQpaAQYa","queueTime":0,"applicationTime":491,"atts":"GURDEg0fT09EAhZfGB8b","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,2 @@
+!function(){var a=document.getElementsByClassName("abp");if(a){for(var b,c=a[a.length-1],d=c.src.replace(/^[^\?]+\??/,"").split("&"),e={},f=0;f<d.length;f++){var g=d[f].split("=");e[g[0]]=g[1]}1==e.ch?b=!0:2==e.ch&&(b=!1),window.usesABP=b}}();
+//# sourceMappingURL=px.js.map

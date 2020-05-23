@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-locale="US" class="">
+<head>
+<script>
+window.vanilla = window.vanilla || {};window.VAN = window.VAN || {};
+!function(){if('PerformanceLongTaskTiming' in window){var g=window.__tti={e:[]};
+g.o=new PerformanceObserver(function(l){g.e=g.e.concat(l.getEntries())});
+g.o.observe({entryTypes:['longtask']})}}();
+var startFramesMeasurement=function(){window.vanilla.framesSampled=[];window.vanilla.frames=0,window.vanilla.loadtime=window.performance.now();var a=function(){window.vanilla.frames++,requestAnimationFrame(a)};requestAnimationFrame(a)};window.requestAnimationFrame&&startFramesMeasurement();setInterval(function(){if(document.hidden === false){window.vanilla.framesSampled.push(window.vanilla.frames);}},1000);
+if(window&&!("Promise"in window)){var xhr=new XMLHttpRequest;xhr.open("GET",'/media/shared/js/promise.js',false);xhr.onerror=function(){console.log(xhr.statusText)};xhr.send("");eval(xhr.responseText);}
+</script>
+<script>
+window.askForConsent = true;
+window.waitForConsent = true;
+var hostname = window.location.hostname;
+var hostGroups = hostname.match(/.*\.(.*)\.(com)/);
+if (hostGroups && hostGroups.length === 3) {
+hostname = 'www.' + hostGroups[1] + '.' + hostGroups[2];
+}
+if (window.URLSearchParams) {
+var urlSearchParams = new URLSearchParams(window.location.search);
+var FORCED_DOMAIN_QUERY_PARAM = 'qc-forced-domain';
+if (urlSearchParams.has(FORCED_DOMAIN_QUERY_PARAM)) {
+hostname = urlSearchParams.get(FORCED_DOMAIN_QUERY_PARAM);
+}
+}
+/*! begin QC CHOICE TAG v1.3 */
+!function(){var t=hostname,e=document.createElement("script"),n=document.getElementsByTagName("script")[0],c=(new Date).getTime(),o="https://quantcast.mgr.consensu.org".concat("/choice/","uer8ZPXHG8WDU","/",t,"/choice.js").concat("?timestamp=",c);e.async=!0,e.type="text/javascript",e.src=o,n.parentNode.insertBefore(e,n)}();var cmpStubFunction=function(){var t=arguments;"object"!=typeof window.__cmp.a&&setTimeout(function(){window.__cmp.apply(window.__cmp,t)},500)},checkIfCmpIsReady=function(){window.__cmp===cmpStubFunction?console.warn("CMP not loaded after 6 seconds. Trying again."):clearInterval(cmpInterval)};if(void 0===window.__cmp){window.__cmp=cmpStubFunction;var cmpInterval=setInterval(checkIfCmpIsReady,6e3)}
+/*! end QC CHOICE TAG v1.3 */
+window.ccpaAppliesPromise = new Promise(function(resolve, reject){
+if (typeof window.__cmp === 'function') {
+try {
+window.__cmp('uspPing', null, function(obj, status) {
+var CCPA_MODE = 2;
+var ccpaApplies = status && (obj.mode & CCPA_MODE) === CCPA_MODE && obj.jurisdiction && obj.jurisdiction.length > 0 && obj.location === obj.jurisdiction[0];
+resolve(ccpaApplies);
+});
+} catch (err) {
+reject(err);
+}
+} else {
+reject('Missing __cmp');
+}
+}); document.addEventListener('DOMContentLoaded', function(){
+if (ccpaAppliesPromise) {
+ccpaAppliesPromise.then(ccpaApplies => {
+if (!ccpaApplies) {
+return
+}
+var footer = document.querySelector('#document-footer-content > nav > ul')
+if (!footer) {
+return
+}
+var anchor = document.createElement('a')
+var regionPrefix = window.ffte.regionLink ? '/' + window.ffte.regionLink : ''
+anchor.href = regionPrefix + '/ccpa'
+anchor.textContent = 'Do not sell my info'
+var listItem = document.createElement('li');
+listItem.appendChild(anchor)
+footer.appendChild(listItem)
+// Some styles to hide 2 links in the modal we don't want
+var style = document.createElement('style');
+style.innerText = '#qc-usp-delete-link, #qc-usp-access-link { display: none; }' +
+'#qc-usp-policy-link {border-left: none;}';
+document.head.appendChild(style);
+})
+}
+}, false)
+/* SWP */
+'use strict';(function(){function D(a){x||(x=!0,E.forEach(y(a)))}function z(a){m||(m=!0,A.forEach(y(a)))}function n(){return r&&r.now&&r.now()||0}function y(){for(var a=arguments.length,b=Array(a),c=0;c<a;c++)b[c]=arguments[c];return function(a){return a.apply(void 0,b)}}function J(a){"cmp_request_translation_data"===a.data&&Promise.resolve(window.reliablePageLoad).then(function(){var a=window.__translator.trans;a={tag:"cmp_translations_data",main:{heading:a("cmp_main_heading"),description:a("cmp_main_description"),
+btnAccept:a("cmp_main_btn_accept"),btnMoreInfo:a("cmp_main_btn_moreinfo")},confirm:{heading:a("cmp_confirm_heading"),description:a("cmp_confirm_description"),btnGoBack:a("cmp_confirm_btn_goback"),btnLeave:a("cmp_confirm_btn_leave")},purposes:{heading:a("cmp_purposes_heading"),description:a("cmp_purposes_description"),btnAcceptAll:a("cmp_purposes_btn_acceptall"),btnRejectAll:a("cmp_purposes_btn_rejectall"),btnSave:a("cmp_purposes_btn_save"),btnAndContinue:a("cmp_purposes_btn_andcontinue"),btnAndContinueShort:a("cmp_purposes_btn_andcontinueshort"),
+list:{1:a("cmp_purposes_list_1"),"1_description":a("cmp_purposes_list_1_description"),2:a("cmp_purposes_list_2"),"2_description":a("cmp_purposes_list_2_description"),3:a("cmp_purposes_list_3"),"3_description":a("cmp_purposes_list_3_description"),4:a("cmp_purposes_list_4"),"4_description":a("cmp_purposes_list_4_description"),5:a("cmp_purposes_list_5"),"5_description":a("cmp_purposes_list_5_description")}},vendors:{heading:a("cmp_vendors_heading"),description:a("cmp_vendors_description"),btnAcceptAll:a("cmp_vendors_btn_acceptall"),
+btnRejectAll:a("cmp_vendors_btn_rejectall"),btnSave:a("cmp_vendors_btn_save"),btnBack:a("cmp_vendors_btn_back"),privacyPolicy:a("cmp_vendors_privacy_policy")}};document.getElementById("cmp-ui-iframe").contentWindow.postMessage(a,"*")});"cmp_request_ffte_data"===a.data&&Promise.resolve(window.reliablePageLoad).then(function(){var a={tag:"cmp_ffte_data",ffte:window.ffte||{}};document.getElementById("cmp-ui-iframe").contentWindow.postMessage(a,"*")})}function K(a,b,c){a.performance&&a.performance.timing&&
+Date.now();a.__cmp("init",a.cmpConfig);a.__cmp("getVendorConsents",null,function(e,l){l?(b({askedForConsent:!0,consent:e}),a.reliablePageLoad.then(function(){if(e.gdprApplies&&.33>Math.random()){var b=L(e.vendorConsents);a.ga&&a.ga("send","event","CMP","getVendorConsents",b.label,b.consented,{nonInteraction:!0,dimension123:b.consented})}})):c(Error("Failed to get vendor consents"))})}function M(a,b,c){function e(a,b){return null===b||void 0===b?a:b}JSON.parse(e("true",g("mock_consent_success")(a)))?
+(c=parseInt(g("mock_consent_timeout")(a),10),a={askedForConsent:!0,consent:{gdprApplies:JSON.parse(e("true",g("mock_gdpr_applies")(a))),hasGlobalScope:JSON.parse(e("false",g("mock_has_global_scope")(a))),metadata:"AAAAAAA",purposeConsents:JSON.parse(e(JSON.stringify({1:!0,2:!0,3:!0,4:!0,5:!0}),g("mock_purpose_consents")(a))),vendorConsents:JSON.parse(e("{}",g("mock_vendor_consents")(a)))}},isNaN(c)?b(a):setTimeout(b,c,a)):c(Error("Failed to get vendor consents"))}function L(a){var b=1<arguments.length&&
+void 0!==arguments[1]?arguments[1]:"none";if(!(a instanceof Object))return a?{label:"all",total:0,consented:0}:{label:b,total:0,consented:0};var c=N(a);c.label=0===c.total?"n/a":0===c.consented?b:c.consented===c.total?"all":"some";return c}function N(a){if(!(a instanceof Object))return{total:0,consented:0};var b=Object.keys(a),c=b.length;b=b.filter(function(b){return a[b]}).length;return{total:c,consented:b}}function B(a){return function(b){return 0<=b.location.search.indexOf(a)}}function g(a){return function(b){return G(a,
+b.location.search)}}function G(a,b){var c=2<arguments.length&&void 0!==arguments[2]?arguments[2]:"&";if(""===a)return!1;var e=b.indexOf(a+"=");return 0<=e?(e=b.indexOf("=",e),c=b.indexOf(c,e+1),0<=c?b.substring(e+1,c):b.substring(e+1)):!1}function O(a){return a.split("").map(function(a){return P(Q.call(a,0)-1)}).join("")}var R=function(a){return a.split("").map(function(a){return String.fromCharCode(a.charCodeAt(0)+1)}).join("")}("sp.blocking"),t=String,P=t.fromCharCode,Q=t.prototype.charCodeAt,F=
+"undefined"!==typeof window?window:"undefined"!==typeof global?global:"undefined"!==typeof self?self:{};t=function(a,b){return b={exports:{}},a(b,b.exports),b.exports}(function(a){(function(){function b(){b=function(){};p.Symbol||(p.Symbol=c)}function c(a){return"jscomp_symbol_"+(a||"")+E++}function e(){b();var a=p.Symbol.iterator;a||(a=p.Symbol.iterator=p.Symbol("iterator"));"function"!=typeof Array.prototype[a]&&D(Array.prototype,a,{configurable:!0,writable:!0,value:function(){return l(this)}});
+e=function(){}}function l(a){var d=0;return f(function(){return d<a.length?{done:!1,value:a[d++]}:{done:!0}})}function f(a){e();a={next:a};a[p.Symbol.iterator]=function(){return this};return a}function g(a){e();var d=a[Symbol.iterator];return d?d.call(a):l(a)}function k(a){if(!(a instanceof Array)){a=g(a);for(var d,u=[];!(d=a.next()).done;)u.push(d.value);a=u}return a}function n(a,b){var d=XMLHttpRequest.prototype.send,C=y++;XMLHttpRequest.prototype.send=function(u){for(var c=[],h=0;h<arguments.length;++h)c[h-
+0]=arguments[h];var e=this;a(C);this.addEventListener("readystatechange",function(){4===e.readyState&&b(C)});return d.apply(this,c)}}function t(a,b){var d=fetch;fetch=function(u){for(var c=[],h=0;h<arguments.length;++h)c[h-0]=arguments[h];return new Promise(function(u,h){var C=y++;a(C);d.apply(null,[].concat(k(c))).then(function(a){b(C);u(a)},function(a){b(a);h(a)})})}}function q(a,b){a=g(a);for(var d=a.next();!d.done;d=a.next())if(d=d.value,b.includes(d.nodeName.toLowerCase())||q(d.children,b))return!0;
+return!1}function x(a){var d=new MutationObserver(function(d){d=g(d);for(var b=d.next();!b.done;b=d.next())b=b.value,"childList"==b.type&&q(b.addedNodes,z)?a(b):"attributes"==b.type&&z.includes(b.target.tagName.toLowerCase())&&a(b)});d.observe(document,{attributes:!0,childList:!0,subtree:!0,attributeFilter:["href","src"]});return d}function m(a,b){if(2<a.length)return performance.now();var d=[];b=g(b);for(var c=b.next();!c.done;c=b.next())c=c.value,d.push({timestamp:c.start,type:"requestStart"}),
+d.push({timestamp:c.end,type:"requestEnd"});b=g(a);for(c=b.next();!c.done;c=b.next())d.push({timestamp:c.value,type:"requestStart"});d.sort(function(a,d){return a.timestamp-d.timestamp});a=a.length;for(b=d.length-1;0<=b;b--)switch(c=d[b],c.type){case "requestStart":a--;break;case "requestEnd":a++;if(2<a)return c.timestamp;break;default:throw Error("Internal Error: This should never happen");}return 0}function v(a){a=a?a:{};this.w=!!a.useMutationObserver;this.u=a.minValue||null;a=window.__tti&&window.__tti.e;
+var d=window.__tti&&window.__tti.o;this.a=a?a.map(function(a){return{start:a.startTime,end:a.startTime+a.duration}}):[];d&&d.disconnect();this.b=[];this.f=new Map;this.j=null;this.v=-Infinity;this.i=!1;this.h=this.c=this.s=null;n(this.m.bind(this),this.l.bind(this));t(this.m.bind(this),this.l.bind(this));B(this);this.w&&(this.h=x(this.B.bind(this)))}function r(a){a.i=!0;var d=0<a.a.length?a.a[a.a.length-1].end:0,b=m(a.g,a.b);w(a,Math.max(b+5E3,d))}function w(a,b){!a.i||a.v>b||(clearTimeout(a.j),a.j=
+setTimeout(function(){var b=performance.timing.navigationStart,d=m(a.g,a.b);b=(window.a&&window.a.A?1E3*window.a.A().C-b:0)||performance.timing.domContentLoadedEventEnd-b;if(a.u)var c=a.u;else performance.timing.domContentLoadedEventEnd?(c=performance.timing,c=c.domContentLoadedEventEnd-c.navigationStart):c=null;var e=performance.now();null===c&&w(a,Math.max(d+5E3,e+1E3));var l=a.a;5E3>e-d?d=null:(d=l.length?l[l.length-1].end:b,d=5E3>e-d?null:Math.max(d,c));d&&(a.s(d),clearTimeout(a.j),a.i=!1,a.c&&
+a.c.disconnect(),a.h&&a.h.disconnect());w(a,performance.now()+1E3)},b-performance.now()),a.v=b)}function B(a){a.c=new PerformanceObserver(function(b){b=g(b.getEntries());for(var d=b.next();!d.done;d=b.next())if(d=d.value,"resource"===d.entryType&&(a.b.push({start:d.fetchStart,end:d.responseEnd}),w(a,m(a.g,a.b)+5E3)),"longtask"===d.entryType){var c=d.startTime+d.duration;a.a.push({start:d.startTime,end:c});w(a,c+5E3)}});a.c.observe({entryTypes:["longtask","resource"]})}var p="undefined"!=typeof window&&
+window===this?this:"undefined"!=typeof F&&null!=F?F:this,D="function"==typeof Object.defineProperties?Object.defineProperty:function(a,b,c){a!=Array.prototype&&a!=Object.prototype&&(a[b]=c.value)},E=0,y=0,z="img script iframe link audio video source".split(" ");v.prototype.getFirstConsistentlyInteractive=function(){var a=this;return new Promise(function(b){a.s=b;"complete"==document.readyState?r(a):window.addEventListener("load",function(){r(a)})})};v.prototype.m=function(a){this.f.set(a,performance.now())};
+v.prototype.l=function(a){this.f.delete(a)};v.prototype.B=function(){w(this,performance.now()+5E3)};p.Object.defineProperties(v.prototype,{g:{configurable:!0,enumerable:!0,get:function(){return[].concat(k(this.f.values()))}}});var A={getFirstConsistentlyInteractive:function(a){a=a?a:{};return"PerformanceLongTaskTiming"in window?(new v(a)).getFirstConsistentlyInteractive():Promise.resolve(null)}};a.exports?a.exports=A:window.ttiPolyfill=A})()});var f=window,H=f.document,r=f.performance,k=f.Promise,
+I=n();performance.mark("DOMPromises - Initialising");f.resolveFEP=null;f.processFEP=k?new k(function(a){f.resolveFEP=a}):{then:function(){}};var q=!(-1<window.location.href.indexOf("disable_dom_promise_timeouts")),m=!1,A=[];q&&setTimeout(function(){return z({timeStamp:n()})},5E3);H.addEventListener("DOMContentLoaded",z);f.reliableDOMContentLoaded=k?new k(function(a){q&&setTimeout(function(){return a({timeStamp:n()})},5E3);H.addEventListener("DOMContentLoaded",a)}):{then:function(a){m?a():A.push(a)}};
+f.reliableDOMContentLoaded.then(function(a){console.log("DOMContentLoaded at",a.timeStamp-I|0)});var x=!1,E=[];q&&setTimeout(function(){return D({timeStamp:n()})},7E3);f.addEventListener("load",D);f.reliablePageLoad=k?new k(function(a){q&&setTimeout(function(){return a({timeStamp:n()})},7E3);f.addEventListener("load",a)}):{then:function(a){x?a():E.push(a);return f.reliablePageLoad},catch:function(){return f.reliablePageLoad}};f.reliablePageLoad.then(function(a){console.log("PageLoad at",a.timeStamp-
+I|0)});f.vanilla=window.vanilla||{};f.vanilla.tti="PerformanceLongTaskTiming"in window?t.getFirstConsistentlyInteractive():new k(function(a){setTimeout(function(){a(null)},5E3)});(function(a){var b=a.Promise;a.addEventListener("message",J,!1);a.reliableConsentGiven=b?b.resolve(a.reliableDOMContentLoaded).then(function(){return new b(function(b,e){B("force_clear_consent")(a)&&(document.cookie="EuConsent=; path=/; Max-Age=0",document.cookie="cmp=; path=/; Max-Age=0",document.cookie="TestingHideEUConsent=; path=/; Max-Age=0");
+B("force_hide_consent")(a)&&(document.cookie="TestingHideEUConsent=true;");var c=B("mock_consent")(a);"true"===G("TestingHideEUConsent",document.cookie,";")?b({askedForConsent:!1}):c?M(a,b,e):a.askForConsent?K(a,b,e):b({askedForConsent:!1})})}):{then:function(){}};a.reliableConsentGiven.then(function(){a.bdx&&a.bdx.metrics&&a.bdx.metrics.mark("Reliable consent")});a.reliableConsentGiven.then(function(b){b.askedForConsent&&b.consent.gdprApplies&&a.reliablePageLoad.then(function(){var b=a.document.querySelector("#document-footer-content > nav > ul");
+if(b){var c=a.document.createElement("a");c.addEventListener("click",function(){a.__cmp("displayConsentUi")});c.href="#";c.textContent=a.__translator.trans("cmp_footer_link");var f=a.document.createElement("li");f.appendChild(c);b.appendChild(f)}if(b=a.document.querySelector("ul.footer__listcontainer"))c=a.document.createElement("a"),c.className="footer__link",c.addEventListener("click",function(){a.__cmp("renderConsents",function(){})}),c.href="#",c.textContent=a.__translator.trans("cmp_footer_link"),
+f=a.document.createElement("li"),f.className="footer__list-item",f.appendChild(c),b.appendChild(f);if(b=a.document.querySelector("#gawker-contact-block ul"))c=a.document.createElement("a"),c.className="is-reversed",c.addEventListener("click",function(){a.__cmp("renderConsents",function(){})}),c.href="#",c.textContent=a.__translator.trans("cmp_footer_link"),f=a.document.createElement("li"),f.appendChild(c),b.appendChild(f)})})})(f);(function(){var a=window,b=a.document,c=a.Promise;a.wadoinawdoijzxioznelknsdf=
+c?new c(function(a){var c=parseInt(g("mock_tiberius")(window),10);isNaN(c)||setTimeout(a,c,!0);b.addEventListener(O(R),function(){a(!0)})}):{then:function(){}}})()})();
+/* EWP */
+;
+</script>
+<script>
+window.hawk_css_endpoint = "https://widgets.future-fie.co.uk";
+</script>
+<script id="hawk-script" async src="https://widgets.future-fie.co.uk/js/w/responsive.js"></script>
+<script>
+window.adParameters = window.adParameters || {
+site: 'tomsguide',
+content: 'unknown',
+type: 'standard',
+};
+</script>
+<script>window.gaCookieSet=/(?:^|;\\s*)_ga/.test(document.cookie);</script>
+<script>'use strict';(function(){function g(c,a){return function(){return setTimeout(c,a)}}function h(c,a,b){b=void 0===b?function(){}:b;return function(){var d=c.createElement("script"),e=c.getElementsByTagName("script")[0],f=k({},a,{async:1});Object.keys(f).forEach(function(a){return d.setAttribute(a,f[a])});e.parentNode.insertBefore(d,e);b()}}var k=Object.assign||function(c){for(var a=1;a<arguments.length;a++){var b=arguments[a],d;for(d in b)Object.prototype.hasOwnProperty.call(b,d)&&(c[d]=b[d])}return c};
+window.vanilla.addJs=function(c,a,b,d){b=void 0===b?!1:b;c=h(document,c,d);a=null!==a?g(c,a):c;b?window.reliablePageLoad.then(a):a()}})();</script>
+<script>'use strict';(function(){function f(a,d){return function(){var c=a.createElement("link"),b=g({},d,{rel:"stylesheet",type:"text/css"});Object.keys(b).forEach(function(a){return c.setAttribute(a,b[a])});var e=a.getElementsByTagName("head")[0];e.parentNode.insertBefore(c,e)}}var g=Object.assign||function(a){for(var d=1;d<arguments.length;d++){var c=arguments[d],b;for(b in c)Object.prototype.hasOwnProperty.call(c,b)&&(a[b]=c[b])}return a},h=window.requestAnimationFrame||window.webkitRequestAnimationFrame||
+window.mozRequestAnimationFrame||window.msRequestAnimationFrame||function(a){return window.reliablePageLoad.then(a)};window.vanilla.addCss=function(a){return h(f(document,a))}})();</script>
+<link rel="alternate" hreflang="x-default" href="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<link rel="alternate" hreflang="en-US" href="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<link rel="alternate" hreflang="en-GB" href="https://www.tomsguide.com/uk/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<link rel="amphtml" href="https://www.tomsguide.com/amp/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<script>
+function handleHeaderError() {
+if (window.amIIE && !window.amIIE()) {
+window.wadoinawdoijzxioznelknsdf.then(function () {
+window._sp_ = window._sp_ || {};
+window._sp_.config = window._sp_.config || {};
+if (window._sp_.bootstrap && !window.headerExecuted) {
+window._sp_.bootstrap('//vanilla.futurecdn.net/tomsguide/181493/media/js/header/header.js');
+}
+})
+}
+}
+</script>
+<script>
+window.bordeaux = window.bordeaux || {};
+window.bordeaux.cmd = window.bordeaux.cmd || [];
+window.bordeaux.cmd.push(function(){
+window.bordeaux.setPlacement(null);
+if (!window.disableBordeaux) {
+window.bordeaux.init();
+}
+});
+</script>
+<script defer src="//vanilla.futurecdn.net/tomsguide/181493/media/js/header/header.js" onerror="handleHeaderError()" crossorigin="anonymous"></script>
+<!-- tag factory //-->
+<meta charset="utf-8">
+<link rel="dns-prefetch" href="//cdn.mos.cms.futurecdn.net">
+<link rel="dns-prefetch" href="//vanilla.futurecdn.net">
+<link rel="dns-prefetch" href="//widgets.hawk-assets.co.uk">
+<link rel="dns-prefetch" href="//www.google-analytics.com">
+<link rel="dns-prefetch" href="//cdn.onesignal.com">
+<link rel="dns-prefetch" href="//cdn.parsley.com">
+<link rel="dns-prefetch" href="//cdn.jwplayer.com">
+<link rel="dns-prefetch" href="//cdn.adsafeprotected.com">
+<link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//quantcast.mgr.consensu.org">
+<link rel="dns-prefetch" href="//vendorlist.consensu.org">
+<link rel="dns-prefetch" href="//sb.scorecardresearch.com">
+<link rel="dns-prefetch" href="//js-sec.indexww.com">
+<link rel="dns-prefetch" href="//c.amazon-adsystem.com">
+<link rel="dns-prefetch" href="//ads.servebom.com">
+<meta data-static-host="//vanilla.futurecdn.net/tomsguide/181493" id="static-host-pattern">
+<script>
+var vanFontLoader=function(e){if("undefined"==typeof e||"object"!=typeof e)return!1;var t=document.getElementsByTagName("head")[0],n=function(e,n){var o=document.createElement("style");o.type="text/css","undefined"!=typeof n&&(o.id=n,o.classList.add("font-style")),o.styleSheet?o.styleSheet.cssText=e:o.appendChild(document.createTextNode(e)),t.appendChild(o)},o=function(){"undefined"!=typeof e.hideKey&&n(e.hideKey+"{visibility:visible}")};if("undefined"!=typeof e.hideKey&&n(e.hideKey+"{visibility:hidden}"),"undefined"!=typeof e.fontKey&&"undefined"!=typeof e.staticHost&&"undefined"!=typeof e.version&&"undefined"!=typeof e.woff2Version){var i=e.fontKey,a=e.version,f=e.woff2Version,r=e.staticHost,d="woff",s=!1;f&&(s=function(e){if(!("FontFace"in e))return!1;var t=new e.FontFace("t",'url( "data:application/font-woff2," ) format( "woff2" )',{});try{var n=t.load();"undefined"!=typeof n.then&&n.then(function(){},function(){})}catch(o){return!1}return"loading"==t.status}(window)),s?d="woff2":navigator.userAgent.indexOf("Android")>-1&&(d="ttf");var c="vanFont-"+i+"-"+d,u=c+".json",y=function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src="//"+r+"/"+a+"/media/fonts/json/"+u,t.appendChild(e)},l=!1,v=!1;try{if(l=localStorage.getItem(c)){var v=JSON.parse(l);v.version!=a&&(localStorage.removeItem(c),v=!1)}}catch(p){console.error("Error when parsing font in vanFontLoader",p)}v&&"undefined"!=typeof v.value?(n(v.value,i),o()):y()}this.store=function(e){e.version=a;var t=JSON.stringify(e);localStorage.setItem(c,t),n(e.value),o()}}; try {
+var OpenSans_vanFontLoader = new vanFontLoader({fontKey: 'OpenSans', version: 1, woff2Version: true, staticHost: 'vanilla.futurecdn.net/tomsguide' });
+var tomsguide_vanFontLoader = new vanFontLoader({fontKey: 'tomsguide', version: 2, woff2Version: false, staticHost: 'vanilla.futurecdn.net/tomsguide' ,hideKey: '.icon' });
+} catch(e) {
+console.warn('Failed to load fonts: '+ e.message);
+}
+</script>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble | Tom's Guide</title>
+<meta name="pub_date" content="2020-05-22T12:52:36+00:00">
+<meta name="description" content="A teardown of the Sony Connect app reveals a suite of smart feature the Sony WH-1000XM4 wireless headphones could have. ">
+<link rel="canonical" href="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<style id="critical-styles">.newsletter-signup,.mag-banner-wrap,.popular-box{display:none;}html,body,div,span,iframe,h1,h2,h3,h4,p,a,abbr,img,small,i,ul,li,form{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}label{padding:0;border:0;font:inherit;font-size:100%}label,table{vertical-align:baseline}table,caption{margin:0;padding:0;border:0;font:inherit;font-size:100%}tbody,thead,tr{vertical-align:baseline}tbody,thead,tr,th,td{margin:0;padding:0;border:0;font:inherit;font-size:100%}article,aside,figure,figcaption,footer,header,nav,section,time{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:400;vertical-align:middle}a img{border:none}article,aside,figcaption,figure,footer,header,nav,section{display:block}.container{margin:auto}.container:after{content:"";display:table;clear:both}.container.full{clear:both;max-width:100%}@media screen and (min-width:1000px){.container.full{max-width:970px}}@media screen and (min-width:1574px){.container.full{max-width:1200px}body.limit-width .container.full{max-width:970px}}#main{background:#fff;outline:none}#sidebar{width:100%}@media screen and (min-width:1000px){#sidebar{width:300px;margin-top:.875em}}@media only screen and (min-width:700px){html{font-size:100%}}html{font-family:"Open Sans",sans-serif;color:#333}h1,h2,h3,h4{font-weight:700}.block-link{display:block;position:relative;color:#333;background:#ddd;line-height:22px;padding:11px 12px;margin:0 12px 12px 0;text-align:center;font-size:14px;font-weight:600;text-transform:uppercase}.block-link .chunk{display:inline-block;vertical-align:middle;max-width:80%}.block-link:hover{color:#333;text-decoration:none;background:#666}.block-link:visited{color:#333;text-decoration:none}.block-link.full{width:-webkit-calc(100% - 24px);width:calc(100% - 24px)}.separator-heading{border-top:1px solid #ccc;border-bottom:1px solid #ccc}.no-wrap{white-space:nowrap}.news-article header h1{font-weight:600;font-size:24px;line-height:30px;margin-bottom:.25rem}@media (min-width:700px){.news-article header h1{margin-bottom:.5rem;font-size:28px;line-height:34px}}@media (min-width:1574px){.news-article header h1{margin-bottom:.75rem;font-size:34px;line-height:42px}body.limit-width .news-article header h1{margin-bottom:.5rem;font-size:28px;line-height:34px}}.news-article header h2{font-size:18px;line-height:26px;font-weight:300;margin-bottom:20px}@media (min-width:1000px){.news-article header h2{font-size:20px;line-height:28px}}@media (min-width:1574px){.news-article header h2{font-size:24px;line-height:30px}body.limit-width .news-article header h2{font-size:20px;line-height:28px}}.fallback{display:none}.icon:before{font-family:"tomsguide",arial;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-style:normal;font-variant:normal;font-weight:400;text-decoration:none;text-transform:none}.icon-arrow-down:before{content:"\f103"}.icon-arrow-left:before{content:"\f104"}.icon-arrow-right:before{content:"\f105"}.icon-envelope-solid:before{content:"\f11a"}.icon-envelope:before{content:"\f11b"}.icon-facebook:before{content:"\f11d"}.icon-filled-envelope:before{content:"\f11e"}.icon-home:before{content:"\f122"}.icon-instagram:before{content:"\f123"}.icon-pinterest:before{content:"\f128"}.icon-reddit:before{content:"\f12b"}.icon-search:before{content:"\f12c"}.icon-twitter:before{content:"\f133"}.icon-whats-app:before{content:"\f135"}.icon-youtube:before{content:"\f136"}.icon-circle{border-radius:50%;display:block}.media-list{margin-top:1rem}.media-list li{-webkit-box-sizing:border-box;box-sizing:border-box;margin-bottom:1rem;float:left;width:100%}@media (min-width:575px){.media-list li{width:50%}}.media-list li a{float:left;width:100%;color:#333;text-decoration:none}.media-list li a:hover{text-decoration:underline}.media-list li img,.media-list li h4{-webkit-box-sizing:border-box;box-sizing:border-box;float:left;width:50%;text-transform:none;padding-right:20px;font-weight:300;line-height:24px;font-size:16px}.media-list li:nth-child(odd){clear:both}.news-article{position:relative}.news-article .box>img{width:100%}.news-article .text-copy{clear:both;position:relative;word-break:break-word;margin-bottom:40px}.news-article .text-copy p,.news-article .text-copy img{width:100%;height:auto}.news-article .text-copy img.lft{width:auto}.news-article .text-copy figure{margin-bottom:1em}.news-article .text-copy p{font-size:16px;line-height:1.5;margin-bottom:1em}.news-article .text-copy figcaption{font-size:13px;line-height:16px;color:#333}.news-article .text-copy>*:last-child{margin-bottom:0}@media (min-width:1000px){.news-article{float:left;max-width:650px}}@media (min-width:1574px){.news-article{max-width:832px}body.limit-width .news-article{max-width:650px}}.news-article footer{clear:both}.news-article header{margin-top:30px}.news-article header .byline{clear:both;line-height:23px;margin-bottom:.625rem;font-size:13px}@media (min-width:1000px){.news-article header .byline{margin-bottom:.5rem}}@media (min-width:1574px){.news-article header .byline{margin-bottom:.75rem}}.news-article header .byline .chunk{margin-right:1ex}.news-article header,.news-article section,.news-article footer{margin-left:20px;margin-right:20px}.news-article footer #article-comments{margin:2em 0 0;overflow:visible;width:100%}@media (min-width:1000px){.news-article header,.news-article section,.news-article footer{margin-left:1.5em;margin-right:1.5em}}@media (min-width:1574px){.news-article header,.news-article section,.news-article footer{margin-left:125px;margin-right:70px}body.limit-width .news-article header,body.limit-width .news-article section,body.limit-width .news-article footer{margin-left:1.5em;margin-right:1.5em}}.news-article header,.news-article section{overflow:visible}@media (min-width:1000px){#content-after-image{width:645px;float:left}}.no-sidebar .news-article{max-width:100%!important}.meta-date{margin:-10px 0 10px;font-size:13px;line-height:23px;color:#666;font-weight:400}.meta-date .relative-date-published{display:inline-block}.meta-date .relative-date-modified{display:none}#article-body figure,article figure{margin-bottom:15px}#article-body figure p.vanilla-image-block,article figure p.vanilla-image-block{margin-bottom:10px;position:relative;line-height:0}@media (max-width:900px){#article-body figure p.vanilla-image-block,article figure p.vanilla-image-block{margin-bottom:8px}}#article-body figure p.vanilla-image-block,#article-body figure figcaption,article figure p.vanilla-image-block,article figure figcaption{display:inline-block}#article-body figure figcaption,article figure figcaption{width:100%}figure{position:relative}figure img{top:0;left:0}img.lft{float:left;margin:0 20px 10px 0;width:auto}.dfp-leaderboard-container{margin:auto;max-width:970px;height:auto}.dfp-leaderboard-container:empty{display:none}#burgerbar-none{display:none}#burgerbar{background:#fff}#burgerbar,#burgerbar~.burgerbar .button-menu.checked{display:none}@media only screen and (max-width:699px){#burgerbar:checked~.burgerbar .button-menu.unchecked{display:none}#burgerbar:checked~.burgerbar .button-menu.checked,#burgerbar:checked~.wrapper .menuitems{display:block}}.button-search{position:absolute;top:0;right:0;min-width:60px;height:60px;margin-bottom:0;line-height:60px}@media only screen and (min-width:700px){.button-search{position:relative}}*:checked+.button-search{background-color:#1A98EE}.search-box{z-index:1000;position:absolute;right:0;top:60px;width:100%;border:2px solid #1A98EE;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;padding:1em 18px;font-size:16px;display:none;line-height:44px}.search-box .search-submit{position:absolute;right:18px;top:16px;width:44px;height:44px;background-color:#333;color:#fff;border:none;padding:0}.search-box .search-submit .icon:before{font-size:20px}*:checked~.search-box{display:block}.burgerbar .burgerbar-small .search-box{width:100%}@media screen and (min-width:575px){.burgerbar .burgerbar-small .search-box{width:480px}}.search-checkbox{display:none}.masthead-item{width:auto;text-align:center;font-size:0}@media only screen and (min-width:700px){.masthead-item{padding-right:1rem;padding-left:1rem;position:relative;height:100%;float:right}}.masthead-item .desktop-text{display:none}@media only screen and (min-width:700px){.masthead-item .desktop-text{display:inline-block;zoom:1;*display:inline;padding-right:8px;font-size:14px;vertical-align:middle;line-height:60px}}.masthead-item .icon-search{display:inline-block;zoom:1;*display:inline;vertical-align:middle;font-size:1.4rem}@media only screen and (min-width:700px){.masthead-item .icon-search{font-size:1rem}}.burgerbar{background-color:#fff;font-size:24px;line-height:60px;max-height:60px;height:60px}.pro .burgerbar{background-color:#8c2b5e}@media only screen and (min-width:700px){.burgerbar{border-bottom:1px solid #fff}.pro .burgerbar{border-bottom:1px solid #8c2b5e}}.burgerbar .other-links{display:none}@media only screen and (min-width:700px){.burgerbar .other-links{display:block;float:right;clear:none;margin-right:10px;height:24px;line-height:24px;margin-top:18px;font-size:14px}.burgerbar .other-links a{float:left;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff}.burgerbar .other-links a:visited{color:#fff}}.burgerbar .buttons-social{display:none}@media only screen and (min-width:700px){.burgerbar .buttons-social{display:block}.burgerbar .buttons-social a{float:left;border:1px solid #fff;width:24px;height:24px;margin-top:18px;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;margin-right:10px}.burgerbar .buttons-social a:visited{color:#fff}.burgerbar .buttons-social a:before{font-size:12px;line-height:22px;-webkit-box-sizing:border-box;box-sizing:border-box;float:left;width:22px;text-align:center}}.burgerbar .buttons-social .icon-youtube{display:none}@media screen and (min-width:750px){.burgerbar .buttons-social .icon-youtube{display:block}}.burgerbar .logo .site-logo{vertical-align:middle;line-height:25px;display:inline-block}.pro .burgerbar .logo .site-logo{line-height:16px}.pro .burgerbar .logo .site-logo:after{bottom:-1px}.burgerbar .logo .site-logo:after{position:absolute;content:'';text-transform:uppercase;font-size:9.11px;bottom:-4px;left:3px;line-height:0}@media only screen and (max-width:360px){.pro .burgerbar .logo svg{width:185px}.pro .burgerbar .logo svg path{-webkit-transform:scale(.93);-ms-transform:scale(.93);transform:scale(.93)}}.burgerbar .logo h1,.burgerbar .logo .hidden-header{display:none}.burgerbar .logo .strapline{font-size:13px;font-weight:400;text-transform:uppercase;float:right;line-height:13px;margin-top:27px;margin-left:13px}@media only screen and (max-width:699px){.burgerbar .logo{text-align:center;margin:auto}.burgerbar .logo .strapline{display:none}}.burgerbar .logo a{color:#fff}.burgerbar .logo a:hover{color:#fff;text-decoration:none}.burgerbar .logo a:visited{color:#fff}.burgerbar .logo a:visited:hover{color:#fff}.burgerbar .button-menu{-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;user-select:none;position:absolute;left:0;width:60px}.burgerbar .burgerbar-small{width:100%;max-height:60px;height:60px}@media only screen and (min-width:700px){.burgerbar .burgerbar-small{position:relative}.burgerbar .burgerbar-small>.button-menu{display:none}.burgerbar .burgerbar-small .logo{padding:0 16px;position:absolute}}.burgerbar .site-logo{position:relative}.trending-wrapper{margin:30px 24px 0;display:block;font-weight:600}.trending-wrapper .trending-bar{*zoom:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;background-color:transparent;position:relative;clear:both;white-space:nowrap;width:100%;height:40px;font-size:14px;background:#ededed;overflow:hidden}.trending-wrapper .trending-items{overflow:hidden;height:100%;display:inline-block;text-align:center}.trending-wrapper .trending-items:hover{overflow:auto;overflow-y:hidden}@media screen and (max-width:900px){.trending-wrapper .trending-items{overflow:auto;overflow-y:hidden}.trending-wrapper .trending-items::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 2px rgba(0,0,0,.3);background-color:#F5F5F5;border-radius:10px}.trending-wrapper .trending-items::-webkit-scrollbar{height:6px;background-color:#F5F5F5}.trending-wrapper .trending-items::-webkit-scrollbar-thumb{background-color:#1A98EE;border-radius:10px}}.trending-wrapper .trending-lead{text-transform:uppercase;margin:0 0 0 10px;padding:0 10px 0 0;display:inline-block;line-height:40px;cursor:pointer;background:#ededed;color:#1A98EE;vertical-align:top}.trending-wrapper .trending-item{display:inline-block;*display:inline;margin-left:-2px;line-height:40px}.trending-wrapper .trending-item:first-of-type{margin-left:0}.trending-wrapper .trending-item a{line-height:40px;padding:0 14px;display:block}.trending-wrapper .trending-item a,.trending-wrapper .trending-item a:hover,.trending-wrapper .trending-item a:visited,.trending-wrapper .trending-item a:hover:visited{color:#333}.trending.pro{width:100%;max-width:927px;display:table;overflow:hidden;border-collapse:separate;border-spacing:2px;margin-left:22px;margin-top:30px}@media only screen and (max-width:999px){.trending.pro{display:none}}.trending.pro .menu-item-container{background:#ededed;padding:0 12px;line-height:40px;font-size:13px;display:table-cell;text-align:center}.trending.pro .menu-item-container a{color:#333}.trending.pro .menu-item{font-size:inherit;display:inline}.trending.pro .menu-item a{font-size:inherit;padding-left:0;padding-right:0;line-height:40px}.trending.pro .menu-item a:hover{background-color:inherit}.breadcrumb{font-size:13px;margin-bottom:30px}@media (max-width:700px){.breadcrumb{display:none}}.breadcrumb li{display:inline-block}.breadcrumb li:after{content:'>';margin-left:1ex;margin-right:1ex}.breadcrumb li:last-child:after{content:none;margin:0}.box{display:table;margin-bottom:40px;float:left;clear:both;width:100%}.box.less-space{margin-bottom:30px}.box h3,.box h4{font-weight:600;font-size:16px;line-height:40px;text-transform:uppercase;vertical-align:middle}.box p{font-size:16px;line-height:24px;margin-bottom:1rem;color:#333}.box li{font-size:16px;line-height:28px}.box ul{margin-bottom:1rem}#sidebar .box{margin-bottom:30px}.button{text-transform:uppercase;font-size:.875em;text-align:center;font-weight:700;line-height:3em;display:block}.button:hover,.button:hover:visited{background-color:#666;text-decoration:none}.button.dark{color:#fff;background-color:#333}.button.dark:hover,.button.dark:visited:hover{color:#fff}.load-comments:hover{color:#fff}input[type="search"]{-webkit-appearance:none;border:1px solid #ddd;font-size:1em;padding-right:3em;line-height:2.5em;padding-left:.75em;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;outline-offset:0;border-radius:0;margin-top:0;margin-bottom:0}input[type="search"]:focus{outline-offset:0}@media screen and (min-width:700px){input[type="search"]{padding-right:0}}@media screen and (min-width:900px){input[type="search"]{padding-right:54px;padding-top:13px;padding-bottom:11px;line-height:16px;font-size:16px}}input[type="email"]{font-size:1rem;border:1px solid #ddd;padding:12px;color:#333;display:block;-webkit-box-sizing:border-box;box-sizing:border-box}label{line-height:1.4;display:block;margin:0 0 5px}.sponsored-bar{height:44px;text-align:center;background:#fff;text-transform:uppercase;color:#fff;font-size:10px;vertical-align:middle}.sponsored-bar span{line-height:44px;vertical-align:middle}.sponsored-bar .sponsor-logo-img{height:20px;margin-left:8px;vertical-align:middle}.byline{display:block;margin-bottom:4px;line-height:23px;font-size:13px}.primary-nav.pro .wrapper,.primary-nav.pro .menuitems.container,.primary-nav.pro .wrapper .menu-item-container a{background:#601948!important}.primary-nav{position:relative;z-index:1600}.primary-nav .wrapper{background:#1A98EE}.primary-nav .menuitems{display:none;position:absolute;width:100%;left:0;top:60px;z-index:999}.primary-nav .menuitems:hover{z-index:999}@media screen and (min-width:700px){.primary-nav .menuitems{z-index:auto;display:block;position:relative;top:0}}.nav-list{font-size:0}@media screen and (min-width:700px){.nav-list{height:44px;overflow:hidden}}.nav-list.component-loaded{height:auto;overflow:visible}.menu-item{background-color:#1A98EE}@media screen and (min-width:700px){.menu-item{display:inline-block;zoom:1;*display:inline;vertical-align:top;font-size:0;background-color:transparent}}.menu-item a{display:block;line-height:44px;font-size:1rem;padding-left:1rem}.menu-item a:not(.maglink){padding-right:1rem}@media screen and (min-width:700px){.menu-item a{display:inline-block;zoom:1;*display:inline;vertical-align:top}}.menu-item a,.menu-item a:visited,.menu-item a:hover,.menu-item a:visited:hover{color:#fff;display:block}@media screen and (min-width:700px){.menu-item a:not(.menu-item-magazines):hover{background-color:#1A98EE}}.menu-item a:not(.menu-item-magazines):active{background-color:#666}.menu-item .icon-home{font-size:1.3em;line-height:1}.pro .menu-item{background-color:transparent}.menu-item.menu-item-main-pro{background-color:#8c2b5e}@media screen and (min-width:700px){.menu-item.menu-item-main-pro{min-width:70px;text-align:center}}.menu-item.menu-item-main-pro a{background-color:transparent}.pro .menu-item.menu-item-main-pro{background-color:#2f6e91}.sub-menu{vertical-align:top;display:none;background-color:#1A98EE;font-size:0}.sub-menu-item{font-size:1rem}.menu-hamburger{height:60px;margin-bottom:0}.menu-hamburger:before,.menu-hamburger:after{content:"";position:absolute;width:18px;margin-left:-9px;top:50%;left:50%}.menu-hamburger:before{height:8px;border-top:2px solid #fff;border-bottom:2px solid #fff;margin-top:-6px}.menu-hamburger:after{height:2px;background:#fff;margin-top:-1px}.menu-hamburger.checked:before{border-top:none;border-bottom:none;width:8px;height:18px;margin-top:-9px;margin-left:-6px}.menu-hamburger.checked:after{width:2px;height:18px;margin-top:-9px;margin-left:-1px}.menu-item-hover-reveal,.menu-item-magazines{line-height:44px;color:#fff;padding-left:1rem;padding-right:1rem;white-space:nowrap;cursor:default}.menu-item-hover-reveal.menu-item,.menu-item-magazines.menu-item{font-size:1rem}@media screen and (min-width:700px){.menu-item-hover-reveal:hover .sub-menu,.menu-item-hover-reveal:focus .sub-menu,.menu-item-magazines:hover .sub-menu,.menu-item-magazines:focus .sub-menu{display:block;position:absolute;margin-left:-16px}}.menu-item-hover-reveal .icon,.menu-item-magazines .icon{font-size:11px;line-height:1;position:relative;top:-1px;left:1px}@media screen and (min-width:700px){.menu-item-hover-reveal .icon-arrow-right,.menu-item-magazines .icon-arrow-right{display:none}}.menu-item-hover-reveal .icon-arrow-down,.menu-item-magazines .icon-arrow-down{display:none}@media screen and (min-width:700px){.menu-item-hover-reveal .icon-arrow-down,.menu-item-magazines .icon-arrow-down{display:inline}}@media screen and (min-width:700px){.nav-sub-set-container{position:absolute;top:0;right:0}}@media screen and (min-width:700px){.menu-item-nav-sub-set{float:right}}#sidebar{-webkit-box-sizing:border-box;box-sizing:border-box;float:left}@media screen and (min-width:700px){#sidebar{padding-left:20px;padding-right:20px}}@media screen and (min-width:1000px){#sidebar{padding-left:0;padding-right:0;width:300px}#sidebar>*:first-child{margin-top:1em}}.pagination.internal{border-top:1px solid #ddd;width:100%}.socialite-widget-ul{font-size:0;display:inline-block;zoom:1;*display:inline;vertical-align:top}.box .socialite-widget-ul{margin-bottom:0}.socialite-widget-item{display:inline-block;zoom:1;*display:inline;vertical-align:middle;width:24px;height:24px;line-height:24px;font-size:1rem;margin-left:8px}.socialite-widget-item:first-child{margin-left:0}.socialite-widget-item a{background-color:#333;display:block;line-height:24px;width:100%;height:100%;text-align:center;color:#fff;border-radius:50%;text-decoration:none}.socialite-widget-item a:visited,.socialite-widget-item a:hover,.socialite-widget-item a:visited:hover{color:#fff;text-decoration:none}.socialite-widget-item .icon{font-size:.9em;width:100%;height:100%;line-height:24px}.socialite-widget-item .icon:before{display:block}.socialite-widget-item .facebook,.socialite-widget-item .icon-facebook,.buttons-social .icon-facebook{background:#3B5998}.socialite-widget-item .facebook:hover,.socialite-widget-item .icon-facebook:hover,.buttons-social .icon-facebook:hover{background:#4c70ba}.socialite-widget-item .twitter,.socialite-widget-item .icon-twitter,.buttons-social .icon-twitter{background:#4099FF}.socialite-widget-item .twitter:hover,.socialite-widget-item .icon-twitter:hover,.buttons-social .icon-twitter:hover{background:#73b4ff}.socialite-widget-item .whatsapp{background:#64D448}.socialite-widget-item .whatsapp:hover{background:#87de71}.socialite-widget-item .pinterest,.socialite-widget-item .icon-pinterest{background:#BD081C}.socialite-widget-item .pinterest:hover,.socialite-widget-item .icon-pinterest:hover{background:#ee0a23}.socialite-widget-item .reddit,.socialite-widget-item .icon-reddit{background:#ff5700}.socialite-widget-item .reddit:hover,.socialite-widget-item .icon-reddit:hover{background:#ff7933}.buttons-social .icon-youtube{background:#CD201F}.buttons-social .icon-youtube:hover{background:#e23e3d}.socialite-widget-item .email{background:#333}.socialite-widget-item .email:hover{background:#4d4d4d}.buttons-social .icon-instagram{background:#de3073}.buttons-social .icon-instagram:hover{background:#e55c91}.buttons-social .icon-envelope{background:#1A98EE}.burgerbar .buttons-social a{border:none}.burgerbar .buttons-social a:before{font-size:14px;line-height:24px;width:100%;height:100%}.newsletter-signup{display:block!important;background-color:#ededed;border-bottom:1px solid #ccc}@media (max-width:900px){.newsletter-signup{float:none!important}}.newsletter-signup .grey-box{color:#666}.newsletter-signup>h3,.newsletter-signup>.separator-heading{min-height:36px;font-size:16px;line-height:1.25em;font-family:"Open Sans",Arial,sans-serif;padding:8px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-weight:600;text-transform:uppercase}.newsletter-signup>.separator-heading{background-color:#fff}.newsletter-signup>h3 span,.newsletter-signup>.separator-heading span{display:block;-webkit-box-sizing:border-box;box-sizing:border-box;width:300px;margin:0 auto}.newsletter-signup>.separator-heading>span{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.newsletter-signup>.separator-heading>span .newsletter-title{width:80%;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center}.newsletter-signup .icon-envelope{float:left;background-color:#1A98EE;color:#fff;text-align:center;border-radius:50%;font-size:25px;line-height:36px;width:38px;height:38px;margin-right:10px;margin-left:10px}.newsletter-signup small{font-size:10px;line-height:12px}@media screen and (min-width:700px){.newsletter-signup{float:none}}@media screen and (min-width:900px){.newsletter-signup{float:none;width:100%}}@media screen and (max-width:900px){.newsletter-signup .icon-envelope{margin-left:0}.newsletter-signup .grey-box{padding-left:0;padding-right:0}.newsletter-signup h3 span,.newsletter-signup .separator-heading span{width:300px;margin:0 auto}}.newsletter-signup .newsletter-logo{text-align:center}.newsletter-signup .newsletter-logo img{height:20px;padding-top:2px}.newsletter-signup.product-newsletter{border:solid 1px #333;-webkit-box-sizing:border-box;box-sizing:border-box}.newsletter-signup.product-newsletter h3,.newsletter-signup.product-newsletter h4,.newsletter-signup.product-newsletter .separator-heading{color:#fff;text-transform:none;font-family:"Open Sans",sans-serif}.newsletter-signup.product-newsletter h3,.newsletter-signup.product-newsletter .separator-heading{background:#333;font-size:15px;line-height:20px;border-top:none;border-bottom:none}.newsletter-signup.product-newsletter .icon-filled-envelope{float:left}.newsletter-signup.product-newsletter .product-cta{font-weight:700;display:inline}.newsletter-signup.product-newsletter .product-info{font-weight:400;display:inline}.newsletter-signup.product-newsletter .reduce{font-size:80%;display:inline}.newsletter-signup.product-newsletter h4{background-color:#666;font-size:.75em;line-height:33px}.newsletter-signup.product-newsletter p{color:#333;text-align:center;font-size:13px;line-height:17px;width:58%;margin-top:.5rem;display:inline-block;margin-left:5px}.newsletter-signup.product-newsletter p .jump-out-text{font-weight:700;display:block}.newsletter-signup.product-newsletter footer{color:#666;margin:.75rem 0 .5rem}.newsletter-signup .newsletter-image{display:inline-block;height:102px;width:35%;margin-left:8px;background:url("/media/img/newsletter-image.png") no-repeat;background-size:auto 102px;background-repeat:no-repeat;image-rendering:-moz-crisp-edges;image-rendering:-o-crisp-edges;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;-ms-interpolation-mode:nearest-neighbor}.newsletter-signup .newsletter-button{-webkit-box-sizing:border-box;box-sizing:border-box;width:100%;padding:0 17px;background:-webkit-gradient(linear,left bottom,left top,color-stop(50%,#E94E1B),color-stop(50%,#ed724a));background:-webkit-linear-gradient(bottom,#E94E1B 50%,#ed724a 50%);background:linear-gradient(to top,#E94E1B 50%,#ed724a 50%);height:44px;text-align:center}.newsletter-signup .newsletter-button a{color:#fff;font-size:1em;font-weight:900;display:inline-block;padding-top:14px;height:100%;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box}.newsletter-signup .newsletter-button a:hover,.newsletter-signup .newsletter-button a:visited{color:#fff;text-decoration:none}.newsletter-signup .newsletter-button .icon{color:#fff;font-size:12px;position:relative;top:-2px;padding-left:3px}.newsletter-signup .subtitle{display:block;padding-left:10px;width:300px;margin:auto}.icon-filled-envelope{float:left;text-align:center;border-radius:50%;font-size:40px;line-height:36px;width:38px;height:38px;margin-right:10px;margin-left:10px;background-color:#1A98EE;color:#fff}#article-body .inlinegallery{visibility:hidden;margin-bottom:30px;width:100%}#article-body .inlinegallery,#article-body .inlinegallery .inlinegallery-wrap{position:relative;overflow:hidden}#article-body .inlinegallery .inlinegallery-item{position:relative;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;float:left;width:100%}#article-body .inlinegallery .inlinegallery-item,#article-body .inlinegallery .inlinegallery-item figure{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}#article-body .inlinegallery .inlinegallery-item figure{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;max-height:90vh;margin-bottom:1em;border-bottom:1px solid #333}#article-body .inlinegallery .inlinegallery-item figure p.vanilla-image-block{position:relative;margin-bottom:10px;background-color:#333}@media (max-width:900px){#article-body .inlinegallery .inlinegallery-item figure p.vanilla-image-block{margin-bottom:8px}}#article-body .inlinegallery .inlinegallery-item figure p.vanilla-image-block img{display:block;width:100%;height:auto;max-height:80vh;object-fit:contain}.news-article #article-body .inlinegallery .inlinegallery-item>*:last-child{margin-bottom:0}.newsletter-signup,.newsletter-signup>h3{background-color:#fff}.newsletter-signup .grey-box{padding:1ex;margin:0 auto;width:300px;-webkit-box-sizing:border-box;box-sizing:border-box;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}#article-body .widthsetter{width:100%}#article-body .widthsetter .articletable{display:inline-block;width:100%;margin-bottom:20px;word-break:normal;overflow-x:scroll}#article-body .widthsetter .articletable::-webkit-scrollbar{-webkit-appearance:none;-moz-appearance:none}#article-body .widthsetter .articletable::-webkit-scrollbar-thumb{border-radius:8px;border:2px solid #fff;background-color:rgba(0,0,0,.5)}#article-body .widthsetter .articletable::-webkit-scrollbar-track{background-color:#fff;border-radius:8px}#article-body .widthsetter .articletable table{margin-left:150px}#article-body .widthsetter .articletable table caption{width:100%;padding:14px;-webkit-box-sizing:border-box;box-sizing:border-box;text-align:center;font-weight:800;font-size:16px;line-height:18px;background-color:#fff}#article-body .widthsetter .articletable table tbody,#article-body .widthsetter .articletable table thead{text-align:center}#article-body .widthsetter .articletable table th,#article-body .widthsetter .articletable table td{padding:14px;min-width:10px;max-width:150px;font-size:13px;line-height:13px}@media (min-width:575px){#article-body .widthsetter .articletable table th,#article-body .widthsetter .articletable table td{font-size:15px;line-height:15px;max-width:200px}}#article-body .widthsetter .articletable table thead>tr{background-color:#333;color:#fff}#article-body .widthsetter .articletable table thead>tr th{background-color:#333}#article-body .widthsetter .articletable table tr .firstcol{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;position:absolute;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;max-width:120px;min-height:30px;left:0;padding:0 14px;-webkit-box-sizing:border-box;box-sizing:border-box;z-index:100;cursor:default}@media (min-width:575px){#article-body .widthsetter .articletable table tr .firstcol{max-width:200px}}#article-body .widthsetter .articletable table tbody>tr:nth-of-type(2n+1),#article-body .widthsetter .articletable table tbody>tr:nth-of-type(2n+1) td{background-color:#fff}.sticky-nav.left-rail-nav{position:fixed;top:135px;left:0;z-index:10000}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper{display:block;max-height:-webkit-calc(100vh - 135px);max-height:calc(100vh - 135px);width:140px;padding:0 10px 20px;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#fff;border-radius:10px;color:#333;font-size:12px;z-index:1500}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper .scroll-wrapper__label{display:block;padding:20px 0 10px;font-weight:700;font-family:"Open Sans Condensed",sans-serif}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list{position:relative;width:-webkit-calc(100% + 3px);width:calc(100% + 3px);max-height:-webkit-calc(100vh - 187px - 44px);max-height:calc(100vh - 187px - 44px);overflow-y:scroll;padding:5px 0;border-top:2px solid #1A98EE;border-bottom:2px solid #1A98EE;line-height:16px}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list::-webkit-scrollbar{width:3px;background:rgba(0,0,0,0)}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list::-webkit-scrollbar-thumb{background-color:#ccc;border-radius:10px}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list li.list__title{border-bottom:1px solid #ccc}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list li.list__title.active>a{color:#1A98EE;font-weight:700}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list li.list__title a{display:block;padding:5px 0;color:#333;cursor:pointer}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list li.list__title a:hover{text-decoration:none}.sticky-nav.left-rail-nav .sticky-nav__scroll-wrapper ul.scroll-wrapper__list li.list__title:last-of-type{border-bottom:none}.sticky-nav.left-rail-nav button.sticky-nav__arrow{display:none}body{background-color:#fff;-webkit-text-size-adjust:100%}a{color:#1A98EE;text-decoration:none}a:hover{text-decoration:underline}a:visited{color:#8A9FAD}a:visited:hover{color:#8A9FAD}button{font-size:.875em;line-height:3em;border:solid 1px #333;color:#fff;background-color:#333;text-transform:uppercase;font-family:"Open Sans",sans-serif;margin:0;padding:1ex 1em}button:focus{outline:0}button::-moz-focus-inner{border:0}@media screen and (min-width:700px){.mobile-only{display:none}}#affiliateDisclaimer{text-align:left;font-size:12px;line-height:16px;padding:0;margin:15px 24px 0;color:#333}@media screen and (min-width:700px){#affiliateDisclaimer{font-size:13px;line-height:18px;margin-top:15px}}@media screen and (min-width:1000px){#affiliateDisclaimer{font-size:13px;line-height:18px;margin-top:20px}}#affiliateDisclaimer a{color:#333;text-decoration:underline}.masthead-item.user-locale{border-right:1px solid #97b7c8;padding-right:10px;height:28px;margin-top:16px;padding-left:10px;margin-right:10px}.masthead-item.user-locale .locale-label{float:left;height:28px;margin-right:10px;line-height:28px;font-size:10px;display:none}@media screen and (min-width:760px){.masthead-item.user-locale .locale-label{display:block}}@media screen and (max-width:699px){.masthead-item.user-locale{position:absolute;top:-1px;right:-webkit-calc(50% - 79px);right:calc(50% - 79px);border:none}}.masthead-item.buttons-social{padding:0}.burgerbar .other-links{display:none}@media screen and (min-width:750px){.burgerbar .other-links{display:block;margin-right:0}}.button-search{margin-left:28px}@media (max-width:699px){.burgerbar .logo{text-align:left;margin-left:60px}}@media (max-width:450px){.burgerbar .logo{margin-left:46px}}.burgerbar .logo{text-align:left}@media (max-width:699px){.burgerbar .logo{margin-left:60px}}@media only screen and (max-width:360px){.burgerbar .logo{margin-left:45px}}@media (min-width:700px) and (max-width:849px){.button-search{margin-left:0}}@media screen and (max-width:699px){.masthead-item.user-locale{border:none;position:static}}.emailform{font-family:"Open Sans",sans-serif;color:#333}.emailform .input__wrapper{margin-bottom:0}.emailform .mail__input{height:35px;-webkit-box-sizing:border-box;box-sizing:border-box;width:280px;background-color:#f9f9f9;border-width:2px;padding:1px;border-style:inset}.emailform .mail__input::-webkit-input-placeholder{font-size:12px}.emailform .mail__input:-ms-input-placeholder{font-size:12px}.emailform .mail__input::placeholder{font-size:12px}.emailform .submit__button{height:40px;width:280px;text-align:center;color:#fff;margin-top:20px;border:none;font-size:12px;font-weight:700;font-family:'Open Sans',sans-serif;background-color:#1A98EE;text-transform:uppercase}.emailform .submit__triangle{width:0;height:0;border-top:5px solid transparent;border-bottom:5px solid transparent;border-left:5px solid #fff;position:relative;left:180px;bottom:26px}.--hide-me{display:none}.successmessage p,.failuremessage p{font-size:18px;font-weight:700}.burgerbar{color:#333}.burgerbar .logo .site-logo{height:30px}.burgerbar .other-links a{color:#333}.burgerbar .other-links a:visited{color:#333}.menu-hamburger.unchecked:before{border-top:2px solid #333;border-bottom:2px solid #333}.menu-hamburger.unchecked:after{border-top:2px solid #333}.menu-hamburger.checked:before{border-left:2px solid #333;border-right:2px solid #333}.menu-hamburger.checked:after{border-left:2px solid #333}div#article-body p.vanilla-image-block{text-align:center}div#article-body p.vanilla-image-block img{max-width:100%;max-height:60vh;object-fit:contain}.promo{margin-bottom:25px}@media screen and (min-width:700px){.promo{margin-bottom:40px}}.pagination.internal{border-bottom:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;text-align:center}article .pagination.internal{display:block}</style>
+<link rel="apple-touch-icon" href="https://vanilla.futurecdn.net/tomsguide/181493/apple-touch-icon.png">
+<link rel="shortcut icon" href="https://vanilla.futurecdn.net/tomsguide/181493/favicon.ico" sizes="16x16">
+<link rel="shortcut icon" href="https://vanilla.futurecdn.net/tomsguide/181493/apple-touch-icon.png" size="120x120">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="https://vanilla.futurecdn.net/tomsguide/181493/apple-touch-icon.png">
+<meta property="og:title" content="Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble">
+<meta property="og:site_name" content="Tom's Guide">
+<meta property="og:url" content="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<meta property="og:description" content="Sony WH-1000XM4 leak reveals smarts to put Bose on notice ">
+<meta property="og:image" content="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1200-80.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:type" content="article">
+<meta property="article:publisher" content=" https://www.facebook.com/Tomsguide/">
+<meta property="article:author" content=" https://www.facebook.com/Tomsguide/">
+<meta property="fb:app_id" content="">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@tomsguide">
+<meta property="twitter:title" content="Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble">
+<meta property="twitter:description" content="Sony WH-1000XM4 leak reveals smarts to put Bose on notice ">
+<meta property="twitter:creator" content="@tomsguide">
+<meta property="twitter:image" content="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1200-80.jpg">
+<meta property="twitter:account_id" content="9696142">
+<meta name="google-site-verification" content="AXmk3QRU_rEstMST70XJGrMWcFZaH8xG9J-C3FskFEs">
+<meta name="taboola:url" content="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<meta name="msvalidate.01" content="CC462E6DF91492086145CA5EBDCB615E">
+<script type="text/javascript">
+window.missingImage = function(){var missingImage = document.createElement('img');missingImage.src = '//vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg';return missingImage;}
+var FEP_object;
+var getConnectionDimensions=function(e){var n=navigator.connection||navigator.mozConnection||navigator.webkitConnection;return void 0!==n&&(e.dimension31=n.downlink,e.dimension30=n.effectiveType),e};VAN.gaDimensions=function(e,n,i,o){ga("create",e,"auto",{useAmpClientId:!0,allowLinker:!0}),n=getConnectionDimensions(n),null!=i&&ga("set",{dimension57:i}),ga("require","displayfeatures"),o.fepPrimaryProduct&&ga("set",{dimension40:o.fepPrimaryProduct}),o.fepSecondaryProducts.length&&ga("set",{dimension41:o.fepSecondaryProducts.join("|")}),o.fepPrimaryProduct[0]&&ga("set",{dimension42:o.fepPrimaryCompany}),o.fepCompanies.length>=1&&ga("set",{dimension43:o.fepCompanies.join("|")}),o.fepPrimaryProduct&&ga("set",{dimension45:o.fepPrimaryProduct}),o.fepCategory&&ga("set",{dimension46:o.fepCategory}),o.fepArticleName.length>0&&ga("set",{dimension47:o.fepArticleName}),o.fepAlgorithm&&ga("set",{dimension50:o.fepAlgorithm}),o.fepNullified?ga("set",{dimension51:"true"}):ga("set",{dimension51:"false"}),"object"==typeof o.fepGroups&&Array.isArray(o.fepGroups)&&ga("set",{dimension58:o.fepGroups.join("|")}),o.thirdCategories&&ga("set",{dimension74:o.thirdCategories.join("|")});var t="false";try{"undefined"!=typeof window.vanilla&&"undefined"!=typeof window.vanilla.aft&&(t=window.vanilla.aft.logged_in===!0?"true":"false")}catch(a){console.error("Badly structured aft object",a)}ga("set",{dimension13:t}),ga("set",{dimension10:document.querySelector("html").getAttribute("data-locale").replace("_","-")});try{var r=document.cookie.replace(/(?:(?:^|.*;\s*)_ga\s*\=\s*([^;]*).*$)|^.*$/,"$1");r&&ga("set",{dimension59:r})}catch(a){console.log("GA ID error: ",a)}ga("require","linker"),ga("send","pageview",n)}; VAN.assignFep=function(a){try{var e=e||{fepPrimaryProduct:"",fepSecondaryProducts:Array(),fepCompanies:Array(),fepHawk:{},fepCategory:"",fepGroups:Array(),kwMunge:Array(),fepArticleName:"",fepPrimaryCompany:"",fepAlgorithm:"",fepNullified:"",ready:!1,primaryCategory:"",secondaryCategories:Array(),thirdCategories:Array()};if(window.FEP=e,!e.ready){if("undefined"==typeof a)throw"FEPNotReady";e.fepPrimaryProduct=a[0].adTags.primaryProduct,e.fepSecondaryProducts=a[0].adTags.secondaryProducts,e.fepCompanies=a[0].adTags.companies,e.fepCategory="object"==typeof a[0].adTags.category?"":a[0].adTags.category,e.fepGroups="undefined"!=typeof a[0].adTags.groups?a[0].adTags.groups:Array(),e.fepArticleName=a[0].articleName,e.fepAlgorithm=a[0].strategy,e.fepNullified=a[0].nullified,e.fepPrimaryCompany=null!==a[0].adTags.primaryCompany&&a[0].adTags.primaryCompany.length>=1?a[0].adTags.primaryCompany:" ","undefined"!=typeof a[0].adTags.primaryCategory&&"undefined"!=typeof a[0].adTags.secondaryCategories&&"undefined"!=typeof a[0].adTags.thirdCategories&&(e.primaryCategory=a[0].adTags.primaryCategory,e.secondaryCategories=a[0].adTags.secondaryCategories,e.thirdCategories=a[0].adTags.thirdCategories),e.fepIAB=[],e.ready=!0;var r=["fepPrimaryProduct","fepSecondaryProducts","fepCompanies","fepCategory"];r.forEach(function(a){var r=e[a];"object"==typeof r&&(r=r),e.kwMunge=e.kwMunge.concat(r)}),e.kwMunge=e.kwMunge.filter(function(a,r){return e.kwMunge.indexOf(a)==r}),"undefined"!=typeof a[0].hawkTags.primaryProduct&&(e.fepHawk.primaryProduct=a[0].hawkTags.primaryProduct),"undefined"!=typeof a[0].hawkTags.secondaryProducts&&(e.fepHawk.secondaryProducts=a[0].hawkTags.secondaryProducts),"undefined"!=typeof a[0].hawkTags.companies&&(e.fepHawk.companies=a[0].hawkTags.companies),"undefined"!=typeof a[0].hawkTags.groups&&(e.fepHawk.groups=a[0].hawkTags.groups),"undefined"!=typeof a[0].hawkTags.category&&(e.fepHawk.category=a[0].hawkTags.category)}return window.FEP=e,e}catch(o){console.log("fep ga exc "+o.message)}};;
+</script>
+<script>
+try{
+var FEP_object = [{"acceptableLanguage":true,"adTags":{"category":"Headphones","companies":["Apple_Inc.","Bose_Corporation"],"groups":["Headphones"],"primaryCategory":"Headphones","primaryCompany":"Sony","primaryProduct":"Sony_WH-1000XM4","secondaryCategories":["Headphones"],"secondaryCompanies":["Apple_Inc.","Bose_Corporation"],"secondaryProducts":["WH-1000XM4","Sony_WH-1000XM3","WH-1000XM3","Sony","Headphones"],"thirdCategories":[]},"articleName":"Sony_WH-1000XM4_leak_reveals_killer_features_and_Bose_is_in_trouble","articleType":"news","dataSource":"provided","hawkTags":{"primaryProduct":"Sony_WH-1000XM4","secondaryProducts":["WH-1000XM4","Sony_WH-1000XM3","WH-1000XM3","Sony","Headphones"],"companies":["Sony","Apple_Inc.","Bose_Corporation"],"category":"Headphones","groups":["Headphones"],"internalProductName":""},"internalProductName":"","nullified":false,"origSite":"tomsguide","overrides":[],"rampTags":{"primaryProduct":"Sony WH-1000XM4","secondaryProducts":["WH-1000XM4","Sony WH-1000XM3","WH-1000XM3","Sony","Headphones"],"companies":["Sony","Apple Inc.","Bose Corporation"],"category":"Headphones","groups":["Headphones"]},"site":"tomsguide","strategy":5,"timestamp":1590151961,"topProductVsproductName":"0"}];
+}catch(ex){
+if (typeof console == "object") {
+console.log(ex);
+}
+}
+</script>
+<!-- GA TPL PREMIUM -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+// Optimizely Universal Analytics Integration
+window.optimizely = window.optimizely || [];
+window.optimizely.push("activateUniversalAnalytics");
+// Setup the FEP global object form the FEP_object
+// @TODO - can the format of FEP_object be changed server side?
+VAN.assignFep(FEP_object);
+var ga_code = 'UA-72111741-10';
+var analytics_ga_data = {"dimension1":"news","dimension2":"","dimension3":"headphones","dimension4":"Tech_Toms_Guide\/","dimension5":"zrrmWSJanmEfquxokXX88P","dimension6":"|type_news|channel_headphones|serversidehawk","dimension7":"roland_moore-colyer","dimension8":"22-05-2020","dimension9":"1","dimension10":"EN-US","dimension27":"181493","dimension95":"news","dimension106":"0","dimension126":"en","dimension127":"GB|US|AU|SG","dimension128":"22-05-2020"};
+var version = 'null';
+// Make sure all the GA dimensions are setup and correct
+VAN.gaDimensions(ga_code, analytics_ga_data, version, window.FEP);
+</script>
+<!-- END GA PREMIUM -->
+<script>
+var trailingSlash = false;
+</script>
+<script>
+var onesignalConfig = {
+"appId" : "44fa1f98-aba9-444f-8afb-c0b9e42a6aff"
+};
+</script>
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<!-- Hawk Elements' styles -->
+<style id="hawkStyles">.hawk-tracking-pixel-container,.hawk-tracking-pixel-container .hawk-tracking-pixel-image{width:0;height:0;}.hawk-affiliate-link-button,.hawk-affiliate-link-container{line-height:1.2;}.hawk-affiliate-link-button a.hawk-affiliate-link-link,.hawk-affiliate-link-button a.hawk-affiliate-link-link:hover,.hawk-affiliate-link-button a.hawk-affiliate-link-link:hover:visited,.hawk-affiliate-link-button a.hawk-affiliate-link-link:visited,.hawk-affiliate-link-container a.hawk-affiliate-link-link,.hawk-affiliate-link-container a.hawk-affiliate-link-link:hover,.hawk-affiliate-link-container a.hawk-affiliate-link-link:hover:visited,.hawk-affiliate-link-container a.hawk-affiliate-link-link:visited{text-decoration:none;}.hawk-affiliate-link-button{width:100%;line-height:1;}.hawk-affiliate-link-button .hawk-affiliate-link-link{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;-ms-flex:1;flex:1;color:var(--white);padding:8px 10px;text-decoration:none;text-transform:uppercase;font-size:13px;font-weight:700;background-color:var(--site-color);word-break:normal;letter-spacing:normal;}.hawk-affiliate-link-button .hawk-affiliate-link-link:hover,.hawk-affiliate-link-button .hawk-affiliate-link-link:hover:visited,.hawk-affiliate-link-button .hawk-affiliate-link-link:link,.hawk-affiliate-link-button .hawk-affiliate-link-link:visited,.hawk-affiliate-link-button .hawk-affiliate-link-link>*{color:var(--white);text-decoration:none;}body .hawk-main-transparent{margin-bottom:30px;padding-bottom:2px;background:var(--review-background);position:relative;}body .hawk-main-transparent{background:transparent;}body .hawk-animated-rows-container{background:var(--rows-background-color);margin:0 4px;}body .hawk-deal-image-container{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;height:75px;}body .hawk-deal-image-container[data-type=merchant],body .hawk-deal-image-container[data-type=network]{height:auto;}body .hawk-deal-image-container[data-type=placeholder]{height:auto;}body .hawk-lazy-load-container .hawk-lazy-load-placeholder{border:solid 1px var(--light-grey);width:100%;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;font-size:13px;padding:2px;}body .hawk-display-price-container{display:inline-block;white-space:nowrap;width:auto;line-height:1;}body .hawk-display-price-container .hawk-display-price-main{display:inline-block;}body .hawk-display-price-container .hawk-display-price-main .hawk-display-price-price{color:var(--site-color);font-weight:700;font-size:18px;}body .hawk-display-price-container[data-type=buySimilar] .hawk-display-price-main .hawk-display-price-price{color:var(--black);font-weight:400;font-size:12px;text-transform:none;white-space:normal;}body .hawk-display-price-container[data-type=upfront] .hawk-display-price-main .hawk-display-price-price{color:var(--black);font-weight:600;font-size:14px;text-transform:none;}body .hawk-display-price-container[data-type=wasPrice]{text-align:center;margin-bottom:5px;}body .hawk-display-price-container[data-type=wasPrice] .hawk-display-price-main .hawk-display-price-price{color:var(--was-price-text-color);text-decoration:line-through;font-size:13px;font-weight:400;}body .hawk-main-price-container{display:-ms-flexbox;display:flex;-ms-flex-pack:center;justify-content:center;-ms-flex-direction:column;flex-direction:column;-ms-flex-align:center;align-items:center;}body .hawk-promo-container{display:inline-block;padding:5px 8px;margin:0 6px 6px 0;background:var(--product-label-background);color:var(--product-label-text-color);text-transform:uppercase;font-weight:400;width:auto;line-height:10px;}body .hawk-promo-container .hawk-promo-label{color:var(--black);font-size:12px;text-transform:uppercase;font-weight:400;line-height:12px;}body .hawk-promo-container[data-type=black-friday]{background:var(--black);}body .hawk-promo-container[data-type=black-friday] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=cyber-monday]{background:var(--yellow);}body .hawk-promo-container[data-type=cyber-monday] .hawk-promo-label{color:var(--black);}body .hawk-promo-container[data-type=seasonal]{background:var(--green);}body .hawk-promo-container[data-type=seasonal] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=recommended]{background:var(--orange);}body .hawk-promo-container[data-type=recommended] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=popular]{background:var(--red);}body .hawk-promo-container[data-type=popular] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=exclusive]{background:var(--pink);}body .hawk-promo-container[data-type=exclusive] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=prime]{background:var(--prime-blue);}body .hawk-promo-container[data-type=prime] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=limited-stock]{background:var(--grey);}body .hawk-promo-container[data-type=limited-stock] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=was-price]{background:var(--was-price-promo-color);}body .hawk-promo-container[data-type=was-price] .hawk-promo-label{color:var(--white);}body .hawk-promo-container[data-type=was-price-light]{background:var(--was-price-light-promo-color);}body .hawk-promo-container[data-type=was-price-light] .hawk-promo-label{color:var(--was-price-light-promo-text-color);}body .hawk-promo-container[data-type=editors-pick]{background:var(--editors-pick-promo-color);}body .hawk-promo-container[data-type=editors-pick] .hawk-promo-label{color:var(--white);}body .hawk-promos-no-padding{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex:1;flex:1;width:100%;-ms-flex-align:center;align-items:center;padding:10px 0 0;position:relative;}body .hawk-promos-no-padding .hawk-promos-main{display:-ms-flexbox;display:flex;width:100%;margin:auto;overflow:hidden;-ms-flex-wrap:wrap;flex-wrap:wrap;}body .hawk-promos-no-padding{padding:0;}body .hawk-row-grid-container,body .hawk-row-grid-no-padding{display:grid;padding:5px 10px 0;width:100%;box-sizing:border-box;position:relative;}body .hawk-row-grid-container[data-columns="2"],body .hawk-row-grid-no-padding[data-columns="2"]{grid-template-columns:repeat(2,1fr);}body .hawk-row-grid-container[data-columns="3"],body .hawk-row-grid-no-padding[data-columns="3"]{grid-template-columns:repeat(3,1fr);}body .hawk-row-grid-container[data-columns="4"],body .hawk-row-grid-no-padding[data-columns="4"]{grid-template-columns:repeat(4,1fr);}body .hawk-row-grid-container[data-columns="5"],body .hawk-row-grid-no-padding[data-columns="5"]{grid-template-columns:repeat(5,1fr);}body .hawk-row-grid-container[data-columns="6"],body .hawk-row-grid-no-padding[data-columns="6"]{grid-template-columns:repeat(6,1fr);}body .hawk-row-grid-container[data-columns="7"],body .hawk-row-grid-no-padding[data-columns="7"]{grid-template-columns:repeat(7,1fr);}body .hawk-row-grid-no-padding{padding:0;}body .hawk-row-block-container,body .hawk-row-block-left-row{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;-ms-flex-direction:column;flex-direction:column;}body .hawk-row-block-left-row{-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:start;justify-content:flex-start;}body .hawk-row-container:not(:last-of-type){border-bottom:1px dotted var(--light-mid-grey);}body .hawk-powered-by-container{font-size:10px;padding:0 10px;text-transform:uppercase;-ms-flex:.3;flex:.3;}body .hawk-hawk-footer-editorial-container{text-align:center;font-size:12px;line-height:37px;min-height:10px;background:var(--hawk-footer-background);}body .hawk-hawk-footer-editorial-container .hawk-hawk-footer-description-container{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;}body .hawk-hawk-footer-editorial-container .hawk-hawk-footer-description-container .hawk-hawk-footer-description{display:block;font-size:14px;line-height:21px;margin:10px 0;-ms-flex:1;flex:1;}body .hawk-hawk-footer-editorial-container{background:transparent;}body .hawk-title-container{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;background:transparent;padding:15px 10px;}body .hawk-title-container .hawk-title-heading{font:inherit;font-weight:600;font-size:18px;display:block;margin:0;-ms-flex:1;flex:1;}body .hawk-load-more-container{padding:7px 0;margin:10px 10px 5px;display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;box-sizing:border-box;background:var(--white);border:solid 1px var(--light-mid-grey);}body .hawk-load-more-container .hawk-load-more-load-more-container{-ms-flex:1;flex:1;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end;}body .hawk-load-more-container .hawk-load-more-load-more-container .hawk-load-more-load-more{text-transform:uppercase;font-size:14px;font-weight:600;}body .hawk-load-more-container .hawk-load-more-show-less-container{-ms-flex:.55;flex:.55;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end;padding-right:10px;}body .hawk-load-more-more-deals-container .hawk-load-more-load-more-container{cursor:pointer;}body .hawk-load-more-more-deals-container .hawk-load-more-load-more-container .hawk-load-more-load-more:after{content:"\25BC";margin-left:5px;font-size:13px;}body .hawk-star-rating-star-review-widget{color:var(--light-grey);font-size:18.75px;line-height:21.75px;position:relative;display:inline-block;}body .hawk-star-rating-star-review-widget:before{color:var(--pink);content:"\2605";position:absolute;left:0;}body .hawk-star-rating-star-review-widget[data-type=half]:before{color:var(--pink);width:50%;overflow:hidden;}body .hawk-star-rating-star-review-widget[data-type=empty]:before{color:var(--light-grey);}body .hawk-star-rating-star-review-widget[data-rating=asin]:before,body .hawk-star-rating-star-review-widget[data-rating=walmart]:before{color:var(--amazon-orange);}body .hawk-star-rating-star-review-widget{font-size:15px;line-height:18px;}body .hawk-star-rating-star-review-widget[data-type=empty]:before,body .hawk-star-rating-star-review-widget[data-type=half]{color:var(--white);}body .hawk-star-rating-container{display:inline-block;}body .hawk-star-rating-container:before{background:transparent;}body .hawk-model-code-review-review-widget{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;margin:5px 0;}body .hawk-model-code-review-review-widget .hawk-model-code-review-link{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex:1;flex:1;}body .hawk-model-code-review-review-widget .hawk-model-code-review-link .hawk-model-code-review-label{font-size:13px;line-height:13px;margin:0 5px 0 0;}body .hawk-model-code-review-review-widget{-ms-flex-pack:start;justify-content:flex-start;-ms-flex-align:baseline;align-items:baseline;padding:0 10px 15px;margin:0;}body .hawk-model-code-review-review-widget .hawk-model-code-review-link{-ms-flex-order:1;order:1;margin:0 0 0 5px;}body .hawk-model-code-review-review-widget .hawk-model-code-review-link .hawk-model-code-review-label{font-size:13px;}body .hawk-widget{--black:#000;--white:#fff;--yellow:#ffd800;--green:#3c8d0d;--orange:#ff6f28;--red:red;--pink:#e6248a;--light-grey:#eaeaea;--grey:#adadad;--light-mid-grey:#ccc;--prime-blue:#00aeef;--amazon-orange:#ffce00;--trd-blue:#2f6e91;--trd-grey:#ededed;--site-color:#5aaf0b;--editors-pick-promo-color:var(--trd-blue);--rows-background-color:var(--white);--hawk-footer-background:var(--trd-grey);--review-background:var(--trd-grey);--product-label-background:var(--light-grey);--product-label-text-color:var(--black);--was-price-text-color:#848484;--was-price-promo-color:#be0707;--was-price-light-promo-color:#ededed;--was-price-light-promo-text-color:#be0707;width:100%;letter-spacing:normal;position:relative;}._hawk.subtitle~.hawk-widget[data-widget-type=price]{margin:16px 0;}@media (min-width:600px){._hawk.subtitle~.hawk-widget[data-widget-type=price]{margin:0;min-height:128px;float:right;clear:none;width:50%;}.fancy_box_body ._hawk.subtitle~.hawk-widget[data-widget-type=price]{float:none;width:100%;}}.icon~.hawk-widget{clear:both;}</style>
+<!-- End Hawk Elements' styles -->
+<meta name="parsely-type" content="post">
+<meta name="parsely-post-id" content="zrrmWSJanmEfquxokXX88P">
+<meta name="parsely-pub-date" content="2020-05-22T12:52:36Z">
+<meta name="parsely-title" content="Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble">
+<meta name="parsely-link" content="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<meta name="parsely-image-url" content="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg">
+<meta name="parsely-section" content="Headphones">
+<meta name="parsely-tags" content="Category: Headphones,Category: News,type_news,channel_headphones,serversidehawk">
+<meta name="parsely-author" content="Roland Moore-Colyer">
+<script type="application/ld+json">
+{
+"@type": "NewsArticle",
+"name": "Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble",
+"headline": "Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble",
+"alternativeHeadline": "Sony WH-1000XM4 leak reveals smarts to put Bose on notice ",
+"articleBody": "The Sony WH-1000XM4 are set to succeed the rather excellent Sony WH-1000XM3 , and some killer leaked features could make these great headphones even better.  As one of the best wireless headphones you can buy, the Sony WH-1000XM3 impressed us with superb audio quality and class-leading active noise cancellation; the Sony WH-1000XM4 are expected to do the same. But Twitter user justplayinghard pulled apart the Sony Headphones Connect APK and uncovered some interesting smart features that the…",
+"datePublished": "2020-05-22T12:52:36Z",
+"image": "https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg",
+"author": {
+"@type": "Person",
+"name": "Roland Moore-Colyer"
+},
+"creator": {
+"@type": "Person",
+"name": "Roland Moore-Colyer"
+},
+"publisher": {
+"@type": "Organization",
+"name": "Tom's Guide",
+"url": "https://www.tomsguide.com",
+"logo": {
+"@type": "ImageObject",
+"url": "https://vanilla.futurecdn.net/tomsguide",
+"caption": "Tom's Guide logo"
+}
+},
+"mainEntityOfPage": {
+"@type": "WebPage",
+"@id": "https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble"
+},
+"url": "https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble",
+"thumbnailUrl": "https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-320-80.jpg",
+"articleSection": "Headphones",
+"keywords": [
+"Category: Headphones",
+"Category: News",
+"type_news",
+"channel_headphones",
+"serversidehawk"
+],
+"@context": "http://schema.org"
+}
+</script>
+</head>
+<body class="limit-width ">
+<script>window.isIE = false</script>
+<!--[IE]><script>window.isIE = true</script><![endif]-->
+<script>
+window.amIIE = function() {
+return navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') !== -1 || window.isIE;
+}
+</script>
+<a href="#main" class="skip-to-main-content" style="position:absolute;">Skip to main content</a>
+<!-- contentType : //-->
+<nav class="primary-nav">
+<input type="radio" name="burgerbar-expand" class="burgerbar-none-radio" id="burgerbar-none" checked>
+<input type="radio" name="burgerbar-expand" class="burgerbar-radio" id="burgerbar">
+<div class="burgerbar ">
+<div class="container full burgerbar-small">
+<label class="button-menu unchecked menu-hamburger" for="burgerbar" onclick></label>
+<label class="button-menu checked menu-hamburger" for="burgerbar-none" onclick></label>
+<script type="application/ld+json">
+[
+{
+"@type": "Organization",
+"name": "Tom's Guide",
+"url": "https://www.tomsguide.com",
+"logo": {
+"@type": "ImageObject",
+"url": "https://vanilla.futurecdn.net/tomsguide",
+"caption": "Tom's Guide logo"
+},
+"@context": "http://schema.org"
+},
+{
+"@type": "WebSite",
+"name": "Tom's Guide",
+"url": "https://www.tomsguide.com",
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://www.tomsguide.com/search?searchTerm={query}",
+"query-input": "required name=query"
+},
+"@context": "http://schema.org"
+}
+]
+</script>
+<div class="logo" id="publisherDetails">
+<a href="https://www.tomsguide.com/">
+<span class="site-logo">
+<svg width="203px" height="36px" viewbox="0 0 203 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+<title>logo</title>
+<desc>Created with Sketch.</desc>
+<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="branding/ttr_primary_nav" transform="translate(-240.000000, -12.000000)" fill="#1A98EE">
+<g id="Header">
+<g id="logo" transform="translate(240.000000, 12.000000)">
+<path d="M66.5927009,5.1483633 L71.181545,5.1483633 L71.181545,8.61790459 C71.293178,9.73720734 70.9576183,10.7445468 70.3978018,11.6399229 C69.614389,12.5352991 68.7190128,13.2067486 67.6000404,13.6542716 L66.5927009,11.7518862 C67.2641505,11.5279596 67.823967,11.0801064 68.2714899,10.6325835 C68.6073798,10.2966936 68.7190128,9.84917064 68.8309761,9.2896844 L66.7046642,9.2896844 L66.7046642,5.1483633 L66.5927009,5.1483633 Z" id="Fill-1"></path>
+<path d="M0,9.40144954 L2.0146789,9.40144954 L2.0146789,5.93190826 L8.95376147,3.69330275 L8.95376147,9.40144954 L12.5352661,9.40144954 L12.5352661,14.3258532 L8.95376147,14.3258532 L8.95376147,21.0410092 L8.95376147,21.6008257 L8.95376147,22.1603119 C8.95376147,22.6078349 9.06572477,23.0556881 9.17768807,23.503211 C9.2893211,23.9510642 9.62521101,24.0630275 10.1846972,24.0630275 C10.5205872,24.0630275 10.9681101,23.9510642 11.304,23.8391009 C11.7518532,23.7271376 12.1993761,23.6151743 12.5352661,23.3912477 L12.5352661,28.092055 L11.5279266,28.4276147 C11.0800734,28.539578 10.6325505,28.539578 10.1846972,28.6515413 L8.95376147,28.7635046 L8.05805505,28.7635046 C6.93908257,28.7635046 5.81977982,28.6515413 4.81244037,28.2040183 C4.02902752,27.8681284 3.46954128,27.3086422 3.02168807,26.6371927 C2.57416514,25.8534495 2.35023853,25.0700367 2.23827523,24.1746606 C2.12631193,23.1676514 2.12631193,22.1603119 2.0146789,20.9290459 L2.0146789,14.2138899 L0,14.2138899 L0,9.40144954 Z" id="Fill-3"></path>
+<path d="M23.7270716,23.8390679 C24.1745945,23.8390679 24.5104844,23.7271046 24.8463743,23.503178 C25.1822642,23.1676183 25.5178239,22.8317284 25.6297872,22.4961688 C25.8537138,21.9363523 26.0776404,21.4888294 26.1896037,20.9290128 C26.3012367,20.2575633 26.4132,19.5861138 26.3012367,18.9146642 C26.3012367,18.2432147 26.1896037,17.5714349 26.0776404,16.8999853 C25.9656771,16.3404991 25.7417505,15.7810128 25.5178239,15.3331596 C25.2942275,14.8856367 25.0703009,14.5497468 24.6224477,14.2138569 C24.2865578,13.9902606 23.8390349,13.8782972 23.3911817,13.8782972 C23.055622,13.8782972 22.6077688,13.9902606 22.3841725,14.2138569 C22.0482826,14.5497468 21.7123927,14.8856367 21.6007596,15.2211963 C21.376833,15.6690495 21.2648697,16.2285358 21.1529064,16.788022 C21.0409431,17.4598018 20.9289798,18.0192881 20.9289798,18.6907376 C20.9289798,19.9220037 21.1529064,21.2649028 21.7123927,22.3842055 C22.0482826,23.1676183 22.8316954,23.7271046 23.7270716,23.8390679 M23.7270716,28.6515083 C22.3841725,28.6515083 21.0409431,28.4279119 19.8100073,28.092022 C18.5787413,27.6441688 17.4594385,27.0846826 16.4524294,26.1893064 C15.4450899,25.2939303 14.6616771,24.2865908 14.1018606,23.055655 C13.5423743,21.712756 13.2064844,20.1456 13.2064844,18.6907376 C13.2064844,17.2358752 13.5423743,15.8926459 14.1018606,14.5497468 C14.6616771,13.430444 15.4450899,12.3114716 16.4524294,11.5280587 C17.4594385,10.7446459 18.5787413,10.0728661 19.698044,9.62534312 C20.9289798,9.17748991 22.2722092,8.95389358 23.503145,8.95389358 C24.9583376,8.95389358 26.3012367,9.17748991 27.6444661,9.62534312 C28.8754018,10.0728661 29.9947046,10.7446459 31.002044,11.6396917 C32.0093835,12.5350679 32.680833,13.5424073 33.2403193,14.7736734 C33.8001358,16.1165725 34.0237321,17.5714349 34.0237321,19.0266275 C34.0237321,20.4814899 33.8001358,21.824389 33.2403193,23.1676183 C32.680833,24.2865908 32.0093835,25.4058936 31.002044,26.1893064 C29.9947046,26.9727193 28.8754018,27.6441688 27.7564294,27.9800587 C26.4132,28.4279119 25.0699706,28.6515083 23.7270716,28.6515083" id="Fill-5"></path>
+<path d="M45.8874495,28.091989 L34.6954128,28.091989 L34.6954128,23.1675853 L36.2622385,23.1675853 L36.2622385,14.3257872 L34.8073761,14.3257872 L34.8073761,9.40138349 L41.8580917,9.40138349 L42.6418349,11.639989 L43.3132844,10.9682092 C43.6491743,10.6326495 43.9847339,10.2967596 44.3206239,10.072833 C44.7681468,9.73727339 45.216,9.51334679 45.6635229,9.28942018 C46.2233394,9.06582385 46.7828257,8.95353028 47.3423119,8.95353028 C48.1257248,8.95353028 48.9091376,9.06582385 49.6925505,9.28942018 C50.252367,9.40138349 50.8118532,9.73727339 51.2597064,9.9612 C51.5952661,10.1847963 52.0431193,10.5206862 52.2667156,10.8562459 C52.4906422,11.1921358 52.7145688,11.4160624 52.8265321,11.639989 C53.4979817,10.9682092 54.2813945,10.2967596 55.0648073,9.8492367 C56.0721468,9.28942018 57.1914495,8.95353028 58.4227156,8.95353028 C59.6536514,8.84156697 60.9968807,9.17745688 62.1158532,9.73727339 C63.0112294,10.1847963 63.6826789,10.8562459 64.2424954,11.751622 C64.6900183,12.6469982 65.0259083,13.5423743 65.1378716,14.5497138 C65.2498349,15.6690165 65.3614679,16.787989 65.3614679,17.9072917 L65.3614679,23.055622 L67.1522202,23.055622 L67.1522202,28.091989 L57.6389725,28.091989 L57.6389725,18.9146312 L57.6389725,18.1312183 L57.6389725,17.2358422 L57.6389725,16.1165394 C57.6389725,15.7809798 57.5270092,15.4450899 57.4150459,15.1092 C57.3030826,14.8856037 57.1914495,14.6616771 56.9675229,14.4377505 C56.7435963,14.2138239 56.5196697,14.2138239 56.1841101,14.2138239 C55.5126606,14.1021908 54.952844,14.4377505 54.6172844,14.997567 C54.2813945,15.6690165 54.1694312,16.3404661 54.2813945,17.0119156 L54.2813945,23.055622 L56.5196697,23.055622 L56.5196697,28.091989 L46.894789,28.091989 L46.894789,18.5787413 C46.894789,17.4597688 46.894789,16.3404661 46.6708624,15.3331266 C46.5588991,14.6616771 45.9994128,14.2138239 45.3279633,14.3257872 C44.8801101,14.3257872 44.3206239,14.4377505 43.9847339,14.8856037 C43.6491743,15.4450899 43.537211,16.0045761 43.537211,16.5643927 L43.537211,23.2795486 L45.7754862,23.2795486 L45.7754862,28.091989 L45.8874495,28.091989 Z" id="Fill-7"></path>
+<path d="M71.2933431,28.091989 L71.2933431,21.376833 L76.3297101,21.376833 C76.3297101,21.824356 76.4416734,22.2722092 76.7775633,22.6080991 C77.1134532,22.9436587 77.4490128,23.1675853 77.8968661,23.3915119 C78.344389,23.6151083 78.7922422,23.7270716 79.2397651,23.8390349 C79.575655,23.9509982 80.023178,23.9509982 80.3590679,23.9509982 C80.6946275,23.9509982 81.1424807,23.8390349 81.4780404,23.7270716 C81.8139303,23.503145 82.0378569,23.1675853 82.0378569,22.7197321 C82.0378569,22.3841725 81.8139303,22.0482826 81.254444,21.824356 C80.5826642,21.6007596 80.023178,21.376833 79.3517284,21.2648697 C78.5683156,21.0409431 77.6729394,20.8173468 76.7775633,20.5934202 C75.8821872,20.3694936 74.986811,19.9219706 74.2033982,19.4741174 C73.419655,19.0265945 72.7482055,18.355145 72.3006826,17.5714018 C71.7408661,16.676356 71.5172697,15.5570532 71.5172697,14.5497138 C71.5172697,13.6543376 71.7408661,12.8709248 72.1887193,12.0875119 C72.6362422,11.4160624 73.1960587,10.8562459 73.8675083,10.4087229 C74.5389578,9.9612 75.2104073,9.62531009 75.9941505,9.40138349 C76.6656,9.06582385 77.3370495,8.95386055 78.0088294,8.95386055 C79.2397651,8.95386055 80.3590679,9.28942018 81.4780404,9.8492367 C82.3734165,10.2967596 83.1568294,10.9682092 83.6046826,11.8635853 L83.9402422,9.40138349 L88.5290862,9.40138349 L88.5290862,16.1165394 L83.6046826,16.1165394 C83.6046826,15.6690165 83.4927193,15.3331266 83.2687927,14.997567 C83.0451963,14.6616771 82.7093064,14.3257872 82.3734165,14.1021908 C82.0378569,13.8782642 81.5900037,13.6543376 81.1424807,13.430411 C80.6946275,13.318778 80.2471046,13.2068147 79.7992514,13.2068147 C79.4636917,13.2068147 79.0158385,13.318778 78.7922422,13.5423743 C78.4563523,13.7663009 78.344389,14.2138239 78.344389,14.5497138 C78.344389,14.997567 78.6802789,15.4450899 79.1278018,15.5570532 C79.7992514,15.8926128 80.4710312,16.1165394 81.1424807,16.2285028 L83.7166459,17.0119156 C84.612022,17.2358422 85.5073982,17.6833651 86.290811,18.1312183 C87.0742239,18.5787413 87.7456734,19.2501908 88.3051596,20.0339339 C88.8649761,20.8173468 89.0885725,21.824356 89.0885725,22.8316954 C89.0885725,23.6151083 88.8649761,24.3985211 88.5290862,25.1819339 C88.1931963,25.8537138 87.6337101,26.5251633 86.9622606,26.9726862 C86.290811,27.5325028 85.5073982,27.8680624 84.7239853,28.091989 C83.8286092,28.3159156 82.933233,28.4278789 82.1498202,28.4278789 C80.9185541,28.4278789 79.6876183,28.2039523 78.5683156,27.6444661 C77.6729394,27.1966128 76.8895266,26.5251633 76.3300404,25.7417505 L75.9941505,27.9800257 L71.2933431,28.091989 Z" id="Fill-9"></path>
+<path d="M107.107861,18.5788404 C107.107861,19.1383266 107.219824,19.6981431 107.331787,20.2576294 C107.44375,20.8171156 107.667347,21.2649688 107.891273,21.7124917 C108.1152,22.160345 108.339127,22.4959046 108.78665,22.7198312 C109.122539,22.9437578 109.458099,23.1676844 109.905952,23.1676844 C110.689365,23.1676844 111.360815,22.7198312 111.808338,22.0483817 C112.368154,21.0410422 112.703714,20.0337028 112.59175,18.802767 C112.59175,18.1313174 112.480117,17.4595376 112.368154,16.9000514 C112.256191,16.3405651 112.032264,15.7807486 111.808338,15.3332257 C111.584741,14.8853725 111.360815,14.5498128 110.912961,14.3258862 C110.577402,14.1019596 110.241512,13.9899963 109.793989,13.9899963 C109.010576,13.9899963 108.227163,14.5498128 107.891273,15.2212624 C107.219824,16.2286018 106.995897,17.3475743 107.107861,18.5788404 L107.107861,18.5788404 Z M101.623971,28.3156844 L102.63098,28.9874642 C103.078833,29.3230239 103.638319,29.5469505 104.197806,29.7708771 C104.757622,29.9944734 105.429072,30.2184 106.100521,30.4423266 C106.771971,30.6662532 107.555383,30.6662532 108.227163,30.6662532 C108.898613,30.6662532 109.682026,30.5542899 110.353475,30.3303633 C110.801328,30.1064367 111.248851,29.8828404 111.696705,29.4349872 C112.032264,29.0994275 112.256191,28.7635376 112.368154,28.3156844 C112.480117,27.8681615 112.59175,27.5322716 112.59175,27.0847486 L112.59175,25.8534826 C112.480117,26.0774092 112.256191,26.3013358 112.032264,26.4132991 C111.808338,26.6368954 111.472778,26.860822 111.136888,27.0847486 C110.689365,27.3086752 110.353475,27.5322716 109.905952,27.6442349 C109.346136,27.7561982 108.78665,27.8681615 108.227163,27.8681615 C106.771971,27.8681615 105.429072,27.6442349 104.086172,27.0847486 C102.96687,26.6368954 102.071494,25.8534826 101.288081,24.9581064 C100.616631,24.0627303 100.056815,23.0557211 99.721255,21.9364183 C99.3853651,20.8171156 99.1614385,19.6981431 99.2734018,18.4668771 C99.2734018,17.123978 99.4973284,15.7807486 99.8332183,14.5498128 C100.168778,13.4305101 100.840228,12.4231706 101.623971,11.5277945 C102.407383,10.6324183 103.414393,9.96096881 104.533695,9.62540917 C105.764961,9.17755596 107.107861,8.95362936 108.45076,8.95362936 C109.234172,8.95362936 110.017916,9.17755596 110.801328,9.51344587 C111.360815,9.7370422 111.920301,10.0729321 112.480117,10.5207853 L113.26353,9.40148257 L122.217292,9.40148257 L122.217292,14.3258862 L119.979017,14.3258862 L119.979017,25.5179229 C119.979017,26.9727853 119.75509,28.4276477 119.307567,29.7708771 C118.859714,31.0018128 118.075971,32.1211156 117.180594,33.0164917 C116.173255,33.9118679 114.830356,34.6952807 113.487127,35.1428037 C111.808338,35.7029505 110.129549,35.9265468 108.339127,35.9265468 C107.331787,35.9265468 106.436411,35.8149138 105.429072,35.5909872 C104.645659,35.3667303 103.750283,35.1428037 102.96687,34.6952807 C102.29542,34.3597211 101.623971,34.0238312 101.064154,33.575978 L99.721255,32.5686385 L101.623971,28.3156844 Z" id="Fill-11"></path>
+<path d="M123.672253,9.40144954 L132.737648,9.40144954 L132.737648,18.466844 C132.737648,19.6981101 132.849611,20.9290459 133.185501,22.0483486 C133.409097,22.7197982 134.080877,23.1676514 134.752327,23.1676514 C135.423776,23.1676514 135.983262,22.8317615 136.431116,22.3842385 C136.878639,21.824422 137.102565,21.0410092 137.102565,20.3695596 L137.102565,14.4378165 L134.640363,14.4378165 L134.640363,9.40144954 L144.377207,9.40144954 L144.377207,23.1676514 L146.16796,23.1676514 L146.16796,28.2040183 L139.117244,28.2040183 L138.109905,25.8534495 L137.326492,26.7488257 C136.655042,27.5322385 135.759666,28.092055 134.752327,28.4276147 C134.080877,28.6515413 133.409097,28.7635046 132.737648,28.7635046 C131.506712,28.7635046 130.275446,28.6515413 129.156143,28.2040183 C128.261097,27.8681284 127.477354,27.3086422 126.805905,26.5252294 C126.134455,25.6298532 125.686932,24.7344771 125.574969,23.6151743 C125.351042,22.2722752 125.239079,20.9290459 125.239079,19.5861468 L125.239079,14.4378165 L123.672253,14.4378165 L123.672253,9.40144954 Z" id="Fill-13"></path>
+<polygon id="Fill-15" points="158.143772 28.091989 147.734818 28.091989 147.734818 23.1675853 149.301974 23.1675853 149.301974 14.2138239 147.734818 14.2138239 147.734818 9.40138349 156.464983 9.40138349 156.464983 23.2795486 158.255736 23.2795486"></polygon>
+<path d="M166.985406,18.5788404 C166.985406,19.1383266 167.097369,19.6981431 167.209332,20.2576294 C167.321295,20.8171156 167.544892,21.2649688 167.768818,21.7124917 C167.992745,22.160345 168.216672,22.4959046 168.664194,22.7198312 C169.000084,22.9437578 169.335644,23.1676844 169.783497,23.1676844 C170.56691,23.1676844 171.23836,22.7198312 171.685883,22.0483817 C172.245699,21.0410422 172.581259,20.0337028 172.469295,18.802767 C172.469295,18.1313174 172.357662,17.4595376 172.245699,16.9000514 C172.133736,16.3405651 171.909809,15.7807486 171.685883,15.3332257 C171.462286,14.8853725 171.23836,14.5498128 170.790506,14.3258862 C170.454947,14.1019596 170.119057,13.9899963 169.671534,13.9899963 C168.888121,13.9899963 168.104708,14.5498128 167.768818,15.2212624 C167.209332,16.2286018 166.873442,17.3475743 166.985406,18.5788404 L166.985406,18.5788404 Z M172.357662,4.92460183 L170.678873,4.92460183 L170.678873,0.000198165138 L179.968194,0.000198165138 L179.968194,23.2793174 L181.758617,23.2793174 L181.758617,28.2040514 L173.029112,28.2040514 L172.357662,26.860822 C172.133736,27.0847486 172.021772,27.1967119 171.797846,27.3086752 C171.462286,27.5322716 171.126396,27.7561982 170.790506,27.8681615 C170.342983,28.0920881 169.895461,28.2040514 169.447607,28.3156844 C168.888121,28.4276477 168.328305,28.539611 167.656855,28.539611 C166.425919,28.539611 165.194653,28.3156844 164.07535,27.7561982 C163.068341,27.1967119 162.061002,26.5252624 161.389552,25.6298862 C160.606139,24.7345101 160.046323,23.6152073 159.5988,22.4959046 C159.150947,21.2649688 158.92735,20.0337028 158.92735,18.6908037 C158.92735,17.3475743 159.150947,16.0046752 159.5988,14.7737394 C160.046323,13.6544367 160.717772,12.6470972 161.501516,11.7517211 C162.284928,10.9683083 163.180305,10.2968587 164.299277,9.8490055 C165.306617,9.40148257 166.425919,9.17755596 167.544892,9.17755596 C168.552231,9.17755596 169.671534,9.28951927 170.678873,9.7370422 C171.23836,9.96096881 171.797846,10.2968587 172.357662,10.6324183 L172.357662,4.92460183 Z" id="Fill-17"></path>
+<path d="M192.839119,13.8782312 C192.391596,13.8782312 191.83178,13.9901945 191.384257,14.2141211 C191.048367,14.4377174 190.712807,14.661644 190.488881,14.9975339 C190.264954,15.3330936 190.152991,15.6689835 190.041028,16.0045431 C189.929064,16.340433 189.929064,16.5643596 189.929064,16.8999193 L195.637211,16.8999193 C195.637211,16.5643596 195.637211,16.1165064 195.525248,15.7809468 C195.413284,15.4450569 195.301321,15.1094972 195.077394,14.7736073 C194.853798,14.4377174 194.629872,14.2141211 194.293982,14.1021578 C193.846459,13.9901945 193.398606,13.8782312 192.839119,13.8782312 L192.839119,13.8782312 Z M202.12844,25.5177908 C200.785541,26.6370936 199.330349,27.5324697 197.65156,28.091956 C195.972771,28.6514422 194.182018,28.8753688 192.391596,28.7634055 C191.16033,28.7634055 190.041028,28.5398092 188.922055,28.2039193 C187.802752,27.8680294 186.68345,27.1965798 185.788073,26.413167 C184.780734,25.5177908 183.997321,24.5104514 183.437505,23.2795156 C182.766055,21.8246532 182.542128,20.2574972 182.542128,18.6906716 C182.542128,17.2358092 182.766055,15.8929101 183.325541,14.5496807 C183.773394,13.4307083 184.556807,12.3114055 185.452183,11.4160294 C186.34756,10.5206532 187.466532,9.84920367 188.698128,9.51331376 C189.929064,9.06579083 191.272294,8.84153394 192.727156,8.84153394 C194.070385,8.84153394 195.525248,9.06579083 196.868147,9.51331376 C197.98745,9.96116697 198.994789,10.5206532 199.890165,11.4160294 C200.673578,12.1994422 201.345028,13.2067817 201.680917,14.2141211 C202.12844,15.3330936 202.240404,16.5643596 202.240404,17.7952954 C202.240404,18.2431486 202.240404,18.8026349 202.12844,19.2504881 L201.79255,20.5933872 L189.928734,20.5933872 C190.041028,20.9292771 190.041028,21.1528734 190.152661,21.4887633 C190.264954,21.8246532 190.488881,22.1602128 190.712807,22.4961028 C191.048367,22.8316624 191.384257,23.1675523 191.83178,23.2795156 C192.391596,23.5034422 193.063046,23.6150752 193.734495,23.6150752 L194.853798,23.6150752 C195.301321,23.6150752 195.749174,23.5034422 196.084734,23.3914789 C196.532587,23.2795156 197.092073,23.055589 197.539596,22.8316624 C198.099413,22.6080661 198.546936,22.2721761 198.994789,21.8246532 L202.12844,25.5177908 Z" id="Fill-19"></path>
+</g>
+</g>
+</g>
+</g>
+</svg>
+<img class="fallback" src="" data-fallback-src="">
+</span>
+<span class="hidden-header" itemprop="name">Tom's Guide</span> <span class="strapline"></span>
+</a>
+</div>
+<input type="checkbox" name="burgerbar-expand" class="search-checkbox" id="search-checkbox">
+<label class="button-search masthead-item " for="search-checkbox" onclick="">
+<span class="desktop-text">Search</span><span class="icon icon-search"></span>
+</label>
+<form class="search-box" action="https://www.tomsguide.com/search" method="GET">
+<input tabindex="0" type="search" name="searchTerm" placeholder="Search Tom's Guide" class="search-input">
+<button type="submit" class="search-submit">
+<span class="icon icon-search"></span>
+</button>
+</form>
+<div class="other-links">
+<a href="https://www.tomsguide.com/feeds/all">
+<abbr title="Really Simple Syndication">RSS</abbr>
+</a>
+</div>
+<div class="buttons-social masthead-item">
+<a data-component-tracking-label="Facebook" target="_blank" href="https://www.facebook.com/Tomsguide/" class="icon icon-circle icon-facebook" aria-label="Facebook"></a>
+<a data-component-tracking-label="Twitter" target="_blank" href="https://twitter.com/tomsguide" class="icon icon-circle icon-twitter" aria-label="Twitter"></a>
+<a data-component-tracking-label="Instagram" target="_blank" href="https://www.instagram.com/tomsguide/?hl=en" rel="nofollow" class="icon icon-circle icon-instagram" aria-label="Instagram"></a>
+<a data-component-tracking-label="YouTube" target="_blank" href="https://www.youtube.com/channel/UCik8xvfR6s8GQ74QNEGNzwg" class="icon icon-circle icon-youtube" aria-label="YouTube"></a>
+<a data-component-tracking-label="Pinterest" target="_blank" href="https://www.pinterest.com/tomsguidepurch/" class="icon icon-circle icon-pinterest" aria-label="Pinterest"></a>
+</div>
+<div class="user-locale masthead-item">
+<span class="locale-label"></span>
+<span class="locale__flags"></span>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="menuitems container full">
+<ul class="nav-list" data-component="nav">
+<li class="menu-item menu-item-home" data-menuitem="">
+<a data-component-tracking-label="home" class="home" href="https://www.tomsguide.com/">
+<i class="icon icon-home"></i>
+</a>
+</li>
+<li class="menu-item menu-item-best picks" data-menuitem="">
+<a data-component-tracking-label="best picks" class="" href="https://www.tomsguide.com/best-picks">
+<span>Best Picks</span>
+</a>
+</li>
+<li class="menu-item menu-item-news" data-menuitem="">
+<a data-component-tracking-label="news" class="" href="https://www.tomsguide.com/news">
+<span>News</span>
+</a>
+</li>
+<li class="menu-item menu-item-reviews" data-menuitem="">
+<a data-component-tracking-label="reviews" class="" href="https://www.tomsguide.com/reviews">
+<span>Reviews</span>
+</a>
+</li>
+<li class="menu-item menu-item-phones" data-menuitem="">
+<a data-component-tracking-label="phones" class="" href="https://www.tomsguide.com/topics/smartphones">
+<span>Phones</span>
+</a>
+</li>
+<li class="menu-item menu-item-tvs" data-menuitem="">
+<a data-component-tracking-label="tvs" class="" href="https://www.tomsguide.com/topics/tv">
+<span>TVs</span>
+</a>
+</li>
+<li class="menu-item menu-item-security" data-menuitem="">
+<a data-component-tracking-label="security" class="" href="https://www.tomsguide.com/topics/security">
+<span>Security</span>
+</a>
+</li>
+<li class="menu-item menu-item-more menu-level-1 has-submenu
+menu-item-hover-reveal ">
+More
+<i class="icon icon-arrow-down"></i><i class="icon icon-arrow-right"></i>
+<ul class="sub-menu" data-more-submenu="">
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/us/best-antivirus,review-2588.html">Antivirus</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/audio">Audio</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/cameras">Cameras</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/gaming">Gaming</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/smart-home">Smart Home</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/software">Software</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/streaming">Streaming</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/best-picks/best-vpn">Best VPN</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/wearables">Wearables</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/best-picks/best-web-hosting">Web hosting</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics/what-to-watch">What To Watch</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/how-to">How To</a></li>
+<li class="sub-menu-item menu-level-2"><a href="https://www.tomsguide.com/topics">All Topics</a></li>
+</ul>
+</li>
+</ul>
+<div class="nav-sub-set-container">
+<div class="menu-item menu-item-none menu-item-main-pro menu-item-nav-sub-set">
+<a href="https://forums.tomsguide.com" target="_blank">Forums</a>
+</div>
+</div> </div>
+</div>
+</nav>
+<div class="dfp-leaderboard-container"></div>
+<div id="main" class="container full " tabindex="-1">
+<div class="trending-wrapper ">
+<div class="trending-bar container full">
+<div class="trending-lead brands-disabled">
+Trending
+</div>
+<ul class="trending-items ">
+<li class="trending-item"> <a href="https://www.tomsguide.com/amp/news/latest-iphone-12-news">iPhone 12</a></li>
+<li class="trending-item"> <a href="https://www.tomsguide.com/us/ps5-release-date-rumors-specs,news-26954.html">PS5</a></li>
+<li class="trending-item"> <a href="https://www.tomsguide.com/news/samsung-galaxy-note-20">Samsung Galaxy Note 20</a></li>
+<li class="trending-item"> <a href="https://www.tomsguide.com/news/where-to-buy-face-masks">Where to buy face masks</a></li>
+<li class="trending-item"> <a href="https://www.tomsguide.com/news/stimulus-check-2020-round-2-eligibility-schedule-and-direct-deposit">Stimulus check 2020</a></li>
+<!-- Start Trending Subset //-->
+<!-- End Trending Subset //-->
+</ul>
+</div>
+</div>
+<aside id="affiliateDisclaimer"><small>Tom's Guide is supported by its audience. When you purchase through links on our site, we may earn an affiliate commission. <a href="https://www.futureplc.com/terms-conditions/">Learn more</a></small></aside>
+<article class="news-article " data-id="zrrmWSJanmEfquxokXX88P">
+<header>
+<nav class="breadcrumb" aria-label="Breadcrumbs">
+<ol>
+<li><a href="https://www.tomsguide.com/">Home</a></li>
+<li><a href="https://www.tomsguide.com/news">News</a></li>
+</ol>
+</nav>
+<h1>Sony WH-1000XM4 leak reveals killer features — and Bose is in trouble</h1>
+<div class="byline-social">
+<p class="byline">
+By
+<span class="no-wrap by-author"><a href="https://www.tomsguide.com/author/roland-moore-colyer" rel="author"><span style="white-space: nowrap">Roland Moore-Colyer</span></a></span>
+<time itemprop="datePublished" class="no-wrap relative-date chunk" datetime="2020-05-22T12:52:36Z">22 May 2020</time>
+</p>
+<p class="strapline">Sony WH-1000XM4 leak reveals smarts to put Bose on notice </p>
+<nav class="socialite-widget box less-space " data-contexturl="https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble">
+<ul class="socialite-widget-ul">
+<li class="socialite-widget-item">
+<a data-component-tracking-label="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble" data-platform="facebook" target="_blank" class="facebook socialite" data-action="share" aria-label="Facebook">
+<i class="icon icon-facebook"></i>
+</a>
+</li>
+<li class="socialite-widget-item">
+<a data-component-tracking-label="Twitter" href="https://twitter.com/intent/tweet?text=Sony%20WH-1000XM4%20leak%20reveals%20killer%20features%20%E2%80%94%20and%20Bose%20is%20in%20trouble&amp;url=https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble" data-platform="twitter" target="_blank" class="twitter socialite" data-action="tweet" aria-label="Twitter">
+<i class="icon icon-twitter"></i>
+</a>
+</li>
+<li class="socialite-widget-item mobile-only">
+<a data-component-tracking-label="Whatsapp" href="whatsapp://send?text=Sony%20WH-1000XM4%20leak%20reveals%20killer%20features%20%E2%80%94%20and%20Bose%20is%20in%20troublehttps://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble?fwa" data-platform="whatsapp" class="whatsapp socialite" data-action="message" aria-label="WhatsApp">
+<i class="icon icon-whats-app"></i>
+</a>
+</li>
+<li class="socialite-widget-item">
+<a data-component-tracking-label="Reddit" href="http://www.reddit.com/submit?url=https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble&amp;title=Sony%20WH-1000XM4%20leak%20reveals%20killer%20features%20%E2%80%94%20and%20Bose%20is%20in%20trouble" data-platform="reddit" target="_blank" class="reddit socialite" data-action="submit" aria-label="Reddit">
+<i class="icon icon-reddit"></i>
+</a>
+</li>
+<li class="socialite-widget-item">
+<a data-component-tracking-label="Pinterest" href="http://pinterest.com/pin/create/button/?url=https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble&amp;media=https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1200-80.jpg" data-platform="pinterest" target="_blank" class="pinterest socialite" data-action="pin" aria-label="Pinterest">
+<i class="icon icon-pinterest"></i>
+</a>
+</li>
+<li class="socialite-widget-item">
+<a data-component-tracking-label="Email" href="mailto:?subject=I%20found%20this%20webpage&amp;body=Hi,%20I%20found%20this%20webpage%20and%20thought%20you%20might%20like%20it%20https://www.tomsguide.com/news/sony-wh-1000xm4-leak-reveals-killer-features-and-bose-is-in-trouble" class="email socialite" data-platform="email" aria-label="Email">
+<i class="icon icon-envelope-solid"></i>
+</a>
+</li>
+</ul>
+<div class="num-shares-wrapper"><i class="icon icon-share"></i> <span class="num-shares-label">Shares</span> <span class="num-shares-value"></span></div>
+<a class="xenforo-nav-link" href="#xenforo-comments-467817">
+<i class="icon icon-comment"></i>
+<span class="comments-total">Comments (0)</span>
+</a>
+</nav>
+</div>
+</header>
+<section class="content-wrapper">
+<div class="box less-space" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+<div style="position:relative;">
+<picture><source type="image/webp" alt="Sony WH-1000XM4 " class=" block-image-ads hero-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" srcset="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-480-80.jpg.webp 480w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-650-80.jpg.webp 650w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1024-80.jpg.webp 1024w" sizes="(min-width: 1000px) 602px, calc(100vw - 40px)" data-original-mos="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg"></source><source type="image/jpeg" alt="Sony WH-1000XM4 " class=" block-image-ads hero-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" srcset="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-480-80.jpg 480w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-650-80.jpg 650w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1024-80.jpg 1024w" sizes="(min-width: 1000px) 602px, calc(100vw - 40px)" data-original-mos="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg"></source><img src="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-320-80.jpg" alt="Sony WH-1000XM4 " class=" block-image-ads hero-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" srcset="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-480-80.jpg 480w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-650-80.jpg 650w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE-1024-80.jpg 1024w" sizes="(min-width: 1000px) 602px, calc(100vw - 40px)" data-original-mos="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg"></picture>
+</div>
+<meta itemprop="url" content="https://cdn.mos.cms.futurecdn.net/Y5r8yUH2Xucz4g9n72AsvE.jpg">
+<meta itemprop="height" content="600">
+<meta itemprop="width" content="338">
+<figcaption itemprop="caption description">
+<span class="credit" itemprop="copyrightHolder">(Image credit: Future)</span>
+</figcaption>
+</div>
+<div id="article-body" class="text-copy bodyCopy auto">
+<p>The Sony WH-1000XM4 are set to succeed the rather excellent <a href="https://www.tomsguide.com/us/sony-wh-1000xm3,review-5862.html" target="_blank">Sony WH-1000XM3</a>, and some killer leaked features could make these great headphones even better. </p><p>As one of the <a href="https://www.tomsguide.com/us/best-wireless-headphones,review-5565.html" target="_blank">best wireless headphones</a> you can buy, the Sony WH-1000XM3 impressed us with superb audio quality and class-leading active noise cancellation; the Sony WH-1000XM4 are expected to do the same. But Twitter user <a href="https://twitter.com/justplayinghard/status/1263457145619714050">justplayinghard</a> pulled apart the Sony Headphones Connect APK and uncovered some interesting smart features that the WH-1000XM4 are expected to have. </p><ul><li>The <a href="https://www.tomsguide.com/us/best-noise-cancelling-headphones,review-5566.html">best noise cancelling headphones</a> now</li><li><a href="https://www.tomsguide.com/news/apple-airpods-3">AirPods 3</a>: Release date, price, specs and leaks</li><li><strong>Just in:</strong> <a href="https://www.tomsguide.com/news/apple-glass-leak-reveals-possible-release-date-and-a-bad-surprise" target="_blank">Apple Glass leak reveals possible release date — and a bad surprise</a></li></ul><aside class="hawk-widget" data-render-type="fte" data-skip="dealsy" data-widget-type="seasonal"></aside><p class="mid__article"></p><p>The Android Application Package teardown revealed that the Sony WH-1000XM4 could connect to two devices at once, allowing for the wearer to switch between them on the fly. It&rsquo;s a small thing, but unpairing the WH-1000XM3 from one device and linking it to another can be a pain, and the next-generation wireless headphones could remove that hassle in one fell swoop.  </p><p>There is one minor fly in the ointment in that, as the WH-1000XM4 are set to lose the ability to use the Hi-Res Audio LDAC codec when pairing to multiple devices. Though being able to swap between two devices easily might be worth the drop in audio fidelity in certain scenarios.</p><blockquote class="twitter-tweet hawk-ignore" data-lang="en"><p lang="en" dir="ltr">Sony WH-1000XM4 Info from Headphone Connect 7.0.1Looks identical to the XM3.It'll be able to change some (if not all) headphone settings based on your location (set locations or your own) and uses Google Maps API for it.New DSSE Extreme (also on X1ii), probably AI Upscaling pic.twitter.com/7hpGMIE7Bb<a href="https://twitter.com/justplayinghard/status/1263457145619714050">May 21, 2020</a></p></blockquote><p>The APK teardown also revealed that the WH-1000XM4 will get a boost in audio upscaling by using an upscaler called &ldquo;DSEE Extreme.&rdquo; This is likely an upgrade of the DSEE HX upscaler in the Sony WH-1000XM3. </p><p>Another interesting feature the WH-1000XM4 are set to get is the "Smart Talking" function. According to <a href="https://www.xda-developers.com/sony-wh-1000xm4-mutiple-bluetooth-devices-auto-ambient-mode/amp/?__twitter_impression=true" target="_blank">XDA Developers</a>, which confirmed justplayinghard&rsquo;s findings with its own teardown, the feature will enable the ambient sound mode of the headphones to kick in automatically when a voice is detected. This means background sound will be filtered through the noise-cancelling headphones to allow the wearer to hear a conversion without removing the headphones. </p><p>The WH-1000XM3 can be configured to pick up some voices using ambient sound settings. Similarly, the right ear can be covered to temporarily disable active noise cancellation and let in background sounds. But this feature isn't always that intuitive, and the WH-1000XM4 could greatly improve upon it. </p><p>Finally, the WH-1000XM4 are expected to cleverly adjust headphone settings depending on the wearer's location or when they enter a preset location by tapping into Google Maps data. This would be a significant upgrade over the WH-1000XM3, which requires you to register ambient noise locations manually.</p><p>While not much is expected to change in the design of the Sony WH-1000XM4 , the headphones are shaping up to get a significant upgrade in smarts over the WH-1000XM3 and could be an even stronger rival to the class-leading <a href="https://www.tomsguide.com/reviews/bose-700-noise-cancelling-headphones">Bose 700</a>. But we&rsquo;ll have to wait until the wireless headphones launch before we make any further judgment; sadly, no release date was uncovered in the APK teardown. </p><aside class="hawk-widget" data-model-name="Sony WF-1000XM3" data-widget-type="review" data-render-type="editorial"><div class="hawk-main-transparent"><div class="hawk-title-container"><div class="hawk-title-heading">Today's best Sony WF-1000XM3 deals</div></div><div class="hawk-model-code-review-review-widget"><a class="hawk-model-code-review-link" href="https://target.georiot.com/Proxy.ashx?tsid=8428&amp;GR_URL=https%3A%2F%2Fwww.amazon.com%2Freviews%2FB07VRDR7BM%3Ftag%3Dhawk-future-20%26ascsubtag%3Dhawk-custom-tracking-20" target="_blank"><span class="hawk-model-code-review-label">19 Amazon customer reviews</span></a><div class="hawk-star-rating-container"><span class="hawk-star-rating-star-review-widget" data-rating="asin">&#9734;</span><span class="hawk-star-rating-star-review-widget" data-rating="asin">&#9734;</span><span class="hawk-star-rating-star-review-widget" data-rating="asin">&#9734;</span><span class="hawk-star-rating-star-review-widget" data-type="half" data-rating="asin">&#9734;</span><span class="hawk-star-rating-star-review-widget" data-type="empty" data-rating="asin">&#9734;</span></div></div><div class="hawk-animated-rows-container"><div class="hawk-row-container" data-expandable="0"><div class="hawk-row-grid-container" data-columns="4"><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="product"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Sony - WF-1000XM3 True...</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="merchant"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Best Buy</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-main-price-container"><div class="hawk-affiliate-link-container"><a href="https://bestbuy.7tiv.net/c/221109/633495/10014?prodsku=6359820&amp;u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6359820%2Fpdp&amp;subId1=tomsguide-3467926296766592500" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="67453-6359820" data-url="https://bestbuy.7tiv.net/c/221109/633495/10014?prodsku=6359820&amp;u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6359820%2Fpdp&amp;subId1=hawk-custom-tracking" data-dimension12="3290319202"><div class="hawk-display-price-container" data-type="retail"><div class="hawk-display-price-main"><span class="hawk-display-price-price">$198</span></div></div></a><span class="hawk-tracking-pixel-container"></span></div></div></div><div class="hawk-row-block-container"><div class="hawk-affiliate-link-button"><a href="https://bestbuy.7tiv.net/c/221109/633495/10014?prodsku=6359820&amp;u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6359820%2Fpdp&amp;subId1=tomsguide-3467926296766592500" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="67453-6359820" data-url="https://bestbuy.7tiv.net/c/221109/633495/10014?prodsku=6359820&amp;u=https%3A%2F%2Fapi.bestbuy.com%2Fclick%2F-%2F6359820%2Fpdp&amp;subId1=hawk-custom-tracking" data-dimension12="3290319202"><span>View</span></a><span class="hawk-tracking-pixel-container"></span></div></div></div></div><div class="hawk-row-container" data-expandable="0"><div class="hawk-row-grid-no-padding" data-columns="1"><div class="hawk-row-block-left-row"><div class="hawk-promos-no-padding"><div class="hawk-promos-main"><div class="hawk-promo-container" data-type="was-price"><span class="hawk-promo-label">Reduced Price</span></div></div></div></div></div><div class="hawk-row-grid-container" data-columns="4"><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="product"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Sony WF-1000XM3 Industry...</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="merchant"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">World Wide Stereo</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-affiliate-link-container"><a href="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=tomsguide-1150197847378722300" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="52715-173404" data-url="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=hawk-custom-tracking" data-dimension12="3284494657"><div class="hawk-display-price-container" data-type="wasPrice"><div class="hawk-display-price-main"><span class="hawk-display-price-price">$229.99</span></div></div></a><span class="hawk-tracking-pixel-container"><img src="https://www.awltovhc.com/image-6361382-13359547" class="hawk-tracking-pixel-image" draggable="false"></span></div><div class="hawk-main-price-container"><div class="hawk-affiliate-link-container"><a href="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=tomsguide-1150197847378722300" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="52715-173404" data-url="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=hawk-custom-tracking" data-dimension12="3284494657"><div class="hawk-display-price-container" data-type="retail"><div class="hawk-display-price-main"><span class="hawk-display-price-price">$198</span></div></div></a><span class="hawk-tracking-pixel-container"><img src="https://www.awltovhc.com/image-6361382-13359547" class="hawk-tracking-pixel-image" draggable="false"></span></div></div></div><div class="hawk-row-block-container"><div class="hawk-affiliate-link-button"><a href="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=tomsguide-1150197847378722300" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="52715-173404" data-url="https://www.kqzyfj.com/click-8900245-13359547?url=https%3A%2F%2Fwww.worldwidestereo.com%2Fproducts%2Fsony-wf-1000xm3-industry-leading-noise-canceling-truly-wireless-earbuds%3Fsku%3D173404&amp;sid=hawk-custom-tracking" data-dimension12="3284494657"><span>View</span></a><span class="hawk-tracking-pixel-container"><img src="https://www.awltovhc.com/image-6361382-13359547" class="hawk-tracking-pixel-image" draggable="false"></span></div></div></div></div><div class="hawk-row-container" data-expandable="0"><div class="hawk-row-grid-container" data-columns="4"><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="product"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Sony WF-1000XM3...</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="merchant"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Crutchfield.com</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-main-price-container"><div class="hawk-affiliate-link-container"><a href="https://www.pntra.com/t/1-9448-101987-9448?url=https%3A%2F%2Fwww.crutchfield.com%2FI-rppjc17Y5%2Fp_158WF1KX3B%2FSony-WF-1000XM3-Black.html&amp;sid=tomsguide-3625220222087023600" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="68702-158WF1KX3B" data-url="https://www.pntra.com/t/1-9448-101987-9448?url=https%3A%2F%2Fwww.crutchfield.com%2FI-rppjc17Y5%2Fp_158WF1KX3B%2FSony-WF-1000XM3-Black.html&amp;sid=hawk-custom-tracking" data-dimension12="3289109461"><div class="hawk-display-price-container" data-type="retail"><div class="hawk-display-price-main"><span class="hawk-display-price-price">$198</span></div></div></a><span class="hawk-tracking-pixel-container"></span></div></div></div><div class="hawk-row-block-container"><div class="hawk-affiliate-link-button"><a href="https://www.pntra.com/t/1-9448-101987-9448?url=https%3A%2F%2Fwww.crutchfield.com%2FI-rppjc17Y5%2Fp_158WF1KX3B%2FSony-WF-1000XM3-Black.html&amp;sid=tomsguide-3625220222087023600" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="68702-158WF1KX3B" data-url="https://www.pntra.com/t/1-9448-101987-9448?url=https%3A%2F%2Fwww.crutchfield.com%2FI-rppjc17Y5%2Fp_158WF1KX3B%2FSony-WF-1000XM3-Black.html&amp;sid=hawk-custom-tracking" data-dimension12="3289109461"><span>View</span></a><span class="hawk-tracking-pixel-container"></span></div></div></div></div><div class="hawk-row-container" data-expandable="0"><div class="hawk-row-grid-container" data-columns="4"><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="product"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Sony WF-1000XM3 True Wireless...</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-deal-image-container" data-type="merchant"><div class="hawk-lazy-load-container"><div class="hawk-lazy-load-placeholder">Adorama</div></div></div></div><div class="hawk-row-block-container"><div class="hawk-main-price-container"><div class="hawk-affiliate-link-container"><a href="https://adorama.rfvk.net/c/221109/29622/1036?prodsku=SOWF1000XM3S&amp;u=https%3A%2F%2Fwww.adorama.com%2FSOWF1000XM3S.html&amp;subId1=tomsguide-5499542813951334000" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="27460-SOWF1000XM3S" data-url="https://adorama.rfvk.net/c/221109/29622/1036?prodsku=SOWF1000XM3S&amp;u=https%3A%2F%2Fwww.adorama.com%2FSOWF1000XM3S.html&amp;subId1=hawk-custom-tracking" data-dimension12="3280178671"><div class="hawk-display-price-container" data-type="retail"><div class="hawk-display-price-main"><span class="hawk-display-price-price">$199.99</span></div></div></a><span class="hawk-tracking-pixel-container"></span></div></div></div><div class="hawk-row-block-container"><div class="hawk-affiliate-link-button"><a href="https://adorama.rfvk.net/c/221109/29622/1036?prodsku=SOWF1000XM3S&amp;u=https%3A%2F%2Fwww.adorama.com%2FSOWF1000XM3S.html&amp;subId1=tomsguide-5499542813951334000" target="_blank" rel="nofollow noopener" class="hawk-affiliate-link-link" data-product-key="27460-SOWF1000XM3S" data-url="https://adorama.rfvk.net/c/221109/29622/1036?prodsku=SOWF1000XM3S&amp;u=https%3A%2F%2Fwww.adorama.com%2FSOWF1000XM3S.html&amp;subId1=hawk-custom-tracking" data-dimension12="3280178671"><span>View</span></a><span class="hawk-tracking-pixel-container"></span></div></div></div></div></div><div class="hawk-load-more-container hawk-load-more-more-deals-container"><div class="hawk-load-more-load-more-container"><span class="hawk-load-more-load-more">Show More Deals</span></div><div class="hawk-load-more-show-less-container"></div></div><div class="hawk-hawk-footer-editorial-container"><div class="hawk-hawk-footer-description-container"><span class="hawk-hawk-footer-description">We check over 130 million products every day for the best prices</span></div><div class="hawk-powered-by-container"></div></div></div></aside>
+<div class="onesignal-customlink-container"></div>
+</div>
+<div class="article-sponsored-post slot-1">
+<!-- stuffs -->
+<div style="width:100%"></div>
+</div>
+<div class="article-sponsored-post slot-2">
+<!-- stuffs -->
+<div style="width:100%"></div>
+</div>
+<div class="article-sponsored-post slot-3">
+<!-- stuffs -->
+<div style="width:100%"></div>
+</div>
+<!-- Drop in a standard article here maybe? -->
+<div class="read-more-container"></div>
+<div id="this-will-be-used-for-mpu-2"></div>
+</section>
+<div class="after-article-tags">
+<div class="box" id="articleTag">
+<h3 class="separator-heading">Topics</h3>
+<div class="tag">
+<a href="https://www.tomsguide.com/topics/headphones">Headphones</a>
+</div>
+</div>
+</div>
+<div class="xenforo-comments-see-all">
+<a href="#xenforo-comments-467817">
+<button>
+<i class="icon icon-comment"></i>
+<span class="comments-total">See all comments (0)</span>
+</button>
+</a>
+</div>
+<script>
+window._taboola = window._taboola || [];
+var taboola_lists = [];
+function taboola_is_device(device) {
+if ((! device) || device === null || (typeof device) === 'undefined') return true
+if (device === 'amp') return false
+if (device === 'desktop' && window.screen.width >= 700) return true
+if (device === 'mobile' && window.screen.width < 700) return true
+return false
+}
+</script>
+<footer class="van_taboola" id="taboola-below-article-thumbnails"></footer>
+<script>
+if (taboola_is_device("desktop")) {
+taboola_lists.push({
+mode: "thumbnails-f",
+container: "taboola-below-article-thumbnails",
+placement: "Below Article Thumbnails",
+target_type: "mix"
+});
+}
+</script>
+<footer class="van_taboola" id="taboola-mobile-below-article-thumbnails"></footer>
+<script>
+if (taboola_is_device("mobile")) {
+taboola_lists.push({
+mode: "thumbnails-g",
+container: "taboola-mobile-below-article-thumbnails",
+placement: "Mobile Below Article Thumbnails",
+target_type: "mix"
+});
+}
+</script>
+<footer class="van_taboola" id=""></footer>
+<script>
+if (taboola_is_device("amp")) {
+taboola_lists.push({
+mode: "thumbnails-a",
+container: "",
+placement: "below-main-column",
+target_type: ""
+});
+}
+</script>
+<script>
+for(var i = 0; i < taboola_lists.length; i++){
+_taboola.push(taboola_lists[i]);
+}
+</script>
+<div class="xenforo-comment-widget xenforo-comments-0" id="xenforo-comments-467817">
+<input type="checkbox" class="read-more-state" id="xenforo-collaps-trigger-467817">
+<div class="xenforo-comments-header">
+<span class="no-comment-yet">No comments yet</span>
+<a href="https://forums.tomsguide.com/threads/sony-wh-1000xm4-leak-reveals-killer-features-%E2%80%94-and-bose-is-in-trouble.467817/" class="" target="blank">
+<span>Comment from the forums</span>
+<span class="icon icon-arrow-right"></span>
+</a>
+</div>
+<ul class="xenforo-comments-list">
+</ul>
+</div>
+<div class="related-articles-block">
+<div id="expanding-articles"></div> </div>
+<footer id="comment-jump">
+</footer>
+</article>
+<aside id="sidebar">
+<section class="box newsletter-signup">
+<div class="separator-heading">
+<span>
+<i class="icon icon-envelope white"></i><span class="newsletter-title">Be In the Know</span>
+</span>
+</div>
+<div class="grey-box">
+<p>Get instant access to breaking news, the hottest reviews, great deals and helpful tips.</p>
+<form class="emailform" method="GET" action="https://www.tomsguide.com/email-signup">
+<div class="input__wrapper">
+<input type="email" class="mail__input" name="MAIL" value placeholder="Your Email Address" required>
+</div>
+<div class="submit__wrapper">
+<input class="submit__button" type="submit" value="Sign me up">
+<div class="submit__triangle"></div>
+</div>
+<input type="hidden" class="hidden__id" name="ID" id="ID" value="PbkPj5hSTiI7DaHxA%2BxhNEnb2DC0sRfetMa8wX06DbF4AUl5zRkYymPQ7Wzu1%2BA6Sh5nStr7zk%2Bl5%2Bh9b8">
+<input type="hidden" class="hidden__brand" name="BRAND" id="BRAND" value="TSG">
+<input type="hidden" class="hidden__lang" name="LANG" id="LANG" value="EN">
+</form>
+<div class="successmessage --hide-me">
+<p>Thank you for signing up to Tom's Guide. You will receive a verification email shortly.</p>
+</div>
+<div class="failuremessage --hide-me">
+<p>There was a problem. Please refresh the page and try again.</p>
+</div>
+<footer>
+<small>No spam, we promise. You can unsubscribe at any time and we'll never share your details without your permission.</small>
+</footer>
+</div>
+</section>
+<section class="popular-box">
+<div id="popular-box-wrapper" class="style1">
+<div class="most-popular-tab-bar">
+<input type="radio" name="popradio" id="popradio-1" checked>
+<input type="radio" name="popradio" id="popradio-2">
+<div id="popularcontent">
+<div class="flex-row">
+<label class="poplabel" id="poplabel-1" for="popradio-1">
+<span>Most Read</span>
+</label>
+<label class="poplabel" id="poplabel-2" for="popradio-2">
+<span>Most Shared</span>
+</label>
+</div>
+<ol class="popular-list active" id="poplist-1">
+<li class="most-popular-item first-article">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/stimulus-check-2020-round-2-eligibility-schedule-and-direct-deposit" aria-label="Stimulus check 2020: Round 2, eligibility, schedule and direct deposit">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-1">1</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/stimulus-check-2020-round-2-eligibility-schedule-and-direct-deposit">Stimulus check 2020: Round 2, eligibility, schedule and direct deposit</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/samsung-galaxy-note-20-design-revealed-in-new-renders-and-its-massive" aria-label="Samsung Galaxy Note 20 design revealed in new renders — here's your first look">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-2">2</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/samsung-galaxy-note-20-design-revealed-in-new-renders-and-its-massive">Samsung Galaxy Note 20 design revealed in new renders — here's your first look</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/forget-ps5-and-xbox-series-x-new-nvidia-and-amd-gpus-look-imminent" aria-label="Forget PS5 and Xbox Series X: New Nvidia and AMD GPUs look imminent">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-3">3</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/forget-ps5-and-xbox-series-x-new-nvidia-and-amd-gpus-look-imminent">Forget PS5 and Xbox Series X: New Nvidia and AMD GPUs look imminent</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/stimulus-check-2-second-round-payment-date-eligibility-status-and-news" aria-label="Stimulus check 2: Second round payment date, eligibility, status and news">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-4">4</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/stimulus-check-2-second-round-payment-date-eligibility-status-and-news">Stimulus check 2: Second round payment date, eligibility, status and news</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/face-off/google-pixel-5-vs-pixel-4a" aria-label="Google Pixel 5 vs. Pixel 4a: The biggest differences to expect">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-5">5</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/face-off/google-pixel-5-vs-pixel-4a">Google Pixel 5 vs. Pixel 4a: The biggest differences to expect</a></div>
+</div>
+</div>
+</li>
+</ol>
+<ol class="popular-list " id="poplist-2">
+<li class="most-popular-item first-article">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/stimulus-check-2020-round-2-eligibility-schedule-and-direct-deposit" aria-label="Stimulus check 2020: Round 2, eligibility, schedule and direct deposit">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/EDFSyw6zAM5eUSFkMSxB9T.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-1">1</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/stimulus-check-2020-round-2-eligibility-schedule-and-direct-deposit">Stimulus check 2020: Round 2, eligibility, schedule and direct deposit</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/samsung-galaxy-note-20-design-revealed-in-new-renders-and-its-massive" aria-label="Samsung Galaxy Note 20 design revealed in new renders — here's your first look">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/9cfp6CR8yACGT8wG5aJbMc.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-2">2</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/samsung-galaxy-note-20-design-revealed-in-new-renders-and-its-massive">Samsung Galaxy Note 20 design revealed in new renders — here's your first look</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/forget-ps5-and-xbox-series-x-new-nvidia-and-amd-gpus-look-imminent" aria-label="Forget PS5 and Xbox Series X: New Nvidia and AMD GPUs look imminent">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/x8kXSgGAVqBKJTM9KEFnJo.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-3">3</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/forget-ps5-and-xbox-series-x-new-nvidia-and-amd-gpus-look-imminent">Forget PS5 and Xbox Series X: New Nvidia and AMD GPUs look imminent</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/news/stimulus-check-2-second-round-payment-date-eligibility-status-and-news" aria-label="Stimulus check 2: Second round payment date, eligibility, status and news">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/g9uVRGxJtKggeMMMSz6h4V.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-4">4</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/news/stimulus-check-2-second-round-payment-date-eligibility-status-and-news">Stimulus check 2: Second round payment date, eligibility, status and news</a></div>
+</div>
+</div>
+</li>
+<li class="most-popular-item ">
+<div style="width:100%">
+<a href="https://www.tomsguide.com/face-off/google-pixel-5-vs-pixel-4a" aria-label="Google Pixel 5 vs. Pixel 4a: The biggest differences to expect">
+<picture><source type="image/webp" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg.webp 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg.webp 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg.webp 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg.webp 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></source><source type="image/jpeg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></source><img src="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" alt="" class=" lazy-image-van optional-image" onerror="if(this.src &amp;&amp; this.src.indexOf('missing-image.svg') !== -1){return true;};this.parentNode.replaceChild(window.missingImage(),this)" sizes="99vw" data-normal="https://vanilla.futurecdn.net/tomsguide/media/img/missing-image.svg" data-srcset="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-320-80.jpg 320w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-450-80.jpg 450w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-970-80.jpg 970w, https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log-1024-80.jpg 1024w" data-original-mos="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-media="https://cdn.mos.cms.futurecdn.net/mr73ARjThDP4jtECJE6Log.jpg" data-pin-nopin="true"></picture>
+</a>
+<div class="popular-listings">
+<span class="number-5">5</span>
+<div class="listings-heading"><a href="https://www.tomsguide.com/face-off/google-pixel-5-vs-pixel-4a">Google Pixel 5 vs. Pixel 4a: The biggest differences to expect</a></div>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+</aside>
+</div>
+<script id="hawklinks-script">
+function loadHawklinks(src) {
+!function (e, f, u) {
+e.async = 1;
+e.src = u;
+f.parentNode.insertBefore(e, f);
+}(document.createElement('script'),
+document.getElementsByTagName('script')[0],
+src);
+}
+window.reliableDOMContentLoaded.then(function() {
+loadHawklinks("https://widgets.future-fie.co.uk/hl/hawklinks.js");
+});
+</script>
+<link rel="preload" href="https://widgets.future-fie.co.uk/hl/hawklinks.js" as="script">
+<script type="text/javascript">
+if (!window.amIIE()) {
+var siteTargeting = [];
+var pageTags = "";
+window.reliablePageLoad.then(function(){
+var targeting = window.dfp_config
+for (var attrname in siteTargeting) { targeting[attrname] = siteTargeting[attrname]; }
+targeting.tags = pageTags;
+(function(){
+/* bootstrap---start */
+var _sp_=function(n){function t(e){if(o[e])return o[e].exports;var r=o[e]={i:e,l:!1,exports:{}};return n[e].call(r.exports,r,r.exports,t),r.l=!0,r.exports}var o={};return t.m=n,t.c=o,t.i=function(n){return n},t.d=function(n,o,e){t.o(n,o)||Object.defineProperty(n,o,{configurable:!1,enumerable:!0,get:e})},t.n=function(n){var o=n&&n.__esModule?function(){return n["default"]}:function(){return n};return t.d(o,"a",o),o},t.o=function(n,t){return Object.prototype.hasOwnProperty.call(n,t)},t.p="",t(t.s=2)}([function(n,t){function o(n,t){e&&console[n].apply(console,["[bootstrap]"].concat(Array.prototype.slice.call(t)))}var e=!1;n.exports={debug:function(){o("debug",arguments)},info:function(){o("info",arguments)},time:function(){o("time",arguments)},warn:function(){o("warn",arguments)},error:function(){o("error",arguments)},useDefaults:function(){e=!0},DEBUG:1}},function(n,t,o){"use strict";function e(){S||(S=!0,D=b.config=b.config||{},s(),F=D.bootstrap&&D.bootstrap.contentControlCallback||D.content_control_callback,q=D.accountId||D.account_id||D.client_id||window.sp_cid,N=D.beacon&&D.beacon.contentControlEndpoint||D.content_control_beacon_endpoint||v.a,D.debug_level&&"OFF"!==D.debug_level.toString().toUpperCase()||D.debug&&D.debug.level&&"OFF"!==D.debug.level.toString().toUpperCase()?j=!0:window.location.search&&null!=window.location.search.match(/_sp_debug_level=(?!off|OFF)/)&&(j=!0),j&&m.useDefaults({defaultLevel:m.DEBUG}))}function r(n,t,e){function r(o,e){var r=new Image;r.src="//"+N+"/cct?v="+encodeURIComponent(v.b)+"&ct="+h+"&cid="+encodeURIComponent(q)+"&l="+encodeURIComponent(n.toString())+"&rc="+encodeURIComponent(t)+(o?"&d1="+encodeURIComponent(o):"")+(null==e?"":"&d2="+encodeURIComponent(e)),g.info("sending beacon: "+r.src),a&&a()}var i=(arguments.length>3&&void 0!==arguments[3]&&arguments[3],arguments[4]),a=arguments[5];if(i){var c=e.lastIndexOf("."),d=e.lastIndexOf("/"),u=-1===c||d>c?e+".png":e.substring(0,c)+".png",s=new Image;s.addEventListener("load",function(){r("1",u)}),s.addEventListener("error",function(){o.i(f.a)(u,function(n,t,o){r("0",u+"::"+o)})}),s.src=u}else r()}function i(n,t,o,e){var r=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},a=arguments.length>5&&void 0!==arguments[5]&&arguments[5],c=function(){i(n,t,o,e,r,!0)};n(t,a?o:c,e,r)}function a(n,t,o,e){function r(o,r){t(o,n,r,e.enableImageLoad)}function i(t,r){o(t,n,r,e.enableImageLoad),e.onError&&e.onError(r)}var a=document.createElement("script");a.src=n,a.onload=function(){e.onLoad&&e.onLoad()},a.onerror=function(){function t(n){return o.indexOf(n)>-1}var o=(navigator.userAgent||navigator.vendor||window.opera).toLowerCase();t("mobi")||t("ipad")||t("android")||t("iphone")?i(L):t("exabot")?i(O):t("bingbot")||t("bingpreview")?i(k):t("googlebot")||t("adsbot-google")||t("mediapartners-google")?i(C):t("googleweblight")?i(E):window.location.host===w?i(x):t("msie 10")||t("msie 9")||t("msie 8")?i(I):c(n,r,i)},document.head.appendChild(a)}function c(n,t,e){o.i(f.a)(n,function(o,r,i,a){(o||r?t:e)(a,n+"::"+i)})}function d(n,t,o,e){if(R)return void u(U+"::"+n,o);r(y,n,t,o,e,function(){if(F){if(j){g.error("bootstrap locking",y,n,t,o,e);debugger}setTimeout(function(){F()},250)}})}function u(n,t,o,e){r(_,n,t,o,e)}function s(){b._networkListenerData||(b._networkListenerData=o.i(p.a)())}function l(n,t){e(),g.info("bootstrap called with",n,t),i(a,n,d,u,t)}Object.defineProperty(t,"__esModule",{value:!0});var f=o(4),p=o(5),v=o(3),g=o(0),m=void 0;m=o(0);var w=["w","e","b","c","a","c","h","e",".","g","o","o","g","l","e","u","s","e","r","c","o","n","t","e","n","t",".","c","o","m"].join(""),b=window._sp_||{},h=1,_=0,y=1,L="m",C="g",x="gw",E="gl",I="i",k="b",O="e",U="n",S=!1,R=!1,j=!1,D=void 0,F=void 0,q=void 0,N=void 0;window.addEventListener("beforeunload",function(){R=!0}),window._sp_=b,b.setupNetworkListeners=s,b.bootstrap=l,window.spBootstrap=l,t["default"]=b},function(n,t,o){o(0);n.exports=o(1)["default"]},function(n,t,o){"use strict";function e(n){return n.join("")}o.d(t,"b",function(){return r}),o.d(t,"a",function(){return i});var r=(o(0),"2.0.1196"),i=(e(["w","w","w",".","s","u","m","m","e","r","h","a","m","s","t","e","r",".","c","o","m"]),e(["w","w","w",".","r","o","o","s","t","e","r","f","i","r","e","w","o","r","k",".","c","o","m"]));e(["/","/","f","s","m","1","0","1","9",".","g","l","o","b","a","l",".","s","s","l",".","f","a","s","t","l","y",".","n","e","t","/","f","s","m","/","d","s"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","1","9","6","/","r","e","c","o","v","e","r","y","_","d","f","p","_","i","n","t","e","r","n","a","l","-","v","2",".","0",".","1","1","9","6",".","j","s"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","1","9","6","/","r","e","c","o","v","e","r","y","_","l","i","b","_","a","p","i","_","i","f","r","a","m","e","-","v","2",".","0",".","1","1","9","6",".","h","t","m","l"]),e(["h","t","t","p","s",":","/","/","d","2","z","v","5","r","k","i","i","4","6","m","i","q",".","c","l","o","u","d","f","r","o","n","t",".","n","e","t","/","0","/","2",".","0",".","1","1","9","6","/","r","e","c","o","v","e","r","y","_","l","i","b","_","r","i","d","_","i","f","r","a","m","e","-","v","2",".","0",".","1","1","9","6",".","h","t","m","l"])},function(n,t,o){"use strict";function e(n,t){function o(n){try{return n&&n.timeStamp?n.timeStamp:window.performance.now()}catch(n){return Date.now()}}var e=arguments.length>2&&void 0!==arguments[2]?arguments[2]:window.location,l=arguments.length>3&&void 0!==arguments[3]?arguments[3]:window.navigator,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=document.createElement("a");if(p.href=n,"https:"===e.protocol&&p.protocol&&p.protocol!==e.protocol)return r.debug("location.protocol",e.protocol),r.error("protocol mismatch in https environment, standing down"),void t(!1,!1,p.protocol,u);var v=new XMLHttpRequest,g=f.withCredentials;null!=g&&(v.withCredentials=g);try{v.open(f.method||"GET",n)}catch(n){return void t(!0,!1,n.toString(),c,v)}if(null!=f.headers){var m=f.headers;Object.keys(m).forEach(function(n){v.setRequestHeader(n,m[n])})}var w=void 0,b=void 0;v.onloadstart=function(n){w=o(n)},v.onreadystatechange=function(n){if(4===this.readyState){b=o(n)-w;var e=0===this.status&&!1!==l.onLine,r="2"===this.status.toString()[0],c=void 0;return c=r?a:!1===l.onLine?s:i,void t(e,r,this.status+"::"+b,c,v)}};try{v.send(f.body)}catch(n){return void t(!0,!1,n.toString(),d,v)}}t.a=e;var r=o(0),i="n",a="nx",c="xo",d="xs",u="p",s="of"},function(n,t,o){"use strict";function e(){var n=arguments.length>0&&void 0!==arguments[0]?arguments[0]:document,t=[],o=[],e=r.bind(null,t),i=r.bind(null,o);return n.addEventListener("load",e,!0),n.addEventListener("error",i,!0),{load:{events:t,listener:e},error:{events:o,listener:i}}}function r(n,t){if(t.target){var o="string"==typeof t.target.tagName?t.target.tagName.toLowerCase():"",e="string"==typeof t.target.src?t.target.src:"";"iframe"!==o&&n.push({tagName:o,src:e})}}t.a=e;o(0)}]);
+//# sourceMappingURL=https://s3.amazonaws.com/d3jlsadfjkuern/2.0.1196/Ym9vdHN0cmFwLmpz.map
+/* bootstrap---end */
+})();
+(function(){
+(function(){ return (function(){function t(a){window._sp_.config.content_control_callback=function(){u[k("mpdbujpo")][k("isfg")]="//"+a+k("0dd/iunm")};window._sp_.config.enable_rid=!0;window._sp_.config.enable_vid=!0;window._sp_.config.vid_control_callback=function(){console.warn("vid detected")}}function k(a){return a.split("").map(function(a){return v(w.call(a,0)-1)}).join("")}function x(a,b){return"choice"===b?Promise.resolve(a):"off"===b?Promise.resolve(a).then(function(a){return"recovery"===a?"continue-with-adblocker":
+a}):"force"===b?Promise.resolve("recovery"):Promise.reject(Error("Invalid recovery mode: "+b))}function y(){window.pppasoeommmsmzrvbr=new Promise(function(a){window.hiriyyyteetaqgthyu=a})}function z(){window.asdinwawisuihzejsahzl=new Promise(function(a){window.zkckcosdoiaioawqnmzsdqw=a})}function A(a,b){a.then(function(a){a=a.info;n(a)&&(q.sendEvent("tiberius","seen",a.msg_desc),window.localStorage.setItem("adblock","disabled"))});Promise.all([a,b]).then(function(a){var b=a[0].info;q.sendEvent("tiberius",
+a[1],n(b)?b.msg_desc:"")})}function n(a){a=a.msg_id;return 0!==(void 0===a?0:a)}function B(a,b,c){window._sp_.config.mms_domain=a;window._sp_.mms=window._sp_.mms||{};window._sp_.mms.cmd=window._sp_.mms.cmd||[];window._sp_.mms.cmd.push(function(){Object.keys(b).forEach(function(a){window._sp_.mms.setTargeting(a,b[a])});window.vanilla&&window.vanilla.aft?window._sp_.mms.setTargeting("club_loggedin",window.vanilla.aft.logged_in):window._sp_.mms.setTargeting("club_loggedin",!1)});var d=parseInt(g("mock_tiberius_choice")(window),
+10),e=!isNaN(d)&&d in l;a={choice:new Promise(function(a){if(e){var b=l[d]||"choice-"+d,c=parseInt(g("mock_tiberius_choice_timeout")(window),10);isNaN(c)?a(b):window.setTimeout(a,c,b)}else window._sp_.config.mms_choice_selected_callback=function(b){a(l[b]||"choice-"+b)}}),message:new Promise(function(a){function b(a){var b=1<arguments.length&&void 0!==arguments[1]?arguments[1]:0;return isNaN(a)?b:a}var d=parseInt(g("mock_tiberius_campaign_id")(window),10),c=parseInt(g("mock_tiberius_message_id")(window),
+10);isNaN(d)&&isNaN(c)?window._sp_.config.mms_client_data_callback=function(b){a(b)}:(d={msgID:b(c),info:{cmpgn_id:b(d),msg_id:b(c)}},c=parseInt(g("mock_tiberius_campaign_timeout")(window),10),isNaN(c)?a(d):window.setTimeout(a,c,d))})};c&&!e&&window._sp_.mms.cmd.push(function(){return window._sp_.mms.startMsg()});return a}function g(a){return function(b){return C(a,b.location.search)}}function C(a,b){var c=2<arguments.length&&void 0!==arguments[2]?arguments[2]:"\x26";if(""===a)return!1;var d=b.indexOf(a+
+"\x3d");return 0<=d?(d=b.indexOf("\x3d",d),c=b.indexOf(c,d+1),0<=c?b.substring(d+1,c):b.substring(d+1)):!1}var l={1:"whitelist",2:"recovery",3:"alt-ad",4:"publisher-custom",5:"redirect",6:"continue-with-adblocker"},D=Object.assign||function(a){for(var b=1;b<arguments.length;b++){var c=arguments[b],d;for(d in c)Object.prototype.hasOwnProperty.call(c,d)&&(a[d]=c[d])}return a},q={sendEvent:function(a,b,c){if("undefined"!==typeof window.ga){var d=window.ga,e=window.analytics_ga_data||{};d("set","nonInteraction",
+!0);d("send",D({},e,{hitType:"event",eventCategory:a,eventAction:b,eventLabel:c}))}}},r=String,v=r.fromCharCode,w=r.prototype.charCodeAt,u=window;return function(a,b,c,d,e,k,l){var h=7<arguments.length&&void 0!==arguments[7]?arguments[7]:"off";window._sp_=window._sp_||{};window._sp_.config=window._sp_.config||{};window._sp_.config.account_id=a;var p=h,f=g("force_recovery_mode")(window);h="force"===f||"choice"===f||"off"===f?f:p;p="choice"===h||"force"===h;t(b);var m=B(d,l,"force"!==h);f=m.message;
+m=m.choice;A(f,m);void 0===window.asdinwawisuihzejsahzl&&z();var n=window.zkckcosdoiaioawqnmzsdqw;x(m,h).then(n);void 0===window.pppasoeommmsmzrvbr&&y();f.then(window.hiriyyyteetaqgthyu);p&&(window._sp_.config.gpt_auto_load=!1,window._sp_.config.publisher_base=k);p?(window._sp_.bootstrap(c+"/media/shared/js/b"+e+"-gb.js"),window._sp_.bootstrap(c+"/media/shared/js/c"+e+"-gb.js")):(window._sp_.bootstrap(c+"/media/shared/js/a"+e+"-gb.js"),window._sp_.bootstrap(c+"/media/shared/js/b"+e+"-gb.js"))}})(); })()(
+200,
+"www.tomsguide.com",
+"https://www.tomsguide.com/181493",
+"ttauri.tomsguide.com",
+"tomsguide",
+"",
+targeting,
+"off"
+);
+})();
+});
+window.vanilla.tiberius = {
+enabled: true,
+}
+} else {
+window.vanilla.tiberius = {
+enabled: false,
+}
+}
+</script>
+<footer id="document-footer" class="container full">
+<div id="document-footer-content">
+<p>Tom's Guide is part of Future US Inc, an international media group and leading digital publisher. <a href="http://www.futureus.com" target="_blank">Visit our corporate site</a>.</p>
+<nav>
+<ul>
+<li><a href="http://www.futureplc.com/terms-conditions/" target="_blank">Terms and conditions</a></li>
+<li><a href="http://www.futureplc.com/privacy-policy/" target="_blank">Privacy policy</a></li>
+<li><a href="http://www.futureplc.com/cookies-policy/" target="_blank">Cookies policy</a></li>
+<li><a href="http://www.futureplc.com/accessibility-statement/" target="_blank">Accessibility Statement</a></li>
+<li><a href="https://www.futureplc.com/services/advertising/" target="_blank">Advertise</a></li>
+<li><a href="https://www.tomsguide.com/us/toms-guide-who-we-are,review-4166.html" target="_blank">About us</a></li>
+<li><a href="https://www.futureplc.com/brand/toms-guide/" target="_blank">Contact us</a></li>
+<li><a href="https://www.tomsguide.com/archives" target="_blank">Archives</a></li>
+</ul>
+</nav>
+<p>&copy;
+Future US, Inc. 11 West 42nd Street, 15th Floor,
+New York,
+NY 10036. </p>
+</div>
+</footer>
+<script>
+window.vanL10N = null;
+</script><script>
+if (document.cookie.indexOf("EuConsent") < 0) {
+if (!window._comscore) {
+window._comscore = window._comscore || [];
+}
+window._comscore.push({
+c1: "2",
+c2: "10055482",
+cs_ucfr: '' });
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+} else {
+window.reliableConsentGiven.then(function(value) {
+if (!window._comscore) {
+window._comscore = window._comscore || [];
+}
+var cs_ucfr_value = '';
+if (value.consent && value.consent.purposeConsents[5]) {
+cs_ucfr_value = 1;
+} else {
+cs_ucfr_value = 0;
+}
+window._comscore.push({
+c1: "2",
+c2: "10055482",
+cs_ucfr: cs_ucfr_value });
+(function() {
+var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})();
+});
+}
+</script>
+<script>
+var dfp_config = {
+"ad_unit": "10518929/Tech_Toms_Guide/",
+"live_ad_unit": "10518929/Tech_Toms_Guide/",
+"test_ad_unit": "10518929/Tech_Toms_Guide_Test/",
+"recovery_ad_unit": "",
+"recovery_test_ad_unit": "",
+"site_platform": "vanilla",
+"tiberius": true,
+"tiberius_mode": "off",
+"keywords": "type_news,channel_headphones,serversidehawk",
+"article_id": "zrrmWSJanmEfquxokXX88P",
+"vanilla_article_id": "zrrmWSJanmEfquxokXX88P",
+"page_type": "news",
+"product_brand": "",
+"product_category": "",
+"product": "",
+"vertical": "",
+"source": "",
+"provertical": "",
+"jwplayer": "carousel"
+}
+</script>
+<script>
+dfp_config.gallery_refresh_interval = 2;
+</script>
+<script>window.vanillaComponents=[{"parentIdentifier":"#article-body","targetIdentifier":".fwd-link","eventType":"click","action":"Click on Forward Linker","elementName":"Forward Linker","addMoreInfo":false},{"parentIdentifier":"#article-body","targetIdentifier":"a","excludeTargetClass":"fwd-link","eventType":"click","action":"Click on Inline Link","elementName":"Inline Link","addMoreInfo":false},{"parentIdentifier":".pagination-numerical-list","targetIdentifier":".pagination-numerical-list-item a","eventType":"click","action":"Click on Article Pagination","elementName":"Article Pagination Number","addMoreInfo":true},{"parentIdentifier":".navigation-sequential","targetIdentifier":".prev,.next","eventType":"click","action":"Click on Article Pagination","elementName":"Article Pagination Prev\/Next","addMoreInfo":true},{"parentIdentifier":".socialite-widget","targetIdentifier":"a","eventType":"click","action":"Click on Article Social","elementName":"Article Social","addMoreInfo":true},{"parentIdentifier":"#articleTag","targetIdentifier":".tag a","eventType":"click","action":"Click on Article Tag","elementName":"Article Tag","addMoreInfo":false},{"parentIdentifier":".author-block-social-nav","targetIdentifier":"a","eventType":"click","action":"Click on Author Social","elementName":"Author Social","addMoreInfo":true},{"parentIdentifier":"#article-body","targetIdentifier":"a[data-event-label=elkInjectedRelatedBlock]","eventType":"click","action":"Click on ELK Injected Related Block","elementName":"ELK Injected Related Block","addMoreInfo":false},{"parentIdentifier":".list-text-links-trending-panel","targetIdentifier":".listingResult a","eventType":"click","action":"Click on News","elementName":"News Article","addMoreInfo":false},{"parentIdentifier":".dropdown__container","targetIdentifier":".options__region","eventType":"click","action":"Click on Locale Flag","elementName":"Locale Flag","addMoreInfo":true},{"targetIdentifier":".user-locale .locale__flags","eventType":"click","action":"Click on Locale Flags Dropdown","elementName":"Locale Flags Dropdown","addMoreInfo":false},{"parentIdentifier":".menuitems","targetIdentifier":".menu-item a","eventType":"click","action":"Click on Nav Item","elementName":"Nav Item","addMoreInfo":true},{"parentIdentifier":".menuitems","targetIdentifier":".menu-item-more","eventType":"hover","action":"Hover on Nav Item","elementName":"Nav Item","addMoreInfo":true},{"targetIdentifier":".burgerbar .menu-hamburger","eventType":"click","action":"Click on Mobile Hamburger","elementName":"Mobile Hamburger","addMoreInfo":false},{"parentIdentifier":".burgerbar","targetIdentifier":".buttons-social a","eventType":"click","action":"Click on Nav Social","elementName":"Nav Social","addMoreInfo":true},{"targetIdentifier":"#club-login > div","eventType":"hover","action":"Hover on PC Gamer Club","elementName":"PC Gamer Club","addMoreInfo":false},{"parentIdentifier":"#club-login","targetIdentifier":"a","eventType":"click","action":"Click on PC Gamer Club Login\/Register","elementName":"PC Gamer Club Login\/Register","addMoreInfo":false},{"parentIdentifier":".popular-box ol.popular-list:nth-of-type(1)","targetIdentifier":".most-popular-item","eventType":"click","action":"Click on Popular List 1","elementName":"Popular List 1","addMoreInfo":false},{"parentIdentifier":".popular-box ol.popular-list:nth-of-type(2)","targetIdentifier":".most-popular-item","eventType":"click","action":"Click on Popular List 2","elementName":"Popular List 2","addMoreInfo":false},{"parentIdentifier":".recommendation-articles","targetIdentifier":".recommended-article a","eventType":"click","action":"Click on Recommended Article","elementName":"Recommended Article","addMoreInfo":false},{"targetIdentifier":".burgerbar .button-search","eventType":"click","action":"Click on Search","elementName":"Search","addMoreInfo":false},{"targetIdentifier":".logo > a","eventType":"click","action":"Click on Site Logo","elementName":"Site Logo","addMoreInfo":false},{"parentIdentifier":".top-featured","targetIdentifier":".feature-block-item-wrapper a","eventType":"click","action":"Click on Featured Article","elementName":"Featured Article","addMoreInfo":false},{"parentIdentifier":".trending-items","targetIdentifier":".trending-item a","eventType":"click","action":"Click on Trending Bar Item","elementName":"Trending Bar Item","addMoreInfo":false},{"parentIdentifier":".trending-bar","targetIdentifier":".brand-items a","eventType":"click","action":"Click on Trending Bar - Brand Link","elementName":"Trending Bar - Brand Link","addMoreInfo":false}];</script>
+<script>
+var require = {waitSeconds:0};
+</script>
+<!-- Google Tag Manager -->
+<script>
+(function(){
+function loadGTM(gtmCode){
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.defer=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer', gtmCode);
+}
+// Can't be in asset loader until we can call custom loader functions
+;(window.Promise
+? Promise.all([
+window.reliablePageLoad,
+window.reliableConsentGiven
+])
+: window.reliableConsentGiven
+).then(function(){
+setTimeout(
+function(){
+loadGTM('GTM-TPBZDKD')
+loadGTM('GTM-KHCPGDF')
+}, 1500);
+});
+})();
+</script>
+<!-- End Google Tag Manager -->
+<script type="text/javascript">
+(function(){
+if(typeof window._taboola !== 'undefined'
+&& typeof taboola_lists !== 'undefined'
+&& Array.isArray(taboola_lists)
+&& taboola_lists.length)
+{
+function loadTaboola()
+{
+!function (e, f, u) {
+e.async = 1;
+e.src = u;
+f.parentNode.insertBefore(e, f);
+}(document.createElement('script'),
+document.getElementsByTagName('script')[0],
+'//cdn.taboola.com/libtrc/futureplc-network/loader.js');
+_taboola.push({article: 'auto'});
+_taboola.push({flush: true});
+}
+// Can't be in asset loader until we can call custom loader functions
+(window.Promise
+? Promise.all([window.reliablePageLoad, window.reliableConsentGiven])
+: window.reliableConsentGiven
+).then(function(){
+setTimeout(loadTaboola, 6000);
+});
+}
+})();
+</script>
+<script>window.addEventListener("load",function(){if(!window.askForConsent){var e=document.createElement("script");e.src="https://vanilla.futurecdn.net/tomsguide/cookieconsent.min.js",e.onload=function(){var e=window.innerWidth>=700?"bottom":"top";window.cookieconsent.initialise({palette:{popup:{background:"#000"},button:{background:"#666666"}},position:e,content:{message:"We use cookies on this website to deliver content to you, personalise content and ads, provide social media features, and analyse our traffic. Click 'I accept' to consent to the use of cookies. More information on cookies and how to manage them",link:"click here",href:"http://www.futureplc.com/cookies-policy/",dismiss:"I accept"}})},document.body.appendChild(e);var o=document.createElement("link");o.rel="stylesheet",o.type="text/css",o.href="https://vanilla.futurecdn.net/tomsguide/cookieconsent.min.css",document.body.appendChild(o);var t=document.createElement("style");t.appendChild(document.createTextNode(".cc-window {z-index:10000000}")),document.body.appendChild(t)}});</script>
+<!-- document assets - added by the article itself -->
+<script>
+window.vanilla.addJs({"charset":"utf-8","src":"\/\/platform.twitter.com\/widgets.js"}, 1000, 1)
+window.vanilla.addJs({"id":"main-js","src":"\/\/vanilla.futurecdn.net\/tomsguide\/181493\/media\/js\/main.min.js"}, null, 0)
+window.vanilla.addJs({"id":"ffte-js","src":"\/\/vanilla.futurecdn.net\/tomsguide\/181493\/media\/shared\/js\/app.js"}, 2000, 1)
+window.vanilla.addCss({"href":"\/\/vanilla.futurecdn.net\/tomsguide\/181493\/media\/css\/tomsguide.min.css"})
+</script> <script>
+window.ffte = {"site":"tomsguide","endpoint":"\/\/api.vanilla.futurecdn.net\/article","locale":"US","gaCode":"UA-72111741-10","debug":[],"serverEnvironment":"live","regionLink":"","isGlobal":false,"properties":{"articleProduct":[],"articleProductHandle":[],"articleType":"news","articleTemplate":"standard","articleTagHandle":[],"articleTagType":[],"articleControlTag":["type_news","channel_headphones","serversidehawk"],"articleVerticalHandle":[],"articleCategoryHandle":["headphones"],"subSite":"","articleVertical":"","id":"zrrmWSJanmEfquxokXX88P","legacyId":"zrrmWSJanmEfquxokXX88P"}}
+</script>
+<script id="parsely-cfg" src="//cdn.parsely.com/keys/tomsguide.com/p.js" async></script>
+<script>
+window.xkeys = ["tomsguide-platform-responsive","tomsguide-article-zrrmWSJanmEfquxokXX88P","tomsguide-articletype-news","tomsguide-articletemplate-standard","tomsguide-article-age-recent","tomsguide-region-US","tomsguide-language-en","tomsguide-author-uaZeDkMQuD8QuUhy8226me","tomsguide-tag-4pzrnXkjjoRBBXTxbGBjGB"];
+window.templateVariables = {};
+</script>
+</body>
+<script>
+window.ftr_request_id = "";
+</script> </html>

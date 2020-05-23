@@ -1,0 +1,27 @@
+
+Contributors to phpList.
+
+There are many people contributing to phpList. This is an attempt to list them, but it may not be exhaustive.
+
+Code contributors:
+
+For phpList version 3 and before, the contributors are listed at
+https://github.com/phpList/phplist3/graphs/contributors
+
+For the phpList4 OO (Object Oriented) rewrite the contributors are listed at
+https://github.com/phpList/phpList/graphs/contributors
+
+Translation Contributors:
+
+Backend translations are done at https://translate.phplist.com and the contributors are listed at 
+https://translate.phplist.com/about/contributors/
+
+Other translations are managed and listed at 
+https://github.com/phpList/phplist-lan-help/graphs/contributors
+and https://github.com/phpList/phplist-lan-info/graphs/contributors
+
+Frontend translations are on Github and the contributors are listed at 
+https://github.com/phpList/phplist-lan-texts/graphs/contributors
+although a history of contributions are also in the translation files themselves.
+
+

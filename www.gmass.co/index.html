@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>GMass: Gmail Mail Merge | Send &amp; Schedule Mass Email</title>
+    <meta name="description" content="GMass allows you to easily schedule emails, send out mass emails and mail merge campaigns and more with Gmail! Click here to learn about more features!" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.gmass.co/images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.gmass.co/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.gmass.co/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="https://cdn.gmass.co/images/fav/site.webmanifest">
+    <link rel="mask-icon" href="https://cdn.gmass.co/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Turn your Gmail account into a powerful email marketing platform" />
+    <meta name="twitter:title" content="GMass: Send mass emails straight from Gmail" />
+    <meta name="twitter:image" content="https://www.gmass.co/img2017/GMass.gif">
+
+    <!-- Chrome webstore -->
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ehomdgjhgmbidokdgicgmdiedadncbgf">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.gmass.co/assets/css/style.css">
+    <script>
+		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+		n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+		document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '1822615684631785');
+		fbq('track', "PageView");
+
+        //google analytics code
+		(function (i, s, o, g, r, a, m) {
+		    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+		        (i[r].q = i[r].q || []).push(arguments)
+		    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-60684534-2', 'auto');
+		ga('send', 'pageview');
+
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        if (getCookie("GMassLanding") == null) {
+            var today = new Date();
+            var date = today.toISOString();
+
+            setCookie("GMassLanding", document.location.href, 365);
+            setCookie("GMassReferrer", document.referrer, 365);
+            setCookie("GMassDate", date, 365);
+        }
+
+    </script>
+
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', 'b2bd5ad6b24d42dd8f02f3e6ba0f972e');
+    qp('track', 'ViewContent');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/b2bd5ad6b24d42dd8f02f3e6ba0f972e/pixel?tag=ViewContent&noscript=1" /></noscript>
+    <!-- End of Quora Pixel Code -->
+
+    <!-- Hotjar Tracking Code for https://www.gmass.co/ -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1309349,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google AdWords: 951525032 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-951525032"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-951525032');
+    </script>
+
+    <!-- Reddit Conversion Pixel -->
+    <script>
+!   function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','t2_4j3d1fgu');rdt('track', 'PageVisit');
+    </script>
+    <!-- DO NOT MODIFY -->
+    <!-- End Reddit Conversion Pixel -->
+
+
+</head>
+<body>
+
+    <div class="preloader"></div>
+
+    <!-- MMENU -->
+    <div id="page-wrap" class="page-wrap">
+        
+
+        <header class="header alert-bar">
+                <span class="">03/12/20 - <a href="https://www.gmass.co/blog/send-coronavirus-email-announcement-for-free/" target="_alert">Starting today, send any Coronavirus email announcement for free.</a></span>
+                <span class="off-left">04/04/20 - <a href="https://www.youtube.com/gmass" target="_alert">Subscribe to our new YouTube channel. You'll learn AND laugh.</a></span>
+                <span class="off-left">04/08/20 - <a href="https://www.gmass.co/blog/hosted-vs-embedded-images-gmail/" target="_alert">New feature: control whether your images are embedded or hosted</a></span>
+            <a href="index.html#" class="close-alert-bar">&times;</a>
+        </header>
+<header class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="header-inn">
+                    <a href="index.html" class="logo">
+                        <img src="https://cdn.gmass.co/images/logo.png" alt="GMass">
+                    </a>
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="https://www.gmass.co/blog">Blog</a></li>
+
+                            <li class="menu-item-has-children">
+                                <a href="index.html#overview" class="scrollId">Products</a>
+                                <ul class="submenu">
+                                    <li class="highlighted">
+                                        <a onclick="javascript: ga('send', 'event', 'Funnel', 'Install Button Clicked', 'Website Product Menu'); fbq('track', 'Lead'); rdt('track', 'Lead'); gtag('event', 'conversion', { 'send_to': 'AW-951525032/tqoQCI36pJ0BEKi93MUD' }); qp('track', 'GenerateLead');" href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf?hl=en-US">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-chrome-purple.png" alt="Chrome">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>The GMass Chrome Extension</h6>
+                                                <p>Send email campaigns from Gmail.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/inbox">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-inbox.png" alt="Inbox">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Inbox, Spam, or Promotions</h6>
+                                                <p>See where your emails are landing.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/linkchecker">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-gmail.png" alt="Gmail">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Link Checker</h6>
+                                                <p>Test your links before you send.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/gmailgenius">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-gmail.png" alt="Gmail">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>The Gmail Genius</h6>
+                                                <p>Maximize your productivity with Gmail.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.gmass.co/domains">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-statistics.png" alt="Domain Statistics">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Domain Statistics</h6>
+                                                <p>Compare your open rates to ours.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/smtp-test">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-smtp.png" alt="SMTP Tester" style="max-width: 20px;">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>SMTP Tester</h6>
+                                                <p>Test your connection to any SMTP service.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/analyze">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-statistics.png" alt="Email Analyzer">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Email Analyzer</h6>
+                                                <p>Test your email for DKIM compliance, IP blacklistings, and more.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/email-extractor">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-statistics.png" alt="Email Analyzer">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Email Extractor</h6>
+                                                <p>Paste in any data with email addresses. Get back a formatted list with first names.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="index.html#features" class="scrollId">Features</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="index.html#fb1" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/pen.svg" alt="Gmail's compose window">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Gmail's compose window</h6>
+                                                <p>Compose your message.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb2" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/test.svg" alt="Test mode">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Preview mode</h6>
+                                                <p>Choose to only create Drafts.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb3" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/sheet.svg" alt="Google Sheets Integration">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Google Sheets Integration</h6>
+                                                <p>Choose a Google Sheets spreadsheet.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb4" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/calendar.svg" alt="Scheduling">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Scheduling</h6>
+                                                <p>Schedule mass emails to be sent later.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="index.html#fb7" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/link.svg" alt="Unsubscribe Link">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Unsubscribe Link</h6>
+                                                <p>Provide an unsubscribe link.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb8" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/graph.svg" alt="Reports">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Reports</h6>
+                                                <p>Campaign level reports.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb9" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/email2.svg" alt="Email List Builder">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Email List Builder</h6>
+                                                <p>Extract email addresses.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb10" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/clock.svg" alt="Automatic Follow-up Emails">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Automatic Follow-up Emails</h6>
+                                                <p>Set automatic follow-up reminder.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb11" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/forward.svg" alt="Manual Follow-up Campaigns">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Behavior-based Campaigns</h6>
+                                                <p>Campaign level reports.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb12" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/management.svg" alt="Reply Management">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Reply Management</h6>
+                                                <p>Emails received in response to a mass email.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb13" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/people.svg" alt="Break Gmail's Sending Limits">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Break Gmail's Sending Limits</h6>
+                                                <p>Send email campaigns.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb14" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/reply.svg" alt="New messages vs. Replies">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>New messages vs. Replies</h6>
+                                                <p>Choose whether emails are sent.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index.html#fb15" class="scrollId">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/personalization.svg" alt="Personalization">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>Personalization</h6>
+                                                <p>Personalize the Subject and Body</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="index.html#" class="scrollId">You</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="https://www.gmass.co/pr-campaigns">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-gmail.png" alt="Press Campaigns">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>I need press coverage</h6>
+                                                <p>Manage your media outreach</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/political-campaign-email-marketing">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-gmail.png" alt="Political Campaigns">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>I'm running for office</h6>
+                                                <p>Manage your campaign outreach</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.gmass.co/gmail-wedding-invites">
+                                            <div class="submenu-item-icon">
+                                                <img src="https://cdn.gmass.co/images/icon-gmail.png" alt="Wedding Invites">
+                                            </div>
+                                            <div class="submenu-item-title">
+                                                <h6>I'm getting married</h6>
+                                                <p>Keep your guests informed</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                  
+                                </ul>
+                            </li>
+
+
+                            <li class=""><a href="https://www.gmass.co/pricing">Pricing</a></li>
+                            <li class=""><a href="https://www.gmass.co/faq">Support</a></li>
+                            <li><a href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf" onclick="javascript: ga('send', 'event', 'Funnel', 'Install Button Clicked', 'Website Top Right'); fbq('track', 'Lead'); rdt('track', 'Lead'); gtag('event', 'conversion', { 'send_to': 'AW-951525032/tqoQCI36pJ0BEKi93MUD' }); qp('track', 'GenerateLead');" class="button install-extension" target="_blank">Add to Gmail</a></li>
+                        </ul>
+                    </nav>
+                    <a href="index.html#mobilemenu" title="Menu" class="mobile-hamb">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+          <!-- INTRO -->
+<section class="intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="intro-cont">
+
+                        <link rel="stylesheet" href="https://www.gmass.co/assets/css/home-hero.css" />
+                        <h1 id="plain-hero">A mass email<br>service inside<br> Gmail</h1>
+                        <script>
+                            setTimeout(function () {
+                                document.getElementById('plain-hero').innerHTML =
+                                    '<span class="rw-words rw-words-1">'
+                                    +' <span>A mass email </span>'
+                                    +' <span>A cold email</span>'
+                                    +' <span>A mail merge</span>'
+                                    +' <span>An email marketing</span>'
+                                    +' </span>'
+                                    +' <span>&nbsp;</span><br>'
+                                    +' <span>service inside</span><br>'
+                                    +' <span>Gmail</span>';
+                            },100);
+                        </script>
+
+                    <p>Get the highest open rates you've ever seen.</p>
+                    <div class="btn-box">
+                        <a onclick="javascript: ga('send', 'event', 'Funnel', 'Install Button Clicked', 'Website Homepage Hero'); fbq('track', 'Lead'); rdt('track', 'Lead'); gtag('event', 'conversion', { 'send_to': 'AW-951525032/tqoQCI36pJ0BEKi93MUD' }); qp('track', 'GenerateLead');" href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf" class="button-alt install-extension" target="_blank">Add to Gmail</a>
+                        <span>GMass requires Chrome</span>
+                    </div>
+                    <div class="rating">
+                        <ul>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p>5-star reviews from 100,000+ happy users</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="intro-media">
+                    <video width="100%" height="100%" class="d-none d-lg-block d-xl-block" autoplay muted loop>
+                        <source src="https://cdn.gmass.co/assets/videos/intro.mp4" type="video/mp4">
+                    </video>
+                    <img src="https://cdn.gmass.co/assets/videos/intro.gif" class="d-block d-lg-none d-xl-none" alt="Intro">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- INTRO -->
+<!-- USED BY -->
+<section class="used-by">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ub-inn">
+                    <p>Used by employees of:</p>
+                    <ul>
+                        <li style="max-width: 85px;"><img src="https://cdn.gmass.co/images/logo-uber.png" alt="Uber"></li>
+                        <li style="max-width: 135px;"><img src="https://cdn.gmass.co/images/logo-twitter.png" alt="Twitter"></li>
+                        <li style="max-width: 110px;"><img src="https://cdn.gmass.co/images/logo-linkedin.png" alt="Linkedin"></li>
+                        <li style="max-width: 110px;"><img src="https://cdn.gmass.co/images/logo-google.png" alt="Google"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- USED BY -->
+<!-- OVERVIEW -->
+<section class="overview">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 data-aos="fade-down"
+                    data-aos-offset="0"
+                    data-aos-delay="0"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease"
+                    id="overview">
+                    Quick Overview
+                </h3>
+            </div>
+            <div class="col-md-6">
+                <ul class="qo-items">
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="100"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="far fa-envelope-open"></i>
+                        <p>Use Gmail to send mail merge campaigns with automatic follow-up emails.</p>
+                    </li>
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="300"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="fab fa-google"></i>
+                        <p>Connect to Google Sheets.</p>
+                    </li>
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="500"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="far fa-calendar-alt"></i>
+                        <p>Personalize. Schedule. Track opens and clicks.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="qo-items">
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="200"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="fas fa-list-ol"></i>
+                        <p>Create mass email lists based on search results.</p>
+                    </li>
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="400"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="far fa-user"></i>
+                        <p>Send emails as replies to the last thread with each person.</p>
+                    </li>
+                    <li data-aos="zoom-in"
+                        data-aos-offset="0"
+                        data-aos-delay="600"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        <i class="fas fa-bullhorn"></i>
+                        <p>The killer feature: set automatic follow-up emails to be sent sequentially until you get a reply.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- OVERVIEW -->
+<!-- PROMO BOX 1 -->
+<section class="promo-box promo-box-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pb-head text-center">
+                    <h4 data-aos="fade-down"
+                        data-aos-offset="0"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        Mail merge with Google Sheets
+                    </h4>
+                    <p data-aos="fade-down"
+                       data-aos-offset="0"
+                       data-aos-delay="100"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease">Say goodbye to CSV files. Connect to Google Sheets to send a personalized mass email using any of the columns in your spreadsheet.</p>
+                </div>
+                <div class="pb-cont">
+                    <div class="video-box d-none d-lg-block d-xl-block">
+                        <video width="100%" height="100%" muted loop>
+                            <source src="https://cdn.gmass.co/assets/videos/video_1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <img src="https://cdn.gmass.co/assets/videos/video_1.gif" class="d-block d-lg-none d-xl-none" alt="Preview">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PROMO BOX 1 -->
+<!-- PROMO BOX 2 -->
+<section class="promo-box promo-box-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pb-head text-center">
+                    <h4 data-aos="fade-down"
+                        data-aos-offset="0"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        Mass email based on search results
+                    </h4>
+                    <p data-aos="fade-down"
+                       data-aos-offset="0"
+                       data-aos-delay="100"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease">Use Gmail's powerful search feature to find messages containing recipients to whom you want to email. Then click the Build Email List button, and a Compose window will load containing the email addresses found in those messages. The only mass email service that does this!</p>
+                </div>
+                <div class="pb-cont">
+                    <div class="video-box d-none d-lg-block d-xl-block">
+                        <video width="100%" height="100%" muted loop>
+                            <source src="https://cdn.gmass.co/assets/videos/video_2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <img src="https://cdn.gmass.co/assets/videos/video_2.gif" class="d-block d-lg-none d-xl-none" alt="Preview">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PROMO BOX 2 -->
+<!-- PROMO BOX 3 -->
+<section class="promo-box promo-box-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="pb-head text-center">
+                    <h4 data-aos="fade-down"
+                        data-aos-offset="0"
+                        data-aos-delay="0"
+                        data-aos-duration="1000"
+                        data-aos-easing="ease">
+                        Send campaign as replies
+                    </h4>
+                    <p data-aos="fade-down"
+                       data-aos-offset="0"
+                       data-aos-delay="100"
+                       data-aos-duration="1000"
+                       data-aos-easing="ease">Have emails sent as new messages or as replies to the last conversation with each recipient. Sending a campaign "as a reply" results in higher engagement because it becomes part of an existing conversation rather than a new one.</p>
+                </div>
+                <div class="pb-cont">
+                    <img src="https://cdn.gmass.co/images/preview.jpg" alt="Preview"
+                         data-aos="fade-down"
+                         data-aos-offset="0"
+                         data-aos-delay="300"
+                         data-aos-duration="800"
+                         data-aos-easing="ease">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- PROMO BOX 3 -->
+<!-- TRY GMASS -->
+<section class="try-gmass">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="try-gmass-inn">
+                    <h4>Try GMass today!</h4>
+                    <p>3 seconds to install!</p>
+                    <div class="btn-box">
+                        <a onclick="javascript: ga('send', 'event', 'Funnel', 'Install Button Clicked', 'Website Middle Homepage'); fbq('track', 'Lead'); rdt('track', 'Lead'); gtag('event', 'conversion', { 'send_to': 'AW-951525032/tqoQCI36pJ0BEKi93MUD' }); qp('track', 'GenerateLead');" href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf" class="button-alt install-extension" target="_blank">Add to Gmail</a>
+                        <span>GMass requires Chrome</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TRY GMASS -->
+<!-- FEATURES -->
+<section class="features">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h3 id="features">Features</h3>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb15">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/personalization.svg" alt="Personalization">
+                        </div>
+                        <h6>Personalization</h6>
+                        <p>Personalize to your heart's content. Connect to a Google Sheet and personalize with any column, or use basic first and last name personalization without a spreadsheet. Use fallback values. Don't know someone's first name? We'll auto-detect it.</p>
+                        <a href="http://www.gmass.co/blog/gmass-complete-guide-to-personalization-in-gmail-email-marketing-campaigns/" class="more-details">Complete Personalization Guide</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb8">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/graph.svg" alt="Reports">
+                        </div>
+                        <h6>Analytics</h6>
+                        <p>Campaign level reports that show how many people opened, clicked, replied, and bounced. See reports inside Gmail on your desktop or the Gmail app on your phone.</p>
+                        <a href="https://www.gmass.co/blog/gmail-mail-merge-reports-and-analytics/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb4">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/calendar.svg" alt="Scheduling">
+                        </div>
+                        <h6>Scheduling</h6>
+                        <p>Schedule a mail merge for any time in the future, or set it to repeat daily or hourly.</p>
+                        <a href="http://www.gmass.co/blog/new-feature-schedule-mass-emails/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb13">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/people.svg" alt="Break Gmail's Sending Limits">
+                        </div>
+                        <h6>Break Gmail's Sending Limits</h6>
+                        <p>Send large email campaigns and break Gmail's sending limits, using our distribution technology. GMass will distribute large campaigns over multiple days or send them via an external SMTP service like SendGrid.</p>
+                        <a href="http://www.gmass.co/blog/you-can-now-send-10000-emails-with-gmass-and-gmail/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb10">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/clock.svg" alt="Automatic Follow-up Emails">
+                        </div>
+                        <h6>Automatic Follow-up Emails</h6>
+                        <p>Set automatic follow-up reminder emails to be sent in a sequence until your recipient replies or opens. The best way to boost response rates.</p>
+                        <a href="http://www.gmass.co/blog/new-feature-automatic-follow-up-emails-until-you-get-a-reply/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb3">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/sheet.svg" alt="Google Sheets Integration">
+                        </div>
+                        <h6>Google Sheets Integration</h6>
+                        <p>GMass will read data live from any Google Sheet and even monitor for new rows and then send emails automatically.</p>
+                        <a href="http://www.gmass.co/blog/google-sheets-integration-is-live/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb11">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/forward.svg" alt="Manual Follow-up Campaigns">
+                        </div>
+                        <h6>Behavior-based Campaigns</h6>
+                        <p>Send to a segment of a prior campaign, like everyone who opened the last campaign, or everyone who didn't click the last campaign.</p>
+                        <a href="http://www.gmass.co/blog/new-feature-send-follow-up-mail-merge-campaigns-in-gmail/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb2">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/test.svg" alt="Preview mode">
+                        </div>
+                        <h6>Preview mode</h6>
+                        <p>Preview all of your emails as Gmail Drafts first. Then send them with one click. Make sure personalization worked and avoid the dreaded "Dear FName" mistake.</p>
+                        <a href="https://www.gmass.co/blog/no-more-fear-preview-your-emails-as-drafts-then-send-them-with-one-click/" class="more-details">More details</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb12">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/management.svg" alt="Reply Management">
+                        </div>
+                        <h6>Reply Management</h6>
+                        <p>Emails received in response to a mass email, including replies and bounces, are automatically categorized for you, preventing Inbox clutter.</p>
+                        <a href="http://www.gmass.co/blog/new-feature-automatic-reply-management-in-your-gmail-account/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb7">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/link.svg" alt="Unsubscribe Link">
+                        </div>
+                        <h6>Unsubscribes</h6>
+                        <p>Provide an optional unsubscribe link at the bottom of your emails.</p>
+                        <a href="http://www.gmass.co/blog/new-feature-unsubscribe-link/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb9">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/email2.svg" alt="Email List Builder">
+                        </div>
+                        <h6>Email List Builder</h6>
+                        <p>Find email addresses deep inside your Gmail account just by searching.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="features-box">
+                    <div class="fb-inn" id="fb14">
+                        <div class="fb-thumb">
+                            <img src="https://cdn.gmass.co/images/reply.svg" alt="New messages vs. Replies">
+                        </div>
+                        <h6>New messages or Replies</h6>
+                        <p>Campaigns can be sent as new messages to each recipient or as replies to the last conversation with each recipient.</p>
+                        <a href="https://www.gmass.co/blog/send-email-campaign-as-reply-to-recent-conversation/" class="more-details">More details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- FEATURES -->
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 text-center">
+                <div class="testimonials-inn">
+                    <h4>Do people love us or hate us?</h4>
+                    <p>Most people love GMass. Every now and then, a curmudgeon doesn't. See our <a href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf?hl=en-US">thousands of awesome reviews</a> (click the "Reviews" tab). Still not convinced? Here's <a href="https://www.gmass.co/blog/what-makes-gmass-better/">why GMass is better.</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TESTIMONIALS -->
+<!-- TRY GMASS -->
+<section class="f-try-gmass">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center">
+                <div class="intro-cont">
+                    <h4>Try GMass today!</h4>
+                    <p>3 seconds to install!</p>
+                    <div class="btn-box">
+                        <a onclick="javascript: ga('send', 'event', 'Funnel', 'Install Button Clicked', 'Website Bottom Homepage'); fbq('track', 'Lead'); rdt('track', 'Lead'); gtag('event', 'conversion', { 'send_to': 'AW-951525032/tqoQCI36pJ0BEKi93MUD' }); qp('track', 'GenerateLead');" href="https://chrome.google.com/webstore/detail/gmass-powerful-mail-merge/ehomdgjhgmbidokdgicgmdiedadncbgf" class="button-alt install-extension" target="_blank">Add to Gmail</a>
+                        <span>GMass requires Chrome</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="intro-media">
+                    <img src="https://cdn.gmass.co/images/emails.png" alt="Emails">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TRY GMASS -->
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-box footer-box-sitemap">
+                                <h6>Sitemap</h6>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="https://www.gmass.co/blog">Blog</a></li>
+                                    <li><a href="index.html#overview" class="scrollId">Products</a></li>
+                                    <li><a href="index.html#features" class="scrollId">Features</a></li>
+                                    <li><a href="https://www.gmass.co/pricing">Pricing</a></li>
+                                    <li><a href="https://www.gmass.co/faq">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-box footer-box-categories">
+                                <h6>Categories</h6>
+                                <ul>
+                                    <li><a href="https://www.gmass.co/gmail-email-marketing">Email Marketing in Gmail</a></li>
+                                    <li><a href="https://www.gmass.co/gmail-email-newsletters">Email Newsletters in Gmail</a></li>
+                                    <li><a href="https://www.gmass.co/gmail-mail-merge">Mail Merge in Gmail</a></li>
+                                    <li><a href="https://www.gmass.co/gmail-mass-email">Mass Email in Gmail</a></li>
+                                    <li><a href="https://www.gmass.co/cold-email">Cold Email Master Guide</a></li>
+
+                                    <li><a href="https://www.gmass.co/systemstatus">System Status</a></li>
+                                    <li><a href="https://www.gmass.co/g/terms">Terms of Use</a></li>
+                                    <li><a href="https://www.gmass.co/blog/gmass-privacy-information-what-data-does-our-server-store/">Privacy Policy</a></li>
+                                    <li><a href="https://www.gmass.co/incident/">Report Vulnerability</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-box footer-box-networks">
+                                <h6>Social</h6>
+                                <ul>
+                                    <li><a href="https://www.facebook.com/GmailMailMerge/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://twitter.com/GMassForGmail" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/gmass/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="https://www.youtube.com/gmass/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-box">
+                                <a href="index.html" class="f-logo">
+                                    <img src="https://cdn.gmass.co/images/logo.png" alt="GMass">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <p>© 2020 GMass, Inc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER -->
+
+    </div> <!-- MMENU -->
+
+    <div id="mobilemenu"></div>
+
+    <script src="https://www.gmass.co/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://www.gmass.co/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gmass.co/assets/js/jquery.malihu.PageScroll2id.js"></script>
+    <script src="https://www.gmass.co/assets/js/jquery.matchHeight-min.js"></script>
+    <script src="https://www.gmass.co/assets/js/jquery.mmenu.all.js"></script>
+    <script src="https://www.gmass.co/assets/js/owl.carousel.min.js"></script>
+    <script src="https://www.gmass.co/assets/js/OwlCarousel2Thumbs.min.js"></script>
+    <script src="https://www.gmass.co/assets/js/aos.js"></script>
+    <script src="https://www.gmass.co/assets/js/main2.js"></script>
+    
+    <script>
+        $(function () {
+            (function randomFade() {
+                var fadeDivs = $('div.testimonials .item'),
+                    el = fadeDivs.eq(Math.floor(Math.random() * fadeDivs.length));
+                el.fadeIn('1000').delay(5000).fadeOut('1000', randomFade);
+            })();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+Vous pouvez exporter les destinataires en fonction de la date. <br/>
+Si vous cliquez sur le bouton "Exporter", une fen&amp;ecirc;tre s'ouvrira  pour vous permettre d'enregistrer le fichier sur votre disque dur. Le fichier sera un fichier texte (d&eacute;limit&eacute; par des TABULATIONS) comportant le r&eacute;sultat de votre requ&amp;ecirc;te. <br/>
+Ce type de fichier est exploitable dans la plupart des tableurs car il comporte une tabulation comme s&eacute;parateur de champs.

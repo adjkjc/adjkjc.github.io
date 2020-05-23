@@ -1,0 +1,1312 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+                    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#e8710a">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/app.css">
+    
+    <noscript>
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/blogger/docs/2.0/developers_guide_dotnet"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Developer's Guide: .NET &nbsp;|&nbsp; Blogger &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Developer's Guide: .NET &nbsp;|&nbsp; Blogger &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.com/blogger/docs/2.0/developers_guide_dotnet">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/opengraph/orange.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blogger",
+      "item": "https://developers.google.com/blogger"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Developer&#39;s Guide: .NET",
+      "item": "https://developers.google.com/blogger/docs/2.0/developers_guide_dotnet"
+    }]
+  }
+  </script>
+
+
+
+  
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="orange"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Blogger"    tenant-name="Google Developers"    project-scope="/blogger"    url-scoped="https://developers.google.com/s/results/blogger"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                                                                         
+                        id="devsite-user"></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                  <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/blogger"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="guides"
+   aria-label="Guides, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/blogger/docs/3.0/reference"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="reference"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/blogger/docs/3.0/libraries"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="samples"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples"
+   >
+  Samples
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/blogger"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/reference"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/libraries"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samples">
+      <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/blogger"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Introduction</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v3.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/getting_started"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Getting Started</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/using"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using the API</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/performance"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Performance Tips</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v2.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reference Guide</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading           devsite-nav-deprecated"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v1.0</span><span class="devsite-nav-icon material-icons"
+          data-icon="deprecated"
+          data-title="Deprecated"
+          aria-hidden="true"></span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_js"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>JavaScript</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_php"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>PHP</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_python"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Python</span></a></li></ul></li>
+          </ul>
+                                                    
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Blogger
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">Developer's Guide: .NET</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      "
+            >
+
+              
+
+
+<p>The Blogger Data API allows client applications to view and update Blogger
+content in the form of Google Data API feeds.</p>
+<p>Your client application can use the Blogger Data API to create new blog
+posts, edit or delete existing blog posts, and query for blog posts that match
+particular criteria.</p>
+<p>In addition to providing some background on the capabilities of the Blogger
+Data API, this document provides examples of basic Data API interactions using
+the <a href="//code.google.com/p/google-gdata/">.NET client library</a>. If
+you're interested in understanding more about the underlying protocol that the
+library uses, see the <a
+  href="/blogger/docs/2.0/developers_guide_protocol">Protocol section</a> of
+this developer's guide.</p>
+
+<h2 id="contents" data-text="Contents" tabindex="0">Contents</h2>
+<div class="toc">
+  <ol>
+    <li><a href="#Audience">Audience</a></li>
+    <li><a href="#GettingStarted">Getting started</a>
+      <ol>
+        <li><a href="#CreatingAccount">Creating a Blogger account</a></li>
+        <li><a href="#RunningSamples">Running the sample code</a></li>
+      </ol>
+    </li>
+    <li><a href="#Authenticating">Authenticating to the Blogger service</a>
+      <ol>
+        <li><a href="#AuthSub">AuthSub proxy authentication</a></li>
+        <li><a href="#ClientLogin">ClientLogin username/password authentication</a></li>
+      </ol>
+    </li>
+    <li><a href="#RetrievingMetafeed">Retrieving a list of blogs</a></li>
+    <li><a href="#CreatingEntries">Creating posts</a>
+      <ol>
+        <li><a href="#CreatingPublicEntries">Publishing a blog post</a></li>
+        <li><a href="#CreatingDraftEntries">Creating a draft blog post</a></li>
+      </ol>
+    </li>
+    <li><a href="#RetrievingEntries">Retrieving posts</a>
+      <ol>
+        <li><a href="#RetrievingWithoutQuery">Retrieving all blog posts</a></li>
+        <li><a href="#RetrievingWithQuery">Retrieving posts using query parameters</a></li>
+      </ol>
+    </li>
+    <li><a href="#UpdatingEntries">Updating posts</a></li>
+    <li><a href="#DeletingEntries">Deleting posts</a></li>
+    <li><a href="#Comments">Comments</a>
+      <ol>
+        <li><a href="#CreatingComments">Creating comments</a></li>
+        <li><a href="#RetrievingComments">Retrieving comments</a></li>
+        <li><a href="#DeletingComments">Deleting comments</a></li>
+      </ol>
+    </li>
+  </ol>
+</div>
+
+<h2 id="Audience" data-text="Audience" tabindex="0">Audience</h2>
+<p>This document is intended for programmers who want to write .NET client
+applications that can interact with Blogger.</p>
+<p>This document assumes that you understand the general ideas behind the <a
+  href="/gdata/docs/2.0/basics">Google Data APIs
+  protocol</a>.</p>
+<p>For reference information about the classes and methods provided by the
+client library, see the <a
+  href="http://google-gdata.googlecode.com/svn/docs/Index.html">.NET client library API
+  reference</a>. For general Blogger Data API reference information, see the <a
+  href="/blogger/docs/2.0/reference">Protocol reference guide</a>.</p>
+
+<h2 id="GettingStarted" data-text="Getting started" tabindex="0">Getting started</h2>
+<p>For help setting up the client library, see the <a
+  href="/gdata/articles/dotnet_client_lib">Getting
+  Started Guide</a>.</p>
+<p>To use the .NET client library, you'll need the .NET 1.1 runtime, and you
+should also be current on all patches. After <a
+  href="//code.google.com/p/google-gdata/downloads/list">downloading the
+  client library</a>, you'll find the DLLs you need to get started in the
+<code translate="no" dir="ltr">lib/Release</code> subdirectory of the distribution.</p>
+
+<h3 id="CreatingAccount" data-text="Creating a Blogger account" tabindex="0">Creating a Blogger account</h3>
+<p>You may want to <a href="http://www.blogger.com/signup.g">sign up for a
+  Blogger account</a> for testing purposes. Blogger uses <a
+  href="https://www.google.com/accounts/Login">Google Accounts</a>, so if you
+already have a Google account, you're all set.</p>
+
+<h3 id="RunningSamples" data-text="Running the sample code" tabindex="0">Running the sample code</h3>
+<p>A full working sample client, containing all the sample code shown in this
+document, is available in the .NET client library project. The sample is located
+at <a
+  href="http://google-gdata.googlecode.com/svn/trunk/clients/cs/samples/blogger/ConsoleSample.cs">/trunk/clients/cs/samples/blogger/ConsoleSample.cs</a>
+in the Source tab of the SVN repository.</p>
+<p>Before compiling and running this sample, update the values of
+<code translate="no" dir="ltr">username</code>, <code translate="no" dir="ltr">password</code>, <code translate="no" dir="ltr">blogName</code>, and
+<code translate="no" dir="ltr">postId</code> with the appropriate values. The <code translate="no" dir="ltr">username</code> and
+<code translate="no" dir="ltr">password</code> values represent the credentials used to log in to
+Blogger. The <code translate="no" dir="ltr">blogName</code> value is the start of your blog's blogspot
+URL.</p>
+<p>The sample client performs several operations on the provided blog to
+demonstrate the use of the Blogger Data API.</p>
+<p>To compile the examples in this document into your own code, you'll need the
+following <code translate="no" dir="ltr">using</code> statements:</p>
+<pre translate="no" dir="ltr">
+using Google.GData.Client;
+using System.Net;
+using System.Xml;
+using System.Text.RegularExpressions;
+</pre>
+
+<h2 id="Authenticating" data-text="Authenticating to the Blogger service" tabindex="0">Authenticating to the Blogger service</h2>
+<p>You can access both public and private feeds using the Blogger Data API.
+Public feeds don't require any authentication, but they are read-only. If you
+want to modify blogs, then your client needs to authenticate before requesting
+private feeds. It can authenticate using either of two approaches: <a
+  href="#AuthSub">AuthSub</a> proxy authentication or <a
+  href="#ClientLogin">ClientLogin</a> username/password authentication.</p>
+<p>For more information about authentication with Google Data APIs in general,
+see the <a
+  href="/gdata/docs/auth/overview">authentication
+  documentation</a>.</p>
+
+<h3 id="AuthSub" data-text="AuthSub proxy authentication" tabindex="0">AuthSub proxy authentication</h3>
+<p>AuthSub proxy authentication is used by web applications that need to
+authenticate their users to Google Accounts. The website operator and the client
+code don't have access to the username and password for the Blogger user;
+instead, the client obtains special AuthSub tokens that allow the client to act
+on a particular user's behalf. For more detailed information, see the <a
+  href="/accounts/docs/AuthSub">AuthSub documentation</a>.</p>
+<p>When a user first visits your application, they have not yet been
+authenticated. In this case, you need to display some information and a link
+directing the user to a Google page to authenticate your request for access to
+their blogs.</p>
+<p>Suppose the following ASP hyperlink is defined in your page:</p>
+<pre translate="no" dir="ltr">
+&lt;asp:HyperLink ID="GotoAuthSubLink" runat="server"/&gt;
+</pre>
+<p>Then to construct the AuthSubRequest URL for your application, make a .NET
+client library call as follows:</p>
+<pre translate="no" dir="ltr">
+GotoAuthSubLink.Text = "Login to your Google Account";
+GotoAuthSubLink.NavigateUrl =
+  AuthSubUtil.getRequestUrl("http://www.example.com/RetrieveToken",
+  "http://www.blogger.com/feeds/",
+  false,
+  true);
+</pre>
+<p>The <code translate="no" dir="ltr">getRequestUrl</code> method takes the following parameters
+(corresponding to the query parameters used by the AuthSubRequest handler):</p>
+<dl>
+  <dt>next</dt>
+  <dd>The URL of the page that Google should redirect the user to after authentication.</dd>
+  <dt>scope</dt>
+  <dd>Indicates that the application is requesting a token to access Blogger feeds. The scope string to use is <code translate="no" dir="ltr">http://www.blogger.com/feeds/</code> (URL-encoded, of course).</dd>
+  <dt>secure</dt>
+  <dd>Indicates whether the client is requesting a secure token.</dd>
+  <dt>session</dt>
+  <dd>Indicates whether the token returned can be exchanged for a multi-use (session) token.</dd>
+</dl>
+<p>The above example shows a call that doesn't request a secure token (the value of <code translate="no" dir="ltr">secure</code> is <code translate="no" dir="ltr">false</code>). The resulting request URL might look like this:</p>
+<pre translate="no" dir="ltr">
+https://www.google.com/accounts/AuthSubRequest?scope=http%3A%2F%2Fwww.blogger.com%2Ffeeds%2F&amp;session=1&amp;secure=0&amp;next=http%3A%2F%2Fwww.example.com%2FRetrieveToken
+</pre>
+<p>The user follows the link to Google's site and authenticates to their Google
+Account.</p>
+<p>After the user authenticates, the AuthSub system redirects them to the URL
+you specified in the <code translate="no" dir="ltr">next</code> query parameter of the AuthSubRequest
+URL. The AuthSub system appends an authentication token to that URL, as the
+value of the <code translate="no" dir="ltr">token</code> query parameter. Therefore, the token is
+accessible as a variable in the ASP page's <code translate="no" dir="ltr">Request.QueryString</code>
+object. The user is redirected to a URL that looks like this:</p>
+<pre translate="no" dir="ltr">
+http://www.example.com/RetrieveToken?token=<var>yourAuthToken</var>
+</pre>
+<p>This token value represents a single-use AuthSub token. In this example,
+since <code translate="no" dir="ltr">session = true</code> was specified, this token can be exchanged for
+an AuthSub session token, as follows:</p>
+<pre translate="no" dir="ltr">
+SessionsessionToken = AuthSubUtil.exchangeForSessionToken(Request.QueryStringtoken, null);
+</pre>
+<p>That is, you pass your one-time-use token to the
+<code translate="no" dir="ltr">exchangeForSessionToken</code> method, along with either <code translate="no" dir="ltr">null</code>
+(for unregistered mode) or a private key (for registered mode), and the AuthSub
+interface returns a session token. For more information about registered
+applications and private keys, see the "<a
+  href="/accounts/docs/AuthSub#signingrequests">Signing requests</a>"
+section of the AuthSub documentation.</p>
+<p>Your application can then use the session token value in subsequent
+interactions with Blogger. To tell the .NET client library to automatically send
+the Authorization header (containing the session token) with each request, do
+the following:</p>
+<pre translate="no" dir="ltr">
+GAuthSubRequestFactory authFactory = new GAuthSubRequestFactory("blogger", "BloggerSampleApp");
+authFactory.Token = SessionsessionToken.ToString();
+Service service = new Service(authFactory.ApplicationName);
+service.RequestFactory = authFactory;
+</pre>
+
+<h3 id="ClientLogin" data-text="ClientLogin username/password authentication" tabindex="0">ClientLogin username/password authentication</h3>
+<p>Use ClientLogin authentication if your client is a standalone, single-user
+&quot;installed&quot; client (such as a desktop application). Set the
+credentials of your service object as follows:</p>
+<pre translate="no" dir="ltr">
+Service service = new Service("blogger", "exampleCo-exampleApp-1");
+service.Credentials = new GDataCredentials("user@example.com", "secretPassword");
+GDataGAuthRequestFactory factory = (GDataGAuthRequestFactory) service.RequestFactory;
+factory.AccountType = "GOOGLE";
+</pre>
+<p>In the snippet above, we pass two parameters to the <code translate="no" dir="ltr">Service</code>
+constructor. The first parameter is the name of the service we want to interact
+with. The second parameter is the name of our application in the form
+<var>companyName</var>-<var>applicationName</var>-<var>versionID</var>. We also
+set the <code translate="no" dir="ltr">Service.RequestFactory</code> to only use a <code translate="no" dir="ltr">GOOGLE</code>
+account type in order to allow proper authentication for <a
+  href="http://www.google.com/a/">G Suite</a> users.</p>
+<p>For more information about ClientLogin authentication, including sample
+requests and responses, see the <a
+  href="/accounts/docs/AuthForInstalledApps">Authentication for Installed
+  Applications</a> documentation.</p>
+<p class="note"><strong>Note</strong>: Use the same token for all requests in a
+given session; don't acquire a new token for each Blogger request.</p>
+<p class="note"><strong>Note</strong>: As described in the ClientLogin
+documentation, the authentication request may fail and request a CAPTCHA
+challenge. If you want Google to issue and handle the CAPTCHA challenge, then
+send the user to
+<code translate="no" dir="ltr">https://www.google.com/accounts/DisplayUnlockCaptcha?service=blogger</code>
+(rather than to the CAPTCHA-handling URL given in the ClientLogin
+documentation).</p>
+
+<h2 id="RetrievingMetafeed" data-text="Retrieving a list of blogs" tabindex="0">Retrieving a list of blogs</h2>
+<p>The Blogger Data API provides a feed that lists the blogs for a particular
+user; that feed is known as a &quot;metafeed.&quot;</p>
+<p>The following sample code uses an authenticated <code translate="no" dir="ltr">Service</code> object
+to retrieve the metafeed and then prints each blog's title.</p>
+<pre translate="no" dir="ltr">
+query.Uri = new Uri("http://www.blogger.com/feeds/default/blogs");
+AtomFeed feed = null;
+try
+{
+  feed = service.Query(query);
+  foreach (AtomEntry entry in feed.Entries)
+  {
+    Console.WriteLine("Blog Title: " + entry.Title.Text);
+  }
+}
+</pre>
+<p>Note the URL used by the <code translate="no" dir="ltr">getFeed</code> method. This is the default
+metafeed URL; it returns a list of blogs for the currently authenticated user.
+To access a feed for a different user, you can put the user's ID in place of
+<code translate="no" dir="ltr">default</code> in the metafeed URL. The user's ID is the string of digits
+at the end of the user's profile URL.</p>
+
+<h2 id="CreatingEntries" data-text="Creating posts" tabindex="0">Creating posts</h2>
+<p>The Blogger Data API allows you to create and publish new blog entries, as
+well as creating drafts of entries.</p>
+<p>All of the following samples assume you have an authenticated
+<code translate="no" dir="ltr">Service</code> object.</p>
+<p class="note"><strong>Note</strong>: Setting a custom author for posts is
+currently not supported. All new posts will appear as if they were created by
+the currently authenticated user.</p>
+
+<h3 id="CreatingPublicEntries" data-text="Publishing a blog post" tabindex="0">Publishing a blog post</h3>
+<p>You can use the .NET client library to publish new blog entries.</p>
+<p>First, create an <code translate="no" dir="ltr">AtomEntry</code> object to represent the blog post.
+Then you can set the title, content and other attributes of the blog post.
+Finally, use the <code translate="no" dir="ltr">Service</code> object to insert the post. Here's an
+example of how to publish a new blog post:</p>
+<pre translate="no" dir="ltr">
+AtomEntry newPost = new AtomEntry();
+newPost.Title.Text = &quot;Marriage!&quot;;
+newPost.Content = new AtomContent();
+newPost.Content.Content = &quot;&lt;div xmlns='http://www.w3.org/1999/xhtml'&gt;&quot; +
+  &quot;&lt;p&gt;Mr. Darcy has &lt;em&gt;proposed marriage&lt;/em&gt; to me!&lt;/p&gt;&quot; +
+  &quot;&lt;p&gt;He is the last man on earth I would ever desire to marry.&lt;/p&gt;&quot; +
+  &quot;&lt;p&gt;Whatever shall I do?&lt;/p&gt;&quot; +
+  &quot;&lt;/div&gt;&quot;;
+newPost.Content.Type = &quot;xhtml&quot;;
+
+Uri blogFeedUri = new Uri("http://www.blogger.com/feeds/" + blogId + "/posts/default");
+AtomEntry createdEntry = service.Insert(blogFeedUri, newPost);
+</pre>
+<p>The <code translate="no" dir="ltr">Insert</code> method takes the service's post URL as a parameter.
+Then the method returns the entry as it was stored by Blogger. The entry
+returned is the same one you sent, but it also contains various elements added
+by Blogger, such as a post ID.</p>
+<p>If your request fails for some reason, Blogger may return a different status
+code. For information about the status codes, see the <a
+  href="/gdata/docs/2.0/reference">Google Data
+  API protocol reference document</a>.</p>
+
+<h3 id="CreatingDraftEntries" data-text="Creating a draft blog post" tabindex="0">Creating a draft blog post</h3>
+<p>Draft posts are created in the same way as public posts, but you need to set
+the <code translate="no" dir="ltr">draft</code> attribute of the <code translate="no" dir="ltr">AtomEntry</code> object. The blog
+post above could be created as a draft by adding the highlighted line:</p>
+<pre translate="no" dir="ltr">
+AtomEntry newPost = new AtomEntry();
+newPost.Title.Text = &quot;Marriage!&quot;;
+newPost.Content = new AtomContent();
+newPost.Content.Content = &quot;&lt;div xmlns='http://www.w3.org/1999/xhtml'&gt;&quot; +
+    &quot;&lt;p&gt;Mr. Darcy has &lt;em&gt;proposed marriage&lt;/em&gt; to me!&lt;/p&gt;&quot; +
+    &quot;&lt;p&gt;He is the last man on earth I would ever desire to marry.&lt;/p&gt;&quot; +
+    &quot;&lt;p&gt;Whatever shall I do?&lt;/p&gt;&quot; +
+    &quot;&lt;/div&gt;&quot;;
+newPost.Content.Type = &quot;xhtml&quot;;
+<b>newPost.IsDraft = true;</b>
+
+Uri blogFeedUri = new Uri("http://www.blogger.com/feeds/" + blogId + "/posts/default");
+AtomEntry createdEntry = service.Insert(blogFeedUri, newPost);
+</pre>
+<p>You can turn an existing draft blog post into a published post by retrieving
+the draft post, setting the draft attribute to false, and then updating the
+post. We'll cover retrieving and updating posts in the next two sections.</p>
+
+<h2 id="RetrievingEntries" data-text="Retrieving posts" tabindex="0">Retrieving posts</h2>
+<p>The following sections describe how to retrieve a list of blog posts, with
+and without query parameters.</p>
+<p>You can query a Blogger public feed without authentication. Therefore, you
+don't need to set credentials or do AuthSub authentication before retrieving
+posts from a public blog.</p>
+
+<h3 id="RetrievingWithoutQuery" data-text="Retrieving all blog posts" tabindex="0">Retrieving all blog posts</h3>
+<p>To retrieve the user's posts, call the same <code translate="no" dir="ltr">getFeed</code> method used
+to retrieve the blogs metafeed, but this time send the blog-post feed URL:</p>
+<pre translate="no" dir="ltr">
+query.Uri = new Uri(&quot;http://www.blogger.com/feeds/&quot; + blogId + &quot;/posts/default&quot;);
+feed = service.Query(query);
+Console.WriteLine(feed.Title.Text);
+foreach (AtomEntry entry in feed.Entries)
+{
+  Console.WriteLine(&quot;Entry Title: &quot; + entry.Title.Text);
+}
+</pre>
+
+<h3 id="RetrievingWithQuery" data-text="Retrieving posts using query parameters" tabindex="0">Retrieving posts using query parameters</h3>
+<p>The Blogger Data API lets you request a set of entries that match specified
+criteria, such as requesting blog posts published or updated in a given date
+range. To do this, you create a <code translate="no" dir="ltr">FeedQuery</code> object and pass it to the
+<code translate="no" dir="ltr">Service.Query()</code> method.</p>
+<p>For example, to send a date-range query, set the <code translate="no" dir="ltr">MinPublication</code>
+and <code translate="no" dir="ltr">MaxPublication</code> members of the <code translate="no" dir="ltr">FeedQuery</code> object.
+The following code snippet prints the title of each blog post published between
+the given start time and end time:</p>
+<pre translate="no" dir="ltr">
+FeedQuery query = new FeedQuery();
+query.Uri = new Uri(&quot;http://www.blogger.com/feeds/&quot; + blogId + &quot;/posts/default&quot;);
+query.MinPublication = new DateTime(2006, 1, 1);
+query.MaxPublication = new DateTime(2007, 4, 12);
+AtomFeed feed = service.Query(query);
+foreach (AtomEntry entry in feed.Entries)
+{
+  Console.WriteLine(&quot;  Entry Title: &quot; + entry.Title.Text);
+}
+</pre>
+<p>Notice that the <code translate="no" dir="ltr">FeedQuery</code> object is constructed using the same post feed URL used to retrieve posts.</p>
+<p>The Blogger Data API supports the following query parameters:</p>
+<dl>
+  <dt>alt</dt>
+  <dd>The type of feed to return, such as <code translate="no" dir="ltr">atom</code> (the default) or <code translate="no" dir="ltr">rss</code>.</dd>
+  <dt><var>/category</var></dt>
+  <dd>Specify categories (also known as labels) to filter the feed results. For example, <code translate="no" dir="ltr">http://www.blogger.com/feeds/<var>blogID</var>/posts/default/-/Fritz/Laurie</code> returns entries with both the labels <code translate="no" dir="ltr">Fritz</code> and <code translate="no" dir="ltr">Laurie</code>.</dd>
+  <dt>max-results</dt>
+  <dd>The maximum number of entries to return.</dd>
+  <dt>orderby</dt>
+  <dd>The order in which to return entries, such as <code translate="no" dir="ltr">lastmodified</code> (the default), <code translate="no" dir="ltr">starttime</code>, or <code translate="no" dir="ltr">updated</code>.</dd>
+  <dt>published-min, published-max</dt>
+  <dd>The bounds on entry publication dates.</dd>
+  <dt>start-index</dt>
+  <dd>The 1-based index of the first result to be retrieved (for paging).</dd>
+  <dt>updated-min, updated-max</dt>
+  <dd>The bounds on entry update dates. These query parameters are ignored unless the <code translate="no" dir="ltr">orderby</code> parameter is set to <code translate="no" dir="ltr">updated</code>.</dd>
+</dl>
+<p>For more information about query parameters, see the <a
+  href="/blogger/docs/2.0/reference#Parameters">Blogger Data API Reference
+  Guide</a> and the <a
+  href="/gdata/docs/2.0/reference#Queries">Google
+  Data APIs Reference Guide</a>.</p>
+
+<h2 id="UpdatingEntries" data-text="Updating posts" tabindex="0">Updating posts</h2>
+<p>To update an existing blog post, first you retrieve the entry you want to
+update, then you modify it, and then you send it to Blogger using the entry's
+<code translate="no" dir="ltr">Update()</code> method. The following code snippet modifies the title of a
+blog entry, assuming that you've already retrieved the entry from the
+server.</p>
+<pre translate="no" dir="ltr">
+static AtomEntry EditEntry(AtomEntry toEdit)
+{
+  // Edit the entry by changing the Title and calling Update().
+  if (toEdit != null)
+  {
+    toEdit.Title.Text = &quot;Marriage Woes!&quot;;
+    toEdit = toEdit.Update();
+  }
+  return toEdit;
+}
+</pre>
+<p>The above code returns an <code translate="no" dir="ltr">AtomEntry</code> containing the entire
+newly-updated post. To update any other properties, simply set them in the
+<code translate="no" dir="ltr">AtomEntry</code> object before calling <code translate="no" dir="ltr">Update()</code>.</p>
+<p class="note"><strong>Note</strong>: Modifying the author data associated with
+posts is currently not supported.</p>
+
+<h2 id="DeletingEntries" data-text="Deleting posts" tabindex="0">Deleting posts</h2>
+<p>To delete a post, call the <code translate="no" dir="ltr">Delete</code> method on an existing
+<code translate="no" dir="ltr">AtomEntry</code> object, like this:</p>
+<pre translate="no" dir="ltr">
+static void DeleteEntry(AtomEntry toDelete)
+{
+  // Delete the edited entry
+  if (toDelete != null)
+  {
+    toDelete.Delete();
+  }
+}
+</pre>
+
+<h2 id="Comments" data-text="Comments" tabindex="0">Comments</h2>
+<p>The Blogger Data API allows for creating, retrieving, and deleting comments.
+Updating comments is not supported (nor is it available in the web
+interface).</p>
+
+<h3 id="CreatingComments" data-text="Creating comments" tabindex="0">Creating comments</h3>
+<p>To post a comment, create an <code translate="no" dir="ltr">AtomEntry</code> object and insert it as follows:</p>
+<pre translate="no" dir="ltr">
+AtomEntry comment;
+comment = new AtomEntry();
+comment.Title.Text = &quot;This is my first comment&quot;;
+comment.Content.Content = &quot;This is my first comment&quot;;
+Uri commentPostUri = new Uri(&quot;http://www.blogger.com/feeds/&quot; + blogId + &quot;/&quot; + entryId + &quot;/comments/default&quot;);
+postedComment = service.Insert(commentPostUri, comment);
+</pre>
+<p class="note"><strong>Note</strong>: Currently, you can only post comments to
+a blog owned by the authenticated user.</p>
+<p class="note"><strong>Note</strong>: Setting a custom author for comments is
+currently not supported. All new comments will appear as if they were created by
+the currently authenticated user.</p>
+
+<h3 id="RetrievingComments" data-text="Retrieving comments" tabindex="0">Retrieving comments</h3>
+<p>You can retrieve the comments for a particular post from the post's comments
+feed URL:</p>
+<pre translate="no" dir="ltr">
+static void ListEntryComments(Service service, Uri commentUri)
+{
+  if (commentUri != null)
+  {
+    // Retrieve all comments on a blog entry
+    FeedQuery query = new FeedQuery();
+    query.Uri = commentUri;
+    AtomFeed feed = service.Query(query);
+    foreach (AtomEntry entry in feed.Entries)
+    {
+      Console.WriteLine(&quot;  Comment Title: &quot; + entry.Title.Text);
+    }
+  }
+}
+</pre>
+<p>Or you can get the comments from all posts by using the blog's comments feed
+URL:</p>
+<pre translate="no" dir="ltr">
+http://www.blogger.com/feeds/<var>blogID</var>/comments/default
+</pre>
+
+<h3 id="DeletingComments" data-text="Deleting comments" tabindex="0">Deleting comments</h3>
+<p>To delete a comment, call the <code translate="no" dir="ltr">Delete()</code> method on an existing
+comment <code translate="no" dir="ltr">AtomEntry</code> object like this:</p>
+<pre translate="no" dir="ltr">
+static void DeleteComment(AtomEntry commentEntry)
+{
+  if (commentEntry != null)
+  {
+    // Delete the comment.
+    commentEntry.Delete();
+  }
+}
+</pre>
+
+<p class="backtotop"><a href="#top">Back to top</a></p>  
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2019-06-11.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="http://buzz.blogger.com/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blogger Buzz">
+                Blogger Buzz
+      </a>
+      <div class="devsite-footer-promo-description">The Official Buzz from Blogger at Google</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/docs/3.0/libraries"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Client Libraries
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//productforums.google.com/forum/#!forum/blogger"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Help Forum
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//code.blogger.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 2)"            >
+                      Developer Blog
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/terms"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Terms of Service
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Blogger", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>

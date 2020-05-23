@@ -1,0 +1,1866 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+                    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope"
+          content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#e8710a">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="//apis.google.com" crossorigin>
+    <link rel="preconnect" href="//www.google-analytics.com" crossorigin>
+          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/app.css">
+    
+    <noscript>
+            <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/blogger/docs/3.0/using"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml?authuser=0">      
+<title>Blogger API: Using the API &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Blogger API: Using the API &nbsp;|&nbsp; Google Developers">
+
+
+  <meta property="og:url" content="https://developers.google.com/blogger/docs/3.0/using">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/opengraph/orange.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Blogger",
+      "item": "https://developers.google.com/blogger"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blogger API: Using the API",
+      "item": "https://developers.google.com/blogger/docs/3.0/using"
+    }]
+  }
+  </script>
+
+
+
+  
+    
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="orange"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+      <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="https://developers.google.com/blogger?authuser=0">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="https://developers.google.com/blogger?authuser=0"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Blogger"    tenant-name="Google Developers"    project-scope="/blogger"    url-scoped="https://developers.google.com/s/results/blogger?authuser=0"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results?authuser=0" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                                                                         
+                        id="devsite-user"></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                  <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="https://developers.google.com/blogger?authuser=0"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="guides"
+   aria-label="Guides, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="https://developers.google.com/blogger/docs/3.0/reference?authuser=0"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="reference"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="https://developers.google.com/blogger/docs/3.0/libraries?authuser=0"
+   class="gc-analytics-event "
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="samples"
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples"
+   >
+  Samples
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/blogger">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Blogger"
+         src="https://www.gstatic.com/images/branding/product/1x/blogger_64dp.png"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/blogger"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Blogger        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/blogger"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/reference"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/blogger/docs/3.0/libraries"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samples">
+      <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/blogger"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Introduction</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v3.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/3.0/getting_started"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Getting Started</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/using"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using the API</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/3.0/performance"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Performance Tips</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v2.0</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/2.0/reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reference Guide</span></a></li></ul></li>
+  <li class="devsite-nav-item           devsite-nav-heading           devsite-nav-deprecated"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>API v1.0</span><span class="devsite-nav-icon material-icons"
+          data-icon="deprecated"
+          data-title="Deprecated"
+          aria-hidden="true"></span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer&#39;s Guide</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_protocol"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_dotnet"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>.NET</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_java"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Java</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_js"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>JavaScript</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_php"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>PHP</span></a></li><li class="devsite-nav-item"><a href="/blogger/docs/1.0/developers_guide_python"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Python</span></a></li></ul></li>
+          </ul>
+                                                    
+              </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+
+<article class="devsite-article">
+  <article class="devsite-article-inner"><style>
+        .toc ul, .toc ol { list-style-type: none; }
+        </style>        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="https://developers.google.com/?authuser=0"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/products?authuser=0"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="https://developers.google.com/blogger?authuser=0"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Blogger
+      
+  </a>
+        </li>
+  </ul>
+                  <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+          </div>
+
+              <h1 class="devsite-page-title">Blogger API: Using the API</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      "
+            >
+
+              
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>The Blogger API enables you to integrate Blogger content with your
+  application by using the REST APIs. Before you begin, you will need to set up
+  authorization.</p>
+
+<h2 id="intro" data-text="Introduction" tabindex="0">Introduction</h2>
+<p>This document is intended for developers who want to write applications that 
+can interact with the Blogger API. <a
+  href="http://www.blogger.com/">Blogger</a> is a tool for
+creating websites that allow people to publish their thoughts on an ongoing
+basis.
+
+</p>
+<p>If you're unfamiliar with Blogger concepts, you should read <a
+  href="https://developers.google.com/blogger/docs/3.0/getting_started?authuser=0">Getting Started</a> before starting to code.</p>
+
+<h2 id="auth" data-text="Authorizing requests and identifying your application" tabindex="0">Authorizing requests and identifying your application</h2>
+
+
+<p>Every request your application sends to the Blogger APIs needs to identify your application to Google. There are two ways to identify your application: using an <a href="#AboutAuthorization">OAuth 2.0 token</a> (which also authorizes the request) and/or using the application's <a href="#APIKey">API key</a>. Here's how to determine which of those options to use:</p>
+<ul>
+	<li>If the request requires authorization (such as a request for an individual's private data), then the application must provide an OAuth 2.0 token with the request. The application may also provide the API key, but it doesn't have to.</li>
+	<li>If the request doesn't require authorization (such as a request for public data), then the application must provide either the API key or an OAuth 2.0 token, or both&mdash;whatever option is most convenient for you.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+<h4 id="AboutAuthorization" data-text="About authorization protocols" tabindex="0">About authorization protocols</h4>
+
+<p>Your application must use <a href="https://developers.google.com/identity/protocols/OAuth2?authuser=0">OAuth&nbsp;2.0</a> to authorize requests. No other authorization protocols are supported. If your application uses <a href="https://developers.google.com/identity/?authuser=0#google-sign-in">Google Sign-In</a>, some aspects of authorization are handled for you.</p>
+
+<h4 id="OAuth2Authorizing" data-text="Authorizing requests with OAuth 2.0" tabindex="0">Authorizing requests with OAuth 2.0</h4>
+
+
+
+<p>Requests to the Blogger APIs for non-public user data must be authorized by an authenticated user.</p>
+
+
+  <p>This process is facilitated with an OAuth client ID.</p>
+  <a tabindex="0" class="devsite-api-getstarted-widget gc-analytics-event button button-primary"
+     data-henhouse-credential-type="OAUTH"
+     data-category="Site-Wide Custom Events"
+     data-label="Get Henhouse OAuth Client ID"
+     data-api-id="blogger.googleapis.com">Get an OAuth client ID</a>
+  <p>Or create one in the <a href="https://console.developers.google.com/apis/credentials?authuser=0">Credentials page</a>.</p>
+
+<p>The details of the authorization process, or "flow," for OAuth&nbsp;2.0 vary somewhat depending on what kind of application you're writing. The following general process applies to all application types:</p>
+<ol>
+
+  <li>When your application needs access to user data, it asks Google for a particular <strong>scope</strong> of access.</li>
+  <li>Google displays a <strong>consent screen</strong> to the user, asking them to authorize your application to request some of their data.</li>
+  <li>If the user approves, then Google gives your application a short-lived <strong>access token</strong>.</li>
+  <li>Your application requests user data, attaching the access token to the request.</li>
+  <li>If Google determines that your request and the token are valid, it returns the requested data.</li>
+</ol>
+
+<p>Some flows include additional steps, such as using <strong>refresh tokens</strong> to acquire new access tokens. For detailed information about flows for various types of applications, see Google's <a href="https://developers.google.com/identity/protocols/OAuth2?authuser=0">OAuth&nbsp;2.0 documentation</a>.</p>
+<p id="OAuth2Scope">Here's the OAuth&nbsp;2.0 scope information for the Blogger APIs:</p>
+<pre translate="no" dir="ltr">https://www.googleapis.com/auth/blogger</pre>
+<p>To request access using OAuth&nbsp;2.0, your application needs the scope information, as well as
+information that Google supplies when you register your application (such as the client ID and the
+client secret).</p>
+
+<p class="note"><strong>Tip:</strong> The Google APIs client libraries can handle some of the authorization process for you. They are available for a variety of programming languages; check the <a href="https://developers.google.com/apis/blogger/docs/3.0/libraries?authuser=0">page with libraries and samples</a> for more details.</p>
+
+<h4 id="APIKey" data-text="
+  Acquiring and using an API key
+" tabindex="0">
+  Acquiring and using an API key
+</h4>
+
+
+  <p>Requests to the Blogger APIs for public data must be accompanied by an identifier, which can
+  be an <a href="https://developers.google.com/console/help/generating-dev-keys?authuser=0">API key</a> or an
+  <a href="https://developers.google.com/accounts/docs/OAuth2?authuser=0">access token</a>.</p>
+
+
+
+  <a tabindex="0" class="devsite-api-getstarted-widget gc-analytics-event button button-primary"
+     data-category="Site-Wide Custom Events"
+     data-label="Get Henhouse Key"
+     data-api-id="blogger.googleapis.com">Get a Key</a>
+  <p>Or create one in the <a href="https://console.developers.google.com/apis/credentials?authuser=0">Credentials page</a>.</p>
+
+
+<p>After you have an API key, your application can append the query parameter
+<code translate="no" dir="ltr">key=<var>yourAPIKey</var></code> to all request URLs.</p>
+
+<p>The API key is safe for embedding in URLs; it doesn't need any encoding.</p>
+
+
+<h2 id="WorkingWithBlogs" data-text="Working with blogs" tabindex="0">Working with blogs</h2>
+
+<h3 id="RetrievingABlog" data-text="Retrieving a blog" tabindex="0">Retrieving a blog</h3>
+<p>You can retrieve information for a particular blog by sending an HTTP
+  <code translate="no" dir="ltr">GET</code> request to the blog's URI. The URI for a blog has the
+  following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>
+</pre>
+
+
+<h4 id="request" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>?key=<span class="apiparam">YOUR-API-KEY</span>
+</pre>
+
+<p>A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the blog data:</p>
+<div id="retrieving-a-blog">
+  <div id="retrieving-a-blog-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#blog",
+  "id": "2399953",
+  "name": "Blogger Buzz",
+  "description": "The Official Buzz from Blogger at Google",
+  "published": "2007-04-23T22:17:29.261Z",
+  "updated": "2011-08-02T06:01:15.941Z",
+  "url": "http://buzz.blogger.com/",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953",
+  "posts": {
+    "totalItems": 494,
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts"
+  },
+  "pages": {
+    "totalItems": 2,
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/pages"
+  },
+  "locale": {
+    "language": "en",
+    "country": "",
+    "variant": ""
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h3 href="https://developers.google.com/blogger/docs/3.0/RetrievingABlogByUrl?authuser=0" id="retrieving-a-blog-by-its-url" data-text="Retrieving a blog by its URL" tabindex="0">Retrieving a blog by its URL</h3>
+  <p>You can retrieve a blog using its URL by sending an HTTP <code translate="no" dir="ltr">GET</code>
+    request to the following URI with a <code translate="no" dir="ltr">url</code> parameter:</p>
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/byurl?url=<span class="apiparam">blog-url</span>
+</pre>
+
+  <h4 id="request_1" data-text="Request" tabindex="0">Request</h4>
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/byurl?url=<b>http://code.blogger.com/</b>
+</pre>
+
+<h4 id="response_1" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the full representation of the identified
+blog:</p>
+<div id="retrieve-users-blog-by-url-response">
+  <div id="retrieve-users-blog-by-url-response-json">
+<pre translate="no" dir="ltr">
+{
+ "kind": "blogger#blog",
+ "id": "3213900",
+ "name": "Blogger Developers Network",
+ "description": "The official Blogger Developers Network weblog.",
+ "published": "2007-02-09T10:13:10-08:00",
+ "updated": "2012-04-15T19:38:01-07:00",
+ "url": "http://code.blogger.com/",
+ "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900",
+ "posts": {
+  "totalItems": 55,
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900/posts"
+ },
+ "pages": {
+  "totalItems": 1,
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900/pages"
+ },
+ "locale": {
+  "language": "en",
+  "country": "US",
+  "variant": ""
+ }
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="RetrievingAUsersBlogs" data-text="Retrieving a user's blogs" tabindex="0">Retrieving a user's blogs</h3>
+<p>You can retrieve a list of a user's blogs by sending an HTTP <code translate="no" dir="ltr">GET</code> request
+to the blogs collection URI:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/users/<span class="apiparam">userId</span>/blogs
+</pre>
+
+
+<h4 id="request_2" data-text="Request" tabindex="0">Request</h4>
+<div id="retrieve-users-blog">
+  <div id="retrieve-users-blog-json">
+<pre translate="no" dir="ltr">
+GET https://www.googleapis.com/blogger/v3/users/self/blogs
+Authorization: <span class="apicomment">/* OAuth 2.0 token here */</span>
+</pre>
+  </div>
+</div>
+<p class="authnote"><strong>Note</strong>: The user must be authenticated to
+list their own blogs, so you must provide the <code translate="no" dir="ltr">Authorization</code> HTTP
+header with the <code translate="no" dir="ltr">GET</code> request.</p>
+
+<h4 id="response_2" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the full representation of the list of the user's
+blogs:</p>
+<div id="retrieve-users-blog-response">
+  <div id="retrieve-users-blog-response-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#blogList",
+  "items": [
+    {
+      "kind": "blogger#blog",
+      "id": "4967929378133675647",
+      "name": "Brett's Test Blawg",
+      "description": "",
+      "published": "2010-10-06T23:33:31.662Z",
+      "updated": "2011-08-08T06:50:02.005Z",
+      "url": "http://brettmorgan-test-blawg.blogspot.com/",
+      "selfLink": "https://www.googleapis.com/blogger/v3/blogs/4967929378133675647",
+      "posts": {
+        "totalItems": 13,
+        "selfLink": "https://www.googleapis.com/blogger/v3/blogs/4967929378133675647/posts"
+      },
+      "pages": {
+        "totalItems": 1,
+        "selfLink": "https://www.googleapis.com/blogger/v3/blogs/4967929378133675647/pages"
+      },
+      "locale": {
+        "language": "en",
+        "country": "",
+        "variant": ""
+      }
+    }
+  ]
+}
+</pre>
+  </div>
+</div>
+
+<h2 id="WorkingWithPosts" data-text="Working with posts" tabindex="0">Working with posts</h2>
+
+<h3 id="RetrievingPostsForABlog" data-text="Retrieving posts from a blog" tabindex="0">Retrieving posts from a blog</h3>
+<p>You can retrieve a list of posts from a given blog by sending a
+<code translate="no" dir="ltr">GET</code> request to the posts collection URI. The URI for a posts
+collection has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts
+</pre>
+
+
+<h4 id="request_3" data-text="Request" tabindex="0">Request</h4>
+<p>Here is an example:</p>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>/posts?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_3" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the list of posts:</p>
+<div id="retrieving-posts">
+  <div id="retrieving-posts-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#postList",
+  "nextPageToken": "CgkIChiAkceVjiYQ0b2SAQ",
+  "prevPageToken": "CgkIChDBwrK3mCYQ0b2SAQ",
+  "items": [
+    {
+      "kind": "blogger#post",
+      "id": "7706273476706534553",
+      "blog": {
+        "id": "2399953"
+      },
+      "published": "2011-08-01T19:58:00.000Z",
+      "updated": "2011-08-01T19:58:51.947Z",
+      "url": "http://buzz.blogger.com/2011/08/latest-updates-august-1st.html",
+      "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553",
+      "title": "Latest updates, August 1st",
+      "content": "<em>elided for readability</em>",
+      "author": {
+        "id": "401465483996",
+        "displayName": "Brett Wiltshire",
+        "url": "http://www.blogger.com/profile/01430672582309320414",
+        "image": {
+          "url": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+         }
+      },
+      "replies": {
+        "totalItems": "0",
+        "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553/comments"
+      }
+    },
+    {
+      "kind": "blogger#post",
+      "id": "6069922188027612413",
+      <em>elided for readability</em>
+    }
+  ]
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="RetrievingASpecificPost" data-text="Retrieving a specific post" tabindex="0">Retrieving a specific post</h3>
+<p>You can retrieve a specific post from a blog by sending a
+<code translate="no" dir="ltr">GET</code> request to the posts resource URI. The URI for a posts
+resource has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>
+</pre>
+
+
+<h4 id="request_4" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>/posts/<b>7706273476706534553</b>?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_4" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="retrieving-a-post">
+  <div id="retrieving-a-post-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#post",
+  "id": "7706273476706534553",
+  "blog": {
+    "id": "2399953"
+  },
+  "published": "2011-08-01T19:58:00.000Z",
+  "updated": "2011-08-01T19:58:51.947Z",
+  "url": "http://buzz.blogger.com/2011/08/latest-updates-august-1st.html",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553",
+  "title": "Latest updates, August 1st",
+  "content": "<em>elided for readability</em>",
+  "author": {
+    "id": "401465483996",
+    "displayName": "Brett Wiltshire",
+    "url": "http://www.blogger.com/profile/01430672582309320414",
+    "image": {
+      "url": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+    }
+  },
+  "replies": {
+    "totalItems": "0",
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553/comments"
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="SearchingForAPost" data-text="Searching for a post" tabindex="0">Searching for a post</h3>
+<p>You can search for posts from a blog by sending a <code translate="no" dir="ltr">GET</code> request to
+  the post search URI with the q search query parameter:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/search?q=<span class="apiparam">query terms</span>
+</pre>
+
+
+<h4 id="request_5" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">
+GET https://www.googleapis.com/blogger/v3/blogs/3213900/posts/search?q=<b>documentation</b>&amp;key=<span class="apiparam">YOUR-API-KEY</span>
+</pre>
+
+<p>A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_5" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="search-for-a-post">
+  <div id="searching-for-a-post-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#postList",
+  "nextPageToken": "CgkIChiAj86CpB8QzJTEAQ",
+  "prevPageToken": "CgkIChDBq5v24yYQzJTEAQ",
+  "items": [
+  {
+    "kind": "blogger#post",
+    "id": "1387873546480002228",
+    "blog": {
+      "id": "3213900"
+    },
+    "published": "2012-03-23T01:58:00-07:00",
+    "updated": "2012-03-23T01:58:12-07:00",
+    "url": "http://code.blogger.com/2012/03/blogger-documentation-has-moved-to.html",
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900/posts/1387873546480002228",
+    "title": "Blogger Documentation has moved to developers.google.com",
+    "content": "<i>content elided for readability</i>",
+    "author": {
+      "id": "16258312240222542576",
+      "displayName": "Brett Morgan",
+      "url": "http://www.blogger.com/profile/16258312240222542576",
+      "image": {
+        "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+      }
+    },
+    "replies": {
+      "totalItems": "0",
+      "selfLink": "https://www.googleapis.com/blogger/v3/blogs/3213900/posts/1387873546480002228/comments"
+    }
+  },
+  <i>...</i>
+  ]
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="AddingAPost" data-text="Adding a post" tabindex="0">Adding a post</h3>
+<p>You can add a post for a blog by sending a <code translate="no" dir="ltr">POST</code> request to
+  the post collection URI with a post JSON body:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/
+</pre>
+
+
+<h4 id="request_6" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">
+POST https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/
+Authorization: /* OAuth 2.0 token here */
+Content-Type: application/json
+
+{
+  "kind": "blogger#post",
+  "blog": {
+    "id": "8070105920543249955"
+  },
+  "title": "A new post",
+  "content": "With &lt;b&gt;exciting&lt;/b&gt; content..."
+}
+</pre>
+
+<p>You must be authenticated to create a post.</p>
+
+<h4 id="response_6" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="add-a-post">
+  <div id="add-a-post-json">
+<pre translate="no" dir="ltr">
+{
+ "kind": "blogger#post",
+ "id": "6819100329896798058",
+ "blog": {
+  "id": "8070105920543249955"
+ },
+ "published": "2012-05-20T20:08:00-07:00",
+ "updated": "2012-05-20T20:08:35-07:00",
+ "url": "http://brettmorgan-test2.blogspot.com/2012/05/new-post.html",
+ "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058",
+ "title": "A new post",
+ "content": "With &lt;b&gt;exciting&lt;/b&gt; content...",
+ "author": {
+  "id": "16258312240222542576",
+  "displayName": "Brett Morgan",
+  "url": "http://www.blogger.com/profile/16258312240222542576",
+  "image": {
+   "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+  }
+ },
+ "replies": {
+  "totalItems": "0",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058/comments"
+ }
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="DeletingAPost" data-text="Deleting a post" tabindex="0">Deleting a post</h3>
+<p>You can delete a post for a blog by sending a <code translate="no" dir="ltr">DELETE</code> request to
+  the post resource URI:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>
+</pre>
+
+
+<h4 id="request_7" data-text="Request" tabindex="0">Request</h4>
+<p>Here is an example:</p>
+
+<pre translate="no" dir="ltr">
+DELETE https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058
+Authorization: /* OAuth 2.0 token here */
+</pre>
+
+<p>You must be authenticated to delete a post.</p>
+
+<h4 id="response_7" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code.</p>
+
+<h3 id="RetrievingAPostByPath" data-text="Retrieving a post by its path" tabindex="0">Retrieving a post by its path</h3>
+<p>You can retrieve a post from a blog by sending a <code translate="no" dir="ltr">GET</code> request to
+  the posts bypath URI with a <code translate="no" dir="ltr">path</code> parameter. The URI for a
+  posts by path request has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/bypath?path=<span class="apiparam">post-path</span>
+</pre>
+
+
+<h4 id="request_8" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>/posts/bypath?path=<b>/2011/08/latest-updates-august-1st.html</b>&amp;key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_8" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="retrieving-a-post">
+  <div id="retrieving-a-post-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#post",
+  "id": "7706273476706534553",
+  "blog": {
+    "id": "2399953"
+  },
+  "published": "2011-08-01T19:58:00.000Z",
+  "updated": "2011-08-01T19:58:51.947Z",
+  "url": "http://buzz.blogger.com/2011/08/latest-updates-august-1st.html",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553",
+  "title": "Latest updates, August 1st",
+  "content": "<em>elided for readability</em>",
+  "author": {
+    "id": "401465483996",
+    "displayName": "Brett Wiltshire",
+    "url": "http://www.blogger.com/profile/01430672582309320414",
+    "image": {
+      "url": "http://4.bp.blogspot.com/_YA50adQ-7vQ/S1gfR_6ufpI/AAAAAAAAAAk/1ErJGgRWZDg/S45/brett.png"
+    }
+  },
+  "replies": {
+    "totalItems": "0",
+    "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/7706273476706534553/comments"
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="UpdatingAPost" data-text="Updating a post" tabindex="0">Updating a post</h3>
+<p>You can update a post for a blog by sending a <code translate="no" dir="ltr">PUT</code> request to
+  the post resource URI with a post JSON body:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>
+</pre>
+
+
+<h4 id="request_9" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">
+PUT https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/3445355871727114160
+Authorization: /* OAuth 2.0 token here */
+Content-Type: application/json
+
+{
+ "kind": "blogger#post",
+ "id": "3445355871727114160",
+ "blog": {
+  "id": "8070105920543249955"
+ },
+ "url": "http://brettmorgan-test2.blogspot.com/2012/05/new-post_20.html",
+ "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/3445355871727114160",
+ "title": "An updated post",
+ "content": "With really &lt;b&gt;exciting&lt;/b&gt; content..."
+}
+</pre>
+
+<p>You must be authenticated to update a post.</p>
+
+<h4 id="response_9" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="update-a-post">
+  <div id="update-a-post-json">
+<pre translate="no" dir="ltr">
+{
+ "kind": "blogger#post",
+ "id": "6819100329896798058",
+ "blog": {
+  "id": "8070105920543249955"
+ },
+ "published": "2012-05-20T20:08:00-07:00",
+ "updated": "2012-05-20T20:08:35-07:00",
+ "url": "http://brettmorgan-test2.blogspot.com/2012/05/new-post.html",
+ "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058",
+ "title": "An updated post",
+ "content": "With really &lt;b&gt;exciting&lt;/b&gt; content...",
+ "author": {
+  "id": "16258312240222542576",
+  "displayName": "Brett Morgan",
+  "url": "http://www.blogger.com/profile/16258312240222542576",
+  "image": {
+   "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+  }
+ },
+ "replies": {
+  "totalItems": "0",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058/comments"
+ }
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="PatchingAPost" data-text="Updating A post with patch semantics" tabindex="0">Updating A post with patch semantics</h3>
+<p>You can update a post with patch semantics by sending a <code translate="no" dir="ltr">PATCH</code>
+  request to the post resource URI with a post JSON body:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>
+</pre>
+
+
+<h4 id="request_10" data-text="Request" tabindex="0">Request</h4>
+<p>Here is an example:</p>
+
+<pre translate="no" dir="ltr">
+PATCH https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/3445355871727114160
+Authorization: /* OAuth 2.0 token here */
+Content-Type: application/json
+
+{
+ "content": "With absolutely &lt;b&gt;fabulous&lt;/b&gt; content..."
+}
+</pre>
+
+<p>You must be authenticated to update a post.</p>
+
+<h4 id="response_10" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the contents of the post:</p>
+<div id="patch-a-post">
+  <div id="patch-a-post-json">
+<pre translate="no" dir="ltr">
+{
+ "kind": "blogger#post",
+ "id": "6819100329896798058",
+ "blog": {
+  "id": "8070105920543249955"
+ },
+ "published": "2012-05-20T20:08:00-07:00",
+ "updated": "2012-05-20T20:08:35-07:00",
+ "url": "http://brettmorgan-test2.blogspot.com/2012/05/new-post.html",
+ "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058",
+ "title": "An updated post",
+ "content": "With absolutely &lt;b&gt;fabulous&lt;/b&gt; content...",
+ "author": {
+  "id": "16258312240222542576",
+  "displayName": "Brett Morgan",
+  "url": "http://www.blogger.com/profile/16258312240222542576",
+  "image": {
+   "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+  }
+ },
+ "replies": {
+  "totalItems": "0",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/6819100329896798058/comments"
+ }
+}
+</pre>
+  </div>
+</div>
+
+
+
+<h2 id="WorkingWithComments" data-text="Working with comments" tabindex="0">Working with comments</h2>
+
+<h3 id="RetrievingCommentsForAPost" data-text="Retrieving comments for a post" tabindex="0">Retrieving comments for a post</h3>
+<p>You can retrieve a list of comments for a post by sending a
+<code translate="no" dir="ltr">GET</code> request to the comments collection URI. The URI for a
+comments collection has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>/comments
+</pre>
+
+
+<h4 id="request_11" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>/posts/<b>6069922188027612413</b>/comments?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>"A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_11" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the list of comments:</p>
+<div id="retrieving-comments">
+  <div id="retrieving-comments-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#commentList",
+  "nextPageToken": "CgkIFBDwjvDXlyYQ0b2SARj9mZe9n8KsnlQ",
+  "prevPageToken": "CgkIFBisvMGRlyYQ0b2SARj9mZe9n8KsnlQ",
+  "items": [
+    {
+       "kind": "blogger#comment",
+       "id": "9200761938824362519",
+       "post": {
+         "id": "6069922188027612413"
+       },
+       "blog": {
+         "id": "2399953"
+       },
+       "published": "2011-07-28T19:19:57.740Z",
+       "updated": "2011-07-28T21:29:42.015Z",
+       "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/6069922188027612413/comments/9200761938824362519",
+       "content": "<em>elided</em>",
+       "author": {
+         "id": "530579030283",
+         "displayName": "<em>elided</em>",
+         "url": "<em>elided</em>",
+         "image": {
+           "url": "<em>elided</em>"
+         }
+       }
+    },
+    {
+      "kind": "blogger#comment",
+      "id": "400101178920857170",
+      <em>elided for readability</em>
+    }
+  ]
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="RetrievingASpecificComment" data-text="Retrieving a specific comment" tabindex="0">Retrieving a specific comment</h3>
+<p>You can retrieve a specific comment from a post by sending a
+<code translate="no" dir="ltr">GET</code> request to the comments resource URI. The URI for a
+comments resource has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/posts/<span class="apiparam">postId</span>/comments/<span class="apiparam">commentId</span>
+</pre>
+
+
+<h4 id="request_12" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>2399953</b>/posts/<b>6069922188027612413</b>/comments/<b>9200761938824362519</b>?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>"A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_12" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the comment data:</p>
+<div id="retrieving-a-comment">
+  <div id="retrieving-a-comment-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#comment",
+  "id": "9200761938824362519",
+  "post": {
+    "id": "6069922188027612413"
+  },
+  "blog": {
+    "id": "2399953"
+  },
+  "published": "2011-07-28T19:19:57.740Z",
+  "updated": "2011-07-28T21:29:42.015Z",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/2399953/posts/6069922188027612413/comments/9200761938824362519",
+  "content": "<em>elided</em>",
+  "author": {
+    "id": "530579030283",
+    "displayName": "<em>elided</em>",
+    "url": "<em>elided</em>",
+    "image": {
+      "url": "<em>elided</em>"
+    }
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h2 id="WorkingWithPages" data-text="Working with pages" tabindex="0">Working with pages</h2>
+
+<h3 id="RetrievingPagesForABlog" data-text="Retrieving pages for a blog" tabindex="0">Retrieving pages for a blog</h3>
+<p>You can retrieve a list of pages for a blog by sending a
+<code translate="no" dir="ltr">GET</code> request to the pages collection URI. The URI for a pages
+collection has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/pages
+</pre>
+
+
+<h4 id="request_13" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>4967929378133675647</b>/pages?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>"A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_13" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the list of pages:</p>
+<div id="retrieving-pages">
+  <div id="retrieving-pages-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#pageList",
+  "items": [
+    {
+      "kind": "blogger#page",
+      "id": "273541696466681878",
+      "blog": {
+        "id": "4967929378133675647"
+      },
+      "published": "2011-07-14T16:16:00.000Z",
+      "updated": "2011-07-14T16:16:23.602Z",
+      "url": "http://brettmorgan-test-blawg.blogspot.com/p/static-content.html",
+      "selfLink": "https://www.googleapis.com/blogger/v3/blogs/4967929378133675647/pages/273541696466681878",
+      "title": "Static Content",
+      "content": "<em>elided for readability</em>",
+      "author": {
+        "id": "901569848744",
+        "displayName": "brett",
+        "url": "http://www.blogger.com/profile/16258312240222542576",
+        "image": {
+          "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+        }
+      }
+    }
+  ]
+}
+</pre>
+  </div>
+</div>
+
+<h3 id="RetrievingASpecificPage" data-text="Retrieving a specific page" tabindex="0">Retrieving a specific page</h3>
+<p>You can retrieve a specific page from a blog by sending a
+<code translate="no" dir="ltr">GET</code> request to the pages resource URI. The URI for a pages
+Resource has the following format:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/blogs/<span class="apiparam">blogId</span>/pages/<span class="apiparam">pageId</span>
+</pre>
+
+
+<h4 id="request_14" data-text="Request" tabindex="0">Request</h4>
+
+<pre translate="no" dir="ltr">GET https://www.googleapis.com/blogger/v3/blogs/<b>4967929378133675647</b>/pages/<b>273541696466681878</b>?key=<span class="apiparam">YOUR-API-KEY</span></pre>
+
+<p>"A user does not need to be authenticated to retrieve a public blog. The
+  application does not need to include <code translate="no" dir="ltr">Authorization</code> HTTP header
+  for a public blog request; however, you do need to provide the API key.</p>
+<p>Blogger also has private blogs, which require authentication.</p>
+
+<h4 id="response_14" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and the page data:</p>
+<div id="retrieving-a-page">
+  <div id="retrieving-a-page-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#page",
+  "id": "273541696466681878",
+  "blog": {
+    "id": "4967929378133675647"
+  },
+  "published": "2011-07-14T16:16:00.000Z",
+  "updated": "2011-07-14T16:16:23.602Z",
+  "url": "http://brettmorgan-test-blawg.blogspot.com/p/static-content.html",
+  "selfLink": "https://www.googleapis.com/blogger/v3/blogs/4967929378133675647/pages/273541696466681878",
+  "title": "Static Content",
+  "content": "<em>elided for readability</em>",
+  "author": {
+    "id": "901569848744",
+    "displayName": "brett",
+    "url": "http://www.blogger.com/profile/16258312240222542576",
+    "image": {
+      "url": "https://resources.blogblog.com/img/b16-rounded.gif"
+    }
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h2 id="WorkingWithUsers" data-text="Working with users" tabindex="0">Working with users</h2>
+
+<h3 id="RetrievingAUser" data-text="Retrieving a user" tabindex="0">Retrieving a user</h3>
+<p>You can retrieve a user's information by sending an HTTP <code translate="no" dir="ltr">GET</code> request
+to the users resource URI:</p>
+
+<pre translate="no" dir="ltr">
+https://www.googleapis.com/blogger/v3/users/<span class="apiparam">userId</span>
+</pre>
+
+
+<h4 id="request_15" data-text="Request" tabindex="0">Request</h4>
+
+<div id="retrieving-a-user">
+  <div id="retrieving-a-user-json">
+<pre translate="no" dir="ltr">
+GET https://www.googleapis.com/blogger/v3/users/self
+Authorization: <span class="apicomment">/* OAuth 2.0 token here */</span>
+</pre>
+  </div>
+</div>
+<p class="authnote"><strong>Note</strong>: The user must be authenticated to
+list their own information, so you must provide the <code translate="no" dir="ltr">Authorization</code> HTTP
+header with the <code translate="no" dir="ltr">GET</code> request.</p>
+
+<h4 id="response_15" data-text="Response" tabindex="0">Response</h4>
+<p>If the request succeeds, the server responds with an HTTP
+<code translate="no" dir="ltr">200 OK</code> status code and a link to a list of the user's
+blogs:</p>
+<div id="retrieving-a-user-response">
+  <div id="retrieving-a-user-response-json">
+<pre translate="no" dir="ltr">
+{
+  "kind": "blogger#user",
+  "id": "901569848744",
+  "selfLink": "https://www.googleapis.com/blogger/v3/users/901569848744",
+  "blogs": {
+    "selfLink": "https://www.googleapis.com/blogger/v3/users/901569848744/blogs"
+  }
+}
+</pre>
+  </div>
+</div>
+
+<h2 id="st_params" data-text="Standard query parameters" tabindex="0">Standard query parameters</h2>
+<p>The following query parameters can be used with all methods and all resources in the Blogger APIs.</p>
+
+
+
+
+
+
+
+<p>
+
+
+
+
+
+
+
+
+
+
+
+<p>Query parameters that apply to all Blogger APIs operations are documented at
+  <a href="https://cloud.google.com/apis/docs/system-parameters?authuser=0">System Parameters</a>.
+</p></p>
+
+
+  
+          </div>
+
+    
+                      <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+    </devsite-page-rating>
+  
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies?authuser=0">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  <p>Last updated 2020-05-18.</p></devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="http://buzz.blogger.com/"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blogger Buzz">
+                Blogger Buzz
+      </a>
+      <div class="devsite-footer-promo-description">The Official Buzz from Blogger at Google</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/docs/3.0/libraries"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Client Libraries
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//productforums.google.com/forum/#!forum/blogger"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Help Forum
+                    </a>
+                  </li>
+                <li class="devsite-footer-linkbox-item">
+                    <a href="//code.blogger.com/"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 2)"            >
+                      Developer Blog
+                    </a>
+                  </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">More</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+                    <a href="/blogger/terms"
+             class="devsite-footer-linkbox-link gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                         data-label="Footer Link (index 1)"            >
+                      Terms of Service
+                    </a>
+                  </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/?authuser=0"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="https://developers.google.com/_static/images/lockup-developers.svg?authuser=0"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com?authuser=0"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com?authuser=0"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com?authuser=0"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="https://developers.google.com/products?authuser=0"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="https://developers.google.com/terms/site-terms?authuser=0"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link"
+         >
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy?authuser=0"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link"
+         >
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&utm_source=google-products&utm_team=googledevs&utm_campaign=201611-newsletter-launch&authuser=0"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link"
+         >
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+
+    <select aria-label="            Select your language preference."
+            class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Blogger", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+            <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v050cadc3f3cf927d4089880349cc4dea1a9dab3bc6036e7a65cc361fddd65555/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>

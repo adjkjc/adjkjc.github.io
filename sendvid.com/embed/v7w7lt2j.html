@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sendvid - Instant video upload</title>
+<meta name="description" content="Upload and share your videos instantly. Host video files for sharing on social networks and online communities, or store everything privately and securely.
+"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW"/>
+
+
+<link rel="shortcut icon" href="https://sendvid.com/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="https://sendvid.com/assets/apple-touch-icon-dae20db09b635822e00dce9e95179c2c.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://sendvid.com/assets/apple-touch-icon-57x57-dae20db09b635822e00dce9e95179c2c.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://sendvid.com/assets/apple-touch-icon-72x72-c4b09a77d057593282f49b3fa9bd391a.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://sendvid.com/assets/apple-touch-icon-76x76-7bfdd4b029b8bd06480ecad9410356a7.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://sendvid.com/assets/apple-touch-icon-114x114-a097d0a8fd18b2cfabeca5e277cd6d04.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://sendvid.com/assets/apple-touch-icon-120x120-2d26e3fa5fca3ff79406b47f84a9fdd1.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="https://sendvid.com/assets/apple-touch-icon-144x144-8dc551b3084b29518c6abb7f93256c7d.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://sendvid.com/assets/apple-touch-icon-152x152-26c21435edc004f9e220e20796386e21.png" />
+
+      <meta name="twitter:card" content="player"/>
+    <meta name="twitter:title" content="The Day the Music is Reborn #SecondComing #JesusChrist #Adam"/>
+    <meta name="twitter:player" content="https://sendvid.com/embed/v7w7lt2j"/>
+    <meta name="twitter:player:width" content="720"/>
+    <meta name="twitter:player:height" content="405"/>
+    <meta name="twitter:image" content="https://sendvid.comhttps://thumbs3.sendvid.com/0f/f6/v7w7lt2j.jpg"/>
+
+    <meta property="fb:app_id" content="283868891821069"/>
+
+    <meta property="og:site_name" content="Sendvid"/>
+    <meta property="og:url" content="https://sendvid.com/v7w7lt2j"/>
+    <meta property="og:title" content="The Day the Music is Reborn #SecondComing #JesusChrist #Adam"/>
+    <meta property="og:image" content="https://sendvid.comhttps://thumbs3.sendvid.com/0f/f6/v7w7lt2j.jpg"/>
+
+    <meta property="og:type" content="video"/>
+    <meta property="og:video" content="https://sendvid.com/v7w7lt2j.mp4"/>
+    <meta property="og:video:secure_url" content="https://sendvid.com/v7w7lt2j.mp4"/>
+    <meta property="og:video:type" content="video/mp4"/>
+    <meta property="og:video:width" content="1280"/>
+    <meta property="og:video:height" content="720"/>
+
+
+<link href="https://sendvid.com/assets/application-7c0cfd9a0967efead1c823b0cd09bb1b.css" media="screen" rel="stylesheet" />
+
+<script type="text/javascript">
+  var logged_in = false;
+  var env_production = true;
+  var fu_max_file_size = 1000;
+  var app_id_facebook = '283868891821069';
+  var app_id_google = '256990128078-177f7tnpq7u6touckn1phru6km77kbea.apps.googleusercontent.com';
+  var device = navigator.userAgent.toLowerCase();
+  var ios = device.match(/(iphone|ipod|ipad)/);
+  var iphone = device.match(/(iphone)/);
+  var chrome = device.match(/crios/);
+</script>
+
+
+<script src="https://sendvid.com/assets/preflight-6f76d03e855720c167da7b77c432ed64.js"></script>
+
+  <link href="https://sendvid.com/assets/player-9a0d756fd3b92059cc7e3204731b7796.css" media="screen" rel="stylesheet" />
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="sD9xo+ABxi9GXQBKvb4oPkI6so2TrIezRkedDSxADjc=" name="csrf-token" />
+
+
+</head>
+<body class="embeded">
+
+<script type="text/javascript" src="https://sendvid.com/site_ads.js"></script>
+<video id="video-js-video" class="video-js vjs-default-skin"
+       controls preload="none" width="auto" height="auto"
+       poster="https://thumbs3.sendvid.com/0f/f6/v7w7lt2j.jpg" style="width:100%; height:100%; left:0px; top:0px;" playsinline>
+
+  <!-- data-setup='{"example_option":true}' -->
+  <source src="https://videos3.sendvid.com/0f/f6/v7w7lt2j.mp4?validfrom=1590207202&validto=1590214402&rate=200k&burst=1000k&ip=178.79.165.171&hash=veDKWolAqBkMH60MZASSixoz%2Bcs%3D" type='video/mp4' id="video_source"/>
+  <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that
+    <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+
+<script type="text/javascript" src="https://cdn.embed.ly/player-0.0.10.min.js"></script>
+<script type="text/javascript">
+
+    function getTime() {
+        return new Date().getTime();
+    }
+
+    var poll_failed = 0;
+    var poll_url = "/api/v1/videos/v7w7lt2j/status.json";
+    var poll_start_time = getTime();
+    var poll_start_queue = null;
+    var video_source = "https://videos3.sendvid.com/0f/f6/v7w7lt2j.mp4?validfrom=1590207202&validto=1590214402&rate=200k&burst=1000k&ip=178.79.165.171&hash=veDKWolAqBkMH60MZASSixoz%2Bcs%3D";
+    var video_poster = "https://thumbs3.sendvid.com/0f/f6/v7w7lt2j.jpg";
+    var video_container_padding = "56.25%";
+    var video_poster_ready = false;
+
+
+    function initPlayer() {
+
+        var videojsoptions = {
+            "nativeControlsForTouch": false,
+            "preload": "none",
+            "plugins": {
+                "share": {
+                    "embedUrl": "//sendvid.com/embed/v7w7lt2j",
+                    "shareUrl": "https://sendvid.com/v7w7lt2j",
+                    "shareOverlayTitle": "sendvid",
+                    "reportUrl": "//sendvid.com/report?id=v7w7lt2j"
+                },
+                "VolumeRestore": {"key": "nil"},
+                "logobrand": {},
+                "thumbnailsSprite": {
+                    "image": "https://thumbs3.sendvid.com/0f/f6/v7w7lt2j-storyboard.jpg",
+                    "duration": 900.0,
+                    "interval": 45,
+                    "frameWidth": 200,
+                    "frameHeight": 100
+                }
+            }
+        };
+
+        video = videojs('video-js-video', videojsoptions).ready(function () {
+            var player = this;
+            var adapter = new playerjs.VideoJSAdapter(this);
+
+            player.on('ended', function () {
+
+            });
+
+            player.on('firstplay', function () {
+
+                $.ajax({
+                    type: "POST",
+                    url: "/api/v1/plays",
+                    data: {video: "v7w7lt2j"},
+                    dataType: "json"
+                });
+
+
+                ga('send', 'event', 'goal', 'sfw_view_embed');
+
+
+
+            });
+
+
+            adapter.ready();
+
+        });
+
+
+
+
+    }
+
+
+    $(document).ready(function (e) {
+        initPlayer();
+        (function () {
+            var Utils = {
+                setCookie: function (name, value, hours) {
+                    var expires = "";
+                    if (hours) {
+                        var date = new Date();
+                        date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+                        expires = "; expires=" + date.toUTCString();
+                    }
+                    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+                },
+                getCookie: function (name, _default) {
+                    var nameEQ = name + "=";
+                    var ca = document.cookie.split(';');
+                    for (var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) === ' ') {
+                            c = c.substring(1, c.length);
+                        }
+                        if (c.indexOf(nameEQ) === 0) {
+                            return c.substring(nameEQ.length, c.length);
+                        }
+                    }
+                    return _default;
+                }
+            };
+            var url = null;
+            var isMobile = false;
+            var type = 'sfw';
+            //url = "https://engine.spotscenered.info/link.engine?guid=6c60d12d-e338-4aa7-b25b-70cc39fab1d0&Hardlink=true&time=0";
+            url = "https://adserver.adreactor.com/servlet/view/window/url/zone?zid=23&pid=7899";
+            type = 'sfw';
+            var slug = "v7w7lt2j";
+            if (!Utils.getCookie('__adv_emb', false)) {
+                if(typeof __ads==='undefined') {
+                    var $el = $('<a href="https://sendvid.com/embed/'&#32;+&#32;url&#32;+&#32;'" target="_blank" style="display: block;position: fixed;top: 45px;width: 100%;left:0;height: 100%;z-index: 99999999;"><a>');
+                    $('#video-js-video').append($el);
+                    $el.click(function () {
+                        $(this).remove();
+                        Utils.setCookie('__adv_emb', 1, 4);
+                        ga('send', 'event', 'pop', 'abp_'+type);
+                    });
+                }else{
+                    var $el = $('<a href="javascript:void(0)" style="display: block;position: fixed;top: 45px;width: 100%;left:0;height: 100%;z-index: 99999999;"><a>');
+                    $('#video-js-video').append($el);
+                    $el.click(function () {
+                        $(this).remove();
+                        window.open(url,'_blank','width=1280,height=720,top=0,toolbar=no,status=no,menubar=no,location=yes,left=0');
+                        Utils.setCookie('__adv_emb', 1, 4);
+                        ga('send', 'event', 'pop', 'normal_'+type);
+                    });
+                }
+            }
+        })();
+    });
+
+</script>
+
+
+
+
+
+  <script src="https://sendvid.com/assets/zeroclipboard-5534ae3798279739b2e29b14f0eed44b.js"></script>
+  <script src="https://sendvid.com/assets/player-811fc0ce5008f42a721d9ac6b970fe7d.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  //ga('create', 'UA-56664377-1'); //, {'sampleRate': 5}
+  ga('create', 'UA-101605702-5');
+  ga('send', 'pageview');
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

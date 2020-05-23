@@ -1,0 +1,4 @@
+<p><b>&#272;&#7863;t gi&#7901; h&#7865;n </b></p>
+<p>B&#7841;n c&oacute; th&#7875; &#273;&#7863;t gi&#7901; cho th&ocirc;ng &#273;i&#7879;p c&#7911;a b&#7841;n, nh&#432; v&#7853;y n&oacute; s&#7869; kh&ocirc;ng &#273;&#432;&#7907;c g&#7917;i &#273;i tr&#432;&#7899;c th&#7901;i gian &#273;&atilde; &#273;&#7883;nh. N&#7871;u b&#7841;n kh&ocirc;ng &#273;&#7863;t gi&#7901; th&igrave; th&ocirc;ng &#273;i&#7879;p c&#7911;a b&#7841;n s&#7869; &#273;&#432;&#7907;c g&#7917;i ngay l&#7853;p t&#7913;c. </p>
+<p>L&#432;u &yacute;: Vi&#7879;c h&#7865;n gi&#7901; c&oacute; &#7843;nh h&#432;&#7903;ng t&#7899;i th&#7901;i gian g&#7917;i th&ocirc;ng &#273;i&#7879;p. &#272;i&#7873;u &#273;&oacute; c&oacute; ngh&#297;a l&agrave; th&ocirc;ng &#273;i&#7879;p s&#7869; kh&ocirc;ng t&#7899;i &#273;&#432;&#7907;c h&ograve;m th&#432; c&#7911;a h&#7897;i vi&ecirc;n v&agrave;o &#273;&uacute;ng th&#7901;i &#273;i&#7875;m &#273;&oacute;.</p>
+

@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>sudo - Wikipedia</title>
+<script>document.documentElement.className="client-js";RLCONF={"wgBreakFrames":!1,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"XsivnQpAMMUAAlaoyosAAAAI","wgCSPNonce":!1,"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":!1,"wgNamespaceNumber":0,"wgPageName":"Sudo","wgTitle":"Sudo","wgCurRevisionId":956218484,"wgRevisionId":956218484,"wgArticleId":1008028,"wgIsArticle":!0,"wgIsRedirect":!1,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Computer security software","System administration","Unix user management and support-related utilities","Software using the ISC license"],"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Sudo","wgRelevantArticleId":1008028,"wgIsProbablyEditable":!0,
+"wgRelevantPageIsProbablyEditable":!0,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgMediaViewerOnClick":!0,"wgMediaViewerEnabledByDefault":!0,"wgPopupsReferencePreviews":!1,"wgPopupsConflictsWithNavPopupGadget":!1,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":!0,"nearby":!0,"watchlist":!0,"tagline":!1},"wgWMESchemaEditAttemptStepOversample":!1,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgWikibaseItemId":"Q300883","wgCentralAuthMobileDomain":!1,"wgEditSubmitButtonLabelPublish":!0};RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.pygments":"ready","ext.cite.styles":"ready","jquery.makeCollapsible.styles":"ready","mediawiki.toc.styles":"ready","skins.vector.styles.legacy":"ready","wikibase.client.init":"ready",
+"ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.startup","skins.vector.js","mediawiki.page.ready","jquery.makeCollapsible","mediawiki.toc","ext.gadget.ReferenceTooltips","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.compactlinks","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.quicksurveys.init","ext.centralNotice.geoIP","ext.centralNotice.startUp"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.implement("user.options@1hzgi",function($,jQuery,require,module){/*@nomin*/mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+});});</script>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=ext.cite.styles%7Cext.pygments%2CwikimediaBadges%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cjquery.makeCollapsible.styles%7Cmediawiki.toc.styles%7Cskins.vector.styles.legacy%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="https://en.wikipedia.org/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.35.0-wmf.31"/>
+<meta name="referrer" content="origin"/>
+<meta name="referrer" content="origin-when-crossorigin"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/0/01/Sudo_on_Ubuntu.png"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit"/>
+<link rel="apple-touch-icon" href="https://en.wikipedia.org/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="https://en.wikipedia.org/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="https://en.wikipedia.org/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="https://en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html"/>
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="https://en.wikipedia.org/w/index.php?title=Special:RecentChanges&amp;feed=atom"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Sudo"/>
+<link rel="dns-prefetch" href="https://login.wikimedia.org/"/>
+<link rel="dns-prefetch" href="https://meta.wikimedia.org/" />
+<!--[if lt IE 9]><script src="/w/resources/lib/html5shiv/html5shiv.js"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Sudo rootpage-Sudo skin-vector action-view">
+<div id="mw-page-base" class="noprint"></div>
+<div id="mw-head-base" class="noprint"></div>
+<div id="content" class="mw-body" role="main">
+	<a id="top"></a>
+		<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div>
+	<div class="mw-indicators mw-body-content">
+</div>
+
+	<h1 id="firstHeading" class="firstHeading" lang="en">sudo</h1>
+	
+	<div id="bodyContent" class="mw-body-content">
+		<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+		<div id="contentSub"></div>
+		
+		
+		<div id="jump-to-nav"></div>
+		<a class="mw-jump-link" href="Sudo@D4E29BB50D9AD6CB.html#mw-head">Jump to navigation</a>
+		<a class="mw-jump-link" href="Sudo@D4E29BB50D9AD6CB.html#p-search">Jump to search</a>
+		<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><div role="note" class="hatnote navigation-not-searchable">"SUDO" redirects here. For the non-profit organization, see <a href="https://en.wikipedia.org/wiki/Sudan_Social_Development_Organization" title="Sudan Social Development Organization">Sudan Social Development Organization</a>.</div>
+<div role="note" class="hatnote navigation-not-searchable">Not to be confused with <a href="https://en.wikipedia.org/wiki/Pseudo" class="mw-redirect" title="Pseudo">Pseudo</a>.</div>
+<div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none">Command on Unix systems to temporarily assume root privileges</div>
+<p><span></span>
+</p>
+<table class="infobox vevent" style="width:22em"><caption class="summary">sudo</caption><tbody><tr><td colspan="2" style="text-align:center"><a href="https://en.wikipedia.org/wiki/File:Sudo_on_Ubuntu.png" class="image" title="The sudo command in a terminal"><img alt="The sudo command in a terminal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Sudo_on_Ubuntu.png/300px-Sudo_on_Ubuntu.png" decoding="async" width="300" height="155" srcset="https://upload.wikimedia.org/wikipedia/commons/0/01/Sudo_on_Ubuntu.png 1.5x" data-file-width="412" data-file-height="213" /></a><div>The <code class="mw-highlight mw-highlight-lang-text" id="" style="" dir="ltr">sudo</code> command in a terminal</div></td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_developer" class="mw-redirect" title="Software developer">Developer(s)</a></th><td>Todd C. Miller</td></tr><tr><th scope="row" style="white-space: nowrap;">Initial release</th><td>Around 1980<sup id="cite_ref-1" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-1">&#91;1&#93;</a></sup></td></tr><tr style="display: none;"><td colspan="2" style="text-align:center"></td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_release_life_cycle" title="Software release life cycle">Stable release</a></th><td><div style="margin:0px;">1.9.0
+   / May&#160;12, 2020<span class="noprint">&#59;&#32;9 days ago</span><span style="display:none">&#160;(<span class="bday dtstart published updated">2020-05-12</span>)</span><sup id="cite_ref-sudo-version_2-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-sudo-version-2">&#91;2&#93;</a></sup></div></td></tr><tr style="display:none"><td colspan="2">
+</td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Repository_(version_control)" title="Repository (version control)">Repository</a></th><td><div class="plainlist"><ul><li><span class="url"><a rel="nofollow" class="external text" href="https://www.sudo.ws/repos/sudo">www<wbr />.sudo<wbr />.ws<wbr />/repos<wbr />/sudo</a></span></li></ul>
+</div> <a href="https://www.wikidata.org/wiki/Q300883#P1324" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></td></tr><tr><th scope="row" style="white-space: nowrap;">Written in</th><td><a href="https://en.wikipedia.org/wiki/C_(programming_language)" title="C (programming language)">C</a></td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">Operating system</a></th><td><a href="https://en.wikipedia.org/wiki/Unix-like" title="Unix-like">Unix-like</a></td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_categories#Categorization_approaches" title="Software categories">Type</a></th><td>Privilege authorization</td></tr><tr><th scope="row" style="white-space: nowrap;"><a href="https://en.wikipedia.org/wiki/Software_license" title="Software license">License</a></th><td><a href="https://en.wikipedia.org/wiki/ISC_license" title="ISC license">ISC</a>-style<sup id="cite_ref-todmil7_3-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-todmil7-3">&#91;3&#93;</a></sup></td></tr><tr><th scope="row" style="white-space: nowrap;">Website</th><td><span class="url"><a rel="nofollow" class="external text" href="https://www.sudo.ws/">www<wbr />.sudo<wbr />.ws</a></span> <a href="https://www.wikidata.org/wiki/Q300883#P856" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></td></tr></tbody></table>
+<p><b>sudo</b> (<span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt"><a href="../../bit.ly/2gUZfdV.html" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="&#39;s&#39; in &#39;sigh&#39;">s</span><span title="/uː/: &#39;oo&#39; in &#39;goose&#39;">uː</span><span title="&#39;d&#39; in &#39;dye&#39;">d</span><span title="/uː/: &#39;oo&#39; in &#39;goose&#39;">uː</span></span>/</a></span></span><sup id="cite_ref-todmil8_4-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-todmil8-4">&#91;4&#93;</a></sup> or <span class="rt-commentedText nowrap"><span class="IPA nopopups noexcerpt"><a href="../../bit.ly/2gUZfdV.html" title="Help:IPA/English">/<span style="border-bottom:1px dotted"><span title="/ˈ/: primary stress follows">ˈ</span><span title="&#39;s&#39; in &#39;sigh&#39;">s</span><span title="/uː/: &#39;oo&#39; in &#39;goose&#39;">uː</span><span title="&#39;d&#39; in &#39;dye&#39;">d</span><span title="/oʊ/: &#39;o&#39; in &#39;code&#39;">oʊ</span></span>/</a></span></span><sup id="cite_ref-todmil8_4-1" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-todmil8-4">&#91;4&#93;</a></sup><sup id="cite_ref-5" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-5">&#91;5&#93;</a></sup>) is a <a href="https://en.wikipedia.org/wiki/Computer_program" title="Computer program">program</a> for <a href="https://en.wikipedia.org/wiki/Unix-like" title="Unix-like">Unix-like</a> computer <a href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system">operating systems</a> that allows users to run programs with the security privileges of another user, by default the <a href="https://en.wikipedia.org/wiki/Superuser" title="Superuser">superuser</a>.<sup id="cite_ref-nyt080526_6-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-nyt080526-6">&#91;6&#93;</a></sup> It originally stood for "superuser do"<sup id="cite_ref-7" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-7">&#91;7&#93;</a></sup> as the older versions of <code>sudo</code> were designed to run commands only as the superuser. However, the later versions added support for running commands not only as the superuser but also as other (restricted) users, and thus it is also commonly expanded as "substitute user do".<sup id="cite_ref-8" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-8">&#91;8&#93;</a></sup><sup id="cite_ref-9" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-9">&#91;9&#93;</a></sup> Although the latter case reflects its current functionality more accurately, <code>sudo</code> is still often called "superuser do" since it is so often used for administrative tasks.
+</p><p>Unlike the similar command <i><a href="https://en.wikipedia.org/wiki/Su_(Unix)" title="Su (Unix)">su</a></i>, users must, by default, supply their own <a href="https://en.wikipedia.org/wiki/Password" title="Password">password</a> for authentication, rather than the password of the target user. After authentication, and if the <a href="https://en.wikipedia.org/wiki/Configuration_file" title="Configuration file">configuration file</a>, which is typically located at <code>/etc/sudoers</code>, permits the user access, the system invokes the requested command. The configuration file offers detailed access permissions, including enabling commands only from the invoking terminal; requiring a password per user or group; requiring re-entry of a password every time or never requiring a password at all for a particular command line. It can also be configured to permit passing arguments or multiple commands.
+</p>
+<div id="toc" class="toc" role="navigation" aria-labelledby="mw-toc-heading"><input type="checkbox" role="button" id="toctogglecheckbox" class="toctogglecheckbox" style="display:none" /><div class="toctitle" lang="en" dir="ltr"><h2 id="mw-toc-heading">Contents</h2><span class="toctogglespan"><label class="toctogglelabel" for="toctogglecheckbox"></label></span></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="Sudo@D4E29BB50D9AD6CB.html#History"><span class="tocnumber">1</span> <span class="toctext">History</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="Sudo@D4E29BB50D9AD6CB.html#Design"><span class="tocnumber">2</span> <span class="toctext">Design</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="Sudo@D4E29BB50D9AD6CB.html#Configuration"><span class="tocnumber">3</span> <span class="toctext">Configuration</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="Sudo@D4E29BB50D9AD6CB.html#Impact"><span class="tocnumber">4</span> <span class="toctext">Impact</span></a></li>
+<li class="toclevel-1 tocsection-5"><a href="Sudo@D4E29BB50D9AD6CB.html#RBAC"><span class="tocnumber">5</span> <span class="toctext">RBAC</span></a></li>
+<li class="toclevel-1 tocsection-6"><a href="Sudo@D4E29BB50D9AD6CB.html#Tools_and_similar_programs"><span class="tocnumber">6</span> <span class="toctext">Tools and similar programs</span></a></li>
+<li class="toclevel-1 tocsection-7"><a href="Sudo@D4E29BB50D9AD6CB.html#See_also"><span class="tocnumber">7</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-8"><a href="Sudo@D4E29BB50D9AD6CB.html#References"><span class="tocnumber">8</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-9"><a href="Sudo@D4E29BB50D9AD6CB.html#External_links"><span class="tocnumber">9</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="History">History</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=1" title="Edit section: History">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Robert Coggeshall and Cliff Spencer wrote the original subsystem around 1980 at the Department of Computer Science at <a href="https://en.wikipedia.org/wiki/University_at_Buffalo,_The_State_University_of_New_York" class="mw-redirect" title="University at Buffalo, The State University of New York">SUNY/Buffalo</a>.<sup id="cite_ref-grati9_10-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-grati9-10">&#91;10&#93;</a></sup> Robert Coggeshall brought sudo with him to the <a href="https://en.wikipedia.org/wiki/University_of_Colorado_Boulder" title="University of Colorado Boulder">University of Colorado Boulder</a>. Between 1986 and 1993, the code and features were substantially modified by the IT staff of the <a href="https://en.wikipedia.org/wiki/University_of_Colorado_Boulder_Computer_Science_Department" title="University of Colorado Boulder Computer Science Department">University of Colorado Boulder Computer Science Department</a> and the College of Engineering and Applied Science, including Todd C. Miller.<sup id="cite_ref-grati9_10-1" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-grati9-10">&#91;10&#93;</a></sup> The current version has been publicly maintained by <a href="https://en.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> developer Todd C. Miller since 1994,<sup id="cite_ref-grati9_10-2" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-grati9-10">&#91;10&#93;</a></sup> and has been distributed under an <a href="https://en.wikipedia.org/wiki/ISC_license" title="ISC license">ISC-style</a> license since 1999.<sup id="cite_ref-grati9_10-3" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-grati9-10">&#91;10&#93;</a></sup>
+</p><p>In November 2009 Thomas Claburn, in response to concerns that <a href="Microsoft.html" title="Microsoft">Microsoft</a> had patented sudo,<sup id="cite_ref-maxi10_11-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-maxi10-11">&#91;11&#93;</a></sup> characterized such suspicions as overblown.<sup id="cite_ref-dark11_12-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-dark11-12">&#91;12&#93;</a></sup> The <a href="https://en.wikipedia.org/wiki/Claim_(patent)" class="mw-redirect" title="Claim (patent)">claims</a> were narrowly framed to a particular <a href="https://en.wikipedia.org/wiki/GUI" class="mw-redirect" title="GUI">GUI</a>, rather than to the sudo concept.<sup id="cite_ref-spi091112_13-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-spi091112-13">&#91;13&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Design">Design</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=2" title="Edit section: Design">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Unlike the command <i>su</i>, users supply their personal password to sudo if necessary. After authentication, and if the configuration file permits the user access, the system invokes the requested command. <i>sudo</i> retains the user's invocation rights through a grace period (5 minutes) per <a href="https://en.wikipedia.org/wiki/Pseudo_terminal" class="mw-redirect" title="Pseudo terminal">pseudo terminal</a> by default, allowing the user to execute several successive commands as the requested user without having to provide a password again.
+</p><p>sudo may be configured to log each command run. When a user attempts to invoke sudo without being listed in the configuration file, an exception indication is presented to the user indicating that the attempt has been recorded. The root user will be alerted via mail and an entry is recorded in the system.
+</p>
+<h2><span class="mw-headline" id="Configuration">Configuration</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=3" title="Edit section: Configuration">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>The file /etc/sudoers contains a list of users or user groups with permission to execute a subset of commands while having the privileges of the <a href="https://en.wikipedia.org/wiki/Root_user" class="mw-redirect" title="Root user">root user</a> or another specified user. The program may be configured to require a password.<sup id="cite_ref-grati6_14-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-grati6-14">&#91;14&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Impact">Impact</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=4" title="Edit section: Impact">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In some system distributions, sudo has largely supplanted the default use of a distinct superuser login for administrative tasks, most notably in some <a href="https://en.wikipedia.org/wiki/Linux_distribution" title="Linux distribution">Linux distributions</a> as well as Apple's <a href="https://en.wikipedia.org/wiki/MacOS" title="MacOS">macOS</a>.<sup id="cite_ref-ubunt5_15-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-ubunt5-15">&#91;15&#93;</a></sup><sup id="cite_ref-macdv4_16-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-macdv4-16">&#91;16&#93;</a></sup> This allows for more secure logging of admin commands and prevents some exploits.
+</p>
+<h2><span class="mw-headline" id="RBAC">RBAC</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=5" title="Edit section: RBAC">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div role="note" class="hatnote navigation-not-searchable">Main article: <a href="https://en.wikipedia.org/wiki/Role-based_access_control" title="Role-based access control">Role-based access control</a></div>
+<p>In association with <a href="https://en.wikipedia.org/wiki/SELinux" class="mw-redirect" title="SELinux">SELinux</a>, sudo can be used to transition between roles in <a href="https://en.wikipedia.org/wiki/Role-based_access_control" title="Role-based access control">role-based access control</a> (RBAC).<sup id="cite_ref-17" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-17">&#91;17&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="Tools_and_similar_programs">Tools and similar programs</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=6" title="Edit section: Tools and similar programs">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><i>visudo</i> is a command-line utility that allows editing the sudo configuration file in a fail-safe manner. It prevents multiple simultaneous edits with <a href="https://en.wikipedia.org/wiki/File_locking" title="File locking">locks</a> and performs <a href="https://en.wikipedia.org/wiki/Sanity_testing" class="mw-redirect" title="Sanity testing">sanity and syntax checks</a>.
+</p><p>The program <a href="https://en.wikipedia.org/wiki/Runas" title="Runas">runas</a> provides similar functionality in <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a>, but it cannot pass current directories, environment variables or long command lines to the child. And while it supports running the child as another user, it does not support simple elevation. A true <i>su</i> and <i>sudo</i> for Windows that can pass all of that state information and start the child either elevated or as another user (or both) is included with <a href="https://en.wikipedia.org/wiki/Hamilton_C_shell" title="Hamilton C shell">Hamilton C shell</a>.<sup id="cite_ref-18" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-18">&#91;18&#93;</a></sup><sup id="cite_ref-19" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-19">&#91;19&#93;</a></sup>
+</p><p><a href="https://en.wikipedia.org/wiki/Graphical_user_interface" title="Graphical user interface">Graphical user interfaces</a> exist for sudo – notably <i>gksudo</i> – but are deprecated in <a href="https://en.wikipedia.org/wiki/Debian" title="Debian">Debian</a> and no longer included in <a href="https://en.wikipedia.org/wiki/Ubuntu" title="Ubuntu">Ubuntu</a>.<sup id="cite_ref-20" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-20">&#91;20&#93;</a></sup><sup id="cite_ref-21" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-21">&#91;21&#93;</a></sup> Other user interfaces are not directly built on sudo, but provide similar temporary privilege elevation for administrative purposes, such as <a href="https://en.wikipedia.org/wiki/User_Account_Control" title="User Account Control">User Account Control</a> in <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" title="Microsoft Windows">Microsoft Windows</a> and <a href="https://en.wikipedia.org/wiki/Mac_OS_X" class="mw-redirect" title="Mac OS X">Mac OS X</a> Authorization Services.<sup id="cite_ref-apple2_22-0" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-apple2-22">&#91;22&#93;</a></sup>
+</p><p><i>doas</i>,<sup id="cite_ref-23" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-23">&#91;23&#93;</a></sup> available since <a href="https://en.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> 5.8 (October 2015), has been written in order to replace <i>sudo</i> in the <a href="https://en.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a> base system, with the latter still being made available as a <a href="https://en.wikipedia.org/wiki/Ports_collection#OpenBSD_ports" title="Ports collection">port</a>.<sup id="cite_ref-24" class="reference"><a href="Sudo@D4E29BB50D9AD6CB.html#cite_note-24">&#91;24&#93;</a></sup>
+</p>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=7" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<style data-mw-deduplicate="TemplateStyles:r936637989">.mw-parser-output .portal{border:solid #aaa 1px;padding:0}.mw-parser-output .portal.tleft{margin:0.5em 1em 0.5em 0}.mw-parser-output .portal.tright{margin:0.5em 0 0.5em 1em}.mw-parser-output .portal>ul{display:table;box-sizing:border-box;padding:0.1em;max-width:175px;background:#f9f9f9;font-size:85%;line-height:110%;font-style:italic;font-weight:bold}.mw-parser-output .portal>ul>li{display:table-row}.mw-parser-output .portal>ul>li>span:first-child{display:table-cell;padding:0.2em;vertical-align:middle;text-align:center}.mw-parser-output .portal>ul>li>span:last-child{display:table-cell;padding:0.2em 0.2em 0.2em 0.3em;vertical-align:middle}</style><div role="navigation" aria-label="Portals" class="noprint portal plainlist tright">
+<ul>
+<li><span><img alt="" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/28px-Free_and_open-source_software_logo_%282009%29.svg.png" decoding="async" width="28" height="28" class="noviewer" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/42px-Free_and_open-source_software_logo_%282009%29.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/56px-Free_and_open-source_software_logo_%282009%29.svg.png 2x" data-file-width="512" data-file-height="512" /></span><span><a href="https://en.wikipedia.org/wiki/Portal:Free_and_open-source_software" title="Portal:Free and open-source software">Free and open-source software portal</a></span></li></ul></div>
+<ul><li><a href="https://en.wikipedia.org/wiki/Chroot" title="Chroot">chroot</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comparison_of_privilege_authorization_features" title="Comparison of privilege authorization features">Comparison of privilege authorization features</a></li></ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=8" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist columns references-column-width" style="-moz-column-width: 30em; -webkit-column-width: 30em; column-width: 30em; list-style-type: decimal;">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-1">^</a></b></span> <span class="reference-text"><cite id="CITEREFMiller" class="citation web">Miller, Todd C. <a rel="nofollow" class="external text" href="https://www.sudo.ws/history.html">"A Brief History of Sudo"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">15 November</span> 2018</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Brief+History+of+Sudo&amp;rft.aulast=Miller&amp;rft.aufirst=Todd+C.&amp;rft_id=https%3A%2F%2Fwww.sudo.ws%2Fhistory.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><style data-mw-deduplicate="TemplateStyles:r951705291">.mw-parser-output cite.citation{font-style:inherit}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .id-lock-free a,.mw-parser-output .citation .cs1-lock-free a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Lock-green.svg/9px-Lock-green.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-limited a,.mw-parser-output .id-lock-registration a,.mw-parser-output .citation .cs1-lock-limited a,.mw-parser-output .citation .cs1-lock-registration a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Lock-gray-alt-2.svg/9px-Lock-gray-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .id-lock-subscription a,.mw-parser-output .citation .cs1-lock-subscription a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lock-red-alt-2.svg/9px-Lock-red-alt-2.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg");background-repeat:no-repeat;background-size:9px;background-position:right .1em center}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration{color:#555}.mw-parser-output .cs1-subscription span,.mw-parser-output .cs1-registration span{border-bottom:1px dotted;cursor:help}.mw-parser-output .cs1-ws-icon a{background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/12px-Wikisource-logo.svg.png");background-image:linear-gradient(transparent,transparent),url("https://upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg");background-repeat:no-repeat;background-size:12px;background-position:right .1em center}.mw-parser-output code.cs1-code{color:inherit;background:inherit;border:inherit;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;font-size:100%}.mw-parser-output .cs1-visible-error{font-size:100%}.mw-parser-output .cs1-maint{display:none;color:#33aa33;margin-left:0.3em}.mw-parser-output .cs1-subscription,.mw-parser-output .cs1-registration,.mw-parser-output .cs1-format{font-size:95%}.mw-parser-output .cs1-kern-left,.mw-parser-output .cs1-kern-wl-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right,.mw-parser-output .cs1-kern-wl-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}</style></span>
+</li>
+<li id="cite_note-sudo-version-2"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-sudo-version_2-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://www.sudo.ws/news.html">"Sudo News"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">12 May</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Sudo+News&amp;rft_id=https%3A%2F%2Fwww.sudo.ws%2Fnews.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-todmil7-3"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-todmil7_3-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFTodd_C._Miller2011" class="citation web">Todd C. Miller (2011-06-17). <a rel="nofollow" class="external text" href="https://www.sudo.ws/sudo/license.html">"Sudo License"</a>. sudo.ws<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Sudo+License&amp;rft.pub=sudo.ws&amp;rft.date=2011-06-17&amp;rft.au=Todd+C.+Miller&amp;rft_id=http%3A%2F%2Fwww.sudo.ws%2Fsudo%2Flicense.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-todmil8-4"><span class="mw-cite-backlink">^ <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-todmil8_4-0"><sup><i><b>a</b></i></sup></a> <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-todmil8_4-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFMiller,_Todd_C" class="citation web">Miller, Todd C. <a rel="nofollow" class="external text" href="https://sudo.ws/sudo/troubleshooting.html">"Troubleshooting tips and FAQ for Sudo"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2009-11-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Troubleshooting+tips+and+FAQ+for+Sudo&amp;rft.au=Miller%2C+Todd+C&amp;rft_id=http%3A%2F%2Fsudo.ws%2Fsudo%2Ftroubleshooting.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-5"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-5">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://arstechnica.com/civis/viewtopic.php?t=120828">"How do YOU pronounce "sudo"?"</a>. Ars Technica.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=How+do+YOU+pronounce+%22sudo%22%3F&amp;rft.pub=Ars+Technica&amp;rft_id=https%3A%2F%2Farstechnica.com%2Fcivis%2Fviewtopic.php%3Ft%3D120828&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-nyt080526-6"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-nyt080526_6-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFCohen2008" class="citation news">Cohen, Noam (May 26, 2008). <a rel="nofollow" class="external text" href="https://www.nytimes.com/2008/05/26/business/media/26link.html">"This Is Funny Only if You Know Unix"</a>. <i><a href="https://en.wikipedia.org/wiki/The_New_York_Times" title="The New York Times">The New York Times</a></i><span class="reference-accessdate">. Retrieved <span class="nowrap">April 9,</span> 2012</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=The+New+York+Times&amp;rft.atitle=This+Is+Funny+Only+if+You+Know+Unix&amp;rft.date=2008-05-26&amp;rft.aulast=Cohen&amp;rft.aufirst=Noam&amp;rft_id=https%3A%2F%2Fwww.nytimes.com%2F2008%2F05%2F26%2Fbusiness%2Fmedia%2F26link.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-7"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-7">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="https://pthree.org/2009/12/31/the-meaning-of-su/">https://pthree.org/2009/12/31/the-meaning-of-su/</a></span>
+</li>
+<li id="cite_note-8"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-8">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://wiki.archlinux.org/index.php/Sudo">"Sudo - ArchWiki"</a> <span class="cs1-format">(<a href="https://en.wikipedia.org/wiki/MediaWiki" title="MediaWiki">MediaWiki</a>)</span>. <i>wiki.archlinux.org</i>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=wiki.archlinux.org&amp;rft.atitle=Sudo+-+ArchWiki&amp;rft_id=https%3A%2F%2Fwiki.archlinux.org%2Findex.php%2FSudo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-9"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-9">^</a></b></span> <span class="reference-text">Haeder, A.; Schneiter, S. A..; Pessanha, B. G.; Stanger, J. <i>LPI Linux Certification in a Nutshell</i>. O'Reilly Media, 2010. p. 409. <link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/><a href="https://en.wikipedia.org/wiki/ISBN_(identifier)" class="mw-redirect" title="ISBN (identifier)">ISBN</a>&#160;<a href="https://en.wikipedia.org/wiki/Special:BookSources/978-0596804879" title="Special:BookSources/978-0596804879">978-0596804879</a>.</span>
+</li>
+<li id="cite_note-grati9-10"><span class="mw-cite-backlink">^ <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-grati9_10-0"><sup><i><b>a</b></i></sup></a> <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-grati9_10-1"><sup><i><b>b</b></i></sup></a> <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-grati9_10-2"><sup><i><b>c</b></i></sup></a> <a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-grati9_10-3"><sup><i><b>d</b></i></sup></a></span> <span class="reference-text"><cite id="CITEREFMiller,_Todd_C" class="citation web">Miller, Todd C. <a rel="nofollow" class="external text" href="http://www.gratisoft.us/sudo/history.html">"A Brief History of Sudo"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2007-03-05</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Brief+History+of+Sudo&amp;rft.au=Miller%2C+Todd+C&amp;rft_id=http%3A%2F%2Fwww.gratisoft.us%2Fsudo%2Fhistory.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-maxi10-11"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-maxi10_11-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFLilly" class="citation web">Lilly, Paul. <a rel="nofollow" class="external text" href="http://www.maximumpc.com/article/news/microsoft_has_patented_sudo_yes_command">"Microsoft has Patented "sudo." Yes, the Command"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2009-11-13</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Microsoft+has+Patented+%22sudo.%22+Yes%2C+the+Command&amp;rft.aulast=Lilly&amp;rft.aufirst=Paul&amp;rft_id=http%3A%2F%2Fwww.maximumpc.com%2Farticle%2Fnews%2Fmicrosoft_has_patented_sudo_yes_command&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-dark11-12"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-dark11_12-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFThomas2009" class="citation web">Thomas, Claburn (2009-11-16). <a rel="nofollow" class="external text" href="http://www.darkreading.com/security/security-management/221800112/index.html">"Does New Microsoft Patent Infringe On Unix Program Sudo? Some in the open source community suspicious of Microsoft's intent"</a>. <i>Dark Reading</i><span class="reference-accessdate">. Retrieved <span class="nowrap">2010-11-29</span></span>. <q>A patent granted to Microsoft (NSDQ: MSFT) has stirred up worry that world's largest software company wants to claim Unix's "sudo" as its own. [...] In short, suspicions about this patent are overblown.</q></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Dark+Reading&amp;rft.atitle=Does+New+Microsoft+Patent+Infringe+On+Unix+Program+Sudo%3F+Some+in+the+open+source+community+suspicious+of+Microsoft%27s+intent&amp;rft.date=2009-11-16&amp;rft.aulast=Thomas&amp;rft.aufirst=Claburn&amp;rft_id=http%3A%2F%2Fwww.darkreading.com%2Fsecurity%2Fsecurity-management%2F221800112%2Findex.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-spi091112-13"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-spi091112_13-0">^</a></b></span> <span class="reference-text"><cite id="CITEREFEaton2009" class="citation news">Eaton, Nick (November 12, 2009). <a rel="nofollow" class="external text" href="http://blog.seattlepi.com/microsoft/2009/11/12/did-microsoft-just-sneakily-patent-an-open-source-tool/">"Did Microsoft just sneakily patent an open-source tool?"</a>. seattlepi.com<span class="reference-accessdate">. Retrieved <span class="nowrap">April 24,</span> 2011</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.atitle=Did+Microsoft+just+sneakily+patent+an+open-source+tool%3F&amp;rft.date=2009-11-12&amp;rft.aulast=Eaton&amp;rft.aufirst=Nick&amp;rft_id=http%3A%2F%2Fblog.seattlepi.com%2Fmicrosoft%2F2009%2F11%2F12%2Fdid-microsoft-just-sneakily-patent-an-open-source-tool%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-grati6-14"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-grati6_14-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.gratisoft.us/sudo/man/sudo.html">"Manpage for sudo"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2007-11-04</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Manpage+for+sudo&amp;rft_id=http%3A%2F%2Fwww.gratisoft.us%2Fsudo%2Fman%2Fsudo.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-ubunt5-15"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-ubunt5_15-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/RootSudo">"RootSudo"</a>. <i>Community Ubuntu Documentation</i>. help.ubuntu.com. 2011-11-08<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=Community+Ubuntu+Documentation&amp;rft.atitle=RootSudo&amp;rft.date=2011-11-08&amp;rft_id=https%3A%2F%2Fhelp.ubuntu.com%2Fcommunity%2FRootSudo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-macdv4-16"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-macdv4_16-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://www.macdevcenter.com/pub/a/mac/2002/10/22/macforunix.html">"Top Ten Mac OS X Tips for Unix Geeks"</a>. MacDevCenter.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Top+Ten+Mac+OS+X+Tips+for+Unix+Geeks&amp;rft.pub=MacDevCenter.com&amp;rft_id=http%3A%2F%2Fwww.macdevcenter.com%2Fpub%2Fa%2Fmac%2F2002%2F10%2F22%2Fmacforunix.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-17"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-17">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://selinux-mac.blogspot.com.au/2009/06/selinux-lockdown-part-five-selinux-rbac.html">"SELinux Lockdown Part Five: SELinux RBAC"</a><span class="reference-accessdate">. Retrieved <span class="nowrap">2012-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=SELinux+Lockdown+Part+Five%3A+SELinux+RBAC&amp;rft_id=http%3A%2F%2Fselinux-mac.blogspot.com.au%2F2009%2F06%2Fselinux-lockdown-part-five-selinux-rbac.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-18"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-18">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://hamiltonlabs.com/UserGuide/Utilities/su.htm">"su"</a>. Hamilton Laboratories<span class="reference-accessdate">. Retrieved <span class="nowrap">August 17,</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=su&amp;rft.pub=Hamilton+Laboratories&amp;rft_id=http%3A%2F%2Fhamiltonlabs.com%2FUserGuide%2FUtilities%2Fsu.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-19"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-19">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://hamiltonlabs.com/UserGuide/52-PredefinedAliases.htm#sudo">"Predefined aliases: sudo"</a>. Hamilton Laboratories<span class="reference-accessdate">. Retrieved <span class="nowrap">August 17,</span> 2015</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Predefined+aliases%3A+sudo&amp;rft.pub=Hamilton+Laboratories&amp;rft_id=http%3A%2F%2Fhamiltonlabs.com%2FUserGuide%2F52-PredefinedAliases.htm%23sudo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-20"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-20">^</a></b></span> <span class="reference-text"><cite id="CITEREFBicha2017" class="citation web">Bicha, Jeremy (December 30, 2017). <a rel="nofollow" class="external text" href="https://bugs.launchpad.net/ubuntu/+source/umit/+bug/1740618">"Remove gksu from Ubuntu"</a>. <a href="https://en.wikipedia.org/wiki/Canonical_(company)" title="Canonical (company)">Canonical</a>, which owns <a href="https://en.wikipedia.org/wiki/Launchpad_(website)" title="Launchpad (website)">Launchpad</a><span class="reference-accessdate">. Retrieved <span class="nowrap">January 10,</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Remove+gksu+from+Ubuntu&amp;rft.pub=Canonical%2C+which+owns+Launchpad&amp;rft.date=2017-12-30&amp;rft.aulast=Bicha&amp;rft.aufirst=Jeremy&amp;rft_id=https%3A%2F%2Fbugs.launchpad.net%2Fubuntu%2F%2Bsource%2Fumit%2F%2Bbug%2F1740618&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-21"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-21">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://packages.ubuntu.com/bionic/allpackages">"Software Packages in "bionic<span class="cs1-kern-right">"</span>"</a>. <a href="https://en.wikipedia.org/wiki/Canonical_(company)" title="Canonical (company)">Canonical</a><span class="reference-accessdate">. Retrieved <span class="nowrap">January 10,</span> 2020</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Software+Packages+in+%22bionic%22&amp;rft.pub=Canonical&amp;rft_id=https%3A%2F%2Fpackages.ubuntu.com%2Fbionic%2Fallpackages&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-apple2-22"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-apple2_22-0">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="https://developer.apple.com/mac/library/documentation/Security/Conceptual/authorization_concepts/01introduction/introduction.html">"Introduction to Authorization Services Programming Guide"</a>. developer.apple.com<span class="reference-accessdate">. Retrieved <span class="nowrap">2011-11-17</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Introduction+to+Authorization+Services+Programming+Guide&amp;rft.pub=developer.apple.com&amp;rft_id=https%3A%2F%2Fdeveloper.apple.com%2Fmac%2Flibrary%2Fdocumentation%2FSecurity%2FConceptual%2Fauthorization_concepts%2F01introduction%2Fintroduction.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-23"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-23">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://man.openbsd.org/OpenBSD-current/man1/doas.1">"doas"</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=doas&amp;rft_id=http%3A%2F%2Fman.openbsd.org%2FOpenBSD-current%2Fman1%2Fdoas.1&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+<li id="cite_note-24"><span class="mw-cite-backlink"><b><a href="Sudo@D4E29BB50D9AD6CB.html#cite_ref-24">^</a></b></span> <span class="reference-text"><cite class="citation web"><a rel="nofollow" class="external text" href="http://ports.su/security/sudo">"sudo-1.8.26 – execute a command as another user"</a>. <i><a href="https://en.wikipedia.org/wiki/OpenBSD_ports" class="mw-redirect" title="OpenBSD ports">OpenBSD ports</a></i>. 2018-11-16.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=OpenBSD+ports&amp;rft.atitle=sudo-1.8.26+%E2%80%93+execute+a+command+as+another+user&amp;rft.date=2018-11-16&amp;rft_id=http%3A%2F%2Fports.su%2Fsecurity%2Fsudo&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ASudo" class="Z3988"></span><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r951705291"/></span>
+</li>
+</ol></div>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit&amp;section=9" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul><li><span class="official-website"><span class="url"><a rel="nofollow" class="external text" href="https://www.sudo.ws/">Official website</a></span></span> <a href="https://www.wikidata.org/wiki/Q300883#P856" title="Edit this at Wikidata"><img alt="Edit this at Wikidata" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/10px-OOjs_UI_icon_edit-ltr-progressive.svg.png" decoding="async" width="10" height="10" style="vertical-align: text-top" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/15px-OOjs_UI_icon_edit-ltr-progressive.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png 2x" data-file-width="20" data-file-height="20" /></a></li></ul>
+<div role="navigation" class="navbox" aria-labelledby="Unix_command-line_interface_programs_and_shell_builtins" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:Unix_commands" title="Template:Unix commands"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:Unix_commands" title="Template talk:Unix commands"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:Unix_commands&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="Unix_command-line_interface_programs_and_shell_builtins" style="font-size:114%;margin:0 4em"><a href="https://en.wikipedia.org/wiki/Unix" title="Unix">Unix</a> <a href="https://en.wikipedia.org/wiki/Command-line_interface" title="Command-line interface">command-line interface</a> programs and <a href="https://en.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">shell builtins</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">File system</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Cat_(Unix)" title="Cat (Unix)">cat</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chmod" title="Chmod">chmod</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chown" title="Chown">chown</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Chgrp" title="Chgrp">chgrp</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cksum" title="Cksum">cksum</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cmp_(Unix)" title="Cmp (Unix)">cmp</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cp_(Unix)" title="Cp (Unix)">cp</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dd_(Unix)" title="Dd (Unix)">dd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Du_(Unix)" title="Du (Unix)">du</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Df_(Unix)" title="Df (Unix)">df</a></li>
+<li><a href="https://en.wikipedia.org/wiki/File_(command)" title="File (command)">file</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fuser_(Unix)" title="Fuser (Unix)">fuser</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ln_(Unix)" title="Ln (Unix)">ln</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ls" title="Ls">ls</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mkdir" title="Mkdir">mkdir</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mv" title="Mv">mv</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pax_(Unix)" title="Pax (Unix)">pax</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Pwd" title="Pwd">pwd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rm_(Unix)" title="Rm (Unix)">rm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Rmdir" title="Rmdir">rmdir</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Split_(Unix)" title="Split (Unix)">split</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tee_(command)" title="Tee (command)">tee</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Touch_(command)" title="Touch (command)">touch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Type_(Unix)" title="Type (Unix)">type</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Umask" title="Umask">umask</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Processes</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/At_(command)" title="At (command)">at</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Job_control_(Unix)#Commands" title="Job control (Unix)">bg</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cron" title="Cron">crontab</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Job_control_(Unix)#Commands" title="Job control (Unix)">fg</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Kill_(command)" title="Kill (command)">kill</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nice_(Unix)" title="Nice (Unix)">nice</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ps_(Unix)" title="Ps (Unix)">ps</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Time_(Unix)" title="Time (Unix)">time</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">User environment</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Env" title="Env">env</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Exit_(command)" title="Exit (command)">exit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Logname" title="Logname">logname</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mesg" title="Mesg">mesg</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Talk_(software)" title="Talk (software)">talk</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tput" title="Tput">tput</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Uname" title="Uname">uname</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Who_(Unix)" title="Who (Unix)">who</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Write_(Unix)" title="Write (Unix)">write</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Text processing</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/AWK" title="AWK">awk</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Basename" title="Basename">basename</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Comm" title="Comm">comm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Csplit" title="Csplit">csplit</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cut_(Unix)" title="Cut (Unix)">cut</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Diff" title="Diff">diff</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dirname" title="Dirname">dirname</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ed_(text_editor)" title="Ed (text editor)">ed</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ex_(text_editor)" title="Ex (text editor)">ex</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fold_(Unix)" title="Fold (Unix)">fold</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Head_(Unix)" title="Head (Unix)">head</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Iconv" title="Iconv">iconv</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Join_(Unix)" title="Join (Unix)">join</a></li>
+<li><a href="https://en.wikipedia.org/wiki/M4_(computer_language)" title="M4 (computer language)">m4</a></li>
+<li><a href="https://en.wikipedia.org/wiki/More_(command)" title="More (command)">more</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nl_(Unix)" title="Nl (Unix)">nl</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Paste_(Unix)" title="Paste (Unix)">paste</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Patch_(Unix)" title="Patch (Unix)">patch</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Printf_(Unix)" title="Printf (Unix)">printf</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sed" title="Sed">sed</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sort_(Unix)" title="Sort (Unix)">sort</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Strings_(Unix)" title="Strings (Unix)">strings</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tail_(Unix)" title="Tail (Unix)">tail</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tr_(Unix)" title="Tr (Unix)">tr</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Uniq" title="Uniq">uniq</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vi" title="Vi">vi</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wc_(Unix)" title="Wc (Unix)">wc</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xargs" title="Xargs">xargs</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Shell_builtin" title="Shell builtin">Shell builtins</a></th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Alias_(command)" title="Alias (command)">alias</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cd_(command)" title="Cd (command)">cd</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Echo_(command)" title="Echo (command)">echo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Test_(Unix)" title="Test (Unix)">test</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Environment_variable#unset_command" title="Environment variable">unset</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Wait_(command)" title="Wait (command)">wait</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Searching</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Find_(Unix)" title="Find (Unix)">find</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Grep" title="Grep">grep</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Documentation</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Man_page" title="Man page">man</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%"><a href="https://en.wikipedia.org/wiki/Software_development" title="Software development">Software development</a></th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Ar_(Unix)" title="Ar (Unix)">ar</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ctags" title="Ctags">ctags</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Lex_(software)" title="Lex (software)">lex</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Make_(software)" title="Make (software)">make</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Nm_(Unix)" title="Nm (Unix)">nm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Strip_(Unix)" title="Strip (Unix)">strip</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Yacc" title="Yacc">yacc</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Miscellaneous</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Bc_(programming_language)" title="Bc (programming language)">bc</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Cal_(Unix)" title="Cal (Unix)">cal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Expr" title="Expr">expr</a></li>
+<li><a href="https://en.wikipedia.org/wiki/System_V_printing_system" title="System V printing system">lp</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Od_(Unix)" title="Od (Unix)">od</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sleep_(command)" title="Sleep (command)">sleep</a></li>
+<li><a href="https://en.wikipedia.org/wiki/True_and_false_(commands)" title="True and false (commands)">true and false</a></li></ul>
+</div></td></tr><tr><td class="navbox-abovebelow hlist" colspan="2"><div>
+<ul><li><img alt="Category" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/16px-Folder_Hexagonal_Icon.svg.png" decoding="async" title="Category" width="16" height="14" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/24px-Folder_Hexagonal_Icon.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/4/48/Folder_Hexagonal_Icon.svg/32px-Folder_Hexagonal_Icon.svg.png 2x" data-file-width="36" data-file-height="31" /> <b>Categories</b>
+<ul><li><a href="https://en.wikipedia.org/wiki/Category:Standard_Unix_programs" title="Category:Standard Unix programs">Standard Unix programs</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Category:Unix_SUS2008_utilities" title="Category:Unix SUS2008 utilities">Unix SUS2008 utilities</a></li></ul></li>
+<li><img alt="List-Class article" src="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/16px-Symbol_list_class.svg.png" decoding="async" title="List-Class article" width="16" height="16" srcset="https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/23px-Symbol_list_class.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Symbol_list_class.svg/31px-Symbol_list_class.svg.png 2x" data-file-width="180" data-file-height="185" /> <b><a href="https://en.wikipedia.org/wiki/List_of_Unix_commands" title="List of Unix commands">List</a></b></li></ul>
+</div></td></tr></tbody></table></div>
+<div role="navigation" class="navbox" aria-labelledby="OpenBSD" style="padding:3px"><table class="nowraplinks mw-collapsible autocollapse navbox-inner" style="border-spacing:0;background:transparent;color:inherit"><tbody><tr><th scope="col" class="navbox-title" colspan="2"><div class="plainlinks hlist navbar mini"><ul><li class="nv-view"><a href="https://en.wikipedia.org/wiki/Template:OpenBSD" title="Template:OpenBSD"><abbr title="View this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">v</abbr></a></li><li class="nv-talk"><a href="https://en.wikipedia.org/wiki/Template_talk:OpenBSD" title="Template talk:OpenBSD"><abbr title="Discuss this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">t</abbr></a></li><li class="nv-edit"><a class="external text" href="https://en.wikipedia.org/w/index.php?title=Template:OpenBSD&amp;action=edit"><abbr title="Edit this template" style=";;background:none transparent;border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; padding:0;">e</abbr></a></li></ul></div><div id="OpenBSD" style="font-size:114%;margin:0 4em"><a href="https://en.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a></div></th></tr><tr><th scope="row" class="navbox-group" style="width:1%">Operating system</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/OpenBSD" title="OpenBSD">OpenBSD</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/OpenBSD_version_history" title="OpenBSD version history">version history</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenBSD_security_features" title="OpenBSD security features">security features</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Related projects</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Bioctl" title="Bioctl">bio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Common_Address_Redundancy_Protocol" title="Common Address Redundancy Protocol">CARP</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Fdm_(software)" title="Fdm (software)">fdm</a></li>
+<li><a href="https://en.wikipedia.org/wiki/LibreSSL" title="LibreSSL">LibreSSL</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mandoc" title="Mandoc">mandoc</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mg_(editor)" title="Mg (editor)">mg</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenBGPD" title="OpenBGPD">OpenBGPD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenIKED" title="OpenIKED">OpenIKED</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenNTPD" title="OpenNTPD">OpenNTPD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenOSPFD" title="OpenOSPFD">OpenOSPFD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenSMTPD" title="OpenSMTPD">OpenSMTPD</a></li>
+<li><a href="https://en.wikipedia.org/wiki/OpenSSH" title="OpenSSH">OpenSSH</a></li>
+<li><a href="https://en.wikipedia.org/wiki/PF_(firewall)" title="PF (firewall)">PF</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hw.sensors" title="Hw.sensors">sensors</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Sndio" title="Sndio">sndio</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Spamd" title="Spamd">spamd</a></li>
+<li><a class="mw-selflink selflink">sudo</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Tmux" title="Tmux">tmux</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Xenocara" title="Xenocara">Xenocara</a>
+<ul><li><a href="https://en.wikipedia.org/wiki/Cwm_(window_manager)" title="Cwm (window manager)">cwm</a></li></ul></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">People</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/Theo_de_Raadt" title="Theo de Raadt">Theo de Raadt</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Niels_Provos" title="Niels Provos">Niels Provos</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Organizations</th><td class="navbox-list navbox-even hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/OpenBSD_Foundation" title="OpenBSD Foundation">OpenBSD Foundation</a></li></ul>
+</div></td></tr><tr><th scope="row" class="navbox-group" style="width:1%">Publications</th><td class="navbox-list navbox-odd hlist" style="text-align:left;border-left-width:2px;border-left-style:solid;width:100%;padding:0px"><div style="padding:0em 0.25em">
+<ul><li><a href="https://en.wikipedia.org/wiki/OpenBSD_Journal" title="OpenBSD Journal">OpenBSD Journal</a></li></ul>
+</div></td></tr></tbody></table></div>
+<!-- 
+NewPP limit report
+Parsed by mw1270
+Cached time: 20200521153345
+Cache expiry: 2592000
+Dynamic content: false
+Complications: [vary‐revision‐sha1]
+CPU time usage: 0.528 seconds
+Real time usage: 0.723 seconds
+Preprocessor visited node count: 2422/1000000
+Post‐expand include size: 74329/2097152 bytes
+Template argument size: 3702/2097152 bytes
+Highest expansion depth: 27/40
+Expensive parser function count: 4/500
+Unstrip recursion depth: 1/20
+Unstrip post‐expand size: 87422/5000000 bytes
+Number of Wikibase entities loaded: 1/400
+Lua time usage: 0.278/10.000 seconds
+Lua memory usage: 7.15 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  645.612      1 -total
+ 40.58%  261.977      1 Template:Reflist
+ 35.21%  227.330      2 Template:Infobox
+ 29.76%  192.151      1 Template:Infobox_software
+ 27.14%  175.213     20 Template:Cite_web
+  8.30%   53.586      1 Template:Infobox_software/simple
+  6.91%   44.623      4 Template:Wikidata
+  6.18%   39.908      1 Template:ISBN
+  5.73%   36.980      1 Template:Short_description
+  5.32%   34.349      2 Template:URL
+-->
+
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1008028-0!canonical and timestamp 20200521153344 and revision id 956218484
+ -->
+</div><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>
+		<div class="printfooter">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;oldid=956218484">https://en.wikipedia.org/w/index.php?title=Sudo&amp;oldid=956218484</a>"</div>
+		<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="https://en.wikipedia.org/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Computer_security_software" title="Category:Computer security software">Computer security software</a></li><li><a href="https://en.wikipedia.org/wiki/Category:System_administration" title="Category:System administration">System administration</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Unix_user_management_and_support-related_utilities" title="Category:Unix user management and support-related utilities">Unix user management and support-related utilities</a></li><li><a href="https://en.wikipedia.org/wiki/Category:Software_using_the_ISC_license" title="Category:Software using the ISC license">Software using the ISC license</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="https://en.wikipedia.org/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li></ul></div></div>
+		<div class="visualClear"></div>
+		
+	</div>
+</div>
+<div id='mw-data-after-content'>
+	<div class="read-more-container"></div>
+</div>
+
+<div id="mw-navigation">
+	<h2>Navigation menu</h2>
+	<div id="mw-head">
+		
+<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+	<h3 id="p-personal-label">Personal tools</h3>
+	<ul >
+		<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="https://en.wikipedia.org/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="https://en.wikipedia.org/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&amp;returnto=Sudo&amp;returntoquery=D4E29BB50D9AD6CB%3D" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&amp;returnto=Sudo&amp;returntoquery=D4E29BB50D9AD6CB%3D" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>
+	</ul>
+</div>
+
+		<div id="left-navigation">
+			<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+	<h3 id="p-namespaces-label">Namespaces</h3>
+	<ul >
+		<li id="ca-nstab-main" class="selected"><a href="https://en.wikipedia.org/wiki/Sudo" title="View the content page [c]" accesskey="c">Article</a></li><li id="ca-talk"><a href="https://en.wikipedia.org/wiki/Talk:Sudo" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t">Talk</a></li>
+	</ul>
+</div>
+
+			<div id="p-variants" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-variants-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-variants-label" />
+	<h3 id="p-variants-label">
+		<span>Variants</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+		</div>
+		<div id="right-navigation">
+			<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+	<h3 id="p-views-label">Views</h3>
+	<ul >
+		<li id="ca-view" class="collapsible selected"><a href="https://en.wikipedia.org/wiki/Sudo">Read</a></li><li id="ca-edit" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></li><li id="ca-history" class="collapsible"><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></li>
+	</ul>
+</div>
+
+			<div id="p-cactions" role="navigation" class="emptyPortlet vectorMenu" aria-labelledby="p-cactions-label">
+	<input type="checkbox" class="vectorMenuCheckbox" aria-labelledby="p-cactions-label" />
+	<h3 id="p-cactions-label">
+		<span>More</span>
+	</h3>
+	<ul class="menu" >
+		
+	</ul>
+</div>
+
+			<div id="p-search" role="search">
+	<h3 >
+		<label for="searchInput">Search</label>
+	</h3>
+	<form action="https://en.wikipedia.org/w/index.php" id="searchform">
+		<div id="simpleSearch">
+			<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/>
+			<input type="hidden" value="Special:Search" name="title"/>
+			<input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/>
+			<input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>
+		</div>
+	</form>
+</div>
+
+		</div>
+	</div>
+	
+<div id="mw-panel">
+	<div id="p-logo" role="banner">
+		<a  title="Visit the main page" class="mw-wiki-logo" href="Main_Page.html"></a>
+	</div>
+	<div class="portal portal-first" role="navigation" id="p-navigation"  aria-labelledby="p-navigation-label">
+	<h3  id="p-navigation-label">
+		Navigation
+	</h3>
+	<div class="body">
+		<ul><li id="n-mainpage-description"><a href="Main_Page.html" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="https://en.wikipedia.org/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="https://en.wikipedia.org/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="../../donate.wikimedia.org/wiki/Special%253AFundraiserRedirector@utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en.html" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="https://shop.wikimedia.org/" title="Visit the Wikipedia store">Wikipedia store</a></li></ul>
+		
+	</div>
+</div>
+
+
+	<div class="portal" role="navigation" id="p-interaction"  aria-labelledby="p-interaction-label">
+	<h3  id="p-interaction-label">
+		Interaction
+	</h3>
+	<div class="body">
+		<ul><li id="n-help"><a href="https://en.wikipedia.org/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="https://en.wikipedia.org/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-tb"  aria-labelledby="p-tb-label">
+	<h3  id="p-tb-label">
+		Tools
+	</h3>
+	<div class="body">
+		<ul><li id="t-whatlinkshere"><a href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Sudo" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked/Sudo" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="https://en.wikipedia.org/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;oldid=956218484" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q300883" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="https://en.wikipedia.org/w/index.php?title=Special:CiteThisPage&amp;page=Sudo&amp;id=956218484&amp;wpFormIdentifier=titleform" title="Information on how to cite this page">Cite this page</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-coll-print_export"  aria-labelledby="p-coll-print_export-label">
+	<h3  id="p-coll-print_export-label">
+		Print/export
+	</h3>
+	<div class="body">
+		<ul><li id="coll-download-as-rl"><a href="https://en.wikipedia.org/w/index.php?title=Special:ElectronPdf&amp;page=Sudo&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="https://en.wikipedia.org/w/index.php?title=Sudo&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li></ul>
+		
+	</div>
+</div>
+
+<div class="portal" role="navigation" id="p-lang"  aria-labelledby="p-lang-label">
+	<h3  id="p-lang-label">
+		Languages
+	</h3>
+	<div class="body">
+		<ul><li class="interlanguage-link interwiki-ar"><a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%88%D8%AF%D9%88" title="سودو – Arabic" lang="ar" hreflang="ar" class="interlanguage-link-target">العربية</a></li><li class="interlanguage-link interwiki-bar"><a href="https://bar.wikipedia.org/wiki/Sudo" title="Sudo – Bavarian" lang="bar" hreflang="bar" class="interlanguage-link-target">Boarisch</a></li><li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Sudo" title="Sudo – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-cs"><a href="https://cs.wikipedia.org/wiki/Sudo" title="Sudo – Czech" lang="cs" hreflang="cs" class="interlanguage-link-target">Čeština</a></li><li class="interlanguage-link interwiki-da"><a href="https://da.wikipedia.org/wiki/Sudo" title="Sudo – Danish" lang="da" hreflang="da" class="interlanguage-link-target">Dansk</a></li><li class="interlanguage-link interwiki-de"><a href="https://de.wikipedia.org/wiki/Sudo" title="Sudo – German" lang="de" hreflang="de" class="interlanguage-link-target">Deutsch</a></li><li class="interlanguage-link interwiki-el"><a href="https://el.wikipedia.org/wiki/Sudo" title="Sudo – Greek" lang="el" hreflang="el" class="interlanguage-link-target">Ελληνικά</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Sudo" title="Sudo – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li><li class="interlanguage-link interwiki-fa"><a href="https://fa.wikipedia.org/wiki/Sudo" title="Sudo – Persian" lang="fa" hreflang="fa" class="interlanguage-link-target">فارسی</a></li><li class="interlanguage-link interwiki-fr"><a href="https://fr.wikipedia.org/wiki/Sudo" title="Sudo – French" lang="fr" hreflang="fr" class="interlanguage-link-target">Français</a></li><li class="interlanguage-link interwiki-ko"><a href="https://ko.wikipedia.org/wiki/Sudo" title="Sudo – Korean" lang="ko" hreflang="ko" class="interlanguage-link-target">한국어</a></li><li class="interlanguage-link interwiki-id"><a href="https://id.wikipedia.org/wiki/Sudo" title="Sudo – Indonesian" lang="id" hreflang="id" class="interlanguage-link-target">Bahasa Indonesia</a></li><li class="interlanguage-link interwiki-it"><a href="https://it.wikipedia.org/wiki/Sudo" title="Sudo – Italian" lang="it" hreflang="it" class="interlanguage-link-target">Italiano</a></li><li class="interlanguage-link interwiki-he"><a href="https://he.wikipedia.org/wiki/Sudo" title="Sudo – Hebrew" lang="he" hreflang="he" class="interlanguage-link-target">עברית</a></li><li class="interlanguage-link interwiki-lmo"><a href="https://lmo.wikipedia.org/wiki/Sudo" title="Sudo – Lombard" lang="lmo" hreflang="lmo" class="interlanguage-link-target">Lumbaart</a></li><li class="interlanguage-link interwiki-hu"><a href="https://hu.wikipedia.org/wiki/Sudo" title="Sudo – Hungarian" lang="hu" hreflang="hu" class="interlanguage-link-target">Magyar</a></li><li class="interlanguage-link interwiki-ml"><a href="https://ml.wikipedia.org/wiki/%E0%B4%B8%E0%B5%81%E0%B4%A1%E0%B5%8B" title="സുഡോ – Malayalam" lang="ml" hreflang="ml" class="interlanguage-link-target">മലയാളം</a></li><li class="interlanguage-link interwiki-nl"><a href="https://nl.wikipedia.org/wiki/Sudo" title="Sudo – Dutch" lang="nl" hreflang="nl" class="interlanguage-link-target">Nederlands</a></li><li class="interlanguage-link interwiki-ja"><a href="https://ja.wikipedia.org/wiki/Sudo" title="Sudo – Japanese" lang="ja" hreflang="ja" class="interlanguage-link-target">日本語</a></li><li class="interlanguage-link interwiki-pl"><a href="https://pl.wikipedia.org/wiki/Sudo" title="Sudo – Polish" lang="pl" hreflang="pl" class="interlanguage-link-target">Polski</a></li><li class="interlanguage-link interwiki-pt"><a href="https://pt.wikipedia.org/wiki/Sudo" title="Sudo – Portuguese" lang="pt" hreflang="pt" class="interlanguage-link-target">Português</a></li><li class="interlanguage-link interwiki-ro"><a href="https://ro.wikipedia.org/wiki/Sudo" title="Sudo – Romanian" lang="ro" hreflang="ro" class="interlanguage-link-target">Română</a></li><li class="interlanguage-link interwiki-ru"><a href="https://ru.wikipedia.org/wiki/Sudo" title="Sudo – Russian" lang="ru" hreflang="ru" class="interlanguage-link-target">Русский</a></li><li class="interlanguage-link interwiki-simple"><a href="https://simple.wikipedia.org/wiki/Sudo" title="Sudo – Simple English" lang="en-simple" hreflang="en-simple" class="interlanguage-link-target">Simple English</a></li><li class="interlanguage-link interwiki-sl"><a href="https://sl.wikipedia.org/wiki/Sudo" title="Sudo – Slovenian" lang="sl" hreflang="sl" class="interlanguage-link-target">Slovenščina</a></li><li class="interlanguage-link interwiki-sv"><a href="https://sv.wikipedia.org/wiki/Sudo" title="Sudo – Swedish" lang="sv" hreflang="sv" class="interlanguage-link-target">Svenska</a></li><li class="interlanguage-link interwiki-uk"><a href="https://uk.wikipedia.org/wiki/Sudo" title="Sudo – Ukrainian" lang="uk" hreflang="uk" class="interlanguage-link-target">Українська</a></li><li class="interlanguage-link interwiki-vi"><a href="https://vi.wikipedia.org/wiki/Sudo" title="Sudo – Vietnamese" lang="vi" hreflang="vi" class="interlanguage-link-target">Tiếng Việt</a></li><li class="interlanguage-link interwiki-zh"><a href="https://zh.wikipedia.org/wiki/Sudo" title="Sudo – Chinese" lang="zh" hreflang="zh" class="interlanguage-link-target">中文</a></li></ul>
+		<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q300883#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+	</div>
+</div>
+
+
+</div>
+
+</div>
+
+<div id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info" >
+		<li id="footer-info-lastmod"> This page was last edited on 12 May 2020, at 04:23<span class="anonymous-show">&#160;(UTC)</span>.</li>
+		<li id="footer-info-copyright">Text is available under the <a rel="license" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="../../creativecommons.org/licenses/by-sa/3.0/index.html" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="../../wikimediafoundation.org/wiki/Terms_of_Use.html">Terms of Use</a> and <a href="../../wikimediafoundation.org/wiki/Privacy_policy.html">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+	</ul>
+	<ul id="footer-places" >
+		<li id="footer-places-privacy"><a href="../../wikimediafoundation.org/wiki/Privacy_policy.html" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+		<li id="footer-places-about"><a href="https://en.wikipedia.org/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+		<li id="footer-places-disclaimer"><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+		<li id="footer-places-contact"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+		<li id="footer-places-developers"><a href="../../www.mediawiki.org/wiki/Special%253AMyLanguage/How_to_contribute.html">Developers</a></li>
+		<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+		<li id="footer-places-cookiestatement"><a href="../../wikimediafoundation.org/wiki/Cookie_statement.html">Cookie statement</a></li>
+		<li id="footer-places-mobileview"><a href="https://en.m.wikipedia.org/w/index.php?title=Sudo&amp;D4E29BB50D9AD6CB=&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+	</ul>
+	<ul id="footer-icons" class="noprint">
+		<li id="footer-copyrightico"><a href="../../www.wikimediafoundation.org/index.html"><img src="https://en.wikipedia.org/static/images/wikimedia-button.png" srcset="https://en.wikipedia.org/static/images/wikimedia-button-1.5x.png 1.5x, https://en.wikipedia.org/static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a></li>
+		<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="https://en.wikipedia.org/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="https://en.wikipedia.org/static/images/poweredby_mediawiki_132x47.png 1.5x, https://en.wikipedia.org/static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a></li>
+	</ul>
+	<div style="clear: both;"></div>
+</div>
+
+
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.528","walltime":"0.723","ppvisitednodes":{"value":2422,"limit":1000000},"postexpandincludesize":{"value":74329,"limit":2097152},"templateargumentsize":{"value":3702,"limit":2097152},"expansiondepth":{"value":27,"limit":40},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":1,"limit":20},"unstrip-size":{"value":87422,"limit":5000000},"entityaccesscount":{"value":1,"limit":400},"timingprofile":["100.00%  645.612      1 -total"," 40.58%  261.977      1 Template:Reflist"," 35.21%  227.330      2 Template:Infobox"," 29.76%  192.151      1 Template:Infobox_software"," 27.14%  175.213     20 Template:Cite_web","  8.30%   53.586      1 Template:Infobox_software/simple","  6.91%   44.623      4 Template:Wikidata","  6.18%   39.908      1 Template:ISBN","  5.73%   36.980      1 Template:Short_description","  5.32%   34.349      2 Template:URL"]},"scribunto":{"limitreport-timeusage":{"value":"0.278","limit":"10.000"},"limitreport-memusage":{"value":7500795,"limit":52428800}},"cachereport":{"origin":"mw1270","timestamp":"20200521153345","ttl":2592000,"transientcontent":false}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Sudo","url":"https:\/\/en.wikipedia.org\/wiki\/Sudo","sameAs":"http:\/\/www.wikidata.org\/entity\/Q300883","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q300883","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-09-22T13:44:23Z","dateModified":"2020-05-12T04:23:45Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/0\/01\/Sudo_on_Ubuntu.png","headline":"command on Unix systems to temporarily assume root privileges"}</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":89,"wgHostname":"mw1355"});});</script></body></html>

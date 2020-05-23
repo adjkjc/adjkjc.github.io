@@ -1,0 +1,1 @@
+<p><b>This is not a real list but a system list. </b> It keeps record of all subscribers in the system and it can not be deleted.</p>

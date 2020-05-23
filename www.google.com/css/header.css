@@ -1,0 +1,2 @@
+/* Copyright 2020 Google Inc. All Rights Reserved. */
+.g-section:after{content:".";display:block;height:0;clear:both;visibility:hidden}.g-section{display:inline-block}* html .g-section{height:1%}.g-section{display:block}.header{margin:0 0 7px -2px;position:relative}.header img{border:0;float:left}.header span{margin:5px 0 0;float:right}.header span ul{margin:6px 0 0;padding:0;list-style:none outside}.header span ul li{display:inline;margin:0 0 0 5px;padding:0}.footer{margin:40px 0 0;padding:0;text-align:center;color:#666}

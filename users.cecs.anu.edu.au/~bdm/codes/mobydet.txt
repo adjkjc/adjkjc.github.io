@@ -1,0 +1,52 @@
+
+Moby Dick Assassination details
+
+Brendan McKay.
+
+
+Here are the details for the word clusters on the
+Moby Dick page.  To find them in the text, it will
+help if you have the file
+   http://cs.anu.edu.au/~bdm/dilugim/mdnum.txt.gz
+which (when unzipped) shows the number of the first
+letter in each line.
+
+In the table below, we give the first letter and the
+skip of the name appearing in the cluster. 
+
+For example, for Dollfuss the first letter is 787845
+and the skip is 19000, which means that the letters
+DOLLFUSS appear in positions 787845, 787845+19000,
+787845+2*19000, ..., 787845+7*19000.  The last 
+value is 920845 so that is where the final S lies.
+Consulting mdnum.txt, we find that 920845 lies in
+this line:
+
+    920821 sun, moon, and stars!  I call ye assassins 
+           of as good a fellow as ever spouted
+
+Thus, letter 920845 is the second S of "assassins".  Note
+that only letters are counted, not digits or punctuation.
+
+      Name       Start     Skip
+
+     IGANDHI     13258   102857
+     MOAWAD      44533    90073
+                812368  -116726
+     TROTSKY    836052   -61095
+     MLKING     234760   -26026
+     DOLLFUSS   787845    19000
+     SSIRHAN      4547   127000
+                 89795    41773
+                499443    68585
+                528373   -12582
+     KENNEDY     93063    13798
+                888633    -7616 
+                 93063    13798
+     LINCOLN    642829    -1450
+     RABIN      327517       -4
+
+Other Mody Dick pages:
+
+     LADY DIANA  70577    37310
+     MDROSNIN   812846   -25936

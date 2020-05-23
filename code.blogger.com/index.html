@@ -1,0 +1,2570 @@
+<!DOCTYPE html>
+<html class='v2 list-page' dir='ltr' itemscope='' itemtype='http://schema.org/Blog' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<link href='https://www.blogger.com/static/v1/widgets/3597120983-css_bundle_v2.css' rel='stylesheet' type='text/css'/>
+<title>
+Blogger Developers
+</title>
+<meta content='width=device-width, height=device-height, minimum-scale=1.0, initial-scale=1.0, user-scalable=0' name='viewport'/>
+<meta content='IE=Edge' http-equiv='X-UA-Compatible'/>
+<meta content='Blogger Developers' property='og:title'/>
+<meta content='en_US' property='og:locale'/>
+<meta content='https://blogger-developers.googleblog.com/' property='og:url'/>
+<meta content='Blogger Developers' property='og:site_name'/>
+<!-- Twitter Card properties -->
+<meta content='Blogger Developers' property='og:title'/>
+<meta content='summary' name='twitter:card'/>
+<meta content='@adwords' name='twitter:creator'/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400italic,400,500,500italic,700,700italic' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' type='text/javascript'></script>
+<!-- End -->
+<style id='page-skin-1' type='text/css'><!--
+/*
+<Group description="Header Color" selector="header">
+<Variable name="header.background.color" description="Header Background"
+type="color" default="#ffffff"/>
+</Group>
+*/
+.header-outer {
+border-bottom: 1px solid #e0e0e0;
+background: #ffffff;
+}
+html, .Label h2, #sidebar .rss a, .BlogArchive h2, .FollowByEmail h2.title, .widget .post h2 {
+font-family: Roboto, sans-serif;
+}
+.plusfollowers h2.title, .post h2.title, .widget h2.title {
+font-family: Roboto, sans-serif;
+}
+.widget-item-control {
+height: 100%;
+}
+.widget.Header, #header {
+position: relative;
+height: 100%;
+width: 100%;
+}
+}
+.widget.Header .header-logo1 {
+float: left;
+margin-right: 15px;
+padding-right: 15px;
+border-right: 1px solid #ddd;
+}
+.header-title h2 {
+color: rgba(0,0,0,.54);
+display: inline-block;
+font-size: 40px;
+font-family: Roboto, sans-serif;
+font-weight: normal;
+line-height: 75px;
+vertical-align: top;
+}
+.header-inner {
+background-repeat: no-repeat;
+background-position: right 0px;
+}
+.post-author,
+.byline-author {
+font-size: 14px;
+font-weight: normal;
+color: #757575;
+color: rgba(0,0,0,.54);
+}
+.post-content .img-border {
+border: 1px solid rgb(235, 235, 235);
+padding: 4px;
+}
+.header-title a {
+text-decoration: none !important;
+}
+pre {
+border: 1px solid #bbbbbb;
+margin-top: 1em 0 0 0;
+padding: 0.99em;
+overflow-x: auto;
+overflow-y: auto;
+}
+pre, code {
+font-size: 9pt;
+background-color: #fafafa;
+line-height: 125%;
+font-family: monospace;
+}
+pre, code {
+color: #060;
+font: 13px/1.54 "courier new",courier,monospace;
+}
+.header-left .header-logo1 {
+width: 128px !important;
+}
+.header-desc {
+line-height: 20px;
+margin-top: 8px;
+}
+.fb-custom img, .twitter-custom img, .gplus-share img {
+cursor: pointer;
+opacity: 0.54;
+}
+.fb-custom img:hover, .twitter-custom img:hover, .gplus-share img:hover {
+opacity: 0.87;
+}
+.fb-like {
+width: 80px;
+}
+.post .share {
+float: right;
+}
+#twitter-share{
+border: #CCC solid 1px;
+border-radius: 3px;
+background-image: -webkit-linear-gradient(top,#ffffff,#dedede);
+}
+.twitter-follow {
+background: url(//4.bp.blogspot.com/-8O7VcmcY32o/VSYkC2vUj7I/AAAAAAAAHeU/7mzo-JFgTgk/s1600/twitter-bird.png) no-repeat left center;
+padding-left: 18px;
+font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+font-weight: bold;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+cursor: pointer;
+margin-bottom: 10px;
+}
+.twitter-fb {
+padding-top: 2px;
+}
+.fb-follow-button  {
+background: -webkit-linear-gradient(#4c69ba, #3b55a0);
+background: -moz-linear-gradient(#4c69ba, #3b55a0);
+background: linear-gradient(#4c69ba, #3b55a0);
+border-radius: 2px;
+height: 18px;
+padding: 4px 0 0 3px;
+width: 57px;
+border: #4c69ba solid 1px;
+}
+.fb-follow-button a {
+text-decoration: none !important;
+text-shadow: 0 -1px 0 #354c8c;
+text-align: center;
+white-space: nowrap;
+font-size: 11px;
+color: white;
+vertical-align: top;
+}
+.fb-follow-button a:visited {
+color: white;
+}
+.fb-follow {
+padding: 0px 5px 3px 0px;
+width: 14px;
+vertical-align: bottom;
+}
+.gplus-wrapper {
+margin-top: 3px;
+display: inline-block;
+vertical-align: top;
+}
+.twitter-custom, .gplus-share {
+margin-right: 12px;
+}
+.fb-follow-button{
+margin: 10px auto;
+}
+/** CUSTOM CODE **/
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+.header-outer {
+clear: both;
+}
+.header-inner {
+margin: auto;
+padding: 0px;
+}
+.footer-outer {
+background: #f5f5f5;
+clear: both;
+margin: 0;
+}
+.footer-inner {
+margin: auto;
+padding: 0px;
+}
+.footer-inner-2 {
+/* Account for right hand column elasticity. */
+max-width: calc(100% - 248px);
+}
+.google-footer-outer {
+clear: both;
+}
+.cols-wrapper, .google-footer-outer, .footer-inner, .header-inner {
+max-width: 978px;
+margin-left: auto;
+margin-right: auto;
+}
+.cols-wrapper {
+margin: auto;
+clear: both;
+margin-top: 60px;
+margin-bottom: 60px;
+overflow: hidden;
+}
+.col-main-wrapper {
+float: left;
+width: 100%;
+}
+.col-main {
+margin-right: 278px;
+max-width: 660px;
+}
+.col-right {
+float: right;
+width: 248px;
+margin-left: -278px;
+}
+/* Tweaks for layout mode. */
+body#layout .google-footer-outer {
+display: none;
+}
+body#layout .header-outer, body#layout .footer-outer {
+background: none;
+}
+body#layout .header-inner {
+height: initial;
+}
+body#layout .cols-wrapper {
+margin-top: initial;
+margin-bottom: initial;
+}
+--></style>
+<!-- start all head -->
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta content='blogger' name='generator'/>
+<link href='https://blogger-developers.googleblog.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='https://blogger-developers.googleblog.com/' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Blogger Developers - Atom" href="https://blogger-developers.googleblog.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Blogger Developers - RSS" href="https://blogger-developers.googleblog.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Blogger Developers - Atom" href="https://www.blogger.com/feeds/3213900/posts/default" />
+<!--[if IE]><script type="text/javascript" src="https://www.blogger.com/static/v1/jsbin/3719806379-ieretrofit.js"></script>
+<![endif]-->
+<meta content='https://blogger-developers.googleblog.com/' property='og:url'/>
+<meta content='Blogger Developers' property='og:title'/>
+<meta content='The latest updates on Blogger developer tools
+' property='og:description'/>
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<!-- end all head -->
+<base target='_self'/>
+<style>
+      html {
+        font-family: Roboto, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        padding: 0;
+        /* This ensures that the scroll bar is always present, which is needed */
+        /* because content render happens after page load; otherwise the header */
+        /* would "bounce" in-between states. */
+        min-height: 150%;
+      }
+      h2 {
+        font-size: 16px;
+      }
+      h1, h2, h3, h4, h5 {
+        line-height: 2em;
+      }
+      html, h4, h5, h6 {
+        font-size: 14px;
+      }
+      a, a:visited {
+        color: #4184F3;
+        text-decoration: none;
+      }
+      a:focus, a:hover, a:active {
+        text-decoration: none;
+      }
+      .Header {
+        margin-top: 15px;
+      }
+      .Header h1 {
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 32px;
+        height: 42px;
+      }
+      .header-inner .Header .titlewrapper {
+        padding: 0;
+        margin-top: 30px;
+      }
+      .header-inner .Header .descriptionwrapper {
+        padding: 0;
+        margin: 0;
+      }
+      .cols-wrapper {
+        margin-top: 56px;
+      }
+      .header-outer, .cols-wrapper, .footer-outer, .google-footer-outer {
+        padding: 0 60px;
+      }
+      .header-inner {
+        height: 256px;
+        position: relative;
+      }
+      html, .header-inner a {
+        color: #212121;
+        color: rgba(0,0,0,.87);
+      }
+      .header-inner .google-logo {
+        display: inline-block;
+        background-size: contain;
+        z-index: 1;
+        height: 70px;
+        overflow: hidden;
+        margin-top: 4px;
+        margin-right: 8px;
+      }
+      .header-left {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top: 12px;
+        width: 100%;
+      }
+      .google-logo {
+        margin-left: -4px;
+      }
+      .google-logo img{
+        height: 63px;
+      }
+      #google-footer {
+        position: relative;
+        font-size: 13px;
+        list-style: none;
+        text-align: right;
+      }
+      #google-footer a {
+        color: #444;
+      }
+      #google-footer ul {
+        margin: 0;
+        padding: 0;
+        height: 144px;
+        line-height: 144px;
+      }
+      #google-footer ul li {
+        display: inline;
+      }
+      #google-footer ul li:before {
+        color: #999;
+        content: "\00b7";
+        font-weight: bold;
+        margin: 5px;
+      }
+      #google-footer ul li:first-child:before {
+        content: '';
+      }
+      #google-footer .google-logo-dark {
+        left: 0;
+        margin-top: -16px;
+        position: absolute;
+        top: 50%;
+      }
+      /** Sitemap links. **/
+      .footer-inner-2 {
+        font-size: 14px;
+        padding-top: 42px;
+        padding-bottom: 74px;
+      }
+      .footer-inner-2 .HTML h2 {
+        color: #212121;
+        color: rgba(0,0,0,.87);
+        font-size: 14px;
+        font-weight: 500;
+        padding-left: 0;
+        margin: 10px 0;
+      }
+      .footer-inner-2 .HTML ul {
+        font-weight: normal;
+        list-style: none;
+        padding-left: 0;
+      }
+      .footer-inner-2 .HTML li {
+        line-height: 24px;
+        padding: 0;
+      }
+      .footer-inner-2 li a {
+        color: rgba(65,132,243,.87);
+      }
+      /** Archive widget. **/
+      .BlogArchive {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .BlogArchive .widget-content {
+        display: none;
+      }
+      .BlogArchive h2, .Label h2 {
+        color: #4184F3;
+        text-decoration: none;
+      }
+      .BlogArchive .hierarchy li {
+        display: inline-block;
+      }
+      /* Specificity needed here to override widget CSS defaults. */
+      .BlogArchive #ArchiveList ul li, .BlogArchive #ArchiveList ul ul li {
+        margin: 0;
+        padding-left: 0;
+        text-indent: 0;
+      }
+      .BlogArchive .intervalToggle {
+        cursor: pointer;
+      }
+      .BlogArchive .expanded .intervalToggle .new-toggle {
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      .BlogArchive .new-toggle {
+        float: right;
+        padding-top: 3px;
+        opacity: 0.87;
+      }
+      #ArchiveList {
+        text-transform: uppercase;
+      }
+      #ArchiveList .expanded > ul:last-child {
+        margin-bottom: 16px;
+      }
+      #ArchiveList .archivedate {
+        width: 100%;
+      }
+      /* Months */
+      .BlogArchive .items {
+        max-width: 150px;
+        margin-left: -4px;
+      }
+      .BlogArchive .expanded .items {
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+      .BlogArchive .items > ul {
+        float: left;
+        height: 32px;
+      }
+      .BlogArchive .items a {
+        padding: 0 4px;
+      }
+      .Label {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .sidebar-icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        margin-right: 12px;
+        margin-top: -1px
+      }
+      .Label a {
+        margin-right: 4px;
+      }
+      .Label .widget-content {
+        display: none;
+      }
+      .FollowByEmail {
+        font-size: 13px;
+        font-weight: normal;
+      }
+      .FollowByEmail h2 {
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUBJREFUeNrMkSGLAlEUhb+ZB4JFi8mx2cz+ApvhRUGTcUCrNqNJDYIi+DO0GUwmQXDK2DSIoGgZcSaIjDrzwrK4ssvChj1w0733O+fdp+m6PozH4yQSCfb7Pa7r8pOi0SjJZBLP8zgej4gAIMvlMuPxmADIYrHger1+C6lUKmo+NJ/NZojb7SZDWiwWo1qtks1msW2bw+HwZdkwDHq9HvV6nel0SqvVYrvdIh6Ph3Qch+VyqRYLhQJSSjRNw7IsfN9XgGKxSLfbJZfL0e/3aTabrFYr7vc7IujLcOh8PqunrNdr0uk0pVKJVCpFJBJRgEajweVyod1uMxgM2O12BAGUgRbU8DV2JpOhVquRz+cRQii3+XxOp9NRN3jVR5LPOp1OjEYjlSL8hclkgmmabDabt4d+m+S30vkD/R/IU4ABAPTZgnZdmG/PAAAAAElFTkSuQmCC");
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+        text-indent: 30px;
+      }
+      .FollowByEmail .widget-content {
+        display: none;
+      }
+      .searchBox input {
+        border: 1px solid #eee;
+        color: #212121;
+        color: rgba(0,0,0,.87);
+        font-size: 14px;
+        padding: 8px 8px 8px 40px;
+        width: 164px;
+        font-family: Roboto, sans-serif;
+        background: url("https://www.gstatic.com/images/icons/material/system/1x/search_grey600_24dp.png") 8px center no-repeat;
+      }
+      .searchBox ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    rgba(0,0,0,.54);
+      }
+      .searchBox :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:    #000;
+        opacity:  0.54;
+      }
+      .searchBox ::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:    #000;
+        opacity:  0.54;
+      }
+      .searchBox :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:    #757575;
+      }
+      .widget-item-control {
+        margin-top: 0px;
+      }
+      .section {
+        margin: 0;
+        padding: 0;
+      }
+      #sidebar-top {
+        border: 1px solid #eee;
+      }
+      #sidebar-top > div {
+        margin: 16px 0;
+      }
+      .widget ul {
+        line-height: 1.6;
+      }
+      /*main post*/
+      .post {
+		display: inline-block;
+        margin-bottom:30px;
+      }
+      #main .post .title {
+        margin: 0;
+      }
+      #main .post .title a {
+        color: #212121;
+        color: rgba(0,0,0,.87);
+        font-weight: normal;
+        font-size: 24px;
+      }
+      #main .post .title a:hover {
+        text-decoration:none;
+        color:#4184F3;
+      }
+      .message,  #main .post .post-header {
+        margin: 0;
+        padding: 0;
+      }
+      #main .post .post-header .caption, #main .post .post-header .labels-caption,  #main .post .post-footer .caption, #main .post .post-footer .labels-caption {
+        color: #444;
+        font-weight: 500;
+      }
+
+      #main .tr-caption-container td {
+        text-align: left;
+      }
+
+      #main .post .tr-caption {
+        color: #757575;
+        color: rgba(0,0,0,.54);
+        display: block;
+        max-width: 560px;
+        padding-bottom: 20px;
+      }
+
+      #main .post .tr-caption-container {
+        line-height: 24px;
+        margin: -1px 0 0 0 !important;
+        padding: 4px 0;
+        text-align: left;
+      }
+
+      #main .post .post-header .published{
+        font-size:11px;
+        font-weight:bold;
+      }
+      .post-header .publishdate {
+        font-size: 17px;
+        font-weight:normal;
+        color: #757575;
+        color: rgba(0,0,0,.54);
+      }
+      #main .post .post-footer{
+        font-size:12px;
+        padding-bottom: 21px;
+      }
+      .label-footer {
+        margin-bottom: 12px;
+        margin-top: 12px;
+      }
+      .comment-img {
+        margin-right: 16px;
+        opacity: 0.54;
+        vertical-align: middle;
+      }
+      #main .post .post-header .published {
+        margin-bottom: 40px;
+        margin-top: -2px;
+      }
+      .post .post-content {
+        color: #212121;
+        color: rgba(0,0,0,.87);
+        font-size: 17px;
+        margin: 25px 0 36px 0;
+        line-height: 32px;
+      }
+      .post-body .post-content ul, .post-body .post-content ol {
+        margin: 16px 0;
+        padding: 0 48px;
+      }
+      .post-summary {
+        display: none;
+      }
+    
+      /* Capture section headers. */
+      .post-content br + br + b, .post-content .space + .space + b, .post-content .separator + b {
+        /*display: inline-block;*/
+        margin-bottom: 8px;
+        margin-top: 24px;
+      }
+      .post-content li {
+        line-height: 32px;
+      }
+      /* Override all post images/videos to left align. */
+      .post-content > div {
+        text-align: left;
+      }
+      .separator {
+        text-align: center !important;
+      }
+      .post-content .separator > a, .post-content .separator > span {
+        margin-left: 0 !important;
+      }
+      .post-content img {
+        max-width: 100%;
+        height: auto;
+        width: auto;
+      }
+      .post-content .tr-caption-container img {
+        margin-bottom: 12px;
+      }
+      .post-content iframe, .post-content embed {
+        max-width: 100%;
+      }
+      .post-content .carousel-container {
+        margin-bottom: 48px;
+      }
+      #main .post-content b {
+        font-weight: 500;
+      }
+      /* These are the main paragraph spacing tweaks. */
+      #main .post-content br {
+        content: ' ';
+        display: block;
+        padding: 4px;
+      }
+      .post-content .space {
+        display: block;
+        height: 8px;
+      }
+      .post-content iframe + .space, .post-content iframe + br {
+        padding: 0 !important;
+      }
+      #main .post .jump-link {
+        margin-bottom:10px;
+      }
+      .post-content img, .post-content iframe {
+        margin: 30px 0 20px 0;
+      }
+      .post-content > img:first-child, .post-content > iframe:first-child {
+        margin-top: 0;
+      }
+      .col-right .section {
+        padding: 0 16px;
+      }
+      #aside {
+        background:#fff;
+        border:1px solid #eee;
+        border-top: 0;
+      }
+      #aside .widget {
+        margin:0;
+      }
+      #aside .widget h2, #ArchiveList .toggle + a.post-count-link {
+        color: #212121;
+        color: rgba(0,0,0,.87);
+        font-weight: 400 !important;
+        margin: 0;
+      }
+      #ArchiveList .toggle {
+        float: right;
+      }
+      #ArchiveList .toggle .material-icons {
+        padding-top: 4px;
+      }
+      #sidebar .tab {
+        cursor: pointer;
+      }
+      #sidebar .tab .arrow {
+        display: inline-block;
+        float: right;
+      }
+      #sidebar .tab .icon {
+        display: inline-block;
+        vertical-align: top;
+        height: 24px;
+        width: 24px;
+        margin-right: 13px;
+        margin-left: -1px;
+        margin-top: 1px;
+        color: #757575;
+        color: rgba(0,0,0,.54);
+      }
+      #sidebar .widget-content > :first-child {
+        padding-top: 8px;
+      }
+      #sidebar .active .tab .arrow {
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+      #sidebar .arrow {
+        color: #757575;
+        color: rgba(0,0,0,.54);
+      }
+      #sidebar .widget h2 {
+        font-size: 14px;
+        line-height: 24px;
+        display: inline-block;
+      }
+      #sidebar .widget .BlogArchive {
+        padding-bottom: 8px;
+      }
+      #sidebar .widget {
+        border-bottom: 1px solid #eee;
+        box-shadow: 0px 1px 0 white;
+        margin-bottom: 0;
+        padding: 14px 0;
+        min-height: 20px;
+      }
+      #sidebar .widget:last-child {
+        border-bottom: none;
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+      #sidebar ul {
+        margin: 0;
+        padding: 0;
+      }
+      #sidebar ul li {
+        list-style:none;
+        padding:0;
+      }
+      #sidebar ul li a {
+        line-height: 32px;
+      }
+      #sidebar .archive {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpiNDY23s9AAWBioBCwYBM8c+YMVsUmJibEGYBNMS5DaeMFfDYSZQA2v9I3FrB5AZeriI4FmnrBccCT8mhmGs1MwyAzAQQYAKEWG9zm9QFEAAAAAElFTkSuQmCC");
+        height: 24px;
+        line-height: 24px;
+        padding-left: 30px;
+      }
+      #sidebar .labels {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNpiNDY23s9AAMycOfM7UF05kHkZmzwTMkdSUhKrIcXFxZy3bt3qBjIN8RrS09PDsHnzZjCNDr58+cKQlpbGDjSoHcg1w2oIyAUODg5gARCNzUVIBrUCuVYYhjx//pzhwIEDYAEQDeJjA1CDWIAGNQK59jBxRuSABbkAlwHIgIeHh2HWrFn/1NTU2oDcvSgBS4wBSC5iArqoCsj1YGIgEyAZVMoEchqlBjEB/cZAiUHg2AEGznpKDAImxOeM////B4VLKtBvEUCngZ1ILKivr3/u6+ubBzJAGZQ9gC5aQoqLgAY8BhkAZL4BuQQkxgXE34A4BuiiZEIuAhrwEGhAEZD5DpzYoIaA2UAM4kQADUrHZRDUgAIg8wO2XAwzbQXQa5OweQ1owB10AyA6gS7BgX1u3ry5397eHow3bdo0EyjGi00tQIABANPgyAH1q1eaAAAAAElFTkSuQmCC");
+        height: 20px;
+        line-height: 20px;
+        padding-left: 30px;
+      }
+      #sidebar .rss a {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAX5JREFUeNqsVDGSgkAQHL2rIiIikohIc/EBRkbwAIwuwgfwAXiAD9AHSI7kEkECRCb6AIyINDLx7K0aa6kT7uq0q7YYtnZ7umdnt7darXbr9Zpegeu61DNNc0dvwCcH4/GYJpMJnc9nOhwOVJbl/4hAAokMECZJQtvt9k+kH7qufyEYDAakqqqYxFdRFBqNRmTbNg2HQ0rTlK7XayvR0xqBdDqdkuM4dE/0ULhYLOh4PHYrknG5XGi/31MYhuL/nkwonM1mlGUZ1XXdrsiyLGEDhY7juJEZ1u5tIixDGdYhmYw+B7CAzPP5nDabjdgIAgCksMX1832/3drtdqPT6SQWapomiGEFNkDEdpDMMAzK81ys/7XYy+XyoQgq2WoURSIJ2iIIgp/WZCCTvFm2wgeAU31aI3Q2GhIDMeB53qPYPIcm5VrxXIOIOxsDMStjVawAc1VViRgN22lNBiuQN3GR+SY07hpOoStmFQAKXRRFY93bnpG+fONfedi+BRgAbkS8Fxp7QQIAAAAASUVORK5CYII=");
+      }
+      #sidebar .subscription a {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUBJREFUeNrMkSGLAlEUhb+ZB4JFi8mx2cz+ApvhRUGTcUCrNqNJDYIi+DO0GUwmQXDK2DSIoGgZcSaIjDrzwrK4ssvChj1w0733O+fdp+m6PozH4yQSCfb7Pa7r8pOi0SjJZBLP8zgej4gAIMvlMuPxmADIYrHger1+C6lUKmo+NJ/NZojb7SZDWiwWo1qtks1msW2bw+HwZdkwDHq9HvV6nel0SqvVYrvdIh6Ph3Qch+VyqRYLhQJSSjRNw7IsfN9XgGKxSLfbJZfL0e/3aTabrFYr7vc7IujLcOh8PqunrNdr0uk0pVKJVCpFJBJRgEajweVyod1uMxgM2O12BAGUgRbU8DV2JpOhVquRz+cRQii3+XxOp9NRN3jVR5LPOp1OjEYjlSL8hclkgmmabDabt4d+m+S30vkD/R/IU4ABAPTZgnZdmG/PAAAAAElFTkSuQmCC");
+      }
+      #sidebar-bottom {
+        background: #f5f5f5;
+        border-top:1px solid #eee;
+      }
+      #sidebar-bottom .widget {
+        border-bottom: 1px solid #e0e0e0;
+        padding: 15px 0;
+        text-align: center;
+      }
+      #sidebar-bottom > div:last-child {
+        border-bottom: 0;
+      }
+      #sidebar-bottom .text {
+        line-height: 20px;
+      }
+      /* Home, forward, and backward pagination. */
+      .blog-pager {
+        border-top : 1px #e0e0e0 solid;
+        padding-top: 10px;
+        margin-top: 15px;
+        text-align: right !important;
+      }
+      #blog-pager {
+        margin-botom: 0;
+        margin-top: -14px;
+        padding: 16px 0 0 0;
+      }
+      #blog-pager a {
+        display: inline-block;
+      }
+      .blog-pager i.disabled {
+        opacity: 0.2 !important;
+      }
+      .blog-pager i {
+        color: black;
+        margin-left: 16px;
+        opacity: 0.54;
+      }
+      .blog-pager i:hover, .blog-pager i:active {
+        opacity: 0.87;
+      }
+      #blog-pager-older-link, #blog-pager-newer-link {
+        float: none;
+      }
+      .gplus-profile {
+        background-color: #fafafa;
+        border: 1px solid #eee;
+        overflow: hidden;
+        width: 212px;
+      }
+      .gplus-profile-inner {
+        margin-left: -1px;
+        margin-top: -1px;
+      }
+      /* Sidebar follow buttons. */
+      .followgooglewrapper {
+        padding: 12px 0 0 0;
+      }
+      .loading {
+        visibility: hidden;
+      }
+      .detail-page .post-footer .cmt_iframe_holder {
+        padding-top: 40px !important;
+      }
+      /** Desktop **/
+      @media (max-width: 900px) {
+        .col-right {
+          display: none;
+        }
+        .col-main {
+          margin-right: 0;
+          min-width: initial;
+        }
+        .footer-outer {
+          display: none;
+        }
+        .cols-wrapper {
+          min-width: initial;
+        }
+        .google-footer-outer {
+          background-color: #f5f5f5;
+        }
+      }
+      /** Tablet **/
+      @media (max-width: 712px) {
+        .header-outer, .cols-wrapper, .footer-outer, .google-footer-outer {
+          padding: 0 40px;
+        }
+      }
+      /* An extra breakpoint accommodating for long blog titles. */
+      @media (max-width: 600px) {
+        .header-left {
+          height: 100%;
+          top: inherit;
+          margin-top: 0;
+          -webkit-transform: initial;
+          transform: initial;
+        }
+        .header-inner {
+        height: 155px;
+        }
+        .header-title {
+          margin-top: 18px;
+        }
+        .header-inner .google-logo img {
+          height: 52px;
+        }
+        .google-logo img{
+          height: 70px;
+        }
+        .header-title h2 {
+          font-size: 32px;
+          line-height: 67px;
+        }
+        .header-desc {
+          bottom: 24px;
+          position: absolute;
+        }
+      }
+      /** Mobile/small desktop window; also landscape. **/
+      @media (max-width: 480px), (max-height: 480px) {
+        .header-outer, .cols-wrapper, .footer-outer, .google-footer-outer {
+          padding: 0 16px;
+        }
+        .cols-wrapper {
+          margin-top: 0;
+        }
+        .post-header .publishdate, .post .post-content {
+          font-size: 16px;
+        }
+        .post .post-content {
+          line-height: 28px;
+          margin-bottom: 30px;
+        }
+        .post {
+          margin-top: 30px;
+        }
+        .byline-author {
+          display: block;
+          font-size: 12px;
+          line-height: 24px;
+          margin-top: 6px;
+        }
+        #main .post .title a {
+          font-weight: 500;
+          color: #4c4c4c;
+          color: rgba(0,0,0,.70);
+        }
+        #main .post .post-header {
+          padding-bottom: 12px;
+        }
+        #main .post .post-header .published {
+          margin-bottom: -8px;
+          margin-top: 3px;
+        }
+        .post .read-more {
+          display: block;
+          margin-top: 14px;
+        }
+        .post .tr-caption {
+          font-size: 12px;
+        }
+        #main .post .title a {
+          font-size: 20px;
+          line-height: 30px;
+        }
+        .post-content iframe {
+          /* iframe won't keep aspect ratio when scaled down. */
+          max-height: 240px;
+        }
+        .post-content .separator img, .post-content .tr-caption-container img, .post-content iframe {
+          margin-left: -16px;
+          max-width: inherit;
+          width: calc(100% + 32px);
+        }
+        .post-content table, .post-content td {
+          width: 100%;
+        }
+        #blog-pager {
+          margin: 0;
+          padding: 16px 0;
+        }
+        /** List page tweaks. **/
+        .list-page .post-original {
+          display: none;
+        }
+        .list-page .post-summary {
+          display: block;
+        }
+        .list-page .comment-container {
+          display: none;
+        } 
+        .list-page #blog-pager {
+          padding-top: 0;
+          border: 0;
+          margin-top: -8px;
+        }
+        .list-page .label-footer {
+          display: none;
+        }
+        .list-page #main .post .post-footer {
+          border-bottom: 1px solid #eee;
+          margin: -16px 0 0 0;
+          padding: 0 0 20px 0;
+        }
+        .list-page .post .share {
+          display: none;
+        }
+        /** Detail page tweaks. **/
+        .detail-page .post-footer .cmt_iframe_holder {
+          padding-top: 32px !important;
+        }
+        .detail-page .label-footer {
+          margin-bottom: 0;
+        }
+        .detail-page #main .post .post-footer {
+          padding-bottom: 0;
+        }
+        .detail-page #comments {
+          display: none;
+        }
+      }
+      [data-about-pullquote], [data-is-preview], [data-about-syndication] {
+        display: none;
+      }
+    </style>
+<noscript>
+<style>
+        .loading { visibility: visible }</style>
+</noscript>
+<script type='text/javascript'>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-18003-4', 'auto', 'blogger');
+        ga('blogger.send', 'pageview');
+      </script>
+<link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3213900&amp;zx=f2211021-8ccc-4492-8d0c-a07841bfad37' media='none' onload='if(media!=&#39;all&#39;)media=&#39;all&#39;' rel='stylesheet'/><noscript><link href='https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3213900&amp;zx=f2211021-8ccc-4492-8d0c-a07841bfad37' rel='stylesheet'/></noscript>
+
+</head>
+<body>
+<script type='text/javascript'>
+      //<![CDATA[
+      var axel = Math.random() + "";
+      var a = axel * 10000000000000;
+      document.write('<iframe src="https://2542116.fls.doubleclick.net/activityi;src=2542116;type=gblog;cat=googl0;ord=ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
+      //]]>
+    </script>
+<noscript>
+<img alt='' height='1' src='https://ad.doubleclick.net/ddm/activity/src=2542116;type=gblog;cat=googl0;ord=1?' width='1'/>
+</noscript>
+<!-- Header -->
+<div class='header-outer'>
+<div class='header-inner'>
+<div class='section' id='header'><div class='widget Header' data-version='1' id='Header1'>
+<div class='header-left'>
+<div class='header-title'>
+<a class='google-logo' href='https://blogger-developers.googleblog.com/'>
+<img src='https://2.bp.blogspot.com/-I6CkaVJjm_4/WNJeqWU8_WI/AAAAAAAATaY/PB0ipPlBStc56Tp17azAx8HQ-M4FdQiuQCK4B/s1600/blogger_masthead%25403x.png'/>
+</a>
+<a href='/.'>
+<h2>
+            Developers
+          </h2>
+</a>
+</div>
+<div class='header-desc'>
+The latest updates on Blogger developer tools
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<!-- all content wrapper start -->
+<div class='cols-wrapper loading'>
+<div class='col-main-wrapper'>
+<div class='col-main'>
+<div class='section' id='main'><div class='widget Blog' data-version='1' id='Blog1'>
+<div class='post' data-id='8266404449195608384' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<h2 class='title' itemprop='name'>
+<a href='https://blogger-developers.googleblog.com/2013/04/improvements-to-blogger-template-html.html' itemprop='url' title='Improvements to the Blogger template HTML editor'>
+Improvements to the Blogger template HTML editor
+</a>
+</h2>
+<div class='post-header'>
+<div class='published'>
+<span class='publishdate' itemprop='datePublished'>
+Tuesday, April 09, 2013
+</span>
+</div>
+</div>
+<div class='post-body'>
+<div class='post-content' itemprop='articleBody'>
+<script type='text/template'>
+                          Posted by: <a class="g-profile" href="http://plus.google.com/106884078206744750860" target="_blank">+Samantha Schaffer</a>&nbsp;and <a class="g-profile" href="http://plus.google.com/116429990887322072749" target="_blank">+Renee Kwang</a>,&nbsp;Software Engineer Interns.
+<br />
+<br />
+Whether you&#8217;re a web developer who builds blog templates for a living, or a web-savvy blog owner who prefers to make changes to your template using HTML, CSS or JavaScript, you may be interested in some enhancements that we made to <a href="http://support.google.com/blogger/bin/answer.py?hl=en&amp;answer=46870">Blogger&#8217;s Template HTML Editor</a>.<br />
+<br />
+Your blog&#8217;s HTML template is the source code that controls the appearance of your blog. This template can be customized to appear however you&#8217;d like. The improved HTML template editor now supports line numbering, syntax highlighting, auto-indentation and code folding to make editing your template much easier.<br />
+<br />
+Suppose we wanted to move the date of a blog post underneath the post title, similar to the <a href="http://buzz.blogger.com/">Blogger Buzz blog</a>. To do this, follow these steps:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-_37Tb6dWvAo/UWTB1E9dk7I/AAAAAAAAABc/rj1M_5IFnYQ/s1600/post-image-01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="172" src="//1.bp.blogspot.com/-_37Tb6dWvAo/UWTB1E9dk7I/AAAAAAAAABc/rj1M_5IFnYQ/s640/post-image-01.png" width="640"></a></div>
+Click the &#8220;Template&#8221; tab on the Blogger dashboard, then the &#8220;Edit HTML&#8221; button, to see the new template HTML editor:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-zLFObgjvhAo/UWTA1PgpsnI/AAAAAAAAABY/pwZtjtGFJPY/s1600/post-image-02.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="338" src="//1.bp.blogspot.com/-zLFObgjvhAo/UWTA1PgpsnI/AAAAAAAAABY/pwZtjtGFJPY/s640/post-image-02.png" width="640"></a></div>
+Locate the &#8220;Blog1&#8221; widget quickly using the new &#8220;Jump to widget&#8221; drop down:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-atnW4SM-en0/UWTA1XHSS0I/AAAAAAAAAA4/txd1V96_t6w/s1600/post-image-03.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="224" src="//1.bp.blogspot.com/-atnW4SM-en0/UWTA1XHSS0I/AAAAAAAAAA4/txd1V96_t6w/s320/post-image-03.png" width="320"></a></div>
+This widget controls how your blog posts are displayed. The code inside the widget is folded by default. Clicking the new fold markers &#8216;&#9658;&#8217; next to the line numbers expands the widget and reveals a set of &#8220;includable&#8221; tags:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//4.bp.blogspot.com/-mW6R2t6PHPs/UWTA1QYkqwI/AAAAAAAAAA8/KuERawbudCo/s1600/post-image-04.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="274" src="//4.bp.blogspot.com/-mW6R2t6PHPs/UWTA1QYkqwI/AAAAAAAAAA8/KuERawbudCo/s640/post-image-04.png" width="640"></a></div>
+Inside the &#8220;main&#8221; includable is the block of code that renders the post date:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-pUOnfHVrlJk/UWTA2ZfjYBI/AAAAAAAAABU/R1SZUKxjnOE/s1600/post-image-05.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="232" src="//1.bp.blogspot.com/-pUOnfHVrlJk/UWTA2ZfjYBI/AAAAAAAAABU/R1SZUKxjnOE/s640/post-image-05.png" width="640"></a></div>
+Cut the post date code section and move it to where we want it, in this case, under the post title in the &#8220;post&#8221; includable:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//3.bp.blogspot.com/-NdCduZmfkHo/UWTA2cvEjGI/AAAAAAAAABM/3vFkcd_tEU8/s1600/post-image-06.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="270" src="//3.bp.blogspot.com/-NdCduZmfkHo/UWTA2cvEjGI/AAAAAAAAABM/3vFkcd_tEU8/s640/post-image-06.png" width="640"></a></div>
+To check our changes, click the new &#8220;Preview template&#8221; button to see the updates:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-OozJRDbEsbQ/UWTA2tTtGYI/AAAAAAAAABQ/WGfUycPxTlA/s1600/post-image-07.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="264" src="//1.bp.blogspot.com/-OozJRDbEsbQ/UWTA2tTtGYI/AAAAAAAAABQ/WGfUycPxTlA/s640/post-image-07.png" width="640"></a></div>
+The post date is exactly where we want it, so tab back to &#8220;Edit template&#8221;, hit &#8220;Save template&#8221; and we&#8217;re done!<br />
+<br />
+Finally, we&#8217;ve added a &#8220;Format template&#8221; button that automatically cleans up the indentation of the template, and made it possible to search for text by pressing &#8220;Ctrl+F&#8221; once you&#8217;ve clicked into the editor. To find and replace text occurrences one by one, use &#8220;Ctrl+Shift+F&#8221; or to find and replace all occurrences at once, use &#8220;Ctrl+Shift+R&#8221;.<br />
+<div>
+&nbsp; <br />
+We worked on this project as part of Google Australia&#8217;s <a href="//www.google.com/intl/en/jobs/students/tech/internships/australia/2013-bold-engineering-intern-sydney.html">BOLD Diversity Internship Program</a>. We hope you enjoy the changes we&#8217;ve made!</div>
+
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+  <meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+                        </script>
+<noscript>
+Posted by: <a class="g-profile" href="http://plus.google.com/106884078206744750860" target="_blank">+Samantha Schaffer</a>&nbsp;and <a class="g-profile" href="http://plus.google.com/116429990887322072749" target="_blank">+Renee Kwang</a>,&nbsp;Software Engineer Interns.
+<br />
+<br />
+Whether you&#8217;re a web developer who builds blog templates for a living, or a web-savvy blog owner who prefers to make changes to your template using HTML, CSS or JavaScript, you may be interested in some enhancements that we made to <a href="http://support.google.com/blogger/bin/answer.py?hl=en&amp;answer=46870">Blogger&#8217;s Template HTML Editor</a>.<br />
+<br />
+Your blog&#8217;s HTML template is the source code that controls the appearance of your blog. This template can be customized to appear however you&#8217;d like. The improved HTML template editor now supports line numbering, syntax highlighting, auto-indentation and code folding to make editing your template much easier.<br />
+<br />
+Suppose we wanted to move the date of a blog post underneath the post title, similar to the <a href="http://buzz.blogger.com/">Blogger Buzz blog</a>. To do this, follow these steps:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-_37Tb6dWvAo/UWTB1E9dk7I/AAAAAAAAABc/rj1M_5IFnYQ/s1600/post-image-01.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="172" src="//1.bp.blogspot.com/-_37Tb6dWvAo/UWTB1E9dk7I/AAAAAAAAABc/rj1M_5IFnYQ/s640/post-image-01.png" width="640"></a></div>
+Click the &#8220;Template&#8221; tab on the Blogger dashboard, then the &#8220;Edit HTML&#8221; button, to see the new template HTML editor:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-zLFObgjvhAo/UWTA1PgpsnI/AAAAAAAAABY/pwZtjtGFJPY/s1600/post-image-02.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="338" src="//1.bp.blogspot.com/-zLFObgjvhAo/UWTA1PgpsnI/AAAAAAAAABY/pwZtjtGFJPY/s640/post-image-02.png" width="640"></a></div>
+Locate the &#8220;Blog1&#8221; widget quickly using the new &#8220;Jump to widget&#8221; drop down:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-atnW4SM-en0/UWTA1XHSS0I/AAAAAAAAAA4/txd1V96_t6w/s1600/post-image-03.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="224" src="//1.bp.blogspot.com/-atnW4SM-en0/UWTA1XHSS0I/AAAAAAAAAA4/txd1V96_t6w/s320/post-image-03.png" width="320"></a></div>
+This widget controls how your blog posts are displayed. The code inside the widget is folded by default. Clicking the new fold markers &#8216;&#9658;&#8217; next to the line numbers expands the widget and reveals a set of &#8220;includable&#8221; tags:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//4.bp.blogspot.com/-mW6R2t6PHPs/UWTA1QYkqwI/AAAAAAAAAA8/KuERawbudCo/s1600/post-image-04.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="274" src="//4.bp.blogspot.com/-mW6R2t6PHPs/UWTA1QYkqwI/AAAAAAAAAA8/KuERawbudCo/s640/post-image-04.png" width="640"></a></div>
+Inside the &#8220;main&#8221; includable is the block of code that renders the post date:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-pUOnfHVrlJk/UWTA2ZfjYBI/AAAAAAAAABU/R1SZUKxjnOE/s1600/post-image-05.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="232" src="//1.bp.blogspot.com/-pUOnfHVrlJk/UWTA2ZfjYBI/AAAAAAAAABU/R1SZUKxjnOE/s640/post-image-05.png" width="640"></a></div>
+Cut the post date code section and move it to where we want it, in this case, under the post title in the &#8220;post&#8221; includable:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//3.bp.blogspot.com/-NdCduZmfkHo/UWTA2cvEjGI/AAAAAAAAABM/3vFkcd_tEU8/s1600/post-image-06.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="270" src="//3.bp.blogspot.com/-NdCduZmfkHo/UWTA2cvEjGI/AAAAAAAAABM/3vFkcd_tEU8/s640/post-image-06.png" width="640"></a></div>
+To check our changes, click the new &#8220;Preview template&#8221; button to see the updates:<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="//1.bp.blogspot.com/-OozJRDbEsbQ/UWTA2tTtGYI/AAAAAAAAABQ/WGfUycPxTlA/s1600/post-image-07.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="264" src="//1.bp.blogspot.com/-OozJRDbEsbQ/UWTA2tTtGYI/AAAAAAAAABQ/WGfUycPxTlA/s640/post-image-07.png" width="640"></a></div>
+The post date is exactly where we want it, so tab back to &#8220;Edit template&#8221;, hit &#8220;Save template&#8221; and we&#8217;re done!<br />
+<br />
+Finally, we&#8217;ve added a &#8220;Format template&#8221; button that automatically cleans up the indentation of the template, and made it possible to search for text by pressing &#8220;Ctrl+F&#8221; once you&#8217;ve clicked into the editor. To find and replace text occurrences one by one, use &#8220;Ctrl+Shift+F&#8221; or to find and replace all occurrences at once, use &#8220;Ctrl+Shift+R&#8221;.<br />
+<div>
+&nbsp; <br />
+We worked on this project as part of Google Australia&#8217;s <a href="//www.google.com/intl/en/jobs/students/tech/internships/australia/2013-bold-engineering-intern-sydney.html">BOLD Diversity Internship Program</a>. We hope you enjoy the changes we&#8217;ve made!</div>
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+</noscript>
+</div>
+</div>
+<div class='share'>
+<span class='gplus-share social-wrapper' data-href='https://plus.google.com/share?url=https://blogger-developers.googleblog.com/2013/04/improvements-to-blogger-template-html.html'>
+<img alt='Share on Google+' height='24' src='https://www.gstatic.com/images/branding/google_plus/2x/ic_w_post_gplus_black_24dp.png' width='24'/>
+</span>
+<span class='twitter-custom social-wrapper' data-href='http://twitter.com/share?text=Blogger Developers:Improvements to the Blogger template HTML editor&url=https://blogger-developers.googleblog.com/2013/04/improvements-to-blogger-template-html.html&via=adwords'>
+<img alt='Share on Twitter' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png' width='24'/>
+</span>
+<span class='fb-custom social-wrapper' data-href='https://www.facebook.com/sharer.php?u=https://blogger-developers.googleblog.com/2013/04/improvements-to-blogger-template-html.html'>
+<img alt='Share on Facebook' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png' width='24'/>
+</span>
+</div>
+</div>
+<div class='post' data-id='738097307410258659' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<h2 class='title' itemprop='name'>
+<a href='https://blogger-developers.googleblog.com/2012/06/blogger-api-v3.html' itemprop='url' title='Blogger API v3'>
+Blogger API v3
+</a>
+</h2>
+<div class='post-header'>
+<div class='published'>
+<span class='publishdate' itemprop='datePublished'>
+Tuesday, June 19, 2012
+</span>
+</div>
+</div>
+<div class='post-body'>
+<div class='post-content' itemprop='articleBody'>
+<script type='text/template'>
+                          <p>One of the most requested features that developers have for the Blogger JSON API is the ability to create posts. So have a quick guess what the following HTTP request does?</p>
+
+<pre>
+POST https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/ HTTP/1.0
+Host: www.googleapis.com
+Authorization: Bearer &lt;OAuth2 key>
+Content-Type: application/json
+
+{
+  "kind": "blogger#post",
+  "blog": {
+    "id": "8070105920543249955"
+  },
+  "title": "A new post",
+  "content": "With &lt;b>exciting&lt;/b> content..."
+}
+</pre>
+
+<p>That&#8217;s right, Blogger API v3 gives you the ability to <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/insert">create posts</a>! Oh, and <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/update">edit</a>, <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/delete">delete</a> and <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/search">search</a> them as well!</p>
+
+<p>There is documentation that covers all this new functionality. Firstly we have a <a href="https://developers.google.com/blogger/docs/3.0/getting_started">Getting Started</a> document that gives you an overview of using the API. Then there is a more detailed <a href="https://developers.google.com/blogger/docs/3.0/using">Using Blogger API</a> guide that shows how you would use the API. Finally the <a href="https://developers.google.com/blogger/docs/3.0/reference/">API Reference</a> that covers the fine details, like argument and result specifications for all the calls.</p>
+
+<p>If you have any questions about how to use this new API, please join in the discussion on the <a href="https://groups.google.com/forum/?fromgroups#!forum/bloggerdev">Blogger Developer group</a>.</p>
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+  <meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+                        </script>
+<noscript>
+<p>One of the most requested features that developers have for the Blogger JSON API is the ability to create posts. So have a quick guess what the following HTTP request does?</p>
+
+<pre>
+POST https://www.googleapis.com/blogger/v3/blogs/8070105920543249955/posts/ HTTP/1.0
+Host: www.googleapis.com
+Authorization: Bearer &lt;OAuth2 key>
+Content-Type: application/json
+
+{
+  "kind": "blogger#post",
+  "blog": {
+    "id": "8070105920543249955"
+  },
+  "title": "A new post",
+  "content": "With &lt;b>exciting&lt;/b> content..."
+}
+</pre>
+
+<p>That&#8217;s right, Blogger API v3 gives you the ability to <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/insert">create posts</a>! Oh, and <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/update">edit</a>, <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/delete">delete</a> and <a href="https://developers.google.com/blogger/docs/3.0/reference/posts/search">search</a> them as well!</p>
+
+<p>There is documentation that covers all this new functionality. Firstly we have a <a href="https://developers.google.com/blogger/docs/3.0/getting_started">Getting Started</a> document that gives you an overview of using the API. Then there is a more detailed <a href="https://developers.google.com/blogger/docs/3.0/using">Using Blogger API</a> guide that shows how you would use the API. Finally the <a href="https://developers.google.com/blogger/docs/3.0/reference/">API Reference</a> that covers the fine details, like argument and result specifications for all the calls.</p>
+
+<p>If you have any questions about how to use this new API, please join in the discussion on the <a href="https://groups.google.com/forum/?fromgroups#!forum/bloggerdev">Blogger Developer group</a>.</p>
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+</noscript>
+</div>
+</div>
+<div class='share'>
+<span class='gplus-share social-wrapper' data-href='https://plus.google.com/share?url=https://blogger-developers.googleblog.com/2012/06/blogger-api-v3.html'>
+<img alt='Share on Google+' height='24' src='https://www.gstatic.com/images/branding/google_plus/2x/ic_w_post_gplus_black_24dp.png' width='24'/>
+</span>
+<span class='twitter-custom social-wrapper' data-href='http://twitter.com/share?text=Blogger Developers:Blogger API v3&url=https://blogger-developers.googleblog.com/2012/06/blogger-api-v3.html&via=adwords'>
+<img alt='Share on Twitter' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png' width='24'/>
+</span>
+<span class='fb-custom social-wrapper' data-href='https://www.facebook.com/sharer.php?u=https://blogger-developers.googleblog.com/2012/06/blogger-api-v3.html'>
+<img alt='Share on Facebook' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png' width='24'/>
+</span>
+</div>
+</div>
+<div class='post' data-id='1387873546480002228' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<h2 class='title' itemprop='name'>
+<a href='https://blogger-developers.googleblog.com/2012/03/blogger-documentation-has-moved-to.html' itemprop='url' title='Blogger Documentation has moved to developers.google.com'>
+Blogger Documentation has moved to developers.google.com
+</a>
+</h2>
+<div class='post-header'>
+<div class='published'>
+<span class='publishdate' itemprop='datePublished'>
+Friday, March 23, 2012
+</span>
+</div>
+</div>
+<div class='post-body'>
+<div class='post-content' itemprop='articleBody'>
+<script type='text/template'>
+                          Blogger documentation has a new home: it has moved to <a href="https://developers.google.com/blogger/">developers.google.com/blogger</a>!<br />
+<br />
+I have re-arranged the documentation a little to make it easier to navigate, but it is largely the same documentation you will remember from <a href="http://code.google.com/apis/blogger">code.google.com/apis/blogger</a>. If you find anything is out of place or hard to find, please let us know on the <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer forum</a>.
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+  <meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+                        </script>
+<noscript>
+Blogger documentation has a new home: it has moved to <a href="https://developers.google.com/blogger/">developers.google.com/blogger</a>!<br />
+<br />
+I have re-arranged the documentation a little to make it easier to navigate, but it is largely the same documentation you will remember from <a href="http://code.google.com/apis/blogger">code.google.com/apis/blogger</a>. If you find anything is out of place or hard to find, please let us know on the <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer forum</a>.
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+</noscript>
+</div>
+</div>
+<div class='share'>
+<span class='gplus-share social-wrapper' data-href='https://plus.google.com/share?url=https://blogger-developers.googleblog.com/2012/03/blogger-documentation-has-moved-to.html'>
+<img alt='Share on Google+' height='24' src='https://www.gstatic.com/images/branding/google_plus/2x/ic_w_post_gplus_black_24dp.png' width='24'/>
+</span>
+<span class='twitter-custom social-wrapper' data-href='http://twitter.com/share?text=Blogger Developers:Blogger Documentation has moved to developers.google.com&url=https://blogger-developers.googleblog.com/2012/03/blogger-documentation-has-moved-to.html&via=adwords'>
+<img alt='Share on Twitter' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png' width='24'/>
+</span>
+<span class='fb-custom social-wrapper' data-href='https://www.facebook.com/sharer.php?u=https://blogger-developers.googleblog.com/2012/03/blogger-documentation-has-moved-to.html'>
+<img alt='Share on Facebook' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png' width='24'/>
+</span>
+</div>
+</div>
+<div class='post' data-id='3727559627660892860' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<h2 class='title' itemprop='name'>
+<a href='https://blogger-developers.googleblog.com/2012/01/customising-threaded-comments.html' itemprop='url' title='Customising Threaded Comments'>
+Customising Threaded Comments
+</a>
+</h2>
+<div class='post-header'>
+<div class='published'>
+<span class='publishdate' itemprop='datePublished'>
+Saturday, January 21, 2012
+</span>
+</div>
+</div>
+<div class='post-body'>
+<div class='post-content' itemprop='articleBody'>
+<script type='text/template'>
+                          <p>Recently we released an update to Blogger&#8217;s commenting system that enables people to directly respond to comments. This capability is known as <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments</a>. We are pleased to see quite a few people diving in and writing tutorials, including a <a href="//www.youtube.com/watch?v=LsVV2nyfIEM">screencast</a>. It&#8217;s wonderful to see the enthusiasm of our developers!</p>
+
+<p>In this post we will look at what are the changes required to modify a custom template to enable Threaded Comments, once you have fulfilled the requirements outlined in the <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments</a> announcement post on Buzz.blogger.com. We will then look at how to customise the look and feel of the Threaded Comments using just CSS, and also have a quick peek at alternatives.</p>
+
+<p>Please note, these instructions may not work if your blog&#8217;s template is heavily customised. Your template may possibly missing some of the <code>b:includable</code>s that the instructions below depend on. Please try the following instructions on your template, but if they don&#8217;t work come to our <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer forum</a> and get some help with patching your template. </p>
+
+<p>The first step is to Edit the HTML for your Template, which can be found inside Settings under the Template tab. You must make sure to expand the Widget Templates, as we need to modify the main Blog Widget Template. To find the main Blog Widget code, search for the following Blogger Layouts Template code:</p>
+
+<pre>&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;</pre>
+
+<p>Inside the <code>b:widget</code> are a series of <code>b:includable</code> blocks. These act a lot like functions in programming languages, in that they can be called from other <code>b:includable</code> blocks to insert chunks of HTML. The only special block is the includable called <code>main</code>, which is where the Layout Template engine starts when rendering the Widget&#8217;s content. If you don&#8217;t see content inside the <code>b:widget</code>, you need to click the Expand Widget Templates radio button above the edit area.</p>
+
+<p>The Layout Template should include the following code:</p>
+
+<pre>&lt;b:if cond='data:post.showThreadedComments'&gt;
+  &lt;b:include data='post' name='threaded_comments'/&gt;
+&lt;b:else/&gt;
+  &lt;b:include data='post' name='comments'/&gt;
+&lt;/b:if&gt;</pre>
+
+<p>The interesting part is that we have a fork here, implemented as a <code>b:if</code> conditional block, that decides whether to render the comments as threaded or not. The need for this split can be seen on the Threaded Comments announcement on <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Buzz.blogger.com</a>. </p>
+
+<p>As a quick aside, if you don&#8217;t have this code, but instead just have something like the following:</p>
+
+<pre>&lt;b:include data='post' name='comments'/&gt;</pre>
+
+<p>Then you can get threaded comments by replacing this b:include with the above logic block, assuming you fulfill the requirements laid out in the <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments announcement post on Buzz.blogger.com</a>.</p>
+
+<p>Now you can look at the implementation of the threaded_comments includable by searching for the following line of code:</p>
+
+<pre>&lt;b:includable id='threaded_comments' var='post'&gt;</pre>
+
+<p>This code is responsible for rendering the actual threaded comments to screen. You can choose to override this code block to customise the look of your comments, but it is worth noting that if you do, you won&#8217;t get updates to this functionality as we change the implementation in the future.</p>
+
+<p>There are two new data members we have introduced with this feature release that you can use to render comment threads:</p>
+<ul>
+  <li><code>data:post.commentSrc</code> This is the source to the javascript library that handles actions</li>
+  <li><code>data:post.commentHtml</code> This is the rendered HTML for the comment thread</li>
+</ul>
+
+<p>If you want to change the look and feel of your comments, we strongly recommend you use the Template Designer to set custom CSS to style the Threaded Comments. We suggest you customise the comments by modifying the property "Advanced > Add CSS". For example, you can add the following CSS code to change the look:</p>
+
+<pre>.comments blockquote { 
+    border: 1px solid black; color: white; font: Helvetica;
+} // draws a border around comment bodies, sets the text font and colour
+.comments .inline-thread li { list-style-type: decimal; } // numbers replies
+</pre>
+
+<p>Finally, you can implement your own version of Threaded Comments by walking the <code>data:post.comments</code> directly. This will contain all the comments, ordered by time of comment, now with an optional extra field <code>data:comment.inReplyTo</code> which will contain the <code>id</code> of the parent comment, if there is one.</p>
+
+<p>If you have any questions about how to customise your Blogger Comments, please feel free to drop by the <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer Forum</a>. We&#8217;re glad to help!</p>
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+  <meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+                        </script>
+<noscript>
+<p>Recently we released an update to Blogger&#8217;s commenting system that enables people to directly respond to comments. This capability is known as <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments</a>. We are pleased to see quite a few people diving in and writing tutorials, including a <a href="//www.youtube.com/watch?v=LsVV2nyfIEM">screencast</a>. It&#8217;s wonderful to see the enthusiasm of our developers!</p>
+
+<p>In this post we will look at what are the changes required to modify a custom template to enable Threaded Comments, once you have fulfilled the requirements outlined in the <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments</a> announcement post on Buzz.blogger.com. We will then look at how to customise the look and feel of the Threaded Comments using just CSS, and also have a quick peek at alternatives.</p>
+
+<p>Please note, these instructions may not work if your blog&#8217;s template is heavily customised. Your template may possibly missing some of the <code>b:includable</code>s that the instructions below depend on. Please try the following instructions on your template, but if they don&#8217;t work come to our <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer forum</a> and get some help with patching your template. </p>
+
+<p>The first step is to Edit the HTML for your Template, which can be found inside Settings under the Template tab. You must make sure to expand the Widget Templates, as we need to modify the main Blog Widget Template. To find the main Blog Widget code, search for the following Blogger Layouts Template code:</p>
+
+<pre>&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;</pre>
+
+<p>Inside the <code>b:widget</code> are a series of <code>b:includable</code> blocks. These act a lot like functions in programming languages, in that they can be called from other <code>b:includable</code> blocks to insert chunks of HTML. The only special block is the includable called <code>main</code>, which is where the Layout Template engine starts when rendering the Widget&#8217;s content. If you don&#8217;t see content inside the <code>b:widget</code>, you need to click the Expand Widget Templates radio button above the edit area.</p>
+
+<p>The Layout Template should include the following code:</p>
+
+<pre>&lt;b:if cond='data:post.showThreadedComments'&gt;
+  &lt;b:include data='post' name='threaded_comments'/&gt;
+&lt;b:else/&gt;
+  &lt;b:include data='post' name='comments'/&gt;
+&lt;/b:if&gt;</pre>
+
+<p>The interesting part is that we have a fork here, implemented as a <code>b:if</code> conditional block, that decides whether to render the comments as threaded or not. The need for this split can be seen on the Threaded Comments announcement on <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Buzz.blogger.com</a>. </p>
+
+<p>As a quick aside, if you don&#8217;t have this code, but instead just have something like the following:</p>
+
+<pre>&lt;b:include data='post' name='comments'/&gt;</pre>
+
+<p>Then you can get threaded comments by replacing this b:include with the above logic block, assuming you fulfill the requirements laid out in the <a href="http://buzz.blogger.com/2012/01/engage-with-your-readers-through.html">Threaded Comments announcement post on Buzz.blogger.com</a>.</p>
+
+<p>Now you can look at the implementation of the threaded_comments includable by searching for the following line of code:</p>
+
+<pre>&lt;b:includable id='threaded_comments' var='post'&gt;</pre>
+
+<p>This code is responsible for rendering the actual threaded comments to screen. You can choose to override this code block to customise the look of your comments, but it is worth noting that if you do, you won&#8217;t get updates to this functionality as we change the implementation in the future.</p>
+
+<p>There are two new data members we have introduced with this feature release that you can use to render comment threads:</p>
+<ul>
+  <li><code>data:post.commentSrc</code> This is the source to the javascript library that handles actions</li>
+  <li><code>data:post.commentHtml</code> This is the rendered HTML for the comment thread</li>
+</ul>
+
+<p>If you want to change the look and feel of your comments, we strongly recommend you use the Template Designer to set custom CSS to style the Threaded Comments. We suggest you customise the comments by modifying the property "Advanced > Add CSS". For example, you can add the following CSS code to change the look:</p>
+
+<pre>.comments blockquote { 
+    border: 1px solid black; color: white; font: Helvetica;
+} // draws a border around comment bodies, sets the text font and colour
+.comments .inline-thread li { list-style-type: decimal; } // numbers replies
+</pre>
+
+<p>Finally, you can implement your own version of Threaded Comments by walking the <code>data:post.comments</code> directly. This will contain all the comments, ordered by time of comment, now with an optional extra field <code>data:comment.inReplyTo</code> which will contain the <code>id</code> of the parent comment, if there is one.</p>
+
+<p>If you have any questions about how to customise your Blogger Comments, please feel free to drop by the <a href="https://groups.google.com/forum/#!forum/bloggerdev">Blogger Developer Forum</a>. We&#8217;re glad to help!</p>
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+</noscript>
+</div>
+</div>
+<div class='share'>
+<span class='gplus-share social-wrapper' data-href='https://plus.google.com/share?url=https://blogger-developers.googleblog.com/2012/01/customising-threaded-comments.html'>
+<img alt='Share on Google+' height='24' src='https://www.gstatic.com/images/branding/google_plus/2x/ic_w_post_gplus_black_24dp.png' width='24'/>
+</span>
+<span class='twitter-custom social-wrapper' data-href='http://twitter.com/share?text=Blogger Developers:Customising Threaded Comments&url=https://blogger-developers.googleblog.com/2012/01/customising-threaded-comments.html&via=adwords'>
+<img alt='Share on Twitter' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png' width='24'/>
+</span>
+<span class='fb-custom social-wrapper' data-href='https://www.facebook.com/sharer.php?u=https://blogger-developers.googleblog.com/2012/01/customising-threaded-comments.html'>
+<img alt='Share on Facebook' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png' width='24'/>
+</span>
+</div>
+</div>
+<div class='post' data-id='1356679731059154830' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<h2 class='title' itemprop='name'>
+<a href='https://blogger-developers.googleblog.com/2012/01/easier-to-use-interface-for-blogger.html' itemprop='url' title='An easier to use interface for the Blogger JSON API'>
+An easier to use interface for the Blogger JSON API
+</a>
+</h2>
+<div class='post-header'>
+<div class='published'>
+<span class='publishdate' itemprop='datePublished'>
+Wednesday, January 04, 2012
+</span>
+</div>
+</div>
+<div class='post-body'>
+<div class='post-content' itemprop='articleBody'>
+<script type='text/template'>
+                          As I have been reviewing the applications to use the <a href="http://code.google.com/apis/blogger/docs/2.0/json/getting_started.html">Blogger JSON API</a>, I have noticed that a fair number of you appear to be integrating with Blogger JSON API using JavaScript. So, in the interests of making things easier for all of you, here is a walk through of using the just released <a href="http://googlecode.blogspot.com/2011/11/javascript-client-library-for-google.html">JavaScript Client Library for Google APIs</a> to access the Blogger JSON API.<br />
+The first step is exploring the methods we can call in the <a href="http://code.google.com/apis/explorer/">Google APIs Explorer</a>. The method in the Blogger JSON API collection that most people use, understandably, is the method to list the most recent posts for a Blog - <a href="http://code.google.com/apis/explorer/#_s=blogger&amp;_v=v2&amp;_m=posts.list"><code>posts.list</code></a>. This method takes one required field - the <code>blogId</code> that identifies a particular blog - and a number of optional arguments that allow us to tune what information is returned.<br />
+The information I am requesting from the Blogger JSON API is the post titles and content for the <a href="http://code.blogger.com/">code.blogger.com</a> blog which has a <code>blogId</code> of 3213900. To limit the returned data to just the post titles and content, we use the optional argument <code>fields</code> with the value of <code>items(content,title)</code>. Here is a link to the <a href="http://code.google.com/apis/explorer/#_s=blogger&amp;_v=v2&amp;_m=posts.list&amp;blogId=3213900&amp;fields=items(content,title)">Google APIs Explorer</a> with the appropriate information pre-filled so you can see both the underlying query that is sent to the Google APIs servers, as well as the shape of the returned JSON data.<br />
+The next step is the JavaScript required to request this data and make use of it. I am using the JavaScript Client Library to both construct the query, as well as navigate the results, reducing the complexity of the code.<br />
+To load the library, all we have to do is include a script in our HTML that loads the library as follows:<br />
+<pre>&lt;script src="https://apis.google.com/js/client.js?onload=init"&gt;&lt;/script&gt;</pre>
+The part of this code to pay attention to is the argument <code>onload=init</code>. This nominates the <code>init</code> function to be called once the JavaScript Client Library has loaded. The <code>init</code> function is where we configure the client key and the API we want to work with:<br />
+<pre>function init() {
+  gapi.client.setApiKey('YOUR_API_KEY');
+  gapi.client.load('blogger', 'v2', function() {
+    // ...  
+  });
+}</pre>
+You can retrieve the API Key from your project on the <a href="https://code.google.com/apis/console/">Google APIs Console</a>, once you have requested that I enable the Blogger API for your project. The <code>gapi.client.load</code> function takes the API name, and version, of the API you want to use, and a callback function to run once the API support code has been loaded. In this code, we are loading the Blogger v2 API.<br />
+Inside the <code>gapi.client.load</code> callback, we have the following code to configure a request to the Google APIs servers:<br />
+<pre>var request = gapi.client.blogger.posts.list({
+  'blogId': 3213900,
+  'fields': 'items(content,title)'
+});</pre>
+Note how we now no longer need to construct our own query url. The JavaScript Client Library deals with all the messy issues of making sure the arguments are correctly escaped. Next, we can issue the request to the servers as follows:<br />
+<pre>request.execute(function(response) {
+  // ...
+});</pre>
+The execute method takes a callback function that will be executed once the Google APIs servers respond. The most important part of this callback function is the data that is handed to us in the <code>response</code> argument. In the body of the callback function, I iterate over the items member to pull out the titles and contents of all the returned posts:<br />
+<pre>for (var i = 0; i &lt; response.items.length; i++) {
+  $("#target").append("&lt;h2&gt;" + response.items[i].title + "&lt;/h2&gt;");
+  $("#target").append(response.items[i].content);
+  if (i+1&lt;response.items.length) {
+    $("#target").append("&lt;hr/&gt;");
+  }
+}</pre>
+The eagle eyed among you will have noticed that I am using <a href="http://jquery.com/">jQuery</a> to insert the returned HTML into the DOM. I am using the latest stable jQuery hosted on Google&#8217;s Libraries API.<br />
+You can see the results on <a href="http://code-blogger.appspot.com/">code-blogger.appspot.com</a>. I have used <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> as the starting point for building this example, to get all the latest HTML5 magic. If you have any questions about this sample, please post them to the <a href="https://groups.google.com/group/bloggerdev">Blogger Developers Group</a>.
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+  <meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+                        </script>
+<noscript>
+As I have been reviewing the applications to use the <a href="http://code.google.com/apis/blogger/docs/2.0/json/getting_started.html">Blogger JSON API</a>, I have noticed that a fair number of you appear to be integrating with Blogger JSON API using JavaScript. So, in the interests of making things easier for all of you, here is a walk through of using the just released <a href="http://googlecode.blogspot.com/2011/11/javascript-client-library-for-google.html">JavaScript Client Library for Google APIs</a> to access the Blogger JSON API.<br />
+The first step is exploring the methods we can call in the <a href="http://code.google.com/apis/explorer/">Google APIs Explorer</a>. The method in the Blogger JSON API collection that most people use, understandably, is the method to list the most recent posts for a Blog - <a href="http://code.google.com/apis/explorer/#_s=blogger&amp;_v=v2&amp;_m=posts.list"><code>posts.list</code></a>. This method takes one required field - the <code>blogId</code> that identifies a particular blog - and a number of optional arguments that allow us to tune what information is returned.<br />
+The information I am requesting from the Blogger JSON API is the post titles and content for the <a href="http://code.blogger.com/">code.blogger.com</a> blog which has a <code>blogId</code> of 3213900. To limit the returned data to just the post titles and content, we use the optional argument <code>fields</code> with the value of <code>items(content,title)</code>. Here is a link to the <a href="http://code.google.com/apis/explorer/#_s=blogger&amp;_v=v2&amp;_m=posts.list&amp;blogId=3213900&amp;fields=items(content,title)">Google APIs Explorer</a> with the appropriate information pre-filled so you can see both the underlying query that is sent to the Google APIs servers, as well as the shape of the returned JSON data.<br />
+The next step is the JavaScript required to request this data and make use of it. I am using the JavaScript Client Library to both construct the query, as well as navigate the results, reducing the complexity of the code.<br />
+To load the library, all we have to do is include a script in our HTML that loads the library as follows:<br />
+<pre>&lt;script src="https://apis.google.com/js/client.js?onload=init"&gt;&lt;/script&gt;</pre>
+The part of this code to pay attention to is the argument <code>onload=init</code>. This nominates the <code>init</code> function to be called once the JavaScript Client Library has loaded. The <code>init</code> function is where we configure the client key and the API we want to work with:<br />
+<pre>function init() {
+  gapi.client.setApiKey('YOUR_API_KEY');
+  gapi.client.load('blogger', 'v2', function() {
+    // ...  
+  });
+}</pre>
+You can retrieve the API Key from your project on the <a href="https://code.google.com/apis/console/">Google APIs Console</a>, once you have requested that I enable the Blogger API for your project. The <code>gapi.client.load</code> function takes the API name, and version, of the API you want to use, and a callback function to run once the API support code has been loaded. In this code, we are loading the Blogger v2 API.<br />
+Inside the <code>gapi.client.load</code> callback, we have the following code to configure a request to the Google APIs servers:<br />
+<pre>var request = gapi.client.blogger.posts.list({
+  'blogId': 3213900,
+  'fields': 'items(content,title)'
+});</pre>
+Note how we now no longer need to construct our own query url. The JavaScript Client Library deals with all the messy issues of making sure the arguments are correctly escaped. Next, we can issue the request to the servers as follows:<br />
+<pre>request.execute(function(response) {
+  // ...
+});</pre>
+The execute method takes a callback function that will be executed once the Google APIs servers respond. The most important part of this callback function is the data that is handed to us in the <code>response</code> argument. In the body of the callback function, I iterate over the items member to pull out the titles and contents of all the returned posts:<br />
+<pre>for (var i = 0; i &lt; response.items.length; i++) {
+  $("#target").append("&lt;h2&gt;" + response.items[i].title + "&lt;/h2&gt;");
+  $("#target").append(response.items[i].content);
+  if (i+1&lt;response.items.length) {
+    $("#target").append("&lt;hr/&gt;");
+  }
+}</pre>
+The eagle eyed among you will have noticed that I am using <a href="http://jquery.com/">jQuery</a> to insert the returned HTML into the DOM. I am using the latest stable jQuery hosted on Google&#8217;s Libraries API.<br />
+You can see the results on <a href="http://code-blogger.appspot.com/">code-blogger.appspot.com</a>. I have used <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> as the starting point for building this example, to get all the latest HTML5 magic. If you have any questions about this sample, please post them to the <a href="https://groups.google.com/group/bloggerdev">Blogger Developers Group</a>.
+<span itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='https://plus.google.com/116899029375914044550' itemprop='url'/>
+</span>
+</noscript>
+</div>
+</div>
+<div class='share'>
+<span class='gplus-share social-wrapper' data-href='https://plus.google.com/share?url=https://blogger-developers.googleblog.com/2012/01/easier-to-use-interface-for-blogger.html'>
+<img alt='Share on Google+' height='24' src='https://www.gstatic.com/images/branding/google_plus/2x/ic_w_post_gplus_black_24dp.png' width='24'/>
+</span>
+<span class='twitter-custom social-wrapper' data-href='http://twitter.com/share?text=Blogger Developers:An easier to use interface for the Blogger JSON API&url=https://blogger-developers.googleblog.com/2012/01/easier-to-use-interface-for-blogger.html&via=adwords'>
+<img alt='Share on Twitter' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png' width='24'/>
+</span>
+<span class='fb-custom social-wrapper' data-href='https://www.facebook.com/sharer.php?u=https://blogger-developers.googleblog.com/2012/01/easier-to-use-interface-for-blogger.html'>
+<img alt='Share on Facebook' height='24' src='https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png' width='24'/>
+</span>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<a class='home-link' href='https://blogger-developers.googleblog.com/'>
+<i class='material-icons'>
+                      &#59530;
+                    </i>
+</a>
+<i class='material-icons disabled'>
+                      &#58820;
+                    </i>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='https://blogger-developers.googleblog.com/search?updated-max=2012-01-04T22:06:00-08:00&max-results=5' id='Blog1_blog-pager-older-link' title='Older Posts'>
+<i class='material-icons'>
+                          &#58824;
+                        </i>
+</a>
+</span>
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='col-right'>
+<div class='section' id='sidebar-top'>
+<div class='widget HTML' data-version='1' id='HTML10'>
+<div class='widget-content'>
+<div class='searchBox'>
+<input type='text' title='Search This Blog' placeholder='Search this blog ...' />
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3213900&widgetType=HTML&widgetId=HTML10&action=editWidget&sectionId=sidebar-top' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML10"));' rel='nofollow' target='configHTML10' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<div id='aside'>
+<div class='section' id='sidebar'><div class='widget Label' data-version='1' id='Label1'>
+<div class='tab'>
+<img class='sidebar-icon' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYpJREFUeNrs2aFuwzAQBmAvKRkMKRjZA4QMDJaWFgyMjuzFRg37DIUlA3uFkoGQSaWzJU+tpri5O9+l/zSfdFJlpe59yTmyVedq1PjfcZMZ70NuQnaF8w8htyE/rABtpviXkLcK88c5HhLkMBfgVan43zfFBNGMjHVGT/s55KP2pAvidbGHd+nzKt1RKSLG3rKF1iPFv6UWiPke8i7kEqGdGsI1O+LYVdqJAjgirwkKYD0ytkJBUNbAMvX8V3q9PhUsYvU1sWD8SO/sQvx2ahxOiNoJCSBCoAHYCEQAC4EKICOQASQEOmAS8RcAFxFN5hiIiugpgC3wk9hQAHH/70EBHXUN7IER5EWMiBgo2+nzOKQv9SCAeEM/OQAkhE/ncccFICB87qzQMia5FsJfOui0zMnmRvipU1ormHQuxGTxUsAcCFLxJQBLBLn4UoAFglW8BkATwS5eC6CBEBWvCShBiIvXBkgQRcVbADiI4uKtABSESvGWgB9EzHt3+tNwyO0qa9SoIYtvAQYAqDJhaWWeMecAAAAASUVORK5CYII='/>
+<h2>
+Labels
+</h2>
+<i class='material-icons arrow'>
+                      &#58821;
+                    </i>
+</div>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='https://blogger-developers.googleblog.com/search/label/atom'>
+atom
+</a>
+</li>
+<li>
+<a dir='ltr' href='https://blogger-developers.googleblog.com/search/label/atom%20publishing%20protocol'>
+atom publishing protocol
+</a>
+</li>
+<li>
+<a dir='ltr' href='https://blogger-developers.googleblog.com/search/label/feature%20requests'>
+feature requests
+</a>
+</li>
+<li>
+<a dir='ltr' href='https://blogger-developers.googleblog.com/search/label/issues'>
+issues
+</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3213900&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' rel='nofollow' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogArchive' data-version='1' id='BlogArchive1'>
+<div class='tab'>
+<i class='material-icons icon'>
+                      &#58055;
+                    </i>
+<h2>
+Archive
+</h2>
+<i class='material-icons arrow'>
+                      &#58821;
+                    </i>
+</div>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy toggle-open'>
+<i class='material-icons'>
+                        &#58823;
+                      </i>
+                      &#160;
+                      
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2013/'>
+2013
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2013/04/'>
+Apr
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2012/'>
+2012
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2012/06/'>
+Jun
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2012/03/'>
+Mar
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2012/01/'>
+Jan
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/'>
+2011
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/12/'>
+Dec
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/11/'>
+Nov
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/10/'>
+Oct
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/09/'>
+Sep
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/06/'>
+Jun
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2011/03/'>
+Mar
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2009/'>
+2009
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2009/06/'>
+Jun
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2009/03/'>
+Mar
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2009/01/'>
+Jan
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2008/'>
+2008
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2008/10/'>
+Oct
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2008/09/'>
+Sep
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2008/05/'>
+May
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2007/'>
+2007
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2007/11/'>
+Nov
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2007/10/'>
+Oct
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2006/'>
+2006
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2006/08/'>
+Aug
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2006/01/'>
+Jan
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/'>
+2005
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/11/'>
+Nov
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/10/'>
+Oct
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/08/'>
+Aug
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/07/'>
+Jul
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/06/'>
+Jun
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/04/'>
+Apr
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/03/'>
+Mar
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2005/01/'>
+Jan
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2004/'>
+2004
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2004/12/'>
+Dec
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2004/10/'>
+Oct
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2004/01/'>
+Jan
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class='intervalToggle'>
+<span class='new-toggle' href='javascript:void(0)'>
+<i class='material-icons arrow'>
+                    &#58821;
+                  </i>
+</span>
+<a class='toggle' href='javascript:void(0)' style='display: none'>
+<span class='zippy'>
+<i class='material-icons'>
+                        &#58821;
+                      </i>
+                      &#160;
+                    
+</span>
+</a>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2003/'>
+2003
+</a>
+</div>
+<div class='items'>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2003/11/'>
+Nov
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2003/07/'>
+Jul
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<div class=''>
+<a class='post-count-link' href='https://blogger-developers.googleblog.com/2003/06/'>
+Jun
+</a>
+</div>
+<div class='items'>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3213900&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' rel='nofollow' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='https://resources.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div>
+<div class='no-items section' id='sidebar-bottom'>
+</div>
+</div>
+</div>
+<div style='clear:both;'></div>
+</div>
+<!-- Footer -->
+<div class='footer-outer loading'>
+<div class='footer-inner'>
+<div class='footer-inner-2'>
+<div style='width:33%;float:left;'>
+<div class='no-items section' id='footer-1'></div>
+</div>
+<div style='width:33%;float:left;'>
+<div class='no-items section' id='footer-2'></div>
+</div>
+<div style='width:33%;float:left;'>
+<div class='no-items section' id='footer-3'></div>
+</div>
+<div style='clear:both;'></div>
+</div>
+</div>
+</div>
+<div class='google-footer-outer loading'>
+<div id='google-footer'>
+<a href='//www.google.com/'>
+<img class='google-logo-dark' height='36' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALgAAABICAYAAABFoT/eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAACLVJREFUeNrsXd+L20YQ3vOprdLqiMXFXE2qB7dcwEcTSB7ykIc+9A/PQx/yEMq1TWhNuYIpJriNr7XpmZ5IxFEvmW2EKs3Ornb1w50PxIFP0kiz387OzM6uhGAwGAxGP3Ho+f7x7ri1O7LdccPqZjSNA4dEHsLfaHcEFedJom93x9Xu2OyOFTcBo6sED3fHZHeMEELrkAHJF0B8Rr+gDFsZ5n0luLTQ95AXs4W06D/tjpR50xtM4CjD0y48YGB4rnyZxNOzyA7zBHr+nLnDaJLg0mo/ALekCasg3Z4XbM0ZdTEgnDPeHY8bIne+Qz2GvwyGNwsuyT218KWvIIBMcwGpLiipcolecjMxfBDchNyS1EvxLiOSIecp31q6IJ/C3yrIrMqMm4jhg+AxkdwbIO3aUO4KjqqMjCT3uaazMBhWBJfuxH3CtRfiXf66DhSRZWbmlMnNaILgZxrXJQO/eO3wORZwvwm4JUxuhheCjzVBYAbW1ces45YDSoZrFNOEE835M8FT6oyeEnws8Fz3QnBxFKPHBMem4GU+m6fPGb0leCTwWcM5B36MPgeZI01gudyDdw3hPeXfo8L/rmCUWnuMMdqUL2WqWeRbhf+twfVsO7YagZGNC79fw7OthEVtkiJ4jJzTd3KPwf3CRqhhiTu23AP5sl0/0xiwISQXpNwLIJK87mHF+U8ddzzdmgKlGzlPYjyxGJQouIhNT4k9AqWEFkqfguIvagTWbcq3KW1WE3xS3m8NtA9WS451xofwjKT5kkDoK/b6mDk5FfXr1lWDL4BofZEv2/SRsK/EHGlGdBdu8QNRb8HMCFwt7Yy3DDI/QP7fx5z3VLhdlJEIs4rKNuXXJXdxZPdB7kfCzWqwCO4V1LHgLjInX3tQ1KzCR52Cz+vDj1dydeRuS74rcvs2Pi6fT5H8OaaUQPQPYcWwRSGXyhhscn5dpAnEFMkuEZetbfkTAnlSuH4DxisE+aMGeJAQ3lFl7C4LJE6QWCaCd583ORQ1jYAwjFctal7nOs2ZZvicwvlZx+RHGrcoAwKUVX8uwcc/9TT65INeDOr5shL9LDRB6QTeIy3zwfdh3WOi6axLCEhSjXU7F3h6LqggUtvyJxpynwu8tDkD98fXApOxRj8zoZ9MnGveYVIVZKaGrkBXCY65BCYNN9NkjpKOyQ81Q79JgdxS+Jn3SDTEXRI7SWzaiSTB32oI3nU3BvMfM0urhOVYgwKhuiAfc4tM07wXwm1ZRoQYSl2NUwiu01fEAHVcpixd745FvVz4dzUUc0o8rwoLy8ZSwU6CyFx1RP5II9+1bFPEFs9HWbNLiimDXE+vCm7u1CS47cofzD3aEhVY57mxRo5zlqdt+RFC1JUH2S7bcVXg4liTMakaBZZVxiTICRoivcn1sEUBlk24JmaC6kxUbYmWoqvyfck2xZGGnDFYa9MMzkYQ1ijkCX6qidybrgePiQ0QIQqoi6qRLeqQfIoRsEHaQJLBdHOnLGetSdm/IPcymJuS1PAnbQPH0MOw/39C1vL11DiLOqIsbDI8QcHvGiLnySi2qUXBicaqUSxN5LEB0g7Jt3ENXJLPJ5S1tnaZBoWbpRqrmjRE7qHmpSmNHdQcYrEUadoh+TbBnc9ri7iycI1kzPeNcLDIvbiqXpez9Tmdq6zGREPuzECBoxrPMiI2WtvyNwhJba2wy3JZ6ky5dD1lSvmZS3e4SPA1wcf1VTFHKX+cGwZzdUYcqpvUtvwrD/InDttVlyZeAKlNN5MKbAiurHhKIPlUuJvlTCCiDjSKSCsUmCFWbGLZwCESfK07JB8LvMYWVtw0D00JEHV8Mq2HkqPbE0oHLvvK2g0o8ETg+4cfwTlZDT9JDoWygu4uQQE/ivIvtcnfPkaCqhiupz7jWOAzqL/vjtcdkv9G4MVMt+EaylfuImiPAXEUjRF3pjjaHiPPZ6If9TGGAO4ZY0am6jOCb+DQ+ZCqLkIpOIPrdNfIjnFPY6nyFut7TS/fanrziOBOKMupKw94WaLMtuVnSFt9CPrWWdJE6PeltCX432DEBoh+5Dv8RRhdis8YAv9uyq4/JAwtlEApgBe9Cw9xDD3tdk4Jn0MDfiHwPHcRPxBePCMER3GuIx7kGlv9fkZ4V9lolx2Uv4X7hEj7qJ3LDoAMGbTRMRibu4L2xQ8bgt8AyU+Q+x7nYrvDnH4iuO5LxKsYwPVbkPMvKF9Zky9wXzRfVWizi62r9X5VHf55h+WHhDjGBZ4WRhyTr6z5SlCoLMxLSpBZFsQ9F80uQFbF/6aFWi+Ev51vzzsuX+msyzuQXXjUz8zEBy+zpq9yweXAoxJW4JbYrDS6gYDqGHxPl+TKeiBfxj9/EBIElPYeOA4y8/qRQfknjvSzgRgtq0Pw/M1eQeMdOSb2Bnrhr6Led+1vcp2x7oTFHMnedFW+Ivlty062BUt74oHgSj+vHepnhunn0JJAMtBZgDI/qmGtMujRv8DDpo47zBJ8UtPOuAR/7rKn8t9AJ0tBdmBAmJ/Fu71yxp4I3qh+DhyRqbi5Y1ShVPlSb8X7bRNcfgZFl+WRGYo7uecrWq1r8X5bhmzP5OdlDwsGRm1suSxkg5rYm7ConyGQ3Zl+DgSD8V/kPwrWBMG9YcBtyShBnTLdTiHgttw7qAW7cqh/ZnmPKr/6ignOaKsdyxbsToT5UkPsW00bJjijDXficcX/JsLs6w2BwGtherdckH3w/kNXRPVI0OqJQoHX42/66IMfMj/2huRjxIidgKV/W0JS+bsstDoTeAHcrI8E5zTh/sDkqxL5rZup55/3USlswfcHf4IrQplVDgW9XFlOqnwr6pVPMMEZTuC60EttvdzbLbaZ4PsFVa3nohhO+vW+yn/ZB2fUhpysmQrzBcTSai9EszuZMcEZ1lCFVrp9zGXhm69iLyY4oxFIa178lPe12I/P2DAYDAaDwWAwGAwGg8FgMBgMBoPBYDD2Cf8IMADDRGoQTe+E9AAAAABJRU5ErkJggg==' style='margin-top: -16px;' width='92'/>
+</a>
+<ul>
+<li>
+<a href='//www.google.com/'>
+              Google
+            </a>
+</li>
+<li>
+<a href='//www.google.com/policies/privacy/'>
+              Privacy
+            </a>
+</li>
+<li>
+<a href='//www.google.com/policies/terms/'>
+              Terms
+            </a>
+</li>
+</ul>
+</div>
+</div>
+<script type='text/javascript'>
+      //<![CDATA[
+      // Social sharing popups.
+      var postEl = document.getElementsByClassName('social-wrapper');
+      var postCount = postEl.length;
+      for(i=0; i<postCount;i++){
+        postEl[i].addEventListener("click", function(event){
+          var postUrl = this.getAttribute("data-href");
+          window.open(
+            postUrl,'popUpWindow','height=500,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');
+        });}
+      //]]>
+    </script>
+<script type='text/javascript'>
+      //<![CDATA[
+      var BreakpointHandler = function() {
+        this.initted = false;
+        this.isHomePage = false;
+        this.isMobile = false;
+      };
+      BreakpointHandler.prototype.finalizeSummary = function(summaryHtml, lastNode) {
+        // Use $.trim for IE8 compatibility
+        summaryHtml = $.trim(summaryHtml).replace(/(<br>|\s)+$/,'');
+        if (lastNode.nodeType == 3) {
+          var lastChar = summaryHtml.slice(-1);
+          if (!lastChar.match(/[.”"?]/)) {
+            if (!lastChar.match(/[A-Za-z]/)) {
+              summaryHtml = summaryHtml.slice(0, -1);
+            }
+            summaryHtml += ' ...';
+          }
+        } else if (lastNode.nodeType == 1 && (lastNode.nodeName == 'I' || lastNode.nodeName == 'A')) {
+          summaryHtml += ' ...';
+        }
+        return summaryHtml;
+      };
+      BreakpointHandler.prototype.generateSummaryFromContent = function(content, numWords) {
+        var seenWords = 0;
+        var summaryHtml = '';
+        for (var i=0; i < content.childNodes.length; i++) {
+          var node = content.childNodes[i];
+          var nodeText;
+          if (node.nodeType == 1) {
+            if (node.hasAttribute('data-about-pullquote')) {
+              continue;
+            }
+            nodeText = node.textContent;
+            if (nodeText === undefined) {
+              // innerText for IE8
+              nodeText = node.innerText;
+            }
+            if (node.nodeName == 'DIV' || node.nodeName == 'B') {
+              // Don't end early if we haven't seen enough words.
+              if (seenWords < 10) {
+                continue;
+              }
+              if (i > 0) {
+                summaryHtml = this.finalizeSummary(summaryHtml, content.childNodes[i-1]);
+              }
+              break;
+            }
+            summaryHtml += node.outerHTML;
+          } else if (node.nodeType == 3) {
+            nodeText = node.nodeValue;
+            summaryHtml += nodeText + ' ';
+          }
+          var words = nodeText.match(/\S+\s*/g);
+          if (!words) {
+            continue;
+          }
+          var remain = numWords - seenWords;
+          if (words.length >= remain) {
+            summaryHtml = this.finalizeSummary(summaryHtml, node);
+            break;
+          }
+          seenWords += words.length;
+        }
+        return summaryHtml;
+      };
+      BreakpointHandler.prototype.detect = function() {
+        var match,
+            pl     = /\+/g,
+            search = /([^&=]+)=?([^&]*)/g,
+            decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+            query  = window.location.search.substring(1);
+        var urlParams = {};
+        while (match = search.exec(query))
+          urlParams[decode(match[1])] = decode(match[2]);
+        this.isListPage = $('html').hasClass('list-page');
+        this.isMobile = urlParams['m'] === '1';
+        this.isHomePage = window.location.pathname == '/';
+      };
+      BreakpointHandler.prototype.initContent = function() {
+        var self = this;
+        $('.post').each(function(index) {
+          var body = $(this).children('.post-body')[0];
+          var content = $(body).children('.post-content')[0];
+          $(content).addClass('post-original');
+          var data = $(content).children('script').html();
+          data = self.rewriteForSSL(data);
+          // If exists, extract specified editor's preview.
+          var match = data.match(/([\s\S]+?)<div data-is-preview.+?>([\s\S]+)<\/div>/m);
+          if (match) {
+            data = match[1];
+          }
+          // Prevent big images from loading when they aren't needed.
+          // This must be done as a pre-injection step, since image loading can't be
+          // canceled once embedded into the DOM.
+          if (self.isListPage && self.isMobile) {
+            data = data.replace(/<(img|iframe) .+?>/g, '');
+          }
+          // Insert template to be rendered as nodes.
+          content.innerHTML = data;
+          if (self.isListPage) {
+            var summary = document.createElement('div');
+            $(summary).addClass('post-content');
+            $(summary).addClass('post-summary');
+            body.insertBefore(summary, content);
+            if (match) {
+              // Use provided summary.
+              summary.innerHTML = match[2];
+            } else {
+              // Generate a summary.
+              // Summary generation relies on DOM, so it must occur after content is
+              // inserted into the page.
+              summary.innerHTML = self.generateSummaryFromContent(content, 30);
+            }
+            // Add read more link to summary.
+            var titleAnchor = $(this).find('.title a')[0];
+            var link = titleAnchor.cloneNode(true);
+            link.innerHTML = 'Read More';
+            $(link).addClass('read-more');
+            summary.appendChild(link);
+          }
+        });
+        // Firefox does not allow for proper styling of BR.
+        if (navigator.userAgent.indexOf('Firefox') > -1) {
+          $('.post-content br').replaceWith('<span class="space"></span>');
+        }
+        $('.loading').removeClass('loading');
+      };
+      BreakpointHandler.prototype.process = function() {
+        if (!this.initted) {
+          var makeInsecureImageRegex = function(hosts) {
+            var whitelist = hosts.join('|').replace(/\./g,'\\.');
+            // Normal image tags, plus input images (yes, this is possible!)
+            return new RegExp('(<(img|input)[^>]+?src=("|\'))http:\/\/(' + whitelist +')', 'g');
+          };
+          this.sslImageRegex = makeInsecureImageRegex(BreakpointHandler.KNOWN_HTTPS_HOSTS);
+          this.sslImageCurrentDomainRegex = makeInsecureImageRegex([window.location.hostname]);
+          this.detect();
+          this.initContent();
+          this.initted = true;
+        }
+      };
+      BreakpointHandler.KNOWN_HTTPS_HOSTS = [
+        "www.google.org",
+        "www.google.com",
+        "services.google.com",
+        "blogger.com",
+        "draft.blogger.com",
+        "www.blogger.com",
+        "photos1.blogger.com",
+        "photos2.blogger.com",
+        "photos3.blogger.com",
+        "blogblog.com",
+        "img1.blogblog.com",
+        "img2.blogblog.com",
+        "www.blogblog.com",
+        "www1.blogblog.com",
+        "www2.blogblog.com",
+        "0.bp.blogspot.com",
+        "1.bp.blogspot.com",
+        "2.bp.blogspot.com",
+        "3.bp.blogspot.com",
+        "4.bp.blogspot.com",
+        "lh3.googleusercontent.com",
+        "lh4.googleusercontent.com",
+        "lh5.googleusercontent.com",
+        "lh6.googleusercontent.com",
+        "themes.googleusercontent.com",
+      ];
+        BreakpointHandler.prototype.rewriteForSSL = function(html) {
+        // Handle HTTP -> HTTPS source replacement of images, movies, and other embedded content.
+        return html.replace(this.sslImageRegex, '$1https://$4')
+        .replace(this.sslImageCurrentDomainRegex, '$1//$4')
+        .replace(/(<(embed|iframe)[^>]+?src=("|'))http:\/\/([^"']*?(youtube|picasaweb\.google)\.com)/g, '$1https://$4')
+        // Slideshow SWF takes a image host, so we need to rewrite that parameter.
+        .replace(/(<embed[^>]+?feed=http(?=[^s]))/g, '$1s');
+        };
+        $(document).ready(function() {
+        var handler = new BreakpointHandler();
+        handler.process();
+        // Top-level navigation.
+        $(".BlogArchive .tab").click(function(ev) {
+        ev.preventDefault();
+        $(this).parent().toggleClass('active');
+        $(this).siblings().slideToggle(300);
+        });
+        $(".Label .tab").click(function(ev) {
+        ev.preventDefault();
+        $(this).parent().toggleClass('active');
+        $(this).siblings().slideToggle(300);
+        });
+        // Blog archive year expansion.
+        $('.BlogArchive .intervalToggle').click(function(ev) {
+        ev.preventDefault();
+        if ($(this).parent().hasClass('collapsed')) {
+        $(this).parent().removeClass('collapsed');
+        $(this).parent().addClass('expanded');
+        } else {
+        $(this).parent().removeClass('expanded');
+        $(this).parent().addClass('collapsed');
+        }
+        });
+        // Reverse order of months.
+        $('.BlogArchive .intervalToggle + div').each(function(_, items) {
+        var year = $(this);
+        year.children().each(function(_, month) {
+        year.prepend(month);
+        });
+        });
+        // Set anchors to open in new tab.
+        $('.post-content img').parent().each(function(_, node) {
+        if (node.nodeName == 'A') {
+        $(this).attr('target', '_blank');
+        }
+        });
+        // Process search requests.
+        $('.searchBox input').on("keypress", function(ev) {
+        if (ev.which == 13) {
+        window.location.href = 'https://www.google.com/search?q=site%3A' + window.location.hostname + '%20' + encodeURIComponent ($(this).val());
+        }
+        });
+        });
+        //]]>
+    </script>
+
+<script type="text/javascript" src="https://www.blogger.com/static/v1/widgets/2696721965-widgets.js"></script>
+<script type='text/javascript'>
+window['__wavt'] = 'AOuZoY4QOrjsSIDJkzIAV8HrqKbjZteGKA:1589930098643';_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3213900','//blogger-developers.googleblog.com/','3213900');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3213900', 'title': 'Blogger Developers', 'url': 'https://blogger-developers.googleblog.com/', 'canonicalUrl': 'https://blogger-developers.googleblog.com/', 'homepageUrl': 'https://blogger-developers.googleblog.com/', 'searchUrl': 'https://blogger-developers.googleblog.com/search', 'canonicalHomepageUrl': 'https://blogger-developers.googleblog.com/', 'blogspotFaviconUrl': 'https://blogger-developers.googleblog.com/favicon.ico', 'bloggerUrl': 'https://www.blogger.com', 'hasCustomDomain': true, 'httpsEnabled': true, 'enabledCommentProfileImages': true, 'gPlusViewType': 'FILTERED_POSTMOD', 'adultContent': false, 'analyticsAccountNumber': 'UA-18003-4', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'languageDirection': 'ltr', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'feedLinks': '\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Blogger Developers - Atom\x22 href\x3d\x22https://blogger-developers.googleblog.com/feeds/posts/default\x22 /\x3e\n\x3clink rel\x3d\x22alternate\x22 type\x3d\x22application/rss+xml\x22 title\x3d\x22Blogger Developers - RSS\x22 href\x3d\x22https://blogger-developers.googleblog.com/feeds/posts/default?alt\x3drss\x22 /\x3e\n\x3clink rel\x3d\x22service.post\x22 type\x3d\x22application/atom+xml\x22 title\x3d\x22Blogger Developers - Atom\x22 href\x3d\x22https://www.blogger.com/feeds/3213900/posts/default\x22 /\x3e\n', 'meTag': '', 'adsenseHostId': 'ca-host-pub-1556223355139109', 'adsenseHasAds': false, 'ieCssRetrofitLinks': '\x3c!--[if IE]\x3e\x3cscript type\x3d\x22text/javascript\x22 src\x3d\x22https://www.blogger.com/static/v1/jsbin/3719806379-ieretrofit.js\x22\x3e\x3c/script\x3e\n\x3c![endif]--\x3e', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/717640d2e38c3e01', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'disableGComments': true, 'sharing': {'platforms': [{'name': 'Get link', 'key': 'link', 'shareMessage': 'Get link', 'target': ''}, {'name': 'Facebook', 'key': 'facebook', 'shareMessage': 'Share to Facebook', 'target': 'facebook'}, {'name': 'BlogThis!', 'key': 'blogThis', 'shareMessage': 'BlogThis!', 'target': 'blog'}, {'name': 'Twitter', 'key': 'twitter', 'shareMessage': 'Share to Twitter', 'target': 'twitter'}, {'name': 'Pinterest', 'key': 'pinterest', 'shareMessage': 'Share to Pinterest', 'target': 'pinterest'}, {'name': 'Email', 'key': 'email', 'shareMessage': 'Email', 'target': 'email'}], 'disableGooglePlus': true, 'googlePlusShareButtonWidth': 300, 'googlePlusBootstrap': '\x3cscript type\x3d\x22text/javascript\x22\x3ewindow.___gcfg \x3d {\x27lang\x27: \x27en\x27};\x3c/script\x3e'}, 'hasCustomJumpLinkMessage': false, 'jumpLinkMessage': 'Read more', 'pageType': 'index', 'pageName': '', 'pageTitle': 'Blogger Developers'}}, {'name': 'features', 'data': {'sharing_get_link_dialog': 'true', 'sharing_native': 'false'}}, {'name': 'messages', 'data': {'edit': 'Edit', 'linkCopiedToClipboard': 'Link copied to clipboard!', 'ok': 'Ok', 'postLink': 'Post Link'}}, {'name': 'template', 'data': {'name': 'custom', 'localizedName': 'Custom', 'isResponsive': false, 'isAlternateRendering': false, 'isCustom': true}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '?view\x3dclassic'}, 'flipcard': {'name': 'flipcard', 'url': '?view\x3dflipcard'}, 'magazine': {'name': 'magazine', 'url': '?view\x3dmagazine'}, 'mosaic': {'name': 'mosaic', 'url': '?view\x3dmosaic'}, 'sidebar': {'name': 'sidebar', 'url': '?view\x3dsidebar'}, 'snapshot': {'name': 'snapshot', 'url': '?view\x3dsnapshot'}, 'timeslide': {'name': 'timeslide', 'url': '?view\x3dtimeslide'}, 'isMobile': false, 'title': 'Blogger Developers', 'description': 'The latest updates on Blogger developer tools\n', 'url': 'https://blogger-developers.googleblog.com/', 'type': 'feed', 'isSingleItem': false, 'isMultipleItems': true, 'isError': false, 'isPage': false, 'isPost': false, 'isHomepage': true, 'isArchive': false, 'isLabelSearch': false}}]);
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': 'https://www.blogger.com/static/v1/jsbin/2895387028-lbx.js', 'lightboxCssUrl': 'https://www.blogger.com/static/v1/v-css/368954415-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML10', 'sidebar-top', document.getElementById('HTML10'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', document.getElementById('BlogArchive1'), {'languageDirection': 'ltr', 'loadingMessage': 'Loading\x26hellip;'}, 'displayModeFull'));
+</script>
+</body>
+</html>

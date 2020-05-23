@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="http://redirect.name/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://redirect.name/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="http://redirect.name/stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>redirect.name by holic</title>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-2437913-17', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>redirect.name</h1>
+        <h2>Configure domain redirects and URL forwarding with a simple DNS record</h2>
+        <a href="https://github.com/holic/redirect.name" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h2>
+<a name="no-sign-up-required-just-add-a-dns-record" class="anchor" href="index.html#no-sign-up-required-just-add-a-dns-record"><span class="octicon octicon-link"></span></a>No sign-up required. Just add a DNS record.</h2>
+
+<p>This simple redirection service has no database backend, so there's no need to sign up for anything. Everything is configured by DNS. Just point your domain to the service, add a DNS record to configure your redirect(s), and you're good to go.</p>
+
+<p>Here's a live example redirecting <a href="http://github.redirect.name"><code>github.redirect.name</code></a> to this project's GitHub repo:</p>
+
+<pre><code>github            IN  CNAME  alias.redirect.name
+_redirect.github  IN  TXT    "Redirects to https://github.com/holic/redirect.name"</code></pre>
+
+<h2>
+<a name="instructions" class="anchor" href="index.html#instructions"><span class="octicon octicon-link"></span></a>Instructions</h2>
+
+<ol>
+<li>Point your domain or subdomain to the redirection service. For subdomains, this is done by setting up a CNAME record. For apex/naked domains, it is recommended that you use an <code>ALIAS</code> or <code>ANAME</code> record type if your DNS provider supports it. Otherwise, use a plain <code>A</code> record, keeping in mind that the IP address may change (or more may be added).
+
+<ul>
+<li>
+<code>CNAME</code> and <code>ALIAS</code>/<code>ANAME</code> records should point to <code>alias.redirect.name</code>
+</li>
+<li>
+<code>A</code> records should point to <code>45.55.72.95</code>
+</li>
+</ul>
+</li>
+<li>Configure your redirect by adding a <code>TXT</code> record on the same hostname as the record above, prepended with <code>_redirect.</code>
+
+<ul>
+<li>For example, on the hostname <code>github</code>, your <code>TXT</code> record should be added to the <code>_redirect.github</code> hostname.
+<li>Your <code>TXT</code> record value should have a human-readable format format like one of the following:
+<ul>
+<li><code>Redirects to [target]</code>, where <code>target</code> is the target URL</li>
+<li><code>Redirects from [path] to [target]</code>, where <code>path</code> is a path to match on the hostname</li>
+<li><code>Redirects permanently to [target]</code>, where <code>permanently</code> redirects with a <code>301</code> status code (defaults to <code>302</code> otherwise)</li>
+</ul>
+<li>As long as the <code>TXT</code> record starts with <code>Redirect</code> or <code>Redirects</code> and has a target, it does not matter the order of <code>from [path]</code>, <code>to [target]</code>, or the <code>permanently</code> flag.
+</ul>
+</li>
+</ol><p>You can add more than one <code>TXT</code> record per hostname. The first path matched will be used for the redirect. Multiple <code>TXT</code> records for the same matched path result in a round-robin effect.</p>
+
+<p>Wildcard matches (<code>*</code>) are also supported.</p>
+
+<p>Any unmatched paths will redirect to this documentation page, so it's recommended that you add a wildcard catch-all path when redirecting specific paths.</p>
+
+<h2>
+<a name="processing-order" class="anchor" href="http://redirect.name/processing-order"><span class="octicon octicon-link"></span></a>TXT record processing order</h2>
+<p>The DNS <code>TXT</code> records are processed in two stages; specific matches first and then catch-alls. This allows for complex matching against specific <code>path</code> values followed by a catch-all based fall through for
+any non-matched requests. This ensures that more specific rules will match a request before a catch-all.
+
+<p>Since DNS lookups are not returned in any predetermined order there is an inherent round-robin effect when multiple <code>TXT</code> records are created which would match a given request. This is true for both specific
+<code>path</code> matches and catch-alls.</p>
+
+<h2>
+<a name="examples" class="anchor" href="index.html#examples"><span class="octicon octicon-link"></span></a>Examples</h2>
+
+<p><code>Redirects to https://github.com/holic</code> redirects all paths on the hostname to <code>https://github.com/holic</code> with a <code>302</code> status code.</p>
+
+<p><code>Redirects permanently to https://github.com/holic</code> redirects exactly as above, except with a <code>301</code> status code.</p>
+
+<p><code>Redirects from /github to https://github.com/holic</code> redirects only the <code>/github</code> path on the hostname to the target URL.</p>
+
+<p><code>Redirects from /* to https://github.com/holic/*</code> is a wildcard match that will redirect to the target URL, replacing the wildcards with the matched value.</p>
+
+<p>The following combines all of the above using wildcards, regular matches, and a catch-all.<br>
+<code>Redirects from /match1/* to https://github.com/holic/*</code><br>
+<code>Redirects to https://github.com/holic</code><br>
+<code>Redirects from /match2/ to https://github.com/holic/match2</code><br>
+The important thing to note is that with multiple redirects they are processed according to the <a href="index.html#processing-order">TXT record processing order</a> described above. So, even though the catch-all is in the middle of the other two rules it will only ever match last.
+</p>
+        </section>
+
+        <aside id="sidebar">
+          <form method="post" action="http://keviningersoll.us8.list-manage.com/subscribe/post?u=d3e4176836770c7dc715042ae&amp;id=a6924fc77a">
+            <p>This free service is a proof of concept and should not be used for business-critical operations.</p>
+            <p>However, I'm working to get it there. Subscribe below so that I can keep you updated on this service.</p>
+            <input type="email" name="EMAIL" class="email" id="input-email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <hr>
+
+          <!-- <a href="https://github.com/holic/redirect.name/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/holic/redirect.name/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a> -->
+
+          <p class="repo-owner"><a href="https://github.com/holic/redirect.name">redirect.name</a> is maintained by <a href="https://github.com/holic">holic</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  <script>
+    ;(function () {
+      var hash = document.location.hash.replace(/^#/, '')
+      if (hash === '') return
+
+      var params = {}
+      hash.split('&').forEach(function (pair) {
+        var parts = pair.split('=').map(function (part) { return part.replace(/\+/g, ' ') })
+        params[decodeURIComponent(parts.shift())] = decodeURIComponent(parts.join('='))
+      })
+
+      if (params.reason) {
+        var reason = params.reason.replace(/&/g, '&amp;')
+                                  .replace(/</g, '&lt;')
+                                  .replace(/>/g, '&gt;')
+
+        var div = document.createElement('div')
+        div.className = 'alert'
+        div.innerHTML = '<div class="inner clearfix"><p><strong>Uh oh!</strong> Your redirect appears to be misconfigured.</p><p class="text-monospace">' + reason + '</p></div>'
+
+        document.body.insertBefore(div, document.body.firstChild)
+      }
+    })()
+  </script>
+
+  </body>
+</html>

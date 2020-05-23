@@ -1,0 +1,2 @@
+<p>Qui potete aggiornare le traduzioni per phpList da <a href="http://translate.phplist.com">sito della communit&agrave; di traduzione</a>. Questo aggiorner&agrave; i testi brevi trovati nell'applicazione.</p>
+<p>La traduzione di phpList &egrave; un lavoro svolto dall'intera comunit&agrave;. Se trovate parti di testo non ancora tradotte nella vostra lingua, sentitevi liberi di aiutarci e migliarare la traduzione.</p>

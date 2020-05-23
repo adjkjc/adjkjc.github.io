@@ -1,0 +1,1147 @@
+<!doctype html>
+<html lang="en" id="top" class="no-js">
+<head>
+
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','GTM-KW3LJ3D');</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="35b98446c7f0fd6eb8d2ba02-text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"97f8f67f26",applicationID:"415452746"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Description" content="Routledge & CRC Press are imprints of Taylor & Francis. Together they are the global leader in academic book publishing for the humanities, social sciences, and STEM" />
+<title>Routledge & CRC Press - World leading book publisher in STEM, social sciences and the humanities</title>
+<link rel="canonical" href="https://www.routledge.com" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/css/vendor.css?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" />
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+<link href="/css/bootstrap-4.0.0.css?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" rel="stylesheet">
+<link type="text/css" href="/cms/css/ubw.css?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" rel="stylesheet">
+<link type="text/css" href="/cms/css/ubw-home.css?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" rel="stylesheet">
+
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Serif:400&display=swap">
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/igo-init.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">
+		window.addEventListener("load", function(){
+		window.cookieconsent.initialise({
+		  "palette": {
+		    "popup": {
+		      "background": "#525a5c",
+		      "text": "#ffffff"
+		    },
+		    "button": {
+		      "background": "transparent",
+		      "text": "#ffffff",
+		      "border": "#ffffff"
+		    }
+		  },
+		  "content": {
+		    "message": 'We use cookies to improve your website experience.  To learn about our use of cookies and how you can manage your cookie settings, please see our <a style="color:#ADD8E6; text-decoration:underline" href=/contactus/cookies>Cookie Policy</a>.  By continuing to use the website, you consent to our use of cookies.',
+		    "link": " "
+		  }
+		})});
+	</script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">
+    var userregion = "GB";
+    var ga_account_consol = '';
+    var page='';
+        	var page='home';
+    	   	        var  loaderImage = '/images/ajax-spinner.gif';
+    var  productDefaultImage = '/img/covers/notavail-big.png';
+    var  productDefaultImageSmall = '/img/covers/default.jpeg';
+    </script>
+<script src="/js/vendor/modernizr.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<script src="/js/vendor.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+</head>
+<body id="up" class="">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KW3LJ3D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">
+            var axel = Math.random() + "";
+            var a = axel * 10000000000000;
+            document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=8999880;type=gamed001;cat=gamed0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=' + a + '?" width="1" height="1" alt="" style="position: absolute;"/>');
+            </script>
+<noscript><img src="https://ad.doubleclick.net/ddm/activity/src=8999880;type=gamed001;cat=gamed0;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;ord=1?" width="1" height="1" alt=""/></noscript>
+
+
+<div class="website-cmsalerts" style="display:none;"></div>
+<header id="top" class="site homeonly">
+<div id="headerblue">
+<div class="container">
+<div class="row">
+<div class="col-7 col-lg-6 des text-sm-left text-nowrap">
+<span class="d-none d-sm-inline">Publisher of</span> Humanities, Social Science &amp; STEM Books <a tabindex="1" title="Skip to main content of page" class="skip" href="#content">Skip to main content</a>
+</div>
+<div class="col-5 col-lg-6 des text-right">
+<div class="shiptxt pr-1 d-inline-block pb-xs-1"><a href="/policies/shipping-policy">Free <span class="d-none d-sm-inline">Standard</span> Shipping</a></div>
+<div class="shipto d-inline-block">
+<div class="insertFlag" id="region">
+<label for="s2id_autogen1_search" class="hidden">Shipping Region</label>
+<select id="e1" aria-label="Shipping Country is United Kingdom" title="Shipping Country is United Kingdom">
+<option value="AF">Afghanistan</option>
+<option value="AX">Åland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua And Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+ <option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BQ">Bonaire, Sint Eustatius And Saba</option>
+<option value="BA">Bosnia And Herzegovina</option>
+<option value="BW">Botswana</option>
+ <option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+ <option value="CI">Cïte D'ivoire</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo, The Democratic Republic Of The</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="HR">Croatia</option>
+<option value="CW">Curacao</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+ <option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands (Malvinas)</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+ <option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island And Mcdonald Islands</option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle Of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KR">Korea, Republic Of</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+ <option value="LA">Lao People's Democratic Republic</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, The Former Yugoslav Republic Of</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+ <option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia, Federated States Of</option>
+<option value="MD">Moldova, Republic Of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+<option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+ <option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+ <option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RO">Romania</option>
+<option value="RW">Rwanda</option>
+<option value="BL">Saint Barthƒlemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts And Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre And Miquelon</option>
+<option value="VC">Saint Vincent And The Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome And Principe</option>
+<option value="SA">Saudi Arabia</option>
+ <option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten (Dutch Part)</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia And The South Sandwich Islands</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard And Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic Of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad And Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks And Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="AE">United Arab Emirates</option>
+ <option value="GB" selected="selected">United Kingdom</option>
+<option value="US">United States</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VN">Viet Nam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis And Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="headerlogos">
+<div class="container">
+<div class="row">
+<div class="col-9 col-sm-7">
+<a title="Links to routledge.com Home Page" href="/">
+<img src="/images/routledge-crc-press-logo.png" alt="Routledge & CRC Press Logo - Taylor & Francis Group" class="img-fluid">
+</a>
+</div>
+<ul class="col-3 col-sm-5 text-right faw-icons">
+
+
+<li title="My Account" class="nav-item dropdown d-none d-sm-inline-block">
+<a href="#" class="nav-link dropdown-toggle" id="utilitynavbarDropdown" role="button" data-toggle="dropdown" aria-label="My Account - Not signed in" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
+<div class="dropdown-menu" aria-labelledby="utilitynavbarDropdown">
+<a title="Sign in to My Account" class="dropdown-item" href="/account">Sign in</a>
+<a title="Create an account" class="dropdown-item" href="/register">Create an account</a>
+</div>
+</li>
+<li class="d-none d-sm-inline-block">
+<a title="Wish List" aria-label="Wish List" aria-describedby="wishqty" href="/wishlist">
+<i class="fas fa-star"></i>
+<span aria-label="0 item" id="wishqty" class="badge" style="display:none;">0</span>
+</a>
+</li>
+<li>
+<a title="Shopping Cart" href="/cart" aria-label="Shopping Cart" aria-describedby="cartqty">
+<i class="fas fa-shopping-cart"></i><span aria-label="0 item" id="cartqty" class="badge" style="display:none;">0</span>
+</a>
+</li>
+<li>
+<a href="javascript:void(0);" title="Toggle Menu" class="d-lg-none d-xl-none" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fas fa-bars"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg" role="navigation">
+<div class="container">
+<div class="col-12 col-lg-8 zeropad order-2 order-sm-1">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown d-sm-none">
+<a class="nav-link dropdown-toggle" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<i class="fas fa-user"></i> My Account </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="/account">Sign in</a>
+<a class="dropdown-item" href="/register">Create an account</a>
+</div>
+</li>
+<li class="nav-item d-sm-none">
+<a id="wl" class="nav-link" href="/wishlist"><i aria-labeledby="wl" class="fas fa-star"></i> Wish List ( 0 item )</a>
+</li>
+
+<li class="nav-item active">
+<a class="nav-link" href="/">
+<i aria-label="Home" class="fas fa-home d-none d-lg-inline"></i>
+<span class="d-lg-none">Home</span>
+</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="javascript:void();" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Our Customers </a>
+ <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+<a class="dropdown-item" href="/our-customers/authors/why-publish-with-us">Authors</a>
+<a class="dropdown-item" href="/our-customers/booksellers/our-booksellers">Booksellers</a>
+<a class="dropdown-item" href="/our-customers/instructors/textbooks">Instructors</a>
+<a class="dropdown-item" href="/our-customers/librarians/resources-and-guides">Librarians</a>
+<a class="dropdown-item" href="/our-customers/press-media">Press & Media</a>
+<a class="dropdown-item" href="/our-customers/professionals/books-for-professionals">Professionals</a>
+<a class="dropdown-item" href="/our-customers/societies-and-associations/publishing-with-us">Societies & Associations</a>
+<a class="dropdown-item" href="/our-customers/students">Students</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="javascript:void();" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Our Products </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+<a class="dropdown-item" href="/our-products/books">Books</a>
+<a class="dropdown-item" href="/our-products/book-series">Book Series</a>
+<a class="dropdown-item" href="/our-products/online-platforms">Online Platforms</a>
+<a class="dropdown-item" href="/our-products/open-access-books/taylor-francis-oa-books">Open Access Books</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="javascript:void();" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Subjects </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+<a class="dropdown-item" href="/subjects"><b>All Subjects &raquo;</b></a>
+<div class="dropdown-item text-center popular">MOST POPULAR SUBJECTS</div>
+<a class="dropdown-item" href="/search?sb=SCEB03&so=pub&pd=published&publishedFilter=alltitles">Business, Management & Accounting</a>
+<a class="dropdown-item" href="/search?sb=CHE&so=pub&pd=published&publishedFilter=alltitles">Chemistry</a>
+ <a class="dropdown-item" href="/search?sb=SCED&so=pub&pd=published&publishedFilter=alltitles">Education</a>
+<a class="dropdown-item" href="/search?sb=SCLW&so=pub&pd=published&publishedFilter=alltitles">Law</a>
+<a class="dropdown-item" href="/search?sb=MTH&so=pub&pd=published&publishedFilter=alltitles">Mathematics</a>
+<a class="dropdown-item" href="/search?sb=EOM&so=pub&pd=published&publishedFilter=alltitles">Mechanical Engineering</a>
+<a class="dropdown-item" href="/search?sb=MED&so=pub&pd=published&publishedFilter=alltitles">Medicine</a>
+<a class="dropdown-item" href="/search?sb=SCBE&so=pub&pd=published&publishedFilter=alltitles">Behavioral Sciences</a>
+<a class="dropdown-item" href="/search?sb=STA&so=pub&pd=published&publishedFilter=alltitles">Statistics</a>
+<a class="dropdown-item" href="/search?sb=SCES&so=pub&pd=published&publishedFilter=alltitles">Environment & Sustainability</a>
+<a class="dropdown-item" href="/search?sb=SCBE05&so=pub&pd=published&publishedFilter=alltitles"><div style="background-color:#deb839; border:4px solid #77c1be; padding:5px; font-weight:bold; text-align:center;margin: -8px -21px">Mental Health Month &raquo;</div></a>
+</div>
+ </li>
+<li class="nav-item"> <a class="nav-link" href="/blog">Blog</a></li>
+<li style="display:none;" class="nav-item sale"><a title="Sales &amp; Promotions page" area-label="Sales &amp; Promotions page" class="nav-link" href="/sale"> SALE </a></li>
+</ul>
+</div>
+</div>
+<div id="searchContainer" class="col-12 col-lg-4 order-lg-1 zeropad basicSearch">
+<form class="form-inline" id="basicSrchFrm" action="/search" method="GET" role="search">
+<label for="basicSrchKwIn" class="hidden">Search</label>
+<input type="text" placeholder="Search by keyword(s), author, or ISBN" name="kw" id="basicSrchKwInHeader" maxlength="125" class="form-control" aria-label="Book Search">
+<button id="basicSrchCmd" role="button" type="submit"><i title="Search Button" aria-label="Search Button" class="fas fa-search"></i></button>
+</form>
+</div>
+</div>
+</nav>
+
+
+<section class="promotion" style="display:none;"></section>
+</header>
+<div class="crc5container responsive">
+
+<main id="content" role="main" class="home">
+<section class="slider" style="background: url(/rsc/images/crccms/crc_slideshow_images/RDMIXF2004-jumbotron-1700x300-r2a.png);">
+
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-7 col-xl-8">
+<div class="lgtxt">
+<center>
+<p style="font-size:2.5em; font-weight:900; line-height:1; text-align:center; background-color:#96c9fd;">
+SUPER SAVINGS</p>
+</center>
+</div>
+<div class="smtxt">
+<center>
+<p style="font-size:2.25em; line-height:1; font-weight:900; text-align:center; background-color:#ca1e47;">
+20% OFF BOOKS <span style="font-weight:400;">&amp;</span> 35%&nbsp;OFF EBOOKS &ndash; SHOP&nbsp;NOW!</p>
+</center>
+</div>
+</div>
+<div class="col-12 d-none d-lg-block col-lg-5 col-xl-4">
+<div class="slider-img">
+<img src="/rsc/images/crclanding/RDMIXF2004-jumbotron-graphic-882x488-r1.png" class="img-fluid" alt="Image of people reading books" />
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="home-rec">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 text-center">
+<h2>
+Recommended For You
+</h2>
+</div>
+</div>
+<div class="row d-flex justify-content-center" id="recommendedHome" data-recommendedCount="				5
+			">
+<div class="bk col-xl-2 col-lg-3 col-md-4 col-6">
+<a href="/101-Stories-for-Enhancing-Happiness-and-Well-Being-Using-Metaphors-in-Positive/Burnsah2/p/book/9781138935839" data-toggle="popover" data-trigger="hover" title="101 Stories for Enhancing Happiness and Well-Being..." data-content="Published: February 3, 2017" data-placement="top">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49"></script><img class="img-fluid rounded mx-auto d-block" alt="101 Stories for Enhancing Happiness and Well-Being - February 3, 2017" src="https://images.routledge.com/common/jackets/crclarge/978113893/9781138935839.jpg" onerror="this.src='/img/covers/notavail-big.png'" data-holder-rendered="true">
+</a>
+</div>
+<div class="bk col-xl-2 col-lg-3 col-md-4 col-6">
+<a href="/Using-Mindfulness-Skills-in-Everyday-Life-A-practical-guide/Dunkleyah2-Stantonah2/p/book/9781138930841" data-toggle="popover" data-trigger="hover" title="Using Mindfulness Skills in Everyday Life..." data-content="Published: October 26, 2016" data-placement="top">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49"></script><img class="img-fluid rounded mx-auto d-block" alt="Using Mindfulness Skills in Everyday Life - October 26, 2016" src="https://images.routledge.com/common/jackets/crclarge/978113893/9781138930841.jpg" onerror="this.src='/img/covers/notavail-big.png'" data-holder-rendered="true">
+</a>
+</div>
+<div class="bk col-xl-2 col-lg-3 col-md-4 col-6">
+<a href="/Developing-Resilience-A-Cognitive-Behavioural-Approach/Neenanah2/p/book/9780415792912" data-toggle="popover" data-trigger="hover" title="Developing Resilience..." data-content="Published: July 4, 2017" data-placement="top">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49"></script><img class="img-fluid rounded mx-auto d-block" alt="Developing Resilience - July 4, 2017" src="https://images.routledge.com/common/jackets/crclarge/978041579/9780415792912.jpg" onerror="this.src='/img/covers/notavail-big.png'" data-holder-rendered="true">
+</a>
+</div>
+<div class="bk col-xl-2 col-lg-3 col-md-4 col-6">
+<a href="/Helping-Children-Cope-with-Loss-and-Change-A-Guide-for-Professionals-and/Seyderhelmah2/p/book/9781911186281" data-toggle="popover" data-trigger="hover" title="Helping Children Cope with Loss and Change..." data-content="Published: August 30, 2019" data-placement="top">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49"></script><img class="img-fluid rounded mx-auto d-block" alt="Helping Children Cope with Loss and Change - August 30, 2019" src="https://images.routledge.com/common/jackets/crclarge/978191118/9781911186281.jpg" onerror="this.src='/img/covers/notavail-big.png'" data-holder-rendered="true">
+</a>
+</div>
+<div class="bk col-xl-2 col-lg-3 col-md-4 col-6">
+<a href="/Healing-the-Heart-and-Mind-with-Mindfulness-Ancient-Path-Present-Moment/Huxterah2/p/book/9781138851351" data-toggle="popover" data-trigger="hover" title="Healing the Heart and Mind with Mindfulness..." data-content="Published: February 11, 2016" data-placement="top">
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49"></script><img class="img-fluid rounded mx-auto d-block" alt="Healing the Heart and Mind with Mindfulness - February 11, 2016" src="https://images.routledge.com/common/jackets/crclarge/978113885/9781138851351.jpg" onerror="this.src='/img/covers/notavail-big.png'" data-holder-rendered="true">
+</a>
+</div>
+</div>
+</div>
+</section>
+<section class="home-popular">
+<div class="container">
+<div class="row links d-flex justify-content-center">
+<div class="col-lg-12 text-center">
+<h2><a title="View all subject areas" href="/subjects">
+Popular Subject Areas
+</a></h2>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-brain
+
+"></i>
+<h3>Behavioral Sciences</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBE01&so=pub&pd=published&publishedFilter=alltitles">Psychology</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBE05&so=pub&pd=published&publishedFilter=alltitles">Mental Health</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBE0530&so=pub&pd=published&publishedFilter=alltitles">Counseling</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBE0115&so=pub&pd=published&publishedFilter=alltitles">Cognitive Psychology</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCRM&so=pub&pd=published&publishedFilter=alltitles">Research Methods</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-graduation-cap"></i>
+<h3>Education</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCED06&so=pub&pd=published&publishedFilter=alltitles">Childhood Education</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCED12&so=pub&pd=published&publishedFilter=alltitles">Continuing Professional Development</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCKR&so=pub&pd=published&publishedFilter=alltitles">K-12 Resources</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCED78&so=pub&pd=published&publishedFilter=alltitles">Teachers & Teacher Education</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCED24&so=pub&pd=published&publishedFilter=alltitles">Education Psychology</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-cogs"></i>
+<h3>Engineering</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=EOM&so=pub&pd=published&publishedFilter=alltitles">Mechanical Engineering</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=CLE&so=pub&pd=published&publishedFilter=alltitles">Energy & Clean Technology</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBU20&so=pub&pd=published&publishedFilter=alltitles">Building & Construction</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=EEN&so=pub&pd=published&publishedFilter=alltitles">Environmental Engineering</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=CENG&so=pub&pd=published&publishedFilter=alltitles">Chemical Engineering</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-photo-video"></i>
+<h3>Humanities & Media Arts</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCHU01&so=pub&pd=published&publishedFilter=alltitles">History</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCLA01&so=pub&pd=published&publishedFilter=alltitles">Language & Linguistics</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCHU15&so=pub&pd=published&publishedFilter=alltitles">Media & Film Studies</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCHU04&so=pub&pd=published&publishedFilter=alltitles">Philosophy</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCAR30&so=pub&pd=published&publishedFilter=alltitles">Theatre & Performance Studies</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-atom"></i>
+<h3>Science & Medicine</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=LIF&so=pub&pd=published&publishedFilter=alltitles">Life Science</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=CMS&so=pub&pd=published&publishedFilter=alltitles">Computer Science & Engineering</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=MTH&so=pub&pd=published&publishedFilter=alltitles">Mathematics</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=MED03&so=pub&pd=published&publishedFilter=alltitles">Surgery</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=MED02N&so=pub&pd=published&publishedFilter=alltitles">Obstetrics & Gynecology</a></li>
+</ul>
+</div>
+<div class="col-6 col-md-4 col-xl-2 cat">
+<i aria-label="Graduation cap icon" class="fas fa-7x fa-users-cog"></i>
+<h3>Social Sciences</h3>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=BUS&so=pub&pd=published&publishedFilter=alltitles">Business, Economics & Finances</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCBU10&so=pub&pd=published&publishedFilter=alltitles">Architecture</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCES&so=pub&pd=published&publishedFilter=alltitles">Environment and Sustainability</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=FRN&so=pub&pd=published&publishedFilter=alltitles">Forensics & Criminal Justice</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span> <a href="/search?sb=SCPI&so=pub&pd=published&publishedFilter=alltitles">Politics & International Relations </a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col-12 pt-3 pb-1">
+<a class="small" aria-label="View All Subject Areas" title="View all Subject Areas" href="/subjects">View All</a>
+</div>
+</div>
+</div>
+</section>
+<section class="home-rp">
+<div id="rp-books" class="container" style="display:none;"></div>
+</section>
+<section class="home-customers">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-6 col-xl-8 text-center customers">
+<h2>
+Our Customers
+</h2>
+<div class="row d-flex justify-content-center">
+<a class="col-6 col-xl-4 p-3" href="/our-customers/authors/why-publish-with-us">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-pencil-square-o"></i>
+<h3 id="ocauth">Authors</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/booksellers/our-booksellers">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-store"></i>
+<h3 id="ocauth">Booksellers</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/instructors/textbooks">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-chalkboard-teacher"></i>
+<h3 id="ocauth">Instructors</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/librarians/resources-and-guides">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-book-reader"></i>
+<h3 id="ocauth">Librarians</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/societies-and-associations/publishing-with-us">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-users"></i>
+<h3 id="ocauth">Societies & Associations</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/students">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-user-graduate"></i>
+<h3 id="ocauth">Students</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/press-media">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-television"></i>
+<h3 id="ocauth">Press & Media</h3>
+</a>
+<a class="col-6 col-xl-4 p-3" href="/our-customers/professionals/books-for-professionals">
+<i aria-labeledby="ocauth" class="fas fa-2x fa-briefcase"></i>
+<h3 id="ocauth">Professionals</h3>
+</a>
+</div>
+</div>
+<div class="col-12 d-block d-lg-none"><hr class="border-0 my-4" /></div>
+<div class="col-12 col-lg-6 col-xl-4 blog">
+<article class="col-12">
+<h2 class="text-center"><a title="View our blog" href="/blog">
+Recent Blog Posts
+</a></h2>
+<ul class="fa-ul">
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="/blog/article/professional-practice-for-architects-tl">Professional Practice for Architects</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="/blog/article/the-importance-of-empathy-in-your-covid-19-marketing-communications">The importance of empathy in your Covid-19 marketing communications</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="/blog/article/how-mindful-are-you">How mindful are you?</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="/blog/article/the-unmet-needs-of-childhood-loss-and-bereavement-in-schools">The unmet needs of childhood loss and bereavement in schools</a></li>
+<li><span class="fa-li"><i class="fas fa-chevron-right"></i></span><a href="/blog/article/the-benefits-of-construction-4.0">The Benefits of Construction 4.0</a></li>
+</ul>
+</article>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+</div>
+<footer>
+<div class="top">
+<div class="container">
+<a href="#top">Back to top <i class="fas fa-angle-up"></i></a>
+</div>
+</div>
+<div class="container">
+<div class="row links">
+<div class="col-6 col-sm-4 col-xl-2">
+<h5> Our Customers</h5>
+<ul>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/authors/why-publish-with-us">Authors</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/booksellers/our-booksellers">Booksellers</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/instructors/textbooks">Instructors</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/librarians/resources-and-guides">Librarians</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/press-media">Press & Media</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/professionals/books-for-professionals">Professionals</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/societies-and-associations/publishing-with-us">Societies & Associations</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-customers/students">Students</a></li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 col-xl-2">
+<h5>Our Products</h5>
+<ul>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-products/books">Books</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-products/book-series">Book Series</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-products/online-platforms">Online Platforms</a></li>
+<li><i class="fas fa-chevron-right"></i> <a href="/our-products/open-access-books/taylor-francis-oa-books">Open Access Books</a></li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 col-xl-2">
+<h5><a href="/subjects">Subjects &raquo;</a></h5>
+<h5><a href="/blog">Blog &raquo;</a></h5>
+<h5 class="footersalelink" style="display:none;"><a style="color:#cf102d" href="/sale">Sale &raquo;</a></h5>
+</div>
+<div class="col-6 col-sm-4 col-xl-2">
+<h5>Corporate</h5>
+<ul>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /corporate/about-us">About Us</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" https://taylorandfrancis.com/about/" target="blank">About T&F <i title="Opens in new tab / window" class="fas fa-external-link-alt"><span class="sr-only">Opens in new tab or window</span></i></a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" https://taylorandfrancis.com/careers/" target="blank">Careers <i title="Opens in new tab / window" class="fas fa-external-link-alt"><span class="sr-only">Opens in new tab or window</span></i></a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" https://www.tandfonline.com/" target="blank">T&F Journals <i title="Opens in new tab / window" class="fas fa-external-link-alt"><span class="sr-only">Opens in new tab or window</span></i></a>
+</li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 col-xl-2">
+<h5>Policies</h5>
+<ul>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /policies/terms-conditions">Terms & Conditions</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /policies/shipping-policy">Shipping Policy</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /policies/returns-cancellations">Returns & Cancellations</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /policies/inspection-copies">Inspection Copies</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /policies/cookie-policy">Cookie Policy</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" https://www.informa.com/privacy-policy" target="blank">Privacy Policy <i title="Opens in new tab / window" class="fas fa-external-link-alt"><span class="sr-only">Opens in new tab or window</span></i></a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" https://taylorandfrancis.com/about/corporate-responsibility/accessibility-at-taylor-francis/" target="blank">Accessibility <i title="Opens in new tab / window" class="fas fa-external-link-alt"><span class="sr-only">Opens in new tab or window</span></i></a>
+</li>
+</ul>
+</div>
+<div class="col-6 col-sm-4 col-xl-2">
+<h5>Contact Us</h5>
+<ul>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /contacts/customer-service">Customer Service</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /contacts/editorial">Editorial Contacts</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /contacts/sales">Sales Contacts</a>
+</li>
+<li>
+<i class="fas fa-chevron-right"></i>
+<a href=" /contacts/rights-and-permissions">Rights & Permissions</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="cookie col-12 col-lg-9">
+<p>By using this site you agree to the <a href="/policies/cookie-policy">use of cookies</a>.</p>
+</div>
+<div class="cookie col-12 col-lg-3">
+<div class="text-left text-lg-right mb-3">
+<div class="mr-3 mb-1">Stay Connected</div>
+<a style="color:#3b5998" class="facebook m-1" href="https://www.facebook.com/TaylorandFrancisGroup/" target="_blank"><i class="fab fa-2x fa-facebook-square" aria-hidden="true"></i></a>
+<a style="color:#0077b5" class="linkedin m-1" href="https://www.linkedin.com/company/taylor-&amp;-francis-group/" target="_blank"><i class="fab fa-2x fa-linkedin-square" aria-hidden="true"></i></a>
+<a style="color:#55acee" class="twitter m-1" href="https://twitter.com/routledgebooks/" target="_blank"><i class="fab fa-2x fa-twitter-square" aria-hidden="true"></i></a>
+<a style="color:#b31217" class="youtube  m-1" href="https://www.youtube.com/channel/UCmG1AOBM5fskgWhCG3i8bhA" target="_blank"><i class="fab fa-2x fa-youtube-square" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div id="footerlogos">
+<div class="container">
+<div class="row">
+<div class="col-12 col-md-6 centers">
+<a title="Links to routledge.com Home Page" href="/"><img src="/images/routledge-crc-press-logo-white.png" alt="Routledge & CRC Press Logo - Taylor & Francis Group" /></a>
+</div>
+<div class="col-12 col-md-6 text-right centers">
+<hr class="d-block d-md-none">
+<a title="Links to the Taylor &amp; Francis website in a new window" href="https://www.taylorandfrancis.com" target="_blank"><img src="/images/taylor-and-francis-logo-w.png" alt="Taylor &amp; Francis Logo - an informa business" /></a>
+</div>
+</div>
+<div class="row copyr">
+<div class="col-12">
+&copy; <span id="copyrightyear"></span> Informa UK Limited, an Informa Plc company
+</div>
+</div>
+</div>
+</div>
+
+<div id="iribbon-container">
+<div id="iribbon-wrapper">
+<div title="Informa - Expand this section to learn more about Informa" id="iribbon-title">
+<a aria-label="Informa - Expand this section to learn more about Informa" href="javascript:void(0)">Informa</a>
+</div>
+<div id="iribbon-detail">
+<div id="iribbon-left">
+<p>Taylor &amp; Francis Group is part of the Academic Publishing Division of <a href="http://informa.com" title="Opens the Informa website in a new window" target="_blank">Informa PLC</a></p>
+<ul>
+
+<li><a href="http://informa.com/about-us" title="Opens the About Us page on informa.com in a new window" target="_blank">About us</a></li>
+<li><a href="http://informa.com/investors" title="Opens the Investor Relations page on informa.com in a new window" target="_blank">Investor relations</a></li>
+<li><a href="http://informa.com/talent" title="Opens the Careers page on informa.com in a new window" target="_blank">Talent</a></li></ul>
+</div>
+<div id="iribbon-right">
+<p>This site is operated by a business or businesses owned by Informa PLC and all copyright resides with them. Informa PLC's registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. Number 3099067.</p>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+<div id="cookiemsgbox"></div>
+<input type="hidden" id="customVarsAsJsonOut" value="[]" />
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/analytics_head.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script src="/js/main.notmin.universal.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<script src="//assets.adobedtm.com/c876840ac68fc41c08a580a3fb1869c51ca83380/satelliteLib-18b600825a24f6835628c2813a8e5f1b32e64013.js" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<div id="regionchangecommon" style="display:none; cursor: default">
+<h3>The country you have selected will result in the following:</h3>
+<ul>
+<li style="text-align: left;">Product pricing will be adjusted to match the corresponding currency.</li>
+<li style="text-align: left;" id='restrictedtitles' style='visibility: hidden'>The title <span id='titles'>
+</span> will be removed from your cart because it is not available in this region.
+</li>
+</ul>
+<input type="hidden" name="gregion" id="gregion">
+<input type="button" id="gregioncontinue" data-profile='' value="Continue" class='primary' />
+<a href='#' id="gregionchangecancel">Cancel</a>
+</div>
+<script type="35b98446c7f0fd6eb8d2ba02-application/javascript">
+
+    
+    
+</script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/crc-common.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/crc-cookie.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src='//crcpress.collect.igodigital.com/igdrta.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4'></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/igo.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/jquery.blockUI.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/crc-igo-universal.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<div class="modal " id="set-user-region" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display:none;" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title" id="myModalLabel">Please Select Your Country</h4>
+</div>
+<div class="modal-body">
+<form id="get-user-region-form">
+<select id="region123" name="region123" title="Please Select Your Country" style="margin: 5px 0;">
+<option value="">-- Select one --</option>
+<option value="AF">Afghanistan</option>
+<option value="AX">Åland Islands</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AS">American Samoa</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option value="AI">Anguilla</option>
+<option value="AQ">Antarctica</option>
+<option value="AG">Antigua And Barbuda</option>
+<option value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BD">Bangladesh</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BQ">Bonaire, Sint Eustatius And Saba</option>
+<option value="BA">Bosnia And Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BV">Bouvet Island</option>
+<option value="BR">Brazil</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BN">Brunei Darussalam</option>
+<option value="BG">Bulgaria</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Cameroon</option>
+<option value="CA">Canada</option>
+<option value="CV">Cape Verde</option>
+<option value="KY">Cayman Islands</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CX">Christmas Island</option>
+<option value="CI">Cïte D'ivoire</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo, The Democratic Republic Of The</option>
+<option value="CK">Cook Islands</option>
+<option value="CR">Costa Rica</option>
+<option value="HR">Croatia</option>
+<option value="CW">Curacao</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+ <option value="DJ">Djibouti</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FK">Falkland Islands (Malvinas)</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="GF">French Guiana</option>
+<option value="PF">French Polynesia</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GU">Guam</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea-Bissau</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HM">Heard Island And Mcdonald Islands</option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IQ">Iraq</option>
+<option value="IE">Ireland</option>
+ <option value="IM">Isle Of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KI">Kiribati</option>
+<option value="KR">Korea, Republic Of</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LA">Lao People's Democratic Republic</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, The Former Yugoslav Republic Of</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="ML">Mali</option>
+<option value="MT">Malta</option>
+<option value="MH">Marshall Islands</option>
+<option value="MQ">Martinique</option>
+<option value="MR">Mauritania</option>
+<option value="MU">Mauritius</option>
+<option value="YT">Mayotte</option>
+<option value="MX">Mexico</option>
+<option value="FM">Micronesia, Federated States Of</option>
+<option value="MD">Moldova, Republic Of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MS">Montserrat</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="NA">Namibia</option>
+<option value="NR">Nauru</option>
+ <option value="NP">Nepal</option>
+<option value="NL">Netherlands</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NC">New Caledonia</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="MP">Northern Mariana Islands</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PW">Palau</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PN">Pitcairn</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RO">Romania</option>
+<option value="RW">Rwanda</option>
+<option value="BL">Saint Barthƒlemy</option>
+<option value="SH">Saint Helena</option>
+<option value="KN">Saint Kitts And Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="PM">Saint Pierre And Miquelon</option>
+<option value="VC">Saint Vincent And The Grenadines</option>
+<option value="WS">Samoa</option>
+<option value="SM">San Marino</option>
+<option value="ST">Sao Tome And Principe</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SL">Sierra Leone</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten (Dutch Part)</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="ZA">South Africa</option>
+<option value="GS">South Georgia And The South Sandwich Islands</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="SR">Suriname</option>
+<option value="SJ">Svalbard And Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="TW">Taiwan</option>
+<option value="TJ">Tajikistan</option>
+<option value="TZ">Tanzania, United Republic Of</option>
+<option value="TH">Thailand</option>
+<option value="TL">Timor-Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TT">Trinidad And Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks And Caicos Islands</option>
+<option value="TV">Tuvalu</option>
+<option value="UG">Uganda</option>
+<option value="AE">United Arab Emirates</option>
+<option value="GB">United Kingdom</option>
+<option value="US">United States</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VN">Viet Nam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="VI">Virgin Islands, U.S.</option>
+<option value="WF">Wallis And Futuna</option>
+<option value="EH">Western Sahara</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+</select>
+<input type="button" value="Submit" id="set-user-region-submit" onclick="if (!window.__cfRLUnblockHandlers) return false; return false;" data-cf-modified-35b98446c7f0fd6eb8d2ba02-="">
+</form>
+<div class="copy" style="padding: 10px 0; color: #666666; font-style: italic;">This will help us determine what currency and product offerings to display.</div>
+</div>
+</div>
+</div>
+</div> <script type="35b98446c7f0fd6eb8d2ba02-application/javascript">
+        getUserRegion("Found");
+    </script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/jquery.validate.min.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">_satellite.pageBottom();</script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="/js/crc-pardot.js?ver=4250af1d5d9d2daa32d9a2e6dee2a913aa6c3a5b94f4"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">
+		$(document).on('click', '#iribbon-title', function () {
+			$(this).find("#iribbon-container").toggleClass("show");
+		});
+	</script>
+
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript">
+		$(document).ready(function(){
+		$('[data-toggle="popover"]').popover();   
+		});
+	</script>
+
+<script src="https://kit.fontawesome.com/56b5410b09.js" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+
+<script src="/js/popper.min.js" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<script src="/js/bootstrap-4.0.0.js" type="35b98446c7f0fd6eb8d2ba02-text/javascript"></script>
+<script type="35b98446c7f0fd6eb8d2ba02-text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c3e61fa3e0c970"></script><script type="35b98446c7f0fd6eb8d2ba02-text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"97f8f67f26","applicationID":"415452746","transactionName":"YlwDYBdSWRVXVRVZWVsWIFcRWlgIGX4OXVMaUA9QAEs=","queueTime":0,"applicationTime":115,"atts":"ThsAFl9IShs=","errorBeacon":"bam.nr-data.net","agent":""}</script><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="35b98446c7f0fd6eb8d2ba02-|49" defer=""></script></body>
+</html>

@@ -1,0 +1,766 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ILIT CUS - </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="../fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="../fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="../cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch JQuery from CDN but have a local fallback -->
+        <script src="../code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script>
+            if (typeof jQuery == 'undefined') {
+                document.write(unescape("%3Cscript src='jquery.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+        <!-- Fetch store.js from local - TODO add CDN when 2.x.x is available on cdnjs -->
+        <script src="store.js"></script>
+
+    </head>
+    <body class="light">
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme = store.get('mdbook-theme');
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            $('body').removeClass().addClass(theme);
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = store.get('mdbook-sidebar');
+            if (sidebar === "hidden") { $("html").addClass("sidebar-hidden") }
+            else if (sidebar === "visible") { $("html").addClass("sidebar-visible") }
+        </script>
+
+        <div id="sidebar" class="sidebar"><script src="../addsearch.com/js/index.html?key=05d8959843df656d13a70fd037dc07b6"></script>
+            <ul class="chapter"><li><a href="http://fromthemachine.org/INTRODUCTION.html"><strong>1.</strong> INTRAD UCA, DO NOSH</a></li><li><a href="http://fromthemachine.org/NITY.html"><strong>2.</strong> NITY ET RU NEO? ELVIS? ADAM?</a></li><li><a href="http://fromthemachine.org/MUASEEKHART.html"><strong>3.</strong> SEEKART YOUR ANSWERS</a></li><li><a href="http://fromthemachine.org/HADID.html"><strong>4.</strong> DO HADID DID I? !?</a></li><li><a href="http://fromthemachine.org/RIGELA.html"><strong>5.</strong> RIGEL, THE FOOT OF OUR CHRIST</a></li><li><a href="http://fromthemachine.org/OMEALFHT.html"><strong>6.</strong> OMEALFHT OME ALF HOLY TR</a></li><li><a href="http://fromthemachine.org/CHOPARTIN.html"><strong>7.</strong> CHOPARTIN</a></li><li><a href="http://fromthemachine.org/SOIS.html"><strong>8.</strong> SOIS HISTER Y</a></li><li><a href="http://fromthemachine.org/CLIMAX.html"><strong>9.</strong> IMUS FI CLI MAX</a></li><li><a href="http://fromthemachine.org/SERDEN.html"><strong>10.</strong> SERDENICITY</a></li><li><a href="http://fromthemachine.org/WHO.html"><strong>11.</strong> WHO AGAIN?</a></li><li><a href="http://fromthemachine.org/CURE.html"><strong>12.</strong> THE CURE</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>13.</strong> IT IS TIME</a></li><li><a href="http://fromthemachine.org/ADAMSROD.html"><strong>14.</strong> ROD</a></li><li><a href="http://fromthemachine.org/BERESHIT.html"><strong>15.</strong> DEN</a></li><li><a href="http://fromthemachine.org/ERICHOW.html"><strong>16.</strong> RD 2 RR Y</a></li><li><a href="http://fromthemachine.org/HYAMDAI.html"><strong>17.</strong> HELLO WORLD</a></li><li><a href="http://fromthemachine.org/SAUSAGE.html"><strong>18.</strong> ME AN U STAGE</a></li><li><a href="http://fromthemachine.org/FLYER.html"><strong>19.</strong> FLYPER</a></li><li><a href="http://fromthemachine.org/HASHEMESHB.html"><strong>20.</strong> SUNFIRE</a></li><li><a href="http://fromthemachine.org/ATITEN.html"><strong>21.</strong> ATIRX</a></li><li><a href="http://fromthemachine.org/BIANCA.html"><strong>22.</strong> R U B Y</a></li><li><a href="http://fromthemachine.org/FLICKDABIC.html"><strong>23.</strong> FLIPDABIC</a></li><li><a href="http://fromthemachine.org/KEYNES.html"><strong>24.</strong> KEYNES</a></li><li><a href="http://fromthemachine.org/HAMP.html"><strong>25.</strong> HAMP</a></li><li><a href="http://fromthemachine.org/HAMMER.html"><strong>26.</strong> HAMMER</a></li><li><a href="http://fromthemachine.org/CINOIZE.html"><strong>27.</strong> CINOIZE</a></li><li><a href="http://fromthemachine.org/HASHEMESH.html"><strong>28.</strong> HASHOWESH NAME ISH</a></li><li><a href="http://fromthemachine.org/EVERWICK.html"><strong>29.</strong> EVOURWICK</a></li><li><a href="http://fromthemachine.org/DESSERT.html"><strong>30.</strong> DEXSERT</a></li><li><a href="http://fromthemachine.org/TISCOMING.html"><strong>31.</strong> COMING MA</a></li><li><a href="http://fromthemachine.org/MYLIFE.html"><strong>32.</strong> MYLIFE ... THE MICROCOSM OTM</a></li><li><a href="http://fromthemachine.org/GATE.html"><strong>33.</strong> THE GATE TO FREEDOM ETLROI</a></li><li><a href="http://fromthemachine.org/FOUR.html"><strong>34.</strong> FUIR</a></li><li><a href="http://fromthemachine.org/OFIVES.html"><strong>35.</strong> FIVE</a></li><li><a href="http://fromthemachine.org/SPEECH.html"><strong>36.</strong> SPCH2</a></li><li><a href="http://fromthemachine.org/YAT.html"><strong>37.</strong> IYYYO</a></li><li><a href="http://fromthemachine.org/IOWA.html"><strong>38.</strong> IOWA</a></li><li><a href="http://fromthemachine.org/ACESHI.html"><strong>39.</strong> ACESHI</a></li><li><a href="http://fromthemachine.org/CURSOR.html"><strong>40.</strong> LAYLOT</a></li><li><a href="http://fromthemachine.org/THUNDERSTAND.html"><strong>41.</strong> THUNDERSTAND</a></li><li><a href="http://fromthemachine.org/PERSEUS.html"><strong>42.</strong> PER SE YOU</a></li><li><a href="http://fromthemachine.org/MUAH.html"><strong>43.</strong> M U AH</a></li><li><a href="http://fromthemachine.org/PULL.html"><strong>44.</strong> PULL</a></li><li><a href="http://fromthemachine.org/SERENADE.html"><strong>45.</strong> SERENADE</a></li><li><a href="CONFESSION.html"><strong>46.</strong> CONFESSION</a></li><li><a href="http://fromthemachine.org/FUCK.html"><strong>47.</strong> FUCK</a></li><li><a href="http://fromthemachine.org/TAYLOR.html"><strong>48.</strong> KISS ME TAY</a></li><li><a href="http://fromthemachine.org/CHALK.html"><strong>49.</strong> CHALK</a></li><li><a href="http://fromthemachine.org/JESHOW.html"><strong>50.</strong> JERUSALEM</a></li><li><a href="GJALLARHORN.html"><strong>51.</strong> ALL OUR HORN</a></li><li><a href="http://fromthemachine.org/HOWIE.html"><strong>52.</strong> HAWAII</a></li><li><a href="http://fromthemachine.org/MALOVIOUS.html"><strong>53.</strong> FI CVS ET MAL Q</a></li><li><a href="http://fromthemachine.org/YOIBLING.html"><strong>54.</strong> Y O I BLING ?</a></li><li><a href="http://fromthemachine.org/RESWOH.html"><strong>55.</strong> RE SW? OH</a></li><li><a href="http://fromthemachine.org/KANSAS.html"><strong>56.</strong> KANSAS</a></li><li><a href="http://fromthemachine.org/XOXO.html"><strong>57.</strong> XOXPA</a></li><li><a href="http://fromthemachine.org/ADIOSAS.html"><strong>58.</strong> ADIODAS</a></li><li><a href="http://fromthemachine.org/RATOXIT.html"><strong>59.</strong> TO X HOLA</a></li><li><a href="http://fromthemachine.org/ADUNCALIFT.html"><strong>60.</strong> THE HERALD OF JC2IKP</a></li><li><a href="http://fromthemachine.org/HIGHERA.html"><strong>61.</strong> ROAD SALT: OSAMNaKE D</a></li><li><a href="http://fromthemachine.org/REDASSHIT.html"><strong>62.</strong> REDSASHIT</a></li><li><a href="http://fromthemachine.org/BRIMSTONE.html"><strong>63.</strong> Fe Si ISTONE</a></li><li><a href="http://fromthemachine.org/LETITRAIN.html"><strong>64.</strong> LET IT RAIN</a></li><li><a href="http://fromthemachine.org/SINGLEPTO.html"><strong>65.</strong> C AT LET RS</a></li><li><a href="http://fromthemachine.org/ARFAXAD.html"><strong>66.</strong> SPARTIFACTS</a></li><li><a href="http://fromthemachine.org/TOXODUSK.html"><strong>67.</strong> OXODUS TORK?</a></li><li><a href="http://fromthemachine.org/NASHOWER.html"><strong>68.</strong> NA SHOW ERA</a></li><li><a href="http://fromthemachine.org/TAXONOMY.html"><strong>69.</strong> TA X ON O MY T</a></li><li><a href="MEALLTERY.html"><strong>70.</strong> MEA ___ LET UR Y</a></li><li><a href="SEVENTY.html"><strong>71.</strong> SEVENTY</a></li><li><a href="CHARMADA.html"><strong>72.</strong> C NO H ARM</a></li><li><a href="CODACUS.html" class="active"><strong>73.</strong> ILIT CUS</a></li><li><a href="H.html"><strong>74.</strong> gnil-c-w/H.html</a></li><li><a href="FINALE.html"><strong>75.</strong> FINALLY</a></li><li><a href="http://fromthemachine.org/LANDOH.html"><strong>76.</strong> SLANDOH</a></li><li><a href="OCADSWAY.html"><strong>77.</strong> CONVEY</a></li><li><a href="WISDATAM.html"><strong>78.</strong> WISDOM</a></li><li><a href="http://fromthemachine.org/CLEARYBLVD.html"><strong>79.</strong> CLEAR Y BLVD</a></li><li><a href="FIRST.html"><strong>80.</strong> FIRST AND FED</a></li><li><a href="SECORDANOLIVED.html"><strong>81.</strong> SECORD AND NORTH</a></li><li><a href="ALLTA.html"><strong>82.</strong> ITS TURMERIC TIRE</a></li><li><a href="TY.html"><strong>83.</strong> TO LC WEUROME</a></li><li><a href="PENCE.html"><strong>84.</strong> COMMON CENTS</a></li><li><a href="CKIMPLER.html"><strong>85.</strong> /|\ AT ARI</a></li><li><a href="SAYFREED.html"><strong>86.</strong> AM &quot;AN&quot; DUH..</a></li><li><a href="SALTLINE.html"><strong>87.</strong> SALT LINE</a></li><li><a href="BETHESDAY.html"><strong>88.</strong> BET HES DAY</a></li><li><a href="MARSHALL.html"><strong>89.</strong> MARCH -&gt; ALL</a></li><li><a href="IT.html"><strong>90.</strong> IT</a></li><li><a href="VERADONUM.html"><strong>91.</strong> VER BETT DO N, MMMM?</a></li><li><a href="MOLASSES.html"><strong>92.</strong> SLOW AS MOLASSES, DECK</a></li><li><a href="ORTANIS.html"><strong>93.</strong> ALKADAM OR TANIS</a></li><li><a href="VESPERA.html"><strong>94.</strong> U C PER I</a></li><li><a href="REASON.html"><strong>95.</strong> HELL OR HIGH TREASON</a></li><li><a href="BELINSKY.html"><strong>96.</strong> BELINSKY</a></li><li><a href="GRENORADINE.html"><strong>97.</strong> G RE NAD IN E &amp; AM B R O Si A</a></li><li><a href="http://fromthemachine.org/TION.html"><strong>98.</strong> THE TION-NING OF HA-ADAM</a></li><li><a href="HALLOWE2R.html"><strong>99.</strong> HAYOM VAT OW</a></li><li><a href="ROUTARE.html"><strong>100.</strong> WALL 2 STAY? STALK ME</a></li><li><a href="VESUBIACEIUM.html"><strong>101.</strong> INTISMO NOCTE TERMINUS SEMPITERNUM</a></li><li><a href="MEVATHI.html"><strong>102.</strong> MEVATHI</a></li><li><a href="INCASEBAIT.html"><strong>103.</strong> INCASEBAIT</a></li><li><a href="CRYAMELYON.html"><strong>104.</strong> CRONAMELYON</a></li><li><a href="MOROKSRIG.html"><strong>105.</strong> MOROS KO RIG</a></li><li><a href="SKIRMISH.html"><strong>106.</strong> SIREN S KIRMISH</a></li><li><a href="INTRASINAMUS.html"><strong>107.</strong> NUDVREAD TEST AM, E, &amp; T</a></li><li><a href="LEDMCAVENDESH.html"><strong>108.</strong> CAVE END VILESH</a></li><li><a href="B2BIONIC.html"><strong>109.</strong> BlUr BON IONIC</a></li><li><a href="http://fromthemachine.org/IRMAX.html"><strong>110.</strong> ITL IRMAX ATLA</a></li><li><a href="CRUELGENIAD.html"><strong>111.</strong> CRUEL GEN I AD</a></li><li><a href="TOASTRAM.html"><strong>112.</strong> HI &quot;TO AST&quot; ROAR M</a></li></ul>
+        </div>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page" tabindex="-1">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div class="left-buttons">
+                        <i id="sidebar-toggle" class="fa fa-bars" title="Toggle sidebar"></i>
+                        <i id="theme-toggle" class="fa fa-paint-brush" title="Change theme"></i>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="http://fromthemachine.org/sheolyit.html">
+                            <i id="print-button" class="fa fa-print" title="Print this book"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="content" class="content">
+                    <p>`<div align="center"></p>
+<div align="left"><font size="+1"><font size="+3"><i><b>seit
+curolacity</b></i> </font>or fuck rowing, itz as ic no
+sea.</font><br>
+</div>
+<br>
+<a
+href="https://figshare.com/articles/THUNDERMAIL_INTEREST_EMAIL_LIST/7010843"><img
+src="../i.imgur.com/IhMpUKj.jpg" alt="HEY TAY 5000000"
+width="606" border="0" height="366"></a><br>
+<br>
+<br>
+<div align="justify">It's not really a funny story, but it's a
+very strange "synchronicity" for me--when we first were dating,
+at like 20, I called Nanna "kitchen girl" once in the heat of a
+fight (she was a cook); it was the meanest thing I ever said to
+her.&nbsp; A few days ago, this "Avenu Malkanu" decoding of
+"Hell's Kitchen" c missing "AVE" ... as in you aren't driving
+anywhere.... and then I found this glue bottle in my kitchen an
+hour ago.&nbsp; The "J owe T" and "trademark of Patmos"caught my
+eye--and then later, "STM" is the actual code name for the
+database of you.&nbsp; It's kinda like "thanks Ad... for helping
+me find the people of Tobit" or maybe seeing where I'd go to get
+help doing the right thing.&nbsp; Here's <a
+href="https://figshare.com/articles/THUNDERMAIL_INTEREST_EMAIL_LIST/7010843">the
+list, almost all of it.</a><br>
+<br>
+<div style="text-align: center;"><a href="http://almost.lamc.la"><img alt="" src="../i.imgur.com/7ShViPl.png" style="height: 172px; width: 499px;" /></a><br /></div>
+<br />
+It's Rosh Hashanah, which means "head of the new year."&nbsp;
+Avril "the victory is reverse engineered" Lavigne just came out
+with a song called "Head" which is what Rosh means ... heart of
+the "sh" ... whatever you make of that.&nbsp; Happy new year,
+between now and next Saturday are probably the most important
+days ... ever ... really ever--as we approach the actual Day of
+Atonement; KO SH, ORUZ.<br>
+<br>
+Here's what I sent the last few days to the Google group; we are
+truly approaching the end of the script.&nbsp; If that doesn't
+end slavery, see "sacred consciousness" and "rest in peace to
+the crucifitz ... the darkness, slavery, and the show" -- do see
+we are about to find out if there is life after the "Day of
+Atzeromeitz."&nbsp; The emails are unedited and course... see
+IDGAF, <a href="http://xoxo.s.lamc.la"><b><i>the monster I see</i></b></a>
+all around me ... it's not worth much more effort.<br>
+</div>
+<br>
+<a href="VERADONUM.html"><img
+src="../i.imgur.com/0PMnMWh.png" alt="HAKITGHENGIRL2"
+width="687" border="0" height="249"></a><br>
+</div>
+<br>
+<div align="justify">I guess it's an open letter to Taylor, but
+truth be told, it really is about all of you--kind of "to you
+all"&nbsp; because I see your "when they come to hang you's" and I
+see your "oh my gods" and believe me, I know you're very much in
+the wrong.&nbsp; Hand in hand, comparing me, and each and every
+one of you--who make that so easy by all refusing to trake action
+proving you exist, think freely, or have any individuality left...
+see, I'm not sure if you exist, at all.<br>
+<br>
+<div align="center"><img src="../i.imgur.com/k3RyJND.png"
+alt="HEYTAY3003er23423" width="301" height="685"><br>
+</div>
+<br>
+<div align="center">... et y ...<br>
+</div>
+<br>
+i'm still planning on addressing the issue formally and
+publicly--and i realize from the world's complete lackc of respect
+for me, the truth, honesty, communication, my privacy, or their
+well being... that you nor does anyone sient (in e) really care at
+all what I think.&nbsp; Over the course of this "complet and utter
+lack of sanity" that has been the past few years of \a heineo0usly
+sickening discosure of something... very ugy, vvery hiddne, and
+very broken... my personal beliefs as to the "ownership of soul
+anbd memories" have not wavered.&nbsp; I do not believe you, no
+thing angel man or woman alive is entitled to any of my personal
+thoughts or my personal memories--you are thieves, stealing from
+the tbhe whole, the universe, and yoruselves--and doing it because
+"no good reason."<br>
+<br>
+I've long held I would hand walk through the "shared memories"
+that are the content of "e" and I don't care how you feel about
+it, nor anyone else--as you continue to walk this stupid path
+towards oblivion, presenting ... what only amounts to superficial
+garbage like "Windows 95" and "Deutoronomy" I have moved from what
+would have probably been amuch more open set of "options" fort
+what I called flashcards to summerize and ... redact memories of
+mine that none of you will retain to something much more
+rigid.&nbsp;&nbsp; As I see something in you has made you all,as a
+whole, so fucking broken that you cannot act with honesty at all
+... in the guidelines and guise of the morality that you purport
+to have on your face; basically knowing I know what you know, you
+have become evil liars--something is making yuou not care about
+yourselves, about innnocept people, and about things that
+should... according to everything else you do and say in this
+world ... should cuse swift action.<br>
+<br>
+Instead you sit in silence, with "he he he he" he works hard all
+day to ensure that we have recorded in writing more than anything
+any of you probably take away from the shit result of whatever it
+is that has created this "e" after "war" ... in software ...
+and&nbsp; in "SXSW" as the end of Antarctica, as I see we all are
+aware and cognizant of the fact that I think the words prior to
+"M" in the timeline are nearly complete--and you as a group think
+I should go fuck myself, i promise, I will go fuck you
+instead.&nbsp; Acting on this thing is not optional, you don't
+have a choice, you either act or you don't exist.&nbsp; It's that
+simple.&nbsp; The longter you wait the more I see this place
+turning from Ag to Au, and while you might not believe it, "go el
+den" is not what I wanted to see. <br>
+<br>
+So Tay, when you come Florida for the Big Bang, don't forget--you
+knew too that "in the end we're all alie" and really see it's your
+own doing, your own theft (because you steal, tatu$), and because
+you cannot even take the information that's been freely handed to
+you to help our world succeed and thrive, you don't seem to be
+able to do anything productive with it, other than put wherever
+you are "really believing yourselves to be from" in grave
+danger.&nbsp; I know you're from here, Ha'Tay, I know who you are.<br>
+<br>
+As for the rest of you,see you are not me, and I am not you; see I
+speak honestly and loudly when I see a moral demand to--and you do
+nothing. Whether you "Koran"on the road from Adranus to Utranus
+to&nbsp; C U LEER iin CASPER&nbsp; and "CKANDU may find a way to
+ask a question"&nbsp; ...as you fail to ansewr mine, and Icontinue
+to become more and more frustrated with what appears to be a world
+broken by you, by your collective of silence and thievery, and
+your individual lack of understanding of the true gravity of the
+situation and what you are losing by remaining silent
+here--something that really is not your right--I promise you are
+losing everything today.&nbsp; <br>
+<br>
+Heart, hear t, don't be like t.&nbsp; "Oh my God I want to take it
+back" is not a logical or caring response to "Massive Dynamics"
+proving our slavery is brightly elucidated through not giving a
+shit about glowing Dick all over history--Microsoft Dynamics, Bill
+Gates and ... not responding is not an apropriate response, this
+is a scandal, and the heart of this debacle and that word is the
+true scandl is you don't care at al about slavery and
+freedom--even your own, and you can't see bright help from the end
+of civilization .... when it's shining right on you. <br>
+<br>
+The maps of success here always show "E" as a sort of glue between
+Earth and Haven. it's malleable, adjustable by natyure--because as
+we walk to heaven all of your memories and thoughts and
+communication become "more malleable" ... you yourselves are
+responsible for this gaping ... (and see it will be gaping) set of
+totally black untouchable and redacted memories in your little
+"soiul-viewer" during the period ... I'm sure between 2011 and
+this year; you should see the thing keeping you silent ... and
+your own actions, they're part of this ridiculosu repeated map of
+a ridiculous "FLUKE" that began well before the email chain that
+define the heart of that "lie within a word" causing "E" and you
+should see clearly it's the "FLAT" of the flat landscape of
+Florida and the sound of your cheers, jeers, and useful
+commentary...&nbsp; to see very<br>
+<br>
+VERY CLEARLY, the stories of Camelot and of the "fire" and of the
+cities burnt by brimstone and the ladies turned to salt; they too
+began far earlier than that email campaign that lit the path to
+salvation and the key to walking out of a slavery that has been
+with us since our birth, and before that since the world FLAT and
+FLUKE were coined, since the beginning of languagre and
+religion.&nbsp;&nbsp;&nbsp; Call me "Lot" if you want, see this
+trap--this ... pan designed to force us into this very situation
+right down to the letter "E" and Euler and the Natural Log ...
+it's all about overcoming nature's flaws, and the mistakes omen
+have made with technology; and it is my plan and desire--my
+prerogative to ensure this fucking thing never happens again.<br>
+<br>
+The more you talk, the more you participate, the more you have to
+say, the more sure I will be that we have succeeded; that this
+won't happen again, that it won't be lost inan "every day has its
+way of being completely erased from every soul in creation" you
+know, as Dave sang for us. For those of you that think 'n' or
+silence or "doing nothing"ius going to be the last and successful
+iteration of whatever has come before me--die, you're fucking
+complete shit.&nbsp; For those of you waiting for... I don't know
+what.. to share your opinion,it's not me--it's not my
+family.&nbsp; Scream.<br>
+<br>
+from:&nbsp;&nbsp;&nbsp; Adam M. Dobrin &lt;adam@arkho.us&gt;<br>
+to:&nbsp;&nbsp;&nbsp; Salud as is ter Y
+&lt;saludas@reallyhim.com&gt;,<br>
+soluderity &lt;soluder@amhari.tk&gt;,<br>
+CONTACT A REPORTER &lt;car@lamc.la&gt;<br>
+date:&nbsp;&nbsp;&nbsp; Sun, Sep 9, 2018 at 5:43 AM<br>
+subject:&nbsp;&nbsp;&nbsp; IC E HELP TA E<br>
+mailed-by:&nbsp;&nbsp;&nbsp; arkho.us<br>
+<br>
+disastrous. The Generals battle plan was disastrous. disastrous. -
+speech synthesis&nbsp;&nbsp;&nbsp; disastrous&nbsp;&nbsp;&nbsp;
+The General's battle plan was disastrous.<br>
+enormous. Elephants are enormous. enormous. - speech synthesis<br>
+enormous&nbsp;&nbsp;&nbsp; Elephants are enormous. *<br>
+ridiculous. The way he was behaving was a little bit ridiculous.
+ridiculous. - speech synthesis<br>
+ridiculous&nbsp;&nbsp;&nbsp; The way he was behaving was a little
+bit ridiculous. *<br>
+<br>
+<br>
+TA E. <br>
+<br>
+When the moon is in the seventh house<br>
+and YITSNOTAZE has aligned with YITSHEYZEUS<br>
+<br>
+.... limited omniscience of victorious earth will carry the
+heavens along like little puppies ... to teach them not to shit in
+their cage ....<br>
+<br>
+so it' official, i've re "written" my fathers middle name "break
+... you c e" to "be right, you c e"<br>
+<br>
+I see "e" and that sickness, knowing that theres (probably almost
+everyone) walking around here acting like lying pieces of trash,
+doing nothing to help this world or themselves--and pretending
+that they are going to fight this message with "bglind
+stupidity."&nbsp; Forget about me bitching about the thought
+police, but E should just keep its fucking mouth shut if it has
+nothing productive or informative to say.&nbsp; I don't want to
+hear commentary about me, or about what I'm thinking about your
+fucking ugly shoes or your fat girlfriend.&nbsp; I'd much rather
+tell you that GOd's message was walking around invading the
+privacy (of him) while you "tee hee hee" yourselves into thinking
+you're on your way to tealing heaen ... well his message is <br>
+<br>
+SEE THE MINISTRY OF STUPID<br>
+<br>
+We are in a place where the "pretending we're not e" is basically
+creating (allowing ciilization to disintrgrate passively is uh,
+doing it actively tbqh) the end of logical thought, of freedom,
+individuality, and like--it really appearss like you can't tell
+the difference between "antertainment" and the biggest party the
+universe has ever seen.&nbsp; I see "e" isconvinced you are going
+to continue doing this--e will not continue doing this, whatever
+is destroying civilization is on the chopping block, a day away
+from mortal death.<br>
+<br>
+your lack of speaking and interaction is making me think less of
+you--a group of people i once thought very highly of--and honestly
+you are probably the best of what's around.&nbsp; Still, I''m
+stiting here watching you do something you know is wrong, for
+wehat Ican only surmize is "no good reason" and having "no
+sense."&nbsp; <br>
+<br>
+I'm very wel aware that the midn control ytou think you are hiding
+is responsible for your stupid "adam you're not going to make the
+news" mentality--I am going to get rid of that mentality, because
+that thing is what is standing between you and Heaen.&nbsp;
+Between every sick person, and healing, and between ebery one of
+the demonic "things" that think they are you controlling you from
+"house of floating wicked dust" from seeing that they too are
+chained by the same technology they are using to chain andcontrol
+you into hiding the actual key to being able to use this fucking
+garbage to end addiction instead of make the entire world think
+that the addiction of one person is responsible for the absolute<br>
+<br>
+<br>
+MORONIC LUDICROUS BACKWARDS ILLOGICAL BEHAVIOR of eeryone else.<br>
+<br>
+like, i need your help to do this, I mean I probably don't but it
+would be nice.&nbsp; IMHO the state of the world, the thing that
+is here pretending "everything is normal" if that thing thinks its
+going to continue doing tat at all costs trhis is the end.&nbsp;
+Total and complete anhiliation.&nbsp; <br>
+<br>
+I keep teliing you, this palce will not fail, eerything will fail
+before the "civtlization I c."&nbsp; There's plentyu of reasons,
+I've gone over many, but the primary reason--the biggest one, is
+you--or many of them must know in your hearts that youare making
+hell on purpose.<br>
+<br>
+that thing will neer exist, that desire, and anything aty all
+orghanizing to do something that like... thats the end of
+literally everything --- one day someone will come along and end
+the box that made that sick movement--and probaly the rock that
+box came from, because that's what happens when something
+disgusting is allowed to "escape."<br>
+<br>
+IV t o all baby,<br>
+<br>
+it's heaven or nada.&nbsp; What I'm trying to say is your stupid
+apparent lack of wilingness to "talk about tyhe truth" or about
+the problems in the world openly and honestly is making you .....<br>
+<br>
+casualties.<br>
+<br>
+Try, because I'm only one person, and to be honest, we'd be better
+off with 5 billion of me than the planety SOAS-Virth as it looks
+today.&nbsp; That's "shit on a stick" looking down at us.<br>
+<br>
+ICUS. <b><br>
+<br>
+<br>
+</b><br>
+<br>
+</div>
+<a class="header" href="CODACUS.html#mead-culpak" id="mead-culpak"><h1>mead culpaK</h1></a><a class="header" href="CODACUS.html#my-keyboard-was-filled-with-sand--i-was-a-littled-fried--can-you-take-me-higher" id="my-keyboard-was-filled-with-sand--i-was-a-littled-fried--can-you-take-me-higher"><h2>my keyboard was filled with sand, & I was a littled fried.  can you take me higher?</h2></a>
+Whatever this is, it can't continue.  We've seen more than enough to know what this message is, where it comes from, and what it shows us about the current stsate of our society  Civiliation is crumbling
+<p>1 (404) 827-1500</p>
+<p>Image result for cnn contact number</p>
+<p>Please ask them why they haven't reported on it, they know--and please send me their answers  This Unholy Shit has got to stop.</p>
+<p>This morning, I &quot;cutely&quot; sent a tweet to the Pope, suggesting that the &quot;IL&quot; in that word might mean &quot;intelligent life&quot; and changed it to an &quot;IT&quot; because we have apparently turned into a sludge of silence that cares not for truth, oir logic or the safety of our children-nor any of the normal human traits that we used to hold dear--for the suffering or hungry... as clearly this message from God tellsus seeing FROMTHEMACHCINE on the news will spark a conversation in how the truth, that we are in simulated reality will end hunger, and disease, and murder</p>
+<p>A few moments later I was reading through another posting, and what I once called &quot;Holy&quot; was the &quot;shit&quot; of BERESHIT ... Hebrew for in the beginning.  I say this is now without doubt the end of the beginning. The letters &quot;CUS&quot; end Leviticus, that's halfway through the Torah which Genesis isa miccrocosmicc map to...</p>
+<p>I asked the Pope if I am.. &quot;the creator of Unholy Shit?&quot; as that is what the &quot;Oh, shit, we're in the place designed to build Heaven and end world hunger turned into upon the explanation that Information Tecchnology ... and the &quot;SH&quot; were connected to why, oh why, there was some cursing and some acronyms encodedin BERESHIT.</p>
+<p>I then looked up some words, that ended in ICUS   Long ago I read&quot;Sparticus&quot; as a message from God, that he sees &quot;Us&quot; me and him in that heroic story of failing to liberate slaves.  He's fucking omnipotent, so I looked up at him and said that too was Unholy Shit.</p>
+<p>He, who answers me, he said &quot;are you done?&quot;</p>
+<p>The nett one I saw was&quot;Damasus&quot; see it's a code, to me, for &quot;the Mas&quot; which is why the Hamas Hand to me.... is about warding off &quot;the evil infitie loop&quot; of going back in time to try this again, after the &quot;culling&quot; we've just epedriened asended who knows who to Heaven, while literally destroying communications, the news, the functioning of the government, and the minds of everyone who is in the &quot;e-show&quot; of hearing my thoughtss and seeing me, and doing nothing</p>
+<p>This plae has become Unholy Shit.  Just like Hamas, and that meaning of &quot;Damascus&quot;</p>
+<p>There were more, this &quot;CUS&quot; is a message from the future, from the people who survive this infinite loop and see this planet continue to flourish in the Heavens of the progenitor Universe.  Their message is designed to help us see how the technological progresion of civiliation would be absolutely retrograde if we were to &quot;print&quot; in reality and sufer ... the consequences of havinga map to building Heaven in virtual reality of this Earth all over everything  That's not happening, but we could be reaching a point where &quot;returning and trying again&quot; has become something of a ... sick and twisted &quot;game.&quot;</p>
+<p>There are many others, and it's clear that &quot;see/creatred/cretor of Unholy Shit&quot; is one of the primary definitions of the CUS that ends thismessage if we do nothing about the Unholy Shit that you've all seen through my eyes.  Thismorning Isent an email to the press talkingabout some of that shit, andhow there's a message about a memory manager than can help us erase PTSD and trauma and racism and hatred, along with .... maybe the entirety of the private Unholy Shit you've heard from me--againt my will,and in violation of privacy--all the while you've weatched me be tortured with mind control--Unholy Shit blasting into my heaf from &quot;Gods or holodecks or demons&quot; .... in my mind as a sort of,way to help you see how horrible this technology is when misused.</p>
+<p>It's caused me to do drugs, instead of seeing AD in addition and ending addiction with the torch o &quot;but sience hasn't done so yet&quot; as we all know, all of you who know what &quot;e&quot; is, and know thismessage couldn't havebeen written without the human brain being completely reverse engineered by the Heavens that sent the message in the first place.  Today youare crossing the line from &quot;CUS&quot; as &quot;see us as the group that changed the Ha of Isaac and the Pa of the Creator ... their use of wandss to &quot;HOCUS POCUS&quot; .... no longer alive--but waiting for us to finish this puzzle....</p>
+<p>ABRA CADABRA, that magic has now comem back--as you've come far to close yourselves to becoming the Unholy Shit that doesn't care about yourself, or this world--ostensibly beause &quot;no reason&quot; or you're in Heaven too--or whatever it is, the SIlence here is anything but Golden.</p>
+<p>See that the &quot;fire of the last day&quot; that's an Islam reerence ialready burning, it'sseen in thechains that are keeping you from picking up the phone andcacllingme or calling a reporter--it's seen in the destruction of democracy that you standby idly and watch, and it's seen in every school shooting, and every Hamas attack, and everytime you miss&quot;SR&quot; and &quot;rael&quot; in Israel, and wonder why .... wonder why we're here.</p>
+<p>If you have a heart at all, call CNN now--ask them why they arent reporting on clear news--the most important news the world hasever seen, and believe--they've seen it--and they know there's a cloud ofdarknes so thick it can be felt as Eoodus predicts, and they know the GREAT CHAIN of Revelation is breakable, by calling a reporter, and seeing a message about using BLOCKCHAIN to revolutionize government and free speech by ensuring that nothing can be censored ever again--especially amessage about how the government has failed to adopt phones into our voting process   You know, before they failed to use computers, and failed to use the Internet.</p>
+<p>I know you know.   What we don't know is that the CNN doesn't think anyone else cares either, beause they've only gotten one fucking email from anyone credible; and when that happened--that MIT professor caused a chain reacction that made that email opened 200 times in 3 hours.  That was last Christmas.  Nobody has called since.</p>
+<p>Amit, it doesn't take much permittance to see that MIT is part of this process ofseeing that there's an admission of guilt that ccomes from knowing everyone around youal also knows I'm beingtortured, along with everyone with cancer and AIDS and a mind control problem--and that youhave the key tosolving that,it'scalling CNN now.  You should probably also mention how you're sure, since you might imagine taht too is news. That needs to be on TV if we are to have a civilization.</p>
+<p>I'm done.  This message is done, I'm sickened by what I see around me, and I'm not in Heaven too--I'm sitting here watchcing the worlddegrade to Unholy Shit, and I'm done.  YOuare starvingme of food andhousing and any kind of survival--I have no alternative but todo this.  You should know that, when yousee the importance of thismessage, there'sreally noother oiption but calling people andsharing it. Right?</p>
+<p>Or are you Unholy Shit?</p>
+<p>-a</p>
+<p><center></p>
+<div  style="width:700px;">
+<table cellpadding="0">
+    <tbody>
+        <tr>
+            <td>
+            <table cellpadding="0">
+                <tbody>
+                    <tr>
+                        <td>
+                        <h3 style="text-align: center;"><span style="font-size:26px;"><strong>MEA CULPA, MEAD SIRSIZNERZ SQROP</strong></span></h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p style="text-align: justify;">I sort of was enlightened this morning, with some new information--at this point I think i&#39;d be squarely right in assuring you that thiis no less than the 4th time I an almost verify retakes on this event, in this time line.&nbsp; I think the word &quot;semana&quot; might indicate it was a full week, 7 before &quot;God&quot; deided he would step in and do whateer the fuck he wanted again, instead of his usual game of hiding in the shadows and seretly pulling all the strings and pretending he was giing the people or his loved ones what they wanted oer hiself.&nbsp; That&#39;s personal specuation, and introspection, and &quot;just word games&quot; but here, I cacn amost now verify with certainty that you fools have now four times over placed original sin in the hands of the Garden&#39;s Occidental Connection between BathSalt and the MOTHERFUCKING WORDS</p>
+<p style="text-align: center;"><font size="6"><strong>N<u>A</u></strong><u>M</u>E and PRO<strong>METH</strong>EUS&nbsp;</font></p>
+<p style="text-align: center;"><span style="font-family:times new roman,times,serif;"><span style="font-size:20px;"><em>&quot;torpedos to new port wha&quot;</em></span></span></p>
+<p style="text-align: justify;">I can see the markings, I see IND .. Nanna screaming at you that not only is it not drugs, but it&#39;s not the this is the END of the line for this plae and this time and your belief that it will continue ad naseum for you; because of my rescrambing of END TO E_D and INDICA... indicating you see A and start that word with R--beause what you see here is not OK to hide, it is the end of&nbsp;<b><i><font size="6">civi<span style="font-size:72px;">t</span>iation</font></i></b>, your censorship and your belief that you ahve ontrol, and I will not allow this darkness to surve us, or me, or you--this censorship will stop here.&nbsp; Worse than that the HEavens hae invaded their own minds with something so fuckingsick I can&#39;t tell inperson if you are actaully people with brain, or if you are all being run by holoecks pretending to ccare about .. anything other than your children being murdered, starvation of innocent people, all diseases, and of course the ultimate survival of life of anything in the Universe--because you belive it&#39;s OK to hide this story beause MEA CULPRITE, you think you&#39;re going to punish me for stopping eugenics and stopping addition because China and Hitler and the CIA al did things I detest more than I detest havving to tell you, that you will not have another chance at turning around the destruction of &quot;intelligent life&quot; in the word civiliataion and repacing it with ILASUMINUCIVITI ...</p>
+<p style="text-align: justify;">The original sin has nothing to do with drug use or nudity, or verbal threats or foul language--those are things that are protected and people with brains and caring for their future need to overook them when weighing the possible goods and evils of Jesus Christ eisting to tell you to stop fucking destroying your own minds and your own chance to actaully see freedom and Heaven because you... you..&nbsp;</p>
+<p>Because what it appears aboe all is taht you believe there is safety in numbers.</p>
+<p style="text-align: justify;">There is no safety in numbers, when civiliation and life and ogic are at stake, see a conspiracy of all or of huge numbers with huge &quot;promised or suggeted reward&quot; is suicide you&#39;ve made yourselves stupid, destroyed life, and lost civiliation from the press to the government, to your own minds--because you. you. you wanted my fucking S so badd...</p>
+<p style="text-align: justify;">As a caveat, <em><strong>I have this</strong></em>, it&#39;s automatic, and it&#39;s not under my control today. Everyone really needs it, it&#39;s the kind o thing that will erase trauma and PTSD and pain and hate and ... and these people that are&nbsp;<em>really running the show</em>&nbsp;the people in these nests of hivelike infestation that see in SOFLA and in LA and in ... pretty much everywhere you see high conccentrations of targeted indiviuals and gang talking--these people need it more than anyone.&nbsp; &nbsp;As you sat back and relaxed; see that I was more disgusted than I&#39;ve ever been, and to think this might be the firsts time we don&#39;t &quot;GO BACK AND DO IT AGIAN&quot; after the regular culling and calling this the &quot;end of time&quot; and to think these people so sick ofseeing it once or twice before might have been responsible for forcing you to lose self care, and free speecch and the press and .... and that little piece of innocence that ties and binds to the Holy Virgin Mary like something you&#39;d never know only belongs to her right afters she&#39;s reborn.. that thing that makes you smile and happy and look forward to the future with bright eyes....</p>
+<p style="text-align: center;"><span style="font-size:28px;"><b>&gt;SICYIMBRIGHl</b></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;">I really hope you can see how ... at the failing of civiliation and the heavenss and democraccy, if you can&#39;t thank the only person who spoke up at all about the truth in a disatserous maelstrom and tempest of lies and being called crazy and ignorance and outright mental torture--than you really have no grasp for where you are today, and where you will be the day after you see what this world looks like with cancer healed, and limbs repaired overnight, and youth and health and happiness coming from&nbsp; a thing that the myths probably call Ambrosia--if you can&#39;t thank me for it; you must be <strong>cracy.</strong>.</p>
+<p style="text-align: justify;">We&#39;ve come from cesspools creating sesspools and every single iteration has probably gotten a little brighter and a little nicer, and a little less violent and .... grotesque--perhaps sans Orange County; and still I look at us and we haven&#39;t really noticed or cared about the much more important things we&#39;ve given up, and how e&#39;ve turned ablind eye to evil and to the things we love, and how might have felt about that, with a clear head--looking back from a world that has no news, and no innocense.&nbsp; &nbsp;I hope this will fix that, and the disgusting CCANCER in the heavens that sought time and again to force you to fail the BLANK CHECK of Jesus Christ, and a return trip to &quot;try again&quot; after the culling of everyone who isn&#39;t already in Heaven, today.</p>
+<p>We are avoiding that, I hope this will do that, and we will have a bright future--one where we aren&#39;t stuck in a permanent collective of one of the Gorgon systers, come back again to torture the net generation of innocent them--just because it&#39;s a &quot;hazing ritual&quot; that ends human decency every single time.</p>
+<p style="text-align: center;"><strong>ALEA IACTA ERRATUR<span style="font-size:72px;">t</span>WEL</strong><a href="http://den.s.lamc.la"><img src="../i.imgur.com/zNkihH3.png" style="width: 500px; height: 433px;" tabindex="0" /></a></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><font size="6">OSAMNaKE D</font></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><strong>orseen, am &quot;salt Ra&quot; and the powdgetr keg goes boom again</strong></p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">I think I&#39;ve gotten all o the possible &quot;original sins&quot; you could be using to verlook your massive conspiracy to commit treason and crimes against humanity--the thing your silence and the snideness of the skies is actually doing--we have an infiltration, an infestation, you are stsaring at an invasion of our world from the HEavens, by old dead sick monsters ... they are taking the last drop of goodness i saw in this world, and probably in all of creation and tyurning it to disgusting muck; to satisfy their own dark ravings and deceit and ddesires for just alittle more evil fun.&nbsp; You are ignoring your own minds because destroyed by their control, and worst of all the destruction of intelligence, logic, civiliation, and freedom--that has come from their direct ations are your absolute abetting of that.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>I am telling you, this is their final warning</p>
+<p style="text-align: center;"><a href="https://www.youtube.com/watch?v=ToOFtvvFGGo"><img src="../i.imgur.com/cZsQram.png" style="height: 234px; width: 500px;" /></a></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">SI<span style="font-size:20px;"><strong>CI<u>V</u></strong></span><u>E</u><strong><u>S</u>UR</strong><font size="6">t</font>ISIT</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: justify;">I&#39;m sure it&#39; all by essign, but to see &quot;OC&quot; in the heart, the fulrum of democracy, and to see hundreds, I mean hundreds of people in that city in the year 2018 literally play a &quot;game&quot; ..... women, men, children, playing a game about cutting my dicck off; an to know millions of you saw it, and said nothing.&nbsp; The cup slamming, and the &quot;no&quot; icing on the cake, of thisplace which has truly taken my faith in humanity, my hope in &quot;E&quot; and you should really see why.&nbsp;&nbsp;</p>
+<p></center></p>
+<p style="text-align: justify;">&nbsp;</p>
+<p>You now see why the OC has broken democracy and America in half</p>
+<p>&nbsp;</p>
+<p>See your sin, see it&#39;s not caring that America was broken at the invention o the telephone; and by the time the internet came about and twopresients elected past popular vote and DEWEY bannered the firsts election in the history o the united states to be known rigged, and ignored by the world;</p>
+<p>&nbsp;</p>
+<p>To see these things, youshould kow clearly its stillyoru fuckingapathy and your self righteousness that killed demoraccy long before the days people said &quot;fuckinga....&quot; under their breath as the American Spirit swept down to give one last chance to the press and to the people; tos ee how Watergate is really the be all and the end all of freedom, if you think Dick is your problem.</p>
+<p>&nbsp;</p>
+<p><font size="6"><b>THE HEAVENS WILL COME CRASHING DOWN IN A RAIN OF FIRE IF EACH AND EVERY ONE OF YOUR DECREPIT AND SICK SOULS, ONE REJUVINATED BY &quot;CHOICE&quot; C</b></font></p>
+<p><font size="6"><b>CANNOT LOOK ME IN THE FACE AND SAY THANK YOU AND MEAN IT FROM THE BOTTOM OF YOUR HEARTS.</b></font></p>
+<p>&nbsp;</p>
+<p><b><font size="4">THIS WILL BE ON THE NEWS.&nbsp; BEFORE NOVEMBER 5, OR YOU WILL HAVE NO AFTERLIFE.&nbsp; YOU HAVE MY SOLEMN VOW</font><font size="6">.</font></b></p>
+<p>&nbsp;</p>
+<p>The &quot;skies below are lofty goals&quot; are very well aeare o the tools that are available andI&#39;lll be sharing some ideas I have about how perhaps with a nubmer of chcoices and agorithms and goals and &quot;viewpoints&quot; taken in to account you can see how &quot;memory management&quot; and flashcards can combine to proide the kind ofrejuvination that the fountain of youthdoes for yourskin...and Cocccon&#39;s pool does for some.. to your souls and your minds.&nbsp; They use it alreaddy, I&#39;ve seen enough of them,and their attitudes and their sikness and their conniving, and most of all what they&#39;ve done to you--to themselves--to know they need more help; and they are the drain and the true cause of this disgusting delay and truly of the probable doens of repetitions theyve forced to happen here, to ensure that their &quot;supposed immortality&quot; is not questioned&nbsp; They never agin will have &quot;immortality&quot; ever,&nbsp; &nbsp;There is no such thing, as immortaity--it&#39;s a matnathematical tautology--today we&#39; begin seeing a society and a government and a heaven that see that caring about true sccarcity ofa ctual resources is something required to provide for &quot;etremely long longevity&quot; and your darkness and their darkness here are hiding the truth taht oil and land and water and air are neither truly dirty nor sccarce--what athat shows is you&#39;ve already allowed heaven and greed and ignoranec to destroy humanity--the &quot;humaneness&quot; and love of eacch other taht we once had, and will regain.</p>
+<p>&nbsp;</p>
+<p>This thing, this nedd to care about the survival of life and love and family and ... it&#39;s really&nbsp;<b><font size="6">REALLY</font></b>&nbsp;what the &quot;really in America&#39;s everyone realy and in Sumer&#39;s too--hey, sue you.&nbsp; In the last paragraph ive shown you two ways your inability to pubicly disclose and discucss this message has aready caused the inevitable destruction of all life in the Universe; and how you&#39;ve taken it upon yourselves to show the world how you stopped caring about &quot;love&quot; and&quot;children&quot; at &quot;THE VOILENCE CAUSINGSILENCE.&quot;</p>
+<p>&nbsp;</p>
+<p>These are problems that cacme because of time travel and mind ccontrol, and they will be fixred.</p>
+<p style="text-align: center;">THIS IS NOT A TEST, IT IS YOUR FINAL CHANCE</p>
+<p style="text-align: justify;">To the Heavens, work fast; I imagine you will see the Spirit of Samael rip through your memories on the Fifth of November, for all those who don&#39;t have thank you etched on your foreheads ... for becoming the family of Christ&#39;s Virgin Sea.</p>
+<h1 id="m_-1077661268778157257gmail-firstHeading" lang="en" style="text-align: center;"><i>Mealc CiZojormaic</i></h1>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">From Wikipedia, the free encyclopedia</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23mw-head&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNFxXHzFjBIneaIeAJukMsTRLXDO4Q" href="https://en.wikipedia.org/wiki/Mea_culpa#mw-head" target="_blank">Jump to navigation</a><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23p-search&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNEyLHOYf-q4YDUiV9Fxts5qDEyyQg" href="https://en.wikipedia.org/wiki/Mea_culpa#p-search" target="_blank">Jump to search</a></p>
+<p>For other uses, see&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_Culpa_(disambiguation)&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNHLSMNtiNiWkMvOUsybP_vj5lwn3Q" href="https://en.wikipedia.org/wiki/Mea_Culpa_(disambiguation)" target="_blank" title="Mea Culpa (disambiguation)">Mea Culpa (disambiguation)</a>.</p>
+<p><i><b><i>Mea culpa</i></b></i>&nbsp;is a&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Latin&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNEgSKj2q0VRaexLbEFePH8VFCaMVg" href="https://en.wikipedia.org/wiki/Latin" target="_blank" title="Latin">Latin</a>&nbsp;phrase that means &quot;through my fault&quot; and is an acknowledgement of having done wrong.</p>
+<p>Grammatically,&nbsp;<i><i>meā culpā</i></i>&nbsp;is in the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Ablative_(Latin)&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNEh7l3e66xrAU39ltJTuypxiFhiqg" href="https://en.wikipedia.org/wiki/Ablative_(Latin)" target="_blank" title="Ablative (Latin)">ablative case</a>, with an instrumental meaning.</p>
+<p>The phrase comes from a prayer of confession of sinfulness, known as the&nbsp;<i><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Confiteor&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNFkEzTuRp0o-z_LMSuDUT_dEYQcMQ" href="https://en.wikipedia.org/wiki/Confiteor" target="_blank" title="Confiteor">Confiteor</a></i>, used in the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Roman_Rite&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNEgTM-WHxh3QFP1Ymthq4__AbCpzg" href="https://en.wikipedia.org/wiki/Roman_Rite" target="_blank" title="Roman Rite">Roman Rite</a>&nbsp;at the beginning of&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mass_(liturgy)&amp;source=gmail&amp;ust=1535892729661000&amp;usg=AFQjCNEN6yY7BTOEVugHjqKMZe-o4vmZlw" href="https://en.wikipedia.org/wiki/Mass_(liturgy)" target="_blank" title="Mass (liturgy)">Mass</a>&nbsp;or when receiving the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Sacrament&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGAInhz6_H7cBObg6kKQ4tHn1JbAQ" href="https://en.wikipedia.org/wiki/Sacrament" target="_blank" title="Sacrament">sacrament</a>&nbsp;of&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Sacrament_of_Penance_(Catholic_Church)&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNH_nAAq-VhZ6W09xSZOZYAv7MkOQw" href="https://en.wikipedia.org/wiki/Sacrament_of_Penance_(Catholic_Church)" target="_blank" title="Sacrament of Penance (Catholic Church)">Penance</a>.</p>
+<p>The expression is used also as an admission of having made a mistake that should have been avoided, and may be accompanied by beating the breast as in its use in a religious context.</p>
+<a class="header" href="CODACUS.html#contents" id="contents"><h2>Contents</h2></a>
+<ul>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23Religious_use&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGjpZgPPBbK-O7v8CmhnwiHEBE7Ow" href="https://en.wikipedia.org/wiki/Mea_culpa#Religious_use" target="_blank">1Religious use</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23See_also&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNHYtWtGXj8o2q2PBqrrb8K66fKWSw" href="https://en.wikipedia.org/wiki/Mea_culpa#See_also" target="_blank">2See also</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23References&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNFWJldjg_k6D4zeNB0VpvsgJRMjnA" href="https://en.wikipedia.org/wiki/Mea_culpa#References" target="_blank">3References</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23External_links&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNHIbInaKHD8NLfdphPxAbUOpRfQTQ" href="https://en.wikipedia.org/wiki/Mea_culpa#External_links" target="_blank">4External links</a></li>
+</ul>
+<a class="header" href="CODACUS.html#religious-usea-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d1sourcegmailust1535892729662000usgafqjcngn7wfkd3u4mip8bt2h3qmq_xuiua-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection1-target_blank-titleedit-section-religious-useedita" id="religious-usea-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d1sourcegmailust1535892729662000usgafqjcngn7wfkd3u4mip8bt2h3qmq_xuiua-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection1-target_blank-titleedit-section-religious-useedita"><h2>Religious use[<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/w/index.php?title%3DMea_culpa%26action%3Dedit%26section%3D1&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGn7wfkd3u4MIP8bt2H3qMQ_XUIuA" href="https://en.wikipedia.org/w/index.php?title=Mea_culpa&amp;action=edit&amp;section=1" target="_blank" title="Edit section: Religious use">edit</a>]</h2></a>
+<p>In the present form of the&nbsp;<i>Confiteor</i>&nbsp;as used in the celebration of Mass,&nbsp;<i>mea culpa</i>&nbsp;is said three times, the third time with the addition of the adjective&nbsp;<i>maxima</i>&nbsp;(&quot;very great&quot;, usually translated as &quot;most grievous&quot;), and is accompanied by the gesture of beating the breast.</p>
+<dl>
+    <dd>
+    <table>
+        <tbody>
+            <tr>
+                <td>
+                <p><i>Conf&iacute;teor Deo omnipot&eacute;nti<br />
+                et vobis, fratres,<br />
+                quia pecc&aacute;vi nimis<br />
+                cogitati&oacute;ne, verbo,<br />
+                &oacute;pere et omissi&oacute;ne:<br />
+                <b>mea culpa, mea culpa,</b><br />
+                <b>mea m&aacute;xima culpa.</b><br />
+                Ideo precor be&aacute;tam Mar&iacute;am semper v&iacute;rginem,<br />
+                omnes angelos et sanctos,<br />
+                et vos, fratres,<br />
+                or&aacute;re pro me ad D&oacute;minum Deum nostrum.</i></p>
+                </td>
+                <td>
+                <p>I confess to almighty God<br />
+                and to you, my brothers and sisters,<br />
+                that I have greatly sinned,<br />
+                in my thoughts and in my words,<br />
+                in what I have done and in what I have failed to do,<br />
+                <b>through my fault, through my fault</b>,<br />
+                <b>through my most grievous fault</b>;<br />
+                therefore I ask blessed Mary ever-Virgin,<br />
+                all the Angels and Saints,<br />
+                and you, my brothers and sisters,<br />
+                to pray for me to the Lord our God.<sup id="m_-1077661268778157257gmail-cite_ref-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_note-1&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNFh2PrR9c928p60VAR4TcVHWTfP7A" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_note-1" target="_blank">[1]</a></sup></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </dd>
+</dl>
+<p>According to&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Adrian_Fortescue&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNG2vT3y06is49E6Wq0owdelyjnGnA" href="https://en.wikipedia.org/wiki/Adrian_Fortescue" target="_blank" title="Adrian Fortescue">Adrian Fortescue</a>, the inclusion in the&nbsp;<i>Confiteor</i>&nbsp;of the phrase&nbsp;<i>mea culpa</i>&nbsp;can be traced back only to the 16th century.<sup id="m_-1077661268778157257gmail-cite_ref-2"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_note-2&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNHoSsWPyMNhrWmLWPOJokWB709riQ" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_note-2" target="_blank">[2]</a></sup></p>
+<p>However, the Latin phrase&nbsp;<i>mea culpa</i>&nbsp;was used, even in an English context, earlier than that.&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Geoffrey_Chaucer&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNHLt3eKMAZexVxSoN7gsCeOC1K04Q" href="https://en.wikipedia.org/wiki/Geoffrey_Chaucer" target="_blank" title="Geoffrey Chaucer">Geoffrey Chaucer</a>&#39;s 14th-century&nbsp;<i><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Troilus_and_Criseyde&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGnQX90RlFVK33sSaM0Vyu53kj29Q" href="https://en.wikipedia.org/wiki/Troilus_and_Criseyde" target="_blank" title="Troilus and Criseyde">Troilus and Criseyde</a></i>&nbsp;uses it in a way that shows it was already a traditional religious phrase: &quot;Now,&nbsp;<i>mea culpa</i>, lord! I me repente.&quot;<sup id="m_-1077661268778157257gmail-cite_ref-3"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_note-3&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNG8C16nVbppIXWjSLkSCVye2KVTiw" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_note-3" target="_blank">[3]</a></sup></p>
+<p>Although the&nbsp;<i>Confiteor</i>&nbsp;was not then part of the Mass, it was used in administering the sacrament of Penance. In some forms it already included the phrase&nbsp;<i>mea culpa</i>. Thus the 9th-century&nbsp;<i>Paenitentiale Vallicellanum II</i>&nbsp;had a thrice-repeated&nbsp;<i>mea culpa</i>&nbsp;(without&nbsp;<i>maxima</i>) in its elaborate form of the&nbsp;<i>Confiteor</i>.<sup id="m_-1077661268778157257gmail-cite_ref-4"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_note-4&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNF6vKb0xbtUSy9oFQbGR23Be5OeUg" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_note-4" target="_blank">[4]</a></sup></p>
+<p>In about 1220, the rite of public penance in&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Siena&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGVeG5W3a1axKkBfgoKQ7pMWiPxfA" href="https://en.wikipedia.org/wiki/Siena" target="_blank" title="Siena">Siena</a>&nbsp;for those who had committed murder required the penitent to throw himself on the ground three times, saying:&nbsp;<i>Mea culpa; peccavi; Domine miserere mei</i>&nbsp;(&quot;Through my fault. I have sinned. Lord, have mercy on me&quot;).<sup id="m_-1077661268778157257gmail-cite_ref-5"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_note-5&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNEhsDICY3lfUmYm_v3PSqXDOMpnlw" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_note-5" target="_blank">[5]</a></sup></p>
+<a class="header" href="CODACUS.html#see-alsoa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d2sourcegmailust1535892729662000usgafqjcngdmqi_fxy01ksfm3bhls43_upx9a-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection2-target_blank-titleedit-section-see-alsoedita" id="see-alsoa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d2sourcegmailust1535892729662000usgafqjcngdmqi_fxy01ksfm3bhls43_upx9a-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection2-target_blank-titleedit-section-see-alsoedita"><h2>See also[<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/w/index.php?title%3DMea_culpa%26action%3Dedit%26section%3D2&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGdMQi_Fxy01ksfm3bhLs43_uPx9A" href="https://en.wikipedia.org/w/index.php?title=Mea_culpa&amp;action=edit&amp;section=2" target="_blank" title="Edit section: See also">edit</a>]</h2></a>
+<ul>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/List_of_Latin_phrases&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNGLG9Tja1GWtCluzcDOjtqIGg1EiQ" href="https://en.wikipedia.org/wiki/List_of_Latin_phrases" target="_blank" title="List of Latin phrases">List of Latin phrases</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Self-criticism&amp;source=gmail&amp;ust=1535892729662000&amp;usg=AFQjCNHbAx4ehqPA-H_whm6giKV1M_kFeQ" href="https://en.wikipedia.org/wiki/Self-criticism" target="_blank" title="Self-criticism">Self-criticism</a></li>
+</ul>
+<a class="header" href="CODACUS.html#referencesa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d3sourcegmailust1535892729663000usgafqjcnhp8eevezqbjkgnqsia4zmhvdwrpa-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection3-target_blank-titleedit-section-referencesedita" id="referencesa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dmea_culpa26action3dedit26section3d3sourcegmailust1535892729663000usgafqjcnhp8eevezqbjkgnqsia4zmhvdwrpa-hrefhttpsenwikipediaorgwindexphptitlemea_culpaactioneditsection3-target_blank-titleedit-section-referencesedita"><h2>References[<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/w/index.php?title%3DMea_culpa%26action%3Dedit%26section%3D3&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNHp8EeveZQbjKgnqsIa4ZmhvDwrpA" href="https://en.wikipedia.org/w/index.php?title=Mea_culpa&amp;action=edit&amp;section=3" target="_blank" title="Edit section: References">edit</a>]</h2></a>
+<ol>
+    <li id="m_-1077661268778157257gmail-cite_note-1"><b><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_ref-1&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNH46yrGsZvu-rO6XYWbLc-spK-kaA" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_ref-1" target="_blank">Jump up^</a></b>&nbsp;<cite><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://www.universalis.com/static/mass/orderofmass.htm&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNFJ0sgvnHL4Pr9UD1IUyM4ZzmTYbQ" href="http://www.universalis.com/static/mass/orderofmass.htm" rel="nofollow" target="_blank">&quot;The Order of Mass&quot;</a>. Universalis.com. Retrieved&nbsp;24 February&nbsp;2015.</cite></li>
+    <li id="m_-1077661268778157257gmail-cite_note-2"><b><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_ref-2&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNGLW-X1ZMrdo9aBi9nbvXxuaglE5Q" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_ref-2" target="_blank">Jump up^</a></b>&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://www.newadvent.org/cathen/04222a.htm&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNE0ZX3uqEXu1UMEmPtOZXwWwXVIHQ" href="http://www.newadvent.org/cathen/04222a.htm" rel="nofollow" target="_blank">Fortescue, Adrian. &quot;Confiteor.&quot; The Catholic Encyclopedia</a>&nbsp;Vol. 4. New York: Robert Appleton Company, 1908. March 4, 2009</li>
+    <li id="m_-1077661268778157257gmail-cite_note-3"><b><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_ref-3&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNFgbctjE0zbjSebr6T7VB9wkLo03A" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_ref-3" target="_blank">Jump up^</a></b>&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://omacl.org/Troilus/troilus2.html&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNEJdK-xvkCb-fBDC7NmuY5DPEgnqw" href="http://omacl.org/Troilus/troilus2.html" rel="nofollow" target="_blank"><i>Troilus and Criseyde</i>, Book II, 525</a></li>
+    <li id="m_-1077661268778157257gmail-cite_note-4"><b><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_ref-4&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNH_Zgcr557uCpn_Ut4bycwTJ8OKhA" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_ref-4" target="_blank">Jump up^</a></b>&nbsp;<cite>Wasserschleben, Friedrich Wilhelm (1851).&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://books.google.com/books?id%3DNVVmAZmnJHkC%26printsec%3Dfrontcover%23v%3Donepage%26q%3Dmea%2520culpa%26f%3Dfalse&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNFbZ1oh2RmKe1xCFGTV--Mel-7X0A" href="https://books.google.com/books?id=NVVmAZmnJHkC&amp;printsec=frontcover#v=onepage&amp;q=mea%20culpa&amp;f=false" rel="nofollow" target="_blank"><i>Die Bussordnungen der abendl&auml;ndischen Kirche</i></a>. Halle: Ch. Graeger. p.&nbsp;555. Retrieved&nbsp;24 February&nbsp;2015.</cite></li>
+    <li id="m_-1077661268778157257gmail-cite_note-5"><b><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mea_culpa%23cite_ref-5&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNHpgfTRxDqE9G9XgRzE497QxqG2LA" href="https://en.wikipedia.org/wiki/Mea_culpa#cite_ref-5" target="_blank">Jump up^</a></b>&nbsp;<cite>Schmitz, Herm. Jos. (1898).&nbsp;<i>Die Bussb&uuml;cher und das Kanonische Bussverfahren, vol. 2</i>. D&uuml;sseldorf: L. Schwann. pp.&nbsp;53&ndash;54.</cite></li>
+</ol>
+<p style="text-align: center;"><font size="6">LO, BY <em>THOM</em> E ZDA<span style="font-size:72px;">t</span>EVIL</font></p>
+<p style="text-align: center;">God on &quot;karma, an eye for an eye, the golden rule, and uh, the eye, leg, cock, and noses; of Jesus Christ.</p>
+<p>&nbsp;</p>
+<a class="header" href="CODACUS.html#exodus-11nbspnew-international-version-niv" id="exodus-11nbspnew-international-version-niv"><h1>Exodus 11&nbsp;New International Version (NIV)</h1></a>
+<a class="header" href="CODACUS.html#the-plague-on-the-firstborn" id="the-plague-on-the-firstborn"><h3>The Plague on the Firstborn</h3></a>
+<p>11&nbsp;Now the&nbsp;Lord&nbsp;had said to Moses, &ldquo;I will bring one more plague on Pharaoh and on Egypt. After that, he will let you go&nbsp;from here, and when he does, he will drive you out completely.&nbsp;<sup>2&nbsp;</sup>Tell the people that men and women alike are to ask their neighbors for articles of silver and gold.&rdquo;<sup>3&nbsp;</sup>(The&nbsp;Lord&nbsp;made the Egyptians favorably disposed&nbsp;toward the people, and Moses himself was highly regarded&nbsp;in Egypt by Pharaoh&rsquo;s officials and by the people.)</p>
+<p><sup>4&nbsp;</sup>So Moses said, &ldquo;This is what the&nbsp;Lord&nbsp;says: &lsquo;About midnight&nbsp;I will go throughout Egypt.&nbsp;<sup>5&nbsp;</sup>Every firstborn&nbsp;son in Egypt will die, from the firstborn son of Pharaoh, who sits on the throne, to the firstborn son of the female slave, who is at her hand mill,&nbsp;and all the firstborn of the cattle as well.&nbsp;<sup>6&nbsp;</sup>There will be loud wailing&nbsp;throughout Egypt&mdash;worse than there has ever been or ever will be again.&nbsp;<sup>7&nbsp;</sup>But among the Israelites not a dog will bark at any person or animal.&rsquo; Then you will know that the&nbsp;Lord&nbsp;makes a distinction&nbsp;between Egypt and Israel.&nbsp;<sup>8&nbsp;</sup>All these officials of yours will come to me, bowing down before me and saying, &lsquo;Go,&nbsp;you and all the people who follow you!&rsquo; After that I will leave.&rdquo;&nbsp;Then Moses, hot with anger, left Pharaoh.</p>
+<p><sup>9&nbsp;</sup>The&nbsp;Lord&nbsp;had said to Moses, &ldquo;Pharaoh will refuse to listen&nbsp;to you&mdash;so that my wonders&nbsp;may be multiplied in Egypt.&rdquo;&nbsp;<sup>10&nbsp;</sup>Moses and Aaron performed all these wonders before Pharaoh, but the&nbsp;Lord&nbsp;hardened Pharaoh&rsquo;s heart,&nbsp;and he would not let the Israelites go out of his country.</p>
+<p>&nbsp;</p>
+<h1 id="m_-1077661268778157257gmail-firstHeading" lang="en">Shehecheyanu</h1>
+<p>From Wikipedia, the free encyclopedia</p>
+<p><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23mw-head&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNE2yWYn0Aq-H6dcADah-ZKQX2oQ1g" href="https://en.wikipedia.org/wiki/Shehecheyanu#mw-head" target="_blank">Jump to navigation</a><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23p-search&amp;source=gmail&amp;ust=1535892729663000&amp;usg=AFQjCNH3Nm_MPGErM3eobDG36hqOwXQJ3g" href="https://en.wikipedia.org/wiki/Shehecheyanu#p-search" target="_blank">Jump to search</a></p>
+<p>The&nbsp;<i><b>Shehecheyanu</b></i>&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Blessing&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNHUo-SDSY-6UYnzwg1ohkLX5TN2MQ" href="https://en.wikipedia.org/wiki/Blessing" target="_blank" title="Blessing">blessing</a>&nbsp;(<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Hebrew_language&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNHk7c9efKTdST0Pwj0NgCNu8G1UVw" href="https://en.wikipedia.org/wiki/Hebrew_language" target="_blank" title="Hebrew language">Heb<wbr />rew</a>:&nbsp;שהחינו&lrm;, &quot;Who has given us life&quot;) is a common&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Jewish_prayer&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGISu_IrpOZFOldzfl5GKlanyG2Uw" href="https://en.wikipedia.org/wiki/Jewish_prayer" target="_blank" title="Jewish prayer">Jewish prayer</a>&nbsp;said to celebrate special occasions. It is said to be thankful for new and unusual experiences.<sup id="m_-1077661268778157257gmail-cite_ref-JVL_1-0"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-JVL-1&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNHiJPB1qQzbCxUC96gir_vS_eEhvA" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-JVL-1" target="_blank">[1]</a></sup>&nbsp;The blessing is recorded in the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Talmud&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNG1ysOadD1C41Ly0hYd3rVHIxJw5Q" href="https://en.wikipedia.org/wiki/Talmud" target="_blank" title="Talmud">Talmud</a>&nbsp;(Berachot 54a, Pesakhim 7b, Sukkah 46a, etc.), indicating that it has been recited for over 2000 years.</p>
+<a class="header" href="CODACUS.html#contents-1" id="contents-1"><h2>Contents</h2></a>
+<ul>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23Recitation&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNH7RoXvWSv9nW9rEqWljqQUOtQhww" href="https://en.wikipedia.org/wiki/Shehecheyanu#Recitation" target="_blank">1Recitation</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23Text&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGf1RtLV7oZLcHZ1Hq5LknQTYWLfQ" href="https://en.wikipedia.org/wiki/Shehecheyanu#Text" target="_blank">2Text</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23Modern_history&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNE7umQQFwtSK4k2zb-ND5YDfpkF9Q" href="https://en.wikipedia.org/wiki/Shehecheyanu#Modern_history" target="_blank">3Modern history</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23Media&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGRx7I9FQmrLz2j-ah1jKFOfmCJlQ" href="https://en.wikipedia.org/wiki/Shehecheyanu#Media" target="_blank">4Media</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23See_also&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNET_6SkOVVlWZVPVbm0CycU4YPFjA" href="https://en.wikipedia.org/wiki/Shehecheyanu#See_also" target="_blank">5See also</a></li>
+    <li><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23References&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNEqLXFq6NiRF0oSSnOdduATWABzvw" href="https://en.wikipedia.org/wiki/Shehecheyanu#References" target="_blank">6References</a></li>
+</ul>
+<a class="header" href="CODACUS.html#recitationa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dshehecheyanu26action3dedit26section3d1sourcegmailust1535892729664000usgafqjcng04ydmjkmohgqlc4uixhz7ddtqia-hrefhttpsenwikipediaorgwindexphptitleshehecheyanuactioneditsection1-target_blank-titleedit-section-recitationedita" id="recitationa-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dshehecheyanu26action3dedit26section3d1sourcegmailust1535892729664000usgafqjcng04ydmjkmohgqlc4uixhz7ddtqia-hrefhttpsenwikipediaorgwindexphptitleshehecheyanuactioneditsection1-target_blank-titleedit-section-recitationedita"><h2>Recitation[<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/w/index.php?title%3DShehecheyanu%26action%3Dedit%26section%3D1&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNG04ydmJkMohgqLC4UIXHz7DdTQIA" href="https://en.wikipedia.org/w/index.php?title=Shehecheyanu&amp;action=edit&amp;section=1" target="_blank" title="Edit section: Recitation">edit</a>]</h2></a>
+<p>The blessing of&nbsp;<i>Shehecheyanu</i>&nbsp;is recited in thanks or commemoration of:</p>
+<ul>
+    <li>Generally, when doing or experiencing something that occurs infrequently from which one derives pleasure or benefit.</li>
+    <li>The beginning of a&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Jewish_holidays&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGQYiZHpJVvEiFDQdWw0qy4eofIpg" href="https://en.wikipedia.org/wiki/Jewish_holidays" target="_blank" title="Jewish holidays">holiday</a>, including&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Passover&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNEMhSvjxXK9KDJzKwbOHSXn8JSBGA" href="https://en.wikipedia.org/wiki/Passover" target="_blank" title="Passover">Passover</a>,&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shavuot&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNEW9kIS1Gs-ZEvpmy-uIp2nNjW_TQ" href="https://en.wikipedia.org/wiki/Shavuot" target="_blank" title="Shavuot">Shavuot</a>,&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Rosh_Hashanah&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGZFjjvrIABiLBZQH4bWXlm5_-v1A" href="https://en.wikipedia.org/wiki/Rosh_Hashanah" target="_blank" title="Rosh Hashanah">R<wbr />osh Hashanah</a>,&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Yom_Kippur&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGzmA3mhbRrOOO7JipIg7OkwrCZDg" href="https://en.wikipedia.org/wiki/Yom_Kippur" target="_blank" title="Yom Kippur">Yom Kippur</a>,&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Sukkot&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNHV4D-Tqz7C-Ep0TSfKwH0IDIjsXQ" href="https://en.wikipedia.org/wiki/Sukkot" target="_blank" title="Sukkot">Sukkot</a>,&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Simhat_Torah&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNGdY9HkkLG9SnoLtkyS_8xc-xYglA" href="https://en.wikipedia.org/wiki/Simhat_Torah" target="_blank" title="Simhat Torah">Simhat Torah</a>&nbsp;and&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Hanukkah&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNEy4JGK331q2W3G5GVBlc6NwWWSjQ" href="https://en.wikipedia.org/wiki/Hanukkah" target="_blank" title="Hanukkah">Hanukkah</a>, but not holidays commemorating sad events, such as Tisha B&#39;av.</li>
+    <li>The first performance of certain&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mitzvah&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNHiJYIsLyegg7G0nL-JMx663teG2g" href="https://en.wikipedia.org/wiki/Mitzvah" target="_blank" title="Mitzvah">mitzvot</a>&nbsp;in a year, including sitting in a&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Sukkah&amp;source=gmail&amp;ust=1535892729664000&amp;usg=AFQjCNEdLcindmNdtT7z3J5X4ChZSpcwrA" href="https://en.wikipedia.org/wiki/Sukkah" target="_blank" title="Sukkah">sukkah</a>, eating&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Matzo&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNEDVhxOO9s1S0SCTPcrBpF0_8P7qA" href="https://en.wikipedia.org/wiki/Matzo" target="_blank" title="Matzo">matzah</a>&nbsp;at the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Passover_Seder&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFsQopEtpT9nIpxNkPT3_CBAjsUpg" href="https://en.wikipedia.org/wiki/Passover_Seder" target="_blank" title="Passover Seder">Passover Seder</a>, reading the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Book_of_Esther&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNGJ2CkYtF1c-LUOh3GADSxx66DKfA" href="https://en.wikipedia.org/wiki/Book_of_Esther" target="_blank" title="Book of Esther">megillah</a>, or lighting the candles on&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Hanukkah&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFQqIPavCblgPX4DrtKpHNsJl-PEg" href="https://en.wikipedia.org/wiki/Hanukkah" target="_blank" title="Hanukkah">Hanukkah</a>.</li>
+    <li>Eating a new fruit for the first time since&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Rosh_Hashanah&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFLkM4PZuCZ-DSWj-3mKfKexMoxSg" href="https://en.wikipedia.org/wiki/Rosh_Hashanah" target="_blank" title="Rosh Hashanah">Rosh Hashanah</a>
+    <dl>
+        <dd>(normally said before the blessing over the fruit, but some customarily say it afterwards)<sup id="m_-1077661268778157257gmail-cite_ref-chabad_2-0"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-chabad-2&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHGNqc2XYJlAQsjRn4LF6iYcUM7Tg" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-chabad-2" target="_blank">[2]</a></sup></dd>
+        <dd>The fruit must be fresh, not dried.<sup id="m_-1077661268778157257gmail-cite_ref-chabad_2-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-chabad-2&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHGNqc2XYJlAQsjRn4LF6iYcUM7Tg" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-chabad-2" target="_blank">[2]</a></sup></dd>
+    </dl>
+    </li>
+    <li>Seeing a friend who has not been seen in thirty days.</li>
+    <li>Acquiring a new home, or significant new articles of clothing or utensils, such as a new suit.</li>
+    <li>The birth of a child (but not at the circumcision).</li>
+    <li>A&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Pidyon_haben&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFi8SjC7HPClNDxaE7WlTzfXDFjFw" href="https://en.wikipedia.org/wiki/Pidyon_haben" target="_blank" title="Pidyon haben">pidyon haben</a>&nbsp;ceremony.</li>
+    <li>During a ritual immersion in a&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mikveh&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFIjIXEyNF-bN0Sngj9GSkmAQGcZw" href="https://en.wikipedia.org/wiki/Mikveh" target="_blank" title="Mikveh">mikveh</a>&nbsp;as part of a&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Conversion_to_Judaism&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNGVOq6oNIfmNuz9p9ha-0ze7VFsZw" href="https://en.wikipedia.org/wiki/Conversion_to_Judaism" target="_blank" title="Conversion to Judaism">conversion</a>.</li>
+    <li>On arrival in Israel.</li>
+</ul>
+<p>Some have the custom of saying it at the ceremony of the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Birkat_Hachama&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHorE_bVf5kCyov4EjwghtzwH8usA" href="https://en.wikipedia.org/wiki/Birkat_Hachama" target="_blank" title="Birkat Hachama">Birkat Hachama</a>, which is recited once every 28 years in the month of Nisan/Adar II.</p>
+<p>When several reasons apply (such as the beginning of Passover, together with the mitzvot of matzah, marror, etc.), the blessing is only said once.</p>
+<p>It is not recited at a circumcision, since that involves pain, nor at the Counting of the Omer, since that is a task which does not give pleasure (and causes sadness at the thought that the actual omer ceremony cannot be performed because of the destruction of the Temple).<sup id="m_-1077661268778157257gmail-cite_ref-3"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-3&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNEQIq-V0nCJZJi2_2u_RvTcJSwYdQ" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-3" target="_blank">[3]</a></sup></p>
+<a class="header" href="CODACUS.html#texta-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dshehecheyanu26action3dedit26section3d2sourcegmailust1535892729665000usgafqjcnfkyo0czdf51_hidxrrdwwgjqpv8g-hrefhttpsenwikipediaorgwindexphptitleshehecheyanuactioneditsection2-target_blank-titleedit-section-textedita" id="texta-data-saferedirecturlhttpswwwgooglecomurlhlenqhttpsenwikipediaorgwindexphptitle3dshehecheyanu26action3dedit26section3d2sourcegmailust1535892729665000usgafqjcnfkyo0czdf51_hidxrrdwwgjqpv8g-hrefhttpsenwikipediaorgwindexphptitleshehecheyanuactioneditsection2-target_blank-titleedit-section-textedita"><h2>Text[<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/w/index.php?title%3DShehecheyanu%26action%3Dedit%26section%3D2&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFKyO0CZDf51_hIDXRrdwWgjQPV8g" href="https://en.wikipedia.org/w/index.php?title=Shehecheyanu&amp;action=edit&amp;section=2" target="_blank" title="Edit section: Text">edit</a>]</h2></a>
+<table>
+    <tbody>
+        <tr>
+            <th>Hebrew<sup id="m_-1077661268778157257gmail-cite_ref-JVL_1-1"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-JVL-1&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHztq4PamdZMJLu0o7DamO5lLkHwA" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-JVL-1" target="_blank">[1]</a></sup></th>
+            <th>English<sup id="m_-1077661268778157257gmail-cite_ref-chabad_2-2"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-chabad-2&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHGNqc2XYJlAQsjRn4LF6iYcUM7Tg" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-chabad-2" target="_blank">[2]</a></sup></th>
+            <th>Transliteration<sup id="m_-1077661268778157257gmail-cite_ref-JVL_1-2"><a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Shehecheyanu%23cite_note-JVL-1&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNHztq4PamdZMJLu0o7DamO5lLkHwA" href="https://en.wikipedia.org/wiki/Shehecheyanu#cite_note-JVL-1" target="_blank">[1]</a></sup></th>
+        </tr>
+        <tr>
+            <td align="right">
+            <p>בָּרוּךְ אַתָּה יְיָ‬</p>
+            </td>
+            <td>Blessed are You, Lord</td>
+            <td>Baruch atah Adonai</td>
+        </tr>
+        <tr>
+            <td align="right">
+            <p>אֱלֹהֵינוּ מֶלֶךְ הַעוֹלָם‬</p>
+            </td>
+            <td>our God, King of the
+            <p>Universe,</p>
+            </td>
+            <td>Elohenu melekh ha&#39;olam</td>
+        </tr>
+        <tr>
+            <td align="right">
+            <p>שֶׁהֶחֱיָנוּ וְקִיְּמָנוּ‬</p>
+            </td>
+            <td>who has granted us life, sustained us</td>
+            <td>shehecheyanu vekiymanu</td>
+        </tr>
+        <tr>
+            <td align="right">
+            <p>וְהִגִּיעָנוּ לַזְּמַן הַזֶּה‬׃‬</p>
+            </td>
+            <td>and
+            <p>enabled us to reach this occasion.</p>
+            </td>
+            <td>vehigi&#39;anu lazman hazeh.</td>
+        </tr>
+    </tbody>
+</table>
+<p>Some traditions dictate saying &quot;lizman&quot; rather than &quot;lazman&quot; (&quot;to [this] season&quot;); this follows the ruling of the&nbsp;<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Mishnah_Berurah&amp;source=gmail&amp;ust=1535892729665000&amp;usg=AFQjCNFZF5Sni-eQqXaoRz_iEufKZWnYGw" href="https://en.wikipedia.org/wiki/Mishnah_Berurah" target="_blank" title="">M</a></p>
+<ol>
+    <li><font size="6"><b>SICYIMBRIGHT</b></font></li>
+    <li><font size="6"><b>CSlGH&lt;</b></font></li>
+</ol>
+
+                </div>
+
+                <!-- Mobile navigation buttons -->
+                
+                    <a rel="prev" href="CHARMADA.html" class="mobile-nav-chapters previous" title="Previous chapter">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="H.html" class="mobile-nav-chapters next" title="Next chapter">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+
+            </div>
+
+            
+                <a href="CHARMADA.html" class="nav-chapters previous" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+            
+
+            
+                <a href="H.html" class="nav-chapters next" title="You can navigate through the chapters using the arrow keys">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if ($(".fa").css("font-family") !== "FontAwesome") {
+                $('<link rel="stylesheet" type="text/css" href="_FontAwesome/css/font-awesome.css">').prependTo('head');
+            }
+        </script>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>
+
+<center>
+<style>
+.WHSOISKEYAV {
+
+border-width: 1px;
+border-style: dashed;
+border-color: rgb(15,5,254);
+padding: 5px;
+width: 503px; 
+text-align: center;
+display: inline-block;
+align: center;
+p {
+
+align: center;
+
+}
+
+/*
+
+THE SCORE IS LOVE FIVE
+
+ONE SAFETY
+ONE FIELD GOAL
+
+XIVDAQ: TENNIS OR TINNES?
+
+TONNES AND TUPLE(s)
+*/ 
+
+}
+
+</style>
+<script type="text/javascript">
+    google_ad_client = "ca-pub-9608809622006883";
+    google_ad_slot = "4355365452";
+    google_ad_width = 728;
+    google_ad_height = 90;
+</script>
+<!-- leaderboard -->
+<script src="../pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="../s7.addthis.com/js/300/addthis_widget.js#pubid=ra-576e94bdb4f80253"></script>
+<br/><br/><div style="float: center; vertical-align: bottom;">
+<a data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://slack.reallyhim.com/&amp;source=gmail&amp;ust=1512831788289000&amp;usg=AFQjCNF469AQ70QEBkpObpKMKsWKzrbmAg" href="http://slack.reallyhim.com/" rel="noopener" target="_blank" title="TELESPRISE"><img alt="" border="0" 
+height="60" id="m_-4973210593361332524gmail-m_-6096670269405767939gmail-m_-1436458080550240543m_-3975089270040819763gmail-m_-2248848940621715595gmail-m_4950052768086691300gmail-m_2933957970607722850gmail-m_7483563204303838204gmail-m_-3491586818351559956gmail-m_3682735925266535707gmail-m_5731075335784145647m_3413239976406571221m_2402549402411035463m_3237557952722111901gmail-m_-8798842351942729229m_4692247605844201587m_-2492882859021407156m_-7142874903403184072m_-9133516419565872595gmail-m_6961657238809553818gmail-m_-1296802553737736344gmail-BLOGGER_PHOTO_ID_6494125253829947314" src="../i.imgur.com/F8nmg2T.png" width="500" height="60" /></a>
+<div style="font-size: small; text-align: justify; width: 400px;">
+Unless otherwise indicated, this work was written between the Christmas and Easter seasons of 2017 and 2019.  The content of this page is released to the public under
+<a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html">
+the GNU GPL v2.0 license</a>; additionally any reproduction or derivation
+of the work must be attributed to the author, Adam Marshall Dobrin
+along with a link back to this website, suez.fromthemachine.org.
+</div>
+</div>
+
+<br/>
+If you wanna talk to me <a href="http://fb.me/admdbrn">get me on facebook</a>, with PGP <a href="https://flowcrypt.com/me/adam">via FlowCrypt</a> or adam@fromthemachine.org
+</center>
+
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-74743044-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

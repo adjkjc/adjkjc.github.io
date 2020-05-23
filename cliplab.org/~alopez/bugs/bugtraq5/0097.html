@@ -1,0 +1,357 @@
+<!-- received="Wed Dec 17 01:15:00 1997 MET" -->
+<!-- sent="Tue, 16 Dec 1997 12:37:07 -0600" -->
+<!-- name="Aleph One" -->
+<!-- email="aleph1@DFW.NET" -->
+<!-- subject="CERT Advisory CA-97.28 - Teardrop_Land" -->
+<!-- id="ßy]Àßy.¬ßy. ßwÒ¬ßwÒ¸ßwÒ¼ßwÒÄßwÒÈßy.È" -->
+<!-- inreplyto="" -->
+<title>mail: CERT Advisory CA-97.28 - Teardrop_Land</title>
+<h1>CERT Advisory CA-97.28 - Teardrop_Land</h1>
+Aleph One (<i>aleph1@DFW.NET</i>)<br>
+<i>Tue, 16 Dec 1997 12:37:07 -0600</i>
+<p>
+<ul>
+<li> <b>Messages sorted by:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/date.html#97">[ date ]</a><a href="https://cliplab.org/~alopez/bugs/bugtraq5/index.html#97">[ thread ]</a><a href="https://cliplab.org/~alopez/bugs/bugtraq5/subject.html#97">[ subject ]</a><a href="https://cliplab.org/~alopez/bugs/bugtraq5/author.html#97">[ author ]</a>
+<!-- next="start" -->
+<li> <b>Next message:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0098.html">Wichert Akkerman: "Re: debian pppd chatscript"</a>
+<li> <b>Previous message:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0096.html">Vadim Kolontsov: "[vadim@tversu.ru: Re: Linux inetd..]"</a>
+<!-- nextthread="start" -->
+<li> <b>Next in thread:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0100.html">Charles M. Hannum: "Re: CERT Advisory CA-97.28 - Teardrop_Land"</a>
+</ul>
+<!-- body="start" -->
+-----BEGIN PGP SIGNED MESSAGE-----<br>
+<p>
+=============================================================================<br>
+CERT* Advisory CA-97.28<br>
+Original issue date: Dec. 16, 1997<br>
+Last revised: --<br>
+<p>
+Topic:  IP Denial-of-Service Attacks<br>
+- -----------------------------------------------------------------------------<br>
+<p>
+The CERT Coordination Center has received reports of two attack tools<br>
+(Teardrop and Land) that are being used to exploit two vulnerabilities in the<br>
+TCP/IP protocol. Both tools enable a remote user to cause a denial of service.<br>
+<p>
+The CERT/CC team recommends installing patches from your vendor. Until you are<br>
+able to do so, we urge you to use the workaround described in Section<br>
+III.B. to reduce the likelihood of a successful attack using Land. There is<br>
+no workaround for Teardrop.<br>
+<p>
+We will update this advisory as we receive additional information.<br>
+Please check our advisory files regularly for updates that relate to your<br>
+site.<br>
+<p>
+- -----------------------------------------------------------------------------<br>
+<p>
+I. Description<br>
+<p>
+     In recent weeks there has been discussion on public mailing lists about<br>
+     two denial-of-service attack tools, Teardrop and Land. These attack tools<br>
+     have similar effects on some systems (namely, causing the victim machine<br>
+     to crash), but the tools exploit different vulnerabilities.<br>
+<p>
+     The CERT Coordination Center has received several reports of sites being<br>
+     attacked by either one or both of these tools. It is important to note<br>
+     that it may be necessary for a system administrator to apply separate<br>
+     patches, if they exist, for each attack tool.<br>
+<p>
+     Topic 1 - Teardrop<br>
+<p>
+     Some implementations of the TCP/IP IP fragmentation re-assembly code do<br>
+     not properly handle overlapping IP fragments. Teardrop is a widely<br>
+     available attack tool that exploits this vulnerability.<br>
+<p>
+     Topic 2 - Land<br>
+<p>
+     Some implementations of TCP/IP are vulnerable to packets that are crafted<br>
+     in a particular way (a SYN packet in which the source address and port<br>
+     are the same as the destination--i.e., spoofed). Land is a widely<br>
+     available attack tool that exploits this vulnerability.<br>
+<p>
+II.  Impact<br>
+<p>
+     Topic 1 - Teardrop<br>
+<p>
+     Any remote user can crash a vulnerable machine.<br>
+<p>
+<p>
+     Topic 2 - Land<br>
+<p>
+     Any remote user that can send spoofed packets to a host can crash or<br>
+     "hang" that host.<br>
+<p>
+<p>
+III. Solution<br>
+<p>
+     CERT/CC urges you to immediately apply vendor patches if they are<br>
+     available. You may have to apply different patches for each attack tool.<br>
+<p>
+     You may want to use the workaround for Land, so please review<br>
+     both Sections A and B below.<br>
+<p>
+    A. Consult your vendor<br>
+<p>
+       Appendix A contains information from vendors who provided input for<br>
+       this advisory. We will update the appendix as we receive more<br>
+       information. If you do not see your vendor's name, the CERT/CC did not<br>
+       hear from that vendor. Please contact your vendor directly.<br>
+<p>
+       It is important to note that you may have to apply different<br>
+       patches for each attack tool.<br>
+<p>
+    B. Apply the following workaround (Land only)<br>
+<p>
+       A workaround for the Land attack tool is to block IP-spoofed packets.<br>
+       This workaround does not apply to the Teardrop attack tool because the<br>
+       Teardrop attack does not rely on IP-spoofed packets.<br>
+<p>
+       Attacks like those of the Land tool rely on the use of forged packets,<br>
+       that is, packets where the attacker deliberately falsifies the origin<br>
+       address. With the current IP protocol technology, it is impossible to<br>
+       eliminate IP-spoofed packets. However, you can reduce the likelihood of<br>
+       your site's networks being used to initiate forged packets by filtering<br>
+       outgoing packets that have a source address different from that of your<br>
+       internal network.<br>
+<p>
+       Currently, the best method to reduce the number of IP-spoofed packets<br>
+       exiting your network is to install filtering on your routers that<br>
+       requires packets leaving your network to have a source address from<br>
+       your internal network. This type of filter prevents a source IP<br>
+       spoofing attack from your site by filtering all outgoing packets that<br>
+       contain a source address from a different network.<br>
+<p>
+       A detailed description of this type of filtering is available in the<br>
+       Internet Draft "Network Ingress Filtering: Defeating Denial of Service<br>
+       Attacks which employ IP Source Address Spoofing" by Paul Ferguson of<br>
+       Cisco Systems, Inc. and Daniel Senie of Blazenet, Inc. Note that<br>
+       although this document is labeled as an IETF "working draft," the<br>
+       content is complete and it is being proposed as an Informational RFC.<br>
+       We recommend it to both Internet Service Providers and sites that<br>
+       manage their own routers.<br>
+<p>
+       The document is currently available at<br>
+<p>
+<a href="http://ds.internic.net/internet-drafts/draft-ferguson-ingress-filtering-03.txt">http://ds.internic.net/internet-drafts/draft-ferguson-ingress-filtering-03.txt</a><br>
+<p>
+<p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+<p>
+Appendix A - Vendor Information<br>
+<p>
+Below is a list of the vendors who have provided information for this<br>
+advisory. We will update this appendix as we receive additional information.<br>
+If you do not see your vendor's name, the CERT/CC did not hear from that<br>
+vendor. Please contact the vendor directly.<br>
+<p>
+Cisco Systems<br>
+=============<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+No feedback.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+IOS/7000 software, Catalyst 5xxx and 29xx LAN switches, BPX and IGX WAN<br>
+switches and AXIS shelf appear to be vulnerable.<br>
+PIX firewall and Centri firewall are not vulnerable.<br>
+<p>
+For more information reference URL:<br>
+<a href="http://www.cisco.com/warp/public/770/land-pub.shtml">http://www.cisco.com/warp/public/770/land-pub.shtml</a><br>
+<p>
+<p>
+Digital Equipment Corporation<br>
+=============================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+No feedback.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+ULTRIX is not vulnerable.<br>
+<p>
+<p>
+The FreeBSD Project<br>
+===================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+CSRG 4.4 is not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+No feedback.<br>
+<p>
+<p>
+Hewlett-Packard Corporation<br>
+===========================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+HP-UX versions 9.04-10.20 are not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+No feedback.<br>
+<p>
+<p>
+IBM Corporation<br>
+===============<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+AIX is not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+AIX is not vulnerable.<br>
+<p>
+<p>
+Microsoft Corporation<br>
+=====================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+Windows NT 4.0 with SP 3 and post SP 3 fixes applied and Windows 95<br>
+with the appropriate patch are not vulnerable.<br>
+Patch information is available at URL:<br>
+<a href="ftp://ftp.microsoft.com/bussys/winnt/kb/Q154/1/74.TXT">ftp://ftp.microsoft.com/bussys/winnt/kb/Q154/1/74.TXT</a><br>
+<p>
+Topic 2 - Land<br>
+<p>
+Windows NT 4.0 with the appropriate patch is not vulnerable.<br>
+Patch information is available at URL:<br>
+<a href="ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/">ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/</a><br>
+hotfixes-postSP3/land-fix/Q165005.txt<br>
+<p>
+Windows 95 without the WinSock 2.0 Update is not vulnerable.<br>
+Patch information is available at URL:<br>
+<a href="ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/">ftp://ftp.microsoft.com/bussys/winnt/winnt-public/fixes/usa/nt40/</a><br>
+hotfixes-postSP3/land-fix/Q177539.TXT<br>
+<p>
+<p>
+NCR Corporation<br>
+===============<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+NCR TCP/IP implementation is not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+No feedback.<br>
+<p>
+<p>
+The NetBSD Project<br>
+==================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+Versions 1.2 and above are not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+No feedback.<br>
+<p>
+<p>
+Red Hat Software<br>
+================<br>
+<p>
+Topic 1 - Teardrop<br>
+<p>
+Linux is not vulnerable.<br>
+<p>
+Topic 2 - Land<br>
+<p>
+Linux is not vulnerable.<br>
+<p>
+- ---------------------------------------------------------------------------<br>
+<p>
+The CERT Coordination Center thanks Paul Ferguson and Daniel Senie for<br>
+providing information on network ingress filtering.<br>
+<p>
+- ----------------------------------------------------------------------------<br>
+<p>
+If you believe that your system has been compromised, contact the CERT<br>
+Coordination Center or your representative in the Forum of Incident Response<br>
+and Security Teams (see <a href="http://www.first.org/team-info/">http://www.first.org/team-info/</a>).<br>
+<p>
+<p>
+CERT/CC Contact Information<br>
+- ----------------------------<br>
+Email    cert@cert.org<br>
+<p>
+Phone    +1 412-268-7090 (24-hour hotline)<br>
+                CERT personnel answer 8:30-5:00 p.m. EST(GMT-5) / EDT(GMT-4)<br>
+                and are on call for emergencies during other hours.<br>
+<p>
+Fax      +1 412-268-6989<br>
+<p>
+Postal address<br>
+         CERT Coordination Center<br>
+         Software Engineering Institute<br>
+         Carnegie Mellon University<br>
+         Pittsburgh PA 15213-3890<br>
+         USA<br>
+<p>
+Using encryption<br>
+   We strongly urge you to encrypt sensitive information sent by email. We<br>
+   can  support a shared DES key or PGP. Contact the CERT/CC for more<br>
+   information.<br>
+<p>
+   Location of CERT PGP key<br>
+         <a href="ftp://ftp.cert.org/pub/CERT_PGP.key">ftp://ftp.cert.org/pub/CERT_PGP.key</a><br>
+<p>
+Getting security information<br>
+   CERT publications and other security information are available from<br>
+        <a href="http://www.cert.org/">http://www.cert.org/</a><br>
+        <a href="ftp://ftp.cert.org/pub/">ftp://ftp.cert.org/pub/</a><br>
+<p>
+   CERT advisories and bulletins are also posted on the USENET newsgroup<br>
+        comp.security.announce<br>
+<p>
+   To be added to our mailing list for advisories and bulletins, send<br>
+   email to<br>
+        cert-advisory-request@cert.org<br>
+   In the subject line, type<br>
+        SUBSCRIBE  your-email-address<br>
+<p>
+- ---------------------------------------------------------------------------<br>
+<p>
+Copyright 1997 Carnegie Mellon University. Conditions for use, disclaimers,<br>
+and sponsorship information can be found in<br>
+<a href="http://www.cert.org/legal_stuff.html">http://www.cert.org/legal_stuff.html</a> and <a href="ftp://ftp.cert.org/pub/legal_stuff">ftp://ftp.cert.org/pub/legal_stuff</a> .<br>
+If you do not have FTP or web access, send mail to cert@cert.org with<br>
+"copyright" in the subject line.<br>
+<p>
+*CERT is registered in the U.S. Patent and Trademark Office.<br>
+<p>
+- ---------------------------------------------------------------------------<br>
+<p>
+This file: <a href="ftp://ftp.cert.org/pub/cert_advisories/CA-97.28.Teardrop_Land">ftp://ftp.cert.org/pub/cert_advisories/CA-97.28.Teardrop_Land</a><br>
+           <a href="http://www.cert.org">http://www.cert.org</a><br>
+               click on "CERT Advisories"<br>
+<p>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~<br>
+Revision history<br>
+<p>
+-----BEGIN PGP SIGNATURE-----<br>
+Version: 2.6.2<br>
+<p>
+iQCVAwUBNJaZMXVP+x0t4w7BAQETVwP/bJs/07PqnM5VxfNqj+Iw+eGORosq6Xyc<br>
+JQ7o69ePzo20pusBIhlb2DjrLAeEwlqzBwBV8W1Y/lujaWWLTsotPasMB7kK+dJp<br>
+sOBMAFwMb/RjawVnizs+F0V1JvqbQbIfUquaqursDUG7DRVDT9O8d7nzf4CS7n+M<br>
+VFgx9ryzcHc=<br>
+=hOK4<br>
+-----END PGP SIGNATURE-----<br>
+<!-- body="end" -->
+<p>
+<ul>
+<!-- next="start" -->
+<li> <b>Next message:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0098.html">Wichert Akkerman: "Re: debian pppd chatscript"</a>
+<li> <b>Previous message:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0096.html">Vadim Kolontsov: "[vadim@tversu.ru: Re: Linux inetd..]"</a>
+<!-- nextthread="start" -->
+<li> <b>Next in thread:</b> <a href="https://cliplab.org/~alopez/bugs/bugtraq5/0100.html">Charles M. Hannum: "Re: CERT Advisory CA-97.28 - Teardrop_Land"</a>
+</ul>

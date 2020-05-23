@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html  lang="en-US" class="b2c8eea8-23bf-473c-b9c3-625020889de9 SendMessageByGuid Messages">
+<head prefix="og: http://ogp.me/ns#">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-language" content="en-US" />
+    <meta name="author" content="https://www.sarahah.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="description" content="Sarahah helps you in receiving constructive honest feedback while maintaining privacy" />
+    <meta name="keywords" content="sarahah,saraha,sarahaa,صراحة,صراحه" />
+    <link rel="alternate" hreflang="en" href="index.html" />
+    <link rel="alternate" hreflang="ar" href="https://ar.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="de" href="https://de.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="es" href="https://es.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="fr" href="https://fr.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="id" href="https://id.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="it" href="https://it.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="ja" href="https://ja.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="ms" href="https://ms.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="pt" href="https://pt.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="ru" href="https://ru.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <link rel="alternate" hreflang="tr" href="https://tr.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@sarahah_com" />
+    <meta name="twitter:title" />
+    <meta name="twitter:description" />
+    <meta name="twitter:creator" content="@sarahah_com" />
+    <meta property="og:title" content="Adam Marshall Dobrin" />
+    <meta property="og:image" content="https://www.sarahah.com/img/Sarahahrich.png" />
+    <meta property="og:description" content="Sarahah" />
+
+    <link rel="apple-touch-icon" href="https://www.sarahah.com/img/icons/icon.png">
+    <link rel="icon" src="~/img/icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.sarahah.com/img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.sarahah.com/img/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://www.sarahah.com/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="https://www.sarahah.com/favicon.ico">
+    <title>Sarahah Adam Marshall Dobrin</title>
+    <link href="https://www.sarahah.com/css/fonts.css?v=1" rel="stylesheet">
+        <link href="https://www.sarahah.com/css/toolkit-ltr.css?v=4.5.2" rel="stylesheet" />
+        <link href="https://www.sarahah.com/css/application-ltr.css?v=4.6.2" rel="stylesheet">
+    <script src="https://www.sarahah.com/lib/jquery/dist/jquery.min.js"></script>
+    
+
+    <script>
+        var uri = window.location.toString();
+        var url = new URL(uri);
+        if (url.searchParams.get("redirectToPlayStore") === "true") {
+            var clean_uri = uri.substring(0, uri.indexOf("?"));
+            window.history.replaceState({}, document.title, clean_uri);
+            window.location.href = 'https://play.google.com/store/apps/details?id=com.sarahah.com';
+        }
+    </script>
+
+
+    <link href="https://www.sarahah.com/css/cards.css?v=6.7" rel="stylesheet" />
+
+    <style>
+        .tooltip {
+            z-index: 1;
+        }
+
+        .btn-primary-outline.style-icon-btn:focus {
+            background-color: #fff;
+            border-color: #FFF;
+            color: #10bbb3;
+        }
+
+        .send-sarahah-container {
+            position: relative;
+        }
+
+        .cant-send-message, .authButtons {
+            position: absolute;
+            background-color: #ffffffa8;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            top: 0px;
+            padding: 15px;
+            width: 100%;
+            height: 100%;
+            padding-top: 150px;
+        }
+
+        .authButtons {
+            padding-top: 95px;
+        }
+
+        .download-container {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 120px;
+            padding: 0px;
+            z-index: 1;
+            padding-top: 0px;
+        }
+
+        .authButtons.topPadding {
+            padding-top: 120px;
+        }
+
+        .boxWithNavs {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: auto;
+            max-width: 360px;
+        }
+
+        .loginInfoCnt {
+            position: absolute;
+            background-color: rgba(255,255,255,0.9);
+            color: #555;
+            bottom: 0px;
+            border-radius: 0px 0px 10px 10px;
+            padding: 3px 0px;
+        }
+    </style>
+
+    <script>
+        var receiveTargetedAds = 'True';
+
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+
+        (function () {
+            window.advBidxc = window.advBidxc || {};
+            window.advBidxc.renderAd = function () { };
+            window.advBidxc.startTime = new Date().getTime();
+            window.advBidxc.timeout = 2000;
+            window.advBidxc.version = 5.1;
+            window.advBidxc.section = "<section name>";
+            window.advBidxc.customerId = "8CUSZ1104"; //Media.net Customer ID
+            window.advBidxc.domain = window.location.hostname;
+
+            function loadScript(tagSrc) {
+                if (tagSrc.substr(0, 4) !== 'http') {
+                    var isSSL = 'https:' == document.location.protocol;
+                    tagSrc = (isSSL ? 'https:' : '') + tagSrc;
+                }
+                var scriptTag = document.createElement('script'),
+                    placeTag =
+                        document.getElementsByTagName("script")[0];
+                scriptTag.type = 'text/javascript';
+                scriptTag.async = true;
+                scriptTag.src = tagSrc;
+                placeTag.parentNode.insertBefore(scriptTag, placeTag);
+            }
+
+            function loadGPT() {
+                if (!window.advBidxc.isAdServerLoaded) {
+                    loadScript('//www.googletagservices.com/tag/js/gpt.js');
+                    window.advBidxc.isAdServerLoaded = true;
+                }
+            }
+
+            window.advBidxc.loadGPT = setTimeout(loadGPT, window.advBidxc.timeout);
+            var isSSL = 'https:' == document.location.protocol;
+            var mnSrc = (isSSL ? 'https:' : 'http:') +
+                '//hbx.media.net/bidexchange.js?cid=' +
+                window.advBidxc.customerId +
+                '&dn=' +
+                window.advBidxc.domain +
+                '&version=' +
+                window.advBidxc.version +
+                (isSSL ? '&https=1' : '');
+            loadScript(mnSrc);
+        })();
+
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/21736663051/message-sending', [300, 250], 'message-sending')
+                .addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().collapseEmptyDivs();
+            if (receiveTargetedAds === "False") {
+                googletag.pubads().setRequestNonPersonalizedAds(1);
+            }
+            googletag.enableServices();
+        });
+    </script>
+
+
+    <script>
+        var isUserAuthenticated = false;
+        var userId = '1419299843';
+    </script>
+    <style>
+        #changeLanguageModal .active {
+            color: #10bbb3;
+        }
+    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-3438990386962073",
+            enable_page_level_ads: true
+        });
+    </script>
+</head>
+<body class="with-top-navbar">
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1962544527293890',
+                autoLogAppEvents: true,
+                xfbml: true,
+                version: 'v3.0'
+            });
+            FB.AppEvents.logPageView();
+            $(document).trigger('fbload');
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) { return; }
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="growl" id="app-growl"></div>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top app-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="https://www.sarahah.com/messages" class="navbar-brand">
+                    <span><img src="https://www.sarahah.com/img/logo300.png" srcset="" height="26" width="54" class="fblogevent" data-fbevent="actions.actionClickedLogo" /></span>
+                </a>
+
+                <div class="col-xs-3">
+                </div>
+
+                <div class="pull-right">
+
+                    <span class="icon icon-globe hidden-xs fblogevent" data-fbevent="actions.changeLanguageButton" style="color : #fff;padding : 15px;display: inline-block;font-size : 18px" data-toggle="modal" data-target="#changeLanguageModal"></span>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-main">
+                        <span class="sr-only">Menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navbar-collapse-main">
+
+                <ul class="nav navbar-nav navbar-right">
+                    
+    <li><a href="https://www.sarahah.com/account/register">Register</a></li>
+    <li><a href="https://www.sarahah.com/account/login">Login</a></li>
+
+                    <li>
+                        <a href="https://www.sarahah.com/home/about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="https://www.sarahah.com/home/contact">Contact Us</a>
+                    </li>
+                    <li class="visible-xs">
+                        <a href="index.html#" data-toggle="modal" data-target="#changeLanguageModal" class="fblogevent" data-fbevent="actions.changeLanguageButton">
+                            <span class="icon icon-globe languageIcon"></span>
+                            Language
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container container-mobile p-t-md">
+
+        
+
+
+<div class="col-xs-12" style="padding-top: 35px;">
+
+    <div class="panel panel-default panel-profile m-b-md panel-marginfix">
+
+        <div class="panel-body text-center" style="padding-bottom: 10px">
+
+            <div class="pull-right report-user hide">
+                <img style="width: 20px;vertical-align: top" src="https://www.sarahah.com/img/icons/report.png" onclick="ReportUser('b2c8eea8-23bf-473c-b9c3-625020889de9')" />
+            </div>
+
+            <img data-action="zoom" class="panel-profile-img" src="https://www.sarahah.com/img/avatar.png" onerror="this.src='/img/avatar.png'" />
+
+            <h5 class="panel-title">
+                <span class="text-inherit">
+                    Adam Marshall Dobrin
+                </span>
+            </h5>
+
+            <div class="android-users hide" style="margin-bottom: -8px">
+                <a href="https://play.google.com/store/apps/details?id=com.sarahah.com" target="_blank" class="fblogevent" data-fbevent="actions.androidLinkClickedMessage">
+                    <img src="https://www.sarahah.com/img/google-play-badge.png" style="width: 135px" />
+                </a>
+            </div>
+
+            <div id="Container" class="text-center send-sarahah-container">
+
+                            <form class="form-horizontal">
+                                <input id="RecipientId" type="hidden" value="b2c8eea8-23bf-473c-b9c3-625020889de9" />
+                                <input id="TemplateId" type="hidden" value="null" />
+                                <div class="row">
+
+                                    <div class="col-xs-12 col-sm-6 col-sm-offset-3 cards-container" style="padding: 0px 12px;display: inline-flex;direction: ltr;">
+                                        <div class="cards-nav" id="left-button">
+                                            <span class="icon icon-chevron-left"></span>
+                                        </div>
+                                        <div class="sarahah-cards">
+                                            <div class="sarahah-card fblogevent"
+                                                 data-fbevent="actions.cardSelectedDefault"
+                                                 data-templateid="null"
+                                                 data-fontfamily="Cairo"
+                                                 data-fontsize="14px"
+                                                 data-fontcolor="#536570"
+                                                 data-fontstyle="normal"
+                                                 data-imageurl=""
+                                                 data-messagewidth="">
+
+                                                <p class="text-muted" style="font-size: 13px">Classic</p>
+                                            </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="2"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#f44a6e"
+                                                         data-fontstyle="bold"
+                                                         data-imageurl="/img/cards/flowers.png"
+                                                         data-messagewidth="65%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/flowers.png" class="sarahah-card-img" />
+                                                    </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="5"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#683938"
+                                                         data-fontstyle="bold"
+                                                         data-imageurl="/img/cards/hearts.png"
+                                                         data-messagewidth="71%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/hearts.png" class="sarahah-card-img" />
+                                                    </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="6"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#4a9580"
+                                                         data-fontstyle="bold"
+                                                         data-imageurl="/img/cards/singingbird.jpg"
+                                                         data-messagewidth="65%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/singingbird.jpg" class="sarahah-card-img" />
+                                                    </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="3"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#ff5a6e"
+                                                         data-fontstyle="bold"
+                                                         data-imageurl="/img/cards/love-being-with-you.png"
+                                                         data-messagewidth="71%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/love-being-with-you.png" class="sarahah-card-img" />
+                                                    </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="4"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#ff8b25"
+                                                         data-fontstyle="bold"
+                                                         data-imageurl="/img/cards/inspire.png"
+                                                         data-messagewidth="71%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/inspire.png" class="sarahah-card-img" />
+                                                    </div>
+                                                    <div class="sarahah-card fblogevent"
+                                                         data-fbevent="actions.cardSelected"
+                                                         data-templateid="1"
+                                                         data-fontfamily="Cairo"
+                                                         data-fontsize="14px"
+                                                         data-fontcolor="#FFFFFF"
+                                                         data-fontstyle="normal"
+                                                         data-imageurl="/img/cards/you-are-a-true-friend.png"
+                                                         data-messagewidth="65%">
+
+                                                        <img src="https://www.sarahah.com/img/cards/you-are-a-true-friend.png" class="sarahah-card-img" />
+                                                    </div>
+                                        </div>
+                                        <div class="cards-nav" id="right-button">
+                                            <span class="icon icon-chevron-right"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <div class="boxWithNavs" style="direction:ltr">
+                                                <div class="cards-nav" id="messages-left-nav" style="width: unset">
+                                                    <span class="icon icon-chevron-left"></span>
+                                                </div>
+
+                                            <div id="TextContainer" class="textarea-container textarea reset-card" onclick=window.location.href=&#x27;/account/login?returnUrl=/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9&#x27;>
+                                                <textarea id="Text"  readonly  placeholder="" rows="8" maxlength="700" class="form-control remove-border autoExpand reset-card"></textarea>
+                                                <div>
+                                                    <p id="message"></p>
+                                                </div>
+
+                                                    <div class="col-xs-12 text-center hide loginInfoCnt">
+                                                        <p style="margin: 0px;line-height: 18px" class="loginInfoText">
+                                                            <a style="color: #10bbb3" class="fblogevent sendLogin" data-fbevent="actions.loginMessageSending" href="https://www.sarahah.com/account/login?returnUrl=%2Fmessages%2Fuser%2Fb2c8eea8-23bf-473c-b9c3-625020889de9">
+                                                                Login
+                                                            </a>  to write a custom sarahah and receive replies!
+                                                        </p>
+                                                    </div>
+
+                                            </div>
+                                                <div class="cards-nav" id="messages-right-nav" style="width:unset">
+                                                    <span class="icon icon-chevron-right"></span>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12">
+                                        <div class="msg-btn-actions" style="position:relative">
+                                            <button id="Send" class="btn btn-primary-outline" type="button" onclick="SendMessage()" data-loading-text="Loading..."><span class="icon icon-paper-plane"></span> Send</button>
+                                            <div class="text-muted character-count pull-right text-right">
+                                                <span id="remaining-characters">0</span>/250
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </form>
+                                        </div>
+
+        </div>
+
+    </div>
+
+    <div id='message-sending' style='height:250px; width:300px; margin: 0 auto;margin-bottom : 12px;margin-top:10px;'>
+        <script>
+            googletag.cmd.push(function () { googletag.display('message-sending'); });
+        </script>
+    </div>
+
+</div>
+
+<div class="modal" id="reportUserModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Report User</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Please select violation type
+
+                    <br />
+                </p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <select id="reportUserReason" name="reportUserReason" class="form-control">
+                                <option value="Impersonation">Impersonation</option>
+                                <option value="InappropriatePicture">Inappropriate Picture</option>
+                                <option value="InappropriateName">Inappropriate Name</option>
+                                <option value="Spam">Spam</option>
+                                <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button type="button" class="btn-link modal-action fblogevent" data-fbevent="actions.confirmReportUser" onclick="ReportUserConfirmed()">
+                    <strong>Report</strong>
+                </button>
+                <button type="button" class="btn-link modal-action" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <ul id="defaultMessages" class="hide" data-totalmessages="25">
+                <li id="dmessage7" data-smid="7">Thank You&#xD;&#xA;for making me&#xD;&#xA;HAPPY&#xD;&#xA;&#x2764;&#xFE0F;</li>
+                <li id="dmessage8" data-smid="8">Spending time with you is priceless&#xD;&#xA;Thank you for being you!&#xD;&#xA;&#x1F60D;</li>
+                <li id="dmessage9" data-smid="9">You&#xD;&#xA;have a magical way&#xD;&#xA;to make people&#xD;&#xA;smile!&#xD;&#xA;&#x1F600;</li>
+                <li id="dmessage10" data-smid="10">&#xD;&#xA;You are AMAZING!&#xD;&#xA;&#x1F917;&#x1F917;</li>
+                <li id="dmessage11" data-smid="11">You&#x27;re a STAR&#xD;&#xA;continue to shine!</li>
+                <li id="dmessage12" data-smid="12">You&#xD;&#xA;are&#xD;&#xA;inspiring!</li>
+                <li id="dmessage13" data-smid="13">You&#xD;&#xA;are a true&#xD;&#xA;friend!&#xD;&#xA;&#x1F917;</li>
+                <li id="dmessage14" data-smid="14">You&#x27;re such a wonderful person. I&#x27;m lucky to know you&#xD;&#xA;&#x1F60D;</li>
+                <li id="dmessage15" data-smid="15">You are not alone... I care and know that I&#x27;m here for you :)</li>
+                <li id="dmessage16" data-smid="16">Thank you&#xD;&#xA;for being in my life!&#xD;&#xA;&#x1F600;&#x1F917;</li>
+                <li id="dmessage17" data-smid="17">Thank you&#xD;&#xA;for always being there for me!&#xD;&#xA;&#x1F60A;&#x1F917;</li>
+                <li id="dmessage18" data-smid="18">Keep up &#xD;&#xA;your strong spirit!&#xD;&#xA;&#x1F64C;</li>
+                <li id="dmessage19" data-smid="19">Don&#x27;t let&#xD;&#xA;anyone dull&#xD;&#xA;your sparkle!&#xD;&#xA;&#x1F48E;&#x1F48E;&#x1F48E;</li>
+                <li id="dmessage20" data-smid="20">Don&#x27;t let&#xD;&#xA;anyone steal&#xD;&#xA;your smile!&#xD;&#xA;&#x1F603;</li>
+                <li id="dmessage21" data-smid="21">Don&#x27;t let&#xD;&#xA;anyone stop you&#xD;&#xA;from your dreams!&#xD;&#xA;&#x1F603;&#x1F603;</li>
+                <li id="dmessage22" data-smid="22">Stay STRONG&#xD;&#xA;&#x270A;</li>
+                <li id="dmessage23" data-smid="23">We care for you, don&#x27;t be sad :)</li>
+                <li id="dmessage24" data-smid="24">You are&#xD;&#xA;&#xD;&#xA;LOVED!&#xD;&#xA;&#xD;&#xA;&#x1F917;&#x2764;&#xFE0F;</li>
+                <li id="dmessage25" data-smid="25">Know that&#xD;&#xA;you are&#xD;&#xA;not alone!&#xD;&#xA;&#x1F917;</li>
+                <li id="dmessage47" data-smid="47">Stay true&#xD;&#xA;to who you are!&#xD;&#xA;&#x2764;&#xFE0F; </li>
+                <li id="dmessage48" data-smid="48">Keep up&#xD;&#xA;your great work!&#xD;&#xA;&#x1F64C;</li>
+                <li id="dmessage49" data-smid="49">Life is short,&#xD;&#xA;live it WELL!&#xD;&#xA;&#x1F60C;</li>
+                <li id="dmessage50" data-smid="50">Be patient!&#xD;&#xA;Patience is the&#xD;&#xA;key to success!&#xD;&#xA;&#x1F60C;</li>
+                <li id="dmessage51" data-smid="51">Be courageous!&#xD;&#xA;Be brave!&#xD;&#xA;&#x270A;</li>
+                <li id="dmessage55" data-smid="55">You don&#x27;t have to please everyone.&#xD;&#xA;You are respectful to others, be yourself :)</li>
+        </ul>
+
+<div class="col-xs-12" style="margin-top: -1000px; visibility: hidden;z-index: -1000">
+    <ul id="receivedTable" class="list-group media-list media-list-stream no-round">
+    <li class="media p-a card text-left ">
+        <div class="panel panel-default card-panel message-template generate-only" id="panel">
+            <div class="dropdown pull-right">
+                <span class="dropdown-toggle more-icon  pull-right close" style="cursor: pointer; line-height: 0.5;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    ...
+                </span>
+                <ul class="dropdown-menu">
+                    <li><a onclick="return false;">Report</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a onclick="return false;">Delete</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a onclick="return false;">Block Sender</a></li>
+                </ul>
+            </div>
+            <div class="panel-body reset-card">
+                <div class="message-wrapper reset-card card-for-send-view">
+                    <span id="MessageParagraph" class="user-sarahah preserve-spacing" style="margin: auto; width: 100%">Template</span>
+                </div>
+            </div>
+            <div class="panel-footer" style="overflow: hidden">
+
+                <div style="position: relative; display: table;width: 100%">
+                    <div class="pull-left">
+                        <span style="color: #c0c0c0" id="Message" class="mark-fav panel-action icon icon-heart favorite-button "></span>
+                        <span id="" class="panel-action icon icon-emoji-happy emoji-font-button" onclick=""></span>
+                        <span data-msgpinned="false" class="panel-action icon icon-pin pin-button" style="color: #c0c0c0;"></span>
+                        <span class="panel-action icon icon-share" style="cursor: pointer; color: #0da39c; font-size: 18px; font-weight: bold;vertical-align: middle"></span>
+                    </div>
+                    <div class="pull-right" style="margin-top: 5px">
+                        <span class="m-b-0"><small class="text-muted">30 mins ago</small></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </li>
+</ul>
+
+</div>
+
+
+<div class="modal" id="ShareUserProfile">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title hideForInstagram" id="exampleModalLabel">Share Profile</h4>
+                <h4 class="modal-title hideForInstagram welcome-sarahah hide">Welcome To Sarahah!</h4>
+                <h4 class="modal-title showForInstagram hide">Share on Instagram</h4>
+            </div>
+            <div class="modal-body text-center">
+
+                <div class="alert alert-success welcome-sarahah hideForInstagram hide" style="margin-bottom: 5px;">
+                    <strong></strong> Share your profile with your friends to receive sarahahs :)
+                </div>
+
+                <img src="https://www.sarahah.com/img/instagram-link-profile.jpeg" class="showForInstagram hide" style="max-width: 300px;width: 100%;margin-bottom: 15px;" />
+
+                <input readonly class="link-color" id="Action_Copy_Shared_Account_Link" type="text" value="yitsheyzeus.sarahah.com" style="border : none;text-align : center;font-weight : bold;width:100%;font-size:4vw;" />
+                <br />
+
+                <!-- Sharingbutton Facebook -->
+                <a class="resp-sharing-button__link fblogeventUserProfile hideForInstagram" data-fbeventnormal="actions.shareSarahahAccountFB" data-fbeventregistered="actions.shareSarahahAccountRegisterationFB" href='https://facebook.com/sharer/sharer.php?u=https://yitsheyzeus.Sarahah.com&quote=Leave a constructive message :)&hashtag=%23Sarahah' target="_blank" aria-label="">
+                    <div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <span class="icon icon-facebook" style="color: #FFF"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sharingbutton Twitter -->
+                <a class="resp-sharing-button__link fblogeventUserProfile hideForInstagram" data-fbeventnormal="actions.shareSarahahAccountTwitter" data-fbeventregistered="actions.shareSarahahAccountRegisterationTwitter" href="https://twitter.com/intent/tweet/?text=%0A%0ALeave a constructive message :)%0A%23Sarahah%20@sarahah_com%0Ayitsheyzeus.Sarahah.com" target="_blank" aria-label="">
+                    <div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <span class="icon icon-twitter" style="color: #FFF"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sharingbutton Instagram -->
+                <a class="resp-sharing-button__link fblogeventUserProfile instagramProfileShare hideForInstagram" data-fbeventnormal="actions.shareSarahahAccountInstagram" data-fbeventregistered="actions.shareSarahahAccountRegisterationInstagram" href="index.html#">
+                    <div class="resp-sharing-button resp-sharing-button--instagram resp-sharing-button--small">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <span class="icon icon-instagram" style="color: #FFF"></span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Sharingbutton WhatsApp -->
+                <a class="resp-sharing-button__link whatsappShare fblogeventUserProfile hideForInstagram" data-fbeventnormal="actions.shareSarahahAccountWhatsapp" data-fbeventregistered="actions.shareSarahahAccountRegisterationWhatsapp" href="whatsapp://send?text=https://yitsheyzeus.Sarahah.com%0ALeave a constructive message :)" target="_blank" aria-label="">
+                    <div class="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--small">
+                        <div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" /></svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="resp-sharing-button__link fblogeventUserProfile copyToClipboard" data-clipboard-target="#Action_Copy_Shared_Account_Link" data-fbeventnormal="actions.shareSarahahAccountCopy" data-fbeventregistered="actions.shareSarahahAccountRegisterationCopy">
+                    <div class="resp-sharing-button  resp-sharing-button--small p-a-0">
+                        <div aria-hidden="true">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 width="38px" height="38px" viewBox="0 0 748 748" style="enable-background:new 0 0 748 748; padding-bottom:3px" xml:space="preserve">
+                            <polygon points="680,646 680,0 170,0 170,68 612,68 612,646 		" /><path d="M68,109.14v631.72c0,3.943,3.128,7.14,7.004,7.14h495.958c3.91,0,7.038-3.162,7.038-7.14V109.14
+			    c0-3.944-3.128-7.14-7.004-7.14H75.004C71.128,102,68,105.162,68,109.14z M136,204h374v34H136V204z M136,306h374v34H136V306z
+			     M136,408h374v34H136V408z M136,510h374v34H136V510z M136,612h238v34H136V612z" /></svg>
+                        </div>
+
+                    </div>
+                </a>
+
+                <p class="text-center showForInstagram content hide">To add to profile go to &lt;b&gt;Edit Profile&lt;/b&gt; on Instagram and place the link above in the &lt;b&gt;Website&lt;/b&gt; field</p>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+
+    </div>
+    <br />
+
+    <footer class="center-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4">
+                    Sarahah 2018 &copy;
+
+                    <span class="social"><a href="http://www.twitter.com/sarahah_com" class="icon icon-twitter"></a>&nbsp;<a href="http://www.facebook.com/sarahahcom" class="icon icon-facebook"></a>&nbsp;<a href="http://www.instagram.com/sarahah_com" class="icon icon-instagram"></a></span>  -
+                    <a class="spacer link-color" href="https://www.sarahah.com/home/privacy">Privacy</a>-
+                    <a class="spacer link-color" href="https://www.sarahah.com/home/terms">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+
+<div class="modal" id="changeLanguageModal" style="z-index: 99999">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">
+                    Select language
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://en.sarahah.com">English</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://ar.sarahah.com">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://de.sarahah.com">Deutsch</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://es.sarahah.com">espa&#xF1;ol</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://fr.sarahah.com">fran&#xE7;ais</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://in.sarahah.com">&#x939;&#x93F;&#x902;&#x926;&#x940; (&#x92D;&#x93E;&#x930;&#x924;)</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://id.sarahah.com">Indonesia</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://it.sarahah.com">italiano</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://ja.sarahah.com">&#x65E5;&#x672C;&#x8A9E;</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://ms.sarahah.com">Bahasa Melayu</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://pt.sarahah.com">portugu&#xEA;s</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://ru.sarahah.com">&#x440;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://tr.sarahah.com">T&#xFC;rk&#xE7;e</a>
+                            </div>
+                            <div class="col-xs-12" style="padding-top: 2px; padding-bottom: 2px">
+                                <a class=" " href="https://cn.sarahah.com">&#x4E2D;&#x6587;(&#x4E2D;&#x56FD;)</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function setLanguage() {
+        //https://www.sarahah.com/Home/SetLanguage?culture=en&returnUrl=%2F
+        var languageSelection = $('#languageSelection').val();
+        var setLanguageUrl = "/Home/SetLanguage?culture=" +
+            languageSelection +
+            "&returnUrl=%2Fmessages%2Fuser%2Fb2c8eea8-23bf-473c-b9c3-625020889de9";
+        window.open(setLanguageUrl, "_self");
+    }
+</script>
+
+    <script src="https://www.sarahah.com/js/toolkit.min.js"></script>
+    <script src="https://www.sarahah.com/js/fbanalytics.js?v=6.7"></script>
+    <script src="https://www.sarahah.com/js/site.js"></script>
+    <script>
+        function hideModalLanguage() {
+            $("#changeLanguageModal").hide();
+        }
+
+        function setCookies(cname, cvalue) {
+            var d = new Date();
+            d.setTime(d.getTime() + (300 * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookies(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        $(function () {
+            try {
+                if (window.location.hash === "#_=_") {
+                    history.replaceState
+                        ? history.replaceState(null, null, window.location.href.split("#")[0])
+                        : window.location.hash = "";
+                }
+            } catch{
+
+            }
+        })
+    </script>
+
+    
+
+    <nav id="cookieConsent" class="navbar navbar-default navbar-fixed-bottom " style="background-color : #efefef;" role="alert">
+        <div class="container">
+            <div class="col-md-12"> 
+                <p class="navbar-text" style="color : #404040">
+                    By continuing to use our website, you confirm that you have read and agreed to our updated <a style="color:#0CC8C9" href="http://www.sarahah.com/home/privacy">Privacy Policy</a> and <a style="color:#0CC8C9" href="http://www.sarahah.com/home/terms">Terms and Conditions</a>
+                </p>
+                <div class="text-center" style="padding : 10px">
+                   <button type="button" class="btn btn-primary" data-cookie-string=".AspNet.Consent=yes; expires=Sun, 23 May 2021 04:50:44 GMT; domain=.sarahah.com; path=/; secure; samesite=lax">Accept</button></div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        (function () {
+            document.querySelector("#cookieConsent button[data-cookie-string]").addEventListener("click", function (el) {
+                document.cookie = el.target.dataset.cookieString;
+                document.querySelector("#cookieConsent").classList.add("hidden");
+            }, false);
+        })();
+    </script>
+
+    
+    
+<script src="https://www.sarahah.com/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="https://www.sarahah.com/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+<script src="https://www.sarahah.com/js/messages_ar.js"></script>
+    <script src="https://www.sarahah.com/js/jquery.cookie.js"></script>
+    <script src="https://www.sarahah.com/js/jquery.textfill.js"></script>
+    <script src="https://www.sarahah.com/js/Messages/Cards.js?v=6.8"></script>
+    <script src="https://www.sarahah.com/js/moment-with-locales.min.js"></script>
+    <script src="https://www.sarahah.com/js/Utilities/Utilities.js?v=6.7"></script>
+    <script>
+        var viewVariables = {
+            subdomainName: 'yitsheyzeus',
+            hashtagOpinion: 'SarahahReflections',
+            reflectionSharePlaceholder: 'Read my reflection on Sarahah...',
+            userCulture: 'en-US',
+            isLoggedIn: 'False',
+            loggedUserId: 'b2c8eea8-23bf-473c-b9c3-625020889de9'
+        };
+
+        var _userAppLink = "https://yitsheyzeus.sarahah.com/messages/user/b2c8eea8-23bf-473c-b9c3-625020889de9?redirectToPlayStore=true";
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i);
+            }
+        };
+
+    $(function () {
+
+            if (isMobile.Android()) {
+                $(".android-users").removeClass("hide");
+            }
+
+            if (viewVariables.isLoggedIn === "False") {
+                Cards.callbacks.selectCardTemplate($(".sarahah-card:eq(1)"), false);
+            } else {
+                Cards.callbacks.selectCardTemplate($(".sarahah-card:eq(0)"), false);
+            }
+
+            if (viewVariables.isLoggedIn == 'False') {
+                // not logged in
+                fbLog.callbacks.fbEventLog(fbLog.screens.sendSarahahUnAuthenticated);
+            } else {
+                fbLog.callbacks.fbEventLog(fbLog.screens.sendSarahahAuthenticated);
+            }
+
+            $(".btn-force-android").on("click", function () {
+                fbLog.callbacks.fbEventLog(fbLog.actions.androidAppLink);
+                window.location.replace(_userAppLink);
+            });
+
+            $(".sendLogin").click(function (e) {
+                e.stopPropagation();
+            });
+        });
+
+        function SendMessage()
+        {
+            var text = $('#Text').val();
+            var userId = $('#RecipientId').val();
+            var templateId = $("#TemplateId").val();
+            if (text.trim() === "") {
+                $('#TextContainer').css('border-color', 'red');
+                fbLog.callbacks.fbEventLog(fbLog.responses.sendSarahahFailed);
+            } else {
+                $('#Send').button('loading');
+                var captchaResponse = (typeof grecaptcha === "undefined") ? "" : grecaptcha.getResponse();
+
+                fbAnalyticsSendMessage(templateId);
+
+                $.ajax({
+                        url: '/Messages/SendMessage',
+                        type: 'POST',
+                        cache: false,
+                        data:
+                        {
+                            __RequestVerificationToken: $('<input name="__RequestVerificationToken" type="hidden" value="CfDJ8GZ6I68iBYZBtnLB1_My8AfAE-fFJNEKZRXi3HBywy_j5rypBBMIjAZPXaw8DdSgXZvpI0EBW83EYHFK9wIHdShC31sgzX6JPbH6EJ07kQ2gXReZZCmDGIaHuy4bpCsz3Tht6j2ltPgzDWf8JC_KA_E" />').attr('value'),
+                            userId: userId,
+                            text: text,
+                            captchaResponse: captchaResponse,
+                            templateId: templateId
+                        },
+                        success: function() {
+                            window.location.href = "https://www.sarahah.com/messages/thankyou";
+                        },
+                        error: function() {
+                            $('#Container').html("<br />Captcha Verification Failed <span class=\"icon icon-emoji-sad\"></span>");
+                        }
+
+                    });
+            }
+
+    }
+
+    function fbAnalyticsSendMessage(templateId) {
+        // fb analytics
+        var cardTemplateId = templateId != 'null' ? templateId : 0;
+        var fbParams = {};
+        fbParams.IdOfCard = cardTemplateId;
+        if (viewVariables.isLoggedIn === "False") {
+            fbParams.SarahahMessageId = $(Cards.selectors.sarahahMessages).find("li.active").attr("data-smid");
+        }
+
+        fbLog.callbacks.fbEventLog(fbLog.actions.sendSarahah, 0, fbParams);
+    }
+
+        function ReportUser(id) {
+            $('#reportUserModal').modal('show');
+            //fbLogEvent('action_report_profile');
+            fbLog.callbacks.fbEventLog(fbLog.actions.reportUser);
+        }
+
+        function ReportUserConfirmed()
+        {
+            var reasonValue = $('#reportUserReason').val();
+            console.log('reason value', reasonValue);
+            $.ajax({
+                url: '/messages/ReportUserAjax',
+                type: 'POST',
+                cache: false,
+                data: {
+                    __RequestVerificationToken: 'CfDJ8GZ6I68iBYZBtnLB1_My8AfAE-fFJNEKZRXi3HBywy_j5rypBBMIjAZPXaw8DdSgXZvpI0EBW83EYHFK9wIHdShC31sgzX6JPbH6EJ07kQ2gXReZZCmDGIaHuy4bpCsz3Tht6j2ltPgzDWf8JC_KA_E',
+                    reportedUserId: 'b2c8eea8-23bf-473c-b9c3-625020889de9',
+                    userReportReason: reasonValue
+                },
+                success: function() {
+                    $('#reportUserModal').modal('hide');
+                }
+            });
+        }
+
+        function ShareUserProfile() {
+            $('#ShareUserProfile').modal('show');
+            fbLog.callbacks.fbEventLog(fbLog.actions.shareSarahahAccount);
+        }
+    </script>
+    <script src="https://www.sarahah.com/js/clipboard.js"></script>
+    <script>
+        new ClipboardJS('.copyToClipboard');
+
+        $(".showForInstagram.content").html($.parseHTML($(".showForInstagram.content").text()));
+
+        $(".instagramProfileShare").on("click", function () {
+            $(".hideForInstagram").addClass("hide");
+            $(".showForInstagram").removeClass("hide");
+            return false;
+        });
+
+        $("#ShareUserProfile").on('hidden.bs.modal', function () {
+            $(".hideForInstagram").removeClass("hide");
+            $(".showForInstagram, .welcome-sarahah").addClass("hide");
+        });
+
+        function getAndroidVersion(ua) {
+            ua = (ua || navigator.userAgent).toLowerCase();
+            var match = ua.match(/android\s([0-9\.]*)/);
+            return match ? parseFloat(match[1]) : undefined;
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+          <!doctype html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+        <html class="BookReaderRoot">
+      <head>
+              <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+              <link rel="apple-touch-icon" href="https://archive.org/download/creekwarand00ballgoog/creekwarand00ballgoog/page/cover_w114.jpg">
+      
+                  <script src="https://archive.org/includes/analytics.js?v=d47441b0" type="text/javascript"></script>
+    <script>
+      'use strict';
+      if ('archive_analytics' in window) {
+                  archive_analytics.service = "ao_2";
+        
+        archive_analytics.send_pageview_on_load({"mediaType":"texts"});
+
+        archive_analytics.process_url_events(window.location);
+      }
+    </script>
+    
+                  <link rel="stylesheet" href="https://archive.org/bookreader/BookReader/mmenu/dist/css/jquery.mmenu.css">
+                  <link rel="stylesheet" href="https://archive.org/bookreader/BookReader/mmenu/dist/addons/navbars/jquery.mmenu.navbars.css">
+                  <link rel="stylesheet" href="https://archive.org/includes/build/css/archive.min.css?v=mHe9koCz">
+                  <link rel="stylesheet" href="https://archive.org/bookreader/BookReader/BookReader.css?v=mHe9koCz">
+                  <link rel="stylesheet" href="https://archive.org/bookreader/BookReader-ia.css?v=mHe9koCz">
+        
+        <title>The Creek War of 1813 and 1814</title>
+      </head>
+
+      <body>
+            <div id="IABookReaderWrapper">
+      <div id="IABookReaderMessageWrapper" style="display:none;"></div>
+      <div id="BookReader" class="BookReader" >
+              <div class="BookReaderPlaceholder">
+          Internet Archive BookReader<br/>
+          <br/>
+          The Creek War of 1813 and 1814<br/>
+          <div id="br-loading-placeholder"></div>
+          <script>
+          // Add a loader for the book reader
+          (function() {
+            var el = document.getElementById('br-loading-placeholder');
+            var loader = document.createElement('img');
+            loader.src = '/bookreader/BookReader/images/progressbar.gif';
+            el.appendChild(loader);
+          })();
+          </script>
+        </div>
+      
+      <noscript>
+        <p>
+          The BookReader requires JavaScript to be enabled.
+          Please check that your browser supports JavaScript and that it is enabled in the browser settings.
+          You can also try one of the <a href="https://archive.org/details/creekwarand00ballgoog">other formats of the book</a>.
+        </p>
+      </noscript>
+      </div>
+    </div>
+
+    <!-- THIS ALLOWS BEAUTYTIPS TO WORK ON IE -->
+    <!--[if lt IE 9]>
+    <script src="/includes/excanvas.compiled.js"></script>
+    <![endif]-->
+    <script src="https://archive.org/includes/jquery-1.10.2.min.js"></script>
+    <script src="https://archive.org/includes/build/npm/jquery-ui.min.js?v1.12.1"></script>
+    <script src="https://archive.org/bookreader/BookReader/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://archive.org/bookreader/BookReader/jquery.browser.min.js?v=mHe9koCz"></script>
+    <script src="https://archive.org/bookreader/BookReader/dragscrollable-br.js?v=mHe9koCz"></script>
+    <script src="https://archive.org/bookreader/BookReader/jquery.colorbox-min.js"></script>
+    <script src="https://archive.org/bookreader/BookReader/jquery.bt.min.js"></script>
+    <script src="https://archive.org/bookreader/BookReader/soundmanager/script/soundmanager2-jsmin.js"></script>
+    <script src="https://archive.org/bookreader/BookReader/mmenu/dist/js/jquery.mmenu.min.js"></script>
+    <script src="https://archive.org/bookreader/BookReader/mmenu/dist/addons/navbars/jquery.mmenu.navbars.min.js"></script>
+
+    <script src="https://archive.org/bookreader/BookReader/BookReader.js?v=mHe9koCz"></script>
+
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.mobile_nav.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.search.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.tts.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.resume.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.chapters.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.url.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.iframe.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReader/plugins/plugin.archive_analytics.js?v=mHe9koCz"></script>
+    
+          <script src="https://archive.org/bookreader/BookReaderHelpers.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/SearchInside.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/LendingFlow.js?v=mHe9koCz"></script>
+          <script src="https://archive.org/bookreader/BookReaderJSIA.js?v=mHe9koCz"></script>
+    
+    <script>
+      /**
+       * We achieve a flexbox-like sizing with JS to maximize browser support
+       */
+
+      /**
+       * @see https://remysharp.com/2010/07/21/throttling-function-calls
+       */
+      function throttle(fn, threshhold, scope) {
+        threshhold || (threshhold = 250);
+        var last,
+            deferTimer;
+        return function () {
+          var context = scope || this;
+          var now = +new Date,
+              args = arguments;
+          if (last && now < last + threshhold) {
+            // hold on to it
+            clearTimeout(deferTimer);
+            deferTimer = setTimeout(function () {
+              last = now;
+              fn.apply(context, args);
+            }, threshhold);
+          } else {
+            last = now;
+            fn.apply(context, args);
+          }
+        };
+      }
+    </script>
+
+    <script>
+      // Set some config variables -- $$$ NB: Config object format has not been finalized
+      var brConfig = {};
+
+          </script>
+
+    <script>
+    // The URL in the script tag below is dynamically generated JavaScript that
+    // includes the book metadata and page image access functions.
+    // The ia{number}.us.archive.org server for the book can and does change,
+    // so this URL should NOT be used for permanent access.
+    // Use the JSLocate URL below instead for stable access -
+    // it will find the item and redirect to the correct server
+    // https://archive.org/bookreader/BookReaderJSLocate.php?id=creekwarand00ballgoog&subPrefix=creekwarand00ballgoog    </script>
+
+    <script>
+      // Load Bookreader data async
+      $(function() {
+        var paramsToJSON = function paramsToJSON() {
+          var params = window.location.search.substring(1);
+          var json = {};
+
+          if (params.length > 0) {
+            params.split('&').forEach(function splitParams(param) {
+              var pair = param.split('=');
+              var key = pair[0];
+              var value = pair[1];
+              json[decodeURIComponent(key)] = decodeURIComponent(value);
+            });
+          }
+
+          return json;
+        };
+
+        $.ajax({
+          url: '//ia902804.us.archive.org/BookReader/BookReaderJSIA.php?id=creekwarand00ballgoog&itemPath=/25/items/creekwarand00ballgoog&server=ia902804.us.archive.org&format=jsonp&subPrefix=creekwarand00ballgoog&requestUri=/stream/creekwarand00ballgoog&version=mHe9koCz',
+          type: 'GET',
+          dataType: 'jsonp',
+        }).then(function(response) {
+          BookReaderJSIAinit(response.data);
+
+          // Wire up full-screen button, to bring back to details page
+          BookReader.prototype.toggleFullscreen = function() {
+            window.location.href = window.location.href.replace('/stream/', '/details/');
+          };
+
+          var ResizeBookReader;
+          var $IABookReaderWrapper = $('#IABookReaderWrapper');
+          var $IABookReaderMessageWrapper = $('#IABookReaderMessageWrapper');
+          var $BookReader = $('#BookReader');
+          ResizeBookReader = function() {
+            $BookReader.css({
+              height: $IABookReaderWrapper.innerHeight() - $IABookReaderMessageWrapper.outerHeight()
+            });
+            br.resize();
+          };
+          $(window).resize(throttle(function() {
+            ResizeBookReader();
+          }));
+          $(document).bind('IABookReader:ResizeBookReader', ResizeBookReader);
+
+          if (paramsToJSON().wrapper === "false") {
+            $("#IABookReaderMessageWrapper").remove();
+          }
+          ResizeBookReader();
+        });
+      });
+
+      // Usage stats
+      if (window.archive_analytics) {
+        window.archive_analytics.values['bookreader'] = 'open'
+      };
+    </script>
+          </body>
+    </html>
+    

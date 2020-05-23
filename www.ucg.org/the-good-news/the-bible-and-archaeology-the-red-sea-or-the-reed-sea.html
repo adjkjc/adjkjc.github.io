@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <!--[if IE]><![endif]-->
+<link rel="preconnect" href="https://ctools/" />
+<link rel="dns-prefetch" href="https://ctools/" />
+<link rel="preconnect" href="https://css/" />
+<link rel="dns-prefetch" href="https://css/" />
+<link rel="preconnect" href="https://use.typekit.com/" />
+<link rel="dns-prefetch" href="https://use.typekit.com/" />
+<link rel="preconnect" href="https://ajax.googleapis.com/" />
+<link rel="dns-prefetch" href="https://ajax.googleapis.com/" />
+<link rel="preconnect" href="https://www.google-analytics.com/" />
+<link rel="dns-prefetch" href="https://www.google-analytics.com/" />
+<link rel="preconnect" href="https://stats.g.doubleclick.net/" />
+<link rel="dns-prefetch" href="https://stats.g.doubleclick.net/" />
+<meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQQHVFNbGwsEXFJQAA==",licenseKey:"166a3d41e5",applicationID:"848327"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||"document"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-57x57.png" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-TileImage" content="/mstile-144x144.png" />
+<meta name="msapplication-TileColor" content="#1F65A6" />
+<link rel="icon"  type="image/png" sizes="16x16" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-16x16.png" />
+<link rel="icon"  type="image/png" sizes="32x32" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-32x32.png" />
+<link rel="icon"  type="image/png" sizes="96x96" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-96x96.png" />
+<link rel="icon"  type="image/png" sizes="194x194" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/favicon-194x194.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.ucg.org/sites/all/themes/top_hat/images/favicons/bt/apple-touch-icon-114x114.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<link rel="up" href="https://www.ucg.org/the-good-news/good-news-magazine-may-june-1997" />
+<link rel="prev" href="https://www.ucg.org/the-good-news/the-bible-and-archaeology-archaeology-and-the-book-of-exodus-exit-from-egypt-part-2" />
+<meta name="description" content="For many years scholars have disagreed over the identity of the sea the Israelites crossed and thus the site of the drowning of Pharaoh&#039;s army. Three routes for the Exodus have been proposed and continue to be debated." />
+<meta name="abstract" content="For many years scholars have disagreed over the identity of the sea the Israelites crossed and thus the site of the drowning of Pharaoh&#039;s army. Three routes for the Exodus have been proposed and continue to be debated." />
+<meta name="keywords" content="red sea, reed sea, Science, -Archaeology, --The Bible and Archaeology, The Bible, -Background of the Bible, -Bible Discoveries, -Bible History" />
+<meta name="robots" content="follow, index" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="the-bible-and-archaeology-the-red-sea-or-the-reed-sea.html" />
+<link rel="shortlink" href="https://www.ucg.org/node/196211" />
+<meta property="fb:app_id" content="149720061726778" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="United Church of God" />
+<meta property="og:url" content="https://www.ucg.org/the-good-news/the-bible-and-archaeology-the-red-sea-or-the-reed-sea" />
+<meta property="og:title" content="The Bible and Archaeology: The Red Sea or the Reed Sea?" />
+<meta property="og:description" content="For many years scholars have disagreed over the identity of the sea the Israelites crossed and thus the site of the drowning of Pharaoh&#039;s army. Three routes for the Exodus have been proposed and continue to be debated." />
+<meta property="og:image" content="https://www.ucg.org/files/styles/full_grid6/public/image/collection/good-news-magazine-may-june-1997.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@ucgia" />
+<meta name="twitter:creator" content="@ucgia" />
+<meta name="dcterms.title" content="The Bible and Archaeology: The Red Sea or the Reed Sea?" />
+<meta name="dcterms.creator" content="Mario Seiglie" />
+<meta name="dcterms.date" content="1997-06-03T01:00-04:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="https://www.ucg.org/the-good-news/the-bible-and-archaeology-the-red-sea-or-the-reed-sea" />
+<meta name="dcterms.language" content="en" />
+<meta name="audience" content="all" />
+<meta property="og:image" content="https://www.ucg.org/sites/all/themes/top_hat/beyond-today-social.jpg?d=20160309" />
+  <title>The Bible and Archaeology: The Red Sea or the Reed Sea? | United Church of God</title>  
+  <link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__HHsqyN6TXNaRbGOf-Es6-IsGFewQ09QXWpSxo42hCDQ__gF5GajsBWTcxeKo7-JBjqYJS2ile0jweeMk6ca_zsvc___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+
+<!--[if IE]>
+<link rel="stylesheet" href="https://www.ucg.org/sites/all/themes/top_hat/css/ie.css?qa67vz" media="all" />
+<![endif]-->
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__KeIKFqPmURnw_LFSutd2WlLQ6qATBJZl3-u_ith0WPk__9H4cwpL8NEgKQSPAoM2fQs8QlZSjrO9M_Yg0DlUhXgU___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__wavvO0Y5_Ym9BLhGVQnidmK0cu0RFn8V83UynCXhJ4A__3ItLgXqpyGzguB5c1t_cvPlJYsRyqxKgnnFXk9NyCOI___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link rel="stylesheet" href="https://www.ucg.org/files/advagg_css/css__SwxtiaigvsvWKWQoc9hIJYvcKFWhj3394RPnI-J8sLM__sgQc1ELIfOc10OEeLphNqNLGTCx4Rok2FPkw1CD6l-U___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.css" media="all" />
+<!--<![endif]-->
+  <script>
+window.google_analytics_domain_name = "none";window.google_analytics_uacct = "UA-6857460-5";
+</script>
+<script src="https://www.ucg.org/profiles/panopoly/libraries/respondjs/respond.min.js?qa67vz"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+window.jQuery || document.write("<script src='https://www.ucg.org/profiles/panopoly/modules/contrib/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__1YIht1y1Jlm9D0PyxEuhS3DlWdYAlEsNpsFDOaUsfRw__ZnC7278ZsqBG-1FOUqflDl8B3Y1kLiAWXAIkoLrHbYg___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script>
+window.jQuery.ui || document.write("<script src='https://www.ucg.org/profiles/panopoly/modules/contrib/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__3BFwUnBCuatjVm3u5F1IzYEm8T1KeD1pqrtFNhM75uI__V2hfJDBXK4gkwi4KglCyTp89c9iUvEm_w_q7gs3-ZFw___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.ucg.org/files/googleanalytics/analytics.js?qa67vz","ga");ga("create", "UA-6857460-5", {"cookieDomain":"auto","allowLinker":true});ga("require", "linkid", "linkid.js");ga("require", "linker");ga("linker:autoLink", ["streaming.ucg.org","ucg.org","literature.ucg.org","library.ucg.org"]);ga("set", "anonymizeIp", true);ga("set", "page", location.pathname + location.search + location.hash);ga("send", "pageview");
+</script>
+<script>
+jQuery.extend(Drupal.settings,{"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"top_hat","theme_token":"QZ7pnhKABSbmYvaGhbfRUq0BW_yzE5AbGwt3mvTW7UI","jquery_version":"1.7","css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"sites\/all\/modules\/bible\/bible.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"modules\/comment\/comment.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"profiles\/panopoly\/modules\/contrib\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"modules\/node\/node.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin-navbar.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_core\/css\/panopoly-dropbutton.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-magic.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/css\/panopoly-modal.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-accordian.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/css\/panopoly-layouts.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"profiles\/panopoly\/modules\/contrib\/radix_layouts\/radix_layouts.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/custom\/ucg_starterkit\/ucg_footer.css":1,"modules\/user\/user.css":1,"profiles\/panopoly\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/themes\/top_hat\/css\/eu_compliance.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/amazon\/amazon.css":1,"profiles\/panopoly\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/css\/panels.css":1,"sites\/all\/modules\/typogrify\/typogrify.css":1,"sites\/all\/modules\/book_made_simple\/book_made_simple.css":1,"sites\/all\/modules\/radioactivity\/css\/radioactivity.css":1,"profiles\/panopoly\/modules\/contrib\/panels\/plugins\/layouts\/flexible\/flexible.css":1,"sites\/all\/themes\/top_hat\/ds_layouts\/figure_one_column\/figure_one_column.css":1,"sites\/all\/modules\/lazy_pane\/css\/lazy-pane.css":1,"sites\/all\/modules\/eu_cookie_compliance\/css\/eu_cookie_compliance.bare.css":1,"sites\/all\/modules\/mobile_navigation\/mobile_navigation.css":1,"public:\/\/ctools\/css\/cedb26d71942be4f2781a06b4f224fad.css":1,"sites\/all\/themes\/top_hat\/css\/print.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.css":1,"sites\/all\/themes\/top_hat\/css\/ie.css":1,"sites\/all\/themes\/top_hat\/css\/global.css":1,"ie::normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"ie::normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"fluid::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/fluid\/alpha-default-fluid-12.css":1,"normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default.css":1,"normal::sites\/all\/themes\/top_hat\/css\/top-hat-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1},"js":{"profiles\/panopoly\/modules\/panopoly\/panopoly_images\/panopoly-images.js":1,"sites\/all\/modules\/bible\/bible.js":1,"sites\/all\/modules\/bible\/bible_bls.js":1,"sites\/all\/modules\/bible\/bible_webimport.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_admin\/panopoly-admin.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_magic\/panopoly-magic.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_theme\/js\/panopoly-accordion.js":1,"sites\/all\/libraries\/jquery.imagesloaded\/jquery.imagesloaded.min.js":1,"misc\/progress.js":1,"sites\/all\/modules\/custom\/top_hat_theme\/top_hat_theme.js":1,"sites\/all\/modules\/lazy_pane\/js\/lazy-pane.js":1,"sites\/all\/modules\/mobile_navigation\/js\/mobile_menu.js":1,"sites\/all\/modules\/mobile_navigation\/mobile_navigation.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/modules\/radioactivity\/js\/radioactivity.js":1,"https:\/\/use.typekit.com\/gtu5vky.js":1,"sites\/all\/themes\/top_hat\/js\/vendor\/custom.modernizr.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.alerts.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.cookie.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.reveal.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.section.js":1,"sites\/all\/themes\/top_hat\/js\/foundation\/foundation.dropdown.js":1,"sites\/all\/themes\/top_hat\/js\/jquery.hoverIntent.minified.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-equalheights.js":1,"sites\/all\/modules\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/picture\/picture.min.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets.js":1,"profiles\/panopoly\/modules\/panopoly\/panopoly_widgets\/panopoly-widgets-spotlight.js":1,"sites\/all\/modules\/custom\/top_hat_theme\/js\/header_search.js":1,"sites\/all\/themes\/top_hat\/js\/top_hat.js":1,"sites\/all\/themes\/top_hat\/js\/lunametrics-youtube-v7.gtm.min.js":1,"sites\/all\/modules\/eu_cookie_compliance\/js\/eu_cookie_compliance.js":1,"sites\/all\/themes\/top_hat\/js\/min\/ustream-embedapi-min.js":1,"sites\/all\/themes\/top_hat\/js\/ustream-analytics.js":1,"sites\/all\/themes\/top_hat\/js\/jquery.scrolldepth.min.js":1,"profiles\/panopoly\/libraries\/respondjs\/respond.min.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"misc\/jquery-extend-3.4.0.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.10.2\/jquery-ui.min.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"misc\/ajax.js":1,"profiles\/panopoly\/modules\/contrib\/jquery_update\/js\/jquery_update.js":1}},"baseurl":"https:\/\/www.ucg.org\/","bibleimgurl":"\/sites\/all\/modules\/bible\/images\/","CToolsModal":{"modalSize":{"type":"scale","width":".9","height":".9","addWidth":0,"addHeight":0,"contentRight":25,"contentBottom":75},"modalOptions":{"opacity":".55","background-color":"#FFF"},"animationSpeed":"fast","modalTheme":"CToolsModalDialog","throbberTheme":"CToolsModalThrobber"},"panopoly_magic":{"pane_add_preview_mode":"manual"},"radioactivity":{"emitters":{"emitDefault":[{"accuracy":"100","bundle":"article","energy":"20","entity_id":"196211","entity_type":"node","field_name":"field_radioactivity","language":"und","storage":"Memcached","type":"energy","checksum":"97ff4eea98c11476c9bd3c3de00770af"},{"accuracy":"100","bundle":"article","energy":"10","entity_id":"196211","entity_type":"node","field_name":"field_radioactivity","language":"und","storage":"Memcached","type":"none","checksum":"d98223ccbb67e8a97d0860b7bdf60805"}]},"config":{"emitPath":"\/sites\/all\/modules\/radioactivity\/emit.php","fpEnabled":0,"fpTimeout":"15"}},"lazy_pane":{"current_path":"node\/196211"},"better_exposed_filters":{"views":{"book_by_nid":{"displays":{"panel_pane_1":{"filters":[]}}},"beyond_today_features":{"displays":{"panel_pane_6":{"filters":[]}}}}},"eu_cookie_compliance":{"popup_enabled":1,"popup_agreed_enabled":0,"popup_hide_agreed":0,"popup_clicking_confirmation":false,"popup_scrolling_confirmation":false,"popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EWe use cookies on this site to enhance your user\u0026nbsp;experience\u003C\/h2\u003E\u003Cp\u003EBy clicking any link on this page you are giving your consent for us to set\u0026nbsp;cookies.\u003C\/p\u003E              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button button small white transparent\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button button small white transparent\u0022 \u003EDecline\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","use_mobile_message":false,"mobile_popup_html_info":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n                    \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button\u0022\u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022agree-button eu-cookie-compliance-secondary-button button small white transparent\u0022\u003EOK, I agree\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022decline-button eu-cookie-compliance-default-button button small white transparent\u0022 \u003EDecline\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","mobile_breakpoint":"768","popup_html_agreed":"\u003Cdiv\u003E\n  \u003Cdiv class =\u0022popup-content agreed\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n      \u003Ch2\u003EThank you for accepting\u0026nbsp;cookies\u003C\/h2\u003E\u003Cp\u003EYou can now hide this message or find out more about\u0026nbsp;cookies.\u003C\/p\u003E    \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022hide-popup-button eu-cookie-compliance-hide-button button small white transparent\u0022\u003EHide\u003C\/button\u003E\n              \u003Cbutton type=\u0022button\u0022 class=\u0022find-more-button eu-cookie-compliance-more-button-thank-you button small white transparent\u0022 \u003EMore info\u003C\/button\u003E\n          \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E","popup_use_bare_css":1,"popup_height":"auto","popup_width":0,"popup_delay":1000,"popup_link":"https:\/\/www.ucg.org\/privacy-policy","popup_link_new_window":1,"popup_position":null,"popup_language":"en","store_consent":false,"better_support_for_screen_readers":1,"reload_page":0,"domain":"","popup_eu_only_js":0,"cookie_lifetime":"100","cookie_session":false,"disagree_do_not_show_popup":0,"method":"opt_in","whitelisted_cookies":"_ga\r\n_gid\r\nhas_js","withdraw_markup":"\u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-tab\u0022\u003E\u003C\/button\u003E\n\u003Cdiv class=\u0022eu-cookie-withdraw-banner\u0022\u003E\n  \u003Cdiv class=\u0022popup-content info\u0022\u003E\n    \u003Cdiv id=\u0022popup-text\u0022\u003E\n          \u003C\/div\u003E\n    \u003Cdiv id=\u0022popup-buttons\u0022\u003E\n      \u003Cbutton type=\u0022button\u0022 class=\u0022eu-cookie-withdraw-button\u0022\u003E\u003C\/button\u003E\n    \u003C\/div\u003E\n  \u003C\/div\u003E\n\u003C\/div\u003E\n","withdraw_enabled":false},"mobile_navigation":{"breakpoint":"all and (min-width: 1000px) and (min-device-width: 1000px), (max-device-width: 1000px) and (min-width: 1000px) and (orientation:landscape)","menuSelector":"#zone-menu","menuPlugin":"accordion","showEffect":"drawer_left","showItems":"active_trail","tabHandler":1,"menuWidth":"80","specialClasses":1,"mainPageSelector":"#page","useMask":1,"menuLabel":"\u003Cspan class=\u0022icon-menu\u0022\u003EMenu\u003C\/span\u003E","expandActive":1},"picture":{"mappings":[["Full Grid3","full_grid3"],["full_grid9","full_grid9"],["Full Grid4","full_grid4"],["16x9_grid3","16x9_grid3"],["16x9_grid4","16x9_grid4"],["16x9_grid12","16x9_grid12"],["Not Set","not_set"]],"label":"Image size (required)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip|mobi|epub|mp4","trackDomainMode":"2","trackCrossDomains":["streaming.ucg.org","ucg.org","literature.ucg.org","library.ucg.org"],"trackUrlFragments":1},"omega":{"layouts":{"primary":"normal","order":["fluid","normal"],"queries":{"fluid":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 1000px) and (min-device-width: 1000px), all and (max-device-width: 1000px) and (min-width: 1000px) and (orientation:landscape)"}}}});
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-196211 node-type-article bt region-content i18n-en context-the-good-news">
+  <div id="skip-link">
+    <a href="the-bible-and-archaeology-the-red-sea-or-the-reed-sea.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-8 region region-user-first" id="region-user-first">
+  <div class="region-inner region-user-first-inner">
+    <div class="block block-menu block-menu-ucg-top-hat block-menu-menu-ucg-top-hat odd block-without-title" id="block-menu-menu-ucg-top-hat">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="inline"><li class="first leaf"><a href="https://www.ucg.org/">United Church of God</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today">Beyond Today</a></li>
+<li class="last leaf"><a href="http://donate.ucg.org" target="_blank">DONATE</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-4 region region-user-second" id="region-user-second">
+  <div class="region-inner region-user-second-inner">
+    <div class="block block-panels-mini block-users-masthead block-panels-mini-users-masthead odd block-without-title" id="block-panels-mini-users-masthead">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <section  class="panel-display section-one-col" id="mini-panel-users_masthead-1">
+ <div class="panel-pane pane-header-search site-search-box"   class="panel-pane pane-header-search site-search-box">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="header-search-box "></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-masthead-content"   class="panel-pane pane-masthead-content">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="masthead-content"><a href="https://www.ucg.org/user?destination=node/196211" class="user-account button small" rel="nofollow">Sign In | Sign Up</a></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-masthead-search"   class="panel-pane pane-masthead-search">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="masthead-content-search masthead-content"><a href="the-bible-and-archaeology-the-red-sea-or-the-reed-sea.html#" class="toggle-search icon-search button small">Search</a></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div><div class="panel-pane pane-views-panes pane-shopping-cart-teaser-panel-pane-1"   class="panel-pane pane-views-panes pane-shopping-cart-teaser-panel-pane-1">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:node/196211:views_panes:shopping_cart_teaser-panel_pane_1:17361:1036" data-lazy-pane-load-strategy="page-loaded"></div>  </div>
+
+  
+    </div>
+</div>
+</section><!-- /.section-one-col -->
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+        <div class="block block-block block-logo-block block-7 block-block-7 odd block-without-title" id="block-block-7">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div><a href="https://www.ucg.org/beyond-today"><svg data-name="Layer 1" id="Layer_1" viewbox="0 0 557.54 162.31" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<style type="text/css">.cls-1{fill:none;}.cls-2{fill:#fff;}.cls-3{clip-path:url(the-bible-and-archaeology-the-red-sea-or-the-reed-sea.html);}
+</style>
+<clippath id="clip-path" transform="translate(-80.23 -119.76)"><path class="cls-1" d="M565.81,185.53C502.09,174.76,431.3,167,356.74,167c-78.22,0-145.31,7.92-209,18.69V118.6H565.81v66.93Z"></path></clippath></defs>
+<title></title>
+<polygon class="cls-2" points="104.21 71.14 0 71.14 0 87.98 42.49 87.98 42.49 160.15 61.48 160.15 61.48 87.98 104.21 87.98 104.21 71.14"></polygon><path class="cls-2" d="M241.72,188.15c-33.46,0-56.83,19.28-56.83,46.9a43.38,43.38,0,0,0,15.57,33.5c10.4,8.85,24.66,13.52,41.26,13.52s31-4.67,41.42-13.52A43.3,43.3,0,0,0,298.79,235C298.79,207.43,275.33,188.15,241.72,188.15Zm0,77.32c-25.56,0-37-15.28-37-30.42,0-18.12,14.87-30.3,37-30.3,11.47,0,21,3.08,27.68,8.91A27.62,27.62,0,0,1,278.85,235C278.85,253.24,263.93,265.47,241.72,265.47Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M407.23,204c-10.79-8.67-26.39-13.07-46.39-13.07h-48v89h48c19.37,0,35.32-4.58,46.12-13.25a39.45,39.45,0,0,0,15.15-31.25C422.1,222.67,417,211.8,407.23,204Zm-46.51,59.34H331.62V207.74h29.11c26.56,0,41.19,9.83,41.19,27.67S386.9,263.32,360.72,263.32Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M467.25,190.42l-48.67,89.49H439.7l12.57-23.46h51.83l12.45,23.46H538l-48.67-89.49H467.25Zm-7.07,50.63,17.94-33.94L496,241.05H460.18Z" transform="translate(-80.23 -119.76)"></path><polygon class="cls-2" points="531.21 71.14 495.34 105.03 459.71 71.14 432.42 71.14 485.54 120.92 485.54 160.15 504.41 160.15 504.41 120.92 557.54 71.14 531.21 71.14"></polygon><g class="cls-3"><path class="cls-2" d="M201,147.61v-0.18c5.21-1.33,12.29-4.88,12.29-13.22a12.18,12.18,0,0,0-4.95-10.11c-2.92-2-6.89-3-13.52-3H171.6v2.57c6.89,0.53,7.34,1.06,7.34,8.43V168.7c0,7-.65,8.09-7.94,9.74l-0.1,2.39L191,178.75c7,0,13.08-1.06,17.5-3.64,5.21-2.84,8.4-7.45,8.4-13.39C216.85,152.94,210,148.94,201,147.61Zm-13.88-18.36c0-2.66.26-3.73,1.06-4.26a10,10,0,0,1,4.86-1c7.69,0,11.31,5,11.31,11.35,0,7.36-4,11.18-13.52,11.18h-3.71v-17.3Zm7.16,46.31c-5.48.09-7.16-1.69-7.16-8.07V149.65h3.62c10.61,0,16.62,4,16.62,13C207.4,171.83,201.12,175.56,194.31,175.56Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M267.09,172.63c-1.94,2.22-4.6,2.93-11,2.93-4.15,0-7.25,0-8.93-1.06s-2.12-3-2.12-7.27V150.81h8c7.69,0,8.4.53,9.55,6.83h2.65V140.52h-2.65c-1.15,5.94-1.68,6.65-9.55,6.65h-8v-20c0-2.66.18-2.93,3-2.93h6.36c6.1,0,8.48.62,9.72,2.48a20.93,20.93,0,0,1,3,7.63l2.65-.44c-0.26-4.7-.71-10.82-0.8-12.86H229.26v2.57c6.81,0.62,7.51.89,7.51,8.87v35c0,7.36-.71,8-8.66,8.6v2.57h43c0.8-2.75,2.56-10,3.09-13.06l-2.65-.44A24.12,24.12,0,0,1,267.09,172.63Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M314.65,123.66c6.89,0.71,7.07,1.51,5.21,5.77-2.47,5.5-7.16,14.1-10.25,19.87-3.8-6.65-8-13.84-11.58-20.76-1.59-3-1.86-4.08,4.42-4.88v-2.57H280.62v2.57c5.21,0.53,6.28,1.51,9.72,7.54,4.95,8.43,8.13,14.19,11.14,19.6,1.33,2.48,1.68,3.37,1.68,5.23v11.44c0,7.54-.71,8.16-8.57,8.69v2.57h25.63v-2.57c-8-.53-8.75-1.15-8.75-8.69v-12a9.65,9.65,0,0,1,1.5-5.68c4.15-7.89,7.07-12.86,11-19.07,3.36-5.32,4.51-6.39,10.52-7.1v-2.57h-19.8v2.57Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M372.45,119.76c-18.91,0-30.05,14.81-30.05,30.69,0,17,12.64,29.63,29,29.63s29.7-11.71,29.7-30.87C401.08,131.47,387.56,119.76,372.45,119.76Zm0.8,57c-12.29,0-20.95-12.33-20.95-28.65,0-16.5,8.66-25.1,18.21-25.1,11.49,0,20.68,10,20.68,28.56C391.18,168.55,382.79,176.8,373.24,176.8Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M454.81,123.66c6.19,0.35,8.22,1.51,8.66,5.5a133.1,133.1,0,0,1,.62,14.73v20.67h-0.26L427.5,121.09H413.89v2.57c4.07,0.35,6,1.06,7.78,3.28,1.59,2,1.77,2.75,1.77,9v19.34a146.42,146.42,0,0,1-.62,15.08c-0.44,4.26-2.65,5.41-7.69,5.77v2.57h21.12v-2.57c-6.19-.35-8.13-1.51-8.57-5.94a148.42,148.42,0,0,1-.53-14.9V133.51h0.18l37.47,46.13h3V143.89c0-8.16.26-12.15,0.53-14.9,0.44-3.9,2.47-5.06,7.42-5.32v-2.57H454.81v2.57Z" transform="translate(-80.23 -119.76)"></path><path class="cls-2" d="M540.14,128.63c-5.48-5.23-13.88-7.54-25.1-7.54H489.85v2.66c6.81,0.53,7.51.89,7.51,8.52v35.31c0,7.54-.8,8.07-8.22,8.6v2.57h21.21c10.87,0,19.8-2.31,26.43-7.36s10.87-13,10.87-23.69C547.66,139.36,544.47,132.89,540.14,128.63Zm-25.45,46.75c-6.36,0-9-1.77-9-8.43V130.31c0-3.28.26-4.35,1.15-5.06s3-1.06,6.63-1.06c5.92,0,11,1.24,14.94,4,6.54,4.08,9.81,11.8,9.81,20.85C538.2,163.49,530.42,175.38,514.69,175.38Z" transform="translate(-80.23 -119.76)"></path></g><path class="cls-2" d="M560.94,182.47c-60.62-14.5-130.2-22.75-204.2-22.75S213.2,168,152.59,182.45l0.53,2.51a1196.86,1196.86,0,0,1,203.62-17.81A1196.81,1196.81,0,0,1,560.41,185Z" transform="translate(-80.23 -119.76)"></path></svg></a></div>
+    </div>
+  </div>
+</div><div class="block block-block tagline block-8 block-block-8 even block-without-title" id="block-block-8">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>Help for Today, Hope for Tomorrow&nbsp;| <a style="color:#fff;" href="https://www.ucg.org/beyond-today/learn-more">Learn more...</a></p>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">  
+  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+        <div class="block block-menu block-menu-beyond-today-menu block-menu-menu-beyond-today-menu odd block-without-title" id="block-menu-menu-beyond-today-menu">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/" class="tophat hide-for-large-up">United Church of God</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today" class="tophat hide-for-large-up">Beyond Today</a></li>
+<li class="leaf"><a href="http://donate.ucg.org" class="tophat hide-for-large-up">Donate</a></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/television">Television</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-television-program">Program Archive</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/station-listing">Station Listings</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine">Magazine</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine/beyond-today-magazine-subscription">Get Free Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine-confirmation">Confirm Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-magazine-renewal">Renew Subscription</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/cancel-beyond-today-magazine">Cancel Subscription</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/change-address">Change Address</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/bible-study-tools">Bible Study Tools</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/bible-study-tools/booklets">Booklets</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/bible-study-course">12 Lesson Bible Study Course</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/bible-questions-and-answers">Bible Questions and Answers</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-bible-study">Bible Study Series</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/teen-bible-study-guides">Teen Bible Study Guides</a></li>
+<li class="leaf"><a href="https://www.ucg.org/bible-study-tools/beyond-today-bible-commentary" target="_blank">Bible Commentary</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/bible-study-tools/study-by-topic" title="Study by Topic">Study by Topic</a></li>
+</ul></li>
+<li class="expanded"><a href="https://www.ucg.org/beyond-today/blogs">Blogs</a><ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/beyond-today/blogs/breaking-free">Breaking Free</a></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-daily">BT Daily</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/blogs/this-is-the-way">This Is The Way</a></li>
+</ul></li>
+<li class="leaf"><a href="https://www.ucg.org/beyond-today/apps">App</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/beyond-today/beyond-today-interviews">Beyond Today Interviews</a></li>
+</ul>    </div>
+  </div>
+</div>  </div>
+</div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-12 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <h1 class="title" id="page-title">The Bible and Archaeology: The Red Sea or the Reed Sea?</h1>
+                        <div class="block block-system block-main block-system-main odd block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      
+<div class="panelizer-view-mode node node-full node-article node-196211 one-sidebar node-promoted node-promoted" class="panelizer-view-mode node node-full node-article node-196211 one-sidebar node-promoted node-promoted">
+        <article class="panel-display omega-grid top-hat-content top-hat-12-twocol-9-3-stacked-sidebars one-sidebar" >
+    <div class="grid-9 column-left">
+    <header class="panel-panel region-top">
+      <div class="panel-pane pane-page-breadcrumb"   class="panel-pane pane-page-breadcrumb">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><span class="inline odd first"><a href="https://www.ucg.org/">UCG.org</a></span> <span class="delimiter">/</span> <span class="inline even"><a href="https://www.ucg.org/the-good-news">Good News</a></span> <span class="delimiter">/</span> <span class="inline odd last">The Bible and Archaeology: The Red Sea or the Reed...</span></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-node-hgroup"   class="panel-pane pane-node-hgroup">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <hgroup><h1>The Bible and Archaeology</h1>
+<h2 class="subheader fl-subtitle">The Red Sea or the Reed Sea?</h2>
+</hgroup>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-byline-pane"   class="panel-pane pane-byline-pane">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="byline field-name-submitted-by"><time class="no-break" datetime="865314000" pubdate>Posted on <strong>Jun 3, 1997</strong></time> <span class="authors"> by <a href="https://www.ucg.org/user/mario-seiglie" title="View user profile." class="username">Mario Seiglie</a></span> <span class="comment-link no-break"><a href="the-bible-and-archaeology-the-red-sea-or-the-reed-sea.html#comments" class="icon-bubbles" title="Jump to Comments">8 comments</a></span><span class="reading-time no-break"> Estimated reading time: 3 minutes</span> </div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-flag-study-list hide-for-large-up"   class="panel-pane pane-flag-study-list hide-for-large-up">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class='bookmark-flag flag'><div class='bookmark-flag flag'><span class='flag-wrapper flag-bookmarks'><a href="https://www.ucg.org/user" class="flag" data-reveal-id="modalStudyList">Add to my study list</a></span></div>
+    <div id="modalStudyList" class="reveal-modal medium">
+      <h2>Login or Create an Account</h2>
+      <div class="content-reveal-modal"><p class="lead">With a UCG.org account you will be able to save items to read and study later!</p>
+      <p><a href="https://www.ucg.org/user?destination=node/196211" class="study-list-registration button large expand">Sign In | Sign Up</a></p></div><a class="close-reveal-modal">&#215;</a>
+    </div></div>  </div>
+
+  
+    </div>
+</div>
+    </header>
+    <section class="panel-panel region-left">
+        <aside class="panel-pane pane-entity-field pane-node-field-drophead ribbon"   class="panel-pane pane-entity-field pane-node-field-drophead ribbon">
+
+    
+    
+    
+          <h3 class="pane-content">
+  <div class="field field-name-field-drophead field-type-text-long field-label-hidden">
+    For many years scholars have disagreed over the identity of the sea the Israelites crossed and thus the site of the drowning of Pharaoh&#039;s army. Three routes for the Exodus have been proposed and continue to be debated.  </div>
+</h3>    
+    
+    
+  </aside>
+<div class="panel-pane pane-entity-field pane-node-body"   class="panel-pane pane-entity-field pane-node-body">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+    <p>
+	Some believe that the Israelites’ path took them north to the coast and that the “sea” they crossed was part of Lake Sirbonis, an arm or bay of the Mediterranean, after the crossing of which they turned south into the Sinai&nbsp;Peninsula.</p>
+<p>
+	Others have adopted the idea that the Israelites took a central route and crossed a shallow lake north of the Red Sea called the Reed Sea. The term in Hebrew is yam suph. Yam means “sea,” and suph is generally thought to mean “reeds,” “rushes” or possibly “seaweed.” That is why some versions of the Bible call it “the Sea of Reeds” or “Reed Sea” instead of the Red Sea. (See <a class="has-tip bls-abbr" id="EXO_15_4_29600500" data-reveal-id="modal-EXO_15_4_29600500" data-reveal="">Exodus 15:4</a> <span class="reveal-modal medium bls-popup" id="modal-EXO_15_4_29600500" data-reveal=""> <span class="header-reveal-modal"><strong class="bls-scripture title-reveal-modal">Exodus 15:4</strong></span><span class="content-reveal-modal">Pharaoh&#8217;s chariots and his host has he cast into the sea: his chosen captains also are drowned in the Red sea.<br /><small><a href="https://www.ucg.org/help/AKJV" class="sans">American King James Version</a></small><a class="close-reveal-modal">×</a></span></span>in the Revised Standard Version, New American Bible and Jerusalem&nbsp;Bible.)</p>
+<p>
+	Some scholars prefer the translation “Reed Sea,” noting that lakes north of the Red Sea are abundant with reeds. They usually designate one of these shallow bodies of water as the site of the Israelite crossing but say that the Egyptians, with their heavy chariots, got bogged down and somehow&nbsp;drowned.</p>
+<p>
+	Other scholars prefer a southern route, pointing to evidence that they feel demonstrates that yam suph may mean “sea at the end of the world,” as some conceive it to have been. Says theology professor Bernard F. Batto: “What we call the Red Sea . . . was regarded by the ancients as the sea at the end of the world. Interestingly enough, the Greeks applied the name Red Sea not only to our Red Sea but also to the Indian Ocean and, later when they discovered it, even to the Persian Gulf . . . Yam sup came to refer to the Red Sea because like other ancient peoples, the Israelites did not distinguish the Red Sea from oceans further to the south. To their way of thinking, the Red Sea—the yam sup—was the sea at the end of the earth” (<em>Biblical Archaeology Review</em>, July-August 1984, p.&nbsp;59).</p>
+<p>
+	In other biblical references, yam suph means Red Sea or its arms, the Gulf of Suez and Gulf of Aqaba. In 1 Kings 9:26 we read: “King Solomon also built a fleet of ships at Ezion Geber, which is near Elath on the shore of the Red Sea [yam suph], in the land of Edom.” If this were a marshy lake close to Egypt, this would certainly be a strange place for Solomon to build his great fleet. But geographers know Elath is a port at the northernmost end of the Gulf of&nbsp;Aqaba.</p>
+<p>
+	Notice also Numbers 33, which mentions the stops the Israelites made in the wilderness of the Sinai. After crossing “the sea,” they camped in Marah, then Elim. And “they moved from Elim and camped by the Red Sea [yam suph]” (verse 10). How could they have crossed a “sea of reeds” and, after many days of travel, still camped by that same “sea of reeds”? No body of water in the region except the Red Sea would have been enough for the Israelites to have traveled so long and still be close to its coast. Other references that support the Red Sea are <a class="has-tip bls-abbr" id="NUM_21_4_30046900" data-reveal-id="modal-NUM_21_4_30046900" data-reveal="">Numbers 21:4</a> <span class="reveal-modal medium bls-popup" id="modal-NUM_21_4_30046900" data-reveal=""> <span class="header-reveal-modal"><strong class="bls-scripture title-reveal-modal">Numbers 21:4</strong></span><span class="content-reveal-modal">And they journeyed from mount Hor by the way of the Red sea, to compass the land of Edom: and the soul of the people was much discouraged because of the way.<br /><small><a href="https://www.ucg.org/help/AKJV" class="sans">American King James Version</a></small><a class="close-reveal-modal">×</a></span></span>and <a class="has-tip bls-abbr" id="JER_49_21_30522900" data-reveal-id="modal-JER_49_21_30522900" data-reveal="">Jeremiah 49:21</a><span class="reveal-modal medium bls-popup" id="modal-JER_49_21_30522900" data-reveal=""> <span class="header-reveal-modal"><strong class="bls-scripture title-reveal-modal">Jeremiah 49:21</strong></span><span class="content-reveal-modal">The earth is moved at the noise of their fall, at the cry the noise thereof was heard in the Red sea.<br /><small><a href="https://www.ucg.org/help/AKJV" class="sans">American King James Version</a></small><a class="close-reveal-modal">×</a></span></span>.</p>
+<p>
+	Which route did the Israelites take, and at what point did they cross the sea? We cannot know for sure. However, one author of several works on biblical history offers this perspective: “The crossing of Israel . . . cannot be explained as a wading through a swamp. It required a mighty act of God, an act so significant both in scope and meaning that forever after in Israel&#8217;s history it was the paradigm against which all of his redemptive and saving work was measured” (Eugene Merrill, <em>Kingdom of Priests</em>, Baker Book House, Grand Rapids, 1987, p.&nbsp;66).</p>
+  </div>
+  </div>
+
+  
+    </div>
+</div>
+
+    
+    
+    
+          <div class="pane-content tags">
+  <a href="https://www.ucg.org/tags/the-bible-and-archaeology">The Bible and Archaeology</a>  <a href="https://www.ucg.org/tags/reed-sea">reed sea</a>  <a href="https://www.ucg.org/tags/red-sea">red sea</a>  <a href="https://www.ucg.org/tags/bible-history-2">Bible History</a>  <a href="https://www.ucg.org/tags/bible-discoveries">Bible Discoveries</a>  <a href="https://www.ucg.org/tags/background-of-the-bible">Background of the Bible</a>  <a href="https://www.ucg.org/tags/the-bible">The Bible</a>  <a href="https://www.ucg.org/tags/archaeology">Archaeology</a>  <a href="https://www.ucg.org/tags/science">Science</a></div>    
+    
+    
+  <div class="panel-pane pane-block pane-apachesolr-search-mlt-001"   class="panel-pane pane-block pane-apachesolr-search-mlt-001">
+
+    
+          <h3 class="pane-title">You might also be interested in...</h3>    
+    
+          <div class="pane-content pane-content">
+<div class="panelizer-view-mode node node-image-title-and-teaser node-article node-196176 view-mode-image-title-and-teaser node-teaser node-promoted node-promoted" class="panelizer-view-mode node node-image-title-and-teaser node-article node-196176 view-mode-image-title-and-teaser node-teaser node-promoted node-promoted">
+        <article class="panel-display th-teaser clearfix" >
+  <header class="panel-panel th-teaser-container th-teaser-header clearfix"> 
+        </header>
+  <div class="panel-panel th-teaser-container th-teaser-content clearfix">
+    
+    
+    
+    
+          <div><div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:panelizer:node:196176:image_title_and_teaser:196176:entity_field:node:field_featured_image:10666:1136" data-lazy-pane-load-strategy="pane-visible"></div></div>    
+    
+    
+  </div>           
+  <footer class="panel-panel th-teaser-container th-teaser-footer clearfix">
+      <div class="panel-pane pane-node-title"   class="panel-pane pane-node-title">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <h2><a href="https://www.ucg.org/the-good-news/the-bible-and-archaeology-archaeology-and-the-book-of-exodus-exit-from-egypt-part-2">The Bible and Archaeology: Archaeology and the Book of Exodus—Exit From Egypt - Part 2</a></h2>
+  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div>
+    
+    
+    
+          
+  <div class="field field-name-field-drophead field-type-text-long field-label-hidden">
+    In earlier issues, The Good News examined archaeological finds that illuminate...  </div>
+    
+    
+    
+  </footer>
+</article>
+</div>
+
+<div class="panelizer-view-mode node node-image-title-and-teaser node-article node-196181 view-mode-image-title-and-teaser node-teaser node-promoted node-promoted" class="panelizer-view-mode node node-image-title-and-teaser node-article node-196181 view-mode-image-title-and-teaser node-teaser node-promoted node-promoted">
+        <article class="panel-display th-teaser clearfix" >
+  <header class="panel-panel th-teaser-container th-teaser-header clearfix"> 
+        </header>
+  <div class="panel-panel th-teaser-container th-teaser-content clearfix">
+    
+    
+    
+    
+          <div><div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:panelizer:node:196181:image_title_and_teaser:196181:entity_field:node:field_featured_image:10666:1136" data-lazy-pane-load-strategy="pane-visible"></div></div>    
+    
+    
+  </div>           
+  <footer class="panel-panel th-teaser-container th-teaser-footer clearfix">
+      <div class="panel-pane pane-node-title"   class="panel-pane pane-node-title">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <h2><a href="https://www.ucg.org/the-good-news/the-bible-and-archaeology-archaeology-and-the-book-of-judges">The Bible and Archaeology: Archaeology and the Book of Judges</a></h2>
+  </div>
+
+  
+    </div>
+</div>
+<div class="panel-separator"></div>
+    
+    
+    
+          
+  <div class="field field-name-field-drophead field-type-text-long field-label-hidden">
+    During this period of more than 300 years, God periodically raised up judges to...  </div>
+    
+    
+    
+  </footer>
+</article>
+</div>
+</div>    
+    
+    
+  </div>
+<div class="panel-pane pane-entity-field pane-node-field-ref-user author-footer"   class="panel-pane pane-entity-field pane-node-field-ref-user author-footer">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    
+<ul class="field field-name-field-ref-user field-type-entityreference field-label-hidden">
+
+      <li>
+      <section class="ds-1col user-profile view-mode-author_teaser  clearfix">
+
+  
+  <a href="https://www.ucg.org/user/mario-seiglie"><img class="user-profile-thumbnail" src="https://www.ucg.org/files/styles/user_profile_thumbnail/public/image/users/picture/seiglie-mario-horizontal-2015.jpg" width="100" height="100" alt="" /></a><div class="field field-name-name"><h4><a href="https://www.ucg.org/user/mario-seiglie">Mario Seiglie</a></h4></div><small class="odd field-name-field-ucg-position" >United Church of God Pastor</small><div class="field field-name-field-biography"><p>Mr. Seiglie was born in Havana, Cuba, and came to the United States when he was a child.  He found out about the Church when he was 17 from a Church member in high school. He went to Ambassador College in Big Sandy, Texas, and in Pasadena, California, graduating with degrees in theology and Spanish. He serves as the pastor of the Garden Grove, <span class="caps">CA</span> <span class="caps">UCG</span> congregation and serves in the Spanish speaking areas of South America.</p></div></section>
+
+    </li>
+  
+</ul>
+  </div>
+
+  
+    </div>
+</div>
+    </section>
+  </div>
+  <aside class="panel-panel grid-3 region-right column-right">
+    <div class="panel-pane pane-flag-study-list show-for-large-up"   class="panel-pane pane-flag-study-list show-for-large-up">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class='bookmark-flag flag'><div class='bookmark-flag flag'><span class='flag-wrapper flag-bookmarks'><a href="https://www.ucg.org/user" class="flag" data-reveal-id="modalStudyList">Add to my study list</a></span></div>
+    <div id="modalStudyList" class="reveal-modal medium">
+      <h2>Login or Create an Account</h2>
+      <div class="content-reveal-modal"><p class="lead">With a UCG.org account you will be able to save items to read and study later!</p>
+      <p><a href="https://www.ucg.org/user?destination=node/196211" class="study-list-registration button large expand">Sign In | Sign Up</a></p></div><a class="close-reveal-modal">&#215;</a>
+    </div></div>  </div>
+
+  
+    </div>
+</div>
+<div class="panel-pane pane-article-print-pane show-for-large-up" >
+  
+      
+  <div class="pane-content">
+    <a class='print-page icon-print' href='javascript:print();' title='Print this Page'>Print this Page</a>  </div>
+
+  
+  </div>
+      <div class="panel-pane pane-views-panes pane-book-by-nid-panel-pane-1 lit-offer no-border lit-offer"   class="panel-pane pane-views-panes pane-book-by-nid-panel-pane-1 lit-offer no-border lit-offer">
+
+    
+    
+    
+          <div class="view view-book-by-nid view-id-book_by_nid view-display-id-panel_pane_1 no-border view-dom-id-e41ce2f7a77ff9b016910d48e6579564">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          <div class="field field-name-field-featured-image"><a href="https://www.ucg.org/the-good-news/good-news-magazine-may-june-1997"><picture  title="The Good News May-June 1997">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_wide_1x/public/image/collection/good-news-magazine-may-june-1997.png?itok=w5uQ7EKI&amp;timestamp=1512418088 1x" media="(min-width: 1220px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_normal_1x/public/image/collection/good-news-magazine-may-june-1997.png?itok=yJiIrKVo&amp;timestamp=1512418088 1x" media="(min-width: 980px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_narrow_1x/public/image/collection/good-news-magazine-may-june-1997.png?itok=B3PVharD&amp;timestamp=1512418088 1x" media="(min-width: 740px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_mobile_1x/public/image/collection/good-news-magazine-may-june-1997.png?itok=uGoWWmJC&amp;timestamp=1512418088 1x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://www.ucg.org/files/styles/full_grid4_breakpoints_theme_top_hat_mobile_1x/public/image/collection/good-news-magazine-may-june-1997.png?timestamp=1512418088" alt="The Good News May-June 1997" title="The Good News May-June 1997" />
+</picture></a></div>    
+  <div>        <div class="field field-name-title-field"><h4><a href="https://www.ucg.org/the-good-news/good-news-magazine-may-june-1997">Good News Magazine: May - June 1997</a></h4>
+</div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>    
+    
+    
+  </div>
+                                      </aside>
+  <footer class="panel-panel grid-12 region-bottom">
+      <section class="panel-pane pane-views-panes pane-node-comments-panel-pane-1"   id="comments" class="panel-pane pane-views-panes pane-node-comments-panel-pane-1">
+
+    
+    
+    
+          <div  class="lazy-pane-placeholder" data-lazy-pane-id="lazy_pane:panelizer:node:196211:full:196211:views_panes:node_comments-panel_pane_1:8001:70" data-lazy-pane-load-strategy="pane-visible"><span class="lazy-pane-spinner"></span></div>    
+    
+    
+  </section>
+<div class="panel-pane pane-node-comment-form no-border"   class="panel-pane pane-node-comment-form no-border">
+  <div class="inner">
+
+    
+  
+   <h2 class="pane-title">Join the conversation!</h2>
+    
+  <div class="pane-content">
+    <a href="https://www.ucg.org/user/login?destination=node/196211%23comment-form">Log in</a> or <a href="https://www.ucg.org/user/register?destination=node/196211%23comment-form">register</a> to post comments  </div>
+
+  
+    </div>
+</div>
+  </footer>
+</article>
+</div>
+    </div>
+  </div>
+</div>      </div>
+</div>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-primary-wrapper" class="zone-wrapper zone-footer-primary-wrapper clearfix">  
+  <div id="zone-footer-primary" class="zone zone-footer-primary clearfix container-12">
+    <div class="grid-6 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <section class="block block-panels-mini block-ucg-footer block-panels-mini-ucg-footer odd" id="block-panels-mini-ucg-footer">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">This week on Beyond Today TV</h2>
+            
+    <div class="content clearfix">
+      <div class="panel-flexible panels-flexible-781 clearfix" id="mini-panel-ucg_footer">
+<div class="panel-flexible-inside panels-flexible-781-inside">
+<div class="panels-flexible-region panels-flexible-region-781-center panels-flexible-region-first panels-flexible-region-last">
+  <div class="inside panels-flexible-region-inside panels-flexible-region-781-center-inside panels-flexible-region-inside-first panels-flexible-region-inside-last">
+<div class="panel-pane pane-views-panes pane-beyond-today-features-panel-pane-6"   class="panel-pane pane-views-panes pane-beyond-today-features-panel-pane-6">
+  <div class="inner">
+
+    
+  
+   
+    
+  <div class="pane-content">
+    <div class="view view-beyond-today-features view-id-beyond_today_features view-display-id-panel_pane_6 view-dom-id-6d9a2a5a30eab07843c6ef66234ed61b">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+          
+  <div class="field field-name-field-featured-image field-type-image field-label-hidden">
+    <a href="https://www.ucg.org/beyond-today/beyond-today-television-program/was-jesus-a-socialist-or-a-capitalist"><picture  title="Beyond Today -- Was Jesus a Socialist or a Capitalist?">
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/was-jesus-a-socialist-or-a-capitalist.jpg?itok=OsHdNw_Q&amp;timestamp=1588954866 1x" media="(min-width: 0px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/was-jesus-a-socialist-or-a-capitalist.jpg?itok=OsHdNw_Q&amp;timestamp=1588954866 1x" media="(min-width: 740px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/was-jesus-a-socialist-or-a-capitalist.jpg?itok=OsHdNw_Q&amp;timestamp=1588954866 1x" media="(min-width: 980px)" />
+<source srcset="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/was-jesus-a-socialist-or-a-capitalist.jpg?itok=OsHdNw_Q&amp;timestamp=1588954866 1x" media="(min-width: 1220px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://www.ucg.org/files/styles/full_grid6/public/image/media-production/was-jesus-a-socialist-or-a-capitalist.jpg?timestamp=1588954866" alt="Beyond Today -- Was Jesus a Socialist or a Capitalist?" title="Beyond Today -- Was Jesus a Socialist or a Capitalist?" />
+</picture></a>  </div>
+    </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+
+  
+    </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
+    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-6 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <section class="block block-block block-16 block-block-16 odd" id="block-block-16">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Connect with us</h2>
+            
+    <div class="content clearfix">
+      <div class="standard-margin"><a href="https://www.ucg.org/email-subscribe"><div class="media-element-container media-image_only"><figure class="figure-one-column file file-image file-image-png view-mode-image_only  clearfix"><div class="group-ds_content">
+    <img alt="Get email updates. Stay current with the latest from ucg.org" title="Get email updates. Stay current with the latest from ucg.org" height="188" width="720" class="media-element file-image-only full-grid9" data-delta="1" src="https://www.ucg.org/files/styles/full_grid9/public/footer_button-email_updates.png" /></div>
+
+  <figcaption class="group-figcaption "></figcaption></figure></div></a></div>
+
+<div><a href="https://www.ucg.org/donate"><div class="media-element-container media-image_only"><figure class="figure-one-column file file-image file-image-png view-mode-image_only  clearfix"><div class="group-ds_content">
+    <img alt="Donate: Help spread the message to others" title="Donate: Help spread the message to others" height="188" width="720" class="media-element file-image-only full-grid9" data-delta="2" src="https://www.ucg.org/files/styles/full_grid9/public/footer_button-donate.png" /></div>
+
+  <figcaption class="group-figcaption "></figcaption></figure></div></a></div>
+    </div>
+  </div>
+</section>  </div>
+</div>  </div>
+</div><div id="zone-footer-secondary-wrapper" class="zone-wrapper zone-footer-secondary-wrapper clearfix">  
+  <div id="zone-footer-secondary" class="zone zone-footer-secondary clearfix container-12">
+    <div class="grid-3 region region-footer-sixth" id="region-footer-sixth">
+  <div class="region-inner region-footer-sixth-inner">
+    <section class="block block-menu block-menu-ucg-event-sites block-menu-menu-ucg-event-sites odd" id="block-menu-menu-ucg-event-sites">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Languages</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://www.ucg.org/node/86641">لغة العربية</a></li>
+<li class="leaf"><a href="http://www.ucghk.org">中国</a></li>
+<li class="leaf"><a href="http://www.ucg.org.za/af">Afrikaans</a></li>
+<li class="leaf"><a href="http://www.gutenachrichten.org" target="_blank">Deutsch</a></li>
+<li class="leaf"><a href="https://www.ucg.org/eastern-european-languages-estonian-lithuanian-polish-russian-romanian">Eastern European</a></li>
+<li class="leaf"><a href="https://www.ucg.org">English</a></li>
+<li class="leaf"><a href="http://espanol.ucg.org" target="_blank">Español</a></li>
+<li class="leaf"><a href="https://francais.ucg.org" target="_blank">Français</a></li>
+<li class="leaf"><a href="http://www.labuonanotizia.org" target="_blank">Italiano</a></li>
+<li class="leaf"><a href="http://www.ucgholland.nl" target="_blank">Nederlands</a></li>
+<li class="leaf"><a href="http://portugues.ucg.org" target="_blank">Português</a></li>
+<li class="leaf"><a href="http://ru.ucg.org" target="_blank">Русский</a></li>
+<li class="last leaf"><a href="https://www.ucg.org/svenska-language">Svenska</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-3 region region-footer-seventh" id="region-footer-seventh">
+  <div class="region-inner region-footer-seventh-inner">
+    <section class="block block-menu block-menu-ucg-affilate-sites block-menu-menu-ucg-affilate-sites odd" id="block-menu-menu-ucg-affilate-sites">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">International offices</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="http://www.ucg.org.au" target="_blank">Australia</a></li>
+<li class="leaf"><a href="http://www.ucg.org.uk" target="_blank">British Isles</a></li>
+<li class="leaf"><a href="http://www.ucg.ca" target="_blank">Canada</a></li>
+<li class="leaf"><a href="http://caribbean.ucg.org" target="_blank">Caribbean</a></li>
+<li class="leaf"><a href="http://www.gutenachrichten.org" target="_blank">Germany</a></li>
+<li class="leaf"><a href="http://www.chiesa-di-dio-unita.it/" target="_blank">Italy</a></li>
+<li class="leaf"><a href="http://espanol.ucg.org" target="_blank">Latin America</a></li>
+<li class="leaf"><a href="http://www.ucgholland.nl" target="_blank">Netherlands</a></li>
+<li class="leaf"><a href="http://www.ucg.org.nz" target="_blank">New Zealand</a></li>
+<li class="leaf"><a href="http://www.ucgnigeria.org" target="_blank">Nigeria</a></li>
+<li class="leaf"><a href="http://www.ucg.org.ph" target="_blank">Philippines</a></li>
+<li class="last leaf"><a href="http://www.ucg.org.za/" target="_blank">South Africa</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div><div class="grid-6 region region-footer-nineth" id="region-footer-nineth">
+  <div class="region-inner region-footer-nineth-inner">
+    <section class="block block-menu block-menu-ucg-social-media block-menu-menu-ucg-social-media odd" id="block-menu-menu-ucg-social-media">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Find us on...</h2>
+            
+    <div class="content clearfix">
+      <ul class="menu"><li class="first leaf"><a href="https://channelstore.roku.com/details/10061/beyond-today-television">Beyond Today on Roku</a></li>
+<li class="leaf"><a href="https://channelstore.roku.com/details/39789/united-church-of-god">United Church of God on Roku</a></li>
+<li class="leaf"><a href="http://www.facebook.com/UnitedChurchofGod" title="United Church of God, ia Facebook page" class="icon-facebook">Facebook</a></li>
+<li class="leaf"><a href="https://twitter.com/ucgia" title="United Church of God, ia Twitter account" class="icon-twitter">Twitter</a></li>
+<li class="leaf"><a href="https://plus.google.com/114293797634291324230/posts" title="United Church of God, ia Google+ account" class="icon-google-plus">Google+</a></li>
+<li class="last leaf"><a href="http://pinterest.com/source/ucg.org/" title="United Church of God, ia Pinterest account" class="icon-pinterest">Pinterest</a></li>
+</ul>    </div>
+  </div>
+</section>  </div>
+</div>  </div>
+</div><div id="zone-heel-wrapper" class="zone-wrapper zone-heel-wrapper clearfix">  
+  <div id="zone-heel" class="zone zone-heel clearfix container-12">
+    <div class="grid-12 region region-legal" id="region-legal">
+  <div class="region-inner region-legal-inner">
+    <div class="block block-block block-ucg-footer-legal block-41 block-block-41 odd block-without-title" id="block-block-41">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p><a href="https://ucg.org/">United Church of God</a> is a <span class="number">501</span>(c)<span class="number">3</span> organization.  <a href="https://www.ucg.org/privacy-policy">Privacy Policy</a>  <a href="https://www.ucg.org/legal">Terms&nbsp;of Use</a></p>    </div>
+  </div>
+</div>  </div>
+</div><div class="grid-12 region region-copyright" id="region-copyright">
+  <div class="region-inner region-copyright-inner">
+    <div class="block block-block block-ucg-footer-copyright block-46 block-block-46 odd block-without-title" id="block-block-46">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p>© 1995–2020 All correspondence and questions should be sent to <a href="mailto:info@ucg.org">info@ucg.org</a>. Send inquiries regarding the operation of this Web site to <a href="mailto:webmaster@ucg.org">webmaster@ucg.org</a>.</p>
+    </div>
+  </div>
+</div>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script src="https://www.ucg.org/files/advagg_js/js__Q1m4dKFPr3IzILXOGvew6KEPOmJjuK21CPWKPf1jifs__4kdN6u4jv9kT-QTQ2P7WYahrE2eQLfzPrQwMN4mzhDE___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+document.createElement( "picture" );
+</script>
+<script>
+document.createElement( "picture" );
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__TDlnYTbcIjefKc_LkJng0CIo0X2eQOCUDDV73mdzwYE__hmmCp1VKG6DfsfouPaGaGH0P8r8_u_nNdj8f9flNzsY___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://www.ucg.org/sites/all/modules/mobile_navigation/js/mobile_menu.js?qa67vz"></script>
+<script src="https://www.ucg.org/sites/all/modules/mobile_navigation/mobile_navigation.js?qa67vz"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__wJEvawYKx4BZvfdnnpyfQ4LmmOpKldPIymL7MhhwS5c__v6KGTzSgN4y1fr6DO9JRIbUfuKf0iY1C3XbaYGPG7Hg___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://use.typekit.com/gtu5vky.js"></script>
+<script>
+try{Typekit.load();}catch(e){}
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__hlHYgmrMDwn7fmp6cpA5sdb1oglA8TUz7F7ipOeODHc__2IMRfElm0G-QP_Qr5bJbHG4R7Dpt85ubddLBJxmmP5Q___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script src="https://www.ucg.org/files/advagg_js/js__Dx87WVqe4v5JxdO5NQXWuqi4N2DXrrivAJ5F7KUcBCY__qAl84FcCv2jyN22yFGS5Oc85cjd9zKX6p_cFNLGhe-M___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js" async="async"></script>
+<script>
+function euCookieComplianceLoadScripts() {}
+</script>
+<script>
+var eu_cookie_compliance_cookie_name = "";
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__pI3TsrSpMS8xjHmn9-gVz4_aCMJOZbqa4ekd2m7kpBM__nmo7i6j50wPVj0reR-Tw_2Lxf7g7tp4zpo5AllfM2qc___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+setTimeout(function(){var a=document.createElement("script"),b=document.getElementsByTagName('script')[0];a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0004/3204.js";a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)},1);
+</script>
+<script src="https://www.ucg.org/files/advagg_js/js__vvf_p_1kCJM8Mx-vPoo11g7nuR_muI9mjEk6eIIjGtA__MXIiEZU7cGApmIkcOjjhAk6mST89ycWlFa3YGtfR9TQ___dy2kzz1e1bXLzHhunqKTpGaHTRmCweKjzTNYZBtQVM.js"></script>
+<script>
+jQuery.scrollDepth({minHeight:2e3,percentage:false,userTiming:false,pixelDepth:false,elements:['#comments','#section-footer','#authors'],nonInteraction:false});
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"166a3d41e5","applicationID":"848327","transactionName":"M1dSYkVWXxJSAUZZVgodcVVDXl4PHBJTV1w7X1FYVlBUE2wMXVRcO0RZU0BoQQBUBw==","queueTime":0,"applicationTime":1357,"atts":"HxBRFA1MTBw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

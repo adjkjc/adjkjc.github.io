@@ -1,0 +1,1 @@
+H&atilde;y nh&#7853;p v&agrave;o ch&#7911; &#273;&#7873; (Subject) cho th&#432; c&#7911;a b&#7841;n. B&#7841;n <b>kh&ocirc;ng d&ugrave;ng &#273;&#432;&#7907;c h&#7897;p ch&#7913;a</b> (placeholder) trong ch&#7911; &#273;&#7873;.

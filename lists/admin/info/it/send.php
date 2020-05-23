@@ -1,0 +1,3 @@
+<p class="information">Per inviare un messaggip inserire le informazioni richieste qui sotto. Il requisito minimo per poter inviare un messaggio &egrave; completare la scheda &quot;Contenuto&quot; e quella delle &quot;liste&quot;.<br/>
+Per provare il messaggio prima di inviarlo, utilizzate la funzione "Invia prova" sulla destra.<br/>
+Per completare il messaggio ed inviarlo agli iscritti, cliccate sul tasto "Fine" e poi su quello "Invia messaggio".</p> 

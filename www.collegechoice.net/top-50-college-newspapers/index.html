@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+
+    <!-- Cohesion -->
+    <style type='text/css'>.preampjs [data-preamp], .fusejs [data-fuse] {opacity: 0 !important}</style>
+    <script>
+      !function(co,h,e,s,i,o,n){var d='documentElement';var a='className';h[d][a]+=' preampjs fusejs';
+      n.k=e;co._Cohesion=n;co._Preamp={k:s,start:new Date};co._Fuse={k:i};co._Tagular={k:o};
+      [e,s,i,o].map(function(x){co[x]=co[x]||function(){(co[x].q=co[x].q||[]).push([].slice.call(arguments))}});
+      h.addEventListener('DOMContentLoaded',function(){co.setTimeout(function(){
+      var u=h[d][a];h[d][a]=u.replace(/ ?preampjs| ?fusejs/g,'')},3e3);
+      co._Preamp.docReady=co._Fuse.docReady=!0});var z=h.createElement('script');
+      z.async=1;z.src='https://cdn.cohesionapps.com/cohesion/cohesion-latest.min.js';h.head.appendChild(z);}
+      (window,document,'cohesion','preamp','fuse','tagular',{
+        tagular: {
+          apiKey: '5cd2036c-8780-4d65-896a-fb2612c2a17d',
+          cookieDomain: 'collegechoice.net',
+          sourceKey: 'src_1NT2A3IoGXmp4Di2fzcyl8cGqLG',
+          writeKey: 'wk_1NT29ydZjLgrskXmPNGpcXdiWR7'
+        },
+        preamp: { siteId: '6ouAQsJh41uaJTgbOPBl85' }
+      })
+    </script>
+
+    <!-- HE MoD -->
+    <script>
+      (function (h,e,m,o,d) {o=e.createElement('script');d=e.getElementsByTagName('script')[0];
+      o.async=1;m=m||(h.self!==h.top?e.referrer:h.location.href);
+      o.src='https://platform.highereducation.com/mod/script.js?url='+encodeURIComponent(m);
+      d.parentNode.insertBefore(o,d);})(window,document);
+    </script>
+	
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WBJKJ95');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-4d1f7e0d68d43a3f14b",applicationID:"412076190"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <title>Top 50 College Newspapers - College Choice</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="https://www.collegechoice.net/wp-content/themes/collegechoice/css/collegechoice.min.css" as="style">
+    <link rel="preload" href="https://www.collegechoice.net/wp-content/themes/collegechoice/js/jquery.min.js" as="script">
+    <link rel="preload" href="https://www.collegechoice.net/wp-content/themes/collegechoice/js/collegechoice.js" as="script">
+    <link rel="preload" href="https://www.collegechoice.net/wp-content/themes/collegechoice/js/fusion.js" as="script">
+    <link rel="preload" href="https://www.collegechoice.net/wp-content/themes/collegechoice/js/tracking.js" as="script">
+	
+<!-- This site is optimized with the Yoast SEO plugin v13.3 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="&quot;Keeping up with the news is important, and there&#039;s no better time than to start doing this than in college. Keep reading for the best college newspapers in the country.&quot;"/>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Top 50 College Newspapers - College Choice" />
+<meta property="og:description" content="&quot;Keeping up with the news is important, and there&#039;s no better time than to start doing this than in college. Keep reading for the best college newspapers in the country.&quot;" />
+<meta property="og:url" content="https://www.collegechoice.net/top-50-college-newspapers/" />
+<meta property="og:site_name" content="College Choice" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="&quot;Keeping up with the news is important, and there&#039;s no better time than to start doing this than in college. Keep reading for the best college newspapers in the country.&quot;" />
+<meta name="twitter:title" content="Top 50 College Newspapers - College Choice" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://www.collegechoice.net/#organization","name":"College Choice","url":"https://www.collegechoice.net/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://www.collegechoice.net/#logo","inLanguage":"en-US","url":"https://www.collegechoice.net/wp-content/uploads/2016/12/College-Choice-Logo2.png","width":805,"height":176,"caption":"College Choice"},"image":{"@id":"https://www.collegechoice.net/#logo"}},{"@type":"WebSite","@id":"https://www.collegechoice.net/#website","url":"https://www.collegechoice.net/","name":"College Choice","inLanguage":"en-US","description":"Helping You Choose the Right College","publisher":{"@id":"https://www.collegechoice.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":"https://www.collegechoice.net/?s={search_term_string}","query-input":"required name=search_term_string"}]},{"@type":"WebPage","@id":"https://www.collegechoice.net/top-50-college-newspapers/#webpage","url":"https://www.collegechoice.net/top-50-college-newspapers/","name":"Top 50 College Newspapers - College Choice","isPartOf":{"@id":"https://www.collegechoice.net/#website"},"inLanguage":"en-US","datePublished":"2015-06-02T14:27:44+00:00","dateModified":"2019-08-02T22:07:01+00:00","description":"\"Keeping up with the news is important, and there's no better time than to start doing this than in college. Keep reading for the best college newspapers in the country.\"","potentialAction":[{"@type":"ReadAction","target":["https://www.collegechoice.net/top-50-college-newspapers/"]}]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='https://www.collegechoice.net/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="College Choice &raquo; Feed" href="https://www.collegechoice.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="College Choice &raquo; Comments Feed" href="https://www.collegechoice.net/comments/feed/" />
+<link rel='stylesheet' id='wp-block-library-css'  href='https://www.collegechoice.net/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css'  href='https://www.collegechoice.net/wp-content/themes/collegechoice/css/collegechoice.min.css?ver=1.1.3' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://www.collegechoice.net/wp-json/' />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.collegechoice.net/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.3.2" />
+<link rel='shortlink' href='https://www.collegechoice.net/?p=3280' />
+<link rel="alternate" type="application/json+oembed" href="https://www.collegechoice.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.collegechoice.net%2Ftop-50-college-newspapers%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.collegechoice.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.collegechoice.net%2Ftop-50-college-newspapers%2F&#038;format=xml" />
+    <link rel="apple-touch-icon" sizes="57x57"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-57x57.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="60x60"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-60x60.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="72x72"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-72x72.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="76x76"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-76x76.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="114x114"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-114x114.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="120x120"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-120x120.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="144x144"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-144x144.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="152x152"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-152x152.png?v=lkkLJPn8WE">
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/apple-touch-icon-180x180.png?v=lkkLJPn8WE">
+    <link rel="icon" type="image/png"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/favicon-32x32.png?v=lkkLJPn8WE" sizes="32x32">
+    <link rel="icon" type="image/png"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/favicon-194x194.png?v=lkkLJPn8WE" sizes="194x194">
+    <link rel="icon" type="image/png"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/favicon-96x96.png?v=lkkLJPn8WE" sizes="96x96">
+    <link rel="icon" type="image/png"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/android-chrome-192x192.png?v=lkkLJPn8WE" sizes="192x192">
+    <link rel="icon" type="image/png"
+          href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/favicon-16x16.png?v=lkkLJPn8WE" sizes="16x16">
+    <link rel="manifest" href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/manifest.json?v=lkkLJPn8WE">
+    <link rel="shortcut icon" href="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/favicon.ico?v=lkkLJPn8WE">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage"
+          content="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/mstile-144x144.png?v=lkkLJPn8WE">
+    <meta name="msapplication-config"
+          content="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icons/browserconfig.xml?v=lkkLJPn8WE">
+    <meta name="theme-color" content="#ffffff">
+<meta name="google-site-verification" content="ZAeMaeNUrG_KiOWoI7J-bR1asf3jMp4VSHZxyUXZ8uE" />
+<meta name="ahrefs-site-verification" content="e7d8757b8cf9421d9c1c0f8e471cdea5a4aa325152e9607427f7370e183c414b">
+
+    <style type="text/css">
+        /*noinspection CssUnusedSymbol*/
+        .comments-link {
+            display: none;
+        }
+    </style>
+<link rel="icon" href="https://www.collegechoice.net/wp-content/uploads/2017/10/favicon-194x194-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.collegechoice.net/wp-content/uploads/2017/10/favicon-194x194-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.collegechoice.net/wp-content/uploads/2017/10/favicon-194x194-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.collegechoice.net/wp-content/uploads/2017/10/favicon-194x194.png" />
+		<style type="text/css" id="wp-custom-css">
+			#platform-editorial-links div.css-sb4vz3 h2{
+	text-align:left;
+}
+
+		</style>
+		</head>
+
+<body class="page-template-default page page-id-3280 sidebar-version-a">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBJKJ95"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="wrapper" class="hfeed">
+
+	
+<nav class="menu-container container">
+        <div class="menu">
+            <a href="index.html#" class="menu-mobile"></a>
+			                <a class="icon hidden-md hidden-lg" data-tagular-click data-tagular-location="HEADER" data-tagular-element-type="LOGO" data-tagular-position="PRIMARY" href="https://www.collegechoice.net/" title="College Choice" rel="home">
+                    <img src="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icon-interior.png" width="228" height="50" alt="College Choice">
+                </a>
+			                    <ul>
+                        <li class="cc-icon">
+                            <a class="hidden-xs hidden-sm" data-tagular-click data-tagular-location="HEADER" data-tagular-element-type="LOGO" data-tagular-position="PRIMARY" href="https://www.collegechoice.net/" title="College Choice" rel="home">
+								                                <img class="icon-md lazyloading" src="https://www.collegechoice.net/wp-content/themes/collegechoice/img/icon-interior.png" width="160" height="35" alt="College Choice" data-was-processed="true">
+                            </a>
+                        </li>
+						                            <li class="menu-dropdown-icon">
+                                <a class="hidden-md hidden-lg" href="javascript: void(0)" target="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="RANKINGS">
+									Rankings                                </a>
+                                <a class="hidden-xs hidden-sm" href="javascript: void(0)" target="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="RANKINGS">
+									Rankings                                </a>
+								                                    <ul>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/online-college-rankings/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="ONLINE COLLEGES">
+													<div class=" image wide square"><img alt="Online Rankings" data-src="/wp-content/uploads/2017/09/Online-Rankings-60x60.png" src="//:0" class="lazyload"><div class="overlay none"></div></div>Online Colleges                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/best-online-colleges-and-universities/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="	BEST ONLINE COLLEGES AND UNIVERSITIES">
+																	Best Online Colleges and Universities                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/best-online-mba-programs/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST ONLINE MBA PROGRAMS">
+																	Best Online MBA Programs                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/best-online-msn-programs/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST ONLINE MSN PROGRAMS">
+																	Best Online MSN Programs                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/online-accounting-degrees/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST ONLINE BACHELOR'S IN ACCOUNTING">
+																	Best Online Bachelor's in Accounting                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/college-and-university-rankings/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="RESIDENTIAL COLLEGES">
+													<div class=" image square"><img alt="Education Icon" data-src="/wp-content/uploads/2017/09/Education-Icon-60x60.png" src="//:0" class="lazyload"><div class="overlay none"></div></div>Residential Colleges                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/top-undergraduate-business-schools/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST UNDERGRAD BUSINESS SCHOOLS">
+																	Best Undergrad Business Schools                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/best-engineering-degrees/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST BACHELOR'S IN ENGINEERING">
+																	Best Bachelor's in Engineering                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/masters-in-social-work/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST MASTERS IN SOCIAL WORK">
+																	Best Masters in Social Work                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/public-health-degrees/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST PUBLIC HEALTH DEGREES">
+																	Best Public Health Degrees                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/campus-life-rankings/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="COLLEGE LIFE">
+													<div class=" image wide square"><img alt="College Life Rankings" data-src="/wp-content/uploads/2017/09/College-Life-Rankings-60x60.png" src="//:0" class="lazyload"><div class="overlay none"></div></div>College Life                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/colleges-with-happiest-freshman/" target="_self"  data-tagular-text="COLLEGES WITH THE HAPPIEST FRESHMEN">
+																	Colleges with the Happiest Freshmen                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/50-best-colleges-for-summer-school/" target="_self"  data-tagular-text="BEST COLLEGES FOR SUMMER SCHOOL">
+																	Best Colleges for Summer School                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/50-of-the-most-popular-us-universities-and-colleges-for-international-students/" target="_self"  data-tagular-text="MOST POPULAR US COLLEGES FOR INTERNATIONAL">
+																	Most Popular US Colleges for International Students                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/popular-international-universities-us-students/" target="_self"  data-tagular-text="MOST POPULAR INTERNATIONAL UNIVERSITIES FOR US STUDENTS">
+																	Most Popular International Universities for US Students                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/cheapest-online-program-rankings/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="BEST VALUE">
+													<div class=" image wide square"><img alt="Most Affordable Rankings" data-src="/wp-content/uploads/2017/09/Most-Affordable-Rankings-60x60.png" src="//:0" class="lazyload"><div class="overlay none"></div></div>Best Value                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/most-affordable-online-colleges/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="MOST AFFORDABLE ONLINE COLLEGES">
+																	Most Affordable Online Colleges                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/most-affordable-online-colleges-for-a-masters-degree/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="MOST AFFORDABLE ONLINE GRAD PROGRAMS">
+																	Most Affordable Online Grad Programs                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/most-affordable-online-mba-degree-programs/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="MOST AFFORDABLE ONLINE MBA PROGRAMS">
+																	Most Affordable Online MBA Programs                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/rankings/cheapest-online-nurse-practitioner-degrees/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="MOST AFFORDABLE NURSE PRACTITIONER PROGRAMS">
+																	Most Affordable Nurse Practitioner Programs                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                    </ul>
+								                            </li>
+						                            <li class="menu-dropdown-icon">
+                                <a class="hidden-md hidden-lg" href="javascript: void(0)" target=""data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="DEGREE PROGRAMS">
+									Degree Programs                                </a>
+                                <a class="hidden-xs hidden-sm" href="javascript: void(0)" target=""data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="DEGREE PROGRAMS">
+									Degree Programs                                </a>
+								                                    <ul class="remove-no-force no-mega" style="display: none;">
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/arts-and-humanities/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Arts and Humanities Icon" data-src="/wp-content/uploads/2017/09/Arts-and-Humanities-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Arts-and-Humanities-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Arts &amp; Humanities                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/accounting/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Accounting Icon 1" data-src="/wp-content/uploads/2017/09/Accounting-Icon-1-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Accounting-Icon-1-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Accounting                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/business-management/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Business Icon" data-src="/wp-content/uploads/2017/09/Business-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Business-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Business &amp; Management                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/mba/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="MBA Icon" data-src="/wp-content/uploads/2017/09/MBA-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/MBA-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>MBA                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/computers-technology/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Computers Icon" data-src="/wp-content/uploads/2017/09/Computers-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Computers-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Computers &amp; Technology                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/counseling-and-psychology/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Counseling Icon" data-src="/wp-content/uploads/2017/09/Counseling-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Counseling-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Counseling &amp; Psychology                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/criminal-justice-law/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Criminal Justice Icon" data-src="/wp-content/uploads/2017/09/Criminal-Justice-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Criminal-Justice-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Criminal Justice &amp; Law                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/healthcare/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Healthcare Icon 1" data-src="/wp-content/uploads/2017/09/Healthcare-Icon-1-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Healthcare-Icon-1-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Healthcare                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/nursing/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Healthcare Icon" data-src="/wp-content/uploads/2017/09/Healthcare-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Healthcare-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Nursing                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/science-engineering/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Science Icon" data-src="/wp-content/uploads/2017/09/Science-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Science-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Science &amp; Engineering                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/teaching-education/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" >
+													<div class=" image square"><img alt="Education Icon" data-src="/wp-content/uploads/2017/09/Education-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Education-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Teaching &amp; Education                                                </a>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="four">
+                                                <a href="https://www.collegechoice.net/trades-careers/" target="_self" class="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY". >
+													<div class=" image square"><img alt="Trades Badge Menu Icon" data-src="/wp-content/uploads/2017/10/Trades-Badge-Menu-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/10/Trades-Badge-Menu-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>Trades &amp; Careers                                                </a>
+												                                            </li>
+										                                    </ul>
+								                            </li>
+						                            <li class="menu-dropdown-icon">
+                                <a class="hidden-md hidden-lg" href="javascript: void(0)" target="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="RESOURCES">
+									Resources                                </a>
+                                <a class="hidden-xs hidden-sm" href="javascript: void(0)" target="" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="RESOURCES">
+									Resources                                </a>
+								                                    <ul class="remove-no-force" style="display: none; opacity: 1;">
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="two">
+                                                <a href="https://www.collegechoice.net/the-advisor/" target="_self" class=" same-height" style="height: 0px;" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+													<div class=" image wide square"><img alt="The Advisor" data-src="/wp-content/uploads/2017/09/The-Advisor-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/The-Advisor-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>The Advisor: Get Into, Pay For, and Thrive In College                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/financial-aid/fafsa-application/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	The FAFSA Application: A Complete Guide to Getting Your Money                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/paying-for-college/the-fafsa-appeal/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	The FAFSA Appeal                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/thriving-in-college/how-to-write-research-paper/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	How to Write a Research Paper and Get an A+                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/the-advisor/common-app-essay/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	The Common App Essay: How To Get Into College with Less than 800 Words                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/the-advisor/introverts-guide-to-making-awesome-presentations/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	An Introvert’s Guide to Making Awesome Presentations                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/career/job-search-hacks-how-to-make-a-killer-resume-quickly/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	Job Search Hacks: How to Make a Killer Résumé Quickly                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/the-advisor/how-to-cut-your-research-time-in-half/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	How to Cut Your Research Time in Half                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="javascript: void(0)" target="_self">
+																	                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                            <!--                                                <span class="clearfix"></span>-->
+                                            <!--											-->                                            <li class="two">
+                                                <a href="index.html" target="_self" class=" same-height" style="height: 0px;" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+													<div class=" image wide square"><img alt="Guide Icon" data-src="/wp-content/uploads/2017/09/Guide-Icon-60x60.png" src="https://www.collegechoice.net/wp-content/uploads/2017/09/Guide-Icon-60x60.png" class="lazyloaded" data-was-processed="true"><div class="overlay none"></div></div>College Guides: Everything You Need to Know                                                </a>
+												                                                    <ul>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/using-college-rankings-to-choose-the-best-colleges-the-ultimate-guide/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	Using College Rankings to Choose the Best Colleges: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/using-business-school-rankings/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	Using Business School Rankings: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/college-resources-for-nursing-students-the-ultimate-guide/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	College Resources for Nursing Students: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/college-resources-for-women-students/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	College Resources for Women Students: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="index.html" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	College Resources for Students with Disabilities: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/college-resources-for-lgbt-students/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	College Resources for LGBT Students: The Ultimate Guide                                                                </a>
+                                                            </li>
+														                                                            <li>
+                                                                <a href="https://www.collegechoice.net/frequently-asked-questions/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY">
+																	FAQs                                                                </a>
+                                                            </li>
+														                                                    </ul>
+												                                            </li>
+										                                    </ul>
+								                            </li>
+						                            <li>
+                                <a class="hidden-md hidden-lg" href="https://www.collegechoice.net/methodology/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="METHODOLOGY">
+									Methodology                                </a>
+                                <a class="hidden-xs hidden-sm" href="https://www.collegechoice.net/methodology/" target="_self" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="BUTTON" data-tagular-location="NAVIGATION" data-tagular-position="SECONDARY" data-tagular-text="METHODOLOGY">
+									Methodology                                </a>
+								                            </li>
+						                        <li class="hidden-xs hidden-sm menu-dropdown-icon">
+                            <a><i class="glyphicon glyphicon-search"></i></a>
+                            <ul class="search no-force no-mega" style="display: none; opacity: 1;">
+                                <li>
+<form method="get" class="search-form" action="https://www.collegechoice.net/">
+
+	<div class="input-group">
+
+		    		<input class="form-control" type="search" value="" name="s" id="srch-term" placeholder="Search">
+
+		<!-- The button -->
+		<div class="input-group-btn">
+			<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+							</button>
+		</div>
+	</div>
+</form></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-md hidden-lg search">
+
+<form method="get" class="search-form" action="https://www.collegechoice.net/">
+
+	<div class="input-group">
+
+		    		<input class="form-control" type="search" value="" name="s" id="srch-term" placeholder="Search">
+
+		<!-- The button -->
+		<div class="input-group-btn">
+			<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+							</button>
+		</div>
+	</div>
+</form>                        </li>
+                    </ul>
+				        </div>
+    </nav>
+	
+    <div id="container" class="container ">
+        <div id="content" class="row" role="main">
+			    <div class="sidebar col-md-3">
+        <div class="float">
+            <!-- The Degree Finder -->
+			
+          <!-- sm and xs screens -->
+          <script async defer src="https://platform.highereducation.com/widgets.js?widget=quick-degree-finder&backgroundColor=%231e8eac&cta=Choose%20Now&ctaColor=%23ff7d4f&height=303&width=233&title=Degree%20Finder&titleColor=%23FFFFFF&publisher=CollegeChoice.net"></script>
+          <!-- end sm and xs screens -->
+
+        			        </div>
+    </div>
+
+	
+	
+    <div class="col-md-9">
+        <article id="post-3280" class="post-3280 page type-page status-publish hentry">
+			
+        <div class="title">
+          
+  <h1 class=" font-gray left middle">
+    Top 50 College Newspapers  </h1>
+
+        </div>
+
+                  <div class="entry-content">
+
+				<div class="modContents">
+<div class="he-mod" data-block="paragraph-1"></div>
+<p>The best college newspapers in the U.S. are those that not only cover campus events and school news, but also delve into world and philosophical issues that reflect the interest of students. As proof of the relevance of school papers, a recent survey noted that 76% of all students have read their school's student newspaper in the past 30 days. This figure tops 92% at schools that publish their paper daily M-F.</p>
+<div class="he-mod" data-block="paragraph-2"></div>
+<p>But the best papers also are "must reads" for those residents who live near campus. If you live in New Haven, you'd want to read the Yale Daily News. In Boston, the Harvard Crimson. What follows are 50 of the best college newspapers, as judged by the Princeton Review and journalismdegree.org.</p>
+<div class="he-mod" data-block="title-2"></div>
+<h2>50. The Bucknellian, Bucknell University</h2>
+<div class="he-mod" data-block="paragraph-3"></div>
+<p>The Bucknellian is the student newspaper of Bucknell University, a highly regarded, small liberal college in Central Pennsylvania. Founded in 1896, the student paper currently has a circulation of 4,500 and is one of the oldest student activities at the university.</p>
+<div class="he-mod" data-block="paragraph-4"></div>
+<p>For the latest edition, go to <a href="http://bucknellian.blogs.bucknell.edu/">http://bucknellian.blogs.bucknell.edu/</a></p>
+<div class="he-mod" data-block="title-3"></div>
+<h2>49. The Pitt News, University of Pittsburgh</h2>
+<div class="he-mod" data-block="paragraph-5"></div>
+<p>Established in 1910, the Pitt News has been the student news source for the University of Pittsburgh. They list as their circulation over 13,000 print issues a day, with readership of 9 out of 10 students.</p>
+<div class="he-mod" data-block="paragraph-6"></div>
+<p>For the latest edition, go to <a href="http://www.pittnews.com/">http://www.pittnews.com/</a></p>
+<div class="he-mod" data-block="title-4"></div>
+<h2>48. The John Hopkins News-Letter, John Hopkins University</h2>
+<div class="he-mod" data-block="paragraph-7"></div>
+<p>The John Hopkins News-Letter is an in-depth publication serving the John Hopkins University student body since 1896. Circulation is estimated around 5,200 and it is released weekly. It is one of the oldest student-run newspapers in the country.</p>
+<div class="he-mod" data-block="paragraph-8"></div>
+<p>For the latest edition, go to <a href="http://www.jhunewsletter.com/">http://www.jhunewsletter.com/</a></p>
+<div class="he-mod" data-block="title-5"></div>
+<h2>47. Iowa State Daily, Iowa State University</h2>
+<div class="he-mod" data-block="paragraph-9"></div>
+<p>The Iowa State Daily has been in print since 1890. It currently employees over 200 student writers reporting on campus news, as well as state and national news.</p>
+<div class="he-mod" data-block="paragraph-10"></div>
+<p>For the latest edition, go to <a href="http://www.iowastatedaily.com/">http://www.www.iowastatedaily.com/</a></p>
+<div class="he-mod" data-block="title-6"></div>
+<h2>46. The Minnesota Daily, University of Minnesota</h2>
+<div class="he-mod" data-block="paragraph-11"></div>
+<p>Minnesota Daily is the paper serving the University of Minnesota campus, along with the surrounding area. It is completely student-run and has been active since 1877, being renamed to its current moniker in 1900.</p>
+<div class="he-mod" data-block="paragraph-12"></div>
+<p>For the latest edition, go to <a href="http://www.mndaily.com/">http://www.mndaily.com/</a></p>
+<div class="he-mod" data-block="title-7"></div>
+<h2>45. The Commonwealth Times, Virginia Commonwealth University</h2>
+<div class="he-mod" data-block="paragraph-13"></div>
+<p>In 2011, the Society of Professional Journalists awarded the Commonwealth Times first place in Breaking News photography and awards in editorial cartooning. Print issues are distributed on campus, as well as at local businesses and restaurants.</p>
+<div class="he-mod" data-block="paragraph-14"></div>
+<p>For the latest edition, go to <a href="http://www.commonwealthtimes.org/">http://www.commonwealthtimes.org/</a></p>
+<div class="he-mod" data-block="title-8"></div>
+<h2>44. The Los Angeles Loyolan, Loyola Marymount University in Los Angeles</h2>
+<div class="he-mod" data-block="paragraph-15"></div>
+<p>The Los Angeles Loyolan has been awarded numerous accolades in recent years and is the official paper of Loyola Marymount University in Los Angeles. The paper has great coverage of news, opinions, along with dense content on arts and entertainment. They also feature a section highlighting Loyolan blogs.</p>
+<div class="he-mod" data-block="paragraph-16"></div>
+<p>For the latest edition, go to <a href="http://www.laloyolan.com.org/">http://www.laloyolan.com/</a></p>
+<div class="he-mod" data-block="title-9"></div>
+<h2>43. The Argonaut, University of Idaho</h2>
+<div class="he-mod" data-block="paragraph-17"></div>
+<p>The Argonaut is the student newspaper of the University of Idaho and provides a wealth of interesting articles, along with radio and blog sections. The student media tab also highlights the radio full color magazine that are run in conjunction with the paper.</p>
+<div class="he-mod" data-block="paragraph-18"></div>
+<p>For the latest edition, go to <a href="http://www.uiargonaut.com/">http://www.uiargonaut.com/</a></p>
+<div class="he-mod" data-block="title-10"></div>
+<h2>42. The Exponent, Purdue University</h2>
+<div class="he-mod" data-block="paragraph-19"></div>
+<p>The Exponent was founded in 1889 and has been run by students since that time. Approximately 150 students staff the paper to bring Purdue University news and opinion pieces.</p>
+<div class="he-mod" data-block="paragraph-20"></div>
+<p>For the latest edition, go to <a href="http://www.purdueexponent.org/">http://www.purdueexponent.org/</a></p>
+<div class="he-mod" data-block="title-11"></div>
+<h2>41. The Red and Black, University of Georgia</h2>
+<div class="he-mod" data-block="paragraph-21"></div>
+<p>First: a confession. This is my alma mater and I worked at this paper (which I loved doing). Background: This paper first began in 1893 as a tabloid. Jump ahead over a century: On August 15, 2011, The Red &amp; Black released a special edition announcing what it called "a media revolution." The student paper announced that it would primarily focus on its online content, to better keep up with demand for mobile news access.</p>
+<div class="he-mod" data-block="paragraph-22"></div>
+<p>The paper now publishes a three-sectioned print version, which focuses on in-depth coverage. The website contains all of the features and articles previously found in the Monday-to-Friday paper, plus audio clips, videos, and other multimedia extras.</p>
+<div class="he-mod" data-block="paragraph-23"></div>
+<p>For the latest edition, go to <a href="http://www.redandblack.com/">http://www.redandblack.com/</a></p>
+<div class="he-mod" data-block="title-12"></div>
+<h2>40. The Daily Mississippian, University of Mississippi</h2>
+<div class="he-mod" data-block="paragraph-24"></div>
+<p>The Daily Mississippian, better known as the DM, is the very cool, much read student newspaper of UM. Like many other top rated college papers, the DM is an independent student-run newspaper, and is the only college newspaper in the state that is published five times a week: Monday through Friday during the fall and spring semesters, and twice a week during the June and July summer terms.</p>
+<div class="he-mod" data-block="paragraph-25"></div>
+<p>With a daily circulation of 12,000 during fall and spring, it is one of the larger college newspapers in the country. It is also the only college newspaper in Mississippi to be a full member of the state press association, and it competes in the Mississippi Press Association's Better Newspaper Contest against professional daily newspapers. How's that for relevance?</p>
+<div class="he-mod" data-block="paragraph-26"></div>
+<p>For the latest edition, go to <a href="http://thedmonline.com/">http://thedmonline.com/</a></p>
+<div class="he-mod" data-block="title-13"></div>
+<h2>39. Washington Square News, NYU</h2>
+<div class="he-mod" data-block="paragraph-27"></div>
+<p>As a New Yorker, I keep up with the city not by always reading the Post, the News or The Times, but The Washington Square News, the daily student paper of NYU. Where better to get news about the university, Greenwich Village and the East Village?</p>
+<div class="he-mod" data-block="paragraph-28"></div>
+<p>WSN, has a circulation of 10,000 and an estimated 65,000 readers online. I'm one of those (and you should be too). It is published Monday through Thursday during the fall and spring semesters and online on Friday, with additional issues published in the summer. One more thing of note: WSN is editorially independent from the university and is solely responsible in selling advertisements to fund its production.</p>
+<div class="he-mod" data-block="paragraph-29"></div>
+<p>For the latest edition, go to <a href="http://www.nyunews.com/">http://www.nyunews.com/</a></p>
+<div class="he-mod" data-block="title-14"></div>
+<h2>38. The Kentucky Kernel, University of Kentucky</h2>
+<div class="he-mod" data-block="paragraph-30"></div>
+<p>Talk about a large collegiate (and beyond) readership. Those in love with Big Blue will flock to The Kentucky Kernel, the independent daily, student-run publication of the University of Kentucky with a circulation of 17,000 and a readership of more than 30,000.</p>
+<div class="he-mod" data-block="paragraph-31"></div>
+<p>The paper is issued during the weekdays during the spring and fall semesters and weekly during the summer term, roughly 150 days in the calendar year. It is one of the largest-circulating newspapers in Kentucky.</p>
+<div class="he-mod" data-block="paragraph-32"></div>
+<p>For the latest edition, go to <a href="http://kykernel.com/">http://kykernel.com/</a></p>
+<div class="he-mod" data-block="title-15"></div>
+<h2>37. The Daily Princetonian, Princeton University</h2>
+<div class="he-mod" data-block="paragraph-33"></div>
+<p>The Daily Princetonian, nicknamed the "Prince," (what else?) was the second college newspaper in America to publish daily. Founded in 1876 as a biweekly publication named The Princetonian, it became The Daily Princetonian in 1892.</p>
+<div class="he-mod" data-block="paragraph-34"></div>
+<p>The "Prince" has a daily print circulation of 2,000 and its website receives roughly 30,000 hits every day. The "Prince" is fully independent from Princeton University. It is directed by a graduate board of trustees, consisting of former editors and business staffers. The paper supports itself financially and does not receive financial support from the university or from alumni donations.</p>
+<div class="he-mod" data-block="paragraph-35"></div>
+<p>For the latest edition, go to <a href="https://twitter.com/princetonian">http://dailyprincetonian.com/</a></p>
+<div class="he-mod" data-block="title-16"></div>
+<h2>36. The Daily, University of Washington</h2>
+<div class="he-mod" data-block="paragraph-36"></div>
+<p>The Daily has been the newspaper for the University of Washington since 1891. Features all breaking news, sports and culture features, and includes a special sections for gaming and Greek life.</p>
+<div class="he-mod" data-block="paragraph-37"></div>
+<p>It was founded as The Pacific Wave and ran under that title until June 5, 1908. The newspaper became a daily with its September 15, 1908 issue and changed its name to The Pacific Daily Wave. This name lasted until May 21, 1909, and the paper became The University of Washington Daily when the 1909-1910 school year began. Here is something cool: In 2010, The Daily created a half-hour television companion show called The Daily's Double Shot.</p>
+<div class="he-mod" data-block="paragraph-38"></div>
+<p>For the latest edition, go to <a href="http://www.dailyuw.com/">http://www.dailyuw.com/</a></p>
+<div class="he-mod" data-block="title-17"></div>
+<h2>35. The Harvard Crimson, Harvard University</h2>
+<div class="he-mod" data-block="paragraph-39"></div>
+<p>The Harvard Crimson was founded in 1873 and includes an impressive list of past editors. The Harvard Crimson is also published every morning and is the only "breakfast-table" newspaper in Cambridge, Mass. They produce a magazine section every Thursday.</p>
+<div class="he-mod" data-block="paragraph-40"></div>
+<p>Two pretty well known former staffers were John F. Kennedy and Franklin D. Roosevelt.</p>
+<div class="he-mod" data-block="paragraph-41"></div>
+<p>For the latest edition, go to <a href="http://www.thecrimson.com/">http://www.thecrimson.com/</a></p>
+<div class="he-mod" data-block="title-18"></div>
+<h2>34. The Columbia Spectator, Columbia University</h2>
+<div class="he-mod" data-block="paragraph-42"></div>
+<p>The Columbia Daily Spectator was founded in 1877 and is one of the oldest running college newspapers in the country. Independent from the university since 1962, the paper has a circulation of about 8,000 people.</p>
+<div class="he-mod" data-block="paragraph-43"></div>
+<p>It circulates not just on campus but on areas around Columbia University, Morningside Heights, West Harlem, and beyond. The newspaper is published five days per week during the academic year, and offers news, arts, commentary, sports coverage, and photos from around campus and New York City, in conjunction with our blog, Spectrum, and our weekly arts and features magazine, The Eye. The Spectator is the second-oldest college daily paper in the country and have been financially independent from the University since 1962.</p>
+<div class="he-mod" data-block="paragraph-44"></div>
+<p>For the latest edition, go to <a href="http://columbiaspectator.com/">http://columbiaspectator.com/</a></p>
+<div class="he-mod" data-block="title-19"></div>
+<h2>33. The Michigan Daily, University of Michigan</h2>
+<div class="he-mod" data-block="paragraph-45"></div>
+<p>The Michigan Daily is the campus newspaper of the University of Michigan at Ann Arbor and was first published in 1890. The paper is printed daily during fall and winter terms and then weekly during the spring and summer.</p>
+<div class="he-mod" data-block="paragraph-46"></div>
+<p>The newspaper is financially and editorially independent of the University's administration and other student groups</p>
+<div class="he-mod" data-block="paragraph-47"></div>
+<p>For the latest edition, go to <a href="http://www.michigandaily.com/">http://www.michigandaily.com/</a></p>
+<div class="he-mod" data-block="title-20"></div>
+<h2>32. The Tech Online Edition, Massachusetts Institute of Technology</h2>
+<div class="he-mod" data-block="paragraph-48"></div>
+<p>The Tech, established in 1881, is MIT's oldest and largest newspaper, and first newspaper published on the web. Their staff consists mostly of students and faculty, but occasionally finds contributions from alumni.</p>
+<div class="he-mod" data-block="paragraph-49"></div>
+<p>The Tech publishes on Thursdays during the regular school year, on Wednesdays during the month of January, and monthly during the summer. The Tech is also financially independent of MIT; we are supported only by advertising revenues and donations.</p>
+<div class="he-mod" data-block="paragraph-50"></div>
+<p>For the latest edition, go to <a href="http://tech.mit.edu/">http://www.tech.mit.edu/</a></p>
+<div class="he-mod" data-block="title-21"></div>
+<h2>31. The Stanford Daily, Stanford University</h2>
+<div class="he-mod" data-block="paragraph-51"></div>
+<p>Since 1892, The Stanford Daily has been found on campus. A print version is published every Monday through Thursday and they publish several special issues throughout the year, including the orientation issue, Big Game issue, and commencement issue.</p>
+<div class="he-mod" data-block="paragraph-52"></div>
+<p>The paper began as a small publication known to locals as The Daily Palo Alto and has grown to its current status as one of the finest college newspapers in the country.</p>
+<div class="he-mod" data-block="paragraph-53"></div>
+<p>For the latest edition, go to <a href="http://www.stanforddaily.com/">http://www.stanforddaily.com/</a></p>
+<div class="he-mod" data-block="title-22"></div>
+<h2>30. The Daily Pennsylvanian, University of Pennsylvania</h2>
+<div class="he-mod" data-block="paragraph-54"></div>
+<p>The Daily Pennsylvanian&nbsp;is the independent student newspaper of the University of Pennsylvania. About 116 mornings each school year, Penn students, faculty and staff turn to the DP&nbsp;as their source of campus and city news and sports coverage. The DP&nbsp;exists to inform the Penn community of relevant news and opinion while providing a training vehicle for students.</p>
+<div class="he-mod" data-block="paragraph-55"></div>
+<p>First published in 1885, under the name The Pennsylvanian, the DP&nbsp;is perennially recognized as one of the top college newspapers in the country. The paper has been published daily since 1894 (except from May 1943 to November 1945, when it was not published because of World War II). In 1962, the DP&nbsp;broke away from the student government and became independent. At the same time, the paper merged with the Pennsylvania News, the university's women's newspaper. In 1984, The Daily Pennsylvanian&nbsp;became a corporation, formally completing the separation of any editorial or financial control by the University of Pennsylvania. One last note: a good friend was on staff.</p>
+<div class="he-mod" data-block="paragraph-56"></div>
+<p>For the latest edition, go to <a href="http://www.thedp.com/">http://www.thedp.com/</a></p>
+<div class="he-mod" data-block="title-23"></div>
+<h2>29. The Brown Daily Herald, Brown University</h2>
+<div class="he-mod" data-block="paragraph-57"></div>
+<p>The Brown Daily Herald is the 2nd oldest daily-published student newspaper, having been founded in 1866. Circulation is approximately 4,000 and has many notable alumnus.</p>
+<div class="he-mod" data-block="paragraph-58"></div>
+<p>For the latest edition, go to <a href="http://www.browndailyherald.com/">http://www.browndailyherald.com/</a></p>
+<div class="he-mod" data-block="title-24"></div>
+<h2>28. The Daily Trojan, University of Southern California</h2>
+<div class="he-mod" data-block="paragraph-59"></div>
+<p>The first issue of the Daily Trojan was printed in 1912. For the past 97 years, students have run and represented the news, opinions, and other features of the paper. A Los Angeles fixture, and the best place to find news about USC.</p>
+<div class="he-mod" data-block="paragraph-60"></div>
+<p>For the latest edition, go to <a href="http://www.dailytrojan.com/">http://www.dailytrojan.com/</a></p>
+<div class="he-mod" data-block="title-25"></div>
+<h2>27. The Daily Texan, University of Texas</h2>
+<div class="he-mod" data-block="paragraph-61"></div>
+<p>The Daily Texan has been serving the Austin community since 1900. Their news section includes local legislation and they have grown to include a podcast for news broadcasting as well.</p>
+<div class="he-mod" data-block="paragraph-62"></div>
+<p>Back in 1900 two privately owned weekly newspapers were distributed on campus &mdash; the Calendar and the Ranger. In 1904 the two papers were taken over by the student council and merged. In 1913, the student body voted to publish the paper each weekday, and The Daily Texan was born on September 24, 1913.</p>
+<div class="he-mod" data-block="paragraph-63"></div>
+<p>For the latest edition, go to <a href="http://www.dailytexanonline.com/">http://www.dailytexanonline.com/</a></p>
+<div class="he-mod" data-block="title-26"></div>
+<h2>26. The Daily Californian, University of California, Berkeley</h2>
+<div class="he-mod" data-block="paragraph-64"></div>
+<p>Founded in 1871, The Daily Californian is one of the oldest papers on the West Coast and one of the oldest college newspapers. It is also completely independent from the university it covers, supporting itself with ad revenue.</p>
+<div class="he-mod" data-block="paragraph-65"></div>
+<p>For the latest edition, go to <a href="http://www.dailycal.org/">http://www.dailycal.org/</a></p>
+<div class="he-mod" data-block="title-27"></div>
+<h2>25. The Chronicle, Duke University</h2>
+<div class="he-mod" data-block="paragraph-66"></div>
+<p>The Chronicle, the student-run newspaper of the Duke community, is older than Duke University itself.Students at Duke's predecessor, Trinity College, founded the newspaper in 1905, and the first issue published on Dec. 19 featured articles about a campus debate and a speech by a Charlotte businessman. The paper was created by members of the Hesperian and Columbian literary societies but eventually moved beyond those roots.</p>
+<div class="he-mod" data-block="paragraph-67"></div>
+<p>In 1968, after years of being published two or three times a week, the paper began five-day-a-week publication during the academic year. Later, in an important step toward independence, the paper stopped taking student fees. And in 1993, The Chronicle incorporated as the Duke Student Publishing Company, breaking formal ties with Duke.</p>
+<div class="he-mod" data-block="paragraph-68"></div>
+<p>For the latest edition, go to <a href="http://www.dukechronicle.com/">http://www.dukechronicle.com/</a></p>
+<div class="he-mod" data-block="title-28"></div>
+<h2>24. The Colorado Daily, University of Colorado</h2>
+<div class="he-mod" data-block="paragraph-69"></div>
+<p>Colorado Daily is reportedly the longest running free newspaper in the country and has been in print since 1892. The paper typically covers issues around the University of Colorado and has won awards for investigative journalism stemming from events at the turn of the century.</p>
+<div class="he-mod" data-block="paragraph-70"></div>
+<p>For the latest edition, go to <a href="http://www.coloradodaily.com/">http://www.coloradodaily.com/</a></p>
+<div class="he-mod" data-block="title-29"></div>
+<h2>23. The Minaret, University of Tampa</h2>
+<div class="he-mod" data-block="paragraph-71"></div>
+<p>Established in 1933, The Minaret is the independent news source for the University of Tampa and surrounding area. The newspaper won nearly 20 awards between 2007 and 2011 and publishes a weekly newspaper as well as a quarterly magazine.</p>
+<div class="he-mod" data-block="paragraph-72"></div>
+<p>For the latest edition, go to <a href="http://www.theminaretonline.com/">http://www.theminaretonline.com/</a></p>
+<div class="he-mod" data-block="title-30"></div>
+<h2>22. The Lantern, Ohio State University</h2>
+<div class="he-mod" data-block="paragraph-73"></div>
+<p>The Lantern, the esteemed student paper from The Ohio State University, has a circulation of over 15,000 and is printed daily. At the height of print, The Lantern had circulation of 28,000 with readership pushing 75,000 people.</p>
+<div class="he-mod" data-block="paragraph-74"></div>
+<p>The paper was chartered in 1881 and became an integral part of the School of Journalism in 1914. At one time in the past, it was the third largest college newspaper in the country. Student reporters, most of whom contribute through the Lantern practicum class, are not paid.</p>
+<div class="he-mod" data-block="paragraph-75"></div>
+<p>For the latest edition, go to <a href="http://www.thelantern.com/">http://www.thelantern.com/</a></p>
+<div class="he-mod" data-block="title-31"></div>
+<h2>21. The Daily Iowan, University of Iowa</h2>
+<div class="he-mod" data-block="paragraph-76"></div>
+<p>Founded in 1868 and awarded numerous National Pacemaker Awards, The Daily Iowan is a highly regarded student paper serving The University of Iowa.<br>
+George Gallup, creator of the Gallup poll, served as editor of The Daily Iowan in the early 1920s. The newspaper's publisher is William Casey, who has served in the post since 1976. He is credited with starting the newspaper's scholarship program for talented future journalists.</p>
+<div class="he-mod" data-block="paragraph-77"></div>
+<p>For the latest edition, go to <a href="http://www.dailyiowan.com/">http://www.dailyiowan.com/</a></p>
+<div class="he-mod" data-block="title-32"></div>
+<h2>20. The Dartmouth, Dartmouth College</h2>
+<div class="he-mod" data-block="paragraph-78"></div>
+<p>The Dartmouth is the student newspaper of Dartmouth College and was founded in 1799. It's the oldest student newspaper in America and is published daily, Monday through Friday during the school year and twice a week during the summer.</p>
+<div class="he-mod" data-block="paragraph-79"></div>
+<p>For the latest edition, go to <a href="https://twitter.com/thedartmouth">http://www.thedartmouth.com/</a></p>
+<div class="he-mod" data-block="title-33"></div>
+<h2>19. The Vermont Cynic, University of Vermont</h2>
+<div class="he-mod" data-block="paragraph-80"></div>
+<p>The Vermont Cynic was founded in 1883 to be an independent student voice for The University of Vermont and also provide valuable to news to the Burlington community. Editorial and business operations are run by students and it reaches over 6,000 people weekly.</p>
+<div class="he-mod" data-block="paragraph-81"></div>
+<p>For the latest edition, go to <a href="http://www.vtcynic.com/">http://www.vtcynic.com/</a></p>
+<div class="he-mod" data-block="title-34"></div>
+<h2>18. The Heights, Boston College</h2>
+<div class="he-mod" data-block="paragraph-82"></div>
+<p>The Heights is the independent student newspaper of Boston College and was established in 1919. It is printed twice a week and has been selected many times over the past decade as an ACP Pacemaker Finalist.</p>
+<div class="he-mod" data-block="paragraph-83"></div>
+<p>The Heights&nbsp;has been&nbsp;both editorially and financially independent from the University since 1971.&nbsp;The Heights&nbsp;serves the students, faculty, and staff of the Boston College community, as well as our neighbors in Chestnut Hill, Newton, and the Allston-Brighton area.</p>
+<div class="he-mod" data-block="paragraph-84"></div>
+<p>The Heights&nbsp;is is printed on Mondays and Thursdays throughout the academic year. All print-edition content is posted at www.bcheights.com; the website is also updated with online-only and breaking stories throughout the week.</p>
+<div class="he-mod" data-block="paragraph-85"></div>
+<p>For the latest edition, go to <a href="http://www.bcheights.com/">http://www.bcheights.com/</a></p>
+<div class="he-mod" data-block="title-35"></div>
+<h2>17. The Hilltop, Howard University</h2>
+<div class="he-mod" data-block="paragraph-86"></div>
+<p>The Hilltop was co-founded by acclaimed author and Howard alumna Zora Neale Hurston. Hurston never actually wrote for the newspaper, but provided guidance for student journalists.</p>
+<div class="he-mod" data-block="paragraph-87"></div>
+<p>The first issue of The Hilltop was published January 22, 1924. The front page of the first issue covered a timeless and sensitive Howard issue: registration follies. The paper was brief, chronicling events that took place the semester before, and touching on a few upcoming campus events.<br>
+By 1929, the newspaper was published bi-monthly. A year later, in 1930, The Hilltop became a weekly newspaper and remained so for 71 years. Within that time, the paper progressed steadily as a forum for African American writers to hone their journalistic skills.</p>
+<div class="he-mod" data-block="paragraph-88"></div>
+<p>For the latest edition, go to <a href="http://www.thehilltoponline.com/">http://www.thehilltoponline.com/</a></p>
+<div class="he-mod" data-block="title-36"></div>
+<h2>16. The Bona Venture, St. Bonaventure University</h2>
+<div class="he-mod" data-block="paragraph-89"></div>
+<p>The Bona Venture has been reporting campus news since 1926. They are committed to open and honest perspectives and providing stories "you won't find anywhere else."</p>
+<div class="he-mod" data-block="paragraph-90"></div>
+<p>For the latest edition, go to <a href="http://www.thebvnewspaper.com/">http://www.thebvnewspaper.com/</a></p>
+<div class="he-mod" data-block="title-37"></div>
+<h2>15. The Wagnerian, Wagner College</h2>
+<div class="he-mod" data-block="paragraph-91"></div>
+<p>The Wagnerian publishes an issue&nbsp;every two weeks &ndash; about six issues per semester. Aside from the standard six issues, we also publish a "Campus Guide" at the beginning of the fall semester and a "Commencement Issue" at the close of the academic year in May.</p>
+<div class="he-mod" data-block="paragraph-92"></div>
+<p>The Wagnerian focuses primarily on Wagner students, addressing their issues and concerns. It is The Wagnerian's mission to serve, inform, listen, and entertain, and to encourage a free exchange of ideas. Stories in The Wagnerian help Wagner students make useful decisions that will enhance the quality of their lives. The paper's news-gathering process and presentation is balanced, thorough, sensitive, and accurate. We offer our readers information they can find nowhere else.</p>
+<div class="he-mod" data-block="paragraph-93"></div>
+<p>There are five&nbsp;different sections in The Wagnerian, including: Campus News, Opinions, Life &amp; Style, Arts and Entertainment, and Sports. We also integrate elements of creative page design on our back page, known as "The Slice of Life."</p>
+<div class="he-mod" data-block="paragraph-94"></div>
+<p>For the latest edition, go to <a href="http://wagner.edu/english/the-wagnerian/">http://wagner.edu/english/the-wagnerian/</a></p>
+<div class="he-mod" data-block="title-38"></div>
+<h2>14. The Daily Gamecock, University of South Carolina</h2>
+<div class="he-mod" data-block="paragraph-95"></div>
+<p>The Daily Gamecock was founded in 1908 and is an editorially independent newspaper that serves the University of South Carolina.<br>
+The newspaper is renowned for quality content and in 2011 was featured by the Princeton Review as a "Top 20 School Newspaper."</p>
+<div class="he-mod" data-block="paragraph-96"></div>
+<p>For the latest edition, go to <a href="http://www.dailygamecock.com/">http://www.dailygamecock.com/</a></p>
+<div class="he-mod" data-block="title-39"></div>
+<h2>13. The Independent Florida Alligator, University of Florida</h2>
+<div class="he-mod" data-block="paragraph-97"></div>
+<p>The Alligator was founded in 1906 as The University News, which was an independent, student-owned newspaper created to serve the University of Florida when it opened in Gainesville. In 1912, the newspaper became a part of the University of Florida administration, and was renamed the Florida Alligator.</p>
+<div class="he-mod" data-block="paragraph-98"></div>
+<p>For the latest edition, go to <a href="http://www.alligator.org/">http://www.alligator.org/</a></p>
+<div class="he-mod" data-block="paragraph-99"></div>
+<p>h2&gt;12. The Daily Kansan, University of Kansas</p>
+<div class="he-mod" data-block="paragraph-100"></div>
+<p>The University Daily Kansan is an editorially and financially independent student paper serving the University of Kansas. It was founded in 1904. Its distribution is currently only within the university's campus. It is published daily during the spring and fall semesters and weekly during the summer months. Its circulation is about 12,000.The Kansan also includes a weekly lifestyle magazine named Jayplay.</p>
+<div class="he-mod" data-block="paragraph-101"></div>
+<p>Its online counterpart, Kansan.com, began operation on the Web in Fall 1996. Originally called the UDKi (for interactive) it adopted the naming convention of its parent publication three years later.</p>
+<div class="he-mod" data-block="paragraph-102"></div>
+<p>For the latest edition, go to <a href="http://www.kansan.com/">http://www.kansan.com/</a></p>
+<div class="he-mod" data-block="title-40"></div>
+<h2>11-10 (tie) The Daily Cardinal, University of Wisconsin, Madison</h2>
+<div class="he-mod" data-block="paragraph-103"></div>
+<p>In print since 1892, the Daily Cardinal has been a source of news for the University of Wisconsin-Madison students. From the tragic and personal news of a student death to the national opinion coverage of gun control, the Daily Cardinal reports on it.</p>
+<div class="he-mod" data-block="paragraph-104"></div>
+<p>For the latest edition, go to <a href="http://host.madison.com/daily-cardinal/">http://host.madison.com/daily-cardinal/</a></p>
+<div class="he-mod" data-block="title-41"></div>
+<h2>10-11 (tie The Badger Herald, University of Wisconsin, Madison</h2>
+<div class="he-mod" data-block="paragraph-105"></div>
+<p>The Badger Herald was founded in 1969 by a group of four students seeking a conservative alternative to the UW&ndash;Madison's primary student newspaper, The Daily Cardinal, which editorialized against the Vietnam Ware and had close ties to leaders of the radical campus protest movement.</p>
+<div class="he-mod" data-block="paragraph-106"></div>
+<p>The Daily Cardinal would later become more moderate in response to pressure from local media, the UW Board of Regents, staff members leaving, declining advertising revenue, and the radicalism of the 1960s and early 1970s dying down around the country.</p>
+<div class="he-mod" data-block="paragraph-107"></div>
+<p>For the latest edition, go to <a href="https://badgerherald.com/">https://badgerherald.com/</a></p>
+<div class="he-mod" data-block="title-42"></div>
+<h2>9. The Daily Tar Heel, University of North Carolina, Chapel Hill</h2>
+<div class="he-mod" data-block="paragraph-108"></div>
+<p>Launched in 1893, The Daily Tar Heel noq circulates 18,000 free copies to more than 200 distribution locations throughout campus and in the surrounding community &ndash; Chapel Hill, Carrboro and Durham. Its estimated print readership of 38,000 makes it the largest community newspaper in Orange County.</p>
+<div class="he-mod" data-block="paragraph-109"></div>
+<p>The student journalists are solely responsible for all content under the direction of the student editor-in-chief. The 2014-16 editor is Jenny Surane. A new editor is selected each spring and serves for one year.</p>
+<div class="he-mod" data-block="paragraph-110"></div>
+<p>For the latest edition, go to <a href="http://www.dailytarheel.com/"> http://www.dailytarheel.com/</a></p>
+<div class="he-mod" data-block="title-43"></div>
+<h2>8. The Daily Athenaeum, West Virginia University</h2>
+<div class="he-mod" data-block="paragraph-111"></div>
+<p>The Daily Athenaeum is West Virginia University's award winning daily newspaper. For 127 years, The Daily Athenaeum has been the voice of the Mountaineers. It is published Monday-Friday and is the 11th largest circulation newspaper in the state of West Virginia.</p>
+<div class="he-mod" data-block="paragraph-112"></div>
+<p>This newspaper is staffed entirely by students with supervision from a set of six full-time staff employees.</p>
+<div class="he-mod" data-block="paragraph-113"></div>
+<p>For the latest edition, go to <a href="http://www.thedaonline.com/">http://www.thedaonline.com/</a></p>
+<div class="he-mod" data-block="title-44"></div>
+<h2>7. The Tufts Daily, Tufts University</h2>
+<div class="he-mod" data-block="paragraph-114"></div>
+<p>The Tufts Daily, known on campus simply as The Daily, was first published on February 25, 1980. The paper covers news, arts and sports both on campus and in the Boston area and allows members of the Tufts community to submit op-ed pieces about any campus or global issue.</p>
+<div class="he-mod" data-block="paragraph-115"></div>
+<p>Unlike other student organizations and publications at Tufts, the Daily is financially self-sustaining, and does not receive funding from the student activities fee. During the Daily's first two decades, it was engaged in competition with a weekly campus newspaper, the Tufts Observer. The two newspapers co-existed until 2001, when the Observer changed to a biweekly newsmagazine format.</p>
+<div class="he-mod" data-block="paragraph-116"></div>
+<p>For the latest edition, go to <a href="https://twitter.com/tuftsdaily">http://tuftsdaily.com/</a></p>
+<div class="he-mod" data-block="title-45"></div>
+<h2>6. The Daily Collegian, Penn State University</h2>
+<div class="he-mod" data-block="paragraph-117"></div>
+<p>Forgive my prejudice, but half the writers I know either worked at the Daily Pennsylvanian (U. of Penn) or The Daily Collegian, a student-operated newspaper that is published independently at Penn State University. The newspaper is printed on weekdays during the Fall, Spring, and second Summer semesters. It is distributed for free on campus. As of 2010, the off-campus cost for a copy of the newspaper is 30 cents.</p>
+<div class="he-mod" data-block="paragraph-118"></div>
+<p>The mission statement of Collegian Inc. is "to publish a quality campus newspaper and to provide a rewarding educational experience for the student staff members."</p>
+<div class="he-mod" data-block="paragraph-119"></div>
+<p>For the latest edition, go to <a href="http://www.collegian.psu.edu/">http://www.collegian.psu.edu/</a></p>
+<div class="he-mod" data-block="title-46"></div>
+<h2>5. The Maroon, Loyola University New Orleans</h2>
+<div class="he-mod" data-block="paragraph-120"></div>
+<p>Since 1923, the publications of the Loyola Student Media have worked to serve "A Greater Loyola." That was the mission laid out by founding editor Harold A Dempsey, and that is the goal of the student journalists who work long hours and late nights producing The Maroon, The Wolf, The Maroon Minute and The Maroon Online.</p>
+<div class="he-mod" data-block="paragraph-121"></div>
+<p>Student-run, student-produced and student-managed, the publications within the Loyola Student Media serve both as a community news outlet for Loyola University, and as a learning laboratory for aspiring young media professionals.</p>
+<div class="he-mod" data-block="paragraph-122"></div>
+<p>For the latest edition, go to <a href="http://www.loyolamaroon.com/">http://www.loyolamaroon.com/</a></p>
+<div class="he-mod" data-block="title-47"></div>
+<h2>4. The Daily Bruin, University of California, Los Angeles (UCLA)</h2>
+<div class="he-mod" data-block="paragraph-123"></div>
+<p>A great college newspaper. When classes are in session, the Bruin is published Monday through Friday during the school year, twice a week during finals week, and once a week on Mondays in the summer quarter. The Bruin's staff also publishes Prime, a quarterly lifestyle magazine.</p>
+<div class="he-mod" data-block="paragraph-124"></div>
+<p>The DB is overseen by the ASUCLA Communications Board, which sets policies for the newspaper and other campus communications media. The Daily Bruin editorial team has 13 editorial departments: news writing, sports writing, arts &amp; entertainment writing, opinion writing, news radio, graphics reporting, blogging, online development, video journalism, copy editing, photojournalism, page design, and cartoon and illustration.</p>
+<div class="he-mod" data-block="paragraph-125"></div>
+<p>For the latest edition, go to <a href="http://dailybruin.com/">http://dailybruin.com/</a></p>
+<div class="he-mod" data-block="title-48"></div>
+<h2>3. The Cornell Daily Sun, Cornell University</h2>
+<div class="he-mod" data-block="paragraph-126"></div>
+<p>The Cornell Daily Sun was founded in 1880 and is independent from the university. Kurt Vonnegut was the associate editor in 1944 and the paper is published Monday through Friday.</p>
+<div class="he-mod" data-block="paragraph-127"></div>
+<p>For the latest edition, go to <a href="http://www.cornellsun.com/">http://cornellsun.com/</a></p>
+<div class="he-mod" data-block="title-49"></div>
+<h2>2. The Daily Orange, Syracuse University</h2>
+<div class="he-mod" data-block="paragraph-128"></div>
+<p>A fertile ground for some of the best journalists in America. This newspaper began in 1903 and went independent in 1971. They have a readerships of 20,000 and publish 117 issues a year.</p>
+<div class="he-mod" data-block="paragraph-129"></div>
+<p>For the latest edition, go to <a href="http://dailyorange.com/">http://dailyorange.com/</a></p>
+<div class="he-mod" data-block="title-50"></div>
+<h2>1. The Yale Daily News, Yale University</h2>
+<div class="he-mod" data-block="paragraph-130"></div>
+<p>Founded January 28, 1878, the Yale Daily News is the nation's oldest college daily newspaper. The News now publishes Monday through Friday during the academic year and serves the communities of Yale University and New Haven, Connecticut. In addition to the daily newspaper, the News publishes WEEKEND, a Friday supplement with reviews and articles about arts and culture, and Sports Monday, a Monday section providing expanded, in-depth sports coverage. The News also publishes several&nbsp;special-occasion&nbsp;issues every year, including the Parent's Weekend issue, the Harvard-Yale Game issue, the Freshman issue and the Commencement issue. The News is produced by a very dedicated, all-volunteer undergraduate staff. Most reporters are freshmen and sophomores, while the editorial board is mainly comprised of juniors.</p>
+<div class="he-mod" data-block="paragraph-131"></div>
+<p>The News is the primary division of the Yale Daily News Publishing Co., which is headed by the News' editor in chief and its publisher. In addition to the daily newspaper, the YDN Publishing Co. produces the monthly&nbsp;Yale Daily News Magazine&nbsp;and the Insider's Guide to the Colleges.</p>
+<div class="he-mod" data-block="paragraph-132"></div>
+<p>For the latest edition, go to <a href="http://www.yaledailynews.com/">http://www.yaledailynews.com/</a></p>
+</div>
+
+            </div>
+
+        </article>
+    </div>
+<div class="clear"></div><!-- Ensures a new break -->
+</div><!-- End <div id="content"> -->
+<div class="he-mod" data-block="footer-1"></div>
+</div><!-- End <div id="container"> -->
+</div><!-- End <div id="wrapper" class="hfeed"> -->
+
+<footer>
+    <!-- Main Menu -->
+    <div class="container">
+        <div class="row">
+
+            <div class="utility-menu col-md-9">
+                <div class="menu-footer-menu-container">
+                    <ul id="menu-footer-menu" class="menu">
+                        <li><a href="https://www.collegechoice.net/" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="FOOTER" data-tagular-position="PRIMARY" data-tagular-text="HOME">Home</a></li>
+                        <li><a href="https://www.collegechoice.net/about/" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="FOOTER" data-tagular-position="PRIMARY" data-tagular-text="ABOUT">About</a></li>
+                        <li><a href="https://www.collegechoice.net/contact/" data-tagular-click data-tagular-action-outcome="INTERNALLINK" data-tagular-element-type="LINK" data-tagular-location="FOOTER" data-tagular-position="PRIMARY" data-tagular-text="CONTACT">Contact</a></li>
+                        <li><a href="https://www.collegechoice.net/advertising-policy/#advertising-disclosure">Advertising Disclosure</a></li>
+                        <li><a href="https://www.collegechoice.net/advertising-policy/">Advertise With Us</a></li>
+                        <li><a href="https://www.collegechoice.net/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://privacyportal-cdn.onetrust.com/dsarwebform/79ba7c84-ebc2-4740-8d11-bf1cc4501e59/141ca0b6-1661-411c-8e7b-71f355d5fb79.html">Do Not Sell My Info</a></li>
+</ul></div>                <ul class="sitemap">
+                    <li>
+                        <a href="https://www.collegechoice.net/sitemap/" target="_blank">Sitemap html</a>/<a href="https://www.collegechoice.net/sitemap.xml" target="_blank">xml</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search row">
+			
+<form method="get" class="search-form" action="https://www.collegechoice.net/">
+	
+	<div class="input-group">
+		
+		    		<input class="form-control" type="search" value="" name="s" id="srch-term" placeholder="Search" >
+        		
+		<!-- The button -->
+		<div class="input-group-btn">
+			<button class="btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+							</button>
+		</div>
+	</div>
+</form>        </div>
+        <div class="copyright row">
+			&copy;2020 College Choice. All Rights Reserved.        </div>
+    </div>
+</footer>
+
+<script type='text/javascript' src='https://www.collegechoice.net/wp-content/themes/collegechoice/js/jquery.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='https://www.collegechoice.net/wp-content/themes/collegechoice/js/collegechoice.js?ver=2.9'></script>
+<script type='text/javascript' src='https://www.collegechoice.net/wp-content/themes/collegechoice/js/fusion.js?ver=2.9'></script>
+<script type='text/javascript' src='https://www.collegechoice.net/wp-content/themes/collegechoice/js/tracking.js?ver=2.9'></script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-4d1f7e0d68d43a3f14b","applicationID":"412076190","transactionName":"b1VTbUtQWUEFWhALWlYfcFpNWFhcS0oNDFJNXFBL","queueTime":0,"applicationTime":351,"atts":"QxJQGwNKSk8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>

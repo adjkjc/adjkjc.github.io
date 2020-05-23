@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"4e1491d54a",applicationID:"4585251"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>This Mourner&#039;s Kaddish Is Set to Adele&#039;s &#039;Hello&#039; And It&#039;s Perfect &ndash; Kveller</title>
+		<meta property='fb:app_id' content='203899556292840' />
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">	<link rel="shortcut icon" href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/favicon.ico">
+	<link rel="apple-touch-icon" href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/kv-touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/kv-touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/kv-touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/kv-touch-icon-ipad-retina.png">
+
+	<!--[if IE]>
+		<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />	<![endif]-->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>	<![endif]-->
+
+		<script
+		type="text/javascript"
+		async="async"
+		data-sumo-site-id="04574f690d9fbcb40debae8588afaae5e909a645fbfdfe99cd9fbea6d6109980"
+		src="https://load.sumome.com/"
+	></script>
+	
+	<!-- Quantcast Tag, part 1 -->
+	<script type="text/javascript">
+		var _qevents = _qevents || [];
+		(function() {
+			var elem = document.createElement('script');
+			elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+			elem.async = true;
+			elem.type = "text/javascript";
+			var scpt = document.getElementsByTagName('script')[0];
+			scpt.parentNode.insertBefore(elem, scpt);
+		})();
+	</script>
+
+	<!-- Facebook Conversion Code for Registrations - Kveller 1newsletter -->
+	<script>
+		(function() {
+			var _fbq = window._fbq || (window._fbq = []);
+			if (!_fbq.loaded) {
+			var fbds = document.createElement('script');
+			fbds.async = true;
+			fbds.src = '//connect.facebook.net/en_US/fbds.js';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(fbds, s);
+			_fbq.loaded = true;
+			}
+		})();
+		window._fbq = window._fbq || [];
+		window._fbq.push(['track', '6025404685424', {'value':'0.00','currency':'USD'}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6025404685424&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" /></noscript>
+
+	
+<!-- This site is optimized with the Yoast SEO plugin v12.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+<link rel="canonical" href="index.html" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="This Mourner&#039;s Kaddish Is Set to Adele&#039;s &#039;Hello&#039; And It&#039;s Perfect &ndash; Kveller" />
+<meta property="og:description" content="We&#8217;ve all lost someone important to us, and it&#8217;s one of the hardest, yet most universal, experiences in life. Of course, the best thing we can do is support each other and never let anyone deal with loss alone. And naturally, that&#8217;s the entire point of reciting kaddish&#8211;it forces mourners to join others. READ: Mayim Bialik: &hellip;" />
+<meta property="og:url" content="https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/" />
+<meta property="og:site_name" content="Kveller" />
+<meta property="article:publisher" content="https://www.facebook.com/kvellercom" />
+<meta property="article:tag" content="death" />
+<meta property="article:tag" content="grieving" />
+<meta property="article:tag" content="loss" />
+<meta property="article:tag" content="mourning" />
+<meta property="article:tag" content="Music" />
+<meta property="article:tag" content="Video" />
+<meta property="article:section" content="Uncategorized" />
+<meta property="article:published_time" content="2016-02-09T15:33:56+00:00" />
+<meta property="article:modified_time" content="2016-02-09T15:50:27+00:00" />
+<meta property="og:updated_time" content="2016-02-09T15:50:27+00:00" />
+<meta property="og:image" content="https://www.kveller.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-09-at-3.49.39-PM-1024x530.png" />
+<meta property="og:image:secure_url" content="https://www.kveller.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-09-at-3.49.39-PM-1024x530.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="530" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="We&#8217;ve all lost someone important to us, and it&#8217;s one of the hardest, yet most universal, experiences in life. Of course, the best thing we can do is support each other and never let anyone deal with loss alone. And naturally, that&#8217;s the entire point of reciting kaddish&#8211;it forces mourners to join others. READ: Mayim Bialik: [&hellip;]" />
+<meta name="twitter:title" content="This Mourner&#039;s Kaddish Is Set to Adele&#039;s &#039;Hello&#039; And It&#039;s Perfect &ndash; Kveller" />
+<meta name="twitter:site" content="@kveller" />
+<meta name="twitter:image" content="https://www.kveller.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-09-at-3.49.39-PM.png" />
+<meta name="twitter:creator" content="@kveller" />
+<script type='application/ld+json' class='yoast-schema-graph yoast-schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.kveller.com/#website","url":"https://www.kveller.com/","name":"Kveller","potentialAction":{"@type":"SearchAction","target":"https://www.kveller.com/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"ImageObject","@id":"https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/#primaryimage","url":"https://www.kveller.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-09-at-3.49.39-PM.png","width":2336,"height":1210,"caption":"Adele"},{"@type":"WebPage","@id":"https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/#webpage","url":"https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/","inLanguage":"en-US","name":"This Mourner&#039;s Kaddish Is Set to Adele&#039;s &#039;Hello&#039; And It&#039;s Perfect &ndash; Kveller","isPartOf":{"@id":"https://www.kveller.com/#website"},"primaryImageOfPage":{"@id":"https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/#primaryimage"},"datePublished":"2016-02-09T15:33:56+00:00","dateModified":"2016-02-09T15:50:27+00:00","author":{"@id":"https://www.kveller.com/#/schema/person/f9b196a148aacc68a8989b564f05db97"}},{"@type":["Person"],"@id":"https://www.kveller.com/#/schema/person/f9b196a148aacc68a8989b564f05db97","name":"Joanna Valente","image":{"@type":"ImageObject","@id":"https://www.kveller.com/#authorlogo","url":"https://secure.gravatar.com/avatar/0d6762f86cc8238e938ade46acd72e06?s=96&d=mm&r=g","caption":"Joanna Valente"},"sameAs":[]}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='https://www.kveller.com/' />
+<link rel='dns-prefetch' href='https://s0.wp.com/' />
+<link rel='dns-prefetch' href='https://secure.gravatar.com/' />
+<link rel='dns-prefetch' href='https://connect.facebook.net/' />
+<link rel='dns-prefetch' href='https://maxcdn.bootstrapcdn.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.kveller.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.4"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.kveller.com/wp-includes/css/dist/block-library/style.min.css?ver=5.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-parsely-style-css'  href='https://www.kveller.com/wp-content/plugins/wp-parsely/wp-parsely.css?ver=1590127455' type='text/css' media='all' />
+<link rel='stylesheet' id='kveller-print-css'  href='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/css/print.min.css?ver=0.14' type='text/css' media='print' />
+<link rel='stylesheet' id='kveller-css'  href='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/css/screen.min.css?ver=0.14' type='text/css' media='screen' />
+<link crossorigin="anonymous" rel='stylesheet' id='font-awesome-css-css'  href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='elasticpress-autosuggest-css'  href='https://www.kveller.com/wp-content/plugins/elasticpress/dist/css/autosuggest-styles.min.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='https://www.kveller.com/wp-content/plugins/jetpack/css/jetpack.css?ver=7.9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.kveller.com/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://www.kveller.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/plugins/jetpack/_inc/build/related-posts/related-posts.min.js?ver=20191011'></script>
+<link rel='https://api.w.org/' href='https://www.kveller.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.kveller.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.kveller.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.4" />
+<link rel='shortlink' href='https://wp.me/p5AeLe-8ON' />
+<link rel="alternate" type="application/json+oembed" href="https://www.kveller.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.kveller.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F&#038;format=xml" />
+
+<!-- BEGIN wp-parsely Plugin Version 2.0 -->
+<meta name="wp-parsely_version" id="wp-parsely_version" content="2.0"/>
+			<script type="application/ld+json">
+		{"@context":"http:\/\/schema.org","@type":"NewsArticle","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/www.kveller.com\/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect\/"},"headline":"This Mourner&#8217;s Kaddish Is Set to Adele&#8217;s &#8216;Hello&#8217; And It&#8217;s Perfect","url":"http:\/\/www.kveller.com\/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect\/","thumbnailUrl":"https:\/\/www.kveller.com\/wp-content\/uploads\/2016\/02\/Screen-Shot-2016-02-09-at-3.49.39-PM-150x150.png","image":{"@type":"ImageObject","url":"https:\/\/www.kveller.com\/wp-content\/uploads\/2016\/02\/Screen-Shot-2016-02-09-at-3.49.39-PM-150x150.png"},"dateCreated":"2016-02-09T20:33:56Z","datePublished":"2016-02-09T20:33:56Z","dateModified":"2016-02-09T20:33:56Z","articleSection":"Uncategorized","author":[{"@type":"Person","name":"Joanna C. Valente"}],"creator":["Joanna C. Valente"],"keywords":["death","grieving","loss","mourning","music","video"],"publisher":{"@type":"Organization","name":"Kveller","logo":{"@type":"ImageObject","url":"https:\/\/www.kveller.com\/wp-content\/themes\/kveller\/assets\/images\/kveller-logo.png"}}}
+		</script>
+
+			<!-- END wp-parsely Plugin Version 2.0 -->
+<style type='text/css'>img#wpstats{display:none}</style>
+<script>
+	dataLayer = [{"canonicalURL":"https:\/\/www.kveller.com\/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect\/","postId":"33901","pageType":"post","pageSlug":"this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect","publishDate":"20160209","cat":"uncategorized","subcat":"","category":"uncategorized","categoryId":"1","postTag":"death,grieving,loss,mourning,music,video","postTagId":"1637,2919,3680,1798,1478,2036","author":"joanna-valente","authorId":"24792"}];
+</script>
+
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+	var gads = document.createElement("script");
+	gads.async = true;
+	gads.type = "text/javascript";
+	var useSSL = "https:" == document.location.protocol;
+	gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+	var node = document.getElementsByTagName("script")[0];
+	node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+			<script>
+				// Load the apstag.js library.
+				!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r]);}a[a9]={init:function(){q('i',arguments);},fetchBids:function(){q('f',arguments);},setDisplayBids:function(){},targetingKeys:function(){return[];},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g);}('apstag',window,document,'script','//c.amazon-adsystem.com/aax2/apstag.js');
+			</script>
+
+			<script>
+				var KvellerAds = {
+					headerBiddingSlots: [],
+					adPartners: [],
+					biddingEndEventsList: [],
+					adServerRequestSent: false,
+					addHeaderBiddingSlot: function(gptSlot) {
+						this.headerBiddingSlots.push(gptSlot);
+
+						if ( gptSlot.getAdUnitPath ) {
+							console.log( 'Header Bidding: called addHeaderBiddingSlot() for ' + gptSlot.getAdUnitPath() );
+						} else {
+							console.log( 'Header Bidding: called addHeaderBiddingSlot()' );
+						}
+
+						// If DFP has been called already, just refresh the ad.
+						if(this.adServerRequestSent) {
+							var googletag = googletag || {};
+							googletag.cmd = googletag.cmd || [];
+							googletag.pubads().refresh([gptSlot]);
+						}
+					},
+					addBiddingPartner: function(adPartner) {
+						this.adPartners.push(adPartner);
+						console.log('Header Bidding: Added bidding partner', adPartner);
+
+					},
+					maybeSendAdserverRequest: function() {
+						console.log('Header Bidding: called maybeSendAdserverRequest()');
+						if(this.adPartners.length === 2) {
+							var KvellerHeaderBiddingSlots = this.headerBiddingSlots || [];
+							var googletag = window.googletag || {};
+							googletag.cmd = googletag.cmd || [];
+
+							if(pbjs){
+								pbjs.setTargetingForGPTAsync();
+								console.log('Header Bidding: called setTargetingForGPTAsync()');
+							}
+
+							if(apstag){
+								apstag.setDisplayBids();
+								console.log('Header Bidding: called setDisplayBid()');
+							}
+
+							// Refresh these slots.
+							if(KvellerHeaderBiddingSlots.length > 0 && 'undefined' !== typeof googletag.pubads) {
+								googletag.pubads().refresh(KvellerHeaderBiddingSlots);
+								this.adServerRequestSent = true;
+
+								// Trigger event callbacks once bidding is done.
+								this.biddingEndEventsList.forEach(function(event){
+									event.call(this);
+								});
+
+								return true;
+							}
+						}
+
+						return false;
+					},
+					biddingEndEvents: function(callbackFunc) {
+						this.biddingEndEventsList.push(callbackFunc);
+					}
+				};
+			</script>
+		
+<script>
+var winWidth = Math.max(
+	window.innerWidth || 0,
+	document.documentElement.clientWidth
+);
+var kv_screen_width = winWidth < 728 ? 'mobile' : 'desktop';
+var gptAdSlots = gptAdSlots || {};
+
+googletag.cmd.push(function() {
+	// Leaderboard mapping
+	var leaderMapping = googletag.sizeMapping()
+		.addSize( [ 0, 0 ], [ 320, 100 ] )
+		.addSize( [ 768, 200 ], [ 728, 90 ] )
+		.addSize( [ 1050, 200 ], [ [ 728, 90 ], [ 970, 250 ], [ 970, 90 ] ] )
+		.build();
+
+	// Box mapping
+	var boxMapping = googletag.sizeMapping()
+		.addSize( [ 0, 0 ], [ 300, 250 ] )
+		.addSize( [ 768, 200 ], [ [ 300, 250 ], [ 300, 600 ] ] )
+		.addSize( [ 1050, 200 ], [ [ 300, 250 ], [ 300, 600 ] ] )
+		.build();
+
+	var incontentBoxMapping = googletag.sizeMapping()
+		.addSize( [ 0, 0 ], [ 300, 250 ] )
+		.addSize( [ 768, 200 ], [] )
+		.addSize( [ 1050, 200 ], [] )
+		.build();
+
+	// Slots
+			gptAdSlots['leaderboard_top'] = googletag
+			.defineSlot( '/1052128/Kveller_leader', [ [ 728, 90 ], [ 970, 90 ], [ 970, 250 ], [ 320, 100 ] ], 'dfp-ad-leaderboard-1' )
+			.setTargeting( 'pos', [ '1' ] )
+			.defineSizeMapping( leaderMapping )
+			.addService( googletag.pubads() );
+
+		KvellerAds.addHeaderBiddingSlot( gptAdSlots['leaderboard_top'] );
+	
+	gptAdSlots['box_1'] = googletag
+		.defineSlot( '/1052128/Kveller_box', [ [ 300, 250 ], [ 300, 600 ] ], 'dfp-ad-box-1' )
+		.setTargeting( 'pos', [ '1' ] )
+		.defineSizeMapping( boxMapping )
+		.addService( googletag.pubads() );
+
+	KvellerAds.addHeaderBiddingSlot( gptAdSlots['box_1'] );
+
+	// Sticky Ad, reloads every 60s.
+	gptAdSlots['box_2'] = googletag
+		.defineSlot( '/1052128/Kveller_box', [ [ 300, 250 ], [ 300, 600 ] ], 'dfp-ad-box-2' )
+		.setTargeting( 'pos', [ '2' ] )
+		.defineSizeMapping( boxMapping )
+		.addService( googletag.pubads() );
+
+	KvellerAds.addHeaderBiddingSlot( gptAdSlots['box_2'] );
+
+	
+		if ( ! window.matchMedia('(min-width: 1050px)').matches) {
+
+			gptAdSlots['box_4'] = googletag
+				.defineSlot( '/1052128/Kveller_box', [ [ 300, 250 ] ], 'dfp-ad-box-4' )
+				.setTargeting( 'pos', [ '1' ] )
+				.defineSizeMapping( incontentBoxMapping )
+				.addService( googletag.pubads() );
+
+			KvellerAds.addHeaderBiddingSlot( gptAdSlots['box_4'] );
+
+			gptAdSlots['box_5'] = googletag
+				.defineSlot( '/1052128/Kveller_box', [ [ 300, 250 ] ], 'dfp-ad-box-5' )
+				.setTargeting( 'pos', [ '2' ] )
+				.defineSizeMapping( incontentBoxMapping )
+				.addService( googletag.pubads() );
+
+			KvellerAds.addHeaderBiddingSlot( gptAdSlots['box_5'] );
+		}
+
+		gptAdSlots['textad'] = googletag.defineSlot('/1052128/Kveller_textad', ['fluid'], 'Kveller_textad').addService(googletag.pubads());
+
+					gptAdSlots['teads'] = googletag.defineSlot('/1052128/Kveller_teads', [1, 1], 'teads').addService(googletag.pubads());
+			
+	googletag.pubads().setTargeting("canonicalURL", "https:\/\/www.kveller.com\/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect\/");
+googletag.pubads().setTargeting("postId", "33901");
+googletag.pubads().setTargeting("pageType", "post");
+googletag.pubads().setTargeting("pageSlug", "this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect");
+googletag.pubads().setTargeting("publishDate", "20160209");
+googletag.pubads().setTargeting("cat", ["uncategorized"]);
+googletag.pubads().setTargeting("subcat", []);
+googletag.pubads().setTargeting("category", ["uncategorized"]);
+googletag.pubads().setTargeting("categoryId", ["1"]);
+googletag.pubads().setTargeting("postTag", ["death","grieving","loss","mourning","music","video"]);
+googletag.pubads().setTargeting("postTagId", ["1637","2919","3680","1798","1478","2036"]);
+googletag.pubads().setTargeting("author", ["joanna-valente"]);
+googletag.pubads().setTargeting("authorId", ["24792"]);
+
+	googletag.pubads().set("adsense_background_color", "FFFFFF");
+	googletag.pubads().collapseEmptyDivs();
+	googletag.pubads().enableSingleRequest();
+	googletag.pubads().disableInitialLoad();
+	googletag.enableServices();
+});
+</script>
+	<!-- Hotjar Tracking Code for https://www.kveller.com -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1185343,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+	<link rel="amphtml" href="https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/amp/"><link rel="icon" href="https://www.kveller.com/wp-content/uploads/2014/12/cropped-Kveller_Mark_orng_cranb-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.kveller.com/wp-content/uploads/2014/12/cropped-Kveller_Mark_orng_cranb-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://www.kveller.com/wp-content/uploads/2014/12/cropped-Kveller_Mark_orng_cranb-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.kveller.com/wp-content/uploads/2014/12/cropped-Kveller_Mark_orng_cranb-270x270.png" />
+</head>
+
+<body class="post-template-default single single-post postid-33901 single-format-standard">
+
+			<!-- Google Tag Manager -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMC595"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NMC595');</script>
+		<!-- End Google Tag Manager -->
+	
+	
+<div class="m-disclaimer" id="gdpr-popup" style="display:none;">
+	<div class="container">
+		<div class="m-disclaimer__content">
+			We use cookies to improve your experience on our site and bring you ads that might interest you.
+			<br/>Read our <a href="https://www.kveller.com/article/privacy-policy/">Privacy Policy</a> to find out more.
+		</div>
+		<button type="button" class="m-disclaimer__button" id="gdpr-popup-close">
+			<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.274.604l1.98 1.98L1.94 19.898l-1.98-1.98L17.274.604zm1.98 17.28l-1.98 1.98L-.04 2.55 1.94.57l17.314 17.314z" fill-rule="nonzero"/></svg>
+		</button>
+	</div>
+</div>
+
+	<div class="k-menu__access">
+		<a href="index.html#main">Skip to Content</a>
+		<a href="index.html#footer">Skip to Footer</a>
+	</div>
+	<!--/ k-menu__access-->
+
+	<div id="fb-root"></div>
+	<div id="mobile-menu">
+		<div class="mobile-menu-container">
+			<button id="menu-close">
+				<svg role="presentation" class="kveller-icon menu-close-btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="close"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#close" /></svg>				<span class="screen-reader-text">Close Menu</span>
+			</button>
+			<div class="mobile-menu-search">
+				<form action="https://www.kveller.com/">
+					<label for="mobile-menu-search-input" class="screen-reader-text">Search</label>
+					<input type="text" name="s" id="mobile-menu-search-input" class="mobile-menu-seach-input" placeholder="Search" aria-label="Search">
+					<button aria-label="Submit">
+						<svg role="presentation" class="kveller-icon kveller-icon-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="search"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#search" /></svg>					</button>
+				</form>
+			</div>
+			<div class="mobile-menu-wrapper">
+				<ul id="menu-main-menu" class="list-inline pull-left"><li id="menu-item-75256" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75256"><a href="https://www.kveller.com/tag/jewish-culture/">Jewish Culture</a></li>
+<li id="menu-item-75257" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75257"><a href="https://www.kveller.com/tag/motherhood/">Motherhood</a></li>
+<li id="menu-item-75258" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75258"><a href="https://www.kveller.com/tag/news/">News</a></li>
+<li id="menu-item-75259" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75259"><a href="https://www.kveller.com/tag/self/">Self</a></li>
+<li id="menu-item-75260" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75260"><a href="https://www.kveller.com/tag/pregnancy/">Pregnancy</a></li>
+<li id="menu-item-75261" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75261"><a href="https://www.kveller.com/jewish-baby-name-finder/">Baby Names</a></li>
+<li id="menu-item-75262" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75262"><a href="https://www.kveller.com/tag/holidays/">Holidays</a></li>
+<li id="menu-item-75263" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75263"><a href="https://www.kveller.com/tag/politics/">Politics</a></li>
+<li id="menu-item-75269" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75269"><a href="https://www.kveller.com/tag/work/">Work</a></li>
+<li id="menu-item-75270" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75270"><a href="https://www.kveller.com/call-your-mother/">Podcast</a></li>
+<li id="menu-item-75271" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75271"><a href="https://video.kveller.com/">Video</a></li>
+<li id="menu-item-75272" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75272"><a href="https://www.kveller.com/signup/">Sign Up</a></li>
+</ul>			</div>
+			<div class="mobile-menu-wrapper-bottom">
+							</div>
+			<div class="mobile-menu-social">
+				<ul class="list-inline">
+																<li>
+							<a href="https://www.facebook.com/kvellercom" target="_blank" rel="noopener noreferrer">
+								<svg role="presentation" class="kveller-icon kveller-icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="facebook"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#facebook" /></svg>								<span class="screen-reader-text">facebook</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://twitter.com/kveller" target="_blank" rel="noopener noreferrer">
+								<svg role="presentation" class="kveller-icon kveller-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="twitter"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#twitter" /></svg>								<span class="screen-reader-text">twitter</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.instagram.com/kvellercom/" target="_blank" rel="noopener noreferrer">
+								<svg role="presentation" class="kveller-icon kveller-icon-instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="instagram"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#instagram" /></svg>								<span class="screen-reader-text">instagram</span>
+							</a>
+						</li>
+											<li>
+							<a href="https://www.youtube.com/user/kvellercom" target="_blank" rel="noopener noreferrer">
+								<svg role="presentation" class="kveller-icon kveller-icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="youtube"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#youtube" /></svg>								<span class="screen-reader-text">youtube</span>
+							</a>
+						</li>
+									</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<header role="banner" id="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+			<div id="header-wrapper">
+
+				<div class="container">
+					<div class="header-top-bar">
+	<ul id="top-menu-left" class="top-menu -left"><li id="menu-item-81133" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81133"><a href="http://jta.org">Jewish Telegraphic Agency</a></li>
+<li id="menu-item-81134" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81134"><a href="https://myjewishlearning.com">My Jewish Learning</a></li>
+</ul>
+	<a class="top-menu-logo" href="https://www.kveller.com/">
+		<span class="header-top-bar__logo">
+			<svg role="presentation" class="kveller-icon kveller-icon-70fm-logo-colour" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="70fm-logo-colour"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#70fm-logo-colour" /></svg>			<svg role="presentation" class="kveller-icon kveller-icon-70fm-logo-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="70fm-logo-white"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#70fm-logo-white" /></svg>		</span>
+		<span class="screen-reader-text">Kveller</span>
+	</a>
+
+<ul id="top-menu-right" class="top-menu -right"><li id="menu-item-81130" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-81130"><a href="https://www.kveller.com/">Kveller</a></li>
+<li id="menu-item-81131" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81131"><a href="https://www.heyalma.com/">Alma</a></li>
+<li id="menu-item-81132" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-81132"><a href="https://www.myjewishlearning.com/the-nosher/">The Nosher</a></li>
+</ul>
+</div>
+				</div>
+
+				<div class="stick-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-5 col-xs-3 col-logo">
+								<a href="https://www.kveller.com/">
+									<svg role="presentation" class="kveller-icon logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="kveller-logo"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#kveller-logo" /></svg>									<span class="screen-reader-text">Kveller</span>
+								</a>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-7 col-xs-9 col-hb">
+								<div id="nav-middle">
+									<ul class="list-inline pull-right">
+																					<li>
+												<a href="https://www.facebook.com/kvellercom" target="_blank" rel="noopener noreferrer">
+													<svg role="presentation" class="kveller-icon kveller-icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="facebook"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#facebook" /></svg>													<span class="screen-reader-text">facebook</span>
+												</a>
+											</li>
+																					<li>
+												<a href="https://twitter.com/kveller" target="_blank" rel="noopener noreferrer">
+													<svg role="presentation" class="kveller-icon kveller-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="twitter"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#twitter" /></svg>													<span class="screen-reader-text">twitter</span>
+												</a>
+											</li>
+																					<li>
+												<a href="https://www.instagram.com/kvellercom/" target="_blank" rel="noopener noreferrer">
+													<svg role="presentation" class="kveller-icon kveller-icon-instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="instagram"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#instagram" /></svg>													<span class="screen-reader-text">instagram</span>
+												</a>
+											</li>
+																					<li>
+												<a href="https://www.youtube.com/user/kvellercom" target="_blank" rel="noopener noreferrer">
+													<svg role="presentation" class="kveller-icon kveller-icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="youtube"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#youtube" /></svg>													<span class="screen-reader-text">youtube</span>
+												</a>
+											</li>
+																				<li><a href="https://www.kveller.com/signup/"><svg role="presentation" class="kveller-icon kveller-icon-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="email"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#email" /></svg> <span class="screen-reader-text">Join Kveller</span></a></li>
+									</ul>
+								</div>
+								<div class="nav-wrapper desktop">
+									<div id="nav-bottom">
+										<ul id="menu-primary-v2" class="list-inline pull-left"><li id="menu-item-75175" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75175"><a href="https://www.kveller.com/tag/jewish-culture/">Jewish Culture</a></li>
+<li id="menu-item-75176" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75176"><a href="https://www.kveller.com/tag/motherhood/">Motherhood</a></li>
+<li id="menu-item-75177" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75177"><a href="https://www.kveller.com/tag/news/">News</a></li>
+<li id="menu-item-75178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75178"><a href="https://www.kveller.com/tag/self/">Self</a></li>
+<li id="menu-item-75179" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75179"><a href="https://www.kveller.com/tag/pregnancy/">Pregnancy</a></li>
+<li id="menu-item-75180" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75180"><a href="https://www.kveller.com/jewish-baby-name-finder/">Baby Names</a></li>
+</ul>										<ul class="list-inline pull-left">
+											<li>
+												<form class="main-nav-search-form" action="https://www.kveller.com/search" method="get" role="search">
+													<label for="main-nav-search-input" class="screen-reader-text">Search</label>
+													<input class="main-nav-search-input" id="main-nav-search-input" type="search" name="q" data-default="90" placeholder="Search" />
+												</form>
+											</li>
+										</ul>
+										<button class="pull-right search-wrapper" aria-expanded="false"><svg role="presentation" class="kveller-icon kveller-icon-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="search"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#search" /></svg> <span class="screen-reader-text">Search</span></button>
+									</div>
+								</div>
+								<div class="mobile-nav tablet pull-right nav-button">
+									<button id="mobile-nav-button" aria-expanded="false"><svg role="presentation" class="kveller-icon kveller-icon-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="menu"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#menu" /></svg> <span class="screen-reader-text">Menu</span></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				<div class="header-bottom">
+		
+			<div id="dfp-ad-leaderboard-1" class="ad-box header">
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+
+			var displayAd = true;
+
+			if ( window.matchMedia('(min-width: 1050px)').matches && ( 'dfp-ad-box-4' === 'dfp-ad-leaderboard-1' || 'dfp-ad-box-5' === 'dfp-ad-leaderboard-1' ) ) {
+				displayAd = false;
+			}
+
+			if ( displayAd ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'dfp-ad-leaderboard-1' );
+				} );
+			}
+		}
+	</script>
+</div>
+
+			</div>
+		</header>
+
+		<main id="main" class="main-container">
+			<div class="container">
+		<div class="page-wrapper">
+		<div class="row">
+											<div class="col-lg-8 col-md-8 col-sm-8 left-col main-content-col article">
+	<div class="article-page-wrapper" itemscope="" itemtype="http://schema.org/BlogPosting">
+		<div class="article-header-wrapper">
+						<h1 class="article-title" itemprop="name headline">This Mourner&#8217;s Kaddish Is Set to Adele&#8217;s &#8216;Hello&#8217; And It&#8217;s Perfect</h1>
+					<script>
+			window.dataLayer = window.dataLayer || [];
+			dataLayer.push({
+				'author'   : 'Joanna C. Valente',
+				'date'     : 'Tuesday February 9,2016',
+				'category' : '',
+				'post_type': 'post'
+			});
+		</script>
+						<div class="author-byline">
+					<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+						<span class="author-name">
+							By <a href="https://www.kveller.com/author/joanna-valente/" itemprop="name">Joanna C. Valente</a>						</span>
+					</span>
+										<span class="time"><time datetime="2016-02-09T15:33:56-04:00" itemprop="datePublished">Feb 9, 2016</time></span>
+									</div>
+			
+			<aside class="shares">
+				<div class="share-buttons">
+					<div class="primary-shares">
+						<a class="social-share facebook uppercase" href="http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F" target="_blank"><svg role="presentation" class="kveller-icon kveller-icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="facebook"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#facebook" /></svg>Share</a>
+						<a class="social-share twitter no-link uppercase" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F&#038;text=This+Mourner%E2%80%99s+Kaddish+Is+Set+to+Adele%E2%80%99s+%E2%80%98Hello%E2%80%99+And+It%E2%80%99s+Perfect&#038;tw_p=tweetbutton&#038;url=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F&#038;via=kveller"><svg role="presentation" class="kveller-icon kveller-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="twitter"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#twitter" /></svg>Tweet</a>
+					</div>
+					<div class="secondary-shares">
+						<a href="mailto:?subject=Check%20out%20this%20article%20from%20Kveller.com&#038;body=This%20Mourner%26%238217%3Bs%20Kaddish%20Is%20Set%20to%20Adele%26%238217%3Bs%20%26%238216%3BHello%26%238217%3B%20And%20It%26%238217%3Bs%20Perfect%20-%20https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F"><i class="icn icn-email"></i></a>
+						<a href="javascript:window.print();"><i class="icn icn-print"></i></a>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<div class="article-img-wrapper" itemprop='image' itemscope itemtype='http://schema.org/ImageObject'>
+			
+	<div class="">
+		<img src="https://www.kveller.com/wp-content/uploads/2016/02/Screen-Shot-2016-02-09-at-3.49.39-PM-1200x622.png" alt="Adele" class="img-responsive full-width" />
+	</div>
+
+		</div>
+		<div id="article-share-left" class="article-share-left">
+			<ul class="pull-left">
+				<li><a class="social-share facebook uppercase" href="http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F" target="_blank" aria-label="Share via Facebook"><svg role="presentation" class="kveller-icon kveller-icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="facebook"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#facebook" /></svg></a></li>
+				<li><a class="social-share twitter no-link uppercase" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F&#038;text=This+Mourner%E2%80%99s+Kaddish+Is+Set+to+Adele%E2%80%99s+%E2%80%98Hello%E2%80%99+And+It%E2%80%99s+Perfect&#038;tw_p=tweetbutton&#038;url=https%3A%2F%2Fwww.kveller.com%2Fthis-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect%2F&#038;via=kveller" aria-label="Share via Twitter"><svg role="presentation" class="kveller-icon kveller-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="twitter"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#twitter" /></svg></a></li>
+				<li><a href="mailto:?subject=Check%20out%20this%20article%20from%20Kveller.com&#038;body=This%20Mourner&#8217;s%20Kaddish%20Is%20Set%20to%20Adele&#8217;s%20&#8216;Hello&#8217;%20And%20It&#8217;s%20Perfect%20%2d%20https://www.kveller.com/this-mourners-kaddish-is-set-to-adeles-hello-and-its-perfect/" aria-label="Share via Email"><svg role="presentation" class="kveller-icon kveller-icon-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="email"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#email" /></svg></a></li>
+			</ul>
+		</div>
+		<div id="article-body-wrapper" class="article-body-wrapper" itemprop="articleBody">
+
+			
+			<p>We&#8217;ve all lost someone important to us, and it&#8217;s one of the hardest, yet most universal, experiences in life. Of course, the best thing we can do is support each other and never let anyone deal with loss alone. And naturally, that&#8217;s the entire point of reciting <em><a href="http://www.myjewishlearning.com/article/kaddish-a-memorial-prayer-in-praise-of-god/" target="_blank">kaddish</a></em>&#8211;it forces mourners to join others.</p>
+<p><strong><a href="https://www.kveller.com/mayim-bialik-navigating-life-as-a-mourner/" target="_blank">READ: Mayim Bialik: Navigating Life as a Mourner</a></strong></p>
+<p>But even ancient prayers need a makeover every once in a while. <a href="https://www.youtube.com/channel/UCg7R7molHC1DyirFIObyRLg" target="_blank">Nili Isenberg</a> brilliantly set the <a href="http://www.myjewishlearning.com/article/the-kaddish-prayer/" target="_blank">Mourner&#8217;s Kaddish</a> to the tune of Adele&#8217;s &#8220;Hello.&#8221; Listen to the song below, and pass it on to anyone who may be grieving (or is just a big fan of Jewish prayers and Adele):</p>
+<div class="video-container"><iframe width="500" height="281" src="https://www.youtube.com/embed/XjV08jdkK7I?feature=oembed" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+			
+			
+<div class="container--content">
+	<div id="Kveller_textad">
+		<script>
+			if ( typeof googletag !== 'undefined' ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'Kveller_textad' );
+					googletag.pubads().refresh( [ gptAdSlots['textad'] ] );
+				} );
+			}
+		</script>
+	</div><!--/#Kveller_textad-->
+</div><!--/.container--content-->
+
+			
+<!-- /1052128/Kveller_teads -->
+<div id='teads' style='height:1px; width:1px;'>
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+			googletag.cmd.push( function() { 
+				googletag.display( 'teads' ); 
+				googletag.pubads().refresh( [ gptAdSlots['teads'] ] ); 
+			} );
+		}
+	</script>
+</div>
+			<div id="ad-content-mobile" class="ad-box ad-mobile content">
+				<div id="dfp-ad-box-4" class="">
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+
+			var displayAd = true;
+
+			if ( window.matchMedia('(min-width: 1050px)').matches && ( 'dfp-ad-box-4' === 'dfp-ad-box-4' || 'dfp-ad-box-5' === 'dfp-ad-box-4' ) ) {
+				displayAd = false;
+			}
+
+			if ( displayAd ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'dfp-ad-box-4' );
+				} );
+			}
+		}
+	</script>
+</div>
+			</div>
+		</div> <!-- article body wrapper -->
+
+		<div class="ad-box ad-mobile footer">
+			<div id="dfp-ad-box-5" class="">
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+
+			var displayAd = true;
+
+			if ( window.matchMedia('(min-width: 1050px)').matches && ( 'dfp-ad-box-4' === 'dfp-ad-box-5' || 'dfp-ad-box-5' === 'dfp-ad-box-5' ) ) {
+				displayAd = false;
+			}
+
+			if ( displayAd ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'dfp-ad-box-5' );
+				} );
+			}
+		}
+	</script>
+</div>
+		</div>
+
+		
+<div class="must-read">
+	<h2 class="must-read-header"><div class="underline">The Latest</div></h2>
+	<div class="cards__wrapper">
+											
+<article class="article-card">
+	<div class="article-card__image-wrapper">
+		
+	<div class="kveller__image-wrapper">
+		<img src="https://www.kveller.com/wp-content/uploads/2020/05/tvshowshulu-670x448.jpg" alt="tvshowshulu" class="article-card__image img-responsive" />
+	</div>
+
+	</div>
+	<div class="article-card__content">
+		<a href="https://www.kveller.com/tag/television/" class="type--slug article-card__category" alt="View all posts in Television">Television</a>		<h3 class="article-card__title"><a href="https://www.kveller.com/best-jewish-tv-shows-hulu/" class="article-card__link">The Best Jewish TV Shows to Watch on Hulu</a></h3>
+					<a class="article-card__author" href="https://www.kveller.com/author/lior-zaltzman/">Lior Zaltzman</a>
+			</div>
+</article>
+														
+<article class="article-card">
+	<div class="article-card__image-wrapper">
+		
+	<div class="kveller__image-wrapper">
+		<img src="https://www.kveller.com/wp-content/uploads/2020/05/berlantin1-670x448.jpg" alt="Greg Berlanti and Family at Shabbat celebration" class="article-card__image img-responsive" />
+	</div>
+
+	</div>
+	<div class="article-card__content">
+		<a href="https://www.kveller.com/tag/television/" class="type--slug article-card__category" alt="View all posts in Television">Television</a>		<h3 class="article-card__title"><a href="https://www.kveller.com/greg-berlanti-kids-jewish-even-if-he-isnt/" class="article-card__link">This Popular TV Producer Is Raising His Kids Jewish Even Though He&#8217;s Not</a></h3>
+					<a class="article-card__author" href="https://www.kveller.com/author/lior-zaltzman/">Lior Zaltzman</a>
+			</div>
+</article>
+														
+<article class="article-card">
+	<div class="article-card__image-wrapper">
+		
+	<div class="kveller__image-wrapper">
+		<img src="https://www.kveller.com/wp-content/uploads/2020/05/better-things-670x448.jpg" alt="better things" class="article-card__image img-responsive" />
+	</div>
+
+	</div>
+	<div class="article-card__content">
+		<a href="https://www.kveller.com/tag/motherhood/" class="type--slug article-card__category" alt="View all posts in motherhood">motherhood</a>		<h3 class="article-card__title"><a href="https://www.kveller.com/better-things-is-the-perfect-show-for-moms-during-lockdown/" class="article-card__link">&#8216;Better Things&#8217; Is The Perfect Show for Moms During Lockdown</a></h3>
+					<a class="article-card__author" href="https://www.kveller.com/author/rebecca-bodenheimer/">Rebecca Bodenheimer</a>
+			</div>
+</article>
+														</div>
+</div>
+
+	</div> <!-- article page wrapper -->
+</div> <!-- left col -->
+						<div class="col-lg-4 col-md-4 col-sm-4 col-right">
+	<div class="right-column">
+					<div id="dfp-ad-box-1" class="ad-box sidebar">
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+
+			var displayAd = true;
+
+			if ( window.matchMedia('(min-width: 1050px)').matches && ( 'dfp-ad-box-4' === 'dfp-ad-box-1' || 'dfp-ad-box-5' === 'dfp-ad-box-1' ) ) {
+				displayAd = false;
+			}
+
+			if ( displayAd ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'dfp-ad-box-1' );
+				} );
+			}
+		}
+	</script>
+</div>
+		
+					
+	<div class="sidebar-box">
+		<div class="box-header"><div class="underline">Most Popular</div></div>
+		<div class="box-content">
+												<div class="sidebar-item">
+													<img src="https://www.kveller.com/wp-content/uploads/2020/05/carole-295x187.jpg" class="sidebar-item__image img-responsive img-module" alt="jewish celebrities" />
+												<div class="sidebar-item__content">
+							<a href="https://www.kveller.com/tag/jewish-celebrities/" class="sidebar-item__category type--slug" alt="View all posts in jewish celebrities">jewish celebrities</a>							<h2 class="title-small"><a href="https://www.kveller.com/carole-kings-pandemic-performances-from-home-are-beautiful/" class="sidebar-item__link">Carole King&#039;s Pandemic Performances From Home Are Beautiful</a></h2>
+						</div>
+					</div>
+																<div class="sidebar-item">
+													<img src="https://www.kveller.com/wp-content/uploads/2020/05/yiddishcovid4-295x187.jpg" class="sidebar-item__image img-responsive img-module" alt="jewish culture" />
+												<div class="sidebar-item__content">
+							<a href="https://www.kveller.com/tag/jewish-culture/" class="sidebar-item__category type--slug" alt="View all posts in jewish culture">jewish culture</a>							<h2 class="title-small"><a href="https://www.kveller.com/these-10-yiddish-words-will-get-you-through-quarantine/" class="sidebar-item__link">These 10 Yiddish Words Will Get You Through Quarantine</a></h2>
+						</div>
+					</div>
+																<div class="sidebar-item">
+													<img src="https://www.kveller.com/wp-content/uploads/2018/04/Screen-Shot-2018-04-26-at-3.22.35-PM-295x187.png" class="sidebar-item__image img-responsive img-module" alt="jewish celebrities" />
+												<div class="sidebar-item__content">
+							<a href="https://www.kveller.com/tag/jewish-celebrities/" class="sidebar-item__category type--slug" alt="View all posts in jewish celebrities">jewish celebrities</a>							<h2 class="title-small"><a href="https://www.kveller.com/23-things-you-dont-know-about-jewish-icon-sammy-davis-jr/" class="sidebar-item__link">21 Things You Don&#039;t Know About Jewish Icon Sammy Davis, Jr.</a></h2>
+						</div>
+					</div>
+																<div class="sidebar-item">
+													<img src="https://www.kveller.com/wp-content/uploads/2020/05/brisket6-295x187.jpg" class="sidebar-item__image img-responsive img-module" alt="recipe" />
+												<div class="sidebar-item__content">
+							<a href="https://www.kveller.com/tag/recipe/" class="sidebar-item__category type--slug" alt="View all posts in recipe">recipe</a>							<h2 class="title-small"><a href="https://www.kveller.com/you-too-can-make-midge-maisels-marvelous-brisket/" class="sidebar-item__link">You, Too, Can Make Midge Maisel&#039;s Marvelous Brisket</a></h2>
+						</div>
+					</div>
+																<div class="sidebar-item">
+													<img src="https://www.kveller.com/wp-content/uploads/2020/05/hamilton1-295x187.jpg" class="sidebar-item__image img-responsive img-module" alt="Movies" />
+												<div class="sidebar-item__content">
+							<a href="https://www.kveller.com/tag/movies/" class="sidebar-item__category type--slug" alt="View all posts in Movies">Movies</a>							<h2 class="title-small"><a href="https://www.kveller.com/13-jewish-facts-about-hamilton-that-will-make-you-smile/" class="sidebar-item__link">13 Jewish Facts About &#039;Hamilton&#039; That Will Make You Smile</a></h2>
+						</div>
+					</div>
+									</div>
+	</div>
+
+					
+					<div id="dfp-ad-box-2" class="ad-box sidebar stickyad">
+	<script>
+		if ( typeof googletag !== 'undefined' ) {
+
+			var displayAd = true;
+
+			if ( window.matchMedia('(min-width: 1050px)').matches && ( 'dfp-ad-box-4' === 'dfp-ad-box-2' || 'dfp-ad-box-5' === 'dfp-ad-box-2' ) ) {
+				displayAd = false;
+			}
+
+			if ( displayAd ) {
+				googletag.cmd.push( function() {
+					googletag.display( 'dfp-ad-box-2' );
+				} );
+			}
+		}
+	</script>
+</div>
+			</div> <!-- end right column-->
+</div> <!-- end col-right -->
+		</div>
+	</div>
+			</div> <!-- container -->
+
+			<footer id="footer" role="contentinfo">
+				<div class="newsletter-footer">
+					<div class="container">
+						<div class="newsletter-logo"><svg role="presentation" class="kveller-icon kveller-icon-k-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="k-logo"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#k-logo" /></svg></div>
+												<p class="inbox-header">Get Kveller in your Inbox</p>
+						<div class="footer-email">
+							<form action="https://www.kveller.com/signup/" method="post" target="_blank">
+								<input type="text" class="form-control" placeholder="First Name" name="first_name" aria-label="First Name">
+								<input type="email" class="form-control" placeholder="Email Address" name="email" aria-label="Email Address">
+								<button type="submit" class="btn btn-link pink uppercase" name="commit">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer-wrapper">
+					<div class="container footer-inner">
+						<div class="footer-col-1">
+							<h6 class="footer-header">Get To Know Us</h6><ul id="menu-get-to-know-us" class=""><li id="menu-item-75139" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75139"><a href="https://www.kveller.com/about-kveller/">About Kveller</a></li>
+<li id="menu-item-75146" class="menu-item menu-item-type-post_type menu-item-object-evergreen menu-item-75146"><a href="https://www.kveller.com/article/submission-guidelines/">Write for Kveller</a></li>
+<li id="menu-item-75147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75147"><a href="https://www.kveller.com/call-your-mother/">Call Your Mother Podcast</a></li>
+<li id="menu-item-75149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75149"><a href="https://www.kveller.com/kvell-locally/">Local Communities</a></li>
+</ul>							<a href="https://70facesmedia.networkforgood.com/projects/43564-kveller-donation" class="footer-donate-button -desktop">Donate</a>
+						</div>
+						<div class="footer-col-2">
+							<h6 class="footer-header">Jewish Parenting Tips</h6><ul id="menu-jewish-parenting-tips" class=""><li id="menu-item-75150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75150"><a href="https://www.kveller.com/jewish-baby-name-finder/">Jewish Baby Names</a></li>
+<li id="menu-item-75151" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75151"><a href="https://www.kveller.com/jewish-baby-name-finder/">Hebrew Baby Names</a></li>
+<li id="menu-item-75153" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-75153"><a href="https://www.kveller.com/no-one-prepared-me-for-my-sons-bris/">What Happens at a Bris</a></li>
+<li id="menu-item-75154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-75154"><a href="https://www.kveller.com/7-hacks-to-make-shabbat-in-the-summer-easier/">Shabbat Dinner with Kids</a></li>
+<li id="menu-item-75155" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-75155"><a href="https://www.kveller.com/13-jewish-grandparent-names-that-are-due-for-a-comeback/">Jewish Grandparent Names</a></li>
+</ul>						</div>
+						<div class="footer-col-2">
+							<h6 class="footer-header">More Topics</h6><ul id="menu-more-topics" class=""><li id="menu-item-75156" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-75156"><a href="https://www.kveller.com/the-best-and-worst-parts-of-being-a-stepmom/">Being a Stepmom</a></li>
+<li id="menu-item-75361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75361"><a href="https://www.kveller.com/tag/jewish-celebrities/">Jewish Celebrity Moms</a></li>
+<li id="menu-item-75158" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75158"><a href="https://www.kveller.com/tag/holidays/">Holidays</a></li>
+<li id="menu-item-75159" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75159"><a href="https://www.kveller.com/tag/guides">Kveller Guides</a></li>
+<li id="menu-item-75161" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75161"><a href="https://video.kveller.com/">Jewish Parenting Videos</a></li>
+</ul>						</div>
+						<div class="footer-col-4">
+							<h6 class="footer-header">Follow Us</h6>
+							<ul class="list-inline footer-social">
+																									<li>
+										<a href="https://www.facebook.com/kvellercom" target="_blank" rel="noopener noreferrer">
+											<svg role="presentation" class="kveller-icon kveller-icon-facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="facebook"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#facebook" /></svg>											<span class="screen-reader-text">facebook</span>
+										</a>
+									</li>
+																	<li>
+										<a href="https://twitter.com/kveller" target="_blank" rel="noopener noreferrer">
+											<svg role="presentation" class="kveller-icon kveller-icon-twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="twitter"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#twitter" /></svg>											<span class="screen-reader-text">twitter</span>
+										</a>
+									</li>
+																	<li>
+										<a href="https://www.instagram.com/kvellercom/" target="_blank" rel="noopener noreferrer">
+											<svg role="presentation" class="kveller-icon kveller-icon-instagram" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="instagram"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#instagram" /></svg>											<span class="screen-reader-text">instagram</span>
+										</a>
+									</li>
+																	<li>
+										<a href="https://www.youtube.com/user/kvellercom" target="_blank" rel="noopener noreferrer">
+											<svg role="presentation" class="kveller-icon kveller-icon-youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="youtube"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#youtube" /></svg>											<span class="screen-reader-text">youtube</span>
+										</a>
+									</li>
+																<li><a href="https://www.kveller.com/signup/"><svg role="presentation" class="kveller-icon kveller-icon-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="email"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#email" /></svg><span class="screen-reader-text">Join Kveller</span></a></li>
+							</ul>
+							<a href="https://70facesmedia.networkforgood.com/projects/43564-kveller-donation" class="footer-donate-button -mobile">Donate</a>
+							<div class="footer-network -desktop">
+								<div class="network-logo">
+									<h6 class="footer-header">Brought To You By</h6>
+									<svg role="presentation" class="kveller-icon kveller-icon-70fm-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="70fm-logo"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#70fm-logo" /></svg>								</div>
+								<ul id="menu-associated-sites-v2" class="associated-sites-menu"><li id="menu-item-75165" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75165"><a href="https://www.heyalma.com/">Alma</a></li>
+<li id="menu-item-75166" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75166"><a href="https://www.myjewishlearning.com/the-nosher/">The Nosher</a></li>
+<li id="menu-item-75167" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75167"><a href="https://www.myjewishlearning.com/">My Jewish Learning</a></li>
+<li id="menu-item-75168" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75168"><a href="https://www.jta.org/">Jewish Telegraphic Agency</a></li>
+</ul>							</div>
+						</div>
+						<div class="footer-network -mobile">
+							<div class="network-logo">
+								<h6 class="footer-header">Brought To You By</h6>
+								<svg role="presentation" class="kveller-icon kveller-icon-70fm-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="70fm-logo"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#70fm-logo" /></svg>							</div>
+							<ul id="menu-associated-sites-v2-1" class="associated-sites-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75165"><a href="https://www.heyalma.com/">Alma</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75166"><a href="https://www.myjewishlearning.com/the-nosher/">The Nosher</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75167"><a href="https://www.myjewishlearning.com/">My Jewish Learning</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75168"><a href="https://www.jta.org/">Jewish Telegraphic Agency</a></li>
+</ul>						</div>
+					</div> <!-- container -->
+				</div> <!-- footer wrapper -->
+			</footer>
+			<div class="copyright-footer">
+				<div class="container">
+					<p>&copy; 2020 <a href="https://www.kveller.com">Kveller</a> All Rights Reserved.</p>
+					<ul id="menu-copyright-v2" class="copyright-menu"><li id="menu-item-75169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75169"><a href="https://www.kveller.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-75170" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75170"><a href="https://partnerships.70facesmedia.org/">Advertise</a></li>
+<li id="menu-item-75171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-75171"><a href="https://www.kveller.com/article/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-75172" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75172"><a href="https://www.kveller.com/signup/">Subscribe</a></li>
+</ul>				</div>
+			</div>
+		</main> <!-- main container -->
+
+		<div class="search-overlay top" itemscope itemtype="http://schema.org/WebSite">
+			<link itemprop="url" href="https://www.kveller.com" />
+			<button type="button" class="search-close">×</button>
+						<form action="https://www.kveller.com/" role="search" itemprop="potentialAction" itemscope itemtype="http://schema.org/SearchAction">
+				<meta itemprop="target" content="https://www.kveller.com?s={s}" />
+				<input itemprop="query-input" type="text" id="33901" name="s" placeholder="Type to search ..." autofocus="autofocus" value="" />
+				<label class="search-message" for="33901">Press Enter to Submit</label>
+				<button type="submit" class="search-submit">
+					<svg role="presentation" class="kveller-icon kveller-icon-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="search"><use xlink:href="https://www.kveller.com/wp-content/themes/kveller-redesign/assets/images/svg/svg.svg#search" /></svg>					<span class="screen-reader-text">Submit</span>
+				</button>
+			</form>
+		</div>
+		<div class="search-overlay bottom"></div>
+
+		<div class="k-menu__access">
+			<a href="index.html#banner">Skip to Banner / Top</a>
+			<a href="index.html#main">Skip to Content</a>
+		</div>
+		<!--/ k-menu__access-->
+
+		<!-- Quantcast Tag, part 2 -->
+				<script type="text/javascript">
+			_qevents.push( { qacct:"p-ecNY1DfO8d3GA"} );
+		</script>
+		<noscript>
+			<div style="display: none;">
+				<img src="http://pixel.quantserve.com/pixel/p-ecNY1DfO8d3GA.gif" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+		
+
+<!-- START Parse.ly Include: Standard -->
+
+<script data-cfasync="false" id="parsely-cfg" data-parsely-site="kveller.com" src="https://cdn.parsely.com/keys/kveller.com/p.js"></script>
+
+<!-- END Parse.ly Include: Standard -->
+	<div style="display:none">
+	</div>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=202021'></script>
+<script type='text/javascript' src='https://secure.gravatar.com/js/gprofiles.js?ver=2020Mayaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/plugins/jetpack/modules/wpgroho.js?ver=5.2.4'></script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/js/vendor/prebid.js?ver=3.11.0'></script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/js/prebid.js?ver=0.14'></script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/js/amazon.js?ver=0.14'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ajaxurl = {"ajaxurl":"https:\/\/www.kveller.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/themes/kveller-redesign/assets/js/kveller.min.js?ver=0.14'></script>
+<script type='text/javascript' src='https://connect.facebook.net/en_US/all.js?ver=0.5#xfbml=1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var epas = {"endpointUrl":"https:\/\/delkins-5db8db5a1a78b.clients.hosted-elasticpress.io\/delkins-5db8db5a1a78b--kvellercom-post-1\/autosuggest","postTypes":["post","page","fm-term-meta","evergreen","baby_name"],"postStatus":["publish"],"selector":"ep-autosuggest","searchFields":["post_title.suggest","term_suggest"],"dateDecay":{"enabled":true},"action":"navigate","weighting":[],"weightingDefaults":{"post":{"post_title":{"enabled":true,"weight":1},"post_content":{"enabled":true,"weight":1},"post_excerpt":{"enabled":true,"weight":1},"author_name":{"enabled":true,"weight":1},"terms.post_tag.name":{"enabled":true,"weight":1},"terms.category.name":{"enabled":true,"weight":1},"terms.ep_custom_result.name":{"enabled":true,"weight":9999,"fuzziness":false}},"page":{"post_title":{"enabled":true,"weight":1},"post_content":{"enabled":true,"weight":1},"post_excerpt":{"enabled":true,"weight":1},"author_name":{"enabled":true,"weight":1},"terms.ep_custom_result.name":{"enabled":true,"weight":9999,"fuzziness":false}},"fm-term-meta":{"post_title":{"enabled":true,"weight":1},"post_content":{"enabled":true,"weight":1},"post_excerpt":{"enabled":true,"weight":1},"author_name":{"enabled":true,"weight":1},"terms.ep_custom_result.name":{"enabled":true,"weight":9999,"fuzziness":false}},"evergreen":{"post_title":{"enabled":true,"weight":1},"post_content":{"enabled":true,"weight":1},"post_excerpt":{"enabled":true,"weight":1},"author_name":{"enabled":true,"weight":1},"terms.post_tag.name":{"enabled":true,"weight":1},"terms.ep_custom_result.name":{"enabled":true,"weight":9999,"fuzziness":false}},"baby_name":{"post_title":{"enabled":true,"weight":1},"post_content":{"enabled":true,"weight":1},"post_excerpt":{"enabled":true,"weight":1},"author_name":{"enabled":true,"weight":1},"terms.ep_custom_result.name":{"enabled":true,"weight":9999,"fuzziness":false}}},"mimeTypes":[]};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.kveller.com/wp-content/plugins/elasticpress/dist/js/autosuggest-script.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='https://www.kveller.com/wp-includes/js/wp-embed.min.js?ver=5.2.4'></script>
+<script type='text/javascript' src='https://stats.wp.com/e-202021.js' async='async' defer='defer'></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:7.9.1',blog:'82518232',post:'33901',tz:'-4',srv:'www.kveller.com'} ]);
+	_stq.push([ 'clickTrackerInit', '82518232', '33901' ]);
+</script>
+		<script async src='https://content.maropost.com/uploads/1161/websites/2/19c113b24d17929944dde30c7dbf1ee04910f22f-v3.js' type='text/javascript'></script>
+	<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"4e1491d54a","applicationID":"4585251","transactionName":"bwNRN0IAD0BSBhFRW1ZJcgBECA5dHBYMVlNUAw==","queueTime":0,"applicationTime":956,"atts":"Q0RSQQoaHE4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
