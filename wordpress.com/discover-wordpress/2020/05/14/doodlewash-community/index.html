@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doodlewash: Creating an Online Watercolor Community | Discover</title>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" id="noto-serif-css" type="text/css" media="all">  
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet" id="noto-sans-css" type="text/css" media="all"><link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://discover.wordpress.com/xmlrpc.php">
+<!--[if IE]>
+<link href="https://s2.wp.com/wp-content/themes/a8c/discover-fp/style-ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//discover.wordpress.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Discover &raquo; Feed" href="https://wordpress.com/discover-wordpress/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Discover &raquo; Comments Feed" href="https://wordpress.com/discover-wordpress/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJytVNlywyAM/KFi4jqdOA+dfgvGMiUBw3DE9d+Xwzmb0k7TN0loV2KHBU8aUTU6GB2WHmnhGR8tnjRVElnJBcw3WUWtfcL3YQYEcdAjray7yUowwfdg8Q6cJnSPUval/djLfEg7MCycGMBtVVcrlBbEneeix51QiaQzxMzYulnAL8gS6mIHMivvEDO8/yuFIY6PzP4AH7wQyHIHCHoeAYsouK5XTbNu6haPMNnEuAzouXXxliwLm8vowGH69ymUGOUtiH+aoQ1I7uUJWpaGqmWVunpuqtWy0VJED8uaxROBNN8u899WS882PsBQl5q42CHDKAICZGgrwSbeMwj2CC1LjBx8lCHJgF0XBLQWHWV072FW0VgBFbfJlkoDryoZyvGoHA9oewoeM8xyNBh1R4i8NCYtjYJTdQCDBv3NU7i4CgOFAm8wlRqvEjQIwk35V4puCSFLEpzTEojQSN4Rc45i+5t8rV/a7Xa7WW/q3SdvC/SA?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJxti0EKgCAQAD+ULWGJHaK3mJgaqyut0fejQ4eo0zAwA2cRlnJ1uUI6RMHDx8xQiKtY0cQdOJg9Zv+wtcwN/F9MNhoUSJ7e8plqcMkxhB480mLwDuY0dYMepVJaqu0CZXY33g==?cssminify=yes' type='text/css' media='all' />
+<script>
+var related_posts_js_options = {"post_heading":"h4"};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJx9jMEOwjAMQ3+IruzABgfEt4wtVKmatDSNpv39ggSXHZAsWbae7dfikOekC4iPprdC3b7WRTn5f4AjDHVq0BHyD54zN+D2YSk/MYFTgToF6+zolY8cqStJA7L4CsnOFleytEOy1YPu/WXsb+dxGK5xB1+BRFU='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://discover.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='https://wp.me/p3Ca1O-aTf' />
+<base href="https://wordpress.com/discover-wordpress/" />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fdiscover.wordpress.com%2F2020%2F05%2F14%2Fdoodlewash-community%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fdiscover.wordpress.com%2F2020%2F05%2F14%2Fdoodlewash-community%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Doodlewash: Creating an Online Watercolor Community" />
+<meta property="og:url" content="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/" />
+<meta property="og:description" content="How Charlie O&#8217;Shields built his own watercolor community on doodlewash.com." />
+<meta property="article:published_time" content="2020-05-14T14:00:45+00:00" />
+<meta property="article:modified_time" content="2020-05-13T04:16:09+00:00" />
+<meta property="og:site_name" content="Discover" />
+<meta property="og:image" content="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1200" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="735" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@WPDiscover" />
+<meta name="twitter:site" content="@WPDiscover" />
+<meta name="twitter:text:title" content="Doodlewash: Creating an Online Watercolor&nbsp;Community" />
+<meta name="twitter:image" content="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+<meta name="twitter:app:url:iphone" content="wordpress://viewpost?blogId=53424024&amp;postId=41865" />
+<meta name="twitter:app:url:ipad" content="wordpress://viewpost?blogId=53424024&amp;postId=41865" />
+<meta name="twitter:app:url:googleplay" content="wordpress://viewpost?blogId=53424024&amp;postId=41865" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/c9e4e04719c81ca4936a63ea2dce6ace?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/c9e4e04719c81ca4936a63ea2dce6ace?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/c9e4e04719c81ca4936a63ea2dce6ace?s=114" />
+<link rel='openid.server' href='https://wordpress.com/discover-wordpress/?openidserver=1' />
+<link rel='openid.delegate' href='https://wordpress.com/discover-wordpress/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/discover-wordpress/osd.xml" title="Discover" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+<link rel="canonical" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/" />
+<script type="application/ld+json">
+{"@context":"https:\/\/schema.org","@graph":[{"@type":"Corporation","@id":"https:\/\/automattic.com\/#organization","url":"https:\/\/automattic.com\/","name":"Automattic","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"We don\u2019t make software for free, we make it for freedom.","description":"We are the people behind <a href=\"https:\/\/wordpress.com\/\">WordPress.com<\/a>, <a href=\"https:\/\/woocommerce.com\/\">WooCommerce<\/a>, <a href=\"https:\/\/jetpack.com\/\">Jetpack<\/a>, <a href=\"https:\/\/simplenote.com\/\">Simplenote<\/a>, <a href=\"https:\/\/longreads.com\/\">Longreads<\/a>, <a href=\"https:\/\/vaultpress.com\/\">VaultPress<\/a>, <a href=\"https:\/\/akismet.com\/\">Akismet<\/a>, <a href=\"https:\/\/gravatar.com\/\">Gravatar<\/a>, <a href=\"\">Crowdsignal<\/a>, <a href=\"https:\/\/cloudup.com\/\">Cloudup<\/a>, and more. We believe in making the web a better place, and <a href=\"https:\/\/github.com\/Automattic\">we believe in Open Source<\/a>. The vast majority of our work is available under the GPL.","logo":{"@type":"ImageObject","@id":"https:\/\/automattic.com\/#logo","url":"https:\/\/automattic.com\/wp-content\/themes\/a8c\/automattic-2011\/images\/automattic-logo-2x.png","width":552,"height":60,"caption":"Automattic"},"image":{"@id":"https:\/\/automattic.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=identicon&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":942,"sameAs":["https:\/\/twitter.com\/automattic","https:\/\/www.facebook.com\/AutomatticInc","https:\/\/www.linkedin.com\/company\/automattic\/","https:\/\/en.wikipedia.org\/wiki\/Automattic","https:\/\/www.youtube.com\/c\/automattic"],"subOrganization":{"@id":"https:\/\/wordpress.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/wordpress.com\/#organization","url":"https:\/\/wordpress.com\/","name":"WordPress.com","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"Build a website, build a movement.","description":"Create a free website or build a blog with ease on WordPress.com. Dozens of free, customizable, mobile-ready designs and themes. Free hosting and support.","logo":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/#logo","url":"https:\/\/s1.wp.com\/home.logged-out\/images\/wpcom-a-website-that-can.jpg","width":1024,"height":512,"caption":"WordPress.com"},"image":{"@id":"https:\/\/wordpress.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=identicon&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":942,"sameAs":["https:\/\/twitter.com\/wordpressdotcom","https:\/\/www.facebook.com\/WordPresscom","https:\/\/www.instagram.com\/wordpressdotcom\/","https:\/\/www.linkedin.com\/company\/wordpress","https:\/\/www.youtube.com\/WordPressdotcom","https:\/\/www.pinterest.com\/wordpressdotcom\/","https:\/\/en.wikipedia.org\/wiki\/WordPress.com"],"parentOrganization":{"@id":"https:\/\/automattic.com\/#organization"}},{"@type":"WebSite","@id":"https:\/\/wordpress.com\/discover-wordpress\/#website","url":"https:\/\/wordpress.com\/discover-wordpress\/","name":"Discover","description":"A daily selection of the best content published on WordPress, collected for you by humans who love to read.","potentialAction":{"@type":"SearchAction","target":"https:\/\/wordpress.com\/discover-wordpress\/search\/{search_term_string}\/","query-input":"required name=search_term_string"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"}},{"@type":"BreadcrumbList","@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":0,"item":{"@type":"WebSite","@id":"https:\/\/wordpress.com\/discover-wordpress\/#website-breadcrumb","url":"https:\/\/wordpress.com\/discover-wordpress\/","name":"Home"}},{"@type":"ListItem","position":1,"item":{"@type":"CollectionPage","@id":"https:\/\/wordpress.com\/discover-wordpress\/category\/art\/#term-breadcrumb","url":"https:\/\/wordpress.com\/discover-wordpress\/category\/art\/","name":"Art"}},{"@type":"ListItem","position":2,"item":{"@type":"CollectionPage","@id":"https:\/\/wordpress.com\/discover-wordpress\/tag\/charlie-oshields\/#term-breadcrumb","url":"https:\/\/wordpress.com\/discover-wordpress\/tag\/charlie-oshields\/","name":"charlie o'shields"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#webpage-breadcrumb","url":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/","name":"Doodlewash: Creating an Online Watercolor Community \u2014 Discover"}}]},{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#primaryimage","url":"https:\/\/discover.files.wordpress.com\/2020\/05\/image-2020-05-05-at-3.19.24-pm.png?w=1200","width":1200,"height":735,"caption":"Doodlewash: Creating an Online Watercolor Community \u2014 Discover"},{"@type":"WebPage","@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#webpage","url":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/","name":"Doodlewash: Creating an Online Watercolor Community \u2014 Discover","description":"A daily selection of the best content published on WordPress, collected for you by humans who love to read.","inLanguage":"en","isPartOf":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/#website"},"primaryImageOfPage":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#primaryimage"},"breadcrumb":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#breadcrumbs"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"},"datePublished":"2020-05-14T14:00:45+0000","dateModified":"2020-05-13T04:16:09+0000"},{"@type":"Person","@id":"https:\/\/wordpress.com\/schema.org\/author\/118930156#person","name":"Carolyn Wells","description":"","image":{"@type":"ImageObject","@id":"https:\/\/wordpress.com\/schema.org\/author\/118930156#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/c5e37740ae83e815e3c4e9ef94367509?s=96&d=identicon&r=g","width":96,"height":96,"caption":"Carolyn Wells"}},{"@type":"Article","@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#article","headline":"Doodlewash: Creating an Online Watercolor Community \u2014 Discover","commentCount":0,"keywords":"art,education,illustration,inspiration,lifestyle,writing,charlie o'shields,doodlewash,hobbies,online community,sketching stuff,watercolor,world watercolor month","datePublished":"2020-05-14T14:00:45+0000","dateModified":"2020-05-13T04:16:09+0000","mainEntityOfPage":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#webpage"},"isPartOf":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#webpage"},"image":{"@id":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/#primaryimage"},"publisher":{"@id":"https:\/\/wordpress.com\/#organization"},"author":{"@id":"https:\/\/wordpress.com\/schema.org\/author\/118930156#person"}}]}
+</script>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Discover" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="A daily selection of the best content published on WordPress, collected for you by humans who love to read." /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://wordpress.com/discover-wordpress/feed/;icon-uri=https://secure.gravatar.com/blavatar/c9e4e04719c81ca4936a63ea2dce6ace?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="How Charlie O&#039;Shields built his own watercolor community on doodlewash.com." />
+<link rel="amphtml" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/amp/"></head>
+
+<body class="post-template-default single single-post postid-41865 single-format-standard customizer-styles-applied group-blog highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="header" role="banner">
+		<nav id="site-navigation" class="main-navigation">
+			<div class="menu-main-menu-left-container"><ul id="menu-main-menu-left" class="menu"><li id="menu-item-71" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://wordpress.com/discover-wordpress/editors-picks/">Editors’ Picks</a></li>
+<li id="menu-item-2422" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2422"><a href="https://wordpress.com/discover-wordpress/features/">Inspiration</a></li>
+<li id="menu-item-74" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://wordpress.com/discover-wordpress/topics/">Topics</a></li>
+</ul></div>			<div class="main-navigation-search">
+				<form role="search" action="https://wordpress.com/discover-wordpress/" method="get" id="searchform">
+	<input type="text" name="s" class="search-field" placeholder="Search..." tabindex="0"/>
+	<input type="submit" class="search-submit" alt="Search" value="" tabindex="0"/>
+</form>
+				<a class="searchicon" tabindex="0"></a>
+			</div>
+			<div class="menu-main-menu-right-container"><ul id="menu-main-menu-right" class="menu"><li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="https://wordpress.com/discover-wordpress/about/">About</a></li>
+</ul></div>			<div class="responsive-button">Menu</div>
+		</nav><!-- #site-navigation -->
+		<a class="discover-logo" href="https://wordpress.com/discover-wordpress">Discover</a>
+	</header><!-- #masthead -->
+
+	<!-- Mobile Menu -->
+	<nav class="main-navigation-responsive">
+		<ul>
+		  <div class="menu-main-menu-left-container"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://wordpress.com/discover-wordpress/editors-picks/">Editors’ Picks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2422"><a href="https://wordpress.com/discover-wordpress/features/">Inspiration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://wordpress.com/discover-wordpress/topics/">Topics</a></li>
+</div>		  <div class="menu-main-menu-right-container"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="https://wordpress.com/discover-wordpress/about/">About</a></li>
+</div>		</ul>
+	</nav>
+
+	<div id="content" class="site-content">
+
+	<div class="wpcom-signup wpcom-signup-sm">
+	<div class="signup-container">
+								<div class="signup-text">
+				<span class="signup-headline">We collect the best content published with WordPress.</span>
+				What’s your story?			</div>
+						<a href="//wordpress.com/start/?utm_source=editorial&#038;utm_medium=discover&#038;utm_campaign=doodlewash-community&#038;utm_term=art&#038;utm_content=top_button" class="wpcom-button" id="wpcom-signup-sm">
+				Create your blog or website at WordPress.com			</a>
+			</div>
+	<script type="text/javascript">
+		// We only need to fire these off once.
+		if ( !tracksScripts ) {
+			var tracksScripts = true;
+			window._tkq = window._tkq || [];
+			window._tkq.push( [ 'recordEvent', 'wpcom_discover_signup_view', {} ] );
+			jQuery( function($) {
+				$( '.wpcom-button' ).on( 'click', function() {
+					_tkq.push( ['recordEvent', 'wpcom_discover_signup_click',{
+						cta_name: $( this ).attr( 'id' ),
+						utm_campaign: 'doodlewash-community'
+					} ] );
+				});
+			});
+		}
+	</script>
+</div>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			
+<article id="post-41865" class="post-41865 post type-post status-publish format-standard has-post-thumbnail hentry category-art category-education category-illustration category-inspiration category-lifestyle category-writing tag-charlie-oshields tag-doodlewash tag-hobbies tag-online-community tag-sketching-stuff tag-watercolor tag-world-watercolor-month discover_fp_post_format-feature">
+	<header class="entry-header">
+		<h1 class="entry-title">Doodlewash: Creating an Online Watercolor&nbsp;Community</h1>
+		<div class="entry-meta">
+			<div class="entry-meta-top">
+				<img alt='' src='https://0.gravatar.com/avatar/c5e37740ae83e815e3c4e9ef94367509?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' />				<span class="author-name">
+					Feature by<br /><a href="https://wordpress.com/discover-wordpress/author/carolynannewells/" title="Posts by Carolyn Wells" rel="author">Carolyn Wells</a>				</span>
+			</div>
+			<div class="entry-meta-bottom">
+				<ul class="entry-meta-ul">
+					<li class="entry-meta-topic">
+						<a href="https://wordpress.com/discover-wordpress/category/art/">Art</a> 					</li>
+				</ul>
+			</div>
+		</div><!-- .entry-meta -->
+
+	</header><!-- .entry-header -->
+
+	<img src="https://discover.wordpress.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781h" data-lazy-src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1830&#038;h=825&#038;crop=1" width="1830" height="825" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1830&amp;h=825&amp;crop=1 1830w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=150&amp;h=68&amp;crop=1 150w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=315&amp;h=142&amp;crop=1 315w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=768&amp;h=346&amp;crop=1 768w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1220&amp;h=550&amp;crop=1 1220w" sizes="(max-width: 1830px) 100vw, 1830px" data-attachment-id="41885" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-19-24-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png" data-orig-size="1994,1222" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.19.24 PM" data-image-description data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=685"><noscript><img width="1830" height="825" src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1830&amp;h=825&amp;crop=1" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1830&amp;h=825&amp;crop=1 1830w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=150&amp;h=68&amp;crop=1 150w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=315&amp;h=142&amp;crop=1 315w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=768&amp;h=346&amp;crop=1 768w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=1220&amp;h=550&amp;crop=1 1220w" sizes="(max-width: 1830px) 100vw, 1830px" data-attachment-id="41885" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-19-24-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png" data-orig-size="1994,1222" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.19.24 PM" data-image-description="" data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.19.24-pm.png?w=685" /></noscript><div class="featured-img-credit">doodlewash.com</div>
+	<div class="entry-content">
+
+		
+		<p class="intro"><span class="s1">Charlie O’Shields loves watercolor painting, but this has not always been the case. He built his passion by creating an online group to inspire him. He achieved this through starting <em><a href="http://doodlewash.com"><span class="s2">doodlewash.com</span></a>, </em>where Charlie initially posted just his own art journal, before getting lonely and inviting friends to join him. The community now has thousands of members, and its success has led Charlie to start the podcast <a href="https://doodlewash.com/sketching-stuff-podcast/"><em>Sketching Stuff</em></a>, publish <a href="https://doodlewash.com/product-category/charlie-shop/books-by-charlie-oshields/">books</a>, and even create the annual <em><a href="https://doodlewash.com/world-watercolor-month-july/">World Watercolor Month</a></em> in July. We talked to Charlie to learn more about building an online community from scratch.&nbsp;</span></p>
+<hr>
+<p><b>How did you become interested in watercolor?</b></p>
+<p><span style="font-weight:400;">Back in July of 2015, my husband Philippe brought home a small student set of watercolor paints for something fun to do. I painted a tree that was next to our house. It was not an amazing painting by any stretch, but I was so thrilled that I signed it like it was a masterpiece!</span></p>
+<figure data-shortcode="caption" id="attachment_41895" aria-describedby="caption-attachment-41895" style="width: 550px" class="wp-caption aligncenter"><img src="https://discover.wordpress.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781h" data-lazy-src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=685" data-attachment-id="41895" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-46-45-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png" data-orig-size="550,846" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.46.45 PM" data-image-description data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=270" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=550" class="size-full wp-image-41895" alt><noscript><img data-attachment-id="41895" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-46-45-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png" data-orig-size="550,846" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.46.45 PM" data-image-description="" data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=270" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=550" class="size-full wp-image-41895" src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=685" alt="" srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png 550w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=98 98w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.46.45-pm.png?w=270 270w" sizes="(max-width: 550px) 100vw, 550px"  ></noscript><figcaption id="caption-attachment-41895" class="wp-caption-text">The very <a href="https://doodlewash.com/a-tree/">first doodlewash</a>, doodlewash.com</figcaption></figure>
+<p><b>When did you decide to take your interest online?&nbsp;</b></p>
+<p><span style="font-weight:400;">The very next day! I was so excited to paint again and really wanted to improve and get better. I knew this meant daily practice, so I created a blog where I posted what I was making each day. I just hoped it would form into a habit that would keep me sketching and painting. The cool part was that people showed up and began to leave encouraging comments. That truly meant the world to me and kept me going. Within the first three weeks, I decided to start sharing watercolors and drawings from guest artists on the site. I wanted to inspire others, but it really was a great way to inspire myself as well.&nbsp;</span></p>
+<div><strong>Why did you choose to use WordPress.com?</strong></div>
+<p><span style="font-weight:400;">I knew from the start of Doodlewash that I wanted to add community features one day and make something more than a blog. WordPress.com let me start out with a small investment and move to higher<a href="https://wordpress.com/pricing/"> plans</a> as my site grew. The <a href="https://wordpress.com/features/">features</a> available are incredible and my site does a lot of different things at once, even though I’m only using a fraction of them! There’s much more flexibility to create and design a site than I saw on other platforms and that was the biggest draw for me.</span><strong style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">&nbsp;</strong></p>
+<div>
+<p><strong>What WordPress features, in particular, did you find helpful?&nbsp;</strong></p>
+</div>
+<div>The community of WordPress.com bloggers and the WordPress.com <a href="https://wordpress.com/support/reader/">Reader </a>ended up being my favorite thing. It can feel so lonely creating a blog, and having access to an instant network of other bloggers, who share your passion, is amazing. Once I upgraded to the <a href="https://wordpress.com/pricing/">Business plan</a>, I was able to add plugins and all of the features I’d dreamed of as well. And though adding lots of features can cause some bumps along the way, WordPress.com has an excellent and patient group of folks that provide excellent online support.</div>
+<div></div>
+<div></div>
+<div></div>
+<div>
+<hr>
+<p style="text-align:center;"><strong>Find a WordPress.com plan that suits you.</strong></p>
+<p style="text-align:center;"><a class="button is-primary" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;" href="https://wordpress.com/create?utm_source=editorial&amp;utm_medium=discover&amp;utm_campaign=doodlewash-community&amp;utm_term=art&amp;utm_content=post_body_button" rel="nofollow">Sign up</a></p>
+<hr>
+</div>
+<div>
+<figure data-shortcode="caption" id="attachment_41889" aria-describedby="caption-attachment-41889" style="width: 1896px" class="wp-caption aligncenter"><img src="https://discover.wordpress.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781h" data-lazy-src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=685" data-attachment-id="41889" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-27-08-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png" data-orig-size="1896,1164" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.27.08 PM" data-image-description data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=685" class="wp-image-41889 size-full" alt><noscript><img data-attachment-id="41889" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-27-08-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png" data-orig-size="1896,1164" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.27.08 PM" data-image-description="" data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=685" class="wp-image-41889 size-full" src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=685" alt="" srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=685 685w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=1370 1370w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=150 150w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=315 315w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=768 768w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.27.08-pm.png?w=1220 1220w" sizes="(max-width: 685px) 100vw, 685px"  ></noscript><figcaption id="caption-attachment-41889" class="wp-caption-text">doodlewash.com</figcaption></figure>
+</div>
+<p><b>What are the different ways people can connect through your site?</b></p>
+<p><span style="font-weight:400;">Early on, I created monthly challenges where artists across the globe can come together and share their work via social media by using that month’s hashtag, and there&#8217;s also a list of optional prompts for each day. It’s really fun to sketch and paint the same things together and see what everyone comes up with! A few years ago, I added<a href="https://wordpress.com/support/widgets/social-media-icons-widget/"> social features</a> to Doodlewash where people could create a free account and share their work and interact with others directly on the site.&nbsp;</span></p>
+<p>In 2016, I founded <a href="https://www.daysoftheyear.com/days/world-watercolor-month/">World Watercolor Month</a>: a nonprofit event featuring the 31 watercolors in 31 days challenge to support the <a href="https://dreamingzebra.org/">Dreaming Zebra Foundation</a> to help underprivileged kids get art supplies.</p>
+<p><b>You call Doodlewash a &#8220;social experiment.&#8221; Has it been a successful one?&nbsp;</b></p>
+<p><span style="font-weight:400;">It was an experiment to see if a little online club where we could all connect would be appealing. For those who have given it a try, the feedback has been great! What I love hearing most is how sharing in a less crowded environment like </span><em><span style="font-weight:400;">Doodlewash </span></em><span style="font-weight:400;">has helped people gain confidence in sharing their art. Getting feedback from other artists quickly and without waiting to grow a huge following on other social media sites helps tremendously to build that sense of self-worth. We should all be proud of everything we create!&nbsp;&nbsp;</span></p>
+<p><span style="font-weight:400;">What surprised me on this journey is that the term “Doodlewash” became a way of thinking. Currently, there are nearly 90,000 members in our <a href="https://www.facebook.com/groups/worldwatercolor/">World Watercolor Group</a> on Facebook</span><span style="font-weight:400;">, and over 50,000 subscribers to the site’s content via email and social media.&nbsp;</span></p>
+<figure data-shortcode="caption" id="attachment_41883" aria-describedby="caption-attachment-41883" style="width: 685px" class="wp-caption aligncenter"><img src="https://discover.wordpress.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781h" data-lazy-src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=685&#038;h=589" data-attachment-id="41883" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-16-27-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png" data-orig-size="1372,1180" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.16.27 PM" data-image-description data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=685" class="size-full wp-image-41883" alt width="685" height="589"><noscript><img data-attachment-id="41883" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-16-27-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png" data-orig-size="1372,1180" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.16.27 PM" data-image-description="" data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=685" class="size-full wp-image-41883" src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=685&#038;h=589" alt="" width="685" height="589" srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=685&amp;h=589 685w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=1370&amp;h=1178 1370w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=150&amp;h=129 150w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=315&amp;h=271 315w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=768&amp;h=661 768w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.16.27-pm.png?w=1191&amp;h=1024 1191w" sizes="(max-width: 685px) 100vw, 685px"></noscript><figcaption id="caption-attachment-41883" class="wp-caption-text">doodlewash.com</figcaption></figure>
+<p><b>How did your site lead to a podcast and a book?</b></p>
+<p><span style="font-weight:400;">My posts are mostly about those little things in life that inspire us rather than art instruction and technique. I realized the content would work well as a podcast and provide something inspirational that makers of all sorts could listen to and enjoy. </span></p>
+<p><span style="font-weight:400;">The first 12 episodes were compiled into a book, <a href="https://doodlewash.com/shop/charlie-shop/books-by-charlie-oshields/sketching-stuff-stories-sketched-from-life-paperback-edition/"><em>Sketching Stuff &#8211; Stories Sketched From Life,</em></a> that was my illustrated memoir. Since then, I’ve created two fun <em>Sketching Stuff </em><a href="https://doodlewash.com/shop/charlie-shop/books-by-charlie-oshields/sketching-stuff-activity-book-nature/">Activity Books</a>. These are built on the concept of the books I loved as a child where there wasn’t a lot of discussion on techniques, but simply lots of fun activities to jump in and DO!&nbsp;</span></p>
+<figure data-shortcode="caption" id="attachment_41880" aria-describedby="caption-attachment-41880" style="width: 685px" class="wp-caption aligncenter"><img src="https://discover.wordpress.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781h" data-lazy-src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=685&#038;h=504" data-attachment-id="41880" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-10-06-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png" data-orig-size="1836,1352" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.10.06 PM" data-image-description data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=685" class="size-full wp-image-41880" alt width="685" height="504"><noscript><img data-attachment-id="41880" data-permalink="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/image-2020-05-05-at-3-10-06-pm/" data-orig-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png" data-orig-size="1836,1352" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Image 2020-05-05 at 3.10.06 PM" data-image-description="" data-medium-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=315" data-large-file="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=685" class="size-full wp-image-41880" src="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=685&#038;h=504" alt="" width="685" height="504" srcset="https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=685&amp;h=504 685w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=1370&amp;h=1008 1370w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=150&amp;h=110 150w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=315&amp;h=232 315w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=768&amp;h=566 768w, https://discover.files.wordpress.com/2020/05/image-2020-05-05-at-3.10.06-pm.png?w=1220&amp;h=898 1220w" sizes="(max-width: 685px) 100vw, 685px"></noscript><figcaption id="caption-attachment-41880" class="wp-caption-text">doodlewash.com</figcaption></figure>
+<p><b>Do you have any advice for anyone who may be considering setting up a site about their particular passion?&nbsp;</b></p>
+<p><span style="font-weight:400;">I think creating a site based on a passion is a rewarding experience. One of the toughest things in starting a new blog is that it takes time to attract readers and it can feel like you’re just talking to yourself. I spent the first few weeks just talking to myself on <a href="http://doodlewash.com"><em>doodlewash.com</em></a>! I hoped people would show up, but I had to love the act of creating content most of all. I had to remind myself that this was my passion project. And, even if nobody showed up, I could still be proud of what I was creating. Don’t give up! It just takes time, and lots of passion, and then people will come.</span></p>
+<hr>
+<p style="text-align:center;"><strong>Want to create your own online community? Start a site today:</strong></p>
+<p style="text-align:center;"><a class="button is-primary" style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;" href="https://wordpress.com/create?utm_source=editorial&amp;utm_medium=discover&amp;utm_campaign=doodlewash-community&amp;utm_term=art&amp;utm_content=post_signoff_button" rel="nofollow">Sign up</a></p>
+
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+
+		<div class="wpcom-signup wpcom-signup-bottom">
+	<div class="signup-container">
+					<div class="signup-text">
+				<span class="signup-headline">Inspired to tell your own story?</span>
+				<div class="signup-subheadline">WordPress.com has everything you need to create your blog or website.</div>
+			</div>
+			<a href="//wordpress.com/start/?utm_source=editorial&#038;utm_medium=discover&#038;utm_campaign=doodlewash-community&#038;utm_term=art&#038;utm_content=bottom_button" class="wpcom-button" id="wpcom-signup-bottom">
+				Get started			</a>
+			</div>
+	<script type="text/javascript">
+		// We only need to fire these off once.
+		if ( !tracksScripts ) {
+			var tracksScripts = true;
+			window._tkq = window._tkq || [];
+			window._tkq.push( [ 'recordEvent', 'wpcom_discover_signup_view', {} ] );
+			jQuery( function($) {
+				$( '.wpcom-button' ).on( 'click', function() {
+					_tkq.push( ['recordEvent', 'wpcom_discover_signup_click',{
+						cta_name: $( this ).attr( 'id' ),
+						utm_campaign: 'doodlewash-community'
+					} ] );
+				});
+			});
+		}
+	</script>
+</div>
+
+		<span class="date-links"><a href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/">May 14, 2020</a></span><span class="cat-links"><a href="https://wordpress.com/discover-wordpress/category/art/" rel="category tag">Art</a>, <a href="https://wordpress.com/discover-wordpress/category/education/" rel="category tag">Education</a>, <a href="https://wordpress.com/discover-wordpress/category/illustration/" rel="category tag">Illustration</a>, <a href="https://wordpress.com/discover-wordpress/category/inspiration/" rel="category tag">Inspiration</a>, <a href="https://wordpress.com/discover-wordpress/category/lifestyle/" rel="category tag">Lifestyle</a>, <a href="https://wordpress.com/discover-wordpress/category/writing/" rel="category tag">Writing</a></span><span class="tags-links"><a href="https://wordpress.com/discover-wordpress/tag/charlie-oshields/" rel="tag">charlie o'shields</a>, <a href="https://wordpress.com/discover-wordpress/tag/doodlewash/" rel="tag">doodlewash</a>, <a href="https://wordpress.com/discover-wordpress/tag/hobbies/" rel="tag">hobbies</a>, <a href="https://wordpress.com/discover-wordpress/tag/online-community/" rel="tag">online community</a>, <a href="https://wordpress.com/discover-wordpress/tag/sketching-stuff/" rel="tag">sketching stuff</a>, <a href="https://wordpress.com/discover-wordpress/tag/watercolor/" rel="tag">watercolor</a>, <a href="https://wordpress.com/discover-wordpress/tag/world-watercolor-month/" rel="tag">world watercolor month</a></span>	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+			
+			<div class="article-footer">
+				<div class="article-footer-container">
+
+					<div id="discover-jetpack">
+						<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div>					</div>
+				</div>
+				<div class="article-footer-container">
+					<div class="article-footer-sharing closed-comments">
+					<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-41865" class="share-twitter sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=email" target="_blank" title="Click to email this to a friend"><span></span><span class="sharing-screen-reader-text">Click to email this to a friend (Opens in new window)</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-41865" class="share-facebook sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=reddit" target="_blank" title="Click to share on Reddit"><span></span><span class="sharing-screen-reader-text">Click to share on Reddit (Opens in new window)</span></a></li><li class="share-tumblr"><a rel="nofollow noopener noreferrer" data-shared="" class="share-tumblr sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span></span><span class="sharing-screen-reader-text">Click to share on Tumblr (Opens in new window)</span></a></li><li class="share-end"></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-41865" class="share-pinterest sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://wordpress.com/discover-wordpress/2020/05/14/doodlewash-community/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-53424024-41865-5ec935000a8a5' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=53424024&amp;post_id=41865&amp;origin=discover.wordpress.com&amp;obj_id=53424024-41865-5ec935000a8a5&amp;domain=wordpress.com' data-name='like-post-frame-53424024-41865-5ec935000a8a5'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>					</div>
+									</div>
+			</div>
+
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+
+	</div><!-- #content -->
+
+	<footer id="colophon" class="footer" role="contentinfo">
+		<div class="footer-container">
+			<div class="footer-widgets footer-widgets-left">
+				<h2 class="widgettitle">Discover</h2>
+				<li id="follow_button_widget-5" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://wordpress.com/discover-wordpress" data-blog="53424024" data-lang="en" >Follow Discover on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</li>
+				<nav class="main-navigation-footer">
+					<ul>
+					  <div class="menu-main-menu-left-container"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71"><a href="https://wordpress.com/discover-wordpress/editors-picks/">Editors’ Picks</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2422"><a href="https://wordpress.com/discover-wordpress/features/">Inspiration</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74"><a href="https://wordpress.com/discover-wordpress/topics/">Topics</a></li>
+</div>					  <div class="menu-main-menu-right-container"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="https://wordpress.com/discover-wordpress/about/">About</a></li>
+</div>					</ul>
+				</nav>
+				<div class="footer-search">
+					<form role="search" action="https://wordpress.com/discover-wordpress/" method="get" id="searchform">
+	<input type="text" name="s" class="search-field" placeholder="Search..." tabindex="0"/>
+	<input type="submit" class="search-submit" alt="Search" value="" tabindex="0"/>
+</form>
+				</div>
+			</div>
+			<div class="footer-widgets footer-widgets-middle">
+				<li id="custom_html-3" class="widget_text widget widget_custom_html"><h2 class="widgettitle">From the Editors</h2>
+<div class="textwidget custom-html-widget"><p><a href="https://en.blog.wordpress.com?utm_source=discover&amp;utm_medium=automattic_referred&amp;utm_campaign=footer" class="footer-link footer-link-wpcom">The WordPress.com Blog</a></p>
+
+<p><a href="https://dailypost.wordpress.com?utm_source=discover&amp;utm_medium=automattic_referred&amp;utm_campaign=footer" class="footer-link footer-link-dp">The Daily Post</a></p>
+
+<p><a href="https://dailypost.wordpress.com/blogging-university/?utm_source=discover&amp;utm_medium=automattic_referred&amp;utm_campaign=footer" class="footer-link footer-link-bu">Blogging University</a></p>
+
+<p><a href="https://longreads.com?utm_source=discover&amp;utm_medium=automattic_referred&amp;utm_campaign=footer" class="footer-link footer-link-lr">Longreads</a></p></div></li>
+			</div>
+			<div class="footer-widgets footer-widgets-right">
+				<li id="twitter_timeline-3" class="widget widget_twitter_timeline"><h2 class="widgettitle">Latest on Twitter</h2>
+<a class="twitter-timeline" data-width="300" data-theme="dark" data-border-color="#e8e8e8" data-tweet-limit="1" data-lang="EN" data-partner="jetpack" data-chrome="noheader nofooter noborders noscrollbar transparent" href="https://twitter.com/wpdiscover" href="https://twitter.com/wpdiscover">My Tweets</a></li>
+			</div>
+			<div class="footer-widgets footer-widgets-bottom">
+							</div>
+			<div class="site-info">
+				<div class="wpcom-signup wpcom-signup-footer">
+	<div class="signup-container">
+								<a href="//wordpress.com/start/?utm_source=editorial&#038;utm_medium=discover&#038;utm_campaign=doodlewash-community&#038;utm_term=art&#038;utm_content=footer_button" class="wpcom-button" id="wpcom-signup-footer">
+				Create your blog or website at WordPress.com			</a>
+			</div>
+	<script type="text/javascript">
+		// We only need to fire these off once.
+		if ( !tracksScripts ) {
+			var tracksScripts = true;
+			window._tkq = window._tkq || [];
+			window._tkq.push( [ 'recordEvent', 'wpcom_discover_signup_view', {} ] );
+			jQuery( function($) {
+				$( '.wpcom-button' ).on( 'click', function() {
+					_tkq.push( ['recordEvent', 'wpcom_discover_signup_click',{
+						cta_name: $( this ).attr( 'id' ),
+						utm_campaign: 'doodlewash-community'
+					} ] );
+				});
+			});
+		}
+	</script>
+</div>
+				<a href="http://automattic.com?utm_source=discover&utm_medium=automattic_referred&utm_campaign=footer" title="Automattic">
+				An				<img src="https://s2.wp.com/wp-content/themes/a8c/discover-fp/images/automattic-logo.png" class="a8c-logo">
+				publication				</a>
+				<a href="//wordpress.com?utm_source=discover&utm_medium=automattic_referred&utm_campaign=footer" title="WordPress.com">
+				Brought to you by				<svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="0" fill="none"/><g><path d="M12.158 12.786l-2.698 7.84c.806.236 1.657.365 2.54.365 1.047 0 2.05-.18 2.986-.51-.024-.037-.046-.078-.065-.123l-2.762-7.57zM3.008 12c0 3.56 2.07 6.634 5.068 8.092L3.788 8.342c-.5 1.117-.78 2.354-.78 3.658zm15.06-.454c0-1.112-.398-1.88-.74-2.48-.456-.74-.883-1.368-.883-2.11 0-.825.627-1.595 1.51-1.595.04 0 .078.006.116.008-1.598-1.464-3.73-2.36-6.07-2.36-3.14 0-5.904 1.613-7.512 4.053.21.008.41.012.58.012.94 0 2.395-.114 2.395-.114.484-.028.54.684.057.74 0 0-.487.058-1.03.086l3.275 9.74 1.968-5.902-1.4-3.838c-.485-.028-.944-.085-.944-.085-.486-.03-.43-.77.056-.742 0 0 1.484.114 2.368.114.94 0 2.397-.114 2.397-.114.486-.028.543.684.058.74 0 0-.488.058-1.03.086l3.25 9.665.897-2.997c.456-1.17.684-2.137.684-2.907zm1.82-3.86c.04.286.06.593.06.924 0 .912-.17 1.938-.683 3.22l-2.746 7.94c2.672-1.558 4.47-4.454 4.47-7.77 0-1.564-.4-3.033-1.1-4.314zM12 22C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/></g></svg>
+				WordPress.com
+				</a>
+			</div><!-- .site-info -->
+		</div>
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="text/javascript">
+	// Tracks functions
+	window._tkq = window._tkq || []; window._tkq.push( [ 'recordEvent', 'wpcom_discover_page_view', {
+		utm_campaign: 'doodlewash-community'
+	} ] );
+			_tkq.push( [ 'recordEvent', 'wpcom_discover_feature_view', {
+			utm_campaign: 'doodlewash-community'
+		} ] );
+	</script>
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-22', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+
+			ga( 'create', 'UA-10673494-18', 'auto', { 'name': 'UnifiedSupport' } );  // Unified Support
+			ga( 'UnifiedSupport.set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'UnifiedSupport.set', 'anonymizeIp', true );
+			ga( 'UnifiedSupport.send', 'pageview' );
+		}
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire "Sensitive" Pixels -------
+
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+			<div style="display:none">
+	<div class="grofile-hash-map-c5e37740ae83e815e3c4e9ef94367509">
+	</div>
+	</div>
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="53424024" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://wordpress.com/discover-wordpress" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="Discover" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="bfb84fae02" /><input type="hidden" name="_wp_http_referer" value="/discover-wordpress/2020/05/14/doodlewash-community/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/":41865};
+	</script>
+					<div id="sharing_email" style="display: none;">
+		<form action="/discover-wordpress/2020/05/14/doodlewash-community/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed" />
+			
+			<div
+				class="g-recaptcha"
+				data-sitekey="6LcmyE0UAAAAALID28yVNg7pFCodGaArJzHitez_"
+				data-theme="light"
+				data-type="image"
+				data-tabindex="0"></div>
+			<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en" async></script>
+			
+			<img style="float: right; display: none" class="loading" src="https://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel" role="button">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1563361695h&cssminify=yes' type='text/css' media='all' />
+<script>
+var comment_like_text = {"loading":"Loading..."};
+</script>
+<script>
+var actionbardata = {"siteID":"53424024","siteName":"Discover","siteURL":"https:\/\/wordpress.com\/discover-wordpress","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/c9e4e04719c81ca4936a63ea2dce6ace?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"a8c\/discover-fp","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwordpress.com%2Fdiscover-wordpress%2F2020%2F05%2F14%2Fdoodlewash-community%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b4a28df927","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"74670bf8f8\" \/>","referer":"https:\/\/wordpress.com\/discover-wordpress\/2020\/05\/14\/doodlewash-community\/","canFollow":"1","feedID":"41325786","statusMessage":"","customizeLink":"https:\/\/discover.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdiscover.wordpress.com%2Fdiscover-wordpress%2F2020%2F05%2F14%2Fdoodlewash-community%2F","postID":"41865","shortlink":"https:\/\/wp.me\/p3Ca1O-aTf","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/discover.wordpress.com\/41865","statsLink":"https:\/\/wordpress.com\/stats\/post\/41865\/discover.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Discover-FP","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 47,259,323 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fwordpress.com%2Fdiscover-wordpress%2F2020%2F05%2F14%2Fdoodlewash-community%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script>
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/wordpress.com\/discover-wordpress\/wp-admin\/admin-ajax.php","nonce":"568eb79081","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"1","require_name_email":"1","login_url":"https:\/\/discover.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2Fdiscover-wordpress%2F2020%2F05%2F14%2Fdoodlewash-community%2F","blog_id":"53424024","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<p id=\"jp-carousel-commenting-as\">You must be <a href=\"#\" class=\"jp-carousel-comment-login\">logged in<\/a> to post a comment.<\/p>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=53424024&v=wpcom&tz=-4&user_id=0&subd=discover","is_public":"1","reblog_enabled":""};
+</script>
+<script>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJylVO12mzAMfaEZl5PulPzY2aPsGFsQgb9mGVj69BMrpEnJaLf+si35XsnXkuQUhQ4+g8+yI2lgRA3xV9HRF3nrioGyAyLVwh1v93OAdF6WAv2IML17rYMcle5FAsLnDasbRLRDi56kxR5IMmiAk/LGQlovo9d2MOyck0fKcgRvQppdMdhzg9YWDv1b7pW4GawVhBkEGMzo2yWkLMuHw+HxUFbSw0R/sqxt0P0Shfd8lRWhF7O49941SDvwsYbUsieBrIqyeBBT1MHJekBrJJaVl+gNbHT/MIUJjmVU5vxJHlWWn6UA0iqCOGVn95n+V3ytUhgI7I70V7XDiTk2iZca6uZiqiVNGPcKbgO6MbwF5hNwZ0hV6TlBHUZIoolLSa5H4dWIrcoYNtX4dzz1GDmm70UT9ECiwY2aHwvOmhnhICujstp5+NKS8gc3lswT5sz4jA44iY1gS+gR4+VPrXo+CxuUee32goJX6V4Xvoe/HHYSVoaJRa2SdIo4Wd6J+dEJ56lwsf0jQ04swuafr0F6/sgZdNndG0kUX199bb+dg9e37hXjUu/r54jVsIOZZ5NorMIk6aQSN9e6Mui7+1Z+rY7H49PjU9n9BpuvOsw='></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-url.min.7490158b.js?m=1589993648h&#038;ver=3.6.4"></scr' + 'ipt>' );
+( window.DOMRect ) || document.write( '<script src="https://s1.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-dom-rect.7e21c103.js?m=1589993648h&#038;ver=3.42.0"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-tumblr', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-pocket', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20190321#ver=20190321' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'53424024','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'53424024','v':'wpcom','tz':'-4','user_id':'0','post':'41865','subd':'discover'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSU9RRkVyRmw/bFF4N29ZdnF3Lnxoc0xRaWorQ09SJS14UzNlbj9xNTEsMWpEXThCTk8mJXwlbD1vMXgyfm9IenNfTUZzLk5OR35LUXhTQWNxR0dbfEhdVWRWTGJDc3hfSXc0cGZBcndtPUQ/SGFjJjh1eWI3cXUzR11pX3RUQlRBen5RRU5obCwta2EvK2Q1bHNpRnwzczhDRTJoQUduWUR+fHI9YS4uQ3VoQkRHRTc4fi0uQXYrJXk9MyV6amRBVDU2W35NRC1qbl9qb2duVW4lX0FONmluWzUrMStGcF9DNSZbfnU9UXpjeUN0YW1fOWw2MG9PNTliVlAxX1l+RWhLfC00Qm41TUlaenI9Mms4VjBBcGJbfC1rJVhIbFQ='}]);
+_stq.push([ 'clickTrackerInit', '53424024', '41865' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+		<script type="text/javascript">
+			( function( $ ) {
+				if ( ! $ ) return; // Not possible.
+				$( document ).ajaxSend( function( event, jqXhr, settings ) {
+					if ( 0 === String( settings.url || '' ).indexOf( "https:\/\/discover.wordpress.com\/wp-admin\/admin-ajax.php" ) ) {
+						settings.xhrFields                 = settings.xhrFields || {};
+						settings.xhrFields.withCredentials = true;
+					}
+				} );
+			} )( window.jQuery );
+		</script>
+		<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+

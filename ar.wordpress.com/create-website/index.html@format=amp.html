@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+							<html AMP dir="rtl" lang="ar">
+							<head>
+					<meta charset="UTF-8" />
+
+					<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+					<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+											<meta name="amp-google-client-id-api" content="googleanalytics" />
+					
+					<title>إنشاء موقع على الويب باستخدام وردبرس.كوم</title>
+
+										<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+
+					<link rel='dns-prefetch' href='//cdn.ampproject.org' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<style amp-boilerplate id="amp-boilerplate-inline-css">
+body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+</style>
+<noscript><style amp-boilerplate id="amp-noscript-boilerplate-inline-css">
+body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
+</style></noscript>
+<link rel="stylesheet" id="noto-sans-font-css" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&#038;subset=cyrillic,cyrillic-ext,devanagari,greek,greek-ext,latin-ext,vietnamese&#038;display=swap" media="all" />
+<style amp-custom id="6e4ec9c553fb84f7b24bc4ad770b0e82-css">
+@font-face{font-weight:500;font-display:swap;font-family:'Recoleta';src:url("https://s1.wp.com/i/fonts/recoleta/500.eot");src:url("https://s1.wp.com/i/fonts/recoleta/500.eot?#iefix") format("embedded-opentype"),url("https://s1.wp.com/i/fonts/recoleta/500.woff2") format("woff2"),url("https://s1.wp.com/i/fonts/recoleta/500.woff") format("woff"),url("https://s1.wp.com/i/fonts/recoleta/500.ttf") format("truetype")}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline}html{font-size:62.5%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{background:#fff}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{font-weight:normal;text-align:right}blockquote:before,blockquote:after,q:before,q:after{content:""}blockquote,q{quotes:"" ""}a:focus{outline:thin dotted}a:hover,a:active{outline:0}a img{border:0}input,textarea{border-radius:0;appearance:none}input[type="radio"],input[type="checkbox"]{-webkit-appearance:none}html{box-sizing:border-box;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,*:before,*:after{box-sizing:inherit}*{font-weight:400;letter-spacing:0}body{font-family:"Noto Sans", Helvetica, Arial, sans-serif}code,pre{font-family:"Courier 10 Pitch", Courier, monospace}strong,th,h1,h2,h3,h4,h5,h6{font-weight:700}a{color:inherit;text-decoration:none;transition:opacity 0.15s ease-out}a:hover{opacity:0.85}a:active{opacity:0.65;outline:none;transition:none}
+.lpc-header-nav{right:0;top:0;z-index:200;position:absolute;width:100%;height:50px;min-width:320px}body.admin-bar-showing .lpc-header-nav{top:32px}@media (max-width: 782px){body.admin-bar-showing .lpc-header-nav{top:46px}}.lpc-header-nav h4{font-weight:400}.lpc-header-nav ul{padding:0;list-style:none}.lpc-header-nav-bar-nav,.lpc-header-nav-bar-list{display:flex;text-align:center}.lpc-header-nav-bar-list{width:50%}.lpc-header-nav-bar-list1{justify-content:flex-start}.lpc-header-nav-bar-list2{justify-content:flex-end}.lpc-header-nav-bar-list-item,.lpc-header-nav-bar-list-dropdown-item{display:block;position:relative;padding:21px 12px 16px;color:white;font-size:13px;line-height:19px;letter-spacing:0;line-height:1em;user-select:none;white-space:nowrap}.lpc-header-nav-bar-list-dropdown-item{padding:8px 0;text-align:right;font-weight:700;color:#0e74dc}.lpc-header-nav-bar-list-dropdown-item:first-child{padding-top:0}.lpc-header-nav-bar-list-dropdown-item:last-child{padding-bottom:0}.lpc-header-nav-bar-list-dropdown-external-item a::after,.lpc-header-nav-sidebar-menu-section-list-external-item a::after{content:'';width:9px;height:9px;position:absolute;margin:2px 6px 0 0;background-image:url("data:image/svg+xml,%3Csvg width='9' height='9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.5 0v1h1.795L2.38 5.915l.705.705L8 1.705V3.5h1V0H5.5zM8 8H1V1h3V0H1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V5H8v3z' fill='%236b99ae' fill-rule='nonzero'/%3E%3C/svg%3E");background-repeat:no-repeat;background-size:9px 9px}.lpc-header-nav-sidebar-menu-section-list-external-item a::after{margin-top:5px}.lpc-header-nav-bar-list-item-logo{padding:9px 23px 0 13px}.lpc-header-nav-bar-list-item-logo svg{width:170px;height:auto;fill:currentColor}body:not(.logged-in) .lpc-header-nav-bar-list-item-logged-in{display:none}body.logged-in .lpc-header-nav-bar-list-item-not-logged-in{display:none}.lpc-header-nav-bar-list-item-cta{font-weight:700;padding-left:23px}.lpc-header-nav-bar-list-item-sidebar-toggle{display:none}.lpc-header-nav-bar-list-item-header{border:0;padding:0;background-color:transparent}.lpc-header-nav-bar-list-item-header-for-dropdown{cursor:pointer}.lpc-header-nav-bar-list-item-header-for-dropdown a{pointer-events:none}.lpc-header-nav-bar-list-item-header-for-dropdown a::after{right:1px;position:relative;display:inline-block;margin-left:-1px;content:'\25BE'}.lpc-header-nav-bar-list-item-header-for-dropdown a[aria-expanded='true']{opacity:0.85}.lpc-header-nav-bar-list-item-header-for-dropdown a[aria-expanded='true']::after{opacity:0.5}.lpc-header-nav-bar-list-item-dropdown{right:0;top:50px;position:absolute;padding:23px;border-radius:6px;background:white;box-shadow:0 9px 48px rgba(20,21,23,0.15)}.lpc-header-nav-bar-list-item-dropdown::before{content:'';top:0;right:16px;width:36px;height:36px;position:absolute;border-radius:3px;background:inherit;transform:rotate(-45deg)}.lpc-header-nav-bar-list-item-dropdown-menu+.lpc-header-nav-bar-list-item-dropdown-menu::before{content:'';display:block;margin:23px -23px;border-top:2px solid #f5f6f6}.lpc-header-nav-bar-sidebar-toggle,.lpc-header-nav-sidebar-close{border:0;padding:0;margin:0;outline:none;background:none;cursor:pointer}.lpc-header-nav-bar-sidebar-toggle,.lpc-header-nav-bar-sidebar-toggle-bars{display:block}.lpc-header-nav-bar-sidebar-toggle-bars{width:26px;color:white}.lpc-header-nav-bar-sidebar-toggle-bars>span{height:2px;display:block;margin:4px 0 0 0;background:currentcolor}.lpc-header-nav-bar-sidebar-toggle-bars>span:first-child{margin-top:0}.lpc-header-nav-bar-dropdown-matte{z-index:199;width:100vw;height:100vh;position:fixed}@media (max-width: 782px){.lpc-header-nav-bar-list-item{display:none}.lpc-header-nav-bar-list-item-logo,.lpc-header-nav-bar-list-item-sidebar-toggle{display:block}}.lpc-header-nav-sidebar{color:black;font-size:13px;line-height:19px;letter-spacing:0;width:auto;height:auto;padding:23px;background:white;border-radius:0 6px 6px 0;box-shadow:0 9px 48px rgba(20,21,23,0.15)}.lpc-header-nav-sidebar-close{float:left;user-select:none;margin:-7px 0 0 -7px}.lpc-header-nav-sidebar-close-icon{font-size:23px;line-height:35px;letter-spacing:0;font-weight:700;line-height:1;text-align:center;width:23px;height:23px;display:inline-block}.lpc-header-nav-sidebar-menu-section{margin-top:20px}.lpc-header-nav-sidebar-menu-section::before{content:'';display:block;height:1px;margin:0 -23px 20px;background:#f5f6f6}.lpc-header-nav-sidebar-menu-section:nth-of-type(1){margin-top:0}.lpc-header-nav-sidebar-menu-section:nth-of-type(1)::before{display:none}.lpc-header-nav-sidebar-menu-section:nth-of-type(1) .lpc-header-nav-sidebar-menu-section-title{color:#8db9df}.lpc-header-nav-sidebar-menu-section:nth-of-type(1) .lpc-header-nav-sidebar-menu-section-list-item{color:#0e74dc}.lpc-header-nav-sidebar-menu-section:nth-of-type(2) .lpc-header-nav-sidebar-menu-section-title{color:#8db9df}.lpc-header-nav-sidebar-menu-section:nth-of-type(2) .lpc-header-nav-sidebar-menu-section-list-item{color:#0e74dc}.lpc-header-nav-sidebar-menu-section:nth-of-type(3) .lpc-header-nav-sidebar-menu-section-title{color:#b78ccf}.lpc-header-nav-sidebar-menu-section:nth-of-type(3) .lpc-header-nav-sidebar-menu-section-list-item{color:#7532a9}.lpc-header-nav-sidebar-menu-section:nth-of-type(4) .lpc-header-nav-sidebar-menu-section-title{color:#e47eac}.lpc-header-nav-sidebar-menu-section:nth-of-type(4) .lpc-header-nav-sidebar-menu-section-list-item{color:#d8135e}.lpc-header-nav-sidebar-menu-section:nth-of-type(5) .lpc-header-nav-sidebar-menu-section-title{color:#97d6c9}.lpc-header-nav-sidebar-menu-section:nth-of-type(5) .lpc-header-nav-sidebar-menu-section-list-item{color:#18a686}.lpc-header-nav-sidebar-menu-section-title{margin-bottom:12px;font-size:12px;line-height:17px;letter-spacing:0;font-weight:400;line-height:1;text-transform:uppercase;user-select:none;white-space:nowrap}.lpc-header-nav-sidebar-menu-section-list{padding:0;list-style:none;display:flex;flex-wrap:wrap}body:not(.logged-in) .lpc-header-nav-sidebar-menu-section-list-logged-in{display:none}body.logged-in .lpc-header-nav-sidebar-menu-section-list-not-logged-in{display:none}.lpc-header-nav-sidebar-menu-section-list-item{width:50%;margin-top:8px;font-weight:700;user-select:none}.lpc-header-nav-sidebar-menu-section-list-item:nth-child(-n+2){margin-top:0}
+.lpc-button{cursor:pointer;overflow:hidden;display:inline-block;vertical-align:middle;font-size:19px;line-height:30px;letter-spacing:0;font-weight:700;text-align:center;text-decoration:none;text-overflow:ellipsis;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:white;background:#2497ff;border-color:#2497ff;outline:none;border-radius:6px;border:1px solid;border-bottom-width:2px;margin:0 auto;padding:0.5em 1.5em 0.55em;transition:opacity 0.15s ease-out;-webkit-appearance:none;appearance:none}.lpc-button .gridicon{width:0.95em;height:0.95em;fill:currentColor;vertical-align:middle;margin:0 0.25em 0 -0.15em}.lpc-button:hover,.lpc-button:focus{opacity:0.85}.lpc-button:focus{outline:1px dotted}.lpc-button:active{opacity:0.65;outline:none;transition:none;border-top-width:2px;border-bottom-width:1px}.lpc-button[disabled],.lpc-button:disabled{opacity:0.35;cursor:default}@media (max-width: 660px){.lpc-button{font-size:16px;line-height:26px;letter-spacing:0}}
+.lpc-headline{overflow:hidden;padding:20rem 0;position:relative;background-color:#1c1e1f}.lpc-headline-wrapper{margin:0 auto;max-width:1680px}.lpc-headline-head-snippet,.lpc-headline-title,.lpc-headline-subtitle,.lpc-headline-subtitle2,.lpc-headline-paragraphs,.lpc-headline-cta,.lpc-headline-nudge,.lpc-headline-tail-snippet{z-index:5;position:relative;margin:0 auto;max-width:782px;color:white;text-align:center}.lpc-headline-head-snippet,.lpc-headline-tail-snippet{font-size:19px;line-height:30px;letter-spacing:0}.lpc-headline-head-snippet a,.lpc-headline-tail-snippet a{text-decoration:underline}.lpc-headline-head-snippet{margin-bottom:4rem}.lpc-headline-title>span,.lpc-headline-subtitle>span,.lpc-headline-subtitle2>span{display:block}.lpc-headline-title{font-size:43px;line-height:59px;letter-spacing:0;font-weight:700}.lpc-headline-subtitle,.lpc-headline-subtitle2{margin-top:3rem;font-size:19px;line-height:30px;letter-spacing:0;font-weight:400}.lpc-headline-paragraphs{margin-top:3rem;font-size:16px;line-height:26px;letter-spacing:0}.lpc-headline-cta{padding-top:1rem}.lpc-headline-cta-title,.lpc-headline-cta-description,.lpc-headline-cta-button{margin-top:3rem}.lpc-headline-cta-title{font-size:36px;line-height:52px;letter-spacing:0;font-weight:700}.lpc-headline-cta-description{font-size:19px;line-height:30px;letter-spacing:0}.lpc-headline-nudge{font-size:14px;line-height:22px;letter-spacing:0;margin-top:4rem}.lpc-headline-tail-snippet{margin-top:4rem}@media (max-width: 1600px){html:not([lang^='en']) .lpc-headline-title>span,html:not([lang^='en']) .lpc-headline-subtitle>span,html:not([lang^='en']) .lpc-headline-subtitle2>span{display:inline}}@media (max-width: 960px){.lpc-headline-head-snippet,.lpc-headline-title,.lpc-headline-subtitle,.lpc-headline-subtitle2,.lpc-headline-paragraphs,.lpc-headline-cta,.lpc-headline-nudge,.lpc-headline-tail-snippet{max-width:75%}}@media (max-width: 782px){.lpc-headline{padding:15rem 0}.lpc-headline-title>span,.lpc-headline-subtitle>span,.lpc-headline-subtitle2>span{display:inline}}@media (max-width: 660px){.lpc-headline-head-snippet,.lpc-headline-title,.lpc-headline-subtitle,.lpc-headline-subtitle2,.lpc-headline-paragraphs,.lpc-headline-cta,.lpc-headline-nudge,.lpc-headline-tail-snippet{max-width:90%}.lpc-headline-head-snippet,.lpc-headline-tail-snippet{font-size:16px;line-height:26px;letter-spacing:0}.lpc-headline-title{font-size:36px;line-height:52px;letter-spacing:0}.lpc-headline-subtitle,.lpc-headline-subtitle2{font-size:16px;line-height:26px;letter-spacing:0}.lpc-headline-paragraphs{font-size:15px;line-height:24px;letter-spacing:0}.lpc-headline-cta-title{font-size:23px;line-height:35px;letter-spacing:0}.lpc-headline-cta-description{font-size:16px;line-height:26px;letter-spacing:0}.lpc-headline-nudge{font-size:12px;line-height:17px;letter-spacing:0}}
+.lpc-domain-info{overflow:hidden;padding:0;background-color:#23354B;position:relative;height:auto;width:100%}.lpc-domain-info .lpc-domain-container{margin:0 auto;width:100%;max-width:1280px}@media (max-width: 1366px){.lpc-domain-info .lpc-domain-container{max-width:calc(1140px - 14%)}}@media (max-width: 1140px){.lpc-domain-info .lpc-domain-container{max-width:calc(960px - 14%)}}@media (max-width: 960px){.lpc-domain-info .lpc-domain-container{max-width:calc(782px - 14%)}}@media (max-width: 782px){.lpc-domain-info .lpc-domain-container{max-width:calc(660px - 14%)}}@media (max-width: 660px){.lpc-domain-info .lpc-domain-container{max-width:86%}}.lpc-domain-info .lpc-domain-title{margin:6rem 0 0 0;font-size:32px;color:white;text-align:center}.lpc-domain-info .lpc-domain-window{margin:6rem 7% 0 7%}.lpc-domain-info .lpc-domain-window .lpc-domain-window--title-bar{height:30px;background:#016087;border-radius:10px 10px 0 0}.lpc-domain-info .lpc-domain-window .lpc-domain-window--title-bar--icons-group{margin:10px 10px 0 0;display:inline-block}.lpc-domain-info .lpc-domain-window .lpc-domain-window--title-bar--icons-single{margin:0 0 0 5px;display:inline-block;width:10px;height:10px;border-radius:5px;background:#2B2D2F}.lpc-domain-info .lpc-domain-window .lpc-domain-window--icons-group{margin:19px 10px 0 0;display:inline-block;vertical-align:top}.lpc-domain-info .lpc-domain-window .lpc-domain-window--icons-group .lpc-gridicon{display:inline-block;padding:0;width:20px;height:20px;margin-right:-2px}.lpc-domain-info .lpc-domain-window .lpc-domain-window--icons-group .lpc-gridicon:not(:first-child){margin-right:-7px}.lpc-domain-info .lpc-domain-window .lpc-domain-window--address-bar{height:56px;background:#D8DEE4}.lpc-domain-info .lpc-domain-window .lpc-domain-window--address-bar--input{display:inline-block;width:calc(100% - 90px);margin:11px 10px 0 0;vertical-align:top}.lpc-domain-info .lpc-domain-window .lpc-domain-window--address-bar--input--url{height:34px;background:white;border-radius:5px;border:2px solid #3D4145;font-size:16px;padding:4px;color:#585E64}.lpc-domain-info .lpc-domain-window .lpc-domain-window--address-bar--input--strings{display:none}.lpc-domain-info .lpc-domain-features{width:100%;display:flex;margin:6rem auto 6rem auto}.lpc-domain-info .lpc-domain-feature{width:33%}.lpc-domain-info .lpc-domain-feature:not(:last-child){margin:0 0 0 10%}.lpc-domain-info .lpc-domain-feature--title{color:white;font-size:22px}.lpc-domain-info .lpc-domain-feature--description{margin-top:2.5rem;color:white;font-size:16px;line-height:24px}@media (max-width: 1440px){.lpc-domain-info .lpc-domain-window{margin-top:4rem}.lpc-domain-info .lpc-domain-features{margin:4rem 0 4rem 0}}@media (max-width: 660px){.lpc-domain-info .lpc-domain-window{margin:4rem 0 0 0}.lpc-domain-info .lpc-domain-features{text-align:center;display:block;width:100%}.lpc-domain-info .lpc-domain-feature{display:block;width:100%;margin:0}.lpc-domain-info .lpc-domain-feature--description{margin-bottom:2.5rem}}@media (max-width: 480px){.lpc-domain-info .lpc-domain-window{margin:4rem -3% 0 -3%}.lpc-domain-info .lpc-domain-window .lpc-domain-window--title-bar--icons-group,.lpc-domain-info .lpc-domain-window .lpc-domain-window--icons-group{display:none}.lpc-domain-info .lpc-domain-window .lpc-domain-window--address-bar--input{width:calc(100% - 20px)}}
+.lpc-gridicon{width:54px;height:54px;padding:8px;border-radius:50%;display:inline-block}.lpc-gridicon svg{width:100%;height:100%;fill:currentColor}
+.lpc-feature-icon-title{font-size:16px;line-height:26px;letter-spacing:0;display:inline-block;vertical-align:bottom;padding:0 0 14px 0;margin:0 1.25rem 0 0}.lpc-feature-title{font-size:23px;line-height:35px;letter-spacing:0;font-weight:700;margin-top:1.25rem}.lpc-feature-description{font-size:16px;line-height:26px;letter-spacing:0;margin-top:1rem}.lpc-feature-cta{font-size:16px;line-height:26px;letter-spacing:0;margin-top:1rem}@media (max-width: 782px){.lpc-feature-icon{width:36px;height:36px;padding:6px}.lpc-feature-title{font-size:19px;line-height:30px;letter-spacing:0}.lpc-feature-description{font-size:14px;line-height:22px;letter-spacing:0}.lpc-feature-cta{font-size:14px;line-height:22px;letter-spacing:0}}
+.lpc-features{padding:8rem 7% 9rem 7%}.lpc-features-wrapper{margin:0 auto;max-width:1680px}.lpc-features-title>span,.lpc-features-subtitle>span{display:block}.lpc-features-title{font-size:30px;line-height:45px;letter-spacing:0;font-weight:700}.lpc-features-subtitle{font-size:16px;line-height:26px;letter-spacing:0;font-weight:400;margin:1rem 0 0 0}.lpc-features-description{font-size:19px;line-height:30px;letter-spacing:0;margin-top:3rem}.lpc-features-block{display:flex;flex-wrap:wrap;margin:0 auto;max-width:1440px}.lpc-features-block-item{width:50%}.lpc-features-block-item:nth-child(odd){padding-left:5rem}.lpc-features-block-item:nth-child(even){padding-right:5rem}.lpc-features-block-item:not(:nth-child(1)):not(:nth-child(2)){padding-top:5rem}.lpc-features-cta-title{font-size:32px;line-height:40px;letter-spacing:0}.lpc-features-cta-description{margin-top:3rem}.lpc-features-cta{text-align:center;margin:8rem auto 0 auto}@media (max-width: 660px){.lpc-features{padding-top:5rem;padding-bottom:6rem}.lpc-features-block-item{width:100%}.lpc-features-block-item:not(#x){padding:0}.lpc-features-block-item:not(#x):not(:nth-child(1)){padding-top:5rem}.lpc-features-title{font-size:23px;line-height:35px;letter-spacing:0}.lpc-features-subtitle{font-size:16px;line-height:26px;letter-spacing:0}.lpc-features-description{font-size:16px;line-height:26px;letter-spacing:0}}
+.lp-pitch-x{overflow:hidden;background:#fff0ea;padding:8vw 7% 8vw 7%;min-height:600px}@media (max-width: 782px){.lp-pitch-x{min-height:auto}}.lp-pitch-x .lp-pitch-x-bottom-slope{position:absolute;right:0;top:0;bottom:0;left:0;background:red;transform:skewY(-5deg) translateY(100%);transform-origin:bottom left}.lp-pitch-x .lp-pitch-x-container{display:flex;margin:0 auto;flex-wrap:wrap;align-content:flex-start;max-width:1400px}@media (max-width: 782px){.lp-pitch-x .lp-pitch-x-container{height:auto;min-height:auto}}.lp-pitch-x .lp-pitch-x-block1,.lp-pitch-x .lp-pitch-x-block2{width:50%;position:relative}.lp-pitch-x .lp-pitch-x-icon>img{width:auto;height:54px}.lp-pitch-x .lp-pitch-x-title,.lp-pitch-x .lp-pitch-x-undertitle{font-size:30px;line-height:45px;letter-spacing:0;font-weight:700;color:#6e1200}.lp-pitch-x .lp-pitch-x-title span,.lp-pitch-x .lp-pitch-x-undertitle span{font-weight:inherit;display:block}.lp-pitch-x .lp-pitch-x-paragraphs>p{font-size:19px;line-height:30px;letter-spacing:0;color:#676d73;margin-top:2rem}.lp-pitch-x .lp-pitch-x-image{display:block;position:relative;top:auto;right:auto;bottom:auto;left:auto;width:100%;max-width:none;max-height:none;height:auto;margin:0 auto;padding:0;transform:none}.lp-pitch-x .lp-pitch-x-image>.lp-image-ratio{padding:100% 0 0 0}.lp-pitch-x .lp-pitch-x-image>.lp-image-fill{background-size:contain;background-position:center center}@media (max-width: 782px){.lp-pitch-x .lp-pitch-x-image{width:80%}}@media (max-width: 782px){.lp-pitch-x{padding-bottom:0}.lp-pitch-x .lp-pitch-x-block1,.lp-pitch-x .lp-pitch-x-block2{width:100%}.lp-pitch-x .lp-pitch-x-block2{margin:3rem 0 0 0}.lp-pitch-x .lp-pitch-x-bottom-slope{display:none}}@media (max-width: 660px){.lp-pitch-x{padding:4rem 7% 0 7%}.lp-pitch-x .lp-pitch-x-icon>img{height:36px}.lp-pitch-x .lp-pitch-x-title span,.lp-pitch-x .lp-pitch-x-undertitle span{font-size:19px;line-height:30px;letter-spacing:0}.lp-pitch-x .lp-pitch-x-paragraphs>p{font-size:14px;line-height:22px;letter-spacing:0}}
+.lpc-testimonial-block{display:flex;flex-direction:row}@media (max-width: 782px){.lpc-testimonial-block{flex-direction:column-reverse}}.lpc-testimonial-details{display:flex;flex-direction:column}.lpc-testimonial-image{margin:3rem 0 0 0}@media (max-width: 782px){.lpc-testimonial-image{margin:1rem 0 0 0}}.lpc-testimonial-image img,.lpc-testimonial-image amp-img{width:125px;height:125px;display:block;margin:0 auto;border-radius:50%}.lpc-testimonial-quote-container{position:relative;margin:2rem 0 0 2rem}.lpc-testimonial-quote-container::before{right:0;top:-10px;width:40px;height:40px;position:absolute;display:inline-block;content:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonial/media/open-quote.svg")}.lpc-testimonial-quote{font-size:19px;line-height:30px;letter-spacing:0;padding-right:60px}.lpc-testimonial-quote::after{content:'\201D'}.lpc-testimonial-name,.lpc-testimonial-website{text-align:left}.lpc-testimonial-name{font-weight:700;font-size:19px;line-height:30px;letter-spacing:0;margin:1rem 0 0 0}.lpc-testimonial-website{opacity:0.35;font-size:16px;line-height:26px;letter-spacing:0;font-style:italic}html[dir='rtl'] .lpc-testimonial-quote-container::before{transform:rotate(-180deg)}html[dir='rtl'] .lpc-testimonial-quote::after{content:'\201C'}@media (max-width: 960px){.lpc-testimonial-quote{font-size:16px;line-height:26px;letter-spacing:0}}@media (max-width: 782px){.lpc-testimonial-quote{font-size:19px;line-height:30px;letter-spacing:0}}@media (max-width: 660px){.lpc-testimonial-quote-container::before{top:-5px;width:25px;height:25px}.lpc-testimonial-quote{font-size:16px;line-height:26px;letter-spacing:0;padding-right:40px}.lpc-testimonial-name{font-size:16px;line-height:26px;letter-spacing:0}.lpc-testimonial-website{font-size:14px;line-height:22px;letter-spacing:0}}
+.lpc-testimonials{overflow:hidden;background:white;padding:8rem 7% 4rem 7%}.lpc-testimonials-title{font-size:30px;line-height:45px;letter-spacing:0;text-align:center;font-weight:700;margin:0 0 2rem 0}.lpc-testimonials-title>span{display:block;color:inherit;font-size:inherit;text-align:inherit;line-height:inherit;font-weight:inherit}.lpc-testimonials-container{margin:0 auto;max-width:1400px}.lpc-testimonials-collection{display:flex;flex-wrap:wrap;margin:0 -5rem}.lpc-testimonials-collection .lpc-testimonial{width:50%;padding:2rem 3rem}@media (max-width: 1140px){.lpc-testimonials{padding:4rem 7%}.lpc-testimonials-collection .lpc-testimonial{width:100%;padding:2.5rem 5rem}.lpc-testimonials-collection .lpc-testimonial:first-child{padding-top:0}.lpc-testimonials-collection .lpc-testimonial:last-child{padding-bottom:0}}@media (max-width: 660px){.lpc-testimonials{padding:4rem 7%}.lpc-testimonials-title{font-size:23px;line-height:35px;letter-spacing:0}.lpc-testimonials-collection{margin:0 -2.5rem}.lpc-testimonials-collection .lpc-testimonial{padding:2.5rem}.lpc-testimonials-collection .lpc-testimonial:first-child{padding-top:0}.lpc-testimonials-collection .lpc-testimonial:last-child{padding-bottom:0}}
+.lpc-plan,.lpc-plan *{box-sizing:border-box}.lpc-plan{position:relative;margin:0;padding:18px;color:#636d75;background:#f6f6f6;border-radius:4px;border-top:9px solid #ccced0}.lpc-plan-header-badge{top:90px;right:18px;z-index:1;position:absolute;font-size:11px;line-height:15px;letter-spacing:0;font-weight:700;line-height:18px;text-transform:uppercase;vertical-align:baseline;margin:0;padding:0 4px;color:white;background:#bc4681;border-radius:2px;border-color:transparent}.lpc-plan-header-title,.lpc-plan-header-subtitle,.lpc-plan-header-price{font-weight:400;white-space:nowrap}.lpc-plan-header-title,.lpc-plan-header-price{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif;color:#1a1a1a}@media (max-width: 659px){.lpc-plan-header-title,.lpc-plan-header-price{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-plan-header-title,.lpc-plan-header-price{font-family:Georgia, "Times New Roman", Times, serif}}.lpc-plan-header-title{font-size:32px;line-height:40px;letter-spacing:0}.lpc-plan-header-subtitle{font-size:14px;line-height:22px;letter-spacing:0;padding:0 0 18px 0}.lpc-plan-header-price{font-size:24px;line-height:32px;letter-spacing:0;margin:0 -18px;padding:18px 18px 0 18px;color:#3d4145;border-top:1px solid #e1e2e2;position:relative}.lpc-plan-header-price amp-list{position:static}.lpc-plan-header-price amp-list [class*='-loader']:not([class*='-loader-dot']){top:10px;right:18px;transform:none;-webkit-transform:none}.lpc-plan-header-price amp-list [class*='-loader']:not([class*='-loader-dot']) [class*='-loader-dot']{margin:0}.lpc-plan-header-price amp-list [class*='-replaced-content']{width:auto;height:auto;position:static;min-height:24px}.lpc-plan-header-timeframe{font-size:13px;line-height:19px;letter-spacing:0}.lpc-plan-cta-block-cta{margin:0 -6px;padding:18px 0}.lpc-plan-cta-block-cta .lpc-button{font-size:14px;line-height:22px;letter-spacing:0;width:100%;border-radius:4px;padding:5px 6px 6px 6px;color:#3d4145;background-color:white;border-color:#ccced0;transition-property:color, background, border-color, opacity, filter, -webkit-filter}.lpc-plan-cta-block-cta .lpc-button:hover,.lpc-plan-cta-block-cta .lpc-button:active{opacity:0.85}.lpc-plan-cta-block-cta .lpc-button:active{border-top-width:1px;border-bottom-width:2px;filter:brightness(0.85);-webkit-filter:brightness(0.85)}.lpc-plan-cta-block-cta .lpc-button:focus{outline-color:black}.lpc-plan.is-featured .lpc-plan-cta-block-cta .lpc-button{color:white;border-color:#b7266a;background-color:#d52c82}.lpc-plan-summary{font-size:14px;line-height:22px;letter-spacing:0}@media (max-width: 1279px){.lpc-plan-header-badge{top:79px}.lpc-plan-header-title{font-size:24px;line-height:32px;letter-spacing:0}.lpc-plan-header-subtitle{font-size:13px;line-height:19px;letter-spacing:0}.lpc-plan-header-price{font-size:20px;line-height:28px;letter-spacing:0}.lpc-plan-header-price amp-list [class*='-replaced-content']{min-height:20px}}@media (max-width: 767px){.lpc-plan-header-timeframe{font-size:12px;line-height:17px;letter-spacing:0}}
+.lpc-plan-free{color:#969ca1;background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.05)}.lpc-plan-free .lpc-plan-header-title{color:white}.lpc-plan-free .lpc-plan-header-price{color:#b0b5b8;border-top-color:rgba(255,255,255,0.05)}.lpc-plan-free .lpc-plan-cta-block-cta .lpc-button{color:#f6f6f6;border-color:#50575d;background-color:transparent}
+.lpc-featured-plan{background:#1d232f}.lpc-featured-plan-container{display:grid;grid-gap:96px;grid-template-columns:repeat(2, 1fr);margin:0 auto;padding:0 48px;max-width:960px;box-sizing:content-box}.lpc-featured-plan-container *{box-sizing:border-box}.lpc-featured-plan-title,.lpc-featured-plan-subtitle{font-weight:400}.lpc-featured-plan-title>span,.lpc-featured-plan-subtitle>span{display:block}.lpc-featured-plan-title{color:white;font-size:48px;line-height:56px;letter-spacing:0;font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif}@media (max-width: 659px){.lpc-featured-plan-title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-featured-plan-title{font-family:Georgia, "Times New Roman", Times, serif}}.lpc-featured-plan-subtitle{font-size:20px;line-height:28px;letter-spacing:0;margin:18px 0 0 0;color:#b0b5b8}.lpc-featured-plan-block .lpc-plan{max-width:320px;padding:18px 24px;margin:12px auto 0 auto}.lpc-featured-plan-block .lpc-plan .lpc-plan-header-title{font-size:24px;line-height:32px;letter-spacing:0}.lpc-featured-plan-block .lpc-plan .lpc-plan-header-subtitle{padding:0}.lpc-featured-plan-block .lpc-plan .lpc-plan-header-price,.lpc-featured-plan-block .lpc-plan .lpc-plan-header-timeframe{display:none}.lpc-featured-plan-block .lpc-plan .lpc-plan-cta-block-cta .lpc-button{color:white;border-color:#b7266a;background-color:#d52c82}@media (max-width: 1055px){.lpc-featured-plan-container{grid-template-columns:repeat(1, 1fr)}.lpc-featured-plan-block-2{display:none}.lpc-featured-plan-title,.lpc-featured-plan-subtitle{text-align:center}.lpc-featured-plan-title>span,.lpc-featured-plan-subtitle>span{display:inline}.lpc-featured-plan-title{font-size:40px;line-height:55px;letter-spacing:0}.lpc-featured-plan-subtitle{font-size:16px;line-height:26px;letter-spacing:0}}@media (max-width: 767px){.lpc-featured-plan-container{padding:0 24px}.lpc-featured-plan-title,.lpc-featured-plan-subtitle{text-align:right}.lpc-featured-plan-title{font-size:32px;line-height:40px;letter-spacing:0}}@media (max-width: 659px){.lpc-featured-plan-title>span,.lpc-featured-plan-subtitle>span{display:block}}@media (max-width: 479px){.lpc-featured-plan-title{font-size:24px;line-height:32px;letter-spacing:0}.lpc-featured-plan-subtitle{font-size:14px;line-height:22px;letter-spacing:0}}
+.lpc-shape-container{z-index:0;top:0;left:auto;bottom:auto;right:0;width:25%;overflow:hidden;position:absolute;transform-origin:center}.lpc-shape-ratio{padding:75% 0 0 0}.lpc-shape-fill{top:0;left:0;bottom:0;right:0;position:absolute;background-size:cover;background-position:center center}
+.lpc-plan-premium{border-color:#e0bd56}
+.lpc-plan-business{border-color:#e38a40}
+.lpc-plan-ecommerce{border-color:#aa5fe6}
+.lpc-plans.price-2020-q2-test-2 .lpc-plans-table,.lpc-plans.price-2020-q2-test-3 .lpc-plans-table{justify-content:center}@media(max-width: 1055px){.lpc-plans.price-2020-q2-test-3 .lpc-plans-table .lpc-plan-business{margin-top:0}}@media(max-width: 479px){.lpc-plans.price-2020-q2-test-3 .lpc-plans-table .lpc-plan-business{margin-top:24px}}.lpc-plans{padding:96px 0;overflow:hidden;position:relative;background:#1d232f}.lpc-plans-shapes .lpc-shape:nth-child(1){z-index:0;position:absolute;opacity:.95;width:600px;height:600px;transform:scaleY(-1);top:-400px}@supports(background: radial-gradient(closest-side, #ff0000, #d2b48c)){.lpc-plans-shapes .lpc-shape:nth-child(1){background:radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f),url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/media/jan-2019-texture.jpg");background-size:600px 600px}}@media(max-width: 799px){.lpc-plans-shapes .lpc-shape:nth-child(1){left:400px}}@media(min-width: 800px){.lpc-plans-shapes .lpc-shape:nth-child(1){right:-200px}}.lpc-plans-shapes .lpc-shape:nth-child(2){z-index:0;position:absolute;opacity:.95;width:600px;height:600px;top:-300px;left:-200px}@supports(background: radial-gradient(closest-side, #ff0000, #d2b48c)){.lpc-plans-shapes .lpc-shape:nth-child(2){background:radial-gradient(closest-side, rgba(29, 35, 47, 0), #1d232f),url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/media/jan-2019-texture.jpg");background-size:600px 600px}}.lpc-plans-title,.lpc-plans-subtitle{margin:0 auto;max-width:90%;text-align:center}.lpc-plans-title>span,.lpc-plans-subtitle>span{display:block}.lpc-plans-title{font-size:64px;line-height:72px;letter-spacing:0;font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif;color:white;max-width:960px}@media(max-width: 659px){.lpc-plans-title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-plans-title{font-family:Georgia,"Times New Roman",Times,serif}}.lpc-plans-subtitle{font-size:20px;line-height:28px;letter-spacing:0;font-weight:400;margin-top:1rem;max-width:782px;color:#b0b5b8}.lpc-plans-block{z-index:1;position:relative}.lpc-plans-featured-plan .lpc-featured-plan{background:transparent}.lpc-plans-table-container{margin:0 auto;max-width:1440px;box-sizing:content-box;padding:72px 48px 0 48px}.lpc-plans-table{display:flex;flex-wrap:wrap;margin:0 -5px}.lpc-plans-table .lpc-plan{margin:0 5px;width:calc(25% - 10px)}.lpc-plans-table .lpc-plan-free{order:0;display:none;margin-top:0}.lpc-plans-table .lpc-plan-personal{order:1;margin-top:0}.lpc-plans-table .lpc-plan-premium{order:2;margin-top:0}.lpc-plans-table .lpc-plan-business{order:3;margin-top:0}.lpc-plans-table .lpc-plan-ecommerce{order:4;margin-top:0}.lpc-plans-compare-button{text-align:center;margin:36px 0 0 0}.lpc-plans-compare-button .lpc-button{font-size:14px;line-height:22px;letter-spacing:0;background:none;color:#f6f6f6;border-color:#636d75}.lpc-plans-compare-button .lpc-button,.lpc-plans-compare-button .lpc-button:focus,.lpc-plans-compare-button .lpc-button:active,.lpc-plans-compare-button .lpc-button:hover{border-width:1px}.lpc-plans-vip-pitch{margin:7rem 0 0 0}@media(max-width: 1279px){.lpc-plans-table-container{padding:72px 12px 0 12px}}@media(max-width: 1055px){.lpc-plans{padding:72px 0}.lpc-plans-title{font-size:48px;line-height:56px;letter-spacing:0}.lpc-plans-subtitle{font-size:16px;line-height:26px;letter-spacing:0}.lpc-plans-table-container{padding:48px 48px 0 48px}.lpc-plans-table{margin:0 -6px}.lpc-plans-table .lpc-plan{margin:0 6px;width:calc(33.3% - 12px)}.lpc-plans-table .lpc-plan-free{display:block;margin-top:0}.lpc-plans-table .lpc-plan-personal{margin-top:0}.lpc-plans-table .lpc-plan-premium{margin-top:0}.lpc-plans-table .lpc-plan-business{margin-top:12px;width:calc(50% - 12px)}.lpc-plans-table .lpc-plan-ecommerce{margin-top:12px;width:calc(50% - 12px)}}@media(max-width: 767px){.lpc-plans-title,.lpc-plans-subtitle{max-width:90%}.lpc-plans-title>span,.lpc-plans-subtitle>span{display:inline}.lpc-plans-title{font-size:32px;line-height:40px;letter-spacing:0}.lpc-plans-subtitle{font-size:14px;line-height:22px;letter-spacing:0}.lpc-plans-table-container{padding:36px 12px 0 12px}.lpc-plans-table{margin:0 -6px}.lpc-plans-table .lpc-plan{margin:0 6px;width:calc(50% - 12px)}.lpc-plans-table .lpc-plan-free{order:0;margin-top:0}.lpc-plans-table .lpc-plan-personal{order:1;margin-top:0}.lpc-plans-table .lpc-plan-premium{order:2;margin-top:12px}.lpc-plans-table .lpc-plan-business{order:3;margin-top:12px}.lpc-plans-table .lpc-plan-ecommerce{order:4;margin-top:12px;width:calc(100% - 12px)}}@media(max-width: 479px){.lpc-plans-table{margin:0 -12px}.lpc-plans-table .lpc-plan{margin:0 12px;width:calc(100% - 24px)}.lpc-plans-table .lpc-plan.lpc-plan{margin-top:24px}}
+.lp-faqs{background:white;padding:8rem 7%}.lp-faqs .lp-faqs-container{max-width:960px;margin:0 auto}.lp-faqs .lp-faqs-icon{width:54px;height:54px;padding:8px;display:block;border-radius:50%;background:#29bedd;margin:0 auto 1.25rem auto}.lp-faqs .lp-faqs-icon svg{width:100%;height:100%;fill:white}.lp-faqs .lp-faqs-title{font-size:23px;line-height:35px;letter-spacing:0;text-align:center;color:#141517}.lp-faqs .lp-faqs-title>span{display:block;font-weight:700}.lp-faqs .lp-faqs-faqs{display:flex;flex-wrap:wrap;margin:6rem auto 0 auto}.lp-faqs .lp-faqs-faq{width:100%;padding:2rem 0 0 0;border-top:1px solid #dcdee0}.lp-faqs .lp-faqs-faq--question,.lp-faqs .lp-faqs-faq--answer{font-size:16px;line-height:26px;letter-spacing:0}.lp-faqs .lp-faqs-faq--question a,.lp-faqs .lp-faqs-faq--answer a{text-decoration:underline}.lp-faqs .lp-faqs-faq--question{font-weight:400}.lp-faqs .lp-faqs-faq--question>label{display:block;cursor:pointer;user-select:none;position:relative;padding:0 0 0 2rem;color:#2d3033}.lp-faqs .lp-faqs-faq--question>label::after{content:'';display:block;left:0;top:.25em;position:absolute;width:1em;height:1em;opacity:0.25;line-height:1em;transition-duration:.25s;transition-property:transform opacity;background-size:cover;background-repeat:no-repeat;background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/faqs/media/chevron.svg")}.lp-faqs .lp-faqs-faq--question>label:hover,.lp-faqs .lp-faqs-faq--question>label:active,.lp-faqs .lp-faqs-faq--question>label:focus{color:black}.lp-faqs .lp-faqs-faq--question>label:hover::after,.lp-faqs .lp-faqs-faq--question>label:active::after,.lp-faqs .lp-faqs-faq--question>label:focus::after{opacity:1}.lp-faqs .lp-faqs-faq--question::after{content:'';display:block;height:2rem}.lp-faqs .lp-faqs-faq--answer{max-height:0;overflow:hidden;color:#676d73;transition:max-height .25s;padding:0 .5rem 0 0}.lp-faqs .lp-faqs-faq--answer::after{content:'';display:block;height:2rem}.lp-faqs .lp-faqs-faq--answer-radio{display:none}.lp-faqs .lp-faqs-faq--answer-radio:checked ~ .lp-faqs-faq--question>label::after{transform:rotate(-180deg)}.lp-faqs .lp-faqs-faq--answer-radio:checked ~ .lp-faqs-faq--answer{max-height:50rem}.lp-faqs .lp-faqs-cta{text-align:center;margin:4rem auto 0 auto}.lp-faqs .lp-faqs-cta .button:not(.lpc-button){font-size:19px;line-height:30px;letter-spacing:0;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-align:center}.lp-faqs .lp-faqs-cta .button:not(.lpc-button):not(#x){font-weight:700;margin:0}.lp-faqs .lp-faqs-cta .button,.lp-faqs .lp-faqs-cta .button:focus,.lp-faqs .lp-faqs-cta .button:hover,.lp-faqs .lp-faqs-cta .button:active{color:white;border-color:#2497ff;background:#2497ff;border-radius:6px;box-shadow:none}@media (max-width: 782px){.lp-faqs .lp-faqs-icon{width:36px;height:36px;padding:6px}.lp-faqs .lp-faqs-title{font-size:19px;line-height:30px;letter-spacing:0}.lp-faqs .lp-faqs-faq--question,.lp-faqs .lp-faqs-faq--answer{font-size:14px;line-height:22px;letter-spacing:0}}@media (max-width: 660px){.lp-faqs{padding:5rem 7%}}
+.lpc-footer-nav{background:#141517}.lpc-footer-nav-container{overflow:auto;padding:5rem 7%;margin:0 auto;max-width:1200px}.lpc-footer-nav-menu{float:right;font-size:14px;line-height:22px;letter-spacing:0}.lpc-footer-nav-menu,.lpc-footer-nav-menu li{list-style:none}.lpc-footer-nav-menu li{padding:0 0 0 10px;display:inline-block}.lpc-footer-nav-menu p,.lpc-footer-nav-menu a{color:white;font-weight:300;text-decoration:none}.lpc-footer-nav-menu p{color:rgba(255,255,255,0.7)}.lpc-footer-nav-i18n-sidebar-toggle-locale{padding:2px 3px;font-size:11px;line-height:11px;border:1px solid;border-radius:2px;display:inline-block}.lpc-footer-nav-credits{float:left;font-size:14px;line-height:22px;letter-spacing:0;margin-right:-5px;padding-bottom:5px;color:#93989d}.lpc-footer-nav-logo{height:23px;min-width:131px;text-indent:-9999px;display:inline-block;background:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/footer-nav/media/automattic-white.svg") no-repeat -1px 6px}@media (max-width: 960px){.lpc-footer-nav-menu,.lpc-footer-nav-credits{float:none;text-align:center}.lpc-footer-nav-credits{margin:2rem 0 0 0;padding:0}}.lpc-footer-nav-i18n-sidebar{color:black;font-size:13px;line-height:19px;letter-spacing:0;width:auto;height:auto;padding:23px;background:white;border-radius:0 6px 6px 0;box-shadow:0 9px 48px rgba(20,21,23,0.15)}.lpc-footer-nav-i18n-sidebar-close{float:left;user-select:none;margin:-7px 0 0 -7px}.lpc-footer-nav-i18n-sidebar-close-icon{font-size:23px;line-height:35px;letter-spacing:0;font-weight:700;line-height:1;text-align:center;width:23px;height:23px;display:inline-block}.lpc-footer-nav-i18n-sidebar-menu-title{font-size:19px;line-height:30px;letter-spacing:0;font-weight:700;margin-bottom:19px}.lpc-footer-nav-i18n-sidebar-menu-list{padding:0;list-style:none;display:flex;flex-wrap:wrap}.lpc-footer-nav-i18n-sidebar-menu-list-item{width:33%;margin-top:8px;font-size:14px;line-height:22px;letter-spacing:0;user-select:none}.lpc-footer-nav-i18n-sidebar-menu-list-item:nth-child(-n+3){margin-top:0}.lpc-footer-nav-i18n-sidebar-menu-list-item.is-current{font-weight:700}.lpc-footer-nav-i18n-sidebar-menu-list-item.is-current::before{width:1em;height:1em;display:inline-block;content:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/footer-nav/media/check-green.svg")}@media (max-width: 782px){.lpc-footer-nav-i18n-sidebar-menu-list-item{width:50%;font-size:13px;line-height:19px;letter-spacing:0}.lpc-footer-nav-i18n-sidebar-menu-list-item:nth-child(-n+2){margin-top:0}}@media (max-width: 480px){.lpc-footer-nav-i18n-sidebar-menu-list-item{font-size:13px;line-height:19px;letter-spacing:0}}
+amp-user-notification#gdpr-cookie-banner{padding:1rem 10%;font-size:1.3em;text-align:center;background:#eee;border-top:1px solid #666;box-shadow:0 -5px 5px 0 rgba(0,0,0,0.05)}amp-user-notification#gdpr-cookie-banner a{text-decoration:underline}amp-user-notification#gdpr-cookie-banner button{font-size:1.2em;padding:2px 10px}
+.lp-image-container{right:0;top:50%;z-index:0;width:33.33%;overflow:hidden;position:absolute;transform:rotate(10deg) translate(10%, -50%);transform-origin:right center}.lp-image-container>.lp-image-ratio{padding:75% 0 0 0}.lp-image-container>.lp-image-fill{top:0;left:0;bottom:0;right:0;position:absolute;background-size:cover;background-position:center center}.x-nav,.x-nav .x-nav-link{color:#016087}.x-nav .x-nav-list:nth-of-type(2) .x-nav-link{color:#d52c82}@media(max-width: 1140px){.x-nav .x-nav-list:nth-of-type(1) .x-nav-item:nth-child(4){display:none}}@media(max-width: 960px){.x-nav .x-nav-list:nth-of-type(1) .x-nav-link:not(.x-nav-link--logo){padding-right:6px;padding-left:6px}}.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item{color:#016087}.lpc-header-nav-bar-list2 .lpc-header-nav-bar-list-item{color:#d52c82}@media(max-width: 1140px){.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item:nth-child(4){display:none}}@media(max-width: 960px){.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item:not(.lpc-header-nav-bar-list-item-logo){padding-right:6px;padding-left:6px}}.lpc-headline{background-color:white}.lpc-headline.lpc-has-coupon-banner{min-height:800px}.lpc-headline .lpc-coupon-banner{margin:-8rem auto 10rem auto}.lpc-headline .lpc-coupon-banner .lpc-coupon-banner-wrapper{background:#003c54}.lpc-headline .lp-headline-image-1{display:none}.lpc-headline .lp-headline-image-2{display:block;position:absolute;top:0;right:0;bottom:0;left:0;background:blue;width:auto;height:auto;transform:none}.lpc-headline .lp-headline-image-2 .lp-image-ratio{padding:100% 0 0 100%}.lpc-headline .lp-headline-image-2 .lp-image-fill{background-color:white;background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/header.jpg");background-repeat:no-repeat;background-size:auto auto;background-size:contain;background-position:bottom left}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 1.5/1),only screen and (min-resolution: 144dpi),only screen and (min-resolution: 1.5dppx){.lpc-headline .lp-headline-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/header-2x.jpg")}}.lpc-headline .lpc-headline-title{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif;line-height:52px;color:#016087;max-width:90%}@media(max-width: 659px){.lpc-headline .lpc-headline-title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-headline .lpc-headline-title{font-family:Georgia,"Times New Roman",Times,serif}}.lpc-headline .lpc-headline-title>span{display:block}.lpc-headline .lpc-headline-subtitle,.lpc-headline .lpc-headline-subtitle2{color:#23354b;max-width:80%;font-weight:400}.lpc-headline .lpc-headline-subtitle>span,.lpc-headline .lpc-headline-subtitle2>span{display:block}.lpc-headline .lpc-headline-cta-button .lpc-button,.lpc-headline .lpc-headline-cta-button .lpc-button:focus,.lpc-headline .lpc-headline-cta-button .lpc-button:hover,.lpc-headline .lpc-headline-cta-button .lpc-button:active{color:white;border-color:#b7266a;background:#d52c82;border-radius:6px;box-shadow:none}.lpc-headline .lpc-headline-nudge{padding:0;font-size:15px;line-height:24px;letter-spacing:0;font-weight:400;max-width:600px;margin:4rem auto 0 auto}.lpc-headline .lpc-headline-nudge>span{display:block}.lpc-headline .lpc-headline-nudge a{text-decoration:underline}@media(min-width: 961px){html[lang=ja] .lpc-headline .lpc-headline-subtitle{max-width:800px}}@media(max-width: 1600px){html:not([lang^=en]) .lpc-headline .lpc-headline-subtitle>span,html:not([lang^=en]) .lpc-headline .lpc-headline-subtitle2>span{display:inline}}@media(max-width: 960px){.lpc-headline{min-height:620px;padding:12rem 0}.lpc-headline .lpc-coupon-banner{margin:-1rem auto 5rem auto}.lpc-headline .lpc-headline-subtitle>span,.lpc-headline .lpc-headline-subtitle2>span{display:inline}}@media(max-width: 782px){.lpc-headline .lpc-headline-title>span{display:inline}}@media(max-width: 480px){.lpc-headline .lpc-headline-title{text-align:right}.lpc-headline .lpc-headline-subtitle{text-align:right;max-width:90%}}.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif}@media(max-width: 659px){.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-family:Georgia,"Times New Roman",Times,serif}}.lp-pitch-x{padding:0;min-height:auto}.lp-pitch-x .lp-pitch-x-container{position:relative;min-height:756px;width:100%;max-width:1280px}@media(max-width: 1366px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(1140px - 14%)}}@media(max-width: 1140px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(960px - 14%)}}@media(max-width: 960px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(782px - 14%)}}@media(max-width: 782px){.lp-pitch-x .lp-pitch-x-container{padding:0;max-width:calc(660px - 14%)}}@media(max-width: 660px){.lp-pitch-x .lp-pitch-x-container{max-width:86%}}.lp-pitch-x .lpc-pitch-x-title{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif}@media(max-width: 659px){.lp-pitch-x .lpc-pitch-x-title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lp-pitch-x .lpc-pitch-x-title{font-family:Georgia,"Times New Roman",Times,serif}}.lp-pitch-x .lpc-pitch-x-cta-button{margin:4rem 0 0 0}.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:focus,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:hover,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:active{color:white;border-color:#b7266a;background:#d52c82;border-radius:6px;box-shadow:none}.lp-pitch-x.is-pitch-left{background:#23354b}.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:756px}@media(max-width: 1366px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:calc(1140px / 2)}}@media(max-width: 1140px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:calc(960px / 2)}}.lp-pitch-x.is-pitch-left .lp-pitch-x-bottom-slope{display:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-title{margin-top:2rem;color:white}.lp-pitch-x.is-pitch-left .lp-pitch-x-paragraphs p{color:white}.lp-pitch-x.is-pitch-left .lp-pitch-x-block1{padding:0 0 0 2rem;position:absolute;width:45%;right:0;top:50%;transform:translateY(-50%)}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{height:auto;min-height:756px;position:absolute;width:55%;right:45%;top:50%;transform:translateY(-50%)}@media(max-width: 1366px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(1140px / 2)}}@media(max-width: 1140px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(960px / 2)}}@media(max-width: 960px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(782px / 2)}}@media(max-width: 782px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(660px / 2)}}@media(max-width: 660px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:50vw}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image{display:block;position:absolute;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5)}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3{top:50%;left:-5%;width:50%;height:auto;margin:0;margin:0;transform:translateY(-50%);max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-ratio{padding:133% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/goodz.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 1.5/1),only screen and (min-resolution: 144dpi),only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/goodz-2x.jpg")}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2{top:-5%;right:10%;width:50%;height:auto;margin:0;transform:none;max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-ratio{padding:113% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/publication.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 1.5/1),only screen and (min-resolution: 144dpi),only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/publication-2x.jpg")}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1{bottom:0;right:0;width:60%;height:auto;transform:none;max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-ratio{padding:72% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/spatial.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 1.5/1),only screen and (min-resolution: 144dpi),only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/spatial-2x.jpg")}}@media(max-width: 782px){.lp-pitch-x.is-pitch-left .lpc-pitch-x-title span{font-size:26px}.lp-pitch-x.is-pitch-left .lpc-pitch-x-cta-button a{font-size:16px}}@media(max-width: 660px){.lp-pitch-x.is-pitch-left .lpc-pitch-x-title span{font-size:24px}.lp-pitch-x.is-pitch-left .lpc-pitch-x-cta-button a{font-size:14px}}@media(max-width: 480px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{padding-top:6rem;min-height:auto;max-width:100%}.lp-pitch-x.is-pitch-left .lp-pitch-x-title{margin:0 0 5rem 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-title>span{font-size:32px;line-height:42px}.lp-pitch-x.is-pitch-left .lp-pitch-x-block1,.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{padding:0 7%;position:relative;width:100%;right:auto;top:auto;transform:none;text-align:center}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{padding:0;margin-top:5rem;width:100%}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image{transform:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1{top:auto;bottom:0;right:25%;left:25%;width:auto;height:auto;z-index:1}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2{top:auto;bottom:-10%;right:-10%;width:47%;height:auto;z-index:0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3{top:auto;bottom:-10%;left:-10%;right:auto;width:47%;height:auto;z-index:0}}.lp-pitch-x.is-pitch-bottom{background:#204a69}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{min-height:585px;position:relative}@media(max-width: 1366px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{min-height:485px}}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-bottom-slope{display:none}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title{margin-top:2rem;color:white;font-size:42px;line-height:50px}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block1{padding:0;position:absolute;top:50%;transform:translateY(-50%);width:100%;z-index:1}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{position:absolute;right:50%;width:80%;height:100%;transform:translateX(25%);z-index:0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image{position:absolute;bottom:auto;right:0;left:auto;top:50%;width:100%;margin:0;transform:translateY(-40%);max-width:none}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-ratio{padding:60% 0 0 0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/pitch-bottom.jpg");background-repeat:no-repeat;background-size:cover;background-position:center}@media only screen and (-webkit-min-device-pixel-ratio: 1.5),only screen and (min--moz-device-pixel-ratio: 1.5),only screen and (-o-min-device-pixel-ratio: 1.5/1),only screen and (min-resolution: 144dpi),only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/pitch-bottom-2x.jpg")}}@media(max-width: 660px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title span{font-size:32px;line-height:50px}}@media(max-width: 480px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{padding-top:8rem;min-height:auto;max-width:100%}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title{margin:0 0 5rem 0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title>span{font-size:32px;line-height:42px}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block1,.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{padding:0 7%;position:relative;width:100%;right:auto;top:auto;transform:none;text-align:center}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{padding:0;margin-top:5rem;width:100%;min-height:50vw}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image{position:relative;bottom:auto;right:auto;left:auto;top:auto;width:120%;margin:0;transform:translatex(10%);max-width:none}}.lpc-features{color:#23354b;background:white;padding:8rem 0}.lpc-features .lpc-features-wrapper{width:100%;max-width:1280px}@media(max-width: 1366px){.lpc-features .lpc-features-wrapper{max-width:calc(1140px - 14%)}}@media(max-width: 1140px){.lpc-features .lpc-features-wrapper{max-width:calc(960px - 14%)}}@media(max-width: 960px){.lpc-features .lpc-features-wrapper{max-width:calc(782px - 14%)}}@media(max-width: 782px){.lpc-features .lpc-features-wrapper{max-width:calc(660px - 14%)}}@media(max-width: 660px){.lpc-features .lpc-features-wrapper{max-width:86%}}.lpc-features .lpc-features-title{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif;text-align:center;font-size:42px;line-height:52px;margin-bottom:8rem;color:#23354b}@media(max-width: 659px){.lpc-features .lpc-features-title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-features .lpc-features-title{font-family:Georgia,"Times New Roman",Times,serif}}@media(max-width: 660px){.lpc-features .lpc-features-title>span{display:inline}}@media(max-width: 480px){.lpc-features .lpc-features-title{text-align:right;font-size:32px;line-height:40px;margin-bottom:5rem}}.lpc-features .lpc-feature-title{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif;color:#23354b}@media(max-width: 659px){.lpc-features .lpc-feature-title{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-features .lpc-feature-title{font-family:Georgia,"Times New Roman",Times,serif}}.lpc-features .lpc-feature-description{color:#23354b}.lpc-features .lpc-button{border:0}.lpc-features .lpc-gridicon{color:white;background-color:#46799a}.lpc-faqs .lpc-faqs-icon{margin-bottom:30px}.lpc-faqs .lpc-faqs-title>span{font-weight:500;font-family:Recoleta,Georgia,"Times New Roman",Times,serif;font-size:32px;line-height:35px}@media(max-width: 659px){.lpc-faqs .lpc-faqs-title>span{font-family:Georgia,"Times New Roman",Times,serif}}@media all and (-ms-high-contrast: active),all and (-ms-high-contrast: none){.lpc-faqs .lpc-faqs-title>span{font-family:Georgia,"Times New Roman",Times,serif}}@media(max-width: 480px){.lpc-footer-nav .lpc-footer-nav-tag ul li:nth-child(n+1):nth-child(-n+6){display:none}}
+.lp-image-container{right:0;top:50%;z-index:0;width:33.33%;overflow:hidden;position:absolute;transform:rotate(10deg) translate(10%, -50%);transform-origin:right center}.lp-image-container>.lp-image-ratio{padding:75% 0 0 0}.lp-image-container>.lp-image-fill{top:0;left:0;bottom:0;right:0;position:absolute;background-size:cover;background-position:center center}.x-nav,.x-nav .x-nav-link{color:#016087}.x-nav .x-nav-list:nth-of-type(2) .x-nav-link{color:#D52C82}@media (max-width: 1140px){.x-nav .x-nav-list:nth-of-type(1) .x-nav-item:nth-child(4){display:none}}@media (max-width: 960px){.x-nav .x-nav-list:nth-of-type(1) .x-nav-link:not(.x-nav-link--logo){padding-right:6px;padding-left:6px}}.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item{color:#016087}.lpc-header-nav-bar-list2 .lpc-header-nav-bar-list-item{color:#D52C82}@media (max-width: 1140px){.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item:nth-child(4){display:none}}@media (max-width: 960px){.lpc-header-nav-bar-list1 .lpc-header-nav-bar-list-item:not(.lpc-header-nav-bar-list-item-logo){padding-right:6px;padding-left:6px}}.lpc-headline{background-color:white}.lpc-headline.lpc-has-coupon-banner{min-height:800px}.lpc-headline .lpc-coupon-banner{margin:-8rem auto 10rem auto}.lpc-headline .lpc-coupon-banner .lpc-coupon-banner-wrapper{background:#003c54}.lpc-headline .lp-headline-image-1{display:none}.lpc-headline .lp-headline-image-2{display:block;position:absolute;top:0;right:0;bottom:0;left:0;background:blue;width:auto;height:auto;transform:none}.lpc-headline .lp-headline-image-2 .lp-image-ratio{padding:100% 0 0 100%}.lpc-headline .lp-headline-image-2 .lp-image-fill{background-color:white;background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/header.jpg");background-repeat:no-repeat;background-size:auto auto;background-size:contain;background-position:bottom left}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lpc-headline .lp-headline-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/header-2x.jpg")}}.lpc-headline .lpc-headline-title{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif;line-height:52px;color:#016087;max-width:90%}@media (max-width: 659px){.lpc-headline .lpc-headline-title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-headline .lpc-headline-title{font-family:Georgia, "Times New Roman", Times, serif}}.lpc-headline .lpc-headline-title>span{display:block}.lpc-headline .lpc-headline-subtitle,.lpc-headline .lpc-headline-subtitle2{color:#23354B;max-width:80%;font-weight:400}.lpc-headline .lpc-headline-subtitle>span,.lpc-headline .lpc-headline-subtitle2>span{display:block}.lpc-headline .lpc-headline-cta-button .lpc-button,.lpc-headline .lpc-headline-cta-button .lpc-button:focus,.lpc-headline .lpc-headline-cta-button .lpc-button:hover,.lpc-headline .lpc-headline-cta-button .lpc-button:active{color:white;border-color:#B7266A;background:#D52C82;border-radius:6px;box-shadow:none}.lpc-headline .lpc-headline-nudge{padding:0;font-size:15px;line-height:24px;letter-spacing:0;font-weight:400;max-width:600px;margin:4rem auto 0 auto}.lpc-headline .lpc-headline-nudge>span{display:block}.lpc-headline .lpc-headline-nudge a{text-decoration:underline}@media (min-width: 961px){html[lang='ja'] .lpc-headline .lpc-headline-subtitle{max-width:800px}}@media (max-width: 1600px){html:not([lang^='en']) .lpc-headline .lpc-headline-subtitle>span,html:not([lang^='en']) .lpc-headline .lpc-headline-subtitle2>span{display:inline}}@media (max-width: 960px){.lpc-headline{min-height:620px;padding:12rem 0}.lpc-headline .lpc-coupon-banner{margin:-1rem auto 5rem auto}.lpc-headline .lpc-headline-subtitle>span,.lpc-headline .lpc-headline-subtitle2>span{display:inline}}@media (max-width: 782px){.lpc-headline .lpc-headline-title>span{display:inline}}@media (max-width: 480px){.lpc-headline .lpc-headline-title{text-align:right}.lpc-headline .lpc-headline-subtitle{text-align:right;max-width:90%}.lpc-headline .lpc-headline-cta-button{text-align:right}}.lp-pitch-x{padding:0;min-height:auto}.lp-pitch-x .lp-pitch-x-container{position:relative;min-height:756px;width:100%;max-width:1280px}@media (max-width: 1366px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(1140px - 14%)}}@media (max-width: 1140px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(960px - 14%)}}@media (max-width: 960px){.lp-pitch-x .lp-pitch-x-container{max-width:calc(782px - 14%)}}@media (max-width: 782px){.lp-pitch-x .lp-pitch-x-container{padding:0;max-width:calc(660px - 14%)}}@media (max-width: 660px){.lp-pitch-x .lp-pitch-x-container{max-width:86%}}.lp-pitch-x .lpc-pitch-x-title{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif}@media (max-width: 659px){.lp-pitch-x .lpc-pitch-x-title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lp-pitch-x .lpc-pitch-x-title{font-family:Georgia, "Times New Roman", Times, serif}}.lp-pitch-x .lpc-pitch-x-cta-button{margin:4rem 0 0 0}.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:focus,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:hover,.lp-pitch-x .lpc-pitch-x-cta-button .lpc-button:active{color:white;border-color:#B7266A;background:#D52C82;border-radius:6px;box-shadow:none}.lp-pitch-x.is-pitch-left{background:#23354B}.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:756px}@media (max-width: 1366px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:calc(1140px / 2)}}@media (max-width: 1140px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{min-height:calc(960px / 2)}}.lp-pitch-x.is-pitch-left .lp-pitch-x-bottom-slope{display:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-title{margin-top:2rem;color:white}.lp-pitch-x.is-pitch-left .lp-pitch-x-paragraphs p{color:white}.lp-pitch-x.is-pitch-left .lp-pitch-x-block1{padding:0 0 0 2rem;position:absolute;width:45%;right:0;top:50%;transform:translateY(-50%)}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{height:auto;min-height:756px;position:absolute;width:55%;right:45%;top:50%;transform:translateY(-50%)}@media (max-width: 1366px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(1140px / 2)}}@media (max-width: 1140px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(960px / 2)}}@media (max-width: 960px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(782px / 2)}}@media (max-width: 782px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:calc(660px / 2)}}@media (max-width: 660px){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{min-height:50vw}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image{display:block;position:absolute;box-shadow:0 2px 4px 0 rgba(0,0,0,0.5)}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3{top:50%;left:-5%;width:50%;height:auto;margin:0;margin:0;transform:translateY(-50%);max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-ratio{padding:133% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/goodz.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/goodz-2x.jpg")}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2{top:-5%;right:10%;width:50%;height:auto;margin:0;transform:none;max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-ratio{padding:113% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/publication.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/publication-2x.jpg")}}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1{bottom:0;right:0;width:60%;height:auto;transform:none;max-width:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-ratio{padding:72% 0 0 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/spatial.jpg");background-repeat:no-repeat;background-size:cover}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/spatial-2x.jpg")}}@media (max-width: 782px){.lp-pitch-x.is-pitch-left .lpc-pitch-x-title span{font-size:26px}.lp-pitch-x.is-pitch-left .lpc-pitch-x-cta-button a{font-size:16px}}@media (max-width: 660px){.lp-pitch-x.is-pitch-left .lpc-pitch-x-title span{font-size:24px}.lp-pitch-x.is-pitch-left .lpc-pitch-x-cta-button a{font-size:14px}}@media (max-width: 480px){.lp-pitch-x.is-pitch-left .lp-pitch-x-container{padding-top:6rem;min-height:auto;max-width:100%}.lp-pitch-x.is-pitch-left .lp-pitch-x-title{margin:0 0 5rem 0}.lp-pitch-x.is-pitch-left .lp-pitch-x-title>span{font-size:32px;line-height:42px}.lp-pitch-x.is-pitch-left .lp-pitch-x-block1,.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{padding:0 7%;position:relative;width:100%;right:auto;top:auto;transform:none;text-align:center}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2{padding:0;margin-top:5rem;width:100%}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image{transform:none}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-1{top:auto;bottom:0;right:25%;left:25%;width:auto;height:auto;z-index:1}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-2{top:auto;bottom:-10%;right:-10%;width:47%;height:auto;z-index:0}.lp-pitch-x.is-pitch-left .lp-pitch-x-block2 .lp-pitch-x-image-3{top:auto;bottom:-10%;left:-10%;right:auto;width:47%;height:auto;z-index:0}}.lp-pitch-x.is-pitch-bottom{background:#204A69}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{min-height:585px;position:relative}@media (max-width: 1366px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{min-height:485px}}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-bottom-slope{display:none}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title{margin-top:2rem;color:white;font-size:42px;line-height:50px}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block1{padding:0;position:absolute;top:50%;transform:translateY(-50%);width:100%;z-index:1}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{position:absolute;right:50%;width:80%;height:100%;transform:translateX(25%);z-index:0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image{position:absolute;bottom:auto;right:0;left:auto;top:50%;width:100%;margin:0;transform:translateY(-40%);max-width:none}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-ratio{padding:60% 0 0 0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/pitch-bottom.jpg");background-repeat:no-repeat;background-size:cover;background-position:center}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-blog-jun-2019/media/pitch-bottom-2x.jpg")}}@media (max-width: 660px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title span{font-size:32px;line-height:50px}}@media (max-width: 480px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-container{padding-top:8rem;min-height:auto;max-width:100%}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title{margin:0 0 5rem 0}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title>span{font-size:32px;line-height:42px}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block1,.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{padding:0 7%;position:relative;width:100%;right:auto;top:auto;transform:none;text-align:center}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2{padding:0;margin-top:5rem;width:100%;min-height:50vw}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image{position:relative;bottom:auto;right:auto;left:auto;top:auto;width:120%;margin:0;transform:translatex(10%);max-width:none}}.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif}@media (max-width: 659px){.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-domain-info .lpc-domain-title,.lpc-domain-info .lpc-domain-feature--title{font-family:Georgia, "Times New Roman", Times, serif}}.lpc-features{color:#23354b;background:white;padding:8rem 0}.lpc-features .lpc-features-wrapper{width:100%;max-width:1280px}@media (max-width: 1366px){.lpc-features .lpc-features-wrapper{max-width:calc(1140px - 14%)}}@media (max-width: 1140px){.lpc-features .lpc-features-wrapper{max-width:calc(960px - 14%)}}@media (max-width: 960px){.lpc-features .lpc-features-wrapper{max-width:calc(782px - 14%)}}@media (max-width: 782px){.lpc-features .lpc-features-wrapper{max-width:calc(660px - 14%)}}@media (max-width: 660px){.lpc-features .lpc-features-wrapper{max-width:86%}}.lpc-features .lpc-features-title{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif;text-align:center;font-size:42px;line-height:52px;margin-bottom:8rem;color:#23354b}@media (max-width: 659px){.lpc-features .lpc-features-title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-features .lpc-features-title{font-family:Georgia, "Times New Roman", Times, serif}}@media (max-width: 660px){.lpc-features .lpc-features-title>span{display:inline}}@media (max-width: 480px){.lpc-features .lpc-features-title{text-align:right;font-size:32px;line-height:40px;margin-bottom:5rem}}.lpc-features .lpc-feature-title{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif;color:#23354b}@media (max-width: 659px){.lpc-features .lpc-feature-title{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-features .lpc-feature-title{font-family:Georgia, "Times New Roman", Times, serif}}.lpc-features .lpc-feature-description{color:#23354b}.lpc-features .lpc-button{border:0}.lpc-features .lpc-gridicon{color:white;background-color:#46799a}.lpc-faqs .lpc-faqs-icon{margin-bottom:30px}.lpc-faqs .lpc-faqs-title>span{font-weight:500;font-family:Recoleta, Georgia, "Times New Roman", Times, serif;font-size:32px;line-height:35px}@media (max-width: 659px){.lpc-faqs .lpc-faqs-title>span{font-family:Georgia, "Times New Roman", Times, serif}}@media all and (-ms-high-contrast: active), all and (-ms-high-contrast: none){.lpc-faqs .lpc-faqs-title>span{font-family:Georgia, "Times New Roman", Times, serif}}@media (max-width: 480px){.lpc-footer-nav .lpc-footer-nav-tag ul li:nth-child(n+1):nth-child(-n+6){display:none}}.lpc-headline .lpc-headline-subtitle,.lpc-headline .lpc-headline-subtitle2{max-width:50%}@media (max-width: 660px){.lpc-headline .lpc-headline-subtitle,.lpc-headline .lpc-headline-subtitle2{max-width:90%}}.lpc-headline .lp-headline-image-2 .lp-image-fill{background-color:white;background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-website-jun-2019/media/header.jpg");background-repeat:no-repeat;background-size:auto auto;background-size:contain;background-position:bottom left}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lpc-headline .lp-headline-image-2 .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-website-jun-2019/media/header-2x.jpg")}}@media (max-width: 360px){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-title>span{font-size:7vw;line-height:8vw}}.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-website-jun-2019/media/pitch-bottom.jpg");background-repeat:no-repeat;background-size:contain auto;background-size:contain;background-position:center}@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 1.5 / 1), only screen and (min-resolution: 144dpi), only screen and (min-resolution: 1.5dppx){.lp-pitch-x.is-pitch-bottom .lp-pitch-x-block2 .lp-pitch-x-image .lp-image-fill{background-image:url("//s1.wp.com/wp-content/themes/h4/landing/marketing/pages/create-website-jun-2019/media/pitch-bottom-2x.jpg")}}
+
+</style>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ar.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='https://wp.me/P1-1duOe' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="إنشاء موقع على الويب باستخدام وردبرس.كوم" />
+<meta property="og:url" content="https://ar.wordpress.com/create-website/" />
+<meta property="og:description" content="أنشئ موقعك المجاني على الويب على وردبرس.كوم. اختر أفضل حل متكامل لإنشاء موقعك على المنصة التي تشغّل 36% من الويب." />
+<meta property="article:published_time" content="2017-01-20T15:26:37+00:00" />
+<meta property="article:modified_time" content="2020-04-21T12:38:14+00:00" />
+<meta property="og:site_name" content="WordPress.com" />
+<meta property="og:image" content="https://wpcom.files.wordpress.com/2019/02/createwebsite402x.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="512" />
+<meta property="og:locale" content="ar_AR" />
+<meta name="twitter:creator" content="@WordPressDotCom" />
+<meta name="twitter:site" content="@WordPressDotCom" />
+<meta name="twitter:text:title" content="إنشاء موقع على الويب باستخدام وردبرس.كوم" />
+<meta name="twitter:image" content="https://wpcom.files.wordpress.com/2019/02/createwebsite402x.jpg?w=640" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="أنشئ موقعك المجاني على الويب على وردبرس.كوم. اختر أفضل حل متكامل لإنشاء موقعك على المنصة التي تشغّل 36% من الويب." />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+
+<!-- End Jetpack Open Graph Tags -->
+<script id="amp-js" src="https://cdn.ampproject.org/v0.js" async></script>
+<script id="amp-bind-js" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js" custom-element="amp-bind" async></script>
+<script id="amp-sidebar-js" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" custom-element="amp-sidebar" async></script>
+<script id="amp-list-js" src="https://cdn.ampproject.org/v0/amp-list-0.1.js" custom-element="amp-list" async></script>
+<script id="amp-mustache-js" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js" custom-template="amp-mustache" async></script>
+<script id="amp-geo-js" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js" custom-element="amp-geo" async></script>
+<script id="amp-analytics-js" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js" custom-element="amp-analytics" async></script>
+<script id="amp-user-notification-js" src="https://cdn.ampproject.org/v0/amp-user-notification-0.1.js" custom-element="amp-user-notification" async></script>
+<link rel="canonical" href="https://ar.wordpress.com/create-website/" />
+<link rel="amphtml" href="https://ar.wordpress.com/create-website/?format=amp" />
+<script type="application/ld+json">
+{"@context":"https:\/\/schema.org","@graph":[{"@type":"Corporation","@id":"https:\/\/automattic.com\/#organization","url":"https:\/\/automattic.com\/","name":"Automattic","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"We don\u2019t make software for free, we make it for freedom.","description":"We are the people behind <a href=\"https:\/\/ar.wordpress.com\/\">WordPress.com<\/a>, <a href=\"https:\/\/woocommerce.com\/\">WooCommerce<\/a>, <a href=\"https:\/\/ar.jetpack.com\/\">Jetpack<\/a>, <a href=\"https:\/\/simplenote.com\/\">Simplenote<\/a>, <a href=\"https:\/\/longreads.com\/\">Longreads<\/a>, <a href=\"https:\/\/vaultpress.com\/\">VaultPress<\/a>, <a href=\"https:\/\/akismet.com\/\">Akismet<\/a>, <a href=\"https:\/\/gravatar.com\/\">Gravatar<\/a>, <a href=\"\">Crowdsignal<\/a>, <a href=\"https:\/\/cloudup.com\/\">Cloudup<\/a>, and more. We believe in making the web a better place, and <a href=\"https:\/\/github.com\/Automattic\">we believe in Open Source<\/a>. The vast majority of our work is available under the GPL.","logo":{"@type":"ImageObject","@id":"https:\/\/automattic.com\/#logo","url":"https:\/\/automattic.com\/wp-content\/themes\/a8c\/automattic-2011\/images\/automattic-logo-2x.png","width":552,"height":60,"caption":"Automattic"},"image":{"@id":"https:\/\/automattic.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/ar.wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/ar.wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=retro&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":942,"sameAs":["https:\/\/twitter.com\/automattic","https:\/\/www.facebook.com\/AutomatticInc","https:\/\/www.linkedin.com\/company\/automattic\/","https:\/\/en.wikipedia.org\/wiki\/Automattic","https:\/\/www.youtube.com\/c\/automattic"],"subOrganization":{"@id":"https:\/\/ar.wordpress.com\/#organization"}},{"@type":"Organization","@id":"https:\/\/ar.wordpress.com\/#organization","url":"https:\/\/ar.wordpress.com\/","name":"WordPress.com","legalName":"Automattic, Inc.","foundingDate":"2005-08-01","slogan":"Build a website, build a movement.","description":"\u0623\u0646\u0634\u0626 \u0645\u0648\u0642\u0639\u064b\u0627 \u0645\u062c\u0627\u0646\u064a\u0651\u064b\u0627 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0623\u0648 \u0623\u0646\u0634\u0626 \u0645\u062f\u0648\u0646\u0629 \u0628\u0643\u0644 \u0633\u0647\u0648\u0644\u0629 \u0639\u0644\u0649 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645. \u0639\u0634\u0631\u0627\u062a \u0645\u0646 \u0627\u0644\u062a\u0635\u0645\u064a\u0645\u0627\u062a \u0648\u0627\u0644\u0642\u0648\u0627\u0644\u0628 \u0627\u0644\u0645\u062c\u0627\u0646\u064a\u0629 \u0627\u0644\u0642\u0627\u0628\u0644\u0629 \u0644\u0644\u062a\u062e\u0635\u064a\u0635 \u0648\u0627\u0644\u062c\u0627\u0647\u0632\u0629 \u0644\u0644\u0647\u0648\u0627\u062a\u0641 \u0627\u0644\u0645\u062d\u0645\u0648\u0644\u0629. \u0627\u0633\u062a\u0636\u0627\u0641\u0629 \u0648\u062f\u0639\u0645 \u0645\u062c\u0627\u0646\u064a\u0627\u0646.","logo":{"@type":"ImageObject","@id":"https:\/\/ar.wordpress.com\/#logo","url":"https:\/\/s1.wp.com\/home.logged-out\/images\/wpcom-a-website-that-can.jpg","width":1024,"height":512,"caption":"WordPress.com"},"image":{"@id":"https:\/\/ar.wordpress.com\/#logo"},"address":{"@type":"PostalAddress","streetAddress":"60 29th Street #343","addressLocality":"San Francisco","addressRegion":"CA","postalCode":"94110","addressCountry":"US"},"founder":{"@type":"Person","@id":"https:\/\/ar.wordpress.com\/schema.org\/author\/5#person","name":"Matt Mullenweg","description":"In 2002 I started contributing to Open Source software, and life has just gotten better from there. Co-founder of WordPress, founder Automattic.","image":{"@type":"ImageObject","@id":"https:\/\/ar.wordpress.com\/schema.org\/author\/5#personimage","url":"https:\/\/secure.gravatar.com\/avatar\/767fc9c115a1b989744c755db47feb60?s=96&d=retro&r=g","width":96,"height":96,"caption":"Matt Mullenweg"}},"numberOfEmployees":942,"sameAs":["https:\/\/twitter.com\/wordpressdotcom","https:\/\/www.facebook.com\/WordPresscom","https:\/\/www.instagram.com\/wordpressdotcom\/","https:\/\/www.linkedin.com\/company\/wordpress","https:\/\/www.youtube.com\/WordPressdotcom","https:\/\/www.pinterest.com\/wordpressdotcom\/","https:\/\/en.wikipedia.org\/wiki\/WordPress.com"],"parentOrganization":{"@id":"https:\/\/automattic.com\/#organization"}},{"@type":"WebSite","@id":"https:\/\/ar.wordpress.com\/#website","url":"https:\/\/ar.wordpress.com\/","name":"WordPress.com","description":"WordPress.com is the best place for your personal blog or business site.","potentialAction":{"@type":"SearchAction","target":"https:\/\/ar.wordpress.com\/go\/?s1={search_term_string}","query-input":"required name=search_term_string"},"publisher":{"@id":"https:\/\/ar.wordpress.com\/#organization"},"image":{"@id":"https:\/\/ar.wordpress.com\/#logo"},"sameAs":["https:\/\/twitter.com\/wordpressdotcom","https:\/\/www.facebook.com\/WordPresscom","https:\/\/www.instagram.com\/wordpressdotcom\/","https:\/\/www.linkedin.com\/company\/wordpress","https:\/\/www.youtube.com\/WordPressdotcom","https:\/\/www.pinterest.com\/wordpressdotcom\/","https:\/\/en.wikipedia.org\/wiki\/WordPress.com"]},{"@type":"BreadcrumbList","@id":"https:\/\/ar.wordpress.com\/create-website\/#breadcrumbs","itemListElement":[{"@type":"ListItem","position":0,"item":{"@type":"WebSite","@id":"https:\/\/ar.wordpress.com\/#website-breadcrumb","url":"https:\/\/ar.wordpress.com\/","name":"\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629"}},{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https:\/\/ar.wordpress.com\/create-website\/#webpage-breadcrumb","url":"https:\/\/ar.wordpress.com\/create-website\/","name":"\u0625\u0646\u0634\u0627\u0621 \u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645"}}]},{"@type":"ImageObject","@id":"https:\/\/ar.wordpress.com\/create-website\/#primaryimage","url":"https:\/\/wpcom.files.wordpress.com\/2019\/02\/createwebsite402x.jpg","width":1024,"height":512,"caption":"\u0625\u0646\u0634\u0627\u0621 \u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645"},{"@type":"WebPage","@id":"https:\/\/ar.wordpress.com\/create-website\/#webpage","url":"https:\/\/ar.wordpress.com\/create-website\/","name":"\u0625\u0646\u0634\u0627\u0621 \u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645","description":"\u0623\u0646\u0634\u0626 \u0645\u0648\u0642\u0639\u0643 \u0627\u0644\u0645\u062c\u0627\u0646\u064a \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0639\u0644\u0649 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645. \u0627\u062e\u062a\u0631 \u0623\u0641\u0636\u0644 \u062d\u0644 \u0645\u062a\u0643\u0627\u0645\u0644 \u0644\u0625\u0646\u0634\u0627\u0621 \u0645\u0648\u0642\u0639\u0643 \u0639\u0644\u0649 \u0627\u0644\u0645\u0646\u0635\u0629 \u0627\u0644\u062a\u064a \u062a\u0634\u063a\u0651\u0644 36% \u0645\u0646 \u0627\u0644\u0648\u064a\u0628.","inLanguage":"ar","isPartOf":{"@id":"https:\/\/ar.wordpress.com\/#website"},"primaryImageOfPage":{"@id":"https:\/\/ar.wordpress.com\/create-website\/#primaryimage"},"breadcrumb":{"@id":"https:\/\/ar.wordpress.com\/create-website\/#breadcrumbs"},"publisher":{"@id":"https:\/\/ar.wordpress.com\/#organization"},"datePublished":"2017-01-20T15:26:37+0000","dateModified":"2020-04-21T12:38:14+0000"},{"@type":"Article","@id":"https:\/\/ar.wordpress.com\/create-website\/#article","headline":"\u0625\u0646\u0634\u0627\u0621 \u0645\u0648\u0642\u0639 \u0639\u0644\u0649 \u0627\u0644\u0648\u064a\u0628 \u0628\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0648\u0631\u062f\u0628\u0631\u0633.\u0643\u0648\u0645","commentCount":0,"keywords":"","datePublished":"2017-01-20T15:26:37+0000","dateModified":"2020-04-21T12:38:14+0000","mainEntityOfPage":{"@id":"https:\/\/ar.wordpress.com\/create-website\/#webpage"},"isPartOf":{"@id":"https:\/\/ar.wordpress.com\/create-website\/#webpage"},"image":{"@id":"https:\/\/ar.wordpress.com\/create-website\/#primaryimage"},"publisher":{"@id":"https:\/\/ar.wordpress.com\/#organization"},"author":{"@id":"https:\/\/ar.wordpress.com\/#organization"}}]}
+</script>
+<meta name="description" content="أنشئ موقعك المجاني على الويب على وردبرس.كوم. اختر أفضل حل متكامل لإنشاء موقعك على المنصة التي تشغّل 36% من الويب." />
+<meta name="theme-color" content="#0087be" />
+<meta name="msapplication-TileColor" content="#0074a2" />
+<meta name="application-name" content="WordPress.com" />
+<meta name="apple-mobile-web-app-title" content="WP.com" />
+<meta name="msApplication-ID" content="App" />
+<meta name="msApplication-PackageFamilyName" content="AutomatticInc.WordPress.com_9ejavqh8rasr8" />
+<link rel="icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16" />
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://s1.wp.com/i/favicon.ico" sizes="16x16 32x32 48x48" />
+<link rel="apple-touch-icon" href="https://s1.wp.com/i/webclip.png" sizes="512x512" />
+<link rel="icon" href="https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=32" sizes="32x32" />
+<link rel="icon" href="https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=192" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=180" />
+<meta name="msapplication-TileImage" content="https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=270" />
+				</head>
+				<body class="rtl page-template page-template-page-landing-marketing page-template-page-landing-marketing-php page page-id-17993034 wp-embed-responsive">
+					<amp-state id="lpcHeaderNav">
+			<script type="application/json">
+				{
+					"activeDropdown": ""
+				}
+			</script>
+		</amp-state>
+
+		<section id="lpc-header-nav" class="lpc lpc-header-nav">
+			<h3 hidden>التنقل الرئيسي</h3>
+
+			<div class="lpc-header-nav-wrapper">
+				<div class="lpc-header-nav-container">
+
+					<header class="lpc-header-nav-bar">
+						<div class="lpc-header-nav-bar-menu" role="menu" aria-label="قائمة التنقل الرئيسية">
+							<nav class="lpc-header-nav-bar-nav">
+								<h3 hidden>قائمة التنقل الرئيسية</h3>
+
+								<ul class="lpc-header-nav-bar-list1 lpc-header-nav-bar-list" role="tablist">
+									<li class="lpc-header-nav-bar-list-item-logo lpc-header-nav-bar-list-item">
+										<a href="https://ar.wordpress.com/" role="menuitem">
+											<span hidden>WordPress.com</span>
+											<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 170 36" class=""><path d="M47.57 10l-2.79 10.72L41.99 10h-2.81l.65 2.3-2.45 8.78L34.7 10H32l3.8 14h2.96l2.28-7.49L43.17 24h2.95l4-14h-2.55zm28.39 4.06a9 9 0 0 0-1.86-.23c-3.4 0-5.26 2.27-5.26 5.6 0 3.31 1.86 4.82 4.05 4.82a5.45 5.45 0 0 0 3.2-1.17V24h2.33V10h-2.46v4.06zm0 7.08c-.8.73-1.55 1.13-2.34 1.13-1.36 0-2.23-.9-2.23-3.01 0-2.28 1.08-3.47 2.96-3.47.55 0 1.1.11 1.6.31v5.04zM64.2 15.7h-.09v-1.64h-2.3V24h2.47v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.34 0-2.26.52-2.94 1.75zm83.14-1.89c-3.4 0-5.01 2.2-5.01 5.23 0 3.02 1.6 5.2 5.01 5.2s5.01-2.18 5.01-5.2c0-3.03-1.63-5.23-5.02-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.85-3.22 2.46-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.84 3.21-2.45 3.21h.01zm19.12-8.44c-1.06 0-2.28.58-3.38 1.32l-.3.19c-.51-1.11-1.56-1.5-2.71-1.5-1.06 0-2.27.54-3.38 1.27v-1.03h-2.34V24h2.48v-7.13a5.3 5.3 0 0 1 2.61-.98c.81 0 1.32.44 1.32 1.84V24h2.46v-7.1c.92-.6 1.9-1 2.6-1 .82 0 1.32.43 1.32 1.84V24h2.46v-6.86c0-1.92-1.14-3.32-3.15-3.32zm-111.64 0c-3.4 0-5 2.2-5 5.23 0 3.02 1.6 5.2 5 5.2s5.02-2.18 5.02-5.2c0-3.03-1.64-5.23-5.03-5.23h.01zm0 8.44c-1.6 0-2.46-1.04-2.46-3.21 0-2.18.86-3.22 2.47-3.22 1.6 0 2.44 1.04 2.44 3.22 0 2.17-.85 3.21-2.46 3.21h.01zm40.31-6.56h-.08v-1.63h-2.31V24h2.46v-5.92c.77-1.46 1.71-1.94 3.28-1.94h.25V14a6.67 6.67 0 0 0-.67-.04c-1.33 0-2.25.52-2.94 1.75h.01zM86.05 10h-4.58v14h2.64v-4.87h1.93c2.99 0 5.16-1.61 5.16-4.62 0-3-2.17-4.51-5.16-4.51zm.02 7.08h-1.96v-5.01h1.95c1.6 0 2.38.88 2.38 2.44 0 1.57-.73 2.57-2.38 2.57h.01zm36.02-.23c0-.75.82-1.04 1.7-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.95-.38c-2.38 0-4.05 1.13-4.05 2.97 0 3.57 4.92 2.65 4.92 4.39 0 .85-.77 1.08-1.9 1.08-.8 0-2.07-.3-2.99-.63v2.03a8.29 8.29 0 0 0 2.9.59c2.32 0 4.53-.69 4.53-3.17.03-3.45-4.9-2.56-4.9-4.23zm-17.5-3.03c-3.18 0-4.83 2.47-4.83 5.16 0 3.7 1.94 5.27 5.1 5.27a11.81 11.81 0 0 0 3.65-.57v-2.05c-1.03.38-1.97.61-2.97.61-1.84 0-3.07-.5-3.13-2.67h6.36c.06-.49.09-.98.08-1.46 0-2.1-1.11-4.29-4.27-4.29zm-2.16 4.12c.15-1.38.9-2.26 2.13-2.26 1.32 0 1.72 1.05 1.72 2.26h-3.85zm10.7-1.09c0-.75.81-1.04 1.69-1.04.93.01 1.86.16 2.75.43V14.2a10.14 10.14 0 0 0-2.94-.38c-2.38 0-4.06 1.13-4.06 2.97 0 3.57 4.93 2.65 4.93 4.39 0 .85-.78 1.08-1.9 1.08-.8 0-2.07-.3-3-.63v2.03a8.28 8.28 0 0 0 2.9.59c2.32 0 4.54-.69 4.54-3.17.02-3.45-4.91-2.56-4.91-4.23zm21.97 2.1c0-2.33 1.27-3.12 2.78-3.12.94.03 1.88.22 2.76.57v-2.1a8.11 8.11 0 0 0-2.8-.48c-3.28 0-5.31 2-5.31 5.25 0 3.07 1.46 5.18 5.16 5.18 1.17 0 2.08-.23 3.08-.57v-2.04c-1.13.43-2 .6-2.77.6-1.63 0-2.9-.75-2.9-3.3zM128.66 24h2.47v-2.55h-2.47V24zM1.72 16c0 4.47 2.6 8.32 6.36 10.15L2.7 11.41A11.24 11.24 0 0 0 1.72 16zM13 27.28c1.31 0 2.57-.23 3.75-.64l-.08-.15-3.47-9.5-3.38 9.83c1 .3 2.07.46 3.18.46zm1.55-16.57l4.08 12.13 1.13-3.76c.48-1.56.85-2.68.85-3.65 0-1.4-.5-2.36-.92-3.1-.58-.94-1.11-1.73-1.11-2.65 0-1.04.78-2 1.9-2h.14A11.24 11.24 0 0 0 13 4.72 11.27 11.27 0 0 0 3.58 9.8l.72.02c1.18 0 3-.15 3-.15.62-.03.69.86.08.93 0 0-.61.08-1.3.11l4.12 12.22 2.47-7.4-1.76-4.82a20.13 20.13 0 0 1-1.18-.1c-.61-.04-.54-.97.07-.94 0 0 1.86.15 2.97.15 1.18 0 3-.15 3-.15.61-.03.69.86.08.93 0 0-.61.07-1.3.11zm4.12 15.04A11.28 11.28 0 0 0 24.28 16c0-1.96-.5-3.8-1.38-5.41a10.65 10.65 0 0 1-.78 5.2l-3.45 9.96zM13 29a13 13 0 1 1 0-26 13 13 0 0 1 0 26z" fill="inherit" fill-rule="nonzero"/><title>أيقونة وردبرس.كوم وشعاره.</title></svg>										</a>
+									</li>
+									<li class="lpc-header-nav-bar-list-item">
+										<h4 class="lpc-header-nav-bar-list-item-header-for-dropdown lpc-header-nav-bar-list-item-header" role="tab" on="tap:AMP.setState( { lpcHeaderNav: { activeDropdown: lpcHeaderNav.activeDropdown == 'products' ? '' : 'products' } } )" tabindex="0">
+											<a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false" [aria-expanded]="lpcHeaderNav.activeDropdown == 'products' ? 'true' : 'false'">
+												المنتجات											</a>
+										</h4>
+										<div class="lpc-header-nav-bar-list-item-dropdown" hidden [hidden]="lpcHeaderNav.activeDropdown != 'products'" aria-hidden="true" [aria-hidden]="lpcHeaderNav.activeDropdown != 'products' ? 'true' : 'false'" role="menu" aria-label="المنتجات">
+											<ul class="lpc-header-nav-bar-list-item-dropdown-menu">
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/create-blog/" title="مدونات" role="menuitem" tabindex="-1">
+														مدونات													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/create-website/" title="مواقع" role="menuitem" tabindex="-1">
+														مواقع													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/domains/" title="أسماء النطاقات" role="menuitem" tabindex="-1">
+														أسماء النطاقات													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/ecommerce/" title="التجارة الإلكترونية" role="menuitem" tabindex="-1">
+														التجارة الإلكترونية													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/com-vs-org/" title="حلول ذاتية الاستضافة" role="menuitem" tabindex="-1">
+														حلول ذاتية الاستضافة													</a>
+												</li>
+											</ul>
+											<ul class="lpc-header-nav-bar-list-item-dropdown-menu">
+												<li class="lpc-header-nav-bar-list-dropdown-item lpc-header-nav-bar-list-dropdown-external-item">
+													<a href="https://wpvip.com/?utm_source=WordPresscom&#038;utm_medium=automattic_referral&#038;utm_campaign=top_nav" title="مؤسسة" role="menuitem" tabindex="-1">
+														مؤسسة													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="lpc-header-nav-bar-list-item">
+										<h4 class="lpc-header-nav-bar-list-item-header-for-dropdown lpc-header-nav-bar-list-item-header" role="tab" on="tap:AMP.setState( { lpcHeaderNav: { activeDropdown: lpcHeaderNav.activeDropdown == 'features' ? '' : 'features' } } )" tabindex="0">
+											<a href="#" title="الميزات" role="menuitem" aria-haspopup="true" aria-expanded="false" [aria-expanded]="lpcHeaderNav.activeDropdown == 'features' ? 'true' : 'false'">
+												الميزات											</a>
+										</h4>
+										<div class="lpc-header-nav-bar-list-item-dropdown" hidden [hidden]="lpcHeaderNav.activeDropdown != 'features'" aria-hidden="true" [aria-hidden]="lpcHeaderNav.activeDropdown != 'features' ? 'true' : 'false'" role="menu" aria-label="الميزات">
+											<ul class="lpc-header-nav-bar-list-item-dropdown-menu">
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/features/" title="الميزات" role="menuitem" tabindex="-1">
+														نظرة عامة													</a>
+												</li>
+											</ul>
+											<ul class="lpc-header-nav-bar-list-item-dropdown-menu">
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://wordpress.com/themes/" title="قوالب" role="menuitem" tabindex="-1">
+														قوالب													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/install-plugins/" title="تثبيت الإضافات" role="menuitem" tabindex="-1">
+														إضافات													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/google/" title="Google Apps" role="menuitem" tabindex="-1">
+														Google Apps													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="lpc-header-nav-bar-list-item">
+										<h4 class="lpc-header-nav-bar-list-item-header-for-dropdown lpc-header-nav-bar-list-item-header" role="tab" on="tap:AMP.setState( { lpcHeaderNav: { activeDropdown: lpcHeaderNav.activeDropdown == 'resources' ? '' : 'resources' } } )" tabindex="0">
+											<a href="#" role="menuitem" aria-haspopup="true" aria-expanded="false" [aria-expanded]="lpcHeaderNav.activeDropdown == 'resources' ? 'true' : 'false'">
+												الموارد											</a>
+										</h4>
+										<div class="lpc-header-nav-bar-list-item-dropdown" hidden [hidden]="lpcHeaderNav.activeDropdown != 'resources'" aria-hidden="true" [aria-hidden]="lpcHeaderNav.activeDropdown != 'resources' ? 'true' : 'false'" role="menu" aria-label="الموارد">
+											<ul class="lpc-header-nav-bar-list-item-dropdown-menu">
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.support.wordpress.com/" title="الدعم الفني " role="menuitem" tabindex="-1">
+														الدعم الفني 													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="//en.blog.wordpress.com/" title="الأخبار" role="menuitem" tabindex="-1">
+														الأخبار													</a>
+												</li>
+												<li class="lpc-header-nav-bar-list-dropdown-item">
+													<a href="https://ar.wordpress.com/go/" title="Expert Tips" role="menuitem" tabindex="-1">
+														Expert Tips													</a>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li class="lpc-header-nav-bar-list-item">
+										<a href="https://ar.wordpress.com/pricing/" title="الباقات والأسعار" role="menuitem">
+											الباقات والأسعار										</a>
+									</li>
+								</ul>
+								<ul class="lpc-header-nav-bar-list2 lpc-header-nav-bar-list">
+									<li class="lpc-header-nav-bar-list-item-not-logged-in lpc-header-nav-bar-list-item">
+										<a href="https://ar.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F" title="دخول" role="menuitem">
+											دخول										</a>
+									</li>
+									<li class="lpc-header-nav-bar-list-item-cta lpc-header-nav-bar-list-item is-cta">
+										<a href="https://wordpress.com/start/ar/?ref=create-website-lp" title="سجل الآن" role="menuitem" >
+											سجل الآن										</a>
+									</li>
+									<li class="lpc-header-nav-bar-list-item-sidebar-toggle lpc-header-nav-bar-list-item">
+										<button class="lpc-header-nav-bar-sidebar-toggle" on="tap:lpc-header-nav-sidebar.toggle" role="menuitem" aria-haspopup="true" aria-expanded="false">
+											<span hidden>القائمة</span>
+											<span class="lpc-header-nav-bar-sidebar-toggle-bars">
+												<span></span>
+												<span></span>
+												<span></span>
+											</span>
+										</button>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+
+				</div>
+			</div>
+		</section>
+
+		<amp-sidebar id="lpc-header-nav-sidebar" class="lpc-header-nav-sidebar" layout="nodisplay" side="right">
+			<div class="lpc-header-nav-sidebar-menu" role="menu" aria-label="قائمة التنقل في الشريط الجانبي">
+				<h3 hidden>قائمة التنقل في الشريط الجانبي</h3>
+
+				<div class="lpc-header-nav-sidebar-menu-content">
+					<button class="lpc-header-nav-sidebar-close" on="tap:lpc-header-nav-sidebar.close" tabindex="-1">
+						<span hidden>إغلاق قائمة التنقل الموجودة في الشريط الجانبي</span>
+						<span class="lpc-header-nav-sidebar-close-icon">&times;</span>
+					</button>
+					<div class="lpc-header-nav-sidebar-menu-section">
+						<h4 class="lpc-header-nav-sidebar-menu-section-title">
+							سجل الآن						</h4>
+						<ul class="lpc-header-nav-sidebar-menu-section-list-logged-in lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://wordpress.com/start/ar/?ref=create-website-lp" title="أضف موقعًا جديدًا" role="menuitem" tabindex="-1">
+									أضف موقعًا جديدًا <span aria-hidden="true">&#8250;</span>
+								</a>
+							</li>
+						</ul>
+						<ul class="lpc-header-nav-sidebar-menu-section-list-not-logged-in lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://wordpress.com/start/ar/?ref=create-website-lp" title="تسجيل الاشتراك" role="menuitem" tabindex="-1" >
+									تسجيل الاشتراك <span aria-hidden="true">&#8250;</span>
+								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/wp-login.php?redirect_to=https%3A%2F%2Fwordpress.com%2F" title="دخول" role="menuitem" tabindex="-1">
+									دخول <span aria-hidden="true">&#8250;</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="lpc-header-nav-sidebar-menu-section">
+						<h4 hidden>حول</h4>
+
+						<ul class="lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/pricing/" title="الباقات والأسعار" role="menuitem" tabindex="-1">
+									الباقات والأسعار								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="lpc-header-nav-sidebar-menu-section">
+						<h4 class="lpc-header-nav-sidebar-menu-section-title">
+							المنتجات						</h4>
+						<ul class="lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/create-blog/" title="مدونات" role="menuitem" tabindex="-1">
+									مدونات								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/create-website/" title="مواقع" role="menuitem" tabindex="-1">
+									مواقع								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/domains/" title="أسماء النطاقات" role="menuitem" tabindex="-1">
+									أسماء النطاقات								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/ecommerce/" title="التجارة الإلكترونية" role="menuitem" tabindex="-1">
+									التجارة الإلكترونية								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/com-vs-org/" title="حلول ذاتية الاستضافة" role="menuitem" tabindex="-1">
+									حلول ذاتية الاستضافة								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item lpc-header-nav-sidebar-menu-section-list-external-item">
+								<a href="https://wpvip.com/?utm_source=WordPresscom&#038;utm_medium=automattic_referral&#038;utm_campaign=top_nav" title="مؤسسة" role="menuitem" tabindex="-1">
+									مؤسسة								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="lpc-header-nav-sidebar-menu-section">
+						<h4 class="lpc-header-nav-sidebar-menu-section-title">
+							<a href="https://ar.wordpress.com/features/" title="الميزات" role="menuitem" tabindex="-1">
+								الميزات							</a>
+						</h4>
+						<ul class="lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/features/" title="الميزات" role="menuitem" tabindex="-1">
+									نظرة عامة								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://wordpress.com/themes/" title="قوالب" role="menuitem" tabindex="-1">
+									قوالب								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/install-plugins/" title="تثبيت الإضافات" role="menuitem" tabindex="-1">
+									إضافات								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/google/" title="Google Apps" role="menuitem" tabindex="-1">
+									Google Apps								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="lpc-header-nav-sidebar-menu-section">
+						<h4 class="lpc-header-nav-sidebar-menu-section-title">
+							الموارد						</h4>
+						<ul class="lpc-header-nav-sidebar-menu-section-list">
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="//en.blog.wordpress.com/" title="الأخبار" role="menuitem" tabindex="-1">
+									الأخبار								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.support.wordpress.com/" title="الدعم الفني " role="menuitem" tabindex="-1">
+									الدعم الفني 								</a>
+							</li>
+							<li class="lpc-header-nav-sidebar-menu-section-list-item">
+								<a href="https://ar.wordpress.com/go/" title="Expert Tips" role="menuitem" tabindex="-1">
+									Expert Tips								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</amp-sidebar>
+
+		<div class="lpc-header-nav-bar-dropdown-matte" hidden [hidden]="lpcHeaderNav.activeDropdown ? false : true" aria-hidden="true" [aria-hidden]="lpcHeaderNav.activeDropdown ? 'false' : 'true'" on="tap:AMP.setState( { lpcHeaderNav: { activeDropdown: '' } } )" role="presentation" tabindex="-1"></div>
+				<section id="lpc-headline" class="lpc lpc-headline lp-module lp-headline">
+			<div class="lpc-headline-wrapper lp-headline-wrapper">
+				
+															<div class="lp-image-container lp-headline-image-1">
+							<div class="lp-image-ratio"></div>
+							<div class="lp-image-fill"></div>
+						</div>
+											<div class="lp-image-container lp-headline-image-2">
+							<div class="lp-image-ratio"></div>
+							<div class="lp-image-fill"></div>
+						</div>
+									
+				<div class="lpc-headline-container lp-headline-container">
+
+					
+					
+					
+											<h1 class="lpc-headline-title lp-headline-title no-widows">
+															<span>أنتَ على بُعد بضع نقرات فقط من</span>
+															<span>موقع الويب الذي تريده دومًا.</span>
+													</h1>
+					
+											<h3 class="lpc-headline-subtitle lp-headline-subtitle no-widows">
+															<span>يمنحك وردبرس.كوم كل شيء تريده لإنشاء موقع الويب الخاص بك اليوم. استضافة مجانية، ونطاقًا خاصًا بك، وفريق دعم عالمي، وأكثر من ذلك بكثير.</span>
+													</h3>
+					
+					
+										
+											<div class="lpc-headline-cta lp-headline-cta">
+
+							
+															<div class="lpc-headline-cta-button lp-headline-cta--button">
+														<a id="lpc-button" class="lpc lpc-button is-cta is-large is-primary button no-widows" href="https://wordpress.com/start/ar/?ref=create-website-lp" >ابدأ موقع الويب الخاص بك</a>
+												</div>
+							
+						</div>
+					
+					
+					
+				</div>
+			</div>
+		</section>
+		<section id="lpc-domain-info" class="lpc lpc-domain-info">
+	<div class="lpc-domain-container">
+
+					<h2 class="lpc-domain-title no-widows">
+									<span>تخصيص اسم النطاق الخاص بك</span>
+							</h2>
+		
+					<div class="lpc-domain-window">
+				<div class="lpc-domain-window--title-bar">
+					<div class="lpc-domain-window--title-bar--icons-group">
+						<div class="lpc-domain-window--title-bar--icons-single">
+						</div>
+						<div class="lpc-domain-window--title-bar--icons-single">
+						</div>
+						<div class="lpc-domain-window--title-bar--icons-single">
+						</div>
+					</div>
+				</div>
+				<div class="lpc-domain-window--address-bar">
+					<div class="lpc-domain-window--icons-group">
+							<div id="lpc-gridicon.7" class="lpc lpc-gridicon" style="color: #2B2D2F; background: none">
+			<svg class="gridicon gridicons-chevron-left" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M14 20l-8-8 8-8 1.414 1.414L8.828 12l6.586 6.586"/></g></svg>		</div>
+				<div id="lpc-gridicon.8" class="lpc lpc-gridicon" style="color: #2B2D2F; background: none">
+			<svg class="gridicon gridicons-chevron-right" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M10 20l8-8-8-8-1.414 1.414L15.172 12l-6.586 6.586"/></g></svg>		</div>
+				<div id="lpc-gridicon.9" class="lpc lpc-gridicon" style="color: #2B2D2F; background: none">
+			<svg class="gridicon gridicons-refresh" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M17.91 14c-.478 2.833-2.943 5-5.91 5-3.308 0-6-2.692-6-6s2.692-6 6-6h2.172l-2.086 2.086L13.5 10.5 18 6l-4.5-4.5-1.414 1.414L14.172 5H12c-4.418 0-8 3.582-8 8s3.582 8 8 8c4.08 0 7.438-3.055 7.93-7h-2.02z"/></g></svg>		</div>
+							</div>
+					<div class="lpc-domain-window--address-bar--input">
+						<div class="lpc-domain-window--address-bar--input--url">
+							http://<span class="lpc-domains--domain-url">example.com</span>
+						</div>
+						<div class="lpc-domain-window--address-bar--input--strings" id="domain-strings">
+															<p>infocusphotographers.com</p>
+															<p>cortadocoffeesf.com</p>
+															<p>leahrand.com</p>
+															<p>avayoung.blog</p>
+															<p>mightyleaftearoom.com</p>
+													</div>
+					</div>
+				</div>
+			</div>
+		
+					<div class="lpc-domain-features">
+
+									<div class="lpc-domain-feature">
+						<h5 class="lpc-domain-feature--title no-widows">
+							تسجيل نطاق جديد						</h5>
+						<div class="lpc-domain-feature--description no-widows lpc-text">
+							سجّل نطاقًا لموقعك لتسهيل تذكّره ومشاركته.						</div>
+					</div>
+									<div class="lpc-domain-feature">
+						<h5 class="lpc-domain-feature--title no-widows">
+							إحضار النطاق الخاص بك						</h5>
+						<div class="lpc-domain-feature--description no-widows lpc-text">
+							هل لديك بالفعل اسم نطاق؟ وجّه هذا الاسم إلى موقع وردبرس.كوم على الويب في بضع خطوات بسيطة.						</div>
+					</div>
+									<div class="lpc-domain-feature">
+						<h5 class="lpc-domain-feature--title no-widows">
+							الاتصال بالبريد الإلكتروني الخاص بك						</h5>
+						<div class="lpc-domain-feature--description no-widows lpc-text">
+							استخدم نطاقك المخصص في عنوان بريدك الإلكتروني من خلال تنشيط إعادة توجيه البريد الإلكتروني أو G Suite أو غيرها من خدمات البريد الإلكتروني.						</div>
+					</div>
+				
+			</div>
+		
+	</div>
+</section>
+				<section id="lpc-features" class="lpc lpc-features is-theme-default lp-module lp-features">
+			<div class="lpc-features-wrapper">
+				<div class="lpc-features-container lp-features-container">
+
+					
+											<h2 class="lpc-features-title lp-features-title no-widows">
+															<span>كل ميزة تحتاج إليها</span>
+															<span>لإنشاء موقع قوي على الويب</span>
+													</h2>
+					
+					
+											<div class="lpc-features-block lp-features-features">
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-thumbs-up" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M6.7 22H2v-9h2l2.7 9zM20 9h-6V5c0-1.657-1.343-3-3-3h-1v4L7.1 9.625c-.712.89-1.1 1.996-1.1 3.135V14l2.1 7h8.337c1.836 0 3.435-1.25 3.88-3.03l1.622-6.485C22.254 10.223 21.3 9 20 9z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							خطط مناسبة لأي ميزانية						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							ابدأ بالمجان واجعل موقعك الإلكتروني قيد التشغيل بسرعة. قم بالترقية للحصول على تخصيص وقوالب متقدمة ومساحة تخزين إضافية وأدوات العمل.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature.2" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.2" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-custom-post-type" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M19 3H5c-1.105 0-2 .895-2 2v14c0 1.105.895 2 2 2h14c1.105 0 2-.895 2-2V5c0-1.105-.895-2-2-2zM6 6h5v5H6V6zm4.5 13C9.12 19 8 17.88 8 16.5S9.12 14 10.5 14s2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zm3-6l3-5 3 5h-6z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							المدونة أو موقع الويب أو كلاهما						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							أنشئ مدونة أو موقعًا كاملاً على الويب أو مزيجًا من الاثنين. اكتب عن حياتك، أو أنشئ معرضًا جميلاً من أعمالك، أو أنشئ موقعًا تجاريًّا قويًّا — الأمر متروك لك.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature.3" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.3" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-pencil" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M13 6l5 5-9.507 9.507c-.686-.686-.69-1.794-.012-2.485l-.002-.003c-.69.676-1.8.673-2.485-.013-.677-.677-.686-1.762-.036-2.455l-.008-.008c-.694.65-1.78.64-2.456-.036L13 6zm7.586-.414l-2.172-2.172c-.78-.78-2.047-.78-2.828 0L14 5l5 5 1.586-1.586c.78-.78.78-2.047 0-2.828zM3 18v3h3c0-1.657-1.343-3-3-3z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							محرر سهل الاستخدام						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							يمتاز محررنا بالسرعة وسهولة الاستخدام ويتضمن دعم HTML و Markdown. نحفظ ما تقوم به كل بضع ثوانٍ، لكيلا تفوتك كلمة.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature.4" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.4" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-cloud-upload" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M18 9c-.01 0-.017.002-.025.003C17.72 5.646 14.922 3 11.5 3 7.91 3 5 5.91 5 9.5c0 .524.07 1.03.186 1.52C5.123 11.015 5.064 11 5 11c-2.21 0-4 1.79-4 4 0 1.202.54 2.267 1.38 3h18.593C22.196 17.09 23 15.643 23 14c0-2.76-2.24-5-5-5zm-5 4v3h-2v-3H8l4-5 4 5h-3z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							رفع الوسائط أو تضمينها						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							اسحب الصور وأفلتها في المقالات والصفحات. أنشئ معارض صور جديرة بالاهتمام. ضَمِّن مقاطع صوتية ومقاطع فيديو ومستندات والمزيد.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature.5" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.5" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-plans" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm-1 12H6l5-10v10zm2 6V10h5l-5 10z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							مُحسن لتطورك						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							يحتوي وردبرس.كوم على ميزات أساسية من Jetpack مدمجة، بما في ذلك إحصاءات الموقع وتحسين محركات البحث الأساسي والمشاركة عبر وسال التواصل الاجتماعي.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+																							<div class="lpc-features-block-item lp-features-feature">
+											<div id="lpc-feature.6" class="lpc lpc-feature">
+			<div class="lpc-feature-wrapper">
+				<div class="lpc-feature-container">
+
+													<div id="lpc-gridicon.6" class="lpc lpc-gridicon lpc-feature-icon" style="">
+			<svg class="gridicon gridicons-layout-blocks" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M21 7h-2V3c0-1.105-.895-2-2-2H7c-1.105 0-2 .895-2 2v2H3c-1.105 0-2 .895-2 2v4c0 1.105.895 2 2 2h2v8c0 1.105.895 2 2 2h10c1.105 0 2-.895 2-2v-2h2c1.105 0 2-.895 2-2V9c0-1.105-.895-2-2-2zm-4 14H7v-8h2c1.105 0 2-.895 2-2V7c0-1.105-.895-2-2-2H7V3h10v4h-2c-1.105 0-2 .895-2 2v8c0 1.105.895 2 2 2h2v2zm4-4h-6V9h6v8z"/></g></svg>		</div>
+		
+											
+											<h5 class="lpc-feature-title lp-features-feature--title no-widows">
+							تطبيقات الهاتف المحمول وسطح المكتب						</h5>
+					
+											<div class="lpc-feature-description lp-features-feature--description lp-text no-widows">
+							تحديث موقعك من أي مكان باستخدام تطبيقات الهاتف المحمول وسطح المكتب لأنظمة التشغيل iOS و Android و Mac و Windows و Linux.						</div>
+					
+					
+				</div>
+			</div>
+		</div>
+										</div>
+													</div>
+					
+					
+				</div>
+			</div>
+		</section>
+				<section id="lpc-pitch-x" class="lpc lpc-pitch-x is-pitch-left lp-module lp-pitch-x">
+			<div class="lpc-pitch-x-container lp-pitch-x-container">
+
+									<div class="lpc-pitch-x-block1 lp-pitch-x-block1">
+
+						
+													<h3 class="lpc-pitch-x-title lp-pitch-x-title no-widows">
+																	<span>اختر من بين مئات القوالب لأي نوع من المشاريع</span>
+															</h3>
+						
+													<div class="lpc-pitch-x-paragraphs lp-pitch-x-paragraphs">
+																	<p class="no-widows">لست بحاجة إلى تعلم تصميم مواقع الويب لإنشاء موقع الويب الذي تحلم به.</p>
+															</div>
+						
+						
+													<div class="lpc-pitch-x-cta-button">
+													<a id="lpc-button.2" class="lpc lpc-button is-cta is-large is-primary no-widows" href="https://wordpress.com/themes/?ref=create-website-lp" >تصفح جميع قوالبك</a>
+											</div>
+											</div>
+				
+				<div class="lpc-pitch-x-block2 lp-pitch-x-block2">
+										<div class="lpc-pitch-x-image lpc-pitch-x-image-1 lp-pitch-x-image lp-pitch-x-image-1 lp-image-container">
+						<div class="lpc-pitch-x-image-ratio lp-image-ratio"></div>
+						<div class="lpc-pitch-x-image-fill lp-image-fill"></div>
+					</div>
+												<div class="lpc-pitch-x-image lpc-pitch-x-image-2 lp-pitch-x-image lp-pitch-x-image-2 lp-image-container">
+						<div class="lpc-pitch-x-image-ratio lp-image-ratio"></div>
+						<div class="lpc-pitch-x-image-fill lp-image-fill"></div>
+					</div>
+												<div class="lpc-pitch-x-image lpc-pitch-x-image-3 lp-pitch-x-image lp-pitch-x-image-3 lp-image-container">
+						<div class="lpc-pitch-x-image-ratio lp-image-ratio"></div>
+						<div class="lpc-pitch-x-image-fill lp-image-fill"></div>
+					</div>
+											</div>
+			</div>
+
+			<div class="lpc-pitch-x-bottom-slope lp-pitch-x-bottom-slope"></div>
+		</section>
+				<div id="lpc-testimonials" class="lpc lpc-testimonials">
+			<div class="lpc-testimonials-wrapper">
+				<div class="lpc-testimonials-container">
+
+											<h3 class="lpc-testimonials-title no-widows">
+															<span>الأشخاص يحبون ووردبريس.كوم</span>
+													</h3>
+					
+					<div class="lpc-testimonials-collection">
+															<div id="lpc-testimonial.2" class="lpc lpc-testimonial">
+			<div class="lpc-testimonial-wrapper">
+				<div class="lpc-testimonial-container">
+
+					<div class="lpc-testimonial-block">
+						<div class="lpc-testimonial-quote-container">
+							<div class="lpc-testimonial-quote no-widows">يعمل ووردبرس.كوم بشكل جيد مع غوغل من أجل تصنيف تحسين محركات البحث الرائع. يمكنني أيضًا تضمين مقاطع فيديو من اليوتيوب وخرائط غوغل وغيرها من المحتويات بسهولة ومن دون أي قدرة على الترميز.</div>
+						</div>
+						<div class="lpc-testimonial-image">
+							<amp-img id="lpc-image.2" class="lpc lpc-image" layout="intrinsic" src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/quintin-lake.png" alt="" title="Quintin Lake" width="1" height="1" />						</div>
+					</div>
+					<div class="lpc-testimonial-details">
+
+						<div class="lpc-testimonial-name no-widows">
+							Quintin Lake						</div>
+
+													<div class="lpc-testimonial-website no-widows">
+								theperimeter.uk							</div>
+											</div>
+
+				</div>
+			</div>
+		</div>
+																	<div id="lpc-testimonial.3" class="lpc lpc-testimonial">
+			<div class="lpc-testimonial-wrapper">
+				<div class="lpc-testimonial-container">
+
+					<div class="lpc-testimonial-block">
+						<div class="lpc-testimonial-quote-container">
+							<div class="lpc-testimonial-quote no-widows">لقد كان امتيازًا عظيمًا وتجربة مُغيِّرة لمجرى الحياة. إنَّني مُمتن لوردبرس.كوم لتوفيره منصة معقولة التكلفة وسهلة الاستخدام لكي يبدأ الأفراد المشروعات والاستماع بهذه الطريقة.</div>
+						</div>
+						<div class="lpc-testimonial-image">
+							<amp-img id="lpc-image.3" class="lpc lpc-image" layout="intrinsic" src="https://s1.wp.com/wp-content/themes/h4/landing/marketing/pages/_common/components/testimonials/media/ann-morgan.png" alt="" title="Ann Morgan" width="1" height="1" />						</div>
+					</div>
+					<div class="lpc-testimonial-details">
+
+						<div class="lpc-testimonial-name no-widows">
+							Ann Morgan						</div>
+
+													<div class="lpc-testimonial-website no-widows">
+								ayearofreadingtheworld.com							</div>
+											</div>
+
+				</div>
+			</div>
+		</div>
+													</div>
+
+				</div>
+			</div>
+		</div>
+				<section id="plans" class="lpc lpc-plans lpc-plans-four price-2020-q2-test-2 lp-module lp-plans"				data-adjust-height-breakpoint="660"
+				data-current-page="2"
+		>
+			<div class="lpc-plans-wrapper">
+				<div class="lpc-plans-container">
+
+											<div class="lpc-plans-shapes">
+									<div id="lpc-shape" class="lpc lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+				<div id="lpc-shape.2" class="lpc lpc-shape">
+			<div class="lpc-shape-wrapper">
+				<div class="lpc-shape-container">
+
+					<div class="lpc-shape-ratio"></div>
+					<div class="lpc-shape-fill"></div>
+
+				</div>
+			</div>
+		</div>
+								</div>
+					
+					<div class="lpc-plans-block lp-container">
+
+						
+						
+						
+													<div class="lpc-plans-featured-plan">
+										<div id="lpc-featured-plan" class="lpc lpc-featured-plan">
+			<div class="lpc-featured-plan-wrapper">
+				<div class="lpc-featured-plan-container">
+
+											<div class="lpc-featured-plan-block-1">
+
+															<h3 class="lpc-featured-plan-title no-widows">
+																			<span>يمكنك البدء،</span>
+																			<span>بمساعدة 3 من الطرق اللازمة للنمو.</span>
+																	</h3>
+							
+															<h4 class="lpc-featured-plan-subtitle no-widows">
+																			<span>سواء أكنتَ تريد مشاركة أفكارك أو بدء عمل أو تشغيل متجر، يمكنك القيام بكل هذا على وردبرس.كوم.</span>
+																	</h4>
+							
+						</div>
+					
+											<div class="lpc-featured-plan-block-2">
+
+															<div class="lpc-featured-plan-block">
+											<div id="lpc-plan-free" class="lpc lpc-plan lpc-plan-free plan card plan-free price-monthly">
+
+											<div class="lpc-plan-header plan-header details details-short adjust-height">
+							
+							
+															<h3 class="lpc-plan-header-title no-widows">
+									مجاناً								</h3>
+							
+															<h4 class="lpc-plan-header-subtitle no-widows">
+									الأفضل للبدء								</h4>
+							
+															<h5 class="lpc-plan-header-price">
+									<amp-list layout="fill" src="https://public-api.wordpress.com/rest/v1.3/landing-page/prices?hostname=CANONICAL_HOSTNAME&#038;currency=QUERY_PARAM(currency)&#038;cycle=monthly" credentials="include" items="." single-item>
+										<template type="amp-mustache">
+											<span class="price-free-plan no-widows">
+												<sup>{{{currency_prices.symbol}}}</sup>{{currency_prices.prices.price-free-plan}}
+											</span>
+										</template>
+									</amp-list>
+								</h5>
+							
+															<p class="lpc-plan-header-timeframe plan-timeframe no-widows">
+									مدى الحياة								</p>
+													</div>
+					
+					
+					
+											<div class="lpc-plan-cta-block description post-features has-cta">
+							<p class="lpc-plan-cta-block-cta lpc-plan-cta lp-cta">
+													<a id="lpc-button.3" class="lpc lpc-button button is-cta no-widows" href="https://wordpress.com/start/ar/?ref=create-website-lp" data-regily-trigger="click" data-regily-custom-data='{ "plan": "free" }'>بدء تجربة مجانية</a>
+											</p>
+						</div>
+					
+											<div class="lpc-plan-summary">
+									<div id="lpc-paragraphs" class="lpc lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+					<p class="no-widows">أنشئ موقعًا جميلاً وبسيطًا على الويب في لحظات.</p>				</div>
+			</div>
+		</div>
+								</div>
+					
+		</div>
+										</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+									</div>
+						
+						
+													<div class="lpc-plans-table-wrapper">
+								<div class="lpc-plans-table-container">
+									<div class="lpc-plans-table plans-table lpc-plans-table-four plans-four">
+																							<div id="lpc-plan-free.2" class="lpc lpc-plan lpc-plan-free plan card plan-free price-monthly">
+
+											<div class="lpc-plan-header plan-header details details-short adjust-height">
+							
+							
+															<h3 class="lpc-plan-header-title no-widows">
+									مجاناً								</h3>
+							
+															<h4 class="lpc-plan-header-subtitle no-widows">
+									الأفضل للبدء								</h4>
+							
+															<h5 class="lpc-plan-header-price">
+									<amp-list layout="fill" src="https://public-api.wordpress.com/rest/v1.3/landing-page/prices?hostname=CANONICAL_HOSTNAME&#038;currency=QUERY_PARAM(currency)&#038;cycle=monthly" credentials="include" items="." single-item>
+										<template type="amp-mustache">
+											<span class="price-free-plan no-widows">
+												<sup>{{{currency_prices.symbol}}}</sup>{{currency_prices.prices.price-free-plan}}
+											</span>
+										</template>
+									</amp-list>
+								</h5>
+							
+															<p class="lpc-plan-header-timeframe plan-timeframe no-widows">
+									مدى الحياة								</p>
+													</div>
+					
+					
+					
+											<div class="lpc-plan-cta-block description post-features has-cta">
+							<p class="lpc-plan-cta-block-cta lpc-plan-cta lp-cta">
+													<a id="lpc-button.4" class="lpc lpc-button button is-cta no-widows" href="https://wordpress.com/start/ar/?ref=create-website-lp" data-regily-trigger="click" data-regily-custom-data='{ "plan": "free" }'>بدء تجربة مجانية</a>
+											</p>
+						</div>
+					
+											<div class="lpc-plan-summary">
+									<div id="lpc-paragraphs.2" class="lpc lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+					<p class="no-widows">أنشئ موقعًا جميلاً وبسيطًا على الويب في لحظات.</p>				</div>
+			</div>
+		</div>
+								</div>
+					
+		</div>
+																									<div id="lpc-plan-premium" class="lpc lpc-plan lpc-plan-premium plan card plan-premium price-monthly is-featured">
+
+											<div class="lpc-plan-header plan-header details details-short adjust-height">
+							
+															<div class="lpc-plan-header-badge no-widows">
+									شائع								</div>
+							
+															<h3 class="lpc-plan-header-title no-widows">
+									الخطة المميزة								</h3>
+							
+															<h4 class="lpc-plan-header-subtitle no-widows">
+									الأفضل لأصحاب العمل الحر								</h4>
+							
+															<h5 class="lpc-plan-header-price">
+									<amp-list layout="fill" src="https://public-api.wordpress.com/rest/v1.3/landing-page/prices?hostname=CANONICAL_HOSTNAME&#038;currency=QUERY_PARAM(currency)&#038;cycle=monthly" credentials="include" items="." single-item>
+										<template type="amp-mustache">
+											<span class="price-premium-plan no-widows">
+												<sup>{{{currency_prices.symbol}}}</sup>{{currency_prices.prices.price-premium-plan}}
+											</span>
+										</template>
+									</amp-list>
+								</h5>
+							
+															<p class="lpc-plan-header-timeframe plan-timeframe no-widows">
+									لكل شهر، مفوترة سنوياً								</p>
+													</div>
+					
+					
+					
+											<div class="lpc-plan-cta-block description post-features has-cta">
+							<p class="lpc-plan-cta-block-cta lpc-plan-cta lp-cta">
+													<a id="lpc-button.5" class="lpc lpc-button button is-cta no-widows" href="https://wordpress.com/start/premium/ar/?ref=create-website-lp" data-regily-trigger="click" data-regily-custom-data='{ "plan": "premium" }'>بدء العمل باستخدام الإصدار المتميز</a>
+											</p>
+						</div>
+					
+											<div class="lpc-plan-summary">
+									<div id="lpc-paragraphs.3" class="lpc lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+					<p class="no-widows">أنشئ موقعًا فريدًا يتضمن أدوات التصميم المتقدمة وCSS المخصصة ودعم Google Analytics.</p>				</div>
+			</div>
+		</div>
+								</div>
+					
+		</div>
+																									<div id="lpc-plan-business" class="lpc lpc-plan lpc-plan-business plan card plan-business price-monthly">
+
+											<div class="lpc-plan-header plan-header details details-short adjust-height">
+							
+							
+															<h3 class="lpc-plan-header-title no-widows">
+									للشركات								</h3>
+							
+															<h4 class="lpc-plan-header-subtitle no-widows">
+									الأفضل للشركات الصغيرة								</h4>
+							
+															<h5 class="lpc-plan-header-price">
+									<amp-list layout="fill" src="https://public-api.wordpress.com/rest/v1.3/landing-page/prices?hostname=CANONICAL_HOSTNAME&#038;currency=QUERY_PARAM(currency)&#038;cycle=monthly" credentials="include" items="." single-item>
+										<template type="amp-mustache">
+											<span class="price-business-plan no-widows">
+												<sup>{{{currency_prices.symbol}}}</sup>{{currency_prices.prices.price-business-plan}}
+											</span>
+										</template>
+									</amp-list>
+								</h5>
+							
+															<p class="lpc-plan-header-timeframe plan-timeframe no-widows">
+									لكل شهر، مفوترة سنوياً								</p>
+													</div>
+					
+					
+					
+											<div class="lpc-plan-cta-block description post-features has-cta">
+							<p class="lpc-plan-cta-block-cta lpc-plan-cta lp-cta">
+													<a id="lpc-button.6" class="lpc lpc-button button is-cta no-widows" href="https://wordpress.com/start/business/ar/?ref=create-website-lp" data-regily-trigger="click" data-regily-custom-data='{ "plan": "business" }'>بدء إصدار الشركات</a>
+											</p>
+						</div>
+					
+											<div class="lpc-plan-summary">
+									<div id="lpc-paragraphs.4" class="lpc lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+					<p class="no-widows">عزز شركتك بإضافات وقوالب مخصصة، ومساحة تخزين قدرها 200 جيجابايت، ودعم مباشر.</p>				</div>
+			</div>
+		</div>
+								</div>
+					
+		</div>
+																									<div id="lpc-plan-ecommerce" class="lpc lpc-plan lpc-plan-ecommerce plan card plan-ecommerce price-monthly">
+
+											<div class="lpc-plan-header plan-header details details-short adjust-height">
+							
+							
+															<h3 class="lpc-plan-header-title no-widows">
+									التجارة الإلكترونية								</h3>
+							
+															<h4 class="lpc-plan-header-subtitle no-widows">
+									الأفضل للمتاجر على الإنترنت								</h4>
+							
+															<h5 class="lpc-plan-header-price">
+									<amp-list layout="fill" src="https://public-api.wordpress.com/rest/v1.3/landing-page/prices?hostname=CANONICAL_HOSTNAME&#038;currency=QUERY_PARAM(currency)&#038;cycle=monthly" credentials="include" items="." single-item>
+										<template type="amp-mustache">
+											<span class="price-ecommerce-plan no-widows">
+												<sup>{{{currency_prices.symbol}}}</sup>{{currency_prices.prices.price-ecommerce-plan}}
+											</span>
+										</template>
+									</amp-list>
+								</h5>
+							
+															<p class="lpc-plan-header-timeframe plan-timeframe no-widows">
+									لكل شهر، مفوترة سنوياً								</p>
+													</div>
+					
+					
+					
+											<div class="lpc-plan-cta-block description post-features has-cta">
+							<p class="lpc-plan-cta-block-cta lpc-plan-cta lp-cta">
+													<a id="lpc-button.7" class="lpc lpc-button button is-cta no-widows" href="https://wordpress.com/start/ecommerce/ar/?ref=create-website-lp" data-regily-trigger="click" data-regily-custom-data='{ "plan": "ecommerce" }'>البدء مع التجارة الإلكترونية</a>
+											</p>
+						</div>
+					
+											<div class="lpc-plan-summary">
+									<div id="lpc-paragraphs.5" class="lpc lpc-paragraphs">
+			<div class="lpc-paragraphs-wrapper">
+				<div class="lpc-paragraphs-container">
+					<p class="no-widows">افتح متجرك على الإنترنت باستخدام منصة قوية ومرنة مصممة خصوصًا للتطور معك.</p>				</div>
+			</div>
+		</div>
+								</div>
+					
+		</div>
+																					</div>
+								</div>
+															</div>
+						
+											</div>
+
+											<div class="lpc-plans-compare-button plans-compare-button-container">
+												<a id="lpc-button.8" class="lpc lpc-button no-widows" href="https://ar.wordpress.com/pricing/?ref=create-website-lp" >المقارنة بين خططنا ›</a>
+										</div>
+					
+					
+					<div class="lpc-plans-tooltip-block features-list__item-tooltip-container">
+						<div class="lpc-plans-tooltip-arrow tip-arrow"></div>
+						<div class="lpc-plans-tooltip-content features-list__item-tooltip-content"></div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+				<section id="lpc-faqs" class="lpc lpc-faqs lp-module lp-faqs">
+			<div class="lpc-faqs-container lp-faqs-container">
+
+									<div class="lpc-faqs-icon lp-faqs-icon" style="background: #016087;">
+						<svg class="gridicon gridicons-chat" height="24" width="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M3 12c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h8c1.1 0 2 .9 2 2v5c0 1.1-.9 2-2 2H9v3l-3-3H3zM21 18c1.1 0 2-.9 2-2v-5c0-1.1-.9-2-2-2h-6v1c0 2.2-1.8 4-4 4v2c0 1.1.9 2 2 2h2v3l3-3h3z"/></g></svg>					</div>
+				
+									<h2 class="lpc-faqs-title lp-faqs-title no-widows">
+													<span>أنت سألت ونحن أجبنا!</span>
+											</h2>
+				
+									<div class="lpc-faqs-faqs lp-faqs-faqs">
+
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-0"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-0">
+											هل يمكنني إنشاء موقع ويب بلغة أخرى؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										حتمًا. يُمكنك تغيير لغة موقعك، التي سيستخدمها قراؤك على موقعك. كما يُمكنك تغيير اللغة التي تراها أثناء العمل على الموقع في لوحة المعلومات. لك مطلق الحرية في اختيار اللغة التي تكتب بها في موقعك على الويب!									</div>
+								
+							</div>
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-1"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-1">
+											هل سيتوجب عليّ الدفع مقابل نطاقي المخصص؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										يُزود حسابك بنطاق فرعي مجاني. وإذا كنت ترغب في نطاق مخصص، فيُمكنك إضافة أحد النطاقات إلى موقعك مصحوبًا بعملية شراء لأي من خطط وردبرس.كوم.									</div>
+								
+							</div>
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-2"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-2">
+											هل يمكنني الحصول على حساب بريد إلكتروني؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										تشمل خطة وردبرس.كوم إعادة توجيه البريد الإلكتروني، كما تتوفّر استضافة البريد الإلكتروني بشكل كامل من خلال مجموعة G Suite الخاصة بشريكنا.									</div>
+								
+							</div>
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-3"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-3">
+											هل سيمكنني أن أبيع عبر الإنترنت؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										يُمكنك بيع سلع فردية على موقعك باستخدام حساب PayPal. لمزيد من فرص التحويل إلى قيم نقدية، قُم بالترقية إلى خطة <a href="https://wordpress.com/start/premium/ar/" target="_blank">وردبرس.كوم المميزة</a> لبيع المنتجات والخدمات باستخدام زر الدفع المبسط. وللحصول على المزيد من مزايا التجارة الإلكترونية، مثل متجر على الإنترنت، يجب عليك التفكير في البدء <a href="https://wordpress.com/start/business/ar/" target="_blank">بخطة عمل وردبرس.كوم</a>.									</div>
+								
+							</div>
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-4"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-4">
+											هل يمكنني استيراد محتوى من خدمة أخرى؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										يُمكن استيراد محتوى مدونتك من مجموعة متنوعة من منصات التدوين الأخرى، بما في ذلك Blogger، وLiveJournal، وMovable Type، وTumblr، وWix، وTypepad، وXanga وغيرها المزيد. ويُمكنك أيضًا استيراد محتواك من موقع وردبرس مستضاف ذاتيًا.									</div>
+								
+							</div>
+													<div class="lpc-faqs-faq lp-faqs-faq">
+								<input type="checkbox"
+									class="lpc-faqs-faq--answer-radio lp-faqs-faq--answer-radio"
+									name="lpc-faqs-faq--answer-radio"
+									id="lpc-faqs-faq--answer-radio-5"
+								/>
+
+																	<h5 class="lpc-faqs-faq--question lp-faqs-faq--question">
+										<label class="no-widows" for="lpc-faqs-faq--answer-radio-5">
+											أين يمكنني أن أتعلم المزيد؟										</label>
+									</h5>
+								
+																	<div class="lpc-faqs-faq--answer lp-faqs-faq--answer no-widows lp-text">
+										يُرجى زيارة <a href="https://ar.support.wordpress.com/" target="_blank">موقع الدعم لدينا</a> للحصول على مزيد من الإجابات.									</div>
+								
+							</div>
+						
+					</div>
+				
+				
+			</div>
+		</section>
+				<section id="lpc-pitch-x.2" class="lpc lpc-pitch-x is-pitch-bottom lp-module lp-pitch-x">
+			<div class="lpc-pitch-x-container lp-pitch-x-container">
+
+									<div class="lpc-pitch-x-block1 lp-pitch-x-block1">
+
+						
+													<h3 class="lpc-pitch-x-title lp-pitch-x-title">
+																	<span>انضم إلى الشبكة التي تُقدِّم</span>
+																	<span>أكثر من 20 مليار</span>
+																	<span>مشاهدة للصفحة شهريًّا</span>
+															</h3>
+						
+						
+						
+													<div class="lpc-pitch-x-cta-button">
+													<a id="lpc-button.9" class="lpc lpc-button is-cta is-large is-primary no-widows" href="https://wordpress.com/start/ar/?ref=create-website-lp" >ابدأ موقع الويب الخاص بك</a>
+											</div>
+											</div>
+				
+				<div class="lpc-pitch-x-block2 lp-pitch-x-block2">
+										<div class="lpc-pitch-x-image lp-pitch-x-image lp-image-container">
+
+						<div class="lpc-pitch-x-image-ratio lp-image-ratio"></div>
+						<div class="lpc-pitch-x-image-fill lp-image-fill"></div>
+
+						
+					</div>
+										</div>
+			</div>
+
+			<div class="lpc-pitch-x-bottom-slope lp-pitch-x-bottom-slope"></div>
+		</section>
+				<amp-state id="lpcFooterNav">
+			<script type="application/json">{}</script>
+		</amp-state>
+
+		<section id="lpc-footer-nav" class="lpc lpc-footer-nav">
+			<h3 hidden>قائمة التنقل السفلية</h3>
+
+			<div class="lpc-footer-nav-wrapper">
+				<div class="lpc-footer-nav-container">
+
+					<footer class="lpc-footer-nav-footer">
+						<nav class="lpc-footer-nav-tag">
+							<ul class="lpc-footer-nav-menu">
+								<li><a href="https://wordpress.com/themes/" target="_blank" title="قوالب">قوالب</a></li>
+								<li><a href="https://ar.wordpress.com/features/" target="_blank" title="الميزات">الميزات</a></li>
+								<li><a href="https://en.blog.wordpress.com/" target="_blank" title="مدونة">مدونة</a></li>
+								<li><a href="https://ar.wordpress.com/activity/" target="_blank" title="إحصائيات">إحصائيات</a></li>
+								<li><a href="https://wpvip.com/?utm_source=WordPresscom&#038;utm_medium=automattic_referral&#038;utm_campaign=footer" target="_blank" title="الشخصية الهامة">الشخصية الهامة</a></li>
+								<li><a href="https://ar.wordpress.com/tos/" target="_blank" title="شروط الخدمة">شروط الخدمة</a></li>
+								<li><a href="https://automattic.com/privacy/" target="_blank" title="سياسة الخصوصية">سياسة الخصوصية</a></li>
+
+								<li class="lpc-footer-nav-i18n-sidebar-toggle">
+									<a href="#" title="تغيير اللغة" on="tap:lpc-footer-nav-i18n-sidebar.toggle">
+										اللغة:
+										<span class="lpc-footer-nav-i18n-sidebar-toggle-locale">
+											AR										</span>
+									</a>
+								</li>
+							</ul>
+							<p class="lpc-footer-nav-credits">an <a class="lpc-footer-nav-logo" href="https://automattic.com/">Automattic</a> mambo</p>
+						</nav>
+					</footer>
+
+				</div>
+			</div>
+		</section>
+
+		<amp-sidebar id="lpc-footer-nav-i18n-sidebar" class="lpc-footer-nav-i18n-sidebar" layout="nodisplay" side="right">
+			<div class="lpc-footer-nav-i18n-sidebar-menu" role="menu" aria-label="قائمة اللغات الموجودة في الشريط الجانبي">
+				<h3 hidden>قائمة اللغات الموجودة في الشريط الجانبي</h3>
+
+				<div class="lpc-footer-nav-i18n-sidebar-menu-content">
+					<a href="#" class="lpc-footer-nav-i18n-sidebar-close" on="tap:lpc-footer-nav-i18n-sidebar.close" tabindex="-1">
+						<span hidden>إغلاق قائمة اللغات الموجودة في الشريط الجانبي</span>
+						<span class="lpc-footer-nav-i18n-sidebar-close-icon">&times;</span>
+					</a>
+					<div class="lpc-footer-nav-i18n-sidebar-menu-body">
+						<h4 class="lpc-footer-nav-i18n-sidebar-menu-title">
+							اللغة						</h4>
+						<ul class="lpc-footer-nav-i18n-sidebar-menu-list">
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://es.wordpress.com/create-website/?format=amp" title="Español" role="menuitem" tabindex="-1">
+										Español									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://br.wordpress.com/create-website/?format=amp" title="Português do Brasil" role="menuitem" tabindex="-1">
+										Português do Brasil									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://de.wordpress.com/create-website/?format=amp" title="Deutsch" role="menuitem" tabindex="-1">
+										Deutsch									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://fr.wordpress.com/create-website/?format=amp" title="Français" role="menuitem" tabindex="-1">
+										Français									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://he.wordpress.com/create-website/?format=amp" title="עִבְרִית" role="menuitem" tabindex="-1">
+										עִבְרִית									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://ja.wordpress.com/create-website/?format=amp" title="日本語" role="menuitem" tabindex="-1">
+										日本語									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://it.wordpress.com/create-website/?format=amp" title="Italiano" role="menuitem" tabindex="-1">
+										Italiano									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://nl.wordpress.com/create-website/?format=amp" title="Nederlands" role="menuitem" tabindex="-1">
+										Nederlands									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://ru.wordpress.com/create-website/?format=amp" title="Русский" role="menuitem" tabindex="-1">
+										Русский									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://tr.wordpress.com/create-website/?format=amp" title="Türkçe" role="menuitem" tabindex="-1">
+										Türkçe									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://id.wordpress.com/create-website/?format=amp" title="Bahasa Indonesia" role="menuitem" tabindex="-1">
+										Bahasa Indonesia									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://zh-cn.wordpress.com/create-website/?format=amp" title="简体中文" role="menuitem" tabindex="-1">
+										简体中文									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://zh-tw.wordpress.com/create-website/?format=amp" title="繁體中文" role="menuitem" tabindex="-1">
+										繁體中文									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://ko.wordpress.com/create-website/?format=amp" title="한국어" role="menuitem" tabindex="-1">
+										한국어									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item is-current">
+									<a href="https://ar.wordpress.com/create-website/?format=amp" title="العربية" role="menuitem" tabindex="-1">
+										العربية									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://sv.wordpress.com/create-website/?format=amp" title="Svenska" role="menuitem" tabindex="-1">
+										Svenska									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://el.wordpress.com/create-website/?format=amp" title="Ελληνικά" role="menuitem" tabindex="-1">
+										Ελληνικά									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://en.wordpress.com/create-website/?format=amp" title="English" role="menuitem" tabindex="-1">
+										English									</a>
+								</li>
+															<li class="lpc-footer-nav-i18n-sidebar-menu-list-item">
+									<a href="https://ro.wordpress.com/create-website/?format=amp" title="Română" role="menuitem" tabindex="-1">
+										Română									</a>
+								</li>
+													</ul>
+					</div>
+				</div>
+
+			</div>
+		</amp-sidebar>
+							
+																					<!-- A8C Analytics [start] -->
+			
+<amp-geo layout="nodisplay">
+	<script type="application/json">
+		{
+			"ISOCountryGroups": {
+				"gdpr": ["AT","BE","BG","CY","CZ","DE","DK","EE","ES","FI","FR","GR","HR","HU","IE","IT","LT","LU","LV","MT","NL","PL","PT","RO","SE","SI","SK","GB","CH","IS","LI","NO"]			}
+		}
+	</script>
+</amp-geo>
+
+<amp-user-notification id="gdpr-cookie-banner" data-show-if-geo="gdpr" layout="nodisplay">
+	تستخدم مواقعنا على الويب ولوحات التحكم لدينا ملفات تعريف الارتباط. تعني المتابعة أنك توافق على استخدامها. <a target="_blank" href="https://automattic.com/cookies/">تعرّف على المزيد</a>، بما في ذلك كيفية التحكم في ملفات تعريف الارتباط.						<button id="lpc-button.10" class="lpc lpc-button no-widows" type="button" on="tap:gdpr-cookie-banner.dismiss">فهمت!</button>
+				</amp-user-notification>
+
+<amp-analytics>
+	<script type="application/json">
+		{
+			"transport": {
+				"beacon": false,
+				"xhrpost": false,
+				"image": true
+			},
+			"requests": {
+				"pageview": "https:\/\/pixel.wp.com\/t.gif?_aua=wpcom-tracks-client-v0.3&_ut=anon&_ui=${clientId(tk_ai)}&_en=wpcom_page_view_amp&lp_host=${ampdocHost}&_ts=${timestamp}&lp_name=create-website&lp_segment=&lp_variation=&lp_personal_variation=&aff=${queryParam(aff)}&affiliate=${queryParam(affiliate)}&sid=${queryParam(sid)}&cid=${queryParam(cid)}&adgroupid=${queryParam(adgroupid)}&campaignid=${queryParam(campaignid)}&device=${queryParam(device)}&fbclid=${queryParam(fbclid)}&format=${queryParam(format)}&gclid=${queryParam(gclid)}&gclsrc=${queryParam(gclsrc)}&keyword=${queryParam(keyword)}&locationid=${queryParam(locationid)}&matchtype=${queryParam(matchtype)}&network=${queryParam(network)}&ref=${queryParam(ref)}&targetid=${queryParam(targetid)}&term=${queryParam(term)}&type=${queryParam(type)}&utm_campaign=${queryParam(utm_campaign)}&utm_content=${queryParam(utm_content)}&utm_medium=${queryParam(utm_medium)}&utm_source=${queryParam(utm_source)}&utm_term=${queryParam(utm_term)}&utm_expid=${queryParam(utm_expid)}"			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			},
+			"linkers": {
+				"enabled": true,
+				"proxyOnly": false,
+
+				"tk_amp": {
+					"ids": {"amp_client_id":"${clientId(tk_ai)}","affiliate":"${queryParam(affiliate)}","aff":"${queryParam(aff)}","cid":"${queryParam(cid)}","sid":"${queryParam(sid)}","currency":"${queryParam(currency)}","adgroupid":"${queryParam(adgroupid)}","campaignid":"${queryParam(campaignid)}","device":"${queryParam(device)}","fbclid":"${queryParam(fbclid)}","format":"${queryParam(format)}","gclid":"${queryParam(gclid)}","gclsrc":"${queryParam(gclsrc)}","keyword":"${queryParam(keyword)}","locationid":"${queryParam(locationid)}","matchtype":"${queryParam(matchtype)}","network":"${queryParam(network)}","ref":"${queryParam(ref)}","targetid":"${queryParam(targetid)}","term":"${queryParam(term)}","type":"${queryParam(type)}","utm_campaign":"${queryParam(utm_campaign)}","utm_content":"${queryParam(utm_content)}","utm_medium":"${queryParam(utm_medium)}","utm_source":"${queryParam(utm_source)}","utm_term":"${queryParam(utm_term)}","utm_expid":"${queryParam(utm_expid)}"},
+					"destinationDomains": ["wordpress.com","learn.wordpress.com","dailypost.wordpress.com","developer.wordpress.com","discover.wordpress.com","af.wordpress.com","af.blog.wordpress.com","af.forums.wordpress.com","af.support.wordpress.com","als.wordpress.com","als.blog.wordpress.com","als.forums.wordpress.com","als.support.wordpress.com","am.wordpress.com","am.blog.wordpress.com","am.forums.wordpress.com","am.support.wordpress.com","an.wordpress.com","an.blog.wordpress.com","an.forums.wordpress.com","an.support.wordpress.com","ar.wordpress.com","ar.blog.wordpress.com","ar.forums.wordpress.com","ar.support.wordpress.com","arc.wordpress.com","arc.blog.wordpress.com","arc.forums.wordpress.com","arc.support.wordpress.com","as.wordpress.com","as.blog.wordpress.com","as.forums.wordpress.com","as.support.wordpress.com","ast.wordpress.com","ast.blog.wordpress.com","ast.forums.wordpress.com","ast.support.wordpress.com","av.wordpress.com","av.blog.wordpress.com","av.forums.wordpress.com","av.support.wordpress.com","ay.wordpress.com","ay.blog.wordpress.com","ay.forums.wordpress.com","ay.support.wordpress.com","az.wordpress.com","az.blog.wordpress.com","az.forums.wordpress.com","az.support.wordpress.com","ba.wordpress.com","ba.blog.wordpress.com","ba.forums.wordpress.com","ba.support.wordpress.com","bel.wordpress.com","bel.blog.wordpress.com","bel.forums.wordpress.com","bel.support.wordpress.com","bg.wordpress.com","bg.blog.wordpress.com","bg.forums.wordpress.com","bg.support.wordpress.com","bm.wordpress.com","bm.blog.wordpress.com","bm.forums.wordpress.com","bm.support.wordpress.com","bn.wordpress.com","bn.blog.wordpress.com","bn.forums.wordpress.com","bn.support.wordpress.com","bo.wordpress.com","bo.blog.wordpress.com","bo.forums.wordpress.com","bo.support.wordpress.com","bre.wordpress.com","bre.blog.wordpress.com","bre.forums.wordpress.com","bre.support.wordpress.com","bs.wordpress.com","bs.blog.wordpress.com","bs.forums.wordpress.com","bs.support.wordpress.com","ca.wordpress.com","ca.blog.wordpress.com","ca.forums.wordpress.com","ca.support.wordpress.com","ce.wordpress.com","ce.blog.wordpress.com","ce.forums.wordpress.com","ce.support.wordpress.com","ckb.wordpress.com","ckb.blog.wordpress.com","ckb.forums.wordpress.com","ckb.support.wordpress.com","cs.wordpress.com","cs.blog.wordpress.com","cs.forums.wordpress.com","cs.support.wordpress.com","csb.wordpress.com","csb.blog.wordpress.com","csb.forums.wordpress.com","csb.support.wordpress.com","cv.wordpress.com","cv.blog.wordpress.com","cv.forums.wordpress.com","cv.support.wordpress.com","cy.wordpress.com","cy.blog.wordpress.com","cy.forums.wordpress.com","cy.support.wordpress.com","da.wordpress.com","da.blog.wordpress.com","da.forums.wordpress.com","da.support.wordpress.com","de.wordpress.com","de.blog.wordpress.com","de.forums.wordpress.com","de.support.wordpress.com","de_formal.wordpress.com","de_formal.blog.wordpress.com","de_formal.forums.wordpress.com","de_formal.support.wordpress.com","dv.wordpress.com","dv.blog.wordpress.com","dv.forums.wordpress.com","dv.support.wordpress.com","dz.wordpress.com","dz.blog.wordpress.com","dz.forums.wordpress.com","dz.support.wordpress.com","el.wordpress.com","el.blog.wordpress.com","el.forums.wordpress.com","el.support.wordpress.com","el-po.wordpress.com","el-po.blog.wordpress.com","el-po.forums.wordpress.com","el-po.support.wordpress.com","en.wordpress.com","en.blog.wordpress.com","en.forums.wordpress.com","en.support.wordpress.com","en-gb.wordpress.com","en-gb.blog.wordpress.com","en-gb.forums.wordpress.com","en-gb.support.wordpress.com","eo.wordpress.com","eo.blog.wordpress.com","eo.forums.wordpress.com","eo.support.wordpress.com","es.wordpress.com","es.blog.wordpress.com","es.forums.wordpress.com","es.support.wordpress.com","es-cl.wordpress.com","es-cl.blog.wordpress.com","es-cl.forums.wordpress.com","es-cl.support.wordpress.com","es-mx.wordpress.com","es-mx.blog.wordpress.com","es-mx.forums.wordpress.com","es-mx.support.wordpress.com","et.wordpress.com","et.blog.wordpress.com","et.forums.wordpress.com","et.support.wordpress.com","eu.wordpress.com","eu.blog.wordpress.com","eu.forums.wordpress.com","eu.support.wordpress.com","fa.wordpress.com","fa.blog.wordpress.com","fa.forums.wordpress.com","fa.support.wordpress.com","fi.wordpress.com","fi.blog.wordpress.com","fi.forums.wordpress.com","fi.support.wordpress.com","fo.wordpress.com","fo.blog.wordpress.com","fo.forums.wordpress.com","fo.support.wordpress.com","fr.wordpress.com","fr.blog.wordpress.com","fr.forums.wordpress.com","fr.support.wordpress.com","fr-be.wordpress.com","fr-be.blog.wordpress.com","fr-be.forums.wordpress.com","fr-be.support.wordpress.com","fr-ca.wordpress.com","fr-ca.blog.wordpress.com","fr-ca.forums.wordpress.com","fr-ca.support.wordpress.com","fr-ch.wordpress.com","fr-ch.blog.wordpress.com","fr-ch.forums.wordpress.com","fr-ch.support.wordpress.com","fur.wordpress.com","fur.blog.wordpress.com","fur.forums.wordpress.com","fur.support.wordpress.com","fy.wordpress.com","fy.blog.wordpress.com","fy.forums.wordpress.com","fy.support.wordpress.com","ga.wordpress.com","ga.blog.wordpress.com","ga.forums.wordpress.com","ga.support.wordpress.com","gd.wordpress.com","gd.blog.wordpress.com","gd.forums.wordpress.com","gd.support.wordpress.com","gl.wordpress.com","gl.blog.wordpress.com","gl.forums.wordpress.com","gl.support.wordpress.com","gn.wordpress.com","gn.blog.wordpress.com","gn.forums.wordpress.com","gn.support.wordpress.com","gu.wordpress.com","gu.blog.wordpress.com","gu.forums.wordpress.com","gu.support.wordpress.com","he.wordpress.com","he.blog.wordpress.com","he.forums.wordpress.com","he.support.wordpress.com","hi.wordpress.com","hi.blog.wordpress.com","hi.forums.wordpress.com","hi.support.wordpress.com","hr.wordpress.com","hr.blog.wordpress.com","hr.forums.wordpress.com","hr.support.wordpress.com","hu.wordpress.com","hu.blog.wordpress.com","hu.forums.wordpress.com","hu.support.wordpress.com","hy.wordpress.com","hy.blog.wordpress.com","hy.forums.wordpress.com","hy.support.wordpress.com","ia.wordpress.com","ia.blog.wordpress.com","ia.forums.wordpress.com","ia.support.wordpress.com","id.wordpress.com","id.blog.wordpress.com","id.forums.wordpress.com","id.support.wordpress.com","ii.wordpress.com","ii.blog.wordpress.com","ii.forums.wordpress.com","ii.support.wordpress.com","ilo.wordpress.com","ilo.blog.wordpress.com","ilo.forums.wordpress.com","ilo.support.wordpress.com","is.wordpress.com","is.blog.wordpress.com","is.forums.wordpress.com","is.support.wordpress.com","it.wordpress.com","it.blog.wordpress.com","it.forums.wordpress.com","it.support.wordpress.com","ja.wordpress.com","ja.blog.wordpress.com","ja.forums.wordpress.com","ja.support.wordpress.com","ka.wordpress.com","ka.blog.wordpress.com","ka.forums.wordpress.com","ka.support.wordpress.com","kir.wordpress.com","kir.blog.wordpress.com","kir.forums.wordpress.com","kir.support.wordpress.com","kk.wordpress.com","kk.blog.wordpress.com","kk.forums.wordpress.com","kk.support.wordpress.com","km.wordpress.com","km.blog.wordpress.com","km.forums.wordpress.com","km.support.wordpress.com","kn.wordpress.com","kn.blog.wordpress.com","kn.forums.wordpress.com","kn.support.wordpress.com","ko.wordpress.com","ko.blog.wordpress.com","ko.forums.wordpress.com","ko.support.wordpress.com","ks.wordpress.com","ks.blog.wordpress.com","ks.forums.wordpress.com","ks.support.wordpress.com","kv.wordpress.com","kv.blog.wordpress.com","kv.forums.wordpress.com","kv.support.wordpress.com","la.wordpress.com","la.blog.wordpress.com","la.forums.wordpress.com","la.support.wordpress.com","li.wordpress.com","li.blog.wordpress.com","li.forums.wordpress.com","li.support.wordpress.com","lo.wordpress.com","lo.blog.wordpress.com","lo.forums.wordpress.com","lo.support.wordpress.com","lt.wordpress.com","lt.blog.wordpress.com","lt.forums.wordpress.com","lt.support.wordpress.com","lv.wordpress.com","lv.blog.wordpress.com","lv.forums.wordpress.com","lv.support.wordpress.com","mk.wordpress.com","mk.blog.wordpress.com","mk.forums.wordpress.com","mk.support.wordpress.com","ml.wordpress.com","ml.blog.wordpress.com","ml.forums.wordpress.com","ml.support.wordpress.com","mn.wordpress.com","mn.blog.wordpress.com","mn.forums.wordpress.com","mn.support.wordpress.com","mr.wordpress.com","mr.blog.wordpress.com","mr.forums.wordpress.com","mr.support.wordpress.com","ms.wordpress.com","ms.blog.wordpress.com","ms.forums.wordpress.com","ms.support.wordpress.com","mt.wordpress.com","mt.blog.wordpress.com","mt.forums.wordpress.com","mt.support.wordpress.com","mwl.wordpress.com","mwl.blog.wordpress.com","mwl.forums.wordpress.com","mwl.support.wordpress.com","nah.wordpress.com","nah.blog.wordpress.com","nah.forums.wordpress.com","nah.support.wordpress.com","nap.wordpress.com","nap.blog.wordpress.com","nap.forums.wordpress.com","nap.support.wordpress.com","nds.wordpress.com","nds.blog.wordpress.com","nds.forums.wordpress.com","nds.support.wordpress.com","ne.wordpress.com","ne.blog.wordpress.com","ne.forums.wordpress.com","ne.support.wordpress.com","nl.wordpress.com","nl.blog.wordpress.com","nl.forums.wordpress.com","nl.support.wordpress.com","nn.wordpress.com","nn.blog.wordpress.com","nn.forums.wordpress.com","nn.support.wordpress.com","no.wordpress.com","no.blog.wordpress.com","no.forums.wordpress.com","no.support.wordpress.com","non.wordpress.com","non.blog.wordpress.com","non.forums.wordpress.com","non.support.wordpress.com","nv.wordpress.com","nv.blog.wordpress.com","nv.forums.wordpress.com","nv.support.wordpress.com","oci.wordpress.com","oci.blog.wordpress.com","oci.forums.wordpress.com","oci.support.wordpress.com","or.wordpress.com","or.blog.wordpress.com","or.forums.wordpress.com","or.support.wordpress.com","os.wordpress.com","os.blog.wordpress.com","os.forums.wordpress.com","os.support.wordpress.com","pa.wordpress.com","pa.blog.wordpress.com","pa.forums.wordpress.com","pa.support.wordpress.com","pl.wordpress.com","pl.blog.wordpress.com","pl.forums.wordpress.com","pl.support.wordpress.com","ps.wordpress.com","ps.blog.wordpress.com","ps.forums.wordpress.com","ps.support.wordpress.com","pt.wordpress.com","pt.blog.wordpress.com","pt.forums.wordpress.com","pt.support.wordpress.com","br.wordpress.com","br.blog.wordpress.com","br.forums.wordpress.com","br.support.wordpress.com","qu.wordpress.com","qu.blog.wordpress.com","qu.forums.wordpress.com","qu.support.wordpress.com","ro.wordpress.com","ro.blog.wordpress.com","ro.forums.wordpress.com","ro.support.wordpress.com","ru.wordpress.com","ru.blog.wordpress.com","ru.forums.wordpress.com","ru.support.wordpress.com","rup.wordpress.com","rup.blog.wordpress.com","rup.forums.wordpress.com","rup.support.wordpress.com","sc.wordpress.com","sc.blog.wordpress.com","sc.forums.wordpress.com","sc.support.wordpress.com","si.wordpress.com","si.blog.wordpress.com","si.forums.wordpress.com","si.support.wordpress.com","sk.wordpress.com","sk.blog.wordpress.com","sk.forums.wordpress.com","sk.support.wordpress.com","skr.wordpress.com","skr.blog.wordpress.com","skr.forums.wordpress.com","skr.support.wordpress.com","sl.wordpress.com","sl.blog.wordpress.com","sl.forums.wordpress.com","sl.support.wordpress.com","snd.wordpress.com","snd.blog.wordpress.com","snd.forums.wordpress.com","snd.support.wordpress.com","so.wordpress.com","so.blog.wordpress.com","so.forums.wordpress.com","so.support.wordpress.com","sq.wordpress.com","sq.blog.wordpress.com","sq.forums.wordpress.com","sq.support.wordpress.com","sr.wordpress.com","sr.blog.wordpress.com","sr.forums.wordpress.com","sr.support.wordpress.com","sr_latin.wordpress.com","sr_latin.blog.wordpress.com","sr_latin.forums.wordpress.com","sr_latin.support.wordpress.com","su.wordpress.com","su.blog.wordpress.com","su.forums.wordpress.com","su.support.wordpress.com","sv.wordpress.com","sv.blog.wordpress.com","sv.forums.wordpress.com","sv.support.wordpress.com","ta.wordpress.com","ta.blog.wordpress.com","ta.forums.wordpress.com","ta.support.wordpress.com","te.wordpress.com","te.blog.wordpress.com","te.forums.wordpress.com","te.support.wordpress.com","th.wordpress.com","th.blog.wordpress.com","th.forums.wordpress.com","th.support.wordpress.com","tir.wordpress.com","tir.blog.wordpress.com","tir.forums.wordpress.com","tir.support.wordpress.com","tl.wordpress.com","tl.blog.wordpress.com","tl.forums.wordpress.com","tl.support.wordpress.com","tr.wordpress.com","tr.blog.wordpress.com","tr.forums.wordpress.com","tr.support.wordpress.com","tt.wordpress.com","tt.blog.wordpress.com","tt.forums.wordpress.com","tt.support.wordpress.com","ty.wordpress.com","ty.blog.wordpress.com","ty.forums.wordpress.com","ty.support.wordpress.com","udm.wordpress.com","udm.blog.wordpress.com","udm.forums.wordpress.com","udm.support.wordpress.com","ug.wordpress.com","ug.blog.wordpress.com","ug.forums.wordpress.com","ug.support.wordpress.com","uk.wordpress.com","uk.blog.wordpress.com","uk.forums.wordpress.com","uk.support.wordpress.com","ur.wordpress.com","ur.blog.wordpress.com","ur.forums.wordpress.com","ur.support.wordpress.com","uz.wordpress.com","uz.blog.wordpress.com","uz.forums.wordpress.com","uz.support.wordpress.com","vec.wordpress.com","vec.blog.wordpress.com","vec.forums.wordpress.com","vec.support.wordpress.com","vi.wordpress.com","vi.blog.wordpress.com","vi.forums.wordpress.com","vi.support.wordpress.com","wa.wordpress.com","wa.blog.wordpress.com","wa.forums.wordpress.com","wa.support.wordpress.com","xal.wordpress.com","xal.blog.wordpress.com","xal.forums.wordpress.com","xal.support.wordpress.com","yi.wordpress.com","yi.blog.wordpress.com","yi.forums.wordpress.com","yi.support.wordpress.com","yo.wordpress.com","yo.blog.wordpress.com","yo.forums.wordpress.com","yo.support.wordpress.com","za.wordpress.com","za.blog.wordpress.com","za.forums.wordpress.com","za.support.wordpress.com","zh-cn.wordpress.com","zh-cn.blog.wordpress.com","zh-cn.forums.wordpress.com","zh-cn.support.wordpress.com","zh-tw.wordpress.com","zh-tw.blog.wordpress.com","zh-tw.forums.wordpress.com","zh-tw.support.wordpress.com"]				}
+			}
+		}
+	</script>
+</amp-analytics>
+
+<amp-analytics type="gtag" data-credentials="include" data-consent-notification-id="gdpr-cookie-banner">
+	<script type="application/json">
+		{
+			"vars": {
+				"gtag_id": "UA-10673494-10",
+				"config": {
+					"UA-10673494-10": { 						"groups": "default",
+						"linker": { "domains": ["wordpress.com","af.wordpress.com","als.wordpress.com","am.wordpress.com","an.wordpress.com","ar.wordpress.com","arc.wordpress.com","as.wordpress.com","ast.wordpress.com","av.wordpress.com","ay.wordpress.com","az.wordpress.com","ba.wordpress.com","bel.wordpress.com","bg.wordpress.com","bm.wordpress.com","bn.wordpress.com","bo.wordpress.com","bre.wordpress.com","bs.wordpress.com","ca.wordpress.com","ce.wordpress.com","ckb.wordpress.com","cs.wordpress.com","csb.wordpress.com","cv.wordpress.com","cy.wordpress.com","da.wordpress.com","de.wordpress.com","de_formal.wordpress.com","dv.wordpress.com","dz.wordpress.com","el.wordpress.com","el-po.wordpress.com","en.wordpress.com","en-gb.wordpress.com","eo.wordpress.com","es.wordpress.com","es-cl.wordpress.com","es-mx.wordpress.com","et.wordpress.com","eu.wordpress.com","fa.wordpress.com","fi.wordpress.com","fo.wordpress.com","fr.wordpress.com","fr-be.wordpress.com","fr-ca.wordpress.com","fr-ch.wordpress.com","fur.wordpress.com","fy.wordpress.com","ga.wordpress.com","gd.wordpress.com","gl.wordpress.com","gn.wordpress.com","gu.wordpress.com","he.wordpress.com","hi.wordpress.com","hr.wordpress.com","hu.wordpress.com","hy.wordpress.com","ia.wordpress.com","id.wordpress.com","ii.wordpress.com","ilo.wordpress.com","is.wordpress.com","it.wordpress.com","ja.wordpress.com","ka.wordpress.com","kir.wordpress.com","kk.wordpress.com","km.wordpress.com","kn.wordpress.com","ko.wordpress.com","ks.wordpress.com","kv.wordpress.com","la.wordpress.com","li.wordpress.com","lo.wordpress.com","lt.wordpress.com","lv.wordpress.com","mk.wordpress.com","ml.wordpress.com","mn.wordpress.com","mr.wordpress.com","ms.wordpress.com","mt.wordpress.com","mwl.wordpress.com","nah.wordpress.com","nap.wordpress.com","nds.wordpress.com","ne.wordpress.com","nl.wordpress.com","nn.wordpress.com","no.wordpress.com","non.wordpress.com","nv.wordpress.com","oci.wordpress.com","or.wordpress.com","os.wordpress.com","pa.wordpress.com","pl.wordpress.com","ps.wordpress.com","pt.wordpress.com","br.wordpress.com","qu.wordpress.com","ro.wordpress.com","ru.wordpress.com","rup.wordpress.com","sc.wordpress.com","si.wordpress.com","sk.wordpress.com","skr.wordpress.com","sl.wordpress.com","snd.wordpress.com","so.wordpress.com","sq.wordpress.com","sr.wordpress.com","sr_latin.wordpress.com","su.wordpress.com","sv.wordpress.com","ta.wordpress.com","te.wordpress.com","th.wordpress.com","tir.wordpress.com","tl.wordpress.com","tr.wordpress.com","tt.wordpress.com","ty.wordpress.com","udm.wordpress.com","ug.wordpress.com","uk.wordpress.com","ur.wordpress.com","uz.wordpress.com","vec.wordpress.com","vi.wordpress.com","wa.wordpress.com","xal.wordpress.com","yi.wordpress.com","yo.wordpress.com","za.wordpress.com","zh-cn.wordpress.com","zh-tw.wordpress.com"] }
+					},
+					"AW-946162814": { 						"groups": "default"
+					},
+					"AW-937115306": { 						"groups": "default"
+					}
+									}
+			},
+			"extraUrlParams": { 				"cd41": "${ampdocHost}",
+				"cd1": "create-website",
+				"cd2": "",
+				"cd3": "${clientId}"
+			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			}
+		}
+	</script>
+</amp-analytics>
+
+<amp-analytics type="facebookpixel" data-consent-notification-id="gdpr-cookie-banner">
+	<script type="application/json">
+		{
+			"vars": {
+				"pixelId": "823166884443641"
+			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			}
+		}
+	</script>
+</amp-analytics>
+
+<amp-analytics type="quantcast" data-consent-notification-id="gdpr-cookie-banner">
+	<script type="application/json">
+		{
+			"vars": {
+				"pcode": "p-3Ma3jHaQMB_bS",
+				"labels": ["AMPProject"]
+			}
+		}
+	</script>
+</amp-analytics>
+
+<amp-analytics data-consent-notification-id="gdpr-cookie-banner">
+	<script type="application/json">
+		{
+			"transport": {
+				"beacon": false,
+				"xhrpost": false,
+				"image": true
+			},
+			"requests": {
+				"pageview": "https://tags.w55c.net/rs?id=cab35a3a79dc4173b8ce2c47adad2cea&t=marketing"
+			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			}
+		}
+	</script>
+</amp-analytics>
+
+<amp-analytics data-consent-notification-id="gdpr-cookie-banner">
+	<script type="application/json">
+		{
+			"transport": {
+				"beacon": false,
+				"xhrpost": false,
+				"image": true
+			},
+			"requests": {
+				"pageview": "https://sp.analytics.yahoo.com/spp.pl?a=10000&.yp=10014088"
+			},
+			"triggers": {
+				"trackPageview": {
+					"on": "visible",
+					"request": "pageview"
+				}
+			}
+		}
+	</script>
+</amp-analytics>
+			<!-- A8C Analytics [end] -->
+													
+				</body>
+			</html>
+			

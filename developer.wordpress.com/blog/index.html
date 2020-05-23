@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Developer Resources | Create cool applications that integrate with WordPress.com</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://developer.wordpress.com/xmlrpc.php">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:700' rel='stylesheet' type='text/css'>
+
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Feed" href="https://developer.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Comments Feed" href="https://developer.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJytU1lWwzAMvBCOG1Je2w8eZ3Ecxaj1kmfZDbk9ztKFtoQC/ZOUGc1YkXjbMOlsABu4iazRUaEl3jbSGUYGNXQXWSaJnvhtmsYdEN9CaITcsSGbg6Ot0WLojsEV+IBUMaUleJW+eODrLM8WbLDFy4i64qV2g2Lphe84hU7DHc0G1plh0bkYmPJY/bWFFwGtoh/oddSaEQZgUGFPmEbC83xRFMsiX3MLLQ0dJ4EKKfSvTFBHgcYy2yO0D1eRwrtIoB+k0XgwGM2ROj8a6SYrefZcZIvJ0VRk/x7rODydmo6vG/tfVueWtl/AVDeNCD3CJCkBGkyCzdFarBSERKdDzAJ8zFOGsyvLNEAidhhjeE9a12f1q+WePtXe3TA9CnCxlqODCvbF+U9Dbl3AhKZjcM/Dg2vG1f1mAc4oChxLDtMpOfslYbUW6OeoHvobSaEaJn1K50hC9s1L4U9RD38zr/nLerPZrJarfPsJh/3tJA==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/_static/??-eJxti0EKgCAQAD+ULWGJHaK3mJgaqyut0fejQ4eo0zAwA2cRlnJ1uUI6RMHDx8xQiKtY0cQdOJg9Zv+wtcwN/F9MNhoUSJ7e8plqcMkxhB480mLwDuY0dYMepVJaqu0CZXY33g==?cssminify=yes' type='text/css' media='all' />
+	<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script type='text/javascript' src='https://s1.wp.com/_static/??-eJx9jmsKwjAQhC9kGiSk9I94lpiONaG7qXko3t5VKoKoMLAwfDsz+rqowH5uI4qOonNDvq2ni2Wj/wGKwpRdRUeBX7BPXMH1wVI6hBmqFWQ3iSdBx/TJ1RNIot3gxfWJRlzM8xncvg0oy7vr9/KV2tNua+1gbN9bE+9IyVbm'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://developer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Developer Resources" />
+<meta property="og:description" content="Create cool applications that integrate with WordPress.com" />
+<meta property="og:url" content="https://developer.wordpress.com/blog/" />
+<meta property="og:site_name" content="Developer Resources" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=200&amp;ts=1590244705" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@AutomatticEng" />
+<meta name="twitter:site" content="@AutomatticEng" />
+<meta property="fb:app_id" content="249643311490" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=114" />
+<link rel='openid.server' href='https://developer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://developer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://developer.wordpress.com/osd.xml" title="Developer Resources" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Developer Resources" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Create cool applications that integrate with WordPress.com" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://developer.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="Create cool applications that integrate with WordPress.com" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2gHKz&#038;cscache=6&#038;csrev=45" />
+		</head>
+
+<body class="blog customizer-styles-applied highlander-enabled highlander-light infinite-scroll neverending">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<form role="search" method="get" class="search-form" action="https://developer.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:'" />
+	</label>
+</form>				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-5714" class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page menu-item-5714"><a href="https://developer.wordpress.com/">Developers</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-32"><a href="https://developer.wordpress.com/docs/">Documentation</a>
+<ul class="sub-menu">
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34"><a href="https://developer.wordpress.com/docs/api/">REST API</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90807"><a href="https://developer.wordpress.com/docs/api/getting-started/">Getting Started</a></li>
+		<li id="menu-item-28306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28306"><a href="https://developer.wordpress.com/docs/api/console/">Developer Console</a></li>
+		<li id="menu-item-88679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88679"><a href="https://developer.wordpress.com/docs/api/rest-api-example-apps/">Example Apps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28277"><a href="https://developer.wordpress.com/docs/oauth2/">Authentication</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://developer.wordpress.com/docs/oauth2/">OAuth</a></li>
+		<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="https://developer.wordpress.com/docs/wpcc/">WordPress.com Connect (Login)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://developer.wordpress.com/docs/oembed-provider-api/">oEmbed API</a></li>
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271"><a href="https://developer.wordpress.com/docs/photon/">Photon Image API</a></li>
+	<li id="menu-item-28280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28280"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Embeddable Widgets</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4573"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Follow Button</a></li>
+		<li id="menu-item-5138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5138"><a href="https://developer.wordpress.com/docs/embedded-timelines/">Timeline</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28282"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Other Integrations</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9582"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Embedding</a></li>
+		<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://developer.wordpress.com/docs/sharing-buttons/">Sharing Buttons</a></li>
+		<li id="menu-item-1861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1861"><a href="https://developer.wordpress.com/themes/">Theme Guide</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item current_page_parent menu-item-35"><a href="https://developer.wordpress.com/blog/" aria-current="page">Blog</a></li>
+<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://developer.wordpress.com/apps/">My Apps</a></li>
+</ul></div>				<a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+				<a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+			</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+			<div id="page-name" class="page-masthead">
+			<div class="name-area">
+				<h1>Blog</h1>
+			</div>
+		</div>
+	
+	<div id="main-container" class="site-content">
+		
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+						
+				
+<article id="post-94647" class="post-94647 post type-post status-publish format-standard hentry category-interviews category-lessons tag-research tag-technical-women mentions-annahollandsmith mentions-annezazu mentions-rlwilliams0803">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/" rel="bookmark">Sharing the Data: How Technical Women Navigate Their&nbsp;Career</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/" rel="bookmark"><time class="entry-date published" datetime="2019-08-28T15:48:28+00:00">Wednesday August 28th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/915289bd7fa9d4feec6bb40eed1d7eb4?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/catehstn/">Cate Huston</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p><img data-attachment-id="94648" data-permalink="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/coaching-coders-coding-7374/" data-orig-file="https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg" data-orig-size="3000,2000" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="coaching-coders-coding-7374" data-image-description="" data-medium-file="https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=300" data-large-file="https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=780" class="alignnone size-full wp-image-94648" src="https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=780" alt="coaching-coders-coding-7374.jpg" srcset="https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=780 780w, https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=1560 1560w, https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=150 150w, https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=300 300w, https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=768 768w, https://developer.files.wordpress.com/2019/08/coaching-coders-coding-7374.jpg?w=1024 1024w" sizes="(max-width: 780px) 100vw, 780px"   /></p>
+<p><span style="font-weight:400;">In May, Automattic’s engineering hiring team launched </span><a href="https://cate.blog/2019/05/15/addressing-hiring-gaps-through-user-research/"><span style="font-weight:400;">a user research study</span></a><span style="font-weight:400;"> to better understand how our approach to tech hiring resonates with women and non-binary folks who may experience similar gender discrimination in the workplace and are experienced developers. We asked participants questions about how they saw their careers and next opportunities, as well as specifically asking about their reactions to our job postings. It’s easy to find advice on this topic, but the volume is overwhelming and the information is often conflicting. We wanted to cut through the vast quantity of Think Pieces On The Internet to make some changes based on actual data. Our goal, unsurprisingly, is to identify ways to increase gender representation on Automattic’s engineering teams. </span></p>
+<p><span style="font-weight:400;">This was a fascinating process, and we are truly grateful to the 71 people who responded to our request for feedback. Given that we had this level of interest within just five days speaks to the relevance of the topic, as attracting contributors to a research project can often be far more of a challenge. While much of what we learned (discussed below) lines up with research you can find online, listening to people share their individual stories was profoundly impactful on our interviewers. It also revealed further insights that we are eager to apply. Automattic’s hiring team has been able to make some immediate changes, but have much more to think about, and expect this to influence our ongoing efforts.</span></p>
+<h2><span style="font-weight:400;">Methodology</span></h2>
+<p><span style="font-weight:400;">Out of our pool of 71 engineers, we conducted in-depth interviews with 14 participants, and a further 24 answered our follow up survey. The majority of our respondents had over 10 years experience working in software development, and around 60% of them had looked for a new job in the past year.  71% of our respondents were from the US, and all but one participant lived in English speaking countries. All participants self-identified as women or non-binary. The research process was very similar to that used in product user research. We described our initial rationale, invited contributions, used a consistent script, and vetted respondents to ensure the diversity of our interviewing pool. </span></p>
+<h2><span style="font-weight:400;">Results we expected?</span></h2>
+<ul>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents have </span><a href="https://www.wired.com/story/women-leadership-job-networking/"><span style="font-weight:400;">strong networks</span></a><span style="font-weight:400;"> that they use for job hunting and support.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents are most likely to leave a current role in search of growth &#8211; for example, Deutsche Bank discovered that women were leaving to take “bigger jobs” (DB’s term) , than they were offered internally, something that was addressed by </span><a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women"><span style="font-weight:400;">adding a sponsorship program</span></a><span style="font-weight:400;">.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents carry out extensive research on companies before applying if they do not already have a personal connection in the organization, and are highly attuned to red flags. This matches what data shows on the experience of women in tech companies &#8211; in the </span><a href="https://www.elephantinthevalley.com/"><span style="font-weight:400;">Elephant in the Valley survey</span></a><span style="font-weight:400;">, 66% of women report being excluded from opportunities because of gender, 60% report being sexually harassed, and 60% of those who </span><i><span style="font-weight:400;">reported</span></i><span style="font-weight:400;"> it were unhappy with the course of action. Womens’ career choices are too frequently based on avoiding a bad experience rather than seeking a place where they can thrive.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Women in technical roles feel </span><a href="https://hbr.org/2018/11/the-subtle-stressors-making-women-want-to-leave-engineering"><span style="font-weight:400;">pushed onto the management track</span></a><span style="font-weight:400;">, and have to fight to continue to focus on technical work as individual contributors.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Women receive a significant amount of personal outreach, and many have come to expect it. Generic requests from recruiters are unlikely to be successful.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">It’s important that other women are visible in the hiring process. Many women have experienced being “the only,” and at this point in their careers prefer that not to be the case.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Hiring processes that are collaborative and responsive &#8211; a growth opportunity rather than purely evaluative &#8211; were perceived most favorably.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents care a lot about a respectful process. Responsiveness is a key metric, and was also a theme in interactions.</span></li>
+</ul>
+<h2><span style="font-weight:400;">What was surprising?</span></h2>
+<ul>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents read job descriptions almost exclusively for red flags; for instance, they search for language encouraging all relevant employees (not just women)  to take parental leave.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Glassdoor is not considered useful, being seen as mainly a place for negative reviews  by former employees or unsuccessful candidates.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Many interviewees mentioned using Stack Overflow to look for jobs. We had previously advertised on that platform and discontinued it based on the demographics of applications it drove; diversity of applicants was even lower than the already too-low industry average (as also seen in </span><a href="https://insights.stackoverflow.com/survey/2019#developer-profile-_-gender"><span style="font-weight:400;">their survey</span></a><span style="font-weight:400;">). However based on these findings, we are running another test on that platform.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">For some participants, interviewing is seen as a skill to maintain. These people are continually looking at job listings (though at a less-intensive level than a full job search), to ensure that they are aware of their options &#8211; before reaching a point where they’re desperate to leave their current position.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Consistently being able to have an impact (including leadership opportunities) stood out as important, and they will leave their current role if they cannot find this. This is a key point related to research showing </span><a href="https://psmag.com/economics/men-are-judged-based-on-their-potential-women-are-judged-based-on-their-past-performance"><span style="font-weight:400;">women are evaluated more on their past performance and men more on potential.</span></a><span style="font-weight:400;"> </span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Women are looking for more communities focused on connecting to other senior women,  and around more technical topics (many communities focus on entry to mid-level folks). Concerns around online harassment can put women off trying to build their network online.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Respondents look to have as much information as possible up front &#8211; about the job itself, salary ranges, the team they would join, and the hiring process, and expectations in terms of responsiveness.</span></li>
+</ul>
+<h2><span style="font-weight:400;">What changes did we make?</span></h2>
+<ul>
+<li style="font-weight:400;"><span style="font-weight:400;">Existing work and life commitments mean that it is important to know the details of the hiring process at the outset: we have published a </span><a href="https://automattic.com/work-with-us/how-we-hire-developers/"><span style="font-weight:400;">public page</span></a><span style="font-weight:400;"> that clearly outlines our hiring process so that people have a concrete understanding of the expectations. We’ve also put together a more detailed document about what to expect during interviews, and will be creating similar materials for the other phases of our process.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We are revisiting our employment branding strategy to take into account the extent of research by candidates, revamping our developer blog, collecting resources on what it’s like to work as a developer at Automattic.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We are working on supporting our existing developers to increase their visibility externally, through encouraging them to </span><a href="https://developer.wordpress.com/blog/"><span style="font-weight:400;">write</span></a><span style="font-weight:400;"> (our OSS culture goes beyond our willingness to share code), speak, and engage more in their communities. Many co-located companies use their office space to host community events, and it’s clear that is a smart strategy, because it builds employer brand, awareness, and personal connections between candidates and the host/prospective employer. We are looking to find a more distributed, office-less way to approach this.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">Historically, we’ve resisted asking existing under-indexed employees for second shift work &#8211; it’s a too-common reflex- to put the work of “diversity” ahead of and at the expense of those for whom we should be doing the work of “inclusion.” This research made it clear that the highest-leverage activity for our existing under-indexed employees was chatting with potential candidates, and we are making casual chats with other women more available to potentially interested applicants. We see this as more impactful than asking women in particular to interview. While this still amounts to asking for second shift work, we are aiming to identify the highest leverage activities and ask just for participation in those, rather than putting the full work of “diversity” on the diverse, and expecting them to do everything on top of their current job.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We removed all the little games from our job posting page. We were trying to test people’s attention to the job posting and filter out unmotivated candidates; it turned out we were also putting people off who we </span><i><span style="font-weight:400;">want</span></i><span style="font-weight:400;"> to apply.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We removed all the language that emphasized that hiring is a competitive process -for instance, removing language about application volume.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We will be testing adding “(Senior)” into all our technical job postings. Historically, we’ve been reticent to do this because it implied a job ladder that doesn’t exist at Automattic, but the research clarified that its absence sent the message that our positions are all mid-level roles without the path to growth that women candidates tend to look for. </span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We rewrote our job postings highlighting the learning and career opportunities for the candidate, rather than focusing on our needs.</span></li>
+</ul>
+<h2><span style="font-weight:400;">What are we considering going forward?</span></h2>
+<p><span style="font-weight:400;">Some of what we learned was less concretely applicable, or requires broader changes across our engineering organization.</span></p>
+<p><span style="font-weight:400;">We’re considering how to adjust our messaging with respect to D&amp;I, and whether some of this messaging should be tailored to developers and D&amp;I within the engineering organization specifically. We also need to consider how this interacts with the commitment to Open Source &#8211; the data shows that </span><a href="https://www.wired.com/2017/06/diversity-open-source-even-worse-tech-overall/"><span style="font-weight:400;">women are less likely to contribute to Open Source projects</span></a><span style="font-weight:400;">, in part because of the culture of many of these projects.</span></p>
+<p><span style="font-weight:400;">The best way to </span><a href="https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women"><span style="font-weight:400;">retain the women we have</span></a><span style="font-weight:400;"> is to ensure that they have opportunities for growth </span><a href="https://hbr.org/2010/05/when-female-networks-arent-eno"><span style="font-weight:400;">outside of affinity networks</span></a><span style="font-weight:400;">. This is something we’re mindful of as we look to improve opportunities for growth across the organization. We’re also considering the research in </span><a href="https://smile.amazon.com/Women-Dont-Ask-Negotiation-Gender/dp/069108940X?sa-no-redirect=1"><span style="font-weight:400;">Women Don’t Ask</span></a><span style="font-weight:400;">, and thinking about how to </span><i><span style="font-weight:400;">offer</span></i><span style="font-weight:400;"> under-indexed folk opportunity, rather than expecting them to </span><i><span style="font-weight:400;">ask</span></i><span style="font-weight:400;"> for it.</span></p>
+<p><span style="font-weight:400;">Another key area to explore is the importance of titles. As an organization, we have an unorthodox approach to job titles, promotions, and leveling; employees are free to create their own job titles, and promotion and leveling are holistic processes focused on the specific employee, their skills and development goals, and current team needs, rather than on a preconceived hierarchical chart. We hire only experienced engineers who will make the whole team better &#8211; the way they choose to do that is up to them and their team lead. Bringing in titles would be a significant change to the way we operate, potentially reduce our flexibility, and if not done carefully and thoughtfully would be destined to fail. We have to consider whether we can better facilitate growth, and make the opportunities for growth and recognition clearer in our job postings and hiring process.</span></p>
+<p><span style="font-weight:400;">Some changes we’ve made relating to this recently:</span></p>
+<ul>
+<li style="font-weight:400;"><span style="font-weight:400;">We took a group of &gt;20 team leads and developers to the </span><a href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/"><span style="font-weight:400;">Lead Developer event in London</span></a><span style="font-weight:400;">, and facilitated a day together. We will repeat this for US-based team leads in </span><a href="https://austin2019.theleaddeveloper.com/"><span style="font-weight:400;">Austin</span></a><span style="font-weight:400;"> later this year.</span></li>
+<li style="font-weight:400;"><span style="font-weight:400;">We have started offering candidates the opportunity for one-on-one calls with a member of our Developer Experience team during later stages of our hiring process; we’re starting with under-indexed folks, with a view to rolling this out to everyone. These exist outside the regular hiring process, and is premised on the idea that it both provides an  opportunity for the applicant to ask any questions they have and for us to better understand their career goals and motivation so that we can assign them to the team that’s the best fit. </span></li>
+</ul>
+<p><span style="font-weight:400;">It’s early for all of this, but we’re excited about the concrete changes we were already able to make, and the initial markers of progress we are tracking. As our </span><a href="https://automattic.com/creed/"><span style="font-weight:400;">Creed</span></a><span style="font-weight:400;"> states, “I am in a marathon, not a sprint” &#8211; we have much more to do.</span></p>
+<p><b><i>This project was a team effort from @sinitivity, @tobynieboer, <a href='https://developer.wordpress.com/mentions/rlwilliams0803/' class='mention'><span class='mentions-prefix'>@</span>rlwilliams0803</a>, <a href='https://developer.wordpress.com/mentions/annahollandsmith/' class='mention'><span class='mentions-prefix'>@</span>annahollandsmith</a>, led and coordinated by <a href='https://developer.wordpress.com/mentions/annezazu/' class='mention'><span class='mentions-prefix'>@</span>annezazu</a>. You can find the <a href="https://en.blog.wordpress.com/2019/08/28/hiring-women-engineers/">official announcement</a> and a <a href="https://en-blog.files.wordpress.com/2019/08/trust-growth-inclusion-e28093-a-study-of-women-engineerse28099-job-search-priorities.pdf">more complete whitepaper here</a>.</i></b></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94647" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94647" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94647" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94647" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94647-5ec9356145ae9' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94647&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94647-5ec9356145ae9' data-name='like-post-frame-33534099-94647-5ec9356145ae9'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+				<span class="comments-link"><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/#comments">3 Comments</a></span>
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94631" class="post-94631 post type-post status-publish format-standard has-post-thumbnail hentry category-events category-talks">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/" rel="bookmark">Leadership in Fully Remote Teams with Aaron&nbsp;Douglas</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/" rel="bookmark"><time class="entry-date published" datetime="2019-08-14T09:00:32+00:00">Wednesday August 14th 2019</time><time class="updated" datetime="2019-08-13T20:01:45+00:00">Tuesday August 13th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/0e2249a7de3404bc6d5207a45e911187?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/annezazu/">Anne McCarthy</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		
+<p>Aaron Douglas, one of our mobile team leads, has been with Automattic for six years. Almost immediately after starting here, he struggled to find the ability to focus and prioritize his work. He’s put significant effort into understanding how to change behaviors associated with Attention Deficit Disorder which have had numerous positive side effects. Those tools have evolved further over the last five years of him being a team lead. To share what he&#8217;s learned, he recently spoke at <a href="https://www.thatconference.com/Sessions/Session/13801">THAT Conference</a> on August 8th in Wisconsin Dells, WI, USA. The conference describes itself as a &#8220;Summer Camp for Geeks&#8221;:</p>
+
+
+
+<blockquote class="wp-block-quote">
+<p><em>Over four days, folks of diverse technology backgrounds and expertise levels gather to take advantage of multiple learning mediums to maximize one’s community and career advancements.</em></p>
+</blockquote>
+
+
+
+<p>Aaron chose to focus on leadership within fully remote teams since he&#8217;s been leading a team at Automattic for the last 5 years. As the description of his session states, &#8220;Remote working brings a whole set of challenges that should be addressed by every employee and it&#8217;s a good leader&#8217;s role to make sure nobody is blocked by them.&#8221;</p>
+
+
+
+<p>To learn from Aaron and how he approaches remote team leadership with his unique background, <a href="https://speakerdeck.com/astralbodies/leadership-in-fully-remote-teams">check out his slides</a> and <a href="https://twitter.com/astralbodies?lang=en">reach out to him on Twitter</a> if you have any questions. If you&#8217;re more of a visual learner, we&#8217;ve got you covered with this awesome sketchnote from an attendee at the conference:</p>
+<p><div class="embed-twitter"><blockquote class="twitter-tweet" data-width="550" data-dnt="true"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/sketchnote?src=hash&amp;ref_src=twsrc%5Etfw">#sketchnote</a> from <a href="https://twitter.com/astralbodies?ref_src=twsrc%5Etfw">@astralbodies</a> on <a href="https://twitter.com/hashtag/leadership?src=hash&amp;ref_src=twsrc%5Etfw">#leadership</a> protips in remote teams. I didn’t capture all of the wisdom nuggets. There was so much great info that I ran out of room! <a href="https://t.co/VLkgEZZNDI">pic.twitter.com/VLkgEZZNDI</a></p>&mdash; Elysia Lock (@EvilDorkGirl) <a href="https://twitter.com/EvilDorkGirl/status/1159561866068267009?ref_src=twsrc%5Etfw">August 8, 2019</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div></p>
+
+
+
+<p>If you&#8217;re interested in getting a better understanding of Aaron’s personal experience working remotely and the impact it’s had, be sure to also watch his talk on WordPress.tv titled <a href="https://wordpress.tv/2017/12/10/aaron-douglas-how-working-remote-saved-my-life/">“How Working Remote Saved My Life”.</a></p>
+
+
+
+<p><em>P.S. If you’d like to work with folks like Aaron, check out <a href="https://automattic.com/work-with-us/">our jobs page</a>! We’re hiring and would love to tackle problems together.</em></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94631" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94631" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94631" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94631" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94631-5ec9356146fb1' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94631&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94631-5ec9356146fb1' data-name='like-post-frame-33534099-94631-5ec9356146fb1'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94623" class="post-94623 post type-post status-publish format-standard has-post-thumbnail hentry category-events category-talks">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/" rel="bookmark">Automattic Developers at the Mid-Atlantic Developer&nbsp;Conference</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/" rel="bookmark"><time class="entry-date published" datetime="2019-08-08T19:45:18+00:00">Thursday August 8th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/0e2249a7de3404bc6d5207a45e911187?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/annezazu/">Anne McCarthy</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		
+<p>Recently two of our developers, Brad Griffith and Jonathan Belcher, attended the <a href="https://href.li/?https://www.middevcon.com">Mid-Atlantic Developer Conference</a> in Baltimore, Maryland. The conference is “designed to bring programmers from the region together, regardless of their choice of platform, for two full days of learning and community building”. We were excited to be able to show up, learn, connect, and share during the course of the two days. In the spirit of our creed’s “I will never stop learning” <a href="https://automattic.com/creed/never-stop-learning/">opening line</a>, we were particularly keen to see what others had to teach us since the conference was not dedicated to any particular language, platform, or technology. Here’s some of the sessions that Jonathan and Brad enjoyed:</p>
+
+
+
+<ul>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/managing-the-burnout-burndown/">Managing the Burnout Burndown</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/building-a-mentoring-community-through-live-coding/">Building a Mentoring Community through Live Coding</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/the-coders-journey-community-and-gatekeepers/">The Coder’s Journey: Community and Gatekeepers</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/ethical-hacking-for-development-teams/">Ethical Hacking for Development Teams</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/code-is-not-neutral-ethics-of-web-development/">Code is Not Neutral: Ethics of Web Development</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/offices-are-over-lead-a-remote-workforce-in-the-digital-age/">Office are Over: Lead a Remote Workforce in the Digital Age</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/innovation-dark-patterns-accessibility/">The Ethics of Innovation: Dark Patterns and Accessibility</a></li>
+<li><a href="https://href.li/?https://www.middevcon.com/sessions/lending-privilege/">Lending Privilege</a></li>
+</ul>
+
+
+
+<p>We were lucky to be able to share our own insights with those there as Brad gave a session on <a href="https://www.middevcon.com/sessions/strategically-reusing-code/">“Strategically Reusing Code”</a>. Because we love to open source our work, we wanted to be sure to share links to Brad’s slides so you can learn from the comfort of wherever you might be in the world: </p>
+
+
+
+<div class="wp-block-file"><a class="wp-block-file__button" href="https://developer.files.wordpress.com/2019/08/strategically-reusing-code.pdf">Download Slides</a></div>
+
+
+
+<p>Brad’s talk looks at how changes in the JavaScript and open source ecosystems can influence your decisions about which libraries, languages and platforms to adopt.  In the early days of the web, developers used libraries and tools to make JavaScript behave more like classical object-oriented languages and to isolate themselves from wildly incompatible proprietary browser platforms.  As JavaScript matured, developers began embracing it enthusiastically. Now, rather than attempting to isolate themselves from JavaScript, developers have embraced it in many contexts outside the browser, including on the server and in cross-platform mobile tools like React Native and Cordova.  </p>
+
+
+
+<p>To those we had the chance to talk to at the conference, thanks for spending time with us!  </p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94623" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94623" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94623" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94623" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94623-5ec9356147bfd' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94623&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94623-5ec9356147bfd' data-name='like-post-frame-33534099-94623-5ec9356147bfd'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94602" class="post-94602 post type-post status-publish format-standard has-post-thumbnail hentry category-talks tag-event tag-gutenberg tag-javascript">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/" rel="bookmark">Growing JavaScript Skills with Grzegorz&nbsp;Ziółkowski</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/" rel="bookmark"><time class="entry-date published" datetime="2019-07-29T09:00:19+00:00">Monday July 29th 2019</time><time class="updated" datetime="2019-07-26T16:19:11+00:00">Friday July 26th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/0e2249a7de3404bc6d5207a45e911187?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/annezazu/">Anne McCarthy</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p>Recently, Grzegorz Ziółkowski, one of our developers who works full time on the open source project side of WordPress, spoke at the <a href="https://javascriptforwp.com/conference/">JavaScript for WordPress Conference</a> on July 12th. As the name suggests, the conference was focused on JavaScript as it relates to the WordPress CMS and offered talks/workshops for folks no matter their skill level. Grzegorz focused in on helping bridge the gap between folks who have previously explored the welcoming world of WordPress and the new editing experience offered through Gutenberg.</p>
+<p>We encourage you to check out the <a href="https://gziolo.pl/2019/07/15/growing-javascript-skills-with-wordpress/">written version of his talk here to learn more</a> and expand your own skills. From reading about the history of how Gutenberg came to be to sharing practical tips for how to improve the quality of your code, we think you&#8217;ll enjoy reading and learning alongside Grzegorz.</p>
+<p><em>P.S. If you&#8217;d like to work with folks like Grzegorz, check out <a href="https://automattic.com/work-with-us/">our jobs page</a>! We&#8217;re hiring and would love to tackle problems together.</em></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94602" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94602" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94602" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94602" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94602-5ec9356148ad0' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94602&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94602-5ec9356148ad0' data-name='like-post-frame-33534099-94602-5ec9356148ad0'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+				<span class="comments-link"><a href="https://developer.wordpress.com/2019/07/29/growing-javascript-skills-with-grzegorz-ziolkowski/#comments">3 Comments</a></span>
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94524" class="post-94524 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/" rel="bookmark">[Lead Developer Conference] Day&nbsp;Two</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/" rel="bookmark"><time class="entry-date published" datetime="2019-07-15T15:43:48+00:00">Monday July 15th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/6f562c896e9dfc3e10391c8ddf639b31?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/rlwilliams0803/">Rebecca Williams</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		
+<p><strong><em>From 11-12 June, over 20 Automatticians attended the <a href="https://london2019.theleaddeveloper.com/">Lead Developer conference</a> in London and we took extensive notes. At Automattic, we <a href="https://automattic.com/creed/never-stop-learning/">promote a culture of learning</a>&nbsp;and our attendance at this conference provided some of our team leads with a valuable opportunity to reflect on and develop their own leadership tools. </em></strong></p>
+
+
+
+<p><strong><em>If you are interested in Automattic and the roles we have available, <a href="https://automattic.com/work-with-us/">we&#8217;re hiring!</a></em></strong></p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Flavours of technical leadership</h2>
+
+
+
+<p><strong>Pat Kua: Chief Scientist &#8211; N26 <a href="https://www.thekua.com/atwork/">www.thekua.com</a> <a href="https://twitter.com/patkua">@patkua</a></strong></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>Over the many years, Patrick has trained, coached and mentored many engineers into Technical Leadership roles. He is delighted by the way that everyone has their own style and &#8220;flavour&#8221; of being a Technical Leader. In this talk, he will explore what technical leadership is and the impact people can have through their individual flavours of technical leadership.</em><br></p>
+
+
+
+<p><br>Having run leadership courses many times for different people, there are many different types of technical leadership. We each have unique flavors,  defining our own personal style. </p>
+
+
+
+<p><em>Where</em> do people demonstrate technical leadership? <br><em>How</em> do people demonstrate technical leadership in typical patterns? </p>
+
+
+
+<h2>Leadership</h2>
+
+
+
+<p>“The ability to lead”. With Carol Dweck’s concept of the growth mindset, leadership is a trait that you can grow and develop. <br></p>
+
+
+
+<p>“The act of leading a group of people ” It’s broad and inclusive. A single step or action of doing something and taking people with you. Anyone can be a leader. All you need to have is the courage to take action and this act of leadership. </p>
+
+
+
+<p>There are four flavors of tech leadership: </p>
+
+
+
+<h2>The Knowledge cultivator </h2>
+
+
+
+<p>There is <strong>so </strong>much to learn: You simply can’t be an expert in everything. </p>
+
+
+
+<p>Something that emerges from this ecosystem is that you have people who enjoy helping others to learn. They look for and create opportunities for learning. This act of leadership is really important. It has a big impact. </p>
+
+
+
+<p>What does this person get as a result? It isn’t a zero sum game. It’s not like they are taking something from you. When you teach, you end up learning things more deeply: The Famen learning technique. </p>
+
+
+
+<h2><strong>The Advocate</strong></h2>
+
+
+
+<p>An interesting side effect of learning is making mistakes. A consequence of mistakes is that there are often pain points that teams feel. Some people notice this, listen to the pain points from different perspectives and decide to do something about it. </p>
+
+
+
+<p>“What’s troubling you about X?”</p>
+
+
+
+<p>“What do you think about Y?”</p>
+
+
+
+<p>“How would you solve this if you had time?”</p>
+
+
+
+<p>This act of leadership needs to get buy-in for the solution and influence people to get buy-in that this is something worth doing. </p>
+
+
+
+<p>People who take on this leadership role often possess relentless patience. </p>
+
+
+
+<h2>The Connector </h2>
+
+
+
+<p>You may think of organizations as hierarchies, but they can be thought of as networks. </p>
+
+
+
+<p>Sponsor someone. Invest social capital. Lend your privilege. </p>
+
+
+
+<p>“Let me introduce you to X”</p>
+
+
+
+<p>“Y can help you with this”</p>
+
+
+
+<p>To be a good connector, you need to think about your reputation score<br></p>
+
+
+
+<h2><strong>The Storyteller</strong></h2>
+
+
+
+<p>These are people who can inspire and contextualize things for others. </p>
+
+
+
+<p>People who can create the vision and bring people along the journey</p>
+
+
+
+<p>There are many flavors of tech leadership &#8211; the only limitation is yourself. It’s about creating an environment for people to thrive. It&#8217;s about remembering that everyone has their own style and invest in helping people find their own flavor.</p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<p><br></p>
+
+
+
+<h2>Business as usual: how to stop drowning and learn to swim</h2>
+
+
+
+<p><strong>Jonathan Stott: Technical Architect &#8211; Royal Pharmaceutical Society </strong><a href="https://www.rpharms.com/">www.rpharms.com </a><a href="https://twitter.com/jonathan_stott">@jonathan_stott</a></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>One of the challenges facing teams, particularly small ones, is having to balance the time spent on doing fun new things and having to support old (or antique!) systems and processes. These are the &#8216;business as usual&#8217; (BAU) things which probably underpin the current revenue of your business. As such they are critically important but are almost certainly unloved and possibly even loathed by the teams responsible for them! BAU includes fixing bugs, handling support problems, running regular or ad hoc processes, and dealing with legacy systems amongst other things.</em></p>
+
+
+
+<p><em>You will learn: how and when to say no; when to take time to fix and optimise; how to deal with a deluge of BAU; how to manage people working on BAU; and what we experienced when we were getting it wrong and finally when we got it right!</em></p>
+
+
+
+<p>This is a story about the team maintaining Business As Usual (BAU) whilst working on projects</p>
+
+
+
+<h2>The one with the problem</h2>
+
+
+
+<p>What is Business As Usual?</p>
+
+
+
+<ul><li>Customer support</li><li>Infrastructure maintenance</li><li>DB Admin</li><li>Bug fixing</li><li>Legacy code</li><li>Manual processes</li></ul>
+
+
+
+<p>It is also:</p>
+
+
+
+<ul><li>not interesting</li><li>distraction</li><li>“beneath me”</li><li>keeps the lights on</li><li>urgent &#8211; someone might die!</li></ul>
+
+
+
+<p>Why is BAU a challenge?</p>
+
+
+
+<ul><li>Overwhelming &#8211; it feels like there’s no way to see beyond</li><li>Overlooked &#8211; not enough time allocated because of other stuff</li><li>Poor use of skills &#8211; people doing it need to be engaged enough</li><li>Cause of stress &#8211; have to do a lot of extra work to keep on top of the BAU workload</li><li>Increase turnover &#8211; more leave than you expect</li><li>Can feel insurmountable &#8211; can’t see a way beyond</li></ul>
+
+
+
+<p>BAU: 20% to 100% of the time: there are lots of systems and services to support.</p>
+
+
+
+<p>Because of problem domain, quality and precision are very important. </p>
+
+
+
+<p>There was once a situation when the team couldn’t start a project for 12 months because couldn’t get around the BAU.</p>
+
+
+
+<h2>The one with the Kiwi </h2>
+
+
+
+<p>This is a token that sat on someone’s desk to say you could come and ask them about problems; that the person who held the kiwi was dealing with BAU. Everyone in the team &#8211; without exception &#8211; got to experience the BAU work: learning and sharing the knowledge.</p>
+
+
+
+<ul><li>You have to support the person doing looking after the BAU, especially if documentation is not good.</li><li>Don’t plan for people scheduled to do BAU to do anything else but BAU.</li><li>Have to ensure you are fair: if someone has leave booked for the BAU time, they have to pick up their BAU responsibilities when they return. </li></ul>
+
+
+
+<h2>The one with the project that will not start</h2>
+
+
+
+<p>There are times when you feel you are drowning in BAU. More than you can do with the number of people in your team. There were times when they had to say no.</p>
+
+
+
+<ul><li>They needed a really rigorous triage process.</li><li>They had to dig into what’s important vs what’s urgent.</li><li>They had to do it again and to make sure they were really sure.</li><li>They had to do a risk assessment of the work &#8211; what’s the impact of things not being done?</li><li>They ringfenced one person, then limited them to only doing that. </li><li>They contracted some stuff out &#8211; however it was hard to contract out BAU, mainly because of lack of documentation. But they knew they shouldn’t give all the fun work to contractors.</li><li>They looked for some common aims. They figured out value for doing things.</li></ul>
+
+
+
+<h2>The one where everyone leaves</h2>
+
+
+
+<p>They prepared for the worst scenario. What would you do if everyone but you leaves. What happens if you leave, and the rest of your team have to do the stuff that only you know? </p>
+
+
+
+<ul><li>Three “ations” &#8211; documentation / simplification / automation.</li><li>Documentation &#8211; write everything down. People don’t like it but it’s important.</li><li>Simplification &#8211; question everything that you’re doing. Does everything you do have value? Just because it’s been done before doesn’t mean it has to be done again.</li><li>Automation &#8211; think about when you should be automating it. Processes stick around for longer than you expect, so think about that when you think about time saved. It is not just about time saved, also about quality: fewer human errors.</li></ul>
+
+
+
+<h2>The one where the leopard changes its spots</h2>
+
+
+
+<p>BAU became a toxic term. So, they rebranded it to “supported maintenance”</p>
+
+
+
+<ul><li>They took the opportunity to consider the situation and changes priorities about how they managed this work.</li><li>This meant not just changing the logo.</li><li>How would you go through a corporate rebranding process? The whole business had to be involved in the mission, goals, values and tone.</li><li>The tone is interesting &#8211; how you communicate things, do you communicate in a way that other people can understand.</li></ul>
+
+
+
+<h2>The one where we fixed some things</h2>
+
+
+
+<p>This was a period of consolidation. It was a process where the whole team looked at what can be improved.</p>
+
+
+
+<ul><li>It started with a list of ideas, then the team prioritized and decided upon each point.</li><li>The team is main product owner for consolidation work.</li><li>But they couldn&#8217;t neglect stakeholders within the rest of the business.</li><li>They worked on bug fixing, refactoring, work on “ations”</li><li>They identified things that would allow the team to learn.</li><li>It was important to repeat this process: it is not a one-time only thing.</li><li>They still have to focus on BAU whilst consolidating &#8211; it does not go away immediately.</li><li>What they decided upon had to be achievable: it had to be broken down into smaller tasks like planning a sprint.</li><li>They needed to be able to finish what they decided upon in the time they had.</li></ul>
+
+
+
+<h2>The one with the new role</h2>
+
+
+
+<p>They hired a technical support engineer &#8211; main focus of this role is to do the BAU, and improve it over time.</p>
+
+
+
+<ul><li>They had an unwritten goal: the Technical Support Engineer was tasked to automate themselves out of the role altogether and become a developer: this created a progression opportunity</li><li>That became the transition path from technical support engineer to developer.</li><li>It was a fantastic job to do if they were new: they learned a lot, and got involved in everything.</li><li>Because of that, it can be fun. The person has some independent identification or problems, solutions and autonomy. It was a great way to motivate.</li><li>The greatest effect of this role was that it unblocks the team.</li><li>This role would still needed support so they introduced mentors</li></ul>
+
+
+
+<h2>The one with the cliff-hanger</h2>
+
+
+
+<ul><li>There were no silver bullets or magic wands but the process introduced lots of inspiration</li><li> It&#8217;s important not to stick with one approach forever</li><li> Processes must evolve and adapt over time</li><li> Don’t lose heart!</li><li> It might be frustrating but patience and motivation will pay dividends</li></ul>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Behind the scenes of an effective &amp; inclusive hiring process</h2>
+
+
+
+<p>Ola Sitarska: VP of Engineering &#8211; Verve <a href="https://twitter.com/olasitarska">@olasitarska</a></p>
+
+
+
+<p><strong>Talk Intro:</strong></p>
+
+
+
+<p><em>In my role as a VP of Engineering at a fast-growing startup, I spent hundreds of hours interviewing and sourcing candidates in the last year alone. The bar we set ourselves was high: not just hire people with excellent skills and culture add, but also maintain and improve our current diversity (33% women, 9% people of color) across experience levels. The result of that is an inclusive and effective hiring process that lets us successfully grow the team while providing a great candidate experience. Even candidates who reject our offers end up recommend us to their friends! This talk will take you through a step-by-step hands-on guide on improving your skills as an interviewer and setting up a better hiring process at your company &#8211; no matter how large or tiny.</em></p>
+
+
+
+<p>In the current role:</p>
+
+
+
+<ul><li>They grew team from 10-35 in 12 months</li><li>This included 30% gender minorities, 13% PoC</li><li>There is a 40/60 gender split in technical leadership</li></ul>
+
+
+
+<p>The objectives were:</p>
+
+
+
+<ul><li>The process had to be inclusive: measurable and objective evaluation to eliminate bias</li><li>Excellent candidate experience is a priority</li><li>It was vital to hire the right candidate for <em>us</em>: our environment and culture.</li></ul>
+
+
+
+<p>They were a very small startup, with no &#8216;big name&#8217; or reputation to rely on. So candidate experience was a priority &#8211; particularly when they were being evaluated against bigger, more well known brands. They had to show their best selves.</p>
+
+
+
+<h2>Process:</h2>
+
+
+
+<ul><li>Define the right candidate and build the pipeline</li><li>Design how you gather and evaluate information</li><li>Set your candidate up for success.</li></ul>
+
+
+
+<h2>Defining candidate:</h2>
+
+
+
+<ul><li>You can look for people who are like the good people who are currently in roles</li><li>Be aware of asking for too many requirements: this excludes people who took a different path in life</li><li>Be certain that requirements aren&#8217;t eliminating people with more diverse backgrounds</li><li>Be mindful that women hold themselves to higher standards (they tend to only apply if they meet 100% of the criteria), so don’t include requirements that aren’t necessary.</li><li>The best indicator of someone performing well is <em>evidence</em> they successfully did similar work in a similar environment.</li></ul>
+
+
+
+<h2>Define what the job is:</h2>
+
+
+
+<ul><li>Hire people who have done it before.</li><li>“Performance profile” &#8211; drop the list of requirements, instead list expectations of the role. Illustrate what success look like.</li><li>Help candidates self select out of the process &#8211; maybe can do it but don’t want to.</li><li>Be transparent about salary range.</li><li>Build representative pipeline:</li></ul>
+
+
+
+<ol><li>Inclusive practices and culture will attract diverse candidates</li><li>Hire diverse candidates into leadership first</li><li>Invest in outreach</li></ol>
+
+
+
+<p>In a homogeneous culture we have to work harder to prove broader spectrum of people can be successful. Building a diverse pipeline is hard work.</p>
+
+
+
+<h2>Gather and evaluate:</h2>
+
+
+
+<ul><li>Define what information you need</li><li>Decide how you’ll gather that information</li><li>Ensure the efficiency of this process</li><li>Ensure it’s <em>relevant</em> to your job</li><li>Fight your biases</li></ul>
+
+
+
+<p>The process became:</p>
+
+
+
+<h2>Phone screen:</h2>
+
+
+
+<ul><li>30 minutes to assess the candidate is looking for what we can offer them, and has relevant experience.</li><li>Get them excited about the company and set expectations.</li></ul>
+
+
+
+<h2>Coding test:</h2>
+
+
+
+<ul><li>Assess that the candidate can solve a simple problem that they’d find at work, in a similar environment.</li><li>They asked for code review to understand values alignment and communication style. They assessed that the candidate could solve a simple problem that they’d find at work, in a similar environment.</li><li>Give them feedback.</li></ul>
+
+
+
+<h2>Interview:</h2>
+
+
+
+<ul><li>The candidate was invited in for an interview: this was time-boxed to 2.5 hours in order to respect the candidate&#8217;s time.</li><li>Here they outlined how things within the organization work and explained the sort of candidate they were looking for.</li><li>The candidate&#8217;s work history was explored, in order to try and gather relevant evidence of them being successful, and to ensure they have been doing it in a similar enough environment.</li><li>They asked questions requiring real stories and evidence: not just theory.</li></ul>
+
+
+
+<h2>Eliminating bias:</h2>
+
+
+
+<p>The code test was blind code review:</p>
+
+
+
+<ul><li>Test is uploaded, and all identifying information is removed</li><li>The scorecard in held in a spreadsheet, ensuring that each engineer that reviews code test is consistent with the rest.</li></ul>
+
+
+
+<p>Interview:</p>
+
+
+
+<ul><li>Having a representative panel is important as it ensured a representative decision.</li><li>An evidence based scorecard was used, with a standardized list of outcomes</li><li>In the interview they had one person leading, whilst the others focused on listening.</li></ul>
+
+
+
+<p>Debrief:</p>
+
+
+
+<ul><li>Always ask for evidence</li><li>Always consider facts, not opinions</li></ul>
+
+
+
+<p>It is important to use the same rubric for evaluating both candidates and employees. Performance on the job should have the same expectations as at the interview stage.</p>
+
+
+
+<h2>Set your candidate up for success:</h2>
+
+
+
+<ul><li>Remember that it’s a two-way street. The candidate is also evaluating you.</li><li>Try to minimize the stress &#8211; interviews are stressful, but people generally perform better when they are not stressed.</li><li>Genuinely care about their experience.</li><li>Give the candidate their preferred time, and be efficient.</li><li>Don’t create artificial deadlines.</li><li>Get back quickly and with useful feedback.</li></ul>
+
+
+
+<p><strong><em>You’ve nailed the candidate interview experience when they reject your offer but still recommend you to their friends.</em></strong></p>
+
+
+
+<h2>Start improving tomorrow:</h2>
+
+
+
+<ul><li>Get clear what success looks like</li><li>Make your code test more relevant</li><li>Blind review code test</li><li>List 10 examples of evidence of previous experience you need</li><li>Create a template to score all candidates against the same 5 criteria</li><li>Evaluate if you can make your process shorter</li></ul>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Mobile development in 2019: native versus cross-platform</h2>
+
+
+
+<p><strong>Miriam Busch: CTO &#8211; Karlmax Berlin GmbH &amp; Co. KG </strong><a href="https://twitter.com/miphoni">@miphoni</a></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>We’re 10 years into Android and iOS development and there are more ways to build an app than ever before.</em></p>
+
+
+
+<p><em>Let’s look at the options, be it native app development or cross-platform systems like Xamarin, ReactNative or Flutter: What is core to these frameworks? What implications do they bring to your product and your development team?</em></p>
+
+
+
+<p>We are now more than a decade into iOS and Android development.</p>
+
+
+
+<p>Developers for mobile are becoming more and more specialized.</p>
+
+
+
+<p>Is there a simpler way?</p>
+
+
+
+<p>Let&#8217;s visit 4 alternatives</p>
+
+
+
+<h2>React Native</h2>
+
+
+
+<p>This was created by Facebook: UI and logic created in JavaScript. It is not web view based, and the rendering is done by native components. There&#8217;s a rendering bridge that components need to cross, meaning that there are some limitations and performance issues. But developers still use native for some UI. The core of RN is currently being rewritten, but it won&#8217;t be ready this year.</p>
+
+
+
+<h2>Xamarin</h2>
+
+
+
+<p>This brings C# and .net development to mobile. The logic is in C#, native UI components. When Xamarin forms are introduced, a shared UI is possible for both platforms.</p>
+
+
+
+<h2>Flutter</h2>
+
+
+
+<p>This was introduced by Google in 2017. The UI and logic is written in Dart, and is shared between both platforms. The Flutter engine does all the rendering, but has a rewrite of UI components.</p>
+
+
+
+<h2>Kotlin</h2>
+
+
+
+<p>This is multi-platform, more lightweight. It shares logic written in Kotlin, and the UI written for both platforms. We can use Kotlin multi-platform libraries for networking etc. </p>
+
+
+
+<p>When the team first switched to multi-platform, it was a relief. There was no longer a need to write things twice, and platform bugs became the exception.</p>
+
+
+
+<h2>But there is no such thing as a free lunch</h2>
+
+
+
+<p>Although they removed the need to do everything twice, they introduced a new complexity due to the inherent architecture of the system. For example, rendering the bridge in RN, bundling .net with your app, and the Flutter user experience. It feels like it&#8217;s still early for the platform, and the cross platform system will always lag behind.<br></p>
+
+
+
+<p>Should we be supporting 3 platforms instead of 2? Airbnb gave this reason for sun-setting RN support. It&#8217;s important to remember that you still need specialists!</p>
+
+
+
+<h2>Cross platform thinking</h2>
+
+
+
+<p>This is not just about technology but taking ownership for those platforms. Even if you&#8217;re just sticking with two platforms you can still encourage cross platform thinking.</p>
+
+
+
+<h2>The answer?</h2>
+
+
+
+<p>It depends! Miriam&#8217;s team decided on Flutter, but it depends on the individual business needs.</p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Leading the team through a rapid growth</h2>
+
+
+
+<p><strong>Joanna Chwastowska: Engineering Lead &#8211; Google DeepMind Health</strong></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>Team leadership and technical leadership come with a variety of challenges and require various skills. One of them is an insightful future outlook and being ready for what&#8217;s yet to come. Working on a new project, or joining a startup &#8211; there&#8217;s an expectation for your team to grow. Growth is good. The more hands on board, the more you can achieve. But it&#8217;s not all roses. In this talk we&#8217;ll look at challenges and risks related to the fast growth of an engineering and cross-functional team. How to notice the first signs of the change? When to react? How to keep your team&#8217;s culture when growing? What will have to change, what can stay the same? Summarizing past experiences &#8211; from bootstrapping a remote team from zero to 20 people, as well as growing DeepMind Health engineering team from 20 to 80 in a bit over a year &#8211; there are patterns emerging that can help other teams avoid pitfalls that come naturally with a rapid growth.</em> <em>At the end of this talk you should be aware of what changes to expect as your team grows, how to notice critical inflection points, and react to them so your team comes out bigger and stronger.</em></p>
+
+
+
+<p>The reality is that most hospital systems aren’t as advanced as they could be, nor are they operating well with each other</p>
+
+
+
+<h2>With a mix of paper records and many systems &#8212; how do you make a dashboard?</h2>
+
+
+
+<p>A Pager is a very primitive version of a mobile phone &#8211; it only displays the number that is trying to reach you. A Doctor would come out of surgery with 20 pages. They can’t know who needs them or why. Someone might be dying!</p>
+
+
+
+<p>Even in leading hospitals technology is not what it should be. They will say they use “mobile technology” but what they have is called “computer on wheels”. </p>
+
+
+
+<p>In 2016 a few people started to look into whether it’s possible to create a mobile app to deliver important info to clinicians, nurses and doctors, and improve the delivery of healthcare. The good news was yes it’s possible &#8211; and this is now in live deployment in two hospitals in London. </p>
+
+
+
+<p>The spectrum of what can be addressed is so broad, but they needed to start with something small enough and traceable enough that it can be measured.</p>
+
+
+
+<p>The team developed an app to quickly diagnose Acute Kidney Injury by measuring blood samples and alerting staff when symptoms existed &#8211; proving that it is definitely *possible* to focus and deliver impact.</p>
+
+
+
+<p>The report says that technical interventions give them 2 extra hours a day face time with patients.</p>
+
+
+
+<p>The team quickly went from a few people to a hundred and fifty. </p>
+
+
+
+<h2>Scaling</h2>
+
+
+
+<p>From start up to an established team, what were the important aspects:</p>
+
+
+
+<ul><li>Be super clear about trade-offs in technical design.</li><li>Google operates at scale. But start ups need to move fast and evaluate.</li><li>Through that fast evaluation, learn and find your niche in the market.</li><li>This does not go well with technical scale.</li><li>You will start accumulating technical debt, it won’t go away on it’s own you will have to address it.<ul><li>Approach technical debt: put it off, or constantly think about it.</li><li>Either approach is fine, but be intentional.</li><li>Know the domain.</li><li>Have the time now or in the future.</li><li>It is not just leadership that needs to understand, the team needs to be on the same page.</li><li>How risk tolerant and how error tolerant are you?</li><li>In regulated environments, you probably cannot afford risk of leaking user’s data.</li></ul></li></ul>
+
+
+
+<p>From day one, build with quality, security and privacy in mind.</p>
+
+
+
+<ul><li>It can’t be applied as another layer.</li><li>Security and privacy is something you build on from ground up.</li><li>It is crucial for financial or medical information.</li><li>Hire an expert, and include them in conversations.</li></ul>
+
+
+
+<p>Put the team at the heart of everything.</p>
+
+
+
+<ul><li>They are the most important asset of your company.</li><li>It is easy to forget this in times of fast growth. It started from everyone knowing and trusting everyone.</li><li>You add one person at a time, but soon you realize you don’t know some people on your team.</li><li>Hire responsibly. Whenever you hire a new person, make sure you need them &#8211; don’t just hire because you can.</li><li>Scrappiness forces focus on the most important thing.</li><li>Don’t lower your hiring bar.</li><li>Be intentional about diversity. It is tempting to hire what is on the market, but think about the team you are building.Who do you want on that team? What will the team need to deliver on?</li><li>Look out for signs of team burnout. It is easy to focus on just the next deadline. We have to learn to work in a sustainable way. </li><li>People should be able to deliver results and live their life at the same time.</li><li>Monitor for team psychological safety. It is easy to lose the sense of the culture of the team: are people feeling safe? Can they question decisions?</li><li>It is important that people feel appreciated.</li><li>Communication: it is not just about making it open and intentional. It is about how you scale your communication as the team grows. We need to build mechanisms for teams and roles to communicate across.</li><li>Ensure that you, as a leader, understand how your team feels, and how people perceive decisions. If this communication breaks down, you will not know what is happening on the ground.</li><li>Be clear on the goal &#8211; not just you and leadership, but the whole team needs to know what’s happening.</li><li>Care for people. Other things may change, but if you have a strong group of people who can build things together, that is the biggest power you have.</li></ul>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Facilitation techniques 202</h2>
+
+
+
+<p><strong>Neha Batra: Engineering Manager &#8211; GitHub </strong><a href="https://www.medium.com/@nerdneha">medium.com/@nerdneha </a><a href="https://twitter.com/nerdneha">@nerdneha</a></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>We’ve all had that experience where we’ve planned the perfect discussion only to have it hijacked by a passionate side-person, lose focus halfway through, or produce the exact same takeaways as you had before you began the discussion. With a few tricks in your back pocket, you can recover from some of these tricky situations or even prevent them in the first place! I’ll share some of my best techniques and provide some yellow flags I’ve learned to recognize that signified needing to make a change.</em></p>
+
+
+
+<h2>Set the stage</h2>
+
+
+
+<ul><li>When facilitating an event, come in 30 minutes before the meeting to prepare. Think about what is on the desk and the messages that they are conveying to the delegates.</li><li>The use of chairs allows for the facilitator to transition between roles.</li><li>Agendas are great for aligning goals and packing in the information needed for inclusive audiences</li><li>Start and end times &#8211; identifies when people need to speak and what they need to speak about</li><li>Include breaks &#8211; human care, allows thinking time after important points are made</li><li>Check off the items of the agenda as you’ve completed them</li><li>Keep people to their time slot</li><li>Have a ‘Go’ bag containing materials (post its, markers, erasers etc)</li></ul>
+
+
+
+<p><br></p>
+
+
+
+<h2>Engage your group</h2>
+
+
+
+<ul><li>Sharing &#8211; sharing ideas, thoughts and feelings</li><li>Struggles &#8211; identifying challenges</li><li>Solutions &#8211; finding fixes to the challenges</li><li>Action items &#8211; identifying action-based tasks</li></ul>
+
+
+
+<p>Exercises may include (and should be shared ahead of time to allow for personal preparation):</p>
+
+
+
+<ul><li>Splitting into pairs</li><li>Share back</li><li>Writing</li><li>Contributing</li></ul>
+
+
+
+<p><strong>Facilitating vs talking (assign roles to others who are keen)</strong></p>
+
+
+
+<p>As facilitator, you shouldn&#8217;t need to do all the talking throughout the meeting. Be careful how to phrase your questions to ensure others engage and do more of the talking!</p>
+
+
+
+<p></p>
+
+
+
+<h2><strong>Include all personalities</strong></h2>
+
+
+
+<ul><li>Steam rollers vs quieter folks</li><li>Post-its and round robins </li><li>Museum walks &#8211; present ideas through flipcharts and have everyone walk round and ask clarifying questions</li><li>Share 1 idea</li><li>Dot vote &#8211; good to see what people want to prioritise</li><li>Breakout groups</li><li>Time to think before sharing</li><li>Rule: let 3 people speak before you speak again</li><li>Take a break when things get heated</li><li>Retros using post-its and dot votes</li></ul>
+
+
+
+<h2>Finish with a bang</h2>
+
+
+
+<ul><li>Appreciations</li><li>Retros</li><li>Swag/memorabilia</li></ul>
+
+
+
+<p><em><strong>Challenge Tweet: what is the one thing you want to try at your next meeting</strong></em></p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>A button to pause time: how to live outside the clock</h2>
+
+
+
+<p><strong>Sal Freudenberg: Chief Being Sal Officer &#8211; Cucumber Ltd </strong><a href="https://salfreudenberg.wordpress.com/">salfreudenberg.wordpress.com</a><strong> </strong><a href="https://twitter.com/SalFreudenberg">@SalFreudenberg</a></p>
+
+
+
+<p><strong>Clare Sudbery: Lead Consultant Developer &#8211; ThoughtWorks </strong><a href="https://medium.com/a-woman-in-technology/">medium.com/a-woman-in-technology</a><strong> </strong><a href="https://twitter.com/claresudbery">@claresudbery</a></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>How does time impact on your working day? Would you like to hack time and live outside the clock? The answer is likely to be yes.</em></p>
+
+
+
+<p><em>In October 2018, Sal and Clare took an all-female team to Hack Manchester, built a time machine and won Best in Show. They are now taking their time machine on tour: You too can press the button and stop time. Have a nap, play tricks on your friends, or force the trains to be on time.</em></p>
+
+
+
+<p><em>Seriously though, repeated research has suggested the straitjacket of standard working hours does us all no good at all. Nor does the “always on” culture perpetuated by the speed of innovation and delivery in the world of software development. Yet we are all still stuck in our rigid working cultures. This light-hearted talk has a serious message: Don’t assume your teams have to be imprisoned by time. Try a little experimentation and see what a difference you can make when you play with expectations and give your people some time-based freedom.</em></p>
+
+
+
+<p><em>Time travel for the win!</em></p>
+
+
+
+<p>At Hack Manchester, the team were dedicated to self-care, instead of pushing themselves too far, eating unhealthy and staying up too late. They all rested and slept. They undertook a lightweight form of Agile. They used story maps. They had 1 hour iterations, involving 45 mins working, 5 mins retro review, 5 mins break away from desk.</p>
+
+
+
+<p>So why didn&#8217;t everyone do this?</p>
+
+
+
+<h2>Not enough sleep</h2>
+
+
+
+<p>We don’t always want to sleep because we want more time to do things. But then we pay for it the next day. </p>
+
+
+
+<p>Humans sleep in cycles that typically last 90 mins long<br></p>
+
+
+
+<p>The SleepCycle App can be installed on your phone. Here, your phone &#8216;listens&#8217; to breathing and moving, and it deduces sleep cycles from this.</p>
+
+
+
+<h2>Why do we need to sleep?</h2>
+
+
+
+<p>Sleep deficiency affects mood, learning, focus, reactions and emotions. It creates lots of physical and mental health issues.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Humanity is bartering the most blessed thing there is: sleeping</p></blockquote>
+
+
+
+<h2>Larks vs owls</h2>
+
+
+
+<p>Larks are early risers and owls prefer to work late into the night</p>
+
+
+
+<p>Most people fall into one of these categories, but some can fall in the middle of these two</p>
+
+
+
+<p>Larks are in the majority which is not surprising given the society we live in. We think owls are a bit lazy for not getting up in the morning. But from an evolutionary psychology perspective, it makes sense to have people who need to sleep at different times: it reduces the hours of vulnerability.</p>
+
+
+
+<h2>Spoon theory</h2>
+
+
+
+<p>If we start the day with 12 spoons and each tasks uses a certain amount of spoons, there will come a point in the day when we run out of spoons. This has been adopted by the neurodiverse community. It demonstrates the need to recharge. But don&#8217;t forget that we can’t calibrate spoons between different people: different activities take up different &#8216;spoons&#8217; for different people.</p>
+
+
+
+<h2>Flexible working</h2>
+
+
+
+<p>Sleep matters, rest matters and being a parent can confuse this.</p>
+
+
+
+<p>It is important to give parents the flexibility to do wrap around care</p>
+
+
+
+<p>And it&#8217;s not just about parents: we should be allowing all people to work flexible hours. It allows for self-care, caring responsibilities, or for just getting the boiler fixed.</p>
+
+
+
+<p>If you don’t pay attention to people, they will lie to you, and say they are fine when they&#8217;re not. This can cause absenteeism and disengagement.</p>
+
+
+
+<h2>Structured Days</h2>
+
+
+
+<p>However, not everyone works well with the concept of a flexible day and structure is key for them&#8230;..it important to not create an environment of exclusion when trying to encourage inclusion.</p>
+
+
+
+<h2>So what works and what’s needed?</h2>
+
+
+
+<p>Self awareness</p>
+
+
+
+<p>Self care</p>
+
+
+
+<p>Empowerment: be flexible about flexibility<br></p>
+
+
+
+<p>Clocks and time does not have to be our master &#8211; everyone has different needs and these should be acknowledged and addressed<br></p>
+
+
+
+<hr class="wp-block-separator" />
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94524" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94524" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94524" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94524" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/15/lead-developer-conference-day-two/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94524-5ec935614e9aa' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94524&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94524-5ec935614e9aa' data-name='like-post-frame-33534099-94524-5ec935614e9aa'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94479" class="post-94479 post type-post status-publish format-standard hentry category-uncategorized tag-bestteamever">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/" rel="bookmark">[Lead Developer Conference] Day&nbsp;One</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/" rel="bookmark"><time class="entry-date published" datetime="2019-07-12T06:40:47+00:00">Friday July 12th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://0.gravatar.com/avatar/6f562c896e9dfc3e10391c8ddf639b31?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/rlwilliams0803/">Rebecca Williams</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		
+<p><strong><em>From 11-12 June, over 20 Automatticians attended the <a href="https://london2019.theleaddeveloper.com/">Lead Developer conference</a> in London and we took extensive notes. At Automattic, we <a href="https://automattic.com/creed/never-stop-learning/">promote a culture of learning</a>&nbsp;and our attendance at this conference provided some of our team leads with a valuable opportunity to reflect on and develop their own leadership tools. </em></strong></p>
+
+
+
+<p><strong><em>If you are interested in Automattic and the roles we have available, <a href="https://automattic.com/work-with-us/">we&#8217;re hiring!</a></em></strong></p>
+
+
+
+<hr class="wp-block-separator is-style-wide" />
+
+
+
+<h2>Navigating Team Friction </h2>
+
+
+
+<p><b>Lara Hogan:&nbsp;</b><b>Co-founder &#8211; Wherewithall</b></p>
+
+
+
+<ul><li style="font-weight:400;"><a href="https://twitter.com/lara_hogan"><span style="font-weight:400;">@lara_hogan</span></a></li><li style="font-weight:400;"><a href="https://larahogan.me/blog/"><span style="font-weight:400;">larahogan.me/blog</span></a></li></ul>
+
+
+
+<p><b>Talk Intro:</b></p>
+
+
+
+<p><em><span style="font-weight:400;">Friction is a common, and necessary, part of team growth—but when left unchecked, team friction is unhealthy for you, your coworkers, your company, and ultimately your end users.</span></em></p>
+
+
+
+<p><em><span style="font-weight:400;">In this presentation, I draw on my experiences at organizations large and small to illuminate the sources of team tension, how you can better understand and manage unexpected teammate reactions, and the best ways to give actionable feedback without escalating drama. Your coworkers, your organization, your users, and you will reap the benefits.</span></em></p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<p><span style="font-weight:400;">A study found that even when surgeons rotated shifts to different hospitals, only get better in their own hospital. This suggests that teams are crucial.</span></p>
+
+
+
+<p><span style="font-weight:400;">Teams of humans are amazing. Groups of people coming together to ship things is amazing.</span></p>
+
+
+
+<p><span style="font-weight:400;">Bruce Tuckman talks about the theory of group dynamics and the stages of group development:</span></p>
+
+
+
+<ul><li><span style="font-weight:400;">Forming: team has a name, some understanding of why they are there.</span></li><li><span style="font-weight:400;">Storming: start to see some friction. Clashing and confusion.</span></li><li><span style="font-weight:400;">Norming: things start to iron out, resolve difference, start to find groove.</span></li><li><span style="font-weight:400;">Performing: things are really smooth.</span></li></ul>
+
+
+
+<p><span style="font-weight:400;">This process occurs every time the team changes, but storming is so painful. But it is critical &#8211; we can’t get to norming except through that stage. We have to feel equipped to handle it.</span></p>
+
+
+
+<h3><b>Brains</b></h3>
+
+
+
+<p><span style="font-weight:400;">Pre-frontal cortex</span> &#8211; deep, complex problem solving</p>
+
+
+
+<p><span style="font-weight:400;">Amygdala &#8211; gather data from the environment and figure out threat.</span></p>
+
+
+
+<p><span style="font-weight:400;">If enough threat, the amygdala shuts down pre-frontal cortex and takes over.</span></p>
+
+
+
+<p>When the <span style="font-weight:400;"><a href="https://en.wikipedia.org/wiki/Amygdala">amygdala</a> hijacks at work it is not useful. It responds to perceived threats even outside physical safety.</span></p>
+
+
+
+<p><span style="font-weight:400;">Human beings have six core needs to feel secure at work:</span></p>
+
+
+
+<ul><li><span style="font-weight:400;">Community, connection.</span></li><li><span style="font-weight:400;">Improvement / progress.</span></li><li><span style="font-weight:400;">Choice &#8211; flexibility, autonomy, decision making.</span></li><li><span style="font-weight:400;">Equality / Fairness.</span></li><li><span style="font-weight:400;">Predictability &#8211; resources, time, direction, future challenges.</span></li><li><span style="font-weight:400;">Significance &#8211; status, visibility, recognition.</span></li></ul>
+
+
+
+<p><span style="font-weight:400;"><em>Not all core needs are equally important to everyone. </em></span></p>
+
+
+
+<h3><b>Feedback</b></h3>
+
+
+
+<p><span style="font-weight:400;">Humans are mostly terrible at giving feedback. We are also mostly terrible at preparing to receive feedback.</span></p>
+
+
+
+<p><span style="font-weight:400;">We are afraid of having our core needs challenged.</span></p>
+
+
+
+<p><span style="font-weight:400;">Feedback of equation:</span></p>
+
+
+
+<ul><li style="font-weight:400;"><span style="font-weight:400;">Observation of behavior &#8211; not about what you feel or assume. Factual.</span></li><li style="font-weight:400;"><span style="font-weight:400;">Impact &#8211; describe something </span><i><span style="font-weight:400;">they care about.</span></i></li><li style="font-weight:400;"><span style="font-weight:400;">Question or request &#8211; ask genuinely curious open question, help them to determine the way forward.</span></li></ul>
+
+
+
+<p><span style="font-weight:400;">We should ask about their preferred feedback medium.</span></p>
+
+
+
+<h3><b>Team Processes</b></h3>
+
+
+
+<p><span style="font-weight:400;">Each teammate has a different way of working. The important thing here is whatever your processes are, that you’re iterating on them, and that they are working for everyone.</span></p>
+
+
+
+<p><span style="font-weight:400;">Retrospectives help, as it creates a habit of talking about team health. They can help us meet core needs. </span></p>
+
+
+
+<p><span style="font-weight:400;"><em>People who are willing to acknowledge their own failures are more trusted.</em></span></p>
+
+
+
+<p><span style="font-weight:400;">Team charters and docs give clarity about what’s expected of us. Having a mission makes it easier to give feedback on things that don’t align.</span></p>
+
+
+
+<p><span style="font-weight:400;">Throughout this process take care of yourself, and do what you need to do to distance yourself from an unsafe environment. If you aren’t sure if it’s time to walk away, speak to someone you trust.</span></p>
+
+
+
+<p><span style="font-weight:400;">Team health is a cycle. Team health is a thing you can continually improve.</span></p>
+
+
+
+<hr class="wp-block-separator is-style-wide" />
+
+
+
+<h2>12/10, Excellent doggo: the power of positive transformation</h2>
+
+
+
+<p><strong>Heidi Waterhouse</strong></p>
+
+
+
+<h4><strong>Developer Advocate &#8211; LaunchDarkly</strong></h4>
+
+
+
+<ul><li><a href="https://twitter.com/wiredferret">@wiredferret</a></li><li><a href="http://www.heidiwaterhouse.com">heidiwaterhouse.com</a></li></ul>
+
+
+
+<p><strong>Talk Intro:</strong></p>
+
+
+
+<p><em>How many talks, articles, and podcasts have you seen about organizational change, and how to implement it? How many of them talked about what we can learn from non-human psychology? This is that talk.</em></p>
+
+
+
+<p><em>I&#8217;ll give you concrete and actionable advice for how to make change happen in your organization, one person at a time, by being nice. Make it rewarding to do the right thing, and people will do the right thing more often. Understand that people are motivated by different things and you&#8217;ll be able to talk to them more effectively. Inspirational leadership can only get us so far, and we can do the rest with hard work, consistency, and compassion.</em></p>
+
+
+
+<hr class="wp-block-separator is-style-wide" />
+
+
+
+<blockquote class="wp-block-quote"><p><strong><em>It hurts to get fired and it’s hard to talk about. But dignity is for people who aren’t conference speakers.</em></strong></p></blockquote>
+
+
+
+<p><em>What would your work life be like if you, and the person who reports to you, and the person who you report to you, had shared goals that you could agree on</em>?</p>
+
+
+
+<h3><strong>How do you get developers to write docs?</strong></h3>
+
+
+
+<ul><li>Very few devs like writing docs</li><li>Very few managers are good at getting people to do something they hate to do</li></ul>
+
+
+
+<p>Have you ever fired a dev for writing insufficient docs? This never happens.</p>
+
+
+
+<p>Have you ever promoted someone for writing excellent docs? Maybe once in a while.</p>
+
+
+
+<p>If you say you want it but you don’t reward it, and you don’t punish it, you don’t really want it. </p>
+
+
+
+<blockquote class="wp-block-quote"><p><em>Behavior: team effort to meet a shared goal.</em></p></blockquote>
+
+
+
+<p>Positive or training shaping isn’t new: from how you teach whales to jump through hoops, to getting cats to act in movies. At the simplest level: the trainer offers a reward until trainee starts offering the behavior spontaneously. They train to exhibit the behavior after a cue.</p>
+
+
+
+<p><strong>Dogs used to be trained using shock collars and by yelling at them.</strong> </p>
+
+
+
+<p>We trained children and employees in the same way (but fewer shocks). You can get the good behavior, but not the good relationship.</p>
+
+
+
+<p>Have you had that manager who criticizes you all the time? We then give them rent free space in our head. </p>
+
+
+
+<p>Instead we should be incentivizing the good behaviors through using reward. This rewards the good behavior. </p>
+
+
+
+<p>A lot of what we call goals are a set of interdependent behaviors and decisions. We have to be clear about what the atomic unit of a goal is. What is the minimum viable behavior that we are going to reward? the goals for other people are just as relevant, but often conflicted.</p>
+
+
+
+<h3><strong>So how do we change behaviors? How do we make developers write documentation?</strong></h3>
+
+
+
+<ul><li>Can’t achieve anything without knowing what we’re aiming for.</li><li>Everyone has goals.</li><li>Not all of us are clear about our goals</li><li>We must respect others’ goals.</li></ul>
+
+
+
+<p>When you look at your goals, are you sure you know what you’re doing? What they’re used for? If you don’t have that alignment, then you might do the wrong thing.</p>
+
+
+
+<p>Trying to do a lot of things at once is overwhelming. You don’t (usually) learn to swim by being thrown in a lake. Complex movements, need to be taught and learned incrementally.</p>
+
+
+
+<p>We should break tasks down into things that can be rewarded. Then, the person doing the thing needs to choose their own reward. It needs to be meaningful for them. When trying to motivate someone, it&#8217;s important to ask them what they want, what would make them happy.</p>
+
+
+
+<p><strong>Successive Approximation:</strong></p>
+
+
+
+<p><a href="https://gizmodo.com/the-pigeon-guided-missiles-and-bat-bombs-of-world-war-i-1477007090">Dr Skinner trained pigeons to drop bombs accurately. </a> You can teach almost anything to almost anyone if you can figure out how to ask for it in small enough increments with enough reward.</p>
+
+
+
+<p>We invest a lot in thinking about ourselves as positive and rational beings. We’re not rational, we’re just playing rational on TV. People mostly do what they get rewarded for and avoid doing things they get punished for. </p>
+
+
+
+<h3><strong>Writing documentation is too big</strong></h3>
+
+
+
+<p>A blank page is the abyss. </p>
+
+
+
+<p>Try creating a template: then they are not writing documents, but answering questions.</p>
+
+
+
+<p><strong>Some things to remember: </strong></p>
+
+
+
+<ul><li>Think clearly about everyone’s goals: if you can’t write it down, it’s amorphous and squishy and no good. If you write it down and it looks like it came from a management book, it’s still no good.</li><li>Figure out rewards together.</li><li>Commit for the long term. Do it consistently until it becomes intrinsically rewarding, not just extrinsically rewarding. </li></ul>
+
+
+
+<hr class="wp-block-separator is-style-wide" />
+
+
+
+<h2>Engage teams to achieve high performance</h2>
+
+
+
+<p><b><br> José Caldeira:&nbsp;Head of Development &#8211; OutSystems&nbsp;</b><a href="https://www.outsystems.com/"><span style="font-weight:400;">www.outsystems.com</span></a></p>
+
+
+
+<p><b>Talk Intro:</b></p>
+
+
+
+<p><em><span style="font-weight:400;">When bootstrapping new teams, they need to go through the standard process of forming, storming, norming and performing. And in the context of fast-growing companies, with their own level of uncertainty, how can we achieve high performance when teams and goals are constantly changing? How do teams deal with different degrees of uncertainty? And how can leaders support them in feeling safe and motivated?</span></em></p>
+
+
+
+<p><em><span style="font-weight:400;">Throughout the years, I&#8217;ve found some ways to help teams achieve this. Some of those were a direct result of my experience, others were inspired by my peers and other companies, and others I was able to derive from coaching sports or teaching people. In this session, we’ll talk about some of the ideas leaders can implement to help teams move faster into high performance.</span></em></p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<p><span style="font-weight:400;">Teams can achieve high performance in 5 steps</span>: </p>
+
+
+
+<h2><b style="color:var(--color-text);">1. Identify Goal</b></h2>
+
+
+
+<p><span style="font-weight:400;">Sports psychologists agree that high performance is connected to highly intense goals.&nbsp;So how do we engage the team? The goals we decide upon must have impact and meaning.</span></p>
+
+
+
+<p><span style="font-weight:400;">We must define the goals that will be memorable:</span></p>
+
+
+
+<p><strong>Bold&#8230; not reckless</strong></p>
+
+
+
+<p><strong>Crisp&#8230; not fuzzy</strong></p>
+
+
+
+<p><strong>Impact&#8230; not vanity</strong></p>
+
+
+
+<p><strong>Simple&#8230; not complex</strong></p>
+
+
+
+<h2><b>2.Constraints</b></h2>
+
+
+
+<p><span style="font-weight:400;">Definition of the goal then creates a sense of control. By encouraging teammates onto a project, we create a personal development opportunity:&nbsp;</span></p>
+
+
+
+<p><strong>Embrace&#8230; don’t fight it</strong></p>
+
+
+
+<p><strong>Impose&#8230; don’t wait </strong></p>
+
+
+
+<p><strong>Mandatory&#8230; not optional </strong></p>
+
+
+
+<h2><b>3. Principles</b></h2>
+
+
+
+<p><span style="font-weight:400;">Principles must be agreed upon and aligned within the team</span></p>
+
+
+
+<p><strong>Options&#8230; not restrictions</strong></p>
+
+
+
+<p><strong>Align&#8230; don’t impose</strong></p>
+
+
+
+<p><strong>Focus&#8230; not an obstacle</strong></p>
+
+
+
+<p><strong>Fast&#8230; not slow</strong></p>
+
+
+
+<h2><b>4. Pitch</b></h2>
+
+
+
+<p><span style="font-weight:400;">We need to sell everything &#8211; we need to remember that the goal should create a sense of urgency.</span></p>
+
+
+
+<p><span style="font-weight:400;">We create a positive message in order to sell and motivate</span></p>
+
+
+
+<p><strong>Energize&#8230; don’t discourage</strong></p>
+
+
+
+<p><strong>Promote&#8230; don’t wait</strong></p>
+
+
+
+<p><strong>Consistent&#8230; not occasional</strong></p>
+
+
+
+<h2><b style="color:var(--color-text);">5. Storytelling</b></h2>
+
+
+
+<p><span style="font-weight:400;">Humans use storytelling to pass to the next generation. We can use the same strategy but we must remember that creating engagement shouldn’t involve creating a lie</span></p>
+
+
+
+<p><strong>Empathy&#8230; not a report</strong></p>
+
+
+
+<p><strong>Path&#8230; not the result</strong></p>
+
+
+
+<p><strong>Truth&#8230; don’t lie</strong></p>
+
+
+
+<h2><b>In summary:</b></h2>
+
+
+
+<ul><li>Create<span style="font-weight:400;"> memorable goals</span></li><li><span style="font-weight:400;">Creativity through constraints</span></li><li><span style="font-weight:400;">Autonomy through principles</span></li><li><span style="font-weight:400;">Motivation by pitching</span></li><li><span style="font-weight:400;">Engagement by telling stories</span></li></ul>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Bottoms up with OKRs</h2>
+
+
+
+<p><strong>Whitney O&#8217;Banner: Engineering Manager &#8211; Braintree </strong><a href="https://twitter.com/woobanner">@woobanner</a></p>
+
+
+
+<p><strong>Talk Intro:</strong><br></p>
+
+
+
+<p><em>In 2013, Google famously published a leading reference for establishing Objectives and Key Results as a way to align teams and set short-term goals. While some of the information is still relevant, it is time to take a fresh look at setting OKRs within your teams. This talk will help leaders abandon the dated, flawed approach to setting OKRs and enable organizational alignment in an exciting new way, suitable for 2019.</em></p>
+
+
+
+<p>OKRs are commonly used, but they produce variable results in both experience effectiveness.<br></p>
+
+
+
+<p>e.g. ‘We want to improve accessibility as measured by 75% WCAG compliance’<br></p>
+
+
+
+<p><strong>O</strong>bjectives and <strong>K</strong>ey <strong>R</strong>esults</p>
+
+
+
+<p>We set goals</p>
+
+
+
+<p>We align teams in a shared vision</p>
+
+
+
+<p>We quantify progress<br></p>
+
+
+
+<p>We will &lt;objective&gt; as measured by &lt;key result&gt;<br></p>
+
+
+
+<p>It is often introduced from the mindset that we know how to do this well, but most of us don’t.<br></p>
+
+
+
+<p>Here are three brief but key strategies to adopt:</p>
+
+
+
+<h2>TIP: Skip Individual OKRs</h2>
+
+
+
+<p>Try tasks instead</p>
+
+
+
+<p>Remember that company level objectives are not individual tasks<br></p>
+
+
+
+<p>Individual OKRs are like corporate meetings, they slow us down and don’t give value. Skip the big picture and instead focus on the individual. If not, they will turn into tasks or micromanagement, and become less about alignment.<br></p>
+
+
+
+<p>Try to move from team level OKRs to tasks, initiatives, projects. Your team will love you, because they want to focus on the work. This empowers employers with priorities.<br></p>
+
+
+
+<h2>TIP: Ignore metrics, focus on the outcomes</h2>
+
+
+
+<p>It was discovered that a lot of what they thought mattered was not being measured. Most key results were “swags” &#8211; <em>sophisticated wild ass guess</em>.  Is it reasonable? Feasible? Achievable? Good? No one knew. They spent a quarter hitting baselines, instead of hitting goals.<br></p>
+
+
+
+<p>Instead, forget the numbers, and concentrate on the measurable outcome<br></p>
+
+
+
+<p>Re-evaluate this once you understand what your team is capable of<br></p>
+
+
+
+<p>e.g. improve accessibility as measured by WCAG compliance: start with general outcomes, and after a couple of quarters then you can set some stretch goals.</p>
+
+
+
+<h2>TIP: Avoid cascading goals: take a bottoms up approach</h2>
+
+
+
+<p>This takes way too much time and stifles innovation. HBR found that most managers overvalue their ideas by 42%. Front line employees undervalue theirs by 11%.<br></p>
+
+
+
+<p>Instead, take a bottoms up approach. It helps spark innovation and fosters the best ideas if employees can understand how they can build impact.</p>
+
+
+
+<h2>Recap:</h2>
+
+
+
+<p>Try tasks</p>
+
+
+
+<p>Focus on outcomes</p>
+
+
+
+<p>Take a bottoms up approach</p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2>Guiding self-organizing teams</h2>
+
+
+
+<p><strong>Rebecca Hill: Frontend Engineer and Team Lead &#8211; WeTransfer </strong><a href="http://rebeccahill.co.nz">rebeccahill.co.nz</a><strong> </strong><a href="https://twitter.com/rebekaka">@rebekaka</a></p>
+
+
+
+<p><strong>Talk Intro: </strong><br></p>
+
+
+
+<p><em>It’s all well and good for the agile manifesto to recommend self-organizing teams, but what does that actually mean in practice? What’s the best way to do it, how far should you take it? Total anarchy is probably not the answer here… right?</em></p>
+
+
+
+<p><em>After bouncing around leading a whole bunch of teams of different shapes and sizes over my career, I have some insights into how to guide effective self-organization and create amazing teams. I’ll also share plenty of battle stories, including major re-organizations of entire engineering departments, structured completely by the developers in them.</em></p>
+
+
+
+<p><em>Whether your entire department needs shuffling, you’re starting a new team, or just adding a new team member, you should walk away with plenty of ideas of how to guide your team to make the best possible decisions &#8211; for themselves.</em></p>
+
+
+
+<p>Self organizing teams is an umbrella term for a spectrum of team organizing styles:</p>
+
+
+
+<ul><li>self governing &#8211; set direction, design the team, manage work, execute tasks</li><li>self forming &#8211; design the team, manage work, execute tasks</li><li>self organizing &#8211; manage work, execute tasks</li></ul>
+
+
+
+<p>Then, more traditional manager led teams &#8211; just executing tasks.</p>
+
+
+
+<h2>#bestteamever</h2>
+
+
+
+<p>Rebecca lead a team of mainly brand new people to the company. This was a rare opportunity to start from scratch:</p>
+
+
+
+<ul><li>here was a group of people who cared about each other</li><li>who wanted continuously to get stuff done</li><li>wanted to have fun doing it</li></ul>
+
+
+
+<h2>How long do you think it would take? A couple of months?</h2>
+
+
+
+<p>They started off with sessions to figure out how to work together, and everything up was up for the team to decide. Having everyone decide this stuff together was very powerful, and it meant that everyone was really invested.<br></p>
+
+
+
+<p>The team would advocate for standard structure and keep iterating on it. They kept a team agreement document &#8211; this helped with onboarding.<br></p>
+
+
+
+<p>They talked about values. The top two were motivation and honesty.<br></p>
+
+
+
+<p>They chose team name together: picked Cosmos. <br></p>
+
+
+
+<p>They felt really optimistic… but then shipped a bunch of bugs. They were too new to the code base and each other.<br></p>
+
+
+
+<p>They ended up with people struggling to work with each other, and with people from other teams.<br></p>
+
+
+
+<p>They began taking part in workshops on active listening. It is a simple concept, but how rare is it to feel fully listened to! They got good at asking questions and listening to the answers. They began to give specific feedback. It&#8217;s important not to forget to challenge your high performers &#8211; you should be spending as much time on them as everyone else on the team.<br></p>
+
+
+
+<p>Do not underestimate the amount of time good leadership and management. When you have a responsibility towards people, they have to come first.<em> If you’re struggling, look after fewer people, don’t just look after the people you have less. </em><br></p>
+
+
+
+<p>Remember to authentically celebrate success.</p>
+
+
+
+<p>Be positive.</p>
+
+
+
+<p>Don’t fake it, but do make the time to give praise and positive feedback.</p>
+
+
+
+<h2>Did they reach the vision? </h2>
+
+
+
+<p>No. </p>
+
+
+
+<p>But that’s because the vision was whack. </p>
+
+
+
+<p>That vision of perfection? NO.</p>
+
+
+
+<p>The vision of #BestTeamEver? Hell yes!</p>
+
+
+
+<h2>In summary</h2>
+
+
+
+<ul><li>People come first</li><li>They take time</li><li>They are worth it</li></ul>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2><strong>What I learnt about hiring diverse teams from conducting a fully-anonymous recruitment process</strong></h2>
+
+
+
+<p><strong>Bethan Vincent: Head of Marketing &#8211; Netsells </strong><a href="http://www.netsells.co.uk">www.netsells.co.uk</a><strong> </strong><a href="https://twitter.com/bethanvincent">@bethanvincent</a></p>
+
+
+
+<p><em>If we want to truly encourage diversity in our industry, we are going to have to listen and respond to feedback from under-represented groups that challenges our assumptions.</em></p>
+
+
+
+<p><em>We spend so much time and attention on user research, user feedback and service design but when it comes to recruitment we seem to lose the same motivation. By taking the time to step back and see what our processes are saying to candidates, we can ensure that we are taking steps to increase diversity awareness. It might not be easy, but it’ll be worth it!</em></p>
+
+
+
+<p>There was a common problem: they wanted to hire a diverse team. </p>
+
+
+
+<p>They decided one way to get people in was to improve the way they hired. </p>
+
+
+
+<p>They noticed that managers tended to hire people who are like them. If you have mostly white dude managers, you tend to hire mostly white dudes.</p>
+
+
+
+<p>So they built a totally anonymous application system.</p>
+
+
+
+<ul><li>Anonymous application (with a mobile number), five skills the applicant felt they had, five skills they wanted to learn.</li><li>Slack interview</li><li>Technical test</li><li>Then come into the office &#8211; at this point they had to de-anonymise people.</li></ul>
+
+
+
+<p>They got some good press. They thought had solved it. But they realized they weren’t the same people as their applicants!</p>
+
+
+
+<p>So they went to conferences and spoke to a lot of people. They also approached successful and unsuccessful candidates.</p>
+
+
+
+<p>They learned a lot from this exercise.</p>
+
+
+
+<h2>People want to showcase “soft” skills alongside “technical” ones.</h2>
+
+
+
+<ul><li>They found women felt uncomfortable listing their skills. You have to explicitly tell people you want to hear about them.</li><li>Women were put off by the anonymous platform.</li></ul>
+
+
+
+<h2>Job seekers want human connection (+ they want the lowdown on what it’s really like to work with you)</h2>
+
+
+
+<ul><li>Minorities tend to speak to people before joining, “what’s it really like”.</li><li>You can let them go around your process, but why not make it part of the process?</li></ul>
+
+
+
+<h2>Lengthy tests and at home exercises are not inclusive.</h2>
+
+
+
+<ul><li>This is particularly gendered. People with caring responsibilities do not have time.</li><li>It’s a facility that it rules out people who are &#8220;not committed&#8221; &#8211; they have lives and other things to do.</li></ul>
+
+
+
+<h2>Your job listing is just as important as the application process.</h2>
+
+
+
+<ul><li>Vague job postings: if something is not explicit, people will fill in the blanks with doubt.</li><li>Then, if you’re ashamed to fill in the blanks, you’re doing something wrong.</li></ul>
+
+
+
+<h2>If we really care about diversity and inclusion, we need to listen.</h2>
+
+
+
+<ul><li>Had good intentions, but built something for them.</li><li>Status quo holds certain people’s values, the world is tailored to them.</li><li>Don’t just say “thanks for the feedback”, if you really care you do something.</li></ul>
+
+
+
+<hr class="wp-block-separator" />
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94479" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94479" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94479" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94479" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/07/12/lead-developer-conference-day-one/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94479-5ec9356152850' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94479&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94479-5ec9356152850' data-name='like-post-frame-33534099-94479-5ec9356152850'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+				
+<article id="post-94453" class="post-94453 post type-post status-publish format-standard hentry category-news">
+	<header class="entry-header">
+		<h1 class="entry-title"><a href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/" rel="bookmark">Taking Care of Alex&#8217;s&nbsp;Plugins</a></h1>
+
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/" rel="bookmark"><time class="entry-date published" datetime="2019-06-06T13:15:34+00:00">Thursday June 6th 2019</time><time class="updated" datetime="2019-06-06T17:04:52+00:00">Thursday June 6th 2019</time></a></span><span class="byline"> by <span class="author vcard"><img alt='' src='https://1.gravatar.com/avatar/1a33e7a69df4f675fcd799edca088ac2?s=32&#038;d=identicon&#038;r=G' class='avatar avatar-32' height='32' width='32' /> <a class="url fn n" href="https://developer.wordpress.com/author/donncha/">Donncha</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		
+<p>On February 27, 2019, Alex Mills (aka Viper007Bond) <a href="https://alex.blog/2019/02/27/from-alexs-family/">passed away at home</a> surrounded by his family after a two and a half year battle with <a href="https://alex.blog/2019/02/18/leukemia-has-won/">leukaemia</a>. </p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><img data-attachment-id="94454" data-permalink="https://developer.wordpress.com/2009-10-16_img_2194-m-1/" data-orig-file="https://developer.files.wordpress.com/2019/05/2009-10-16_img_2194-m-1.jpg" data-orig-size="1280,853" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;8&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;Canon EOS 40D&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1255710450&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;106&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.005&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="2009-10-16_img_2194-m-1" data-image-description="" data-medium-file="https://developer.files.wordpress.com/2019/05/2009-10-16_img_2194-m-1.jpg?w=300" data-large-file="https://developer.files.wordpress.com/2019/05/2009-10-16_img_2194-m-1.jpg?w=780" src="https://developer.files.wordpress.com/2019/05/2009-10-16_img_2194-m-1.jpg" alt="" class="wp-image-94454" /><figcaption>Alex Mills, Montmorency Falls, Quebec. 2009.</figcaption></figure></div>
+
+
+
+<p>Alex was a gifted developer and a much liked member of the WordPress community. I have always been in awe of everything he did. He contributed to core many times and is listed as a contributor to <a href="https://wordpress.org/news/2019/05/jaco/">WordPress 5.1.1</a> that was released last month. He still has <a href="https://core.trac.wordpress.org/query?status=!closed&amp;reporter=Viper007Bond">15 open Trac tickets</a> so I expect to see his name on future releases too. He was the <a href="https://profiles.wordpress.org/viper007bond/#content-plugins">primary author of many plugins</a> as well as contributing to others. </p>
+
+
+
+<p>In his <a href="https://alex.blog/2019/02/18/leukemia-has-won/">last blog post</a> he expressed the wish that his plugins would be maintained and developed.</p>
+
+
+
+<blockquote class="wp-block-quote"><p>Since all of my plugins are open-source, they are free to be forked by reputable authors in the WordPress community. It would mean a lot to have my legacy go on.</p><cite>Alex Mills, February 18th 2019.</cite></blockquote>
+
+
+
+<p>I&#8217;m glad to say that a team inside Automattic will be taking care of his plugins in the future. </p>
+
+
+
+<p>We will fork each of Alex&#8217;s GitHub repositories adding them to the Automattic GitHub account. We&#8217;ll update any links in his plugin readme files so they&#8217;re pointing at the new locations.</p>
+
+
+
+<p>A short paragraph about Alex will be added to the plugin readme files. You can see an example on the <a href="https://wordpress.org/plugins/regenerate-thumbnails/">Regenerate Thumbnails</a> homepage.</p>
+
+
+
+<p>We&#8217;ll do our best to stay on top of support queries on the forums too. If anyone else wants to help please don&#8217;t hesitate to get in touch. I&#8217;m donncha on the WordPress.org Slack.</p>
+
+
+
+<p>In times gone by authors left works of music, novels, poetry, and letters on their passing. They were static works of art frozen in time. Alex leaves behind his code that will continue to evolve and operate in a living world used by thousands (millions?) of people every day as they go about their online lives.</p>
+
+
+
+<p>***</p>
+
+
+
+<p><em>Donncha Ó Caoimh is a code wrangler with Automattic, sometimes contributor to WordPress and writer of plugins.</em></p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-94453" class="share-facebook sd-button share-icon no-text" href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/?share=facebook" target="_blank" title="Click to share on Facebook"><span></span><span class="sharing-screen-reader-text">Click to share on Facebook (Opens in new window)</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-94453" class="share-twitter sd-button share-icon no-text" href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/?share=twitter" target="_blank" title="Click to share on Twitter"><span></span><span class="sharing-screen-reader-text">Click to share on Twitter (Opens in new window)</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-94453" class="share-pinterest sd-button share-icon no-text" href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span></span><span class="sharing-screen-reader-text">Click to share on Pinterest (Opens in new window)</span></a></li><li class="share-linkedin"><a rel="nofollow noopener noreferrer" data-shared="sharing-linkedin-94453" class="share-linkedin sd-button share-icon no-text" href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/?share=linkedin" target="_blank" title="Click to share on LinkedIn"><span></span><span class="sharing-screen-reader-text">Click to share on LinkedIn (Opens in new window)</span></a></li><li class="share-pocket"><a rel="nofollow noopener noreferrer" data-shared="" class="share-pocket sd-button share-icon no-text" href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/?share=pocket" target="_blank" title="Click to share on Pocket"><span></span><span class="sharing-screen-reader-text">Click to share on Pocket (Opens in new window)</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-33534099-94453-5ec93561546b5' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=33534099&amp;post_id=94453&amp;origin=developer.wordpress.com&amp;obj_id=33534099-94453-5ec93561546b5' data-name='like-post-frame-33534099-94453-5ec93561546b5'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+
+				<span class="comments-link"><a href="https://developer.wordpress.com/2019/06/06/taking-care-of-alexs-plugins/#comments">3 Comments</a></span>
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+			
+		
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-3" class="widget widget_jetpack_display_posts_widget"><h4 class="widget-title">Recent Posts: Developer Resources</h4><div class="jetpack-display-remote-posts"><h4><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/">Sharing the Data: How Technical Women Navigate Their Career</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/">Leadership in Fully Remote Teams with Aaron Douglas</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/">Automattic Developers at the Mid-Atlantic Developer Conference</a></h4>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="follow_button_widget-2" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://developer.wordpress.com" data-blog="33534099" data-lang="en" data-show-blog-name="false" data-show-follower-count="true">Follow Developer Resources on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h4 class="widget-title">@AutomatticEng on twitter</h4><a class="twitter-timeline" data-height="400" data-theme="light" data-border-color="#e9eff3" data-lang="EN" data-partner="jetpack" href="https://twitter.com/AutomatticEng" href="https://twitter.com/AutomatticEng">My Tweets</a></aside><aside id="top-posts-2" class="widget widget_top-posts"><h4 class="widget-title">Top Posts &amp; Pages</h4><ul>				<li>
+					<a href="https://developer.wordpress.com/docs/api/" class="bump-view" data-bump-view="tp">REST API Resources</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/" class="bump-view" data-bump-view="tp">Home</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/" class="bump-view" data-bump-view="tp">Documentation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oauth2/" class="bump-view" data-bump-view="tp">OAuth2 Authentication</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/follow-button-creation/" class="bump-view" data-bump-view="tp">Follow Button Creation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/api/getting-started/" class="bump-view" data-bump-view="tp">Getting Started with the API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/firehose/" class="bump-view" data-bump-view="tp">WordPress.com Firehose</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/" class="bump-view" data-bump-view="tp">Photon</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oembed-provider-api/" class="bump-view" data-bump-view="tp">oEmbed Provider API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/api/" class="bump-view" data-bump-view="tp">Photon API</a>					</li>
+				</ul></aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<div class="footer-contain">
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="site-info">
+				<div class="automattic">
+					An <a href="http://automattic.com"><span class="a8c-attribution">Automattic</span></a> Production
+				</div>
+				<div class="footer-links">
+					<a href="guidelines/">Usage Guidelines</a>
+					<a href="http://automattic.com/privacy/" target="_blank">Privacy Policy</a>
+					<a href="http://wordpress.com/tos/" target="_blank">Terms of Service</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div>
+</div><!-- #page -->
+
+		<script type="text/javascript">
+		//<![CDATA[
+		var infiniteScroll = JSON.parse( decodeURIComponent( '%7B%22settings%22%3A%7B%22id%22%3A%22main%22%2C%22ajaxurl%22%3A%22https%3A%5C%2F%5C%2Fdeveloper.wordpress.com%5C%2F%3Finfinity%3Dscrolling%22%2C%22type%22%3A%22scroll%22%2C%22wrapper%22%3Atrue%2C%22wrapper_class%22%3A%22infinite-wrap%22%2C%22footer%22%3A%22page%22%2C%22click_handle%22%3A%221%22%2C%22text%22%3A%22Older%20posts%22%2C%22totop%22%3A%22Scroll%20back%20to%20top%22%2C%22currentday%22%3A%2206.06.19%22%2C%22order%22%3A%22DESC%22%2C%22scripts%22%3A%5B%5D%2C%22styles%22%3A%5B%5D%2C%22google_analytics%22%3Afalse%2C%22offset%22%3A0%2C%22history%22%3A%7B%22host%22%3A%22developer.wordpress.com%22%2C%22path%22%3A%22%5C%2Fblog%5C%2Fpage%5C%2F%25d%5C%2F%22%2C%22use_trailing_slashes%22%3Atrue%2C%22parameters%22%3A%22%22%7D%2C%22query_args%22%3A%7B%22page%22%3A0%2C%22pagename%22%3A%22blog%22%2C%22error%22%3A%22%22%2C%22m%22%3A%22%22%2C%22p%22%3A0%2C%22post_parent%22%3A%22%22%2C%22subpost%22%3A%22%22%2C%22subpost_id%22%3A%22%22%2C%22attachment%22%3A%22%22%2C%22attachment_id%22%3A0%2C%22name%22%3A%22%22%2C%22page_id%22%3A0%2C%22second%22%3A%22%22%2C%22minute%22%3A%22%22%2C%22hour%22%3A%22%22%2C%22day%22%3A0%2C%22monthnum%22%3A0%2C%22year%22%3A0%2C%22w%22%3A0%2C%22category_name%22%3A%22%22%2C%22tag%22%3A%22%22%2C%22cat%22%3A%22%22%2C%22tag_id%22%3A%22%22%2C%22author%22%3A%22%22%2C%22author_name%22%3A%22%22%2C%22feed%22%3A%22%22%2C%22tb%22%3A%22%22%2C%22paged%22%3A0%2C%22meta_key%22%3A%22%22%2C%22meta_value%22%3A%22%22%2C%22preview%22%3A%22%22%2C%22s%22%3A%22%22%2C%22sentence%22%3A%22%22%2C%22title%22%3A%22%22%2C%22fields%22%3A%22%22%2C%22menu_order%22%3A%22%22%2C%22embed%22%3A%22%22%2C%22category__in%22%3A%5B%5D%2C%22category__not_in%22%3A%5B%5D%2C%22category__and%22%3A%5B%5D%2C%22post__in%22%3A%5B%5D%2C%22post__not_in%22%3A%5B%5D%2C%22post_name__in%22%3A%5B%5D%2C%22tag__in%22%3A%5B%5D%2C%22tag__not_in%22%3A%5B%5D%2C%22tag__and%22%3A%5B%5D%2C%22tag_slug__in%22%3A%5B%5D%2C%22tag_slug__and%22%3A%5B%5D%2C%22post_parent__in%22%3A%5B%5D%2C%22post_parent__not_in%22%3A%5B%5D%2C%22author__in%22%3A%5B%5D%2C%22author__not_in%22%3A%5B%5D%2C%22posts_per_page%22%3A7%2C%22ignore_sticky_posts%22%3Afalse%2C%22suppress_filters%22%3Afalse%2C%22cache_results%22%3Afalse%2C%22update_post_term_cache%22%3Atrue%2C%22lazy_load_term_meta%22%3Atrue%2C%22update_post_meta_cache%22%3Atrue%2C%22post_type%22%3A%22%22%2C%22nopaging%22%3Afalse%2C%22comments_per_page%22%3A%2250%22%2C%22no_found_rows%22%3Afalse%2C%22order%22%3A%22DESC%22%7D%2C%22last_post_date%22%3A%222019-06-06%2013%3A15%3A34%22%2C%22stats%22%3A%22blog%3D33534099%26v%3Dwpcom%26tz%3D0%26user_id%3D0%26subd%3Ddeveloper%26x_pagetype%3Dinfinite%22%7D%7D' ) );
+		//]]>
+		</script>
+		<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-33', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+			<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script src='//0.gravatar.com/js/gprofiles.js?ver=202021y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-915289bd7fa9d4feec6bb40eed1d7eb4">
+	</div>
+	<div class="grofile-hash-map-0e2249a7de3404bc6d5207a45e911187">
+	</div>
+	<div class="grofile-hash-map-6f562c896e9dfc3e10391c8ddf639b31">
+	</div>
+	<div class="grofile-hash-map-1a33e7a69df4f675fcd799edca088ac2">
+	</div>
+	</div>
+		<div id="infinite-footer">
+			<div class="container">
+				<div class="blog-info">
+					<a id="infinity-blog-title" href="https://developer.wordpress.com/" rel="home">
+						Developer Resources					</a>
+				</div>
+				<div class="blog-credits">
+					<a href="https://wordpress.com/?ref=footer_blog" rel="nofollow">Blog at WordPress.com.</a> 				</div>
+			</div>
+		</div><!-- #infinite-footer -->
+		
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="33534099" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://developer.wordpress.com" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="Developer Resources" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="bfb84fae02" /><input type="hidden" name="_wp_http_referer" value="/blog/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/developer.wordpress.com\/2019\/08\/28\/sharing-the-data-how-technical-women-navigate-their-career\/":94647,"https:\/\/developer.wordpress.com\/2019\/08\/14\/leadership-in-fully-remote-teams-with-aaron-douglas\/":94631,"https:\/\/developer.wordpress.com\/2019\/08\/08\/automattic-developers-at-the-mid-atlantic-developer-conference\/":94623,"https:\/\/developer.wordpress.com\/2019\/07\/29\/growing-javascript-skills-with-grzegorz-ziolkowski\/":94602,"https:\/\/developer.wordpress.com\/2019\/07\/15\/lead-developer-conference-day-two\/":94524,"https:\/\/developer.wordpress.com\/2019\/07\/12\/lead-developer-conference-day-one\/":94479,"https:\/\/developer.wordpress.com\/2019\/06\/06\/taking-care-of-alexs-plugins\/":94453};
+	</script>
+						<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/_static/??-eJx9y9EKgzAMheEXWhZELOxi7FlKG0pdbEOTIr79FPFiMHZ1OD98uAqEWoyK4dJBuKdcFINvtSsxzmTiwxuucA+qN/yN1hwT2b61RWmkClLV4MyotjH945aZIiTPTG37fgd7Lc9hcuPoBveY5g98tkS/?cssminify=yes' type='text/css' media='all' />
+<script>
+var actionbardata = {"siteID":"33534099","siteName":"Developer Resources","siteURL":"http:\/\/developer.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/2b9f802603565d131ae7d2ba65746574?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"a8c\/wpcomdev3","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2F2019%2F08%2F28%2Fsharing-the-data-how-technical-women-navigate-their-career%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b4a28df927","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"49fffbe937\" \/>","referer":"https:\/\/developer.wordpress.com\/blog\/","canFollow":"1","feedID":"3039616","statusMessage":"","customizeLink":"https:\/\/developer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdeveloper.wordpress.com%2Fblog%2F","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: WordPress.com Developer site","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 14,847 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2F2019%2F08%2F28%2Fsharing-the-data-how-technical-women-navigate-their-career%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script>
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"568eb79081","display_exif":"1","display_comments":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"0","require_name_email":"1","login_url":"https:\/\/developer.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2F2019%2F08%2F28%2Fsharing-the-data-how-technical-women-navigate-their-career%2F","blog_id":"33534099","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<fieldset><label for=\"email\">Email (Required)<\/label> <input type=\"text\" name=\"email\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-email-field\" \/><\/fieldset><fieldset><label for=\"author\">Name (Required)<\/label> <input type=\"text\" name=\"author\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-author-field\" \/><\/fieldset><fieldset><label for=\"url\">Website<\/label> <input type=\"text\" name=\"url\" class=\"jp-carousel-comment-form-field jp-carousel-comment-form-text-field\" id=\"jp-carousel-comment-form-url-field\" \/><\/fieldset>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=33534099&v=wpcom&tz=0&user_id=0&subd=developer","is_public":"1","reblog_enabled":""};
+</script>
+<script>
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJylVNuS2yAM/aFilsl2Nnno9FM6GGRHjgAvEnazX784jTPdbupe9gkh6RyhG3oelUtRIIoeWHuY0MH4vRn4k35rGhNLAGbbwx3r8Fwgn69Hg3FCmP/oNoCM1p1UBsaXd6yhqJFKj5E14QlYV1CBo42eIG84Y+wwopxvwuqL0VHxlWhJFFn0BNGnvJjGROcOiZqA8VfqlbcrRIpRQIFHwdhfI2pjHna7x53Z6wgzXzJqKbnTNUqVq2utHv9Qq3u1WYP0pV5byH21ZND7xjQPah5dCrotSF6j2ceamYd3PfprCp9CLbn15w/yWGM+SgHs7AjqKIG2mf63+M7mVBhoo/Q/jc51IPW3OipaZhSBrAQDEMat+bS+zo1qbdbBcsVUSaUJcsZl3G66f2SQXN/CWyAnmOICukkb3msp1izVqri3Hzx3qR3Aye8aMtXUkrbMIBfA5T7WTd56sCCBV70lWn6BN7cN1LI7qiOLWfPR5tr89aygr+GL+bw/HA5Pj09meAULXcjc'></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-url.min.7490158b.js?m=1589993648h&#038;ver=3.6.4"></scr' + 'ipt>' );
+( window.DOMRect ) || document.write( '<script src="https://s1.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-dom-rect.7e21c103.js?m=1589993648h&#038;ver=3.42.0"></scr' + 'ipt>' );
+</script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-pocket', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcompocket', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script type="text/javascript">
+			jQuery.extend( infiniteScroll.settings.scripts, ["jquery-core","jquery-migrate","jquery","mobile-useragent-info","menu","spin","jquery.spin","grofiles-cards","wpgroho","devicepx","postmessage","jquery_inview","jetpack_resize","jetpack_likes_queuehandler","the-neverending-homepage","wp-polyfill","blog-posts-block-view","wp-i18n","wp-dom-ready","wp-a11y","wp-escape-html","carousel-block-view","jetpack-twitter-timeline","wpcom-masterbar-js","wpcom-masterbar-tracks-js","wpcom-actionbar-bar","jetpack-carousel","swfobject","videopress","tiled-gallery","sharing-js"] );
+			jQuery.extend( infiniteScroll.settings.styles, ["wpcom-smileys","jetpack_likes","the-neverending-homepage","wp-block-library","jetpack-layout-grid","jetpack-ratings","blog-posts-block-view","carousel-block-view","premium-content-container-block","coblocks-frontend","posts-list-block-style","wpcom-core-compat-playlist-styles","wpcom-text-widget-styles","wpcom-bbpress2-staff-css","wpcom-layout-grid-front","wpcomdev3-style","noticons","jetpack-top-posts-widget","geo-location-flair","reblogging","wpcom-actionbar-bar","sharedaddy","social-logos","h4-global","jetpack-global-styles-frontend-style","jetpack-carousel","jetpack_display_posts_widget","tiled-gallery"] );
+		</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20190321#ver=20190321' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33534099','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'33534099','v':'wpcom','tz':'0','user_id':'0','subd':'developer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSG1wamM0bi81JStxN2lKP1pvVnxQRHk3W0d3VEh0SklpNENJfHppaiZjVlFtdzJJS0ovSDNETzhlekx0YWtKZUdrWVRKU296R2dGTkthbUslXVh6JURPS05ML0czMUhaVi94VmJiQ0VZfD93dG0/MXhfW0VELitNLDQvRHxNaE1BY2k5V2ZaY2JQejk4ZS49OHJYanAmUlpTTHBILm0zMzFRVT1aNUNYdW1yTk1pS3BNXUFubmVQfEc3fnBMWC4sJitnVVZUSDlHc1JwT2VER35oVkNbZ0hNYXUyQixnNW11XVhMaG1sflZMbz00eFl+Z2Y2bS16bVhyUXlBM0RGczQmMTVWU1NRW11bY3NjZG5TS1cmdH54aGZ2NEk1PT0wZyxfaHZxP3lPfGxVaDlaUW45Wno0Q1EvQVNzLk18'}]);
+_stq.push([ 'clickTrackerInit', '33534099', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

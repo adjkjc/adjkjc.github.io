@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>translate</ShortName>
+	<Description>Search Translate WordPress.com - Resources for translating Automattic projects</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://translate.wordpress.com/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://translate.wordpress.com/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://translate.wordpress.com/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://translate.wordpress.com/osd.xml" />
+	<LongName>Translate WordPress.com</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://secure.gravatar.com/blavatar/5a228cb10e76547e2769cbeb98d08aad?s=16&#038;d=https%3A%2F%2Ftranslate.wordpress.com%2Ffavicon.ico</Image>
+	<Image height="64" width="64" type="image/png">https://secure.gravatar.com/blavatar/5a228cb10e76547e2769cbeb98d08aad?s=64&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>volunteers contribution translation year-in-review 2016 community locale-glossary fuzzy glossary validator</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>en</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://translate.wordpress.com</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>WordPress.com en</ShortName>
+	<Description>Search WordPress.com en Español - Blog de Noticias de la Comunidad WordPress.com</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://wordpress.com/es/blog/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://wordpress.com/es/blog/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://wordpress.com/es/blog/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://wordpress.com/es/blog/osd.xml" />
+	<LongName>WordPress.com en Español</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://secure.gravatar.com/blavatar/5e0b3030c5625970042f020d0998f16d?s=16&#038;d=https%3A%2F%2Fwordpress.com%2Fes%2Fblog%2Ffavicon.ico</Image>
+	<Image height="64" width="64" type="image/png">https://secure.gravatar.com/blavatar/5e0b3030c5625970042f020d0998f16d?s=64&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>temas twitter facebook espanol design widgets seo google yahoo nokia</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>es-ES</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://wordpress.com/es/blog</moz:SearchForm>
+</OpenSearchDescription>

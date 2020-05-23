@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Follow Button Creation | Developer Resources</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://developer.wordpress.com/xmlrpc.php">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:700' rel='stylesheet' type='text/css'>
+
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Feed" href="https://developer.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Comments Feed" href="https://developer.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJytk9FWgzAMhl/I0iHzjF14fJZSQu1sKadJh7y9LbANp+KO7i4J+fKnIeF9x6RrCVriNrDOBKVb5H0nnWVotYHhyssk4gNfYCdGhehW4FX84oGXWZ5t2IjyKmhT88o4+caMrrzwA0caDNxQbKSQH4A6kXAxuEBMeV3/tYQXpFuFv+BNMIahJmBQ6wTMw+F5vimKbZGXvIUex4qzQK2R0itjqkPCKcyOGvq7q0jhXUAwd9LoPFgd7BldH410cyt59lhkm7mjOcj+PdZpeCYWnV431b+OflFYrG9awBi3naCUYaOUAAM2pq1hva4VUMTxZDOC93VkPI2qigNEZKcx0mvUuuVSVpZ7/tR4903TkwAXpZw6qOFYLH+a5q0jHbPxbNzycHLdtLo/LMACUeBY7DCekms/OawxQvs11EO6kWiqcdIXdw0SMhWvhL9YKf3FPudP5X6/3213+eEDlp3KEw==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423h&cssminify=yes' type='text/css' media='all' />
+	<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script type='text/javascript' src='https://s1.wp.com/_static/??-eJx9zVEKwjAMBuAL2RUpHXsRz1K7OFuWdDbpxNubDX0REQKB/F8S+1hMoji3EdhmrXuD+ny3LvPB/gMG01SDQIeJPjgWEiDZ7FJYEJjDBD9SLJc0g2kMVQGJvrmWbyc30As2DFGnseAIq9uXgZraM56O3g/O9713+QUQR0sY'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://developer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://developer.wordpress.com/docs/follow-button-creation/" />
+<link rel='shortlink' href='https://wp.me/P2gHKz-1aU' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Ffollow-button-creation%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Ffollow-button-creation%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Follow Button Creation" />
+<meta property="og:url" content="https://developer.wordpress.com/docs/follow-button-creation/" />
+<meta property="og:description" content="The follow button is a small button that you can add to any site, that will allow WordPress.com users to easily follow the specified WordPress.com or Jetpack enabled blog. Note: In order to generat…" />
+<meta property="article:published_time" content="2013-10-02T06:01:39+00:00" />
+<meta property="article:modified_time" content="2016-10-17T19:27:04+00:00" />
+<meta property="og:site_name" content="Developer Resources" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=200&amp;ts=1590244703" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@AutomatticEng" />
+<meta name="twitter:site" content="@AutomatticEng" />
+<meta name="twitter:text:title" content="Follow Button Creation" />
+<meta name="twitter:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=114" />
+<link rel='openid.server' href='https://developer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://developer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://developer.wordpress.com/osd.xml" title="Developer Resources" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Developer Resources" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Create cool applications that integrate with WordPress.com" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://developer.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="The follow button is a small button that you can add to any site, that will allow WordPress.com users to easily follow the specified WordPress.com or Jetpack enabled blog. Note: In order to generate the code for your Jetpack enabled blog, you must have the JSON API module activated on it. Use the options below&hellip;" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2gHKz&#038;cscache=6&#038;csrev=45" />
+		</head>
+
+<body class="page-template-default page page-id-4520 page-child parent-pageid-8 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<form role="search" method="get" class="search-form" action="https://developer.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:'" />
+	</label>
+</form>				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-5714" class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page menu-item-5714"><a href="https://developer.wordpress.com/">Developers</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-32"><a href="https://developer.wordpress.com/docs/">Documentation</a>
+<ul class="sub-menu">
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34"><a href="https://developer.wordpress.com/docs/api/">REST API</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90807"><a href="https://developer.wordpress.com/docs/api/getting-started/">Getting Started</a></li>
+		<li id="menu-item-28306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28306"><a href="https://developer.wordpress.com/docs/api/console/">Developer Console</a></li>
+		<li id="menu-item-88679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88679"><a href="https://developer.wordpress.com/docs/api/rest-api-example-apps/">Example Apps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28277"><a href="https://developer.wordpress.com/docs/oauth2/">Authentication</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://developer.wordpress.com/docs/oauth2/">OAuth</a></li>
+		<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="https://developer.wordpress.com/docs/wpcc/">WordPress.com Connect (Login)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://developer.wordpress.com/docs/oembed-provider-api/">oEmbed API</a></li>
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271"><a href="https://developer.wordpress.com/docs/photon/">Photon Image API</a></li>
+	<li id="menu-item-28280" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4520 current_page_item current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-28280"><a href="https://developer.wordpress.com/docs/follow-button-creation/" aria-current="page">Embeddable Widgets</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4520 current_page_item menu-item-4573"><a href="https://developer.wordpress.com/docs/follow-button-creation/" aria-current="page">Follow Button</a></li>
+		<li id="menu-item-5138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5138"><a href="https://developer.wordpress.com/docs/embedded-timelines/">Timeline</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28282"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Other Integrations</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9582"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Embedding</a></li>
+		<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://developer.wordpress.com/docs/sharing-buttons/">Sharing Buttons</a></li>
+		<li id="menu-item-1861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1861"><a href="https://developer.wordpress.com/themes/">Theme Guide</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://developer.wordpress.com/blog/">Blog</a></li>
+<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://developer.wordpress.com/apps/">My Apps</a></li>
+</ul></div>				<a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+				<a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+			</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+			<div id="page-name" class="page-masthead">
+			<div class="name-area">
+				<h1>Follow Button Creation</h1>
+			</div>
+		</div>
+	
+	<div id="main-container" class="site-content">
+		<div class="breadcrumbs"><a href="https://developer.wordpress.com/docs/">Documentation</a> &rarr; <strong>Follow Button Creation</strong></div>	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-4520" class="post-4520 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<p>The follow button is a small button that you can add to any site, that will allow WordPress.com users to easily follow the specified WordPress.com or Jetpack enabled blog.</p>
+<p><em>Note: In order to generate the code for your Jetpack enabled blog, you must have the <a href="https://jetpack.com/support/json-api/" target="_blank">JSON API module</a> activated on it.</em></p>
+<p>Use the options below to generate the code for your WordPress.com Follow Button. You can use the generated code snippet to embed the Follow button anywhere you&#8217;d like to on the web.</p>
+<p>For more information on how to use this generator, <a title="support" href="http://en.support.wordpress.com/follow-button/">click here</a>.</p>
+<div class="wpcomdev-follow-button-form" id="wpcomdev-follow-button-form-1">
+		<form action="">
+
+			<div class="wpcomdev-follow-button-options-grp">
+				<h2>Button Options</h2>
+				<p>
+					<label for="wpcomdev-follow-button-form-blog-1">Blog to follow</label>
+					<input type="text" class="wpcomdev-follow-button-form-blog" id="wpcomdev-follow-button-form-blog-1" value="en.blog.wordpress.com" data-default-value="en.blog.wordpress.com" />
+				</p>
+
+				<p>
+					<input type="checkbox" class="wpcomdev-follow-button-form-count" id="wpcomdev-follow-button-form-count-1" />
+					<label for="wpcomdev-follow-button-form-count-1">Show follower count</label>
+				</p>
+
+				<p>
+					<input type="checkbox" class="wpcomdev-follow-button-form-name" id="wpcomdev-follow-button-form-name-1" checked="checked" />
+					<label for="wpcomdev-follow-button-form-name-1">Show blog name</label>
+				</p>
+
+				<p>
+					<label for="wpcomdev-follow-button-form-language">Language</label>
+					<select class="wpcomdev-follow-button-form-lang">
+						<option value="">Select a language below</option><optgroup label="Popular choices">
+<option value="en" lang="en" xml:lang="en">en - English</option>
+<option value='es' lang='es' xml:lang='es'>es - Español</option>
+<option value='pt-br' lang='pt-br' xml:lang='pt-br'>pt-br - Português do Brasil</option>
+<option value='de' lang='de' xml:lang='de'>de - Deutsch</option>
+<option value='fr' lang='fr' xml:lang='fr'>fr - Français</option>
+<option value='he' lang='he' xml:lang='he'>he - עִבְרִית</option>
+<option value='ja' lang='ja' xml:lang='ja'>ja - 日本語</option>
+<option value='it' lang='it' xml:lang='it'>it - Italiano</option>
+<option value='nl' lang='nl' xml:lang='nl'>nl - Nederlands</option>
+<option value='ru' lang='ru' xml:lang='ru'>ru - Русский</option>
+<option value='tr' lang='tr' xml:lang='tr'>tr - Türkçe</option>
+<option value='id' lang='id' xml:lang='id'>id - Bahasa Indonesia</option>
+<option value='zh-cn' lang='zh-cn' xml:lang='zh-cn'>zh-cn - 简体中文</option>
+<option value='zh-tw' lang='zh-tw' xml:lang='zh-tw'>zh-tw - 繁體中文</option>
+<option value='ko' lang='ko' xml:lang='ko'>ko - 한국어</option>
+<option value='ar' lang='ar' xml:lang='ar'>ar - العربية</option>
+<option value='sv' lang='sv' xml:lang='sv'>sv - Svenska</option>
+</optgroup>
+<optgroup label="All languages">
+<option value='af' lang='af' xml:lang='af'>af - Afrikaans</option>
+<option value='als' lang='als' xml:lang='als'>als - Alemannisch</option>
+<option value='am' lang='am' xml:lang='am'>am - አማርኛ</option>
+<option value='an' lang='an' xml:lang='an'>an - Aragonés</option>
+<option value='ar' lang='ar' xml:lang='ar'>ar - العربية</option>
+<option value='arc' lang='arc' xml:lang='arc'>arc - ܕܥܒܪܸܝܛ</option>
+<option value='as' lang='as' xml:lang='as'>as - অসমীয়া</option>
+<option value='ast' lang='ast' xml:lang='ast'>ast - Asturianu</option>
+<option value='av' lang='av' xml:lang='av'>av - авар мацӀ</option>
+<option value='ay' lang='ay' xml:lang='ay'>ay - aymar aru</option>
+<option value='az' lang='az' xml:lang='az'>az - Azərbaycan dili</option>
+<option value='ba' lang='ba' xml:lang='ba'>ba - башҡорт теле</option>
+<option value='bel' lang='bel' xml:lang='bel'>bel - Беларуская мова</option>
+<option value='bg' lang='bg' xml:lang='bg'>bg - Български</option>
+<option value='bm' lang='bm' xml:lang='bm'>bm - Bamanankan</option>
+<option value='bn' lang='bn' xml:lang='bn'>bn - বাংলা</option>
+<option value='bo' lang='bo' xml:lang='bo'>bo - བོད་སྐད</option>
+<option value='br' lang='br' xml:lang='br'>br - Brezhoneg</option>
+<option value='bs' lang='bs' xml:lang='bs'>bs - Bosanski</option>
+<option value='ca' lang='ca' xml:lang='ca'>ca - Català</option>
+<option value='ce' lang='ce' xml:lang='ce'>ce - Нохчийн мотт</option>
+<option value='ckb' lang='ckb' xml:lang='ckb'>ckb - كوردی‎</option>
+<option value='cs' lang='cs' xml:lang='cs'>cs - Čeština</option>
+<option value='csb' lang='csb' xml:lang='csb'>csb - Kaszëbsczi</option>
+<option value='cv' lang='cv' xml:lang='cv'>cv - чӑваш чӗлхи</option>
+<option value='cy' lang='cy' xml:lang='cy'>cy - Cymraeg</option>
+<option value='da' lang='da' xml:lang='da'>da - Dansk</option>
+<option value='de' lang='de' xml:lang='de'>de - Deutsch</option>
+<option value='de_formal' lang='de_formal' xml:lang='de_formal'>de_formal - Deutsch (Sie)</option>
+<option value='dv' lang='dv' xml:lang='dv'>dv - ދިވެހި</option>
+<option value='dz' lang='dz' xml:lang='dz'>dz - ཇོང་ཁ</option>
+<option value='el' lang='el' xml:lang='el'>el - Ελληνικά</option>
+<option value='el-po' lang='el-po' xml:lang='el-po'>el-po - Greek (Polytonic)</option>
+<option value='en' lang='en' xml:lang='en'>en - English</option>
+<option value='en-gb' lang='en-gb' xml:lang='en-gb'>en-gb - English (UK)</option>
+<option value='eo' lang='eo' xml:lang='eo'>eo - Esperanto</option>
+<option value='es' lang='es' xml:lang='es'>es - Español</option>
+<option value='es-cl' lang='es-cl' xml:lang='es-cl'>es-cl - Español de Chile</option>
+<option value='es-mx' lang='es-mx' xml:lang='es-mx'>es-mx - Español de México</option>
+<option value='et' lang='et' xml:lang='et'>et - Eesti</option>
+<option value='eu' lang='eu' xml:lang='eu'>eu - Euskara</option>
+<option value='fa' lang='fa' xml:lang='fa'>fa - فارسی</option>
+<option value='fi' lang='fi' xml:lang='fi'>fi - Suomi</option>
+<option value='fo' lang='fo' xml:lang='fo'>fo - Føroyskt</option>
+<option value='fr' lang='fr' xml:lang='fr'>fr - Français</option>
+<option value='fr-be' lang='fr-be' xml:lang='fr-be'>fr-be - Français de Belgique</option>
+<option value='fr-ca' lang='fr-ca' xml:lang='fr-ca'>fr-ca - Français du Canada</option>
+<option value='fr-ch' lang='fr-ch' xml:lang='fr-ch'>fr-ch - Français de Suisse</option>
+<option value='fur' lang='fur' xml:lang='fur'>fur - Friulian</option>
+<option value='fy' lang='fy' xml:lang='fy'>fy - Frysk</option>
+<option value='ga' lang='ga' xml:lang='ga'>ga - Gaelige</option>
+<option value='gd' lang='gd' xml:lang='gd'>gd - Gàidhlig</option>
+<option value='gl' lang='gl' xml:lang='gl'>gl - Galego</option>
+<option value='gn' lang='gn' xml:lang='gn'>gn - Avañe'ẽ</option>
+<option value='gu' lang='gu' xml:lang='gu'>gu - ગુજરાતી</option>
+<option value='he' lang='he' xml:lang='he'>he - עִבְרִית</option>
+<option value='hi' lang='hi' xml:lang='hi'>hi - हिन्दी</option>
+<option value='hr' lang='hr' xml:lang='hr'>hr - Hrvatski</option>
+<option value='hu' lang='hu' xml:lang='hu'>hu - Magyar</option>
+<option value='hy' lang='hy' xml:lang='hy'>hy - Հայերեն</option>
+<option value='ia' lang='ia' xml:lang='ia'>ia - Interlingua</option>
+<option value='id' lang='id' xml:lang='id'>id - Bahasa Indonesia</option>
+<option value='ii' lang='ii' xml:lang='ii'>ii - ꆇꉙ</option>
+<option value='ilo' lang='ilo' xml:lang='ilo'>ilo - Pagsasao nga Iloko</option>
+<option value='is' lang='is' xml:lang='is'>is - Íslenska</option>
+<option value='it' lang='it' xml:lang='it'>it - Italiano</option>
+<option value='ja' lang='ja' xml:lang='ja'>ja - 日本語</option>
+<option value='ka' lang='ka' xml:lang='ka'>ka - ქართული</option>
+<option value='kir' lang='kir' xml:lang='kir'>kir - Кыргызча</option>
+<option value='kk' lang='kk' xml:lang='kk'>kk - Қазақ тілі</option>
+<option value='km' lang='km' xml:lang='km'>km - ភាសាខ្មែរ</option>
+<option value='kn' lang='kn' xml:lang='kn'>kn - ಕನ್ನಡ</option>
+<option value='ko' lang='ko' xml:lang='ko'>ko - 한국어</option>
+<option value='ks' lang='ks' xml:lang='ks'>ks - कश्मीरी</option>
+<option value='kv' lang='kv' xml:lang='kv'>kv - Коми</option>
+<option value='la' lang='la' xml:lang='la'>la - Latine</option>
+<option value='li' lang='li' xml:lang='li'>li - Limburgs</option>
+<option value='lo' lang='lo' xml:lang='lo'>lo - ພາສາລາວ</option>
+<option value='lt' lang='lt' xml:lang='lt'>lt - Lietuvių kalba</option>
+<option value='lv' lang='lv' xml:lang='lv'>lv - Latviešu valoda</option>
+<option value='mk' lang='mk' xml:lang='mk'>mk - Македонски јазик</option>
+<option value='ml' lang='ml' xml:lang='ml'>ml - മലയാളം</option>
+<option value='mn' lang='mn' xml:lang='mn'>mn - Монгол</option>
+<option value='mr' lang='mr' xml:lang='mr'>mr - मराठी</option>
+<option value='ms' lang='ms' xml:lang='ms'>ms - Bahasa Melayu</option>
+<option value='mt' lang='mt' xml:lang='mt'>mt - Malti</option>
+<option value='mwl' lang='mwl' xml:lang='mwl'>mwl - Mirandés</option>
+<option value='nah' lang='nah' xml:lang='nah'>nah - Nahuatl</option>
+<option value='nap' lang='nap' xml:lang='nap'>nap - Nnapulitano</option>
+<option value='nds' lang='nds' xml:lang='nds'>nds - Plattd&uuml;&uuml;tsch</option>
+<option value='ne' lang='ne' xml:lang='ne'>ne - नेपाली</option>
+<option value='nl' lang='nl' xml:lang='nl'>nl - Nederlands</option>
+<option value='nn' lang='nn' xml:lang='nn'>nn - Norsk nynorsk</option>
+<option value='no' lang='no' xml:lang='no'>no - Norsk</option>
+<option value='non' lang='non' xml:lang='non'>non - Norrǿna</option>
+<option value='nv' lang='nv' xml:lang='nv'>nv - Din&eacute; bizaad</option>
+<option value='oci' lang='oci' xml:lang='oci'>oci - Occitan</option>
+<option value='or' lang='or' xml:lang='or'>or - ଓଡ଼ିଆ</option>
+<option value='os' lang='os' xml:lang='os'>os - Ирон</option>
+<option value='pa' lang='pa' xml:lang='pa'>pa - ਪੰਜਾਬੀ</option>
+<option value='pl' lang='pl' xml:lang='pl'>pl - Polski</option>
+<option value='ps' lang='ps' xml:lang='ps'>ps - پښتو</option>
+<option value='pt' lang='pt' xml:lang='pt'>pt - Português</option>
+<option value='pt-br' lang='pt-br' xml:lang='pt-br'>pt-br - Português do Brasil</option>
+<option value='qu' lang='qu' xml:lang='qu'>qu - Runa Simi</option>
+<option value='ro' lang='ro' xml:lang='ro'>ro - Română</option>
+<option value='ru' lang='ru' xml:lang='ru'>ru - Русский</option>
+<option value='rup' lang='rup' xml:lang='rup'>rup - Armãneashce</option>
+<option value='sc' lang='sc' xml:lang='sc'>sc - Sardu</option>
+<option value='si' lang='si' xml:lang='si'>si - සිංහල</option>
+<option value='sk' lang='sk' xml:lang='sk'>sk - Slovenčina</option>
+<option value='skr' lang='skr' xml:lang='skr'>skr - Saraiki</option>
+<option value='sl' lang='sl' xml:lang='sl'>sl - Slovenščina</option>
+<option value='snd' lang='snd' xml:lang='snd'>snd - سنڌي</option>
+<option value='so' lang='so' xml:lang='so'>so - Afsoomaali</option>
+<option value='sq' lang='sq' xml:lang='sq'>sq - Shqip</option>
+<option value='sr' lang='sr' xml:lang='sr'>sr - Српски језик</option>
+<option value='sr_latin' lang='sr_latin' xml:lang='sr_latin'>sr_latin - Srpski (latinica)</option>
+<option value='su' lang='su' xml:lang='su'>su - Basa Sunda</option>
+<option value='sv' lang='sv' xml:lang='sv'>sv - Svenska</option>
+<option value='ta' lang='ta' xml:lang='ta'>ta - தமிழ்</option>
+<option value='te' lang='te' xml:lang='te'>te - తెలుగు</option>
+<option value='th' lang='th' xml:lang='th'>th - ไทย</option>
+<option value='tir' lang='tir' xml:lang='tir'>tir - ትግርኛ</option>
+<option value='tl' lang='tl' xml:lang='tl'>tl - Tagalog</option>
+<option value='tr' lang='tr' xml:lang='tr'>tr - Türkçe</option>
+<option value='tt' lang='tt' xml:lang='tt'>tt - Татар теле</option>
+<option value='ty' lang='ty' xml:lang='ty'>ty - Reo Mā`ohi</option>
+<option value='udm' lang='udm' xml:lang='udm'>udm - Удмурт кыл</option>
+<option value='ug' lang='ug' xml:lang='ug'>ug - Uyƣurqə</option>
+<option value='uk' lang='uk' xml:lang='uk'>uk - Українська</option>
+<option value='ur' lang='ur' xml:lang='ur'>ur - اردو</option>
+<option value='uz' lang='uz' xml:lang='uz'>uz - O‘zbekcha</option>
+<option value='vec' lang='vec' xml:lang='vec'>vec - Vèneta</option>
+<option value='vi' lang='vi' xml:lang='vi'>vi - Tiếng Việt</option>
+<option value='wa' lang='wa' xml:lang='wa'>wa - Walon</option>
+<option value='xal' lang='xal' xml:lang='xal'>xal - Хальмг</option>
+<option value='yi' lang='yi' xml:lang='yi'>yi - ייִדיש</option>
+<option value='yo' lang='yo' xml:lang='yo'>yo - &egrave;d&egrave; Yor&ugrave;b&aacute;</option>
+<option value='za' lang='za' xml:lang='za'>za - (Cuengh)</option>
+<option value='zh-cn' lang='zh-cn' xml:lang='zh-cn'>zh-cn - 简体中文</option>
+<option value='zh-tw' lang='zh-tw' xml:lang='zh-tw'>zh-tw - 繁體中文</option>
+</optgroup>
+					</select>
+				</p>
+
+				<p>
+					<input type="submit" class="button" value="Generate" />
+				</p>
+			</div>
+
+			<div class="wpcomdev-follow-button-preview-grp spin">
+				<h2>Preview and code</h2>
+				<p>Try out your button, then copy and paste the code below into the HTML for your site.</p>
+				<p class="wpcomdev-follow-button-preview"></p>
+				<textarea class="wpcomdev-follow-button-form-output"></textarea>
+				<!-- <span class="spin"></span> -->
+			</div>
+		</form>
+	</div><!-- .wpcomdev-follow-button-form -->
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-3" class="widget widget_jetpack_display_posts_widget"><h4 class="widget-title">Recent Posts: Developer Resources</h4><div class="jetpack-display-remote-posts"><h4><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/">Sharing the Data: How Technical Women Navigate Their Career</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/">Leadership in Fully Remote Teams with Aaron Douglas</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/">Automattic Developers at the Mid-Atlantic Developer Conference</a></h4>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="follow_button_widget-2" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://developer.wordpress.com" data-blog="33534099" data-lang="en" data-show-blog-name="false" data-show-follower-count="true">Follow Developer Resources on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h4 class="widget-title">@AutomatticEng on twitter</h4><a class="twitter-timeline" data-height="400" data-theme="light" data-border-color="#e9eff3" data-lang="EN" data-partner="jetpack" href="https://twitter.com/AutomatticEng" href="https://twitter.com/AutomatticEng">My Tweets</a></aside><aside id="top-posts-2" class="widget widget_top-posts"><h4 class="widget-title">Top Posts &amp; Pages</h4><ul>				<li>
+					<a href="https://developer.wordpress.com/docs/api/" class="bump-view" data-bump-view="tp">REST API Resources</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/" class="bump-view" data-bump-view="tp">Home</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/" class="bump-view" data-bump-view="tp">Documentation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oauth2/" class="bump-view" data-bump-view="tp">OAuth2 Authentication</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/follow-button-creation/" class="bump-view" data-bump-view="tp" aria-current="page">Follow Button Creation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/api/getting-started/" class="bump-view" data-bump-view="tp">Getting Started with the API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/firehose/" class="bump-view" data-bump-view="tp">WordPress.com Firehose</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/" class="bump-view" data-bump-view="tp">Photon</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oembed-provider-api/" class="bump-view" data-bump-view="tp">oEmbed Provider API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/api/" class="bump-view" data-bump-view="tp">Photon API</a>					</li>
+				</ul></aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<div class="footer-contain">
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="site-info">
+				<div class="automattic">
+					An <a href="http://automattic.com"><span class="a8c-attribution">Automattic</span></a> Production
+				</div>
+				<div class="footer-links">
+					<a href="guidelines/">Usage Guidelines</a>
+					<a href="http://automattic.com/privacy/" target="_blank">Privacy Policy</a>
+					<a href="http://wordpress.com/tos/" target="_blank">Terms of Service</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div>
+</div><!-- #page -->
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-33', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+			<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script src='//0.gravatar.com/js/gprofiles.js?ver=202021y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/widgets/wordpress-post-widget/style.css?m=1558002106h&cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJylkMtywjAMRX+ojvCEDsmi029xbJEqyI+x7AT+vgbKoot2ATtJ587RzIUtKRtDwVBgEXC4ksV07hZ5g4YoWK4O5cZICqwYXMxXlCJfjsTceQqP+MOUuM4UBI6VWQkVVOioUJjVnYDWu77f93qAgJskY09q4mhPP1/a3KJRitzPaiXc/noy17ZOmOdGMsLQ6W6ntmSjh6kSOyA9BKDg8Py0wkWvMhp3edFjtH5VgWJNQvVVPP9verZ8a3Ksgvy7+k//od+HcRwP+4NevgE0hsw2'></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-url.min.7490158b.js?m=1589993648h&#038;ver=3.6.4"></scr' + 'ipt>' );
+( window.DOMRect ) || document.write( '<script src="https://s1.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-dom-rect.7e21c103.js?m=1589993648h&#038;ver=3.42.0"></scr' + 'ipt>' );
+</script>
+<script src='//widgets.wp.com/platform.js?ver=20140724'></script>
+<script>
+var actionbardata = {"siteID":"33534099","siteName":"Developer Resources","siteURL":"http:\/\/developer.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/2b9f802603565d131ae7d2ba65746574?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"a8c\/wpcomdev3","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Ffollow-button-creation%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b4a28df927","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"49fffbe937\" \/>","referer":"https:\/\/developer.wordpress.com\/docs\/follow-button-creation\/","canFollow":"1","feedID":"3039616","statusMessage":"","customizeLink":"https:\/\/developer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Ffollow-button-creation%2F","postID":"4520","shortlink":"https:\/\/wp.me\/P2gHKz-1aU","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/developer.wordpress.com\/4520","statsLink":"https:\/\/wordpress.com\/stats\/post\/4520\/developer.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: WordPress.com Developer site","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 14,847 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Ffollow-button-creation%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script>
+var wpcomdev_follow_button_form_i18n = {"follow":"Follow %s on WordPress.com","error":"Please check you\u2019ve entered the address of a WordPress.com or Jetpack-powered site and try again."};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyVj9EKwjAMRX/ILohO9yJ+inRd1NQ2nW264d/bgVMfhuBTkss9uQmMvTKBBVnAZ9W7fCFOYFF6bW5wIjYgI4lgVEIeHTFWNq1gmdOdJ1atjuB1KkzpVBgwRuowfbQ/N0gst6RfkBEKPEHvbnaXB1yewm2C1BMv6faeMT5epfp2zVlyRV+8ujFFNcF3OGwmch7UOTgXRtVmkcBlir6sOPrDut5t63rfNFv7BMz+h3w='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33534099','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'33534099','v':'wpcom','tz':'0','user_id':'0','post':'4520','subd':'developer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSG1wamM0bi81JStxN2lKP1pvVnxQRHk3W0d3VEh0SklpNENJfHppaiZjVlFtdzJJS0ovSDNETzhlekx0YWtKZUdrWVRKU296R2dGTkthbUslXVh6JURPS05ML0czMUhaVi94VmJiQ0VZfD93dG0/MVdYMC89bkJacmZROT9ELHZmZ1FTZzZtSEl1Q11BSmNyMyV5V2d6S0RdJUUuUC80fnFteTNNcEdJRU09emlUXy5dLSVlLlBPSUtWM1B3Ump+UlEuYl1vY21JVmJGbmJ2WX5oVkNbZ0hNYXUyQixnNW11XVhMaG1sflZMbz00eFl+Z2Y2bS16bVhyUXlBM0RGczQmMTVWU1NRW11bY3NjZG5TS1cmdH54aGZ2NEk1PT0wZyxfaHZxP3lPfGxVaDlaUW45Wno0THVaQVdCNyVk'}]);
+_stq.push([ 'clickTrackerInit', '33534099', '4520' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+<!--
+	generated in 0.089 seconds
+	47047 bytes batcached for 300 seconds
+-->

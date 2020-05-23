@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>WordPress.com</ShortName>
+	<Description>Search WordPress.com - WordPress.com is the best place for your personal blog or business site.</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://es.wordpress.com/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://es.wordpress.com/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://es.wordpress.com/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://es.wordpress.com/osd.xml" />
+	<LongName>WordPress.com</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=16</Image>
+	<Image height="64" width="64" type="image/png">https://wpcom.files.wordpress.com/2017/11/cropped-wordpress.png?w=64</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>tips how-to blogging business marketing website-traffic audience design seo branding</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>es-ES</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://es.wordpress.com</moz:SearchForm>
+</OpenSearchDescription>

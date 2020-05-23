@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>developer</ShortName>
+	<Description>Search Developer Resources - Create cool applications that integrate with WordPress.com</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://developer.wordpress.com/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://developer.wordpress.com/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://developer.wordpress.com/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://developer.wordpress.com/osd.xml" />
+	<LongName>Developer Resources</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=16&#038;d=https%3A%2F%2Fdeveloper.wordpress.com%2Ffavicon.ico</Image>
+	<Image height="64" width="64" type="image/png">https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=64&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>development-tools rest api javascript jetpack elasticsearch documentation wordpress-com wordpress developer-plugin</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>en</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://developer.wordpress.com</moz:SearchForm>
+</OpenSearchDescription>

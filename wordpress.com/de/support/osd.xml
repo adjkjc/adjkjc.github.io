@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>Support</ShortName>
+	<Description>Search Support - Lokalisierung der englischen Supportseiten</Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://wordpress.com/de/support/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://wordpress.com/de/support/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://wordpress.com/de/support/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://wordpress.com/de/support/osd.xml" />
+	<LongName>Support</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://secure.gravatar.com/blavatar/575c8dea0885c5dd00fc863dbff9c91f?s=16&#038;d=https%3A%2F%2Fwordpress.com%2Fde%2Fsupport%2Ffavicon.ico</Image>
+	<Image height="64" width="64" type="image/png">https://secure.gravatar.com/blavatar/575c8dea0885c5dd00fc863dbff9c91f?s=64&#038;d=https%3A%2F%2Fs-ssl.wordpress.com%2Fi%2Flogo%2Fgray-white-transparent-64.png</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>i18n-tier2 i18n-tier3 sicherheit i18n-tier1 seiten e-mail artikel cookies teilen shortcode</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>de-DE</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://wordpress.com/de/support</moz:SearchForm>
+</OpenSearchDescription>

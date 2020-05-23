@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photon | Developer Resources</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://developer.wordpress.com/xmlrpc.php">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:700' rel='stylesheet' type='text/css'>
+
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//widgets.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Feed" href="https://developer.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Comments Feed" href="https://developer.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJytk9FWgzAMhl/I0iHzjF14fJZSQu1sKadJh7y9LbANp+KO7i4J+fKnIeF9x6RrCVriNrDOBKVb5H0nnWVotYHhyssk4gNfYCdGhehW4FX84oGXWZ5t2IjyKmhT88o4+caMrrzwA0caDNxQbKSQH4A6kXAxuEBMeV3/tYQXpFuFv+BNMIahJmBQ6wTMw+F5vimKbZGXvIUex4qzQK2R0itjqkPCKcyOGvq7q0jhXUAwd9LoPFgd7BldH410cyt59lhkm7mjOcj+PdZpeCYWnV431b+OflFYrG9awBi3naCUYaOUAAM2pq1hva4VUMTxZDOC93VkPI2qigNEZKcx0mvUuuVSVpZ7/tR4903TkwAXpZw6qOFYLH+a5q0jHbPxbNzycHLdtLo/LMACUeBY7DCekms/OawxQvs11EO6kWiqcdIXdw0SMhWvhL9YKf3FPudP5X6/3213+eEDlp3KEw==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423h&cssminify=yes' type='text/css' media='all' />
+	<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script type='text/javascript' src='https://s1.wp.com/_static/??-eJx9zVEKwjAMBuAL2RUpHXsRz1K7OFuWdDbpxNubDX0REQKB/F8S+1hMoji3EdhmrXuD+ny3LvPB/gMG01SDQIeJPjgWEiDZ7FJYEJjDBD9SLJc0g2kMVQGJvrmWbyc30As2DFGnseAIq9uXgZraM56O3g/O9713+QUQR0sY'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://developer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://developer.wordpress.com/docs/photon/" />
+<link rel='shortlink' href='https://wp.me/P2gHKz-dh' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fphoton%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fphoton%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Photon" />
+<meta property="og:url" content="https://developer.wordpress.com/docs/photon/" />
+<meta property="og:description" content="Photon is an image acceleration and modification service for Jetpack-connected WordPress sites. Converted images are cached automatically and served from the WordPress.com CDN. Images can be croppe…" />
+<meta property="article:published_time" content="2012-09-24T17:39:52+00:00" />
+<meta property="article:modified_time" content="2018-03-01T00:28:11+00:00" />
+<meta property="og:site_name" content="Developer Resources" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=200&amp;ts=1590244702" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@AutomatticEng" />
+<meta name="twitter:site" content="@AutomatticEng" />
+<meta name="twitter:text:title" content="Photon" />
+<meta name="twitter:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=114" />
+<link rel='openid.server' href='https://developer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://developer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://developer.wordpress.com/osd.xml" title="Developer Resources" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Developer Resources" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Create cool applications that integrate with WordPress.com" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://developer.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="Photon is an image acceleration and modification service for Jetpack-connected WordPress sites. Converted images are cached automatically and served from the WordPress.com CDN. Images can be cropped, resized, and filtered by using a simple API controlled by GET query arguments. When Photon is enabled in Jetpack, images are updated on the fly. We want to&hellip;" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2gHKz&#038;cscache=6&#038;csrev=45" />
+		</head>
+
+<body class="page-template-default page page-id-823 page-parent page-child parent-pageid-8 customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<form role="search" method="get" class="search-form" action="https://developer.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:'" />
+	</label>
+</form>				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-5714" class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page menu-item-5714"><a href="https://developer.wordpress.com/">Developers</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-32"><a href="https://developer.wordpress.com/docs/">Documentation</a>
+<ul class="sub-menu">
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34"><a href="https://developer.wordpress.com/docs/api/">REST API</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90807"><a href="https://developer.wordpress.com/docs/api/getting-started/">Getting Started</a></li>
+		<li id="menu-item-28306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28306"><a href="https://developer.wordpress.com/docs/api/console/">Developer Console</a></li>
+		<li id="menu-item-88679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88679"><a href="https://developer.wordpress.com/docs/api/rest-api-example-apps/">Example Apps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28277"><a href="https://developer.wordpress.com/docs/oauth2/">Authentication</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://developer.wordpress.com/docs/oauth2/">OAuth</a></li>
+		<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="https://developer.wordpress.com/docs/wpcc/">WordPress.com Connect (Login)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://developer.wordpress.com/docs/oembed-provider-api/">oEmbed API</a></li>
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-823 current_page_item menu-item-1271"><a href="https://developer.wordpress.com/docs/photon/" aria-current="page">Photon Image API</a></li>
+	<li id="menu-item-28280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28280"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Embeddable Widgets</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4573"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Follow Button</a></li>
+		<li id="menu-item-5138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5138"><a href="https://developer.wordpress.com/docs/embedded-timelines/">Timeline</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28282" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28282"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Other Integrations</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9582"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Embedding</a></li>
+		<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://developer.wordpress.com/docs/sharing-buttons/">Sharing Buttons</a></li>
+		<li id="menu-item-1861" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1861"><a href="https://developer.wordpress.com/themes/">Theme Guide</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://developer.wordpress.com/blog/">Blog</a></li>
+<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://developer.wordpress.com/apps/">My Apps</a></li>
+</ul></div>				<a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+				<a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+			</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+			<div id="page-name" class="page-masthead">
+			<div class="name-area">
+				<h1>Photon</h1>
+			</div>
+		</div>
+	
+	<div id="main-container" class="site-content">
+		<div class="breadcrumbs"><a href="https://developer.wordpress.com/docs/">Documentation</a> &rarr; <strong>Photon</strong></div>	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-823" class="post-823 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<p>Photon is an image acceleration and modification service for Jetpack-connected WordPress sites. Converted images are cached automatically and served from the WordPress.com CDN. Images can be cropped, resized, and filtered by using a simple API controlled by GET query arguments. When Photon is enabled in Jetpack, images are updated on the fly.</p>
+<p>We want to create the best image manipulation and acceleration service in the world for WordPress users. Photon is only allowed to be used by sites hosted on WordPress.com, or on Jetpack-connected WordPress sites. If you move to another platform, or disconnect Jetpack from your site, please also switch to another magic image service. We can&#8217;t promise it will continue to work if you stop using WordPress or Jetpack. Abuse of Jetpack or violation of the WordPress.com <a href="http://en.wordpress.com/tos/">Terms of Service</a> could result in suspension of your site from WordPress.com-connected services.</p>
+<p><strong>Basic URL</strong></p>
+<p><code><a href="http://i0.wp.com/$REMOTE_IMAGE_URL" rel="nofollow">http://i0.wp.com/$REMOTE_IMAGE_URL</a></code></p>
+<p><strong>Features</strong></p>
+<ul>
+<li>Open source! Available via SVN at <code><a href="http://code.svn.wordpress.org/photon/" rel="nofollow">http://code.svn.wordpress.org/photon/</a></code> and on Trac at <a href="http://code.trac.wordpress.org/browser/photon">http://code.trac.wordpress.org/browser/photon</a></li>
+<li>Fast! Photon utilizes multiple levels of caching, including a globally distributed CDN to make sure images are served as fast as possible.</li>
+<li>All images are compressed on the fly using either a combination of <a href="https://pngquant.org/">pngquant</a> and <a href="http://optipng.sourceforge.net/">OptiPNG</a> or <a href="http://freecode.com/projects/jpegoptim">jpegoptim</a>. Lossless compression is available by specifying a quality setting of 100 in the query arguments.</li>
+<li>Multiple domains. In order to take advantage of <a href="http://yuiblog.com/blog/2007/04/11/performance-research-part-4/">parallel downloads</a> we support multiple sub-domains for Photon. If you tend to have many images per page you can split them across <strong>i0.wp.com, i1.wp.com, and i2.wp.com</strong>. To take use of caching, it can be useful to use the same sub-domain for files in subsequent calls.</li>
+<li>SSL support. You can use Photon on SSL pages without mixed content warnings. Just use <a href="https://i" rel="nofollow">https://i</a>{0,1,2}.wp.com instead of <a href="http://i" rel="nofollow">http://i</a>{0,1,2}.wp.com</li>
+</ul>
+<p><strong>Supported query arguments</strong></p>
+<table border="1">
+<tbody>
+<tr>
+<td>Parameter</td>
+<td>Description</td>
+<td>Usage</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#w">w</a></td>
+<td>width (defaults to px, supports %)</td>
+<td>w=50</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#h">h</a></td>
+<td>height (defaults to px, supports %)</td>
+<td>h=50</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#crop">crop</a></td>
+<td>crop x,y,w,h (defaults to %)</td>
+<td>crop=5,10,20,40</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#resize">resize</a></td>
+<td>resize and crop to given dimensions (px)</td>
+<td>resize=250,300</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#fit">fit</a></td>
+<td>keep aspect ratio, but fit to within given box (px)</td>
+<td>fit=100,100</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#lb">lb</a></td>
+<td>add letterboxing, color code is optional (it&#8217;s black by default)</td>
+<td>lb=300,250,1A4E9F</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#ulb">ulb</a></td>
+<td>remove letterboxing (auto detects the letterbox color)</td>
+<td>ulb=true</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#filter">filter</a></td>
+<td>apply various <code>imagefilter()</code> filters</td>
+<td>filter=grayscale</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#brightness">brightness</a></td>
+<td>adjusts brightness</td>
+<td>brightness=100</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#contrast">contrast</a></td>
+<td>adjusts contrast</td>
+<td>contrast=50</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#colorize">colorize</a></td>
+<td>applies a color hue</td>
+<td>colorize=255,0,0</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#smooth">smooth</a></td>
+<td>smoothes out the image</td>
+<td>smooth=2</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#zoom">zoom</a></td>
+<td>size images for high pixel ratio devices</td>
+<td>zoom=2</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#quality">quality</a></td>
+<td>sets the quality for JPEG images</td>
+<td>quality=50</td>
+</tr>
+<tr>
+<td><a href="https://developer.wordpress.com/docs/photon/api/#strip">strip</a></td>
+<td>removes metadata from JPEG images</td>
+<td>strip=all</td>
+</tr>
+</tbody>
+</table>
+<p>Also see the <a href="https://developer.wordpress.com/docs/photon/api/">Photon API</a> page for more detailed explanations and examples.</p>
+<p><strong>Example plugin developer checks</strong></p>
+<ul>
+<li>To determine if Jetpack is installed and can generate photon URLs:
+<pre class="brush: php; title: ; notranslate" title="">function_exists( ‘jetpack_photon_url' )</pre>
+</li>
+<li>To determine whether Photon is an active Jetpack module:
+<pre class="brush: php; title: ; notranslate" title="">class_exists( 'Jetpack' ) &amp;&amp; method_exists( 'Jetpack', 'get_active_modules' ) &amp;&amp; in_array( 'photon', Jetpack::get_active_modules() )</pre>
+</li>
+</ul>
+<p><strong>Limitations</strong></p>
+<ul>
+<li>No cache invalidations &#8211; currently the images are cached &#8220;forever&#8221;. If you want to &#8220;refresh&#8221; an image you will need to change the name of the image. Adding random query arguments, commonly known as cachebusters, will not work.</li>
+<li>We only fetch, resize, and serve <strong>gif, png, and jpg</strong> images from servers that listen on <strong>port 80 for HTTP and port 443 for HTTPS</strong>. This is about 99.99% of the web servers in the world.</li>
+<li>We will &#8220;upscale&#8221; an image in some circumstances. However if your original image is smaller than the upscale limit and you request to make it larger than the upscale limit, we will serve you the original unaltered image (Note: 2000px is the upscale limit for all images except GIFs, which is 1000px). Upscaled images are usually of poor quality and we want to avoid sending large pixelated images.</li>
+<li>Some animated gifs break if resized or transformed via Photon.</li>
+<li>The <em>zoom</em> parameter is clamped between 1 and 10 and above 3 it is also limited to increments of 0.5.</li>
+<li>Photon will not fetch and process images larger than 55 Megabytes.</li>
+</ul>
+<p><strong>Terms of Service</strong></p>
+<ul>
+<li>Use of this service is for users of the <a href="http://wordpress.org/extend/plugins/jetpack/">Jetpack by WordPress.com</a> plugin only, and may be used by sites hosted on WordPress.com, or on Jetpack-connected WordPress sites. If you move to another platform, or disconnect Jetpack from your site, we can&#8217;t promise it will continue to work.</li>
+<li>Abuse of the Jetpack by WordPress.com <a href="http://en.wordpress.com/tos/">Terms of Service</a> could result in suspension of your site from WordPress.com-connected services. By enabling Photon you agree to be responsible in what you publish; in particular be sure that you don&#8217;t use the service for prohibited items (things like spam, viruses, or hate content). WordPress.com reserves the right, in its sole discretion, to temporarily or permanently revoke your ability to use and access Photon, with or without notice.</li>
+</ul>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-3" class="widget widget_jetpack_display_posts_widget"><h4 class="widget-title">Recent Posts: Developer Resources</h4><div class="jetpack-display-remote-posts"><h4><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/">Sharing the Data: How Technical Women Navigate Their Career</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/">Leadership in Fully Remote Teams with Aaron Douglas</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/">Automattic Developers at the Mid-Atlantic Developer Conference</a></h4>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="follow_button_widget-2" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://developer.wordpress.com" data-blog="33534099" data-lang="en" data-show-blog-name="false" data-show-follower-count="true">Follow Developer Resources on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h4 class="widget-title">@AutomatticEng on twitter</h4><a class="twitter-timeline" data-height="400" data-theme="light" data-border-color="#e9eff3" data-lang="EN" data-partner="jetpack" href="https://twitter.com/AutomatticEng" href="https://twitter.com/AutomatticEng">My Tweets</a></aside><aside id="top-posts-2" class="widget widget_top-posts"><h4 class="widget-title">Top Posts &amp; Pages</h4><ul>				<li>
+					<a href="https://developer.wordpress.com/docs/api/" class="bump-view" data-bump-view="tp">REST API Resources</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/" class="bump-view" data-bump-view="tp">Home</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/" class="bump-view" data-bump-view="tp">Documentation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oauth2/" class="bump-view" data-bump-view="tp">OAuth2 Authentication</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/follow-button-creation/" class="bump-view" data-bump-view="tp">Follow Button Creation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/api/getting-started/" class="bump-view" data-bump-view="tp">Getting Started with the API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/firehose/" class="bump-view" data-bump-view="tp">WordPress.com Firehose</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/" class="bump-view" data-bump-view="tp" aria-current="page">Photon</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oembed-provider-api/" class="bump-view" data-bump-view="tp">oEmbed Provider API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/api/" class="bump-view" data-bump-view="tp">Photon API</a>					</li>
+				</ul></aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<div class="footer-contain">
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="site-info">
+				<div class="automattic">
+					An <a href="http://automattic.com"><span class="a8c-attribution">Automattic</span></a> Production
+				</div>
+				<div class="footer-links">
+					<a href="guidelines/">Usage Guidelines</a>
+					<a href="http://automattic.com/privacy/" target="_blank">Privacy Policy</a>
+					<a href="http://wordpress.com/tos/" target="_blank">Terms of Service</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div>
+</div><!-- #page -->
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-33', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+			<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script src='//0.gravatar.com/js/gprofiles.js?ver=202021y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+	<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script type='text/javascript' src='https://s1.wp.com/_static/??-eJzTLy/QTc7PK0nNK9EvyClNz8wr1i+uzCtJrMjITM/IAeKS1CJMEWP94uSizIISoOIM5/yiVL2sYh19yo1yKiotzgjIKAAaZ59ra2hqbmBkYGJpYZoFAI9wP64='></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "https://s1.wp.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.9b";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.head.appendChild( corecss );
+		var themecssurl = "https://s2.wp.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?m=1363304414h&amp;ver=3.0.9b";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		document.head.appendChild( themecss );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+
+	// Infinite scroll support
+	if ( typeof( jQuery ) !== 'undefined' ) {
+		jQuery( function( $ ) {
+			$( document.body ).on( 'post-load', function() {
+				SyntaxHighlighter.highlight();
+			} );
+		} );
+	}
+</script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/widgets/wordpress-post-widget/style.css?m=1558002106h&cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJylkMtywjAMRX+ojvCEDsmi029xbJEqyI+x7AT+vgbKoot2ATtJ587RzIUtKRtDwVBgEXC4ksV07hZ5g4YoWK4O5cZICqwYXMxXlCJfjsTceQqP+MOUuM4UBI6VWQkVVOioUJjVnYDWu77f93qAgJskY09q4mhPP1/a3KJRitzPaiXc/noy17ZOmOdGMsLQ6W6ntmSjh6kSOyA9BKDg8Py0wkWvMhp3edFjtH5VgWJNQvVVPP9verZ8a3Ksgvy7+k//od+HcRwP+4NevgE0hsw2'></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-url.min.7490158b.js?m=1589993648h&#038;ver=3.6.4"></scr' + 'ipt>' );
+( window.DOMRect ) || document.write( '<script src="https://s1.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-dom-rect.7e21c103.js?m=1589993648h&#038;ver=3.42.0"></scr' + 'ipt>' );
+</script>
+<script src='//widgets.wp.com/platform.js?ver=20140724'></script>
+<script>
+var actionbardata = {"siteID":"33534099","siteName":"Developer Resources","siteURL":"http:\/\/developer.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/2b9f802603565d131ae7d2ba65746574?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"a8c\/wpcomdev3","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fphoton%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b4a28df927","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"49fffbe937\" \/>","referer":"https:\/\/developer.wordpress.com\/docs\/photon\/","canFollow":"1","feedID":"3039616","statusMessage":"","customizeLink":"https:\/\/developer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fphoton%2F","postID":"823","shortlink":"https:\/\/wp.me\/P2gHKz-dh","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/developer.wordpress.com\/823","statsLink":"https:\/\/wordpress.com\/stats\/post\/823\/developer.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: WordPress.com Developer site","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 14,847 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fdocs%2Fphoton%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyVjsEKAjEMRH/IGISt7kX8FKndIKnbtCTZ3d+3XvQigrfHMG8Y3BqkKk7iWBZo83JnMczkLaYHXlkS+sbupOBcaGahfbYdfvfiVFjgFhVLtO50grqSKk9kn+zPBdf+xX5JybnKS3pTb1/K+RCOQwincRzyE9CxVy0='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33534099','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'33534099','v':'wpcom','tz':'0','user_id':'0','post':'823','subd':'developer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSG1wamM0bi81JStxN2lKP1pvVnxQRHk3W0d3VEh0SklpNENJfHppaiZjVlFtdzJJS0ovSDNETzhlekx0YWtKZUdrWVRKU296R2dGTkthbUslXVh6JURPS05ML0czMUhaVi94VmJiQ0VZfD93dG0/MXhfW0VELitNLDQvRHxNaE1BY2k5V2ZaY2JQejk4ZS49OHJYanAmUlpTTHBILm0zMzFRVT1aNUNYdW1yTk1pS3BNXUFubmVQfEc3fnBMWC4sJitnVVZUSDlHc1JwUHpzSngzQkcsWW5CSmNmVjMuWURqN05oNnZOM1p3OWhrNEg4V3h4XVZ8VHFrdlJ4OC9Xb2ZJeWcraS0tTDksdDdFSXBzX2VJYz1BLExdeD9KQX4sdHhJMG1VVUdXSz8mNk1CdmdzUVJrW0NSeG1TNzEm'}]);
+_stq.push([ 'clickTrackerInit', '33534099', '823' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

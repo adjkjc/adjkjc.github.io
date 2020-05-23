@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>support</ShortName>
+	<Description>Search الدعم الفني - </Description>
+	<Contact>help@wordpress.com</Contact>
+	<Url type="application/atom+xml" template="https://wordpress.com/ar/support/?s={searchTerms}&amp;feed=atom" />
+	<Url type="rss+xml" template="https://wordpress.com/ar/support/?s={searchTerms}&amp;feed=rss2" />
+	<Url type="text/html" template="https://wordpress.com/ar/support/?s={searchTerms}" method="GET" />
+	<Url type="application/opensearchdescription+xml" rel="self" template="https://wordpress.com/ar/support/osd.xml" />
+	<LongName>الدعم الفني</LongName>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">https://arwpsupport.files.wordpress.com/2018/09/575c8dea0885c5dd00fc863dbff9c91f.png?w=16</Image>
+	<Image height="64" width="64" type="">https://arwpsupport.files.wordpress.com/2018/09/575c8dea0885c5dd00fc863dbff9c91f.png?w=64</Image>
+	<Query role="example" searchTerms="photography" />
+	<Tags>i18n-tier1 i18n-tier2 i18n-tier3 %d8%a7%d9%84%d8%a8%d8%b1%d9%8a%d8%af-%d8%a7%d9%84%d8%a5%d9%84%d9%83%d8%aa%d8%b1%d9%88%d9%86%d9%8a %d8%b5%d9%81%d8%ad%d8%a7%d8%aa %d9%85%d9%82%d8%a7%d9%84%d8%a7%d8%aa %d8%a7%d9%84%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%b1%d8%a6%d9%8a%d8%b3%d9%8a%d8%a9 %d9%85%d9%88%d9%82%d8%b9-%d8%a7%d9%84%d9%88%d9%8a%d8%a8 %d8%a7%d9%84%d8%aa%d8%ad%d8%b1%d9%8a%d8%b1 %d9%86%d9%82%d9%84</Tags>
+	<Developer>Automattic</Developer>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>ar</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+	<moz:SearchForm>https://wordpress.com/ar/support</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theme Guide | Developer Resources</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://developer.wordpress.com/xmlrpc.php">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700|Merriweather:700' rel='stylesheet' type='text/css'>
+
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//wordpress.com' />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Feed" href="https://developer.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Developer Resources &raquo; Comments Feed" href="https://developer.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1582709031h&ver=5.4.1"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJytk9FWgzAMhl/I0iHzjF14fJZSQu1sKadJh7y9LbANp+KO7i4J+fKnIeF9x6RrCVriNrDOBKVb5H0nnWVotYHhyssk4gNfYCdGhehW4FX84oGXWZ5t2IjyKmhT88o4+caMrrzwA0caDNxQbKSQH4A6kXAxuEBMeV3/tYQXpFuFv+BNMIahJmBQ6wTMw+F5vimKbZGXvIUex4qzQK2R0itjqkPCKcyOGvq7q0jhXUAwd9LoPFgd7BldH410cyt59lhkm7mjOcj+PdZpeCYWnV431b+OflFYrG9awBi3naCUYaOUAAM2pq1hva4VUMTxZDOC93VkPI2qigNEZKcx0mvUuuVSVpZ7/tR4903TkwAXpZw6qOFYLH+a5q0jHbPxbNzycHLdtLo/LMACUeBY7DCekms/OawxQvs11EO6kWiqcdIXdw0SMhWvhL9YKf3FPudP5X6/3213+eEDlp3KEw==?cssminify=yes' type='text/css' media='all' />
+<style id='wp-block-library-inline-css'>
+.has-text-align-justify {
+	text-align:justify;
+}
+</style>
+<style id='jetpack-global-styles-frontend-style-inline-css'>
+:root { --font-headings: unset; --font-base: unset; --font-headings-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; --font-base-default: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;}
+</style>
+<link rel='stylesheet' id='all-css-2-1' href='https://s0.wp.com/wp-content/themes/h4/global.css?m=1420737423h&cssminify=yes' type='text/css' media='all' />
+	<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script type='text/javascript' src='https://s1.wp.com/_static/??-eJx9zVEKwjAMBuAL2RUpHXsRz1K7OFuWdDbpxNubDX0REQKB/F8S+1hMoji3EdhmrXuD+ny3LvPB/gMG01SDQIeJPjgWEiDZ7FJYEJjDBD9SLJc0g2kMVQGJvrmWbyc30As2DFGnseAIq9uXgZraM56O3g/O9713+QUQR0sY'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://developer.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://developer.wordpress.com/themes/" />
+<link rel='shortlink' href='https://wp.me/P2gHKz-q7' />
+	<style>
+		@font-face {
+			font-family: Recoleta;
+			src: url('https://s1.wp.com/i/fonts/recoleta/400.woff2')
+		}
+	</style>
+	<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fthemes%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fdeveloper.wordpress.com%2Fthemes%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Theme Guide" />
+<meta property="og:url" content="https://developer.wordpress.com/themes/" />
+<meta property="og:description" content="The theme must meet all requirements in the WordPress.org theme review. Along with this, it must also meet the following criteria. Code Use WordPress functionality and features first, if available …" />
+<meta property="article:published_time" content="2013-01-29T23:07:02+00:00" />
+<meta property="article:modified_time" content="2017-08-24T16:21:08+00:00" />
+<meta property="og:site_name" content="Developer Resources" />
+<meta property="og:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=200&amp;ts=1590244704" />
+<meta property="og:image:width" content="200" />
+<meta property="og:image:height" content="200" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:creator" content="@AutomatticEng" />
+<meta name="twitter:site" content="@AutomatticEng" />
+<meta name="twitter:text:title" content="Theme Guide" />
+<meta name="twitter:image" content="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=240" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<meta name="twitter:app:name:iphone" content="WordPress" />
+<meta name="twitter:app:id:iphone" content="335703880" />
+<meta name="twitter:app:name:ipad" content="WordPress" />
+<meta name="twitter:app:id:ipad" content="335703880" />
+<meta name="twitter:app:name:googleplay" content="WordPress" />
+<meta name="twitter:app:id:googleplay" content="org.wordpress.android" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=32" sizes="16x16" />
+<link rel="apple-touch-icon" href="https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=114" />
+<link rel='openid.server' href='https://developer.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://developer.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://developer.wordpress.com/osd.xml" title="Developer Resources" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Developer Resources" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Create cool applications that integrate with WordPress.com" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://developer.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/2b9f802603565d131ae7d2ba65746574?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="The theme must meet all requirements in the WordPress.org theme review. Along with this, it must also meet the following criteria. Code Use WordPress functionality and features first, if available (This includes Jetpack features for WordPress.com). No frameworks or options frameworks. No external, non-Automattic (Jetpack, Gravatar, etc.) APIs. WordPress.com themes should always use the latest&hellip;" />
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="https://s0.wp.com/?custom-css=1&#038;csblog=2gHKz&#038;cscache=6&#038;csrev=45" />
+		</head>
+
+<body class="page-template-default page page-id-1619 page-parent customizer-styles-applied highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+
+	<header id="masthead" class="site-header" role="banner">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<form role="search" method="get" class="search-form" action="https://developer.wordpress.com/">
+	<label>
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:'" />
+	</label>
+</form>				<div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-5714" class="menu-item-home menu-item menu-item-type-post_type menu-item-object-page menu-item-5714"><a href="https://developer.wordpress.com/">Developers</a></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current_page_ancestor menu-item-has-children menu-item-32"><a href="https://developer.wordpress.com/docs/">Documentation</a>
+<ul class="sub-menu">
+	<li id="menu-item-34" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-34"><a href="https://developer.wordpress.com/docs/api/">REST API</a>
+	<ul class="sub-menu">
+		<li id="menu-item-90807" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90807"><a href="https://developer.wordpress.com/docs/api/getting-started/">Getting Started</a></li>
+		<li id="menu-item-28306" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28306"><a href="https://developer.wordpress.com/docs/api/console/">Developer Console</a></li>
+		<li id="menu-item-88679" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88679"><a href="https://developer.wordpress.com/docs/api/rest-api-example-apps/">Example Apps</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28277"><a href="https://developer.wordpress.com/docs/oauth2/">Authentication</a>
+	<ul class="sub-menu">
+		<li id="menu-item-33" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33"><a href="https://developer.wordpress.com/docs/oauth2/">OAuth</a></li>
+		<li id="menu-item-4109" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4109"><a href="https://developer.wordpress.com/docs/wpcc/">WordPress.com Connect (Login)</a></li>
+	</ul>
+</li>
+	<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57"><a href="https://developer.wordpress.com/docs/oembed-provider-api/">oEmbed API</a></li>
+	<li id="menu-item-1271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1271"><a href="https://developer.wordpress.com/docs/photon/">Photon Image API</a></li>
+	<li id="menu-item-28280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28280"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Embeddable Widgets</a>
+	<ul class="sub-menu">
+		<li id="menu-item-4573" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4573"><a href="https://developer.wordpress.com/docs/follow-button-creation/">Follow Button</a></li>
+		<li id="menu-item-5138" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5138"><a href="https://developer.wordpress.com/docs/embedded-timelines/">Timeline</a></li>
+	</ul>
+</li>
+	<li id="menu-item-28282" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-28282"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Other Integrations</a>
+	<ul class="sub-menu">
+		<li id="menu-item-9582" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9582"><a href="https://developer.wordpress.com/docs/embedding-on-wordpress-com/">Embedding</a></li>
+		<li id="menu-item-56" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-56"><a href="https://developer.wordpress.com/docs/sharing-buttons/">Sharing Buttons</a></li>
+		<li id="menu-item-1861" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1619 current_page_item menu-item-1861"><a href="https://developer.wordpress.com/themes/" aria-current="page">Theme Guide</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li id="menu-item-35" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35"><a href="https://developer.wordpress.com/blog/">Blog</a></li>
+<li id="menu-item-135" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-135"><a href="https://developer.wordpress.com/apps/">My Apps</a></li>
+</ul></div>				<a href="#" id="menu-hamburger"><span class="noticon noticon-menu"></span></a>
+				<a href="#" id="menu-search"><span class="noticon noticon-search"></span></a>
+			</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+			<div id="page-name" class="page-masthead">
+			<div class="name-area">
+				<h1>Theme Guide</h1>
+			</div>
+		</div>
+	
+	<div id="main-container" class="site-content">
+			<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-1619" class="post-1619 page type-page status-publish hentry">
+
+	<div class="entry-content">
+		<p>The theme must meet all requirements in the <a href="https://make.wordpress.org/themes/handbook/review/required/">WordPress.org theme review</a>. Along with this, it must also meet the following criteria.</p>
+<h2 id="code">Code</h2>
+<ul>
+<li>Use WordPress functionality and features first, if available (This includes Jetpack features for WordPress.com).</li>
+<li>No frameworks or options frameworks.</li>
+<li>No external, non-Automattic (Jetpack, Gravatar, etc.) APIs.</li>
+<li>WordPress.com themes should always use the latest WordPress features.</li>
+<li>Do not include code that won&#8217;t run on WP.com. This includes any code for compatibility and the use of <code>IS_WPCOM</code>.</li>
+<li>Use filters to modify the output of template tags, if available.</li>
+<li>Use client-side feature detection, rather than server side browser detection.</li>
+<li>Themes must not directly access PHP super globals.</li>
+<li>No output buffering.</li>
+<li>No custom fields or post meta boxes.</li>
+<li>No removing or modifying Core hooks.</li>
+<li>Footer credits must be located in <code>footer.php</code> and match the format found in <a href="https://github.com/Automattic/_s/blob/master/footer.php#L15-L17">Underscores</a></li>
+</ul>
+<h3 id="js">JavaScript</h3>
+<ul>
+<li>Protect function and variable names from conflicts in the global namespace. Always use theme slug prefixes, or wrap code in an immediately invoked function expression (IFFE), like <a href="https://github.com/Automattic/_s/blob/master/js/customizer.js#L7">Underscores</a>.</li>
+</ul>
+<h3 id="htmlcss">HTML/CSS</h3>
+<ul>
+<li>All themes must use the HTML5 doctype and contain semantic markup.</li>
+<li>Themes must be responsive and retina-ready.</li>
+<li>Use <code>!important</code> and inline styles only as a last resort.</li>
+<li>You can&#8217;t include code or scripts for extending support below IE9.</li>
+</ul>
+<h2 id="core">Core Functionality and Features</h2>
+<ul>
+<li>All code and widgets must not replicate existing WordPress.com functionality.</li>
+<li>Themes must support widgets.</li>
+<li>Themes must support at least one Custom Menu.</li>
+<li>No customizing <code>/wp-admin</code>.</li>
+</ul>
+<h2 id="docs">Documentation</h2>
+<p>All premium themes released on WordPress.com have a showcase page and support documentation. Follow the <a href="https://developer.wordpress.com/themes/documentation-style-guide/">documentation style guide</a> to ensure that users have a clear understanding of a theme&#8217;s features, and where to get help.</p>
+<h2 id="lang">Language</h2>
+<ul>
+<li> <a href="http://codex.wordpress.org/I18n_for_WordPress_Developers#Disambiguation_by_context">Provide context</a> where appropriate.</li>
+<li>Avoid common <a href="https://developer.wordpress.com/themes/i18n/#anti-patterns">anti-patterns</a>.</li>
+<li>Themes must provide right-to-left styles.</li>
+<li>Translators need to be able to deactivate web fonts that don’t support the character set of their language.</li>
+<li>Translation strings should be escaped for improved security. See <a href="http://underscores.me">_s (Underscores)</a>  for examples.</li>
+</ul>
+<h2 id="options">Options and Settings</h2>
+<ul>
+<li>Only implement theme options through the Customizer.</li>
+<li>Theme options must be in one section, entitled ‘Theme Options’.</li>
+<li>No theme options should allow users to add scripts or styles.</li>
+<li>Do not include any additional options for setting colors or fonts: these are handled on WordPress.com by our <a href="https://en.support.wordpress.com/custom-design/custom-fonts/">Custom Fonts</a> and <a href="https://en.support.wordpress.com/custom-design/custom-colors/">Custom Colors</a> features.</li>
+<li>Themes need to support Jetpack Infinite Scroll.</li>
+</ul>
+<h2 id="stylesscripts">Stylesheets and Scripts</h2>
+<ul>
+<li>Don&#8217;t hook HTML or Javascript into <code>wp_head</code>.</li>
+<li>No minification; it&#8217;s impossible to audit, and WordPress.com has its own minification process.</li>
+<li>The theme&#8217;s primary CSS must be in <code>style.css</code>.</li>
+<li>Theme tags in <code>style.css</code> must be be lowercase with no spaces. Separate multiple-word tags with a dash. View a list of all <a href="https://developer.wordpress.com/themes/theme-showcase-tags/">allowable tags</a>.</li>
+<li>Line heights must be set to relative values, so that <a href="http://en.support.wordpress.com/custom-design/custom-fonts/">Custom Fonts</a> work correctly.</li>
+<li><a href="http://themeshaper.com/2014/08/13/how-to-add-google-fonts-to-wordpress-themes/">Enqueue Google fonts using this format</a>.</li>
+</ul>
+<h2 id="templates">Templates</h2>
+<ul>
+<li>Themes must respect the <a href="http://codex.wordpress.org/Template_Hierarchy">Template Hierarchy</a>.</li>
+<li><code>front-page.php</code> must respect the user’s <code>Settings → Reading → Front Page Displays</code> value.</li>
+<li><code>$content_width</code> must be set to the theme’s default content width.</li>
+<li>Use full loops in all templates. Just calling <code>the_post()</code> in a template like <code>single.php</code> or <code>page.php</code> is not enough. <a href="http://themeshaper.com/2014/11/20/mastering-the-post_class-function/">This is a great explanatory article</a>.</li>
+</ul>
+<h3 id="queries">Queries</h3>
+<ul>
+<li>Themes must use <code>WP_Query</code>.</li>
+<li>Don&#8217;t use unbounded queries. The <a href="http://codex.wordpress.org/Class_Reference/WP_Query#Pagination_Parameters"><code>posts_per_page</code></a> parameter of <a href="http://codex.wordpress.org/Class_Reference/WP_Query"><code>WP_Query</code></a> may not be set to <code>-1</code>. Also, the <code>numberposts</code> parameter of <a href="http://codex.wordpress.org/Template_Tags/get_posts"><code>get_posts()</code></a> (and similar functions) must have a positive value.</li>
+<li>Themes must not modify the main query.</li>
+</ul>
+<h2 id="widgets">Widgets</h2>
+<ul>
+<li>Prefix widget titles with the themename, ie. <code>Theme Name: Widget Title</code>.</li>
+<li>Widget areas must not contain hardcoded widgets.</li>
+<li>Visible links to feeds must not appear in themes. We suggest that site owners use the <strong>Follow Blog Widget</strong> on WordPress.com to allow their visitors to subscribe.</li>
+</ul>
+<h2 id="tux">Theme User Experience Requirements</h2>
+<p>We&#8217;ve put together a list of theme user-experience requirements that make it easier for people to use WordPress themes. We call it the TUX List.</p>
+<h3>Content</h3>
+<ul>
+<li>On sites with multiple authors, the author name should be displayed. Note: You can also choose display the author on sites with a single author. <strong>Reason</strong>: If a site has multiple authors then it’s useful for readers to see who wrote each post.</li>
+<li>Themes must support both categories and tags in some capacity. <strong>Reason: </strong>Users see these in the admin areas, so they expect to see them on their site&#8217;s front end.</li>
+<li>Add support for <a href="https://jetpack.com/support/content-options/">Jetpack&#8217;s Content Options</a> to the fullest extent possible. <strong>Reason:</strong> Users want to be able to change and customize what appears for each post/page.</li>
+</ul>
+<h3 id="tux-header">Header</h3>
+<ul>
+<li>Show the site title and tagline by default. <strong>Reason</strong>: Both site title and tagline can always be hidden via the Customizer, so hiding one by default makes for a confusing user experience.</li>
+</ul>
+<h3 id="tux-layout">Layout</h3>
+<ul>
+<li>If the site does not have a sidebar or the sidebar has no widgets, the content line length should adjust. <strong>Reason</strong>: Long line lengths are an issue for readability.</li>
+<li>If a layout normally has two columns or more with widgets, the layout should adjust to a single column if a user has not added widgets to the sidebar, without displaying an empty column. <strong>Reason</strong>: This gives users flexibility to have a single-column layout without needing a page template or theme option. If a user wants widgets only on specific pages, they can use the <a href="https://en.support.wordpress.com/widgets/#widget-visibility">Widget Visibility tool</a>.</li>
+</ul>
+<h3>Menus</h3>
+<ul>
+<li>Menu labels should specify the location and, if the theme supports more than one, its position, like Header Top, Header Bottom, Footer, etc. <strong>Reason</strong>: Without this, users are unable to know which menu refers to what area.</li>
+<li>Menu locations should take the format of <code>menu-1</code>, <code>menu-2</code>, etc. <strong>Reason</strong>: Consistency across themes means that a user can switch themes and not have to reassign their menu to the theme&#8217;s menu location. It also allows easier readability in code.</li>
+<li>Social menu should be called <code>Social Menu</code>. <strong>Reason</strong>: Consistency on theme switching, which again means that the site displays the user&#8217;s social menu even after changing themes.</li>
+<li>Drop-down menus should have an arrow indicating the direction in which the menu opens. <strong>Reason</strong>: Without an arrow, it&#8217;s hard to know if an item has a sub-menu.</li>
+<li>Mobile menus should have a hamburger icon and the label <code>Menu</code>. <strong>Reason</strong>: Users can consistently see the same mobile menu indicator and don’t have to learn a new icon or word each time they switch a theme.</li>
+</ul>
+<h3 id="tux-pagination">Pagination</h3>
+<ul>
+<li>Single-post navigation should display &#8220;next / previous&#8221; and show the post title. This also means consistent translations for translators. <strong>Reason</strong>: Users can easily know they&#8217;re looking at pagination and the experience is consistent.</li>
+</ul>
+<h3 id="tux-formats">Post Formats</h3>
+<ul>
+<li>A theme does not need to support any post formats unless the theme is a &#8220;Tumblog&#8221;- style theme, in which case the theme should support all available post formats. <strong>Reason</strong>: Users only expect post formats from Tumblog-type themes.</li>
+</ul>
+<h3 id="tux-posts">Posts</h3>
+<ul>
+<li>Excerpts should be followed by a &#8220;Continue Reading&#8221; link. <strong>Reason</strong>: Provides a consistent experience for users.</li>
+<li>Do not use <code>the_content_more_link</code> filter to customize Read more link text. <strong>Reason</strong>: this prevents users from customizing the <a href="https://en.support.wordpress.com/more-tag/">More tag</a>.</li>
+</ul>
+<h3 id="tux-sticky">Sticky posts</h3>
+<ul>
+<li>Provide a clear indication that sticky posts are different from normal posts. For example, add some text or other clear indicator to differentiate sticky posts. Also, they should not display the date. <strong>Reason</strong>: A post if sticky should have some indication of its stickiness, otherwise it’s a surprise to find it at the top.</li>
+</ul>
+<h3 id="tux-templates">Templates</h3>
+<ul>
+<li>All templates should be in a folder called <code>templates</code>. <strong>Reason</strong>: Reviewers can see at a glance which templates are available, decreasing review time and improving code legibility.</li>
+<li>Portfolio template should be called <code>portfolio-page.php</code>.</li>
+<li>Full-width template should be called <code>full-width-page.php</code>.</li>
+<li>Grid template should be called <code>grid-page.php</code>.</li>
+<li>Testimonials template should be called <code>testimonials-page.php</code>.</li>
+<li>Food menus template should be called <code>food-menus-page.php</code>.</li>
+<li>Guestbook template should be called <code>guestbook-page.php</code>.</li>
+<li>Contributors template should be called <code>contributors-page.php</code>.</li>
+<li>Front-page template should be called <code>front-page.php</code>.</li>
+</ul>
+<p><strong>Reason</strong>: Consistent template naming helps reduce setup time after a theme switch and also decreases review time.</p>
+<h3 id="tux-widgets">Widgets</h3>
+<ul>
+<li>Keep widget names descriptive of their location, ie. Sidebar, Footer, etc. <strong>Reason</strong>: Users can more easily find them and know what area they refer to.</li>
+<li>Widget IDs should take the format of <code>sidebar-1</code>, <code>sidebar-2</code>, etc. <strong>Reason</strong>: Consistency across themes means that a user can switch themes and not have to reassign their widgets to the theme&#8217;s widget locations. It also allows for easier readability in code.</li>
+</ul>
+<h3>Color Annotations</h3>
+<ul>
+<li>Add 6 featured color palettes.</li>
+<li>Ensure you have at least one light-on-dark palette and one dark-on-light palette. <strong>Reason: </strong>At least two color palettes must be accessible.</li>
+<li>Use standard color names for color palettes whenever possible, picking the strongest accent/accents, and add comment for translators. <strong>Reason:</strong> Vague/clever palette names often cause confusion for translators.</li>
+</ul>
+<h2 id="also">Along with these we also recommend the following items.</h2>
+<ul>
+<li>All the <a href="https://make.wordpress.org/themes/handbook/review/recommended/">WordPress.org recommended items</a>.</li>
+<li>We encourage the use of <a href="http://underscores.me">_s (Underscores)</a> as this helps with review time.</li>
+<li>We encourage the use of navigation menus to handle social icons.</li>
+</ul>
+			</div><!-- .entry-content -->
+	</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+	<div id="secondary" class="widget-area" role="complementary">
+		<aside id="jetpack_display_posts_widget-3" class="widget widget_jetpack_display_posts_widget"><h4 class="widget-title">Recent Posts: Developer Resources</h4><div class="jetpack-display-remote-posts"><h4><a href="https://developer.wordpress.com/2019/08/28/sharing-the-data-how-technical-women-navigate-their-career/">Sharing the Data: How Technical Women Navigate Their Career</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/14/leadership-in-fully-remote-teams-with-aaron-douglas/">Leadership in Fully Remote Teams with Aaron Douglas</a></h4>
+<h4><a href="https://developer.wordpress.com/2019/08/08/automattic-developers-at-the-mid-atlantic-developer-conference/">Automattic Developers at the Mid-Atlantic Developer Conference</a></h4>
+</div><!-- .jetpack-display-remote-posts --></aside><aside id="follow_button_widget-2" class="widget widget_follow_button_widget">
+		<a class="wordpress-follow-button" href="https://developer.wordpress.com" data-blog="33534099" data-lang="en" data-show-blog-name="false" data-show-follower-count="true">Follow Developer Resources on WordPress.com</a>
+		<script type="text/javascript">(function(d){var f = d.getElementsByTagName('SCRIPT')[0], p = d.createElement('SCRIPT');p.type = 'text/javascript';p.async = true;p.src = '//widgets.wp.com/platform.js';f.parentNode.insertBefore(p,f);}(document));</script>
+
+		</aside><aside id="twitter_timeline-2" class="widget widget_twitter_timeline"><h4 class="widget-title">@AutomatticEng on twitter</h4><a class="twitter-timeline" data-height="400" data-theme="light" data-border-color="#e9eff3" data-lang="EN" data-partner="jetpack" href="https://twitter.com/AutomatticEng" href="https://twitter.com/AutomatticEng">My Tweets</a></aside><aside id="top-posts-2" class="widget widget_top-posts"><h4 class="widget-title">Top Posts &amp; Pages</h4><ul>				<li>
+					<a href="https://developer.wordpress.com/docs/api/" class="bump-view" data-bump-view="tp">REST API Resources</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/" class="bump-view" data-bump-view="tp">Home</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/" class="bump-view" data-bump-view="tp">Documentation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oauth2/" class="bump-view" data-bump-view="tp">OAuth2 Authentication</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/follow-button-creation/" class="bump-view" data-bump-view="tp">Follow Button Creation</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/api/getting-started/" class="bump-view" data-bump-view="tp">Getting Started with the API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/firehose/" class="bump-view" data-bump-view="tp">WordPress.com Firehose</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/" class="bump-view" data-bump-view="tp">Photon</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/oembed-provider-api/" class="bump-view" data-bump-view="tp">oEmbed Provider API</a>					</li>
+								<li>
+					<a href="https://developer.wordpress.com/docs/photon/api/" class="bump-view" data-bump-view="tp">Photon API</a>					</li>
+				</ul></aside>	</div><!-- #secondary -->
+
+	</div><!-- #content -->
+
+	<div class="footer-contain">
+		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="site-info">
+				<div class="automattic">
+					An <a href="http://automattic.com"><span class="a8c-attribution">Automattic</span></a> Production
+				</div>
+				<div class="footer-links">
+					<a href="guidelines/">Usage Guidelines</a>
+					<a href="http://automattic.com/privacy/" target="_blank">Privacy Policy</a>
+					<a href="http://wordpress.com/tos/" target="_blank">Terms of Service</a>
+				</div>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div>
+</div><!-- #page -->
+
+<!--  -->
+			<!-- A8C Analytics [start] -->
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+						window.a8cAnalyticsConfig = {"cookieBanner":{"text":"Our websites and dashboards use cookies. By continuing, you agree to their use. <a target=\"_blank\" href=\"https:\/\/automattic.com\/cookies\">Learn more<\/a>, including how to control cookies.","buttonText":"Got It!","cookieName":"sensitive_pixel_option","skipBanner":false,"cssZIndex":50001,"cookieDomain":"wordpress.com"},"fireAnalyticsOptions":[]};
+					};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+
+			
+<script type="text/javascript">
+	$document = jQuery( window.document );
+	$document.on( 'a8c-analytics:loaded', function() {
+		'use strict';
+
+		var kit = window.a8cAnalytics.kit;
+
+		if ( kit.doNotTrack() ) {
+			return;
+		}
+
+		function fireGoogleAnalytics() {
+			kit.loadGoogleAnalytics();
+			ga( 'create', 'UA-10673494-33', 'auto' );
+
+			ga( 'set', 'transport', 'function' === typeof navigator.sendBeacon ? 'beacon' : 'xhr' );
+			ga( 'set', 'anonymizeIp', true );
+
+			ga( 'send', 'pageview' );
+		}
+
+		// ------- Fire Normal Pixels -------
+
+				fireGoogleAnalytics();
+
+		// ------- Fire Sensitive Pixels -------
+
+		/* none for now
+		$document.on( 'a8c-analytics:fire-sensitive-pixels', function() {
+		} );
+		*/
+	} );
+</script>
+
+			<script type="text/javascript">
+				( function() {
+					'use strict';
+
+					var setupAnalytics = function() {
+						var $ = window.jQuery;
+						if ( ! $ ) return; // No jQuery.
+
+													$.ajax( {
+								async: true,
+								cache: true,
+								dataType: 'script',
+								url: "https:\/\/s1.wp.com\/wp-content\/mu-plugins\/a8c-analytics\/a8c-analytics.js?v=1586367077",
+							} );
+											};
+
+					if ( window.defQueue && defQueue.isLOHP && defQueue.isLOHP === 2020 ) {
+						defQueue.items.push( setupAnalytics );
+					} else {
+						setupAnalytics();
+					}
+				} )();
+			</script>
+			<!-- A8C Analytics [end] -->
+			<script type="text/javascript">
+	if ( window.top !== window.self ) {
+		if ( window.top.location.hostname !== window.self.location.hostname || window.top.location.protocol !== window.top.location.protocol ) {
+			window.top.location.href = window.self.location.href;
+		}
+	}
+	</script><script src='//0.gravatar.com/js/gprofiles.js?ver=202021y'></script>
+<script>
+var WPGroHo = {"my_hash":""};
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/wp-content/mu-plugins/widgets/wordpress-post-widget/style.css?m=1558002106h&cssminify=yes' type='text/css' media='all' />
+<script>
+var actionbardata = {"siteID":"33534099","siteName":"Developer Resources","siteURL":"http:\/\/developer.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/2b9f802603565d131ae7d2ba65746574?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"a8c\/wpcomdev3","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fthemes%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/developer.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"b4a28df927","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"49fffbe937\" \/>","referer":"https:\/\/developer.wordpress.com\/themes\/","canFollow":"1","feedID":"3039616","statusMessage":"","customizeLink":"https:\/\/developer.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fdeveloper.wordpress.com%2Fthemes%2F","postID":"1619","shortlink":"https:\/\/wp.me\/P2gHKz-q7","canEditPost":"","editLink":"https:\/\/wordpress.com\/page\/developer.wordpress.com\/1619","statsLink":"https:\/\/wordpress.com\/stats\/post\/1619\/developer.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: WordPress.com Developer site","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/read\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 14,847 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fdeveloper.wordpress.com%2Fthemes%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJylkt1uwjAMhV9oqYkA0V5Me5QpTUznkj8lTgtvv3Ss3K3S4M7x8flOZBnmKHTwjJ5hzGBwIo3x2oz5DapEXttiMP9olBkm9CakRYrB3s5kbePIr+MrKdoykM9wLtaKTIwCDTH5QdwVkHK33x/2sgWPc45KX0Rvg778ptS6jobM+d4WE+H8V8hQ6rPHNFQlIbSNbHZijjo46AtZAyRbD+QNXp9GmOBEQmVuL3KUlK8iMGsVUXyxs9ukZ5evVQolo91YvStiTRmRFwJ81lMBnokZk2ByaMnjhk+ZejeiVwmcytVTKxEmTImWc3v0/kngVP+St0yaKfjF9Kjq9Id7l8e267rT4STHb3EGIDU='></script>
+<script type='text/javascript'>
+( 'fetch' in window ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?m=1573572739h&#038;ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?m=1540208548h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://s0.wp.com/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?m=1585663916h&#038;ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?m=1585663916h&#038;ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://s1.wp.com/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?m=1550600082h&#038;ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://s2.wp.com/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?m=1540208548h&#038;ver=2.0.2"></scr' + 'ipt>' );
+( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://s2.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-url.min.7490158b.js?m=1589993648h&#038;ver=3.6.4"></scr' + 'ipt>' );
+( window.DOMRect ) || document.write( '<script src="https://s1.wp.com/wp-content/plugins/gutenberg-core/8.1.0-wpcom/vendor/wp-polyfill-dom-rect.7e21c103.js?m=1589993648h&#038;ver=3.42.0"></scr' + 'ipt>' );
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?61" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'33534099','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'33534099','v':'wpcom','tz':'0','user_id':'0','post':'1619','subd':'developer'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1lSiYrZXhzUkM5fD1uTDNLUGt6QzVbd3FKb3Q4aWxFU0VMK3ppSG1wamM0bi81JStxN2lKP1pvVnxQRHk3W0d3VEh0SklpNENJfHppaiZjVlFtdzJJS0ovSDNETzhlekx0YWtKZUdrWVRKU296R2dGTkthbUslXVh6JURPS05ML0czMUhaVi94VmJiQ0VZfD93dG0/MWJ2bjAzYWlzayxCc0cvflR+Ljd2SEE3NU5IS1QzUEg0aGsmdFdLcSsveGFwY1p3a2I5WEw5YU5SY1YzfF1EMXVWL2Z1T2FuWFJdJXRbVVdmQ3ZFfG12WVNxN2xPZXFvY3d+UVg9YWFpbm4sWmZubl1lRGxyZnNVa01mTWZmd2c9SCU0QjdfLSZbb1VbaHZnLThDTmU5Vm0rLFQ9RSthP0ZNQ25DYTIsMz0tM3phMCxBZXJ6a1FOenxqR3FYZkREb2pWK0NmPU83Lkppb0x4'}]);
+_stq.push([ 'clickTrackerInit', '33534099', '1619' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+<!--
+	generated in 0.120 seconds
+	45441 bytes batcached for 300 seconds
+-->
