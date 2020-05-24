@@ -1,12 +1,13 @@
 {
-  "name": "reinit_celestial_malechithorf",
+  "name": "reinit_celestial_malechithorfatlick",
 
   "version": "2.23.5M.35.RCM.IFTTT.NOIRNI",
 
   "description": "From: <blink: adjkjc@ermccorp.com>\r Snapshot-Content-Location: https://github.com/adjkjc/adjkjc.github.io\r Subject: GitHub - adjkjc/adjkjc.github.io: This is going to be a website.\r Date: Sat, 23 May 2020 18:57:15 -0000\r MIME-Version: 1.0\r Content-Type: multipart/related;\r \ttype=\"text/html\";\r \tboundary=\"----MultipartBoundary--tFosiHEDCxYM8EIhJmkRBnjpe5sIfsREvZA4whNZAC----\"",
   "main": "index.js",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
-    "test": "echo \"HELO NODEPPL\"; tar -zxvf atlass_zedpm_sg1_pmadam_v.win95.NT4.BIB66LE7EX80183plus3.tgz"
+    "test": "echo \"HELO NODEPPL\"; echo \"tar -zxvf atlass_zedpm_sg1_pmadam_v.win95.NT4.BIB66LE7EX80183plus3.tgz\";
   },
 
   "keywords": ["HOWTO","MAN","CAT .BASH_HISTORY","CTRL-a h","APROPOS","GROK", "h", "^G"],
